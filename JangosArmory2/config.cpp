@@ -68,7 +68,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Cadet Helmet (Yellow)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\Cadet_Helmet_Yellow.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\Yellow_P1_Cadet_Helmet.paa" }; // the file path to the texture
 	};
 
 	class JA_Cadet_Red_Helmet : SWLB_clone_P1_helmet
@@ -78,7 +78,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Cadet Helmet (Red)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\Cadet_Helmet_Red.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\Red_P1_Cadet_Helmet.paa" }; // the file path to the texture
 	};
 
 	class JA_Cadet_Blue_Helmet : SWLB_clone_P1_helmet
@@ -88,7 +88,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Cadet Helmet (Blue)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\Cadet_Helmet_Blue.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\Blue_P1_Cadet_Helmet.paa" }; // the file path to the texture
 	};
 
 	class JA_Cadet_Green_Helmet : SWLB_clone_P1_helmet
@@ -98,7 +98,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Cadet Helmet (Green)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\Cadet_Helmet_Green.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\Green_P1_Cadet_Helmet.paa" }; // the file path to the texture
 	};
 
 	class JA_Cadet_Yellow1_Uniform : SWLB_clone_uniform
@@ -114,8 +114,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmor2y\data\Textures\CR_Yellow1_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Yellow_Lower.paa"
+			"JangosArmor2y\data\Textures\Yellow_P1_Cadet_Upper_1.paa",
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -140,8 +140,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Yellow2_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Yellow_Lower.paa"
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Upper_2.paa",
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -166,8 +166,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Yellow3_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Yellow_Lower.paa"
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Upper_3.paa",
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -192,8 +192,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Yellow4_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Yellow_Lower.paa"
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Upper_4.paa",
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -218,8 +218,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Yellow5_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Yellow_Lower.paa"
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Upper_5.paa",
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -244,8 +244,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Red1_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Red_Lower.paa"
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Upper_1.paa",
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -270,8 +270,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Red2_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Red_Lower.paa"
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Upper_2.paa",
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -296,8 +296,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Red3_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Red_Lower.paa"
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Upper_3.paa",
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -322,8 +322,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Red4_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Red_Lower.paa"
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Upper_4.paa",
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -348,8 +348,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Red5_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Red_Lower.paa"
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Upper_5.paa",
+			"JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -374,8 +374,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Blue1_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Blue_Lower.paa"
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Upper_1.paa",
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -400,8 +400,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Blue2_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Blue_Lower.paa"
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Upper_2.paa",
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -426,8 +426,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Blue3_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Blue_Lower.paa"
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Upper_3.paa",
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -452,8 +452,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Blue4_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Blue_Lower.paa"
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Upper_4.paa",
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -478,8 +478,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Blue5_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Blue_Lower.paa"
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Upper_5.paa",
+			"JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -504,8 +504,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Green1_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Green_Lower.paa"
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Upper_1.paa",
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -530,8 +530,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Green2_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Green_Lower.paa"
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Upper_2.paa",
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -556,8 +556,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Green3_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Green_Lower.paa"
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Upper_3.paa",
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -582,8 +582,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Green4_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Green_Lower.paa"
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Upper_4.paa",
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -608,8 +608,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\CR_Green5_Upper.paa",
-			"JangosArmory2\data\Textures\CR_Green_Lower.paa"
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Upper_5.paa",
+			"JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -650,7 +650,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // dont change this
 		displayName = "Clone trooper P2 Helmet (104th Black)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Black_P2_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_P2_Black_Helmet.paa" }; // the file path to the texture
 	};
 
 	// 104th
@@ -666,6 +666,31 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Beans_Uniform";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Black_Uniform : SWLB_clone_uniform
+	{
+		author = "Emmet"
+			scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Black)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory2\data\Textures\104th_P2_Black_Upper.paa",
+			"JangosArmory2\data\Textures\104th_P2_Black_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Black_Uniform";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -691,7 +716,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Yellow1_Upper.paa", "JangosArmory2\data\Textures\CR_Yellow_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_1.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -706,7 +731,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Yellow2_Upper.paa", "JangosArmory2\data\Textures\CR_Yellow_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_2.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -721,7 +746,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Yellow3_Upper.paa", "JangosArmory2\data\Textures\CR_Yellow_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_3.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -736,7 +761,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Yellow4_Upper.paa", "JangosArmory2\data\Textures\CR_Yellow_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_4.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -751,7 +776,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Yellow5_Upper.paa", "JangosArmory2\data\Textures\CR_Yellow_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_5.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Yellow_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -766,7 +791,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Red1_Upper.paa", "JangosArmory2\data\Textures\CR_Red_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_1.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -781,7 +806,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Red2_Upper.paa", "JangosArmory2\data\Textures\CR_Red_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_2.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -796,7 +821,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Red3_Upper.paa", "JangosArmory2\data\Textures\CR_Red_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_3.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -811,7 +836,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Red4_Upper.paa", "JangosArmory2\data\Textures\CR_Red_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_4.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -826,7 +851,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Red5_Upper.paa", "JangosArmory2\data\Textures\CR_Red_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_5.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -841,9 +866,9 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Blue1_Upper.paa", "JangosArmory2\data\Textures\CR_Blue_Lower.paa" };
-		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_1.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
+		linkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
 
 	class JA_Cadet_Blue2 : SWLB_clone_base_P2
@@ -856,9 +881,9 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Blue2_Upper.paa", "JangosArmory2\data\Textures\CR_Blue_Lower.paa" };
-		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_2.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
+		linkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
 
 	class JA_Cadet_Blue3 : SWLB_clone_base_P2
@@ -871,9 +896,9 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Blue3_Upper.paa", "JangosArmory2\data\Textures\CR_Blue_Lower.paa" };
-		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_3.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
+		linkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
 
 	class JA_Cadet_Blue4 : SWLB_clone_base_P2
@@ -886,9 +911,9 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Blue4_Upper.paa", "JangosArmory2\data\Textures\CR_Blue_Lower.paa" };
-		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_4.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
+		linkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
 
 	class JA_Cadet_Blue5 : SWLB_clone_base_P2
@@ -901,9 +926,9 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Blue5_Upper.paa", "JangosArmory2\data\Textures\CR_Blue_Lower.paa" };
-		linkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_Cadet_Red_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_5.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
+		linkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_Cadet_Blue_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
 
 	class JA_Cadet_Green1 : SWLB_clone_base_P2
@@ -916,7 +941,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Green1_Upper.paa", "JangosArmory2\data\Textures\CR_Green_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_1.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -931,7 +956,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Green2_Upper.paa", "JangosArmory2\data\Textures\CR_Green_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_2.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -946,7 +971,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Green3_Upper.paa", "JangosArmory2\data\Textures\CR_Green_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_3.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -961,7 +986,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Green4_Upper.paa", "JangosArmory2\data\Textures\CR_Green_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_4.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -976,7 +1001,7 @@ class CfgVehicles
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\CR_Green5_Upper.paa", "JangosArmory2\data\Textures\CR_Green_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_5.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
 		linkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
@@ -998,6 +1023,24 @@ class CfgVehicles
 		};
 		linkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Black_Uniform : SWLB_clone_base_P2
+	{
+		author = "Tundra"
+			scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "104th Beans";
+		uniformClass = "JA_104th_Black_Uniform";
+		faction = "104th_Guys"
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory2\data\Textures\104th_P2_Black_Upper.paa",
+			"JangosArmory2\data\Textures\104th_P2_Black_Lower.paa"
+		};
+		linkedItems[] = { JA_104th_Black_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Black_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 
 };

@@ -41,6 +41,7 @@ class CfgWeapons
 	class SWLB_Clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_clone_BARC_helmet;
+	class SWLB_clone_eng_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
@@ -200,6 +201,24 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper Helmet (Prowler Medic - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thProwlerCompany\data\Textures\Prowler_Armored_Medic_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_Prowler_ENG_Base_Helmet : SWLB_clone_eng_helmet
+	{
+		author = "Dak"
+		scopeArsenal = 2;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone trooper Helmet (Prowler Engineer - Eng)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "104thProwlerCompany\data\Textures\Prowler_ENG_Engineer_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_Prowler_ENG_Officer_Helmet : SWLB_clone_eng_helmet
+	{
+		author = "Dak"
+		scopeArsenal = 2;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone trooper Helmet (Prowler Officer - Eng)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "104thProwlerCompany\data\Textures\Prowler_ENG_Officer_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Prowler_P2_Base_Medic_Uniform : SWLB_clone_uniform
 	{
