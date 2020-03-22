@@ -535,6 +535,28 @@ class CfgWeapons
 		{
 			"JangosArmory\data\Textures\104th_Scurvy_Accessories.paa"
 		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
+		};
 		
 	};
 
@@ -554,6 +576,28 @@ class CfgWeapons
 			"JangosArmory\data\Textures\104th_Angel_ARC_Accessories.paa",
 			"JangosArmory\data\Textures\104th_Angel_Officer_Accessories.paa"
 		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
+		};
 		
 	};
 
@@ -569,6 +613,28 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory\data\Textures\104th_Knightfall_Accessories.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
 		};
 		
 	};
@@ -586,6 +652,28 @@ class CfgWeapons
 		{
 			"JangosArmory\data\Textures\104th_Tusk_Accessories.paa"
 		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
+		};
 		
 	};
 
@@ -601,6 +689,28 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory\data\Textures\104th_PSGT_Kama.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
 		};
 	};
 
@@ -674,6 +784,28 @@ class CfgWeapons
 			"JangosArmory\data\Textures\104th_Heavy.paa", //Heavy
 			"JangosArmory\data\Textures\104th_Heavy.paa" //Heavy
 		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
+		};
 		
 	};
 	class JA_104th_Carmine_Vest : SWLB_clone_airborne_nco_armor
@@ -694,6 +826,28 @@ class CfgWeapons
 			"JangosArmory\data\Textures\officer_Kama_Carmine.paa",
 			"JangosArmory\data\Textures\104th_Heavy.paa", //Heavy
 			"JangosArmory\data\Textures\104th_Heavy.paa" //Heavy
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
 		};
 		
 	};

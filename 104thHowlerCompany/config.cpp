@@ -687,6 +687,28 @@ class CfgWeapons
 			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa", //Heavy
 			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa" //Heavy
 		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
+		};
 		
 	};
 	class JA_Howler_AB_Base_Officer_Armor : SWLB_CEE_Airborne_Officer
@@ -707,6 +729,28 @@ class CfgWeapons
 			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", //Heavy
 			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa" //Heavy
 		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
+		};
 	};
 	class JA_Howler_P2_Base_Officer_Armor : SWLB_clone_officer_armor
 	{
@@ -720,6 +764,28 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
 		};
 		
 	};

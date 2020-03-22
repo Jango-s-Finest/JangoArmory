@@ -239,6 +239,28 @@ class CfgWeapons
 		{
 			"104thProwlerCompany\data\Textures\fenriskama.paa"
 		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="-";
+			containerClass="Supply100";
+			vestType="Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+			};
+		};
 		
 	};
 };
