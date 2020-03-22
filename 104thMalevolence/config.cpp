@@ -52,7 +52,8 @@ class CfgWeapons
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_CEE_Lightweight_Rebreather;
 	class UniformItem;
-	class Vestitem;
+	class VestItem;
+	class Bag_Base;
 
 /////////////////////P1 Malevolence
 	class JA_Malevolence_Base_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
@@ -175,7 +176,7 @@ class CfgWeapons
 			"",
 			""
 		};
-		class ItemInfo: Vestitem
+		class ItemInfo: VestItem
 		{
 			uniformModel="-";
 			containerClass="Supply100";
@@ -212,6 +213,7 @@ class CfgVehicles
 	class SWLB_clone_backpack_heavy;
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
+	class EG_InvisBagMain;
 /////////ME
 	class JA_104th_Base_Malevolence_ARF : SWLB_clone_base_P1
 	{
@@ -313,32 +315,39 @@ class CfgVehicles
 			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa" // RTO
 		};
 	}
-	class JA_104th_RTO_Backpack_Invisible  : SWLB_clone_backpack_RTO
+	class JA_104th_RTO_Backpack_Invisible  : SWLB_clone_RTO_mini_backpack
 	{
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone trooper RTO backpack (Invisible)";
+		maximumLoad = 200;
+        picture = "\jfalogo.paa";
 		hiddenSelectionsTextures[] =
 		{
 			"", // don't change this
 			"", // don't change unless RTO
 			"", // Heavy
 			"", // Medic
-			"" // RTO
+			"", // RTO
+			""
 		};
 	}
-	class JA_104th_Backpack_Invisible  : SWLB_clone_backpack
+	class JA_104th_Backpack_Invisible : EG_InvisBagMain
 	{
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone trooper backpack (Invisible)";
+        picture = "\jfalogo.paa";
+		maximumLoad = 280;
+		mass='20';
 		hiddenSelectionsTextures[] =
 		{
 			"", // don't change this
 			"", // don't change unless RTO
 			"", // Heavy
 			"", // Medic
-			"" // RTO
+			"", // RTO
+			""
 		};
 	}
 };

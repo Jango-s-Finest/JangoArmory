@@ -54,7 +54,7 @@ class CfgWeapons
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;
-	class Vestitem;
+	class VestItem;
 
 	class JA_Prowler_P2_Base_NCO_Helmet : SWLB_clone_BARC_helmet
 	{

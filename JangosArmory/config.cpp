@@ -65,7 +65,7 @@ class CfgWeapons
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;
-	class Vestitem;
+	class VestItem;
 	
 	// General Uniforms
 	class JA_104th_ARF_Uniform : SWLB_clone_uniform
