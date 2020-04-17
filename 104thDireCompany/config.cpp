@@ -11,13 +11,13 @@ class CfgPatches
 	};
 };
 
-class cfgFactionClasses
+class CfgFactionClasses
 {
 	class 104th_Guys
 	{
 		displayname = "Jango's Finest";
-		priority = 3; // Position in list. 
-        side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+		priority = 1; // Position in list. 
+                side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
 	};
 };
 class cfgEditorSubcategories
@@ -61,6 +61,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper P2 Helmet (Captain Zivi)"; // the name it will be in game
@@ -96,6 +97,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper ARF Helmet (Dire P2)"; // the name it will be in game
@@ -131,6 +133,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper P2 Helmet (Dire P2)"; // the name it will be in game
@@ -167,6 +170,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper P2 medic Helmet (Dire P2)"; // the name it will be in game
@@ -204,6 +208,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper P1 Helmet (Captain Zivi - Blue)"; // the name it will be in game
@@ -239,6 +244,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper ARF Helmet (Dire Blue)"; // the name it will be in game
@@ -274,6 +280,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper P1 Helmet (Dire Blue)"; // the name it will be in game
@@ -310,6 +317,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper P1 medic Helmet (Dire Blue)"; // the name it will be in game
@@ -348,6 +356,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper Helmet (Captain Zivi - ME)"; // the name it will be in game
@@ -383,6 +392,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper ARF Helmet (Dire ME)"; // the name it will be in game
@@ -418,6 +428,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper Helmet (Dire ME)"; // the name it will be in game
@@ -454,6 +465,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper medic Helmet (Dire ME)"; // the name it will be in game
@@ -506,6 +518,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_P2_Base_Zivi_Uniform";
 		displayName = "P2 - Captain Zivi";
 		faction = "104th_Guys"
@@ -520,6 +533,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_P2_Base_ARF_Uniform";
 		displayName = "P2 - ARF";
 		faction = "104th_Guys"
@@ -534,6 +548,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_P2_Base_Uniform";
 		displayName = "P2 - Trooper";
 		faction = "104th_Guys"
@@ -548,6 +563,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_P2_Base_Medic_Uniform";
 		displayName = "P2 - Trooper Medic";
 		faction = "104th_Guys"
@@ -563,6 +579,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Zivi_Uniform";
 		displayName = "Blue - Captain Zivi";
 		faction = "104th_Guys"
@@ -577,6 +594,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_Blue_Base_ARF_Uniform";
 		displayName = "Blue - ARF";
 		faction = "104th_Guys"
@@ -591,6 +609,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Uniform";
 		displayName = "Blue - Trooper";
 		faction = "104th_Guys"
@@ -605,6 +624,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Medic_Uniform";
 		displayName = "Blue - Trooper Medic";
 		faction = "104th_Guys"
@@ -620,6 +640,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_Base_ME_Zivi_Uniform";
 		displayName = "ME - Captain Zivi";
 		faction = "104th_Guys"
@@ -634,6 +655,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_Base_ME_ARF_Uniform";
 		displayName = "ME - ARF";
 		faction = "104th_Guys"
@@ -648,6 +670,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_Base_ME_Uniform";
 		displayName = "ME - Trooper";
 		faction = "104th_Guys"
@@ -662,6 +685,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Dire_Base_ME_Medic_Uniform";
 		displayName = "ME - Trooper Medic";
 		faction = "104th_Guys"

@@ -13,13 +13,13 @@ class CfgPatches
 	};
 };
 
-class cfgFactionClasses
+class CfgFactionClasses
 {
 	class 104th_Guys
 	{
 		displayname = "Jango's Finest";
-		priority = 3; // Position in list. 
-        side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+		priority = 1; // Position in list. 
+                side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
 	};
 };
 class cfgEditorSubcategories
@@ -65,6 +65,7 @@ class CfgWeapons
 	{
 		author = "Emmet"
 			scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Cadet Helmet (Yellow)"; // the name it will be in game
@@ -75,6 +76,7 @@ class CfgWeapons
 	{
 		author = "Emmet"
 			scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Cadet Helmet (Red)"; // the name it will be in game
@@ -85,6 +87,7 @@ class CfgWeapons
 	{
 		author = "Emmet"
 			scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Cadet Helmet (Blue)"; // the name it will be in game
@@ -95,6 +98,7 @@ class CfgWeapons
 	{
 		author = "Emmet"
 			scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Cadet Helmet (Green)"; // the name it will be in game
@@ -623,30 +627,59 @@ class CfgWeapons
 
 	//104th
 
-	class JA_104th_Dragon_Helmet : SWLB_clone_AB_Helmet
+	class JA_104th_Dragon_Helmet : SWLB_clone_P2_Helmet
 	{
-		author = "Tundra";
+		author = "Dak";
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // dont change this
 		displayName = "Clone trooper AB Helmet (104th Dragon)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Dragon_AB_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_P2_Dragon_Helmet.paa" }; // the file path to the texture
+	};
+	
+	class JA_104th_Dragon_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak"
+			scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Dragon)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory2\data\Textures\104th_P2_Dragon_Upper.paa",
+			"JangosArmory2\data\Textures\104th_P2_Dragon_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Dragon";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
 	};
 
 	class JA_104th_Beans_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // dont change this
 		displayName = "Clone trooper ARF P1 Helmet (104th Beans)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Beans_ARF_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_ARF_Beans_Helmet.paa" }; // the file path to the texture
 	};
 
 	class JA_104th_Black_Helmet : SWLB_clone_P2_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // dont change this
 		displayName = "Clone trooper P2 Helmet (104th Black)"; // the name it will be in game
@@ -665,7 +698,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_Beans_Uniform";
+			uniformClass = "JA_104th_Beans";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -690,7 +723,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_Black_Uniform";
+			uniformClass = "JA_104th_Black";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -711,6 +744,7 @@ class CfgVehicles
 		author = "Emmet"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Yellow 1";
 		uniformClass = "JA_Cadet_Yellow1_Uniform";
 		faction = "104th_Guys"
@@ -726,6 +760,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Yellow 2";
 		uniformClass = "JA_Cadet_Yellow2_Uniform";
 		faction = "104th_Guys"
@@ -741,6 +776,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Yellow 3";
 		uniformClass = "JA_Cadet_Yellow3_Uniform";
 		faction = "104th_Guys"
@@ -756,6 +792,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Yellow 4";
 		uniformClass = "JA_Cadet_Yellow4_Uniform";
 		faction = "104th_Guys"
@@ -771,6 +808,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Yellow 5";
 		uniformClass = "JA_Cadet_Yellow5_Uniform";
 		faction = "104th_Guys"
@@ -786,6 +824,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Red 1";
 		uniformClass = "JA_Cadet_Red1_Uniform";
 		faction = "104th_Guys"
@@ -801,6 +840,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Red 2";
 		uniformClass = "JA_Cadet_Red2_Uniform";
 		faction = "104th_Guys"
@@ -816,6 +856,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Red 3";
 		uniformClass = "JA_Cadet_Red3_Uniform";
 		faction = "104th_Guys"
@@ -831,6 +872,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Red 4";
 		uniformClass = "JA_Cadet_Red4_Uniform";
 		faction = "104th_Guys"
@@ -846,6 +888,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Red 5";
 		uniformClass = "JA_Cadet_Red5_Uniform";
 		faction = "104th_Guys"
@@ -861,6 +904,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Blue 1";
 		uniformClass = "JA_Cadet_Blue1_Uniform";
 		faction = "104th_Guys"
@@ -876,6 +920,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Blue 2";
 		uniformClass = "JA_Cadet_Blue2_Uniform";
 		faction = "104th_Guys"
@@ -891,6 +936,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Blue 3";
 		uniformClass = "JA_Cadet_Blue3_Uniform";
 		faction = "104th_Guys"
@@ -906,6 +952,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Blue 4";
 		uniformClass = "JA_Cadet_Blue4_Uniform";
 		faction = "104th_Guys"
@@ -921,6 +968,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Blue 5";
 		uniformClass = "JA_Cadet_Blue5_Uniform";
 		faction = "104th_Guys"
@@ -936,6 +984,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Green 1";
 		uniformClass = "JA_Cadet_Green1_Uniform";
 		faction = "104th_Guys"
@@ -951,6 +1000,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Green 2";
 		uniformClass = "JA_Cadet_Green2_Uniform";
 		faction = "104th_Guys"
@@ -966,6 +1016,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Green 3";
 		uniformClass = "JA_Cadet_Green3_Uniform";
 		faction = "104th_Guys"
@@ -981,6 +1032,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Green 4";
 		uniformClass = "JA_Cadet_Green4_Uniform";
 		faction = "104th_Guys"
@@ -996,6 +1048,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Cadet Green 5";
 		uniformClass = "JA_Cadet_Green5_Uniform";
 		faction = "104th_Guys"
@@ -1006,31 +1059,33 @@ class CfgVehicles
 		respawnLinkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
 
-	class JA_104th_Beans_Uniform : SWLB_clone_base_P2
+	class JA_104th_Beans : SWLB_clone_base_P2
 	{
 		author = "Tundra"
 			scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        side = 1;
 		displayName = "104th Beans";
 		uniformClass = "JA_104th_Beans_Uniform";
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory2\data\Textures\104th_Beans_Upper.paa",
-			"JangosArmory2\data\Textures\104th_Beans_Lower.paa"
+			"JangosArmory2\data\Textures\104th_ARF_Beans_Upper.paa",
+			"JangosArmory2\data\Textures\104th_ARF_Beans_Lower.paa"
 		};
 		linkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
-	class JA_104th_Black_Uniform : SWLB_clone_base_P2
+	class JA_104th_Black : SWLB_clone_base_P2
 	{
 		author = "Tundra"
 			scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "104th Beans";
+        side = 1;
+		displayName = "104th Black";
 		uniformClass = "JA_104th_Black_Uniform";
 		faction = "104th_Guys"
 		editorSubcategory = "104th_Categ_Clones";
@@ -1041,6 +1096,25 @@ class CfgVehicles
 		};
 		linkedItems[] = { JA_104th_Black_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Black_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Dragon : SWLB_clone_base_P2
+	{
+		author = "Dak"
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        side = 1;
+		displayName = "104th Dragon";
+		uniformClass = "JA_104th_Dragon_Uniform";
+		faction = "104th_Guys"
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory2\data\Textures\104th_P2_Dragon_Upper.paa",
+			"JangosArmory2\data\Textures\104th_P2_Dragon_Lower.paa"
+		};
+		linkedItems[] = { JA_104th_Dragon_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Dragon_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 
 };

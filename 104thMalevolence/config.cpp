@@ -11,12 +11,12 @@ class CfgPatches
 	};
 };
 
-class cfgFactionClasses
+class CfgFactionClasses
 {
 	class 104th_Guys
 	{
 		displayname = "Jango's Finest";
-		priority = 3; // Position in list. 
+		priority = 1; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
 	};
 };
@@ -60,6 +60,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper ARF Helmet (Malevolence)"; // the name it will be in game
@@ -94,6 +95,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper Helmet (Malevolence)"; // the name it will be in game
@@ -128,6 +130,7 @@ class CfgWeapons
 	{
 		author = "Dak"
 		scopeArsenal = 2;
+        side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone trooper medic Helmet (Malevolence)"; // the name it will be in game
@@ -220,44 +223,44 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Malevolence_Base_ARF_Uniform";
 		displayName = "ME - ARF";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_ARF_Upper.paa", "104thMalevolence\data\Textures\104th_ARF_Lower.paa"};
 		linkedItems[] = {JA_Malevolence_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Malevolence_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
-	class JA_104th_Base_Malevolence : SWLB_clone_base_P1
+	};	class JA_104th_Base_Malevolence : SWLB_clone_base_P1
 	{
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Malevolence_Base_Uniform";
 		displayName = "ME - Trooper";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_Trooper_Upper.paa", "104thMalevolence\data\Textures\104th_Trooper_Lower.paa"};
 		linkedItems[] = {JA_Malevolence_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Malevolence_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
-	class JA_104th_Base_Malevolence_Medic : SWLB_clone_base_P1
+	};	class JA_104th_Base_Malevolence_Medic : SWLB_clone_base_P1
 	{
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+        side = 1;
 		uniformClass = "JA_Malevolence_Base_Medic_Uniform";
 		displayName = "ME - Trooper Medic";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_Medic_Upper.paa", "104thMalevolence\data\Textures\104th_Trooper_Lower.paa"};
 		linkedItems[] = {JA_Malevolence_Base_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Malevolence_Base_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
-////////Final
+	};////////Final
 	class JA_104th_Backpack_Malevolence  : SWLB_clone_backpack
 	{
 		author = "Tundra";
@@ -272,8 +275,7 @@ class CfgVehicles
 			"", // Medic
 			"" // RTO
 		};
-	}
-	class JA_104th_Heavy_Backpack_Malevolence  : SWLB_clone_backpack_heavy
+	};	class JA_104th_Heavy_Backpack_Malevolence  : SWLB_clone_backpack_heavy
 	{
 		author = "Tundra";
 		scopeCurator = 2;
@@ -286,8 +288,7 @@ class CfgVehicles
 			"", // Medic
 			"" // RTO
 		};
-	}
-	class JA_104th_Medic_Backpack_Malevolence  : SWLB_clone_backpack_medic
+	};	class JA_104th_Medic_Backpack_Malevolence  : SWLB_clone_backpack_medic
 	{
 		author = "Tundra";
 		scopeCurator = 2;
@@ -300,8 +301,7 @@ class CfgVehicles
 			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // Medic
 			"" // RTO
 		};
-	}
-	class JA_104th_RTO_Backpack_Malevolence  : SWLB_clone_backpack_RTO
+	};	class JA_104th_RTO_Backpack_Malevolence  : SWLB_clone_backpack_RTO
 	{
 		author = "Tundra";
 		scopeCurator = 2;
@@ -314,8 +314,7 @@ class CfgVehicles
 			"", // Medic
 			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa" // RTO
 		};
-	}
-	class JA_104th_RTO_Backpack_Invisible  : SWLB_clone_RTO_mini_backpack
+	};	class JA_104th_RTO_Backpack_Invisible  : SWLB_clone_RTO_mini_backpack
 	{
 		author = "Tundra";
 		scopeCurator = 2;
@@ -331,8 +330,7 @@ class CfgVehicles
 			"", // RTO
 			""
 		};
-	}
-	class JA_104th_Backpack_Invisible : EG_InvisBagMain
+	};	class JA_104th_Backpack_Invisible : EG_InvisBagMain
 	{
 		author = "Tundra";
 		scopeCurator = 2;
@@ -349,5 +347,4 @@ class CfgVehicles
 			"", // RTO
 			""
 		};
-	}
-};
+	};};
