@@ -546,7 +546,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true
 			hiddenSelections[] = { "camo1" }; // dont change thise
 		displayName = "Clone Airborne Helmet (104th Bravo)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Bravo_Helmet.paa" }; // The file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_Bravo_Helmet.paa" }; // The file path to the texture
 	};
 
 	// Pilots Helmets
