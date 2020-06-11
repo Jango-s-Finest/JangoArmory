@@ -64,10 +64,21 @@ class CfgWeapons
 	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
+	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104th_Crash_Helmet : SWLB_P2_SpecOps_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Special Activities Helmet (104th Crash)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_SpecOps_Crash_Helmet.paa" }; // the file path to the texture
+	};
 	class JA_104th_Spectre_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Dak";
@@ -369,12 +380,16 @@ class CfgWeapons
 		hiddenSelections[] =
 		{
 			"camo1",
-			"camo2"
+			"camo2",
+			"camo3",
+			"camo4"
 		};
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa",
-			"JangosArmory3\data\Textures\104th_ARF_Ice_Lower.paa"
+			"JangosArmory3\data\Textures\104th_ARF_Ice_Lower.paa",
+			"JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa",
+			""
 		};
 		class ItemInfo : UniformItem
 		{
@@ -638,7 +653,7 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_P1_Gunney_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_P1_Gunney_Ice_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
-	class JA_104th_ARF_Ice : SWLB_clone_base_P2
+	class JA_104th_ARF_Ice : SWLB_clone_marshal_commander_base_P2
 	{
 		author = "Tundra"
 		scope = 2;
@@ -648,8 +663,8 @@ class CfgVehicles
 		displayName = "104th Arf Ice";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa", "JangosArmory3\data\Textures\104th_ARF_Ice_Lower.paa"};
+		hiddenSelections[] = { "camo1", "camo2","camo3","camo4" };
+		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa", "JangosArmory3\data\Textures\104th_ARF_Ice_Lower.paa","JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa",""};
 		linkedItems[] = { JA_104th_ARF_Ice_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_ARF_Ice_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
