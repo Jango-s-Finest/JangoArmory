@@ -69,6 +69,31 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104th_Red_Uniform : SWLB_clone_uniform
+	{
+		author = "Ice";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Red)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory3\data\Textures\104th_AB_Red_Upper.paa",
+			"JangosArmory3\data\Textures\104th_AB_Red_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Red";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Hiro_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Ice";
@@ -748,6 +773,21 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
 	// General Uniforms
+	class JA_104th_Waffle : SWLB_clone_base_P2
+	{
+		author = "Ice"
+		scope = 2;
+		scopeArsenal = 2;
+        side = 1;
+		uniformClass = "JA_104th_Red_Uniform";
+		displayName = "104th AB Red";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Red_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Red_Lower.paa"};
+		linkedItems[] = { JA_104th_Red_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Red_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};	
 	class JA_104th_Waffle : SWLB_clone_base_P2
 	{
 		author = "Ice"
