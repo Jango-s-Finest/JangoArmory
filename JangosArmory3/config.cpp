@@ -69,6 +69,31 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104th_Fenrir_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Fenrir)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory3\data\Textures\104th_ARF_Fenrir_Upper.paa",
+			"JangosArmory3\data\Textures\104th_ARF_Fenrir_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Fenrir";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Crash_Helmet : SWLB_P2_SpecOps_Helmet
 	{
 		author = "Dak";
@@ -195,15 +220,15 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Fenrir_Helmet : SWLB_clone_AB_helmet
+	class JA_104th_Fenrir_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Fenrir)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_AB_Fenrir_Helmet.paa" }; // the file path to the texture
+		displayname = "Clone Trooper ARF Helmet (104th Fenrir)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARF_Fenrir_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Niner_Helmet : SWLB_clone_AB_helmet
 	{
@@ -623,6 +648,21 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
 	// General Uniforms
+	class JA_104th_Fenrir : SWLB_clone_base_P2
+	{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+        side = 1;
+		uniformClass = "JA_104th_Fenrir_Uniform";
+		displayName = "104th ARF Fenrir";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_ARF_Fenrir_Upper.paa", "JangosArmory3\data\Textures\104th_ARF_Fenrir_Lower.paa"};
+		linkedItems[] = { JA_104th_Fenrir_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Fenrir_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};	
 	class JA_104th_Paraso : SWLB_clone_base_P2
 	{
 		author = "Dak"
