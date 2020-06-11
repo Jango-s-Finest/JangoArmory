@@ -843,6 +843,7 @@ class CfgVehicles
 	class SWLB_clone_backpack_heavy;
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
+	class JLTS_Clone_jumppack;
 	// General Uniforms
 	class JA_104th_JTAC : SWLB_clone_base_P2
 	{
@@ -1134,5 +1135,13 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Spectre_Lower.paa"};
 		linkedItems[] = { JA_104th_Spectre_Vest,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Spectre_Vest,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Jumppack : JLTS_Clone_jumppack
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper jumppack";
+		RD501_jumppack_energy_capacity = 100;
 	};	
 };
