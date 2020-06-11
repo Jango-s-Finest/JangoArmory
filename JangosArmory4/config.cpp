@@ -70,6 +70,22 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104th_Crowbi_NVG_NCO : SWLB_clone_nvg_nco
+	{
+		author = "Ice";
+		displayName = "Clone NVG NCO Visor (104th Crowbi)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_ARC_Crowbi_NVG.paa",
+			"JangosArmory4\data\Textures\104th_ARC_Crowbi_NVG.paa"
+		};
+	};
 	class JA_104th_Hunter_NVG_NCO : SWLB_clone_nvg_nco
 	{
 		author = "Ice";
