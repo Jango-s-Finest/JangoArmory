@@ -70,6 +70,41 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104th_Beans_Helmet : SWLB_clone_ARF_P1_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper ARF Helmet (104th Beans)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_ARF_Beans_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Beans_Uniform : SWLB_clone_uniform
+	{
+		author = "Ice";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Beans)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_ARF_Beans_Upper.paa",
+			"JangosArmory4\data\Textures\104th_ARF_Beans_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Beans";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_IQ_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
 		author = "Dak";
@@ -118,6 +153,22 @@ class CfgVehicles
 	class SWLB_clone_backpack_RTO;
 	class JLTS_Clone_jumppack;
 	// General Uniforms
+	class JA_104th_Beans : SWLB_clone_base_P2
+	{
+		author = "Ice"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Beans_Uniform";
+		displayName = "104th Base Beans";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_Basic";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_ARF_Beans_Upper.paa", "JangosArmory4\data\Textures\104th_ARF_Beans_Lower.paa"};
+		linkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};	
 	class JA_104th_IQ : SWLB_clone_base_P2
 	{
 		author = "Ice"
