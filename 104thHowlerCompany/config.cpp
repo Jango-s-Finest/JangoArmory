@@ -13,12 +13,16 @@ class CfgPatches
 
 class CfgFactionClasses
 {
+	class CfgFactionClasses
+{
 	class 104th_Guys
 	{
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+		icon = "";
 	};
+};
 };
 class cfgEditorSubcategories
 {
@@ -761,6 +765,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Kaleb_Uniform";
 		displayName = "Blue - Kaleb";
@@ -775,6 +780,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_NCO_Uniform";
 		displayName = "Blue - NCO";
@@ -789,6 +795,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Officer_Uniform";
 		displayName = "Blue - Officer";
@@ -803,6 +810,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Kaleb_Uniform";
 		displayName = "P2 - Kaleb";
@@ -817,6 +825,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_NCO_Uniform";
 		displayName = "P2 - NCO";
@@ -831,6 +840,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Officer_Uniform";
 		displayName = "P2 - Officer";
@@ -845,6 +855,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Kaleb_Uniform";
 		displayName = "ME - Kaleb";
@@ -859,6 +870,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_NCO_Uniform";
 		displayName = "ME - NCO";
@@ -873,6 +885,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Officer_Uniform";
 		displayName = "ME - Officer";
@@ -888,6 +901,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Paak_Uniform";
 		displayName = "ME - Paak";
@@ -903,6 +917,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Paak_Uniform";
 		displayName = "P2 - Paak";
@@ -918,6 +933,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Paak_Uniform";
 		displayName = "Blue - Paak";
@@ -933,6 +949,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Trooper_Uniform";
 		displayName = "ME - Trooper";
@@ -948,6 +965,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Trooper_Uniform";
 		displayName = "P2 - Trooper";
@@ -963,6 +981,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Trooper_Uniform";
 		displayName = "Blue - Trooper";
@@ -978,6 +997,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Medic_Uniform";
 		displayName = "ME - Medic";
@@ -993,6 +1013,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Medic_Uniform";
 		displayName = "P2 - Medic";
@@ -1008,6 +1029,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Medic_Uniform";
 		displayName = "Blue - Medic";

@@ -13,12 +13,16 @@ class CfgPatches
 
 class CfgFactionClasses
 {
+	class CfgFactionClasses
+{
 	class 104th_Guys
 	{
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+		icon = "";
 	};
+};
 };
 class cfgEditorSubcategories
 {
@@ -223,6 +227,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Malevolence_Base_ARF_Uniform";
 		displayName = "ME - ARF";
@@ -237,6 +242,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Malevolence_Base_Uniform";
 		displayName = "ME - Trooper";
@@ -251,6 +257,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Malevolence_Base_Medic_Uniform";
 		displayName = "ME - Trooper Medic";

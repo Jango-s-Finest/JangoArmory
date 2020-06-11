@@ -6,7 +6,26 @@ class CfgPatches
 	class Jangos_Armory
 	{
 		author = "Jango's Finest";
-		units[] = {};
+		units[] = {
+			"JA_104th_Spectre",
+			"JA_104th_Warpath",
+			"JA_104th_Frosty",
+			"JA_332nd_Chich",
+			"JA_104th_Dak",
+			"JA_Quick",
+			"JA_104th_Carmine",
+			"JA_104th_ARFMedic",
+			"JA_104th_ARF",
+			"JA_104th_ARF_Ice",
+			"JA_104th_P1_Gunney",
+			"JA_104th_Paraso",
+			"JA_104th_Fenrir",
+			"JA_104th_Salty",
+			"JA_104th_Waffle",
+			"JA_104th_Red",
+			"JA_104th_Crowbi",
+			"JA_104th_JTAC"
+		};
 		weapons[] = {};
 	};
 };
@@ -18,6 +37,7 @@ class CfgFactionClasses
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+		icon = "";
 	};
 };
 class cfgEditorSubcategories
@@ -848,11 +868,12 @@ class CfgVehicles
 		author = "Ice"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_JTAC_Uniform";
 		displayName = "104th Base JTAC";
 		faction = "104th_Guys";
-		editorSubcategory = "104th_categ_clones";
+		editorSubcategory = "104th_categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa", "JangosArmory3\data\Textures\104th_JTAC_Base_Lower.paa"};
 		linkedItems[] = { JA_104th_JTAC_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
@@ -863,6 +884,7 @@ class CfgVehicles
 		author = "Ice"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Crowbi_Uniform";
 		displayName = "104th ARC Crowbi";
@@ -878,6 +900,7 @@ class CfgVehicles
 		author = "Ice"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Red_Uniform";
 		displayName = "104th AB Red";
@@ -893,6 +916,7 @@ class CfgVehicles
 		author = "Ice"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Waffle_Uniform";
 		displayName = "104th AB Waffle";
@@ -908,6 +932,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Salty_Uniform";
 		displayName = "104th P2 Salty";
@@ -923,6 +948,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Fenrir_Uniform";
 		displayName = "104th ARF Fenrir";
@@ -938,6 +964,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Paraso_Uniform";
 		displayName = "104th P1 Paraso";
@@ -953,6 +980,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_P1_Gunney_Uniform";
 		displayName = "104th P1 Gunney";
@@ -968,6 +996,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_ARF_Ice_Uniform";
 		displayName = "104th Arf Ice";
@@ -983,6 +1012,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_ARF_Uniform";
 		displayName = "104th Arf";
@@ -998,6 +1028,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_ARFMedic_Uniform";
 		displayName = "104th Arf Medic";
@@ -1015,6 +1046,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Carmine_Uniform";
 		displayName = "104th Carmine";
@@ -1030,6 +1062,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Dak_Uniform";
 		displayName = "104th Dak";
@@ -1045,6 +1078,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Quick_Uniform";
 		displayName = "104th Quick";
@@ -1060,6 +1094,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_302nd_Chich_Uniform";
 		displayName = "332nd Chich";
@@ -1075,6 +1110,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Frosty_Uniform";
 		displayName = "104th Frosty";
@@ -1090,6 +1126,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Warpath_Uniform";
 		displayName = "104th Warpath";
@@ -1105,6 +1142,8 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
+		vehicleClass = "Men";
         side = 1;
 		uniformClass = "JA_104th_Spectre_Uniform";
 		displayName = "104th Spectre";

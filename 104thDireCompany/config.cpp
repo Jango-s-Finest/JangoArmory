@@ -518,6 +518,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_P2_Base_Zivi_Uniform";
 		displayName = "P2 - Captain Zivi";
@@ -533,6 +534,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_P2_Base_ARF_Uniform";
 		displayName = "P2 - ARF";
@@ -548,6 +550,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_P2_Base_Uniform";
 		displayName = "P2 - Trooper";
@@ -563,6 +566,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_P2_Base_Medic_Uniform";
 		displayName = "P2 - Trooper Medic";
@@ -579,6 +583,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Zivi_Uniform";
 		displayName = "Blue - Captain Zivi";
@@ -594,6 +599,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Blue_Base_ARF_Uniform";
 		displayName = "Blue - ARF";
@@ -609,6 +615,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Uniform";
 		displayName = "Blue - Trooper";
@@ -624,6 +631,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Medic_Uniform";
 		displayName = "Blue - Trooper Medic";
@@ -640,6 +648,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Base_ME_Zivi_Uniform";
 		displayName = "ME - Captain Zivi";
@@ -655,6 +664,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Base_ME_ARF_Uniform";
 		displayName = "ME - ARF";
@@ -670,6 +680,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Base_ME_Uniform";
 		displayName = "ME - Trooper";
@@ -685,6 +696,7 @@ class CfgVehicles
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Base_ME_Medic_Uniform";
 		displayName = "ME - Trooper Medic";

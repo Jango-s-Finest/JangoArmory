@@ -13,12 +13,16 @@ class CfgPatches
 
 class CfgFactionClasses
 {
+	class CfgFactionClasses
+{
 	class 104th_Guys
 	{
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+		icon = "";
 	};
+};
 };
 class cfgEditorSubcategories
 {
@@ -713,6 +717,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Bail_Uniform";
 		displayName = "104th Bail";
@@ -729,6 +734,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		scopeCurator = 2;
 		displayName = "104th Irish";
@@ -747,6 +753,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		scopeCurator = 2;
 		displayName = "104th Scurvy";
@@ -764,6 +771,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Sixxer_Uniform";
 		displayName = "104th Sixxer";
@@ -779,6 +787,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Hunter_Uniform";
 		displayName = "104th Hunter";
@@ -795,6 +804,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Banker_Uniform";
 		displayName = "104th Banker";
@@ -811,6 +821,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Ed_Uniform";
 		displayName = "104th Ed";
@@ -826,6 +837,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Angel_Uniform";
 		displayName = "104th Angel";
@@ -842,6 +854,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Knightfall_Uniform";
 		displayName = "104th Knightfall";
@@ -857,6 +870,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Tusk_Uniform";
 		displayName = "104th Tusk";
@@ -872,6 +886,7 @@ class CfgVehicles
 		author = "Tundra"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Echo_Uniform";
 		displayName = "104th Echo";

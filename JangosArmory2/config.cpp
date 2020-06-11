@@ -744,6 +744,7 @@ class CfgVehicles
 		author = "Emmet"
 		scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Yellow 1";
 		uniformClass = "JA_Cadet_Yellow1_Uniform";
@@ -760,6 +761,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Yellow 2";
 		uniformClass = "JA_Cadet_Yellow2_Uniform";
@@ -776,6 +778,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Yellow 3";
 		uniformClass = "JA_Cadet_Yellow3_Uniform";
@@ -792,6 +795,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Yellow 4";
 		uniformClass = "JA_Cadet_Yellow4_Uniform";
@@ -808,6 +812,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Yellow 5";
 		uniformClass = "JA_Cadet_Yellow5_Uniform";
@@ -824,6 +829,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Red 1";
 		uniformClass = "JA_Cadet_Red1_Uniform";
@@ -840,6 +846,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Red 2";
 		uniformClass = "JA_Cadet_Red2_Uniform";
@@ -856,6 +863,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Red 3";
 		uniformClass = "JA_Cadet_Red3_Uniform";
@@ -872,6 +880,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Red 4";
 		uniformClass = "JA_Cadet_Red4_Uniform";
@@ -888,6 +897,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Red 5";
 		uniformClass = "JA_Cadet_Red5_Uniform";
@@ -904,6 +914,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Blue 1";
 		uniformClass = "JA_Cadet_Blue1_Uniform";
@@ -920,6 +931,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Blue 2";
 		uniformClass = "JA_Cadet_Blue2_Uniform";
@@ -936,6 +948,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Blue 3";
 		uniformClass = "JA_Cadet_Blue3_Uniform";
@@ -952,6 +965,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Blue 4";
 		uniformClass = "JA_Cadet_Blue4_Uniform";
@@ -968,6 +982,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Blue 5";
 		uniformClass = "JA_Cadet_Blue5_Uniform";
@@ -984,6 +999,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Green 1";
 		uniformClass = "JA_Cadet_Green1_Uniform";
@@ -1000,6 +1016,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Green 2";
 		uniformClass = "JA_Cadet_Green2_Uniform";
@@ -1016,6 +1033,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Green 3";
 		uniformClass = "JA_Cadet_Green3_Uniform";
@@ -1032,6 +1050,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Green 4";
 		uniformClass = "JA_Cadet_Green4_Uniform";
@@ -1048,6 +1067,7 @@ class CfgVehicles
 		author = "Emmet"
 			scope = 2;
 		scopeArsenal = 2;
+		scopeCurator = 2;
         side = 1;
 		displayName = "104th Cadet Green 5";
 		uniformClass = "JA_Cadet_Green5_Uniform";
