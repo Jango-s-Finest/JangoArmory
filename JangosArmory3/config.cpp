@@ -69,9 +69,44 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104th_Hunter_Uniform : SWLB_clone_uniform
+	{
+		author = "Ice";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Hunter)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory3\data\Textures\104th_ARC_Hunter_Upper.paa",
+			"JangosArmory3\data\Textures\104th_ARC_Hunter_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Hunter";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Hunter_Helmet : SWLB_clone_P15_Helmet
+	{
+		author = "Ice";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Hunter)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARC_Hunter_Helmet.paa" }; // the file path to the texture
+	};
 	class JA_104th_Warpath_Helmet : SWLB_clone_AB_helmet
 	{
-		author = "Dak";
+		author = "Ice";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -81,7 +116,7 @@ class CfgWeapons
 	};
 	class JA_104th_Waffle_Helmet : SWLB_clone_AB_helmet
 	{
-		author = "Dak";
+		author = "Ice";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -116,7 +151,7 @@ class CfgWeapons
 	};
 	class JA_104th_Salty_Helmet : SWLB_clone_P2_helmet
 	{
-		author = "Dak";
+		author = "Ice";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -126,7 +161,7 @@ class CfgWeapons
 	};
 	class JA_104th_Salty_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";
+		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Salty)";
@@ -151,7 +186,7 @@ class CfgWeapons
 	};
 	class JA_104th_Firefox_Helmet : SWLB_clone_P2_helmet
 	{
-		author = "Dak";
+		author = "Ice";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -161,7 +196,7 @@ class CfgWeapons
 	};
 	class JA_104th_Fenrir_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";
+		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Fenrir)";
