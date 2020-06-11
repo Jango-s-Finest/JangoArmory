@@ -195,8 +195,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_Hunter_Upper.paa",
-			"JangosArmory\data\Textures\104th_Hunter_Lower.paa"
+			"JangosArmory3\data\Textures\104th_ARC_Hunter_Upper.paa",
+			"JangosArmory3\data\Textures\104th_ARC_Hunter_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -599,15 +599,15 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_P2_Sixxer_Helmet.paa" }; // the file path to the texture
 	};
 
-	class JA_104th_Hunter_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_Hunter_Helmet : SWLB_clone_P15_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper ARF P1 Helmet (104th Hunter)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Hunter_ARF_Helmet.paa" }; // the file path to the texture
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Hunter)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARC_Hunter_Helmet.paa" }; // the file path to the texture
 	};
 
 	//1-4 Helmets
@@ -785,7 +785,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Hunter_Upper.paa", "JangosArmory\data\Textures\104th_Hunter_Lower.paa" };
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARC_Hunter_Upper.paa", "JangosArmory3\data\Textures\104th_ARC_Hunter_Lower.paa" };
 		linkedItems[] = { JA_104th_Hunter_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Hunter_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
