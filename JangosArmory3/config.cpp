@@ -69,6 +69,41 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104th_Waffle_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Airborne Helmet (104th Waffle)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_AB_Waffle_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Waffle_Uniform : SWLB_clone_uniform
+	{
+		author = "Ice";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Waffle)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory3\data\Textures\104th_AB_Waffle_Upper.paa",
+			"JangosArmory3\data\Textures\104th_AB_Waffle_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Waffle";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Salty_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Dak";
@@ -693,6 +728,21 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
 	// General Uniforms
+	class JA_104th_Waffle : SWLB_clone_base_P2
+	{
+		author = "Ice"
+		scope = 2;
+		scopeArsenal = 2;
+        side = 1;
+		uniformClass = "JA_104th_Waffle_Uniform";
+		displayName = "104th AB Waffle";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Waffle_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Waffle_Lower.paa"};
+		linkedItems[] = { JA_104th_Waffle_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Waffle_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};	
 	class JA_104th_Salty : SWLB_clone_base_P2
 	{
 		author = "Dak"
