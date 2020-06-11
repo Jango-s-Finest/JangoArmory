@@ -70,9 +70,43 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104thNVG : SWLB_clone_nvg_nco
+	{
+		author = "Ice";
+		displayName = "Clone NVG Visor (104th Crowbi)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_ARC_Crowbi_NVG.paa",
+			""
+		};
+	};
+	class JA_104thCrowbiVest : SWLB_clone_arc_armor
+	{
+		author = "Ice";
+		displayName = "Clone ARC Trooper Vest (104th Crowbi)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_ARC_Crowbi_Vest.paa",
+			"JangosArmory4\data\Textures\104th_ARC_Crowbi_Pauldron.paa"
+		};
+		vestType="Rebreather";	
+	};
 	class JA_104th_Beans_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
-		author = "Dak";
+		author = "Ice";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -107,7 +141,7 @@ class CfgWeapons
 	};
 	class JA_104th_IQ_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
-		author = "Dak";
+		author = "Ice";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
