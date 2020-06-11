@@ -736,7 +736,6 @@ class CfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		scopeCurator = 2;
 		displayName = "104th Irish";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
@@ -755,7 +754,6 @@ class CfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		scopeCurator = 2;
 		displayName = "104th Scurvy";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";

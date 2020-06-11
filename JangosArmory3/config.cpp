@@ -6,26 +6,7 @@ class CfgPatches
 	class Jangos_Armory
 	{
 		author = "Jango's Finest";
-		units[] = {
-			"JA_104th_Spectre",
-			"JA_104th_Warpath",
-			"JA_104th_Frosty",
-			"JA_332nd_Chich",
-			"JA_104th_Dak",
-			"JA_Quick",
-			"JA_104th_Carmine",
-			"JA_104th_ARFMedic",
-			"JA_104th_ARF",
-			"JA_104th_ARF_Ice",
-			"JA_104th_P1_Gunney",
-			"JA_104th_Paraso",
-			"JA_104th_Fenrir",
-			"JA_104th_Salty",
-			"JA_104th_Waffle",
-			"JA_104th_Red",
-			"JA_104th_Crowbi",
-			"JA_104th_JTAC"
-		};
+		units[] = {};
 		weapons[] = {};
 	};
 };
