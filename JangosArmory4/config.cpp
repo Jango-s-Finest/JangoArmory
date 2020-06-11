@@ -70,7 +70,41 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
-	class JA_104thCrowbiVest : SWLB_clone_arc_armor
+	class JA_104th_Hunter_NVG_NCO : SWLB_clone_nvg_nco
+	{
+		author = "Ice";
+		displayName = "Clone NVG NCO Visor (104th Hunter)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_ARC_Hunter_Rangefinder.paa",
+			"JangosArmory4\data\Textures\104th_ARC_Hunter_Rangefinder.paa"
+		};
+	};
+	class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
+	{
+		author = "Ice";
+		displayName = "Clone ARC Trooper Vest (104th Hunter)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_ARC_Hunter_Vest.paa",
+			"JangosArmory4\data\Textures\104th_ARC_Hunter_Accessories.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_Crowbi_Vest : SWLB_clone_arc_armor
 	{
 		author = "Ice";
 		displayName = "Clone ARC Trooper Vest (104th Crowbi)";
