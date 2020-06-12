@@ -88,24 +88,6 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
-	class JA_104th_ME_Vest : SWLB_clone_arc_armor
-	{
-		author = "Ice";
-		displayName = "Clone Trooper Captain Vest (104th Malevolence)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"",
-			"JangosArmory4\data\Textures\104th_ME_Pauldron_and_Kama.paa"
-		};
-		vestType="Rebreather";	
-	};
 	class JA_104th_Crowbi_NVG_NCO : SWLB_clone_nvg_nco
 	{
 		author = "Ice";

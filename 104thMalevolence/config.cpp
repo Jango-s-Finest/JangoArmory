@@ -60,6 +60,24 @@ class CfgWeapons
 	class Bag_Base;
 
 /////////////////////P1 Malevolence
+class JA_104th_ME_Vest : SWLB_clone_arc_armor
+	{
+		author = "Ice";
+		displayName = "Clone Trooper Captain Vest (104th Malevolence)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"",
+			"104thMalevolence\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+		};
+		vestType="Rebreather";	
+	};
 	class JA_Malevolence_Base_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
 		author = "Dak"
