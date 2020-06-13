@@ -226,8 +226,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_Banker_Upper.paa",
-			"JangosArmory\data\Textures\104th_Banker_Lower.paa"
+			"JangosArmory\data\Textures\104th_P2_Banker_Upper.paa",
+			"JangosArmory\data\Textures\104th_P2_Banker_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -623,7 +623,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper P2 Helmet (104th Banker)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Banker_P2_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_P2_Banker_Helmet.paa" }; // the file path to the texture
 	};
 	
 	class JA_104th_Red_Helmet : SWLB_clone_AB_helmet
@@ -809,7 +809,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_Banker_Upper.paa", "JangosArmory\data\Textures\104th_Banker_Lower.paa"};
+		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_P2_Banker_Upper.paa", "JangosArmory\data\Textures\104th_P2_Banker_Lower.paa"};
 		linkedItems[] = { JA_104th_Banker_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Banker_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
