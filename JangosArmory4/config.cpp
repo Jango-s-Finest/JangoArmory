@@ -11,7 +11,12 @@ class CfgPatches
 			"JA_104th_Beans",
 			"JA_104th_IQ"
 		};
-		weapons[] = {};
+		weapons[] = {
+			"JA_104th_Beans_Uniform",
+			"JA_104th_IQ_Uniform",
+			"JA_104th_Beans_Helmet",
+			"JA_104th_IQ_Helmet",
+		};
 	};
 };
 
