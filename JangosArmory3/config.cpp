@@ -844,6 +844,7 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
 	class JLTS_Clone_jumppack;
+	class JLTS_Clone_jumppack_mc;
 	// General Uniforms
 	class JA_104th_JTAC : SWLB_clone_base_P2
 	{
@@ -1143,5 +1144,13 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone trooper jumppack";
 		RD501_jumppack_energy_capacity = 100;
-	};	
+	};
+	class JA_104th_Jumppack_mc : JLTS_Clone_jumppack_mc
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone marshal commander jumppack";
+		RD501_jumppack_energy_capacity = 100;
+	};		
 };

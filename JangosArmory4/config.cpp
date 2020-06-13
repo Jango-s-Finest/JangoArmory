@@ -68,8 +68,217 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	
+	//hiddenSelectionsTextures[] = {"\SWLB_clones\data\heavy_accessories_co.paa","\SWLB_clones\data\officer_accessories_co.paa","\SWLB_clones\data\heavy_accessories_co.paa"};
+	//hiddenSelectionsTextures[] = {"SWLB_clones\data\heavy_accessories_co.paa","SWLB_clones\data\heavy_accessories_co.paa","SWLB_clones\data\officer_accessories_co.paa","SWLB_clones\data\officer_accessories_co.paa","SWLB_clones\data\heavy_accessories_co.paa"};
 	// General Uniforms
+	class JA_104th_AB_ME_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Officer vest (ME)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa", 
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_ME_officer_Vest : SWLB_clone_officer_armor
+	{
+		author = "Dak";
+		displayName = "Clone trooper Officer vest (ME)";
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_ME_Commander_Vest : SWLB_clone_commander_armor
+	{
+		author = "Dak";
+		displayName = "Clone trooper Commander vest (ME)";
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_AB_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Officer vest (104th)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa", 
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_Base_officer_Vest : SWLB_clone_officer_armor
+	{
+		author = "Dak";
+		displayName = "Clone trooper Officer vest (104th)";
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_Base_Commander_Vest : SWLB_clone_commander_armor
+	{
+		author = "Dak";
+		displayName = "Clone trooper Commander vest (104th)";
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_ME_Medic_Vest : SWLB_clone_medic_armor
+	{
+		author = "Dak";
+		displayName = "Clone trooper Medic vest (ME)";
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_AB_ME_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
+	{
+		author = "Dak";
+		displayName = "Clone Airborne NCO vest (ME)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", // Heavy
+			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa",
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa" //Heavy
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_AB_ME_Base_Trooper_Armor : SWLB_Clone_airborne_armor
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Trooper vest (ME)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", // Heavy
+			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa",
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa" //Heavy
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_Base_Medic_Vest : SWLB_clone_medic_armor
+	{
+		author = "Dak";
+		displayName = "Clone trooper Medic vest (104th)";
+		hiddenSelections[] =
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_AB_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
+	{
+		author = "Dak";
+		displayName = "Clone Airborne NCO vest (104th)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa",
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa" //Heavy
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Trooper vest (104th)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa",
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa" //Heavy
+		};
+		vestType="Rebreather";	
+	};
 	class JA_104th_Vest : SWLB_clone_arc_armor
 	{
 		author = "Ice";
