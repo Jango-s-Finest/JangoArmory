@@ -595,6 +595,7 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper ARF P1 Helmet (104th Ice)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARF_Ice_Helmet.paa" }; // the file path to the texture
+		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
 	class JA_104th_ARF_Ice_Uniform : SWLB_clone_mc_uniform
 	{
