@@ -70,7 +70,7 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
-	class JA_104th_JTAC_Uniform : SWLB_clone_uniform
+	class JA_104th_JTAC_Uniform : SWLB_clone_mc_uniform
 	{
 		author = "Ice";
 		scope = 2;
@@ -79,12 +79,16 @@ class CfgWeapons
 		hiddenSelections[] =
 		{
 			"camo1",
-			"camo2"
+			"camo2",
+			"camo3",
+			"camo4"
 		};
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa",
-			"JangosArmory3\data\Textures\104th_JTAC_Base_Lower.paa"
+			"JangosArmory3\data\Textures\104th_JTAC_Base_Lower.paa",
+			"JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa",
+			""
 		};
 		class ItemInfo : UniformItem
 		{
@@ -846,7 +850,7 @@ class CfgVehicles
 	class JLTS_Clone_jumppack;
 	class JLTS_Clone_jumppack_mc;
 	// General Uniforms
-	class JA_104th_JTAC : SWLB_clone_base_P2
+	class JA_104th_JTAC : SWLB_clone_marshal_commander_base_P2
 	{
 		author = "Ice"
 		scope = 2;
@@ -854,13 +858,13 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_JTAC_Uniform";
-		displayName = "104th Base JTAC";
+		displayName = "104th JTAC";
 		faction = "104th_Guys";
-		editorSubcategory = "104th_categ_Basic";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa", "JangosArmory3\data\Textures\104th_JTAC_Base_Lower.paa"};
-		linkedItems[] = { JA_104th_JTAC_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_JTAC_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2","camo3","camo4" };
+		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa", "JangosArmory3\data\Textures\104th_JTAC_Base_Lower.paa","JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa",""};
+		linkedItems[] = { JA_104th_ARF_Ice_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_ARF_Ice_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
 	class JA_104th_Crowbi : SWLB_clone_base_P2
 	{
