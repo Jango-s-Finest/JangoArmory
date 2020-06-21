@@ -78,6 +78,31 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
+	class JA_104th_Raptor_Uniform : SWLB_clone_uniform
+	{
+		author = "Ice";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Raptor)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_AB_Raptor_Upper.paa",
+			"JangosArmory4\data\Textures\104th_AB_Raptor_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Raptor";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Bomb_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Ice";
@@ -577,6 +602,22 @@ class CfgVehicles
 	class SWLB_clone_backpack_RTO;
 	class JLTS_Clone_jumppack;
 	// General Uniforms
+	class JA_104th_Raptor : SWLB_clone_base_P2
+	{
+		author = "Ice"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Raptor_Uniform";
+		displayName = "104th Raptor";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_AB_Raptor_Upper.paa", "JangosArmory4\data\Textures\104th_AB_Raptor_Lower.paa"};
+		linkedItems[] = { JA_104th_Raptor_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Raptor_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};	
 	class JA_104th_Beans : SWLB_clone_base_P2
 	{
 		author = "Ice"
