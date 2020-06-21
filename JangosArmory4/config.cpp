@@ -78,6 +78,16 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
+	class JA_104th_Axel_Helmet : SWLB_clone_AB_Helmet
+	{
+		author = "Ice";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Airborne Helmet (104th Axel)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Axel_Helmet.paa" }; // the file path to the texture
+	};
 	class JA_104th_Raptor_Uniform : SWLB_clone_uniform
 	{
 		author = "Ice";
