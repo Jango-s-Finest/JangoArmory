@@ -1153,17 +1153,9 @@ class CfgVehicles
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
-		tf_range = 10000;
+		tf_range = 15000;
 		tf_subtype = "digital_lr";
 	};
-	class JA_104th_Jumppack_mc_LR : JLTS_Clone_jumppack_mc
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone marshal commander jumppack LR";
-		RD501_jumppack_energy_capacity = 100;
-	};		
 	class JA_104th_Jumppack : JLTS_Clone_jumppack
 	{
 		author = "Dak";
@@ -1172,6 +1164,20 @@ class CfgVehicles
 		displayname = "Clone trooper jumppack";
 		RD501_jumppack_energy_capacity = 100;
 	};
+	class JA_104th_Jumppack_mc_LR : JLTS_Clone_jumppack_mc
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone marshal commander jumppack LR";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "JLTS_clone_lr_programmer_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 15000;
+		tf_subtype = "digital_lr";
+	};		
 	class JA_104th_Jumppack_mc : JLTS_Clone_jumppack_mc
 	{
 		author = "Dak";
