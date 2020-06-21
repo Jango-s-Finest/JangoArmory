@@ -78,6 +78,16 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
+	class JA_104th_Bomb_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Ice";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Bomb)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Bomb_Helmet.paa" }; // the file path to the texture
+	};
 	class JA_104th_Needle_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Ice";
