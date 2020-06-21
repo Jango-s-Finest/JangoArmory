@@ -607,14 +607,14 @@ class CfgWeapons
 		{
 			"camo1",
 			"camo2",
-			"camo3",
-			"camo4"
+			"biceps",
+			"rank"
 		};
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa",
 			"JangosArmory3\data\Textures\104th_ARF_Ice_Lower.paa",
-			"",
+			"JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa",
 			""
 		};
 		class ItemInfo : UniformItem
@@ -990,7 +990,7 @@ class CfgVehicles
 		displayName = "104th Arf Ice";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = { "camo1", "camo2", "camo3", "camo4" };
+		hiddenSelections[] = { "camo1", "camo2", "biceps", "rank" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa", "JangosArmory3\data\Textures\104th_ARF_Ice_Lower.paa", "JangosArmory3\data\Textures\104th_ARF_Ice_Upper.paa", ""};
 		linkedItems[] = { JA_104th_ARF_Ice_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_ARF_Ice_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
