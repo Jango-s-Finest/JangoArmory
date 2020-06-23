@@ -80,8 +80,8 @@ class CfgWeapons
 		{
 			"camo1",
 			"camo2",
-			"camo3",
-			"camo4"
+			"biceps",
+			"rank"
 		};
 		hiddenSelectionsTextures[] =
 		{
@@ -862,7 +862,7 @@ class CfgVehicles
 		displayName = "104th JTAC";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = { "camo1", "camo2","camo3","camo4" };
+		hiddenSelections[] = { "camo1", "camo2","biceps","rank" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa", "JangosArmory3\data\Textures\104th_JTAC_Base_Lower.paa","JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa",""};
 		linkedItems[] = { JA_104th_JTAC_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_JTAC_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
