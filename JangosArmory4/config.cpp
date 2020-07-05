@@ -3,19 +3,50 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory
+	class Jangos_Armory_4
 	{
 		author = "Jango's Finest";
-		requiredAddons[]= {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"ls_core"};
 		units[] = {
 			"JA_104th_Beans",
-			"JA_104th_IQ"
+			"JA_104th_IQ",
+			"JA_104th_Bomb",
+			"JA_104th_Raptor",
+			"JA_104th_Habit"
 		};
 		weapons[] = {
-			"JA_104th_Beans_Uniform",
-			"JA_104th_IQ_Uniform",
+			"JA_104th_Bomb_Uniform",
+			"JA_104th_Axel_Helmet",
+			"JA_104th_Raptor_Uniform",
+			"JA_104th_Bomb_Helmet",
+			"JA_104th_Needle_Helmet",
+			"JA_104th_Needle_Helmet",
+			"JA_104th_ARC_Vest",
+			"JA_104th_Habit_Uniform",
+			"JA_104th_Frosty_Vest",
+			"JA_104th_Palv_Helmet",
+			"JA_104th_AB_ME_Officer_Trooper_Armor",
+			"JA_104th_ME_officer_Vest",
+			"JA_104th_ME_Commander_Vest",
+			"JA_104th_AB_Officer_Trooper_Armor",
+			"JA_104th_Base_officer_Vest",
+			"JA_104th_Base_Commander_Vest",
+			"JA_104th_ME_Medic_Vest",
+			"JA_104th_AB_ME_NCO_Trooper_Armor",
+			"JA_104th_AB_ME_Base_Trooper_Armor",
+			"JA_104th_Base_Medic_Vest",
+			"JA_104th_AB_NCO_Trooper_Armor",
+			"JA_104th_AB_Base_Trooper_Armor",
+			"JA_104th_Vest",
+			"JA_104th_Crowbi_NVG_NCO",
+			"JA_104th_Hunter_NVG_NCO",
+			"JA_104th_Hunter_Vest",
+			"JA_104th_Crowbi_Vest",
 			"JA_104th_Beans_Helmet",
+			"JA_104th_Beans_Uniform",
 			"JA_104th_IQ_Helmet",
+			"JA_104th_IQ_Uniform"
 		};
 	};
 };
@@ -25,8 +56,8 @@ class CfgFactionClasses
 	class 104th_Guys
 	{
 		displayname = "Jango's Finest";
-		priority = 1; // Position in list. 
-        side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+		priority = 1; // Position in list.scope = 2;
+        side = 1;
 		icon = "";
 	};
 };
@@ -35,14 +66,26 @@ class cfgEditorSubcategories
 	class 104th_Categ_Clones
 	{
 		displayname = "104th - Customs";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
 	};
 	class 104th_Categ_Basic
 	{
 		displayname = "104th - Base";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
 	};
 	class 104th_Categ_Special
 	{
 		displayname = "104th - Special";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
 	};
 };
 

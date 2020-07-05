@@ -3,17 +3,70 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory
+	class Jangos_Armory_1
 	{
 		author = "Jango's Finest";
-		units[] = {};
-		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"ls_core"};
+		units[] = {
+			"JA_104th_Bail",
+			"JA_104th_Irish",
+			"JA_104th_Scurvy",
+			"JA_104th_Sixxer",
+			"JA_104th_Hunter",
+			"JA_104th_Banker",
+			"JA_104th_Ed",
+			"JA_104th_Angel",
+			"JA_104th_Knightfall",
+			"JA_104th_Tusk",
+			"JA_104th_Echo",
+			"JA_104th_Backpack",
+			"JA_104th_Accessories_Heavy_Backpack",
+			"JA_104th_Medic_Backpack",
+			"JA_104th_RTO_Backpack",
+			"JA_104th_RTO_Mini_Backpack"
+		};
+		weapons[] = {
+			"JA_104th_Bail_Uniform",
+			"JA_104th_Irish_Uniform",
+			"JA_104th_Scurvy_Uniform",
+			"JA_104th_Sixxer_Uniform",
+			"JA_104th_Hunter_Uniform",
+			"JA_104th_Banker_Uniform",
+			"JA_104th_Ed_Uniform",
+			"JA_104th_Angel_Uniform",
+			"JA_104th_Knightfall_Uniform",
+			"JA_104th_Tusk_Uniform",
+			"JA_104th_Echo_Uniform",
+			"JA_104thScurvyVest",
+			"JA_104thAngelVest",
+			"JA_104thKnightfallVest",
+			"JA_104thTuskVest",
+			"JA_104thPSGTKama",
+			"JA_104thNVG",
+			"JA_104thNVG_NCO",
+			"JA_104thCommanderVisor",
+			"JA_104th_Red_Vest",
+			"JA_104th_Habit_Helmet",
+			"JA_104th_Bravo_Helmet",
+			"JA_104th_Bail_Pilot_Helmet",
+			"JA_104th_Irish_Helmet",
+			"JA_104th_Scurvy_Helmet",
+			"JA_104th_Sixxer_Helmet",
+			"JA_104th_Hunter_Helmet",
+			"JA_104th_Banker_Helmet",
+			"JA_104th_Red_Helmet",
+			"JA_104th_Ed_Helmet",
+			"JA_104th_Angel_Helmet",
+			"JA_104th_Tanner_Helmet",
+			"JA_104th_Tusk_Helmet",
+			"JA_104th_Echo_Pilot_Helmet"
+		};
 	};
 };
 
+
 class CfgFactionClasses
-{
-	class CfgFactionClasses
 {
 	class 104th_Guys
 	{
@@ -23,7 +76,7 @@ class CfgFactionClasses
 		icon = "";
 	};
 };
-};
+
 class cfgEditorSubcategories
 {
 	class 104th_Categ_Clones

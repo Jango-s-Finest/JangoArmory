@@ -3,13 +3,68 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory
+	class Jangos_Armory_2
 	{
 		author = "Jango's Finest";
-		units[] =
-		{};
-		weapons[] =
-		{};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"ls_core"};
+		units[] = {
+			"JA_Cadet_Yellow1",
+			"JA_Cadet_Yellow2",
+			"JA_Cadet_Yellow3",
+			"JA_Cadet_Yellow4",
+			"JA_Cadet_Yellow5",
+			"JA_Cadet_Red1",
+			"JA_Cadet_Red2",
+			"JA_Cadet_Red3",
+			"JA_Cadet_Red4",
+			"JA_Cadet_Red5",
+			"JA_Cadet_Blue1",
+			"JA_Cadet_Blue2",
+			"JA_Cadet_Blue3",
+			"JA_Cadet_Blue4",
+			"JA_Cadet_Blue5",
+			"JA_Cadet_Green1",
+			"JA_Cadet_Green2",
+			"JA_Cadet_Green3",
+			"JA_Cadet_Green4",
+			"JA_Cadet_Green5",
+			"JA_104th_Beans",
+			"JA_104th_Black",
+			"JA_104th_Dragon"
+		};
+		weapons[] = {
+			"JA_Cadet_Yellow_Helmet",
+			"JA_Cadet_Red_Helmet",
+			"JA_Cadet_Blue_Helmet",
+			"JA_Cadet_Green_Helmet",
+			"JA_Cadet_Yellow1_Uniform",
+			"JA_Cadet_Yellow2_Uniform",
+			"JA_Cadet_Yellow3_Uniform",
+			"JA_Cadet_Yellow4_Uniform",
+			"JA_Cadet_Yellow5_Uniform",
+			"JA_Cadet_Red1_Uniform",
+			"JA_Cadet_Red2_Uniform",
+			"JA_Cadet_Red3_Uniform",
+			"JA_Cadet_Red4_Uniform",
+			"JA_Cadet_Red5_Uniform",
+			"JA_Cadet_Blue1_Uniform",
+			"JA_Cadet_Blue2_Uniform",
+			"JA_Cadet_Blue3_Uniform",
+			"JA_Cadet_Blue4_Uniform",
+			"JA_Cadet_Blue5_Uniform",
+			"JA_Cadet_Green1_Uniform",
+			"JA_Cadet_Green2_Uniform",
+			"JA_Cadet_Green3_Uniform",
+			"JA_Cadet_Green4_Uniform",
+			"JA_Cadet_Green5_Uniform",
+			"JA_104th_Dragon_Helmet",
+			"JA_104th_Dragon_Uniform",
+			"JA_104th_Beans_Helmet",
+			"JA_104th_Black_Helmet",
+			"JA_104th_Beans_Uniform",
+			"JA_104th_Black_Uniform"
+		};
 	};
 };
 

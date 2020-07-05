@@ -3,11 +3,81 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory
+	class Jangos_Armory_3
 	{
 		author = "Jango's Finest";
-		units[] = {};
-		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"ls_core"};
+		units[] = {
+			"JA_104th_JTAC",
+			"JA_104th_Crowbi",
+			"JA_104th_Red",
+			"JA_104th_Waffle",
+			"JA_104th_Salty",
+			"JA_104th_Fenrir",
+			"JA_104th_Paraso",
+			"JA_104th_P1_Gunney",
+			"JA_104th_ARF_Ice",
+			"JA_104th_ARF",
+			"JA_104th_ARFMedic",
+			"JA_104th_Carmine",
+			"JA_104th_Dak",
+			"JA_Quick",
+			"JA_332nd_Chich",
+			"JA_104th_Frosty",
+			"JA_104th_Warpath",
+			"JA_104th_Spectre",
+			"JA_104th_Jumppack_LR",
+			"JA_104th_Jumppack",
+			"JA_104th_Jumppack_mc_LR",
+			"JA_104th_Jumppack_mc"		
+		};
+		weapons[] = {
+			"JA_104th_JTAC_Uniform",
+			"JA_104th_JTAC_Helmet",
+			"JA_104th_Crowbi_Helmet",
+			"JA_104th_Crowbi_Uniform",
+			"JA_104th_Red_Uniform",
+			"JA_104th_Hiro_Helmet",
+			"JA_104th_Warpath_Helmet",
+			"JA_104th_Waffle_Helmet",
+			"JA_104th_Waffle_Uniform",
+			"JA_104th_Salty_Helmet",
+			"JA_104th_Salty_Uniform",
+			"JA_104th_Firefox_Helmet",
+			"JA_104th_Fenrir_Uniform",
+			"JA_104th_Crash_Helmet",
+			"JA_104th_Spectre_Helmet",
+			"JA_104th_Spectre_Uniform",
+			"JA_104th_Warpath_Uniform",
+			"JA_104th_Warpath_Vest",
+			"JA_104th_Frosty_Helmet",
+			"JA_104th_Frosty_Uniform",
+			"JA_104th_Fenrir_Helmet",
+			"JA_104th_Niner_Helmet",
+			"JA_104th_Raptor_Helmet",
+			"JA_302nd_Chich_Helmet",
+			"JA_302nd_Chich_Uniform",
+			"JA_302nd_Chich_Vest",
+			"JA_302nd_CommanderVisor",
+			"JA_104th_Paraso_Helmet",
+			"JA_104th_Paraso_Uniform",
+			"JA_104th_P1_Gunney_Helmet",
+			"JA_104th_P1_Gunney_Uniform",
+			"JA_104th_ARF_Ice_Helmet",
+			"JA_104th_ARF_Ice_Uniform",
+			"JA_104th_ARF_Uniform",
+			"JA_104th_ARFMedic_Uniform",
+			"JA_104th_Carmine_Uniform",
+			"JA_104th_Dak_Uniform",
+			"JA_Quick_Uniform",
+			"JA_104th_Carmine_Vest",
+			"JA_104th_ARF_Helmet",
+			"JA_104th_ARFMedic_Helmet",
+			"JA_104th_Carmine_Helmet",
+			"JA_104th_Dak_Helmet",
+			"JA_Quick_Helmet"
+		};
 	};
 };
 
@@ -651,7 +721,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-
 	class JA_104th_ARFMedic_Uniform : SWLB_clone_uniform
 	{
 		author = "Jango's Finest";
@@ -677,11 +746,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-
-	// ARF
-
-	// AIRBORNEE
-
 	class JA_104th_Carmine_Uniform : SWLB_clone_uniform
 	{
 		author = "Jango's Finest";
@@ -707,7 +771,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-
 	class JA_104th_Dak_Uniform : SWLB_clone_uniform
 	{
 		author = "Jango's Finest";
@@ -733,7 +796,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-
 	class JA_Quick_Uniform : SWLB_clone_uniform
 	{
 		author = "Jango's Finest";
@@ -759,7 +821,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-
 	class JA_104th_Carmine_Vest : SWLB_clone_airborne_nco_armor
 	{
 		author = "Emmet"
@@ -781,8 +842,6 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
-
-	// ARF Helmets
 	class JA_104th_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
 		author = "Tundra";
@@ -793,7 +852,6 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARF_Helmet.paa" }; // the file path to the texture
 	};
-
 	class JA_104th_ARFMedic_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
 		author = "Tundra";
@@ -804,7 +862,6 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF Medic)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARFMedic_Helmet.paa" }; // the file path to the texture
 	};
-
 	class JA_104th_Carmine_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Tundra";
@@ -815,7 +872,6 @@ class CfgWeapons
 		displayname = "Clone Trooper Airborne Helmet (104th Carmine)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_Carmine_AB_Helmet.paa" }; // the file path to the texture
 	};
-
 	class JA_104th_Dak_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Tundra";
@@ -836,7 +892,6 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (Quick)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\Quick_P2_Helmet.paa" }; // the file path to the texture
 	};
-
 };
 
 class CfgVehicles
@@ -861,7 +916,7 @@ class CfgVehicles
 		uniformClass = "JA_104th_JTAC_Uniform";
 		displayName = "104th JTAC";
 		faction = "104th_Guys";
-		editorSubcategory = "104th_categ_clones";
+		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2","biceps","rank" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa", "JangosArmory3\data\Textures\104th_JTAC_Base_Lower.paa","JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa",""};
 		linkedItems[] = { JA_104th_JTAC_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
@@ -1027,8 +1082,6 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_ARFMedic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_ARFMedic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
-
-	// AIRBORNEEE
 	class JA_104th_Carmine : SWLB_clone_base_P2
 	{
 		author = "Tundra"
