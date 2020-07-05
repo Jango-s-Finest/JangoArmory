@@ -3,11 +3,49 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory
+	class Jangos_Armory_Dire
 	{
 		author = "Jango's Finest";
-		units[] = {};
-		weapons[] = {};
+		units[] = {
+			"JA_104th_Base_P2_Dire_Zivi",
+			"JA_104th_Base_P2_Dire_ARF",
+			"JA_104th_Base_P2_Dire",
+			"JA_104th_Base_P2_Dire_Medic",
+			"JA_104th_Base_Blue_Dire_Zivi",
+			"JA_104th_Base_Blue_Dire_ARF",
+			"JA_104th_Base_Blue_Dire",
+			"JA_104th_Base_Blue_Dire_Medic",
+			"JA_104th_Base_ME_Dire_Zivi",
+			"JA_104th_Base_ME_Dire_ARF",
+			"JA_104th_Base_ME_Dire",
+			"JA_104th_Base_ME_Dire_Medic"
+		};
+		weapons[] = {
+			"JA_Dire_P2_Base_Zivi_Helmet",
+			"JA_Dire_P2_Base_Zivi_Uniform",
+			"JA_Dire_P2_Base_ARF_Helmet",
+			"JA_Dire_P2_Base_ARF_Uniform",
+			"JA_Dire_P2_Base_Helmet",
+			"JA_Dire_P2_Base_Uniform",
+			"JA_Dire_P2_Base_Medic_Helmet",
+			"JA_Dire_P2_Base_Medic_Uniform",
+			"JA_Dire_Blue_Base_Zivi_Helmet",
+			"JA_Dire_Blue_Base_Zivi_Uniform",
+			"JA_Dire_Blue_Base_ARF_Helmet",
+			"JA_Dire_Blue_Base_ARF_Uniform",
+			"JA_Dire_Blue_Base_Helmet",
+			"JA_Dire_Blue_Base_Uniform",
+			"JA_Dire_Blue_Base_Medic_Helmet",
+			"JA_Dire_Blue_Base_Medic_Uniform",
+			"JA_Dire_Base_ME_Zivi_Helmet",
+			"JA_Dire_Base_ME_Zivi_Uniform",
+			"JA_Dire_Base_ME_ARF_Helmet",
+			"JA_Dire_Base_ME_ARF_Uniform",
+			"JA_Dire_Base_ME_Helmet",
+			"JA_Dire_Base_ME_Uniform",
+			"JA_Dire_Base_ME_Medic_Helmet",
+			"JA_Dire_Base_ME_Medic_Uniform"
+		};
 	};
 };
 

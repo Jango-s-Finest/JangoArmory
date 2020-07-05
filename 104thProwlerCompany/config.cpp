@@ -3,11 +3,31 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory
+	class Jangos_Armory_Prowler
 	{
 		author = "Jango's Finest";
-		units[] = {};
-		weapons[] = {};
+		units[] = {
+			"JA_104th_Base_P2_Prowler_NCO",
+			"JA_104th_Base_P2_Prowler_Officer",
+			"JA_104th_Base_P2_Prowler_Fenris",
+			"JA_104th_Base_P2_Prowler_Trooper",
+			"JA_104th_Base_P2_Prowler_Medic"
+		};
+		weapons[] = {
+			"JA_Prowler_P2_Base_NCO_Helmet",
+			"JA_Prowler_P2_Base_NCO_Uniform",
+			"JA_Prowler_P2_Base_Officer_Helmet",
+			"JA_Prowler_P2_Base_Officer_Uniform",
+			"JA_Prowler_P2_Base_Fenris_Helmet",
+			"JA_Prowler_P2_Base_Fenris_Uniform",
+			"JA_Prowler_P2_Base_Trooper_Helmet",
+			"JA_Prowler_P2_Base_Trooper_Uniform",
+			"JA_Prowler_P2_Base_Medic_Helmet",
+			"JA_Prowler_ENG_Base_Helmet",
+			"JA_Prowler_ENG_Officer_Helmet",
+			"JA_Prowler_P2_Base_Medic_Uniform",
+			"JA_Prowler_P2_Base_Fenris_Armor"
+		};
 	};
 };
 

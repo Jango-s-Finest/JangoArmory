@@ -3,11 +3,70 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory
+	class Jangos_Armory_Howler
 	{
 		author = "Jango's Finest";
-		units[] = {};
-		weapons[] = {};
+		units[] = {
+			"JA_104th_Base_SB_Howler_Kaleb",
+			"JA_104th_Base_SB_Howler_NCO",
+			"JA_104th_Base_SB_Howler_Officer",
+			"JA_104th_Base_P2_Howler_Kaleb",
+			"JA_104th_Base_P2_Howler_NCO",
+			"JA_104th_Base_P2_Howler_Officer",
+			"JA_104th_Base_ME_Howler_Kaleb",
+			"JA_104th_Base_ME_Howler_NCO",
+			"JA_104th_Base_ME_Howler_Officer",
+			"JA_104th_Base_ME_Howler_Paak",
+			"JA_104th_Base_P2_Howler_Paak",
+			"JA_104th_Base_SB_Howler_Paak",
+			"JA_104th_Base_ME_Howler_Trooper",
+			"JA_104th_Base_P2_Howler_Trooper",
+			"JA_104th_Base_SB_Howler_Trooper",
+			"JA_104th_Base_ME_Howler_Medic",
+			"JA_104th_Base_P2_Howler_Medic",
+			"JA_104th_Base_SB_Howler_Medic"
+		};
+		weapons[] = {
+			"JA_Howler_SB_Base_Kaleb_Helmet",
+			"JA_Howler_SB_Base_Kaleb_Uniform",
+			"JA_Howler_SB_Base_NCO_Helmet",
+			"JA_Howler_SB_Base_NCO_Uniform",
+			"JA_Howler_SB_Base_Officer_Helmet",
+			"JA_Howler_SB_Base_Officer_Uniform",
+			"JA_Howler_P2_Base_Kaleb_Helmet",
+			"JA_Howler_P2_Base_Kaleb_Uniform",
+			"JA_Howler_P2_Base_NCO_Helmet",
+			"JA_Howler_P2_Base_NCO_Uniform",
+			"JA_Howler_P2_Base_Officer_Helmet",
+			"JA_Howler_P2_Base_Officer_Uniform",
+			"JA_Howler_ME_Base_Kaleb_Helmet",
+			"JA_Howler_ME_Base_Kaleb_Uniform",
+			"JA_Howler_ME_Base_NCO_Helmet",
+			"JA_Howler_ME_Base_NCO_Uniform",
+			"JA_Howler_ME_Base_Officer_Helmet",
+			"JA_Howler_ME_Base_Officer_Uniform",
+			"JA_Howler_SB_Base_Paak_Helmet",
+			"JA_Howler_SB_Base_Paak_Uniform",
+			"JA_Howler_P2_Base_Paak_Helmet",
+			"JA_Howler_P2_Base_Paak_Uniform",
+			"JA_Howler_ME_Base_Paak_Helmet",
+			"JA_Howler_ME_Base_Paak_Uniform",
+			"JA_Howler_SB_Base_Trooper_Helmet",
+			"JA_Howler_SB_Base_Trooper_Uniform",
+			"JA_Howler_P2_Base_Trooper_Helmet",
+			"JA_Howler_P2_Base_Trooper_Uniform",
+			"JA_Howler_ME_Base_Trooper_Helmet",
+			"JA_Howler_ME_Base_Trooper_Uniform",
+			"JA_Howler_SB_Base_Medic_Helmet",
+			"JA_Howler_SB_Base_Medic_Uniform",
+			"JA_Howler_P2_Base_Medic_Helmet",
+			"JA_Howler_P2_Base_Medic_Uniform",
+			"JA_Howler_ME_Base_Medic_Helmet",
+			"JA_Howler_ME_Base_Medic_Uniform",
+			"JA_Howler_AB_Base_Trooper_Armor",
+			"JA_Howler_AB_Base_Officer_Armor",
+			"JA_Howler_P2_Base_Officer_Armor"
+		};
 	};
 };
 
@@ -746,7 +805,6 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
-
 };
 
 

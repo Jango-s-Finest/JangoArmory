@@ -3,11 +3,30 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory
+	class Jangos_Armory_Malevolence
 	{
 		author = "Jango's Finest";
-		units[] = {};
-		weapons[] = {};
+		units[] = {
+			"JA_104th_Base_Malevolence_ARF",
+			"JA_104th_Base_Malevolence",
+			"JA_104th_Base_Malevolence_Medic",
+			"JA_104th_Backpack_Malevolence",
+			"JA_104th_Heavy_Backpack_Malevolence",
+			"JA_104th_Medic_Backpack_Malevolence",
+			"JA_104th_RTO_Backpack_Malevolence",
+			"JA_104th_RTO_Backpack_Invisible",
+			"JA_104th_Backpack_Invisible"
+		};
+		weapons[] = {
+			"JA_104th_ME_Vest",
+			"JA_Malevolence_Base_ARF_Helmet",
+			"JA_Malevolence_Base_ARF_Uniform",
+			"JA_Malevolence_Base_Helmet",
+			"JA_Malevolence_Base_Uniform",
+			"JA_Malevolence_Base_Medic_Helmet",
+			"JA_Malevolence_Base_Medic_Uniform",
+			"JA_Invisible_Base_Rebreather_Uniform"
+		};
 	};
 };
 
@@ -60,7 +79,7 @@ class CfgWeapons
 	class Bag_Base;
 
 /////////////////////P1 Malevolence
-class JA_104th_ME_Vest : SWLB_clone_arc_armor
+	class JA_104th_ME_Vest : SWLB_clone_arc_armor
 	{
 		author = "Ice";
 		displayName = "Clone Trooper Captain Vest (104th Malevolence)";
