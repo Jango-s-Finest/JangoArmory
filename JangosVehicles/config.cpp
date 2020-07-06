@@ -5,6 +5,13 @@ class CfgPatches
 		units[] = {
 			"JA_104th_Base_LAAT",
 			"JA_104th_Base_LAAT_AB",
+			"JA_104th_Base_LAAT_C",
+			"JA_104th_Base_Bantha",
+			"JA_104th_Base_TX130",
+			"JA_104th_Base_Barc_Speeder",
+			"JA_104th_Base_Pathfinder",
+			"JA_104th_Medical_Pathfinder",
+			"JA_104th_Base_Tempest",
 			"JA_104th_Box_Ammo"
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {};
@@ -36,9 +43,13 @@ class CfgEditorCategories
 };
 class cfgEditorSubcategories
 {
-	class 104th_Categ_Clones_Vehicles
+	class 104th_Categ_Clones_Vehicles_Air
 	{
-		displayname = "104th - Vehicles";
+		displayname = "104th - Vehicles - Air";
+	};
+	class 104th_Categ_Clones_Vehicles_Land
+	{
+		displayname = "104th - Vehicles - Land";
 	};
 	class 104th_Categ_Clones_Boxes
 	{
@@ -74,20 +85,27 @@ class cfgVehicles {
 		};
 	};
 	
+	class 212th_B_APC_Wheeled_01_cannon_F;
+	class RD501_fast_infantry_transport_republic;
+	class RD501_fast_infantry_transport_republic_medic;
+	class RD501_light_infantry_transport_Rep_MkII;
+	class SWLG_tanks_tx130;
+	class rd501_sw_barc;
 	class ls_laat;
-	class ls_laat_ab;  //Tells the game to fetch the ls_laat class, as we plan to use most of what's already written.
+	class ls_laat_ab; 
+	class RD501_LAAT_cargo_Mk2; //Tells the game to fetch the ls_laat class, as we plan to use most of what's already written.
 	class Box_212_Supply_F;
 
 	class JA_104th_Base_LAAT: ls_laat //The : Tells your new class to inherit everything from the ls_laat class.
 	{
 		author = "Echo";
-		displayName = "LAAT - 104th"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		displayName = "LAATe"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		
 		armor = 500;
 		armorStructural = 2;
@@ -185,13 +203,13 @@ class cfgVehicles {
 	class JA_104th_Base_LAAT_AB: ls_laat_ab //The : Tells your new class to inherit everything from the ls_laat class.
 	{
 		author = "Echo";
-		displayName = "LAAT AB - 104th"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		displayName = "LAATe AB"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		
 		armor = 500;
 		armorStructural = 2;
@@ -285,6 +303,83 @@ class cfgVehicles {
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
 		};
+	};
+	class JA_104th_Base_LAAT_C: RD501_LAAT_cargo_Mk2 //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "LAAT C"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+	class JA_104th_Base_Bantha: 212th_B_APC_Wheeled_01_cannon_F //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "Bantha IFV"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+	};
+	class JA_104th_Base_TX130: SWLG_tanks_tx130 
+	{
+		author = "Dak";
+		displayName = "TX-130"; 
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+	};
+	class JA_104th_Base_Barc_Speeder: rd501_sw_barc 
+	{
+		author = "Dak";
+		displayName = "Barc Speeder"; 
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+	};
+	class JA_104th_Base_Pathfinder: RD501_fast_infantry_transport_republic
+	{
+		author = "Dak";
+		displayName = "Pathfinder"; 
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+	};
+	class JA_104th_Medical_Pathfinder: RD501_fast_infantry_transport_republic_medic
+	{
+		author = "Dak";
+		displayName = "Pathfinder - Medical"; 
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+	};
+	class JA_104th_Base_Tempest: RD501_light_infantry_transport_Rep_MkII
+	{
+		author = "Dak";
+		displayName = "Tempest"; 
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
 	class JA_104th_Box_Ammo: Box_212_Supply_F
 	{
