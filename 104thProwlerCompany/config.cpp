@@ -393,88 +393,106 @@ class CfgGroups{
 			name = "Jango's Finest";
 			class JA_Bluefor_P2_Troopers_Prowler{
 				name = "Prowler - P2";
-				class JA_Group_P2_Team{
+				class JA_Group_P2_Team_Prowler{
 					name = "P2 - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Prowler_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 				};
-				class JA_Group_P2_Squad{
+				class JA_Group_P2_Squad_Prowler{
 					name = "P2 - Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Prowler_NCO";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_P2_Prowler_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_Kaleb_P2_Squad{
+				class JA_Group_Kaleb_P2_Squad_Prowler{
 					name = "P2 - Kaleb Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Prowler_Fenris";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Prowler_Officer";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_P2_Prowler_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};	
 			};

@@ -1113,262 +1113,316 @@ class CfgGroups{
 			name = "Jango's Finest";
 			class JA_Bluefor_P2_Troopers_Howler{
 				name = "Howler - P2";
-				class JA_Group_P2_Team{
+				class JA_Group_P2_Team_Howler{
 					name = "P2 - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 				};
-				class JA_Group_P2_Squad{
+				class JA_Group_P2_Squad_Howler{
 					name = "P2 - Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Howler_NCO";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_P2_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_P2_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_P2_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_Kaleb_P2_Squad{
+				class JA_Group_Kaleb_P2_Squad_Howler{
 					name = "P2 - Kaleb Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Howler_Kaleb";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Howler_Officer";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Howler_Paak";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_P2_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_P2_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_P2_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};	
 			};
 			class JA_Bluefor_SB_Troopers_Howler{
 				name = "Howler - SB";
-				class JA_Group_SB_Team{
+				class JA_Group_SB_Team_Howler{
 					name = "SB - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_SB_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_SB_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_SB_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 				};
-				class JA_Group_SB_Squad{
+				class JA_Group_SB_Squad_Howler{
 					name = "SB - Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_SB_Howler_NCO";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_SB_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_SB_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_SB_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_SB_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_SB_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_Kaleb_SB_Squad{
+				class JA_Group_Kaleb_SB_Squad_Howler{
 					name = "SB - Kaleb Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_SB_Howler_Kaleb";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_SB_Howler_Officer";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_SB_Howler_Paak";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_SB_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_SB_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_SB_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};	
 			};
 			class JA_Bluefor_ME_Troopers_Howler{
 				name = "Howler - ME";
-				class JA_Group_ME_Team{
+				class JA_Group_ME_Team_Howler{
 					name = "ME - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_ME_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_ME_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_ME_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 				};
-				class JA_Group_ME_Squad{
+				class JA_Group_ME_Squad_Howler{
 					name = "ME - Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_ME_Howler_NCO";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_ME_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_ME_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_ME_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_ME_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_ME_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_Kaleb_ME_Squad{
+				class JA_Group_Kaleb_ME_Squad_Howler{
 					name = "ME - Kaleb Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_ME_Howler_Kaleb";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_ME_Howler_Officer";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_ME_Howler_Paak";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_ME_Howler_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_ME_Howler_Trooper";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_ME_Howler_Trooper";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};	
 			};

@@ -745,331 +745,400 @@ class CfgGroups{
 			name = "Jango's Finest";
 			class JA_Bluefor_P2_Troopers_Dire{
 				name = "Dire - P2";
-				class JA_Group_P2_Team{
+				class JA_Group_P2_Team_Dire{
 					name = "P2 - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 				};
-				class JA_Group_P2_Squad{
+				class JA_Group_P2_Squad_Dire{
 					name = "P2 - Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_P2_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_Zivi_P2_Squad{
+				class JA_Group_Zivi_P2_Squad_Dire{
 					name = "P2 - Zivi Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Dire_Zivi";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_P2_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_P2_Dire";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_ARF_Team{
+				class JA_Group_ARF_Team_Dire{
 					name = "ARF - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_P2_Dire_ARF";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_P2_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_P2_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_P2_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 				};		
 			};
 			class JA_Bluefor_Blue_Troopers_Dire{
 				name = "Dire - Blue";
-				class JA_Group_Blue_Team{
+				class JA_Group_Blue_Team_Dire{
 					name = "Blue - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_Blue_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 				};
-				class JA_Group_Blue_Squad{
+				class JA_Group_Blue_Squad_Dire{
 					name = "Blue - Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_Blue_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_Zivi_Blue_Squad{
+				class JA_Group_Zivi_Blue_Squad_Dire{
 					name = "Blue - Zivi Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_Blue_Dire_Zivi";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_Blue_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_Blue_Dire";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_ARF_Team{
+				class JA_Group_ARF_Team_Dire{
 					name = "ARF - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_Blue_Dire_ARF";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_Blue_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_Blue_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_Blue_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 				};		
 			};
 			class JA_Bluefor_ME_Troopers_Dire{
 				name = "Dire - ME";
-				class JA_Group_ME_Team{
+				class JA_Group_ME_Team_Dire{
 					name = "ME - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_ME_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 				};
-				class JA_Group_ME_Squad{
+				class JA_Group_ME_Squad_Dire{
 					name = "ME - Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_ME_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_Zivi_ME_Squad{
+				class JA_Group_Zivi_ME_Squad_Dire{
 					name = "ME - Zivi Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_ME_Dire_Zivi";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_ME_Dire_Medic";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_ME_Dire";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_ARF_Team{
+				class JA_Group_ARF_Team_Dire{
 					name = "ARF - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_ME_Dire_ARF";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_ME_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_ME_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_ME_Dire_ARF";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 				};		
 			};

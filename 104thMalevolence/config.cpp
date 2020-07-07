@@ -404,78 +404,94 @@ class CfgGroups{
 			name = "Jango's Finest";
 			class JA_Bluefor_P1_Troopers_Malevolence{
 				name = "Malevolence - P1";
-				class JA_Group_P1_Team{
+				class JA_Group_P1_Team_Malevolence{
 					name = "P1 - Team";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_Malevolence";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_Malevolence";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_Malevolence_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 				};
-				class JA_Group_P1_Squad{
+				class JA_Group_P1_Squad_Malevolence{
 					name = "P1 - Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_Malevolence";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_Malevolence";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_Malevolence_Medic";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_Malevolence";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 					class Unit4 {
 						vehicle = "JA_104th_Base_Malevolence";
 						rank = "CORPORAL";
-						position[] = {-4,-4,150};
+						position[] = {-10,-10,0};
+						side = 1;
 					};
 					class Unit5 {
 						vehicle = "JA_104th_Base_Malevolence";
 						rank = "PRIVATE";
-						position[] = {-6,-6,150};
+						position[] = {-15,-15,0};
+						side = 1;
 					};
 				};
-				class JA_Group_ARF_Team{
+				class JA_Group_ARF_Team_Malevolence{
 					name = "P1 - ARF Squad";
+					side = 1;
 					class Unit0 {
 						vehicle = "JA_104th_Base_Malevolence_ARF";
 						rank = "CORPORAL";
-						position[] = {0,0,150};
+						position[] = {0,0,0};
+						side = 1;
 					};
 					class Unit1 {
 						vehicle = "JA_104th_Base_Malevolence_ARF";
 						rank = "PRIVATE";
-						position[] = {-2,-2,150};
+						position[] = {-5,-5,0};
+						side = 1;
 					};
 					class Unit2 {
 						vehicle = "JA_104th_Base_Malevolence_ARF";
 						rank = "PRIVATE";
-						position[] = {2,-2,150};
+						position[] = {5,-5,0};
+						side = 1;
 					};
 					class Unit3 {
 						vehicle = "JA_104th_Base_Malevolence_ARF";
 						rank = "PRIVATE";
-						position[] = {4,-4,150};
+						position[] = {10,-10,0};
+						side = 1;
 					};
 				};	
 			};
