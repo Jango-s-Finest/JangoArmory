@@ -320,7 +320,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_NCO_Upper.paa","104thProwlerCompany\data\Textures\Prowler_Armored_NCO_Lower.paa"};
 		linkedItems[] = {JA_Prowler_P2_Base_NCO_Helmet, SWLB_clone_airborne_nco_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Prowler_P2_Base_NCO_Helmet, SWLB_clone_airborne_nco_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_P2_Prowler_Officer : SWLB_clone_base_P2
+	};	
+	class JA_104th_Base_P2_Prowler_Officer : SWLB_clone_base_P2
 	{
 		author = "Dak"
 		scope = 2;
@@ -335,7 +336,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Officer_Upper.paa","104thProwlerCompany\data\Textures\Prowler_Armored_Officer_Lower.paa"};
 		linkedItems[] = {JA_Prowler_P2_Base_Officer_Helmet,SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Prowler_P2_Base_Officer_Helmet,SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};    class JA_104th_Base_P2_Prowler_Fenris : SWLB_clone_base_P2
+	};    
+	class JA_104th_Base_P2_Prowler_Fenris : SWLB_clone_base_P2
 	{
 		author = "Dak"
 		scope = 2;
@@ -350,7 +352,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Captain_Fenris_Upper.paa","104thProwlerCompany\data\Textures\Captain_Fenris_Lower.paa"};
 		linkedItems[] = {JA_Prowler_P2_Base_Fenris_Helmet,JA_Prowler_P2_Base_Fenris_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Prowler_P2_Base_Fenris_Helmet,JA_Prowler_P2_Base_Fenris_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};    class JA_104th_Base_P2_Prowler_Trooper : SWLB_clone_base_P2
+	};    
+	class JA_104th_Base_P2_Prowler_Trooper : SWLB_clone_base_P2
 	{
 		author = "Dak"
 		scope = 2;
@@ -365,7 +368,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Trooper_Upper.paa","104thProwlerCompany\data\Textures\Prowler_Armored_Trooper_Lower.paa"};
 		linkedItems[] = {JA_Prowler_P2_Base_Trooper_Helmet,JA_Prowler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Prowler_P2_Base_Trooper_Helmet,JA_Prowler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};    class JA_104th_Base_P2_Prowler_Medic : SWLB_clone_base_P2
+	};    
+	class JA_104th_Base_P2_Prowler_Medic : SWLB_clone_base_P2
 	{
 		author = "Dak"
 		scope = 2;
@@ -380,4 +384,100 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Medic_Upper.paa","104thProwlerCompany\data\Textures\Prowler_Armored_Medic_Lower.paa"};
 		linkedItems[] = {JA_Prowler_P2_Base_Medic_Helmet,JA_Prowler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Prowler_P2_Base_Medic_Helmet,JA_Prowler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};};
+	};
+};
+
+class CfgGroups{
+	class West{
+		class JA_Bluefor{
+			name = "Jango's Finest";
+			class JA_Bluefor_P2_Troopers_Prowler{
+				name = "Prowler - P2";
+				class JA_Group_P2_Team{
+					name = "P2 - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Prowler_Medic";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+				};
+				class JA_Group_P2_Squad{
+					name = "P2 - Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Prowler_NCO";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_P2_Prowler_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_Kaleb_P2_Squad{
+					name = "P2 - Kaleb Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Prowler_Fenris";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Prowler_Officer";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_P2_Prowler_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_P2_Prowler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};	
+			};
+		};
+	};
+};

@@ -93,8 +93,6 @@ class CfgWeapons
 	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;
 
-/////////////////////P2 Dire
-
 	class JA_Dire_P2_Base_Zivi_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Dak"
@@ -240,7 +238,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-/////////////////////P1 Dire Blue
 
 	class JA_Dire_Blue_Base_Zivi_Helmet : SWLB_clone_P1_helmet
 	{
@@ -388,8 +385,6 @@ class CfgWeapons
 		};
 	};
 
-/////////////////////P1 Dire ME
-
 	class JA_Dire_Base_ME_Zivi_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak"
@@ -535,10 +530,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-
-/////////////////////Final
 };
-
 
 class CfgVehicles
 {
@@ -566,7 +558,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Captain_Zivi_Upper.paa","104thDireCompany\data\Textures\Base_Captain_Zivi_Lower.paa"};
 		linkedItems[] = {JA_Dire_P2_Base_Zivi_Helmet,SWLB_clone_rangefinder,SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_P2_Base_Zivi_Helmet,SWLB_clone_rangefinder,SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_P2_Dire_ARF : SWLB_clone_base_P2
 	{
 		author = "Dak"
@@ -582,7 +574,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_ARF_Upper.paa", "104thDireCompany\data\Textures\Base_Dire_ARF_Lower.paa"};
 		linkedItems[] = {JA_Dire_P2_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_P2_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_P2_Dire : SWLB_clone_base_P2
 	{
 		author = "Dak"
@@ -598,7 +590,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Upper.paa", "104thDireCompany\data\Textures\Base_Dire_Lower.paa"};
 		linkedItems[] = {JA_Dire_P2_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_P2_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_P2_Dire_Medic : SWLB_clone_base_P2
 	{
 		author = "Dak"
@@ -614,7 +606,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Medic_Upper.paa", "104thDireCompany\data\Textures\Base_Dire_Medic_Lower.paa"};
 		linkedItems[] = {JA_Dire_P2_Base_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_P2_Base_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 /////////Blue
 	class JA_104th_Base_Blue_Dire_Zivi : SWLB_clone_base_P1
 	{
@@ -631,7 +623,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Captain_Zivi_Upper_Blue.paa","104thDireCompany\data\Textures\Base_Captain_Zivi_Lower_Blue.paa"};
 		linkedItems[] = {JA_Dire_Blue_Base_Zivi_Helmet,SWLB_CEE_P1_rangefinder,SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_Blue_Base_Zivi_Helmet,SWLB_CEE_P1_rangefinder,SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_Blue_Dire_ARF : SWLB_clone_base_P1
 	{
 		author = "Dak"
@@ -647,7 +639,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_ARF_Upper_Blue.paa", "104thDireCompany\data\Textures\Base_Dire_ARF_Lower_Blue.paa"};
 		linkedItems[] = {JA_Dire_Blue_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_Blue_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_Blue_Dire : SWLB_clone_base_P1
 	{
 		author = "Dak"
@@ -663,7 +655,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Upper_Blue.paa", "104thDireCompany\data\Textures\Base_Dire_Lower_Blue.paa"};
 		linkedItems[] = {JA_Dire_Blue_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_Blue_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_Blue_Dire_Medic : SWLB_clone_base_P1
 	{
 		author = "Dak"
@@ -679,7 +671,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Medic_Upper_Blue.paa", "104thDireCompany\data\Textures\Base_Dire_Medic_Lower_Blue.paa"};
 		linkedItems[] = {JA_Dire_Blue_Base_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_Blue_Base_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 /////////ME
 	class JA_104th_Base_ME_Dire_Zivi : SWLB_clone_base_P1
 	{
@@ -696,7 +688,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Captain_Zivi_Upper.paa","104thDireCompany\data\Textures\Base_ME_Captain_Zivi_Lower.paa"};
 		linkedItems[] = {JA_Dire_Base_ME_Zivi_Helmet,SWLB_CEE_P1_rangefinder, SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_Base_ME_Zivi_Helmet,SWLB_CEE_P1_rangefinder, SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_ME_Dire_ARF : SWLB_clone_base_P1
 	{
 		author = "Dak"
@@ -712,7 +704,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_ARF_Upper.paa", "104thDireCompany\data\Textures\Base_ME_Dire_ARF_Lower.paa"};
 		linkedItems[] = {JA_Dire_Base_ME_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_Base_ME_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_ME_Dire : SWLB_clone_base_P1
 	{
 		author = "Dak"
@@ -728,7 +720,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_Upper.paa", "104thDireCompany\data\Textures\Base_ME_Dire_Lower.paa"};
 		linkedItems[] = {JA_Dire_Base_ME_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_Base_ME_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
+	};
 	class JA_104th_Base_ME_Dire_Medic : SWLB_clone_base_P1
 	{
 		author = "Dak"
@@ -744,6 +736,343 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_Medic_Upper.paa", "104thDireCompany\data\Textures\Base_ME_Dire_Medic_Lower.paa"};
 		linkedItems[] = {JA_Dire_Base_ME_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Dire_Base_ME_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	}
-////////Final
+	};
+};
+
+class CfgGroups{
+	class West{
+		class JA_Bluefor{
+			name = "Jango's Finest";
+			class JA_Bluefor_P2_Troopers_Dire{
+				name = "Dire - P2";
+				class JA_Group_P2_Team{
+					name = "P2 - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+				};
+				class JA_Group_P2_Squad{
+					name = "P2 - Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_P2_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_Zivi_P2_Squad{
+					name = "P2 - Zivi Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Dire_Zivi";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_P2_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_P2_Dire";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_ARF_Team{
+					name = "ARF - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Dire_ARF";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_P2_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+				};		
+			};
+			class JA_Bluefor_Blue_Troopers_Dire{
+				name = "Dire - Blue";
+				class JA_Group_Blue_Team{
+					name = "Blue - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_Blue_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+				};
+				class JA_Group_Blue_Squad{
+					name = "Blue - Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_Blue_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_Zivi_Blue_Squad{
+					name = "Blue - Zivi Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_Blue_Dire_Zivi";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_Blue_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_Blue_Dire";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_ARF_Team{
+					name = "ARF - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_Blue_Dire_ARF";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_Blue_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_Blue_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_Blue_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+				};		
+			};
+			class JA_Bluefor_ME_Troopers_Dire{
+				name = "Dire - ME";
+				class JA_Group_ME_Team{
+					name = "ME - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_ME_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+				};
+				class JA_Group_ME_Squad{
+					name = "ME - Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_ME_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_Zivi_ME_Squad{
+					name = "ME - Zivi Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_ME_Dire_Zivi";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_ME_Dire_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_ME_Dire";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_ARF_Team{
+					name = "ARF - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_ME_Dire_ARF";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_ME_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_ME_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_ME_Dire_ARF";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+				};		
+			};
+		};
+	};
 };

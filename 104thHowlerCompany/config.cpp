@@ -73,15 +73,15 @@ class CfgPatches
 class CfgFactionClasses
 {
 	class CfgFactionClasses
-{
-	class 104th_Guys
 	{
-		displayname = "Jango's Finest";
-		priority = 1; // Position in list. 
-        side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
-		icon = "";
+		class 104th_Guys
+		{
+			displayname = "Jango's Finest";
+			priority = 1; // Position in list. 
+			side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+			icon = "";
+		};
 	};
-};
 };
 class cfgEditorSubcategories
 {
@@ -807,7 +807,6 @@ class CfgWeapons
 	};
 };
 
-
 class CfgVehicles
 {
 	class SWLB_clone_base_P2;
@@ -833,7 +832,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Kaleb_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_Kaleb_LowerSB.paa"};
 		linkedItems[] = {JA_Howler_SB_Base_Kaleb_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_SB_Base_Kaleb_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_SB_Howler_NCO : SWLB_clone_base_P1
+	};	
+	class JA_104th_Base_SB_Howler_NCO : SWLB_clone_base_P1
 	{
 		author = "Dak"
 		scope = 2;
@@ -848,7 +848,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_NCO_LowerSB.paa"};
 		linkedItems[] = {JA_Howler_SB_Base_NCO_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_SB_Base_NCO_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_SB_Howler_Officer : SWLB_clone_base_P1
+	};	
+	class JA_104th_Base_SB_Howler_Officer : SWLB_clone_base_P1
 	{
 		author = "Dak"
 		scope = 2;
@@ -863,7 +864,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_Officer_LowerSB.paa"};
 		linkedItems[] = {JA_Howler_SB_Base_Officer_Helmet,JA_Howler_P2_Base_Officer_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_SB_Base_Officer_Helmet,JA_Howler_P2_Base_Officer_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_P2_Howler_Kaleb : SWLB_clone_base_P2
+	};	
+	class JA_104th_Base_P2_Howler_Kaleb : SWLB_clone_base_P2
 	{
 		author = "Dak"
 		scope = 2;
@@ -878,7 +880,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Kaleb_Upper.paa","104thHowlerCompany\data\Textures\Howler_Kaleb_Lower.paa"};
 		linkedItems[] = {JA_Howler_P2_Base_Kaleb_Helmet,JA_Howler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_P2_Base_Kaleb_Helmet,JA_Howler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_P2_Howler_NCO : SWLB_clone_base_P2
+	};	
+	class JA_104th_Base_P2_Howler_NCO : SWLB_clone_base_P2
 	{
 		author = "Dak"
 		scope = 2;
@@ -893,7 +896,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_Upper.paa","104thHowlerCompany\data\Textures\Howler_NCO_Lower.paa"};
 		linkedItems[] = {JA_Howler_P2_Base_NCO_Helmet,JA_Howler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_P2_Base_NCO_Helmet,JA_Howler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_P2_Howler_Officer : SWLB_clone_base_P2
+	};	
+	class JA_104th_Base_P2_Howler_Officer : SWLB_clone_base_P2
 	{
 		author = "Dak"
 		scope = 2;
@@ -908,7 +912,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_Upper.paa","104thHowlerCompany\data\Textures\Howler_Officer_Lower.paa"};
 		linkedItems[] = {JA_Howler_P2_Base_Officer_Helmet,JA_Howler_AB_Base_Officer_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_P2_Base_Officer_Helmet,JA_Howler_AB_Base_Officer_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_ME_Howler_Kaleb : SWLB_clone_base_P1
+	};	
+	class JA_104th_Base_ME_Howler_Kaleb : SWLB_clone_base_P1
 	{
 		author = "Dak"
 		scope = 2;
@@ -923,7 +928,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_KalebM_Upper.paa","104thHowlerCompany\data\Textures\Howler_KalebM_Lower_-_Kopie.paa"};
 		linkedItems[] = {JA_Howler_ME_Base_Kaleb_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_ME_Base_Kaleb_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_ME_Howler_NCO : SWLB_clone_base_P1
+	};	
+	class JA_104th_Base_ME_Howler_NCO : SWLB_clone_base_P1
 	{
 		author = "Dak"
 		scope = 2;
@@ -938,7 +944,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_UpperM.paa","104thHowlerCompany\data\Textures\Howler_NCO_LowerM.paa"};
 		linkedItems[] = {JA_Howler_ME_Base_NCO_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_ME_Base_NCO_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	class JA_104th_Base_ME_Howler_Officer : SWLB_clone_base_P1
+	};	
+	class JA_104th_Base_ME_Howler_Officer : SWLB_clone_base_P1
 	{
 		author = "Dak"
 		scope = 2;
@@ -1097,5 +1104,274 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_Trooper_LowerSB.paa"};
 		linkedItems[] = {JA_Howler_SB_Base_Medic_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Howler_SB_Base_Medic_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+};
+
+class CfgGroups{
+	class West{
+		class JA_Bluefor{
+			name = "Jango's Finest";
+			class JA_Bluefor_P2_Troopers_Howler{
+				name = "Howler - P2";
+				class JA_Group_P2_Team{
+					name = "P2 - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+				};
+				class JA_Group_P2_Squad{
+					name = "P2 - Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Howler_NCO";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_P2_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_P2_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_P2_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_Kaleb_P2_Squad{
+					name = "P2 - Kaleb Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_P2_Howler_Kaleb";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_P2_Howler_Officer";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_P2_Howler_Paak";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_P2_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_P2_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_P2_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};	
+			};
+			class JA_Bluefor_SB_Troopers_Howler{
+				name = "Howler - SB";
+				class JA_Group_SB_Team{
+					name = "SB - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_SB_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_SB_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_SB_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+				};
+				class JA_Group_SB_Squad{
+					name = "SB - Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_SB_Howler_NCO";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_SB_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_SB_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_SB_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_SB_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_SB_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_Kaleb_SB_Squad{
+					name = "SB - Kaleb Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_SB_Howler_Kaleb";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_SB_Howler_Officer";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_SB_Howler_Paak";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_SB_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_SB_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_SB_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};	
+			};
+			class JA_Bluefor_ME_Troopers_Howler{
+				name = "Howler - ME";
+				class JA_Group_ME_Team{
+					name = "ME - Team";
+					class Unit0 {
+						vehicle = "JA_104th_Base_ME_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_ME_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_ME_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+				};
+				class JA_Group_ME_Squad{
+					name = "ME - Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_ME_Howler_NCO";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_ME_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_ME_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_ME_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_ME_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_ME_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};
+				class JA_Group_Kaleb_ME_Squad{
+					name = "ME - Kaleb Squad";
+					class Unit0 {
+						vehicle = "JA_104th_Base_ME_Howler_Kaleb";
+						rank = "CORPORAL";
+						position[] = {0,0,150};
+					};
+					class Unit1 {
+						vehicle = "JA_104th_Base_ME_Howler_Officer";
+						rank = "PRIVATE";
+						position[] = {-2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_ME_Howler_Paak";
+						rank = "PRIVATE";
+						position[] = {2,-2,150};
+					};
+					class Unit3 {
+						vehicle = "JA_104th_Base_ME_Howler_Medic";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
+					};
+					class Unit4 {
+						vehicle = "JA_104th_Base_ME_Howler_Trooper";
+						rank = "CORPORAL";
+						position[] = {-4,-4,150};
+					};
+					class Unit5 {
+						vehicle = "JA_104th_Base_ME_Howler_Trooper";
+						rank = "PRIVATE";
+						position[] = {-6,-6,150};
+					};
+				};	
+			};
+		};
 	};
 };
