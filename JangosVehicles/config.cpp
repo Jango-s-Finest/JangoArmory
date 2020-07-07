@@ -28,8 +28,6 @@ class CfgPatches
 	};
 };
 
-
-
 class CfgFactionClasses
 {
 	class 104th_Guys
