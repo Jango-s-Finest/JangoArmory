@@ -6,6 +6,14 @@ class CfgPatches
 			"JA_104th_Base_LAAT",
 			"JA_104th_Base_LAAT_AB",
 			"JA_104th_Base_LAAT_C",
+			"JA_104th_Base_LAAT_Mk3",
+			"JA_104th_Base_Vwing_Reaper",
+			"JA_104th_Base_Arc170_Mk2",
+			"JA_104th_Base_Ywing_Reaper",
+			"JA_104th_Base_Uwing_Mk2",
+			"JA_104th_Base_Falcon_Armed",
+			"JA_104th_Base_Pelican_Unarmed",
+			"JA_104th_Base_Pelican_Armed",
 			"JA_104th_Base_Bantha",
 			"JA_104th_Base_TX130",
 			"JA_104th_Base_Barc_Speeder",
@@ -91,15 +99,25 @@ class cfgVehicles {
 	class RD501_light_infantry_transport_Rep_MkII;
 	class SWLG_tanks_tx130;
 	class rd501_sw_barc;
+
 	class ls_laat;
 	class ls_laat_ab; 
-	class RD501_LAAT_cargo_Mk2; //Tells the game to fetch the ls_laat class, as we plan to use most of what's already written.
+	class RD501_LAAT_cargo_Mk2;
+	class RD501_LAAT_Mk3;
+	class 212th_Reaper_V_Wing;
+	class RD501__ARC_170_MKII;
+	class 212th_Reaper_Y_Wing;
+	class RD501_u_wing_MKII;
+	class OPTRE_UNSC_falcon;
+	class OPTRE_Pelican_unarmed;
+	class OPTRE_Pelican_armed;
+
 	class Box_212_Supply_F;
 
 	class JA_104th_Base_LAAT: ls_laat //The : Tells your new class to inherit everything from the ls_laat class.
 	{
 		author = "Echo";
-		displayName = "LAATe"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		displayName = "LAATe";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -116,94 +134,20 @@ class cfgVehicles {
 		irScanRangeMin = 100;
 		irScanToEyeFactor = 4;
 		laserScanner = 1;
+		nvScanner = 1;
+		showAllTargets = 2;
+		reportRemoteTargets = True;
+		ReceiveRemoteTargets = True;
+		crewCrashProtection = 0.01;
 		
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","OPTRE_M9109","RD501_wynd_a2a","missiles_DAR","CMFlareLauncher"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","OPTRE_2500Rnd_50mm_HE","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
 		
-		weapons[] = {"Laserdesignator_pilotCamera","ls_laat_gun","ls_laat_gun_2","OPTRE_M9109","missiles_DAR","CMFlareLauncher","SmokeLauncher"};
-		magazines[] = {"Laserbatteries","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","OPTRE_2500Rnd_50mm_HE","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","SmokeLauncherMag"};
-		
-		
-		class pilotCamera
-		{
-			class OpticsIn
-			{
-				class Wide
-				{
-					opticsDisplayName = "WFOV";
-					initAngleX = 0;
-					minAngleX = -10;
-					maxAngleX = 90;
-					initAngleY = 0;
-					minAngleY = -90;
-					maxAngleY = 90;
-					initFov = 0.425;
-					minFov = 0.425;
-					maxFov = 0.425;
-					directionStabilized = 1;
-					thermalMode[] = {0,1,2,3,4,5};
-					visionMode[] = {"Normal","NVG","Ti"};
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
-				};
-				class zoomx4: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX8: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX20: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX50: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX70: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				showMiniMapInOptics = 1;
-				showUAVViewInOptics = 0;
-				showSlingLoadManagerInOptics = 1;
-			};
-			minTurn = -180;
-			maxTurn = 180;
-			initTurn = 0;
-			minElev = -10;
-			maxElev = 90;
-			initElev = -10;
-			maxXRotSpeed = 0.3;
-			maxYRotSpeed = 0.3;
-			pilotOpticsShowCursor = 1;
-			controllable = 1;
-		};
 	};
 	class JA_104th_Base_LAAT_AB: ls_laat_ab //The : Tells your new class to inherit everything from the ls_laat class.
 	{
 		author = "Echo";
-		displayName = "LAATe AB"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		displayName = "LAATe AB";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -220,89 +164,15 @@ class cfgVehicles {
 		irScanRangeMin = 100;
 		irScanToEyeFactor = 4;
 		laserScanner = 1;
+		nvScanner = 1;
+		showAllTargets = 2;
+		reportRemoteTargets = True;
+		ReceiveRemoteTargets = True;
+		crewCrashProtection = 0.01;
 		
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","OPTRE_M9109","RD501_wynd_a2a","missiles_DAR","CMFlareLauncher"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","OPTRE_2500Rnd_50mm_HE","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
 		
-		weapons[] = {"Laserdesignator_pilotCamera","ls_laat_gun","ls_laat_gun_2","OPTRE_M9109","missiles_DAR","CMFlareLauncher","SmokeLauncher"};
-		magazines[] = {"Laserbatteries","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","OPTRE_2500Rnd_50mm_HE","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","SmokeLauncherMag"};
-		
-		
-		class pilotCamera
-		{
-			class OpticsIn
-			{
-				class Wide
-				{
-					opticsDisplayName = "WFOV";
-					initAngleX = 0;
-					minAngleX = -10;
-					maxAngleX = 90;
-					initAngleY = 0;
-					minAngleY = -90;
-					maxAngleY = 90;
-					initFov = 0.425;
-					minFov = 0.425;
-					maxFov = 0.425;
-					directionStabilized = 1;
-					thermalMode[] = {0,1,2,3,4,5};
-					visionMode[] = {"Normal","NVG","Ti"};
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
-				};
-				class zoomx4: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX8: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX20: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX50: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX70: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				showMiniMapInOptics = 1;
-				showUAVViewInOptics = 0;
-				showSlingLoadManagerInOptics = 1;
-			};
-			minTurn = -180;
-			maxTurn = 180;
-			initTurn = 0;
-			minElev = -10;
-			maxElev = 90;
-			initElev = -10;
-			maxXRotSpeed = 0.3;
-			maxYRotSpeed = 0.3;
-			pilotOpticsShowCursor = 1;
-			controllable = 1;
-		};
 	};
 	class JA_104th_Base_LAAT_C: RD501_LAAT_cargo_Mk2 //The : Tells your new class to inherit everything from the ls_laat class.
 	{
@@ -315,6 +185,97 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
+	class JA_104th_Base_LAAT_Mk3: RD501_LAAT_Mk3 //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "LAAT Mk3"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+	class JA_104th_Base_Vwing_Reaper: 212th_Reaper_V_Wing //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "V-Wing Reaper"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+	class JA_104th_Base_Arc170_Mk2: RD501__ARC_170_MKII //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "ARC-170 Mk2"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+	class JA_104th_Base_Ywing_Reaper: 212th_Reaper_Y_Wing //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "Y-Wing Reaper"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+	class JA_104th_Base_Uwing_Mk2: RD501_u_wing_MKII //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "U-Wing Mk2"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+	class JA_104th_Base_Falcon_Armed: OPTRE_UNSC_falcon //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "Falcon Armed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+	class JA_104th_Base_Pelican_Unarmed: OPTRE_Pelican_unarmed //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "Pelican Unarmed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+	class JA_104th_Base_Pelican_Armed: OPTRE_Pelican_armed //The : Tells your new class to inherit everything from the ls_laat class.
+	{
+		author = "Dak";
+		displayName = "Pelican Armed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+	};
+
+	//Split
+
 	class JA_104th_Base_Bantha: 212th_B_APC_Wheeled_01_cannon_F //The : Tells your new class to inherit everything from the ls_laat class.
 	{
 		author = "Dak";
@@ -381,6 +342,9 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
+
+	//Split
+
 	class JA_104th_Box_Ammo: Box_212_Supply_F
 	{
 		author = "Dak";
