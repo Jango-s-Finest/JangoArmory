@@ -456,7 +456,7 @@ class CfgGroups{
 					};
 				};
 				class JA_Group_ARF_Team{
-					name = "P1 - Kaleb Squad";
+					name = "P1 - ARF Squad";
 					class Unit0 {
 						vehicle = "JA_104th_Base_Malevolence_ARF";
 						rank = "CORPORAL";
@@ -471,6 +471,11 @@ class CfgGroups{
 						vehicle = "JA_104th_Base_Malevolence_ARF";
 						rank = "PRIVATE";
 						position[] = {2,-2,150};
+					};
+					class Unit2 {
+						vehicle = "JA_104th_Base_Malevolence_ARF";
+						rank = "PRIVATE";
+						position[] = {4,-4,150};
 					};
 				};	
 			};
