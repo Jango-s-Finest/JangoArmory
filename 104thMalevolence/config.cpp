@@ -472,7 +472,7 @@ class CfgGroups{
 						rank = "PRIVATE";
 						position[] = {2,-2,150};
 					};
-					class Unit2 {
+					class Unit3 {
 						vehicle = "JA_104th_Base_Malevolence_ARF";
 						rank = "PRIVATE";
 						position[] = {4,-4,150};
