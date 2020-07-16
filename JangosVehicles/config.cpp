@@ -3,8 +3,13 @@ class CfgPatches
 	class Jangos_Armory_Vehicles
 	{
 		units[] = {
+			"JA_Base_LAAT",
+			"JA_Base_LAAT_AB",
 			"JA_104th_Base_LAAT",
 			"JA_104th_Base_LAAT_AB",
+			"JA_104th_Base_LAAT_Medic",
+			"JA_104th_Echo_LAAT",
+			"JA_104th_Echo_LAAT_AB",
 			"JA_104th_Base_LAAT_C",
 			"JA_104th_Base_LAAT_Mk3",
 			"JA_104th_Base_Vwing_Reaper",
@@ -63,33 +68,26 @@ class cfgEditorSubcategories
 	};
 };
 
+
+class SensorTemplatePassiveRadar;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+
 class cfgVehicles {
-	
-	class Helicopter_Base_F
-	{
-		class HitPoints;
-	};
-	
-	class Helicopter_Base_H: Helicopter_Base_F
-	{
-		class HitPoints: HitPoints
-		{
-			class HitFuel;
-		};
-	};
-	
-	class ls_laat_base: Helicopter_Base_H
-	{
-		class HitPoints
-		{
-			class HitFuel
-			{
-				passthrough = 0;
-				minimalhit = 0;
-				armor = 999;
-			};
-		};
-	};
 	
 	class 212th_B_APC_Wheeled_01_cannon_F;
 	class RD501_fast_infantry_transport_republic;
@@ -98,6 +96,7 @@ class cfgVehicles {
 	class SWLG_tanks_tx130;
 	class rd501_sw_barc;
 
+	class ls_laat_base;
 	class ls_laat;
 	class ls_laat_ab; 
 	class RD501_LAAT_cargo_Mk2;
@@ -112,16 +111,10 @@ class cfgVehicles {
 
 	class Box_212_Supply_F;
 
-	class JA_104th_Base_LAAT: ls_laat //The : Tells your new class to inherit everything from the ls_laat class.
-	{
-		author = "Echo";
-		displayName = "LAATe";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
+	class JA_Base_LAAT: ls_laat {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		displayName = "LAAT-E"; 
 		
 		armor = 500;
 		armorStructural = 2;
@@ -136,22 +129,569 @@ class cfgVehicles {
 		showAllTargets = 2;
 		reportRemoteTargets = True;
 		ReceiveRemoteTargets = True;
-		crewCrashProtection = 0.01;
+		crewCrashProtection = 0.001;
 		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","OPTRE_M9109","RD501_wynd_a2a","missiles_DAR","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","OPTRE_2500Rnd_50mm_HE","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher","PomehiLauncherXT"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","400Rnd_Pomehi_Mag","400Rnd_Pomehi_Mag"};
+
+		memoryPointDriverOptics = "slingcamera";
+		unitInfoType = "RscOptics_CAS_Pilot";
+		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
+		
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName = "WFOV";
+					initAngleX = 0;
+					minAngleX = -10;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -90;
+					maxAngleY = 90;
+					initFov = 0.425;
+					minFov = 0.425;
+					maxFov = 0.425;
+					directionStabilized = 1;
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+				};
+				class zoomx4: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.425/4)";
+					minFov = "(0.425/4)";
+					maxFov = "(0.425/4)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX8: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/8)";
+					minFov = "(0.42/8)";
+					maxFov = "(0.42/8)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX20: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/20)";
+					minFov = "(0.42/20)";
+					maxFov = "(0.42/20)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX50: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/50)";
+					minFov = "(0.42/50)";
+					maxFov = "(0.42/50)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX70: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/70)";
+					minFov = "(0.42/70)";
+					maxFov = "(0.42/70)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics = 1;
+				showUAVViewInOptics = 0;
+				showSlingLoadManagerInOptics = 1;
+			};
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			minElev = -10;
+			maxElev = 90;
+			initElev = -10;
+			maxXRotSpeed = 0.3;
+			maxYRotSpeed = 0.3;
+			pilotOpticsShowCursor = 1;
+			controllable = 1;
+		};
+		
+		class HitPoints
+		{
+			class HitHull
+			{
+				armor = 999;
+				convexComponent = "hull_hit";
+				depends = "Total";
+				explosionShielding = 1;
+				material = 51;
+				name = "hull_hit";
+				passThrough = 1;
+				visual = "zbytek";
+				radius = 0.01;
+			};
+			class HitFuel
+			{
+				convexcomponent = "fuel_hit";
+				hitpoint = "fuel_hit";
+				name = "fuel_hit";
+				explosionShielding = 2;
+				radius = 0.1;
+				visual = "";
+				passthrough = 0.1;
+				minimalhit = 0.1;
+				material = -1;
+				armor = 999;
+			};
+			class HitEngine
+			{
+				armor = 0.5;
+				convexComponent = "engine_hit";
+				explosionShielding = 2;
+				material = 51;
+				name = "engine_hit";
+				hitpoint = "engine_hit";
+				passThrough = 1;
+				visual = "";
+				radius = 0.2;
+			};
+			class HitEngine_1: HitEngine
+			{
+				convexComponent = "engine_hit_1";
+				name = "engine_hit_1";
+				hitpoint = "engine_hit_1";
+			};
+			class HitEngine_2: HitEngine
+			{
+				convexComponent = "engine_hit_2";
+				name = "engine_hit_2";
+				hitpoint = "engine_hit_2";
+			};
+			class HitHRotor
+			{
+				armor = 3;
+				convexComponent = "main_rotor_hit";
+				explosionShielding = 2.5;
+				material = 51;
+				name = "main_rotor_hit";
+				passThrough = 0.1;
+				visual = "";
+				radius = 0.01;
+			};
+			class HitVRotor
+			{
+				armor = 3;
+				convexComponent = "tail_rotor_hit";
+				explosionShielding = 6;
+				material = 51;
+				name = "tail_rotor_hit";
+				passThrough = 0.3;
+				visual = "";
+				radius = 0.01;
+			};
+			class HitAvionics
+			{
+				armor = 1;
+				convexComponent = "avionics_hit";
+				explosionShielding = 2;
+				material = 51;
+				name = "avionics_hit";
+				passThrough = 1;
+				visual = "";
+				radius = 0.5;
+			};
+		};
+		
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class activeRadarSenorComponent
+					{
+						aimDown = 30;
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {0,1,1,1};
+						componentType = "ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 1000;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 3000;
+						class AirTarget
+						{
+							maxRange = 8000;
+							minRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 8000;
+							minRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class AntiRadiationSensorComponent
+					{
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 90;
+						angleRangeVertical = 90;
+						animDirection = "";
+						color[] = {0.5,1,0.5,0.5};
+						componentType = "PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 12000;
+						class AirTarget
+						{
+							maxRange = 8000;
+							minRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 8000;
+							minRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class IRSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 37;
+						maxTrackableSpeed = 100;
+						aimDown = 0;
+						allowsMarking = 1;
+						animDirection = "";
+						color[] = {1,0,0,1};
+						componentType = "IRSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxFogSeeThrough = 0.995;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 2000;
+					};
+					class VisualSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 3000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 37;
+						maxTrackableSpeed = 1000;
+						aimDown = 0;
+						animDirection = "";
+						allowsMarking = 1;
+						color[] = {1,1,0.5,0.8};
+						componentType = "VisualSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxFogSeeThrough = 1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						nightRangeCoef = 0;
+						typeRecognitionDistance = 2000;
+					};
+					class PassiveRadarSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 16000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 16000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 0;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {0.5,1,0.5,0.5};
+						componentType = "PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 12000;
+					};
+					class LaserSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "LaserSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 0;
+					};
+					class NVSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "NVSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 0;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay = "SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportPylonsComponent
+			{
+				uiPicture = "swlb_a_vehicle\laat\data\ui\laat_ui.paa";
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment = "PylonRack_Missile_AMRAAM_D_x1";
+						priority = 5;
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"}; //hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
+						turret[] = {0};
+						UIposition[] = {0.06,0.4};
+					};
+					class PylonLeft2: PylonLeft1
+					{
+						attachment = "PylonRack_Missile_AMRAAM_D_x1";
+						priority = 4;
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
+						UIposition[] = {0.08,0.35};
+					};
+					class PylonLeft3: PylonLeft1
+					{
+						attachment = "PylonRack_Missile_AMRAAM_D_x1";
+						priority = 3;
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
+						UIposition[] = {0.1,0.3};
+					};
+					class PylonRight3: PylonLeft3
+					{
+						mirroredMissilePos = 3;
+						UIposition[] = {0.59,0.3};
+					};
+					class PylonRight2: PylonLeft2
+					{
+						mirroredMissilePos = 2;
+						UIposition[] = {0.62,0.35};
+					};
+					class PylonRight1: PylonLeft1
+					{
+						mirroredMissilePos = 1;
+						UIposition[] = {0.64,0.4};
+					};
+				};
+				class Presets
+				{
+					class Empty
+					{
+						displayName = "Empty";
+						attachment[] = {};
+					};
+					class Default
+					{
+						displayName = "Default";
+						attachment[] = {"PylonMissile_1Rnd_AAA_missiles","PylonMissile_1Rnd_AAA_missiles","PylonRack_12Rnd_PG_missiles","PylonRack_12Rnd_PG_missiles","PylonMissile_1Rnd_AAA_missiles","PylonMissile_1Rnd_AAA_missiles"};
+					};
+					class AT
+					{
+						displayName = "AT";
+						attachment[] = {"PylonRack_12Rnd_PG_missiles","PylonMissile_1Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles","PylonRack_12Rnd_PG_missiles","PylonMissile_1Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles"};
+					};
+					class CAS
+					{
+						displayName = "CAS";
+						attachment[] = {"PylonRack_12Rnd_missiles","PylonMissile_1Rnd_AAA_missiles","PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","PylonMissile_1Rnd_AAA_missiles","PylonRack_12Rnd_missiles"};
+					};
+				};
+			};
+			class TransportCounterMeasuresComponent;
+		};
 		
 	};
-	class JA_104th_Base_LAAT_AB: ls_laat_ab //The : Tells your new class to inherit everything from the ls_laat class.
+	
+	class JA_Base_LAAT_AB: ls_laat_ab 
 	{
-		author = "Echo";
-		displayName = "LAATe AB";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		displayName = "LAAT-E Airborne"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		
 		armor = 500;
 		armorStructural = 2;
@@ -166,12 +706,685 @@ class cfgVehicles {
 		showAllTargets = 2;
 		reportRemoteTargets = True;
 		ReceiveRemoteTargets = True;
-		crewCrashProtection = 0.01;
+		crewCrashProtection = 0.001;
 		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","OPTRE_M9109","RD501_wynd_a2a","missiles_DAR","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","OPTRE_2500Rnd_50mm_HE","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher","PomehiLauncherXT"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","400Rnd_Pomehi_Mag","400Rnd_Pomehi_Mag"};
+
+		memoryPointDriverOptics = "slingcamera";
+		unitInfoType = "RscOptics_CAS_Pilot";
+		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
+		
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName = "WFOV";
+					initAngleX = 0;
+					minAngleX = -10;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -90;
+					maxAngleY = 90;
+					initFov = 0.425;
+					minFov = 0.425;
+					maxFov = 0.425;
+					directionStabilized = 1;
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+				};
+				class zoomx4: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.425/4)";
+					minFov = "(0.425/4)";
+					maxFov = "(0.425/4)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX8: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/8)";
+					minFov = "(0.42/8)";
+					maxFov = "(0.42/8)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX20: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/20)";
+					minFov = "(0.42/20)";
+					maxFov = "(0.42/20)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX50: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/50)";
+					minFov = "(0.42/50)";
+					maxFov = "(0.42/50)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX70: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/70)";
+					minFov = "(0.42/70)";
+					maxFov = "(0.42/70)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics = 1;
+				showUAVViewInOptics = 0;
+				showSlingLoadManagerInOptics = 1;
+			};
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			minElev = -10;
+			maxElev = 90;
+			initElev = -10;
+			maxXRotSpeed = 0.3;
+			maxYRotSpeed = 0.3;
+			pilotOpticsShowCursor = 1;
+			controllable = 1;
+		};
+		
+		class HitPoints
+		{
+			class HitHull
+			{
+				armor = 999;
+				convexComponent = "hull_hit";
+				depends = "Total";
+				explosionShielding = 1;
+				material = 51;
+				name = "hull_hit";
+				passThrough = 1;
+				visual = "zbytek";
+				radius = 0.01;
+			};
+			class HitFuel
+			{
+				convexcomponent = "fuel_hit";
+				hitpoint = "fuel_hit";
+				name = "fuel_hit";
+				explosionShielding = 2;
+				radius = 0.1;
+				visual = "";
+				passthrough = 0.1;
+				minimalhit = 0.1;
+				material = -1;
+				armor = 999;
+			};
+			class HitEngine
+			{
+				armor = 0.5;
+				convexComponent = "engine_hit";
+				explosionShielding = 2;
+				material = 51;
+				name = "engine_hit";
+				hitpoint = "engine_hit";
+				passThrough = 1;
+				visual = "";
+				radius = 0.2;
+			};
+			class HitEngine_1: HitEngine
+			{
+				convexComponent = "engine_hit_1";
+				name = "engine_hit_1";
+				hitpoint = "engine_hit_1";
+			};
+			class HitEngine_2: HitEngine
+			{
+				convexComponent = "engine_hit_2";
+				name = "engine_hit_2";
+				hitpoint = "engine_hit_2";
+			};
+			class HitHRotor
+			{
+				armor = 3;
+				convexComponent = "main_rotor_hit";
+				explosionShielding = 2.5;
+				material = 51;
+				name = "main_rotor_hit";
+				passThrough = 0.1;
+				visual = "";
+				radius = 0.01;
+			};
+			class HitVRotor
+			{
+				armor = 3;
+				convexComponent = "tail_rotor_hit";
+				explosionShielding = 6;
+				material = 51;
+				name = "tail_rotor_hit";
+				passThrough = 0.3;
+				visual = "";
+				radius = 0.01;
+			};
+			class HitAvionics
+			{
+				armor = 1;
+				convexComponent = "avionics_hit";
+				explosionShielding = 2;
+				material = 51;
+				name = "avionics_hit";
+				passThrough = 1;
+				visual = "";
+				radius = 0.5;
+			};
+		};
+		
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class activeRadarSenorComponent
+					{
+						aimDown = 30;
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {0,1,1,1};
+						componentType = "ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 1000;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 3000;
+						class AirTarget
+						{
+							maxRange = 8000;
+							minRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 8000;
+							minRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class AntiRadiationSensorComponent
+					{
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 90;
+						angleRangeVertical = 90;
+						animDirection = "";
+						color[] = {0.5,1,0.5,0.5};
+						componentType = "PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 12000;
+						class AirTarget
+						{
+							maxRange = 8000;
+							minRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 8000;
+							minRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class IRSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 37;
+						maxTrackableSpeed = 100;
+						aimDown = 0;
+						allowsMarking = 1;
+						animDirection = "";
+						color[] = {1,0,0,1};
+						componentType = "IRSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxFogSeeThrough = 0.995;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 2000;
+					};
+					class VisualSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 3000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 37;
+						maxTrackableSpeed = 1000;
+						aimDown = 0;
+						animDirection = "";
+						allowsMarking = 1;
+						color[] = {1,1,0.5,0.8};
+						componentType = "VisualSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxFogSeeThrough = 1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						nightRangeCoef = 0;
+						typeRecognitionDistance = 2000;
+					};
+					class PassiveRadarSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 16000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 16000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 0;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {0.5,1,0.5,0.5};
+						componentType = "PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 12000;
+					};
+					class LaserSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "LaserSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 0;
+					};
+					class NVSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "NVSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 0;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay = "SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportCounterMeasuresComponent;
+		};
 		
 	};
+	
+	class JA_104th_Base_LAAT: JA_Base_LAAT {
+		displayName = "LAAT-E 104th";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "104th";
+				author = "Legion Studio + Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"swlb_a_vehicle\laat\data\door1_co.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				factions[] = {"104th_Guys"};
+			};
+			
+			class logo: base
+			{
+				displayName = "104th Logo"
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bgwp.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"swlb_a_vehicle\laat\data\door1_co.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+			}
+			
+			class plobro: base
+			{
+				displayName = "104th PloBros"
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bgpb.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"swlb_a_vehicle\laat\data\door1_co.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+			}
+			
+			
+		}
+		textureList[] = {"base",1,"logo",1,"plobro",1};
+	}
+	
+	class JA_104th_Base_LAAT_AB: JA_Base_LAAT_AB {
+		displayName = "LAAT-E 104th Airborne";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "104th";
+				author = "Legion Studio + Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"swlb_a_vehicle\laat\data\door1_co.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				factions[] = {"104th_Guys"};
+			};
+			
+			class logo: base
+			{
+				displayName = "104th Logo"
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bgwp.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"swlb_a_vehicle\laat\data\door1_co.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+			}
+			
+			class plobro: base
+			{
+				displayName = "104th Plo's Bros"
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bgpb.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"swlb_a_vehicle\laat\data\door1_co.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+			}
+			
+			
+		}
+		textureList[] = {"base",1,"logo",1,"plobro",1};
+	}
+	
+	class JA_104th_Base_LAAT_Medic: JA_Base_LAAT_AB {
+		displayName = "LAAT-E 104th MedEvac";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "104th MedEvac";
+				author = "Legion Studio + Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"JangosVehicles\data\textures\door1_co_medic2.paa",
+				"JangosVehicles\data\textures\door2_co_medic.paa",
+				"JangosVehicles\data\textures\door3_co_medic.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				factions[] = {"104th_Guys"};
+			};
+			
+		}
+		textureList[] = {"base",1};
+	} 
+	
+	class JA_104th_Echo_LAAT: JA_Base_LAAT {
+		displayName = "LAAT-E 104th Echo";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "104th Echo";
+				author = "Legion Studio + Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"JangosVehicles\data\textures\door1_co_echo.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				factions[] = {"104th_Guys"};
+			};
+			
+		}
+		textureList[] = {"base",1};
+	}
+	
+	class JA_104th_Echo_LAAT_AB: JA_Base_LAAT_AB {
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		displayName = "LAAT-E 104th Echo Airborne";
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "104th Echo";
+				author = "Legion Studio + Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"JangosVehicles\data\textures\door1_co_echo.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				factions[] = {"104th_Guys"};
+			};
+			
+		}
+		textureList[] = {"base",1};
+	}
+
 	class JA_104th_Base_LAAT_C: RD501_LAAT_cargo_Mk2 //The : Tells your new class to inherit everything from the ls_laat class.
 	{
 		author = "Dak";
