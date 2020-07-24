@@ -1042,7 +1042,7 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_ARF_Ice_Uniform";
-		displayName = "104th Arf Ice";
+		displayName = "104th ARF Ice";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2", "biceps", "rank" };
@@ -1058,7 +1058,7 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_ARF_Uniform";
-		displayName = "104th Arf";
+		displayName = "104th ARF";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
@@ -1074,7 +1074,7 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_ARFMedic_Uniform";
-		displayName = "104th Arf Medic";
+		displayName = "104th ARF Medic";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
