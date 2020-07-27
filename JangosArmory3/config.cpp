@@ -16,7 +16,6 @@ class CfgPatches
 			"JA_104th_Salty",
 			"JA_104th_Fenrir",
 			"JA_104th_Paraso",
-			"JA_104th_P1_Gunney",
 			"JA_104th_ARF_Ice",
 			"JA_104th_ARF",
 			"JA_104th_ARFMedic",
@@ -62,8 +61,6 @@ class CfgPatches
 			"JA_302nd_CommanderVisor",
 			"JA_104th_Paraso_Helmet",
 			"JA_104th_Paraso_Uniform",
-			"JA_104th_P1_Gunney_Helmet",
-			"JA_104th_P1_Gunney_Uniform",
 			"JA_104th_ARF_Ice_Helmet",
 			"JA_104th_ARF_Ice_Uniform",
 			"JA_104th_ARF_Uniform",
@@ -621,41 +618,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_P1_Gunney_Helmet : SWLB_clone_P1_Helmet
-	{
-		author = "Tundra";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P1 Helmet (104th Gunney)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_P1_Gunney_Helmet.paa" }; // the file path to the texture
-	};
-	class JA_104th_P1_Gunney_Uniform : SWLB_clone_uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Gunney)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory3\data\Textures\104th_P1_Gunney_Upper.paa",
-			"JangosArmory3\data\Textures\104th_P1_Gunney_Lower.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_P1_Gunney";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
 	class JA_104th_ARF_Ice_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
 		author = "Tundra";
@@ -1017,22 +979,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_P2_Paraso_Upper.paa", "JangosArmory3\data\Textures\104th_P2_Paraso_Lower.paa"};
 		linkedItems[] = { JA_104th_Paraso_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Paraso_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	
-	class JA_104th_P1_Gunney : SWLB_clone_base_P2
-	{
-		author = "Dak"
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		uniformClass = "JA_104th_P1_Gunney_Uniform";
-		displayName = "104th P1 Gunney";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_P1_Gunney_Upper.paa", "JangosArmory3\data\Textures\104th_P1_Gunney_Lower.paa"};
-		linkedItems[] = { JA_104th_P1_Gunney_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_P1_Gunney_Ice_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
 	class JA_104th_ARF_Ice : SWLB_clone_marshal_commander_base_P2
 	{
