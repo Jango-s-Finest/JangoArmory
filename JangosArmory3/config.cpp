@@ -16,7 +16,7 @@ class CfgPatches
 			"JA_104th_Salty",
 			"JA_104th_Fenrir",
 			"JA_104th_Paraso",
-			"JA_104th_Ice",
+			"JA_104th_ARF_Ice",
 			"JA_104th_ARF",
 			"JA_104th_ARFMedic",
 			"JA_104th_Carmine",
@@ -61,8 +61,8 @@ class CfgPatches
 			"JA_302nd_CommanderVisor",
 			"JA_104th_Paraso_Helmet",
 			"JA_104th_Paraso_Uniform",
-			"JA_104th_Ice_Helmet",
-			"JA_104th_Ice_Uniform",
+			"JA_104th_ARF_Ice_Helmet",
+			"JA_104th_ARF_Ice_Uniform",
 			"JA_104th_ARF_Uniform",
 			"JA_104th_ARFMedic_Uniform",
 			"JA_104th_Carmine_Uniform",
@@ -618,7 +618,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Ice_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_ARF_Ice_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -629,7 +629,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARF_Ice_Helmet.paa" }; // the file path to the texture
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
-	class JA_104th_Ice_Uniform : SWLB_clone_mc_uniform
+	class JA_104th_ARF_Ice_Uniform : SWLB_clone_mc_uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -980,7 +980,7 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_Paraso_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Paraso_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
-	class JA_104th_Ice : SWLB_clone_marshal_commander_base_P2
+	class JA_104th_ARF_Ice : SWLB_clone_marshal_commander_base_P2
 	{
 		author = "Tundra"
 		scope = 2;
