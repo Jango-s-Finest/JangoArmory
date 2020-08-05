@@ -83,7 +83,7 @@ class CfgWeapons
 
 	class JA_Prowler_P2_Base_NCO_Helmet : SWLB_clone_BARC_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -93,7 +93,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_P2_Base_NCO_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Prowler NCO - P2)";
@@ -118,7 +118,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_P2_Base_Officer_Helmet : SWLB_clone_BARC_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -128,7 +128,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_P2_Base_Officer_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Prowler Officer - P2)";
@@ -153,7 +153,7 @@ class CfgWeapons
 	};
     class JA_Prowler_P2_Base_Fenris_Helmet : SWLB_clone_BARC_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -163,7 +163,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_P2_Base_Fenris_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Prowler Fenris - P2)";
@@ -188,7 +188,7 @@ class CfgWeapons
 	};
     class JA_Prowler_P2_Base_Trooper_Helmet : SWLB_clone_BARC_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -198,7 +198,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_P2_Base_Trooper_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Prowler Trooper - P2)";
@@ -223,7 +223,7 @@ class CfgWeapons
 	};
     class JA_Prowler_P2_Base_Medic_Helmet : SWLB_clone_BARC_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -233,7 +233,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_ENG_Base_Helmet : SWLB_clone_eng_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -243,7 +243,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_ENG_Officer_Helmet : SWLB_clone_eng_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -253,7 +253,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_P2_Base_Medic_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Prowler Medic - P2)";
@@ -278,7 +278,7 @@ class CfgWeapons
 	};
 	class JA_Prowler_P2_Base_Fenris_Armor : SWLB_clone_officer_armor
 	{
-		author = "Dak";
+		author = "Dak";;
 		displayName = "Clone Trooper Officer vest (Fenris)";
 		hiddenSelections[] =
 		{
@@ -307,14 +307,14 @@ class CfgVehicles
 
 	class JA_104th_Base_P2_Prowler_NCO : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Prowler_P2_Base_NCO_Uniform";
 		displayName = "P2 - NCO";
-		faction = "104th_Guys";
+		faction = "104th_Guys";;
 		editorSubcategory = "104th_Categ_Clones_Prowler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_NCO_Upper.paa","104thProwlerCompany\data\Textures\Prowler_Armored_NCO_Lower.paa"};
@@ -323,14 +323,14 @@ class CfgVehicles
 	};	
 	class JA_104th_Base_P2_Prowler_Officer : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Prowler_P2_Base_Officer_Uniform";
 		displayName = "P2 - Officer";
-		faction = "104th_Guys";
+		faction = "104th_Guys";;
 		editorSubcategory = "104th_Categ_Clones_Prowler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Officer_Upper.paa","104thProwlerCompany\data\Textures\Prowler_Armored_Officer_Lower.paa"};
@@ -339,14 +339,14 @@ class CfgVehicles
 	};    
 	class JA_104th_Base_P2_Prowler_Fenris : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Prowler_P2_Base_Fenris_Uniform";
 		displayName = "P2 - Fenris";
-		faction = "104th_Guys";
+		faction = "104th_Guys";;
 		editorSubcategory = "104th_Categ_Clones_Prowler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Captain_Fenris_Upper.paa","104thProwlerCompany\data\Textures\Captain_Fenris_Lower.paa"};
@@ -355,14 +355,14 @@ class CfgVehicles
 	};    
 	class JA_104th_Base_P2_Prowler_Trooper : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Prowler_P2_Base_Trooper_Uniform";
 		displayName = "P2 - Trooper";
-		faction = "104th_Guys";
+		faction = "104th_Guys";;
 		editorSubcategory = "104th_Categ_Clones_Prowler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Trooper_Upper.paa","104thProwlerCompany\data\Textures\Prowler_Armored_Trooper_Lower.paa"};
@@ -371,14 +371,14 @@ class CfgVehicles
 	};    
 	class JA_104th_Base_P2_Prowler_Medic : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Prowler_P2_Base_Medic_Uniform";
 		displayName = "P2 - Medic";
-		faction = "104th_Guys";
+		faction = "104th_Guys";;
 		editorSubcategory = "104th_Categ_Clones_Prowler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Medic_Upper.paa","104thProwlerCompany\data\Textures\Prowler_Armored_Medic_Lower.paa"};

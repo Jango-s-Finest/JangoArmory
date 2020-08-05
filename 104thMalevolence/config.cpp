@@ -98,7 +98,7 @@ class CfgWeapons
 	};
 	class JA_Malevolence_Base_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -108,7 +108,7 @@ class CfgWeapons
 	};
 	class JA_Malevolence_Base_ARF_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper ARF armor (Malevolence)";
@@ -133,7 +133,7 @@ class CfgWeapons
 	};
 	class JA_Malevolence_Base_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -143,7 +143,7 @@ class CfgWeapons
 	};
 	class JA_Malevolence_Base_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Malevolence)";
@@ -168,7 +168,7 @@ class CfgWeapons
 	};
 	class JA_Malevolence_Base_Medic_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -178,7 +178,7 @@ class CfgWeapons
 	};
 	class JA_Malevolence_Base_Medic_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper medic armor (Malevolence)";
@@ -203,7 +203,7 @@ class CfgWeapons
 	};
 	class JA_Invisible_Base_Rebreather_Uniform : SWLB_CEE_Lightweight_Rebreather
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone lightweight rebreather vest (Invisible)";
@@ -258,14 +258,14 @@ class CfgVehicles
 	class EG_InvisBagMain;
 	class JA_104th_Base_Malevolence_ARF : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Malevolence_Base_ARF_Uniform";
 		displayName = "ME - ARF";
-		faction = "104th_Guys";
+		faction = "104th_Guys";;
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_ARF_Upper.paa", "104thMalevolence\data\Textures\104th_ARF_Lower.paa"};
@@ -274,14 +274,14 @@ class CfgVehicles
 	};	
 	class JA_104th_Base_Malevolence : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Malevolence_Base_Uniform";
 		displayName = "ME - Trooper";
-		faction = "104th_Guys";
+		faction = "104th_Guys";;
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_Trooper_Upper.paa", "104thMalevolence\data\Textures\104th_Trooper_Lower.paa"};
@@ -290,14 +290,14 @@ class CfgVehicles
 	};	
 	class JA_104th_Base_Malevolence_Medic : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Malevolence_Base_Medic_Uniform";
 		displayName = "ME - Trooper Medic";
-		faction = "104th_Guys";
+		faction = "104th_Guys";;
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_Medic_Upper.paa", "104thMalevolence\data\Textures\104th_Trooper_Lower.paa"};

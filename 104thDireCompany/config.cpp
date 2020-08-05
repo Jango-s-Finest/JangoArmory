@@ -95,7 +95,7 @@ class CfgWeapons
 
 	class JA_Dire_P2_Base_Zivi_Helmet : SWLB_clone_P2_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -106,7 +106,7 @@ class CfgWeapons
 
 	class JA_Dire_P2_Base_Zivi_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Captain Zivi)";
@@ -131,7 +131,7 @@ class CfgWeapons
 	};
 	class JA_Dire_P2_Base_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -142,7 +142,7 @@ class CfgWeapons
 
 	class JA_Dire_P2_Base_ARF_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper ARF armor (Dire P2)";
@@ -167,7 +167,7 @@ class CfgWeapons
 	};
 	class JA_Dire_P2_Base_Helmet : SWLB_clone_P2_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -178,7 +178,7 @@ class CfgWeapons
 
 	class JA_Dire_P2_Base_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Dire P2)";
@@ -204,7 +204,7 @@ class CfgWeapons
 
 	class JA_Dire_P2_Base_Medic_Helmet : SWLB_clone_P2_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -215,7 +215,7 @@ class CfgWeapons
 
 	class JA_Dire_P2_Base_Medic_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper medic armor (Dire P2)";
@@ -241,7 +241,7 @@ class CfgWeapons
 
 	class JA_Dire_Blue_Base_Zivi_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -252,7 +252,7 @@ class CfgWeapons
 
 	class JA_Dire_Blue_Base_Zivi_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Captain Zivi - Blue)";
@@ -277,7 +277,7 @@ class CfgWeapons
 	};
 	class JA_Dire_Blue_Base_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -288,7 +288,7 @@ class CfgWeapons
 
 	class JA_Dire_Blue_Base_ARF_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper ARF armor (Dire Blue)";
@@ -313,7 +313,7 @@ class CfgWeapons
 	};
 	class JA_Dire_Blue_Base_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -324,7 +324,7 @@ class CfgWeapons
 
 	class JA_Dire_Blue_Base_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Dire Blue)";
@@ -350,7 +350,7 @@ class CfgWeapons
 
 	class JA_Dire_Blue_Base_Medic_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -361,7 +361,7 @@ class CfgWeapons
 
 	class JA_Dire_Blue_Base_Medic_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper medic armor (Dire Blue)";
@@ -387,7 +387,7 @@ class CfgWeapons
 
 	class JA_Dire_Base_ME_Zivi_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -398,7 +398,7 @@ class CfgWeapons
 
 	class JA_Dire_Base_ME_Zivi_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Captain Zivi - ME)";
@@ -423,7 +423,7 @@ class CfgWeapons
 	};
 	class JA_Dire_Base_ME_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -434,7 +434,7 @@ class CfgWeapons
 
 	class JA_Dire_Base_ME_ARF_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper ARF armor (Dire ME)";
@@ -459,7 +459,7 @@ class CfgWeapons
 	};
 	class JA_Dire_Base_ME_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -470,7 +470,7 @@ class CfgWeapons
 
 	class JA_Dire_Base_ME_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (Dire ME)";
@@ -496,7 +496,7 @@ class CfgWeapons
 
 	class JA_Dire_Base_ME_Medic_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Dak"
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -507,7 +507,7 @@ class CfgWeapons
 
 	class JA_Dire_Base_ME_Medic_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper medic armor (Dire ME)";
@@ -545,14 +545,14 @@ class CfgVehicles
 /////////P2
 	class JA_104th_Base_P2_Dire_Zivi : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_P2_Base_Zivi_Uniform";
 		displayName = "P2 - Captain Zivi";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Captain_Zivi_Upper.paa","104thDireCompany\data\Textures\Base_Captain_Zivi_Lower.paa"};
@@ -561,14 +561,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_P2_Dire_ARF : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_P2_Base_ARF_Uniform";
 		displayName = "P2 - ARF";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_ARF_Upper.paa", "104thDireCompany\data\Textures\Base_Dire_ARF_Lower.paa"};
@@ -577,14 +577,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_P2_Dire : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_P2_Base_Uniform";
 		displayName = "P2 - Trooper";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Upper.paa", "104thDireCompany\data\Textures\Base_Dire_Lower.paa"};
@@ -593,14 +593,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_P2_Dire_Medic : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_P2_Base_Medic_Uniform";
 		displayName = "P2 - Trooper Medic";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Medic_Upper.paa", "104thDireCompany\data\Textures\Base_Dire_Medic_Lower.paa"};
@@ -610,14 +610,14 @@ class CfgVehicles
 /////////Blue
 	class JA_104th_Base_Blue_Dire_Zivi : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Zivi_Uniform";
 		displayName = "Blue - Captain Zivi";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Captain_Zivi_Upper_Blue.paa","104thDireCompany\data\Textures\Base_Captain_Zivi_Lower_Blue.paa"};
@@ -626,14 +626,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_Blue_Dire_ARF : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Blue_Base_ARF_Uniform";
 		displayName = "Blue - ARF";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_ARF_Upper_Blue.paa", "104thDireCompany\data\Textures\Base_Dire_ARF_Lower_Blue.paa"};
@@ -642,14 +642,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_Blue_Dire : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Uniform";
 		displayName = "Blue - Trooper";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Upper_Blue.paa", "104thDireCompany\data\Textures\Base_Dire_Lower_Blue.paa"};
@@ -658,14 +658,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_Blue_Dire_Medic : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Blue_Base_Medic_Uniform";
 		displayName = "Blue - Trooper Medic";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Medic_Upper_Blue.paa", "104thDireCompany\data\Textures\Base_Dire_Medic_Lower_Blue.paa"};
@@ -675,14 +675,14 @@ class CfgVehicles
 /////////ME
 	class JA_104th_Base_ME_Dire_Zivi : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Base_ME_Zivi_Uniform";
 		displayName = "ME - Captain Zivi";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Captain_Zivi_Upper.paa","104thDireCompany\data\Textures\Base_ME_Captain_Zivi_Lower.paa"};
@@ -691,14 +691,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_ME_Dire_ARF : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Base_ME_ARF_Uniform";
 		displayName = "ME - ARF";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_ARF_Upper.paa", "104thDireCompany\data\Textures\Base_ME_Dire_ARF_Lower.paa"};
@@ -707,14 +707,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_ME_Dire : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Base_ME_Uniform";
 		displayName = "ME - Trooper";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_Upper.paa", "104thDireCompany\data\Textures\Base_ME_Dire_Lower.paa"};
@@ -723,14 +723,14 @@ class CfgVehicles
 	};
 	class JA_104th_Base_ME_Dire_Medic : SWLB_clone_base_P1
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Dire_Base_ME_Medic_Uniform";
 		displayName = "ME - Trooper Medic";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_dire";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_Medic_Upper.paa", "104thDireCompany\data\Textures\Base_ME_Dire_Medic_Lower.paa"};

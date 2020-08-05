@@ -7,7 +7,7 @@ class CfgPatches
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ls_core"};
+		requiredAddons[] = {};
 		units[] = {
 			"JA_Cadet_Yellow1",
 			"JA_Cadet_Yellow2",
@@ -684,7 +684,7 @@ class CfgWeapons
 
 	class JA_104th_Dragon_Helmet : SWLB_clone_P2_Helmet
 	{
-		author = "Dak";
+		author = "Dak";;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -695,7 +695,7 @@ class CfgWeapons
 	
 	class JA_104th_Dragon_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak"
+		author = "Dak";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Dragon)";
@@ -803,7 +803,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Yellow 1";
 		uniformClass = "JA_Cadet_Yellow1_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_1.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
@@ -820,7 +820,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Yellow 2";
 		uniformClass = "JA_Cadet_Yellow2_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_2.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
@@ -837,7 +837,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Yellow 3";
 		uniformClass = "JA_Cadet_Yellow3_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_3.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
@@ -854,7 +854,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Yellow 4";
 		uniformClass = "JA_Cadet_Yellow4_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_4.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
@@ -871,7 +871,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Yellow 5";
 		uniformClass = "JA_Cadet_Yellow5_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Yellow_P1_Cadet_Upper_5.paa", "JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa" };
@@ -888,7 +888,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Red 1";
 		uniformClass = "JA_Cadet_Red1_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_1.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
@@ -905,7 +905,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Red 2";
 		uniformClass = "JA_Cadet_Red2_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_2.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
@@ -922,7 +922,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Red 3";
 		uniformClass = "JA_Cadet_Red3_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_3.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
@@ -939,7 +939,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Red 4";
 		uniformClass = "JA_Cadet_Red4_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_4.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
@@ -956,7 +956,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Red 5";
 		uniformClass = "JA_Cadet_Red5_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Red_P1_Cadet_Upper_5.paa", "JangosArmory2\data\Textures\Red_P1_Cadet_Lower.paa" };
@@ -973,7 +973,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Blue 1";
 		uniformClass = "JA_Cadet_Blue1_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_1.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
@@ -990,7 +990,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Blue 2";
 		uniformClass = "JA_Cadet_Blue2_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_2.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
@@ -1007,7 +1007,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Blue 3";
 		uniformClass = "JA_Cadet_Blue3_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_3.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
@@ -1024,7 +1024,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Blue 4";
 		uniformClass = "JA_Cadet_Blue4_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_4.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
@@ -1041,7 +1041,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Blue 5";
 		uniformClass = "JA_Cadet_Blue5_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Blue_P1_Cadet_Upper_5.paa", "JangosArmory2\data\Textures\Blue_P1_Cadet_Lower.paa" };
@@ -1058,7 +1058,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Green 1";
 		uniformClass = "JA_Cadet_Green1_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_1.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
@@ -1075,7 +1075,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Green 2";
 		uniformClass = "JA_Cadet_Green2_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_2.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
@@ -1092,7 +1092,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Green 3";
 		uniformClass = "JA_Cadet_Green3_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_3.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
@@ -1109,7 +1109,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Green 4";
 		uniformClass = "JA_Cadet_Green4_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_4.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
@@ -1126,7 +1126,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Cadet Green 5";
 		uniformClass = "JA_Cadet_Green5_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\textures\Green_P1_Cadet_Upper_5.paa", "JangosArmory2\data\Textures\Green_P1_Cadet_Lower.paa" };
@@ -1143,7 +1143,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Beans";
 		uniformClass = "JA_104th_Beans_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelectionsTextures[] =
 		{
@@ -1162,7 +1162,7 @@ class CfgVehicles
         side = 1;
 		displayName = "104th Black";
 		uniformClass = "JA_104th_Black_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelectionsTextures[] =
 		{
@@ -1174,14 +1174,14 @@ class CfgVehicles
 	};
 	class JA_104th_Dragon : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
         side = 1;
 		displayName = "104th Dragon";
 		uniformClass = "JA_104th_Dragon_Uniform";
-		faction = "104th_Guys"
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelectionsTextures[] =
 		{
