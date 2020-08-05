@@ -684,7 +684,7 @@ class CfgWeapons
 
 	class JA_104th_Dragon_Helmet : SWLB_clone_P2_Helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;

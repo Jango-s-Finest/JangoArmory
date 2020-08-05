@@ -252,7 +252,7 @@ class CfgWeapons
 	};
 	class JA_104th_Habit_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Habit)";
@@ -277,7 +277,7 @@ class CfgWeapons
 	};
 	class JA_104th_Frosty_Vest : SWLB_clone_arc_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th Frosty)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
@@ -295,7 +295,7 @@ class CfgWeapons
 	};
 	class JA_104th_Palv_Helmet : SWLB_clone_AB_Helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -305,7 +305,7 @@ class CfgWeapons
 	};
 	class JA_104th_AB_ME_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Airborne Officer vest (ME)";
 		hiddenSelections[] =
 		{
@@ -327,7 +327,7 @@ class CfgWeapons
 	};
 	class JA_104th_ME_officer_Vest : SWLB_clone_officer_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone trooper Officer vest (ME)";
 		hiddenSelections[] =
 		{
@@ -341,7 +341,7 @@ class CfgWeapons
 	};
 	class JA_104th_ME_Commander_Vest : SWLB_clone_commander_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone trooper Commander vest (ME)";
 		hiddenSelections[] =
 		{
@@ -355,7 +355,7 @@ class CfgWeapons
 	};
 	class JA_104th_AB_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Airborne Officer vest (104th)";
 		hiddenSelections[] =
 		{
@@ -377,7 +377,7 @@ class CfgWeapons
 	};
 	class JA_104th_Base_officer_Vest : SWLB_clone_officer_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone trooper Officer vest (104th)";
 		hiddenSelections[] =
 		{
@@ -391,7 +391,7 @@ class CfgWeapons
 	};
 	class JA_104th_Base_Commander_Vest : SWLB_clone_commander_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone trooper Commander vest (104th)";
 		hiddenSelections[] =
 		{
@@ -405,7 +405,7 @@ class CfgWeapons
 	};
 	class JA_104th_ME_Medic_Vest : SWLB_clone_medic_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone trooper Medic vest (ME)";
 		hiddenSelections[] =
 		{
@@ -419,7 +419,7 @@ class CfgWeapons
 	};
 	class JA_104th_AB_ME_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Airborne NCO vest (ME)";
 		hiddenSelections[] =
 		{
@@ -439,7 +439,7 @@ class CfgWeapons
 	};
 	class JA_104th_AB_ME_Base_Trooper_Armor : SWLB_Clone_airborne_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Airborne Trooper vest (ME)";
 		hiddenSelections[] =
 		{
@@ -459,7 +459,7 @@ class CfgWeapons
 	};
 	class JA_104th_Base_Medic_Vest : SWLB_clone_medic_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone trooper Medic vest (104th)";
 		hiddenSelections[] =
 		{
@@ -473,7 +473,7 @@ class CfgWeapons
 	};
 	class JA_104th_AB_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Airborne NCO vest (104th)";
 		hiddenSelections[] =
 		{
@@ -493,7 +493,7 @@ class CfgWeapons
 	};
 	class JA_104th_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Airborne Trooper vest (104th)";
 		hiddenSelections[] =
 		{
@@ -689,7 +689,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Bomb_Uniform";
 		displayName = "104th Bomb";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Bomb_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Bomb_Lower.paa"};
@@ -705,7 +705,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Raptor_Uniform";
 		displayName = "104th Raptor";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_AB_Raptor_Upper.paa", "JangosArmory4\data\Textures\104th_AB_Raptor_Lower.paa"};
@@ -721,7 +721,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Beans_Uniform";
 		displayName = "104th Beans";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_ARF_Beans_Upper.paa", "JangosArmory4\data\Textures\104th_ARF_Beans_Lower.paa"};
@@ -737,7 +737,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_IQ_Uniform";
 		displayName = "104th IQ";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_ARF_IQ_Upper.paa", "JangosArmory4\data\Textures\104th_ARF_IQ_Lower.paa"};
@@ -753,7 +753,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Habit_Uniform";
 		displayName = "104th Habit";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Habit_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Habit_Lower.paa"};

@@ -112,7 +112,7 @@ class cfgVehicles {
 	class Box_212_Supply_F;
 
 	class JA_Base_LAAT: ls_laat {
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E"; 
 		
@@ -689,7 +689,7 @@ class cfgVehicles {
 	
 	class JA_Base_LAAT_AB: ls_laat_ab 
 	{
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E Airborne"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		
@@ -1199,7 +1199,7 @@ class cfgVehicles {
 	
 	class JA_104th_Base_LAAT: JA_Base_LAAT {
 		displayName = "LAAT-E 104th";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		class TextureSources
 		{
@@ -1254,7 +1254,7 @@ class cfgVehicles {
 	
 	class JA_104th_Base_LAAT_AB: JA_Base_LAAT_AB {
 		displayName = "LAAT-E 104th Airborne";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		class TextureSources
 		{
@@ -1309,7 +1309,7 @@ class cfgVehicles {
 	
 	class JA_104th_Base_LAAT_Medic: JA_Base_LAAT_AB {
 		displayName = "LAAT-E 104th MedEvac";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		class TextureSources
 		{
@@ -1335,7 +1335,7 @@ class cfgVehicles {
 	
 	class JA_104th_Echo_LAAT: JA_Base_LAAT {
 		displayName = "LAAT-E 104th Echo";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		class TextureSources
 		{
@@ -1360,7 +1360,7 @@ class cfgVehicles {
 	}
 	
 	class JA_104th_Echo_LAAT_AB: JA_Base_LAAT_AB {
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E 104th Echo Airborne";
 		class TextureSources
@@ -1387,101 +1387,101 @@ class cfgVehicles {
 
 	class JA_104th_Base_LAAT_C: RD501_LAAT_cargo_Mk2 //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "LAAT C"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 	class JA_104th_Base_LAAT_Mk3: RD501_LAAT_Mk3 //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "LAAT Mk3"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 	class JA_104th_Base_Vwing_Reaper: 212th_Reaper_V_Wing //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "V-Wing Reaper"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 	class JA_104th_Base_Arc170_Mk2: RD501__ARC_170_MKII //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "ARC-170 Mk2"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 	class JA_104th_Base_Ywing_Reaper: 212th_Reaper_Y_Wing //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Y-Wing Reaper"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 	class JA_104th_Base_Uwing_Mk2: RD501_u_wing_MKII //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "U-Wing Mk2"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 	class JA_104th_Base_Falcon_Armed: OPTRE_UNSC_falcon //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Falcon Armed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 	class JA_104th_Base_Pelican_Unarmed: OPTRE_Pelican_unarmed //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Pelican Unarmed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 	class JA_104th_Base_Pelican_Armed: OPTRE_Pelican_armed //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Pelican Armed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
 
@@ -1489,68 +1489,68 @@ class cfgVehicles {
 
 	class JA_104th_Base_Bantha: 212th_B_APC_Wheeled_01_cannon_F //The : Tells your new class to inherit everything from the ls_laat class.
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Bantha IFV"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
 	class JA_104th_Base_TX130: SWLG_tanks_tx130 
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "TX-130"; 
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
 	class JA_104th_Base_Barc_Speeder: rd501_sw_barc 
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Barc Speeder"; 
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
 	class JA_104th_Base_Pathfinder: RD501_fast_infantry_transport_republic
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Pathfinder"; 
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
 	class JA_104th_Medical_Pathfinder: RD501_fast_infantry_transport_republic_medic
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Pathfinder - Medical"; 
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
 	class JA_104th_Base_Tempest: RD501_light_infantry_transport_Rep_MkII
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Tempest"; 
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
 
@@ -1558,7 +1558,7 @@ class cfgVehicles {
 
 	class JA_104th_Box_Ammo: Box_212_Supply_F
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Ammo Box - 104th";
 		scope = 2;
 		scopeArsenal = 2;

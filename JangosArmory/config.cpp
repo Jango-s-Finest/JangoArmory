@@ -586,7 +586,7 @@ class CfgWeapons
 
 	class JA_104th_Habit_Helmet : SWLB_clone_AB_helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -774,7 +774,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Bail_Uniform";
 		displayName = "104th Bail";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_Bail_Upper.paa", "JangosArmory3\data\Textures\104th_Bail_Lower.paa"};
@@ -790,7 +790,7 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		displayName = "104th Irish";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		uniformClass = "JA_104th_Irish_Uniform";
 		hiddenSelections[] = { "camo1", "camo2" };
@@ -808,7 +808,7 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		displayName = "104th Scurvy";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		uniformClass = "JA_104th_Scurvy_Uniform";
 		hiddenSelections[] = { "camo1", "camo2" };
@@ -826,7 +826,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Sixxer_Uniform";
 		displayName = "104th Sixxer";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_P2_Sixxer_Upper.paa", "JangosArmory\data\Textures\104th_P2_Sixxer_Lower.paa"};
@@ -842,7 +842,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Hunter_Uniform";
 		displayName = "104th Hunter";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARC_Hunter_Upper.paa", "JangosArmory3\data\Textures\104th_ARC_Hunter_Lower.paa" };
@@ -859,7 +859,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Banker_Uniform";
 		displayName = "104th Banker";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_P2_Banker_Upper.paa", "JangosArmory\data\Textures\104th_P2_Banker_Lower.paa"};
@@ -876,7 +876,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Ed_Uniform";
 		displayName = "104th Ed";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_P2_Ed_Upper.paa", "JangosArmory\data\Textures\104th_P2_Ed_Lower.paa"};
@@ -892,7 +892,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Angel_Uniform";
 		displayName = "104th Angel";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_Angel_Upper.paa", "JangosArmory\data\Textures\104th_Angel_Lower.paa"};
@@ -909,7 +909,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Knightfall_Uniform";
 		displayName = "104th Knightfall";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Knightfall_Upper.paa", "JangosArmory\data\Textures\104th_Knightfall_Lower.paa" };
@@ -925,7 +925,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Tusk_Uniform";
 		displayName = "104th Tusk";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Tusk_Upper.paa", "JangosArmory\data\Textures\104th_Tusk_Lower.paa" };
@@ -941,7 +941,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Echo_Uniform";
 		displayName = "104th Echo";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Echo_Upper.paa", "JangosArmory\data\Textures\104th_Echo_Lower.paa" };

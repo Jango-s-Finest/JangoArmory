@@ -265,7 +265,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Malevolence_Base_ARF_Uniform";
 		displayName = "ME - ARF";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_ARF_Upper.paa", "104thMalevolence\data\Textures\104th_ARF_Lower.paa"};
@@ -281,7 +281,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Malevolence_Base_Uniform";
 		displayName = "ME - Trooper";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_Trooper_Upper.paa", "104thMalevolence\data\Textures\104th_Trooper_Lower.paa"};
@@ -297,7 +297,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Malevolence_Base_Medic_Uniform";
 		displayName = "ME - Trooper Medic";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_Medic_Upper.paa", "104thMalevolence\data\Textures\104th_Trooper_Lower.paa"};

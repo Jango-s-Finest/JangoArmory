@@ -248,7 +248,7 @@ class CfgWeapons
 	};
 	class JA_104th_Warpath_Helmet : SWLB_clone_AB_helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -258,7 +258,7 @@ class CfgWeapons
 	};
 	class JA_104th_Waffle_Helmet : SWLB_clone_AB_helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -293,7 +293,7 @@ class CfgWeapons
 	};
 	class JA_104th_Salty_Helmet : SWLB_clone_P2_helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -303,7 +303,7 @@ class CfgWeapons
 	};
 	class JA_104th_Salty_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Salty)";
@@ -328,7 +328,7 @@ class CfgWeapons
 	};
 	class JA_104th_Firefox_Helmet : SWLB_clone_P2_helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -338,7 +338,7 @@ class CfgWeapons
 	};
 	class JA_104th_Fenrir_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Fenrir)";
@@ -363,7 +363,7 @@ class CfgWeapons
 	};
 	class JA_104th_Crash_Helmet : SWLB_P2_SpecOps_Helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -373,7 +373,7 @@ class CfgWeapons
 	};
 	class JA_104th_Spectre_Helmet : SWLB_clone_AB_helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -383,7 +383,7 @@ class CfgWeapons
 	};
 	class JA_104th_Spectre_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Spectre)";
@@ -408,7 +408,7 @@ class CfgWeapons
 	};
 	class JA_104th_Warpath_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Warpath)";
@@ -454,7 +454,7 @@ class CfgWeapons
 	};
 	class JA_104th_Frosty_Helmet : SWLB_clone_P15_Helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -464,7 +464,7 @@ class CfgWeapons
 	};
 	class JA_104th_Frosty_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Frosty)";
@@ -489,7 +489,7 @@ class CfgWeapons
 	};
 	class JA_104th_Fenrir_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -499,7 +499,7 @@ class CfgWeapons
 	};
 	class JA_104th_Niner_Helmet : SWLB_clone_AB_helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -509,7 +509,7 @@ class CfgWeapons
 	};
 	class JA_104th_Raptor_Helmet : SWLB_clone_AB_helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -519,7 +519,7 @@ class CfgWeapons
 	};
 	class JA_302nd_Chich_Helmet : SWLB_clone_P2_Helmet
 	{
-		author = "Dak";;
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -529,7 +529,7 @@ class CfgWeapons
 	};
 	class JA_302nd_Chich_Uniform : SWLB_clone_uniform
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (332nd Chich)";
@@ -554,7 +554,7 @@ class CfgWeapons
 	};
 	class JA_302nd_Chich_Vest : SWLB_clone_commander_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone trooper commander vest (332nd Chich)";
 		hiddenSelections[] =
 		{
@@ -569,7 +569,7 @@ class CfgWeapons
 	};
 	class JA_302nd_CommanderVisor : SWLB_clone_mcVisor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Commander Visor (332nd Chich)";
 		hiddenSelections[] =
 		{
@@ -877,7 +877,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_JTAC_Uniform";
 		displayName = "104th JTAC";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2","biceps","rank" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa", "JangosArmory3\data\Textures\104th_JTAC_Base_Lower.paa","JangosArmory3\data\Textures\104th_JTAC_Base_Upper.paa",""};
@@ -893,7 +893,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Crowbi_Uniform";
 		displayName = "104th ARC Crowbi";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_ARC_Crowbi_Upper.paa", "JangosArmory3\data\Textures\104th_ARC_Crowbi_Lower.paa"};
@@ -909,7 +909,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Red_Uniform";
 		displayName = "104th AB Red";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Red_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Red_Lower.paa"};
@@ -925,7 +925,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Waffle_Uniform";
 		displayName = "104th AB Waffle";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Waffle_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Waffle_Lower.paa"};
@@ -941,7 +941,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Salty_Uniform";
 		displayName = "104th P2 Salty";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_P2_Salty_Upper.paa", "JangosArmory3\data\Textures\104th_P2_Salty_Lower.paa"};
@@ -957,7 +957,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Fenrir_Uniform";
 		displayName = "104th ARF Fenrir";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_ARF_Fenrir_Upper.paa", "JangosArmory3\data\Textures\104th_ARF_Fenrir_Lower.paa"};
@@ -973,7 +973,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Paraso_Uniform";
 		displayName = "104th P1 Paraso";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_P2_Paraso_Upper.paa", "JangosArmory3\data\Textures\104th_P2_Paraso_Lower.paa"};
@@ -1037,7 +1037,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Carmine_Uniform";
 		displayName = "104th Carmine";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_Carmine_Upper.paa", "JangosArmory3\data\Textures\104th_Carmine_Lower.paa"};
@@ -1053,7 +1053,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Dak_Uniform";
 		displayName = "104th Dak";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_Dak_Upper.paa", "JangosArmory3\data\Textures\104th_Dak_Lower.paa" };
@@ -1069,7 +1069,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Quick_Uniform";
 		displayName = "104th Quick";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Special";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\Quick_Upper.paa", "JangosArmory3\data\Textures\Quick_Lower.paa"};
@@ -1085,7 +1085,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_302nd_Chich_Uniform";
 		displayName = "332nd Chich";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Special";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\332chichupper.paa", "JangosArmory3\data\Textures\332chichlower.paa"};
@@ -1101,7 +1101,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Frosty_Uniform";
 		displayName = "104th Frosty";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_ARC_Frosty_Upper.paa", "JangosArmory3\data\Textures\104th_ARC_Frosty_Lower.paa"};
@@ -1117,7 +1117,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Warpath_Uniform";
 		displayName = "104th Warpath";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Warpath_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Warpath_Lower.paa"};
@@ -1134,7 +1134,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_104th_Spectre_Uniform";
 		displayName = "104th Spectre";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Spectre_Lower.paa"};
@@ -1143,7 +1143,7 @@ class CfgVehicles
 	};
 	class JA_104th_Jumppack_LR : JLTS_Clone_jumppack
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone trooper jumppack LR";
@@ -1157,7 +1157,7 @@ class CfgVehicles
 	};
 	class JA_104th_Jumppack : JLTS_Clone_jumppack
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone trooper jumppack";
@@ -1165,7 +1165,7 @@ class CfgVehicles
 	};
 	class JA_104th_Jumppack_mc_LR : JLTS_Clone_jumppack_mc
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone marshal commander jumppack LR";
@@ -1179,7 +1179,7 @@ class CfgVehicles
 	};		
 	class JA_104th_Jumppack_mc : JLTS_Clone_jumppack_mc
 	{
-		author = "Dak";;
+		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone marshal commander jumppack";

@@ -752,7 +752,7 @@ class CfgWeapons
 	};
 	class JA_Howler_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Airborne Trooper vest (Howler)";
 		hiddenSelections[] =
 		{
@@ -772,7 +772,7 @@ class CfgWeapons
 	};
 	class JA_Howler_AB_Base_Officer_Armor : SWLB_CEE_Airborne_Officer
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Airborne Officer vest (Howler)";
 		hiddenSelections[] =
 		{
@@ -792,7 +792,7 @@ class CfgWeapons
 	};
 	class JA_Howler_P2_Base_Officer_Armor : SWLB_clone_officer_armor
 	{
-		author = "Dak";;
+		author = "Dak";
 		displayName = "Clone Trooper Officer vest (Howler)";
 		hiddenSelections[] =
 		{
@@ -826,7 +826,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Kaleb_Uniform";
 		displayName = "Blue - Kaleb";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Kaleb_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_Kaleb_LowerSB.paa"};
@@ -842,7 +842,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_NCO_Uniform";
 		displayName = "Blue - NCO";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_NCO_LowerSB.paa"};
@@ -858,7 +858,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Officer_Uniform";
 		displayName = "Blue - Officer";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_Officer_LowerSB.paa"};
@@ -874,7 +874,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Kaleb_Uniform";
 		displayName = "P2 - Kaleb";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Kaleb_Upper.paa","104thHowlerCompany\data\Textures\Howler_Kaleb_Lower.paa"};
@@ -890,7 +890,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_NCO_Uniform";
 		displayName = "P2 - NCO";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_Upper.paa","104thHowlerCompany\data\Textures\Howler_NCO_Lower.paa"};
@@ -906,7 +906,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Officer_Uniform";
 		displayName = "P2 - Officer";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_Upper.paa","104thHowlerCompany\data\Textures\Howler_Officer_Lower.paa"};
@@ -922,7 +922,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Kaleb_Uniform";
 		displayName = "ME - Kaleb";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_KalebM_Upper.paa","104thHowlerCompany\data\Textures\Howler_KalebM_Lower_-_Kopie.paa"};
@@ -938,7 +938,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_NCO_Uniform";
 		displayName = "ME - NCO";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_UpperM.paa","104thHowlerCompany\data\Textures\Howler_NCO_LowerM.paa"};
@@ -954,7 +954,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Officer_Uniform";
 		displayName = "ME - Officer";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_UpperM.paa","104thHowlerCompany\data\Textures\Howler_Officer_LowerM.paa"};
@@ -970,7 +970,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Paak_Uniform";
 		displayName = "ME - Paak";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Paak_UpperM.paa","104thHowlerCompany\data\Textures\Howler_Paak_LowerM.paa"};
@@ -986,7 +986,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Paak_Uniform";
 		displayName = "P2 - Paak";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Paak_Upper.paa","104thHowlerCompany\data\Textures\Howler_Paak_Lower.paa"};
@@ -1002,7 +1002,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Paak_Uniform";
 		displayName = "Blue - Paak";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Paak_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_Paak_LowerSB.paa"};
@@ -1018,7 +1018,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Trooper_Uniform";
 		displayName = "ME - Trooper";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Trooper_UpperM.paa","104thHowlerCompany\data\Textures\Howler_Trooper_LowerM.paa"};
@@ -1034,7 +1034,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Trooper_Uniform";
 		displayName = "P2 - Trooper";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Trooper_Upper.paa","104thHowlerCompany\data\Textures\Howler_Trooper_Lower.paa"};
@@ -1050,7 +1050,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Trooper_Uniform";
 		displayName = "Blue - Trooper";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Trooper_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_Trooper_LowerSB.paa"};
@@ -1066,7 +1066,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_ME_Base_Medic_Uniform";
 		displayName = "ME - Medic";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_UpperM.paa","104thHowlerCompany\data\Textures\Howler_Trooper_LowerM.paa"};
@@ -1082,7 +1082,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_P2_Base_Medic_Uniform";
 		displayName = "P2 - Medic";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_Upper.paa","104thHowlerCompany\data\Textures\Howler_Trooper_Lower.paa"};
@@ -1098,7 +1098,7 @@ class CfgVehicles
         side = 1;
 		uniformClass = "JA_Howler_SB_Base_Medic_Uniform";
 		displayName = "Blue - Medic";
-		faction = "104th_Guys";;
+		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Howler";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_UpperSB.paa","104thHowlerCompany\data\Textures\Howler_Trooper_LowerSB.paa"};
