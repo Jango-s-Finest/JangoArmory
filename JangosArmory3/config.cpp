@@ -445,10 +445,10 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-			"JangosArmory3\data\Textures\104th_AB_Warpath_Accessories.paa",
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa" //Heavy
+			"JangosArmory3\data\Textures\104th_AB_Warpath_Heavy.paa", // Heavy
+			"JangosArmory3\data\Textures\104th_AB_Warpath_Officer.paa",
+			"JangosArmory3\data\Textures\104th_AB_Warpath_Heavy.paa", //Heavy
+			"JangosArmory3\data\Textures\104th_AB_Warpath_Heavy.paa" //Heavy
 		};
 		vestType="Rebreather";	
 	};

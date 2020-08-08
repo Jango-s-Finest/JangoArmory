@@ -13,7 +13,8 @@ class CfgPatches
 			"JA_104th_IQ",
 			"JA_104th_Bomb",
 			"JA_104th_Raptor",
-			"JA_104th_Habit"
+			"JA_104th_Habit",
+			"JA_104th_Niner"
 		};
 		weapons[] = {
 			"JA_104th_Bomb_Uniform",
@@ -46,7 +47,12 @@ class CfgPatches
 			"JA_104th_Beans_Helmet",
 			"JA_104th_Beans_Uniform",
 			"JA_104th_IQ_Helmet",
-			"JA_104th_IQ_Uniform"
+			"JA_104th_IQ_Uniform",
+			"JA_104th_Niner_Uniform",
+			"JA_104th_Garm_Helmet",
+			"JA_104th_Vision_Helmet",
+			"JA_104th_Mower_Helmet",
+			"JA_104th_Drifter_Helmet"
 		};
 	};
 };
@@ -121,6 +127,71 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
+	class JA_104th_Vision_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Vision)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Vision_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Mower_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Mower)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Mower_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Drifter_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Drifter)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Drifter_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Niner_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Niner)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_AB_Niner_Upper.paa",
+			"JangosArmory4\data\Textures\104th_AB_Niner_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Niner";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Garm_Helmet : SWLB_clone_AB_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Airborne Helmet (104th Garm)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Garm_Helmet.paa" }; // the file path to the texture
+	};
 	class JA_104th_Bomb_Uniform : SWLB_clone_uniform
 	{
 		author = "Ice";
@@ -680,6 +751,22 @@ class CfgVehicles
 	class SWLB_clone_backpack_RTO;
 	class JLTS_Clone_jumppack;
 	// General Uniforms
+	class JA_104th_Niner : SWLB_clone_base_P2
+	{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Niner_Uniform";
+		displayName = "104th Niner";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_AB_Niner_Upper.paa", "JangosArmory4\data\Textures\104th_AB_Niner_Lower.paa"};
+		linkedItems[] = { JA_104th_Niner_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Niner_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};	
 	class JA_104th_Bomb : SWLB_clone_base_P2
 	{
 		author = "Ice"

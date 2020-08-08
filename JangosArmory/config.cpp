@@ -332,8 +332,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_Angel_Upper.paa",
-			"JangosArmory\data\Textures\104th_Angel_Lower.paa"
+			"JangosArmory\data\Textures\104th_ARC_Angel_Upper.paa",
+			"JangosArmory\data\Textures\104th_ARC_Angel_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -454,8 +454,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_Angel_ARC_Accessories.paa",
-			"JangosArmory\data\Textures\104th_Angel_Officer_Accessories.paa"
+			"JangosArmory\data\Textures\104th_ARC_Angel_Accessories_ARC.paa",
+			"JangosArmory\data\Textures\104th_ARC_Angel_Accessories_Officer.paa"
 		};
 		vestType="Rebreather";	
 	};
@@ -710,7 +710,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Archangel)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Angel_P15_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_ARC_Angel_Helmet.paa" }; // the file path to the texture
 	};
 
 	// Command Staff
@@ -895,7 +895,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_Angel_Upper.paa", "JangosArmory\data\Textures\104th_Angel_Lower.paa"};
+		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_ARC_Angel_Upper.paa", "JangosArmory\data\Textures\104th_ARC_Angel_Lower.paa"};
 		linkedItems[] = { JA_104th_Angel_Helmet,JA_104thAngelVest,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Angel_Helmet,JA_104thAngelVest,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
