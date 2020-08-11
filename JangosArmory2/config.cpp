@@ -719,17 +719,6 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_Beans_Helmet : SWLB_clone_ARF_P1_Helmet
-	{
-		author = "Tundra";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // dont change this
-		displayName = "Clone trooper ARF P1 Helmet (104th Beans)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_ARF_Beans_Helmet.paa" }; // the file path to the texture
-	};
-
 	class JA_104th_Black_Helmet : SWLB_clone_P2_Helmet
 	{
 		author = "Tundra";
@@ -1134,25 +1123,6 @@ class CfgVehicles
 		respawnLinkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
 
-	class JA_104th_Beans : SWLB_clone_base_P2
-	{
-		author = "Tundra"
-			scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-        side = 1;
-		displayName = "104th Beans";
-		uniformClass = "JA_104th_Beans_Uniform";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory2\data\Textures\104th_ARF_Beans_Upper.paa",
-			"JangosArmory2\data\Textures\104th_ARF_Beans_Lower.paa"
-		};
-		linkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};
 	class JA_104th_Black : SWLB_clone_base_P2
 	{
 		author = "Tundra"
