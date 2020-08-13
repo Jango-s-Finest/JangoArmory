@@ -10,6 +10,8 @@ class CfgPatches
 			"JA_104th_Base_LAAT_Medic",
 			"JA_104th_Echo_LAAT",
 			"JA_104th_Echo_LAAT_AB",
+			"JA_104th_Bail_LAAT",
+			"JA_104th_Bail_LAAT_AB",
 			"JA_104th_Base_LAAT_C",
 			"JA_104th_Base_LAAT_Mk3",
 			"JA_104th_Base_Vwing_Reaper",
@@ -214,6 +216,7 @@ class cfgVehicles {
 			maxYRotSpeed = 0.3;
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
+			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
 		
 		class HitPoints
@@ -577,6 +580,11 @@ class cfgVehicles {
 						range[] = {4000,2000,16000,8000};
 						resource = "RscCustomInfoSensors";
 					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+						resource = "RscCustomInfoCrew";
+					};
 				};
 			};
 			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
@@ -612,6 +620,11 @@ class cfgVehicles {
 						componentType = "SensorsDisplayComponent";
 						range[] = {4000,2000,16000,8000};
 						resource = "RscCustomInfoSensors";
+					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+						resource = "RscCustomInfoCrew";
 					};
 				};
 			};
@@ -791,6 +804,7 @@ class cfgVehicles {
 			maxYRotSpeed = 0.3;
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
+			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
 		
 		class HitPoints
@@ -1154,6 +1168,11 @@ class cfgVehicles {
 						range[] = {4000,2000,16000,8000};
 						resource = "RscCustomInfoSensors";
 					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+						resource = "RscCustomInfoCrew";
+					};
 				};
 			};
 			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
@@ -1189,6 +1208,11 @@ class cfgVehicles {
 						componentType = "SensorsDisplayComponent";
 						range[] = {4000,2000,16000,8000};
 						resource = "RscCustomInfoSensors";
+					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+						resource = "RscCustomInfoCrew";
 					};
 				};
 			};
@@ -1245,12 +1269,12 @@ class cfgVehicles {
 				"JangosVehicles\data\textures\missiles_co_104.paa",
 				"swlb_a_vehicle\laat\data\cockpits_co.paa",
 				"swlb_a_vehicle\laat\data\glass_ca.paa"};
-			}
+			};
 			
 			
-		}
+		};
 		textureList[] = {"base",1,"logo",1,"plobro",1};
-	}
+	};
 	
 	class JA_104th_Base_LAAT_AB: JA_Base_LAAT_AB {
 		displayName = "LAAT-E 104th Airborne";
@@ -1286,7 +1310,7 @@ class cfgVehicles {
 				"JangosVehicles\data\textures\missiles_co_104.paa",
 				"swlb_a_vehicle\laat\data\cockpits_co.paa",
 				"swlb_a_vehicle\laat\data\glass_ca.paa"};
-			}
+			};
 			
 			class plobro: base
 			{
@@ -1300,17 +1324,18 @@ class cfgVehicles {
 				"JangosVehicles\data\textures\missiles_co_104.paa",
 				"swlb_a_vehicle\laat\data\cockpits_co.paa",
 				"swlb_a_vehicle\laat\data\glass_ca.paa"};
-			}
+			};
 			
 			
-		}
+		};
 		textureList[] = {"base",1,"logo",1,"plobro",1};
-	}
+	};
 	
 	class JA_104th_Base_LAAT_Medic: JA_Base_LAAT_AB {
 		displayName = "LAAT-E 104th MedEvac";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		attendant = 1;
 		class TextureSources
 		{
 			class base
@@ -1329,9 +1354,9 @@ class cfgVehicles {
 				factions[] = {"104th_Guys"};
 			};
 			
-		}
+		};
 		textureList[] = {"base",1};
-	} 
+	};
 	
 	class JA_104th_Echo_LAAT: JA_Base_LAAT {
 		displayName = "LAAT-E 104th Echo";
@@ -1355,9 +1380,9 @@ class cfgVehicles {
 				factions[] = {"104th_Guys"};
 			};
 			
-		}
+		};
 		textureList[] = {"base",1};
-	}
+	};
 	
 	class JA_104th_Echo_LAAT_AB: JA_Base_LAAT_AB {
 		faction = "104th_Guys";
@@ -1381,9 +1406,61 @@ class cfgVehicles {
 				factions[] = {"104th_Guys"};
 			};
 			
-		}
+		};
 		textureList[] = {"base",1};
-	}
+	};
+	
+		class JA_104th_Bail_LAAT: JA_Base_LAAT {
+		displayName = "LAAT-E 104th Bail";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "104th Bail";
+				author = "Legion Studio + Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"swlb_a_vehicle\laat\data\door1_co.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				factions[] = {"104th_Guys"};
+			};
+			
+		};
+		textureList[] = {"base",1};
+	};
+	
+	class JA_104th_Bail_LAAT_AB: JA_Base_LAAT_AB {
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		displayName = "LAAT-E 104th Bail Airborne";
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "104th Bail";
+				author = "Legion Studio + Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
+				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"swlb_a_vehicle\laat\data\door1_co.paa",
+				"swlb_a_vehicle\laat\data\door2_co.paa",
+				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"swlb_a_vehicle\laat\data\cockpits_co.paa",
+				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				factions[] = {"104th_Guys"};
+			};
+			
+		};
+		textureList[] = {"base",1};
+	};
 
 	class JA_104th_Base_LAAT_C: RD501_LAAT_cargo_Mk2 //The : Tells your new class to inherit everything from the ls_laat class.
 	{
