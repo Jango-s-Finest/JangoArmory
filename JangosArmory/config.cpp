@@ -1012,6 +1012,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone trooper RTO mini backpack (104th)";
+		maximumLoad = 200;
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory\data\Textures\104th_MiniPack.paa", // Minipack
