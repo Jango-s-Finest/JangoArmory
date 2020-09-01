@@ -27,9 +27,9 @@ class CfgPatches
 			"JA_104th_Base_Pathfinder",
 			"JA_104th_Medical_Pathfinder",
 			"JA_104th_Base_Tempest",
+			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
-			"JA_104th_Box_Medic",
-			"JA_104th_Box_Ammo"
+			"JA_104th_Box_Medic"
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {};
 		requiredVersion = 0.1;
