@@ -397,20 +397,26 @@ class CfgWeapons
 	};
 
 	// Vests
-	class JA_104thScurvyVest : SWLB_clone_medic_armor
+	class JA_104thScurvyVest : : SWLB_clone_airborne_nco_armor
 	{
-		author = "Tundra";
-		displayName = "Clone trooper medic vest (104th Scurvy)";
+		author = "Emmet"
+			scope = 2;
+		displayName = "Airborne NCO Vest (104th Scurvy)";
 		hiddenSelections[] =
 		{
-			"camo1"
-
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_Scurvy_Accessories.paa"
+			"JangosArmory\data\Textures\104th_P2_Scurvy_Heavy.paa", // Heavy
+			"JangosArmory\data\Textures\104th_P2_Scurvy_Officer.paa",
+			"JangosArmory\data\Textures\104th_P2_Scurvy_Heavy.paa", //Heavy
+			"JangosArmory\data\Textures\104th_P2_Scurvy_Heavy.paa" //Heavy
 		};
-		vestType="Rebreather";		
+		vestType="Rebreather";	
 	};
 
 	class JA_104thAngelVest : SWLB_clone_arc_armor

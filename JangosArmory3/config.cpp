@@ -9,6 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Crash",
 			"JA_104th_JTAC",
 			"JA_104th_Crowbi",
 			"JA_104th_Red",
@@ -32,6 +33,7 @@ class CfgPatches
 			"JA_104th_Jumppack_mc"		
 		};
 		weapons[] = {
+			"JA_104th_Crash_Uniform",
 			"JA_104th_JTAC_Uniform",
 			"JA_104th_JTAC_Helmet",
 			"JA_104th_Crowbi_Helmet",
@@ -137,6 +139,35 @@ class CfgWeapons
 	class VestItem;
 	
 	// General Uniforms
+	class JA_104th_Crash_Uniform : SWLB_clone_mc_uniform
+	{
+		author = "Ice";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Crash)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"biceps",
+			"rank"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory3\data\Textures\104th_JTAC_Crash_Upper.paa",
+			"JangosArmory3\data\Textures\104th_JTAC_Crash_Lower.paa",
+			"JangosArmory3\data\Textures\104th_JTAC_Crash_Upper.paa",
+			""
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Crash";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_JTAC_Uniform : SWLB_clone_mc_uniform
 	{
 		author = "Ice";
@@ -369,7 +400,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper Special Activities Helmet (104th Crash)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_SpecOps_Crash_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_JTAC_Crash_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Spectre_Helmet : SWLB_clone_AB_helmet
 	{
@@ -868,6 +899,22 @@ class CfgVehicles
 	class JLTS_Clone_jumppack;
 	class JLTS_Clone_jumppack_mc;
 	// General Uniforms
+	class JA_104th_Crash : SWLB_clone_marshal_commander_base_P2
+	{
+		author = "Ice"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Crash_Uniform";
+		displayName = "104th Crash";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = { "camo1", "camo2","biceps","rank" };
+		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_JTAC_Crash_Upper.paa", "JangosArmory3\data\Textures\104th_JTAC_Crash_Lower.paa","JangosArmory3\data\Textures\104th_Crash_Base_Upper.paa",""};
+		linkedItems[] = { JA_104th_Crash_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Crash_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};	
 	class JA_104th_JTAC : SWLB_clone_marshal_commander_base_P2
 	{
 		author = "Ice"
