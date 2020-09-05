@@ -457,7 +457,7 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Gash_P2_Base_Uniform";
-		displayName = "Gash - Base";
+		displayName = "Gash - BARC";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Gash";
 		hiddenSelections[] = { "camo1", "camo2" };

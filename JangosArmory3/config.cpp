@@ -909,7 +909,7 @@ class CfgVehicles
 		uniformClass = "JA_104th_Crash_Uniform";
 		displayName = "104th Crash";
 		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Basic";
+		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2","biceps","rank" };
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_JTAC_Crash_Upper.paa", "JangosArmory3\data\Textures\104th_JTAC_Crash_Lower.paa","JangosArmory3\data\Textures\104th_Crash_Base_Upper.paa",""};
 		linkedItems[] = { JA_104th_Crash_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
