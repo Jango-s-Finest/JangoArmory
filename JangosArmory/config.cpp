@@ -397,11 +397,11 @@ class CfgWeapons
 	};
 
 	// Vests
-	class JA_104thScurvyVest : : SWLB_clone_airborne_nco_armor
+	class JA_104thScurvyVest : SWLB_clone_airborne_nco_armor
 	{
-		author = "Emmet"
-			scope = 2;
-		displayName = "Airborne NCO Vest (104th Scurvy)";
+		author = "Emmet";
+		scope = 2;
+		displayName = "NCO Vest (104th Scurvy)";
 		hiddenSelections[] =
 		{
 			"camo1",
