@@ -878,7 +878,7 @@ class CfgVehicles
 	// General Uniforms
 	class JA_104th_Pacify : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -894,7 +894,7 @@ class CfgVehicles
 	};
 	class JA_104th_Needle : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -910,7 +910,7 @@ class CfgVehicles
 	};
 	class JA_104th_Garm : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -926,7 +926,7 @@ class CfgVehicles
 	};
 	class JA_104th_Niner : SWLB_clone_base_P2
 	{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -942,7 +942,7 @@ class CfgVehicles
 	};	
 	class JA_104th_Bomb : SWLB_clone_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -958,7 +958,7 @@ class CfgVehicles
 	};	
 	class JA_104th_Raptor : SWLB_clone_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -974,7 +974,7 @@ class CfgVehicles
 	};	
 	class JA_104th_Beans : SWLB_clone_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -990,7 +990,7 @@ class CfgVehicles
 	};	
 	class JA_104th_IQ : SWLB_clone_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;

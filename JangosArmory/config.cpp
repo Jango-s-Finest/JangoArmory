@@ -735,7 +735,7 @@ class CfgVehicles
 	// Pilots
 	class JA_104th_Bail : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -752,7 +752,7 @@ class CfgVehicles
 	// 1-1
 	class JA_104th_Irish : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -770,7 +770,7 @@ class CfgVehicles
 
 	class JA_104th_Scurvy : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -787,7 +787,7 @@ class CfgVehicles
 	// 1-3
 	class JA_104th_Hunter : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -804,7 +804,7 @@ class CfgVehicles
 	// 1-4
 	class JA_104th_Banker : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -821,7 +821,7 @@ class CfgVehicles
 	// Platoon
 	class JA_104th_Ed : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -837,7 +837,7 @@ class CfgVehicles
 	};
 	class JA_104th_Angel : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -854,7 +854,7 @@ class CfgVehicles
 	// Command Staff
 	class JA_104th_Knightfall : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -870,7 +870,7 @@ class CfgVehicles
 	};
 	class JA_104th_Tusk : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -886,7 +886,7 @@ class CfgVehicles
 	};
 	class JA_104th_Echo : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;

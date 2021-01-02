@@ -412,7 +412,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Airborne Helmet (104th Spectre)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_AB_Spectre_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Spectre_Uniform : SWLB_clone_uniform
+	class JA_104th_Spectre_Uniform : SWLB_clone_mc_uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -421,12 +421,16 @@ class CfgWeapons
 		hiddenSelections[] =
 		{
 			"camo1",
-			"camo2"
+			"camo2",
+			"biceps",
+			"rank"
 		};
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa",
-			"JangosArmory3\data\Textures\104th_AB_Spectre_Lower.paa"
+			"JangosArmory3\data\Textures\104th_AB_Spectre_Lower.paa",
+			"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa",
+			""
 		};
 		class ItemInfo : UniformItem
 		{
@@ -901,7 +905,7 @@ class CfgVehicles
 	// General Uniforms
 	class JA_104th_Crash : SWLB_clone_marshal_commander_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -917,7 +921,7 @@ class CfgVehicles
 	};	
 	class JA_104th_JTAC : SWLB_clone_marshal_commander_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -933,7 +937,7 @@ class CfgVehicles
 	};	
 	class JA_104th_Crowbi : SWLB_clone_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -949,7 +953,7 @@ class CfgVehicles
 	};	
 	class JA_104th_Red : SWLB_clone_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -965,7 +969,7 @@ class CfgVehicles
 	};	
 	class JA_104th_Waffle : SWLB_clone_base_P2
 	{
-		author = "Ice"
+		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1029,7 +1033,7 @@ class CfgVehicles
 	};	
 	class JA_104th_ARF_Ice : SWLB_clone_marshal_commander_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1045,7 +1049,7 @@ class CfgVehicles
 	};	
 	class JA_104th_ARF : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1061,7 +1065,7 @@ class CfgVehicles
 	};	
 	class JA_104th_ARFMedic : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1077,7 +1081,7 @@ class CfgVehicles
 	};
 	class JA_104th_Carmine : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1093,7 +1097,7 @@ class CfgVehicles
 	};
 	class JA_104th_Dak : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1109,7 +1113,7 @@ class CfgVehicles
 	};	
 	class JA_Quick : SWLB_clone_base_P2
 	{
-		author = "Tundra"
+		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1200,6 +1204,8 @@ class CfgVehicles
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
 		tf_range = 15000;
+		tf_additional_channel=1;
+		tf_parent="JA_104th_Jumppack_LR";
 		tf_subtype = "digital_lr";
 	};
 	class JA_104th_Jumppack : JLTS_Clone_jumppack
@@ -1222,6 +1228,8 @@ class CfgVehicles
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
 		tf_range = 15000;
+		tf_additional_channel=1;
+		tf_parent="JA_104th_Jumppack_LR";
 		tf_subtype = "digital_lr";
 	};		
 	class JA_104th_Jumppack_mc : JLTS_Clone_jumppack_mc

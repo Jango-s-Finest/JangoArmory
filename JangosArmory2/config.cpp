@@ -118,7 +118,7 @@ class CfgWeapons
 
 	class JA_Cadet_Yellow_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -129,7 +129,7 @@ class CfgWeapons
 
 	class JA_Cadet_Red_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -140,7 +140,7 @@ class CfgWeapons
 
 	class JA_Cadet_Blue_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -151,7 +151,7 @@ class CfgWeapons
 
 	class JA_Cadet_Green_Helmet : SWLB_clone_P1_helmet
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -162,7 +162,7 @@ class CfgWeapons
 
 	class JA_Cadet_Yellow1_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 1)";
@@ -188,7 +188,7 @@ class CfgWeapons
 
 	class JA_Cadet_Yellow2_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 2)";
@@ -214,7 +214,7 @@ class CfgWeapons
 
 	class JA_Cadet_Yellow3_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 3)";
@@ -240,7 +240,7 @@ class CfgWeapons
 
 	class JA_Cadet_Yellow4_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 4)";
@@ -266,7 +266,7 @@ class CfgWeapons
 
 	class JA_Cadet_Yellow5_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 5)";
@@ -292,7 +292,7 @@ class CfgWeapons
 
 	class JA_Cadet_Red1_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 1)";
@@ -318,7 +318,7 @@ class CfgWeapons
 
 	class JA_Cadet_Red2_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 2)";
@@ -344,7 +344,7 @@ class CfgWeapons
 
 	class JA_Cadet_Red3_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 3)";
@@ -370,7 +370,7 @@ class CfgWeapons
 
 	class JA_Cadet_Red4_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 4)";
@@ -396,7 +396,7 @@ class CfgWeapons
 
 	class JA_Cadet_Red5_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 5)";
@@ -422,7 +422,7 @@ class CfgWeapons
 
 	class JA_Cadet_Blue1_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 1)";
@@ -448,7 +448,7 @@ class CfgWeapons
 
 	class JA_Cadet_Blue2_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 2)";
@@ -474,7 +474,7 @@ class CfgWeapons
 
 	class JA_Cadet_Blue3_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 3)";
@@ -500,7 +500,7 @@ class CfgWeapons
 
 	class JA_Cadet_Blue4_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 4)";
@@ -526,7 +526,7 @@ class CfgWeapons
 
 	class JA_Cadet_Blue5_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 5)";
@@ -552,7 +552,7 @@ class CfgWeapons
 
 	class JA_Cadet_Green1_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 1)";
@@ -578,7 +578,7 @@ class CfgWeapons
 
 	class JA_Cadet_Green2_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 2)";
@@ -604,7 +604,7 @@ class CfgWeapons
 
 	class JA_Cadet_Green3_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 3)";
@@ -630,7 +630,7 @@ class CfgWeapons
 
 	class JA_Cadet_Green4_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 4)";
@@ -656,7 +656,7 @@ class CfgWeapons
 
 	class JA_Cadet_Green5_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 5)";
@@ -750,7 +750,7 @@ class CfgWeapons
 	};
 	class JA_104th_Black_Uniform : SWLB_clone_uniform
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone trooper armor (104th Black)";
@@ -785,7 +785,7 @@ class CfgVehicles
 
 	class JA_Cadet_Yellow1 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -802,7 +802,7 @@ class CfgVehicles
 
 	class JA_Cadet_Yellow2 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -819,7 +819,7 @@ class CfgVehicles
 
 	class JA_Cadet_Yellow3 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -836,7 +836,7 @@ class CfgVehicles
 
 	class JA_Cadet_Yellow4 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -853,7 +853,7 @@ class CfgVehicles
 
 	class JA_Cadet_Yellow5 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -870,7 +870,7 @@ class CfgVehicles
 
 	class JA_Cadet_Red1 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -887,7 +887,7 @@ class CfgVehicles
 
 	class JA_Cadet_Red2 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -904,7 +904,7 @@ class CfgVehicles
 
 	class JA_Cadet_Red3 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -921,7 +921,7 @@ class CfgVehicles
 
 	class JA_Cadet_Red4 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -938,7 +938,7 @@ class CfgVehicles
 
 	class JA_Cadet_Red5 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -955,7 +955,7 @@ class CfgVehicles
 
 	class JA_Cadet_Blue1 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -972,7 +972,7 @@ class CfgVehicles
 
 	class JA_Cadet_Blue2 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -989,7 +989,7 @@ class CfgVehicles
 
 	class JA_Cadet_Blue3 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1006,7 +1006,7 @@ class CfgVehicles
 
 	class JA_Cadet_Blue4 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1023,7 +1023,7 @@ class CfgVehicles
 
 	class JA_Cadet_Blue5 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1040,7 +1040,7 @@ class CfgVehicles
 
 	class JA_Cadet_Green1 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1057,7 +1057,7 @@ class CfgVehicles
 
 	class JA_Cadet_Green2 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1074,7 +1074,7 @@ class CfgVehicles
 
 	class JA_Cadet_Green3 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1091,7 +1091,7 @@ class CfgVehicles
 
 	class JA_Cadet_Green4 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -1108,7 +1108,7 @@ class CfgVehicles
 
 	class JA_Cadet_Green5 : SWLB_clone_base_P2
 	{
-		author = "Emmet"
+		author = "Emmet";
 			scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
