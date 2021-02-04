@@ -27,6 +27,8 @@ class CfgPatches
 			"JA_104th_Spectre",
 			"JA_104th_Jumppack_LR",
 			"JA_104th_Jumppack",
+			"JA_104th_Jumppack_JT12_LR",
+			"JA_104th_Jumppack_JT12",
 			"JA_104th_Jumppack_mc_LR",
 			"JA_104th_Jumppack_mc"		
 		};
@@ -776,6 +778,7 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
 	class JLTS_Clone_jumppack;
+	class JLTS_Clone_jumppack_JT12_104;
 	class JLTS_Clone_jumppack_mc;
 	// General Uniforms
 	class JA_104th_Crash : SWLB_clone_marshal_commander_base_P2
@@ -1030,10 +1033,10 @@ class CfgVehicles
 		displayName = "104th Spectre";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Spectre_Lower.paa"};
-		linkedItems[] = { JA_104th_Spectre_Vest,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Spectre_Vest,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		hiddenSelections[] ={"camo1","camo2","biceps","rank"};
+		hiddenSelectionsTextures[] ={"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa","JangosArmory3\data\Textures\104th_AB_Spectre_Lower.paa","JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa",""};
+		linkedItems[] = { JA_104th_Spectre_Uniform,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Spectre_Uniform,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Jumppack_LR : JLTS_Clone_jumppack
 	{
@@ -1042,13 +1045,12 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone trooper jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "JLTS_clone_lr_programmer_radio_dialog";
+		tf_dialog = "SWLB_clone_rto_radio_dialog"
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
-		tf_range = 15000;
+		tf_range = 25000;
 		tf_additional_channel=1;
-		tf_parent="JA_104th_Jumppack_LR";
 		tf_subtype = "digital_lr";
 	};
 	class JA_104th_Jumppack : JLTS_Clone_jumppack
@@ -1059,6 +1061,29 @@ class CfgVehicles
 		displayname = "Clone trooper jumppack";
 		RD501_jumppack_energy_capacity = 100;
 	};
+	class JA_104th_Jumppack_JT12_LR : JLTS_Clone_jumppack_JT12_104
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 LR";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "SWLB_clone_rto_radio_dialog"
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel=1;
+		tf_subtype = "digital_lr";
+	};
+	class JA_104th_Jumppack_JT12 : JLTS_Clone_jumppack_JT12_104
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12";
+		RD501_jumppack_energy_capacity = 100;
+	};
 	class JA_104th_Jumppack_mc_LR : JLTS_Clone_jumppack_mc
 	{
 		author = "Dak";
@@ -1066,13 +1091,12 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone marshal commander jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "JLTS_clone_lr_programmer_radio_dialog";
+		tf_dialog = "SWLB_clone_rto_radio_dialog"
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
-		tf_range = 15000;
+		tf_range = 25000;
 		tf_additional_channel=1;
-		tf_parent="JA_104th_Jumppack_LR";
 		tf_subtype = "digital_lr";
 	};		
 	class JA_104th_Jumppack_mc : JLTS_Clone_jumppack_mc
