@@ -47,23 +47,20 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
-	class RD501_opfor_uniform_B2_Armor;
+	class ls_cis_b2Droid_uniform;
 	class UniformItem;
-	class JA_CIS_B2_Uniform : RD501_opfor_uniform_B2_Armor{
+	class JA_CIS_B2_Uniform : ls_cis_b2Droid_uniform{
 		author = "Dak";
 		scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Droid B2";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"RD501_Units\textures\CIS\B2\rocket\Reskinb2_chest.paa","RD501_Units\textures\CIS\B2\rocket\ReskinB2_waist.paa","RD501_Units\textures\CIS\B2\rocket\ReskinB2_legs.paa"};
 	};
 };
 
 class CfgVehicles
 {
-	class RD501_opfor_uniform_skin_B2_Armor;
+	class ls_cis_b2Droid_base;
 	class SWLB_b1_base;
-	class SWLB_b1_heavy_base;
+	class ls_cis_b1Heavy_standard;
 	class SWLB_b1_AA_base;
 	class SWLB_b1_marksman_base;
 	class SWLB_BX_Assassin;
@@ -100,7 +97,7 @@ class CfgVehicles
 		faction = "104th_Guys_CIS";
 		editorSubcategory = "104th_Categ_CIS";
 	};
-	class JA_CIS_B1_Heavy: SWLB_b1_heavy_base{
+	class JA_CIS_B1_Heavy: ls_cis_b1Heavy_standard{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -116,7 +113,7 @@ class CfgVehicles
 		faction = "104th_Guys_CIS";
 		editorSubcategory = "104th_Categ_CIS";
 	};
-	class JA_CIS_B2_Base: RD501_opfor_uniform_skin_B2_Armor{
+	class JA_CIS_B2_Base: ls_cis_b2Droid_base{
 		author = "Dak"
 		scope = 2;
 		scopeArsenal = 2;
@@ -126,8 +123,8 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_CIS";
 		displayName = "CIS B2 Blaster";
 		uniformClass = "JA_CIS_B2_Uniform";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"RD501_Units\textures\CIS\B2\rocket\Reskinb2_chest.paa","RD501_Units\textures\CIS\B2\rocket\ReskinB2_waist.paa","RD501_Units\textures\CIS\B2\rocket\ReskinB2_legs.paa"};
+		hiddenSelections[] = {"arms","legs","torso"};
+		hiddenSelectionsTextures[] = {"ls_armor_redfor\uniform\cis\b2\data\arms_co.paa","ls_armor_redfor\uniform\cis\b2\data\legs_co.paa","ls_armor_redfor\uniform\cis\b2\data\torso_co.paa"};
 		linkeditems[] = {"SWOP_ImpNVChip","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		magazines[] = {"SWOP_B2gun_Mag","SWOP_B2gun_Mag","SWOP_B2gun_Mag","SWOP_B2gun_Mag","SWOP_B2gun_Mag","SWOP_B2gun_Mag","SWOP_B2gun_Mag","SWOP_B2rocket_Mag","SWOP_B2rocket_Mag"};
 		weapons[] = {"SWOP_B2gun","Throw","Put"};
@@ -304,6 +301,366 @@ class CfgVehicles
 				passThrough = 0.1;
 				radius = 0;
 				visual = "";
+			};
+		};
+	};
+};
+
+class CfgGroups{
+	class East{
+		class JA_Opfor{
+			name = "Jango's Finest";
+			class JA_Opfor_Droid_Groups{
+				name = "Droid infantry";
+				class JA_Group_BX_Team{
+					name = "BX - Team";
+					side = 1;
+					class Unit0 {
+						vehicle = "JA_CIS_BX_Commando";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "JA_CIS_BX_Commando";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "JA_CIS_BX_Assassin";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+						side = 1;
+					};
+				};
+				class JA_Group_BX_Group{
+					name = "BX - Group";
+					side = 1;
+					class Unit0 {
+						vehicle = "JA_CIS_BX_Commando";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "JA_CIS_BX_Commando";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "JA_CIS_BX_Assassin";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+						side = 1;
+					};
+					class Unit3 {
+						vehicle = "JA_CIS_BX_Commando";
+						rank = "PRIVATE";
+						position[] = {2,2,0};
+						side = 1;
+					};
+					class Unit4 {
+						vehicle = "JA_CIS_BX_Commando";
+						rank = "PRIVATE";
+						position[] = {-2,-2,0};
+						side = 1;
+					};
+					class Unit5 {
+						vehicle = "JA_CIS_BX_Assassin";
+						rank = "PRIVATE";
+						position[] = {2,-2,0};
+						side = 1;
+					};
+				};
+				class JA_Group_B1_Team{
+					name = "B1 - Team";
+					side = 1;
+					class Unit0 {
+						vehicle = "JA_CIS_B1_Base";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "JA_CIS_B1_Base";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "JA_CIS_B1_Heavy";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+						side = 1;
+					};
+				};
+				class JA_Group_B1_Group{
+					name = "B1 - Group";
+					side = 1;
+					class Unit0 {
+						vehicle = "JA_CIS_B1_Base";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "JA_CIS_B1_Base";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "JA_CIS_B1_Heavy";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+						side = 1;
+					};
+					class Unit3 {
+						vehicle = "JA_CIS_B1_Marksman";
+						rank = "PRIVATE";
+						position[] = {2,2,0};
+						side = 1;
+					};
+					class Unit4 {
+						vehicle = "JA_CIS_B1_Base";
+						rank = "PRIVATE";
+						position[] = {-2,-2,0};
+						side = 1;
+					};
+					class Unit5 {
+						vehicle = "JA_CIS_B1_Heavy";
+						rank = "PRIVATE";
+						position[] = {2,-2,0};
+						side = 1;
+					};
+				};
+				class JA_Group_B2_B1_Team{
+					name = "B1/B2 - Team";
+					side = 1;
+					class Unit0 {
+						vehicle = "JA_CIS_B1_Base";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "JA_CIS_B2_Base";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "JA_CIS_B1_Heavy";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+						side = 1;
+					};
+				};
+				class JA_Group_B2_B1_Group{
+					name = "B1/B2 - Group";
+					side = 1;
+					class Unit0 {
+						vehicle = "JA_CIS_B1_Base";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "JA_CIS_B1_Base";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "JA_CIS_B1_Heavy";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+						side = 1;
+					};
+					class Unit3 {
+						vehicle = "JA_CIS_B1_Marksman";
+						rank = "PRIVATE";
+						position[] = {2,2,0};
+						side = 1;
+					};
+					class Unit4 {
+						vehicle = "JA_CIS_B2_Base";
+						rank = "PRIVATE";
+						position[] = {-2,-2,0};
+						side = 1;
+					};
+					class Unit5 {
+						vehicle = "JA_CIS_B1_Heavy";
+						rank = "PRIVATE";
+						position[] = {2,-2,0};
+						side = 1;
+					};
+				};
+			};
+			class JA_Opfor_Air_Groups{
+				name = "Droid Aviation";
+				class JA_Group_Vulture_Group{
+					name = "Vulture - Group";
+					side = 1;
+					class Unit0 {
+						vehicle = "swop_vulture";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "swop_vulture";
+						rank = "PRIVATE";
+						position[] = {-15,-15,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "swop_vulture";
+						rank = "PRIVATE";
+						position[] = {15,-15,0};
+						side = 1;
+					};
+					class Unit3 {
+						vehicle = "swop_vulture";
+						rank = "PRIVATE";
+						position[] = {30,30,0};
+						side = 1;
+					};
+					class Unit4 {
+						vehicle = "swop_vulture";
+						rank = "PRIVATE";
+						position[] = {-30,-30,0};
+						side = 1;
+					};
+					class Unit5 {
+						vehicle = "swop_vulture";
+						rank = "PRIVATE";
+						position[] = {30,-30,0};
+						side = 1;
+					};
+				};
+				class JA_Group_Hyena_Group{
+					name = "Hyena - Group";
+					side = 1;
+					class Unit0 {
+						vehicle = "swop_hbomber";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "swop_hbomber";
+						rank = "PRIVATE";
+						position[] = {-15,-15,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "swop_hbomber";
+						rank = "PRIVATE";
+						position[] = {15,-15,0};
+						side = 1;
+					};
+					class Unit3 {
+						vehicle = "swop_hbomber";
+						rank = "PRIVATE";
+						position[] = {30,30,0};
+						side = 1;
+					};
+					class Unit4 {
+						vehicle = "swop_hbomber";
+						rank = "PRIVATE";
+						position[] = {-30,-30,0};
+						side = 1;
+					};
+					class Unit5 {
+						vehicle = "swop_hbomber";
+						rank = "PRIVATE";
+						position[] = {30,-30,0};
+						side = 1;
+					};
+				};
+				class JA_Group_Gunship_Group{
+					name = "Gunship - Group";
+					side = 1;
+					class Unit0 {
+						vehicle = "ls_cis_hmp";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "ls_cis_hmp";
+						rank = "PRIVATE";
+						position[] = {-15,-15,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "ls_cis_hmp";
+						rank = "PRIVATE";
+						position[] = {15,-15,0};
+						side = 1;
+					};
+					class Unit3 {
+						vehicle = "ls_cis_hmp";
+						rank = "PRIVATE";
+						position[] = {30,30,0};
+						side = 1;
+					};
+					class Unit4 {
+						vehicle = "ls_cis_hmp";
+						rank = "PRIVATE";
+						position[] = {-30,-30,0};
+						side = 1;
+					};
+					class Unit5 {
+						vehicle = "ls_cis_hmp";
+						rank = "PRIVATE";
+						position[] = {30,-30,0};
+						side = 1;
+					};
+				};
+				class JA_Group_Mix_Air_Group{
+					name = "Mix Air - Group";
+					side = 1;
+					class Unit0 {
+						vehicle = "ls_cis_hmp";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+						side = 1;
+					};
+					class Unit1 {
+						vehicle = "ls_cis_hmp";
+						rank = "PRIVATE";
+						position[] = {-15,-15,0};
+						side = 1;
+					};
+					class Unit2 {
+						vehicle = "swop_vulture";
+						rank = "PRIVATE";
+						position[] = {15,-15,0};
+						side = 1;
+					};
+					class Unit3 {
+						vehicle = "swop_vulture";
+						rank = "PRIVATE";
+						position[] = {30,30,0};
+						side = 1;
+					};
+					class Unit4 {
+						vehicle = "swop_hbomber";
+						rank = "PRIVATE";
+						position[] = {-30,-30,0};
+						side = 1;
+					};
+					class Unit5 {
+						vehicle = "swop_hbomber";
+						rank = "PRIVATE";
+						position[] = {30,-30,0};
+						side = 1;
+					};
+				};
 			};
 		};
 	};

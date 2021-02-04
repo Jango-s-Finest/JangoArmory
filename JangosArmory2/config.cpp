@@ -30,7 +30,6 @@ class CfgPatches
 			"JA_Cadet_Green4",
 			"JA_Cadet_Green5",
 			"JA_104th_Beans",
-			"JA_104th_Black",
 			"JA_104th_Dragon"
 		};
 		weapons[] = {
@@ -61,9 +60,7 @@ class CfgPatches
 			"JA_104th_Dragon_Helmet",
 			"JA_104th_Dragon_Uniform",
 			"JA_104th_Beans_Helmet",
-			"JA_104th_Black_Helmet",
 			"JA_104th_Beans_Uniform",
-			"JA_104th_Black_Uniform"
 		};
 	};
 };
@@ -719,17 +716,6 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_Black_Helmet : SWLB_clone_P2_Helmet
-	{
-		author = "Tundra";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // dont change this
-		displayName = "Clone trooper P2 Helmet (104th Black)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_P2_Black_Helmet.paa" }; // the file path to the texture
-	};
-
 	// 104th
 
 
@@ -743,31 +729,6 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Beans";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
-	class JA_104th_Black_Uniform : SWLB_clone_uniform
-	{
-		author = "Emmet";
-			scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Black)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory2\data\Textures\104th_P2_Black_Upper.paa",
-			"JangosArmory2\data\Textures\104th_P2_Black_Lower.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Black";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1123,25 +1084,6 @@ class CfgVehicles
 		respawnLinkedItems[] = { JA_Cadet_Green_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	}
 
-	class JA_104th_Black : SWLB_clone_base_P2
-	{
-		author = "Tundra"
-			scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-        side = 1;
-		displayName = "104th Black";
-		uniformClass = "JA_104th_Black_Uniform";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory2\data\Textures\104th_P2_Black_Upper.paa",
-			"JangosArmory2\data\Textures\104th_P2_Black_Lower.paa"
-		};
-		linkedItems[] = { JA_104th_Black_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Black_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};
 	class JA_104th_Dragon : SWLB_clone_base_P2
 	{
 		author = "Dak";

@@ -10,32 +10,31 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {
 			"JA_104th_Pacify",
-			"JA_104th_Needle",
 			"JA_104th_Garm",
 			"JA_104th_Beans",
 			"JA_104th_IQ",
-			"JA_104th_Bomb",
 			"JA_104th_Raptor",
 			"JA_104th_Habit",
-			"JA_104th_Niner"
+			"JA_104th_Niner",
+			"JA_104th_Vision",
+			"JA_104th_Mad",
 		};
 		weapons[] = {
 			"JA_104th_Pacify_Uniform",
 			"JA_104th_Pacify_Helmet",
 			"JA_104th_Herc_Helmet",
-			"JA_104th_Needle_Uniform",
-			"JA_104th_Mute_Helmet",
 			"JA_104th_Garm_Uniform",
 			"JA_104th_Fire_Helmet",
-			"JA_104th_Bomb_Uniform",
 			"JA_104th_Axel_Helmet",
 			"JA_104th_Raptor_Uniform",
-			"JA_104th_Bomb_Helmet",
-			"JA_104th_Needle_Helmet",
 			"JA_104th_ARC_Vest",
 			"JA_104th_Habit_Uniform",
+			"JA_104th_Vision_Uniform",
+			"JA_104th_Mad_Helmet",
+			"JA_104th_Click_Helmet",
+			"JA_104th_Woods_Helmet",
+			"JA_104th_Mad_Uniform",
 			"JA_104th_Frosty_Vest",
-			"JA_104th_Palv_Helmet",
 			"JA_104th_AB_ME_Officer_Trooper_Armor",
 			"JA_104th_ME_officer_Vest",
 			"JA_104th_ME_Commander_Vest",
@@ -181,41 +180,6 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Herc)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Herc_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Needle_Uniform : SWLB_clone_uniform
-	{
-		author = "Dak";
-		scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Needle)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory4\data\Textures\104th_P2_Needle_Upper.paa",
-			"JangosArmory4\data\Textures\104th_P2_Needle_Lower.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Needle";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
-	class JA_104th_Mute_Helmet : SWLB_clone_AB_helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper AB Helmet (104th Mute)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Mute_Helmet.paa" }; // the file path to the texture
-	};
 	class JA_104th_Garm_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -316,12 +280,42 @@ class CfgWeapons
 		displayname = "Clone Trooper Airborne Helmet (104th Garm)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Garm_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Bomb_Uniform : SWLB_clone_uniform
+	class JA_104th_Click_Helmet : SWLB_clone_P2_helmet
 	{
-		author = "Ice";
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Click)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Click_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Woods_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Woods)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Woods_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Mad_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Mad)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Mad_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Mad_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Bomb)";
+		displayName = "Clone trooper armor (104th Mad)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -329,13 +323,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory4\data\Textures\104th_P2_Bomb_Upper.paa",
-			"JangosArmory4\data\Textures\104th_P2_Bomb_Lower.paa"
+			"JangosArmory4\data\Textures\104th_P2_Mad_Upper.paa",
+			"JangosArmory4\data\Textures\104th_P2_Mad_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_Bomb";
+			uniformClass = "JA_104th_Mad";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Vision_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Vision)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_P2_Vision_Upper.paa",
+			"JangosArmory4\data\Textures\104th_P2_Vision_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Vision";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -375,26 +394,6 @@ class CfgWeapons
 			mass = 40;
 			uniformType = "Neopren";
 		};
-	};
-	class JA_104th_Bomb_Helmet : SWLB_clone_P2_helmet
-	{
-		author = "Ice";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Bomb)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Bomb_Helmet.paa" }; // the file path to the texture
-	};
-	class JA_104th_Needle_Helmet : SWLB_clone_P2_helmet
-	{
-		author = "Ice";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Needle)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Needle_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_ARC_Vest: SWLB_clone_officer_armor //wip
 	{
@@ -487,16 +486,6 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_ARC_Frosty_Pauldron.paa"
 		};
 		vestType="Rebreather";	
-	};
-	class JA_104th_Palv_Helmet : SWLB_clone_AB_Helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Palv)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Palv_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_AB_ME_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
@@ -892,22 +881,6 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_Pacify_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Pacify_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
-	class JA_104th_Needle : SWLB_clone_base_P2
-	{
-		author = "Dak";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		uniformClass = "JA_104th_Needle_Uniform";
-		displayName = "104th Needle";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Needle_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Needle_Lower.paa"};
-		linkedItems[] = { JA_104th_Needle_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Needle_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};
 	class JA_104th_Garm : SWLB_clone_base_P2
 	{
 		author = "Dak";
@@ -940,22 +913,38 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_Niner_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Niner_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
-	class JA_104th_Bomb : SWLB_clone_base_P2
+	class JA_104th_Mad : SWLB_clone_base_P2
 	{
-		author = "Ice";
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		uniformClass = "JA_104th_Bomb_Uniform";
-		displayName = "104th Bomb";
+		uniformClass = "JA_104th_Mad_Uniform";
+		displayName = "104th Mad";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Bomb_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Bomb_Lower.paa"};
-		linkedItems[] = { JA_104th_Bomb_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Bomb_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Mad_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Mad_Lower.paa"};
+		linkedItems[] = { JA_104th_Mad_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Mad_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Vision : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Vision_Uniform";
+		displayName = "104th Vision";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Vision_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Vision_Lower.paa"};
+		linkedItems[] = { JA_104th_Vision_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Vision_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
 	class JA_104th_Raptor : SWLB_clone_base_P2
 	{
 		author = "Ice";

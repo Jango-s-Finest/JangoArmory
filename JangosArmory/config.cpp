@@ -10,7 +10,6 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {
 			"JA_104th_Bail",
-			"JA_104th_Irish",
 			"JA_104th_Scurvy",
 			"JA_104th_Hunter",
 			"JA_104th_Banker",
@@ -27,7 +26,6 @@ class CfgPatches
 		};
 		weapons[] = {
 			"JA_104th_Bail_Uniform",
-			"JA_104th_Irish_Uniform",
 			"JA_104th_Scurvy_Uniform",
 			"JA_104th_Hunter_Uniform",
 			"JA_104th_Banker_Uniform",
@@ -48,7 +46,6 @@ class CfgPatches
 			"JA_104th_Habit_Helmet",
 			"JA_104th_Bravo_Helmet",
 			"JA_104th_Bail_Pilot_Helmet",
-			"JA_104th_Irish_Helmet",
 			"JA_104th_Scurvy_Helmet",
 			"JA_104th_Hunter_Helmet",
 			"JA_104th_Banker_Helmet",
@@ -155,31 +152,6 @@ class CfgWeapons
 	};
 
 	// 1-1
-	class JA_104th_Irish_Uniform : SWLB_clone_uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Irish)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory\data\Textures\104th_P2_Irish_Upper.paa",
-			"JangosArmory\data\Textures\104th_P2_Irish_Lower.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Irish";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
 
 	// 1-2
 
@@ -597,16 +569,6 @@ class CfgWeapons
 	};
 
 	// 1-1 Helmets
-	class JA_104th_Irish_Helmet : SWLB_clone_P2_Helmet
-	{
-		author = "Tundra";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Irish)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_P2_Irish_Helmet.paa" }; // the file path to the texture
-	};
 
 	// 1-2 Helmets
 
@@ -750,22 +712,6 @@ class CfgVehicles
 		respawnLinkedItems[] = { JA_104th_Bail_Pilot_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	// 1-1
-	class JA_104th_Irish : SWLB_clone_base_P2
-	{
-		author = "Tundra";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		displayName = "104th Irish";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_categ_clones";
-		uniformClass = "JA_104th_Irish_Uniform";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_P2_Irish_Upper.paa", "JangosArmory\data\Textures\104th_P2_Irish_Lower.paa"};
-		linkedItems[] = {JA_104th_Irish_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Irish_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};
 	// 1-2
 
 	class JA_104th_Scurvy : SWLB_clone_base_P2
