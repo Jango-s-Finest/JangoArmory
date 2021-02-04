@@ -1021,7 +1021,7 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_Frosty_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Frosty_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
-	class JA_104th_Spectre : SWLB_clone_base_P2
+	class JA_104th_Spectre : SWLB_clone_marshal_commander_base_P2
 	{
 		author = "Dak";
 		scope = 2;
