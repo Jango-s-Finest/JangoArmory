@@ -112,6 +112,14 @@ class cfgVehicles {
 	class OPTRE_UNSC_falcon;
 	class OPTRE_Pelican_unarmed;
 	class OPTRE_Pelican_armed;
+	
+	//Classes needed for the Bison change
+	class OPTRE_Vehicles_Bison;
+	class OPTRE_M413_base;
+	class OPTRE_M412_IFV_UNSC;
+	class Turrets;
+	class MainTurret;
+	class OPTRE_M412_IFV_UNSC_blk;
 
 	class Box_212_Supply_F;
 	class Box_212_Medical_F;
@@ -1625,6 +1633,23 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 	};
+	class OPTRE_M412_IFV_UNSC_cln: OPTRE_M412_IFV_UNSC_blk {
+		dlc = "OPTRE";
+		scope = 1;
+		scopeCurator = 2;
+		displayName = "M412 Bison IFV [Clone]";
+		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
+		hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Bison\data\Bison_Body_blk_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Misc_blk_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_blk_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","OPTRE_Vehicles\Bison\data\Bison_90mm_blk_CO.paa"};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
+				magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles"};
+			};
+		};	
+	}
+
 
 	//Split
 
