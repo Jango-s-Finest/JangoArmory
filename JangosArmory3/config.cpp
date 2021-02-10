@@ -1021,7 +1021,7 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_Frosty_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Frosty_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
-	class JA_104th_Spectre : SWLB_clone_base_P2
+	class JA_104th_Spectre : SWLB_clone_marshal_commander_base_P2
 	{
 		author = "Dak";
 		scope = 2;
@@ -1060,6 +1060,33 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone trooper jumppack";
 		RD501_jumppack_energy_capacity = 100;
+	};
+	class JA_104th_Jumppack_JT12_LR_DC : JLTS_Clone_jumppack_JT12_104
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 LR - NO RECHARGE";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "SWLB_clone_rto_radio_dialog"
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel=1;
+		tf_subtype = "digital_lr";
+		JLTS_energy[]={15,3000};
+		JLTS_recharge = -1;
+	};
+	class JA_104th_Jumppack_JT12_DC : JLTS_Clone_jumppack_JT12_104
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12  - NO RECHARGE";
+		RD501_jumppack_energy_capacity = 100;
+		JLTS_energy[]={15,3000};
+		JLTS_recharge = -1;
 	};
 	class JA_104th_Jumppack_JT12_LR : JLTS_Clone_jumppack_JT12_104
 	{

@@ -52,6 +52,7 @@ class CfgWeapons
 	class JA_CIS_B2_Uniform : ls_cis_b2Droid_uniform{
 		author = "Dak";
 		scope = 2;
+		armor = 10;
 		displayName = "Droid B2";
 	};
 };
@@ -119,6 +120,7 @@ class CfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 0;
+		armor = 10;
 		faction = "104th_Guys_CIS";
 		editorSubcategory = "104th_Categ_CIS";
 		displayName = "CIS B2 Blaster";
@@ -141,7 +143,7 @@ class CfgVehicles
 				visual = "injury_hands";
 			};
 			class HitHands: HitArms{
-				armor = 11;
+				armor = 10;
 				depends = "HitArms";
 				explosionShielding = 0.25;
 				material = -1;
@@ -152,7 +154,7 @@ class CfgVehicles
 				visual = "injury_hands";
 			};
 			class HitLeftArm{
-				armor = 1;
+				armor = 10;
 				explosionShielding = 0.25;
 				material = -1;
 				minimalHit = 0.01;
@@ -162,7 +164,7 @@ class CfgVehicles
 				visual = "injury_hands";
 			};
 			class HitLeftLeg{
-				armor = 1;
+				armor = 10;
 				explosionShielding = 0.25;
 				material = -1;
 				minimalHit = 0.01;
@@ -182,7 +184,7 @@ class CfgVehicles
 				visual = "injury_legs";
 			};
 			class HitFace{
-				armor = 3;
+				armor = 10;
 				explosionShielding = 0.1;
 				material = -1;
 				minimalHit = 0.01;
@@ -191,7 +193,7 @@ class CfgVehicles
 				radius = 0.08;
 			};
 			class HitNeck: HitFace{
-				armor = 5;
+				armor = 10;
 				explosionShielding = 0.25;
 				material = -1;
 				minimalHit = 0.01;
@@ -210,7 +212,7 @@ class CfgVehicles
 				radius = 0.15;
 			};
 			class ACE_HDBracket:HitHead{
-				armor = 1;
+				armor = 10;
 				depends = "HitHead";
 				explosionShielding = 1;
 				material = -1;
@@ -272,7 +274,7 @@ class CfgVehicles
 				visual = "injury_body";
 			};
 			class HitRightArm{
-				armor = 1;
+				armor = 10;
 				explosionShielding = 0.25;
 				material = -1;
 				minimalHit = 0.01;
@@ -282,7 +284,7 @@ class CfgVehicles
 				visual = "injury_hands";
 			};
 			class HitRightLeg{
-				armor = 1;
+				armor = 10;
 				explosionShielding = 0.25;
 				material = -1;
 				minimalHit = 0.01;
