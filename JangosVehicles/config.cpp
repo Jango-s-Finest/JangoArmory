@@ -1635,8 +1635,12 @@ class cfgVehicles {
 	};
 	class OPTRE_M412_IFV_UNSC_cln: OPTRE_M412_IFV_UNSC_blk {
 		dlc = "OPTRE";
-		scope = 1;
+		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		displayName = "M412 Bison IFV [Clone]";
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
 		hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Bison\data\Bison_Body_blk_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Misc_blk_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_blk_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","OPTRE_Vehicles\Bison\data\Bison_90mm_blk_CO.paa"};
