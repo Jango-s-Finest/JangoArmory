@@ -316,188 +316,188 @@ class CfgGroups{
 				name = "Droid infantry";
 				class JA_Group_BX_Team{
 					name = "BX - Team";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "JA_CIS_BX_Commando";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "JA_CIS_BX_Commando";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "JA_CIS_BX_Assassin";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
-						side = 1;
+						side = 0;
 					};
 				};
 				class JA_Group_BX_Group{
 					name = "BX - Group";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "JA_CIS_BX_Commando";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "JA_CIS_BX_Commando";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "JA_CIS_BX_Assassin";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit3 {
 						vehicle = "JA_CIS_BX_Commando";
 						rank = "PRIVATE";
 						position[] = {2,2,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit4 {
 						vehicle = "JA_CIS_BX_Commando";
 						rank = "PRIVATE";
 						position[] = {-2,-2,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit5 {
 						vehicle = "JA_CIS_BX_Assassin";
 						rank = "PRIVATE";
 						position[] = {2,-2,0};
-						side = 1;
+						side = 0;
 					};
 				};
 				class JA_Group_B1_Team{
 					name = "B1 - Team";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "JA_CIS_B1_Base";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "JA_CIS_B1_Base";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "JA_CIS_B1_Heavy";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
-						side = 1;
+						side = 0;
 					};
 				};
 				class JA_Group_B1_Group{
 					name = "B1 - Group";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "JA_CIS_B1_Base";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "JA_CIS_B1_Base";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "JA_CIS_B1_Heavy";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit3 {
 						vehicle = "JA_CIS_B1_Marksman";
 						rank = "PRIVATE";
 						position[] = {2,2,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit4 {
 						vehicle = "JA_CIS_B1_Base";
 						rank = "PRIVATE";
 						position[] = {-2,-2,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit5 {
 						vehicle = "JA_CIS_B1_Heavy";
 						rank = "PRIVATE";
 						position[] = {2,-2,0};
-						side = 1;
+						side = 0;
 					};
 				};
 				class JA_Group_B2_B1_Team{
 					name = "B1/B2 - Team";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "JA_CIS_B1_Base";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "JA_CIS_B2_Base";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "JA_CIS_B1_Heavy";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
-						side = 1;
+						side = 0;
 					};
 				};
 				class JA_Group_B2_B1_Group{
 					name = "B1/B2 - Group";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "JA_CIS_B1_Base";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "JA_CIS_B1_Base";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "JA_CIS_B1_Heavy";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit3 {
 						vehicle = "JA_CIS_B1_Marksman";
 						rank = "PRIVATE";
 						position[] = {2,2,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit4 {
 						vehicle = "JA_CIS_B2_Base";
 						rank = "PRIVATE";
 						position[] = {-2,-2,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit5 {
 						vehicle = "JA_CIS_B1_Heavy";
 						rank = "PRIVATE";
 						position[] = {2,-2,0};
-						side = 1;
+						side = 0;
 					};
 				};
 			};
@@ -505,162 +505,162 @@ class CfgGroups{
 				name = "Droid Aviation";
 				class JA_Group_Vulture_Group{
 					name = "Vulture - Group";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "swop_vulture";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "swop_vulture";
 						rank = "PRIVATE";
 						position[] = {-15,-15,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "swop_vulture";
 						rank = "PRIVATE";
 						position[] = {15,-15,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit3 {
 						vehicle = "swop_vulture";
 						rank = "PRIVATE";
 						position[] = {30,30,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit4 {
 						vehicle = "swop_vulture";
 						rank = "PRIVATE";
 						position[] = {-30,-30,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit5 {
 						vehicle = "swop_vulture";
 						rank = "PRIVATE";
 						position[] = {30,-30,0};
-						side = 1;
+						side = 0;
 					};
 				};
 				class JA_Group_Hyena_Group{
 					name = "Hyena - Group";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "swop_hbomber";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "swop_hbomber";
 						rank = "PRIVATE";
 						position[] = {-15,-15,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "swop_hbomber";
 						rank = "PRIVATE";
 						position[] = {15,-15,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit3 {
 						vehicle = "swop_hbomber";
 						rank = "PRIVATE";
 						position[] = {30,30,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit4 {
 						vehicle = "swop_hbomber";
 						rank = "PRIVATE";
 						position[] = {-30,-30,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit5 {
 						vehicle = "swop_hbomber";
 						rank = "PRIVATE";
 						position[] = {30,-30,0};
-						side = 1;
+						side = 0;
 					};
 				};
 				class JA_Group_Gunship_Group{
 					name = "Gunship - Group";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "ls_cis_hmp";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "ls_cis_hmp";
 						rank = "PRIVATE";
 						position[] = {-15,-15,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "ls_cis_hmp";
 						rank = "PRIVATE";
 						position[] = {15,-15,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit3 {
 						vehicle = "ls_cis_hmp";
 						rank = "PRIVATE";
 						position[] = {30,30,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit4 {
 						vehicle = "ls_cis_hmp";
 						rank = "PRIVATE";
 						position[] = {-30,-30,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit5 {
 						vehicle = "ls_cis_hmp";
 						rank = "PRIVATE";
 						position[] = {30,-30,0};
-						side = 1;
+						side = 0;
 					};
 				};
 				class JA_Group_Mix_Air_Group{
 					name = "Mix Air - Group";
-					side = 1;
+					side = 0;
 					class Unit0 {
 						vehicle = "ls_cis_hmp";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit1 {
 						vehicle = "ls_cis_hmp";
 						rank = "PRIVATE";
 						position[] = {-15,-15,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit2 {
 						vehicle = "swop_vulture";
 						rank = "PRIVATE";
 						position[] = {15,-15,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit3 {
 						vehicle = "swop_vulture";
 						rank = "PRIVATE";
 						position[] = {30,30,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit4 {
 						vehicle = "swop_hbomber";
 						rank = "PRIVATE";
 						position[] = {-30,-30,0};
-						side = 1;
+						side = 0;
 					};
 					class Unit5 {
 						vehicle = "swop_hbomber";
 						rank = "PRIVATE";
 						position[] = {30,-30,0};
-						side = 1;
+						side = 0;
 					};
 				};
 			};
