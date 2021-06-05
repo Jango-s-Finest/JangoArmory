@@ -365,15 +365,15 @@ class CfgWeapons
 		displayname = "Clone Trooper Special Activities Helmet (104th Crash)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_JTAC_Crash_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Spectre_Helmet : SWLB_clone_AB_helmet
+	class JA_104th_Spectre_Helmet : SWLB_clone_ARF_P1_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Spectre)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_AB_Spectre_Helmet.paa" }; // the file path to the texture
+		displayname = "Clone Trooper ARF Helmet (104th Spectre)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARF_Spectre_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Spectre_Uniform : SWLB_clone_mc_uniform
 	{
@@ -390,9 +390,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa",
-			"JangosArmory3\data\Textures\104th_AB_Spectre_Lower.paa",
-			"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa",
+			"JangosArmory3\data\Textures\104th_ARF_Spectre_Upper.paa",
+			"JangosArmory3\data\Textures\104th_ARF_Spectre_Lower.paa",
+			"JangosArmory3\data\Textures\104th_ARF_Spectre_Upper.paa",
 			""
 		};
 		class ItemInfo : UniformItem
@@ -1021,7 +1021,7 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_Frosty_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Frosty_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
-	class JA_104th_Spectre : SWLB_clone_marshal_commander_base_P2
+	class JA_104th_Spectre : SWLB_clone_base_P2
 	{
 		author = "Dak";
 		scope = 2;
@@ -1034,9 +1034,9 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] ={"camo1","camo2","biceps","rank"};
-		hiddenSelectionsTextures[] ={"JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa","JangosArmory3\data\Textures\104th_AB_Spectre_Lower.paa","JangosArmory3\data\Textures\104th_AB_Spectre_Upper.paa",""};
-		linkedItems[] = { JA_104th_Spectre_Uniform,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Spectre_Uniform,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		hiddenSelectionsTextures[] ={"JangosArmory3\data\Textures\104th_ARF_Spectre_Upper.paa","JangosArmory3\data\Textures\104th_ARF_Spectre_Lower.paa"};
+		linkedItems[] = { JA_104th_Spectre_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Spectre_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Jumppack_LR : JLTS_Clone_jumppack
 	{

@@ -318,7 +318,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_Captain_Tre_P2_Gash";
+			uniformClass = "JA_104th_Captain_Tre_P1_Gash";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";

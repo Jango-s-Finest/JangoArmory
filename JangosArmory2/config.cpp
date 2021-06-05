@@ -30,7 +30,9 @@ class CfgPatches
 			"JA_Cadet_Green4",
 			"JA_Cadet_Green5",
 			"JA_104th_Beans",
-			"JA_104th_Dragon"
+			"JA_104th_Dragon",
+			"JA_104th_AB_Medic",
+			"JA_104th_P2_Medic"
 		};
 		weapons[] = {
 			"JA_Cadet_Yellow_Helmet",
@@ -61,6 +63,16 @@ class CfgPatches
 			"JA_104th_Dragon_Uniform",
 			"JA_104th_Beans_Helmet",
 			"JA_104th_Beans_Uniform",
+			"JA_104th_AB_Base_Helmet",
+			"JA_104th_AB_Medic_Helmet",
+			"JA_104th_AB_Medic_Uniform",
+			"JA_104th_P2_Medic_Helmet",
+			"JA_104th_P2_Medic_Uniform",
+			"JA_104th_Desert_Medic_Helmet",
+			"JA_104th_Desert_Medic_NCO_Helmet",
+			"JA_104th_Desert_NCO_Helmet",
+			"JA_104th_Desert_Officer_Helmet",
+			"JA_104th_Desert_Trooper_Helmet",
 		};
 	};
 };
@@ -109,9 +121,149 @@ class CfgWeapons
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_mcVisor;
 	class SWLB_clone_airborne_nco_armor;
+	class ls_gar_desert_helmet;
 	class UniformItem;
 
 	// Cadet Armor
+	class JA_104th_Desert_Medic_Helmet : ls_gar_desert_helmet
+	{
+		author = "Dak";
+			scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
+		displayname = "Clone trooper Desert Helmet (Medic)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_Medic.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
+	};
+
+	class JA_104th_Desert_Medic_NCO_Helmet : ls_gar_desert_helmet
+	{
+		author = "Dak";
+			scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
+		displayname = "Clone trooper Desert Helmet (Medic NCO)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_Medic_NCO.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
+	};
+
+	class JA_104th_Desert_NCO_Helmet : ls_gar_desert_helmet
+	{
+		author = "Dak";
+			scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
+		displayname = "Clone trooper Desert Helmet (NCO)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_NCO.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
+	};
+
+	class JA_104th_Desert_Officer_Helmet : ls_gar_desert_helmet
+	{
+		author = "Dak";
+			scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
+		displayname = "Clone trooper Desert Helmet (Officer)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_Officer.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
+	};
+
+	class JA_104th_Desert_Trooper_Helmet : ls_gar_desert_helmet
+	{
+		author = "Dak";
+			scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
+		displayname = "Clone trooper Desert Helmet (Base)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_Trooper.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
+	};
+
+	class JA_104th_P2_Medic_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Dak";
+			scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone trooper P2 Helmet (Medic)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_P2_Medic_Helmet.paa" }; // the file path to the texture
+	};
+
+	class JA_104th_P2_Medic_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+			scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper P2 Armor (Medic)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmor2y\data\Textures\104th_P2_Medic_Upper.paa",
+			"JangosArmory2\data\Textures\104th_P2_Medic_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_P2_Medic";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_104th_AB_Base_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+			scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone trooper Airborne Helmet (Base)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_AB_Base_Helmet.paa" }; // the file path to the texture
+	};
+
+	class JA_104th_AB_Medic_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+			scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone trooper Airborne Helmet (Medic)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_AB_Medic_Helmet.paa" }; // the file path to the texture
+	};
+
+	class JA_104th_AB_Medic_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+			scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper Airborne Armor (Medic)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmor2y\data\Textures\104th_AB_Medic_Upper.paa",
+			"JangosArmory2\data\Textures\104th_AB_Medic_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_AB_Medic";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 
 	class JA_Cadet_Yellow_Helmet : SWLB_clone_P1_helmet
 	{
@@ -1102,6 +1254,45 @@ class CfgVehicles
 		};
 		linkedItems[] = { JA_104th_Dragon_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Dragon_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_AB_Medic : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        side = 1;
+		displayName = "104th AB Medic";
+		uniformClass = "JA_104th_AB_Medic_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory2\data\Textures\104th_AB_Medic_Upper.paa",
+			"JangosArmory2\data\Textures\104th_AB_Medic_Lower.paa"
+		};
+		linkedItems[] = { JA_104th_AB_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_AB_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+
+	class JA_104th_P2_Medic : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        side = 1;
+		displayName = "104th P2 Medic";
+		uniformClass = "JA_104th_P2_Medic_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory2\data\Textures\104th_P2_Medic_Upper.paa",
+			"JangosArmory2\data\Textures\104th_P2_Medic_Lower.paa"
+		};
+		linkedItems[] = { JA_104th_P2_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_P2_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 
 };

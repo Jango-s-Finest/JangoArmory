@@ -617,7 +617,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper AB Helmet (104th Red)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_Red_AB_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_AB_Red_Helmet.paa" }; // the file path to the texture
 	};
 
 	// Platoon  Helmets
@@ -791,7 +791,7 @@ class CfgVehicles
 		uniformClass = "JA_104th_Angel_Uniform";
 		displayName = "104th Angel";
 		faction = "104th_Guys";
-		editorSubcategory = "104th_categ_clones";
+		editorSubcategory = "104th_Categ_Special";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"JangosArmory\data\Textures\104th_ARC_Angel_Upper.paa", "JangosArmory\data\Textures\104th_ARC_Angel_Lower.paa"};
 		linkedItems[] = { JA_104th_Angel_Helmet,JA_104thAngelVest,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
