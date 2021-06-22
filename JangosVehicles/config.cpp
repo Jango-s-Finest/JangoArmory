@@ -29,7 +29,15 @@ class CfgPatches
 			"JA_104th_Base_Tempest",
 			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
-			"JA_104th_Box_Medic"
+			"JA_104th_Box_Medic",
+			"JA_104th_BARC",
+			"JA_104th_BARC_WP",
+			"JA_104th_BARC_Talon",
+			"JA_104th_BARC_Beans",
+			"JA_104th_BARC_Sniper",
+			"JA_104th_BARC_EOD",
+			"JA_104th_BARC_Medic",
+			"OPTRE_M412_IFV_UNSC_cln"
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -100,9 +108,11 @@ class cfgVehicles {
 	class SWLG_tanks_tx130;
 	class rd501_sw_barc;
 
-	class ls_laat_base;
-	class ls_laat;
-	class ls_laat_ab; 
+	class lsd_laat_base;
+	class lsd_heli_laati;
+	class lsd_heli_laati_transport;
+	class lsd_heli_laati_ab; 
+	class lsd_laatc_base;
 	class RD501_LAAT_cargo_Mk2;
 	class RD501_LAAT_Mk3;
 	class 212_Reaper_V_Wing;
@@ -120,11 +130,45 @@ class cfgVehicles {
 	class Turrets;
 	class MainTurret;
 	class OPTRE_M412_IFV_UNSC_blk;
+	
+	//Classes for the BARC change
+	class LandVehicle;
+	class Car;
+	class ls_barc_base;
+	class ls_ground_barc;
+	class HitPoints;
+	class HitLFWheel;
+	class HitLF2Wheel;
+	class HitRFWheel;
+	class HitRF2Wheel;
+	class HitBody;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;
+	class Car_F: Car
+	{
+		class HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitBody;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+		};
+		class EventHandlers;
+		class AnimationSources;
+	};
+	
 
 	class Box_212_Supply_F;
 	class Box_212_Medical_F;
 
-	class JA_Base_LAAT: ls_laat {
+	class JA_Base_LAAT: lsd_heli_laati {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E"; 
@@ -143,9 +187,10 @@ class cfgVehicles {
 		reportRemoteTargets = True;
 		ReceiveRemoteTargets = True;
 		crewCrashProtection = 0.001;
+		radarType = 4;
 		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher","PomehiLauncherXT"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","400Rnd_Pomehi_Mag","400Rnd_Pomehi_Mag"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
 
 		memoryPointDriverOptics = "slingcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
@@ -710,7 +755,7 @@ class cfgVehicles {
 		};
 		
 	};
-	class JA_Base_LAAT_AB: ls_laat_ab 
+	class JA_Base_LAAT_AB: lsd_heli_laati_ab 
 	{
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
@@ -730,9 +775,10 @@ class cfgVehicles {
 		reportRemoteTargets = True;
 		ReceiveRemoteTargets = True;
 		crewCrashProtection = 0.001;
+		radarType = 4;
 		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher","PomehiLauncherXT"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","400Rnd_Pomehi_Mag","400Rnd_Pomehi_Mag"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
 
 		memoryPointDriverOptics = "slingcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
@@ -1515,17 +1561,6 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 	};
-	class JA_104th_Base_Ywing_Reaper: 212_Reaper_Y_Wing //The : Tells your new class to inherit everything from the ls_laat class.
-	{
-		author = "Dak";
-		displayName = "Y-Wing Reaper"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-	};
 	class JA_104th_Base_Uwing_Mk2: RD501_u_wing_MKII //The : Tells your new class to inherit everything from the ls_laat class.
 	{
 		author = "Dak";
@@ -1653,6 +1688,92 @@ class cfgVehicles {
 			};
 		};	
 	}
+	class JA_104th_BARC: ls_ground_barc
+	{
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		displayName = "BARC Speeder 104th";
+		author = "Echo";
+		maxSpeed = 280;
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+		class HitPoints: HitPoints
+		{
+			class HitFuel
+			{
+				armor = 0.5;
+				material = -1;
+				name = "fueltank";
+				visual = "";
+				passThrough = 0.2;
+			};
+			class HitEngine
+			{
+				armor = 0.5;
+				material = -1;
+				name = "engine";
+				visual = "";
+				passThrough = 0.2;
+			};
+			class HitBody: HitBody
+			{
+				name = "body";
+				visual = "camo1";
+				passThrough = 1;
+			};
+			class HitGlass1: HitGlass1
+			{
+				armor = 0.25;
+			};
+			class HitGlass2: HitGlass2
+			{
+				armor = 0.25;
+			};
+			class HitGlass3: HitGlass3
+			{
+				armor = 0.25;
+			};
+			class HitGlass4: HitGlass4
+			{
+				armor = 0.25;
+			};
+		};
+	};
+	class JA_104th_BARC_WP: JA_104th_BARC
+	{
+		displayName = "BARC Speeder 104th WP Logo";
+		maxSpeed = 280;
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_wp_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+	};
+	class JA_104th_BARC_Talon: JA_104th_BARC
+	{
+		displayName = "BARC Speeder 104th Talon Logo";
+		maxSpeed = 280;
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_talon_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+	};
+	class JA_104th_BARC_Beans: JA_104th_BARC
+	{
+		displayName = "BARC Speeder 104th Beans";
+		maxSpeed = 280;
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_beans_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+	};
+	class JA_104th_BARC_Sniper: JA_104th_BARC
+	{
+		displayName = "BARC Speeder 104th Sniper";
+		maxSpeed = 280;
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_sniper_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+	};
+	class JA_104th_BARC_Medic: JA_104th_BARC
+	{
+		displayName = "BARC Speeder 104th Medic";
+		maxSpeed = 280;
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_medic_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+	};
+	class JA_104th_BARC_EOD: JA_104th_BARC
+	{
+		displayName = "BARC Speeder 104th EOD";
+		maxSpeed = 280;
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_eod_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+	};
 
 
 	//Split
