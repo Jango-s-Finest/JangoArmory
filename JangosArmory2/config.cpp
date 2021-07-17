@@ -204,7 +204,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmor2y\data\Textures\104th_P2_Medic_Upper.paa",
+			"JangosArmory2\data\Textures\104th_P2_Medic_Upper.paa",
 			"JangosArmory2\data\Textures\104th_P2_Medic_Lower.paa"
 		};
 		class ItemInfo : UniformItem
@@ -252,7 +252,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmor2y\data\Textures\104th_AB_Medic_Upper.paa",
+			"JangosArmory2\data\Textures\104th_AB_Medic_Upper.paa",
 			"JangosArmory2\data\Textures\104th_AB_Medic_Lower.paa"
 		};
 		class ItemInfo : UniformItem
@@ -322,7 +322,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmor2y\data\Textures\Yellow_P1_Cadet_Upper_1.paa",
+			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Upper_1.paa",
 			"JangosArmory2\data\Textures\Yellow_P1_Cadet_Lower.paa"
 		};
 		class ItemInfo : UniformItem
