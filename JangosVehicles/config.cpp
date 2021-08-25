@@ -103,27 +103,18 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 
 class cfgVehicles {
 	
-	class 212th_B_APC_Wheeled_01_cannon_F;
-	class RD501_fast_infantry_transport_republic;
-	class RD501_fast_infantry_transport_republic_medic;
-	class RD501_light_infantry_transport_Rep_MkII;
 	class SWLG_tanks_tx130;
-	class rd501_sw_barc;
 
 	class lsd_laat_base;
 	class lsd_heli_laati;
 	class lsd_heli_laati_transport;
 	class lsd_heli_laati_ab; 
 	class lsd_laatc_base;
-	class RD501_LAAT_cargo_Mk2;
-	class RD501_LAAT_Mk3;
-	class 212_Reaper_V_Wing;
-	class RD501_ARC_170_MKII;
-	class 212_Reaper_Y_Wing;
-	class RD501_u_wing_MKII;
 	class OPTRE_UNSC_falcon;
 	class OPTRE_Pelican_unarmed;
 	class OPTRE_Pelican_armed;
+	
+	class ls_carrybox_base;
 	
 	
 	
@@ -177,10 +168,11 @@ class cfgVehicles {
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E"; 
 		
-		armor = 500;
+		armor = 250;
 		armorStructural = 2;
 		
 		DriverCanEject = 1;
+		cargoCanEject = 1;
 		
 		irScanRangeMax = 10000;
 		irScanRangeMin = 100;
@@ -190,7 +182,7 @@ class cfgVehicles {
 		showAllTargets = 2;
 		reportRemoteTargets = True;
 		ReceiveRemoteTargets = True;
-		crewCrashProtection = 0.001;
+		crewCrashProtection = 0.00001;
 		radarType = 4;
 		
 		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher"};
@@ -286,7 +278,7 @@ class cfgVehicles {
 				armor = 999;
 				convexComponent = "hull_hit";
 				depends = "Total";
-				explosionShielding = 1;
+				explosionShielding = 3;
 				material = 51;
 				name = "hull_hit";
 				passThrough = 1;
@@ -299,7 +291,7 @@ class cfgVehicles {
 				hitpoint = "fuel_hit";
 				name = "fuel_hit";
 				explosionShielding = 2;
-				radius = 0.1;
+				radius = 0.001;
 				visual = "";
 				passthrough = 0.1;
 				minimalhit = 0.1;
@@ -339,7 +331,7 @@ class cfgVehicles {
 				name = "main_rotor_hit";
 				passThrough = 0.1;
 				visual = "";
-				radius = 0.01;
+				radius = 0.001;
 			};
 			class HitVRotor
 			{
@@ -350,18 +342,18 @@ class cfgVehicles {
 				name = "tail_rotor_hit";
 				passThrough = 0.3;
 				visual = "";
-				radius = 0.01;
+				radius = 0.001;
 			};
 			class HitAvionics
 			{
-				armor = 1;
+				armor = 0.3;
 				convexComponent = "avionics_hit";
 				explosionShielding = 2;
 				material = 51;
 				name = "avionics_hit";
 				passThrough = 1;
 				visual = "";
-				radius = 0.5;
+				radius = 0.3;
 			};
 		};
 		
@@ -759,199 +751,10 @@ class cfgVehicles {
 		};
 		
 	};
-	class JA_Base_LAAT_AB: lsd_heli_laati_ab 
+	class JA_Base_LAAT_AB: JA_Base_LAAT 
 	{
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		displayName = "LAAT-E Airborne"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
-		
-		armor = 500;
-		armorStructural = 2;
-		
-		DriverCanEject = 1;
-		
-		irScanRangeMax = 10000;
-		irScanRangeMin = 100;
-		irScanToEyeFactor = 4;
-		laserScanner = 1;
-		nvScanner = 1;
-		showAllTargets = 2;
-		reportRemoteTargets = True;
-		ReceiveRemoteTargets = True;
-		crewCrashProtection = 0.001;
-		radarType = 4;
-		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
-
-		memoryPointDriverOptics = "slingcamera";
-		unitInfoType = "RscOptics_CAS_Pilot";
-		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
-		
-		class pilotCamera
-		{
-			class OpticsIn
-			{
-				class Wide
-				{
-					opticsDisplayName = "WFOV";
-					initAngleX = 0;
-					minAngleX = -10;
-					maxAngleX = 90;
-					initAngleY = 0;
-					minAngleY = -90;
-					maxAngleY = 90;
-					initFov = 0.425;
-					minFov = 0.425;
-					maxFov = 0.425;
-					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
-				};
-				class zoomx4: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX8: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX20: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX50: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX70: Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				showMiniMapInOptics = 1;
-				showUAVViewInOptics = 0;
-				showSlingLoadManagerInOptics = 1;
-			};
-			minTurn = -180;
-			maxTurn = 180;
-			initTurn = 0;
-			minElev = -10;
-			maxElev = 90;
-			initElev = -10;
-			maxXRotSpeed = 0.3;
-			maxYRotSpeed = 0.3;
-			pilotOpticsShowCursor = 1;
-			controllable = 1;
-			ace_missileguidance_usePilotCameraForTargeting = 1;
-		};
-		
-		class HitPoints
-		{
-			class HitHull
-			{
-				armor = 999;
-				convexComponent = "hull_hit";
-				depends = "Total";
-				explosionShielding = 1;
-				material = 51;
-				name = "hull_hit";
-				passThrough = 1;
-				visual = "zbytek";
-				radius = 0.01;
-			};
-			class HitFuel
-			{
-				convexcomponent = "fuel_hit";
-				hitpoint = "fuel_hit";
-				name = "fuel_hit";
-				explosionShielding = 2;
-				radius = 0.1;
-				visual = "";
-				passthrough = 0.1;
-				minimalhit = 0.1;
-				material = -1;
-				armor = 999;
-			};
-			class HitEngine
-			{
-				armor = 0.5;
-				convexComponent = "engine_hit";
-				explosionShielding = 2;
-				material = 51;
-				name = "engine_hit";
-				hitpoint = "engine_hit";
-				passThrough = 1;
-				visual = "";
-				radius = 0.2;
-			};
-			class HitEngine_1: HitEngine
-			{
-				convexComponent = "engine_hit_1";
-				name = "engine_hit_1";
-				hitpoint = "engine_hit_1";
-			};
-			class HitEngine_2: HitEngine
-			{
-				convexComponent = "engine_hit_2";
-				name = "engine_hit_2";
-				hitpoint = "engine_hit_2";
-			};
-			class HitHRotor
-			{
-				armor = 3;
-				convexComponent = "main_rotor_hit";
-				explosionShielding = 2.5;
-				material = 51;
-				name = "main_rotor_hit";
-				passThrough = 0.1;
-				visual = "";
-				radius = 0.01;
-			};
-			class HitVRotor
-			{
-				armor = 3;
-				convexComponent = "tail_rotor_hit";
-				explosionShielding = 6;
-				material = 51;
-				name = "tail_rotor_hit";
-				passThrough = 0.3;
-				visual = "";
-				radius = 0.01;
-			};
-			class HitAvionics
-			{
-				armor = 1;
-				convexComponent = "avionics_hit";
-				explosionShielding = 2;
-				material = 51;
-				name = "avionics_hit";
-				passThrough = 1;
-				visual = "";
-				radius = 0.5;
-			};
-		};
+		displayName = "LAAT-E Airborne";
+		model = "\lsd_vehicles_heli\laati\lsd_heli_laati_ab";
 		
 		class Components
 		{
@@ -1521,50 +1324,6 @@ class cfgVehicles {
 		};
 		textureList[] = {"base",1};
 	};
-	class JA_104th_Base_LAAT_C: RD501_LAAT_cargo_Mk2 //The : Tells your new class to inherit everything from the ls_laat class.
-	{
-		author = "Dak";
-		displayName = "LAAT C"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-	};
-	class JA_104th_Base_LAAT_Mk3: RD501_LAAT_Mk3 //The : Tells your new class to inherit everything from the ls_laat class.
-	{
-		author = "Dak";
-		displayName = "LAAT Mk3"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-	};
-	class JA_104th_Base_Vwing_Reaper: 212_Reaper_V_Wing //The : Tells your new class to inherit everything from the ls_laat class.
-	{
-		author = "Dak";
-		displayName = "V-Wing Reaper"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-	};
-	class JA_104th_Base_Arc170_Mk2: RD501_ARC_170_MKII //The : Tells your new class to inherit everything from the ls_laat class.
-	{
-		author = "Dak";
-		displayName = "ARC-170 Mk2"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-	};
 	
 	class Plane_Fighter_03_base_F;
 	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
@@ -1582,7 +1341,7 @@ class cfgVehicles {
 	
 	class 212th_3AS_Reaper_Z95_Headhunter_Blue: 3as_Z95_base
 	{
-		Author = "Dak"
+		Author = "212th + 3AS + Echo"
 		displayName = "Z-95 Reaper (Blue)"
 		scope = 2;
 		scopeArsenal = 2;
@@ -1592,43 +1351,16 @@ class cfgVehicles {
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		hiddenselections[] = {"camo","camo1","camo2"};
 		hiddenselectionstextures[] = {"3AS\3as_Z95\Data\blue_co.paa","3AS\3as_Z95\Data\cockpit_co.paa","3AS\3as_saber\data\glass\glass_ca"};
-		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera","ls_laat_gun","ls_laat_gun_2"}; //Changes the default gun to the LS LAAT gun because the default one is bugged with no sound or tracers. Stats are identical, LAAT gun just has fewer ammo.
+		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera","ls_laat_gun","ls_laat_gun_2"}; //Changes the default gun to the LS LAAT gun because the default one is bugged with no sound or tracers. Stats are identical, LAAT gun just has less ammo and slower firing rate, hence the added magazines.
 		magazines[] = {"Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag"};
 		vehicleClass = "GAR_LAATCatNSub";
-		crew = "B_SCI212thAB_212th_Pilot_01";
+		crew = "SWLB_clone_pilot_base_P2";
 		aileronSensitivity = 2.9;
 		aileronControlsSensitivityCoef = 4;
 		defaultUserMFDvalues[] = {0,1,0,1,0};
-		class TransportWeapons
-		{
-			class _xx_212th_3AS_DC15A
-			{
-				weapon = "212th_3AS_DC15A";
-				count = 1;
-			};
-			class _xx_212th_3AS_DC15S
-			{
-				weapon = "212th_3AS_DC15S";
-				count = 2;
-			};
-		};
+		class transportweapons{};
 		class TransportMagazines
 		{
-			class _xx_212th_3AS_DC15A_Mag
-			{
-				magazine = "212th_3AS_DC15A_Mag";
-				count = 20;
-			};
-			class _xx_212th_3AS_DC15S_Mag
-			{
-				magazine = "212th_3AS_DC15S_Mag";
-				count = 20;
-			};
-			class _xx_212th_35Rnd_DC17_mag
-			{
-				magazine = "212th_35Rnd_DC17_mag";
-				count = 20;
-			};
 			class _xx_DemoCharge_Remote_Mag
 			{
 				magazine = "DemoCharge_Remote_Mag";
@@ -1698,7 +1430,7 @@ class cfgVehicles {
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 3;
+				count = 1;
 			};
 		};
 		class MFD
@@ -4197,17 +3929,7 @@ class cfgVehicles {
 		};
 		
 	};
-	class JA_104th_Base_Uwing_Mk2: RD501_u_wing_MKII //The : Tells your new class to inherit everything from the ls_laat class.
-	{
-		author = "Dak";
-		displayName = "U-Wing Mk2"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-	};
+	
 	class JA_104th_Base_Falcon_Armed: OPTRE_UNSC_falcon //The : Tells your new class to inherit everything from the ls_laat class.
 	{
 		author = "Dak";
@@ -4244,59 +3966,9 @@ class cfgVehicles {
 
 	//Split
 
-	class JA_104th_Base_Bantha: 212th_B_APC_Wheeled_01_cannon_F{
-		author = "Dak";
-		displayName = "Bantha IFV"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-	};
 	class JA_104th_Base_TX130: SWLG_tanks_tx130 {
 		author = "Dak";
 		displayName = "TX-130"; 
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-	};
-	class JA_104th_Base_Barc_Speeder: rd501_sw_barc {
-		author = "Dak";
-		displayName = "Barc Speeder"; 
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-	};
-	class JA_104th_Base_Pathfinder: RD501_fast_infantry_transport_republic{
-		author = "Dak";
-		displayName = "Pathfinder"; 
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-	};
-	class JA_104th_Medical_Pathfinder: RD501_fast_infantry_transport_republic_medic{
-		author = "Dak";
-		displayName = "Pathfinder - Medical"; 
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-	};
-	class JA_104th_Base_Tempest: RD501_light_infantry_transport_Rep_MkII{
-		author = "Dak";
-		displayName = "Tempest"; 
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -4329,7 +4001,7 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		displayName = "BARC Speeder 104th";
-		author = "Echo";
+		author = "Legion Studios + Echo";
 		maxSpeed = 280;
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
 		class HitPoints: HitPoints
@@ -4414,7 +4086,7 @@ class cfgVehicles {
 
 	//Split
 
-	class JA_104th_Box_Ammo: Box_212_Supply_F{
+	class JA_104th_Box_Ammo: ls_carrybox_base{
 		author = "Dak";
 		displayName = "Ammo Box - 104th";
 		scope = 2;
@@ -4427,21 +4099,9 @@ class cfgVehicles {
 		};
 		class TransportMagazines
 		{
-			class _xx_SWOP_SWOP_WESTARM5_MAG{ //
-				count = 10;
-				magazine = "SWOP_WESTARM5_Mag";
-			};
-			class _xx_212th_200Rnd_VALKEN38SAW_mag{ //
-				count = 10;
-				magazine = "212th_200Rnd_VALKEN38SAW_mag";
-			};
 			class _xx_JLTS_DC15A_mag{
 				count = 20;
 				magazine = "JLTS_DC15A_mag";
-			};
-			class _xx_212th_15rnd_Energy_dc15XM_mag{
-				count = 30;
-				magazine = "212th_15rnd_Energy_dc15XM_mag";
 			};
 			class _xx_JLTS_DC17SA_mag{
 				count = 30;
@@ -4455,17 +4115,13 @@ class cfgVehicles {
 				count = 10;
 				magazine = "JLTS_Z6_mag";
 			};
-			class _xx_DCStun_Mag{
+			class _xx_JLTS_stun_mag_short{
 				count = 10;
-				magazine = "DCStun_Mag";
+				magazine = "JLTS_stun_mag_short";
 			};
-			class _xx_SWOP_SWOP_DC17Pistol_Mag_Mag{
-				count = 15;
-				magazine = "RD501_DC17_x20_mag";
-			};
-			class _xx_SWOP_SWOP_dc15xBlasterRifle_RD501_Mag_Mag{
-				count = 20;
-				magazine = "RD501_DC15x_x6_mag";
+			class _xx_JLTS_stun_mag_long{
+				count = 10;
+				magazine = "JLTS_stun_mag_long";
 			};
 			class _xx_SWLW_DC15A_mag{
 				count = 20;
@@ -4483,7 +4139,7 @@ class cfgVehicles {
 		class TransportItems{
 		};
 	};
-	class JA_104th_Box_Explosives: Box_212_Supply_F{
+	class JA_104th_Box_Explosives: ls_carrybox_base{
 		author = "Dak";
 		displayName = "Explosives Box - 104th";
 		scope = 2;
@@ -4514,11 +4170,7 @@ class cfgVehicles {
 			};
 			class _xx_1Rnd_SmokeWhite_Grenade_shell{
 				count = 10;
-				magazine = "1Rnd_SmokeWhite_Grenade_shell";
-			};
-			class _xx_SWOP_1Rnd_AT_Grenade_DC15A_Mag{
-				count = 10;
-				magazine = "RD501_DC15s_x60_mag";
+				magazine = "1Rnd_Smoke_Grenade_shell";
 			};
 			class _xx_SWLW_plx1_at_mag{
 				count = 10;
@@ -4536,7 +4188,7 @@ class cfgVehicles {
 		class TransportItems{
 		};
 	};
-	class JA_104th_Box_Medic: Box_212_Medical_F{
+	class JA_104th_Box_Medic: ls_carrybox_base{
 		author = "Dak";
 		displayName = "Medic Box - 104th";
 		scope = 2;
