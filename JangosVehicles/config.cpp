@@ -1087,7 +1087,7 @@ class cfgVehicles {
 		displayName = "LAAT-E 104th";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa","swlb_a_vehicle\laat\data\body2_co.paa","swlb_a_vehicle\laat\data\door1_co.paa","swlb_a_vehicle\laat\data\door2_co.paa","swlb_a_vehicle\laat\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","swlb_a_vehicle\laat\data\cockpits_co.paa","swlb_a_vehicle\laat\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1095,14 +1095,14 @@ class cfgVehicles {
 				displayName = "104th";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
-				"swlb_a_vehicle\laat\data\door1_co.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
 			
@@ -1110,28 +1110,28 @@ class cfgVehicles {
 			{
 				displayName = "104th Logo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bgwp.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
-				"swlb_a_vehicle\laat\data\door1_co.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 			}
 			
 			class plobro: base
 			{
 				displayName = "104th PloBros";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bgpb.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
-				"swlb_a_vehicle\laat\data\door1_co.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 			};
 			
 			
@@ -1142,7 +1142,7 @@ class cfgVehicles {
 		displayName = "LAAT-E 104th Airborne";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa","swlb_a_vehicle\laat\data\body2_co.paa","swlb_a_vehicle\laat\data\door1_co.paa","swlb_a_vehicle\laat\data\door2_co.paa","swlb_a_vehicle\laat\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","swlb_a_vehicle\laat\data\cockpits_co.paa","swlb_a_vehicle\laat\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1150,14 +1150,14 @@ class cfgVehicles {
 				displayName = "104th";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
-				"swlb_a_vehicle\laat\data\door1_co.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
 			
@@ -1165,28 +1165,28 @@ class cfgVehicles {
 			{
 				displayName = "104th Logo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bgwp.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
-				"swlb_a_vehicle\laat\data\door1_co.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
-			};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			}
 			
 			class plobro: base
 			{
-				displayName = "104th Plo's Bros";
+				displayName = "104th PloBros";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bgpb.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
-				"swlb_a_vehicle\laat\data\door1_co.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 			};
 			
 			
@@ -1198,7 +1198,7 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		attendant = 1;
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa","swlb_a_vehicle\laat\data\body2_co.paa","JangosVehicles\data\textures\door1_co_medic2.paa","JangosVehicles\data\textures\door2_co_medic.paa","JangosVehicles\data\textures\door3_co_medic.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","swlb_a_vehicle\laat\data\cockpits_co.paa","swlb_a_vehicle\laat\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa","lsd_vehicles_heli\laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_medic2.paa","JangosVehicles\data\textures\door2_co_medic.paa","JangosVehicles\data\textures\door3_co_medic.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1206,14 +1206,14 @@ class cfgVehicles {
 				displayName = "104th MedEvac";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
 				"JangosVehicles\data\textures\door1_co_medic2.paa",
 				"JangosVehicles\data\textures\door2_co_medic.paa",
 				"JangosVehicles\data\textures\door3_co_medic.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
 			
@@ -1224,7 +1224,7 @@ class cfgVehicles {
 		displayName = "LAAT-E 104th Echo";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa","swlb_a_vehicle\laat\data\body2_co.paa","JangosVehicles\data\textures\door1_co_echo.paa","swlb_a_vehicle\laat\data\door2_co.paa","swlb_a_vehicle\laat\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","swlb_a_vehicle\laat\data\cockpits_co.paa","swlb_a_vehicle\laat\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa","lsd_vehicles_heli\laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_echo.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1232,14 +1232,14 @@ class cfgVehicles {
 				displayName = "104th Echo";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
 				"JangosVehicles\data\textures\door1_co_echo.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
 			
@@ -1250,7 +1250,7 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E 104th Echo Airborne";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa","swlb_a_vehicle\laat\data\body2_co.paa","JangosVehicles\data\textures\door1_co_echo.paa","swlb_a_vehicle\laat\data\door2_co.paa","swlb_a_vehicle\laat\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","swlb_a_vehicle\laat\data\cockpits_co.paa","swlb_a_vehicle\laat\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa","lsd_vehicles_heli\laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_echo.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1258,14 +1258,14 @@ class cfgVehicles {
 				displayName = "104th Echo";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
 				"JangosVehicles\data\textures\door1_co_echo.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
 			
@@ -1276,7 +1276,7 @@ class cfgVehicles {
 		displayName = "LAAT-E 104th Bail";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa","swlb_a_vehicle\laat\data\body2_co.paa","swlb_a_vehicle\laat\data\door1_co.paa","swlb_a_vehicle\laat\data\door2_co.paa","swlb_a_vehicle\laat\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","swlb_a_vehicle\laat\data\cockpits_co.paa","swlb_a_vehicle\laat\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1284,14 +1284,14 @@ class cfgVehicles {
 				displayName = "104th Bail";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
-				"swlb_a_vehicle\laat\data\door1_co.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
 			
@@ -1302,7 +1302,7 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E 104th Bail Airborne";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa","swlb_a_vehicle\laat\data\body2_co.paa","swlb_a_vehicle\laat\data\door1_co.paa","swlb_a_vehicle\laat\data\door2_co.paa","swlb_a_vehicle\laat\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","swlb_a_vehicle\laat\data\cockpits_co.paa","swlb_a_vehicle\laat\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1310,14 +1310,14 @@ class cfgVehicles {
 				displayName = "104th Bail";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
-				"swlb_a_vehicle\laat\data\body2_co.paa",
-				"swlb_a_vehicle\laat\data\door1_co.paa",
-				"swlb_a_vehicle\laat\data\door2_co.paa",
-				"swlb_a_vehicle\laat\data\door3_co.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"swlb_a_vehicle\laat\data\cockpits_co.paa",
-				"swlb_a_vehicle\laat\data\glass_ca.paa"};
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
 			
