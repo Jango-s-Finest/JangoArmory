@@ -25,7 +25,6 @@ class CfgPatches
 			"JA_104th_Base_TX130",
 			"JA_104th_Base_Barc_Speeder",
 			"JA_104th_Base_Pathfinder",
-			"JA_104th_Medical_Pathfinder",
 			"JA_104th_Base_Tempest",
 			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
@@ -53,15 +52,6 @@ class CfgFactionClasses
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list. 
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
-		icon = "";
-	};
-};
-class CfgEditorCategories
-{
-	class 104th_Guys_2
-	{
-		displayname = "Jango's Finest";
-		priority = 1;
 		icon = "";
 	};
 };
@@ -4092,7 +4082,7 @@ class cfgVehicles {
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		editorCategory = "104th_Guys_2";
+		editorCategory = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 3000;
 		class TransportWeapons{
@@ -4145,7 +4135,7 @@ class cfgVehicles {
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		editorCategory = "104th_Guys_2";
+		editorCategory = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 2000;
 		class TransportWeapons{
@@ -4194,7 +4184,7 @@ class cfgVehicles {
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		editorCategory = "104th_Guys_2";
+		editorCategory = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 2000;
 		class TransportWeapons{

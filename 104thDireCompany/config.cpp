@@ -85,10 +85,9 @@ class CfgWeapons
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
 	class SWLB_clone_P2_Helmet;
-	class SWLB_clone_nvg;
-	class SWLB_clone_nvg_nco;
-	class SWLB_clone_ccVisor;
-	class SWLB_clone_mcVisor;
+	class lsd_gar_standart_nvg;
+	class lsd_gar_rangefinder_nvg;
+	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;

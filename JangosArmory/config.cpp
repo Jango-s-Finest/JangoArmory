@@ -42,9 +42,7 @@ class CfgPatches
 			"JA_104thNVG",
 			"JA_104thNVG_NCO",
 			"JA_104thCommanderVisor",
-			"JA_104th_Red_Vest",
 			"JA_104th_Habit_Helmet",
-			"JA_104th_Bravo_Helmet",
 			"JA_104th_Bail_Pilot_Helmet",
 			"JA_104th_Scurvy_Helmet",
 			"JA_104th_Hunter_Helmet",
@@ -107,10 +105,9 @@ class CfgWeapons
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
 	class SWLB_clone_P2_Helmet;
-	class SWLB_clone_nvg;
-	class SWLB_clone_nvg_nco;
-	class SWLB_clone_ccVisor;
-	class SWLB_clone_mcVisor;
+	class lsd_gar_standart_nvg;
+	class lsd_gar_rangefinder_nvg;
+	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_kama_armor;
 	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
@@ -458,7 +455,7 @@ class CfgWeapons
 		vestType="Rebreather";	
 	};
 
-	class JA_104thNVG : SWLB_clone_nvg
+	class JA_104thNVG : lsd_gar_standart_nvg
 	{
 		author = "Tundra";
 		displayName = "Clone NVG Visor (104th)";
@@ -475,7 +472,7 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104thNVG_NCO : SWLB_clone_nvg_nco
+	class JA_104thNVG_NCO : lsd_gar_rangefinder_nvg
 	{
 		author = "Tundra";
 		displayName = "Clone NVG NCO Visor (104th)";
@@ -492,7 +489,7 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104thCommanderVisor : SWLB_clone_mcVisor
+	class JA_104thCommanderVisor : lsd_gar_p2MarshalCommander_nvg
 	{
 		author = "Tundra";
 		displayName = "Clone Commander Visor (104th Daddy)";
@@ -509,27 +506,7 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_Red_Vest : SWLB_clone_airborne_nco_armor
-	{
-		author = "Emmet"
-			scope = 2;
-		displayName = "Airborne NCO Vest (104th Red)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-			"JangosArmory\data\Textures\104th_Red_Vest.paa",
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa" //Heavy
-		};
-		vestType="Rebreather";	
-	};
+	
 
 
 	// AIRBORNEEEEE Helmets
@@ -545,16 +522,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_AB_Habit_Helmet.paa" }; // the file path to the texture
 	};
 
-	class JA_104th_Bravo_Helmet : SWLB_Clone_Pilot_P2_Helmet
-	{
-		author = "Emmet";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true
-			hiddenSelections[] = { "camo1" }; // dont change thise
-		displayName = "Clone Airborne Helmet (104th Bravo)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_Bravo_Helmet.paa" }; // The file path to the texture
-	};
 
 	// Pilots Helmets
 	class JA_104th_Bail_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
