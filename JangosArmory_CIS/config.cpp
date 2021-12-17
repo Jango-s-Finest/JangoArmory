@@ -7,7 +7,7 @@ class CfgPatches
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
-		requiredAddons[] = {};
+		requiredAddons[] = {"ls_Core"};
 		units[] = {
 			"JA_CIS_BX_Assassin",
 			"JA_CIS_BX_Commando",
@@ -18,6 +18,8 @@ class CfgPatches
 			"JA_CIS_B2_Base"
 		};
 		weapons[] = {
+			"U_O_R_Gorka_01_black_F",
+			"U_O_R_Gorka_01_black_F",
 			"JA_CIS_B2_Uniform"
 		};
 	};
@@ -43,12 +45,22 @@ class cfgEditorSubcategories
 		scopeCurator = 2;
         side = 0;
 	};
+	class 104th_Categ_Man_CIS
+	{
+		displayname = "CIS Human - INF";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+	};
 };
 
 class CfgWeapons
 {
 	class ls_cis_b2Droid_uniform;
 	class UniformItem;
+	class U_O_R_Gorka_01_black_F;
+	class U_O_R_Gorka_01_black_F;
 	class JA_CIS_B2_Uniform : ls_cis_b2Droid_uniform{
 		author = "Dak";
 		scope = 2;
@@ -66,6 +78,7 @@ class CfgVehicles
 	class SWLB_b1_marksman_base;
 	class SWLB_BX_Assassin;
 	class SWLB_BX_Commando;
+	class O_Survivor_F;
 	class JA_CIS_BX_Assassin: SWLB_BX_Assassin{
 		scope = 2;
 		scopeArsenal = 2;
@@ -306,6 +319,311 @@ class CfgVehicles
 			};
 		};
 	};
+	class JA_CIS_Man_Black_01: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Base Man Westar";
+		backpack = "B_ViperHarness_blk_F";
+		uniformClass = "U_O_R_Gorka_01_black_F";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			SWLW_Westar35S_scope,
+			OPTRE_UNSC_CH252D_Helmet , G_AirPurifyingRespirator_02_black_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest ,
+		};
+		magazines[] = {
+			SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag ,
+			SWLW_Westar35S_scatter_Mag , SWLW_Westar35S_scatter_Mag ,
+		};
+		weapons[] = { ls_weapon_westar35s_primary ,"Throw","Put" };
+	};
+	class JA_CIS_Man_Black_02: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Base Man E5C";
+		backpack = "B_ViperHarness_blk_F";
+		uniformClass = "U_O_R_Gorka_01_black_F";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			G_AirPurifyingRespirator_02_black_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest , //vest
+			OPTRE_UNSC_CH252D_Helmet   //helmet
+		};
+		magazines[] = {
+			JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag ,
+		};
+		weapons[] = { JLTS_E5C_stock ,"Throw","Put" };
+	};
+	class JA_CIS_Man_Black_03: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Base Man Westar Barret";
+		backpack = "B_ViperHarness_blk_F";
+		uniformClass = "U_O_R_Gorka_01_black_F";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			SWLW_Westar35S_scope,
+			H_Beret_gen_F , G_AirPurifyingRespirator_02_black_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest ,
+		};
+		magazines[] = {
+			SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag ,
+			SWLW_Westar35S_scatter_Mag , SWLW_Westar35S_scatter_Mag ,
+		};
+		weapons[] = { ls_weapon_westar35s_primary ,"Throw","Put" };
+	};
+	class JA_CIS_Man_Black_04: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Base Man E5C RP6";
+		backpack = "B_ViperHarness_blk_F";
+		uniformClass = "U_O_R_Gorka_01_black_F";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			G_AirPurifyingRespirator_02_black_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest , //vest
+			OPTRE_UNSC_CH252D_Helmet   //helmet
+		};
+		magazines[] = {
+			JLTS_RPS6_mag , JLTS_RPS6_mag , JLTS_RPS6_HE_mag , 
+			JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag ,
+		};
+		weapons[] = { JLTS_E5C_stock , JLTS_RPS6 ,"Throw","Put" };
+	};
+	class JA_CIS_Man_Black_05: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Base Man DW32S";
+		backpack = "B_ViperHarness_blk_F";
+		uniformClass = "U_O_R_Gorka_01_black_F";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			SWLW_Westar35S_scope,
+			OPTRE_UNSC_CH252D_Helmet , G_AirPurifyingRespirator_02_black_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest ,
+		};
+		magazines[] = {
+			JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag , JLTS_DW32S_mag ,
+			JLTS_stun_mag_short , JLTS_stun_mag_short ,
+		};
+		weapons[] = { JLTS_DW32S ,"Throw","Put" };
+	}
+	class JA_CIS_Man_Woods_01: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Wood Man E5C";
+		backpack = "B_Kitbag_rgr";
+		uniformClass = "U_O_FullGhillie_lsh";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			SWLW_Westar35S_scope,
+			H_HelmetB_light_grass , G_AirPurifyingRespirator_02_black_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest ,
+		};
+		magazines[] = {
+			JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag , JLTS_E5C_mag ,
+		};
+		weapons[] = { JLTS_E5C_stock ,"Throw","Put" };
+	};
+	class JA_CIS_Man_Woods_02: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Wood Man E5";
+		backpack = "B_ViperHarness_blk_F";
+		uniformClass = "U_O_T_FullGhillie_tna_F";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			G_AirPurifyingRespirator_02_black_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest , //vest
+			H_HelmetSpecB_blk   //helmet
+		};
+		magazines[] = {
+			JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag , JLTS_E5_mag ,
+		};
+		weapons[] = { JLTS_E5 , WBK_brush_axe ,"Throw","Put" };
+	};
+	class JA_CIS_Man_Woods_03: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Wood Man Westar C";
+		backpack = "B_Kitbag_rgr";
+		uniformClass = "U_BG_Guerrilla_6_1";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			SWLW_Westar35S_scope,
+			H_Bandanna_camo , G_Bandanna_aviator , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest ,
+		};
+		magazines[] = {
+			SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag , SWLW_westar35c_Mag ,
+		};
+		weapons[] = { ls_weapon_westar35c_primary ,"Throw","Put" };
+	};
+	class JA_CIS_Man_Woods_04: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Wood Man Westar S";
+		backpack = "B_ViperHarness_blk_F";
+		uniformClass = "U_BG_leader";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			G_RegulatorMask_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest , //vest
+			H_HelmetB_light_black   //helmet
+		};
+		magazines[] = {
+			SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag , SWLW_Westar35S_Mag ,
+			SWLW_Westar35S_scatter_Mag  , SWLW_Westar35S_scatter_Mag , SWLW_Westar35S_scatter_Mag , 
+		};
+		weapons[] = { SWLW_Westar35S ,"Throw","Put" };
+	};
+	class JA_CIS_Man_Woods_05: O_Survivor_F{
+		author = "Dak"
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_Man_CIS";
+		displayName = "CIS Wood Man DC15X";
+		backpack = "B_ViperHarness_blk_F";
+		uniformClass = "U_O_T_FullGhillie_tna_F";
+		items[] = {
+			OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke , OPTRE_M2_Smoke ,
+			3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore , 3AS_BaridumCore ,
+			ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing , ACE_fieldDressing ,
+			ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage , ACE_packingBandage ,
+			JLTS_credits_50 , JLTS_credits_50 , JLTS_credits_10 , JLTS_credits_10 , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet , ACE_tourniquet ,
+			212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , 212th_ACE_Painkiller , Laserbatteries ,
+		};
+		linkeditems[] = {
+			JLTS_DC15X_scope,
+			OPTRE_UNSC_CH252D_Helmet , G_AirPurifyingRespirator_02_black_F , ItemMap , ItemCompass , ItemWatch , JLTS_droid_comlink , ItemGPS , JLTS_NVG_droid_chip_2 ,
+			JLTS_DroidBinocular ,
+			lsd_orsf_trooperAlt_vest ,
+		};
+		magazines[] = {
+			JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag , JLTS_DC15X_mag ,
+		};
+		weapons[] = { JLTS_DC15X ,"Throw","Put" };
+	}
 };
 
 class CfgGroups{
