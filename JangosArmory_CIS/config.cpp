@@ -15,7 +15,17 @@ class CfgPatches
 			"JA_CIS_B1_AA",
 			"JA_CIS_B1_Heavy",
 			"JA_CIS_B1_Base",
-			"JA_CIS_B2_Base"
+			"JA_CIS_B2_Base",
+			"JA_CIS_Man_Black_01",
+			"JA_CIS_Man_Black_02",
+			"JA_CIS_Man_Black_03",
+			"JA_CIS_Man_Black_04",
+			"JA_CIS_Man_Black_05",
+			"JA_CIS_Man_Woods_01",
+			"JA_CIS_Man_Woods_02",
+			"JA_CIS_Man_Woods_03",
+			"JA_CIS_Man_Woods_04",
+			"JA_CIS_Man_Woods_05"
 		};
 		weapons[] = {
 			"U_O_R_Gorka_01_black_F",
@@ -59,7 +69,6 @@ class CfgWeapons
 {
 	class ls_cis_b2Droid_uniform;
 	class UniformItem;
-	class U_O_R_Gorka_01_black_F;
 	class U_O_R_Gorka_01_black_F;
 	class JA_CIS_B2_Uniform : ls_cis_b2Droid_uniform{
 		author = "Dak";
