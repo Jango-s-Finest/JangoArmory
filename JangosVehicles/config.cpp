@@ -99,7 +99,7 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 	class components;
 };
 
-
+class DefaultEventhandlers;
 class cfgVehicles {
 	
 	class SWLG_tanks_tx130;
@@ -189,8 +189,8 @@ class cfgVehicles {
 		crewCrashProtection = 0.00001;
 		radarType = 4;
 		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","RD501_wynd_a2a","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_a2a_x4_mag","RD501_a2a_x4_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","212th_A2A_MissileSystem","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
 
 		memoryPointDriverOptics = "slingcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
@@ -360,7 +360,6 @@ class cfgVehicles {
 				radius = 0.3;
 			};
 		};
-		
 		class Components
 		{
 			class SensorsManagerComponent
@@ -3755,7 +3754,24 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		
+		class EventHandlers: DefaultEventhandlers
+		{
+			Init = "[_this select 0,’no’] execVM ""\FIR_AirWeaponSystem_US\Script\init\init.sqf"";";
+		};
+		class UserActions
+		{
+			class Aircraft_MFD_Open_N
+			{
+				displayName = "Open I-TGT System";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User4";
+				condition = "('FIR_TGTPOD' in weapons this or 'Laserdesignator_pilotCamera' in weapons this) and player in this and isengineon this";                
+				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf"";";
+				onlyforplayer = "false";
+				hideOnUse = 1;
+			};  
+		};
 		class Components
 		{
 			class SensorsManagerComponent
@@ -4625,8 +4641,14 @@ class cfgVehicles {
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
+		radarTargetSize = 1; //No idea who in 3AS thought it's a good idea to make the Y-Wing more stealthy than the stealth fighters, so I'm changing it.
+		irTargetSize = 1;
+		VTOLPitchInfluence = 12;
+		LockDetectionSystem = "2+4+8+16";
+		incomingMissileDetectionSystem = "2+4+8+16";
+		stallSpeed = 0;
 		
-		armor = 300;
+		armor = 350;
 		weapons[] = {"Laserdesignator_pilotCamera","CMFlareLauncher","212th_YWing_Voltic_Cannon","212th_A2A_MissileSystem","212th_WGM_MissileSystem","212th_Gizka_Bomb_ReleaseSystem"};
 		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag"};
 		class pilotCamera
@@ -4706,6 +4728,116 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
+		
+		class ACE_SelfActions
+		{
+			class LAAT_HUD_Changer
+			{
+				displayName = "Change HUD Color";
+				exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2.5;
+				icon = "212th\Other\212th_Func\textures\vic_hud\colorWheel.paa";
+				class Red_HUD
+				{
+					displayName = "Red HUD Color";
+					exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement = "[1,0,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					showDisabled = 0;
+					runOnHover = 1;
+					priority = 2.5;
+					icon = "212th\Other\212th_Func\textures\vic_hud\red.paa";
+				};
+				class Orange_HUD: Red_HUD
+				{
+					displayName = "Orange HUD Color";
+					statement = "[1,.05,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\orange.paa";
+				};
+				class Yellow_HUD: Red_HUD
+				{
+					displayName = "Yellow HUD Color";
+					statement = "[1,1,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\yellow.paa";
+				};
+				class Green_HUD: Red_HUD
+				{
+					displayName = "Green HUD Color";
+					statement = "[0,1,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\green.paa";
+				};
+				class Cyan_HUD: Red_HUD
+				{
+					displayName = "Cyan HUD Color";
+					statement = "[0,1,1,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\cyan.paa";
+				};
+				class Blue_HUD: Red_HUD
+				{
+					displayName = "Blue HUD Color";
+					statement = "[0,0,1,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\blue.paa";
+				};
+				class Purple_HUD: Red_HUD
+				{
+					displayName = "Purple HUD Color";
+					statement = "[.5,0,.5,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\purple.paa";
+				};
+				class White_HUD: Red_HUD
+				{
+					displayName = "White HUD Color";
+					statement = "[1,1,1,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\white.paa";
+				};
+				class Black_HUD: Red_HUD
+				{
+					displayName = "Black HUD Color";
+					statement = "[0,0,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\black.paa";
+				};
+				class Clear_HUD: Red_HUD
+				{
+					displayName = "No HUD Color";
+					statement = "[1,1,1,0,vehicle player] spawn Aux212_fnc_hud_color_change;";
+					icon = "212th\Other\212th_Func\textures\vic_hud\noHud.paa";
+				};
+			};
+		};
+		class EventHandlers: DefaultEventhandlers
+		{
+			Init = "[_this select 0,’yes’] execVM ""\FIR_AirWeaponSystem_US\Script\init\init.sqf"";";
+		};
+		class UserActions
+		{
+			class Aircraft_MFD_Open_N
+			{
+				displayName = "Open I-TGT System";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User4";
+				condition = "('FIR_TGTPOD' in weapons this or 'Laserdesignator_pilotCamera' in weapons this) and player in this and isengineon this";                
+				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf"";";
+				onlyforplayer = "false";
+				hideOnUse = 1;
+			};  
+
+			class ECM_ON
+			{
+				displayName = "ECM JAMMER ON";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User2";
+				condition = "player in this and isengineon this";
+				statement = "[this] execVM ""\JangosVehicles\Script\ECM\ECM_ON.sqf"";";
+				onlyforplayer = "False";
+				hideOnUse = 1;
+			};
+
+		};
+
 		class Components
 		{
 			class SensorsManagerComponent
@@ -4714,7 +4846,7 @@ class cfgVehicles {
 				{
 					class activeRadarSenorComponent
 					{
-						aimDown = 30;
+						aimDown = 0;
 						allowsMarking = 1;
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
@@ -4729,7 +4861,7 @@ class cfgVehicles {
 						minSpeedThreshold = 0;
 						minTrackableATL = -1e+10;
 						minTrackableSpeed = -1e+10;
-						typeRecognitionDistance = 3000;
+						typeRecognitionDistance = 8000;
 						class AirTarget
 						{
 							maxRange = 16000;
@@ -4749,8 +4881,8 @@ class cfgVehicles {
 					{
 						aimDown = 0;
 						allowsMarking = 1;
-						angleRangeHorizontal = 90;
-						angleRangeVertical = 90;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
 						animDirection = "";
 						color[] = {0.5,1,0.5,0.5};
 						componentType = "PassiveRadarSensorComponent";
@@ -4794,8 +4926,8 @@ class cfgVehicles {
 							objectDistanceLimitCoef = 1;
 							viewDistanceLimitCoef = 1;
 						};
-						angleRangeHorizontal = 50;
-						angleRangeVertical = 37;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
 						maxTrackableSpeed = 100;
 						aimDown = 0;
 						allowsMarking = 1;
@@ -4828,8 +4960,8 @@ class cfgVehicles {
 							objectDistanceLimitCoef = 1;
 							viewDistanceLimitCoef = 1;
 						};
-						angleRangeHorizontal = 50;
-						angleRangeVertical = 37;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
 						maxTrackableSpeed = 1000;
 						aimDown = 0;
 						animDirection = "";
@@ -4884,22 +5016,22 @@ class cfgVehicles {
 					{
 						class AirTarget
 						{
-							maxRange = 6000;
-							minRange = 6000;
+							maxRange = 16000;
+							minRange = 16000;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = -1;
 						};
 						class GroundTarget
 						{
-							maxRange = 6000;
-							minRange = 6000;
+							maxRange = 16000;
+							minRange = 16000;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = -1;
 						};
 						aimDown = 0;
 						allowsMarking = 1;
-						angleRangeHorizontal = 180;
-						angleRangeVertical = 180;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
 						animDirection = "";
 						color[] = {1,1,1,0};
 						componentType = "LaserSensorComponent";
@@ -5014,13 +5146,13 @@ class cfgVehicles {
 			};
 			class TransportPylonsComponent
 			{
-				UIPicture = "3as\3as_arc170\data\plane_arc_pylon_ca.paa";
+				UIPicture = "JangosVehicles\data\textures\plane_ywing_pylon_ca.paa";
 				class pylons
 				{
 					class pylons1
 					{
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON","ARC_EMP_RAIL"};
-						attachment = "B_AMRAAM_D_DUAL_RAIL";
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
+						attachment = "B_SDB_QUAD_RAIL";
 						priority = 10;
 						maxweight = 8000;
 						UIposition[] = {0.5,0.25};
@@ -5080,8 +5212,8 @@ class cfgVehicles {
 					};
 				};
 			};
+			class TransportCounterMeasuresComponent;
 		};
-		
 	};
 	
 	class JA_104th_3AS_Reaper_Y_Wing_Blue: JA_104th_3AS_Reaper_Y_Wing
@@ -5098,7 +5230,6 @@ class cfgVehicles {
 				factions[] = {"104th_Guys"};
 			};
 		};
-		
 	};
 	
 	class JA_104th_3AS_Reaper_Y_Wing_BlueLeader: JA_104th_3AS_Reaper_Y_Wing
@@ -5107,7 +5238,7 @@ class cfgVehicles {
 		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa","3as\3as_btlb\data\detail_co.paa","3as\3as_btlb\data\interior_co.paa"};
 		class TextureSources
 		{
-			class Blue
+			class BlueLeader
 			{
 				displayName = "Blue Leader";
 				author = "$STR_3as_Studio";
@@ -5115,7 +5246,6 @@ class cfgVehicles {
 				factions[] = {"104th_Guys"};
 			};
 		};
-		
 	};
 	
 	class 104th_vulture_dynamicLoadout_base: 3as_vulture_dynamicLoadout_base {
@@ -5779,5 +5909,74 @@ class cfgVehicles {
 				name = "ACE_tourniquet";
 			};
 		};
+	};
+	
+	
+	//Split Z7 Rework
+	
+	class Weapon_Base_F;
+	class SWLW_GH_Z7;
+	class 104th_GH_Z7: SWLW_GH_Z7
+	{
+		author = "SW Legion Studios";
+		displayName = "Z7-104 Rotary Shoulder Gun";
+		scope = 2;
+		class TransportWeapons
+		{
+			class 104th_Z7
+			{
+				count = 1;
+				weapon = "104th_Z7";
+			};
+		};
+		class TransportMagazines
+		{
+			class SWLW_Z7_mag_800rnd
+			{
+				count = 1;
+				magazine = "SWLW_Z7_mag_800rnd";
+			};
+		};
+	};
+};
+
+class CfgMagazines
+{
+	class SWLW_Z7_mag;
+	class SWLW_Z7_mag_800rnd: SWLW_Z7_mag
+	{
+		displayname = "Chaingun energy cell (800rnd)";
+		count = 800;
+		mass = 80;
+	};
+};
+
+class CfgRecoils
+{
+	class recoil_default;
+	class 104th_Z7_recoil: recoil_default
+	{
+		kickBack[] = {0.045,0.08};
+		muzzleOuter[] = {0.3,0.3,0.3,0.2};
+		permanent = 0.03;
+		temporary = 0.02;
+	};
+};
+
+class CfgWeapons
+{
+	class Launcher;
+	class Launcher_Base_F: Launcher
+	{
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
+	class SWLW_Z7;
+	class 104th_Z7: SWLW_Z7
+	{
+		author = "SW Legion Studios + Echo";
+		scope = 2;
+		displayName = "Z7-104 Rotary Shoulder Gun";
+		magazines[] = {"SWLW_Z7_mag_800rnd","ls_mag_flak_800rnd"};
 	};
 };
