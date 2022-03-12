@@ -267,7 +267,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper ARF Helmet (104th Spectre)"; // the name it will be in game
+		displayname = "Clone Trooper ARC Helmet (104th Spectre)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_ARC_Spectre_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Spectre_Uniform : SWLB_clone_uniform

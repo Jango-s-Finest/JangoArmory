@@ -11,6 +11,8 @@ class CfgPatches
 		units[] = {
 			"JA_104th_Axel",
 			"JA_104th_Clutch",
+			"JA_104th_Loner",
+			"JA_104th_Sigil",
 		};
 		weapons[] = {
 			"JA_104th_Axel_Helmet_ME",
@@ -23,6 +25,12 @@ class CfgPatches
 			"JA_104th_Loner_Uniform",
 			"JA_104th_Loner_Vest",
 			"JA_104th_Hunter_Helmet_ME",
+			"JA_104th_Specter_NVG_NCO",
+			"JA_104th_Loner_NVG_NCO",
+			"JA_104th_Sigil_Helmet",
+			"JA_104th_Sigil_Uniform",
+			"JA_104th_Sigil_Vest",
+			"JA_104th_Sigil_NVG_NCO",
 		};
 	};
 };
@@ -205,6 +213,22 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
+	class JA_104th_Specter_NVG_NCO : lsd_gar_rangefinder_nvg
+	{
+		author = "Ice";
+		displayName = "Clone NVG NCO Visor (104th Spectre)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_ARC_Spectre_NVG.paa",
+			"JangosArmory5\data\Textures\104th_ARC_Spectre_NVG.paa"
+		};
+	};
 	class JA_104th_Loner_Helmet : SWLB_clone_P15_Helmet
 	{
 		author = "Dak";
@@ -258,6 +282,22 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
+	class JA_104th_Loner_NVG_NCO : lsd_gar_rangefinder_nvg
+	{
+		author = "Ice";
+		displayName = "Clone NVG NCO Visor (104th Loner)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_ARC_Loner_NVG.paa",
+			"JangosArmory5\data\Textures\104th_ARC_Loner_NVG.paa"
+		};
+	};
 	class JA_104th_Hunter_Helmet_ME : SWLB_clone_P15_Helmet
 	{
 		author = "Dak";
@@ -267,6 +307,75 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Hunter ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_ARC_Hunter_Helmet_Malevolence.paa" }; // the file path to the texture
+	};
+	class JA_104th_Sigil_Helmet : SWLB_clone_P15_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Sigil)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_ARC_Sigil_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Sigil_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Sigil)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_ARC_Sigil_Upper.paa",
+			"JangosArmory5\data\Textures\104th_ARC_Sigil_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Sigil";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Sigil_Vest : SWLB_clone_arc_armor
+	{
+		author = "Dak";
+		displayName = "Clone ARC Trooper Vest (104th Sigil)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_ARC_Sigil_ARC.paa",
+			"JangosArmory5\data\Textures\104th_ARC_Sigil_Officer.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_Sigil_NVG_NCO : lsd_gar_rangefinder_nvg
+	{
+		author = "Ice";
+		displayName = "Clone NVG NCO Visor (104th Sigil)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_ARC_Sigil_NVG.paa",
+			"JangosArmory5\data\Textures\104th_ARC_Sigil_NVG.paa"
+		};
 	};
 };
 
@@ -313,5 +422,37 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_AB_Clutch_Upper.paa", "JangosArmory5\data\Textures\104th_AB_Clutch_Lower.paa"};
 		linkedItems[] = { JA_104th_Clutch_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Clutch_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Loner : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Loner_Uniform";
+		displayName = "104th Loner";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_ARC_Loner_Upper.paa", "JangosArmory5\data\Textures\104th_ARC_Loner_Lower.paa"};
+		linkedItems[] = { JA_104th_Loner_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Loner_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Sigil : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Sigil_Uniform";
+		displayName = "104th Sigil";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_ARC_Sigil_Upper.paa", "JangosArmory5\data\Textures\104th_ARC_Sigil_Lower.paa"};
+		linkedItems[] = { JA_104th_Sigil_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Sigil_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 };

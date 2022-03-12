@@ -1310,16 +1310,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Bone_Helmet : SWLB_clone_P2_helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Bone)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Bone_Helmet.paa" }; // the file path to the texture
-	};
 };
 
 class CfgVehicles
@@ -1557,7 +1547,7 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_Scav_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Scav_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
-	JA_104th_Bone : SWLB_clone_base_P2
+	class JA_104th_Bone : SWLB_clone_base_P2
 	{
 		author = "Ice";
 		scope = 2;
@@ -1569,7 +1559,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Bone_Upper_Malevolence.paa", "JangosArmory4\data\Textures\104th_P2_Bone_Lower_Malevolence.paa"};
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Bone_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Bone_Lower.paa"};
 		linkedItems[] = { JA_104th_Bone_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Bone_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
@@ -1585,7 +1575,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Welty_Upper_Malevolence.paa", "JangosArmory4\data\Textures\104th_P2_Welty_Lower_Malevolence.paa"};
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Welty_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Welty_Lower.paa"};
 		linkedItems[] = { JA_104th_Welty_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Welty_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
