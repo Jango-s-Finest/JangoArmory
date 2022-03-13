@@ -337,7 +337,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Niner)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Niner)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_AB_Niner_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Raptor_Helmet : SWLB_clone_AB_helmet
@@ -347,7 +347,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Raptor)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Raptor)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_AB_Raptor_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_302nd_Chich_Helmet : SWLB_clone_P2_Helmet
@@ -624,7 +624,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Carmine)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Carmine)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_AB_Carmine_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Dak_Helmet : SWLB_clone_AB_helmet
@@ -634,7 +634,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Dak)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Dak)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_Dak_AB_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Quick_Helmet : SWLB_clone_P2_Helmet

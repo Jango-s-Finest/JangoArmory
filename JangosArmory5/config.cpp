@@ -111,7 +111,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Axel ME)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Axel ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_AB_Axel_Helmet_Malevolence.paa" }; // the file path to the texture
 	};
 	class JA_104th_Axel_Uniform : SWLB_clone_uniform
@@ -139,7 +139,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	
 	class JA_104th_Shovel_Helmet : SWLB_clone_AB_Helmet
 	{
 		author = "Dak";
@@ -147,7 +146,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Shovel)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Shovel)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_AB_Shovel_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Beef_Helmet : SWLB_Clone_Pilot_P2_Helmet
@@ -167,8 +166,8 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Helmet (104th Pretz)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_AB_Pretz_Helmet.paa" }; // the file path to the texture
+		displayname = "Clone Trooper P2 Helmet (104th Pretz)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_P2_Pretz_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Clutch_Uniform : SWLB_clone_uniform
 	{
@@ -389,6 +388,8 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
 	class JLTS_Clone_jumppack;
+	class JA_104th_Jumppack_JT12;
+	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
 	
 	class JA_104th_Axel : SWLB_clone_base_P2
@@ -454,5 +455,327 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_ARC_Sigil_Upper.paa", "JangosArmory5\data\Textures\104th_ARC_Sigil_Lower.paa"};
 		linkedItems[] = { JA_104th_Sigil_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Sigil_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 LR (Raider)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 (Raider)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_1_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 LR (Raider 2-1)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-1_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_1 : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 (Raider 2-1)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-1_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_2_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 LR (Raider 2-2)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-2_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_2 : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 (Raider 2-2)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-2_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_3_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 LR (Raider 2-3)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-3_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_3 : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 (Raider 2-3)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-3_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_4_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 LR (Raider 2-4)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-4_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_4 : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper JT12 (Raider 2-4)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-4_Jumppack.paa"};
+	};
+	class JA_104th_Backpack_Cerberus_1 : SWLB_clone_backpack
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper backpack (Cerberus 1-1)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
+			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change unless RTO
+			"", // Heavy
+			"", // Medic
+			"" // RTO
+		};
+	};
+	class JA_104th_Accessories_Heavy_Backpack_Cerberus_1 : SWLB_clone_backpack_heavy
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone trooper Heavy backpack (Cerberus 1-1)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
+			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change unless RTO
+			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // Heavy
+			"", // Medic
+			"" // RTO
+		};
+	};
+	// class JA_104th_Medic_Backpack_Cerberus_1 : SWLB_clone_backpack_medic
+	// {
+	// 	author = "Tundra";
+	// 	scopeCurator = 2;
+	// 	displayname = "Clone trooper medic backpack (Cerberus 1-1)";
+	// 	maximumLoad = 300;
+	// 	hiddenSelectionsTextures[] =
+	// 	{
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change this
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change unless RTO
+	// 		"", // Heavy
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // Medic
+	// 		"" // RTO
+	// 	};
+	// };
+	class JA_104th_RTO_Backpack_Cerberus_1 : SWLB_clone_backpack_RTO
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone trooper RTO backpack (Cerberus 1-1)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
+			"", // don't change unless RTO
+			"", // Heavy
+			"", // Medic
+			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa" // RTO
+		};
+	};
+	class JA_104th_Backpack_Cerberus_2 : SWLB_clone_backpack
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper backpack (Cerberus 1-2)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
+			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change unless RTO
+			"", // Heavy
+			"", // Medic
+			"" // RTO
+		};
+	};
+	class JA_104th_Accessories_Heavy_Backpack_Cerberus_2 : SWLB_clone_backpack_heavy
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone trooper Heavy backpack (Cerberus 1-2)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
+			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change unless RTO
+			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // Heavy
+			"", // Medic
+			"" // RTO
+		};
+	};
+	// class JA_104th_Medic_Backpack_Cerberus_1 : SWLB_clone_backpack_medic
+	// {
+	// 	author = "Tundra";
+	// 	scopeCurator = 2;
+	// 	displayname = "Clone trooper medic backpack (Cerberus 1-1)";
+	// 	maximumLoad = 300;
+	// 	hiddenSelectionsTextures[] =
+	// 	{
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change this
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change unless RTO
+	// 		"", // Heavy
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // Medic
+	// 		"" // RTO
+	// 	};
+	// };
+	class JA_104th_RTO_Backpack_Cerberus_2 : SWLB_clone_backpack_RTO
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone trooper RTO backpack (Cerberus 1-2)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
+			"", // don't change unless RTO
+			"", // Heavy
+			"", // Medic
+			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa" // RTO
+		};
+	};
+	class JA_104th_Backpack_Cerberus_3 : SWLB_clone_backpack
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper backpack (Cerberus 1-3)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
+			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change unless RTO
+			"", // Heavy
+			"", // Medic
+			"" // RTO
+		};
+	};
+	class JA_104th_Accessories_Heavy_Backpack_Cerberus_3 : SWLB_clone_backpack_heavy
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone trooper Heavy backpack (Cerberus 1-3)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
+			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change unless RTO
+			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // Heavy
+			"", // Medic
+			"" // RTO
+		};
+	};
+	// class JA_104th_Medic_Backpack_Cerberus_1 : SWLB_clone_backpack_medic
+	// {
+	// 	author = "Tundra";
+	// 	scopeCurator = 2;
+	// 	displayname = "Clone trooper medic backpack (Cerberus 1-1)";
+	// 	maximumLoad = 300;
+	// 	hiddenSelectionsTextures[] =
+	// 	{
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change this
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change unless RTO
+	// 		"", // Heavy
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // Medic
+	// 		"" // RTO
+	// 	};
+	// };
+	class JA_104th_RTO_Backpack_Cerberus_3 : SWLB_clone_backpack_RTO
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone trooper RTO backpack (Cerberus 1-3)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
+			"", // don't change unless RTO
+			"", // Heavy
+			"", // Medic
+			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa" // RTO
+		};
+	};
+	class JA_104th_Backpack_Cerberus_4 : SWLB_clone_backpack
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone trooper backpack (Cerberus 1-4)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
+			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change unless RTO
+			"", // Heavy
+			"", // Medic
+			"" // RTO
+		};
+	};
+	class JA_104th_Accessories_Heavy_Backpack_Cerberus_4 : SWLB_clone_backpack_heavy
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone trooper Heavy backpack (Cerberus 1-4)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
+			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change unless RTO
+			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // Heavy
+			"", // Medic
+			"" // RTO
+		};
+	};
+	// class JA_104th_Medic_Backpack_Cerberus_1 : SWLB_clone_backpack_medic
+	// {
+	// 	author = "Tundra";
+	// 	scopeCurator = 2;
+	// 	displayname = "Clone trooper medic backpack (Cerberus 1-1)";
+	// 	maximumLoad = 300;
+	// 	hiddenSelectionsTextures[] =
+	// 	{
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change this
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change unless RTO
+	// 		"", // Heavy
+	// 		"JangosArmory5\data\Textures\104th_Clone_Backpack_Medic.paa", // Medic
+	// 		"" // RTO
+	// 	};
+	// };
+	class JA_104th_RTO_Backpack_Cerberus_4 : SWLB_clone_backpack_RTO
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone trooper RTO backpack (Cerberus 1-4)";
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
+			"", // don't change unless RTO
+			"", // Heavy
+			"", // Medic
+			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa" // RTO
+		};
 	};
 };

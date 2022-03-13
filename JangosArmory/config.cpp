@@ -518,7 +518,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Habit)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Habit)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory\data\Textures\104th_AB_Habit_Helmet.paa" }; // the file path to the texture
 	};
 

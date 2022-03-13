@@ -485,7 +485,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Garm)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Garm)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Garm_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Click_Helmet : SWLB_clone_P2_helmet
@@ -620,7 +620,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (104th Axel)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Axel)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Axel_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Raptor_Uniform : SWLB_clone_uniform
@@ -1543,7 +1543,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Scav_Upper_Malevolence.paa", "JangosArmory4\data\Textures\104th_P2_Scav_Lower_Malevolence.paa"};
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Scav_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Scav_Lower.paa"};
 		linkedItems[] = { JA_104th_Scav_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Scav_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
