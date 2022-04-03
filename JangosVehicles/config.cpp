@@ -39,6 +39,7 @@ class CfgPatches
 			"JA_104th_BARC_EOD",
 			"JA_104th_BARC_Medic",
 			"OPTRE_M412_IFV_UNSC_cln",
+			"104th_Oryx",
 			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
 			"JA_104th_3AS_Reaper_Y_Wing",
 			"JA_104th_3AS_Reaper_Y_Wing_Blue",
@@ -156,6 +157,49 @@ class cfgVehicles {
 		class EventHandlers;
 		class AnimationSources;
 	};
+	
+	class Tank: LandVehicle
+	{
+		class NewTurret;
+		class Sounds;
+		class HitPoints;
+	};
+	class Tank_F: Tank
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class ViewGunner;
+				class Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+		class AnimationSources;
+		class ViewPilot;
+		class ViewOptics;
+		class ViewCargo;
+		class HeadLimits;
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+			class HitFuel;
+			class HitEngine;
+			class HitLTrack;
+			class HitRTrack;
+		};
+		class Sounds: Sounds
+		{
+			class Engine;
+			class Movement;
+		};
+		class EventHandlers;
+	};
+	class APC_Tracked_03_base_F: Tank_F{};
+	class I_APC_Tracked_03_base_F: APC_Tracked_03_base_F{};
+	class OPTRE_M494: I_APC_Tracked_03_base_F{};
 	
 
 	class Box_212_Supply_F;
@@ -5622,6 +5666,8 @@ class cfgVehicles {
 
 
 	//Split
+	
+	
 
 	class JA_104th_Base_TX130: SWLG_tanks_tx130 {
 		author = "Dak";
@@ -5738,6 +5784,225 @@ class cfgVehicles {
 		displayName = "BARC Speeder 104th EOD";
 		maxSpeed = 280;
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_eod_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+	};
+
+
+	//class OPTRE_M494;
+	class 104th_Oryx: OPTRE_M494 {
+		
+		
+		displayName = "104th Oryx IFV";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		armor = 700; //On average survives one RPS-6 hit and 0 PLX/E-60 hits.
+		crew = "SWLB_clone_pilot_base_P2";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		
+		class HitPoints
+		{
+			class HitHull
+			{
+				armor = 8;
+				material = -1;
+				name = "telo";
+				visual = "hull";
+				passThrough = 1;
+				minimalHit = 0.2;
+				explosionShielding = 0.4;
+				radius = 0.3;
+			};
+			class HitLTrack
+			{
+				armor = 3.0;
+				material = -1;
+				name = "pasL";
+				passThrough = 0;
+				minimalHit = 0.1;
+				explosionShielding = 0.5;
+				radius = 0.75;
+			};
+			class HitRTrack
+			{
+				armor = 3.0;
+				material = -1;
+				name = "pasP";
+				passThrough = 0;
+				minimalHit = 0.1;
+				explosionShielding = 0.5;
+				radius = 0.75;
+			};
+		};
+		
+		
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						body = "obsTurret";
+						gun = "obsGun";
+						animationSourceBody = "obsTurret";
+						animationSourceGun = "obsGun";
+						maxHorizontalRotSpeed = 1.8;
+						maxVerticalRotSpeed = 1.8;
+						stabilizedInAxes = 3;
+						minElev = -12;
+						maxElev = 60; //Original 45
+						initElev = 0;
+						minTurn = -360;
+						maxTurn = 360;
+						initTurn = 0;
+						memoryPointGun = "usti hlavne3";
+						gunBeg = "usti hlavne3";
+						gunEnd = "konec hlavne3";
+						weapons[] = {"3AS_Sabre_MG","Laserdesignator_mounted"};
+						magazines[] = {"3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","Laserbatteries"};
+						turretInfoType = "RscWeaponRangeZeroing";
+						discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+						discreteDistanceInitIndex = 2;
+						memoryPointGunnerOptics = "commanderview";
+						memoryPointGunnerOutOptics = "commanderview";
+						gunnerForceOptics = 0;
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+						gunnerOutOpticsModel = "";
+						gunnerOpticsEffect[] = {};
+						gunnerHasFlares = 1;
+						class ViewOptics: ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov = 0.155;
+							minFov = 0.034;
+							maxFov = 0.155;
+							visionMode[] = {"Normal","TI"};
+							thermalMode[] = {0,1};
+						};
+						startEngine = 0;
+						viewGunnerInExternal = 1;
+						LODTurnedIn = 1100;
+						selectionFireAnim = "zasleh3";
+					};
+				};
+				memoryPointGun = "usti hlavne2";
+				maxVerticalRotSpeed = "90/45";
+				maxHorizontalRotSpeed = "90/45";
+				weapons[] = {"Laserdesignator_mounted","ls_laat_gun","ls_laat_gun_2","3AS_Sabre_MG","OPTRE_M670_ATGM_Launcher","SmokeLauncher"};
+				magazines[] = {"Laserbatteries","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","SmokeLauncherMag"};
+				minElev = -12;
+				maxElev = 60; //Original 35
+				initElev = 0;
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best","db-40",1.0,50};
+				turretInfoType = "RscWeaponRangeZeroing";
+				selectionFireAnim = "zasleh2";
+				gun = "maingun";
+				body = "mainturret";
+				gunAxis = "Osa Hlavne";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				LODTurnedIn = 1100;
+				turretAxis = "OsaVeze";
+				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+				discreteDistanceInitIndex = 5;
+				memoryPointGunnerOptics = "gunnerview";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsEffect[] = {};
+				gunnerOpticsEffect[] = {};
+				class OpticsIn
+				{
+					class Wide: ViewOptics
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.3;
+						minFov = 0.3;
+						maxFov = 0.3;
+						visionMode[] = {"Normal","NVG","Ti"};
+						thermalMode[] = {2,3};
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						gunnerOpticsEffect[] = {};
+					};
+					class Medium: Wide
+					{
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						initFov = 0.07;
+						minFov = 0.07;
+						maxFov = 0.07;
+					};
+					class Narrow: Wide
+					{
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						initFov = 0.028;
+						minFov = 0.028;
+						maxFov = 0.028;
+					};
+				};
+				castGunnerShadow = 0;
+				stabilizedInAxes = 3;
+				viewGunnerInExternal = 1;
+				forceHideGunner = 1;
+				gunnerForceOptics = 0;
+				usePip = 1;
+			};
+		};
+		
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrew.sqf';";
+			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+		};
+	
+		
+		class textureSources
+		{
+			class colorclone
+			{
+				displayName = "Clone Blue";
+				author = "Article 2 Studios";
+				textures[] = {"JangosVehicles\data\textures\oryx\oryx_armor_clone_blue_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorpion_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+			};
+			class colorclonewhite
+			{
+				displayName = "Clone White";
+				author = "Article 2 Studios";
+				textures[] = {"JangosVehicles\data\textures\oryx\oryx_armor_clone_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+			};
+			class colorstand
+			{
+				displayName = "Standard";
+				author = "Article 2 Studios";
+				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\oryx_armor_co.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_main_co.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_turret_co.paa","\OPTRE_Vehicles\Oryx\data\texture\scorpion_mg_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+			};
+			class colordes
+			{
+				displayName = "Tan";
+				author = "Article 2 Studios";
+				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_desert_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_desert_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_desert_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_desert_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+			};
+			class colortund
+			{
+				displayName = "White Digital";
+				author = "Article 2 Studios";
+				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_tundra_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_tundra_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_tundra_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_tundra_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+			};
+		};
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\oryx\oryx_armor_clone_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+		
 	};
 
 
@@ -5940,6 +6205,27 @@ class cfgVehicles {
 	};
 };
 
+class ammo
+{
+	class ls_50mm_laat_apfsds;
+	class ls_50mm_laat_apfsds_104th: ls_50mm_laat_apfsds
+	{
+		hit = 400;
+		indirectHit = 2;
+		
+	};
+	
+	class ls_127x99_red;
+	class ls_127x99_blue_104th: ls_127x99_red
+	{
+		
+		model = "ls_weapons_core\effects\laser_blue";
+		effectfly = "ls_plasma_blue";
+		
+	};
+	
+};
+
 class CfgMagazines
 {
 	class SWLW_Z7_mag;
@@ -5948,6 +6234,19 @@ class CfgMagazines
 		displayname = "Chaingun energy cell (800rnd)";
 		count = 800;
 		mass = 80;
+	};
+	class 200rnd_laat_apfsds_mag;
+	class 200rnd_laat_apfsds_mag_104th: 200rnd_laat_apfsds_mag
+	{
+		ammo = "ls_50mm_laat_apfsds_104th";
+	};
+	
+	class ls_500Rnd_127x99_mag_red;
+	class ls_500Rnd_127x99_mag_blue_104th: ls_500Rnd_127x99_mag_red
+	{
+		displayname = "12.7x99mm 500Rnd plasma cell (Blue)";
+		ammo = "ls_127x99_blue_104th";
+		
 	};
 };
 
@@ -5978,5 +6277,21 @@ class CfgWeapons
 		scope = 2;
 		displayName = "Z7-104 Rotary Shoulder Gun";
 		magazines[] = {"SWLW_Z7_mag_800rnd","ls_mag_flak_800rnd"};
+	};
+	class ls_laat_gun_2;
+	class ls_laat_gun_2_104th: ls_laat_gun_2
+	{
+		magazines[] = {"200rnd_laat_apfsds_mag_104th"};
+		
+		
+		
+	};
+	class ls_aat_127;
+	class ls_127_blue_104th: ls_aat_127
+	{
+		
+		magazines[] = {"ls_500Rnd_127x99_mag_blue_104th"};
+		
+		
 	};
 };
