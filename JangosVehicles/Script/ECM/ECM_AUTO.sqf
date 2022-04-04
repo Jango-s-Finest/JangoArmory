@@ -22,7 +22,6 @@ private _missile_sensor_act = _missile_sensor_list find "ActiveRadarSensorCompon
 private _missile_sensor_pas = _missile_sensor_list find "PassiveRadarSensorComponent";
 if (_missile_sensor_act >= 0 or _missile_sensor_pas >= 0) then
 {
-	if (_r > _stat) exitWith {_plane vehiclechat "SYSTEM: JAMMING FAILED - DROP COUNTERMEASURE NOW";};
 	_mssl = nearestobject [_enemy, _enemyweapon];
 
 	waitUntil {_mssl distance _plane < 1500};
@@ -30,11 +29,18 @@ if (_missile_sensor_act >= 0 or _missile_sensor_pas >= 0) then
 	_ewdir = getdir _mssl;
 	_ewdir = _ewdir - 180;
 	_mssl setdir _ewdir;
-	sleep 1;
 	_plane vehiclechat "SYSTEM: ENEMY MISSILE JAMMED";
 	deletevehicle _mssl;
 }
 else
 {
-	_plane vehiclechat "SYSTEM: IR MSSL DETECTED - DROP COUNTERMEASURE NOW";
+	_mssl = nearestobject [_enemy, _enemyweapon];
+
+	waitUntil {_mssl distance _plane < 1500};
+
+	_ewdir = getdir _mssl;
+	_ewdir = _ewdir - 180;
+	_mssl setdir _ewdir;
+	_plane vehiclechat "SYSTEM: ENEMY MISSILE JAMMED";
+	deletevehicle _mssl;
 };
