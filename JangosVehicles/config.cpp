@@ -4658,26 +4658,6 @@ class cfgVehicles {
 				};
 			};
 		};
-		class UserActions
-		{
-			class impulse
-			{
-				displayName = "Impulse";
-				position = "pilotview";
-				radius = 5;
-				onlyforplayer = 0;
-				shortcut = "User19";
-				condition = "isEngineOn this and ls_player == currentPilot this;";
-				statement = "this call ls_vehicle_fnc_ImpulseJoystick;";
-			};
-			class repulse: impulse
-			{
-				displayName = "Repulse";
-				shortcut = "User20";
-				condition = "isEngineOn this and ls_player == currentPilot this;";
-				statement = "this call ls_vehicle_fnc_RepulseJoystick;";
-			};
-		};
 	};
 	class JA_104th_Base_Pelican_Unarmed: OPTRE_Pelican_unarmed
 	{
