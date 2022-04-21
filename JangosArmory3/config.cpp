@@ -27,7 +27,8 @@ class CfgPatches
 			"JA_104th_Jumppack_JT12_LR",
 			"JA_104th_Jumppack_JT12",
 			"JA_104th_Jumppack_mc_LR",
-			"JA_104th_Jumppack_mc"		
+			"JA_104th_Jumppack_mc",
+			"JA_104th_Jumppack_CDV"
 		};
 		weapons[] = {
 			"JA_104th_Crash_Uniform",
@@ -661,6 +662,7 @@ class CfgVehicles
 	class JLTS_Clone_jumppack;
 	class JLTS_Clone_jumppack_JT12_104;
 	class JLTS_Clone_jumppack_mc;
+	class RD501_JLTS_Clone_jumppack_mc2;
 	// General Uniforms
 	class JA_104th_Crash : SWLB_clone_marshal_commander_base_P2
 	{
@@ -973,4 +975,18 @@ class CfgVehicles
 		tf_range = 0;
 		tf_subtype = "";
 	};		
+	class JA_104th_Jumppack_CDV: RD501_JLTS_Clone_jumppack_mc2
+	{
+		author = "501st + Echo";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone CDV Pilot jumppack";
+		tf_dialog = "anarc210_radio_dialog";
+		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 40000;
+		tf_subtype = "airborne";
+		
+	};
 };

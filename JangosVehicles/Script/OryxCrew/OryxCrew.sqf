@@ -1,6 +1,5 @@
-params ["_this"];
-
-_this addAction [
+params ["_vic"];
+_vic addAction [
         "Add AI Crewmembers",
         {
             params ["_target", "_caller", "_actionID", "_arguments"];
@@ -26,7 +25,7 @@ _this addAction [
         },
         nil, 1e-3, false, true, "", "_this in _target", -1, false
     ];
-_this addAction [
+_vic addAction [
         "Remove AI Crewmembers",
         {
             params ["_target", "_caller", "_actionID", "_arguments"];
@@ -39,3 +38,16 @@ _this addAction [
         },
         nil, 1e-4, false, true, "", "_this in _target", -1, false
     ];
+	
+__vic addEventHandler ["GetIn", {
+	params ["_vehicle", "_role", "_unit", "_turret"];
+	_unit allowDamage false;
+}];
+/* Oryx Hitboxes are so wanky, you can kill the entire crew without causing any damage to the vehicle itself. */
+
+_vic addEventHandler ["GetOut", {
+	params ["_vehicle", "_role", "_unit", "_turret"];
+	sleep 1;
+	_unit allowDamage true;
+}];
+/* Leaving the Commander seat spawns you above ground, causing you to fall. By having the Sleep timer, you reach the ground before you become mortal again. */
