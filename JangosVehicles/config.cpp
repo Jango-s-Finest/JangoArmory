@@ -38,16 +38,24 @@ class CfgPatches
 			"JA_104th_BARC_Sniper",
 			"JA_104th_BARC_EOD",
 			"JA_104th_BARC_Medic",
-			"OPTRE_M412_IFV_UNSC_cln",
-			"104th_Oryx",
+			"JA_104th_Oryx",
+			"JA_104th_OryxNS",
 			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
 			"JA_104th_3AS_Reaper_Y_Wing",
 			"JA_104th_3AS_Reaper_Y_Wing_Blue",
 			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
-			"104th_vulture_dynamicLoadout_base",
-			"104th_Vulture_dynamicLoadout",
-			"104th_Vulture_dynamicLoadout_AA",
-			"104th_Vulture_dynamicLoadout_Bare"
+			"JA_104th_Droideka_Normal",
+			//"BaseShield100m",
+			"JA_104th_Republic_HR_Bag",
+			"JA_104th_HeavyRepeater_Unarmoured",
+			"JA_104th_ATRT",
+			//"BaseShield100mSpawner",
+			//"JA_104th_Droideka_Mobile",
+			//"JA_104th_Droideka_Sniper",
+			"JA_104th_Vulture_dynamicLoadout_base",
+			"JA_104th_Vulture_dynamicLoadout",
+			"JA_104th_Vulture_dynamicLoadout_AA",
+			"JA_104th_Vulture_dynamicLoadout_Bare"
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -3800,7 +3808,7 @@ class cfgVehicles {
 		};
 		class EventHandlers: DefaultEventhandlers
 		{
-			Init = "[_this select 0,’no’] execVM ""\FIR_AirWeaponSystem_US\Script\init\init.sqf"";";
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\Z95Init.sqf';";
 		};
 		class UserActions
 		{
@@ -4292,7 +4300,7 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		memoryPointDriverOptics = "slingCamera";
+		memoryPointDriverOptics = "gunner1";
 		unitInfoType = "RscOptics_CAS_Pilot";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
 		weapons[] = {"OPTRE_M638","CMFlareLauncher","Laserdesignator_pilotCamera"};
@@ -4852,7 +4860,7 @@ class cfgVehicles {
 		};
 		class EventHandlers: DefaultEventhandlers
 		{
-			Init = "[_this select 0,’yes’] execVM ""\FIR_AirWeaponSystem_US\Script\init\init.sqf"";";
+			Init = "[_this select 0] execVM '\JangosVehicles\Script\ECM\YWing-init.sqf';";
 		};
 		class UserActions
 		{
@@ -5292,14 +5300,14 @@ class cfgVehicles {
 		};
 	};
 	
-	class 104th_vulture_dynamicLoadout_base: 3as_vulture_dynamicLoadout_base {
+	class JA_104th_vulture_dynamicLoadout_base: 3as_vulture_dynamicLoadout_base {
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
 		displayName = "Swarm-Vulture Droid";
 	};
 	
-	class 104th_Vulture_dynamicLoadout: 3as_Vulture_dynamicLoadout {
+	class JA_104th_Vulture_dynamicLoadout: 3as_Vulture_dynamicLoadout {
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
@@ -5315,7 +5323,7 @@ class cfgVehicles {
 	class SensorTemplateNV;
 
 	
-	class 104th_Vulture_dynamicLoadout_AA: 3as_Vulture_dynamicLoadout_AA {
+	class JA_104th_Vulture_dynamicLoadout_AA: 3as_Vulture_dynamicLoadout_AA {
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
@@ -5656,7 +5664,7 @@ class cfgVehicles {
 		};
 	};
 	
-	class 104th_Vulture_dynamicLoadout_Bare: 3as_Vulture_dynamicLoadout_Bare {
+	class JA_104th_Vulture_dynamicLoadout_Bare: 3as_Vulture_dynamicLoadout_Bare {
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
@@ -5669,7 +5677,8 @@ class cfgVehicles {
 	
 	
 
-	class JA_104th_Base_TX130: SWLG_tanks_tx130 {
+	class JA_104th_Base_TX130: SWLG_tanks_tx130
+	{
 		author = "Dak";
 		displayName = "TX-130"; 
 		scope = 2;
@@ -5678,8 +5687,13 @@ class cfgVehicles {
         side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\TX130Init.sqf';";
+		};
 	};
-	class OPTRE_M412_IFV_UNSC_cln: OPTRE_M412_IFV_UNSC_blk {
+	/*class OPTRE_M412_IFV_UNSC_cln: OPTRE_M412_IFV_UNSC_blk
+	{
 		dlc = "OPTRE";
 		scope = 2;
 		scopeArsenal = 2;
@@ -5698,7 +5712,7 @@ class cfgVehicles {
 				magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles"};
 			};
 		};	
-	}
+	}*/
 	class JA_104th_BARC: ls_ground_barc
 	{
 		faction = "104th_Guys";
@@ -5786,55 +5800,28 @@ class cfgVehicles {
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_eod_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
 	};
 
-
-	//class OPTRE_M494;
-	class 104th_Oryx: OPTRE_M494 {
-		
-		
-		displayName = "104th Oryx IFV";
+	class 3AS_ATRT;
+	class JA_104th_ATRT: 3AS_ATRT
+	{
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		armor = 700; //On average survives one RPS-6 hit and 0 PLX/E-60 hits.
+		displayName = "104th ATRT";
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\ATRT_104th_CO.paa"};
+	};
+
+	//class OPTRE_M494;
+
+	class JA_104th_OryxNS: OPTRE_M494
+	{
+		
+		
+		displayName = "104th Oryx IFV Unshielded";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		crew = "SWLB_clone_pilot_base_P2";
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
-		
-		class HitPoints
-		{
-			class HitHull
-			{
-				armor = 8;
-				material = -1;
-				name = "telo";
-				visual = "hull";
-				passThrough = 1;
-				minimalHit = 0.2;
-				explosionShielding = 0.4;
-				radius = 0.3;
-			};
-			class HitLTrack
-			{
-				armor = 3.0;
-				material = -1;
-				name = "pasL";
-				passThrough = 0;
-				minimalHit = 0.1;
-				explosionShielding = 0.5;
-				radius = 0.75;
-			};
-			class HitRTrack
-			{
-				armor = 3.0;
-				material = -1;
-				name = "pasP";
-				passThrough = 0;
-				minimalHit = 0.1;
-				explosionShielding = 0.5;
-				radius = 0.75;
-			};
-		};
-		
 		
 		class Turrets: Turrets
 		{
@@ -5861,7 +5848,7 @@ class cfgVehicles {
 						gunBeg = "usti hlavne3";
 						gunEnd = "konec hlavne3";
 						weapons[] = {"3AS_Sabre_MG","Laserdesignator_mounted"};
-						magazines[] = {"3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","Laserbatteries"};
+						magazines[] = {"3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","Laserbatteries"};
 						turretInfoType = "RscWeaponRangeZeroing";
 						discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
 						discreteDistanceInitIndex = 2;
@@ -5892,11 +5879,11 @@ class cfgVehicles {
 						selectionFireAnim = "zasleh3";
 					};
 				};
-				memoryPointGun = "usti hlavne2";
+				memoryPointGun = "usti hlavne"; //"usti hlavne2" is the MG port left of the gun, while "usti hlavne" is the end of the cannon barrel.
 				maxVerticalRotSpeed = "90/45";
 				maxHorizontalRotSpeed = "90/45";
 				weapons[] = {"Laserdesignator_mounted","ls_laat_gun","ls_laat_gun_2","3AS_Sabre_MG","OPTRE_M670_ATGM_Launcher","SmokeLauncher"};
-				magazines[] = {"Laserbatteries","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","SmokeLauncherMag"};
+				magazines[] = {"Laserbatteries","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag"};
 				minElev = -12;
 				maxElev = 60; //Original 35
 				initElev = 0;
@@ -5950,6 +5937,20 @@ class cfgVehicles {
 						minFov = 0.028;
 						maxFov = 0.028;
 					};
+					class Zoom1: Wide
+					{
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						initFov = 0.014;
+						minFov = 0.014;
+						maxFov = 0.014;
+					};
+					class Zoom2: Wide
+					{
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						initFov = 0.007;
+						minFov = 0.007;
+						maxFov = 0.007;
+					};
 				};
 				castGunnerShadow = 0;
 				stabilizedInAxes = 3;
@@ -5971,6 +5972,12 @@ class cfgVehicles {
 		{
 			class colorclone
 			{
+				displayName = "Clone 104th";
+				author = "Article 2 Studios";
+				textures[] = {"JangosVehicles\data\textures\oryx\oryx_armor_clone_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+			};
+			class colorcloneblue
+			{
 				displayName = "Clone Blue";
 				author = "Article 2 Studios";
 				textures[] = {"JangosVehicles\data\textures\oryx\oryx_armor_clone_blue_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorpion_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
@@ -5979,7 +5986,7 @@ class cfgVehicles {
 			{
 				displayName = "Clone White";
 				author = "Article 2 Studios";
-				textures[] = {"JangosVehicles\data\textures\oryx\oryx_armor_clone_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+				textures[] = {"JangosVehicles\data\textures\oryx\oryx_armor_clone_white_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
 			};
 			class colorstand
 			{
@@ -6003,6 +6010,661 @@ class cfgVehicles {
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\oryx\oryx_armor_clone_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
 		
+		class ACE_SelfActions
+		{
+			class TFAR_IntercomChannel
+			{
+				displayName = "$STR_tfar_core_Intercom_ACESelfAction_Name";
+				condition = "true";
+				statement = "";
+				icon = "";
+				class TFAR_IntercomChannel_disabled
+				{
+					displayName = "Disabled";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+				class TFAR_IntercomChannel_1
+				{
+					displayName = "$STR_tfar_core_Intercom_ACESelfAction_Channel1";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					displayName = "$STR_tfar_core_Intercom_ACESelfAction_Channel2";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_Misc_1
+				{
+					displayName = "Misc channel 1";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_Misc_2
+				{
+					displayName = "Misc channel 2";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 3";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],3,true];";
+				};
+				class TFAR_IntercomChannel_Misc_3
+				{
+					displayName = "Misc channel 3";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 4";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],4,true];";
+				};
+			};
+		};
+		
+	};
+	class JA_104th_Oryx: JA_104th_OryxNS
+	{
+		
+		displayName = "104th Oryx IFV Shielded";
+		
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShield.sqf';";
+			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+		};
+	};
+	class JA_104th_OryxSC: JA_104th_OryxNS 
+	{
+		
+		displayName = "104th Oryx IFV Shielded Debug";
+		scope = 0;
+		scopeCurator = 0;
+		
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShieldComponent.sqf';";
+			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+		};
+		
+	};
+	
+	
+	
+	class StaticWeapon: LandVehicle
+	{
+		class Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class StaticMGWeapon: StaticWeapon
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+			};
+		};
+	};
+	class 3as_Deka_Static_Sniper_Base: StaticMGWeapon
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class ViewOptics;
+			};
+		};
+	};
+	
+	class RD501_droideka_normal;
+	class RD501_droideka_sniper;
+	//class RD501_droideka_mobile;
+	
+	/*class JA_104th_Droideka_Normal: RD501_droideka_normal
+	{
+		Displayname = "Droideka Shielded";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_CIS";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\DroidekaInit.sqf';";
+		};
+	};
+	class JA_104th_Droideka_Mobile: RD501_droideka_mobile
+	{
+		Displayname = "Droideka Mobile Shielded";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_CIS";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\DroidekaMobileInit.sqf';";
+		};
+	};*/
+	
+	class JA_104th_Droideka_Sniper: 3as_Deka_Static_Sniper_Base
+	{
+		Displayname = "Droideka Sniper Shielded";
+		scope = 0;
+		scopeCurator = 0;
+		side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_CIS";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\DroidekaInit.sqf';";
+		};
+		model = "\3as\3as_deka\deka_Sniper.p3d";
+		hiddenselections[] = {"camo"};
+		hiddenselectionstextures[] = {"RD501_Vehicles\textures\droideka\rd501_sniperdroideka_co.paa"};
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"3as\3as_deka\data\dekaSniper.rvmat","3as\3as_deka\data\dekaSniper.rvmat","A3\armor_f_gamma\MBT_01\Data\MBT_01_body_destruct.rvmat"};
+		};
+		damageResistance = 0.02;
+		crewVulnerable = 0;
+		armor = 100;
+		armorStructural = 2;
+		class Hitpoints
+		{
+			class HitHull
+			{
+				armor = 1000;
+				material = -1;
+				name = "hull_hit";
+				visual = "zbytek";
+				passthrough = 0.03;
+				minimalhit = 0.14;
+				explosionshielding = 2;
+				radius = 0.25;
+			};
+			class HitEngine
+			{
+				armor = 300;
+				material = -1;
+				name = "engine_hit";
+				passThrough = 0.08;
+				minimalHit = 0.24;
+				explosionShielding = 1;
+				radius = 0.33;
+			};
+			class hitammo_l: HitEngine
+			{
+				name = "ammo_l_hit";
+			};
+			class hitammo_r: hitammo_l
+			{
+				name = "ammo_r_hit";
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				gunBeg[] = {"Usti hlavne"};
+				gunEnd[] = {"Konec hlavne"};
+				memoryPointGun[] = {"usti hlavne"};
+				gunnerForceOptics = 1;
+				optics = 1;
+				minElev = -15;
+				maxElev = 35;
+				minTurn = -360;
+				maxTurn = 360;
+				weapons[] = {"RD501_droideka_sniper"};
+				magazines[] = {"RD501_CIS_droideka_sniper_cell_x10_mag","RD501_CIS_droideka_sniper_cell_x10_mag","RD501_CIS_droideka_sniper_cell_x10_mag","RD501_CIS_droideka_sniper_cell_x10_mag"};
+				class ViewOptics: ViewOptics
+				{
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+					visionMode[] = {"Normal","NVG","TI"};
+				};
+			};
+		};
+	};
+	class JA_104th_Droideka_Normal: JA_104th_Droideka_Sniper
+	{
+		Displayname = "Droideka Shielded";
+		scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_CIS";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\DroidekaInit.sqf';";
+		};
+		ace_dragging_canCarry = 0;
+		ace_dragging_canDrag = 0;
+		model = "3AS\3AS_Deka\Deka.p3d";
+		hiddenselections[] = {"camo"};
+		hiddenselectionstextures[] = {"RD501_Vehicles\textures\droideka\rd501_deka_co.paa"};
+		picture = "\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
+		UiPicture = "\A3\Static_f_gamma\data\ui\gear_StaticTurret_MG_CA.paa";
+		threat[] = {0.6,0.6,1.0};
+		armor = 30;
+		armorStructural = 2;
+		explosionShielding = 0.1;
+		damageResistance = 0.02;
+		impactDamageMultiplier = 0.1;
+		minTotalDamageThreshold = 0.01;
+		crewVulnerable = 0;
+		accuracy = 0.12;
+		getInAction = "";
+		getOutAction = "";
+		class Hitpoints
+		{
+			class HitHull
+			{
+				armor = 1000;
+				material = -1;
+				name = "hull_hit";
+				visual = "zbytek";
+				passthrough = 0.03;
+				minimalhit = 0.14;
+				explosionshielding = 2;
+				radius = 0.25;
+			};
+			class HitEngine
+			{
+				armor = 300;
+				material = -1;
+				name = "engine_hit";
+				passThrough = 0.08;
+				minimalHit = 0.24;
+				explosionShielding = 1;
+				radius = 0.33;
+			};
+			class hitammo_l: HitEngine
+			{
+				name = "ammo_l_hit";
+			};
+			class hitammo_r: hitammo_l
+			{
+				name = "ammo_r_hit";
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				memoryPointGunnerOptics = "gunner_view";
+				gunBeg[] = {"Usti hlavne","Usti hlavne2"};
+				gunEnd[] = {"Konec hlavne","Konec hlavne2"};
+				primary = 1;
+				primaryGunner = 1;
+				enableManualFire = 1;
+				optics = 0;
+				minElev = -15;
+				maxElev = 35;
+				minTurn = -360;
+				maxTurn = 360;
+				selectionFireAnim = "zasleh";
+				soundServo[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm",1.4125376,1,30};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\boat\Boat_Armed_01\servo_boat_comm_vertical",1.4125376,1,30};
+				weapons[] = {"RD501_droideka_dual"};
+				magazines[] = {"RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag","RD501_droideka_dual_blaster_cell_x60_mag"};
+				gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UGV_01_Optics_Gunner_F.p3d";
+				gunnerForceOptics = 1;
+				turretInfoType = "RscOptics_UAV_gunner";
+				LODTurnedIn = -1;
+				LODTurnedOut = -1;
+				visionMode[] = {"Normal","NVG","TI"};
+				gunnergetInAction = "";
+				gunnergetOutAction = "";
+				displayName = "";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsEffect[] = {};
+				gunnerOpticsEffect[] = {};
+				gunnerInAction = "Disabled";
+				gunnerAction = "Disabled";
+				forceHideGunner = 1;
+				inGunnerMayFire = 1;
+				viewGunnerInExternal = 1;
+				memoryPointGun[] = {"usti hlavne","usti hlavne2"};
+				class ViewOptics: ViewOptics
+				{
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+					visionMode[] = {"Normal","NVG"};
+				};
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor = 0.8;
+						material = -1;
+						name = "main_turret_hit";
+						visual = "vez";
+						passThrough = 0;
+						minimalHit = 0.02;
+						explosionShielding = 0.3;
+						radius = 0.25;
+					};
+					class HitGun
+					{
+						armor = 0.3;
+						material = -1;
+						name = "main_gun_hit";
+						visual = "";
+						passThrough = 0;
+						minimalHit = 0;
+						explosionShielding = 1;
+						radius = 0.25;
+					};
+				};
+			};
+		};
+		isUav = 1;
+		crew = "O_UAV_AI";
+		class simpleobject
+		{
+			animate[] = {{"maingun",0},{"mainturret",0},{"damagehide",0}};
+		};
+		destrType = "DestructBuilding";
+		explosionEffect = "FuelExplosion";
+		class DestructionEffects
+		{
+			class Dust
+			{
+				intensity = 0.1;
+				interval = 1;
+				lifeTime = 0.01;
+				position = "destructionEffect2";
+				simulation = "particles";
+				type = "HousePartDust";
+			};
+			class Light1
+			{
+				enabled = "distToWater";
+				intensity = 0.1;
+				interval = 1;
+				lifeTime = 3;
+				position = "destructionEffect";
+				simulation = "light";
+				type = "ObjectDestructionLightSmall";
+			};
+			class Fire1
+			{
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 3;
+				position = "destructionEffect";
+				simulation = "particles";
+				type = "ObjectDestructionFire1Small";
+			};
+			class Refract1
+			{
+				intensity = 1;
+				interval = 1;
+				lifeTime = 3;
+				position = "destructionEffect";
+				simulation = "particles";
+				type = "SmallFireFRefract";
+			};
+			class Sound
+			{
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+				position = "destructionEffect";
+				simulation = "sound";
+				type = "Fire";
+			};
+			class sparks1
+			{
+				intensity = 0.5;
+				interval = 1;
+				lifeTime = 0;
+				position = "destructionEffect2";
+				simulation = "particles";
+				type = "ObjectDestructionSparks";
+			};
+			class Smoke1
+			{
+				simulation = "particles";
+				type = "BarelDestructionSmoke";
+				position[] = {0,0,0};
+				intensity = 0.2;
+				interval = 1;
+				lifeTime = 1;
+			};
+			class HouseDestr
+			{
+				intensity = 1;
+				interval = 1;
+				lifeTime = 5;
+				position = "";
+				simulation = "destroy";
+				type = "DelayedDestruction";
+			};
+		};
+	};
+
+
+	class House_F;
+	class B_UAV_01_F;
+	class B_UGV_01_F;
+	class shieldtest: House_F {
+		
+		displayname = "shieldspheretest";
+		model = "JangosVehicles\data\models\ShieldSphereTest.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+		class EventHandlers: DefaultEventhandlers
+		{
+			killed="deleteVehicle (_this select 0)";
+		};
+	};
+	class oryxshield: shieldtest {
+		displayname = "Oryx shield bubble";
+		model = "JangosVehicles\data\models\OryxShield.p3d";
+		hiddenSelections[] = {};
+	};
+	class oryxshieldvo: oryxshield {
+		
+		displayname = "Oryx shield bubble Visual";
+		model = "JangosVehicles\data\models\OryxShieldvo.p3d";
+		hiddenSelections[] = {};
+	};
+	class oryxshieldred: oryxshield {
+		
+		displayname = "Oryx shield bubble Red";
+		model = "JangosVehicles\data\models\OryxShieldRed.p3d";
+		hiddenSelections[] = {};
+	};
+	class oryxshieldfb: oryxshield {
+		
+		displayname = "Oryx shield bubble Full Blue";
+		model = "JangosVehicles\data\models\OryxShieldfb.p3d";
+		hiddenSelections[] = {};
+	};
+	class oryxshieldhb: oryxshield {
+		
+		displayname = "Oryx shield bubble Half Blue";
+		model = "JangosVehicles\data\models\OryxShieldhb.p3d";
+		hiddenSelections[] = {};
+	};
+	class TX130shield: shieldtest {
+		displayname = "TX130 shield bubble";
+		model = "JangosVehicles\data\models\TX130Shield.p3d";
+		hiddenSelections[] = {};
+	};
+	class TX130shieldvo: shieldtest {
+		displayname = "TX130 shield bubble Visual";
+		model = "JangosVehicles\data\models\TX130Shieldvo.p3d";
+		hiddenSelections[] = {};
+	};
+	class TX130shieldfb: shieldtest {
+		displayname = "TX130 shield bubble Full Blue";
+		model = "JangosVehicles\data\models\TX130Shieldfb.p3d";
+		hiddenSelections[] = {};
+	};
+	class TX130shieldhb: shieldtest {
+		displayname = "TX130 shield bubble Half Blue";
+		model = "JangosVehicles\data\models\TX130Shieldhn.p3d";
+		hiddenSelections[] = {};
+	};
+	class TX130shieldred: shieldtest {
+		
+		displayname = "TX130 shield bubble Red";
+		model = "JangosVehicles\data\models\TX130ShieldRed.p3d";
+		hiddenSelections[] = {};
+		
+	};
+	class ywingshield: shieldtest {
+		displayname = "Y-Wing shield bubble";
+		model = "JangosVehicles\data\models\YWingShield.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+	};
+	class ywingshieldvo: shieldtest {
+		displayname = "Y-Wing shield bubble Visual";
+		model = "JangosVehicles\data\models\YWingShieldvo.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+	};
+	class ywingshieldfb: shieldtest {
+		displayname = "Y-Wing shield bubble Full Blue";
+		model = "JangosVehicles\data\models\YWingShieldfb.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+	};
+	class ywingshieldhb: shieldtest {
+		displayname = "Y-Wing shield bubble Half Blue";
+		model = "JangosVehicles\data\models\YWingShieldhb.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+	};
+	class ywingshieldred: shieldtest {
+		displayname = "Y-Wing shield bubble Red";
+		model = "JangosVehicles\data\models\YWingShieldRed.p3d";
+		hiddenSelections[] = {};
+	};
+	class z95shieldvo: shieldtest {
+		displayname = "Z-95 shield bubble Visual";
+		model = "JangosVehicles\data\models\Z95Shieldvo.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+	};
+	class z95shieldfb: shieldtest {
+		displayname = "Z-95 shield bubble Full Blue";
+		model = "JangosVehicles\data\models\Z95Shieldfb.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+	};
+	class z95shieldhb: shieldtest {
+		displayname = "Z-95 shield bubble Half Blue";
+		model = "JangosVehicles\data\models\Z95Shieldhb.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+	};
+	class z95shieldred: shieldtest {
+		displayname = "Z-95 shield bubble Red";
+		model = "JangosVehicles\data\models\Z95ShieldRed.p3d";
+		hiddenSelections[] = {};
+	};
+	class droidekashieldvo: shieldtest {
+		
+		displayname = "Droideka shield bubble Visual";
+		model = "JangosVehicles\data\models\Droidekavo.p3d";
+		hiddenSelections[] = {};
+	};
+	class droidekashieldfb: shieldtest {
+		
+		displayname = "Droideka shield bubble Full Blue";
+		model = "JangosVehicles\data\models\Droidekafb.p3d";
+		hiddenSelections[] = {};
+	};
+	class droidekashieldhb: shieldtest {
+		
+		displayname = "Droideka shield bubble Half Blue";
+		model = "JangosVehicles\data\models\Droidekahb.p3d";
+		hiddenSelections[] = {};
+	};
+	class droidekashieldred: shieldtest {
+		
+		displayname = "Droideka shield bubble Red";
+		model = "JangosVehicles\data\models\Droidekared.p3d";
+		hiddenSelections[] = {};
+	};
+	/*class BaseShield100m: House_F {
+		
+		displayname = "Base Shield Sphere 100m";
+		model = "JangosVehicles\data\models\100mBubble.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+		scopeCurator = 2;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		author = "Echo";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\BaseShieldInit.sqf';";
+			killed="deleteVehicle (_this select 0)";
+		};
+	};
+	class BaseShield100mFB: shieldtest {
+		
+		displayname = "Base Shield Sphere 100m Full Blue";
+		model = "JangosVehicles\data\models\100mBubblefb.p3d";
+		hiddenSelections[] = {};
+		scope = 0;
+	};
+	class BaseShield100mHB: shieldtest {
+		
+		displayname = "Base Shield Sphere 100m Half Blue";
+		model = "JangosVehicles\data\models\100mBubblehb.p3d";
+		hiddenSelections[] = {};
+		scope = 0;
+	};
+	class BaseShield100mRed: shieldtest {
+		
+		displayname = "Base Shield Sphere 100m Red";
+		model = "JangosVehicles\data\models\100mBubblered.p3d";
+		hiddenSelections[] = {};
+		scope = 0;
+	};
+	class BaseShield100mSpawner: B_UGV_01_F
+	{
+		
+		displayname = "100m Base Shield Spawner";
+		scope = 2;
+		scopeCurator = 2;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		author = "Echo";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\BaseShieldSpawner.sqf';";
+			killed="deleteVehicle (_this select 0)";
+		};
+		
+	};*/
+	
+	class Land_HelipadEmpty_F;
+	class 104th_EmptySoundPad: Land_HelipadEmpty_F {
+		displayname = "Shield bubble Sound";
+		hiddenSelections[] = {};
+		scope = 2;
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\ShieldSound.sqf';";
+		};
+	};
+	class 104th_GiantEmptySoundPad: Land_HelipadEmpty_F {
+		displayname = "Giant Shield bubble Sound";
+		hiddenSelections[] = {};
+		scope = 2;
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\GiantShieldSound.sqf';";
+		};
 	};
 
 
@@ -6203,6 +6865,50 @@ class cfgVehicles {
 			};
 		};
 	};
+	
+	
+	class 3AS_Republic_HR_Bag;
+	class JA_104th_Republic_HR_Bag : 3AS_Republic_HR_Bag
+    {
+        faction="3AS_REP";
+        author="3AS + Ice";
+        scope=2;
+        editorCategory="EdCat_Equipment";
+        editorSubcategory="EdSubcat_DismantledWeapons";
+        displayName="104th Heavy Repeater";
+        hiddenSelections[]=
+        {
+            "camo1"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "JangosVehicles\data\textures\Backpack_E-Web_Greyscale.paa"
+        };
+        class assembleInfo
+        {
+            primary=1;
+            base="";
+            displayName="104th Heavy Repeater";
+            assembleTo="JA_104th_HeavyRepeater_Unarmoured";
+        };
+    };
+	
+	class 3AS_HeavyRepeater_Unarmoured;
+	class JA_104th_HeavyRepeater_Unarmoured: 3AS_HeavyRepeater_Unarmoured
+	{
+		displayName = "104th Heavy Repeater";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		class assembleInfo
+		{
+			primary = 0;
+			base = "";
+			assembleTo = "";
+			dissasembleTo[] = {"JA_104th_Republic_HR_Bag"};
+			displayName = "";
+		};
+	};
+	
 };
 
 class ammo
@@ -6294,4 +7000,60 @@ class CfgWeapons
 		
 		
 	};
+	class SWLB_CEE_Engineer_Vest_NCO;
+	class JA_104th_Engineer_EWEB_Vest: SWLB_CEE_Engineer_Vest_NCO
+	{
+		
+		maximumLoad = 200;
+		
+	};
+};
+
+class cfgSounds {
+	
+	sounds[] = {};
+		
+	class ShieldHit0
+	{
+		sound[] = {"JangosVehicles\data\sounds\Shield\ShieldHit_0.ogg", 100, 1, 100};
+		name = "ShieldHit0";
+		titles[] = {"ShieldHit0"};
+		duration = 1;
+	};
+	class ShieldHit1
+	{
+		sound[] = {"JangosVehicles\data\sounds\Shield\ShieldHit_1.ogg", 100, 1, 100};
+		name = "ShieldHit1";
+		titles[] = {"ShieldHit1"};
+		duration = 1;
+	};
+	class ShieldHit2
+	{
+		sound[] = {"JangosVehicles\data\sounds\Shield\ShieldHit_2.ogg", 100, 1, 100};
+		name = "ShieldHit2";
+		titles[] = {"ShieldHit2"};
+		duration = 1;
+	};
+	class ShieldHit3
+	{
+		sound[] = {"JangosVehicles\data\sounds\Shield\ShieldHit_3.ogg", 100, 1, 100};
+		name = "ShieldHit3";
+		titles[] = {"ShieldHit3"};
+		duration = 1;
+	};
+	class ShieldHit4
+	{
+		sound[] = {"JangosVehicles\data\sounds\Shield\ShieldHit_4.ogg", 100, 1, 100};
+		name = "ShieldHit4";
+		titles[] = {"ShieldHit4"};
+		duration = 1;
+	};
+	class IonCannon1
+	{
+		sound[] = {"JangosVehicles\data\sounds\Shield\IonCannon1.ogg", 100, 1, 100};
+		name = "IonCannon1";
+		titles[] = {"IonCannon1"};
+		duration = 3;
+	};
+	
 };
