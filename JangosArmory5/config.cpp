@@ -111,6 +111,7 @@ class CfgWeapons
 	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
+	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
@@ -130,7 +131,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Axel)";
+		displayName = "Clone Trooper armor (104th Axel)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -210,22 +211,29 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Dragan)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_P2_Dragan_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Engineer_Base_Helmet : SWLB_clone_P2_Helmet
+	class JA_104th_Engineer_Base_Helmet : SWLB_clone_eng_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
+		hiddenSelections[]=
+        {
+            "camo1",
+            "illum"
+        }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Base)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_Engineer_Helmet_Base.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { 
+			"JangosArmory5\data\Textures\104th_Engineer_Helmet_Base.paa",
+			"JangosArmory5\data\Textures\104th_Engineer_Helmet_Base.paa"
+		}; // the file path to the texture
 	};
 	class JA_104th_Clutch_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Clutch)";
+		displayName = "Clone Trooper armor (104th Clutch)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -250,7 +258,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Beef)";
+		displayName = "Clone Trooper armor (104th Beef)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -319,7 +327,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Loner)";
+		displayName = "Clone Trooper armor (104th Loner)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -398,7 +406,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Sigil)";
+		displayName = "Clone Trooper armor (104th Sigil)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -468,7 +476,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Fire)";
+		displayName = "Clone Trooper armor (104th Fire)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -504,7 +512,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Fire ME)";
+		displayName = "Clone Trooper armor (104th Fire ME)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -657,7 +665,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 LR (Raider)";
+		displayname = "Clone Trooper JT12 LR (Raider)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_Jumppack.paa"};
 	};
@@ -666,7 +674,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 (Raider)";
+		displayname = "Clone Trooper JT12 (Raider)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_Jumppack.paa"};
 	};
@@ -675,7 +683,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 LR (Raider 2-1)";
+		displayname = "Clone Trooper JT12 LR (Raider 2-1)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-1_Jumppack.paa"};
 	};
@@ -684,7 +692,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 (Raider 2-1)";
+		displayname = "Clone Trooper JT12 (Raider 2-1)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-1_Jumppack.paa"};
 	};
@@ -693,7 +701,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 LR (Raider 2-2)";
+		displayname = "Clone Trooper JT12 LR (Raider 2-2)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-2_Jumppack.paa"};
 	};
@@ -702,7 +710,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 (Raider 2-2)";
+		displayname = "Clone Trooper JT12 (Raider 2-2)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-2_Jumppack.paa"};
 	};
@@ -711,7 +719,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 LR (Raider 2-3)";
+		displayname = "Clone Trooper JT12 LR (Raider 2-3)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-3_Jumppack.paa"};
 	};
@@ -720,7 +728,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 (Raider 2-3)";
+		displayname = "Clone Trooper JT12 (Raider 2-3)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-3_Jumppack.paa"};
 	};
@@ -729,7 +737,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 LR (Raider 2-4)";
+		displayname = "Clone Trooper JT12 LR (Raider 2-4)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-4_Jumppack.paa"};
 	};
@@ -738,7 +746,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 (Raider 2-4)";
+		displayname = "Clone Trooper JT12 (Raider 2-4)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Raider_2-4_Jumppack.paa"};
 	};
@@ -747,7 +755,7 @@ class CfgVehicles
 		author = "Tundra";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper backpack (Cerberus 1-1)";
+		displayname = "Clone Trooper backpack (Cerberus 1-1)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
@@ -761,7 +769,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper Heavy backpack (Cerberus 1-1)";
+		displayname = "Clone Trooper Heavy backpack (Cerberus 1-1)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
@@ -775,7 +783,7 @@ class CfgVehicles
 	// {
 	// 	author = "Tundra";
 	// 	scopeCurator = 2;
-	// 	displayname = "Clone trooper medic backpack (Cerberus 1-1)";
+	// 	displayname = "Clone Trooper medic backpack (Cerberus 1-1)";
 	// 	maximumLoad = 300;
 	// 	hiddenSelectionsTextures[] =
 	// 	{
@@ -790,7 +798,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper RTO backpack (Cerberus 1-1)";
+		displayname = "Clone Trooper RTO backpack (Cerberus 1-1)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
@@ -805,7 +813,7 @@ class CfgVehicles
 		author = "Tundra";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper backpack (Cerberus 1-2)";
+		displayname = "Clone Trooper backpack (Cerberus 1-2)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
@@ -819,7 +827,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper Heavy backpack (Cerberus 1-2)";
+		displayname = "Clone Trooper Heavy backpack (Cerberus 1-2)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
@@ -833,7 +841,7 @@ class CfgVehicles
 	// {
 	// 	author = "Tundra";
 	// 	scopeCurator = 2;
-	// 	displayname = "Clone trooper medic backpack (Cerberus 1-1)";
+	// 	displayname = "Clone Trooper medic backpack (Cerberus 1-1)";
 	// 	maximumLoad = 300;
 	// 	hiddenSelectionsTextures[] =
 	// 	{
@@ -848,7 +856,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper RTO backpack (Cerberus 1-2)";
+		displayname = "Clone Trooper RTO backpack (Cerberus 1-2)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
@@ -863,7 +871,7 @@ class CfgVehicles
 		author = "Tundra";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper backpack (Cerberus 1-3)";
+		displayname = "Clone Trooper backpack (Cerberus 1-3)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
@@ -877,7 +885,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper Heavy backpack (Cerberus 1-3)";
+		displayname = "Clone Trooper Heavy backpack (Cerberus 1-3)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
@@ -891,7 +899,7 @@ class CfgVehicles
 	// {
 	// 	author = "Tundra";
 	// 	scopeCurator = 2;
-	// 	displayname = "Clone trooper medic backpack (Cerberus 1-1)";
+	// 	displayname = "Clone Trooper medic backpack (Cerberus 1-1)";
 	// 	maximumLoad = 300;
 	// 	hiddenSelectionsTextures[] =
 	// 	{
@@ -906,7 +914,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper RTO backpack (Cerberus 1-3)";
+		displayname = "Clone Trooper RTO backpack (Cerberus 1-3)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
@@ -921,7 +929,7 @@ class CfgVehicles
 		author = "Tundra";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper backpack (Cerberus 1-4)";
+		displayname = "Clone Trooper backpack (Cerberus 1-4)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
@@ -935,7 +943,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper Heavy backpack (Cerberus 1-4)";
+		displayname = "Clone Trooper Heavy backpack (Cerberus 1-4)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
@@ -949,7 +957,7 @@ class CfgVehicles
 	// {
 	// 	author = "Tundra";
 	// 	scopeCurator = 2;
-	// 	displayname = "Clone trooper medic backpack (Cerberus 1-1)";
+	// 	displayname = "Clone Trooper medic backpack (Cerberus 1-1)";
 	// 	maximumLoad = 300;
 	// 	hiddenSelectionsTextures[] =
 	// 	{
@@ -964,7 +972,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper RTO backpack (Cerberus 1-4)";
+		displayname = "Clone Trooper RTO backpack (Cerberus 1-4)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory5\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this

@@ -112,6 +112,7 @@ class CfgWeapons
 	class SWLB_clone_P1_2_helmet;
 	class SWLB_clone_P2_Helmet;
 	class lsd_gar_standart_nvg;
+	class lsd_gar_barcm2_helmet;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_kama_armor;
@@ -128,7 +129,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Crash)";
+		displayName = "Clone Trooper armor (104th Crash)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -157,7 +158,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th JTAC)";
+		displayName = "Clone Trooper armor (104th JTAC)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -206,7 +207,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Crowbi)";
+		displayName = "Clone Trooper armor (104th Crowbi)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -231,7 +232,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Red)";
+		displayName = "Clone Trooper armor (104th Red)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -276,7 +277,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Spectre)";
+		displayName = "Clone Trooper armor (104th Spectre)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -311,7 +312,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Frosty)";
+		displayName = "Clone Trooper armor (104th Frosty)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -331,15 +332,21 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Niner_Helmet : SWLB_clone_BARC_helmet
+	class JA_104th_Niner_Helmet : lsd_gar_barcm2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
+		hiddenSelections[] = { 
+			"camo1",
+			"visor"
+		}; // don't change this
 		displayname = "Clone Trooper BARC Helmet (104th Niner)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory3\data\Textures\104th_BARC_Niner_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { 
+			"JangosArmory3\data\Textures\104th_BARC_Niner_Helmet.paa",
+			"JangosArmory3\data\Textures\visor_co.paa",
+		}; // the file path to the texture
 	};
 	class JA_104th_Raptor_Helmet : SWLB_clone_AB_helmet
 	{
@@ -366,7 +373,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (332nd Chich)";
+		displayName = "Clone Trooper armor (332nd Chich)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -389,7 +396,7 @@ class CfgWeapons
 	class JA_302nd_Chich_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone trooper commander vest (332nd Chich)";
+		displayName = "Clone Trooper commander vest (332nd Chich)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -432,7 +439,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Paraso)";
+		displayName = "Clone Trooper armor (104th Paraso)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -457,7 +464,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th ARF)";
+		displayName = "Clone Trooper armor (104th ARF)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -482,7 +489,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th ARF Medic)";
+		displayName = "Clone Trooper armor (104th ARF Medic)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -507,7 +514,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Carmine)";
+		displayName = "Clone Trooper armor (104th Carmine)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -532,7 +539,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Dak)";
+		displayName = "Clone Trooper armor (104th Dak)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -557,7 +564,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (Quick)";
+		displayName = "Clone Trooper armor (Quick)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -878,7 +885,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper jumppack LR";
+		displayname = "Clone Trooper jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "SWLB_clone_rto_radio_dialog"
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -893,7 +900,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper jumppack";
+		displayname = "Clone Trooper jumppack";
 		RD501_jumppack_energy_capacity = 100;
 	};
 	class JA_104th_Jumppack_JT12_LR_DC : JLTS_Clone_jumppack_JT12_104
@@ -901,7 +908,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 LR - NO RECHARGE";
+		displayname = "Clone Trooper JT12 LR - NO RECHARGE";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "SWLB_clone_rto_radio_dialog"
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -918,7 +925,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12  - NO RECHARGE";
+		displayname = "Clone Trooper JT12  - NO RECHARGE";
 		RD501_jumppack_energy_capacity = 100;
 		JLTS_energy[]={15,3000};
 		JLTS_recharge = -1;
@@ -928,7 +935,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12 LR";
+		displayname = "Clone Trooper JT12 LR";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "SWLB_clone_rto_radio_dialog"
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -943,7 +950,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper JT12";
+		displayname = "Clone Trooper JT12";
 		RD501_jumppack_energy_capacity = 100;
 	};
 	class JA_104th_Jumppack_mc_LR : JLTS_Clone_jumppack_mc

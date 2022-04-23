@@ -99,7 +99,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 Helmet (Captain Zivi)"; // the name it will be in game
+		displayname = "Clone Trooper P2 Helmet (Captain Zivi)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_Captain_Zivi_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -108,7 +108,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (Captain Zivi)";
+		displayName = "Clone Trooper armor (Captain Zivi)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -135,7 +135,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper ARF Helmet (Dire P2)"; // the name it will be in game
+		displayname = "Clone Trooper ARF Helmet (Dire P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_Dire_ARF_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -144,7 +144,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper ARF armor (Dire P2)";
+		displayName = "Clone Trooper ARF armor (Dire P2)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -171,7 +171,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 Helmet (Dire P2)"; // the name it will be in game
+		displayname = "Clone Trooper P2 Helmet (Dire P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_Dire_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -180,7 +180,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (Dire P2)";
+		displayName = "Clone Trooper armor (Dire P2)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -208,7 +208,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 medic Helmet (Dire P2)"; // the name it will be in game
+		displayname = "Clone Trooper P2 medic Helmet (Dire P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_Dire_Medic_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -217,7 +217,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper medic armor (Dire P2)";
+		displayName = "Clone Trooper medic armor (Dire P2)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -245,7 +245,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P1 Helmet (Captain Zivi - Blue)"; // the name it will be in game
+		displayname = "Clone Trooper P1 Helmet (Captain Zivi - Blue)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_Captain_Zivi_Helmet_Blue.paa" }; // the file path to the texture
 	};
 
@@ -254,7 +254,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (Captain Zivi - Blue)";
+		displayName = "Clone Trooper armor (Captain Zivi - Blue)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -281,7 +281,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper ARF Helmet (Dire Blue)"; // the name it will be in game
+		displayname = "Clone Trooper ARF Helmet (Dire Blue)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_Dire_ARF_Helmet_Blue.paa" }; // the file path to the texture
 	};
 
@@ -290,7 +290,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper ARF armor (Dire Blue)";
+		displayName = "Clone Trooper ARF armor (Dire Blue)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -317,7 +317,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P1 Helmet (Dire Blue)"; // the name it will be in game
+		displayname = "Clone Trooper P1 Helmet (Dire Blue)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_Dire_Helmet_Blue.paa" }; // the file path to the texture
 	};
 
@@ -326,7 +326,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (Dire Blue)";
+		displayName = "Clone Trooper armor (Dire Blue)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -354,7 +354,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P1 medic Helmet (Dire Blue)"; // the name it will be in game
+		displayname = "Clone Trooper P1 medic Helmet (Dire Blue)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_Dire_Medic_Helmet_Blue.paa" }; // the file path to the texture
 	};
 
@@ -363,7 +363,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper medic armor (Dire Blue)";
+		displayName = "Clone Trooper medic armor (Dire Blue)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -391,7 +391,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper Helmet (Captain Zivi - ME)"; // the name it will be in game
+		displayname = "Clone Trooper Helmet (Captain Zivi - ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_ME_Captain_Zivi_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -400,7 +400,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (Captain Zivi - ME)";
+		displayName = "Clone Trooper armor (Captain Zivi - ME)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -427,7 +427,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper ARF Helmet (Dire ME)"; // the name it will be in game
+		displayname = "Clone Trooper ARF Helmet (Dire ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_ME_Dire_ARF_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -436,7 +436,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper ARF armor (Dire ME)";
+		displayName = "Clone Trooper ARF armor (Dire ME)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -463,7 +463,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper Helmet (Dire ME)"; // the name it will be in game
+		displayname = "Clone Trooper Helmet (Dire ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_ME_Dire_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -472,7 +472,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (Dire ME)";
+		displayName = "Clone Trooper armor (Dire ME)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -500,7 +500,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper medic Helmet (Dire ME)"; // the name it will be in game
+		displayname = "Clone Trooper medic Helmet (Dire ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thDireCompany\data\Textures\Base_ME_Dire_Medic_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -509,7 +509,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper medic armor (Dire ME)";
+		displayName = "Clone Trooper medic armor (Dire ME)";
 		hiddenSelections[] =
 		{
 			"camo1",

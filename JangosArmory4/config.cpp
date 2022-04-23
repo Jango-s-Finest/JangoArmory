@@ -87,7 +87,6 @@ class CfgPatches
 			"JA_104th_Welty_Helmet",
 			"JA_104th_Welty_Uniform",
 			'JA_104th_AB_Fire_Armor',
-			'JA_104th_AB_Fire_Armor_ME',
 			'JA_104th_Trustful_Helmet',
 			'JA_104th_Trustful_Uniform',
 			'JA_104th_Click_Uniform',
@@ -211,7 +210,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Pacify)";
+		displayName = "Clone Trooper armor (104th Pacify)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -286,7 +285,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Garm)";
+		displayName = "Clone Trooper armor (104th Garm)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -311,7 +310,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Trustful)";
+		displayName = "Clone Trooper armor (104th Trustful)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -342,26 +341,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Trustful_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_AB_Fire_Armor : SWLB_clone_airborne_nco_armor
-	{
-		author = "Dak";
-		displayName = "Clone Airborne NCO vest (104th Fire)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy.paa", // Heavy
-			"JangosArmory4\data\Textures\104th_AB_Fire_Officer.paa",
-			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy.paa", //Heavy
-			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy.paa" //Heavy
-		};
-		vestType="Rebreather";	
-	};
-	class JA_104th_AB_Fire_Armor_ME : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
 		displayName = "Clone Airborne NCO vest (104th Fire)";
@@ -416,7 +395,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Drifter)";
+		displayName = "Clone Trooper armor (104th Drifter)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -441,7 +420,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Niner)";
+		displayName = "Clone Trooper armor (104th Niner)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -526,7 +505,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Mad)";
+		displayName = "Clone Trooper armor (104th Mad)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -551,7 +530,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Click)";
+		displayName = "Clone Trooper armor (104th Click)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -576,7 +555,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Vision)";
+		displayName = "Clone Trooper armor (104th Vision)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -611,7 +590,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Raptor)";
+		displayName = "Clone Trooper armor (104th Raptor)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -634,7 +613,7 @@ class CfgWeapons
 	class JA_104th_ARC_Vest: SWLB_clone_officer_armor //wip
 	{
 		author="Dak";
-		displayName="Clone ARC trooper vest (104th)";
+		displayName="Clone ARC Trooper vest (104th)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		model="JangosArmory4\data\model\arcVest.p3d";
 		hiddenSelections[]=
@@ -685,7 +664,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Habit)";
+		displayName = "Clone Trooper armor (104th Habit)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -748,7 +727,7 @@ class CfgWeapons
 	class JA_104th_ME_officer_Vest : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone trooper Officer vest (ME)";
+		displayName = "Clone Trooper Officer vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -762,7 +741,7 @@ class CfgWeapons
 	class JA_104th_ME_Commander_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone trooper Commander vest (ME)";
+		displayName = "Clone Trooper Commander vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -798,7 +777,7 @@ class CfgWeapons
 	class JA_104th_Base_officer_Vest : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone trooper Officer vest (104th)";
+		displayName = "Clone Trooper Officer vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -812,7 +791,7 @@ class CfgWeapons
 	class JA_104th_Base_Commander_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone trooper Commander vest (104th)";
+		displayName = "Clone Trooper Commander vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -826,7 +805,7 @@ class CfgWeapons
 	class JA_104th_ME_Medic_Vest : SWLB_clone_medic_armor
 	{
 		author = "Dak";
-		displayName = "Clone trooper Medic vest (ME)";
+		displayName = "Clone Trooper Medic vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -880,7 +859,7 @@ class CfgWeapons
 	class JA_104th_Base_Medic_Vest : SWLB_clone_medic_armor
 	{
 		author = "Dak";
-		displayName = "Clone trooper Medic vest (104th)";
+		displayName = "Clone Trooper Medic vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -1033,7 +1012,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Beans)";
+		displayName = "Clone Trooper armor (104th Beans)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1078,7 +1057,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Woods)";
+		displayName = "Clone Trooper armor (104th Woods)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1103,7 +1082,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th IQ)";
+		displayName = "Clone Trooper armor (104th IQ)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1128,7 +1107,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Scav)";
+		displayName = "Clone Trooper armor (104th Scav)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1153,7 +1132,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Bone)";
+		displayName = "Clone Trooper armor (104th Bone)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1178,7 +1157,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Welty)";
+		displayName = "Clone Trooper armor (104th Welty)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1203,7 +1182,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th IQ ME)";
+		displayName = "Clone Trooper armor (104th IQ ME)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1238,7 +1217,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Sigil)";
+		displayName = "Clone Trooper armor (104th Sigil)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1273,7 +1252,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Bomb)";
+		displayName = "Clone Trooper armor (104th Bomb)";
 		hiddenSelections[] =
 		{
 			"camo1",

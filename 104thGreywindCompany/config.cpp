@@ -75,7 +75,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper ARF Helmet (Bolt)"; // the name it will be in game
+		displayname = "Clone Trooper ARF Helmet (Bolt)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGreywindCompany\data\Textures\Vilkas_ARF_Bolt_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Greywind_P2_Bolt_ARF_Uniform : SWLB_clone_uniform
@@ -83,7 +83,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper ARF armor (Bolt)";
+		displayName = "Clone Trooper ARF armor (Bolt)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -110,7 +110,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper ARF Helmet (Dingo)"; // the name it will be in game
+		displayname = "Clone Trooper ARF Helmet (Dingo)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGreywindCompany\data\Textures\Vilkas_ARF_Dingo_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Greywind_P2_Dingo_ARF_Uniform : SWLB_clone_uniform
@@ -118,7 +118,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper ARF armor (Dingo)";
+		displayName = "Clone Trooper ARF armor (Dingo)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -145,7 +145,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper ARF Helmet (Mouse)"; // the name it will be in game
+		displayname = "Clone Trooper ARF Helmet (Mouse)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGreywindCompany\data\Textures\Vilkas_ARF_Mouse_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Greywind_P2_Mouse_ARF_Uniform : SWLB_clone_uniform
@@ -153,7 +153,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper ARF armor (Mouse)";
+		displayName = "Clone Trooper ARF armor (Mouse)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -180,7 +180,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper ARF Helmet (Vilkas)"; // the name it will be in game
+		displayname = "Clone Trooper ARF Helmet (Vilkas)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGreywindCompany\data\Textures\Vilkas_ARF_Vilkas_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Greywind_P2_Vilkas_ARF_Uniform : SWLB_clone_uniform
@@ -188,7 +188,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper ARF armor (Vilkas)";
+		displayName = "Clone Trooper ARF armor (Vilkas)";
 		hiddenSelections[] =
 		{
 			"camo1",

@@ -83,7 +83,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper P2 armor (Gash - SGT Dire)";
+		displayName = "Clone Trooper P2 armor (Gash - SGT Dire)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -110,7 +110,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 Helmet (SGT Dire)"; // the name it will be in game
+		displayname = "Clone Trooper P2 Helmet (SGT Dire)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGashCompany\data\Textures\SGT_Dire_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Gash_P2_Lt_Bark_Uniform : SWLB_clone_uniform
@@ -118,7 +118,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper P2 armor (Gash - Lt Bark)";
+		displayName = "Clone Trooper P2 armor (Gash - Lt Bark)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -145,7 +145,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 Helmet (Lt Bark)"; // the name it will be in game
+		displayname = "Clone Trooper P2 Helmet (Lt Bark)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGashCompany\data\Textures\LT_Bark_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Gash_P2_Officer_Uniform : SWLB_clone_uniform
@@ -153,7 +153,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper P2 armor (Gash - Officer)";
+		displayName = "Clone Trooper P2 armor (Gash - Officer)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -180,7 +180,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 Helmet (Officer)"; // the name it will be in game
+		displayname = "Clone Trooper P2 Helmet (Officer)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGashCompany\data\Textures\Gash_Officer_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Gash_P2_NCO_Uniform : SWLB_clone_uniform
@@ -188,7 +188,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper P2 armor (Gash - NCO)";
+		displayName = "Clone Trooper P2 armor (Gash - NCO)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -215,7 +215,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 Helmet (NCO)"; // the name it will be in game
+		displayname = "Clone Trooper P2 Helmet (NCO)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGashCompany\data\Textures\Gash_NCO_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Gash_P2_Base_Uniform : SWLB_clone_uniform
@@ -223,7 +223,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper P2 armor (Gash - Base)";
+		displayName = "Clone Trooper P2 armor (Gash - Base)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -250,7 +250,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 Helmet (Base)"; // the name it will be in game
+		displayname = "Clone Trooper P2 Helmet (Base)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGashCompany\data\Textures\Gash_Helmet_P3_3.paa" }; // the file path to the texture
 	};
 	class JA_Gash_P2_Medic_Uniform : SWLB_clone_uniform
@@ -258,7 +258,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper P2 armor (Gash - Medic)";
+		displayName = "Clone Trooper P2 armor (Gash - Medic)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -285,7 +285,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper BARC Helmet (Base)"; // the name it will be in game
+		displayname = "Clone Trooper BARC Helmet (Base)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGashCompany\data\Textures\Gash_Barc_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Gash_P1_Captain_Tre_Helmet : SWLB_clone_P1_helmet
@@ -295,7 +295,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P1 Helmet (Captain Tre)"; // the name it will be in game
+		displayname = "Clone Trooper P1 Helmet (Captain Tre)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGashCompany\data\Textures\Captain_tre_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Gash_P1_Captain_Tre_Uniform : SWLB_clone_uniform
@@ -303,7 +303,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper P1 armor (Captain Tre)";
+		displayName = "Clone Trooper P1 armor (Captain Tre)";
 		hiddenSelections[] =
 		{
 			"camo1",

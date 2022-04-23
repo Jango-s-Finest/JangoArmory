@@ -127,7 +127,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Bail)";
+		displayName = "Clone Trooper armor (104th Bail)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -157,7 +157,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Scurvy)";
+		displayName = "Clone Trooper armor (104th Scurvy)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -185,7 +185,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Hunter)";
+		displayName = "Clone Trooper armor (104th Hunter)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -212,7 +212,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Banker)";
+		displayName = "Clone Trooper armor (104th Banker)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -239,7 +239,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Ed)";
+		displayName = "Clone Trooper armor (104th Ed)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -265,7 +265,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Archangel)";
+		displayName = "Clone Trooper armor (104th Archangel)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -292,7 +292,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Knightfall)";
+		displayName = "Clone Trooper armor (104th Knightfall)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -318,7 +318,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Tusk)";
+		displayName = "Clone Trooper armor (104th Tusk)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -344,7 +344,7 @@ class CfgWeapons
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Echo)";
+		displayName = "Clone Trooper armor (104th Echo)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -410,7 +410,7 @@ class CfgWeapons
 	class JA_104thKnightfallVest : SWLB_clone_commander_armor
 	{
 		author = "Tundra";
-		displayName = "Clone trooper commander vest (104th Knightfall)";
+		displayName = "Clone Trooper commander vest (104th Knightfall)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -426,7 +426,7 @@ class CfgWeapons
 	class JA_104thTuskVest : SWLB_clone_commander_armor
 	{
 		author = "Tundra";
-		displayName = "Clone trooper commander vest (104th Tusk)";
+		displayName = "Clone Trooper commander vest (104th Tusk)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -442,7 +442,7 @@ class CfgWeapons
 	class JA_104thPSGTKama : SWLB_clone_kama_armor
 	{
 		author = "Tundra";
-		displayName = "Clone trooper Kama (104th)";
+		displayName = "Clone Trooper Kama (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -819,7 +819,7 @@ class CfgVehicles
 		author = "Tundra";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper backpack (104th)";
+		displayname = "Clone Trooper backpack (104th)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory\data\Textures\104th_Clone_Backpack_Normal.paa", // don't change this
@@ -833,7 +833,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper Heavy backpack (104th)";
+		displayname = "Clone Trooper Heavy backpack (104th)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory\data\Textures\104th_Clone_Backpack_Normal.paa", // don't change this
@@ -847,7 +847,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper medic backpack (104th)";
+		displayname = "Clone Trooper medic backpack (104th)";
 		maximumLoad = 300;
 		hiddenSelectionsTextures[] =
 		{
@@ -862,7 +862,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper RTO backpack (104th)";
+		displayname = "Clone Trooper RTO backpack (104th)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory\data\Textures\104th_Clone_Backpack_Normal.paa", // don't change this
@@ -876,7 +876,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper RTO mini backpack (104th)";
+		displayname = "Clone Trooper RTO mini backpack (104th)";
 		maximumLoad = 200;
 		hiddenSelectionsTextures[] =
 		{

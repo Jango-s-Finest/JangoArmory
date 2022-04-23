@@ -102,7 +102,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper ARF Helmet (Malevolence)"; // the name it will be in game
+		displayname = "Clone Trooper ARF Helmet (Malevolence)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_ARF_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Malevolence_Base_ARF_Uniform : SWLB_clone_uniform
@@ -110,7 +110,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper ARF armor (Malevolence)";
+		displayName = "Clone Trooper ARF armor (Malevolence)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -137,7 +137,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper Helmet (Malevolence)"; // the name it will be in game
+		displayname = "Clone Trooper Helmet (Malevolence)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_Trooper_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Malevolence_Base_Uniform : SWLB_clone_uniform
@@ -145,7 +145,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (Malevolence)";
+		displayName = "Clone Trooper armor (Malevolence)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -172,7 +172,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper medic Helmet (Malevolence)"; // the name it will be in game
+		displayname = "Clone Trooper medic Helmet (Malevolence)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_Medic_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Malevolence_Base_Medic_Uniform : SWLB_clone_uniform
@@ -180,7 +180,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper medic armor (Malevolence)";
+		displayName = "Clone Trooper medic armor (Malevolence)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -308,7 +308,7 @@ class CfgVehicles
 		author = "Tundra";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone trooper backpack (Malevolence)";
+		displayname = "Clone Trooper backpack (Malevolence)";
 		hiddenSelectionsTextures[] =
 		{
 			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
@@ -322,7 +322,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper Heavy backpack (Malevolence)";
+		displayname = "Clone Trooper Heavy backpack (Malevolence)";
 		hiddenSelectionsTextures[] =
 		{
 			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
@@ -336,7 +336,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper medic backpack (Malevolence)";
+		displayname = "Clone Trooper medic backpack (Malevolence)";
 		hiddenSelectionsTextures[] =
 		{
 			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
@@ -350,7 +350,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper RTO backpack (Malevolence)";
+		displayname = "Clone Trooper RTO backpack (Malevolence)";
 		hiddenSelectionsTextures[] =
 		{
 			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
@@ -364,7 +364,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper RTO backpack (Invisible)";
+		displayname = "Clone Trooper RTO backpack (Invisible)";
 		maximumLoad = 200;
         picture = "JangosArmory\jfalogo.paa";
 		hiddenSelectionsTextures[] =
@@ -381,7 +381,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone trooper backpack (Invisible)";
+		displayname = "Clone Trooper backpack (Invisible)";
         picture = "JangosArmory\jfalogo.paa";
 		maximumLoad = 280;
 		mass='20';

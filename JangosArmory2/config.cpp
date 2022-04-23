@@ -131,7 +131,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
-		displayname = "Clone trooper Desert Helmet (Medic)"; // the name it will be in game
+		displayname = "Clone Trooper Desert Helmet (Medic)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_Medic.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
 	};
 
@@ -142,7 +142,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
-		displayname = "Clone trooper Desert Helmet (Medic NCO)"; // the name it will be in game
+		displayname = "Clone Trooper Desert Helmet (Medic NCO)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_Medic_NCO.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
 	};
 
@@ -153,7 +153,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
-		displayname = "Clone trooper Desert Helmet (NCO)"; // the name it will be in game
+		displayname = "Clone Trooper Desert Helmet (NCO)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_NCO.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
 	};
 
@@ -164,7 +164,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
-		displayname = "Clone trooper Desert Helmet (Officer)"; // the name it will be in game
+		displayname = "Clone Trooper Desert Helmet (Officer)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_Officer.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
 	};
 
@@ -175,7 +175,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
-		displayname = "Clone trooper Desert Helmet (Base)"; // the name it will be in game
+		displayname = "Clone Trooper Desert Helmet (Base)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_Desert_Helmet_Base_Trooper.paa","JangosArmory2\data\Textures\Visor_Desert.paa" }; // the file path to the texture
 	};
 
@@ -186,7 +186,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper P2 Helmet (Medic)"; // the name it will be in game
+		displayname = "Clone Trooper P2 Helmet (Medic)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_P2_Medic_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -195,7 +195,7 @@ class CfgWeapons
 		author = "Dak";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper P2 Armor (Medic)";
+		displayName = "Clone Trooper P2 Armor (Medic)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -223,7 +223,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper Airborne Helmet (Base)"; // the name it will be in game
+		displayname = "Clone Trooper Airborne Helmet (Base)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_AB_Base_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -234,7 +234,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone trooper Airborne Helmet (Medic)"; // the name it will be in game
+		displayname = "Clone Trooper Airborne Helmet (Medic)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_AB_Medic_Helmet.paa" }; // the file path to the texture
 	};
 
@@ -243,7 +243,7 @@ class CfgWeapons
 		author = "Dak";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper Airborne Armor (Medic)";
+		displayName = "Clone Trooper Airborne Armor (Medic)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -837,7 +837,7 @@ class CfgWeapons
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // dont change this
-		displayName = "Clone trooper AB Helmet (104th Dragon)"; // the name it will be in game
+		displayName = "Clone Trooper AB Helmet (104th Dragon)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_P2_Dragon_Helmet.paa" }; // the file path to the texture
 	};
 	
@@ -846,7 +846,7 @@ class CfgWeapons
 		author = "Dak";
 			scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Dragon)";
+		displayName = "Clone Trooper armor (104th Dragon)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -875,7 +875,7 @@ class CfgWeapons
 		author = "Tundra";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone trooper armor (104th Beans)";
+		displayName = "Clone Trooper armor (104th Beans)";
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
