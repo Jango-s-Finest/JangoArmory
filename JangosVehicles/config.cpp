@@ -50,6 +50,7 @@ class CfgPatches
 			"JA_104th_HeavyRepeater_Unarmoured",
 			"JA_104th_ATRT",
 			//"BaseShield100mSpawner",
+			//"BaseShield500mSpawner",
 			//"JA_104th_Droideka_Mobile",
 			//"JA_104th_Droideka_Sniper",
 			"JA_104th_Vulture_dynamicLoadout_base",
@@ -6600,9 +6601,8 @@ class cfgVehicles {
 		hiddenSelections[] = {};
 		scope = 2;
 		scopeCurator = 2;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		author = "Echo";
+		armor = 10000;
 		class EventHandlers: DefaultEventhandlers
 		{
 			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\BaseShieldInit.sqf';";
@@ -6641,10 +6641,39 @@ class cfgVehicles {
 		author = "Echo";
 		class EventHandlers: DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\BaseShieldSpawner.sqf';";
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\100mBaseShieldSpawner.sqf';";
 			killed="deleteVehicle (_this select 0)";
 		};
+	};
+	class BaseShield500m: House_F {
 		
+		displayname = "Base Shield Sphere 500m";
+		model = "JangosVehicles\data\models\500mBubble.p3d";
+		hiddenSelections[] = {};
+		scope = 2;
+		scopeCurator = 2;
+		author = "Echo";
+		armor = 10000;
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\BaseShieldInit.sqf';";
+			killed="deleteVehicle (_this select 0)";
+		};
+	};
+	class BaseShield500mSpawner: B_UGV_01_F
+	{
+		
+		displayname = "500m Base Shield Spawner";
+		scope = 2;
+		scopeCurator = 2;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		author = "Echo";
+		class EventHandlers: DefaultEventhandlers
+		{
+			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\500mBaseShieldSpawner.sqf';";
+			killed="deleteVehicle (_this select 0)";
+		};
 	};*/
 	
 	class Land_HelipadEmpty_F;
