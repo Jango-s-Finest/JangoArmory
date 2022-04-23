@@ -14,10 +14,18 @@ class CfgPatches
 			"JA_104th_Loner",
 			"JA_104th_Sigil",
 			'JA_104th_Fire',
+			'JA_104th_Beef',
 		};
 		weapons[] = {
 			"JA_104th_Fire_Helmet",
 			'JA_104th_Fire_Uniform',
+			"JA_104th_Fire_Helmet_ME",
+			'JA_104th_Fire_Uniform_ME',
+			'JA_104th_Beef_Uniform',
+			'JA_104th_Byte_Helmet',
+			'JA_104th_Dart_Helmet'.
+			'JA_104th_Dragan_Helmet',
+			'JA_104th_Engineer_Base_Helmet',
 			"JA_104th_Axel_Helmet_ME",
 			"JA_104th_Axel_Uniform",
 			"JA_104th_Shovel_Helmet",
@@ -172,6 +180,46 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Pretz)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_P2_Pretz_Helmet.paa" }; // the file path to the texture
 	};
+	class JA_104th_Byte_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Byte)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_P2_Byte_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Dart_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Dart)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_P2_Dart_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Dragan_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Dragan)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_P2_Dragan_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Engineer_Base_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Engineer Helmet (104th Base)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_Engineer_Helmet_Base.paa" }; // the file path to the texture
+	};
 	class JA_104th_Clutch_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -192,6 +240,31 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Clutch";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Beef_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Beef)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_Pilot_Beef_Upper.paa",
+			"JangosArmory5\data\Textures\104th_Pilot_Beef_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Beef";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -415,6 +488,42 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Fire_Helmet_ME : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper AB Helmet (104th Fire ME)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_AB_Fire_Helmet_Malevolence.paa" }; // the file path to the texture
+	};
+	
+	class JA_104th_Fire_Uniform_ME : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone trooper armor (104th Fire ME)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory5\data\Textures\104th_AB_Fire_Upper_Malevolence.paa",
+			"JangosArmory5\data\Textures\104th_AB_Fire_Lower_Malevolence.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Fire_ME";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -510,6 +619,38 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_AB_Fire_Upper.paa", "JangosArmory5\data\Textures\104th_AB_Fire_Lower.paa"};
 		linkedItems[] = { JA_104th_Fire_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Fire_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Fire_ME : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Fire_Uniform_ME";
+		displayName = "104th Fire ME";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_AB_Fire_Upper_Malevolence.paa", "JangosArmory5\data\Textures\104th_AB_Fire_Lower_Malevolence.paa"};
+		linkedItems[] = { JA_104th_Fire_Helmet_ME,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Fire_Helmet_ME,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Beef : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Beef_Uniform";
+		displayName = "104th Beef";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Pilot_Beef_Upper.paa", "JangosArmory5\data\Textures\104th_Pilot_Beef_Lower.paa"};
+		linkedItems[] = { JA_104th_Beef_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Beef_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR
 	{

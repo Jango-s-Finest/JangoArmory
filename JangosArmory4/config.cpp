@@ -87,6 +87,7 @@ class CfgPatches
 			"JA_104th_Welty_Helmet",
 			"JA_104th_Welty_Uniform",
 			'JA_104th_AB_Fire_Armor',
+			'JA_104th_AB_Fire_Armor_ME',
 			'JA_104th_Trustful_Helmet',
 			'JA_104th_Trustful_Uniform',
 			'JA_104th_Click_Uniform',
@@ -357,6 +358,26 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_AB_Fire_Officer.paa",
 			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy.paa" //Heavy
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_AB_Fire_Armor_ME : SWLB_clone_airborne_nco_armor
+	{
+		author = "Dak";
+		displayName = "Clone Airborne NCO vest (104th Fire)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy_Malevolence.paa", // Heavy
+			"JangosArmory4\data\Textures\104th_AB_Fire_Officer_Malevolence.paa",
+			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy_Malevolence.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy_Malevolence.paa" //Heavy
 		};
 		vestType="Rebreather";	
 	};
