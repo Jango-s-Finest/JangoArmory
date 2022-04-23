@@ -77,6 +77,8 @@ _vic addAction [
             [_target, ["shield_broken", 300, 1, 1]] remoteExec ["say3D"];
             
             _target allowDamage true;
+			_viccrew = crew _target;
+			{ _x allowDamage false; } forEach _viccrew;
             
             _target removeEventHandler ["HitPart", _index];
             
