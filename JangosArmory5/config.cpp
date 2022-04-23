@@ -14,7 +14,7 @@ class CfgPatches
 			"JA_104th_Loner",
 			"JA_104th_Sigil",
 			'JA_104th_Fire',
-			'JA_104th_Beef',
+			'JA_104th_Beef'
 		};
 		weapons[] = {
 			"JA_104th_Fire_Helmet",
@@ -23,7 +23,7 @@ class CfgPatches
 			'JA_104th_Fire_Uniform_ME',
 			'JA_104th_Beef_Uniform',
 			'JA_104th_Byte_Helmet',
-			'JA_104th_Dart_Helmet'.
+			'JA_104th_Dart_Helmet',
 			'JA_104th_Dragan_Helmet',
 			'JA_104th_Engineer_Base_Helmet',
 			"JA_104th_Axel_Helmet_ME",
@@ -41,7 +41,7 @@ class CfgPatches
 			"JA_104th_Sigil_Helmet",
 			"JA_104th_Sigil_Uniform",
 			"JA_104th_Sigil_Vest",
-			"JA_104th_Sigil_NVG_NCO",
+			"JA_104th_Sigil_NVG_NCO"
 		};
 	};
 };
