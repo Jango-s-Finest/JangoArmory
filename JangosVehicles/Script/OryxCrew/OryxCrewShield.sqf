@@ -52,7 +52,7 @@ _vic addEventHandler ["GetOut", {
 }];
 /* Leaving the Commander seat spawns you above ground, causing you to fall. By having the Sleep timer, you reach the ground before you become mortal again. */
 
-_vic setVariable ["104thVicShieldStrength", 1000];
+_vic setVariable ["104thVicShieldStrength", 1000, true];
 
 [_vic] execVM "\JangosVehicles\Script\Shield\OryxShieldAction.sqf";
 

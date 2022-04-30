@@ -4305,10 +4305,12 @@ class cfgVehicles {
 		unitInfoType = "RscOptics_CAS_Pilot";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
 		weapons[] = {"OPTRE_M638","CMFlareLauncher","Laserdesignator_pilotCamera"};
+		magazines[] = {"OPTRE_2000Rnd_20mm_HE","OPTRE_2000Rnd_20mm_HE","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
 		class Components
 		{
 			class TransportPylonsComponent
 			{
+				UIPicture = "\OPTRE_Vehicles\falcon\FalconPylonPic.paa";
 				class pylons
 				{
 					class WingPylonRight1
@@ -4657,6 +4659,54 @@ class cfgVehicles {
 						resource = "RscCustomInfoCrew";
 					};
 				};
+			};
+		};
+		class UserActions
+		{
+			class FullAirbrakeEngage
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_FullAirbrakeEngage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_Thruster400Engage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_Thruster400Disengage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
 			};
 		};
 	};
@@ -7033,7 +7083,31 @@ class CfgWeapons
 	class JA_104th_Engineer_EWEB_Vest: SWLB_CEE_Engineer_Vest_NCO
 	{
 		
-		maximumLoad = 200;
+		Displayname = "Clone Engineer E-Web vest";
+		
+		class ItemInfo
+		{
+			_generalMacro = "VestItem";
+			author = "Bohemia Interactive";
+			containerClass = "Supply450";
+			hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
+			mass = 80;
+			overlaySelectionsInfo[] = {"Ghillie_hide"};
+			scope = 0;
+			showHolsteredPistol = 0;
+			type = 701;
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
+			uniformType = "Default";
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					armor = 6;
+					hitpointName = "HitLegs";
+					passThrough = 0.3;
+				};
+			};
+		};
 		
 	};
 };

@@ -55,7 +55,7 @@ _plane setVariable ["ECMJAMMER","no",true];
 _plane setVariable ["ITGT_TGT_LIST",[],true];
 _plane setVariable ["ITGT_HP_LIST",[],true];
 
-_vic setVariable ["104thVicShieldStrength", 500];
+_vic setVariable ["104thVicShieldStrength", 500, true];
 
 [_vic] execVM "\JangosVehicles\Script\Shield\Z95ShieldAction.sqf";
 
