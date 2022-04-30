@@ -7,9 +7,9 @@ while { alive _vic } do {
 	if ( _shieldregen < 1000 ) then { 
 		_shieldregen = _shieldregen + 100;
 		if ( _shieldregen > 1000 ) then { _shieldregen = 1000; };
-		_vic setVariable ["104thVicShieldStrength", _shieldregen];
+		_vic setVariable ["104thVicShieldStrength", _shieldregen, true];
 		_shieldhealth = ( _shieldregen / 10 );
-		_vic vehiclechat ("Shield Health raised to " + str(_shieldhealth) + "%");
+		[_vic, ("Shield Health raised to " + str(_shieldhealth) + "%")] remoteExec ["vehiclechat"];
 	};
 	
 	sleep 30;
