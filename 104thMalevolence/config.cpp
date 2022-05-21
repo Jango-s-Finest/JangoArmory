@@ -366,7 +366,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO backpack (Invisible)";
 		maximumLoad = 200;
-        picture = "JangosArmory\jfalogo.paa";
+        picture = "JangosArmory1\jfalogo.paa";
 		hiddenSelectionsTextures[] =
 		{
 			"", // don't change this
@@ -382,7 +382,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Invisible)";
-        picture = "JangosArmory\jfalogo.paa";
+        picture = "JangosArmory1\jfalogo.paa";
 		maximumLoad = 280;
 		mass='20';
 		hiddenSelectionsTextures[] =

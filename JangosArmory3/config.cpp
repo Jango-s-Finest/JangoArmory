@@ -598,10 +598,10 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 			"JangosArmory3\data\Textures\officer_Kama_Carmine.paa",
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory\data\Textures\104th_Accessories_Heavy.paa" //Heavy
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa" //Heavy
 		};
 		vestType="Rebreather";	
 	};

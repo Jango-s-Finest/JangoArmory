@@ -718,9 +718,9 @@ class CfgWeapons
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa", 
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa", 
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"
 		};
 		vestType="Rebreather";	
 	};
@@ -734,7 +734,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"
 		};
 		vestType="Rebreather";	
 	};
@@ -748,7 +748,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"
 		};
 		vestType="Rebreather";	
 	};
@@ -830,7 +830,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", // Heavy
-			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa",
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa",
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa" //Heavy
 		};
@@ -850,7 +850,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", // Heavy
-			"JangosArmory\data\Textures\104th_ME_Pauldron_and_Kama.paa",
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa",
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa" //Heavy
 		};
