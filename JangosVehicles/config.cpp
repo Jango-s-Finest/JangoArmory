@@ -220,9 +220,10 @@ class cfgVehicles {
 	class Box_212_Medical_F;
 	
 	//Classes for the Vulture Rebalance
-	class 3as_Vulture_dynamicLoadout;
-	class 3as_Vulture_dynamicLoadout_AA;
-	class 3as_Vulture_dynamicLoadout_Bare;
+	class 3AS_Vulture_Base_F;
+	class 3AS_CIS_Vulture_F;
+	class 3AS_CIS_Vulture_AA_F;
+	class 3AS_CIS_Vulture_CAS_F;
 
 	class JA_Base_LAAT: lsd_heli_laati {
 		faction = "104th_Guys";
@@ -5355,7 +5356,7 @@ class cfgVehicles {
 		};
 	};
 	
-	class JA_104th_vulture_dynamicLoadout_base: 3as_vulture_dynamicLoadout_base {
+	class JA_104th_vulture_dynamicLoadout_base: 3AS_Vulture_Base_F {
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
