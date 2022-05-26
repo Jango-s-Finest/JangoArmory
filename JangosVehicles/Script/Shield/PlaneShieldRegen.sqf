@@ -1,5 +1,6 @@
 params ["_vic"];
 
+if (isServer) then {
 while { alive _vic } do {
 	
 	_shieldregen = _vic getVariable "104thVicShieldStrength";
@@ -14,4 +15,5 @@ while { alive _vic } do {
 	
 	sleep 30;
 	
+};
 };
