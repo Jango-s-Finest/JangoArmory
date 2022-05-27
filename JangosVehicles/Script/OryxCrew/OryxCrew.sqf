@@ -39,7 +39,7 @@ _vic addAction [
         nil, 1e-4, false, true, "", "_this in _target", -1, false
     ];
 	
-__vic addEventHandler ["GetIn", {
+_vic addEventHandler ["GetIn", {
 	params ["_vehicle", "_role", "_unit", "_turret"];
 	_unit allowDamage false;
 }];
