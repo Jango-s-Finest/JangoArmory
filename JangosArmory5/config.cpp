@@ -519,7 +519,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper AB Helmet (104th Misfire)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_AB_Misfire_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_AB_Misfire_Helmet.paa" }; // the file path to the texture
 	};
 	
 	class JA_104th_Fire_Uniform_ME : SWLB_clone_uniform
@@ -934,7 +934,7 @@ class CfgVehicles
 			"" // RTO
 		};
 	};
-	class JA_104th_Medic_Backpack_Cerberus_1 : SWLB_clone_backpack_medic
+	class JA_104th_Medic_Backpack_Cerberus_2 : SWLB_clone_backpack_medic
 	{
 		author = "Tundra";
 		scopeCurator = 2;
@@ -992,7 +992,7 @@ class CfgVehicles
 			"" // RTO
 		};
 	};
-	class JA_104th_Medic_Backpack_Cerberus_1 : SWLB_clone_backpack_medic
+	class JA_104th_Medic_Backpack_Cerberus_3 : SWLB_clone_backpack_medic
 	{
 		author = "Tundra";
 		scopeCurator = 2;
@@ -1050,7 +1050,7 @@ class CfgVehicles
 			"" // RTO
 		};
 	};
-	class JA_104th_Medic_Backpack_Cerberus_1 : SWLB_clone_backpack_medic
+	class JA_104th_Medic_Backpack_Cerberus_4 : SWLB_clone_backpack_medic
 	{
 		author = "Tundra";
 		scopeCurator = 2;

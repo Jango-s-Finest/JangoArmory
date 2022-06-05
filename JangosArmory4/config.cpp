@@ -162,6 +162,7 @@ class CfgWeapons
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_P2_SpecOps_Helmet;
+	class SWLB_clone_recon_officer_armor;
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
@@ -360,23 +361,19 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
-	class JA_104th_P2_Scav_Armor : SWLB_clone_airborne_nco_armor
+	class JA_104th_P2_Scav_Armor : SWLB_clone_recon_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne NCO vest (104th Scav)";
+		displayName = "Clone NCO vest (104th Scav)";
 		hiddenSelections[] =
 		{
 			"camo1",
 			"camo2",
-			"camo3",
-			"camo4"
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory4\data\Textures\104th_P2_Scav_Heavy_Malevolence.paa", // Heavy
-			"",
-			"JangosArmory4\data\Textures\104th_P2_Scav_Heavy_Malevolence.paa", //Heavy
-			"JangosArmory4\data\Textures\104th_P2_Scav_Heavy_Malevolence.paa" //Heavy
+			"\SWLB_clones\data\heavy_accessories_co.paa",
+			"JangosArmory4\data\Textures\104th_P2_Scav_Kama.paa", // Heavy
 		};
 		vestType="Rebreather";	
 	};
