@@ -635,7 +635,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper Pilot Helmet (104th Varelli)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory1\data\Textures\104th_Pilot_Varelli_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_Pilot_Varelli_Helmet.paa" }; // the file path to the texture
 	};
 };
 
