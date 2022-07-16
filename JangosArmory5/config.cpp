@@ -597,6 +597,46 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Axel_Vest : SWLB_Clone_airborne_armor
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Trooper vest (Axel)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+			"JangosArmory5\data\Textures\104th_AB_Axel_Kama.paa",
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa" //Heavy
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_Ghost_Helmet : SWLB_P2_SpecOps_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Special Activities Helmet (104th Ghost)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_JTAC_Ghost_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Varelli_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Pilot Helmet (104th Varelli)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "JangosArmory1\data\Textures\104th_Pilot_Varelli_Helmet.paa" }; // the file path to the texture
+	};
 };
 
 class CfgVehicles
