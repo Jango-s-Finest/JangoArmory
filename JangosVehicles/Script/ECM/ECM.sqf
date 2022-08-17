@@ -28,6 +28,7 @@ if (_missile_sensor_act >= 0 or _missile_sensor_pas >= 0) then
 	_ewdir = getdir _mssl;
 	_ewdir = _ewdir - 180;
 	_mssl setdir _ewdir;
+	sleep 0.5;
 	_plane vehiclechat "SYSTEM: ENEMY MISSILE JAMMED";
 	deletevehicle _mssl;
 }
@@ -40,6 +41,7 @@ else
 	_ewdir = getdir _mssl;
 	_ewdir = _ewdir - 180;
 	_mssl setdir _ewdir;
+	sleep 0.5;
 	_plane vehiclechat "SYSTEM: ENEMY MISSILE JAMMED";
 	deletevehicle _mssl;
 };
