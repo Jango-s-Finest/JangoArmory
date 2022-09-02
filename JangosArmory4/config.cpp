@@ -163,6 +163,7 @@ class CfgWeapons
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_P2_SpecOps_Helmet;
 	class SWLB_clone_recon_officer_armor;
+	class ls_gar_phase2Arf_helmet;
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
@@ -1049,15 +1050,18 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_IQ_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_IQ_Helmet : ls_gar_phase2Arf_helmet
 	{
-		author = "Ice";
+		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper ARF Helmet (104th IQ)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_ARF_IQ_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = {
+			"JangosArmory4\data\Textures\104th_ARF_IQ_Helmet_Malevolence.paa",
+			"JangosArmory4\data\Textures\104th_ARF_IQ_Flaps.paa",
+			"JangosArmory4\data\Textures\104th_ARF_IQ_Helmet_Malevolence.paa"
+		}; // the file path to the texture
 	};
 	class JA_104th_IQ_Helmet_ME : SWLB_clone_ARF_P1_Helmet
 	{
