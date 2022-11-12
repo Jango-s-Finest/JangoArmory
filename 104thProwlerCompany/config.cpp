@@ -65,7 +65,7 @@ class CfgWeapons
 	class SWLB_Clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_clone_BARC_helmet;
-	class ls_gar_engineer_helmet;
+	class SWLB_clone_eng_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
@@ -230,7 +230,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Medic - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thProwlerCompany\data\Textures\Prowler_Armored_Medic_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Prowler_ENG_Base_Helmet : ls_gar_engineer_helmet
+	class JA_Prowler_ENG_Base_Helmet : SWLB_clone_eng_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -247,7 +247,7 @@ class CfgWeapons
 			"104thProwlerCompany\data\Textures\Prowler_ENG_Engineer_Helmet.paa" 
 		}; // the file path to the texture
 	};
-	class JA_Prowler_ENG_Officer_Helmet : ls_gar_engineer_helmet
+	class JA_Prowler_ENG_Officer_Helmet : SWLB_clone_eng_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
