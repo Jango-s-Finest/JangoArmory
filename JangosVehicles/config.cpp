@@ -4985,6 +4985,8 @@ class cfgVehicles {
         side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		weapons[] = {"CMFlareLauncher","OPTRE_missiles_Anvil1","Laserdesignator_pilotCamera"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -7923,6 +7925,12 @@ class cfgVehicles {
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		class TransportWeapons
 		{
+			class _xx_ls_weapon_rps6{
+				count = 1;
+				weapon = "ls_weapon_rps6";
+			};
+		};
+			/*
 			class _xx_SWLW_DC15A{
 				count = 1;
 				weapon = "SWLW_DC15A";
@@ -7947,11 +7955,7 @@ class cfgVehicles {
 				count = 1;
 				weapon = "3AS_DC15S_F";
 			};
-			class _xx_ls_weapon_rps6{
-				count = 1;
-				weapon = "ls_weapon_rps6";
-			};
-		};
+			*/
 		class TransportMagazines
 		{
 			class _xx_JLTS_DC15A_mag{
@@ -7994,6 +7998,10 @@ class cfgVehicles {
 				count = 10;
 				magazine = "3AS_60rnd_EC30_Mag";
 			};
+			class _xx_3AS_DC15L_mag{
+				count = 5;
+				magazine = "3AS_200rnd_EC40_Mag";
+			};
 			class _xx_SWLW_DC17_mag{
 				count = 10;
 				magazine = "SWLW_DC17_mag";
@@ -8001,6 +8009,10 @@ class cfgVehicles {
 			class _xx_501_DC15X_mag{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_40mw5";
+			};
+			class _xx_501_DC15L_mag{
+				count = 5;
+				magazine = "AUX501_Weapons_Mags_20mw240";
 			};
 			class _xx_SWLW_smokeRed_mag{
 				count = 5;
