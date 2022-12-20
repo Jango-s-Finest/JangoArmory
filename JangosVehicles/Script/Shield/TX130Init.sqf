@@ -1,8 +1,10 @@
 params ["_vic"];
 
+if (isServer) then {
 _vic setVariable ["104thVicShieldStrength", 1000, true];
 
 _vic setVariable ["104thVicShieldOn", 0, true];
+};
 
 [_vic, ["HitPart", { 
 				_handle = _this spawn { 

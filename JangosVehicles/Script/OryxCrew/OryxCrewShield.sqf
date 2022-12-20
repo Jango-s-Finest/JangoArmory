@@ -52,9 +52,12 @@ _vic addEventHandler ["GetOut", {
 }];
 /* Leaving the Commander seat spawns you above ground, causing you to fall. By having the Sleep timer, you reach the ground before you become mortal again. */
 
+
+if (isServer) then {
 _vic setVariable ["104thVicShieldStrength", 1000, true];
 
 _vic setVariable ["104thVicShieldOn", 0, true];
+};
 
 [_vic, ["HitPart", { 
 				_handle = _this spawn { 

@@ -6808,6 +6808,10 @@ class cfgVehicles {
 				userActionID = 53;
 			};
 		};
+		class EventHandlers: DefaultEventhandlers
+		{
+			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\NuInit.sqf';";
+		};
 	};
 	
 	class 3AS_ATRT;

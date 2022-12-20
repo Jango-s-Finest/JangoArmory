@@ -55,9 +55,12 @@ _plane setVariable ["ECMJAMMER","no",true];
 _plane setVariable ["ITGT_TGT_LIST",[],true];
 _plane setVariable ["ITGT_HP_LIST",[],true];
 
+
+if (isServer) then {
 _vic setVariable ["104thVicShieldStrength", 500, true];
 
 _vic setVariable ["104thVicShieldOn", 0, true];
+};
 
 [_vic, ["HitPart", { 
 				_handle = _this spawn { 
