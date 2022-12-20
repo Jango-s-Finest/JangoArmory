@@ -3,17 +3,8 @@ class CfgPatches
 	class Jangos_Armory_Vehicles
 	{
 		units[] = {
-			"JA_Base_LAAT",
-			"JA_Base_LAAT_AB",
-			"JA_104th_Base_LAAT",
-			"JA_104th_Base_LAAT_AB",
-			"JA_104th_Base_LAAT_Medic",
-			"JA_104th_Echo_LAAT",
-			"JA_104th_Echo_LAAT_AB",
-			"JA_104th_Bail_LAAT",
-			"JA_104th_Bail_LAAT_AB",
-			"JA_104th_Beef_LAAT",
-			"JA_104th_Beef_LAAT_AB",
+			"JA_104th_LAAT",
+			"JA_104th_LAAT_AB",
 			"JA_104th_Base_LAAT_C",
 			"JA_104th_Base_LAAT_Mk3",
 			"JA_104th_Base_Vwing_Reaper",
@@ -31,6 +22,7 @@ class CfgPatches
 			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
 			"JA_104th_Box_Medic",
+			"JA_104th_Box_Resupply",
 			"JA_104th_BARC",
 			"JA_104th_BARC_WP",
 			"JA_104th_BARC_Talon",
@@ -40,12 +32,13 @@ class CfgPatches
 			"JA_104th_BARC_Medic",
 			"JA_104th_Oryx",
 			"JA_104th_OryxNS",
-			"104th_APC_Light_Bantha",
-			"104th_LSV",
+			"JA_104th_APC_Light_Bantha",
+			"JA_104th_LSV",
 			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
 			"JA_104th_3AS_Reaper_Y_Wing",
 			"JA_104th_3AS_Reaper_Y_Wing_Blue",
 			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
+			"JA_104th_NU",
 			//"JA_104th_Droideka_Normal",
 			//"BaseShield100m",
 			"JA_104th_Republic_HR_Bag",
@@ -60,9 +53,9 @@ class CfgPatches
 			"JA_104th_Vulture_dynamicLoadout_AA",
 			"JA_104th_Vulture_dynamicLoadout_Bare"
 		};	//All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {};
+		weapons[] = {"JA_104th_guided_resupply_pod_launcher"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03","A3_Armor_F_Beta", "A3_Soft_F"};
+		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03","A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu"};
 	};
 };
 
@@ -117,7 +110,6 @@ class cfgVehicles {
 	class SWLG_tanks_tx130;
 
 	class lsd_laat_base;
-	class lsd_heli_laati;
 	class lsd_heli_laati_transport;
 	class lsd_heli_laati_ab; 
 	class lsd_laatc_base;
@@ -225,10 +217,15 @@ class cfgVehicles {
 	class 3AS_CIS_Vulture_AA_F;
 	class 3AS_CIS_Vulture_CAS_F;
 
-	class JA_Base_LAAT: lsd_heli_laati {
+	class lsd_heli_laati: lsd_laat_base
+	{
+		class ACE_SelfActions;
+	};
+	class JA_104th_LAAT: lsd_heli_laati
+	{
+		displayName = "LAAT-E 104th";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		displayName = "LAAT-E"; 
 		
 		armor = 250;
 		armorStructural = 2;
@@ -247,8 +244,8 @@ class cfgVehicles {
 		crewCrashProtection = 0.00001;
 		radarType = 4;
 		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","212th_A2A_MissileSystem","missiles_DAR","Laserdesignator_pilotCamera","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","212th_A2A_MissileSystem","missiles_DAR","Laserdesignator_pilotCamera","JA_104th_guided_resupply_pod_launcher","CMFlareLauncher"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","JA_104th_Guided_Resupply_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
 
 		memoryPointDriverOptics = "slingcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
@@ -750,7 +747,7 @@ class cfgVehicles {
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 5;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"}; //hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"}; //hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
 						turret[] = {0};
 						UIposition[] = {0.06,0.4};
 					};
@@ -758,14 +755,14 @@ class cfgVehicles {
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 4;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
 						UIposition[] = {0.08,0.35};
 					};
 					class PylonLeft3: PylonLeft1
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 3;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
 						UIposition[] = {0.1,0.3};
 					};
 					class PylonRight3: PylonLeft3
@@ -966,10 +963,162 @@ class cfgVehicles {
 			};
 		};
 		
+		
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "104th";
+				author = "Legion Studio + Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+				factions[] = {"104th_Guys"};
+			};
+			
+			class logo: base
+			{
+				displayName = "104th Logo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bgwp.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			}
+			
+			class plobro: base
+			{
+				displayName = "104th PloBros";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104bgpb.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			};
+			
+			class medevac: base
+			{
+				displayName = "104th MedEvac";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"JangosVehicles\data\textures\door1_co_medic2.paa",
+				"JangosVehicles\data\textures\door2_co_medic.paa",
+				"JangosVehicles\data\textures\door3_co_medic.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			};
+			
+			class Echo: base
+			{
+				displayName = "104th Echo";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"JangosVehicles\data\textures\door1_co_echo.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			};
+			
+			class Beef: base
+			{
+				displayName = "104th Beef";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			};
+			
+			
+		};
+		textureList[] = {"base",1,"logo",1,"plobro",1};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class Style_Changer
+			{
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2;
+				class DefaultSkin
+				{
+					displayName = "Republic";
+					exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement = "_target setObjectTextureGlobal [0,'lsd_vehicles_heli\laati\data\body1_co.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'lsd_vehicles_heli\laati\data\wings_co.paa']; _target setObjectTextureGlobal [6,'lsd_vehicles_heli\laati\data\missiles_co.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					showDisabled = 0;
+					runOnHover = 0;
+					priority = 2.5;
+				};
+				class 104th_Skins
+				{
+					displayname = "104th Skins";
+					class 104th_Blue: DefaultSkin
+					{
+						displayName = "104th Blue";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bg.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_Logo: DefaultSkin
+					{
+						displayName = "104th Logo";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bgwp.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_PloBro: DefaultSkin
+					{
+						displayName = "104th PloBro";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bgpb.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_MedEvac: DefaultSkin
+					{
+						displayName = "104th MedEvac";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104medic.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_medic2.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_medic.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_medic.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+				};
+				class Custom_Skins
+				{
+					displayname = "Custom Skins";
+					class 104th_Echo: DefaultSkin
+					{
+						displayName = "Echo";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Echo.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_echo.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_Beef: DefaultSkin
+					{
+						displayName = "Beef";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Beef.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+				};
+			};
+		};
 	};
-	class JA_Base_LAAT_AB: JA_Base_LAAT 
+	class JA_104th_LAAT_AB: JA_104th_LAAT 
 	{
-		displayName = "LAAT-E Airborne";
+		displayName = "LAAT-E 104th Airborne";
 		model = "\lsd_vehicles_heli\laati\lsd_heli_laati_ab";
 		
 		class Components
@@ -1299,116 +1448,8 @@ class cfgVehicles {
 		};
 		
 	};
-	class JA_104th_Base_LAAT: JA_Base_LAAT {
-		displayName = "LAAT-E 104th";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
-		class TextureSources
-		{
-			class base
-			{
-				displayName = "104th";
-				author = "Legion Studio + Echo";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-				factions[] = {"104th_Guys"};
-			};
-			
-			class logo: base
-			{
-				displayName = "104th Logo";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104bgwp.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-			}
-			
-			class plobro: base
-			{
-				displayName = "104th PloBros";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104bgpb.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-			};
-			
-			
-		};
-		textureList[] = {"base",1,"logo",1,"plobro",1};
-	};
-	class JA_104th_Base_LAAT_AB: JA_Base_LAAT_AB {
-		displayName = "LAAT-E 104th Airborne";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
-		class TextureSources
-		{
-			class base
-			{
-				displayName = "104th";
-				author = "Legion Studio + Echo";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-				factions[] = {"104th_Guys"};
-			};
-			
-			class logo: base
-			{
-				displayName = "104th Logo";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104bgwp.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-			}
-			
-			class plobro: base
-			{
-				displayName = "104th PloBros";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104bgpb.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-			};
-			
-			
-		};
-		textureList[] = {"base",1,"logo",1,"plobro",1};
-	};
+	
+	/*
 	class JA_104th_Base_LAAT_Medic: JA_Base_LAAT_AB {
 		displayName = "LAAT-E 104th MedEvac";
 		faction = "104th_Guys";
@@ -1592,6 +1633,7 @@ class cfgVehicles {
 		};
 		textureList[] = {"base",1};
 	};
+	*/
 	
 	class Plane_Fighter_03_base_F;
 	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
@@ -1619,8 +1661,8 @@ class cfgVehicles {
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		hiddenselections[] = {"camo","camo1","camo2"};
 		hiddenselectionstextures[] = {"3AS\3as_Z95\Data\blue_co.paa","3AS\3as_Z95\Data\cockpit_co.paa","3AS\3as_saber\data\glass\glass_ca"};
-		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera","ls_laat_gun","ls_laat_gun_2","3as_V19_Medium_Cannon"};
-		magazines[] = {"Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag"};
+		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera","ls_laat_gun","ls_laat_gun_2","3as_V19_Medium_Cannon","RD501_Republic_Aircraft_Laser_AA"};
+		magazines[] = {"Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600"};
 		vehicleClass = "GAR_LAATCatNSub";
 		crew = "SWLB_clone_pilot_base_P2";
 		aileronSensitivity = 2.9;
@@ -4321,7 +4363,7 @@ class cfgVehicles {
 					class WingPylonRight1
 					{
 						maxweight = 1200;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_AGM65_RAIL","B_MISSILE_PYLON"};
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_AGM65_RAIL","B_MISSILE_PYLON"};
 						attachment = "PylonRack_12Rnd_PG_missiles";
 						bay = -1;
 						priority = 3;
@@ -4725,6 +4767,214 @@ class cfgVehicles {
         side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName = "WFOV";
+					initAngleX = 0;
+					minAngleX = -10;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -90;
+					maxAngleY = 90;
+					initFov = 0.425;
+					minFov = 0.425;
+					maxFov = 0.425;
+					directionStabilized = 1;
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+				};
+				class zoomx4: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.425/4)";
+					minFov = "(0.425/4)";
+					maxFov = "(0.425/4)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+				};
+				class zoomX8: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/8)";
+					minFov = "(0.42/8)";
+					maxFov = "(0.42/8)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX20: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/20)";
+					minFov = "(0.42/20)";
+					maxFov = "(0.42/20)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX50: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/50)";
+					minFov = "(0.42/50)";
+					maxFov = "(0.42/50)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX70: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/70)";
+					minFov = "(0.42/70)";
+					maxFov = "(0.42/70)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics = 1;
+				showUAVViewInOptics = 0;
+				showSlingLoadManagerInOptics = 1;
+			};
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			minElev = -10;
+			maxElev = 90;
+			initElev = -10;
+			maxXRotSpeed = 0.3;
+			maxYRotSpeed = 0.3;
+			pilotOpticsShowCursor = 1;
+			controllable = 1;
+			ace_missileguidance_usePilotCameraForTargeting = 1;
+		};
+		class UserActions
+		{
+			class PelLift_LoadVehicle
+			{
+				userActionID = 6;
+				displayName = "Load Vehicle";
+				displayNameDefault = "Load Vehicle";
+				textToolTip = "Load Vehicle";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 15;
+				priority = 2;
+				onlyForPlayer = 0;
+				condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
+				statement = "0 = [this,vehicle player] spawn OPTRE_fnc_PelicanLoadValidate;";
+			};
+			class PelLift_LoadPodMenu
+			{
+				userActionID = 9;
+				displayName = "Load Supply Pods";
+				displayNameDefault = "Load Supply Pods";
+				textToolTip = "Load Supply Pods";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 15;
+				priority = 2;
+				onlyForPlayer = 0;
+				condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND ((vehicle player) isKindOf ""OPTRE_cart_base"")";
+				statement = "OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject = this; createDialog ""OPTRE_PelicanLoadSupplyPods_Menu""; OPTRE_PelicanLoadSupplyPods_Menu_cam = ""camera"" CamCreate getPosATL OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject;  OPTRE_PelicanLoadSupplyPods_Menu_cam CamSetTarget OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject; OPTRE_PelicanLoadSupplyPods_Menu_cam CameraEffect [""Internal"",""Back""]; OPTRE_PelicanLoadSupplyPods_Menu_cam camSetRelPos [4,-12,-2.4]; OPTRE_PelicanLoadSupplyPods_Menu_cam CamCommit 0; showCinemaBorder false; if (sunOrMoon == 0) then {camUseNVG true;};";
+			};
+			class PelLift_UnLoadVehicle
+			{
+				userActionID = 7;
+				displayName = "Unload Vehicle / Supply Pods";
+				displayNameDefault = "Unload Vehicle / Supply Pods";
+				textToolTip = "Unload Vehicle / Supply Pods";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 5;
+				priority = 3;
+				onlyForPlayer = 0;
+				condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+				statement = "0 = [this] spawn OPTRE_fnc_PelicanUnLoadValidate;";
+			};
+			class PelLift_OpenDetachPodMenu
+			{
+				userActionID = 8;
+				displayName = "Detach Individual Supply Pod Menu";
+				displayNameDefault = "Detach Individual Supply Pod Menu";
+				textToolTip = "Detach Individual Supply Pod Menu";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 5;
+				priority = 3;
+				onlyForPlayer = 0;
+				condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+				statement = "0 = this spawn OPTRE_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
+			};
+			class RampOpen
+			{
+				userActionID = 50;
+				displayName = "Open Ramp";
+				displayNameDefault = "Open Ramp";
+				textToolTip = "Open Ramp";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 100000;
+				priority = 4;
+				onlyForPlayer = 0;
+				condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
+				animPeriod = 5;
+			};
+			class RampClose: RampOpen
+			{
+				userActionID = 51;
+				displayName = "Close Ramp";
+				displayNameDefault = "Close Ramp";
+				textToolTip = "Close Ramp";
+				priority = 4;
+				condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
+				animPeriod = 5;
+			};
+			class FullAirbrakeEngage
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_FullAirbrakeEngage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_Thruster400Engage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_Thruster400Disengage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+		};
 	};
 	class JA_104th_Base_Pelican_Armed: OPTRE_Pelican_armed
 	{
@@ -4736,6 +4986,216 @@ class cfgVehicles {
         side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		weapons[] = {"CMFlareLauncher","OPTRE_missiles_Anvil1","Laserdesignator_pilotCamera"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName = "WFOV";
+					initAngleX = 0;
+					minAngleX = -10;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -90;
+					maxAngleY = 90;
+					initFov = 0.425;
+					minFov = 0.425;
+					maxFov = 0.425;
+					directionStabilized = 1;
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+				};
+				class zoomx4: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.425/4)";
+					minFov = "(0.425/4)";
+					maxFov = "(0.425/4)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+				};
+				class zoomX8: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/8)";
+					minFov = "(0.42/8)";
+					maxFov = "(0.42/8)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX20: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/20)";
+					minFov = "(0.42/20)";
+					maxFov = "(0.42/20)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX50: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/50)";
+					minFov = "(0.42/50)";
+					maxFov = "(0.42/50)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX70: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/70)";
+					minFov = "(0.42/70)";
+					maxFov = "(0.42/70)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics = 1;
+				showUAVViewInOptics = 0;
+				showSlingLoadManagerInOptics = 1;
+			};
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			minElev = -10;
+			maxElev = 90;
+			initElev = -10;
+			maxXRotSpeed = 0.3;
+			maxYRotSpeed = 0.3;
+			pilotOpticsShowCursor = 1;
+			controllable = 1;
+			ace_missileguidance_usePilotCameraForTargeting = 1;
+		};
+		class UserActions
+		{
+			class PelLift_LoadVehicle
+			{
+				userActionID = 6;
+				displayName = "Load Vehicle";
+				displayNameDefault = "Load Vehicle";
+				textToolTip = "Load Vehicle";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 15;
+				priority = 2;
+				onlyForPlayer = 0;
+				condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
+				statement = "0 = [this,vehicle player] spawn OPTRE_fnc_PelicanLoadValidate;";
+			};
+			class PelLift_LoadPodMenu
+			{
+				userActionID = 9;
+				displayName = "Load Supply Pods";
+				displayNameDefault = "Load Supply Pods";
+				textToolTip = "Load Supply Pods";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 15;
+				priority = 2;
+				onlyForPlayer = 0;
+				condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND ((vehicle player) isKindOf ""OPTRE_cart_base"")";
+				statement = "OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject = this; createDialog ""OPTRE_PelicanLoadSupplyPods_Menu""; OPTRE_PelicanLoadSupplyPods_Menu_cam = ""camera"" CamCreate getPosATL OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject;  OPTRE_PelicanLoadSupplyPods_Menu_cam CamSetTarget OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject; OPTRE_PelicanLoadSupplyPods_Menu_cam CameraEffect [""Internal"",""Back""]; OPTRE_PelicanLoadSupplyPods_Menu_cam camSetRelPos [4,-12,-2.4]; OPTRE_PelicanLoadSupplyPods_Menu_cam CamCommit 0; showCinemaBorder false; if (sunOrMoon == 0) then {camUseNVG true;};";
+			};
+			class PelLift_UnLoadVehicle
+			{
+				userActionID = 7;
+				displayName = "Unload Vehicle / Supply Pods";
+				displayNameDefault = "Unload Vehicle / Supply Pods";
+				textToolTip = "Unload Vehicle / Supply Pods";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 5;
+				priority = 3;
+				onlyForPlayer = 0;
+				condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+				statement = "0 = [this] spawn OPTRE_fnc_PelicanUnLoadValidate;";
+			};
+			class PelLift_OpenDetachPodMenu
+			{
+				userActionID = 8;
+				displayName = "Detach Individual Supply Pod Menu";
+				displayNameDefault = "Detach Individual Supply Pod Menu";
+				textToolTip = "Detach Individual Supply Pod Menu";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 5;
+				priority = 3;
+				onlyForPlayer = 0;
+				condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+				statement = "0 = this spawn OPTRE_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
+			};
+			class RampOpen
+			{
+				userActionID = 50;
+				displayName = "Open Ramp";
+				displayNameDefault = "Open Ramp";
+				textToolTip = "Open Ramp";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 100000;
+				priority = 4;
+				onlyForPlayer = 0;
+				condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
+				animPeriod = 5;
+			};
+			class RampClose: RampOpen
+			{
+				userActionID = 51;
+				displayName = "Close Ramp";
+				displayNameDefault = "Close Ramp";
+				textToolTip = "Close Ramp";
+				priority = 4;
+				condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
+				animPeriod = 5;
+			};
+			class FullAirbrakeEngage
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_FullAirbrakeEngage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_Thruster400Engage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_Thruster400Disengage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+		};
 	};
 	
 	class JA_104th_3AS_Reaper_Y_Wing: Aux212_3AS_Reaper_Y_Wing
@@ -4757,8 +5217,8 @@ class cfgVehicles {
 		stallSpeed = 0;
 		
 		armor = 350;
-		weapons[] = {"Laserdesignator_pilotCamera","CMFlareLauncher","212th_YWing_Voltic_Cannon","212th_A2A_MissileSystem","212th_WGM_MissileSystem","212th_Gizka_Bomb_ReleaseSystem"};
-		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag"};
+		weapons[] = {"Laserdesignator_pilotCamera","CMFlareLauncher","212th_YWing_Voltic_Cannon","RD501_Republic_Aircraft_Laser_AA","212th_A2A_MissileSystem","212th_WGM_MissileSystem","212th_Gizka_Bomb_ReleaseSystem"};
+		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -4926,7 +5386,7 @@ class cfgVehicles {
 				position = "pos cano";
 				radius = 15;
 				shortcut = "User4";
-				condition = "('FIR_TGTPOD' in weapons this or 'Laserdesignator_pilotCamera' in weapons this) and player in this and isengineon this";                
+				condition = "player in this and isengineon this";                
 				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf"";";
 				onlyforplayer = "false";
 				hideOnUse = 1;
@@ -5259,8 +5719,8 @@ class cfgVehicles {
 				{
 					class pylons1
 					{
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
-						attachment = "B_SDB_QUAD_RAIL";
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_GBU12","B_AGM65_RAIL","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
+						attachment = "B_AMRAAM_D_DUAL_RAIL";
 						priority = 10;
 						maxweight = 8000;
 						UIposition[] = {0.5,0.25};
@@ -5835,6 +6295,525 @@ class cfgVehicles {
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_eod_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
 	};
 
+	//class 3as_nuclass_f;
+	class 3AS_Nuclass;
+	/*
+	class 3AS_Nuclass: 3as_nuclass_f
+	{
+		class ACE_SelfActions;
+	};
+	*/
+	class JA_104th_NU: 3AS_Nuclass
+	{
+		displayName = "104th Nu-Class Shuttle";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		armor = 600;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		visionMode[] = {"Normal","NVG","Ti"};
+		LockDetectionSystem = "2+4+8+16";
+		incomingMissileDetectionSystem = "2+4+8+16";
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\nu\exterior_104_CO.paa","JangosVehicles\data\textures\nu\wings_104_CO.paa","JangosVehicles\data\textures\nu\interior_104_co.paa","JangosVehicles\data\textures\nu\cockpit_doors_104_co.paa"};
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName = "WFOV";
+					initAngleX = 0;
+					minAngleX = -10;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -90;
+					maxAngleY = 90;
+					initFov = 0.425;
+					minFov = 0.425;
+					maxFov = 0.425;
+					directionStabilized = 1;
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+				};
+				class zoomx4: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.425/4)";
+					minFov = "(0.425/4)";
+					maxFov = "(0.425/4)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+				};
+				class zoomX8: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/8)";
+					minFov = "(0.42/8)";
+					maxFov = "(0.42/8)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX20: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/20)";
+					minFov = "(0.42/20)";
+					maxFov = "(0.42/20)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX50: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/50)";
+					minFov = "(0.42/50)";
+					maxFov = "(0.42/50)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX70: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/70)";
+					minFov = "(0.42/70)";
+					maxFov = "(0.42/70)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics = 1;
+				showUAVViewInOptics = 0;
+				showSlingLoadManagerInOptics = 1;
+			};
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			minElev = -10;
+			maxElev = 90;
+			initElev = -10;
+			maxXRotSpeed = 0.3;
+			maxYRotSpeed = 0.3;
+			pilotOpticsShowCursor = 1;
+			controllable = 1;
+			ace_missileguidance_usePilotCameraForTargeting = 1;
+		};
+		unitInfoType = "RscOptics_CAS_Pilot";
+		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
+		class Components
+		{
+			class TransportCounterMeasuresComponent;
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class activeRadarSenorComponent
+					{
+						aimDown = 30;
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {0,1,1,1};
+						componentType = "ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 1000;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 3000;
+						class AirTarget
+						{
+							maxRange = 8000;
+							minRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 8000;
+							minRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class AntiRadiationSensorComponent
+					{
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 90;
+						angleRangeVertical = 90;
+						animDirection = "";
+						color[] = {0.5,1,0.5,0.5};
+						componentType = "PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 12000;
+						class AirTarget
+						{
+							maxRange = 8000;
+							minRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 8000;
+							minRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class IRSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 37;
+						maxTrackableSpeed = 100;
+						aimDown = 0;
+						allowsMarking = 1;
+						animDirection = "";
+						color[] = {1,0,0,1};
+						componentType = "IRSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxFogSeeThrough = 0.995;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 2000;
+					};
+					class VisualSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 3000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 37;
+						maxTrackableSpeed = 1000;
+						aimDown = 0;
+						animDirection = "";
+						allowsMarking = 1;
+						color[] = {1,1,0.5,0.8};
+						componentType = "VisualSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxFogSeeThrough = 1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						nightRangeCoef = 0;
+						typeRecognitionDistance = 2000;
+					};
+					class PassiveRadarSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 16000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 16000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 0;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {0.5,1,0.5,0.5};
+						componentType = "PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 12000;
+					};
+					class LaserSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "LaserSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 0;
+					};
+					class NVSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "NVSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 0;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource = "RscCustomInfoSensors";
+					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+						resource = "RscCustomInfoCrew";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay = "SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource = "RscCustomInfoSensors";
+					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+						resource = "RscCustomInfoCrew";
+					};
+				};
+			};
+		};
+		class UserActions
+		{
+			class rampOpen
+			{
+				displayName = "Cargo Ramp Open";
+				position = "cargoaction";
+				radius = 12;
+				condition = "(this animationSourcePhase 'ramp' ==0 AND (alive this))";
+				statement = "this animateSource ['ramp',1]";
+				onlyforplayer = 0;
+				role = 0;
+			};
+			class rampClose: rampOpen
+			{
+				displayName = "Cargo Ramp Close";
+				position = "cargoaction";
+				radius = 12;
+				condition = "(this animationSourcePhase 'ramp' ==1 AND (alive this))";
+				statement = "this animateSource ['ramp',0]";
+				onlyforplayer = 0;
+			};
+			class frontrampOpen
+			{
+				role = 0;
+				displayName = "Ramp Open";
+				position = "frontaction";
+				radius = 12;
+				condition = "(this animationSourcePhase 'rampfront' ==0 AND (alive this))";
+				statement = "this animateSource ['rampfront',1]";
+				onlyforplayer = 0;
+			};
+			class frontrampClose: frontrampOpen
+			{
+				displayName = "Ramp Close";
+				position = "frontaction";
+				radius = 12;
+				condition = "(this animationSourcePhase 'rampfront' ==1 AND (alive this))";
+				statement = "this animateSource ['rampfront',0]";
+				onlyforplayer = 0;
+			};
+			class FullAirbrakeEngage
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_FullAirbrakeEngage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_Thruster400Engage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this execVM ""\JangosVehicles\Script\Falcon\fn_Thruster400Disengage.sqf"";"; //Script from A2 Declassified - Fireteam Zulu, copied with permission from Vespade. Full credit to FZ.
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+		};
+		class EventHandlers: DefaultEventhandlers
+		{
+			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\NuInit.sqf';";
+		};
+	};
+	
 	class 3AS_ATRT;
 	class JA_104th_ATRT: 3AS_ATRT
 	{
@@ -6531,7 +7510,7 @@ class cfgVehicles {
 	};
 	
 	class 212th_B_APC_Wheeled_02_cannon_F;
-	class 104th_APC_Light_Bantha: 212th_B_APC_Wheeled_02_cannon_F
+	class JA_104th_APC_Light_Bantha: 212th_B_APC_Wheeled_02_cannon_F
 	{
 		displayName = "104th Light Bantha";
 		faction = "104th_Guys";
@@ -6658,7 +7637,7 @@ class cfgVehicles {
 	};
 	
 	class O_T_LSV_02_armed_F;
-	class 104th_LSV: O_T_LSV_02_armed_F
+	class JA_104th_LSV: O_T_LSV_02_armed_F
 	{
 		displayName = "104th Light Strike Vehicle";
 		faction = "104th_Guys";
@@ -7455,6 +8434,187 @@ class cfgVehicles {
 			};
 		};
 	};
+	class RD501_resuppy_box_pod_ammo;
+	class JA_104th_Box_Resupply: RD501_resuppy_box_pod_ammo{
+		author = "501st + Echo";
+		displayName = "Resupply Box - 104th";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		editorCategory = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		class TransportWeapons
+		{
+			class _xx_ls_weapon_rps6{
+				count = 1;
+				weapon = "ls_weapon_rps6";
+			};
+		};
+			/*
+			class _xx_SWLW_DC15A{
+				count = 1;
+				weapon = "SWLW_DC15A";
+			};
+			class _xx_SWLW_DC15S{
+				count = 1;
+				weapon = "SWLW_DC15S";
+			};
+			class _xx_JLTS_DC15S{
+				count = 1;
+				weapon = "JLTS_DC15S";
+			};
+			class _xx_JLTS_DC15A_plastic{
+				count = 1;
+				weapon = "JLTS_DC15A_plastic";
+			};
+			class _xx_3AS_DC15A{
+				count = 1;
+				weapon = "3AS_DC15A_F";
+			};
+			class _xx_3AS_DC15S{
+				count = 1;
+				weapon = "3AS_DC15S_F";
+			};
+			*/
+		class TransportMagazines
+		{
+			class _xx_JLTS_DC15A_mag{
+				count = 10;
+				magazine = "JLTS_DC15A_mag";
+			};
+			class _xx_JLTS_DC17SA_mag{
+				count = 15;
+				magazine = "JLTS_DC17SA_mag";
+			};
+			class _xx_JLTS_DW32S_mag{
+				count = 5;
+				magazine = "JLTS_DW32S_mag";
+			};
+			class _xx_JLTS_Z6_mag{
+				count = 5;
+				magazine = "JLTS_Z6_mag";
+			};
+			class _xx_JLTS_stun_mag_short{
+				count = 3;
+				magazine = "JLTS_stun_mag_short";
+			};
+			class _xx_JLTS_stun_mag_long{
+				count = 3;
+				magazine = "JLTS_stun_mag_long";
+			};
+			class _xx_SWLW_DC15A_mag{
+				count = 10;
+				magazine = "SWLW_DC15A_mag";
+			};
+			class _xx_SWLW_DC15S_mag{
+				count = 10;
+				magazine = "SWLW_DC15S_mag";
+			};
+			class _xx_3AS_DC15A_mag{
+				count = 10;
+				magazine = "3AS_45rnd_EC50_Mag";
+			};
+			class _xx_3AS_DC15S_mag{
+				count = 10;
+				magazine = "3AS_60rnd_EC30_Mag";
+			};
+			class _xx_3AS_DC15L_mag{
+				count = 5;
+				magazine = "3AS_200rnd_EC40_Mag";
+			};
+			class _xx_SWLW_DC17_mag{
+				count = 10;
+				magazine = "SWLW_DC17_mag";
+			};
+			class _xx_501_DC15X_mag{
+				count = 5;
+				magazine = "AUX501_Weapons_Mags_40mw5";
+			};
+			class _xx_501_DC15L_mag{
+				count = 5;
+				magazine = "AUX501_Weapons_Mags_20mw240";
+			};
+			class _xx_SWLW_smokeRed_mag{
+				count = 5;
+				magazine = "SWLW_smokeRed_mag";
+			};
+			class _xx_1Rnd_SmokeOrange_Grenade_shell{
+				count = 2;
+				magazine = "1Rnd_SmokeOrange_Grenade_shell";
+			};
+			class _xx_1Rnd_SmokePurple_Grenade_shell{
+				count = 2;
+				magazine = "1Rnd_SmokePurple_Grenade_shell";
+			};
+			class _xx_1Rnd_SmokeRed_Grenade_shell{
+				count = 2;
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+			};
+			class _xx_1Rnd_SmokeWhite_Grenade_shell{
+				count = 2;
+				magazine = "1Rnd_Smoke_Grenade_shell";
+			};
+			class _xx_1Rnd_HE_Grenade_shell{
+				count = 5;
+				magazine = "1Rnd_HE_Grenade_shell";
+			};
+			class _xx_ls_mag_at_plx{
+				count = 1;
+				magazine = "ls_mag_at_plx";
+			};
+			class _xx_ls_mag_rpg_1rnd{
+				count = 3;
+				magazine = "ls_mag_rpg_1rnd";
+			};
+			class _xx_3AS_ThermalDet{
+				count = 10;
+				magazine = "3AS_ThermalDetonator";
+			};
+			class _xx_LS_ThermalDet{
+				count = 10;
+				magazine = "LS_mag_classC_thermalDet";
+			};
+			class _xx_BI_SmokeGrenade{
+				count = 10;
+				magazine = "SmokeShell";
+			};
+		};
+		class TransportItems
+		{
+			class _xx_ACE_elasticBandage{
+				count = 30;
+				name = "ACE_elasticBandage";
+			};
+			class _xx_ACE_epinephrine{
+				count = 20;
+				name = "ACE_epinephrine";
+			};
+			class _xx_ACE_morphine{
+				count = 20;
+				name = "ACE_morphine";
+			};
+			class _xx_ACE_packingBandage{
+				count = 30;
+				name = "ACE_packingBandage";
+			};
+			class _xx_ACE_quikclot{
+				count = 30;
+				name = "ACE_quikclot";
+			};
+			class _xx_ACE_salineIV{
+				count = 5;
+				name = "ACE_salineIV";
+			};
+			class _xx_ACE_salineIV_500{
+				count = 5;
+				name = "ACE_salineIV_500";
+			};
+			class _xx_ACE_tourniquet{
+				count = 8;
+				name = "ACE_tourniquet";
+			};
+		};
+	};
 	
 	
 	//Split Z7 Rework
@@ -7529,7 +8689,7 @@ class cfgVehicles {
 	
 };
 
-class ammo
+class CfgAmmo
 {
 	class ls_50mm_laat_apfsds;
 	class ls_50mm_laat_apfsds_104th: ls_50mm_laat_apfsds
@@ -7547,7 +8707,16 @@ class ammo
 		effectfly = "ls_plasma_blue";
 		
 	};
-	
+	class Bo_GBU12_LGB;
+	class JA_104th_guided_resupply_ammo: Bo_GBU12_LGB
+	{
+		hit = 0;
+		indirectHit = 0;
+		explosive = 0;
+		whistleOnFire = 1;
+		aiAmmoUsageFlags = 0;
+		model = "kobra\442_misc\box\box10.p3d";
+	};
 };
 
 class CfgMagazines
@@ -7571,6 +8740,15 @@ class CfgMagazines
 		displayname = "12.7x99mm 500Rnd plasma cell (Blue)";
 		ammo = "ls_127x99_blue_104th";
 		
+	};
+	class 2Rnd_GBU12_LGB;
+	class JA_104th_Guided_Resupply_Magazine: 2Rnd_GBU12_LGB
+	{
+		author = "RD501";
+		ammo = "JA_104th_guided_resupply_ammo";
+		displayName = "Supply Pod";
+		displayNameShort = "Supply Pod";
+		descriptionShort = "Supply Pod";
 	};
 };
 
@@ -7648,6 +8826,38 @@ class CfgWeapons
 			};
 		};
 		
+	};
+	class GBU12BombLauncher;
+	class JA_104th_guided_resupply_pod_launcher: GBU12BombLauncher
+	{
+		displayName = "Supply Pod";
+		descriptionShort = "Guided Resupply Pod Launcher";
+		magazines[] = {"JA_104th_Guided_Resupply_Magazine"};
+		class EventHandlers
+		{
+			//fired = "hint 'Fired eventhandler called'";
+			fired = "_this remoteExec ['JA_104th_fnc_GURE_grplFired', 2];";
+		};
+	};
+};
+
+class CfgFunctions
+{
+	class JA_104th
+	{
+		tag = "JA_104th";
+		class guidedResupply
+		{
+			file = "JangosVehicles\Script\501Resupply";
+			class GURE_spawnResupply
+			{
+				file = "JangosVehicles\Script\501Resupply\spawn_resupply.sqf";
+			};
+			class GURE_grplFired
+			{
+				file = "JangosVehicles\Script\501Resupply\grpl_fired.sqf";
+			};
+		};
 	};
 };
 
