@@ -48,4 +48,4 @@ _vic setVariable ["104thVicShieldOn", 0, true];
 
 [_vic] execVM "\JangosVehicles\Script\Shield\NuShieldAction.sqf";
 
-[_vic] execVM "\JangosVehicles\Script\Shield\PlaneShieldRegen.sqf";
+[_vic] execVM "\JangosVehicles\Script\Shield\VicShieldRegen.sqf";
