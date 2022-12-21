@@ -164,6 +164,7 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class SWLB_clone_recon_officer_armor;
 	class ls_gar_phase2Arf_helmet;
+	class SWLB_clone_eng_helmet;
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
@@ -498,15 +499,21 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Mad)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Mad_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Scav_Helmet : SWLB_clone_P2_helmet
+	class JA_104th_Scav_Helmet : SWLB_clone_eng_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Scav)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Scav_Helmet.paa" }; // the file path to the texture
+		hiddenSelections[] = {
+            "camo1",
+            "illum"
+        }; // don't change this
+		displayname = "Clone Trooper Engineer Helmet (104th Scav)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { 
+			"JangosArmory4\data\Textures\104th_P2_Scav_Helmet.paa",
+			"JangosArmory4\data\Textures\104th_P2_Scav_Helmet.paa" 
+		}; // the file path to the texture
 	};
 	class JA_104th_Bone_Helmet : SWLB_clone_P2_helmet
 	{
