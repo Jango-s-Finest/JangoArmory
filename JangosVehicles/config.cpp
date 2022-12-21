@@ -5720,7 +5720,7 @@ class cfgVehicles {
 					class pylons1
 					{
 						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_GBU12","B_AGM65_RAIL","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
-						attachment = "B_AMRAAM_D_DUAL_RAIL";
+						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 10;
 						maxweight = 8000;
 						UIposition[] = {0.5,0.25};
