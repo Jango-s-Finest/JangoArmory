@@ -1,6 +1,6 @@
 params ["_pos", "_default_object", "_default_smoke"];
 // _event = params ["_object1", "_object2", "_selection1", "_selection2", "_force"];
-
+if (isServer) then {
 diag_log text (["[RD501]", "[Guided Resupply]", "TRACE:", "Starting spawn resupply event:", _this] joinString " ");
 
 // Get the impact position.
@@ -20,3 +20,4 @@ if(not (isNil '_box')) then {
 };
 
 diag_log text (["[RD501]", "[Guided Resupply]", "DEBUG:", "Spawned resupply box of type", _box, "at", _pos] joinString " ");
+};
