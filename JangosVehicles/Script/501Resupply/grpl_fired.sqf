@@ -17,8 +17,10 @@ waitUntil {
 	false;
 };
 
+if (isServer) then {
 if (_magazine == "JA_104th_Guided_Resupply_Magazine") then {
 	[_pos, 'JA_104th_Box_Resupply', 'SmokeShellYellow'] remoteExecCall ['JA_104th_fnc_GURE_spawnResupply', 2];
 } else {
 	diag_log text (["[RD501]", "[Guided Resupply]", "WARN:", "Unknown magazine type fired."] joinString " ");
+};
 };
