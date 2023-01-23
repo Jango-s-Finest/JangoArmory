@@ -9702,32 +9702,6 @@ class cfgVehicles {
 				weapon = "ls_weapon_rps6";
 			};
 		};
-			/*
-			class _xx_SWLW_DC15A{
-				count = 1;
-				weapon = "SWLW_DC15A";
-			};
-			class _xx_SWLW_DC15S{
-				count = 1;
-				weapon = "SWLW_DC15S";
-			};
-			class _xx_JLTS_DC15S{
-				count = 1;
-				weapon = "JLTS_DC15S";
-			};
-			class _xx_JLTS_DC15A_plastic{
-				count = 1;
-				weapon = "JLTS_DC15A_plastic";
-			};
-			class _xx_3AS_DC15A{
-				count = 1;
-				weapon = "3AS_DC15A_F";
-			};
-			class _xx_3AS_DC15S{
-				count = 1;
-				weapon = "3AS_DC15S_F";
-			};
-			*/
 		class TransportMagazines
 		{
 			class _xx_JLTS_DC15A_mag{
@@ -9787,7 +9761,7 @@ class cfgVehicles {
 				magazine = "AUX501_Weapons_Mags_20mw240";
 			};
 			class _xx_SWLW_smokeRed_mag{
-				count = 5;
+				count = 3;
 				magazine = "SWLW_smokeRed_mag";
 			};
 			class _xx_1Rnd_SmokeOrange_Grenade_shell{
@@ -9819,15 +9793,15 @@ class cfgVehicles {
 				magazine = "ls_mag_rpg_1rnd";
 			};
 			class _xx_3AS_ThermalDet{
-				count = 10;
+				count = 8;
 				magazine = "3AS_ThermalDetonator";
 			};
 			class _xx_LS_ThermalDet{
-				count = 10;
+				count = 8;
 				magazine = "LS_mag_classC_thermalDet";
 			};
 			class _xx_BI_SmokeGrenade{
-				count = 10;
+				count = 8;
 				magazine = "SmokeShell";
 			};
 		};
@@ -10088,7 +10062,7 @@ class CfgWeapons
 		class EventHandlers
 		{
 			//fired = "hint 'Fired eventhandler called'";
-			fired = "_this remoteExec ['JA_104th_fnc_GURE_grplFired', 2];";
+			fired = "_this spawn JA_104th_fnc_GURE_grplFired";
 		};
 	};
 };
