@@ -1,5 +1,5 @@
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
-
+if (!isserver) exitWith{};
 diag_log text (["[RD501]", "[Guided Resupply]", "TRACE:", "Fired GRPL Event Dump:", 
 	"Unit:", _unit, 
 	"Weapon:", _weapon, 
@@ -13,14 +13,10 @@ diag_log text (["[RD501]", "[Guided Resupply]", "TRACE:", "Fired GRPL Event Dump
 private _pos = [0, 0, 0];
 waitUntil {
 	if (isNull _projectile) exitWith { true };
-	_pos = getPos _projectile;
+	_pos = getPosASL _projectile;
 	false;
 };
 
-if (isServer) then {
-if (_magazine == "JA_104th_Guided_Resupply_Magazine") then {
-	[_pos, 'JA_104th_Box_Resupply', 'SmokeShellYellow'] remoteExecCall ['JA_104th_fnc_GURE_spawnResupply', 2];
-} else {
-	diag_log text (["[RD501]", "[Guided Resupply]", "WARN:", "Unknown magazine type fired."] joinString " ");
-};
-};
+private _box = "JA_104th_Box_Resupply" createVehicle _pos; 
+private _smoke = "SmokeShellYellow" createVehicle _pos; 
+_smoke attachTo [(_box),[0,0,0]]; 
