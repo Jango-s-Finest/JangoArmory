@@ -5,20 +5,10 @@ class CfgPatches
 		units[] = {
 			"JA_104th_LAAT",
 			"JA_104th_LAAT_AB",
-			"JA_104th_Base_LAAT_C",
-			"JA_104th_Base_LAAT_Mk3",
-			"JA_104th_Base_Vwing_Reaper",
-			"JA_104th_Base_Arc170_Mk2",
-			"JA_104th_Base_Ywing_Reaper",
-			"JA_104th_Base_Uwing_Mk2",
 			"JA_104th_Base_Falcon_Armed",
 			"JA_104th_Base_Pelican_Unarmed",
 			"JA_104th_Base_Pelican_Armed",
-			"JA_104th_Base_Bantha",
 			"JA_104th_Base_TX130",
-			"JA_104th_Base_Barc_Speeder",
-			"JA_104th_Base_Pathfinder",
-			"JA_104th_Base_Tempest",
 			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
 			"JA_104th_Box_Medic",
@@ -46,6 +36,7 @@ class CfgPatches
 			"JA_104th_ATRT",
 			"JA_104th_Xian_Infantry",
 			"JA_104th_Xian_Vehicle",
+			"JA_104th_Republic_Transport",
 			//"BaseShield100mSpawner",
 			//"BaseShield500mSpawner",
 			//"JA_104th_Droideka_Mobile",
@@ -57,7 +48,7 @@ class CfgPatches
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {"JA_104th_guided_resupply_pod_launcher"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03","A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02"};
+		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03","A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
 };
 
@@ -751,7 +742,7 @@ class cfgVehicles {
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 5;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"}; //hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","B_AMRAAM_D","B_AMRAAM_D_RAIL","DAR","DAGR","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"}; //hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
 						turret[] = {0};
 						UIposition[] = {0.06,0.4};
 					};
@@ -759,14 +750,12 @@ class cfgVehicles {
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 4;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
 						UIposition[] = {0.08,0.35};
 					};
 					class PylonLeft3: PylonLeft1
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 3;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
 						UIposition[] = {0.1,0.3};
 					};
 					class PylonRight3: PylonLeft3
@@ -1029,9 +1018,9 @@ class cfgVehicles {
 				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 			};
 			
-			class Echo: base
+			class Haze: base
 			{
-				displayName = "104th Echo";
+				displayName = "104th Haze";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
 				"lsd_vehicles_heli\laati\data\body2_co.paa",
 				"JangosVehicles\data\textures\door1_co_echo.paa",
@@ -1047,6 +1036,20 @@ class cfgVehicles {
 			{
 				displayName = "104th Beef";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			};
+			
+			class Bail: base
+			{
+				displayName = "104th Beef";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 				"lsd_vehicles_heli\laati\data\body2_co.paa",
 				"lsd_vehicles_heli\laati\data\door1_co.paa",
 				"lsd_vehicles_heli\laati\data\door2_co.paa",
@@ -1106,15 +1109,20 @@ class cfgVehicles {
 				class Custom_Skins
 				{
 					displayname = "Custom Skins";
-					class 104th_Echo: DefaultSkin
+					class 104th_Haze: DefaultSkin
 					{
-						displayName = "Echo";
+						displayName = "Haze";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Echo.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_echo.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
 					};
 					class 104th_Beef: DefaultSkin
 					{
 						displayName = "Beef";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Beef.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_Bail: DefaultSkin
+					{
+						displayName = "Bail";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Bail.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
 					};
 				};
 			};
@@ -4201,11 +4209,12 @@ class cfgVehicles {
 			};
 			class TransportPylonsComponent
 			{
+				UIPicture = "3as\3as_z95\data\plane_z95_pylon_ca.paa";
 				class pylons
 				{
 					class pylons1
 					{
-						hardpoints[] = {"B_MISSILE_PYLON","B_BOMB_PYLON"};
+						hardpoints[] = {"B_MISSILE_PYLON","B_BOMB_PYLON","B_AMRAAM_D","B_AMRAAM_D_RAIL"};
 						attachment = "PylonRack_Missile_BIM9X_x1";
 						priority = 10;
 						maxweight = 50000;
@@ -4218,30 +4227,22 @@ class cfgVehicles {
 					};
 					class pylons3: pylons1
 					{
-						hardpoints[] = {"B_MISSILE_PYLON","B_BOMB_PYLON"};
-						attachment = "PylonRack_Missile_BIM9X_x1";
 						priority = 9;
 						UIposition[] = {0.55,0.35};
 					};
 					class pylons4: pylons3
 					{
-						hardpoints[] = {"B_MISSILE_PYLON","B_BOMB_PYLON"};
-						attachment = "PylonRack_Missile_BIM9X_x1";
 						priority = 13;
 						UIposition[] = {0.1,0.35};
 						mirroredMissilePos = 3;
 					};
 					class pylons5: pylons1
 					{
-						hardpoints[] = {"B_MISSILE_PYLON","B_BOMB_PYLON"};
-						attachment = "PylonRack_Missile_BIM9X_x1";
 						priority = 7;
 						UIposition[] = {0.5,0.25};
 					};
 					class pylons6: pylons5
 					{
-						hardpoints[] = {"B_MISSILE_PYLON","B_BOMB_PYLON"};
-						attachment = "PylonRack_Missile_BIM9X_x1";
 						priority = 12;
 						UIposition[] = {0.15,0.25};
 						mirroredMissilePos = 5;
@@ -5740,7 +5741,7 @@ class cfgVehicles {
 				{
 					class pylons1
 					{
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_GBU12","B_AGM65_RAIL","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
+						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","B_AMRAAM_D","B_AMRAAM_D_RAIL","DAR","DAGR","B_GBU12","B_AGM65_RAIL","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 10;
 						maxweight = 8000;
@@ -8065,6 +8066,111 @@ class cfgVehicles {
 		};
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa","JangosVehicles\data\textures\xian\xian_ext02_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
 	};
+	
+	//Republic Transport
+	class 3AS_Republic_Transport_01;
+	class JA_104th_Republic_Transport: 3AS_Republic_Transport_01
+	{
+		displayName = "104th Republic Transport";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		crew = "JLTS_Clone_P2_DC15S";
+		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
+		visionMode[] = {"Normal","NVG","Ti"};
+		LockDetectionSystem = "2+4+8+16";
+		incomingMissileDetectionSystem = "2+4+8+16";
+		armor = 600;
+		irTargetSize = 1; //Again, raising this value to not make it a Stealth ship.
+		radarTargetSize = 1; //Again, raising this value to not make it a Stealth ship.
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName = "WFOV";
+					initAngleX = 0;
+					minAngleX = -10;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -90;
+					maxAngleY = 90;
+					initFov = 0.425;
+					minFov = 0.425;
+					maxFov = 0.425;
+					directionStabilized = 1;
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+				};
+				class zoomx4: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.425/4)";
+					minFov = "(0.425/4)";
+					maxFov = "(0.425/4)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+				};
+				class zoomX8: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/8)";
+					minFov = "(0.42/8)";
+					maxFov = "(0.42/8)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX20: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/20)";
+					minFov = "(0.42/20)";
+					maxFov = "(0.42/20)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX50: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/50)";
+					minFov = "(0.42/50)";
+					maxFov = "(0.42/50)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class zoomX70: Wide
+				{
+					opticsDisplayName = "NFOV";
+					initFov = "(0.42/70)";
+					minFov = "(0.42/70)";
+					maxFov = "(0.42/70)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				showMiniMapInOptics = 1;
+				showUAVViewInOptics = 0;
+				showSlingLoadManagerInOptics = 1;
+			};
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			minElev = -10;
+			maxElev = 90;
+			initElev = -10;
+			maxXRotSpeed = 0.3;
+			maxYRotSpeed = 0.3;
+			pilotOpticsShowCursor = 1;
+			controllable = 1;
+			ace_missileguidance_usePilotCameraForTargeting = 1;
+		};
+		class EventHandlers: DefaultEventhandlers
+		{
+			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\RTInit.sqf';";
+		};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\104_hs_ext_co.paa","3as\3as_starships\data\hs_int_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"};
+	};
+	
 	
 	class 3AS_ATRT;
 	class JA_104th_ATRT: 3AS_ATRT
