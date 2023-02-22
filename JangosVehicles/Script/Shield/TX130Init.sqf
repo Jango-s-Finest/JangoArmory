@@ -14,8 +14,10 @@ _vic addEventHandler ["HitPart", {
 				if (_shieldoncheck > 0) then {
 				
 				private _r = getPosASL (_targetvehicle); 
+				if (isServer) then {
 				private _sound = "104th_EmptySoundPad" createVehicle _r; 
 				_sound attachTo [(_targetvehicle),[0,0,0]]; 
+				};
 
 
 				_damage = 0;
@@ -26,8 +28,6 @@ _vic addEventHandler ["HitPart", {
 
 				if (_damage > 10) then {_damagedone = (_damage / 2)};
 				if (_damage > 29) then {_damagedone = _damage};
-				if (_damage > 99) then {_damagedone = (_damage / 2)};
-				if (_damage > 299) then {_damagedone = _damage};
 				
 				_lsaatcheck = _ammo;
 				_lsaatchecking = "ls_120mm_red_ap";
