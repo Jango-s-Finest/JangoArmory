@@ -1050,8 +1050,36 @@ class cfgVehicles {
 			
 			class Bail: base
 			{
-				displayName = "104th Beef";
+				displayName = "104th Bail";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			};
+			
+			class Varelli: base
+			{
+				displayName = "104th Varelli";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Varelli.paa",
+				"lsd_vehicles_heli\laati\data\body2_co.paa",
+				"lsd_vehicles_heli\laati\data\door1_co.paa",
+				"lsd_vehicles_heli\laati\data\door2_co.paa",
+				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"JangosVehicles\data\textures\wings_co_104bg.paa",
+				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			};
+			
+			class OD: base
+			{
+				displayName = "104th OD";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104OD.paa",
 				"lsd_vehicles_heli\laati\data\body2_co.paa",
 				"lsd_vehicles_heli\laati\data\door1_co.paa",
 				"lsd_vehicles_heli\laati\data\door2_co.paa",
@@ -1125,6 +1153,16 @@ class cfgVehicles {
 					{
 						displayName = "Bail";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Bail.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_Bail: DefaultSkin
+					{
+						displayName = "OD";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104OD.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_Bail: DefaultSkin
+					{
+						displayName = "Varelli";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Varelli.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
 					};
 				};
 			};
@@ -9241,7 +9279,6 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		displayName = "104th ATRT";
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\ATRT_104th_CO.paa"};
 	};
 
 	//class OPTRE_M494;
