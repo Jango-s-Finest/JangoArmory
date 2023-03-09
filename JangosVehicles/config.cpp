@@ -1154,12 +1154,12 @@ class cfgVehicles {
 						displayName = "Bail";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Bail.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
 					};
-					class 104th_Bail: DefaultSkin
+					class 104th_OD: DefaultSkin
 					{
 						displayName = "OD";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104OD.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
 					};
-					class 104th_Bail: DefaultSkin
+					class 104th_Varelli: DefaultSkin
 					{
 						displayName = "Varelli";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Varelli.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
