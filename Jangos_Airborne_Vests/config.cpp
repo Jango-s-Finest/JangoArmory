@@ -85,22 +85,6 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	
-};
-
-class CfgVehicles
-{
-	class SWLB_clone_base_P2;
-	class SWLB_clone_marshal_commander_base_P2;
-	class SWLB_clone_backpack;
-	class SWLB_clone_RTO_mini_backpack;
-	class SWLB_clone_backpack_heavy;
-	class SWLB_clone_backpack_medic;
-	class SWLB_clone_backpack_RTO;
-	class JLTS_Clone_jumppack;
-	class JA_104th_Jumppack_JT12;
-	class JA_104th_Jumppack_JT12_LR;
-	// General Uniforms
 	class JA_104th_AB_Axel_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
 		author = "Dak";
@@ -123,4 +107,19 @@ class CfgVehicles
 		};
 		vestType="Rebreather";	
 	};
+};
+
+class CfgVehicles
+{
+	class SWLB_clone_base_P2;
+	class SWLB_clone_marshal_commander_base_P2;
+	class SWLB_clone_backpack;
+	class SWLB_clone_RTO_mini_backpack;
+	class SWLB_clone_backpack_heavy;
+	class SWLB_clone_backpack_medic;
+	class SWLB_clone_backpack_RTO;
+	class JLTS_Clone_jumppack;
+	class JA_104th_Jumppack_JT12;
+	class JA_104th_Jumppack_JT12_LR;
+	// General Uniforms
 };
