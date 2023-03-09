@@ -511,16 +511,7 @@ class CfgWeapons
 
 	// AIRBORNEEEEE Helmets
 
-	class JA_104th_Habit_Helmet : SWLB_clone_AB_helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper AB Helmet (104th Habit)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory1\data\Textures\104th_AB_Habit_Helmet.paa" }; // the file path to the texture
-	};
+	
 
 
 	// Pilots Helmets
@@ -576,16 +567,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "JangosArmory1\data\Textures\104th_P2_Banker_Helmet.paa" }; // the file path to the texture
 	};
 	
-	class JA_104th_Red_Helmet : SWLB_clone_AB_helmet
-	{
-		author = "Tundra";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper AB Helmet (104th Red)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory1\data\Textures\104th_AB_Red_Helmet.paa" }; // the file path to the texture
-	};
+	
 
 	// Platoon  Helmets
 	class JA_104th_Ed_Helmet : SWLB_clone_P2_Helmet

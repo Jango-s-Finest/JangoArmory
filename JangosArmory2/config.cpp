@@ -216,27 +216,7 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_AB_Base_Helmet : SWLB_clone_AB_helmet
-	{
-		author = "Dak";
-			scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (Base)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_AB_Base_Helmet.paa" }; // the file path to the texture
-	};
-
-	class JA_104th_AB_Medic_Helmet : SWLB_clone_AB_helmet
-	{
-		author = "Dak";
-			scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Airborne Helmet (Medic)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory2\data\Textures\104th_AB_Medic_Helmet.paa" }; // the file path to the texture
-	};
+	
 
 	class JA_104th_AB_Medic_Uniform : SWLB_clone_uniform
 	{
