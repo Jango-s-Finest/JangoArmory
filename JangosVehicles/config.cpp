@@ -50,7 +50,7 @@ class CfgPatches
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {"JA_104th_guided_resupply_pod_launcher"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03","A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets", "JMSLLTE_vehair_Uwing", "JMSLLTE_vehair_N1fighter"};
+		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03","A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
 };
 
