@@ -9,8 +9,10 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Varelli"
 		};
 		weapons[] = {
+			"JA_104th_Varelli_Uniform"
 		};
 	};
 };
@@ -84,6 +86,31 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
+	class JA_104th_Varelli_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th Varelli)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Varelli_Upper.paa",
+			"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Varelli_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Varelli";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	
 };
 
@@ -100,5 +127,21 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12;
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
+	class JA_104th_Varelli : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Varelli_Uniform";
+		displayName = "104th Varelli";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Varelli_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_Varelli_Lower.paa"};
+		linkedItems[] = { JA_104th_Varelli_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Varelli_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
 	
 };

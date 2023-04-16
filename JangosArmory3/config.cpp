@@ -16,7 +16,6 @@ class CfgPatches
 			"JA_104th_Paraso",
 			"JA_104th_ARF",
 			"JA_104th_ARFMedic",
-			"JA_104th_Carmine",
 			"JA_104th_Dak",
 			"JA_Quick",
 			"JA_332nd_Chich",
@@ -52,13 +51,11 @@ class CfgPatches
 			"JA_104th_Paraso_Uniform",
 			"JA_104th_ARF_Uniform",
 			"JA_104th_ARFMedic_Uniform",
-			"JA_104th_Carmine_Uniform",
 			"JA_104th_Dak_Uniform",
 			"JA_Quick_Uniform",
 			"JA_104th_Carmine_Vest",
 			"JA_104th_ARF_Helmet",
 			"JA_104th_ARFMedic_Helmet",
-			"JA_104th_Carmine_Helmet",
 			"JA_104th_Dak_Helmet",
 			"JA_Quick_Helmet"
 		};
@@ -500,31 +497,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Carmine_Uniform : SWLB_clone_uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper armor (104th Carmine)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory3\data\Textures\104th_AB_Carmine_Upper.paa",
-			"JangosArmory3\data\Textures\104th_AB_Carmine_Lower.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Carmine";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
 	class JA_104th_Dak_Uniform : SWLB_clone_uniform
 	{
 		author = "Jango's Finest";
@@ -574,27 +546,6 @@ class CfgWeapons
 			mass = 40;
 			uniformType = "Neopren";
 		};
-	};
-	class JA_104th_Carmine_Vest : SWLB_clone_airborne_nco_armor
-	{
-		author = "Emmet"
-			scope = 2;
-		displayName = "Airborne NCO Vest (104th Carmine)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-			"JangosArmory3\data\Textures\officer_Kama_Carmine.paa",
-			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa" //Heavy
-		};
-		vestType="Rebreather";	
 	};
 	class JA_104th_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
@@ -754,22 +705,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_ARFMedic_Upper.paa", "JangosArmory3\data\Textures\104th_ARFMedic_Lower.paa"};
 		linkedItems[] = { JA_104th_ARFMedic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_ARFMedic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};
-	class JA_104th_Carmine : SWLB_clone_base_P2
-	{
-		author = "Tundra";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		uniformClass = "JA_104th_Carmine_Uniform";
-		displayName = "104th Carmine";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory3\data\Textures\104th_AB_Carmine_Upper.paa", "JangosArmory3\data\Textures\104th_AB_Carmine_Lower.paa"};
-		linkedItems[] = { JA_104th_Carmine_Helmet, JA_104th_Carmine_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Carmine_Helmet, JA_104th_Carmine_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Dak : SWLB_clone_base_P2
 	{

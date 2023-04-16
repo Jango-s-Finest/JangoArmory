@@ -11,7 +11,10 @@ class CfgPatches
 		units[] = {
 		};
 		weapons[] = {
-			"JA_104th_AB_Axel_Officer_Trooper_Armor"
+			"JA_104th_AB_Axel_Officer_Trooper_Armor",
+			"JA_104th_AB_Galahad_Officer_Trooper_Armor",
+			"JA_104th_Carmine_Vest",
+			"JA_104th_Osiris_Vest"
 		};
 	};
 };
@@ -107,19 +110,68 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
-};
-
-class CfgVehicles
-{
-	class SWLB_clone_base_P2;
-	class SWLB_clone_marshal_commander_base_P2;
-	class SWLB_clone_backpack;
-	class SWLB_clone_RTO_mini_backpack;
-	class SWLB_clone_backpack_heavy;
-	class SWLB_clone_backpack_medic;
-	class SWLB_clone_backpack_RTO;
-	class JLTS_Clone_jumppack;
-	class JA_104th_Jumppack_JT12;
-	class JA_104th_Jumppack_JT12_LR;
-	// General Uniforms
+	class JA_104th_AB_Galahad_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Officer vest (104th Galahad)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Officer.paa", 
+			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Officer.paa"
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_Carmine_Vest : SWLB_clone_airborne_nco_armor
+	{
+		author = "Emmet"
+			scope = 2;
+		displayName = "Airborne NCO Vest (104th Carmine)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Carmine_Kama.paa",
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa" //Heavy
+		};
+		vestType="Rebreather";	
+	};
+	class JA_104th_Osiris_Vest : SWLB_clone_airborne_nco_armor
+	{
+		author = "Emmet"
+			scope = 2;
+		displayName = "Airborne NCO Vest (104th Osiris)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Osiris_Kama.paa",
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory1\data\Textures\104th_Accessories_Heavy.paa" //Heavy
+		};
+		vestType="Rebreather";	
+	};
 };

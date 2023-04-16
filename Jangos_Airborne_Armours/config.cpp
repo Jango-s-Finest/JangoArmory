@@ -9,10 +9,14 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
-			"JA_104th_Carmine"
+			"JA_104th_Carmine",
+			"JA_104th_Osiris",
+			"JA_104th_Magnum"
 		};
 		weapons[] = {
-			"JA_104th_Carmine_Uniform"
+			"JA_104th_Carmine_Uniform",
+			"JA_104th_Osiris_Uniform",
+			"JA_104th_Magnum_Uniform"
 		};
 	};
 };

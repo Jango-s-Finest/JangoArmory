@@ -11,6 +11,8 @@ class CfgPatches
 		units[] = {
 		};
 		weapons[] = {
+			"JA_104th_Varelli_Pilot_Helmet",
+			"JA_104th_OD_Pilot_Helmet"
 		};
 	};
 };
@@ -84,21 +86,25 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	
-};
-
-class CfgVehicles
-{
-	class SWLB_clone_base_P2;
-	class SWLB_clone_marshal_commander_base_P2;
-	class SWLB_clone_backpack;
-	class SWLB_clone_RTO_mini_backpack;
-	class SWLB_clone_backpack_heavy;
-	class SWLB_clone_backpack_medic;
-	class SWLB_clone_backpack_RTO;
-	class JLTS_Clone_jumppack;
-	class JA_104th_Jumppack_JT12;
-	class JA_104th_Jumppack_JT12_LR;
-	// General Uniforms
+	class JA_104th_Varelli_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Pilot Helmet (104th Varelli)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Varelli_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_OD_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Pilot Helmet (104th OD)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_OD_Helmet.paa" }; // the file path to the texture
+	};
 	
 };

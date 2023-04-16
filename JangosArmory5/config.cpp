@@ -45,7 +45,6 @@ class CfgPatches
 			"JA_104th_Loner_NVG_NCO",
 			"JA_104th_Sigil_Uniform",
 			"JA_104th_Sigil_Vest",
-			"JA_104th_Varelli_Pilot_Helmet",
 			"JA_104th_Blood_Uniform",
 			"JA_104th_Misfire_Uniform",
 			"JA_104th_AB_Clutch_Officer_Trooper_Armor",
@@ -561,31 +560,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Varelli_Uniform : SWLB_clone_uniform
-	{
-		author = "Dak";
-		scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper armor (104th Varelli)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory5\data\Textures\104th_Pilot_Varelli_Upper.paa",
-			"JangosArmory5\data\Textures\104th_Pilot_Varelli_Lower.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Varelli";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
 	class JA_104th_Death_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -742,16 +716,6 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper Special Activities Helmet (104th Ghost)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_JTAC_Ghost_Helmet.paa" }; // the file path to the texture
-	};
-	class JA_104th_Varelli_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Pilot Helmet (104th Varelli)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_Pilot_Varelli_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_AB_Clutch_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
@@ -1055,22 +1019,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_AB_Misfire_Upper.paa", "JangosArmory5\data\Textures\104th_AB_Misfire_Lower.paa"};
 		linkedItems[] = { JA_104th_Misfire_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Misfire_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};
-	class JA_104th_Varelli : SWLB_clone_base_P2
-	{
-		author = "Dak";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		uniformClass = "JA_104th_Varelli_Uniform";
-		displayName = "104th Varelli";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory5\data\Textures\104th_Pilot_Varelli_Upper.paa", "JangosArmory5\data\Textures\104th_Pilot_Varelli_Lower.paa"};
-		linkedItems[] = { JA_104th_Varelli_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Varelli_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Fire : SWLB_clone_base_P2
 	{
