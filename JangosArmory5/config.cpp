@@ -130,6 +130,7 @@ class CfgWeapons
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
+	class SWLB_CEE_Recon_Lieutenant;
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
@@ -879,24 +880,20 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_IQ_Vest : SWLB_clone_airborne_nco_armor
+	class JA_104th_IQ_Vest : SWLB_CEE_Recon_Lieutenant
 	{
 		author = "Emmet";
 		scope = 2;
 		displayName = "NCO Vest (104th IQ)";
-		hiddenSelections[] =
+		hiddenSelections[]=
 		{
 			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
+			"camo2"
 		};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[]=
 		{
-			"JangosArmory5\data\Textures\104th_ARF_IQ_Heavy.paa", // Heavy
 			"JangosArmory5\data\Textures\104th_ARF_IQ_Officer.paa",
-			"JangosArmory5\data\Textures\104th_ARF_IQ_Heavy.paa", //Heavy
-			"JangosArmory5\data\Textures\104th_ARF_IQ_Heavy.paa" //Heavy
+			"JangosArmory5\data\Textures\104th_ARF_IQ_Heavy.paa" // Heavy
 		};
 		vestType="Rebreather";	
 	};
