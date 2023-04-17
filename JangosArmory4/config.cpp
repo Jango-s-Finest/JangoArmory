@@ -311,7 +311,7 @@ class CfgWeapons
 	class JA_104th_P2_Scav_Armor : SWLB_clone_recon_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone NCO vest (104th Scav)";
+		displayName = "Clone NCO vest (104th Skav)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -384,7 +384,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper armor (104th Niner)";
+		displayName = "Clone Trooper armor (104th Galahad)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -1237,7 +1237,7 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Niner_Uniform";
-		displayName = "104th Niner";
+		displayName = "104th Galahad";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };

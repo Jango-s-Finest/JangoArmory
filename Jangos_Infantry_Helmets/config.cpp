@@ -129,10 +129,8 @@ class CfgWeapons
 		hiddenSelections[] = {
             "camo1",
         }; // don't change this
-		displayname = "Clone Trooper Engineer Helmet (104th Scav)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
-			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Scav_Helmet.paa"
-		}; // the file path to the texture
+		displayname = "Clone Trooper P2 Helmet (104th Skav)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Skav_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Xan_Helmet : SWLB_P2_SpecOps_Helmet
 	{

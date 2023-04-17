@@ -82,21 +82,23 @@ class CfgWeapons
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
+	class SWLB_CEE_Officer_Tactical;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	class JA_104th_Death_Kama : SWLB_clone_kama_armor
+	class JA_104th_Death_Kama : SWLB_CEE_Officer_Tactical
 	{
 		author = "Dak";
 		displayName = "Clone Trooper Kama (104th Death)";
 		hiddenSelections[] =
 		{
-			"camo1"
-
+			"camo1",
+			"camo2"
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"Jangos_Infantry_Vests\data\Textures\104th_P2_Death_Kama.paa"
+			"Jangos_Infantry_Vests\data\Textures\104th_P2_Death_Kama.paa", // Kama
+  			"SWLB_clones\data\light_accessories_co.paa"                 
 		};
 		vestType="Rebreather";	
 	};

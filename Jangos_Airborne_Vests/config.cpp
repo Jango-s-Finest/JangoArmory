@@ -84,6 +84,7 @@ class CfgWeapons
 	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
+	class ls_gar_airborneOfficer_vest;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
@@ -110,7 +111,7 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
-	class JA_104th_AB_Galahad_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+	class JA_104th_AB_Galahad_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer vest (104th Galahad)";

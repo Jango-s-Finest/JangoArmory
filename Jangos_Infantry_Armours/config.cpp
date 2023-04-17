@@ -172,7 +172,7 @@ class CfgWeapons
 		author = "Ice";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper armor (104th Scav)";
+		displayName = "Clone Trooper armor (104th Skav)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -180,8 +180,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"Jangos_Infantry_Armours\data\Textures\104th_P2_Scav_Upper.paa",
-			"Jangos_Infantry_Armours\data\Textures\104th_P2_Scav_Lower.paa"
+			"Jangos_Infantry_Armours\data\Textures\104th_P2_Skav_Upper.paa",
+			"Jangos_Infantry_Armours\data\Textures\104th_P2_Skav_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -263,7 +263,7 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_104th_Scav_Uniform_ME";
-		displayName = "104th Scav";
+		displayName = "104th Skav";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };

@@ -339,7 +339,7 @@ class CfgWeapons
 			"camo1",
 			"visor"
 		}; // don't change this
-		displayname = "Clone Trooper BARC Helmet (104th Niner)"; // the name it will be in game
+		displayname = "Clone Trooper BARC Helmet (104th Galahad)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { 
 			"JangosArmory3\data\Textures\104th_BARC_Niner_Helmet.paa",
 			"JangosArmory3\data\Textures\visor_co.paa",
