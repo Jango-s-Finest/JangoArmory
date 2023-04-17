@@ -267,7 +267,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Scav_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Scav_Lower.paa"};
+		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_P2_Skav_Upper.paa", "JangosArmory4\data\Textures\104th_P2_Skav_Lower.paa"};
 		linkedItems[] = { JA_104th_Scav_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Scav_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
