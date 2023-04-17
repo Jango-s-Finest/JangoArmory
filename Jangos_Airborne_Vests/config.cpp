@@ -127,9 +127,9 @@ class CfgWeapons
 		{
 			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
 			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Officer.paa", 
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa", 
 			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Officer.paa"
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa"
 		};
 		vestType="Rebreather";	
 	};
