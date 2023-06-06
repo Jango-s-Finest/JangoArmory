@@ -825,19 +825,19 @@ class cfgVehicles {
 				magazine = "AUX501_Weapons_Mags_40mw5";
 			};
 			class _xx_501_DC15L_mag{
-				count = 5;
+				count = 10;
 				magazine = "AUX501_Weapons_Mags_20mw240";
 			};
 			class _xx_501_DC15C_mag{
-				count = 5;
+				count = 10;
 				magazine = "AUX501_Weapons_Mags_20mw40";
 			};
 			class _xx_501_DC15ADP_mag{
-				count = 10;
+				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwdp30";
 			};
 			class _xx_501_DC15AUP_mag{
-				count = 10;
+				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwup30";
 			};
 			class _xx_501_DC15S_mag{
@@ -848,8 +848,12 @@ class cfgVehicles {
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_Stun5";
 			};
+			class _xx_501_Z6_mag{
+				count = 5;
+				magazine = "AUX501_Weapons_Mags_10mw400";
+			};
 			class _xx_501_DC17DP_mag{
-				count = 10;
+				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwdp20";
 			};
 			class _xx_JLTS_DC15A_mag{
@@ -6715,38 +6719,32 @@ class cfgVehicles {
 	class JA_104th_BARC_WP: JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th WP Logo";
-		maxSpeed = 280;
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_wp_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_wp_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 	class JA_104th_BARC_Talon: JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th Talon Logo";
-		maxSpeed = 280;
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_talon_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_talon_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 	class JA_104th_BARC_Beans: JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th Beans";
-		maxSpeed = 280;
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_beans_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_beans_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 	class JA_104th_BARC_Sniper: JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th Sniper";
-		maxSpeed = 280;
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_sniper_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_sniper_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 	class JA_104th_BARC_Medic: JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th Medic";
-		maxSpeed = 280;
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_medic_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_medic_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 	class JA_104th_BARC_EOD: JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th EOD";
-		maxSpeed = 280;
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\Body_104_eod_CO.paa","JangosVehicles\data\textures\Weapons_104_CO.paa","JangosVehicles\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_eod_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 
 	//class 3as_nuclass_f;
@@ -10962,19 +10960,19 @@ class cfgVehicles {
 				magazine = "AUX501_Weapons_Mags_40mw5";
 			};
 			class _xx_501_DC15L_mag{
-				count = 5;
+				count = 10;
 				magazine = "AUX501_Weapons_Mags_20mw240";
 			};
 			class _xx_501_DC15C_mag{
-				count = 5;
+				count = 10;
 				magazine = "AUX501_Weapons_Mags_20mw40";
 			};
 			class _xx_501_DC15ADP_mag{
-				count = 10;
+				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwdp30";
 			};
 			class _xx_501_DC15AUP_mag{
-				count = 10;
+				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwup30";
 			};
 			class _xx_501_DC15S_mag{
@@ -10985,8 +10983,12 @@ class cfgVehicles {
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_Stun5";
 			};
+			class _xx_501_Z6_mag{
+				count = 5;
+				magazine = "AUX501_Weapons_Mags_10mw400";
+			};
 			class _xx_501_DC17DP_mag{
-				count = 10;
+				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwdp20";
 			};
 			class _xx_JLTS_DC15A_mag{
