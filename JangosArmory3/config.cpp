@@ -592,7 +592,7 @@ class CfgVehicles
 	class JLTS_Clone_jumppack;
 	class JLTS_Clone_jumppack_JT12_104;
 	class JLTS_Clone_jumppack_mc;
-	class RD501_JLTS_Clone_jumppack_mc2;
+	class RD501_JLTS_Clone_jumppack_cdv;
 	// General Uniforms
 	class JA_104th_Crash : SWLB_clone_marshal_commander_base_P2
 	{
@@ -889,7 +889,7 @@ class CfgVehicles
 		tf_range = 0;
 		tf_subtype = "";
 	};		
-	class JA_104th_Jumppack_CDV: RD501_JLTS_Clone_jumppack_mc2
+	class JA_104th_Jumppack_CDV: RD501_JLTS_Clone_jumppack_cdv
 	{
 		author = "501st + Echo";
 		scope = 2;
@@ -901,6 +901,5 @@ class CfgVehicles
 		tf_hasLRradio = 1;
 		tf_range = 40000;
 		tf_subtype = "airborne";
-		
 	};
 };
