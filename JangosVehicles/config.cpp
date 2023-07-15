@@ -900,6 +900,10 @@ class cfgVehicles {
 				count = 3;
 				magazine = "ls_mag_rpg_1rnd";
 			};
+			class _xx_JA104_mag_T9_1rnd{
+				count = 5;
+				magazine = "JA_104th_LaserCannon_mag";
+			};
 			class _xx_501_ThermalDet{
 				count = 8;
 				magazine = "AUX501_Weapons_Mags_Thermal_Detonator";
@@ -920,7 +924,7 @@ class cfgVehicles {
 		class TransportItems
 		{
 			class _xx_ACE_elasticBandage{
-				count = 30;
+				count = 50;
 				name = "ACE_elasticBandage";
 			};
 			class _xx_ACE_epinephrine{
@@ -6538,16 +6542,6 @@ class cfgVehicles {
 						UIposition[] = {0.35,-0.3};
 						mirroredMissilePos = 1;
 					};
-					class Pylons5: Pylons1
-					{
-						UIposition[] = {0.35,0};
-						priority = 4;
-					};
-					class Pylons6: Pylons5
-					{
-						UIposition[] = {0.35,0.5};
-						mirroredMissilePos = 5;
-					};
 					class Pylons7: Pylons1
 					{
 						priority = 10;
@@ -11035,6 +11029,10 @@ class cfgVehicles {
 				count = 3;
 				magazine = "ls_mag_rpg_1rnd";
 			};
+			class _xx_JA104_mag_T9_1rnd{
+				count = 5;
+				magazine = "JA_104th_LaserCannon_mag";
+			};
 			class _xx_501_ThermalDet{
 				count = 8;
 				magazine = "AUX501_Weapons_Mags_Thermal_Detonator";
@@ -11055,7 +11053,7 @@ class cfgVehicles {
 		class TransportItems
 		{
 			class _xx_ACE_elasticBandage{
-				count = 30;
+				count = 50;
 				name = "ACE_elasticBandage";
 			};
 			class _xx_ACE_epinephrine{
