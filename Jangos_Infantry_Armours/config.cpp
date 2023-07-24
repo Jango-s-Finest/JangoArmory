@@ -120,6 +120,7 @@ class CfgWeapons
 	};
     class JA_Enginner_Base_Trooper_Uniform: JA_Engineer_Base_Trooper_Uniform
     {
+        scopeArsenal = 0;
         displayName = "== Deprecated Class ==";
         descriptionShort = "Deprecated class, switch to JA_Engineer_Base_Trooper_Uniform.";
     };
