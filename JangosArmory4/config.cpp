@@ -845,7 +845,7 @@ class CfgWeapons
 	class JA_104th_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Trooper vest (104th)";
+		displayName = "Clone Airborne Trooper Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -857,7 +857,6 @@ class CfgWeapons
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa",
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa" //Heavy
 		};
 		vestType="Rebreather";	
