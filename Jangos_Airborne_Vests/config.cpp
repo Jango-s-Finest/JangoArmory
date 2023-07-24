@@ -91,6 +91,7 @@ class CfgWeapons
 	class VestItem;
 	class JA_104th_AB_Axel_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
+        scopeArsenal = 0; // Duplicate vest
 		author = "Dak";
 		displayName = "Clone Airborne Officer vest (104th Axel)";
 		hiddenSelections[] =

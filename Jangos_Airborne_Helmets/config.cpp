@@ -261,7 +261,7 @@ class CfgWeapons
 	class JA_104th_Axel_Helmet : SWLB_clone_AB_Helmet
 	{
 		author = "Ice";
-		scopeArsenal = 2;
+		scopeArsenal = 0;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
