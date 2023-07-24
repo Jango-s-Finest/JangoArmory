@@ -3,7 +3,7 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory_4
+	class Jangos_Armory_Airborne_Helmets
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
