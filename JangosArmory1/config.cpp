@@ -410,7 +410,7 @@ class CfgWeapons
 	class JA_104thKnightfallVest : SWLB_clone_commander_armor
 	{
 		author = "Tundra";
-		displayName = "Clone Trooper commander vest (104th Knightfall)";
+		displayName = "Clone Trooper Commander Vest (104th Knightfall)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -426,7 +426,7 @@ class CfgWeapons
 	class JA_104thTuskVest : SWLB_clone_commander_armor
 	{
 		author = "Tundra";
-		displayName = "Clone Trooper commander vest (104th Tusk)";
+		displayName = "Clone Trooper Commander Vest (104th Tusk)";
 		hiddenSelections[] =
 		{
 			"camo1"

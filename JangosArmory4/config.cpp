@@ -292,7 +292,7 @@ class CfgWeapons
 	class JA_104th_AB_Fire_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne NCO vest (104th Fire)";
+		displayName = "Clone Airborne NCO Vest (104th Fire)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -550,7 +550,7 @@ class CfgWeapons
 	class JA_104th_ARC_Vest: SWLB_clone_officer_armor //wip
 	{
 		author="Dak";
-		displayName="Clone ARC Trooper vest (104th)";
+		displayName="Clone ARC Trooper Vest (104th)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		model="JangosArmory4\data\model\arcVest.p3d";
 		hiddenSelections[]=
@@ -643,7 +643,7 @@ class CfgWeapons
 	class JA_104th_AB_ME_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest // Fixes the white pauldron issue
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (ME)";
+		displayName = "Clone Airborne Officer Vest (ME)";
 		hiddenSelectionsTextures[] =
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",    // Small "pocket" on left arm
@@ -659,7 +659,7 @@ class CfgWeapons
 	class JA_104th_ME_officer_Vest : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Officer vest (ME)";
+		displayName = "Clone Trooper Officer Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -673,7 +673,7 @@ class CfgWeapons
 	class JA_104th_ME_Commander_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Commander vest (ME)";
+		displayName = "Clone Trooper Commander Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -687,7 +687,7 @@ class CfgWeapons
 	class JA_104th_AB_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (104th)";
+		displayName = "Clone Airborne Officer Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -713,7 +713,7 @@ class CfgWeapons
         // another vest, rather than just fixing the original.
         // If this is later changed, change the base class of the original and the texture order
         author = "Dak";
-		displayName = "Clone Airborne Officer vest (104th) [Black Pauldron]";
+		displayName = "Clone Airborne Officer Vest (104th) [Black Pauldron]";
 		hiddenSelectionsTextures[] =
         {
             "JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Small "pocket" on left arm
@@ -729,7 +729,7 @@ class CfgWeapons
 	class JA_104th_Base_officer_Vest : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Officer vest (104th)";
+		displayName = "Clone Trooper Officer Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -743,7 +743,7 @@ class CfgWeapons
 	class JA_104th_Base_Commander_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Commander vest (104th)";
+		displayName = "Clone Trooper Commander Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -757,7 +757,7 @@ class CfgWeapons
 	class JA_104th_ME_Medic_Vest : SWLB_clone_medic_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Medic vest (ME)";
+		displayName = "Clone Trooper Medic Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -771,7 +771,7 @@ class CfgWeapons
 	class JA_104th_AB_ME_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne NCO vest (ME)";
+		displayName = "Clone Airborne NCO Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -810,7 +810,7 @@ class CfgWeapons
 	class JA_104th_Base_Medic_Vest : SWLB_clone_medic_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Medic vest (104th)";
+		displayName = "Clone Trooper Medic Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -824,7 +824,7 @@ class CfgWeapons
 	class JA_104th_AB_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne NCO vest (104th)";
+		displayName = "Clone Airborne NCO Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1",

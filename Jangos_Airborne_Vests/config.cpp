@@ -93,7 +93,7 @@ class CfgWeapons
 	{
         scopeArsenal = 0; // Duplicate vest
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (104th Axel)";
+		displayName = "Clone Airborne Officer Vest (104th Axel)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -115,7 +115,7 @@ class CfgWeapons
 	class JA_104th_AB_Galahad_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (104th Galahad)";
+		displayName = "Clone Airborne Officer Vest (104th Galahad)";
 		hiddenSelections[] =
 		{
 			"camo1",

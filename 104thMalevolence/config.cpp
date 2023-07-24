@@ -205,7 +205,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone lightweight rebreather vest (Invisible)";
+		displayName = "Clone Lightweight Rebreather Vest (Invisible)";
 		hiddenSelections[]=
 		{
 			"camo1",

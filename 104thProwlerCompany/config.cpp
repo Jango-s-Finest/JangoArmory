@@ -292,7 +292,7 @@ class CfgWeapons
 	class JA_Prowler_P2_Base_Fenris_Armor : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Officer vest (Fenris)";
+		displayName = "Clone Trooper Officer Vest (Fenris)";
 		hiddenSelections[] =
 		{
 			"camo1"

@@ -777,7 +777,7 @@ class CfgWeapons
 	class JA_Howler_AB_Base_Officer_Armor : ls_gar_airborneOfficer_vest // Fixes white pauldron issue
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (Howler)";
+		displayName = "Clone Airborne Officer Vest (Howler)";
 		hiddenSelectionsTextures[] =
 		{
             // Fixed Kama texture being applied to every selection
@@ -794,7 +794,7 @@ class CfgWeapons
 	class JA_Howler_P2_Base_Officer_Armor : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Officer vest (Howler)";
+		displayName = "Clone Trooper Officer Vest (Howler)";
 		hiddenSelections[] =
 		{
 			"camo1"

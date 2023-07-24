@@ -384,7 +384,7 @@ class CfgWeapons
 	class JA_302nd_Chich_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper commander vest (332nd Chich)";
+		displayName = "Clone Trooper Commander Vest (332nd Chich)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -865,7 +865,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone marshal commander jumppack LR";
+		displayname = "Clone Marshal Commander Jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "SWLB_clone_rto_radio_dialog"
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -880,7 +880,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone marshal commander jumppack";
+		displayname = "Clone Marshal Commander jumppack";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "";
 		tf_dialogUpdate = "";
