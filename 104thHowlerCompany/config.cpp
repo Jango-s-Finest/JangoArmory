@@ -64,6 +64,7 @@ class CfgPatches
 			"JA_Howler_ME_Base_Medic_Helmet",
 			"JA_Howler_ME_Base_Medic_Uniform",
 			"JA_Howler_AB_Base_Trooper_Armor",
+			"JA_Howler_AB_Base_NCO_Armor",
 			"JA_Howler_AB_Base_Officer_Armor",
 			"JA_Howler_P2_Base_Officer_Armor"
 		};
@@ -769,6 +770,17 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
+    class JA_Howler_AB_Base_NCO_Armor: SWLB_clone_airborne_nco_armor
+    {
+        displayName = "Clone Airborne NCO Vest (Howler)"
+        hiddenSelectionsTextures[] =
+        {
+            "SWLB_clones\data\heavy_accessories_co.paa",               // Bag and Chest Strap
+            "104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", // Kama
+            "SWLB_clones\data\heavy_accessories_co.paa",               // Left Shoulder Thing
+            "SWLB_clones\data\heavy_accessories_co.paa"                // NCO Pauldron
+        };
+    };
 	class ls_gar_airborneOfficer_vest;
 	class JA_Howler_AB_Base_Officer_Armor : ls_gar_airborneOfficer_vest // Fixes white pauldron issue
 	{
