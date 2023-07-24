@@ -159,8 +159,8 @@ class CfgWeapons
 	class JA_104th_Osiris_Vest : SWLB_clone_airborne_nco_armor
 	{
 		author = "Emmet"
-			scope = 2;
-		displayName = "Airborne NCO Vest (104th Osiris)";
+        scope = 2;
+		displayName = "Clone Airborne NCO Vest (104th Osiris)";
 		hiddenSelections[] =
 		{
 			"camo1",
