@@ -126,11 +126,12 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+            // Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa doesn't exist
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
 			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa", 
-			"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa"
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"/*, //Heavy
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa"*/
 		};
 		vestType="Rebreather";	
 	};
