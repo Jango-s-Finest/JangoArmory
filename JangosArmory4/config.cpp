@@ -638,25 +638,20 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
-	class JA_104th_AB_ME_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+    class ls_gar_airborneOfficer_vest;
+	class JA_104th_AB_ME_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest // Fixes the white pauldron issue
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer vest (ME)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5"
-		};
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa", 
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",    // Small "pocket" on left arm
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",    // Heavy Vest Bag / Straps
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa", // Kama
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"/*,    // Unknown, No change seen in-game when changed
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"*/  // Pauldron - Currently broken until LS fixes the selections
+            // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
+            // Leaving it empty makes it appear invisible.
 		};
 		vestType="Rebreather";	
 	};
@@ -710,6 +705,26 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
+    class ls_gar_airborneOfficer_vest;
+    class JA_104th_AB_Officer_Trooper_Armor_Fixed: ls_gar_airborneOfficer_vest
+    {
+        // Dak has previously said he likes the white pauldron, so the fixed version is included as
+        // another vest, rather than just fixing the original.
+        // If this is later changed, change the base class of the original and the texture order
+        author = "Dak";
+		displayName = "Clone Airborne Officer vest (104th) [Black Pauldron]";
+		hiddenSelectionsTextures[] =
+        {
+            "JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Small "pocket" on left arm
+            "JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Heavy Vest Bag / Straps
+            "JangosArmory1\data\textures\104th_Pauldron_and_Kama.paa",  // Kama
+            "JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"/*,  // Unknown, No change seen in-game when changed
+            "JangosArmory1\data\textures\104th_Pauldron_and_Kama.paa"*/   // Pauldron - Currently broken until LS fixes the selections
+            // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
+            // Leaving it empty makes it appear invisible.
+        };
+    };
+
 	class JA_104th_Base_officer_Vest : SWLB_clone_officer_armor
 	{
 		author = "Dak";

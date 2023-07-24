@@ -769,23 +769,21 @@ class CfgWeapons
 		};
 		vestType="Rebreather";	
 	};
-	class JA_Howler_AB_Base_Officer_Armor : SWLB_CEE_Airborne_Officer
+	class ls_gar_airborneOfficer_vest;
+	class JA_Howler_AB_Base_Officer_Armor : ls_gar_airborneOfficer_vest // Fixes white pauldron issue
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer vest (Howler)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", // Heavy
-			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa",
-			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", //Heavy
-			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa" //Heavy
+            // Fixed Kama texture being applied to every selection
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Small "pocket" on left arm
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Heavy Vest Bag / Straps
+			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", // Kama
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"/*,  // Unknown, No change seen in-game when changed
+			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa"*/  // Pauldron - Currently broken until LS fixes the selections
+            // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
+            // Leaving it empty makes it appear invisible.
 		};
 		vestType="Rebreather";	
 	};
