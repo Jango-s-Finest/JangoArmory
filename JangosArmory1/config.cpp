@@ -370,7 +370,7 @@ class CfgWeapons
 	{
 		author = "Emmet";
 		scope = 2;
-		displayName = "NCO Vest (104th Scurvy)";
+		displayName = "Clone NCO Vest (104th Scurvy)";
 		hiddenSelections[] =
 		{
 			"camo1",
