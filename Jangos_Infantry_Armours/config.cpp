@@ -222,13 +222,13 @@ class CfgVehicles
 		scopeCurator = 2;
         side = 1;
 		uniformClass = "JA_Engineer_Base_Trooper_Uniform";
-		displayName = "P2 - Trooper";
+		displayName = "P2 - Engineer";
 		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Prowler";
+		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_Engineer_Upper_Base.paa","Jangos_Infantry_Armours\data\Textures\104th_Engineer_Lower_Base.paa"};
-		linkedItems[] = {JA_Prowler_P2_Base_Trooper_Helmet,JA_Prowler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = {JA_Prowler_P2_Base_Trooper_Helmet,JA_Prowler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Engineer_Base_Helmet, SWLB_CEE_Engineer_Vest_NCO, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Engineer_Base_Helmet, SWLB_CEE_Engineer_Vest_NCO, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};  
 	class JA_104th_Tiger : SWLB_clone_base_P2
 	{
