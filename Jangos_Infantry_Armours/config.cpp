@@ -15,7 +15,8 @@ class CfgPatches
 			"JA_104th_Scav"
 		};
 		weapons[] = {
-			"JA_Enginner_Base_Trooper_Uniform",
+			"JA_Engineer_Base_Trooper_Uniform",
+			"JA_Enginner_Base_Trooper_Uniform", // Fallback class for kits made with the old uniform
 			"JA_104th_Welty_Uniform",
 			"JA_104th_Tiger_Uniform",
 			"JA_104th_Scav_Uniform"
@@ -92,12 +93,12 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	class JA_Enginner_Base_Trooper_Uniform : SWLB_clone_uniform
+	class JA_Engineer_Base_Trooper_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper armor (Enginner - P2)";
+		displayName = "Clone Trooper armor (Engineer - P2)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -117,6 +118,12 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+    class JA_Enginner_Base_Trooper_Uniform: JA_Engineer_Base_Trooper_Uniform
+    {
+        displayName = "== Deprecated Class ==";
+        descriptionShort = "Deprecated class, switch to JA_Engineer_Base_Trooper_Uniform.";
+    };
+
 	class JA_104th_Welty_Uniform : SWLB_clone_uniform
 	{
 		author = "Ice";
@@ -214,7 +221,7 @@ class CfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		uniformClass = "JA_Enginner_Base_Trooper_Uniform";
+		uniformClass = "JA_Engineer_Base_Trooper_Uniform";
 		displayName = "P2 - Trooper";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Prowler";
