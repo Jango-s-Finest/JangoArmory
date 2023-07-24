@@ -198,12 +198,15 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Walker)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
 			"JangosArmory5\data\Textures\104th_P2_Walker_Helmet.paa",
-			"JangosArmory5\data\Textures\104th_P2_Walker_Helmet.paa" 
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	class JA_104th_Pretz_Helmet : SWLB_clone_P2_Helmet
@@ -226,7 +229,8 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Byte)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_P2_Byte_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Dart_Helmet : SWLB_clone_eng_helmet
+    class ls_gar_engineer_helmet;
+	class JA_104th_Dart_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -234,12 +238,15 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Dart)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
 			"JangosArmory5\data\Textures\104th_P2_Dart_Helmet.paa",
-			"JangosArmory5\data\Textures\104th_P2_Dart_Helmet.paa" 
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	class JA_104th_Blood_Helmet : SWLB_clone_P2_Helmet
@@ -275,7 +282,8 @@ class CfgWeapons
 			"JangosArmory5\data\Textures\104th_P2_Dragan_Helmet.paa" 
 		}; // the file path to the texture
 	};
-	class JA_104th_Engineer_Base_Helmet : SWLB_clone_eng_helmet
+    class ls_gar_engineer_helmet;
+	class JA_104th_Engineer_Base_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -284,12 +292,15 @@ class CfgWeapons
 		hiddenSelections[]=
         {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Base)"; // the name it will be in game
+        hiddenSelectionsMaterials[] = {};
 		hiddenSelectionsTextures[] = { 
 			"JangosArmory5\data\Textures\104th_Engineer_Helmet_Base.paa",
-			"JangosArmory5\data\Textures\104th_Engineer_Helmet_Base.paa"
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	class JA_104th_Clutch_Uniform : SWLB_clone_uniform

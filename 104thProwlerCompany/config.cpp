@@ -230,7 +230,8 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Medic - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thProwlerCompany\data\Textures\Prowler_Armored_Medic_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Prowler_ENG_Base_Helmet : SWLB_clone_eng_helmet
+    class ls_gar_engineer_helmet;
+	class JA_Prowler_ENG_Base_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -239,12 +240,15 @@ class CfgWeapons
 		hiddenSelections[]=
         {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Helmet (Prowler Engineer - Eng)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
 			"104thProwlerCompany\data\Textures\Prowler_ENG_Engineer_Helmet.paa",
-			"104thProwlerCompany\data\Textures\Prowler_ENG_Engineer_Helmet.paa" 
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	class JA_Prowler_ENG_Officer_Helmet : SWLB_clone_eng_helmet

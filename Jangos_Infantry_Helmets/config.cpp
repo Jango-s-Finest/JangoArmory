@@ -142,7 +142,8 @@ class CfgWeapons
 		displayname = "Clone Trooper Special Activities Helmet (104th Xan)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Xan_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Tinkle_Helmet : SWLB_clone_eng_helmet
+    class ls_gar_engineer_helmet;
+	class JA_104th_Tinkle_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -150,12 +151,15 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Tinkle)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
 			"Jangos_Infantry_Helmets\data\Textures\104th_CE_Tinkle_Helmet.paa",
-			"Jangos_Infantry_Helmets\data\Textures\104th_CE_Tinkle_Helmet.paa" 
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	
