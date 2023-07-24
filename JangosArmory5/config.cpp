@@ -844,11 +844,12 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_IQ_Vest : SWLB_CEE_Recon_Lieutenant
+    class SWLB_CEE_Force_Recon_Officer;
+	class JA_104th_IQ_Vest : SWLB_CEE_Force_Recon_Officer
 	{
 		author = "Emmet";
 		scope = 2;
-		displayName = "NCO Vest (104th IQ)";
+		displayName = "Clone Force Recon Officer Vest (104th IQ)";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -856,8 +857,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"JangosArmory5\data\Textures\104th_ARF_IQ_Officer.paa",
-			"JangosArmory5\data\Textures\104th_ARF_IQ_Heavy.paa" // Heavy
+			"SWLB_clones\data\light_accessories_co.paa",
+			"JangosArmory5\data\Textures\104th_ARF_IQ_Officer.paa" // Heavy
 		};
 		vestType="Rebreather";	
 	};
