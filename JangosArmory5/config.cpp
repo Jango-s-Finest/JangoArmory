@@ -768,7 +768,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_ARF";
+			uniformClass = "JA_104th_ARF_Desert";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -803,7 +803,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_ARF";
+			uniformClass = "JA_104th_ARF_Jungle";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -838,7 +838,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_ARF";
+			uniformClass = "JA_104th_ARF_Urban";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
