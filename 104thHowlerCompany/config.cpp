@@ -753,20 +753,12 @@ class CfgWeapons
 	class JA_Howler_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Trooper vest (Howler)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
+		displayName = "Clone Airborne Trooper Vest (Howler)";
 		hiddenSelectionsTextures[] =
 		{
-			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa", // Heavy
-			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa",
-			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa", //Heavy
-			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa" //Heavy
+			"SWLB_clones\data\heavy_accessories_co.paa", // Heavy
+			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa",
+			"SWLB_clones\data\heavy_accessories_co.paa" //Heavy
 		};
 		vestType="Rebreather";	
 	};
