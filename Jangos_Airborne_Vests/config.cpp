@@ -138,8 +138,8 @@ class CfgWeapons
 	class JA_104th_Carmine_Vest : SWLB_clone_airborne_nco_armor
 	{
 		author = "Emmet"
-			scope = 2;
-		displayName = "Airborne NCO Vest (104th Carmine)";
+        scope = 2;
+		displayName = "Clone Airborne NCO Vest (104th Carmine)";
 		hiddenSelections[] =
 		{
 			"camo1",
