@@ -92,12 +92,6 @@ class CfgWeapons
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
@@ -108,10 +102,7 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
 	class SWLB_clone_medic_armor;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;
 	class VestItem;
 	
@@ -119,6 +110,53 @@ class CfgWeapons
 	// ARF
 
 	// AIRBORNEE
+
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class SWLB_clone_basic_armor;
+    class SWLB_Clone_airborne_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_airborne_nco_armor: SWLB_Clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Airborne_Officer: SWLB_Clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Force_Recon_NCO: SWLB_Clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Officer_Tactical: SWLB_Clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    
+    class ls_blueforVest_base;
+    class ls_gar_airborneOfficer_vest: ls_blueforVest_base
+    {
+        class ItemInfo;
+    };
+
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_commander_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_kama_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
 
 
 	// Pilots
@@ -385,7 +423,10 @@ class CfgWeapons
 			"JangosArmory1\data\Textures\104th_P2_Scurvy_Heavy.paa", //Heavy
 			"JangosArmory1\data\Textures\104th_P2_Scurvy_Heavy.paa" //Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 
 	class JA_104thAngelVest : SWLB_clone_arc_armor
@@ -404,7 +445,10 @@ class CfgWeapons
 			"JangosArmory1\data\Textures\104th_ARC_Angel_Accessories_ARC.paa",
 			"JangosArmory1\data\Textures\104th_ARC_Angel_Accessories_Officer.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 
 	class JA_104thKnightfallVest : SWLB_clone_commander_armor
@@ -420,7 +464,10 @@ class CfgWeapons
 		{
 			"JangosArmory1\data\Textures\104th_Knightfall_Accessories.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 
 	class JA_104thTuskVest : SWLB_clone_commander_armor
@@ -436,7 +483,10 @@ class CfgWeapons
 		{
 			"JangosArmory1\data\Textures\104th_Tusk_Accessories.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 
 	class JA_104thPSGTKama : SWLB_clone_kama_armor
@@ -452,7 +502,10 @@ class CfgWeapons
 		{
 			"JangosArmory1\data\Textures\104th_Pauldron_and_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 
 	class JA_104thNVG : lsd_gar_standart_nvg

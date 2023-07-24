@@ -11354,6 +11354,7 @@ class CfgWeapons
 		
 		class ItemInfo
 		{
+            vestType = "Rebreather";
 			_generalMacro = "VestItem";
 			author = "Bohemia Interactive";
 			containerClass = "Supply450";
@@ -11375,7 +11376,6 @@ class CfgWeapons
 				};
 			};
 		};
-		
 	};
 	class GBU12BombLauncher;
 	class JA_104th_guided_resupply_pod_launcher: GBU12BombLauncher

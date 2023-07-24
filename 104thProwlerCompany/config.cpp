@@ -80,6 +80,15 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class ItemInfo;
+    class SWLB_clone_basic_armor;
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+
 	class JA_Prowler_P2_Base_NCO_Helmet : SWLB_clone_BARC_helmet
 	{
 		author = "Dak";
@@ -306,7 +315,10 @@ class CfgWeapons
 		{
 			"104thProwlerCompany\data\Textures\fenriskama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 };
 

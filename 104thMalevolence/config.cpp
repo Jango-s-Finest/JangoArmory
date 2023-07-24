@@ -59,7 +59,6 @@ class CfgWeapons
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
 	class SWLB_clone_commander_armor;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
@@ -77,6 +76,15 @@ class CfgWeapons
 	class VestItem;
 	class Bag_Base;
 
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class ItemInfo;
+    class SWLB_clone_officer_armor;
+    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+
 	class JA_104th_ME_Vest : SWLB_clone_arc_armor
 	{
 		author = "Ice";
@@ -93,7 +101,10 @@ class CfgWeapons
 			"",
 			"104thMalevolence\data\Textures\104th_ME_Pauldron_and_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_Malevolence_Base_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
@@ -222,7 +233,7 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			containerClass="Supply100";
-			vestType="Rebreather";
+			vestType = "Rebreather";
 			mass=80;
 			hiddenSelections[]=
 			{
