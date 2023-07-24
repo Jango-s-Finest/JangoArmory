@@ -81,23 +81,23 @@ class CfgWeapons
     // Makes making each vest a rebreather easier
     class ItemInfo;
     class SWLB_clone_basic_armor;
-    class SWLB_Clone_airborne_armor: SWLB_clone_basic_armor
+    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
     {
         class ItemInfo;
     };
-    class SWLB_clone_airborne_nco_armor: SWLB_Clone_airborne_armor
+    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
     {
         class ItemInfo;
     };
-    class SWLB_CEE_Airborne_Officer: SWLB_Clone_airborne_armor
+    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
     {
         class ItemInfo;
     };
-    class SWLB_CEE_Force_Recon_NCO: SWLB_Clone_airborne_armor
+    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
     {
         class ItemInfo;
     };
-    class SWLB_CEE_Officer_Tactical: SWLB_Clone_airborne_armor
+    class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
     {
         class ItemInfo;
     };

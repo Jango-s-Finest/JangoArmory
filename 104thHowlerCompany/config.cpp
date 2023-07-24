@@ -782,7 +782,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_Howler_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
+	class JA_Howler_AB_Base_Trooper_Armor : SWLB_clone_airborne_armor
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (Howler)";

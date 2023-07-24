@@ -156,23 +156,23 @@ class CfgWeapons
     // Makes making each vest a rebreather easier
     class ItemInfo;
     class SWLB_clone_basic_armor;
-    class SWLB_Clone_airborne_armor: SWLB_clone_basic_armor
+    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
     {
         class ItemInfo;
     };
-    class SWLB_clone_airborne_nco_armor: SWLB_Clone_airborne_armor
+    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
     {
         class ItemInfo;
     };
-    class SWLB_CEE_Airborne_Officer: SWLB_Clone_airborne_armor
+    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
     {
         class ItemInfo;
     };
-    class SWLB_CEE_Force_Recon_NCO: SWLB_Clone_airborne_armor
+    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
     {
         class ItemInfo;
     };
-    class SWLB_CEE_Officer_Tactical: SWLB_Clone_airborne_armor
+    class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
     {
         class ItemInfo;
     };
@@ -869,7 +869,7 @@ class CfgWeapons
             vestType = "Rebreather";
         };
 	};
-	class JA_104th_AB_ME_Base_Trooper_Armor : SWLB_Clone_airborne_armor
+	class JA_104th_AB_ME_Base_Trooper_Armor : SWLB_clone_airborne_armor
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (ME)";
@@ -931,7 +931,7 @@ class CfgWeapons
             vestType = "Rebreather";
         };	
 	};
-	class JA_104th_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
+	class JA_104th_AB_Base_Trooper_Armor : SWLB_clone_airborne_armor
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (104th)";

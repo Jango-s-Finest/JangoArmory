@@ -87,7 +87,7 @@ class CfgWeapons
 	class SWLB_clone_arc_armor;
 	class SWLB_clone_officer_armor;
 	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
+	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
