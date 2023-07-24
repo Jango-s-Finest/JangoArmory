@@ -710,25 +710,16 @@ class CfgWeapons
 		displayname = "Clone Trooper Special Activities Helmet (104th Ghost)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_JTAC_Ghost_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_AB_Clutch_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+	class JA_104th_AB_Clutch_Officer_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (104th Clutch)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5"
-		};
+		displayName = "Clone Airborne NCO Vest (104th Clutch)";
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", //Heavy
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", //Heavy
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Kama.paa", 
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", //Heavy
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Kama.paa"
+			"JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", // Bag and Chest Strap
+            "JangosArmory5\data\Textures\104th_AB_Clutch_Kama.paa",  // Kama
+            "JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", // Left Shoulder Thing
+            "JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa"  // NCO Pauldron
 		};
 		vestType="Rebreather";	
 	};
