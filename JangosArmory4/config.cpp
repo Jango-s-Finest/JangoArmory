@@ -45,6 +45,7 @@ class CfgPatches
 			"JA_104th_ME_officer_Vest",
 			"JA_104th_ME_Commander_Vest",
 			"JA_104th_AB_Officer_Trooper_Armor",
+            "JA_104th_AB_Officer_Trooper_Armor_Fixed",
 			"JA_104th_Base_officer_Vest",
 			"JA_104th_Base_Commander_Vest",
 			"JA_104th_ME_Medic_Vest",
