@@ -3,7 +3,7 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory_4
+	class Jangos_Armory_Infantry_Helmets
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
@@ -69,7 +69,7 @@ class CfgWeapons
 	class SWLB_clone_arc_armor;
 	class SWLB_clone_officer_armor;
 	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
+	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
@@ -142,7 +142,8 @@ class CfgWeapons
 		displayname = "Clone Trooper Special Activities Helmet (104th Xan)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Xan_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Tinkle_Helmet : SWLB_clone_eng_helmet
+    class ls_gar_engineer_helmet;
+	class JA_104th_Tinkle_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -150,12 +151,15 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Tinkle)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
 			"Jangos_Infantry_Helmets\data\Textures\104th_CE_Tinkle_Helmet.paa",
-			"Jangos_Infantry_Helmets\data\Textures\104th_CE_Tinkle_Helmet.paa" 
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	

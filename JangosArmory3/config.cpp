@@ -95,12 +95,6 @@ class CfgWeapons
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
@@ -112,13 +106,52 @@ class CfgWeapons
 	class lsd_gar_barcm2_helmet;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_medic_armor;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
+
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class SWLB_clone_basic_armor;
+    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    
+    class ls_blueforVest_base;
+    class ls_gar_airborneOfficer_vest: ls_blueforVest_base
+    {
+        class ItemInfo;
+    };
+
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_commander_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
 	
 	// General Uniforms
 	class JA_104th_Crash_Uniform : SWLB_clone_mc_uniform
@@ -384,7 +417,7 @@ class CfgWeapons
 	class JA_302nd_Chich_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper commander vest (332nd Chich)";
+		displayName = "Clone Trooper Commander Vest (332nd Chich)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -394,7 +427,10 @@ class CfgWeapons
 		{
 			"JangosArmory3\data\Textures\332chichkama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_302nd_CommanderVisor : lsd_gar_p2MarshalCommander_nvg
 	{
@@ -865,7 +901,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone marshal commander jumppack LR";
+		displayname = "Clone Marshal Commander Jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "SWLB_clone_rto_radio_dialog"
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -880,7 +916,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone marshal commander jumppack";
+		displayname = "Clone Marshal Commander jumppack";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "";
 		tf_dialogUpdate = "";

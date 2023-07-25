@@ -3,7 +3,7 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory_4
+	class Jangos_Armory_Airborne_Helmets
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
@@ -87,7 +87,7 @@ class CfgWeapons
 	class SWLB_clone_arc_armor;
 	class SWLB_clone_officer_armor;
 	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
+	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
@@ -198,16 +198,6 @@ class CfgWeapons
 		displayname = "Clone Trooper AB Helmet (104th OD)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Airborne_Helmets\data\Textures\104th_AB_OD_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Achilles_Helmet : SWLB_clone_AB_helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper AB Helmet (104th Achilles)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "Jangos_Airborne_Helmets\data\Textures\104th_AB_Achilles_Helmet.paa" }; // the file path to the texture
-	};
 	class JA_104th_Clutch_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Dak";
@@ -261,7 +251,7 @@ class CfgWeapons
 	class JA_104th_Axel_Helmet : SWLB_clone_AB_Helmet
 	{
 		author = "Ice";
-		scopeArsenal = 2;
+		scopeArsenal = 0;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this

@@ -62,7 +62,7 @@ class CfgWeapons
 	class SWLB_clone_arc_armor;
 	class SWLB_clone_officer_armor;
 	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
+	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_eng_helmet;
@@ -79,6 +79,15 @@ class CfgWeapons
 	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;
 	class VestItem;
+
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class ItemInfo;
+    class SWLB_clone_basic_armor;
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
 
 	class JA_Prowler_P2_Base_NCO_Helmet : SWLB_clone_BARC_helmet
 	{
@@ -230,7 +239,8 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Medic - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thProwlerCompany\data\Textures\Prowler_Armored_Medic_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Prowler_ENG_Base_Helmet : SWLB_clone_eng_helmet
+    class ls_gar_engineer_helmet;
+	class JA_Prowler_ENG_Base_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -239,12 +249,15 @@ class CfgWeapons
 		hiddenSelections[]=
         {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Helmet (Prowler Engineer - Eng)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
 			"104thProwlerCompany\data\Textures\Prowler_ENG_Engineer_Helmet.paa",
-			"104thProwlerCompany\data\Textures\Prowler_ENG_Engineer_Helmet.paa" 
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	class JA_Prowler_ENG_Officer_Helmet : SWLB_clone_eng_helmet
@@ -292,7 +305,7 @@ class CfgWeapons
 	class JA_Prowler_P2_Base_Fenris_Armor : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Officer vest (Fenris)";
+		displayName = "Clone Trooper Officer Vest (Fenris)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -302,7 +315,10 @@ class CfgWeapons
 		{
 			"104thProwlerCompany\data\Textures\fenriskama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 };
 

@@ -64,6 +64,7 @@ class CfgPatches
 			"JA_Howler_ME_Base_Medic_Helmet",
 			"JA_Howler_ME_Base_Medic_Uniform",
 			"JA_Howler_AB_Base_Trooper_Armor",
+			"JA_Howler_AB_Base_NCO_Armor",
 			"JA_Howler_AB_Base_Officer_Armor",
 			"JA_Howler_P2_Base_Officer_Armor"
 		};
@@ -98,12 +99,6 @@ class CfgWeapons
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
@@ -114,10 +109,48 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;
 	class VestItem;
+
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class ItemInfo;
+    class SWLB_clone_basic_armor;
+    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    
+    class ls_blueforVest_base;
+    class ls_gar_airborneOfficer_vest: ls_blueforVest_base
+    {
+        class ItemInfo;
+    };
+
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_commander_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
 
 	class JA_Howler_SB_Base_Kaleb_Helmet : SWLB_clone_P1_helmet
 	{
@@ -749,50 +782,60 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_Howler_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
+	class JA_Howler_AB_Base_Trooper_Armor : SWLB_clone_airborne_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Trooper vest (Howler)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
+		displayName = "Clone Airborne Trooper Vest (Howler)";
 		hiddenSelectionsTextures[] =
 		{
-			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa", // Heavy
-			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa",
-			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa", //Heavy
-			"104thHowlerCompany\data\Textures\officer_accessories_Howler.paa" //Heavy
-		};
-		vestType="Rebreather";	
-	};
-	class JA_Howler_AB_Base_Officer_Armor : SWLB_CEE_Airborne_Officer
-	{
-		author = "Dak";
-		displayName = "Clone Airborne Officer vest (Howler)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", // Heavy
+			"SWLB_clones\data\heavy_accessories_co.paa", // Heavy
 			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa",
-			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", //Heavy
-			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa" //Heavy
+			"SWLB_clones\data\heavy_accessories_co.paa" //Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
+	};
+    class JA_Howler_AB_Base_NCO_Armor: SWLB_clone_airborne_nco_armor
+    {
+        displayName = "Clone Airborne NCO Vest (Howler)"
+        hiddenSelectionsTextures[] =
+        {
+            "SWLB_clones\data\heavy_accessories_co.paa",               // Bag and Chest Strap
+            "104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", // Kama
+            "SWLB_clones\data\heavy_accessories_co.paa",               // Left Shoulder Thing
+            "SWLB_clones\data\heavy_accessories_co.paa"                // NCO Pauldron
+        };
+        class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
+    };
+	class JA_Howler_AB_Base_Officer_Armor : ls_gar_airborneOfficer_vest // Fixes white pauldron issue
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Officer Vest (Howler)";
+		hiddenSelectionsTextures[] =
+		{
+            // Fixed Kama texture being applied to every selection
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Small "pocket" on left arm
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Heavy Vest Bag / Straps
+			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa", // Kama
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"/*,  // Unknown, No change seen in-game when changed
+			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa"*/  // Pauldron - Currently broken until LS fixes the selections
+            // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
+            // Leaving it empty makes it appear invisible.
+		};
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_Howler_P2_Base_Officer_Armor : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Officer vest (Howler)";
+		displayName = "Clone Trooper Officer Vest (Howler)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -802,7 +845,10 @@ class CfgWeapons
 		{
 			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 };
 

@@ -3,7 +3,7 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory_4
+	class Jangos_Armory_Infantry_Armours
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
@@ -15,7 +15,8 @@ class CfgPatches
 			"JA_104th_Scav"
 		};
 		weapons[] = {
-			"JA_Enginner_Base_Trooper_Uniform",
+			"JA_Engineer_Base_Trooper_Uniform",
+			"JA_Enginner_Base_Trooper_Uniform", // Fallback class for kits made with the old uniform
 			"JA_104th_Welty_Uniform",
 			"JA_104th_Tiger_Uniform",
 			"JA_104th_Scav_Uniform"
@@ -71,7 +72,7 @@ class CfgWeapons
 	class SWLB_clone_arc_armor;
 	class SWLB_clone_officer_armor;
 	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
+	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
@@ -92,12 +93,12 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	class JA_Enginner_Base_Trooper_Uniform : SWLB_clone_uniform
+	class JA_Engineer_Base_Trooper_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper armor (Enginner - P2)";
+		displayName = "Clone Trooper armor (Engineer - P2)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -117,6 +118,13 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+    class JA_Enginner_Base_Trooper_Uniform: JA_Engineer_Base_Trooper_Uniform
+    {
+        scopeArsenal = 0;
+        displayName = "== Deprecated Class ==";
+        descriptionShort = "Deprecated class, switch to JA_Engineer_Base_Trooper_Uniform.";
+    };
+
 	class JA_104th_Welty_Uniform : SWLB_clone_uniform
 	{
 		author = "Ice";
@@ -214,14 +222,14 @@ class CfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
         side = 1;
-		uniformClass = "JA_Enginner_Base_Trooper_Uniform";
-		displayName = "P2 - Trooper";
+		uniformClass = "JA_Engineer_Base_Trooper_Uniform";
+		displayName = "P2 - Engineer";
 		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Prowler";
+		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_Engineer_Upper_Base.paa","Jangos_Infantry_Armours\data\Textures\104th_Engineer_Lower_Base.paa"};
-		linkedItems[] = {JA_Prowler_P2_Base_Trooper_Helmet,JA_Prowler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = {JA_Prowler_P2_Base_Trooper_Helmet,JA_Prowler_AB_Base_Trooper_Armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Engineer_Base_Helmet, SWLB_CEE_Engineer_Vest_NCO, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Engineer_Base_Helmet, SWLB_CEE_Engineer_Vest_NCO, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};  
 	class JA_104th_Tiger : SWLB_clone_base_P2
 	{

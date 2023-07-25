@@ -45,6 +45,7 @@ class CfgPatches
 			"JA_104th_ME_officer_Vest",
 			"JA_104th_ME_Commander_Vest",
 			"JA_104th_AB_Officer_Trooper_Armor",
+            "JA_104th_AB_Officer_Trooper_Armor_Fixed",
 			"JA_104th_Base_officer_Vest",
 			"JA_104th_Base_Commander_Vest",
 			"JA_104th_ME_Medic_Vest",
@@ -134,12 +135,6 @@ class CfgWeapons
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
@@ -150,17 +145,68 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_medic_armor;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
 	class SWLB_P2_SpecOps_Helmet;
-	class SWLB_clone_recon_officer_armor;
 	class ls_gar_phase2Arf_helmet;
 	class SWLB_clone_eng_helmet;
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
+
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class ItemInfo;
+    class SWLB_clone_basic_armor;
+    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    
+    class ls_blueforVest_base;
+    class ls_gar_airborneOfficer_vest: ls_blueforVest_base
+    {
+        class ItemInfo;
+    };
+
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_commander_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_kama_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_recon_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_medic_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
 	
 	class JA_104th_Pacify_Uniform : SWLB_clone_uniform
 	{
@@ -291,7 +337,7 @@ class CfgWeapons
 	class JA_104th_AB_Fire_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne NCO vest (104th Fire)";
+		displayName = "Clone Airborne NCO Vest (104th Fire)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -306,7 +352,10 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy_Malevolence.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_AB_Fire_Heavy_Malevolence.paa" //Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_P2_Scav_Armor : SWLB_clone_recon_officer_armor
 	{
@@ -322,7 +371,10 @@ class CfgWeapons
 			"\SWLB_clones\data\heavy_accessories_co.paa",
 			"JangosArmory4\data\Textures\104th_P2_Scav_Kama.paa", // Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_Vision_Helmet : SWLB_clone_P2_helmet
 	{
@@ -549,7 +601,7 @@ class CfgWeapons
 	class JA_104th_ARC_Vest: SWLB_clone_officer_armor //wip
 	{
 		author="Dak";
-		displayName="Clone ARC Trooper vest (104th)";
+		displayName="Clone ARC Trooper Vest (104th)";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		model="JangosArmory4\data\model\arcVest.p3d";
 		hiddenSelections[]=
@@ -564,6 +616,7 @@ class CfgWeapons
 		};
 		class ItemInfo: VestItem
 		{
+            vestType = "Rebreather";
 			uniformModel="JangosArmory4\data\model\arcVest.p3d";
 			containerClass="Supply100";
 			hiddenSelections[]=
@@ -636,34 +689,34 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_ARC_Frosty_Vest.paa",
 			"JangosArmory4\data\Textures\104th_ARC_Frosty_Pauldron.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
-	class JA_104th_AB_ME_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+	class JA_104th_AB_ME_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest // Fixes the white pauldron issue
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (ME)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5"
-		};
+		displayName = "Clone Airborne Officer Vest (ME)";
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa", 
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",    // Small "pocket" on left arm
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",    // Heavy Vest Bag / Straps
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa", // Kama
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"/*,    // Unknown, No change seen in-game when changed
+			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"*/  // Pauldron - Currently broken until LS fixes the selections
+            // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
+            // Leaving it empty makes it appear invisible.
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_ME_officer_Vest : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Officer vest (ME)";
+		displayName = "Clone Trooper Officer Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -672,12 +725,15 @@ class CfgWeapons
 		{
 			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_ME_Commander_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Commander vest (ME)";
+		displayName = "Clone Trooper Commander Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -686,12 +742,15 @@ class CfgWeapons
 		{
 			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_AB_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (104th)";
+		displayName = "Clone Airborne Officer Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -708,12 +767,38 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
+    class JA_104th_AB_Officer_Trooper_Armor_Fixed: ls_gar_airborneOfficer_vest
+    {
+        // Dak has previously said he likes the white pauldron, so the fixed version is included as
+        // another vest, rather than just fixing the original.
+        // If this is later changed, change the base class of the original and the texture order
+        author = "Dak";
+		displayName = "Clone Airborne Officer Vest (104th) [Black Pauldron]";
+		hiddenSelectionsTextures[] =
+        {
+            "JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Small "pocket" on left arm
+            "JangosArmory4\data\Textures\104th_Accessories_Heavy.paa",  // Heavy Vest Bag / Straps
+            "JangosArmory1\data\textures\104th_Pauldron_and_Kama.paa",  // Kama
+            "JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"/*,  // Unknown, No change seen in-game when changed
+            "JangosArmory1\data\textures\104th_Pauldron_and_Kama.paa"*/   // Pauldron - Currently broken until LS fixes the selections
+            // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
+            // Leaving it empty makes it appear invisible.
+        };
+        class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
+    };
+
 	class JA_104th_Base_officer_Vest : SWLB_clone_officer_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Officer vest (104th)";
+		displayName = "Clone Trooper Officer Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -722,12 +807,15 @@ class CfgWeapons
 		{
 			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_Base_Commander_Vest : SWLB_clone_commander_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Commander vest (104th)";
+		displayName = "Clone Trooper Commander Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -736,12 +824,15 @@ class CfgWeapons
 		{
 			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_ME_Medic_Vest : SWLB_clone_medic_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Medic vest (ME)";
+		displayName = "Clone Trooper Medic Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -750,12 +841,15 @@ class CfgWeapons
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_AB_ME_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne NCO vest (ME)";
+		displayName = "Clone Airborne NCO Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -770,12 +864,15 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa" //Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
-	class JA_104th_AB_ME_Base_Trooper_Armor : SWLB_Clone_airborne_armor
+	class JA_104th_AB_ME_Base_Trooper_Armor : SWLB_clone_airborne_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Trooper vest (ME)";
+		displayName = "Clone Airborne Trooper Vest (ME)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -787,15 +884,17 @@ class CfgWeapons
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", // Heavy
 			"JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa",
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy_ME.paa" //Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_Base_Medic_Vest : SWLB_clone_medic_armor
 	{
 		author = "Dak";
-		displayName = "Clone Trooper Medic vest (104th)";
+		displayName = "Clone Trooper Medic Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1"
@@ -804,12 +903,15 @@ class CfgWeapons
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_AB_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne NCO vest (104th)";
+		displayName = "Clone Airborne NCO Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -824,12 +926,15 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa" //Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
-	class JA_104th_AB_Base_Trooper_Armor : SWLB_Clone_airborne_armor
+	class JA_104th_AB_Base_Trooper_Armor : SWLB_clone_airborne_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Trooper vest (104th)";
+		displayName = "Clone Airborne Trooper Vest (104th)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -841,10 +946,12 @@ class CfgWeapons
 		{
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa",
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
 			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa" //Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_Vest : SWLB_clone_arc_armor
 	{
@@ -862,7 +969,10 @@ class CfgWeapons
 			"",
 			"JangosArmory4\data\Textures\104th_Pauldron_and_Kama.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_Crowbi_NVG_NCO : lsd_gar_rangefinder_nvg
 	{
@@ -912,7 +1022,10 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_ARC_Hunter_ARC.paa",
 			"JangosArmory4\data\Textures\104th_ARC_Hunter_Officer.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
 	};
 	class JA_104th_Crowbi_Vest : SWLB_clone_arc_armor
 	{
@@ -930,7 +1043,10 @@ class CfgWeapons
 			"JangosArmory4\data\Textures\104th_ARC_Crowbi_Accessories_ARC.paa",
 			"JangosArmory4\data\Textures\104th_ARC_Crowbi_Accessories_Officer.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_Beans_Helmet : SWLB_clone_ARF_P1_Helmet
 	{

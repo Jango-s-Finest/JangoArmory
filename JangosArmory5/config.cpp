@@ -3,7 +3,7 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory_4
+	class Jangos_Armory_5
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
@@ -107,12 +107,6 @@ class CfgWeapons
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_Clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
@@ -126,13 +120,58 @@ class CfgWeapons
 	class SWLB_clone_kama_armor;
 	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
-	class SWLB_CEE_Recon_Lieutenant;
 	class UniformItem;
 	class VestItem;
 	// General Uniforms
+
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class SWLB_clone_basic_armor;
+    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Force_Recon_Officer: SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    
+    class ls_blueforVest_base;
+    class ls_gar_airborneOfficer_vest: ls_blueforVest_base
+    {
+        class ItemInfo;
+    };
+
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_commander_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
 	
 	class JA_104th_Axel_Uniform : SWLB_clone_uniform
 	{
@@ -198,12 +237,15 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Walker)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
 			"JangosArmory5\data\Textures\104th_P2_Walker_Helmet.paa",
-			"JangosArmory5\data\Textures\104th_P2_Walker_Helmet.paa" 
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	class JA_104th_Pretz_Helmet : SWLB_clone_P2_Helmet
@@ -226,7 +268,8 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Byte)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_P2_Byte_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Dart_Helmet : SWLB_clone_eng_helmet
+    class ls_gar_engineer_helmet;
+	class JA_104th_Dart_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -234,12 +277,15 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Dart)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
 			"JangosArmory5\data\Textures\104th_P2_Dart_Helmet.paa",
-			"JangosArmory5\data\Textures\104th_P2_Dart_Helmet.paa" 
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	class JA_104th_Blood_Helmet : SWLB_clone_P2_Helmet
@@ -275,7 +321,8 @@ class CfgWeapons
 			"JangosArmory5\data\Textures\104th_P2_Dragan_Helmet.paa" 
 		}; // the file path to the texture
 	};
-	class JA_104th_Engineer_Base_Helmet : SWLB_clone_eng_helmet
+    class ls_gar_engineer_helmet;
+	class JA_104th_Engineer_Base_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -284,12 +331,15 @@ class CfgWeapons
 		hiddenSelections[]=
         {
             "camo1",
-            "illum"
+            "illum",
+            "visor"
         }; // don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Base)"; // the name it will be in game
+        hiddenSelectionsMaterials[] = {};
 		hiddenSelectionsTextures[] = { 
 			"JangosArmory5\data\Textures\104th_Engineer_Helmet_Base.paa",
-			"JangosArmory5\data\Textures\104th_Engineer_Helmet_Base.paa"
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
 	};
 	class JA_104th_Clutch_Uniform : SWLB_clone_uniform
@@ -358,7 +408,10 @@ class CfgWeapons
 			"JangosArmory5\data\Textures\104th_ARC_Spectre_ARC.paa",
 			"JangosArmory5\data\Textures\104th_ARC_Spectre_Officer.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_Specter_NVG_NCO : lsd_gar_rangefinder_nvg
 	{
@@ -427,7 +480,10 @@ class CfgWeapons
 			"JangosArmory5\data\Textures\104th_ARC_Loner_ARC.paa",
 			"JangosArmory5\data\Textures\104th_ARC_Loner_Officer.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_Loner_NVG_NCO : lsd_gar_rangefinder_nvg
 	{
@@ -506,7 +562,10 @@ class CfgWeapons
 			"JangosArmory5\data\Textures\104th_ARC_Sigil_ARC.paa",
 			"JangosArmory5\data\Textures\104th_ARC_Sigil_Officer.paa"
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_Sigil_NVG_NCO : lsd_gar_rangefinder_nvg
 	{
@@ -687,25 +746,21 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Axel_Vest : SWLB_Clone_airborne_armor
+	class JA_104th_Axel_Vest : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Trooper vest (Axel)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
+		displayName = "Clone Airborne NCO Vest (104th Axel)";
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-			"JangosArmory5\data\Textures\104th_AB_Axel_Kama.paa",
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
-			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa" //Heavy
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa",   // Bag and Chest Strap
+            "Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Officer.paa", // Kama
+            "Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa",   // Left Shoulder Thing
+            "Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa"    // NCO Pauldron
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_Ghost_Helmet : SWLB_P2_SpecOps_Helmet
 	{
@@ -717,27 +772,21 @@ class CfgWeapons
 		displayname = "Clone Trooper Special Activities Helmet (104th Ghost)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory5\data\Textures\104th_JTAC_Ghost_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_AB_Clutch_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+	class JA_104th_AB_Clutch_Officer_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Officer vest (104th Clutch)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5"
-		};
+		displayName = "Clone Airborne NCO Vest (104th Clutch)";
 		hiddenSelectionsTextures[] =
 		{
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", //Heavy
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", //Heavy
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Kama.paa", 
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", //Heavy
-			"JangosArmory5\data\Textures\104th_AB_Clutch_Kama.paa"
+			"JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", // Bag and Chest Strap
+            "JangosArmory5\data\Textures\104th_AB_Clutch_Kama.paa",  // Kama
+            "JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa", // Left Shoulder Thing
+            "JangosArmory5\data\Textures\104th_AB_Clutch_Heavy.paa"  // NCO Pauldron
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 	class JA_104th_ARF_Desert_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
@@ -768,7 +817,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_ARF";
+			uniformClass = "JA_104th_ARF_Desert";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -803,7 +852,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_ARF";
+			uniformClass = "JA_104th_ARF_Jungle";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -838,17 +887,17 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_ARF";
+			uniformClass = "JA_104th_ARF_Urban";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_IQ_Vest : SWLB_CEE_Recon_Lieutenant
+	class JA_104th_IQ_Vest : SWLB_CEE_Force_Recon_Officer
 	{
 		author = "Emmet";
 		scope = 2;
-		displayName = "NCO Vest (104th IQ)";
+		displayName = "Clone Force Recon Officer Vest (104th IQ)";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -856,10 +905,13 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"JangosArmory5\data\Textures\104th_ARF_IQ_Officer.paa",
-			"JangosArmory5\data\Textures\104th_ARF_IQ_Heavy.paa" // Heavy
+			"SWLB_clones\data\light_accessories_co.paa",
+			"JangosArmory5\data\Textures\104th_ARF_IQ_Officer.paa" // Heavy
 		};
-		vestType="Rebreather";	
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };	
 	};
 };
 
