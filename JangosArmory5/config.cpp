@@ -119,7 +119,6 @@ class CfgWeapons
 	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_kama_armor;
 	class SWLB_clone_medic_armor;
-	class SWLB_clone_basic_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;

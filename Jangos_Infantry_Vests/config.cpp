@@ -72,7 +72,6 @@ class CfgWeapons
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_eng_helmet;
-	class SWLB_CEE_Officer_Tactical;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;

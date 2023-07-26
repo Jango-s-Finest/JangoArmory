@@ -60,7 +60,6 @@ class CfgWeapons
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
 	class SWLB_clone_commander_armor;
 	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
@@ -75,7 +74,6 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;
 	class VestItem;
