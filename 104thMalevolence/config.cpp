@@ -58,7 +58,6 @@ class CfgWeapons
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
 	class SWLB_clone_commander_armor;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
