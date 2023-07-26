@@ -8,11 +8,9 @@ class CfgPatches
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
-		};
+		units[] = {};
 		weapons[] = {
-			"JA_104th_Death_Kama"
-		};
+			"JA_104th_Death_Kama"};
 	};
 };
 
@@ -22,7 +20,7 @@ class CfgFactionClasses
 	{
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list.scope = 2;
-        side = 1;
+		side = 1;
 		icon = "";
 	};
 };
@@ -34,7 +32,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Basic
 	{
@@ -42,7 +40,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Special
 	{
@@ -50,7 +48,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 };
 
@@ -72,73 +70,70 @@ class CfgWeapons
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_eng_helmet;
-	class SWLB_CEE_Officer_Tactical;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
 
-    // Inheritance for vests
-    // Makes making each vest a rebreather easier
-    class ItemInfo;
-    class SWLB_clone_basic_armor;
-    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    
-    class ls_blueforVest_base;
-    class ls_gar_airborneOfficer_vest: ls_blueforVest_base
-    {
-        class ItemInfo;
-    };
+	// Inheritance for vests
+	// Makes making each vest a rebreather easier
+	class ItemInfo;
+	class SWLB_clone_basic_armor;
+	class SWLB_clone_airborne_armor : SWLB_clone_basic_armor
+	{
+		class ItemInfo;
+	};
+	class SWLB_clone_airborne_nco_armor : SWLB_clone_airborne_armor
+	{
+		class ItemInfo;
+	};
+	class SWLB_CEE_Airborne_Officer : SWLB_clone_airborne_armor
+	{
+		class ItemInfo;
+	};
+	class SWLB_CEE_Force_Recon_NCO : SWLB_clone_airborne_armor
+	{
+		class ItemInfo;
+	};
+	class SWLB_CEE_Officer_Tactical : SWLB_clone_airborne_armor
+	{
+		class ItemInfo;
+	};
 
-    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_commander_armor: SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
+	class ls_blueforVest_base;
+	class ls_gar_airborneOfficer_vest : ls_blueforVest_base
+	{
+		class ItemInfo;
+	};
+
+	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
+	{
+		class ItemInfo;
+	};
+	class SWLB_clone_commander_armor : SWLB_clone_officer_armor
+	{
+		class ItemInfo;
+	};
+	class SWLB_clone_arc_armor : SWLB_clone_officer_armor
+	{
+		class ItemInfo;
+	};
 
 	class JA_104th_Death_Kama : SWLB_CEE_Officer_Tactical
 	{
 		author = "Dak";
 		displayName = "Clone Trooper Kama (104th Death)";
 		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
+			{
+				"camo1",
+				"camo2"};
 		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_P2_Death_Kama.paa", // Kama
+				"SWLB_clones\data\light_accessories_co.paa"};
+		class ItemInfo : ItemInfo
 		{
-			"Jangos_Infantry_Vests\data\Textures\104th_P2_Death_Kama.paa", // Kama
-  			"SWLB_clones\data\light_accessories_co.paa"                 
+			vestType = "Rebreather";
 		};
-		class ItemInfo: ItemInfo
-        {
-            vestType = "Rebreather";
-        };
 	};
 };
 
@@ -155,5 +150,4 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12;
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
-
 };
