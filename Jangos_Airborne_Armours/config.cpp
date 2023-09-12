@@ -11,12 +11,14 @@ class CfgPatches
 		units[] = {
 			"JA_104th_Carmine",
 			"JA_104th_Osiris",
-			"JA_104th_Magnum"
+			"JA_104th_Magnum",
+			"JA_104th_Kage"
 		};
 		weapons[] = {
 			"JA_104th_Carmine_Uniform",
 			"JA_104th_Osiris_Uniform",
-			"JA_104th_Magnum_Uniform"
+			"JA_104th_Magnum_Uniform",
+			"JA_104th_Kage_Uniform"
 		};
 	};
 };
@@ -165,6 +167,31 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};	
+	class JA_104th_Kage_Uniform : SWLB_clone_uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th Kage)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Kage_Upper.paa",
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Kage_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Kage";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -228,6 +255,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Carmine_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Carmine_Lower.paa"};
 		linkedItems[] = { JA_104th_Carmine_Helmet, JA_104th_Carmine_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Carmine_Helmet, JA_104th_Carmine_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Kage : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Kage_Uniform";
+		displayName = "104th Kage";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Kage_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Kage_Lower.paa"};
+		linkedItems[] = { JA_104th_Kage_Helmet, SWLB_clone_airborne_nco_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Kage_Helmet, SWLB_clone_airborne_nco_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	
 };

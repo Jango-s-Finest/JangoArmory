@@ -9,8 +9,12 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Unix"
+			//"JA_104th_Woods"
 		};
 		weapons[] = {
+			"JA_104th_Unix_Uniform"
+			//"JA_104th_Woods_Uniform"
 		};
 	};
 };
@@ -85,6 +89,56 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	
+	
+	class JA_104th_Unix_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Unix)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Unix_Upper.paa",
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Unix_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Unix";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	/*
+	class JA_104th_Woods_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Woods)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Woods_Upper.paa",
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Woods_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Woods";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	*/
+	
 };
 
 class CfgVehicles
@@ -101,4 +155,38 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
 	
+	class JA_104th_Unix : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Unix_Uniform";
+		displayName = "104th Unix";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Unix_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Unix_Lower.paa"};
+		linkedItems[] = {JA_104th_Unix_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Unix_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	/*
+	class JA_104th_Woods : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Woods_Uniform";
+		displayName = "104th Woods";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Woods_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Woods_Lower.paa"};
+		linkedItems[] = {JA_104th_Woods_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Woods_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	*/
 };
