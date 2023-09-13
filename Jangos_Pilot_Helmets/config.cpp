@@ -12,6 +12,7 @@ class CfgPatches
 		};
 		weapons[] = {
 			"JA_104th_Varelli_Pilot_Helmet",
+			"JA_104th_Fish_Pilot_Helmet",
 			"JA_104th_OD_Pilot_Helmet"
 		};
 	};
@@ -105,6 +106,16 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper Pilot Helmet (104th OD)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_OD_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Fish_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper Pilot Helmet (104th Fish)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Fish_Helmet.paa" }; // the file path to the texture
 	};
 	
 };

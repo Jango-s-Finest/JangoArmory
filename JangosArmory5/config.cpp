@@ -866,6 +866,25 @@ class CfgWeapons
 			vestType = "Rebreather";
 		};
 	};
+	class JA_104th_Woods_Vest : SWLB_CEE_Force_Recon_Officer
+	{
+		author = "Emmet";
+		scope = 2;
+		displayName = "Clone Force Recon Officer Vest (104th Woods)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"SWLB_clones\data\light_accessories_co.paa",
+				"JangosArmory5\data\Textures\104th_ARF_Woods_Officer.paa" // Heavy
+			};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+		};
+	};
 };
 
 class CfgVehicles
