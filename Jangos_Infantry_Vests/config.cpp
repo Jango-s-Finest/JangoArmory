@@ -133,6 +133,19 @@ class CfgWeapons
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+			};
 		};
 	};
 };

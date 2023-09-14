@@ -21,7 +21,6 @@ class CfgPatches
 			"JA_104th_Mad",
 			"JA_104th_Drifter",
 			"JA_104th_Sigil",
-			'JA_104th_Woods',
 			'JA_104th_Trustful',
 			'JA_104th_Click',
 			'JA_104th_Bomb',
@@ -36,8 +35,6 @@ class CfgPatches
 			"JA_104th_Vision_Uniform",
 			"JA_104th_Mad_Helmet",
 			"JA_104th_Click_Helmet",
-			"JA_104th_Woods_Helmet",
-			"JA_104th_Woods_Uniform",
 			"JA_104th_Drifter_Uniform",
 			"JA_104th_Mad_Uniform",
 			"JA_104th_Frosty_Vest",
@@ -467,16 +464,6 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Click)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_P2_Click_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Woods_Helmet : SWLB_clone_ARF_P1_helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper ARF Helmet (104th Woods)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_ARF_Woods_Helmet.paa" }; // the file path to the texture
-	};
 	class JA_104th_Mad_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Dak";
@@ -617,33 +604,29 @@ class CfgWeapons
 		class ItemInfo: VestItem
 		{
             vestType = "Rebreather";
-			uniformModel="JangosArmory4\data\model\arcVest.p3d";
-			containerClass="Supply100";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"camo2"
-			};
-			mass=100;
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
 			class HitpointsProtectionInfo
 			{
 				class Chest
 				{
-					HitpointName="HitChest";
-					armor=10;
-					PassThrough=0.30000001;
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
 				};
 				class Legs
 				{
-					hitpointName="HitLegs";
-					armor=10;
-					passThrough=0.30000001;
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
 				};
 				class Arms
 				{
-					hitpointName="HitArms";
-					armor=4;
-					passThrough=0.30000001;
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
 				};
 			};
 		};
@@ -692,6 +675,31 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
         };
 	};
 	class JA_104th_AB_ME_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest // Fixes the white pauldron issue
@@ -972,6 +980,31 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
         };
 	};
 	class JA_104th_Crowbi_NVG_NCO : lsd_gar_rangefinder_nvg
@@ -1025,6 +1058,31 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
         };
 	};
 	class JA_104th_Crowbi_Vest : SWLB_clone_arc_armor
@@ -1046,6 +1104,31 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
         };	
 	};
 	class JA_104th_Beans_Helmet : SWLB_clone_ARF_P1_Helmet
@@ -1106,31 +1189,6 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper ARF Helmet (104th IQ ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "JangosArmory4\data\Textures\104th_ARF_IQ_Helmet_Malevolence.paa" }; // the file path to the texture
-	};
-	class JA_104th_Woods_Uniform : SWLB_clone_uniform
-	{
-		author = "Ice";
-		scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper armor (104th Woods)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"JangosArmory4\data\Textures\104th_ARF_Woods_Upper.paa",
-			"JangosArmory4\data\Textures\104th_ARF_Woods_Lower.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Woods";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
 	};
 	class JA_104th_IQ_Uniform : SWLB_clone_uniform
 	{
@@ -1441,22 +1499,6 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Beans_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
-	class JA_104th_Woods : SWLB_clone_base_P2
-	{
-		author = "Ice";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		uniformClass = "JA_104th_Woods_Uniform";
-		displayName = "104th Woods";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"JangosArmory4\data\Textures\104th_ARF_Woods_Upper.paa", "JangosArmory4\data\Textures\104th_ARF_Woods_Lower.paa"};
-		linkedItems[] = { JA_104th_Woods_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Woods_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};
 	class JA_104th_IQ : SWLB_clone_base_P2
 	{
 		author = "Ice";

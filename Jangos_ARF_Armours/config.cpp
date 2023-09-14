@@ -9,12 +9,12 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
-			"JA_104th_Unix"
-			//"JA_104th_Woods"
+			"JA_104th_Unix",
+			"JA_104th_Woods"
 		};
 		weapons[] = {
-			"JA_104th_Unix_Uniform"
-			//"JA_104th_Woods_Uniform"
+			"JA_104th_Unix_Uniform",
+			"JA_104th_Woods_Uniform"
 		};
 	};
 };
@@ -113,7 +113,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	/*
 	class JA_104th_Woods_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -137,7 +136,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	*/
 	
 };
 
@@ -171,7 +169,7 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Unix_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Unix_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	/*
+	
 	class JA_104th_Woods : SWLB_clone_base_P2
 	{
 		author = "Dak";
@@ -188,5 +186,4 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Woods_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Woods_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	*/
 };
