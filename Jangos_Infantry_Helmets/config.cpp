@@ -16,7 +16,9 @@ class CfgPatches
 			"JA_104th_Spirit_Helmet",
 			"JA_104th_Scav_Helmet",
 			"JA_104th_Xan_Helmet",
-			"JA_104th_Tinkle_Helmet"
+			"JA_104th_Tinkle_Helmet",
+			"JA_104th_Kyo_Helmet",
+			"JA_104th_Knockout_Helmet"
 		};
 	};
 };
@@ -132,6 +134,18 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Skav)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Skav_Helmet.paa" }; // the file path to the texture
 	};
+	class JA_104th_Kyo_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {
+            "camo1",
+        }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Kyo)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Kyo_Helmet.paa" }; // the file path to the texture
+	};
 	class JA_104th_Xan_Helmet : SWLB_P2_SpecOps_Helmet
 	{
 		author = "Dak";
@@ -158,6 +172,25 @@ class CfgWeapons
         hiddenSelectionsMaterials[] = {};
         hiddenSelectionsTextures[] = { 
 			"Jangos_Infantry_Helmets\data\Textures\104th_CE_Tinkle_Helmet.paa",
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
+		}; // the file path to the texture
+	};
+	class JA_104th_Knockout_Helmet : ls_gar_engineer_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {
+            "camo1",
+            "illum",
+            "visor"
+        }; // don't change this
+		displayname = "Clone Trooper Engineer Helmet (104th Knockout)"; // the name it will be in game
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = { 
+			"Jangos_Infantry_Helmets\data\Textures\104th_CE_Knockout_Helmet.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
             "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		}; // the file path to the texture
