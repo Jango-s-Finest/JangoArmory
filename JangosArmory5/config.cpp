@@ -56,6 +56,7 @@ class CfgPatches
 			"JA_104th_ARF_Urban_Uniform",
 			"JA_104th_ARF_Jungle_Uniform",
 			"JA_104th_IQ_Vest",
+			"JA_104th_Woods_Vest",
 			"JA_104th_Sigil_NVG_NCO"};
 	};
 };
@@ -148,6 +149,10 @@ class CfgWeapons
 		class ItemInfo;
 	};
 	class SWLB_CEE_Force_Recon_Officer : SWLB_clone_airborne_armor
+	{
+		class ItemInfo;
+	};
+	class SWLB_CEE_Recon_Lieutenant : SWLB_clone_airborne_armor
 	{
 		class ItemInfo;
 	};
@@ -393,6 +398,31 @@ class CfgWeapons
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
 		};
 	};
 	class JA_104th_Specter_NVG_NCO : lsd_gar_rangefinder_nvg
@@ -461,6 +491,31 @@ class CfgWeapons
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
 		};
 	};
 	class JA_104th_Loner_NVG_NCO : lsd_gar_rangefinder_nvg
@@ -539,6 +594,31 @@ class CfgWeapons
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
 		};
 	};
 	class JA_104th_Sigil_NVG_NCO : lsd_gar_rangefinder_nvg
@@ -847,44 +927,99 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_IQ_Vest : SWLB_CEE_Force_Recon_Officer
+	class JA_104th_IQ_Vest : SWLB_CEE_Recon_Lieutenant
 	{
 		author = "Emmet";
 		scope = 2;
 		displayName = "Clone Force Recon Officer Vest (104th IQ)";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
 				"camo2"};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] = 
 			{
-				"SWLB_clones\data\light_accessories_co.paa",
-				"JangosArmory5\data\Textures\104th_ARF_IQ_Officer.paa" // Heavy
-			};
-		class ItemInfo : ItemInfo
+				"JangosArmory5\data\Textures\104th_ARF_IQ_Officer.paa",
+				"JangosArmory5\data\Textures\104th_ARF_IQ_Heavy.paa"};
+		class ItemInfo: Vestitem
 		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
 			vestType = "Rebreather";
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+			};
 		};
 	};
-	class JA_104th_Woods_Vest : SWLB_CEE_Force_Recon_Officer
+	class JA_104th_Woods_Vest : SWLB_CEE_Recon_Lieutenant
 	{
-		author = "Emmet";
+		author = "Dak";
 		scope = 2;
 		displayName = "Clone Force Recon Officer Vest (104th Woods)";
-		hiddenSelections[] =
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		hiddenSelections[] = 
 			{
 				"camo1",
 				"camo2"};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] = 
 			{
-				"SWLB_clones\data\light_accessories_co.paa",
-				"JangosArmory5\data\Textures\104th_ARF_Woods_Officer.paa" // Heavy
-			};
-		class ItemInfo : ItemInfo
+				"JangosArmory5\data\Textures\104th_ARF_Woods_Officer.paa",
+				"SWLB_clones\data\heavy_accessories_co.paa"};
+		class ItemInfo: Vestitem
 		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
 			vestType = "Rebreather";
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+			};
 		};
 	};
+	/*
+	class SWLB_CEE_Recon_Lieutenant: SWLB_clone_airborne_armor
+	{
+		scope = 2;
+		displayName = "Clone Recon Lieutenant Vest";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"SWLB_clones\data\officer_accessories_co.paa","SWLB_clones\data\heavy_accessories_co.paa"};
+		class ItemInfo: Vestitem
+		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	*/
 };
 
 class CfgVehicles

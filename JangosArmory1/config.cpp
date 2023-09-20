@@ -448,6 +448,31 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
         };
 	};
 
