@@ -20,43 +20,43 @@ class CfgSounds
     class FC_Release_crate
     {
         name = "FC_Release_crate";
-        sound[] = {"\Dropcrate_FC\Sounds\CrateRelease.ogg", db+0, 1.0};
+        sound[] = {"\jango'sfinest\addons\Dropcrate_FC\Sounds\CrateRelease.ogg", db+0, 1.0};
         titles[] = {};
     };
     class FC_Hit_Echo
     {
         name = "FC_Hit_Echo";
-        sound[] = {"\Dropcrate_FC\Sounds\HitEcho.ogg", db+0, 1.0};
+        sound[] = {"\jango'sfinest\addons\Dropcrate_FC\Sounds\HitEcho.ogg", db+0, 1.0};
         titles[] = {};
     };
     class FC_Hit_Ground
     {
         name = "FC_Hit_Ground";
-        sound[] = {"\Dropcrate_FC\Sounds\HitGround.ogg", db+0, 1.0};
+        sound[] = {"\jango'sfinest\addons\Dropcrate_FC\Sounds\HitGround.ogg", db+0, 1.0};
         titles[] = {};
     };
     class FC_Hit_Thud
     {
         name = "FC_Hit_Thud";
-        sound[] = {"\Dropcrate_FC\Sounds\HitThud.ogg", db+0, 1.0};
+        sound[] = {"\jango'sfinest\addons\Dropcrate_FC\Sounds\HitThud.ogg", db+0, 1.0};
         titles[] = {};
     };
     class FC_Locator_fly
     {
         name = "FC_Locator_fly";
-        sound[] = {"\Dropcrate_FC\Sounds\Locator.ogg", db+0, 1.0};
+        sound[] = {"\jango'sfinest\addons\Dropcrate_FC\Sounds\Locator.ogg", db+0, 1.0};
         titles[] = {};
     };
     class FC_Crate_Fly
     {
         name = "FC_Crate_Fly";
-        sound[] = {"\Dropcrate_FC\Sounds\ThrustersFly.ogg", db+0, 1.0};
+        sound[] = {"\jango'sfinest\addons\Dropcrate_FC\Sounds\ThrustersFly.ogg", db+0, 1.0};
         titles[] = {};
     };
     class FC_Sputter_T
     {
         name = "FC_Sputter_T";
-        sound[] = {"\Dropcrate_FC\Sounds\ThrusterSputter.ogg", db+0, 1.0};
+        sound[] = {"\jango'sfinest\addons\Dropcrate_FC\Sounds\ThrusterSputter.ogg", db+0, 1.0};
         titles[] = {};
     };
 };
@@ -71,14 +71,14 @@ class CfgVehicles
 		_generalMacro = "FC_Dropcrate_104th";
 		scope = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		displayName = "Fishinchips_CfgVehicles_FC_Dropcrate_104th";
-		model = "\Dropcrate_FC\dropcrate_DP.p3d";
+		model = "\jango'sfinest\addons\Dropcrate_FC\dropcrate_DP.p3d";
 		maximumLoad = 4000;
 		transportMaxWeapons = 12;
 		transportMaxMagazines = 96;
 		supplyRadius = -1;
 		memoryPointSupply = "doplnovani";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\Dropcrate_FC\Data\crate_co.paa"};
+		hiddenSelectionsTextures[] = {"\jango'sfinest\addons\Dropcrate_FC\Data\crate_co.paa"};
 		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1","SlingLoadCargo2","SlingLoadCargo3","SlingLoadCargo4"};
         class TransportWeapons
         {
@@ -231,7 +231,7 @@ class CfgVehicles
         };
         //class Eventhandlers
         //{
-            //Init = "[_this select 0] execVM '\Dropcrate_FC\Scripts\Spawn_menu.sqf';";
+            //Init = "[_this select 0] execVM '\jango'sfinest\addons\Dropcrate_FC\Scripts\Spawn_menu.sqf';";
         //};
 	};
 };
@@ -240,8 +240,8 @@ class CfgAmmo
 	class Bo_GBU12_LGB;
     class FC_Dropcrate_A: Bo_GBU12_LGB
     {
-        model = "\Dropcrate_FC\Falling_Dropcrate.p3d";
-        proxyshape = "\Dropcrate_FC\Dropcrate_closed.p3d";
+        model = "\jango'sfinest\addons\Dropcrate_FC\Falling_Dropcrate.p3d";
+        proxyshape = "\jango'sfinest\addons\Dropcrate_FC\Dropcrate_closed.p3d";
         hit = 0;
         indirectHit = 0;
         explosive = 0;
@@ -263,10 +263,10 @@ class CfgAmmo
         soundHit4[] = {"FC_Sputter_T",db+0, 1};
         whistleDist = 24;
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Dropcrate_FC\Data\crate_clean_co.paa"};
+        hiddenSelectionsTextures[] = {"\jango'sfinest\addons\Dropcrate_FC\Data\crate_clean_co.paa"};
         class Eventhandlers
         {
-            Init = "[_this select 0] execVM '\Dropcrate_FC\Scripts\grpl_fired.sqf';";
+            Init = "[_this select 0] execVM '\jango'sfinest\addons\Dropcrate_FC\Scripts\grpl_fired.sqf';";
         };
         class Components
         {
@@ -317,11 +317,11 @@ class CfgMagazines
 	class Pylon_FC_Dropcrate_P_1rnd : VehicleMagazine
 	{
 		scope = 2;
-		model = "\Dropcrate_FC\crate_proxy.p3d";
+		model = "\jango'sfinest\addons\Dropcrate_FC\crate_proxy.p3d";
 		hardpoints[] = {"B_BOMB_PYLON","B_MISSILE_PYLON","O_BOMB_PYLON","O_MISSILE_PYLON"};
 		pylonWeapon = "FC_Dropcrate_PW1";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\Dropcrate_FC\Data\crate_clean_co.paa"};
+        hiddenSelectionsTextures[] = {"\jango'sfinest\addons\Dropcrate_FC\Data\crate_clean_co.paa"};
         class AnimationSources: AnimationSources    /// custom made animation sources
         {
             class Missiles_revolving
@@ -346,7 +346,7 @@ class CfgNonAIVehicles
     class ProxyWeapon;
     class ProxyPylon_FC_Dropcrate_P_1rnd: ProxyWeapon
     {
-        model = "\Dropcrate_FC\Dropcrate_closed.p3d";
+        model = "\jango'sfinest\addons\Dropcrate_FC\Dropcrate_closed.p3d";
         simulation = "maverickweapon";
     };
 };
