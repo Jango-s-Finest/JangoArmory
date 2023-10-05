@@ -246,11 +246,15 @@ class CfgAmmo
         indirectHit = 0;
         explosive = 0;
         whistleOnFire = 1;
-        sideAirFriction = 1;
+        sideAirFriction = .1;
         laserLock = 1;
+        missileLockCone = 180;
+        missileKeepLockedCone = 90;
+        autoSeekTarget = 0;
+        artilleryLock = 0;
         trackOversteer = 1;
         trackLead = 0.95;
-        maneuvrability = 30;
+        maneuvrability = 16;
         maxSpeed = 600;
         initSpeed = 30
         multiSoundFly[] = {"soundFly1",0.2,"soundFly2",0.2};
@@ -275,21 +279,15 @@ class CfgAmmo
                     class Components
                     {
                         class LaserSensorComponent: SensorTemplateLaser {
-                            class AirTarget {
-                                minRange = 30000;
-                                maxRange = 30000;
-                                objectDistanceLimitCoef = -1;
-                                viewDistanceLimitCoef = -1;
-                            };
                             class GroundTarget {
                                 minRange = 30000;
                                 maxRange = 30000;
                                 objectDistanceLimitCoef = -1;
                                 viewDistanceLimitCoef = -1;
                             };
-                            maxTrackableSpeed = 55;
-                            angleRangeHorizontal = 90;
-                            angleRangeVertical = 70;
+                            maxTrackableSpeed = 300;
+                            angleRangeHorizontal = 180;
+                            angleRangeVertical = 180;
                             componentType = "LaserSensorComponent";
                             typeRecognitionDistance = 0;
                             color[] = {1, 1, 1, 0};
@@ -374,6 +372,7 @@ class CfgWeapons
 		};
 		magazines[] = { "Pylon_FC_Dropcrate_P_1rnd" };		
 		salvo = 1;
+        canLock = 2;
 		modes[] = {"LoalAltitude"};
 		class EventHandlers
         {
