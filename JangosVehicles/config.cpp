@@ -8625,8 +8625,8 @@ class cfgVehicles {
 		cargoGetInAction[] = {"GetInHigh"};
 		cargoGetOutAction[] = {"GetOutHigh"};
 		textureList[] = {"Tex_Uwing_blue",1,"Tex_Uwing_white",1,"Tex_Uwing_rogue",1,"Tex_Uwing_anvil",1,"Tex_Uwing_NRearly",1,"Tex_Uwing_CavernAngels",1};
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","Laserdesignator_pilotCamera","JA_104th_guided_resupply_pod_launcher","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","Laserbatteries","JA_104th_Guided_Resupply_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","Laserdesignator_pilotCamera","FC_Dropcrate_PW1","CMFlareLauncher"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","Laserbatteries","Pylon_FC_Dropcrate_P_1rnd","Pylon_FC_Dropcrate_P_1rnd","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
 		class pilotCamera
 		{
 			class OpticsIn
