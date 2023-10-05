@@ -242,8 +242,8 @@ class cfgVehicles {
 		ls_impulsor_fuelDrain_1 = 0.00001;
 		ls_impulsor_fuelDrain_2 = 0.00003;
 		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","212th_A2A_MissileSystem","missiles_DAR","Laserdesignator_pilotCamera","FC_Dropcrate_PW1","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","Pylon_FC_Dropcrate_P_1rnd","Pylon_FC_Dropcrate_P_1rnd","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","212th_A2A_MissileSystem","missiles_DAR","Laserdesignator_pilotCamera","JA_104th_guided_resupply_pod_launcher","CMFlareLauncher"};
+		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","JA_104th_Guided_Resupply_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
 
 		memoryPointDriverOptics = "slingcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
