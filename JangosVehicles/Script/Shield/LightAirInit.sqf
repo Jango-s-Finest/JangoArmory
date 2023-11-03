@@ -47,6 +47,18 @@ _vic addEventHandler ["HitPart", {
 				}; 
 }];
 
+/* After the ACE Update of 2023 October, explosive weapons would injure/kill crew even if they do not pass through the shield. */
+
+_vic addEventHandler ["GetIn", {
+	params ["_vehicle", "_role", "_unit", "_turret"];
+	_unit allowDamage false;
+}];
+
+_vic addEventHandler ["GetOut", {
+	params ["_vehicle", "_role", "_unit", "_turret"];
+	_unit allowDamage true;
+}];
+
 [_vic] execVM "\JangosVehicles\Script\Shield\LightAirAction.sqf";
 
 [_vic] execVM "\JangosVehicles\Script\Shield\PlaneShieldRegen.sqf";
