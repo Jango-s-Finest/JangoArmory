@@ -727,22 +727,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Axel_Vest : SWLB_clone_airborne_nco_armor
-	{
-		author = "Dak";
-		displayName = "Clone Airborne NCO Vest (104th Axel)";
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa",	 // Bag and Chest Strap
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Officer.paa", // Kama
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa",	 // Left Shoulder Thing
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa"	 // NCO Pauldron
-			};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
-		};
-	};
 	class JA_104th_Ghost_Helmet : SWLB_P2_SpecOps_Helmet
 	{
 		author = "Dak";

@@ -118,11 +118,9 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-
-	class JA_104th_AB_Axel_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
+	class JA_104th_AB_Axel_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
 	{
-        scopeArsenal = 0; // Duplicate vest
-		author = "Dak";
+		author = "Fish";
 		displayName = "Clone Airborne Officer Vest (104th Axel)";
 		hiddenSelections[] =
 		{
@@ -134,11 +132,12 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa", //Heavy
-			"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa", //Heavy
+            // Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa doesn't exist
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", //Heavy
 			"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Officer.paa", 
-			"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa", //Heavy
-			"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Officer.paa"
+			"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa"/*, //Heavy
+			"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa"*/
 		};
 		class ItemInfo: ItemInfo
         {
