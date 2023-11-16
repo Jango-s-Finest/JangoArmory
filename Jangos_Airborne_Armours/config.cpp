@@ -12,12 +12,18 @@ class CfgPatches
 			"JA_104th_Carmine",
 			"JA_104th_Osiris",
 			"JA_104th_Magnum",
+			"JA_104th_Bulky",
+			"JA_104th_Axel",
+			"JA_104th_Skav",
 			"JA_104th_Kage"
 		};
 		weapons[] = {
 			"JA_104th_Carmine_Uniform",
 			"JA_104th_Osiris_Uniform",
 			"JA_104th_Magnum_Uniform",
+			"JA_104th_Bulky_Uniform",
+			"JA_104th_Axel_Uniform",
+			"JA_104th_Skav_Uniform",
 			"JA_104th_Kage_Uniform"
 		};
 	};
@@ -167,6 +173,81 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};	
+	class JA_104th_Bulky_Uniform : SWLB_clone_uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th Bulky)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Bulky_Body_Upper.paa",
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Bulky_Body_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Bulky";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};	
+	class JA_104th_Axel_Uniform : SWLB_clone_uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th Axel)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Axel_Upper.paa",
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Axel_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Axel";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};	
+	class JA_104th_Skav_Uniform : SWLB_clone_uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th Skav)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Skav_Upper.paa",
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Skav_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Skav";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};	
 	class JA_104th_Kage_Uniform : SWLB_clone_uniform
 	{
 		author = "Jango's Finest";
@@ -223,6 +304,54 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Lower.paa"};
 		linkedItems[] = { JA_104th_Magnum_Helmet, JA_104th_Magnum_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Magnum_Helmet, JA_104th_Magnum_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Bulky : SWLB_clone_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Bulky_Uniform";
+		displayName = "104th Bulky";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Bulky_Body_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Bulky_Body_Lower.paa"};
+		linkedItems[] = { JA_104th_Bulky_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Bulky_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Axel : SWLB_clone_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Axel_Uniform";
+		displayName = "104th Axel";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Axel_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Axel_Lower.paa"};
+		linkedItems[] = { JA_104th_Axel_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Axel_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Skav : SWLB_clone_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Skav_Uniform";
+		displayName = "104th Skav";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Skav_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Skav_Lower.paa"};
+		linkedItems[] = { JA_104th_Skav_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Skav_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Osiris : SWLB_clone_base_P2
 	{
