@@ -41,7 +41,6 @@ class CfgPatches
 			"JA_104th_Spectre_Uniform",
 			"JA_104th_Frosty_Helmet",
 			"JA_104th_Frosty_Uniform",
-			"JA_104th_Niner_Helmet",
 			"JA_104th_Raptor_Helmet",
 			"JA_302nd_Chich_Helmet",
 			"JA_302nd_Chich_Uniform",
@@ -362,23 +361,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Niner_Helmet : lsd_gar_barcm2_helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-        side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { 
-			"camo1",
-			"visor"
-		}; // don't change this
-		displayname = "Clone Trooper BARC Helmet (104th Galahad)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { 
-			"JangosArmory3\data\Textures\104th_BARC_Niner_Helmet.paa",
-			"JangosArmory3\data\Textures\visor_co.paa",
-		}; // the file path to the texture
-	};
-	
 	class JA_302nd_Chich_Helmet : SWLB_clone_P2_Helmet
 	{
 		author = "Dak";

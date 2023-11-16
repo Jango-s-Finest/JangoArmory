@@ -26,6 +26,7 @@ class CfgPatches
 			"JA_104th_Garm_Helmet",
 			"JA_104th_Axel_Helmet",
 			"JA_104th_Axel_Helmet_ME",
+			"JA_104th_Skav_Helmet",
 			"JA_104th_Osiris_Helmet",
 			"JA_104th_Traveler_Helmet",
 			"JA_104th_Shovel_Helmet",
@@ -270,6 +271,16 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper AB Helmet (104th Axel ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Airborne_Helmets\data\Textures\104th_AB_Axel_Helmet_Malevolence.paa" }; // the file path to the texture
+	};
+	class JA_104th_Skav_Helmet : SWLB_clone_AB_Helmet
+	{
+		author = "Fish";
+		scopeArsenal = 0;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper AB Helmet (104th Skav)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_Airborne_Helmets\data\Textures\104th_AB_Skav_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_Osiris_Helmet : SWLB_clone_AB_Helmet
 	{

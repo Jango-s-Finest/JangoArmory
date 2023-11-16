@@ -10,6 +10,7 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {
+			"JA_104th_Welty_Kama",
 			"JA_104th_Death_Kama"};
 	};
 };
@@ -118,6 +119,36 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
+	class JA_104th_Welty_Kama : SWLB_CEE_Officer_Tactical
+	{
+		author = "Fish";
+		displayName = "Clone Trooper Kama (104th Welty)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_P2_Welty_Kama.paa", // Kama
+				"SWLB_clones\data\light_accessories_co.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
 	class JA_104th_Death_Kama : SWLB_CEE_Officer_Tactical
 	{
 		author = "Dak";
