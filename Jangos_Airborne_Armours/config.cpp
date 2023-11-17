@@ -148,7 +148,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};	
-	class JA_104th_Magnum_Uniform : SWLB_clone_uniform
+	class JA_104th_Magnum_Uniform : SWLB_clone_mc_uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -157,12 +157,15 @@ class CfgWeapons
 		hiddenSelections[] =
 		{
 			"camo1",
-			"camo2"
+			"camo2",
+			"biceps",
+			"rank"
 		};
 		hiddenSelectionsTextures[] =
 		{
 			"Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Upper.paa",
-			"Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Lower.paa"
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Lower.paa",
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Upper.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -289,9 +292,9 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
 	
-	class JA_104th_Magnum : SWLB_clone_base_P2
+	class JA_104th_Magnum : SWLB_clone_marshal_commander_base_P2
 	{
-		author = "Tundra";
+		author = "Fish";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -300,8 +303,8 @@ class CfgVehicles
 		displayName = "104th Magnum";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Lower.paa"};
+		hiddenSelections[] = { "camo1","camo2","biceps","rank" };
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Lower.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Upper.paa"};
 		linkedItems[] = { JA_104th_Magnum_Helmet, JA_104th_Magnum_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Magnum_Helmet, JA_104th_Magnum_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
