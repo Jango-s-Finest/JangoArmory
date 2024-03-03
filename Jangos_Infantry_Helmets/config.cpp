@@ -8,8 +8,7 @@ class CfgPatches
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
-		};
+		units[] = {};
 		weapons[] = {
 			"JA_104th_Doc_Helmet",
 			"JA_104th_Tiger_Helmet",
@@ -20,8 +19,7 @@ class CfgPatches
 			"JA_104th_Kyo_Helmet",
 			"JA_104th_Galahad_Helmet",
 			"JA_104th_Knockout_Helmet",
-			"JA_104th_Death_Helmet"
-		};
+			"JA_104th_Death_Helmet"};
 	};
 };
 
@@ -31,7 +29,7 @@ class CfgFactionClasses
 	{
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list.scope = 2;
-        side = 1;
+		side = 1;
 		icon = "";
 	};
 };
@@ -43,7 +41,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Basic
 	{
@@ -51,7 +49,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Special
 	{
@@ -59,7 +57,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 };
 
@@ -98,56 +96,56 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Doc)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Doc_Helmet.paa" }; // the file path to the texture
+		hiddenSelections[] = {"camo1"};																	// don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Doc)";											// the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Doc_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Tiger_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Tiger)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Tiger_Helmet.paa" }; // the file path to the texture
+		hiddenSelections[] = {"camo1"};																	  // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Tiger)";											  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Tiger_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Spirit_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Spirit)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Spirit_Helmet.paa" }; // the file path to the texture
+		hiddenSelections[] = {"camo1"};																	   // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Spirit)";											   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Spirit_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Kyo_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
-            "camo1",
-        }; // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Kyo)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Kyo_Helmet.paa" }; // the file path to the texture
+			"camo1",
+		};																								// don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Kyo)";											// the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Kyo_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Xan_Helmet : SWLB_P2_SpecOps_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = { "camo1" }; // don't change this
-		displayname = "Clone Trooper Special Activities Helmet (104th Xan)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Xan_Helmet.paa" }; // the file path to the texture
+		hiddenSelections[] = {"camo1"};																	  // don't change this
+		displayname = "Clone Trooper Special Activities Helmet (104th Xan)";							  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Xan_Helmet.paa"}; // the file path to the texture
 	};
-    class lsd_gar_tanker_nvg;
-    class JA_104th_Death_NVG_Tanker : lsd_gar_tanker_nvg
+	class lsd_gar_tanker_nvg;
+	class JA_104th_Death_NVG_Tanker : lsd_gar_tanker_nvg
 	{
 		author = "Fish";
 		displayName = "Republic Armored Plating NVG (104th Death)";
@@ -160,28 +158,28 @@ class CfgWeapons
 			{
 				"Jangos_Infantry_Helmets\data\Textures\104th_P2_Death_NVG.paa"};
 	};
-    class JA_104th_Death_Helmet : SWLB_clone_P2_Helmet
+	class JA_104th_Death_Helmet : SWLB_clone_P2_Helmet
 	{
 		author = "Fish";
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = {"camo1"};															// don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Death)";									// the name it will be in game
+		hiddenSelections[] = {"camo1"};																	  // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Death)";											  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Death_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Tinkle_Helmet : SWLB_clone_P2_Helmet
 	{
 		author = "Fish";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
-            "camo1",
-        }; // don't change this
+			"camo1",
+		};														// don't change this
 		displayname = "Clone Trooper P2 Helmet (104th Tinkle)"; // the name it will be in game
-        hiddenSelectionsMaterials[] = {};
-        hiddenSelectionsTextures[] = { 
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
 			"Jangos_Infantry_Helmets\data\Textures\104th_Helmet_P2_Tinkle.paa",
 		}; // the file path to the texture
 	};
@@ -189,14 +187,14 @@ class CfgWeapons
 	{
 		author = "Fish";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
-            "camo1",
-        }; // don't change this
+			"camo1",
+		};														   // don't change this
 		displayname = "Clone Trooper Barc Helmet (104th Galahad)"; // the name it will be in game
-        hiddenSelectionsMaterials[] = {};
-        hiddenSelectionsTextures[] = { 
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
 			"Jangos_Infantry_Helmets\data\Textures\104th_BARC_Galahad.paa",
 		}; // the file path to the texture
 	};
@@ -204,14 +202,14 @@ class CfgWeapons
 	{
 		author = "Fish";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
-            "camo1",
-        }; // don't change this
+			"camo1",
+		};														// don't change this
 		displayname = "Clone Trooper P2 Helmet (104th Chills)"; // the name it will be in game
-        hiddenSelectionsMaterials[] = {};
-        hiddenSelectionsTextures[] = { 
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
 			"Jangos_Infantry_Helmets\data\Textures\104th_Chills_Helmet_P2.paa",
 		}; // the file path to the texture
 	};
@@ -220,20 +218,77 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {
-            "camo1",
-            "illum",
-            "visor"
-        }; // don't change this
+			"camo1",
+			"illum",
+			"visor"};													// don't change this
 		displayname = "Clone Trooper Engineer Helmet (104th Knockout)"; // the name it will be in game
-        hiddenSelectionsMaterials[] = {};
-        hiddenSelectionsTextures[] = { 
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
 			"Jangos_Infantry_Helmets\data\Textures\104th_CE_Knockout_Helmet.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
-            "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Carmine_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Fish";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {
+			"camo1",
+		};														 // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Carmine)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Carmine.paa",
 		}; // the file path to the texture
 	};
-	
+	class JA_104th_Pulse_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Fish";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {
+			"camo1",
+		};													   // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Pulse)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Pulse.paa",
+		}; // the file path to the texture
+	};
+	class JA_104th_Reaper_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Fish";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {
+			"camo1",
+		};														// don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Reaper)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Reaper.paa",
+		}; // the file path to the texture
+	};
+	class JA_104th_Talisman_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Fish";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {
+			"camo1",
+		};														  // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Talisman)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Talisman.paa",
+		}; // the file path to the texture
+	};
 };

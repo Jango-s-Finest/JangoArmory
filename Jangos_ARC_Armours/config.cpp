@@ -9,9 +9,10 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Frosty",
 		};
 		weapons[] = {
-		};
+			"JA_104th_Frosty_Uniform"};
 	};
 };
 
@@ -21,7 +22,7 @@ class CfgFactionClasses
 	{
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list.scope = 2;
-        side = 1;
+		side = 1;
 		icon = "";
 	};
 };
@@ -33,7 +34,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Basic
 	{
@@ -41,7 +42,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Special
 	{
@@ -49,7 +50,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 };
 
@@ -84,7 +85,30 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	
+
+	class JA_104th_Frosty_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Frosty)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Armour\data\Textures\104th_ARC_Frosty_Upper_SL.paa",
+				"Jangos_ARC_Armour\data\Textures\104th_ARC_Frosty_Lower_SL.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Frosty";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -100,5 +124,20 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12;
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
-	
+	class JA_104th_Frosty : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Frosty_Uniform";
+		displayName = "104th Frosty";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armour\data\Textures\104th_ARC_Frosty_Upper_SL.paa", "Jangos_ARC_Armour\data\Textures\104th_ARC_Frosty_Lower_SL.paa"};
+		linkedItems[] = {JA_104th_Frosty_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Frosty_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
 };
