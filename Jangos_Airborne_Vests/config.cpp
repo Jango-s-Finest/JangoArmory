@@ -120,22 +120,14 @@ class CfgWeapons
 	{
 		author = "Fish";
 		displayName = "Clone Airborne Officer Vest (104th Axel)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5"};
 		hiddenSelectionsTextures[] =
 			{
 				// Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa doesn't exist
-				"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-				"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104_AB_Axel_Kama.paa",
-				"JangosArmory4\data\Textures\104th_Accessories_Heavy.paa" /*, //Heavy
-				 "Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa"*/
-			};
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Axel_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104_AB_Axel_Kama.paa"};
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";

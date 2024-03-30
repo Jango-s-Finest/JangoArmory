@@ -98,8 +98,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_ARC_Armour\data\Textures\104th_ARC_Frosty_Upper_SL.paa",
-				"Jangos_ARC_Armour\data\Textures\104th_ARC_Frosty_Lower_SL.paa"};
+				"Jangos_ARC_Armours\data\Textures\104th_ARC_Frosty_Upper_SL.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Frosty_Lower_SL.paa"};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -136,7 +136,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Armour\data\Textures\104th_ARC_Frosty_Upper_SL.paa", "Jangos_ARC_Armour\data\Textures\104th_ARC_Frosty_Lower_SL.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\Textures\104th_ARC_Frosty_Upper_SL.paa", "Jangos_ARC_Armours\data\Textures\104th_ARC_Frosty_Lower_SL.paa"};
 		linkedItems[] = {JA_104th_Frosty_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Frosty_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
