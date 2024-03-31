@@ -11,6 +11,8 @@ class CfgPatches
 		units[] = {
 		};
 		weapons[] = {
+			"JA_104th_IQ_Vest",
+			"JA_104th_Woods_Vest"
 		};
 	};
 };
@@ -78,13 +80,87 @@ class CfgWeapons
 	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_kama_armor;
 	class SWLB_clone_medic_armor;
-	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	
+
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class SWLB_clone_basic_armor;
+    class SWLB_CEE_Recon_Lieutenant: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    
+
+	class JA_104th_IQ_Vest : SWLB_CEE_Recon_Lieutenant
+	{
+		author = "Emmet";
+		scope = 2;
+		displayName = "Clone Force Recon Officer Vest (104th IQ)";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] = 
+			{
+				"Jangos_ARF_Vests\data\Textures\104th_ARF_IQ_Officer_Kama.paa",
+				"SWLB_clones\data\heavy_accessories_co.paa"};
+		class ItemInfo: Vestitem
+		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			vestType = "Rebreather";
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	class JA_104th_Woods_Vest : SWLB_CEE_Recon_Lieutenant
+	{
+		author = "Dak";
+		scope = 2;
+		displayName = "Clone Force Recon Officer Vest (104th Woods)";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] = 
+			{
+				"Jangos_ARF_Vests\data\Textures\104th_ARF_Woods_Officer_Kama.paa",
+				"SWLB_clones\data\heavy_accessories_co.paa"};
+		class ItemInfo: Vestitem
+		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			vestType = "Rebreather";
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
 };
 
 class CfgVehicles
