@@ -175,9 +175,14 @@ class CfgWeapons
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
-		hiddenSelections[] = {"camo1"};															 // don't change this
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};															 // don't change this
 		displayname = "Clone Trooper ARF Helmet (104th IQ)";									 // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[]= 
+		{
+			"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa",
+			"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Flaps.paa",
+			"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa"
+		};
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
 	class JA_104th_Fire_Helmet : SWLB_clone_ARF_P1_Helmet
