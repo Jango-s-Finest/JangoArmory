@@ -179,9 +179,9 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th IQ)";									 // the name it will be in game
 		hiddenSelectionsTextures[]= 
 		{
-			"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa",
+			"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Helmet.paa",
 			"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Flaps.paa",
-			"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa"
+			"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Helmet.paa"
 		};
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
