@@ -80,7 +80,7 @@ class CfgWeapons
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
-	class SWLB_clone_ARF_P2_Helmet;
+	class ls_gar_phase2Arf_helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -170,7 +170,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa"}; // the file path to the texture
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
-	class JA_104th_IQ_Helmet : SWLB_clone_ARF_P2_Helmet // Use for ARF + Chops template
+	class JA_104th_IQ_Helmet : ls_gar_phase2Arf_helmet // Use for ARF + Chops template
 	{
 		author = "Ice";
 		scopeArsenal = 2;
@@ -181,8 +181,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[]= 
 		{
 			"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Helmet.paa",
-			"",
-			"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Flaps.paa"
+			"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Flaps.paa",
+			"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Helmet.paa"
 		};
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
