@@ -22,6 +22,7 @@ class CfgPatches
 			"JA_104th_Garm",
 			"JA_104th_Sixes",
 			"JA_104th_Soul",
+			"JA_104th_Trustful",
 			"JA_104th_Raptor"
 		};
 		weapons[] = {
@@ -38,6 +39,7 @@ class CfgPatches
 			"JA_104th_Garm_Uniform",
 			"JA_104th_Sixes_Uniform",
 			"JA_104th_Soul_Uniform",
+			"JA_104th_Trustful_Uniform",
 			"JA_104th_Raptor_Uniform"
 		};
 	};
@@ -404,12 +406,35 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Garm_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Garm_Lower.paa"};
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Garm_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Garm_Lower.paa"};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Garm";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Trustful_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Trustful)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Trustful_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Trustful_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Trustful";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -427,8 +452,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"JangosArmory4\data\Textures\104th_AB_Raptor_Upper.paa",
-				"JangosArmory4\data\Textures\104th_AB_Raptor_Lower.paa"};
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Raptor_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Raptor_Lower.paa"};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -662,6 +687,22 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Garm_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Garm_Lower.paa"};
+		linkedItems[] = {JA_104th_Garm_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Garm_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Trustful : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Trustful_Uniform";
+		displayName = "104th Trustful";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Trustful_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Trustful_Lower.paa"};
 		linkedItems[] = {JA_104th_Garm_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Garm_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};

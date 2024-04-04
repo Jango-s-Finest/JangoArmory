@@ -18,6 +18,7 @@ class CfgPatches
 			"JA_104th_ARF_Medic_Helmet",
 			"JA_104th_Achilles_Helmet",
 			"JA_104th_Beans_Helmet",
+			"JA_104th_IQ_Helmet",
 			"JA_104th_Fire_Helmet",
 			"JA_104th_Unix_Helmet",
 			"JA_104th_Woods_Helmet"
@@ -166,6 +167,17 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1"};															 // don't change this
 		displayname = "Clone Trooper ARF Helmet (104th Beans)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa"}; // the file path to the texture
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+	};
+	class JA_104th_IQ_Helmet : SWLB_clone_ARF_P1_Helmet
+	{
+		author = "Ice";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};															 // don't change this
+		displayname = "Clone Trooper ARF Helmet (104th IQ)";									 // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Helmet.paa"}; // the file path to the texture
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
 	class JA_104th_Fire_Helmet : SWLB_clone_ARF_P1_Helmet

@@ -9,6 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Angel",
 			"JA_104th_Sigil",
 			"JA_104th_Crowbi",
 			"JA_104th_Frosty",
@@ -17,6 +18,7 @@ class CfgPatches
 			"JA_104th_Spectre"
 		};
 		weapons[] = {
+			"JA_104th_Angel_Uniform",
 			"JA_104th_Sigil_Uniform",
 			"JA_104th_Crowbi_Uniform",
 			"JA_104th_Frosty_Uniform",
@@ -98,6 +100,29 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
+	class JA_104th_Angel_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Angel)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Angel_Upper.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Angel_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Angel";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Sigil_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -258,6 +283,22 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12_LR;
 
 	// General Uniforms
+	class JA_104th_Angel : SWLB_clone_base_P2
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Angel_Uniform";
+		displayName = "104th ARC Angel";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Angel_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Angel_Lower.paa"};
+		linkedItems[] = {JA_104th_Crowbi_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Crowbi_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
 	class JA_104th_Crowbi : SWLB_clone_base_P2
 	{
 		author = "Ice";

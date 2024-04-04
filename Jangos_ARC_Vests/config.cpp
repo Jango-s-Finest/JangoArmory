@@ -11,6 +11,7 @@ class CfgPatches
 		units[] = {
 		};
 		weapons[] = {
+			"JA_104th_Angel_Vest",
 			"JA_104th_Frosty_Vest",
 			"JA_104th_Hunter_Vest",
 			"JA_104th_Sigil_Vest",
@@ -127,6 +128,51 @@ class CfgWeapons
         class ItemInfo;
     };
 
+	class JA_104th_Angel_Vest : SWLB_clone_arc_armor
+	{
+		author = "Dak";
+		displayName = "Clone ARC Trooper Vest (104th Angel)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Angel_ARC_Accessories.paa",
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Angel_Officer_Accessories.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1", "camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
 	class JA_104th_Frosty_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";

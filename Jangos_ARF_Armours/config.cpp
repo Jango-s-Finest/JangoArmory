@@ -16,6 +16,7 @@ class CfgPatches
 			"JA_104th_ARF_Medic_Uniform",
 			'JA_104th_Achilles',
 			'JA_104th_Fire',
+			'JA_104th_IQ',
 			"JA_104th_Beans",
 			"JA_104th_Unix",
 			"JA_104th_Woods"
@@ -29,6 +30,7 @@ class CfgPatches
 			'JA_104th_Achilles_Uniform',
 			"JA_104th_Beans_Uniform",
 			"JA_104th_Fire_Uniform",
+			"JA_104th_IQ_Uniform",
 			"JA_104th_Unix_Uniform",
 			"JA_104th_Woods_Uniform"
 		};
@@ -293,6 +295,29 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_IQ_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th IQ)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_IQ_Upper.paa",
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_IQ_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_IQ";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Unix_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -481,6 +506,22 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Fire_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Fire_Lower.paa"};
+		linkedItems[] = {JA_104th_Fire_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Fire_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_IQ : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_IQ_Uniform";
+		displayName = "104th IQ";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_IQ_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_IQ_Lower.paa"};
 		linkedItems[] = {JA_104th_Fire_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Fire_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
