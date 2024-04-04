@@ -22,6 +22,7 @@ class CfgPatches
 			"JA_104th_Carmine_Vest",
 			"JA_104th_Osiris_Vest",
 			"JA_104th_Kage_Vest",
+			"JA_104th_Magnum_Vest",
 			"JA_104th_Clutch_Vest"
 		};
 	};
@@ -393,6 +394,29 @@ class CfgWeapons
 			{
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Kama.paa",
+				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
+			};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+		};
+	};
+	class JA_104th_Magnum_Vest : SWLB_clone_airborne_nco_armor
+	{
+		author = "Emmet" 
+		scope = 2;
+		displayName = "Clone Airborne NCO Vest (104th Magnum)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Kama.paa",
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
 			};
