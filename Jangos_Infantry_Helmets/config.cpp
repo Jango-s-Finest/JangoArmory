@@ -19,6 +19,7 @@ class CfgPatches
 			"JA_104th_Desert_Trooper_Helmet",
 			"JA_104th_Beans_Helmet",
 			"JA_104th_Blood_Helmet",
+			"JA_104th_Bomb_Helmet",
 			'JA_104th_Byte_Helmet',
 			"JA_104th_Carmine_Helmet",
 			'JA_104th_Dart_Helmet',
@@ -212,6 +213,16 @@ class CfgWeapons
 		hiddenSelections[] = { "Camo1","Visor" }; // don't change this
 		displayname = "Clone Trooper Desert Helmet (Base)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_Desert_Base_Trooper_Helmet.paa","Jangos_Infantry_Helmets\data\Textures\Visor_Desert.paa" }; // the file path to the texture
+	};
+	class JA_104th_Bomb_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};															// don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Bomb)";									// the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Bomb_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Blood_Helmet : SWLB_clone_P2_Helmet
 	{

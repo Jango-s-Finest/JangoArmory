@@ -12,6 +12,7 @@ class CfgPatches
 			"JA_104th_P2_Engineer",
 			"JA_104th_P2_Medic",
 			"JA_104th_JTAC",
+			"JA_104th_Bomb",
 			"JA_104th_Crash",
 			"JA_104th_Paraso",
 			"JA_104th_Tiger",
@@ -37,6 +38,7 @@ class CfgPatches
 			"JA_104th_P2_Engineer_Uniform",
 			"JA_104th_P2_Medic_Uniform",
 			"JA_104th_JTAC_Uniform",
+			"JA_104th_Bomb_Uniform",
 			"JA_104th_Galahad_Uniform",
 			"JA_104th_Welty_Uniform",
 			"JA_104th_Tiger_Uniform",
@@ -225,6 +227,29 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Crash";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Bomb_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Bomb)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Bomb_Upper.paa",
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Bomb_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Bomb";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -770,6 +795,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_JTAC_Base_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_JTAC_Base_Lower.paa", "Jangos_Infantry_Armours\data\Textures\104th_JTAC_Base_Upper.paa", ""};
 		linkedItems[] = {JA_104th_JTAC_Base_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_JTAC_Base_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Bomb : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Bomb_Uniform";
+		displayName = "104th Bomb";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_Bomb_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Bomb_Lower.paa"};
+		linkedItems[] = {JA_104th_Blood_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Blood_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Blood : SWLB_clone_base_P2
 	{
