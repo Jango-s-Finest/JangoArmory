@@ -17,8 +17,9 @@ class CfgPatches
 			"JA_104th_AB_ME_Officer_Trooper_Armor",
 			"JA_104th_AB_ME_NCO_Trooper_Armor",
 			"JA_104th_AB_ME_Base_Trooper_Armor",
-			"JA_104th_AB_Axel_Officer_Trooper_Armor",
-			"JA_104th_AB_Galahad_Officer_Trooper_Armor",
+			"JA_104th_AB_Officer_Vest_Axel",
+			"JA_104th_AB_Officer_Vest_Galahad",
+			"JA_104th_AB_Officer_Vest_Dak",
 			"JA_104th_Carmine_Vest",
 			"JA_104th_Osiris_Vest",
 			"JA_104th_Kage_Vest",
@@ -108,7 +109,10 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
-
+   class SWLB_CEE_Recon_Lieutenant: SWLB_clone_basic_armor 
+    {
+        class ItemInfo;
+    };
 	class ls_blueforVest_base;
 	class ls_gar_airborneOfficer_vest : ls_blueforVest_base
 	{
@@ -149,6 +153,7 @@ class CfgWeapons
 		};
 	};
 	
+<<<<<<< Updated upstream
 	class JA_104th_AB_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
 	{
 		author = "Dak";
@@ -179,24 +184,25 @@ class CfgWeapons
 		// If this is later changed, change the base class of the original and the texture order
 		author = "Dak";
 		displayName = "Clone Airborne Officer Vest (104th) [Black Pauldron]";
+=======
+
+	class JA_104th_AB_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Officer Vest (104th)";
+>>>>>>> Stashed changes
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Small "pocket" on left arm
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy Vest Bag / Straps
 				"Jangos_Airborne_Vests\data\textures\104th_Pauldron_and_Kama.paa", // Kama
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  /*,  // Unknown, No change seen in-game when changed
-				  "JangosArmory1\data\textures\104th_Pauldron_and_Kama.paa"*/
-																		   // Pauldron - Currently broken until LS fixes the selections
-				// Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
-				// Leaving it empty makes it appear invisible.
+				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" 
 			};
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
 		};
 	};
-
-	
 	class JA_104th_AB_ME_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
 		author = "Dak";
@@ -283,7 +289,31 @@ class CfgWeapons
 			vestType = "Rebreather";
 		};
 	};
-	class JA_104th_AB_Axel_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
+	class JA_104th_AB_Officer_Vest_Dak : SWLB_CEE_Recon_Lieutenant
+	{
+		author = "Emmet";
+		scope = 2;
+		displayName = "Clone Airborne Officer Vest (104th Dak)";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] = 
+			{
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Dak_Kama.paa",
+				"SWLB_clones\data\heavy_accessories_co.paa"};
+		class ItemInfo: Vestitem
+		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			vestType = "Rebreather";
+		};
+	};
+	class JA_104th_AB_Officer_Vest_Axel : ls_gar_airborneOfficer_vest
 	{
 		author = "Fish";
 		displayName = "Clone Airborne Officer Vest (104th Axel)";
@@ -300,15 +330,14 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104_AB_Axel_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" /*, //Heavy
-				 "Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa"*/
+				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" 
 			};
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
 		};
 	};
-	class JA_104th_AB_Galahad_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
+	class JA_104th_AB_Officer_Vest_Galahad : ls_gar_airborneOfficer_vest
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer Vest (104th Galahad)";
@@ -325,8 +354,7 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" /*, //Heavy
-				 "Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa"*/
+				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"
 			};
 		class ItemInfo : ItemInfo
 		{
