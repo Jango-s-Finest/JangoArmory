@@ -624,16 +624,4 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
 	};
-
-	// ARC Backpacks
-	class JA_104th_ARC_Backpack : SWLB_clone_arc_backpack
-	{
-		author = "Cyan";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone ARC trooper backpack (104th)";
-		hiddenSelectionsTextures[] = {"\SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"};
-		model = "\SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
-		maximumload = 400; // In LBS (320 = 32 lbs original, 400 = 40 lbs)
-	};
 };

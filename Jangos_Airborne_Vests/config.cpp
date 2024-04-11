@@ -18,7 +18,6 @@ class CfgPatches
 			"JA_104th_AB_ME_NCO_Trooper_Armor",
 			"JA_104th_AB_ME_Base_Trooper_Armor",
 			"JA_104th_AB_Officer_Vest_Axel",
-			"JA_104th_AB_Officer_Vest_Galahad",
 			"JA_104th_AB_Officer_Vest_Dak",
 			"JA_104th_Carmine_Vest",
 			"JA_104th_Osiris_Vest",
@@ -152,45 +151,11 @@ class CfgWeapons
 			vestType = "Rebreather";
 		};
 	};
-	
-<<<<<<< Updated upstream
-	class JA_104th_AB_Officer_Trooper_Armor : SWLB_CEE_Airborne_Officer
-	{
-		author = "Dak";
-		displayName = "Clone Airborne Officer Vest (104th)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_Pauldron_and_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_Pauldron_and_Kama.paa"};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
-		};
-	};
-	class JA_104th_AB_Officer_Trooper_Armor_Fixed : ls_gar_airborneOfficer_vest
-	{
-		// Dak has previously said he likes the white pauldron, so the fixed version is included as
-		// another vest, rather than just fixing the original.
-		// If this is later changed, change the base class of the original and the texture order
-		author = "Dak";
-		displayName = "Clone Airborne Officer Vest (104th) [Black Pauldron]";
-=======
-
 	class JA_104th_AB_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer Vest (104th)";
->>>>>>> Stashed changes
+
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Small "pocket" on left arm
@@ -289,30 +254,6 @@ class CfgWeapons
 			vestType = "Rebreather";
 		};
 	};
-	class JA_104th_AB_Officer_Vest_Dak : SWLB_CEE_Recon_Lieutenant
-	{
-		author = "Emmet";
-		scope = 2;
-		displayName = "Clone Airborne Officer Vest (104th Dak)";
-		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] = 
-			{
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Dak_Kama.paa",
-				"SWLB_clones\data\heavy_accessories_co.paa"};
-		class ItemInfo: Vestitem
-		{
-			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-			containerClass = "Supply100";
-			hiddenSelections[] = {"camo1","camo2"};
-			mass = 80;
-			vestType = "Rebreather";
-		};
-	};
 	class JA_104th_AB_Officer_Vest_Axel : ls_gar_airborneOfficer_vest
 	{
 		author = "Fish";
@@ -337,27 +278,27 @@ class CfgWeapons
 			vestType = "Rebreather";
 		};
 	};
-	class JA_104th_AB_Officer_Vest_Galahad : ls_gar_airborneOfficer_vest
+	class JA_104th_AB_Officer_Vest_Dak : SWLB_CEE_Recon_Lieutenant
 	{
-		author = "Dak";
-		displayName = "Clone Airborne Officer Vest (104th Galahad)";
+		author = "Emmet";
+		scope = 2;
+		displayName = "Clone Airborne Officer Vest (104th Dak)";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5"};
-		hiddenSelectionsTextures[] =
+				"camo2"};
+		hiddenSelectionsTextures[] = 
 			{
-				// Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa doesn't exist
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Galahad_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"
-			};
-		class ItemInfo : ItemInfo
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Dak_Kama.paa",
+				"SWLB_clones\data\heavy_accessories_co.paa"};
+		class ItemInfo: Vestitem
 		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
 			vestType = "Rebreather";
 		};
 	};
