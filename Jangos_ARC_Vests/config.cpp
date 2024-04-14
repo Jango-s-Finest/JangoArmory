@@ -142,7 +142,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"\SWLB_clones\data\arc_accessories_co.paa",
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_Pauldron_and_Kama.paa"};
 		class ItemInfo : ItemInfo
 		{
