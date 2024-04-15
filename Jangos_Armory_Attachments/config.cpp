@@ -19,7 +19,7 @@ class CfgPatches
 			"JA_104th_SPC_NVG_Medic",
 			"JA_104th_SPC_NVG_Invert",
 			"JA_104th_NVG_NCO",
-			"JA_104thCommanderVisor",
+			"JA_104th_CM_Visor",
 			"JA_104th_Death_NVG_Tanker",
 			"JA_104th_Crowbi_NVG_NCO",
 			"JA_104th_Hunter_NVG_NCO",
@@ -217,7 +217,7 @@ class CfgWeapons
 		};
 		visionMode[] = {"Normal","NVG","TI"};
 	};
-	class JA_104thNVG_NCO : lsd_gar_rangefinder_nvg
+	class JA_104th_NVG_NCO : lsd_gar_rangefinder_nvg
 	{
 		author = "Tundra";
 		displayName = "Clone NVG NCO Visor (104th)";
@@ -235,7 +235,7 @@ class CfgWeapons
 		visionMode[] = {"Normal","NVG","TI"};
 	};
 
-	class JA_104thCommanderVisor : lsd_gar_p2MarshalCommander_nvg
+	class JA_104th_CM_Visor : lsd_gar_p2MarshalCommander_nvg
 	{
 		author = "Tundra";
 		displayName = "Clone Commander Visor (104th Daddy)";
