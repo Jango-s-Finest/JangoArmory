@@ -10,6 +10,7 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {
 			"JA_104th_Backpack",
+			"JA_104th_Backpack_Invis",
 			"JA_104th_Accessories_Heavy_Backpack",
 			"JA_104th_Medic_Backpack",
 			"JA_104th_RTO_Backpack",
@@ -114,6 +115,7 @@ class CfgVehicles
 	class JLTS_Clone_jumppack_mc;
 	class RD501_JLTS_Clone_jumppack_cdv;
 	class SWLB_clone_arc_backpack;
+	class ls_gar_survival_backpack;
 	
 	
 	// Common Infantry Backpacks
@@ -131,6 +133,18 @@ class CfgVehicles
 			"", // Medic
 			"" // RTO
 		};
+	};
+	class JA_104th_Backpack_Invis : ls_gar_survival_backpack
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper backpack (Invisible)";
+		hiddenSelectionsTextures[] =
+		{
+			""
+		};
+		maximumload = 280; // In LBS (320 = 32 lbs original, 400 = 40 lbs)
 	};
 	class JA_104th_Accessories_Heavy_Backpack : SWLB_clone_backpack_heavy
 	{
@@ -187,7 +201,7 @@ class CfgVehicles
 			"Jangos_Armory_Backpacks\data\Textures\104th_MiniPack_slots.paa" // slotss
 		};
 	};
-	
+
 	// Cerberus Specific
 	class JA_104th_Backpack_Cerberus_1 : SWLB_clone_backpack
 	{
