@@ -12,9 +12,14 @@ class CfgPatches
 			"",
 			};
 		weapons[] = {
-			"JA_104thNVG", 
-			"JA_104thNVG_NCO",
-			"JA_104thCommanderVisor",
+			"JA_104th_P2_NVG_Base",
+			"JA_104th_P2_NVG_Medic",
+			"JA_104th_P2_NVG_Invert",
+			"JA_104th_SPC_NVG_Base",
+			"JA_104th_SPC_NVG_Medic",
+			"JA_104th_SPC_NVG_Invert",
+			"JA_104th_NVG_NCO",
+			"JA_104th_CM_Visor",
 			"JA_104th_Death_NVG_Tanker",
 			"JA_104th_Crowbi_NVG_NCO",
 			"JA_104th_Hunter_NVG_NCO",
@@ -65,7 +70,8 @@ class CfgWeapons
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
 	class SWLB_clone_P2_Helmet;
-	class lsd_gar_standart_nvg;
+	class lsd_gar_standard_nvg;
+	class lsd_gar_standardSPC_nvg;
 	class lsd_gar_barcm2_helmet;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
@@ -118,10 +124,53 @@ class CfgWeapons
 	};
 
 	// General Attachments
-	class JA_104thNVG : lsd_gar_standart_nvg // Move to J_A_Attachments
+	class JA_104th_P2_NVG_Base: lsd_gar_standard_nvg
 	{
 		author = "Tundra";
-		displayName = "Clone NVG Visor (104th)";
+		displayName = "Clone P2 NVG Visor (104th Base)";
+		hiddenSelections[] =
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Base.paa",
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+	};
+	class JA_104th_P2_NVG_Invert: lsd_gar_standard_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone P2 NVG Visor (104th Invert)";
+		hiddenSelections[] =
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_SPC.paa",
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+	};
+	class JA_104th_P2_NVG_Medic : lsd_gar_standard_nvg
+	{
+		ace_nightvision_border = "";
+		author = "Tundra";
+		displayName = "Clone P2 NVG Visor (104th Medic)";
+		hiddenSelections[] =
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Medic.paa",
+		};
+	};
+	class JA_104th_SPC_NVG_Base : lsd_gar_standardSPC_nvg
+	{
+		ace_nightvision_border = "";
+		author = "Tundra";
+		displayName = "Clone SPC NVG Visor (104th Base)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -130,12 +179,45 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"Jangos_Armory_Attachments\data\Textures\104th_NVGs.paa",
-			""
+			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Base.paa",
 		};
+		visionMode[] = {"Normal","NVG","TI"};
 	};
+	class JA_104th_SPC_NVG_Invert : lsd_gar_standardSPC_nvg
+	{
+		ace_nightvision_border = "";
+		author = "Tundra";
+		displayName = "Clone SPC NVG Visor (104th Invert)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
 
-	class JA_104thNVG_NCO : lsd_gar_rangefinder_nvg
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_SPC.paa",
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+	};
+	class JA_104th_SPC_NVG_Medic : lsd_gar_standardSPC_nvg
+	{
+		ace_nightvision_border = "";
+		author = "Tundra";
+		displayName = "Clone SPC NVG Visor (104th Medic)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Medic.paa",
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+	};
+	class JA_104th_NVG_NCO : lsd_gar_rangefinder_nvg
 	{
 		author = "Tundra";
 		displayName = "Clone NVG NCO Visor (104th)";
@@ -150,9 +232,10 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_NVGs.paa",
 			"Jangos_Armory_Attachments\data\Textures\104th_NVGs.paa"
 		};
+		visionMode[] = {"Normal","NVG","TI"};
 	};
 
-	class JA_104thCommanderVisor : lsd_gar_p2MarshalCommander_nvg
+	class JA_104th_CM_Visor : lsd_gar_p2MarshalCommander_nvg
 	{
 		author = "Tundra";
 		displayName = "Clone Commander Visor (104th Daddy)";
@@ -167,6 +250,7 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_Commander_NV.paa",
 			"Jangos_Armory_Attachments\data\Textures\104th_Commander_NV.paa"
 		};
+		visionMode[] = {"Normal","NVG","TI"};
 	};
 	class JA_104th_Death_NVG_Tanker : lsd_gar_tanker_nvg
 	{
@@ -179,7 +263,9 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\Textures\104th_P2_Death_NVG.paa"};
+				"Jangos_Armory_Attachments\data\Textures\104th_P2_Death_NVG.paa"
+			};
+		visionMode[] = {"Normal","NVG","TI"};
 	};
 	class JA_104th_Crowbi_NVG_NCO : lsd_gar_rangefinder_nvg
 	{

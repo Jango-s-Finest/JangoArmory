@@ -12,18 +12,22 @@ class CfgPatches
 			"JA_104th_Angel",
 			"JA_104th_Sigil",
 			"JA_104th_Crowbi",
+			"JA_104th_Drifter",
 			"JA_104th_Frosty",
 			"JA_104th_Hunter",
 			"JA_104th_Loner",
+			"JA_104th_Vision",
 			"JA_104th_Spectre"
 		};
 		weapons[] = {
 			"JA_104th_Angel_Uniform",
 			"JA_104th_Sigil_Uniform",
 			"JA_104th_Crowbi_Uniform",
+			"JA_104th_Drifter_Uniform",
 			"JA_104th_Frosty_Uniform",
 			"JA_104th_Hunter_Uniform",
 			"JA_104th_Loner_Uniform",
+			"JA_104th_Vision_Uniform",
 			"JA_104th_Spectre_Uniform"
 
 		};
@@ -169,6 +173,29 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Drifter_Uniform : SWLB_clone_uniform
+	{
+		author = "Ice";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Drifter)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Drifter_Upper.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Drifter_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Drifter";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Frosty_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -267,6 +294,31 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Vision_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Vision)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Vision_Upper.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Vision_Lower.paa",
+			};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Vision";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -296,8 +348,8 @@ class CfgVehicles
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Angel_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Angel_Lower.paa"};
-		linkedItems[] = {JA_104th_Crowbi_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Crowbi_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Angel_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Angel_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Crowbi : SWLB_clone_base_P2
 	{
@@ -314,6 +366,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Crowbi_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Crowbi_Lower.paa"};
 		linkedItems[] = {JA_104th_Crowbi_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Crowbi_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Drifter : SWLB_clone_base_P2
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Drifter_Uniform";
+		displayName = "104th ARC Drifter";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Drifter_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Drifter_Lower.paa"};
+		linkedItems[] = {JA_104th_Drifter_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Drifter_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Frosty : SWLB_clone_base_P2
 	{
@@ -394,6 +462,22 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Sigil_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Sigil_Lower.paa"};
+		linkedItems[] = {JA_104th_Sigil_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Vision : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Vision_Uniform";
+		displayName = "104th Vision";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Vision_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Vision_Lower.paa"};
 		linkedItems[] = {JA_104th_Sigil_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};

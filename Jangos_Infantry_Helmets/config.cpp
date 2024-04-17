@@ -46,6 +46,7 @@ class CfgPatches
 			"JA_104th_Knockout_Helmet",
 			"JA_104th_Scurvy_Helmet",
 			"JA_104th_Death_Helmet",
+			"JA_104th_Irish_Helmet",
 			"JA_104th_Welty_Helmet"
 		};
 	};
@@ -501,6 +502,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1"};																	   // don't change this
 		displayname = "Clone Trooper P2 Helmet (104th Spirit)";											   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Spirit_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Irish_Helmet : SWLB_Clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};															  // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Irish)";									  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Irish_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Knockout_Helmet : ls_gar_engineer_helmet
 	{

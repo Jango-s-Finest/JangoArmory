@@ -10,6 +10,7 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {
 			"JA_104th_Backpack",
+			"JA_104th_Backpack_Invis",
 			"JA_104th_Accessories_Heavy_Backpack",
 			"JA_104th_Medic_Backpack",
 			"JA_104th_RTO_Backpack",
@@ -113,9 +114,11 @@ class CfgVehicles
 	class JLTS_Clone_jumppack_JT12_104;
 	class JLTS_Clone_jumppack_mc;
 	class RD501_JLTS_Clone_jumppack_cdv;
+	class SWLB_clone_arc_backpack;
+	class ls_gar_survival_backpack;
 	
 	
-	// Common Backpacks
+	// Common Infantry Backpacks
 	class JA_104th_Backpack : SWLB_clone_backpack
 	{
 		author = "Tundra";
@@ -130,6 +133,18 @@ class CfgVehicles
 			"", // Medic
 			"" // RTO
 		};
+	};
+	class JA_104th_Backpack_Invis : ls_gar_survival_backpack
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper backpack (Invisible)";
+		hiddenSelectionsTextures[] =
+		{
+			""
+		};
+		maximumload = 280; // In LBS (320 = 32 lbs original, 400 = 40 lbs)
 	};
 	class JA_104th_Accessories_Heavy_Backpack : SWLB_clone_backpack_heavy
 	{
@@ -186,207 +201,8 @@ class CfgVehicles
 			"Jangos_Armory_Backpacks\data\Textures\104th_MiniPack_slots.paa" // slotss
 		};
 	};
-	class JA_104th_Jumppack_LR : JLTS_Clone_jumppack
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper jumppack LR";
-		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_hasLRradio = 1;
-		tf_range = 25000;
-		tf_additional_channel = 1;
-		tf_subtype = "digital_lr";
-	};
-	class JA_104th_Jumppack : JLTS_Clone_jumppack
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper jumppack";
-		RD501_jumppack_energy_capacity = 100;
-	};
-	class JA_104th_Jumppack_JT12_LR_DC : JLTS_Clone_jumppack_JT12_104
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR - NO RECHARGE";
-		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_hasLRradio = 1;
-		tf_range = 25000;
-		tf_additional_channel = 1;
-		tf_subtype = "digital_lr";
-		JLTS_energy[] = {15, 3000};
-		JLTS_recharge = -1;
-	};
-	class JA_104th_Jumppack_JT12_DC : JLTS_Clone_jumppack_JT12_104
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12  - NO RECHARGE";
-		RD501_jumppack_energy_capacity = 100;
-		JLTS_energy[] = {15, 3000};
-		JLTS_recharge = -1;
-	};
-	class JA_104th_Jumppack_JT12_LR : JLTS_Clone_jumppack_JT12_104
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR";
-		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_hasLRradio = 1;
-		tf_range = 25000;
-		tf_additional_channel = 1;
-		tf_subtype = "digital_lr";
-	};
-	class JA_104th_Jumppack_JT12 : JLTS_Clone_jumppack_JT12_104
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12";
-		RD501_jumppack_energy_capacity = 100;
-	};
-	class JA_104th_Jumppack_mc_LR : JLTS_Clone_jumppack_mc
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Marshal Commander Jumppack LR";
-		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_hasLRradio = 1;
-		tf_range = 25000;
-		tf_additional_channel = 1;
-		tf_subtype = "digital_lr";
-	};
-	class JA_104th_Jumppack_mc : JLTS_Clone_jumppack_mc
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Marshal Commander jumppack";
-		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "";
-		tf_dialogUpdate = "";
-		tf_encryptionCode = "";
-		tf_hasLRradio = 0;
-		tf_range = 0;
-		tf_subtype = "";
-	};
-	class JA_104th_Jumppack_CDV : RD501_JLTS_Clone_jumppack_cdv
-	{
-		author = "501st + Echo";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone CDV Pilot jumppack";
-		tf_dialog = "anarc210_radio_dialog";
-		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_hasLRradio = 1;
-		tf_range = 40000;
-		tf_subtype = "airborne";
-	};
-	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider : JA_104th_Jumppack_JT12
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider_1_LR : JA_104th_Jumppack_JT12_LR
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider 2-1)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-1_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider_1 : JA_104th_Jumppack_JT12
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider 2-1)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-1_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider_2_LR : JA_104th_Jumppack_JT12_LR
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider 2-2)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-2_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider_2 : JA_104th_Jumppack_JT12
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider 2-2)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-2_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider_3_LR : JA_104th_Jumppack_JT12_LR
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider 2-3)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-3_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider_3 : JA_104th_Jumppack_JT12
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider 2-3)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-3_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider_4_LR : JA_104th_Jumppack_JT12_LR
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider 2-4)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
-	};
-	class JA_104th_Jumppack_JT12_Raider_4 : JA_104th_Jumppack_JT12
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider 2-4)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
-	};
+
+	// Cerberus Specific
 	class JA_104th_Backpack_Cerberus_1 : SWLB_clone_backpack
 	{
 		author = "Tundra";
@@ -618,5 +434,208 @@ class CfgVehicles
 				"",															// Medic
 				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa"	// RTO
 			};
+	};
+
+	// Airborne JT12s
+	class JA_104th_Jumppack_LR : JLTS_Clone_jumppack
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper jumppack LR";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
+	class JA_104th_Jumppack : JLTS_Clone_jumppack
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper jumppack";
+		RD501_jumppack_energy_capacity = 100;
+	};
+	class JA_104th_Jumppack_JT12_LR_DC : JLTS_Clone_jumppack_JT12_104
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR - NO RECHARGE";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+		JLTS_energy[] = {15, 3000};
+		JLTS_recharge = -1;
+	};
+	class JA_104th_Jumppack_JT12_DC : JLTS_Clone_jumppack_JT12_104
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12  - NO RECHARGE";
+		RD501_jumppack_energy_capacity = 100;
+		JLTS_energy[] = {15, 3000};
+		JLTS_recharge = -1;
+	};
+	class JA_104th_Jumppack_JT12_LR : JLTS_Clone_jumppack_JT12_104
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
+	class JA_104th_Jumppack_JT12 : JLTS_Clone_jumppack_JT12_104
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12";
+		RD501_jumppack_energy_capacity = 100;
+	};
+	class JA_104th_Jumppack_mc_LR : JLTS_Clone_jumppack_mc
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Marshal Commander Jumppack LR";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
+	class JA_104th_Jumppack_mc : JLTS_Clone_jumppack_mc
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Marshal Commander jumppack";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "";
+		tf_dialogUpdate = "";
+		tf_encryptionCode = "";
+		tf_hasLRradio = 0;
+		tf_range = 0;
+		tf_subtype = "";
+	};
+	class JA_104th_Jumppack_CDV : RD501_JLTS_Clone_jumppack_cdv
+	{
+		author = "501st + Echo";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone CDV Pilot jumppack";
+		tf_dialog = "anarc210_radio_dialog";
+		tf_dialogUpdate = "[""CH%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 40000;
+		tf_subtype = "airborne";
+	};
+	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR (Raider)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 (Raider)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_1_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR (Raider 2-1)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-1_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_1 : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 (Raider 2-1)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-1_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_2_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR (Raider 2-2)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-2_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_2 : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 (Raider 2-2)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-2_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_3_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR (Raider 2-3)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-3_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_3 : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 (Raider 2-3)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-3_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_4_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR (Raider 2-4)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Raider_4 : JA_104th_Jumppack_JT12
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 (Raider 2-4)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
 	};
 };

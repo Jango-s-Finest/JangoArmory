@@ -13,9 +13,11 @@ class CfgPatches
 				"JA_104th_Angel_Helmet",
 				"JA_104th_Sigil_Helmet",
 				"JA_104th_Crowbi_Helmet",
+				"JA_104th_Drifter_Helmet",
 				"JA_104th_Frosty_Helmet",
 				"JA_104th_Hunter_Helmet",
 				"JA_104th_Loner_Helmet",
+				"JA_104th_Vision_Helmet",
 				"JA_104th_Spectre_Helmet"
 
 		};
@@ -110,6 +112,15 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Crowbi)";						  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Crowbi_Helmet.paa"}; // the file path to the texture
 	};
+	class JA_104th_Drifter_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";													
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Drifter)";								  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_P2_Drifter_Helmet.paa"}; // the file path to the texture
+	};
 	class JA_104th_Frosty_Helmet : SWLB_clone_P15_Helmet
 	{
 		author = "Dak";
@@ -154,6 +165,15 @@ class CfgWeapons
 		grad_slingHelmet_allow = "true";													
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Sigil)";							 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Sigil_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Vision_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";													
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Vision)";								  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_P2_Vision_Helmet.paa"}; // the file path to the texture
 	};
 };
 

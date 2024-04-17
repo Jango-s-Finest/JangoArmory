@@ -31,6 +31,7 @@ class CfgPatches
 			"JA_104th_Tusk",
 			"JA_104th_Scurvy",
 			"JA_104th_Knightfall",
+			"JA_104th_Irish",
 			"JA_104th_Knockout",
 			"JA_104th_Welty"
 		};
@@ -55,6 +56,7 @@ class CfgPatches
 			"JA_104th_Paraso_Uniform",
 			"JA_104th_Dak_Uniform",
 			"JA_104th_Scurvy_Uniform",
+			"JA_104th_Irish_Uniform",
 			"JA_104th_Death_Uniform"
 		};
 	};
@@ -415,6 +417,31 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Galahad";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Irish_Uniform : SWLB_clone_uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th Irish)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Infantry_Armours\data\Textures\104th_P2_Irish_Upper.paa",
+			"Jangos_Infantry_Armours\data\Textures\104th_P2_Irish_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Irish";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -953,8 +980,24 @@ class CfgVehicles
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Lower.paa"};
-		linkedItems[] = { JA_104th_Ed_Helmet,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Ed_Helmet,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		linkedItems[] = { JA_104th_Galahad_Helmet,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Galahad_Helmet,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Irish: SWLB_clone_base_P2
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Irish_Uniform";
+		displayName = "104th Irish";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_Irish_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Irish_Lower.paa"};
+		linkedItems[] = { JA_104th_Irish_Helmet,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Irish_Helmet,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Welty : SWLB_clone_base_P2
 	{
