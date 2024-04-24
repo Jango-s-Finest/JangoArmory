@@ -77,25 +77,58 @@ _vic addEventHandler ["HitPart", {
 
 
 				_damage = 0;
-				_damagedone = 0;
+				_hitby = _ammo select 4;
+				_mdwhit = 0;
 				if (_isDirect) then {_damage = (_ammo select 0)} else {_damage = ((_ammo select 1) / 4)};
-
-
-
-				if (_damage > 0) then {_damagedone = (_damage / 2)};
-				if (_damage > 29) then {_damagedone = _damage};
 				
-				_lsaatcheck = _ammo;
-				_lsaatchecking = "ls_120mm_red_ap";
-				if (_isDirect) then {
-					if ( _lsaatcheck isEqualTo _lsaatchecking ) then {_damagedone = 850};
+				switch _hitby do
+				{
+					case "ls_120mm_red_ap";
+					case "ls_120mm_red_he";
+					case "3AS_ATT_redPlasma_AT";
+					case "RD501_aat_mbt_ammo";
+					case "E60R_AA";
+					case "PLX_AA";
+					case "3AS_GAT_redPlasma_AT";
+					case "3AS_Vulture_Missile_AA";
+					case "ammo_Penetrator_RPG32V";
+					case "ammo_Missile_AMRAAM_C";
+					case "ammo_Missile_AMRAAM_D";
+					case "3AS_ammo_AMRAAM";
+					case "ammo_Missile_BIM9X";
+					case "FIR_AIM120";
+					case "FIR_AIM120A";
+					case "FIR_AIM120B";
+					case "FIR_AIM132";
+					case "FIR_AIM54";
+					case "FIR_AIM54A";
+					case "FIR_AIM7";
+					case "FIR_AIM7_2";
+					case "FIR_AIM7E";
+					case "FIR_AIM7E_2";
+					case "FIR_AIM7F";
+					case "FIR_AIM7F_2";
+					case "FIR_AIM9H";
+					case "FIR_AIM9L";
+					case "FIR_AIM9M";
+					case "FIR_AIM9P";
+					case "FIR_AIM9X";
+					case "M_Titan_AA_long";
+					case "M_Zephyr";
+					case "M_Zephyr_air";
+					case "NCA_Tyrant_Ammo": { _mdwhit = 1};
+				};
+				
+				if (_mdwhit > 0) then {
+					_damage = 500;
+					[_targetvehicle, ("Impact Detected - " + str(_hitby) + " hit, shields overloaded!")] remoteExec ["vehiclechat"];
 				};
 				_shieldadjust = _targetvehicle getVariable "104thVicShieldStrength";
-				_shieldadjust = (_shieldadjust - _damagedone);
+				_shieldadjust = (_shieldadjust - _damage);
 				_targetvehicle setVariable ["104thVicShieldStrength", _shieldadjust, true];
 
 				_shieldhealth = (_shieldadjust / 5);
-				if (_damagedone > 0) then { [_targetvehicle, ("Shield Health " + str(_shieldhealth) + "%")] remoteExec ["vehiclechat"]; };
+				if (_damage > 0) then { [_targetvehicle, ("Shield Health " + str(_shieldhealth) + "%")] remoteExec ["vehiclechat"]; };
 				
 				private _vehicletospawn = "z95shieldfb";
 				if (_shieldadjust < 330) then { _vehicletospawn = "z95shieldhb"; };
