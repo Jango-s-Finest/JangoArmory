@@ -7,7 +7,8 @@ class CfgPatches
 	{
 		author = "Jango's Finest";
 		units[] = {
-			"JA_104th_P2_1C_Base",
+			"JA_104th_P2_1C_01_CT",
+			"JA_104th_P2_1C_02_CT",
 			"JA_104th_P2_1C_Medic",
 			"JA_104th_P2_1C_Engineer",
 			"JA_104th_P2_1C_JTAC"
@@ -30,7 +31,8 @@ class CfgPatches
 			"JA_104th_Desert_1C_Officer_Helmet",
 			"JA_104th_Desert_1C_Base_Helmet",
 
-			"JA_104th_P2_1C_Base_Uniform",
+			"JA_104th_P2_1C_01_CT_Uniform",
+			"JA_104th_P2_1C_02_CT_Uniform",
 			"JA_104th_P2_1C_Medic_Uniform",
 			"JA_104th_P2_1C_JTAC_Uniform",
 			"JA_104th_P2_1C_Engineer_Uniform"
@@ -267,12 +269,12 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "104thPhantomCompany\data\Textures\104th_Desert_Base_Trooper_Helmet.paa","104thPhantomCompany\data\Textures\Visor_Desert.paa" }; // the file path to the texture
 	};
 
-	class JA_104th_P2_1C_Base_Uniform : SWLB_clone_uniform
+	class JA_104th_P2_1C_01_CT_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper P2 Armor (104th [1C] Base)";
+		displayName = "Clone Trooper P2 Armor (104th [1C] 01 CT)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -280,13 +282,38 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\104th_P2_1C_Base_Upper.paa",
-			"104thPhantomCompany\data\Textures\104th_P2_1C_Base_Lower.paa"
+			"104thPhantomCompany\data\Textures\104th_P2_1C_01_CT_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_01_CT_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_P2_1C_Base";
+			uniformClass = "JA_104th_P2_1C_01_CT";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_P2_1C_02_CT_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper P2 Armor (104th [1C] 02 CT)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"104thPhantomCompany\data\Textures\104th_P2_1C_01_CT_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_P2_1C_02_CT";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -382,22 +409,42 @@ class CfgVehicles
 	class SWLB_clone_backpack_RTO;
 	class EG_InvisBagMain;
 
-	class JA_104th_P2_1C_Base : SWLB_clone_base_P2
+	class JA_104th_P2_1C_01_CT : SWLB_clone_base_P2
 	{
 		author = "Bulky & Cyan";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_P2_1C_Base_Uniform";
-		displayName = "P2 1C Base";
+		uniformClass = "JA_104th_P2_1C_01_CT_Uniform";
+		displayName = "P2 1C 01 CT";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
 				hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\104th_P2_1C_Base_Upper.paa",
-			"104thPhantomCompany\data\Textures\104th_P2_1C_Base_Lower.paa"
+			"104thPhantomCompany\data\Textures\104th_P2_1C_01_CT_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_01_CT_Lower.paa"
+		};
+		linkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_P2_1C_02_CT : SWLB_clone_base_P2
+	{
+		author = "Bulky & Cyan";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_P2_1C_02_CT_Uniform";
+		displayName = "P2 1C 02 CT";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+				hiddenSelectionsTextures[] =
+		{
+			"104thPhantomCompany\data\Textures\104th_P2_1C_01_CT_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Lower.paa"
 		};
 		linkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
