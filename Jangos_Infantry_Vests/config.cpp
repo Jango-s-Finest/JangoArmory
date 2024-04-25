@@ -10,8 +10,23 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {
+
+			"JA_104th_Vest",
+			"JA_104th_Base_officer_Vest",
+			"JA_104th_Base_Commander_Vest",
+			"JA_104th_Base_Medic_Vest",
+			"JA_104th_ME_Commander_Vest",
+			"JA_104th_ME_officer_Vest",
+			"JA_104th_ME_Medic_Vest",	
+			"JA_104th_Tusk_Vest",
+			"JA_104th_Knightfall_Vest",
+			"JA_104th_Galahad_Vest",
+			"JA_104th_Scurvy_Vest",
+			"JA_104th_PSGT_Kama",
 			"JA_104th_Welty_Kama",
-			"JA_104th_Death_Kama"};
+			"JA_104th_Death_Kama"
+
+		};
 	};
 };
 
@@ -87,6 +102,10 @@ class CfgWeapons
     {
         class ItemInfo;
     };
+	class SWLB_clone_medic_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
 	class SWLB_clone_airborne_nco_armor : SWLB_clone_airborne_armor
 	{
 		class ItemInfo;
@@ -103,7 +122,10 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
-
+   class SWLB_CEE_Recon_Lieutenant: SWLB_clone_basic_armor 
+    {
+        class ItemInfo;
+    };
 	class ls_blueforVest_base;
 	class ls_gar_airborneOfficer_vest : ls_blueforVest_base
 	{
@@ -122,6 +144,121 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
+
+
+	class JA_104th_Vest : SWLB_CEE_Recon_Lieutenant
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Captain Vest (104th)";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] = 
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa",
+				"SWLB_clones\data\heavy_accessories_co.paa"};
+		class ItemInfo: Vestitem
+		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			vestType = "Rebreather";
+		};
+	};
+	class JA_104th_Base_officer_Vest : SWLB_clone_officer_armor
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Officer Vest (104th)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+		};
+	};
+	class JA_104th_Base_Commander_Vest : SWLB_clone_commander_armor
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Commander Vest (104th)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+		};
+	};
+	class JA_104th_Base_Medic_Vest : SWLB_clone_medic_armor
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Medic Vest (104th)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_Accessories_Heavy.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+		};
+	};
+	class JA_104th_ME_officer_Vest : SWLB_clone_officer_armor
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Officer Vest (ME)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_ME_Pauldron_and_Kama.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+		};
+	};
+	class JA_104th_ME_Commander_Vest : SWLB_clone_commander_armor
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Commander Vest (ME)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_ME_Pauldron_and_Kama.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+		};
+	};
+	class JA_104th_ME_Medic_Vest : SWLB_clone_medic_armor
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Medic Vest (ME)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_Accessories_Heavy_ME.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+		};
+	};
 	class JA_104th_Welty_Kama : SWLB_clone_kama_armor
 	{
 		author = "Fish";
@@ -134,6 +271,25 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"Jangos_Infantry_Vests\data\Textures\104th_P2_Welty_Kama.paa"
+		};
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
+	};
+
+	class JA_104th_PSGT_Kama : SWLB_clone_kama_armor
+	{
+		author = "Tundra";
+		displayName = "Clone Trooper Kama (104th)";
+		hiddenSelections[] =
+		{
+			"camo1"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa"
 		};
 		class ItemInfo: ItemInfo
         {
@@ -168,6 +324,89 @@ class CfgWeapons
 					passThrough = 0.3;
 				};
 			};
+		};
+	};
+	class JA_104th_Scurvy_Vest : SWLB_clone_airborne_nco_armor
+	{
+		author = "Emmet";
+		scope = 2;
+		displayName = "Clone NCO Vest (104th Scurvy)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Infantry_Vests\data\Textures\104th_P2_Scurvy_Heavy.paa", // Heavy
+			"Jangos_Infantry_Vests\data\Textures\104th_P2_Scurvy_Officer.paa",
+			"Jangos_Infantry_Vests\data\Textures\104th_P2_Scurvy_Heavy.paa", //Heavy
+			"Jangos_Infantry_Vests\data\Textures\104th_P2_Scurvy_Heavy.paa" //Heavy
+		};
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
+	};
+	class JA_104th_Knightfall_Vest : SWLB_clone_commander_armor
+	{
+		author = "Tundra";
+		displayName = "Clone Trooper Commander Vest (104th Knightfall)";
+		hiddenSelections[] =
+		{
+			"camo1"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Infantry_Vests\data\Textures\104th_Knightfall_Accessories.paa"
+		};
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
+	};
+	class JA_104th_Tusk_Vest : SWLB_clone_commander_armor
+	{
+		author = "Tundra";
+		displayName = "Clone Trooper Commander Vest (104th Tusk)";
+		hiddenSelections[] =
+		{
+			"camo1"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Infantry_Vests\data\Textures\104th_Tusk_Accessories.paa"
+		};
+		class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+        };
+	};
+	class JA_104th_Galahad_Vest : SWLB_CEE_Recon_Lieutenant
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Captain Vest (104th Galahad)";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] = 
+			{
+				"Jangos_Infantry_Vests\data\Textures\104th_P2_Galahad_Kama.paa",
+				"SWLB_clones\data\heavy_accessories_co.paa"};
+		class ItemInfo: Vestitem
+		{
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 80;
+			vestType = "Rebreather";
 		};
 	};
 };
