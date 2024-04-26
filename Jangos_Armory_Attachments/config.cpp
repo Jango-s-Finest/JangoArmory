@@ -21,11 +21,13 @@ class CfgPatches
 			"JA_104th_NVG_NCO",
 			"JA_104th_CM_Visor",
 			"JA_104th_Death_NVG_Tanker",
-			"JA_104th_Crowbi_NVG_NCO",
-			"JA_104th_Hunter_NVG_NCO",
-			"JA_104th_Sigil_NVG_NCO",
-			"JA_104th_Specter_NVG_NCO",
-			"JA_104th_Loner_NVG_NCO"
+			"JA_104th_Crowbi_NVG_Rangefinder",
+			"JA_104th_Drifter_NVG_Rangefinder",
+			"JA_104th_Hunter_NVG_Rangefinder",
+			"JA_104th_Sigil_NVG_Rangefinder",
+			"JA_104th_Specter_NVG_Rangefinder",
+			"JA_104th_Loner_NVG_Rangefinder",
+			"JA_104th_Vision_NVG_Rangefinder"
 		};
 	};
 };
@@ -137,6 +139,7 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Base.paa",
 		};
 		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
 	class JA_104th_P2_NVG_Invert: lsd_gar_standard_nvg
 	{
@@ -151,6 +154,7 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_SPC.paa",
 		};
 		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
 	class JA_104th_P2_NVG_Medic : lsd_gar_standard_nvg
 	{
@@ -182,6 +186,7 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Base.paa",
 		};
 		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
 	class JA_104th_SPC_NVG_Invert : lsd_gar_standardSPC_nvg
 	{
@@ -199,6 +204,7 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_SPC.paa",
 		};
 		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
 	class JA_104th_SPC_NVG_Medic : lsd_gar_standardSPC_nvg
 	{
@@ -216,11 +222,12 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Medic.paa",
 		};
 		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
-	class JA_104th_NVG_NCO : lsd_gar_rangefinder_nvg
+	class JA_104th_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Tundra";
-		displayName = "Clone NVG NCO Visor (104th)";
+		displayName = "Clone NVG Rangefinder Visor (104th)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -233,6 +240,7 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_NVGs.paa"
 		};
 		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
 
 	class JA_104th_CM_Visor : lsd_gar_p2MarshalCommander_nvg
@@ -251,6 +259,7 @@ class CfgWeapons
 			"Jangos_Armory_Attachments\data\Textures\104th_Commander_NV.paa"
 		};
 		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
 	class JA_104th_Death_NVG_Tanker : lsd_gar_tanker_nvg
 	{
@@ -266,11 +275,12 @@ class CfgWeapons
 				"Jangos_Armory_Attachments\data\Textures\104th_P2_Death_NVG.paa"
 			};
 		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
-	class JA_104th_Crowbi_NVG_NCO : lsd_gar_rangefinder_nvg
+	class JA_104th_Crowbi_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Ice";
-		displayName = "Clone NVG NCO Visor (104th Crowbi)";
+		displayName = "Clone NVG Rangefinder Visor (104th Crowbi)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -279,13 +289,32 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Crowbi_NVG.paa",
-				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Crowbi_NVG.paa"};
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Crowbi_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Crowbi_Rangefinder.paa"};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
-	class JA_104th_Hunter_NVG_NCO : lsd_gar_rangefinder_nvg
+	class JA_104th_Drifter_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Ice";
-		displayName = "Clone NVG NCO Visor (104th Hunter)";
+		displayName = "Clone NVG Rangefinder Visor (104th Drifter)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Drifter_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Drifter_Rangefinder.paa"};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
+	class JA_104th_Hunter_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Ice";
+		displayName = "Clone NVG Rangefinder Visor (104th Hunter)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -296,11 +325,13 @@ class CfgWeapons
 			{
 				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Hunter_Rangefinder.paa",
 				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Hunter_Rangefinder.paa"};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
-	class JA_104th_Loner_NVG_NCO : lsd_gar_rangefinder_nvg
+	class JA_104th_Loner_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Ice";
-		displayName = "Clone NVG NCO Visor (104th Loner)";
+		displayName = "Clone NVG Rangefinder Visor (104th Loner)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -309,13 +340,15 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Loner_NVG.paa",
-				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Loner_NVG.paa"};
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Loner_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Loner_Rangefinder.paa"};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
-	class JA_104th_Sigil_NVG_NCO : lsd_gar_rangefinder_nvg
+	class JA_104th_Sigil_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Ice";
-		displayName = "Clone NVG NCO Visor (104th Sigil)";
+		displayName = "Clone NVG Rangefinder Visor (104th Sigil)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -324,13 +357,15 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Sigil_NVG.paa",
-				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Sigil_NVG.paa"};
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Sigil_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Sigil_Rangefinder.paa"};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
-	class JA_104th_Specter_NVG_NCO : lsd_gar_rangefinder_nvg
+	class JA_104th_Specter_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Ice";
-		displayName = "Clone NVG NCO Visor (104th Spectre)";
+		displayName = "Clone NVG Rangefinder Visor (104th Spectre)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -339,8 +374,27 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Spectre_NVG.paa",
-				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Spectre_NVG.paa"};
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Spectre_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Spectre_Rangefinder.paa"};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
+	class JA_104th_Vision_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Ice";
+		displayName = "Clone NVG Rangefinder Visor (104th Vision)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Vision_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Vision_Rangefinder.paa"};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
 };
 

@@ -11087,57 +11087,8 @@ class cfgVehicles {
 		};
 	};
 	
-	
-	//Split Z7 Rework
-	
-	class Weapon_Base_F;
-	class SWLW_GH_Z7;
-	class 104th_GH_Z7: SWLW_GH_Z7
-	{
-		author = "SW Legion Studios";
-		displayName = "Z7-104 Rotary Shoulder Gun";
-		scope = 2;
-		class TransportWeapons
-		{
-			class 104th_Z7
-			{
-				count = 1;
-				weapon = "104th_Z7";
-			};
-		};
-		class TransportMagazines
-		{
-			class SWLW_Z7_mag_800rnd
-			{
-				count = 1;
-				magazine = "SWLW_Z7_mag_800rnd";
-			};
-		};
-	};
-	class JA_104th_GH_T9: SWLW_GH_Z7
-	{
-		author = "SW Legion Studios";
-		displayName = "T9-104 Shoulder Cannon";
-		scope = 2;
-		class TransportWeapons
-		{
-			class JA_104th_ShoulderCannon
-			{
-				count = 1;
-				weapon = "JA_104th_ShoulderCannon";
-			};
-		};
-		class TransportMagazines
-		{
-			class JA_104th_LaserCannon_mag
-			{
-				count = 1;
-				magazine = "JA_104th_LaserCannon_mag";
-			};
-		};
-	};
-	
-	
+	// Removed Z7 / Shoulder Cannon, may need to be re added to crates
+
 	class 3AS_Republic_HR_Bag;
 	class JA_104th_Republic_HR_Bag : 3AS_Republic_HR_Bag
     {
@@ -11241,23 +11192,7 @@ class CfgAmmo
 
 class CfgMagazines
 {
-	class SWLW_Z7_mag;
-	class SWLW_Z7_mag_800rnd: SWLW_Z7_mag
-	{
-		displayname = "Chaingun energy cell (800rnd)";
-		count = 800;
-		mass = 80;
-	};
-	class SDT_IonDisruptor_mag;
-	class JA_104th_LaserCannon_mag: SWLW_Z7_mag
-	{
-		displayName = "1rnd Laser Cannon 50mm AP";
-		ammo = "JA_104th_T9_green";
-		//ammo = "ls_50mm_laat_apfsds";
-		count = 1;
-		mass = 8;
-	};
-	
+
 	class 200rnd_laat_apfsds_mag;
 	class 200rnd_laat_apfsds_mag_104th: 200rnd_laat_apfsds_mag
 	{
@@ -11282,54 +11217,8 @@ class CfgMagazines
 	};
 };
 
-class CfgRecoils
-{
-	class recoil_default;
-	class 104th_Z7_recoil: recoil_default
-	{
-		kickBack[] = {0.045,0.08};
-		muzzleOuter[] = {0.3,0.3,0.3,0.2};
-		permanent = 0.03;
-		temporary = 0.02;
-	};
-	class JA_104th_ShoulderCannon_recoil: recoil_default
-	{
-		kickBack[] = {0.045,0.08};
-		muzzleOuter[] = {0.3,0.3,0.3,0.2};
-		permanent = 0.03;
-		temporary = 0.02;
-	};
-};
-
 class CfgWeapons
 {
-	class Launcher;
-	class Launcher_Base_F: Launcher
-	{
-		class WeaponSlotsInfo;
-		class GunParticles;
-	};
-	class SWLW_Z7;
-	class 104th_Z7: SWLW_Z7
-	{
-		author = "SW Legion Studios + Echo";
-		scope = 2;
-		displayName = "Z7-104 Rotary Shoulder Gun";
-		magazines[] = {"SWLW_Z7_mag_800rnd","ls_mag_flak_800rnd"};
-	};
-	
-	class SDT_IonDisruptor;
-	class JA_104th_ShoulderCannon: SWLW_Z7
-	{
-		scope = 2;
-		displayName = "T9-104 Shoulder Laser Cannon";
-		//magazines[] = {"SWLW_Z7_mag_800rnd","ls_mag_flak_800rnd"};
-		magazines[] = {"JA_104th_LaserCannon_mag"};
-		model = "SDT_Eternal\data\iondisruptor\IonDisruptor.p3d";
-		
-		
-	};
-	
 	class ls_laat_gun_2;
 	class ls_laat_gun_2_104th: ls_laat_gun_2
 	{

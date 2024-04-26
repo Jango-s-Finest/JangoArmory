@@ -18,6 +18,7 @@ class CfgPatches
 			"JA_104th_Sigil_Vest",
 			"JA_104th_Spectre_Vest",
 			"JA_104th_Loner_Vest",
+			"JA_104th_Vision_Vest",
 			"JA_104th_Crowbi_Vest"
 		};
 	};
@@ -219,6 +220,96 @@ class CfgWeapons
 			};
 		};
 	};
+	class JA_104th_Crowbi_Vest : SWLB_clone_arc_armor
+	{
+		author = "Ice";
+		displayName = "Clone ARC Trooper Vest (104th Crowbi)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Crowbi_ARC_Accessories.paa",
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Crowbi_Officer_Accessories.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1", "camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	class JA_104th_Drifter_Vest : SWLB_clone_arc_armor
+	{
+		author = "Ice";
+		displayName = "Clone ARC Trooper Vest (104th Drifter)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_ARC_Accessories.paa",
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_Officer_Accessories.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1", "camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
 	class JA_104th_Frosty_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";
@@ -279,51 +370,6 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
-			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
-			containerClass = "Supply100";
-			hiddenSelections[] = {"camo1", "camo2"};
-			mass = 100;
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 4;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class JA_104th_Crowbi_Vest : SWLB_clone_arc_armor
-	{
-		author = "Ice";
-		displayName = "Clone ARC Trooper Vest (104th Crowbi)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"
-
-			};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_ARC_Vests\data\Textures\104th_ARC_Crowbi_ARC_Accessories.paa",
-				"Jangos_ARC_Vests\data\Textures\104th_ARC_Crowbi_Officer_Accessories.paa"};
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
@@ -459,6 +505,51 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Loner_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Loner_Officer_Accessories.paa"};
+		class ItemInfo : ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 10;
+					PassThrough = 0.3;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	class JA_104th_Vision_Vest : SWLB_clone_arc_armor
+	{
+		author = "Dak";
+		displayName = "Clone ARC Trooper Vest (104th Vision)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Vision_ARC_Accessories.paa",
+				"Jangos_ARC_Vests\data\Textures\104th_ARC_Vision_Officer_Accessories.paa"};
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
