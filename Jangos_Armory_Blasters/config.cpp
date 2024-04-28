@@ -2856,7 +2856,6 @@ class CfgWeapons
         {
             "ls_mag_at_plx",
             "ls_mag_ap_plx",
-            "ls_mag_aa_plx"
         };
     };
 
@@ -2988,21 +2987,21 @@ class CfgAmmo
 
 	class JA_104th_Weapons_Ammo_5mw: JA_104th_Weapons_Ammo_base_blue // Very Low Output
     {
-        hit = 6;
+        hit = 10;
         typicalSpeed = 700;
-        caliber = 1;
+        caliber = 1.2;
         waterFriction = -0.009;
     };
 	class JA_104th_Weapons_Ammo_10mw: JA_104th_Weapons_Ammo_base_blue // Low Output
     {
-        hit = 12.5;
+        hit = 15;
         typicalSpeed = 900;
-        caliber = 1;
+        caliber = 1.7;
         waterFriction = -0.009;
     };
     class JA_104th_Weapons_Ammo_20mw: JA_104th_Weapons_Ammo_base_blue // Medium Output 
     {
-        hit = 17.5;
+        hit = 25;
         typicalSpeed = 1050;
         caliber = 2.8;
         waterFriction = -0.009;
@@ -3026,8 +3025,8 @@ class CfgAmmo
     class JA_104th_Weapons_Ammo_50mw: JA_104th_Weapons_Ammo_base_blue // Extreme Output
     {
         hit = 80;
-        typicalSpeed = 2500;
-        caliber = 4.2;
+        typicalSpeed = 2750;
+        caliber = 5;
         airFriction = 0;
         waterFriction = -0.009;
     };
@@ -3192,7 +3191,7 @@ class CfgMagazines
     // .45 x 60 for DC17H + Westar
     class JA_104th_Weapons_Mags_5mw70: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th] 60Rnd 5MW Cell";
+        displayName = "[104th] 70Rnd 5MW Cell";
         displayNameShort = "70Rnd 5MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
@@ -3372,7 +3371,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_50mw";
         initSpeed = 1200;
         descriptionShort = "DC15X Specialized Overcharged magazine";
-        mass = 16;
+        mass = 10;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15X\DC15X_mag.p3d";
