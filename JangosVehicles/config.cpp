@@ -11246,27 +11246,7 @@ class CfgWeapons
 		class WeaponSlotsInfo;
 		class GunParticles;
 	};
-	class SWLW_Z7;
-	class 104th_Z7: SWLW_Z7
-	{
-		author = "SW Legion Studios + Echo";
-		scope = 2;
-		displayName = "Z7-104 Rotary Shoulder Gun";
-		magazines[] = {"SWLW_Z7_mag_800rnd","ls_mag_flak_800rnd"};
-	};
-	
-	class SDT_IonDisruptor;
-	class JA_104th_ShoulderCannon: SWLW_Z7
-	{
-		scope = 2;
-		displayName = "T9-104 Shoulder Laser Cannon";
-		//magazines[] = {"SWLW_Z7_mag_800rnd","ls_mag_flak_800rnd"};
-		magazines[] = {"JA_104th_LaserCannon_mag"};
-		model = "SDT_Eternal\data\iondisruptor\IonDisruptor.p3d";
-		
-		
-	};
-	
+
 	class ls_laat_gun_2;
 	class ls_laat_gun_2_104th: ls_laat_gun_2
 	{
