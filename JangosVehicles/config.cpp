@@ -11087,8 +11087,9 @@ class cfgVehicles {
 		};
 	};
 	
-	// Removed Z7 / Shoulder Cannon, may need to be re added to crates
+	
 
+	
 	class 3AS_Republic_HR_Bag;
 	class JA_104th_Republic_HR_Bag : 3AS_Republic_HR_Bag
     {
@@ -11193,6 +11194,7 @@ class CfgAmmo
 class CfgMagazines
 {
 
+	
 	class 200rnd_laat_apfsds_mag;
 	class 200rnd_laat_apfsds_mag_104th: 200rnd_laat_apfsds_mag
 	{
@@ -11217,8 +11219,34 @@ class CfgMagazines
 	};
 };
 
+class CfgRecoils
+{
+	class recoil_default;
+	class 104th_Z7_recoil: recoil_default
+	{
+		kickBack[] = {0.045,0.08};
+		muzzleOuter[] = {0.3,0.3,0.3,0.2};
+		permanent = 0.03;
+		temporary = 0.02;
+	};
+	class JA_104th_ShoulderCannon_recoil: recoil_default
+	{
+		kickBack[] = {0.045,0.08};
+		muzzleOuter[] = {0.3,0.3,0.3,0.2};
+		permanent = 0.03;
+		temporary = 0.02;
+	};
+};
+
 class CfgWeapons
 {
+	class Launcher;
+	class Launcher_Base_F: Launcher
+	{
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
+
 	class ls_laat_gun_2;
 	class ls_laat_gun_2_104th: ls_laat_gun_2
 	{

@@ -9,6 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Banker",
 			"JA_104th_Bomb",
 			"JA_104th_Crash",
 			"JA_104th_Paraso",
@@ -33,6 +34,7 @@ class CfgPatches
 			"JA_104th_Welty"
 		};
 		weapons[] = {
+			"JA_104th_Banker_Uniform",
 			"JA_104th_Bomb_Uniform",
 			"JA_104th_Galahad_Uniform",
 			"JA_104th_Welty_Uniform",
@@ -126,7 +128,6 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
-
 	class JA_104th_Crash_Uniform : SWLB_clone_mc_uniform
 	{
 		author = "Ice";
@@ -149,6 +150,29 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Crash";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Banker_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Banker)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Banker_Upper.paa",
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Banker_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Banker";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -689,6 +713,22 @@ class CfgVehicles
 
 	// Cerberus PLT, Infantry, Engineer, Medic Uniforms
 
+	class JA_104th_Banker : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Banker_Uniform";
+		displayName = "104th Banker";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_Banker_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Banker_Lower.paa"};
+		linkedItems[] = {JA_104th_Banker_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Banker_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
 	class JA_104th_Bomb : SWLB_clone_base_P2
 	{
 		author = "Dak";
