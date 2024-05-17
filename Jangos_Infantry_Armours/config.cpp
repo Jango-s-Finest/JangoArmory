@@ -27,6 +27,7 @@ class CfgPatches
 			"JA_104th_Kyo",
 			"JA_104th_Talisman",
 			"JA_104th_Tusk",
+			"JA_104th_Spirit",
 			"JA_104th_Scurvy",
 			"JA_104th_Knightfall",
 			"JA_104th_Irish",
@@ -51,6 +52,7 @@ class CfgPatches
 			"JA_104th_Crash_Uniform",
 			"JA_104th_Paraso_Uniform",
 			"JA_104th_Dak_Uniform",
+			"JA_104th_Spirit_Uniform",
 			"JA_104th_Scurvy_Uniform",
 			"JA_104th_Irish_Uniform",
 			"JA_104th_Death_Uniform"
@@ -579,6 +581,31 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Spirit_Uniform : SWLB_clone_uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th Spirit)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Infantry_Armours\data\Textures\104th_P2_Spirit_Upper.paa",
+			"Jangos_Infantry_Armours\data\Textures\104th_P2_Spirit_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Spirit";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Talisman_Uniform : SWLB_clone_uniform
 	{
 		author = "Fish";
@@ -1064,6 +1091,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Armours\data\Textures\104th_P2_Scurvy_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Scurvy_Lower.paa" };
 		linkedItems[] = { JA_104th_Scurvy_Uniform,JA_104thScurvyVest ,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Scurvy_Uniform,JA_104thScurvyVest,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Spirit : SWLB_clone_base_P2
+	{
+		author = "Cyan";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		displayName = "104th Spirit";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		uniformClass = "JA_104th_Spirit_Uniform";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = { "Jangos_Infantry_Armours\data\Textures\104th_P2_Spirit_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Spirit_Lower.paa" };
+		linkedItems[] = { JA_104th_Spirit_Uniform,JA_104thScurvyVest ,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Spirit_Uniform,JA_104thScurvyVest,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Mad : SWLB_clone_base_P2
 	{
