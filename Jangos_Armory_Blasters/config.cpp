@@ -3302,7 +3302,7 @@ class CfgWeapons
     {
         author = "Cyan";
         scope = 2;
-        baseWeapon = "JA_104th_ShoulderCannon";
+        baseWeapon = "JA_104th_ShoulderCannon_mk2";
         displayName = "[104th] T9 Shoulder Pulse Cannon";
         magazines[] = {"JA_104th_Weapons_Mags_LC"};
         handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\RPS6_HP_Temp.rtm"};

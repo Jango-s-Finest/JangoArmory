@@ -20,6 +20,8 @@ class CfgPatches
 			"JA_104th_Dragan_Helmet",
 			"JA_104th_Doc_Helmet",
 			"JA_104th_Ed_Helmet",
+			"JA_104th_Galahad_Helmet",
+			"JA_104th_Gravity_Helmet",
 			"JA_104th_Hound_Helmet",
 			"JA_104th_Tiger_Helmet",
 			"JA_104th_Spirit_Helmet",
@@ -35,7 +37,7 @@ class CfgPatches
 			"JA_104th_Paraso_Helmet",
 			"JA_104th_Pretz_Helmet",
 			"JA_104th_Reaper_Helmet",
-			"JA_104th_Galahad_Helmet",
+			"JA_104th_Red_Helmet",
 			"JA_104th_Knightfall_Helmet",
 			"JA_104th_Knockout_Helmet",
 			"JA_104th_Scurvy_Helmet",
@@ -248,7 +250,17 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Ed)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Ed_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Galahad_Helmet : SWLB_clone_BARC_helmet
+	class JA_104th_Gravity_Helmet : SWLB_Clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};															 // don't change this
+		displayname = "Clone Trooper Helmet (104th Gravity)";									 // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Gravity_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Galahad_Helmet : SWLB_clone_BARC_helmet // BARC HELMET DON'T USE AS P2 BASE
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -368,6 +380,21 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {};
 		hiddenSelectionsTextures[] = {
 			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Pulse_Helmet.paa",
+		}; // the file path to the texture
+	};
+	class JA_104th_Red_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Cyan";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		hiddenSelections[] = {
+			"camo1",
+		};													   // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Red)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Red_Helmet.paa",
 		}; // the file path to the texture
 	};
 	class JA_104th_Reaper_Helmet : ls_gar_engineer_helmet
