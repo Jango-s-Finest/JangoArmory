@@ -10762,11 +10762,11 @@ class cfgVehicles {
 
 	class JA_104th_Box_Ammo: ls_carrybox_base{
 		author = "Dak";
-		displayName = "Ammo Box - 104th";
+		displayName = "Ammo Box - JLTS";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		editorCategory = "104th_Guys";
+		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 3000;
 		class TransportWeapons{
@@ -10819,7 +10819,7 @@ class cfgVehicles {
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		editorCategory = "104th_Guys";
+		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 2000;
 		class TransportWeapons{
@@ -10864,11 +10864,11 @@ class cfgVehicles {
 	};
 	class JA_104th_Box_Medic: ls_carrybox_base{
 		author = "Dak";
-		displayName = "Medic Box - 104th";
+		displayName = "Medical Box - 104th";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		editorCategory = "104th_Guys";
+		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 2000;
 		class TransportWeapons{
@@ -10930,12 +10930,12 @@ class cfgVehicles {
 	class RD501_resuppy_box_pod_ammo;
 	class JA_104th_Box_Resupply: RD501_resuppy_box_pod_ammo{
 		author = "501st + Echo";
-		displayName = "Resupply Box - 104th";
+		displayName = "Ammo Box - 501st";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		editorCategory = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Boxes";
 		class TransportWeapons
 		{
 			class _xx_ls_weapon_rps6{

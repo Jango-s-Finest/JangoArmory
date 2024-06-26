@@ -9,7 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
-			"",
+			"JA_104th_Box_Ammo_mk2",
 			};
 			// Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
 		weapons[] = {
@@ -189,6 +189,21 @@ class CfgPatches
 	};
 };
 
+class CfgEditorCategories
+{
+    class JA_104_EdCat_Objects
+    {
+        displayName = "[104th] Objects";
+    }
+};
+
+class cfgEditorSubcategories
+{
+    class 104th_Categ_Clones_Boxes
+    {
+        displayname = "104th - Boxes";
+    };
+};
 
 class CfgRecoil
 {
@@ -2269,6 +2284,7 @@ class CfgWeapons
                 compatibleItems[] =
                 {
                     "JA_104th_cows_LRPS",
+                    "OPTRE_SRM_Sight",
                     "k_773_scope1",
                     "k_773_scope2"
                 };
@@ -2279,12 +2295,17 @@ class CfgWeapons
                 displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[] =
                 {
-                    "k_773_snds"
+                    "k_773_snds",
+                    "OPTRE_SRS99D_Suppressor"
                 };
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[] = {"acc_flashlight","acc_flashlight_broken","acc_pointer_IR","acc_pointer_IR_broken","ACE_acc_pointer_green","ACE_acc_pointer_green_IR","ACE_acc_pointer_red"};
+                compatibleItems[] = {
+                    "acc_flashlight",
+                    "acc_pointer_IR",
+                    "ACE_acc_pointer_green"
+                };
                 iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
                 iconPinpoint="Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
@@ -2505,13 +2526,13 @@ class CfgWeapons
                 begin3[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
             };
-            reloadTime = 0.5;
-            dispersion = 0.00073;
+            reloadTime = 0.3;
+            dispersion = 0.00035;
             minRange = 1;
             minRangeProbab = 0.5;
-            midRange = 30;
+            midRange = 45;
             midRangeProbab = 0.7;
-            maxRange = 60;
+            maxRange = 80;
             maxRangeProbab = 0.3;
         };
  		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -2848,7 +2869,7 @@ class CfgWeapons
     	ACE_barrelLength = 381;
     	ACE_twistDirection = 1;
         scope = 2;
-        displayName = "[104th] DW32S";
+        displayName = "[104th] DW-32S";
         baseWeapon = "JA_104th_DW32S";
         mass = 74;
         picture = "\MRC\JLTS\weapons\DW32S\data\ui\DW32S_ui_ca.paa";
@@ -2974,7 +2995,6 @@ class CfgWeapons
         {
         	"JA_104th_Weapons_Mags_10mw50",
             "JA_104th_Weapons_Mags_10mw500",
-            "JA_104th_Weapons_Mags_Z6_CS"
         };
         modes[] = {"manual","Overcharge"};
         muzzles[] =
@@ -2998,7 +3018,7 @@ class CfgWeapons
                 soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.075;
-            dispersion = 0.00102;
+            dispersion = 0.045;
             soundContinuous = 0;
             soundBurst = 0;
             minRange = 0;
@@ -3011,7 +3031,7 @@ class CfgWeapons
         };
         class Overcharge: manual
         {
-            dispersion = "0.00015*4";
+            dispersion = "0.025*4";
             displayName = "Overcharge";
             reloadTime = "0.015";
             burst = 25;
@@ -4120,14 +4140,26 @@ class CfgVehicles
     class JA_104th_Box_Ammo_mk2: ls_carrybox_base
     {
         author = "Cyan";
-        displayName = "Ammo Box Mk2 - 104th";
+        displayName = "Ammo Box - 104th";
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        editorCategory = "104th_Guys";
+        editorCategory = "JA_104_EdCat_Objects";
         editorSubcategory = "104th_Categ_Clones_Boxes";
         maximumLoad = 3000;
         class TransportWeapons{
+            class _xx_ls_weapon_rps6{
+                count = 1;
+                weapon = "ls_weapon_rps6";
+            };
+            class _xx_104_weapon_DC15S{
+                count = 2;
+                weapon = "JA_104th_DC15S";
+            };
+            class _xx_104_weapon_DC17SA{
+                count = 2;
+                weapon = "JA_104th_DC17SA";
+            };
         };
         class TransportMagazines
         {
@@ -4195,11 +4227,44 @@ class CfgVehicles
                 count = 10;
                 magazine = "JJA_104th_Weapons_Mags_LC";
             };
-            class _xx_JA_104th_Weapons_Mags_Z6_CS{
-                count = 5;
-                magazine = "JA_104th_Weapons_Mags_Z6_CS";
+            class _xx_JA_104th_Weapons_Mags_RPS{
+                count = 10;
+                magazine = "ls_mag_rpg_1rnd";
             };
         };
-        class TransportItems{};
+        class TransportItems{
+            class _xx_ACE_elasticBandage{
+                count = 50;
+                name = "ACE_elasticBandage";
+            };
+            class _xx_ACE_epinephrine{
+                count = 20;
+                name = "ACE_epinephrine";
+            };
+            class _xx_ACE_morphine{
+                count = 20;
+                name = "ACE_morphine";
+            };
+            class _xx_ACE_packingBandage{
+                count = 30;
+                name = "ACE_packingBandage";
+            };
+            class _xx_ACE_quikclot{
+                count = 30;
+                name = "ACE_quikclot";
+            };
+            class _xx_ACE_salineIV{
+                count = 5;
+                name = "ACE_salineIV";
+            };
+            class _xx_ACE_salineIV_500{
+                count = 5;
+                name = "ACE_salineIV_500";
+            };
+            class _xx_ACE_tourniquet{
+                count = 8;
+                name = "ACE_tourniquet";
+            };
+        };
     };
 };
