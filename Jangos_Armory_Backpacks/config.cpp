@@ -10,6 +10,7 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {
 			"JA_104th_Backpack",
+			"JA_104th_ARC_Backpack",
 			"JA_104th_Backpack_Invis",
 			"JA_104th_Accessories_Heavy_Backpack",
 			"JA_104th_Medic_Backpack",
@@ -145,6 +146,14 @@ class CfgVehicles
 			""
 		};
 		maximumload = 280; // In LBS (320 = 32 lbs original, 400 = 40 lbs)
+	};
+	class JA_104th_ARC_Backpack : SWLB_clone_arc_backpack
+	{
+		author = "Cyan";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper ARC backpack (104th)";
+		maximumLoad = 360;
 	};
 	class JA_104th_Accessories_Heavy_Backpack : SWLB_clone_backpack_heavy
 	{

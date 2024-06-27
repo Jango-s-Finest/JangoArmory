@@ -90,10 +90,12 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
+
 	// Inheritance for vests
 	// Makes making each vest a rebreather easier
 	class ItemInfo;
 	class SWLB_clone_basic_armor;
+
 	class SWLB_clone_airborne_armor : SWLB_clone_basic_armor
 	{
 		class ItemInfo;
@@ -144,7 +146,10 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
-
+	class SWLB_CEE_Lightweight_Rebreather : SWLB_clone_basic_armor
+	{
+		class ItemInfo;
+	};
 
 	class JA_104th_Vest : SWLB_CEE_Recon_Lieutenant
 	{
