@@ -15,9 +15,6 @@ class CfgPatches
 			"JA_104th_P2_NVG_Base",
 			"JA_104th_P2_NVG_Medic",
 			"JA_104th_P2_NVG_Invert",
-			// "JA_104th_P2_NVG_Invert_Alt",
-			// "JA_104th_P2_NVG_Veteran_Red",
-			// "JA_104th_P2_NVG_Dire_Blue",
 			"JA_104th_SPC_NVG_Base",
 			"JA_104th_SPC_NVG_Medic",
 			"JA_104th_SPC_NVG_Invert",
@@ -162,51 +159,6 @@ class CfgWeapons
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
 	};
-	// class JA_104th_P2_NVG_Invert_Alt: lsd_gar_standard_nvg
-	{
-		author = "Tundra";
-		displayName = "Clone P2 NVG Visor (104th Invert Alt)";
-		hiddenSelections[] =
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Invert_Alt.paa",
-		};
-		visionMode[] = {"Normal","NVG","TI"};
-		thermalMode[]= {0, 1};
-	};
-	// class JA_104th_P2_NVG_Veteran_Red: lsd_gar_standard_nvg
-	{
-		author = "Tundra";
-		displayName = "Clone P2 NVG Visor (104th Veteran Red)";
-		hiddenSelections[] =
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Veteran_Red.paa",
-		};
-		visionMode[] = {"Normal","NVG","TI"};
-		thermalMode[]= {0, 1};
-	};
-	// class JA_104th_P2_NVG_Dire_Blue: lsd_gar_standard_nvg
-	{
-		author = "Tundra";
-		displayName = "Clone P2 NVG Visor (104th Dire Blue)";
-		hiddenSelections[] =
-		{
-			"camo1",
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Dire_Blue.paa",
-		};
-		visionMode[] = {"Normal","NVG","TI"};
-		thermalMode[]= {0, 1};
-	};
 	class JA_104th_P2_NVG_Medic : lsd_gar_standard_nvg
 	{
 		ace_nightvision_border = "";
@@ -253,60 +205,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_SPC.paa",
-		};
-		visionMode[] = {"Normal","NVG","TI"};
-		thermalMode[]= {0, 1};
-	};
-	// class JA_104th_SPC_NVG_Invert_Alt : lsd_gar_standardSPC_nvg
-	{
-		ace_nightvision_border = "";
-		author = "Tundra";
-		displayName = "Clone SPC NVG Visor (104th Invert Alt)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Invert_Alt.paa",
-		};
-		visionMode[] = {"Normal","NVG","TI"};
-		thermalMode[]= {0, 1};
-	};
-	// class JA_104th_SPC_NVG_Veteran_Red : lsd_gar_standardSPC_nvg
-	{
-		ace_nightvision_border = "";
-		author = "Tundra";
-		displayName = "Clone SPC NVG Visor (104th Veteran Red)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Veteran_Red.paa",
-		};
-		visionMode[] = {"Normal","NVG","TI"};
-		thermalMode[]= {0, 1};
-	};
-	// class JA_104th_SPC_NVG_Dire_Blue : lsd_gar_standardSPC_nvg
-	{
-		ace_nightvision_border = "";
-		author = "Cyan";
-		displayName = "Clone SPC NVG Visor (104th Dire Blue)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Dire_Blue.paa",
 		};
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
