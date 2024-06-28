@@ -472,7 +472,7 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Talisman_Helmet : SWLB_clone_P2_helmet
-	{+
+	{
 		author = "Fish";
 		scopeArsenal = 2;
 		side = 1;
