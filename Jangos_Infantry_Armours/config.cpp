@@ -224,29 +224,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Dak_Uniform : SWLB_clone_uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Dak)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Dak";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
 	class JA_104th_Dak_Uniform_Test1 : SWLB_clone_uniform
 	{
 		author = "Jango's Finest";
@@ -259,8 +236,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
 		armor = 2;
 		class ItemInfo : UniformItem
 		{
@@ -304,8 +281,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
 		armor = 5;
 		class ItemInfo : UniformItem
 		{
@@ -349,8 +326,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
 		armor = 10;
 		class ItemInfo : UniformItem
 		{
@@ -394,8 +371,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
 		armor = 20;
 		class ItemInfo : UniformItem
 		{
