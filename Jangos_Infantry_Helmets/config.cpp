@@ -21,6 +21,7 @@ class CfgPatches
 			"JA_104th_Doc_Helmet",
 			"JA_104th_Ed_Helmet",
 			"JA_104th_Galahad_Helmet",
+			"JA_104th_BARC_Mk2_Galahad_helmet",
 			"JA_104th_Gravity_Helmet",
 			"JA_104th_Hound_Helmet",
 			"JA_104th_Tiger_Helmet",
@@ -99,10 +100,10 @@ class CfgWeapons
 	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
-	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class ls_gar_engineer_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
+	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -119,7 +120,48 @@ class CfgWeapons
 	class ls_gar_desert_helmet;
 	class UniformItem;
 	class VestItem;
+	class HeadgearItem;
+	class H_HelmetO_ViperSP_hex_F;
 
+	class JA_104th_BARC_Mk2_Galahad_helmet: H_HelmetO_ViperSP_hex_F
+	  {
+        author="SW Legion Studios";
+        displayName="Clone Trooper BARC Mk2 Helmet (104th Galahad)";
+        picture="";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "visor"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "Jangos_Infantry_Helmets\data\Textures\104th_BARC_Mk2_Galahad_Helmet.paa",
+            "Jangos_Infantry_Helmets\data\Textures\visor_co.paa",
+        };
+        model="Jangos_Infantry_Helmets\data\lsd_gar_barcm2_helmet.p3d";
+        subItems[]={};
+        class ItemInfo: HeadgearItem
+        {
+            mass=10;
+            uniformModel="Jangos_Infantry_Helmets\data\lsd_gar_barcm2_helmet.p3d";
+            hiddenSelections[]=
+            {
+                "camo1",
+                "visor"
+            };
+            allowedSlots[]={801,901,701,605};
+            modelSides[]={6};
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitpointName="HitHead";
+                    armor=6;
+                    passThrough=0.5;
+                };
+            };
+        };
+    };
 
 	class JA_104th_Banker_Helmet : SWLB_clone_P2_Helmet
 	{
