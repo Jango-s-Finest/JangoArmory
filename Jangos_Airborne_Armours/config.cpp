@@ -12,6 +12,7 @@ class CfgPatches
 			"JA_104th_AB_Medic",
 			"JA_104th_Carmine",
 			"JA_104th_Clutch",
+			"JA_104th_Dak",
 			"JA_104th_Osiris",
 			"JA_104th_Magnum",
 			"JA_104th_Bulky",
@@ -30,6 +31,7 @@ class CfgPatches
 			"JA_104th_Carmine_Uniform",
 			"JA_104th_Clutch_Uniform",
 			"JA_104th_Osiris_Uniform",
+			"JA_104th_Dak_Uniform",
 			"JA_104th_Magnum_Uniform",
 			"JA_104th_Bulky_Uniform",
 			"JA_104th_Cyan_Uniform",
@@ -202,6 +204,29 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Cyan";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Dak_Uniform : SWLB_clone_uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Dak)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Dak";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -545,6 +570,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Cyan_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Cyan_Lower.paa"};
 		linkedItems[] = {JA_104th_Bulky_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Bulky_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Dak : SWLB_clone_base_P2
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Dak_Uniform";
+		displayName = "104th Dak";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
+		linkedItems[] = {JA_104th_Dak_Helmet, SWLB_CEE_Airborne_Officer, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Dak_Helmet, SWLB_CEE_Airborne_Officer, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Axel : SWLB_clone_base_P2
 	{
