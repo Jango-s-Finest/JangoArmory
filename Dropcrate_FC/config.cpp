@@ -5,8 +5,8 @@ class CfgPatches
 	{
 		author = "Fishinchips";
 		name = "LAAT_Dropcrate";
-		requiredAddons[] = {"Jangos_Armory"};
-		requiredVersion = 0.1;
+        requiredAddons[] = {};
+        requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
 	};
