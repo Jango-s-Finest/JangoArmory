@@ -1,15 +1,14 @@
 #define _ARMA_
 class CfgPatches
 {
-	class A3_Weapons_F_Jets
+	class FC_Dropcrate
 	{
-		author = "$STR_A3_Bohemia_Interactive";
-		name = "Arma 3 Jets - Weapons and Accessories";
-		url = "https://www.arma3.com";
-		requiredAddons[] = {"A3_Data_F_Jets"};
+		author = "Fishinchips";
+		name = "LAAT_Dropcrate";
+		requiredAddons[] = {"Jangos_Armory"};
 		requiredVersion = 0.1;
 		units[] = {};
-		weapons[] = {"weapon_AGM_65Launcher","weapon_AGM_KH25Launcher","weapon_AMRAAMLauncher","weapon_BIM9xLauncher","weapon_Cannon_Phalanx","weapon_Fighter_Gun20mm_AA","weapon_Fighter_Gun_30mm","weapon_GBU12Launcher","weapon_KAB250Launcher","weapon_R73Launcher","weapon_R77Launcher","weapon_rim116Launcher","weapon_rim162Launcher"};
+		weapons[] = {};
 	};
 };
 class SensorTemplateLaser;
@@ -75,6 +74,14 @@ class CfgVehicles
 		maximumLoad = 4000;
 		transportMaxWeapons = 12;
 		transportMaxMagazines = 96;
+        ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
+        ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
+        ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+        ace_dragging_ignoreWeight = 1; // Ignore weight limitation for dragging (0-no, 1-yes)
+        ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
+        ace_dragging_carryPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+        ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+        ace_dragging_ignoreWeightCarry = 1; // Ignore weight limitation for carrying (0-no, 1-yes)
 		supplyRadius = -1;
 		memoryPointSupply = "doplnovani";
 		hiddenSelections[] = {"camo"};
@@ -86,142 +93,134 @@ class CfgVehicles
                 count = 1;
                 weapon = "ls_weapon_rps6";
             };
-            class _xx_501_weapon_DC15S{
+            class _xx_104_weapon_DC15S{
                 count = 2;
-                weapon = "AUX501_Weaps_DC15S";
+                weapon = "JA_104th_DC15S";
+            };
+            class _xx_104_weapon_DC17SA{
+                count = 2;
+                weapon = "JA_104th_DC17SA";
             };
         };
         class TransportMagazines
         {
-            class _xx_501_DC15X_mag{
-                count = 5;
-                magazine = "AUX501_Weapons_Mags_40mw5";
-            };
-            class _xx_501_DC15L_mag{
+            class _xx_JLTS_stun_mag_long{
                 count = 10;
-                magazine = "AUX501_Weapons_Mags_20mw240";
+                magazine = "JLTS_stun_mag_long";
             };
-            class _xx_501_DC15C_mag{
+            class _xx_JLTS_stun_mag_short{
                 count = 10;
-                magazine = "AUX501_Weapons_Mags_20mw40";
+                magazine = "JLTS_stun_mag_short";
             };
-            class _xx_501_DC15ADP_mag{
-                count = 5;
-                magazine = "AUX501_Weapons_Mags_20mwdp30";
+            class _xx_JA_104th_Weapons_Mags_5mw70{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_5mw70";
             };
-            class _xx_501_DC15AUP_mag{
-                count = 5;
-                magazine = "AUX501_Weapons_Mags_20mwup30";
+            class _xx_JA_104th_Weapons_Mags_10mw20SC{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_10mw20SC";
             };
-            class _xx_501_DC15S_mag{
-                count = 5;
-                magazine = "AUX501_Weapons_Mags_10mw50";
+            class _xx_JA_104th_Weapons_Mags_10mw4SC{
+                count = 10;
+                magazine = "JA_104th_Weapons_Mags_10mw4SC";
             };
-            class _xx_501_Stun_mag{
-                count = 2;
-                magazine = "AUX501_Weapons_Mags_Stun5";
+            class _xx_JA_104th_Weapons_Mags_10mw30{
+                count = 40;
+                magazine = "JA_104th_Weapons_Mags_10mw30";
             };
-            class _xx_501_Z6_mag{
-                count = 5;
-                magazine = "AUX501_Weapons_Mags_10mw400";
+            class _xx_JA_104th_Weapons_Mags_10mw50{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_10mw50";
             };
-            class _xx_501_DC17DP_mag{
-                count = 5;
-                magazine = "AUX501_Weapons_Mags_20mwdp20";
+            class _xx_JA_104th_Weapons_Mags_10mw500{
+                count = 10;
+                magazine = "JA_104th_Weapons_Mags_10mw500";
             };
-            class _xx_JLTS_DC15A_mag{
-                count = 5;
-                magazine = "JLTS_DC15A_mag";
+            class _xx_JA_104th_Weapons_Mags_20mw40{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_20mw40";
             };
-            class _xx_UGL_HE{
-                count = 2;
-                magazine = "AUX501_Weapons_Mags_GL_HE3";
+            class _xx_JA_104th_Weapons_Mags_20mw240{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_20mw240";
             };
-            class _xx_UGL_Smoke_White{
-                count = 2;
-                magazine = "AUX501_Weapons_Mags_GL_smoke_white6";
+            class _xx_JA_104th_Weapons_Mags_30mw20{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_30mw20";
             };
-            class _xx_UGL_Smoke_Blue{
-                count = 2;
-                magazine = "AUX501_Weapons_Mags_GL_smoke_blue3";
+            class _xx_JA_104th_Weapons_Mags_30mw12{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_30mw12";
             };
-            class _xx_UGL_Smoke_Green{
-                count = 1;
-                magazine = "AUX501_Weapons_Mags_GL_smoke_green3";
+            class _xx_JA_104th_Weapons_Mags_40mw10{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_40mw10";
             };
-            class _xx_UGL_Smoke_Orange{
-                count = 1;
-                magazine = "AUX501_Weapons_Mags_GL_smoke_orange3";
+            class _xx_JA_104th_Weapons_Mags_50mw5{
+                count = 20;
+                magazine = "JA_104th_Weapons_Mags_50mw5";
             };
-            class _xx_UGL_Smoke_Purple{
-                count = 1;
-                magazine = "AUX501_Weapons_Mags_GL_smoke_purple3";
+            class _xx_JA_104th_Weapons_Mags_100Mw1{
+                count = 10;
+                magazine = "JA_104th_Weapons_Mags_100Mw1";
             };
-            class _xx_UGL_Smoke_Red{
-                count = 2;
-                magazine = "AUX501_Weapons_Mags_GL_smoke_red3";
+            class _xx_JA_104th_Weapons_Mags_LC{
+                count = 10;
+                magazine = "JJA_104th_Weapons_Mags_LC";
             };
-            class _xx_UGL_Smoke_Yellow{
-                count = 1;
-                magazine = "AUX501_Weapons_Mags_GL_smoke_yellow3";
-            };
-            class _xx_ls_mag_at_plx{
-                count = 1;
-                magazine = "ls_mag_at_plx";
-            };
-            class _xx_ls_mag_rpg_1rnd{
-                count = 3;
+            class _xx_JA_104th_Weapons_Mags_RPS{
+                count = 10;
                 magazine = "ls_mag_rpg_1rnd";
             };
-            class _xx_JA104_mag_T9_1rnd{
+            class _xx_JA_104th_Weapons_Mags_GL_smoke_white6{
+                count = 10;
+                magazine = "JA_104th_Weapons_Mags_GL_smoke_white6";
+            };
+            class _xx_JA_104th_Weapons_Mags_GL_smoke_red3{
+                count = 10;
+                magazine = "JA_104th_Weapons_Mags_GL_smoke_red3";
+            };
+            class _xx_JA_104th_Weapons_Mags_GL_HE3{
+                count = 10;
+                magazine = "JA_104th_Weapons_Mags_GL_HE3";
+            };
+            class _xx_JA_104th_Weapons_Mags_GL_HE2{
+                count = 10;
+                magazine = "JA_104th_Weapons_Mags_GL_HE2";
+            };
+            class _xx_JA_Aux501_Weapons_Mags_mar1_csw{
                 count = 5;
-                magazine = "JA_104th_LaserCannon_mag";
-            };
-            class _xx_501_ThermalDet{
-                count = 8;
-                magazine = "AUX501_Weapons_Mags_Thermal_Detonator";
-            };
-            class _xx_3AS_ThermalDet{
-                count = 8;
-                magazine = "3AS_ThermalDetonator";
-            };
-            class _xx_LS_ThermalDet{
-                count = 8;
-                magazine = "LS_mag_classC_thermalDet";
-            };
-            class _xx_BI_SmokeGrenade{
-                count = 8;
-                magazine = "SmokeShell";
+                magazine = "Aux501_Weapons_Mags_mar1_csw";
             };
         };
          class TransportItems
         {
             class _xx_ACE_elasticBandage{
-                count = 50;
+                count = 100;
                 name = "ACE_elasticBandage";
             };
             class _xx_ACE_epinephrine{
-                count = 20;
+                count = 40;
                 name = "ACE_epinephrine";
             };
             class _xx_ACE_morphine{
-                count = 20;
+                count = 40;
                 name = "ACE_morphine";
             };
             class _xx_ACE_packingBandage{
-                count = 30;
+                count = 60;
                 name = "ACE_packingBandage";
             };
             class _xx_ACE_quikclot{
-                count = 30;
+                count = 60;
                 name = "ACE_quikclot";
             };
             class _xx_ACE_salineIV{
-                count = 5;
+                count = 10;
                 name = "ACE_salineIV";
             };
             class _xx_ACE_salineIV_500{
-                count = 5;
+                count = 10;
                 name = "ACE_salineIV_500";
             };
             class _xx_ACE_tourniquet{
