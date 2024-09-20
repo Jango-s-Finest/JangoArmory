@@ -617,27 +617,19 @@ class CfgWeapons
         author = "Fish";
         scope = 2;
         displayName = "Clone NCO Vest (104th Scurvy)";
-        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
         hiddenSelections[] = {"camo1","camo2","camo3","pauldron"};
         hiddenSelectionsTextures[] =
-        {
-            "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_light_accessories.paa", // Heavy
-            "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_accessories_officer.paa",
-            "SWLB_clones\data\light_accessories_co.paa", //Heavy
-            "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_accesories_heavy.paa" //Heavy
-        };
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_light_accessories.paa", // Heavy
+                "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_accessories_officer.paa",
+                "SWLB_clones\data\light_accessories_co.paa",                               // Heavy
+                "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_accesories_heavy.paa" // Heavy
+            };
         class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-            hiddenSelections[] = {"camo1","camo2","camo3","pauldron"};
-            hiddenSelectionsTextures[] =
-            {
-                "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_light_accessories.paa", // Heavy
-                "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_accessories_officer.paa",
-                "SWLB_clones\data\light_accessories_co.paa", //Heavy
-                "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_accesories_heavy.paa" //Heavy
-            };
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
 
             class HitpointsProtectionInfo
             {
