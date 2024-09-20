@@ -117,15 +117,29 @@ class CfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 			mass = 80;
 			vestType = "Rebreather";
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 6;
-					passThrough = 0.3;
-				};
-			};
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
 		};
 	};
 	class JA_104th_Woods_Vest : SWLB_CEE_Recon_Lieutenant
@@ -150,15 +164,29 @@ class CfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 			mass = 80;
 			vestType = "Rebreather";
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 6;
-					passThrough = 0.3;
-				};
-			};
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
 		};
 	};
 };
