@@ -25,6 +25,7 @@ class CfgPatches
 			"JA_104th_Crowbi_NVG_Rangefinder",
 			"JA_104th_Drifter_NVG_Rangefinder",
 			"JA_104th_Hunter_NVG_Rangefinder",
+			"JA_104th_Scurvy_NVG_Rangefinder",
 			"JA_104th_Sigil_NVG_Rangefinder",
 			"JA_104th_Specter_NVG_Rangefinder",
 			"JA_104th_Loner_NVG_Rangefinder",
@@ -364,6 +365,23 @@ class CfgWeapons
 			{
 				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Loner_Rangefinder.paa",
 				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Loner_Rangefinder.paa"};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
+	class JA_104th_Scurvy_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Fish";
+		displayName = "Clone NVG Rangefinder Visor (104th Scurvy)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_p2_scurvy_rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_p2_scurvy_rangefinder.paa"};
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
 	};

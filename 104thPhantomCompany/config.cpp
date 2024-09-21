@@ -87,6 +87,79 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	class Bag_Base;
+	class JA_104th_Base_CT_Uniform : SWLB_clone_uniform
+	{
+		class ItemInfo: UniformItem
+		{
+			class HitpointsProtectionInfo
+			{
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				
+				class chest
+				{
+					hitpointName = "HitChest";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
 
     // Inheritance for vests
     // Makes making each vest a rebreather easier
@@ -269,7 +342,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "104thPhantomCompany\data\Textures\104th_Desert_Base_Trooper_Helmet.paa","104thPhantomCompany\data\Textures\Visor_Desert.paa" }; // the file path to the texture
 	};
 
-	class JA_104th_P2_1C_01_CT_Uniform : SWLB_clone_uniform
+	class JA_104th_P2_1C_01_CT_Uniform : JA_104th_Base_CT_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -292,9 +365,10 @@ class CfgWeapons
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
+
 		};
 	};
-	class JA_104th_P2_1C_02_CT_Uniform : SWLB_clone_uniform
+	class JA_104th_P2_1C_02_CT_Uniform : JA_104th_Base_CT_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -319,7 +393,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_P2_1C_Engineer_Uniform : SWLB_clone_uniform
+	class JA_104th_P2_1C_Engineer_Uniform : JA_104th_Base_CT_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -342,7 +416,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_P2_1C_Medic_Uniform : SWLB_clone_uniform
+	class JA_104th_P2_1C_Medic_Uniform : JA_104th_Base_CT_Uniform
 	{
 		author = "Dak";
 		scope = 2;
