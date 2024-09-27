@@ -216,7 +216,7 @@ class CfgWeapons
 	};
 	class JA_104th_Bulky_Helmet : SWLB_clone_AB_Helmet
 	{
-		author = "Dak";
+		author = "Fish";
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;

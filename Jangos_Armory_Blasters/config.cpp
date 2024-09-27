@@ -799,6 +799,7 @@ class CfgWeapons
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_pistol_3.p3d";
         displayName = "Pistol Holo B";
     };
+
     
     class JA_104th_cows_LRPS: optic_DMS
     {
@@ -3236,8 +3237,7 @@ class JA_104th_Westar45: JA_104th_rifle_base_stunless
                 displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[]=
                 {
-                    "muzzle_snds_L",
-                    "212th_DC17IBA"
+                    "muzzle_snds_L"
                 };
             };
         };
@@ -3541,6 +3541,8 @@ class CfgAmmo
         typicalSpeed = 700;
         caliber = 1.2;
         waterFriction = -0.009;
+        thrust = 350;
+        thrustTime = 1.5;
     };
 	class JA_104th_Weapons_Ammo_10mw: JA_104th_Weapons_Ammo_base_blue // Low Output
     {
@@ -3548,6 +3550,8 @@ class CfgAmmo
         typicalSpeed = 900;
         caliber = 1.7;
         waterFriction = -0.009;
+        thrust = 300;
+        thrustTime = 1.5;
     };
     class JA_104th_Weapons_Ammo_20mw: JA_104th_Weapons_Ammo_base_blue // Medium Output 
     {
@@ -3555,6 +3559,8 @@ class CfgAmmo
         typicalSpeed = 1000;
         caliber = 2.8;
         waterFriction = -0.009;
+        thrust = 400;
+        thrustTime = 1.6;
     };
     class JA_104th_Weapons_Ammo_30mw: JA_104th_Weapons_Ammo_base_blue // High Output 
     {
@@ -3563,6 +3569,8 @@ class CfgAmmo
         caliber = 2.4;
         airFriction = 0;
         waterFriction = -0.009;
+        thrust = 1500;
+        thrustTime = 1.8;
     };
     class JA_104th_Weapons_Ammo_40mw: JA_104th_Weapons_Ammo_base_blue // Very High Output
     {
@@ -3571,6 +3579,8 @@ class CfgAmmo
         caliber = 3.6;
         airFriction = 0;
         waterFriction = -0.009;
+        thrust = 2500;
+        thrustTime = 2;
     };
     class JA_104th_Weapons_Ammo_50mw: JA_104th_Weapons_Ammo_base_blue // Extreme Output
     {
@@ -3579,6 +3589,8 @@ class CfgAmmo
         caliber = 8;
         airFriction = 0;
         waterFriction = -0.009;
+        thrust = 3500;
+        thrustTime = 2;
     };
     class JA_104th_Weapons_Ammo_10mwSC: JLTS_bullet_scatter_blue // Shotgun Rounds
     {
@@ -3587,6 +3599,8 @@ class CfgAmmo
         caliber = 1.5;
         airFriction = 0;
         waterFriction = -0.009;
+        thrust = 450;
+        thrustTime = 1.4;
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
     };
     class JA_104th_Weapons_Ammo_20mwSC_Slug: B_12Gauge_Slug // Shotgun Slug Rounds
@@ -3596,6 +3610,8 @@ class CfgAmmo
         caliber = 2;
         airFriction = 0;
         waterFriction = -0.009;
+        thrust = 450;
+        thrustTime = 1.4;
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
     };
     class JA_104th_Weapons_Ammo_20mwSC_HE: B_19mm_HE // Shotgun HE Rounds
@@ -3605,6 +3621,8 @@ class CfgAmmo
         caliber = 1.5;
         airFriction = 0;
         waterFriction = -0.009;
+        thrust = 325;
+        thrustTime = 1.4;
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
     };
     class JA_104th_Weapons_Ammo_100mw: B_40mm_APFSDS // Test Railgun Rounds
@@ -3622,9 +3640,10 @@ class CfgAmmo
         indirectHitRange = 0.5;
         suppressionRadiusBulletClose = 10;
         suppressionRadiusHit = 14;
-        thrust = 210;
         tracerColor[] = {0.7,0.7,0.5,0.04};
         tracerColorR[] = {0.7,0.7,0.5,0.04};
+        thrust = 600;
+        thrustTime = 2;
         warheadName = "AP";
         weaponType = "default";
     };
@@ -3809,6 +3828,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 700;
     };
     // 9mm x 50 rnds equivalent
     class JA_104th_Weapons_Mags_10mw50: 30Rnd_65x39_caseless_mag
@@ -3826,6 +3846,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 800;
     };
     // 9mm x 30 rnds equivalent - For DC17A
     class JA_104th_Weapons_Mags_10mw30: 30Rnd_65x39_caseless_mag
@@ -3843,6 +3864,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 600;
     };
     // SF High Cap secondary mags
     class JA_104th_Weapons_Mags_10mw240: 30Rnd_65x39_caseless_mag
@@ -3860,6 +3882,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 600;
     };
     // 12g x 20 rnds equivalent - For DP23
     class JA_104th_Weapons_Mags_10mw20SC: 30Rnd_65x39_caseless_mag
@@ -3877,6 +3900,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 600;
     };
     class JA_104th_Weapons_Mags_20mw6SC_HE: 30Rnd_65x39_caseless_mag
     {
@@ -3893,6 +3917,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 600;
     };
     class JA_104th_Weapons_Mags_20mw16SC_Slug: 30Rnd_65x39_caseless_mag
     {
@@ -3909,6 +3934,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 600;
     };
     class JA_104th_Weapons_Mags_10mw4SC: 30Rnd_65x39_caseless_mag
     {
@@ -3925,6 +3951,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 600;
     };
     // 9mm x 500 rnds equivalent
     class JA_104th_Weapons_Mags_10mw500: 30Rnd_65x39_caseless_mag
@@ -3942,6 +3969,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\z6\z6_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 800;
     };
     	// 5.56 x 40rnds equivalent
     class JA_104th_Weapons_Mags_20mw40: 30Rnd_65x39_caseless_mag
@@ -3959,6 +3987,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 900;
     };
         // 5.56 x 240rnds equivalent
     class JA_104th_Weapons_Mags_20mw240: 30Rnd_65x39_caseless_mag
@@ -3976,6 +4005,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\z6\z6_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 900;
     };
 
     	// 7.62 x 20rnds equivalent
@@ -3994,6 +4024,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 1000;
     };
 
     	// .308 x 10rnds equivalent
@@ -4013,6 +4044,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 1100;
     };
     	// .44 for DC15SA
         class JA_104th_Weapons_Mags_30mw12: 30Rnd_65x39_caseless_mag
@@ -4030,6 +4062,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 1100;
     };
     	// .50 x 5 for 15X
         class JA_104th_Weapons_Mags_50mw5: 30Rnd_65x39_caseless_mag
@@ -4047,6 +4080,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15X\DC15X_mag.p3d";
         tracersEvery = 1;
+        typicalSpeed = 1500;
     };
 
         // SF Sniper Special Purpose Rounds
@@ -4063,6 +4097,7 @@ class CfgMagazines
         tracersEvery = 1;
         count = 1;
         mass = 16;
+        typicalSpeed = 867;
 
     };
 
@@ -4091,6 +4126,7 @@ class CfgMagazines
         initSpeed = 1500;
         modelSpecialIsProxy = 0;
         tracersEvery = 1;
+        typicalSpeed = 1500;
     };
 
     class JA_104th_Weapons_Mags_Z6_CS: 30Rnd_65x39_caseless_mag
