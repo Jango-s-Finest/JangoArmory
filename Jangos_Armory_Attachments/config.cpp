@@ -20,6 +20,7 @@ class CfgPatches
 			"JA_104th_SPC_NVG_Invert",
 			"JA_104th_NVG_NCO",
 			"JA_104th_CM_Visor",
+			"JA_104th_BARC_Galahad_NVG",
 			"JA_104th_Death_NVG_Tanker",
 			"JA_104th_Crowbi_NVG_Rangefinder",
 			"JA_104th_Drifter_NVG_Rangefinder",
@@ -260,6 +261,24 @@ class CfgWeapons
 		{
 			"Jangos_Armory_Attachments\data\Textures\104th_Commander_NV.paa",
 			"Jangos_Armory_Attachments\data\Textures\104th_Commander_NV.paa"
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
+	class JA_104th_BARC_Galahad_NVG : lsd_gar_standard_nvg
+	{
+		author = "Fish";
+		displayName = "Clone Commander Visor (104th Galahad)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_BARC_Galahad_NVG.paa",
+			"Jangos_Armory_Attachments\data\Textures\104th_BARC_Galahad_NVG.paa"
 		};
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
