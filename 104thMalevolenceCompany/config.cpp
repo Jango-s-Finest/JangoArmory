@@ -56,6 +56,7 @@ class CfgWeapons
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
+    class SWLB_clone_basic_armor;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_commander_armor;
@@ -79,12 +80,16 @@ class CfgWeapons
     // Makes making each vest a rebreather easier
     class ItemInfo;
     class SWLB_clone_officer_armor;
+	class SWLB_CEE_Recon_Lieutenant: SWLB_clone_basic_armor 
+    {
+        class ItemInfo;
+    };
     class SWLB_clone_arc_armor: SWLB_clone_officer_armor
     {
         class ItemInfo;
     };
 
-	class JA_104th_ME_Vest : SWLB_clone_arc_armor
+	class JA_104th_ME_Vest : SWLB_CEE_Recon_Lieutenant
 	{
 		author = "Ice";
 		displayName = "Clone Trooper Captain Vest (104th Malevolence)";
@@ -97,8 +102,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"",
-			"104thMalevolence\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+			"104thMalevolence\data\Textures\104th_ME_Pauldron_and_Kama.paa",
+			"SWLB_clones\data\heavy_accessories_co.paa"
 		};
 		class ItemInfo: ItemInfo
         {
