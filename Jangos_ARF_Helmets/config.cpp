@@ -66,6 +66,7 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
+<<<<<<< Updated upstream
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
@@ -90,9 +91,53 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
+=======
+	class ItemInfo;
+	class SWLB_clone_ARF_P1_Helmet
+	{
+		class ItemInfo;
+	};
+	class ls_gar_phase2Arf_helmet
+	{
+		class ItemInfo;
+	};
+
+	class JA_104th_ARF_P1_Helmet : SWLB_clone_ARF_P1_Helmet
+	{
+		class ItemInfo : ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	class JA_104th_ARF_P2_Helmet : ls_gar_phase2Arf_helmet
+	{
+		class ItemInfo : ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+>>>>>>> Stashed changes
 
 	// Base
-	class JA_104th_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_ARF_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -102,7 +147,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF)";						   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_ARF_Urban_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_ARF_Urban_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -112,7 +157,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF Urban)";							 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Urban_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_ARF_Jungle_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_ARF_Jungle_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -122,7 +167,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF Jungle)";							  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Jungle_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_ARF_Desert_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_ARF_Desert_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -132,7 +177,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF Desert)";							  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Desert_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_ARF_Medic_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_ARF_Medic_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -143,7 +188,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Medic_Helmet.paa"}; // the file path to the texture
 	};
 	// Customs
-	class JA_104th_Achilles_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_Achilles_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -153,7 +198,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th Achilles)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_ARF_Helmets\data\Textures\104th_ARF_Achilles_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Beans_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_Beans_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Ice";
 		scopeArsenal = 2;
@@ -164,7 +209,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa"}; // the file path to the texture
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
-	class JA_104th_IQ_Helmet : ls_gar_phase2Arf_helmet // Use for ARF + Chops template
+	class JA_104th_IQ_Helmet : JA_104th_ARF_P2_Helmet // Use for ARF + Chops template
 	{
 		author = "Ice";
 		scopeArsenal = 2;
@@ -180,7 +225,7 @@ class CfgWeapons
 		};
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
-	class JA_104th_Fire_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_Fire_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -190,7 +235,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th Fire)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Fire_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Unix_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_Unix_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -200,7 +245,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th Unix)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_ARF_Helmets\data\Textures\104th_ARF_Unix_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Woods_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_104th_Woods_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -210,20 +255,4 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th Woods)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_ARF_Helmets\data\Textures\104th_ARF_Woods_Helmet.paa" }; // the file path to the texture
 	};
-};
-
-class CfgVehicles
-{
-	class SWLB_clone_base_P2;
-	class SWLB_clone_marshal_commander_base_P2;
-	class SWLB_clone_backpack;
-	class SWLB_clone_RTO_mini_backpack;
-	class SWLB_clone_backpack_heavy;
-	class SWLB_clone_backpack_medic;
-	class SWLB_clone_backpack_RTO;
-	class JLTS_Clone_jumppack;
-	class JA_104th_Jumppack_JT12;
-	class JA_104th_Jumppack_JT12_LR;
-	// General Uniforms
-	
 };

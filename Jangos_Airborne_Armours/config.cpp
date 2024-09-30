@@ -118,7 +118,7 @@ class CfgWeapons
 
 	class JA_104th_Base_AB_Uniform : SWLB_clone_uniform
 	{
-		class ItemInfo: UniformItem
+		class ItemInfo : Iteminfo
 		{
 			class HitpointsProtectionInfo
 			{
@@ -191,7 +191,7 @@ class CfgWeapons
 	};
 	class JA_104th_Base_MC_AB_Uniform : SWLB_clone_mc_uniform
 	{
-		class ItemInfo: UniformItem
+		class ItemInfo: Iteminfo
 		{
 			class HitpointsProtectionInfo
 			{
