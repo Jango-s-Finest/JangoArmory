@@ -98,7 +98,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"",
-			"104thMalevolence\data\Textures\104th_ME_Pauldron_and_Kama.paa"
+			"104thMalevolenceCompany\data\Textures\104th_ME_Pauldron_and_Kama.paa"
 		};
 		class ItemInfo: ItemInfo
         {
@@ -113,7 +113,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper ARF Helmet (Malevolence)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_ARF_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "104thMalevolenceCompany\data\Textures\104th_ARF_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Malevolence_Base_ARF_Uniform : SWLB_clone_uniform
 	{
@@ -128,8 +128,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thMalevolence\data\Textures\104th_ARF_Upper.paa",
-			"104thMalevolence\data\Textures\104th_ARF_Lower.paa"
+			"104thMalevolenceCompany\data\Textures\104th_ARF_Upper.paa",
+			"104thMalevolenceCompany\data\Textures\104th_ARF_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -148,7 +148,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper Helmet (Malevolence)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_Trooper_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "104thMalevolenceCompany\data\Textures\104th_Trooper_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Malevolence_Base_Uniform : SWLB_clone_uniform
 	{
@@ -163,8 +163,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thMalevolence\data\Textures\104th_Trooper_Upper.paa",
-			"104thMalevolence\data\Textures\104th_Trooper_Lower.paa"
+			"104thMalevolenceCompany\data\Textures\104th_Trooper_Upper.paa",
+			"104thMalevolenceCompany\data\Textures\104th_Trooper_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -183,7 +183,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper medic Helmet (Malevolence)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_Medic_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "104thMalevolenceCompany\data\Textures\104th_Medic_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_Malevolence_Base_Medic_Uniform : SWLB_clone_uniform
 	{
@@ -198,8 +198,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thMalevolence\data\Textures\104th_Medic_Upper.paa",
-			"104thMalevolence\data\Textures\104th_Trooper_Lower.paa"
+			"104thMalevolenceCompany\data\Textures\104th_Medic_Upper.paa",
+			"104thMalevolenceCompany\data\Textures\104th_Trooper_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -277,7 +277,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_ARF_Upper.paa", "104thMalevolence\data\Textures\104th_ARF_Lower.paa"};
+		hiddenSelectionsTextures[] = {"104thMalevolenceCompany\data\Textures\104th_ARF_Upper.paa", "104thMalevolenceCompany\data\Textures\104th_ARF_Lower.paa"};
 		linkedItems[] = {JA_Malevolence_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Malevolence_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
@@ -293,7 +293,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_malevolence";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"104thMalevolence\data\Textures\104th_Trooper_Upper.paa", "104thMalevolence\data\Textures\104th_Trooper_Lower.paa"};
+		hiddenSelectionsTextures[] = {"104thMalevolenceCompany\data\Textures\104th_Trooper_Upper.paa", "104thMalevolenceCompany\data\Textures\104th_Trooper_Lower.paa"};
 		linkedItems[] = {JA_Malevolence_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_Malevolence_Base_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};	
@@ -321,8 +321,8 @@ class CfgVehicles
 		displayname = "Clone Trooper backpack (Malevolence)";
 		hiddenSelectionsTextures[] =
 		{
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change unless RTO
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // don't change unless RTO
 			"", // Heavy
 			"", // Medic
 			"" // RTO
@@ -335,9 +335,9 @@ class CfgVehicles
 		displayname = "Clone Trooper Heavy backpack (Malevolence)";
 		hiddenSelectionsTextures[] =
 		{
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change unless RTO
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // Heavy
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // don't change unless RTO
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // Heavy
 			"", // Medic
 			"" // RTO
 		};
@@ -349,10 +349,10 @@ class CfgVehicles
 		displayname = "Clone Trooper medic backpack (Malevolence)";
 		hiddenSelectionsTextures[] =
 		{
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change unless RTO
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // don't change unless RTO
 			"", // Heavy
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // Medic
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // Medic
 			"" // RTO
 		};
 	};	
@@ -363,11 +363,11 @@ class CfgVehicles
 		displayname = "Clone Trooper RTO backpack (Malevolence)";
 		hiddenSelectionsTextures[] =
 		{
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa", // don't change this
 			"", // don't change unless RTO
 			"", // Heavy
 			"", // Medic
-			"104thMalevolence\data\Textures\SWLB_clone_backpack_ME.paa" // RTO
+			"104thMalevolenceCompany\data\Textures\SWLB_clone_backpack_ME.paa" // RTO
 		};
 	};	
 	class JA_104th_RTO_Backpack_Invisible  : SWLB_clone_RTO_mini_backpack
