@@ -102,10 +102,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
-	class SWLB_CEE_Force_Recon_NCO : SWLB_clone_airborne_armor
-	{
-		class ItemInfo;
-	};
+	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_CEE_Officer_Tactical : SWLB_clone_airborne_armor
 	{
 		class ItemInfo;

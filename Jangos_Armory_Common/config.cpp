@@ -107,6 +107,7 @@ class CfgWeapons
 	class SWLB_clone_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
+	class SWLB_CEE_Recon_Lieutenant;
 	class SWLB_clone_P1_2_helmet;
 	class SWLB_clone_P2_Helmet;
 	class lsd_gar_standart_nvg;
@@ -133,7 +134,42 @@ class CfgWeapons
     };
     class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
     {
-        class ItemInfo;
+       class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
+
+            class HitpointsProtectionInfo
+            {
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 6;
+                    passThrough = 0.3;
+                };
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
     };
     class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
     {

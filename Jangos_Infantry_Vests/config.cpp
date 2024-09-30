@@ -117,10 +117,7 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class SWLB_CEE_Force_Recon_NCO : SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
+    class SWLB_CEE_Force_Recon_NCO;
     class SWLB_CEE_Officer_Tactical : SWLB_clone_airborne_armor
     {
         class ItemInfo;
@@ -625,42 +622,6 @@ class CfgWeapons
                 "SWLB_clones\data\light_accessories_co.paa",                               // Heavy
                 "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_accesories_heavy.paa" // Heavy
             };
-        class ItemInfo: ItemInfo
-        {
-            vestType = "Rebreather";
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-            hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
-
-            class HitpointsProtectionInfo
-            {
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 6;
-                    passThrough = 0.3;
-                };
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
     };
     class JA_104th_Knightfall_Vest : SWLB_clone_commander_armor
     {
@@ -744,7 +705,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Galahad_Vest : SWLB_CEE_Recon_Lieutenant
+    class JA_104th_Galahad_Vest : JA_104th_Vest
     {
         author = "Dak";
         displayName = "Clone Trooper Captain Vest (104th Galahad)";

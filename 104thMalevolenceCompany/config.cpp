@@ -89,7 +89,7 @@ class CfgWeapons
         class ItemInfo;
     };
 
-	class JA_104th_ME_Vest : SWLB_CEE_Recon_Lieutenant
+	class JA_104th_ME_Vest : JA_104th_Vest
 	{
 		author = "Ice";
 		displayName = "Clone Trooper Captain Vest (104th Malevolence)";

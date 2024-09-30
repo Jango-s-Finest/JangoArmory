@@ -95,7 +95,7 @@ class CfgWeapons
     };
     
 
-	class JA_104th_IQ_Vest : SWLB_CEE_Recon_Lieutenant
+	class JA_104th_IQ_Vest : JA_104th_Vest
 	{
 		author = "Emmet";
 		scope = 2;
@@ -142,7 +142,7 @@ class CfgWeapons
             };
 		};
 	};
-	class JA_104th_Woods_Vest : SWLB_CEE_Recon_Lieutenant
+	class JA_104th_Woods_Vest : JA_104th_Vest
 	{
 		author = "Dak";
 		scope = 2;

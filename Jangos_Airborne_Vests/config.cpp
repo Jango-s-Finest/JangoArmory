@@ -69,6 +69,7 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class InventoryItem_Base_F;
+	class JA_104th_Vest;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
@@ -439,52 +440,21 @@ class CfgWeapons
             };
 		};
 	};
-	class JA_104th_AB_Officer_Vest_Dak : SWLB_CEE_Recon_Lieutenant
+	class JA_104th_AB_Officer_Vest_Dak : JA_104th_Vest
 	{
 		author = "Emmet";
 		scope = 2;
 		displayName = "Clone Airborne Officer Vest (104th Dak)";
-		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2"};
+				"camo2"
+			};
 		hiddenSelectionsTextures[] = 
 			{
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Dak_Kama.paa",
-				"SWLB_clones\data\heavy_accessories_co.paa"};
-		class ItemInfo: Vestitem
-		{
-			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-			containerClass = "Supply100";
-			hiddenSelections[] = {"camo1","camo2"};
-			mass = 80;
-			vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-		};
+				"SWLB_clones\data\heavy_accessories_co.paa"
+			};
 	};
 	class JA_104th_Carmine_Vest : SWLB_clone_airborne_nco_armor
 	{
