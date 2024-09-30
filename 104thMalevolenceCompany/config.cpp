@@ -59,7 +59,6 @@ class CfgWeapons
     class SWLB_clone_basic_armor;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
-	class SWLB_clone_commander_armor;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
@@ -70,7 +69,6 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_airborne_nco_armor;
 	class SWLB_CEE_Lightweight_Rebreather;
 	class UniformItem;
 	class VestItem;
@@ -80,14 +78,8 @@ class CfgWeapons
     // Makes making each vest a rebreather easier
     class ItemInfo;
     class SWLB_clone_officer_armor;
-	class SWLB_CEE_Recon_Lieutenant: SWLB_clone_basic_armor 
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
+    class SWLB_clone_arc_armor;
+	class JA_104th_Vest;
 
 	class JA_104th_ME_Vest : JA_104th_Vest
 	{
@@ -105,10 +97,6 @@ class CfgWeapons
 			"104thMalevolence\data\Textures\104th_ME_Pauldron_and_Kama.paa",
 			"SWLB_clones\data\heavy_accessories_co.paa"
 		};
-		class ItemInfo: ItemInfo
-        {
-            vestType = "Rebreather";
-        };
 	};
 	class JA_Malevolence_Base_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
 	{

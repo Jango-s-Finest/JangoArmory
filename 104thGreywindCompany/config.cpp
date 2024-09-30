@@ -50,10 +50,8 @@ class CfgWeapons
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
 	class SWLB_clone_rangefinder;
 	class SWLB_CEE_P1_rangefinder;
-	class SWLB_clone_commander_armor;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
 	class SWLB_clone_ARF_P1_Helmet;
@@ -65,7 +63,6 @@ class CfgWeapons
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
 	class UniformItem;
 
 	class JA_Greywind_P2_Bolt_ARF_Helmet : SWLB_clone_ARF_P1_Helmet

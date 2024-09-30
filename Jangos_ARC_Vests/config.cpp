@@ -65,6 +65,7 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class InventoryItem_Base_F;
+    class ItemInfo;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
@@ -79,7 +80,6 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_medic_armor;
 	class UniformItem;
 	class VestItem;
 	
@@ -88,22 +88,7 @@ class CfgWeapons
     class SWLB_clone_basic_armor;
     class JA_104th_Clone_Base_armor;
 
-    class SWLB_clone_officer_armor: JA_104th_Clone_Base_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_commander_armor: SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_kama_armor: JA_104th_Clone_Base_armor
-    {
-        class ItemInfo;
-    };
+    class SWLB_clone_arc_armor;
 
 	class JA_104th_Base_Vest : SWLB_clone_arc_armor
 	{

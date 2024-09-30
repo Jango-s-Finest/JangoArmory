@@ -98,6 +98,7 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class InventoryItem_Base_F;
+    class ItemInfo;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
@@ -113,28 +114,16 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_medic_armor;
 	class UniformItem;
 	class VestItem;
 	
     // Inheritance for vests
     // Makes making each vest a rebreather easier
     class SWLB_clone_basic_armor;
-    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
+    class SWLB_clone_airborne_armor;
+    class JA_104_Force_Recon_NCO: SWLB_clone_airborne_armor
     {
-        class ItemInfo;
-    };
-    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
-    {
-       class ItemInfo: ItemInfo
+       class ItemInfo: VestItem
         {
             vestType = "Rebreather";
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -171,33 +160,11 @@ class CfgWeapons
             };
         };
     };
-    class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
     
     class ls_blueforVest_base;
-    class ls_gar_airborneOfficer_vest: ls_blueforVest_base
-    {
-        class ItemInfo;
-    };
 
-    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_commander_armor: SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_kama_armor: SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
+    class SWLB_clone_officer_armor;
+    class JA_104th_Base_Commander_Vest;
 
 
 
@@ -267,7 +234,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_332nd_Chich_Vest : SWLB_clone_commander_armor
+	class JA_332nd_Chich_Vest : JA_104th_Base_Commander_Vest
 	{
 		author = "Dak";
 		displayName = "Clone Trooper Commander Vest (332nd Chich)";
@@ -279,10 +246,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Common\data\Textures\332nd_Chich_CM_Kama.paa"};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
-		};
 	};
 	class JA_332nd_Chich_CM_Visor : lsd_gar_p2MarshalCommander_nvg
 	{

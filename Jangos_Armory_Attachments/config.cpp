@@ -90,38 +90,16 @@ class CfgWeapons
 	// Inheritance for vests
 	// Makes making each vest a rebreather easier
 	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_armor : SWLB_clone_basic_armor
-	{
-		class ItemInfo;
-	};
-	class SWLB_clone_airborne_nco_armor : SWLB_clone_airborne_armor
-	{
-		class ItemInfo;
-	};
+	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer : SWLB_clone_airborne_armor
 	{
 		class ItemInfo;
 	};
 	class SWLB_CEE_Force_Recon_NCO;
-	class SWLB_CEE_Officer_Tactical : SWLB_clone_airborne_armor
-	{
-		class ItemInfo;
-	};
 
 	class ls_blueforVest_base;
-	class ls_gar_airborneOfficer_vest : ls_blueforVest_base
-	{
-		class ItemInfo;
-	};
 
-	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
-	{
-		class ItemInfo;
-	};
-	class SWLB_clone_commander_armor : SWLB_clone_officer_armor
-	{
-		class ItemInfo;
-	};
+	class SWLB_clone_officer_armor;
 	class SWLB_clone_arc_armor : SWLB_clone_officer_armor
 	{
 		class ItemInfo;

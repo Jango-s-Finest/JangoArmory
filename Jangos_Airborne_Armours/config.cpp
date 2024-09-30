@@ -96,8 +96,6 @@ class CfgWeapons
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
 	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
@@ -111,8 +109,6 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
@@ -120,7 +116,7 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
-	class JA_104th_Base_AB_Uniform : SWLB_clone_airborne_armor
+	class JA_104th_Base_AB_Uniform : SWLB_clone_uniform
 	{
 		class ItemInfo: UniformItem
 		{
@@ -195,7 +191,7 @@ class CfgWeapons
 	};
 	class JA_104th_Base_MC_AB_Uniform : SWLB_clone_mc_uniform
 	{
-		class ItemInfo: ItemInfo
+		class ItemInfo: UniformItem
 		{
 			class HitpointsProtectionInfo
 			{

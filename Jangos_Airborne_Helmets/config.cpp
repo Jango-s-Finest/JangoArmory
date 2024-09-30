@@ -79,9 +79,6 @@ class CfgWeapons
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
@@ -89,15 +86,13 @@ class CfgWeapons
 	class SWLB_clone_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
+	class lsd_gar_barcm2_helmet;
 	class SWLB_clone_P1_2_helmet;
 	class SWLB_clone_P2_Helmet;
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;

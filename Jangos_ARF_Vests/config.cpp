@@ -58,14 +58,13 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class InventoryItem_Base_F;
+    class ItemInfo;
 	class ItemCore;
+	class JA_104th_Vest;
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
@@ -78,9 +77,6 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_medic_armor;
-	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
@@ -89,10 +85,6 @@ class CfgWeapons
     // Inheritance for vests
     // Makes making each vest a rebreather easier
     class SWLB_clone_basic_armor;
-    class SWLB_CEE_Recon_Lieutenant: SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
     
 
 	class JA_104th_IQ_Vest : JA_104th_Vest
@@ -100,55 +92,22 @@ class CfgWeapons
 		author = "Emmet";
 		scope = 2;
 		displayName = "Clone Force Recon Officer Vest (104th IQ)";
-		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2"};
+				"camo2"
+			};
 		hiddenSelectionsTextures[] = 
 			{
 				"Jangos_ARF_Vests\data\Textures\104th_ARF_IQ_Officer_Kama.paa",
-				"SWLB_clones\data\heavy_accessories_co.paa"};
-		class ItemInfo: Vestitem
-		{
-			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-			containerClass = "Supply100";
-			hiddenSelections[] = {"camo1","camo2"};
-			mass = 80;
-			vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-		};
+				"SWLB_clones\data\heavy_accessories_co.paa"
+			};
 	};
 	class JA_104th_Woods_Vest : JA_104th_Vest
 	{
 		author = "Dak";
 		scope = 2;
 		displayName = "Clone Force Recon Officer Vest (104th Woods)";
-		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
 		hiddenSelections[] = 
 			{
 				"camo1",
@@ -157,37 +116,6 @@ class CfgWeapons
 			{
 				"Jangos_ARF_Vests\data\Textures\104th_ARF_Woods_Officer_Kama.paa",
 				"SWLB_clones\data\heavy_accessories_co.paa"};
-		class ItemInfo: Vestitem
-		{
-			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-			containerClass = "Supply100";
-			hiddenSelections[] = {"camo1","camo2"};
-			mass = 80;
-			vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-		};
 	};
 };
 

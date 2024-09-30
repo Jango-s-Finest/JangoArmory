@@ -58,8 +58,6 @@ class CfgWeapons
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_eng_helmet;
@@ -80,10 +78,7 @@ class CfgWeapons
 	// Makes making each vest a rebreather easier
 	class ItemInfo;
 	class SWLB_clone_basic_armor;
-	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
-	{
-		class ItemInfo;
-	};
+	class JA_104th_Base_officer_Vest;
 
 	class JA_Prowler_P2_Base_NCO_Helmet : SWLB_clone_BARC_helmet
 	{
@@ -284,7 +279,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_Prowler_P2_Base_Fenris_Armor : SWLB_clone_officer_armor
+	class JA_Prowler_P2_Base_Fenris_Armor : JA_104th_Base_officer_Vest
 	{
 		author = "Dak";
 		displayName = "Clone Trooper Officer Vest (Fenris)";
@@ -296,10 +291,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"104thProwlerCompany\data\Textures\fenriskama.paa"};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
-		};
 	};
 };
 
@@ -343,8 +334,8 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones_Prowler";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Officer_Upper.paa", "104thProwlerCompany\data\Textures\Prowler_Armored_Officer_Lower.paa"};
-		linkedItems[] = {JA_Prowler_P2_Base_Officer_Helmet, SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
-		respawnLinkedItems[] = {JA_Prowler_P2_Base_Officer_Helmet, SWLB_clone_officer_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_Prowler_P2_Base_Officer_Helmet, JA_104th_Base_officer_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_Prowler_P2_Base_Officer_Helmet, JA_104th_Base_officer_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Base_P2_Prowler_Fenris : SWLB_clone_base_P2
 	{

@@ -97,57 +97,17 @@ class CfgWeapons
     class ItemInfo;
     class SWLB_clone_basic_armor;
 
-    class SWLB_clone_airborne_armor : SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_kama_armor: SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_medic_armor: SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_airborne_nco_armor : SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Airborne_Officer : SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Force_Recon_NCO;
-    class SWLB_CEE_Officer_Tactical : SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-   class SWLB_CEE_Recon_Lieutenant: SWLB_clone_basic_armor 
-    {
-        class ItemInfo;
-    };
+    class SWLB_clone_airborne_armor;
+    class SWLB_clone_kama_armor;
+    class SWLB_clone_medic_armor;
+    class JA_104th_AB_NCO_Trooper_Armor;
+    class JA_104_Force_Recon_NCO;
+    class SWLB_CEE_Officer_Tactical;
+   class SWLB_CEE_Recon_Lieutenant;
     class ls_blueforVest_base;
-    class ls_gar_airborneOfficer_vest : ls_blueforVest_base
-    {
-        class ItemInfo;
-    };
 
-    class SWLB_clone_officer_armor : SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_commander_armor : SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_arc_armor : SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Lightweight_Rebreather : SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
+    class SWLB_clone_officer_armor;
+    class SWLB_clone_commander_armor;
 
     class JA_104th_Vest : SWLB_CEE_Recon_Lieutenant
     {
@@ -169,6 +129,47 @@ class CfgWeapons
             containerClass = "Supply100";
             hiddenSelections[] = {"camo1","camo2"};
             mass = 80;
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_PSGT_Kama : SWLB_clone_kama_armor
+    {
+        author = "Tundra";
+        displayName = "Clone Trooper Kama (104th)";
+        hiddenSelections[] =
+        {
+            "camo1"
+
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa"
+        };
+        class ItemInfo: VestItem
+        {
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -309,7 +310,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_ME_officer_Vest : SWLB_clone_officer_armor
+    class JA_104th_ME_officer_Vest : JA_104th_Base_officer_Vest
     {
         author = "Dak";
         displayName = "Clone Trooper Officer Vest (ME)";
@@ -319,35 +320,8 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Infantry_Vests\data\Textures\104th_ME_Pauldron_and_Kama.paa"};
-        class ItemInfo : ItemInfo
-        {
-            vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
     };
-    class JA_104th_ME_Commander_Vest : SWLB_clone_commander_armor
+    class JA_104th_ME_Commander_Vest : JA_104th_Base_Commander_Vest
     {
         author = "Dak";
         displayName = "Clone Trooper Commander Vest (ME)";
@@ -357,35 +331,8 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Infantry_Vests\data\Textures\104th_ME_Pauldron_and_Kama.paa"};
-        class ItemInfo : ItemInfo
-        {
-            vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
     };
-    class JA_104th_ME_Medic_Vest : SWLB_clone_medic_armor
+    class JA_104th_ME_Medic_Vest : JA_104th_Base_Medic_Vest
     {
         author = "Dak";
         displayName = "Clone Trooper Medic Vest (ME)";
@@ -423,7 +370,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Welty_Kama : SWLB_clone_kama_armor
+    class JA_104th_Welty_Kama : JA_104th_PSGT_Kama
     {
         author = "Fish";
         displayName = "Clone Trooper Kama (104th Welty)";
@@ -435,75 +382,6 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "Jangos_Infantry_Vests\data\Textures\104th_P2_Welty_Kama.paa"
-        };
-        class ItemInfo: ItemInfo
-        {
-            vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-
-    class JA_104th_PSGT_Kama : SWLB_clone_kama_armor
-    {
-        author = "Tundra";
-        displayName = "Clone Trooper Kama (104th)";
-        hiddenSelections[] =
-        {
-            "camo1"
-
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa"
-        };
-        class ItemInfo: ItemInfo
-        {
-            vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
         };
     };
     class JA_104th_Death_Kama : SWLB_CEE_Officer_Tactical
@@ -556,7 +434,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Spirit_Vest : SWLB_clone_airborne_nco_armor
+    class JA_104th_Spirit_Vest : JA_104th_AB_NCO_Trooper_Armor
     {
         author = "Emmet";
         scope = 2;
@@ -575,7 +453,7 @@ class CfgWeapons
             "Jangos_Infantry_Vests\data\Textures\104th_P2_Spirit_Heavy.paa", //Heavy
             "Jangos_Infantry_Vests\data\Textures\104th_P2_Spirit_Heavy.paa" //Heavy
         };
-        class ItemInfo: ItemInfo
+        class ItemInfo: VestItem
         {
             vestType = "Rebreather";
             class HitpointsProtectionInfo
@@ -609,7 +487,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Scurvy_Vest : SWLB_CEE_Force_Recon_NCO
+    class JA_104th_Scurvy_Vest : JA_104_Force_Recon_NCO
     {
         author = "Fish";
         scope = 2;
@@ -623,7 +501,7 @@ class CfgWeapons
                 "Jangos_Infantry_Vests\data\Textures\104th_p2_scurvy_accesories_heavy.paa" // Heavy
             };
     };
-    class JA_104th_Knightfall_Vest : SWLB_clone_commander_armor
+    class JA_104th_Knightfall_Vest : JA_104th_Base_Commander_Vest
     {
         author = "Tundra";
         displayName = "Clone Trooper Commander Vest (104th Knightfall)";
@@ -636,35 +514,8 @@ class CfgWeapons
         {
             "Jangos_Infantry_Vests\data\Textures\104th_Knightfall_Accessories.paa"
         };
-        class ItemInfo: ItemInfo
-        {
-            vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
     };
-    class JA_104th_Tusk_Vest : SWLB_clone_commander_armor
+    class JA_104th_Tusk_Vest : JA_104th_Base_Commander_Vest
     {
         author = "Tundra";
         displayName = "Clone Trooper Commander Vest (104th Tusk)";
@@ -676,33 +527,6 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "Jangos_Infantry_Vests\data\Textures\104th_Tusk_Accessories.paa"
-        };
-        class ItemInfo: ItemInfo
-        {
-            vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
         };
     };
     class JA_104th_Galahad_Vest : JA_104th_Vest

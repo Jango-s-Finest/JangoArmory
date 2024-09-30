@@ -4328,8 +4328,8 @@ class cfgVehicles {
 	class 3as_Vwing_base;
 	class JA_104th_VWing: 3as_Vwing_base
 	{
-		Author = "212th + 3AS + Echo"
-		displayName = "V-Wing Fighter"
+		Author = "212th + 3AS + Echo";
+		displayName = "V-Wing Fighter";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -5649,7 +5649,7 @@ class cfgVehicles {
 	
 	class JA_104th_3AS_Reaper_Y_Wing: Aux212_3AS_Reaper_Y_Wing
 	{
-		Author = "212th + 3AS + Echo"
+		Author = "212th + 3AS + Echo";
 		displayName = "104th Reaper BTL-B Y-Wing";
 		crew = "SWLB_clone_pilot_base_P2";
 		side = 1;
