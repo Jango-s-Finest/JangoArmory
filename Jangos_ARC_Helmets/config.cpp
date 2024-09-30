@@ -64,6 +64,7 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
+<<<<<<< Updated upstream
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
@@ -87,8 +88,32 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
+=======
+	class ItemInfo;
+	class SWLB_clone_P15_Helmet
+	{
+		class ItemInfo;
+	};
+>>>>>>> Stashed changes
 
-	class JA_104th_Angel_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Clone_P15_Helmet : JA_104th_Clone_P15_Helmet
+	{
+		class ItemInfo : ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+
+	class JA_104th_Angel_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Ice";
 		scopeArsenal = 2;
@@ -97,7 +122,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Angel)";						  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Angel_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Crowbi_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Crowbi_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Ice";
 		scopeArsenal = 2;
@@ -106,7 +131,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Crowbi)";						  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Crowbi_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Drifter_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Drifter_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -115,7 +140,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Drifter)";								  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Drifter_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Frosty_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Frosty_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -124,7 +149,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Frosty)";								  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Frosty_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Hunter_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Hunter_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -133,7 +158,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Hunter)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_ARC_Helmets\data\textures\104th_ARC_Hunter_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Loner_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Loner_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -142,7 +167,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Loner)";							 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Loner_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Spectre_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Spectre_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -151,7 +176,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Spectre)";								// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Spectre_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Sigil_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Sigil_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -160,7 +185,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Sigil)";							 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Sigil_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Vision_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Vision_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;

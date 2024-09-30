@@ -62,6 +62,7 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
+<<<<<<< Updated upstream
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
@@ -85,8 +86,32 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
+=======
+	class ItemInfo;
+	class SWLB_Clone_Pilot_P2_Helmet
+	{
+		class ItemInfo;
+	};
+>>>>>>> Stashed changes
 
-	class JA_104th_Bail_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	class JA_104th_Pilot_P2_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	{
+		class ItemInfo : ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+
+	class JA_104th_Bail_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -96,7 +121,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot Helmet (104th Bail)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Bail_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Beef_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	class JA_104th_Beef_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -106,7 +131,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot Helmet (104th Beef)";								  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Beef_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Haze_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	class JA_104th_Haze_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -116,7 +141,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot Helmet (104th Haze)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Haze_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Varelli_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	class JA_104th_Varelli_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -126,7 +151,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot Helmet (104th Varelli)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Varelli_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_OD_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	class JA_104th_OD_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -136,7 +161,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot Helmet (104th OD)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_OD_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Cherryy_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	class JA_104th_Cherryy_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -146,7 +171,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot Helmet (104th Cherryy)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Cherryy_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_104th_Fish_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
+	class JA_104th_Fish_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
