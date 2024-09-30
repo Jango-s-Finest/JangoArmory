@@ -92,38 +92,6 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
-<<<<<<< Updated upstream
-	class InventoryItem_Base_F;
-	class ItemCore;
-	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
-	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
-	class SWLB_clone_AB_helmet;
-	class ls_gar_engineer_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
-	class SWLB_clone_BARC_helmet;
-	class SWLB_clone_P15_Helmet;
-	class SWLB_clone_P1_helmet;
-	class SWLB_clone_P1_2_helmet;
-	class SWLB_clone_P2_Helmet;
-	class lsd_gar_standart_nvg;
-	class lsd_gar_rangefinder_nvg;
-	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_eng_helmet;
-	class SWLB_P2_SpecOps_Helmet;
-	class ls_gar_barc_helmet;
-	class ls_gar_desert_helmet;
-	class UniformItem;
-	class VestItem;
-	class HeadgearItem;
-
-	class JA_104th_Banker_Helmet : SWLB_clone_P2_Helmet
-	{
-=======
 	class ItemInfo;
 	class ls_gar_engineer_helmet
 	{
@@ -210,7 +178,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class JA_104th_barc_Helmet : class ls_gar_barc_helmet
+	class JA_104th_barc_Helmet : ls_gar_barc_helmet
 	{
 		class ItemInfo : ItemInfo
 		{
@@ -229,7 +197,6 @@ class CfgWeapons
 
 	class JA_104th_Banker_Helmet : JA_104th_clone_P2_Helmet
 	{
->>>>>>> Stashed changes
 		author = "Dak";
 		scopeArsenal = 2;
 		side = 1;
@@ -238,11 +205,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Banker)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Banker_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Bomb_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Bomb_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -252,11 +215,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Bomb)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Bomb_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Blood_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Blood_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -266,11 +225,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Blood)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Blood_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Byte_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Byte_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -280,23 +235,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Byte)";								   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Byte_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Badger_Helmet : SWLB_P2_SpecOps_Helmet
-=======
 	class JA_104th_Bulky_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {"camo1"};														   // don't change this
-<<<<<<< Updated upstream
-		displayname = "Clone Tanker P2 Helmet (104th Badger)";								   // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Badger_Helmet.paa"}; // the file path to the texture
-	};
-	class JA_104th_Carmine_Helmet : SWLB_clone_P2_helmet
-=======
 		displayname = "Clone Trooper P2 Helmet (104th Bulky)";								   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Bulky_Helmet.paa"}; // the file path to the texture
 	};
@@ -311,7 +256,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Badger_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Carmine_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -325,21 +269,7 @@ class CfgWeapons
 			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Carmine_Helmet.paa",
 		}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Bulky_Helmet : SWLB_clone_P2_Helmet
-	{
-		author = "Fish";
-		scopeArsenal = 2;
-		side = 1;
-		grad_slingHelmet_allow = true;
-		hiddenSelections[] = {"camo1"};														   // don't change this
-		displayname = "Clone Trooper P2 Helmet (104th Bulky)";								   // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Bulky_Helmet.paa"}; // the file path to the texture
-	};
-	class JA_104th_Calvin_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Calvin_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -352,11 +282,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Calvin_Helmet.paa",
 		}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Chills_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Chills_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -370,11 +296,7 @@ class CfgWeapons
 			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Chills_Helmet.paa",
 		}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Crash_Helmet : SWLB_P2_SpecOps_Helmet
-=======
 	class JA_104th_Crash_Helmet : JA_104th_SpecOps_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -384,11 +306,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Special Activities Helmet (104th Crash)";					  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Crash_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Death_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Death_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -398,11 +316,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Death)";											  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Death_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Dart_Helmet : ls_gar_engineer_helmet
-=======
 	class JA_104th_Dart_Helmet : JA_104th_Engineer_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -419,11 +333,7 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Dragan_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Dragan_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -433,11 +343,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Dragan)"; // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Dragan_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Ed_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Ed_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -447,11 +353,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Ed)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Ed_Helmet.paa" }; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Gravity_Helmet : SWLB_Clone_P2_Helmet
-=======
 	class JA_104th_Gravity_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -461,11 +363,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (104th Gravity)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Gravity_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Galahad_Helmet : ls_gar_barc_helmet // BARC HELMET DON'T USE AS P2 BASE
-=======
 	class JA_104th_Galahad_Helmet : JA_104th_barc_Helmet // BARC HELMET DON'T USE AS P2 BASE
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -478,11 +376,7 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
 		}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Glitch_Helmet : SWLB_Clone_P2_Helmet
-=======
 	class JA_104th_Glitch_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -492,11 +386,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (104th Glitch)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Glitch_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Ghost_Helmet : SWLB_P2_SpecOps_Helmet
-=======
 	class JA_104th_Ghost_Helmet : JA_104th_SpecOps_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -506,11 +396,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Special Activities Helmet (104th Ghost)";					  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Ghost_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Hound_Helmet : SWLB_Clone_P2_Helmet
-=======
 	class JA_104th_Hound_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Cyan";
 		scopeArsenal = 2;
@@ -520,11 +406,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Hound)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Hound_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Knightfall_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Knightfall_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -534,11 +416,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Knightfall)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Knightfall_Helmet.paa" }; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Kyo_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Kyo_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -550,11 +428,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Kyo)";											// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Kyo_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Mad_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Mad_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -564,11 +438,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Mad)";								  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Mad_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Mower_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Mower_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -578,11 +448,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Mower)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Mower_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Paraso_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Paraso_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -592,11 +458,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Paraso)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Paraso_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Pretz_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Pretz_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -606,11 +468,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Pretz)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Pretz_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Pulse_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Pulse_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -625,11 +483,7 @@ class CfgWeapons
 			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Pulse_Helmet.paa",
 		}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Red_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Red_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Cyan";
 		scopeArsenal = 2;
@@ -644,11 +498,7 @@ class CfgWeapons
 			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Red_Helmet.paa",
 		}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Reaper_Helmet : ls_gar_engineer_helmet
-=======
 	class JA_104th_Reaper_Helmet : JA_104th_Engineer_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -665,11 +515,7 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Scurvy_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Scurvy_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -679,11 +525,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Scurvy)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P2_Scurvy_Helmet.paa" }; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Skav_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Skav_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -693,11 +535,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Skav)";											   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Skav_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Spirit_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Spirit_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -707,11 +545,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Spirit)";											   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Spirit_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Irish_Helmet : SWLB_Clone_P2_Helmet
-=======
 	class JA_104th_Irish_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -721,11 +555,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Irish)";									  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Irish_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Knockout_Helmet : SWLB_Clone_P2_Helmet
-=======
 	class JA_104th_Knockout_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -735,11 +565,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Knockout)"; // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Knockout_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Talisman_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Talisman_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -754,11 +580,7 @@ class CfgWeapons
 			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Talisman_Helmet.paa",
 		}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Tiger_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Tiger_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -768,11 +590,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Tiger)";											  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Tiger_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Tinkle_Helmet : SWLB_clone_P2_Helmet
-=======
 	class JA_104th_Tinkle_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -787,11 +605,7 @@ class CfgWeapons
 			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Tinkle_Helmet.paa",
 		}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Tusk_Helmet : SWLB_clone_P1_2_helmet
-=======
 	class JA_104th_Tusk_Helmet : JA_104th_clone_P1_2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
@@ -801,11 +615,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P1-2 Helmet (104th Tusk)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Infantry_Helmets\data\Textures\104th_P1-2_Tusk_Helmet.paa" }; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Test_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Test_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -820,11 +630,7 @@ class CfgWeapons
 			"Jangos_Infantry_Helmets\data\Textures\JA_visor.rvmat"
 		};
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Vertigo_Helmet : SWLB_Clone_P2_Helmet
-=======
 	class JA_104th_Vertigo_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -834,11 +640,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Vertigo)";									  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Vertigo_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Walker_Helmet : SWLB_clone_eng_helmet
-=======
 	class JA_104th_Walker_Helmet : JA_104th_Engineer_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -855,11 +657,7 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Welty_Helmet : SWLB_clone_P2_helmet
-=======
 	class JA_104th_Welty_Helmet : JA_104th_clone_P2_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -869,11 +667,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Welty)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Welty_Helmet.paa"}; // the file path to the texture
 	};
-<<<<<<< Updated upstream
-	class JA_104th_Xan_Helmet : SWLB_P2_SpecOps_Helmet
-=======
 	class JA_104th_Xan_Helmet : JA_104th_SpecOps_Helmet
->>>>>>> Stashed changes
 	{
 		author = "Dak";
 		scopeArsenal = 2;

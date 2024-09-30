@@ -66,32 +66,6 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
-<<<<<<< Updated upstream
-	class InventoryItem_Base_F;
-	class ItemCore;
-	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
-	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
-	class SWLB_clone_BARC_helmet;
-	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
-	class ls_gar_phase2Arf_helmet;
-	class SWLB_clone_P15_Helmet;
-	class SWLB_clone_P1_helmet;
-	class SWLB_clone_P1_2_helmet;
-	class SWLB_clone_P2_Helmet;
-	class lsd_gar_standart_nvg;
-	class lsd_gar_rangefinder_nvg;
-	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_eng_helmet;
-	class SWLB_P2_SpecOps_Helmet;
-	class UniformItem;
-	class VestItem;
-=======
 	class ItemInfo;
 	class SWLB_clone_ARF_P1_Helmet
 	{
@@ -134,7 +108,6 @@ class CfgWeapons
 			};
 		};
 	};
->>>>>>> Stashed changes
 
 	// Base
 	class JA_104th_ARF_Helmet : JA_104th_ARF_P1_Helmet
