@@ -5,6 +5,7 @@ class CfgWeapons
 	class FSN_B61_Nuclear_W : Mk82BombLauncher
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		autofire=0;
 		CanLock = 2;
 		displayName = "B61-12 Nuclear Bomb";
@@ -126,6 +127,7 @@ class CfgWeapons
 	class FSN_Nuclear_Missile_W : MissileLauncher
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		initspeed=0;
 		magazineReloadTime=0.5;
 		reloadTime=0.5;
@@ -203,6 +205,7 @@ class CfgWeapons
 	class FSN_Nuclear_Cruise_Missile_W : MissileLauncher
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		initspeed= -10;
 		magazineReloadTime=0.5;
 		reloadTime=0.5;
@@ -261,6 +264,7 @@ class CfgWeapons
 	class FSN_Diamondback_Missile_W : weapon_AMRAAMLauncher
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		displayName="Diamondback AA (Nuclear)";
 		displayNameMagazine = "Diamondback";
 		shortNameMagazine = "Nuclear AA";

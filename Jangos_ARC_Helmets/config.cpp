@@ -65,14 +65,12 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class ItemInfo;
-	class SWLB_clone_P15_Helmet
-	{
-		class ItemInfo;
-	};
+	class SWLB_clone_P15_Helmet;
+	class HeadgearItem;
 
 	class JA_104th_Clone_P15_Helmet : SWLB_clone_P15_Helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -90,6 +88,7 @@ class CfgWeapons
 	class JA_104th_Angel_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Ice";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";									
@@ -99,6 +98,7 @@ class CfgWeapons
 	class JA_104th_Crowbi_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Ice";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";									
@@ -108,6 +108,7 @@ class CfgWeapons
 	class JA_104th_Drifter_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";													
@@ -117,6 +118,7 @@ class CfgWeapons
 	class JA_104th_Frosty_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";													
@@ -126,6 +128,7 @@ class CfgWeapons
 	class JA_104th_Hunter_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -135,6 +138,7 @@ class CfgWeapons
 	class JA_104th_Loner_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";											
@@ -144,6 +148,7 @@ class CfgWeapons
 	class JA_104th_Spectre_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";												
@@ -153,6 +158,7 @@ class CfgWeapons
 	class JA_104th_Sigil_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";													
@@ -162,6 +168,7 @@ class CfgWeapons
 	class JA_104th_Vision_Helmet : JA_104th_Clone_P15_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";													

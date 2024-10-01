@@ -86,7 +86,7 @@ class CfgWeapons
 	class SWLB_clone_arc_armor;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -121,6 +121,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (104th)";
 		hiddenSelectionsTextures[] =
@@ -136,6 +137,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Invisible)";
 		hiddenSelectionsTextures[] =
@@ -148,6 +150,7 @@ class CfgVehicles
 	{
 		author = "Cyan";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper ARC backpack (104th)";
 		maximumLoad = 360;
@@ -213,6 +216,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Cerberus 1-1)";
 		hiddenSelectionsTextures[] =
@@ -271,6 +275,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Cerberus 1-2)";
 		hiddenSelectionsTextures[] =
@@ -329,6 +334,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Cerberus 1-3)";
 		hiddenSelectionsTextures[] =
@@ -387,6 +393,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Cerberus 1-4)";
 		hiddenSelectionsTextures[] =
@@ -447,6 +454,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
@@ -461,6 +469,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper jumppack";
 		RD501_jumppack_energy_capacity = 100;
@@ -469,6 +478,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR - NO RECHARGE";
 		RD501_jumppack_energy_capacity = 100;
@@ -485,6 +495,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12  - NO RECHARGE";
 		RD501_jumppack_energy_capacity = 100;
@@ -495,6 +506,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR";
 		RD501_jumppack_energy_capacity = 100;
@@ -509,6 +521,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12";
 		RD501_jumppack_energy_capacity = 100;
@@ -517,6 +530,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Marshal Commander Jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
@@ -531,6 +545,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Marshal Commander jumppack";
 		RD501_jumppack_energy_capacity = 100;
@@ -545,6 +560,7 @@ class CfgVehicles
 	{
 		author = "501st + Echo";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone CDV Pilot jumppack";
 		tf_dialog = "anarc210_radio_dialog";
@@ -558,6 +574,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Raider)";
 		hiddenSelections[] = {"camo1"};
@@ -567,6 +584,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Raider)";
 		hiddenSelections[] = {"camo1"};
@@ -576,6 +594,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Raider 2-1)";
 		hiddenSelections[] = {"camo1"};
@@ -585,6 +604,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Raider 2-1)";
 		hiddenSelections[] = {"camo1"};
@@ -594,6 +614,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Raider 2-2)";
 		hiddenSelections[] = {"camo1"};
@@ -603,6 +624,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Raider 2-2)";
 		hiddenSelections[] = {"camo1"};
@@ -612,6 +634,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Raider 2-3)";
 		hiddenSelections[] = {"camo1"};
@@ -621,6 +644,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Raider 2-3)";
 		hiddenSelections[] = {"camo1"};
@@ -630,6 +654,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Raider 2-4)";
 		hiddenSelections[] = {"camo1"};
@@ -639,6 +664,7 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Raider 2-4)";
 		hiddenSelections[] = {"camo1"};

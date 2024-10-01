@@ -67,18 +67,13 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class ItemInfo;
-	class SWLB_clone_ARF_P1_Helmet
-	{
-		class ItemInfo;
-	};
-	class ls_gar_phase2Arf_helmet
-	{
-		class ItemInfo;
-	};
+	class SWLB_clone_ARF_P1_Helmet;
+	class ls_gar_phase2Arf_helmet;
+	class HeadgearItem;
 
 	class JA_104th_ARF_P1_Helmet : SWLB_clone_ARF_P1_Helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -94,7 +89,7 @@ class CfgWeapons
 	};
 	class JA_104th_ARF_P2_Helmet : ls_gar_phase2Arf_helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -113,6 +108,7 @@ class CfgWeapons
 	class JA_104th_ARF_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -123,6 +119,7 @@ class CfgWeapons
 	class JA_104th_ARF_Urban_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -133,6 +130,7 @@ class CfgWeapons
 	class JA_104th_ARF_Jungle_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -143,6 +141,7 @@ class CfgWeapons
 	class JA_104th_ARF_Desert_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -153,6 +152,7 @@ class CfgWeapons
 	class JA_104th_ARF_Medic_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -164,6 +164,7 @@ class CfgWeapons
 	class JA_104th_Achilles_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -174,6 +175,7 @@ class CfgWeapons
 	class JA_104th_Beans_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Ice";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -185,6 +187,7 @@ class CfgWeapons
 	class JA_104th_IQ_Helmet : JA_104th_ARF_P2_Helmet // Use for ARF + Chops template
 	{
 		author = "Ice";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -201,6 +204,7 @@ class CfgWeapons
 	class JA_104th_Fire_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -211,6 +215,7 @@ class CfgWeapons
 	class JA_104th_Unix_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -221,6 +226,7 @@ class CfgWeapons
 	class JA_104th_Woods_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;

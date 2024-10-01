@@ -69,42 +69,55 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class InventoryItem_Base_F;
+    class ItemCore;
+    class SWLB_Clone_Pilot_P2_Helmet;
+    class SWLB_clone_uniform;
 	class JA_104th_Vest;
-    class ItemInfo;
-	class ItemCore;
-	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
-	class SWLB_clone_mc_uniform;
-	class SWLB_clone_BARC_helmet;
-	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
-	class SWLB_clone_P15_Helmet;
-	class SWLB_clone_P1_helmet;
-	class SWLB_clone_P1_2_helmet;
-	class SWLB_clone_P2_Helmet;
-	class lsd_gar_standart_nvg;
-	class lsd_gar_rangefinder_nvg;
-	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_eng_helmet;
-	class SWLB_P2_SpecOps_Helmet;
-	class UniformItem;
-	class VestItem;
+    class JA_104_Force_Recon_NCO;
+    class SWLB_clone_basic_armor;
+    class JA_104th_AB_NCO_Trooper_Armor;
+    class SWLB_clone_mc_uniform;
+    class SWLB_clone_BARC_helmet;
+    class SWLB_clone_AB_helmet;
+    class JA_104th_ARF_P1_Helmet;
+    class SWLB_clone_P15_Helmet;
+    class SWLB_clone_P1_helmet;
+    class SWLB_clone_P1_2_helmet;
+    class SWLB_clone_P2_Helmet;
+    class lsd_gar_standart_nvg;
+    class lsd_gar_rangefinder_nvg;
+    class lsd_gar_p2MarshalCommander_nvg;
+    class SWLB_clone_eng_helmet;
+    class SWLB_P2_SpecOps_Helmet;
+    class UniformItem;
+    class VestItem;
 
-	// Inheritance for vests
-	// Makes making each vest a rebreather easier
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_armor;
-	class SWLB_clone_airborne_nco_armor;
-	class ls_blueforVest_base;
-	class ls_gar_airborneOfficer_vest;
 
-	class SWLB_clone_officer_armor;
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class SWLB_clone_airborne_armor;
+    class SWLB_clone_kama_armor;
+    class SWLB_clone_medic_armor;
+    class SWLB_clone_airborne_nco_armor;
+    class SWLB_CEE_Airborne_Officer;
+    class SWLB_CEE_Force_Recon_NCO;
+    class SWLB_CEE_Officer_Tactical;
+   	class SWLB_CEE_Recon_Lieutenant;
+    class ls_blueforVest_base;
+    class ls_gar_airborneOfficer_vest;
+
+    class SWLB_clone_officer_armor;
+    class SWLB_clone_commander_armor;
+    class SWLB_clone_arc_armor;
+    class SWLB_CEE_Lightweight_Rebreather;
+	class ItemInfo;
 
 	class JA_104th_AB_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer Vest (104th)";
-
+		scope = 2;
+		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Small "pocket" on left arm
@@ -112,7 +125,7 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\textures\104th_Pauldron_and_Kama.paa", // Kama
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" 
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 
@@ -144,6 +157,8 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne NCO Vest (104th)";
+		scope = 2;
+		scopeArsenal = 2;
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -162,6 +177,8 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (104th)";
+		scope = 2;
+		scopeArsenal = 2;
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -174,7 +191,7 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_Pauldron_and_Kama.paa",
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 
@@ -206,6 +223,8 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer Vest (ME)";
+		scope = 2;
+		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa",	  // Small "pocket" on left arm
@@ -217,7 +236,7 @@ class CfgWeapons
 																			  // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
 																			  // Leaving it empty makes it appear invisible.
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 
@@ -249,6 +268,8 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne NCO Vest (ME)";
+		scope = 2;
+		scopeArsenal = 2;
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -267,6 +288,8 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (ME)";
+		scope = 2;
+		scopeArsenal = 2;
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -279,7 +302,7 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_ME_Pauldron_and_Kama.paa",
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy_ME.paa" // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 
@@ -311,6 +334,8 @@ class CfgWeapons
 	{
 		author = "Fish";
 		displayName = "Clone Airborne Officer Vest (104th Axel)";
+		scope = 2;
+		scopeArsenal = 2;
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -331,6 +356,7 @@ class CfgWeapons
 	{
 		author = "Emmet";
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "Clone Airborne Officer Vest (104th Dak)";
 		hiddenSelections[] =
 			{
@@ -347,6 +373,7 @@ class CfgWeapons
 	{
 		author = "Emmet" 
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "Clone Airborne NCO Vest (104th Carmine)";
 		hiddenSelections[] =
 			{
@@ -366,6 +393,7 @@ class CfgWeapons
 	{
 		author = "Emmet" 
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "Clone Airborne NCO Vest (104th Osiris)";
 		hiddenSelections[] =
 			{
@@ -385,6 +413,7 @@ class CfgWeapons
 	{
 		author = "Emmet" 
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "Clone Airborne NCO Vest (104th Kage)";
 		hiddenSelections[] =
 			{
@@ -404,6 +433,7 @@ class CfgWeapons
 	{
 		author = "Emmet" 
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "Clone Airborne NCO Vest (104th Magnum)";
 		hiddenSelections[] =
 			{
@@ -423,6 +453,7 @@ class CfgWeapons
 	{
 		author = "Emmet" 
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "Clone Airborne NCO Vest (104th Clutch)";
 		hiddenSelections[] =
 			{

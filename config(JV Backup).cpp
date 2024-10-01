@@ -9687,6 +9687,7 @@ class cfgVehicles {
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		crew = "SWLB_clone_pilot_base_P2";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
 		
@@ -10369,6 +10370,7 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
 		
@@ -10496,6 +10498,7 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
 		crew = "SWLB_clone_sniper_base_P2";
@@ -10518,6 +10521,7 @@ class cfgVehicles {
 		model = "JangosVehicles\data\models\ShieldSphereTest.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 		class EventHandlers: DefaultEventhandlers
 		{
 			killed="deleteVehicle (_this select 0)";
@@ -10584,24 +10588,28 @@ class cfgVehicles {
 		model = "JangosVehicles\data\models\YWingShield.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 	};
 	class ywingshieldvo: shieldtest {
 		displayname = "Y-Wing shield bubble Visual";
 		model = "JangosVehicles\data\models\YWingShieldvo.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 	};
 	class ywingshieldfb: shieldtest {
 		displayname = "Y-Wing shield bubble Full Blue";
 		model = "JangosVehicles\data\models\YWingShieldfb.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 	};
 	class ywingshieldhb: shieldtest {
 		displayname = "Y-Wing shield bubble Half Blue";
 		model = "JangosVehicles\data\models\YWingShieldhb.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 	};
 	class ywingshieldred: shieldtest {
 		displayname = "Y-Wing shield bubble Red";
@@ -10613,18 +10621,21 @@ class cfgVehicles {
 		model = "JangosVehicles\data\models\Z95Shieldvo.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 	};
 	class z95shieldfb: shieldtest {
 		displayname = "Z-95 shield bubble Full Blue";
 		model = "JangosVehicles\data\models\Z95Shieldfb.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 	};
 	class z95shieldhb: shieldtest {
 		displayname = "Z-95 shield bubble Half Blue";
 		model = "JangosVehicles\data\models\Z95Shieldhb.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 	};
 	class z95shieldred: shieldtest {
 		displayname = "Z-95 shield bubble Red";
@@ -10661,6 +10672,7 @@ class cfgVehicles {
 		model = "JangosVehicles\data\models\100mBubble.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		author = "Echo";
 		armor = 10000;
@@ -10696,6 +10708,7 @@ class cfgVehicles {
 		
 		displayname = "100m Base Shield Spawner";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
@@ -10712,6 +10725,7 @@ class cfgVehicles {
 		model = "JangosVehicles\data\models\500mBubble.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		author = "Echo";
 		armor = 10000;
@@ -10726,6 +10740,7 @@ class cfgVehicles {
 		
 		displayname = "500m Base Shield Spawner";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
@@ -10742,6 +10757,7 @@ class cfgVehicles {
 		displayname = "Shield bubble Sound";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 		class EventHandlers: DefaultEventhandlers
 		{
 			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\ShieldSound.sqf';";
@@ -10751,6 +10767,7 @@ class cfgVehicles {
 		displayname = "Giant Shield bubble Sound";
 		hiddenSelections[] = {};
 		scope = 2;
+		scopeArsenal = 2;
 		class EventHandlers: DefaultEventhandlers
 		{
 			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\GiantShieldSound.sqf';";
@@ -11097,6 +11114,7 @@ class cfgVehicles {
 		author = "SW Legion Studios";
 		displayName = "Z7-104 Rotary Shoulder Gun";
 		scope = 2;
+		scopeArsenal = 2;
 		class TransportWeapons
 		{
 			class 104th_Z7
@@ -11119,6 +11137,7 @@ class cfgVehicles {
 		author = "SW Legion Studios";
 		displayName = "T9-104 Shoulder Cannon";
 		scope = 2;
+		scopeArsenal = 2;
 		class TransportWeapons
 		{
 			class JA_104th_ShoulderCannon
@@ -11314,6 +11333,7 @@ class CfgWeapons
 	{
 		author = "SW Legion Studios + Echo";
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "Z7-104 Rotary Shoulder Gun";
 		magazines[] = {"SWLW_Z7_mag_800rnd","ls_mag_flak_800rnd"};
 	};
@@ -11322,6 +11342,7 @@ class CfgWeapons
 	class JA_104th_ShoulderCannon: SWLW_Z7
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "T9-104 Shoulder Laser Cannon";
 		//magazines[] = {"SWLW_Z7_mag_800rnd","ls_mag_flak_800rnd"};
 		magazines[] = {"JA_104th_LaserCannon_mag"};

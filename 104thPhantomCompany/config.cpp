@@ -66,11 +66,11 @@ class CfgWeapons
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
+	class JA_104th_Base_Clone_Uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class ls_gar_desert_helmet;
 	class ls_gar_engineer_helmet;
 	class SWLB_clone_P15_Helmet;
@@ -85,8 +85,9 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	class Bag_Base;
-	class JA_104th_Base_CT_Uniform : SWLB_clone_uniform
+	class JA_104th_Base_CT_Uniform : JA_104th_Base_Clone_Uniform
 	{
+		scope = 0;
 		class ItemInfo: UniformItem
 		{
 			class HitpointsProtectionInfo
@@ -163,14 +164,12 @@ class CfgWeapons
     // Makes making each vest a rebreather easier
     class ItemInfo;
     class SWLB_clone_officer_armor;
-    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
-    {
-        class ItemInfo;
-    };
+    class SWLB_clone_arc_armor;
 
 	class JA_104th_P2_1C_01_CT_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Bulky & Cyan";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -181,6 +180,7 @@ class CfgWeapons
 	class JA_104th_P2_1C_02_CT_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Bulky & Cyan";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -191,6 +191,7 @@ class CfgWeapons
 	class JA_104th_P2_1C_03_CT_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Bulky & Cyan";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -201,6 +202,7 @@ class CfgWeapons
 	class JA_104th_P2_1C_04_CT_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Bulky & Cyan";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -211,6 +213,7 @@ class CfgWeapons
 	class JA_104th_P2_1C_05_CT_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Bulky & Cyan";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -221,6 +224,7 @@ class CfgWeapons
 	class JA_104th_P2_1C_06_CT_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Bulky & Cyan";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -231,7 +235,8 @@ class CfgWeapons
 	class JA_104th_P2_1C_07_CT_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Bulky & Cyan";
-			scopeArsenal = 2;
+			scope = 2;
+		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
 		hiddenSelections[] = { "camo1" }; // don't change this
@@ -241,6 +246,7 @@ class CfgWeapons
 	class JA_104th_P2_1C_08_CT_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Bulky & Cyan";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -251,6 +257,7 @@ class CfgWeapons
 	class JA_104th_Engineer_1C_Base_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";
@@ -269,6 +276,7 @@ class CfgWeapons
 	class JA_104th_P2_1C_Medic_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -279,6 +287,7 @@ class CfgWeapons
 	class JA_104th_JTAC_1C_Helmet : SWLB_P2_SpecOps_Helmet
 	{
 		author = "Ice";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";
@@ -289,6 +298,7 @@ class CfgWeapons
 	class JA_104th_Desert_1C_Medic_Helmet : ls_gar_desert_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -300,6 +310,7 @@ class CfgWeapons
 	class JA_104th_Desert_1C_Medic_NCO_Helmet : ls_gar_desert_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -311,6 +322,7 @@ class CfgWeapons
 	class JA_104th_Desert_1C_NCO_Helmet : ls_gar_desert_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -322,6 +334,7 @@ class CfgWeapons
 	class JA_104th_Desert_1C_Officer_Helmet : ls_gar_desert_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -332,6 +345,7 @@ class CfgWeapons
 	class JA_104th_Desert_1C_Base_Helmet : ls_gar_desert_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = "true";
@@ -344,6 +358,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper P2 Armor (104th [1C] 01 CT)";
 		hiddenSelections[] =
@@ -370,6 +385,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper P2 Armor (104th [1C] 02 CT)";
 		hiddenSelections[] =
@@ -395,6 +411,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P2 armor (104th [1C] Engineer)";
 		hiddenSelections[] =
@@ -418,6 +435,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper P2 armor (104th [1C] Medic)";
 		hiddenSelections[] =
@@ -443,6 +461,7 @@ class CfgWeapons
 	{
 		author = "Ice";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P2 armor (104th [1C] JTAC)";
 		hiddenSelections[] =
@@ -545,7 +564,9 @@ class CfgVehicles
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		displayName = "104th P2 1C Medic";

@@ -3398,6 +3398,7 @@ class JA_104th_Westar45: JA_104th_rifle_base_stunless
 		author = "SW Legion Studios + Echo";
 		baseWeapon = "JA_104th_Z7";
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "[104th] Z7 Rotary Shoulder Gun";
 		magazines[] = {"ls_mag_flak_800rnd"};
 	};

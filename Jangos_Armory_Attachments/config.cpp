@@ -72,7 +72,7 @@ class CfgWeapons
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -91,19 +91,13 @@ class CfgWeapons
 	// Makes making each vest a rebreather easier
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer : SWLB_clone_airborne_armor
-	{
-		class ItemInfo;
-	};
+	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
 
 	class ls_blueforVest_base;
 
 	class SWLB_clone_officer_armor;
-	class SWLB_clone_arc_armor : SWLB_clone_officer_armor
-	{
-		class ItemInfo;
-	};
+	class SWLB_clone_arc_armor;
 
 	// General Attachments
 	class JA_104th_P2_NVG_Base: lsd_gar_standard_nvg

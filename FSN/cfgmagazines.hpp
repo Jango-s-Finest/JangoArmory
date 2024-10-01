@@ -5,6 +5,7 @@ class CfgMagazines
 	class FSN_B61_Nuclear_M : PylonMissile_1Rnd_Mk82_F
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		author="Freestyle_Build";
 		descriptionShort = "B61-12 \n With selectable yield of 0.3/1.5/10/50 kT TNT equivalent";
 		displayName="B61-12 Nuclear Bomb";
@@ -229,6 +230,7 @@ class CfgMagazines
 	class FSN_Nuclear_Missile_M : VehicleMagazine
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		nameSound="missiles";
 		initSpeed=0;
 		model = "\A3\Weapons_F\DynamicLoadout\PylonMissile_1x_Bomb_02_F.p3d";
@@ -444,6 +446,7 @@ class CfgMagazines
 	class FSN_Nuclear_Cruise_Missile_M : VehicleMagazine
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		nameSound="missiles";
 		initSpeed=0;
 		model = "\A3\Weapons_F\DynamicLoadout\PylonMissile_1x_Bomb_02_F.p3d";

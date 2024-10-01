@@ -55,14 +55,14 @@ class CfgWeapons
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
+	class JA_104th_Base_Clone_Uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_eng_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -83,6 +83,7 @@ class CfgWeapons
 	class JA_Prowler_P2_Base_NCO_Helmet : SWLB_clone_BARC_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -90,10 +91,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler NCO - P2)";										   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_NCO_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_NCO_Uniform : SWLB_clone_uniform
+	class JA_Prowler_P2_Base_NCO_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler NCO - P2)";
 		hiddenSelections[] =
@@ -116,6 +118,7 @@ class CfgWeapons
 	class JA_Prowler_P2_Base_Officer_Helmet : SWLB_clone_BARC_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -123,10 +126,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Officer - P2)";										   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Officer_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_Officer_Uniform : SWLB_clone_uniform
+	class JA_Prowler_P2_Base_Officer_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler Officer - P2)";
 		hiddenSelections[] =
@@ -149,6 +153,7 @@ class CfgWeapons
 	class JA_Prowler_P2_Base_Fenris_Helmet : SWLB_clone_BARC_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -156,10 +161,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Fenris - P2)";									  // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Captain_Fenris_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_Fenris_Uniform : SWLB_clone_uniform
+	class JA_Prowler_P2_Base_Fenris_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler Fenris - P2)";
 		hiddenSelections[] =
@@ -182,6 +188,7 @@ class CfgWeapons
 	class JA_Prowler_P2_Base_Trooper_Helmet : SWLB_clone_BARC_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -189,10 +196,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Trooper - P2)";										   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Trooper_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_Trooper_Uniform : SWLB_clone_uniform
+	class JA_Prowler_P2_Base_Trooper_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler Trooper - P2)";
 		hiddenSelections[] =
@@ -215,6 +223,7 @@ class CfgWeapons
 	class JA_Prowler_P2_Base_Medic_Helmet : SWLB_clone_BARC_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -226,6 +235,7 @@ class CfgWeapons
 	class JA_Prowler_ENG_Base_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -244,6 +254,7 @@ class CfgWeapons
 	class JA_Prowler_ENG_Officer_Helmet : SWLB_clone_eng_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -256,10 +267,11 @@ class CfgWeapons
 			"104thProwlerCompany\data\Textures\Prowler_ENG_Officer_Helmet.paa",
 			"104thProwlerCompany\data\Textures\Prowler_ENG_Officer_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_Medic_Uniform : SWLB_clone_uniform
+	class JA_Prowler_P2_Base_Medic_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler Medic - P2)";
 		hiddenSelections[] =

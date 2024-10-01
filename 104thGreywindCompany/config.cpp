@@ -47,14 +47,14 @@ class CfgWeapons
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
+	class JA_104th_Base_Clone_Uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
 	class SWLB_clone_rangefinder;
 	class SWLB_CEE_P1_rangefinder;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -65,9 +65,10 @@ class CfgWeapons
 	class SWLB_clone_basic_armor;
 	class UniformItem;
 
-	class JA_Greywind_P2_Bolt_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_Greywind_P2_Bolt_ARF_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -75,10 +76,11 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Bolt)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGreywindCompany\data\Textures\Vilkas_ARF_Bolt_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Greywind_P2_Bolt_ARF_Uniform : SWLB_clone_uniform
+	class JA_Greywind_P2_Bolt_ARF_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper ARF armor (Bolt)";
 		hiddenSelections[] =
@@ -100,9 +102,10 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_Greywind_P2_Dingo_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_Greywind_P2_Dingo_ARF_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -110,10 +113,11 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Dingo)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGreywindCompany\data\Textures\Vilkas_ARF_Dingo_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Greywind_P2_Dingo_ARF_Uniform : SWLB_clone_uniform
+	class JA_Greywind_P2_Dingo_ARF_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper ARF armor (Dingo)";
 		hiddenSelections[] =
@@ -135,9 +139,10 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_Greywind_P2_Mouse_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_Greywind_P2_Mouse_ARF_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -145,10 +150,11 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Mouse)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGreywindCompany\data\Textures\Vilkas_ARF_Mouse_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Greywind_P2_Mouse_ARF_Uniform : SWLB_clone_uniform
+	class JA_Greywind_P2_Mouse_ARF_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper ARF armor (Mouse)";
 		hiddenSelections[] =
@@ -170,9 +176,10 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_Greywind_P2_Vilkas_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_Greywind_P2_Vilkas_ARF_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -180,10 +187,11 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Vilkas)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thGreywindCompany\data\Textures\Vilkas_ARF_Vilkas_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Greywind_P2_Vilkas_ARF_Uniform : SWLB_clone_uniform
+	class JA_Greywind_P2_Vilkas_ARF_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper ARF armor (Vilkas)";
 		hiddenSelections[] =

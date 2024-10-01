@@ -84,7 +84,7 @@ class CfgWeapons
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -99,6 +99,7 @@ class CfgWeapons
 	class VestItem;
 	class JA_104th_Base_ARC_Uniform : SWLB_clone_uniform
 	{
+		scope = 0;
 		class ItemInfo: UniformItem
 		{
 			class HitpointsProtectionInfo
@@ -175,6 +176,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Angel)";
 		hiddenSelections[] =
@@ -198,6 +200,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Sigil)";
 		hiddenSelections[] =
@@ -221,6 +224,7 @@ class CfgWeapons
 	{
 		author = "Ice";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Crowbi)";
 		hiddenSelections[] =
@@ -244,6 +248,7 @@ class CfgWeapons
 	{
 		author = "Ice";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Drifter)";
 		hiddenSelections[] =
@@ -267,6 +272,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Frosty)";
 		hiddenSelections[] =
@@ -291,6 +297,7 @@ class CfgWeapons
 	{
 		author = "Jango's Finest";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (104th Hunter)";
 		hiddenSelections[] =
@@ -317,6 +324,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Loner)";
 		hiddenSelections[] =
@@ -340,6 +348,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Spectre)";
 		hiddenSelections[] =
@@ -365,6 +374,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Vision)";
 		hiddenSelections[] =

@@ -75,13 +75,11 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class ItemInfo;
-	class SWLB_clone_AB_helmet
-	{
-		class ItemInfo;
-	};
+	class SWLB_clone_AB_helmet;
+	class HeadgearItem;
 	class JA_104th_AB_Helmet : SWLB_clone_AB_Helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -99,6 +97,7 @@ class CfgWeapons
 	class JA_104th_Red_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -109,6 +108,7 @@ class CfgWeapons
 	class JA_104th_AB_Base_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -119,6 +119,7 @@ class CfgWeapons
 	class JA_104th_AB_Medic_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -129,6 +130,7 @@ class CfgWeapons
 	class JA_104th_Raptor_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -139,6 +141,7 @@ class CfgWeapons
 	class JA_104th_Dak_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -149,6 +152,7 @@ class CfgWeapons
 	class JA_104th_Clutch_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -159,6 +163,7 @@ class CfgWeapons
 	class JA_104th_Garm_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -169,6 +174,7 @@ class CfgWeapons
 	class JA_104th_Axel_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Ice";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -179,6 +185,7 @@ class CfgWeapons
 	class JA_104th_Osiris_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -189,6 +196,7 @@ class CfgWeapons
 	class JA_104th_Magnum_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -199,6 +207,7 @@ class CfgWeapons
 	class JA_104th_Sixes_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -209,6 +218,7 @@ class CfgWeapons
 	class JA_104th_Cyan_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -219,6 +229,7 @@ class CfgWeapons
 	class JA_104th_Azure_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -229,6 +240,7 @@ class CfgWeapons
 	class JA_104th_Kage_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -239,6 +251,7 @@ class CfgWeapons
 	class JA_104th_Kaleck_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -249,6 +262,7 @@ class CfgWeapons
 	class JA_104th_Soul_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -259,6 +273,7 @@ class CfgWeapons
 	class JA_104th_Trustful_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -269,6 +284,7 @@ class CfgWeapons
 	class JA_104th_Stache_Helmet : JA_104th_AB_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;

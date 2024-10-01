@@ -72,7 +72,7 @@ class CfgWeapons
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -94,6 +94,8 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -105,7 +107,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_Pauldron_and_Kama.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -153,6 +155,8 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th Angel)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -164,7 +168,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Angel_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Angel_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -212,6 +216,8 @@ class CfgWeapons
 	{
 		author = "Ice";
 		displayName = "Clone ARC Trooper Vest (104th Crowbi)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -223,7 +229,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Crowbi_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Crowbi_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -271,6 +277,8 @@ class CfgWeapons
 	{
 		author = "Ice";
 		displayName = "Clone ARC Trooper Vest (104th Drifter)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -282,7 +290,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -330,6 +338,8 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th Frosty)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -341,7 +351,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Frosty_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Frosty_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -389,6 +399,8 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 	{
 		author = "Ice";
 		displayName = "Clone ARC Trooper Vest (104th Hunter)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -400,7 +412,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -448,6 +460,8 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th Sigil)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -459,7 +473,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Sigil_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Sigil_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -507,6 +521,8 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th Spectre)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -518,7 +534,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Spectre_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Spectre_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -566,6 +582,8 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th Loner)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -577,7 +595,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Loner_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Loner_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -625,6 +643,8 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th Vision)";
+		scope = 2;
+		scopeArsenal = 2;
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 			{
@@ -636,7 +656,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Vision_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Vision_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo : VestItem
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";

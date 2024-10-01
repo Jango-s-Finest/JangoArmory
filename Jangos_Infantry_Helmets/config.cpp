@@ -93,30 +93,16 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class ItemInfo;
-	class ls_gar_engineer_helmet
-	{
-		class ItemInfo;
-	};
-	class SWLB_clone_P1_2_helmet
-	{
-		class ItemInfo;
-	};
-	class SWLB_clone_P2_Helmet
-	{
-		class ItemInfo;
-	};
-	class SWLB_P2_SpecOps_Helmet
-	{
-		class ItemInfo;
-	};
-	class ls_gar_barc_helmet
-	{
-		class ItemInfo;
-	};
+	class ls_gar_engineer_helmet;
+	class SWLB_clone_P1_2_helmet;
+	class SWLB_clone_P2_Helmet;
+	class SWLB_P2_SpecOps_Helmet;
+	class ls_gar_barc_helmet;
+	class HeadgearItem;
 
 	class JA_104th_Engineer_Helmet : ls_gar_engineer_helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -132,7 +118,7 @@ class CfgWeapons
 	};
 	class JA_104th_clone_P1_2_Helmet : SWLB_clone_P1_2_helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -148,7 +134,7 @@ class CfgWeapons
 	};
 	class JA_104th_clone_P2_Helmet : SWLB_clone_P2_Helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -164,7 +150,7 @@ class CfgWeapons
 	};
 	class JA_104th_SpecOps_Helmet : SWLB_P2_SpecOps_Helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -180,7 +166,7 @@ class CfgWeapons
 	};
 	class JA_104th_barc_Helmet : ls_gar_barc_helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -198,16 +184,17 @@ class CfgWeapons
 	class JA_104th_Banker_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";
-		hiddenSelections[] = {"camo1"};															// don't change this
 		displayname = "Clone Trooper P2 Helmet (104th Banker)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Banker_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Bomb_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -218,6 +205,7 @@ class CfgWeapons
 	class JA_104th_Blood_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -228,6 +216,7 @@ class CfgWeapons
 	class JA_104th_Byte_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -238,6 +227,7 @@ class CfgWeapons
 	class JA_104th_Bulky_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -248,6 +238,7 @@ class CfgWeapons
 	class JA_104th_Badger_Helmet : JA_104th_SpecOps_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -258,6 +249,7 @@ class CfgWeapons
 	class JA_104th_Carmine_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -272,6 +264,7 @@ class CfgWeapons
 	class JA_104th_Calvin_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -285,6 +278,7 @@ class CfgWeapons
 	class JA_104th_Chills_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -299,6 +293,7 @@ class CfgWeapons
 	class JA_104th_Crash_Helmet : JA_104th_SpecOps_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -309,6 +304,7 @@ class CfgWeapons
 	class JA_104th_Death_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -319,6 +315,7 @@ class CfgWeapons
 	class JA_104th_Dart_Helmet : JA_104th_Engineer_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -336,6 +333,7 @@ class CfgWeapons
 	class JA_104th_Dragan_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -346,6 +344,7 @@ class CfgWeapons
 	class JA_104th_Ed_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -356,6 +355,7 @@ class CfgWeapons
 	class JA_104th_Gravity_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -366,6 +366,7 @@ class CfgWeapons
 	class JA_104th_Galahad_Helmet : JA_104th_barc_Helmet // BARC HELMET DON'T USE AS P2 BASE
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -379,6 +380,7 @@ class CfgWeapons
 	class JA_104th_Glitch_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -389,6 +391,7 @@ class CfgWeapons
 	class JA_104th_Ghost_Helmet : JA_104th_SpecOps_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -399,6 +402,7 @@ class CfgWeapons
 	class JA_104th_Hound_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Cyan";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -409,6 +413,7 @@ class CfgWeapons
 	class JA_104th_Knightfall_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -419,6 +424,7 @@ class CfgWeapons
 	class JA_104th_Kyo_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -431,6 +437,7 @@ class CfgWeapons
 	class JA_104th_Mad_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -441,6 +448,7 @@ class CfgWeapons
 	class JA_104th_Mower_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -451,6 +459,7 @@ class CfgWeapons
 	class JA_104th_Paraso_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -461,6 +470,7 @@ class CfgWeapons
 	class JA_104th_Pretz_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -471,6 +481,7 @@ class CfgWeapons
 	class JA_104th_Pulse_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -486,6 +497,7 @@ class CfgWeapons
 	class JA_104th_Red_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Cyan";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";
@@ -501,6 +513,7 @@ class CfgWeapons
 	class JA_104th_Reaper_Helmet : JA_104th_Engineer_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -518,6 +531,7 @@ class CfgWeapons
 	class JA_104th_Scurvy_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -528,6 +542,7 @@ class CfgWeapons
 	class JA_104th_Skav_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -538,6 +553,7 @@ class CfgWeapons
 	class JA_104th_Spirit_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -548,6 +564,7 @@ class CfgWeapons
 	class JA_104th_Irish_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -558,6 +575,7 @@ class CfgWeapons
 	class JA_104th_Knockout_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -568,6 +586,7 @@ class CfgWeapons
 	class JA_104th_Talisman_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -583,6 +602,7 @@ class CfgWeapons
 	class JA_104th_Tiger_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -593,6 +613,7 @@ class CfgWeapons
 	class JA_104th_Tinkle_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -608,6 +629,7 @@ class CfgWeapons
 	class JA_104th_Tusk_Helmet : JA_104th_clone_P1_2_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -618,6 +640,7 @@ class CfgWeapons
 	class JA_104th_Test_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -633,6 +656,7 @@ class CfgWeapons
 	class JA_104th_Vertigo_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -643,6 +667,7 @@ class CfgWeapons
 	class JA_104th_Walker_Helmet : JA_104th_Engineer_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -660,6 +685,7 @@ class CfgWeapons
 	class JA_104th_Welty_Helmet : JA_104th_clone_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -670,6 +696,7 @@ class CfgWeapons
 	class JA_104th_Xan_Helmet : JA_104th_SpecOps_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;

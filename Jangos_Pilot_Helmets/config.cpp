@@ -63,14 +63,12 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class ItemInfo;
-	class SWLB_Clone_Pilot_P2_Helmet
-	{
-		class ItemInfo;
-	};
+	class SWLB_Clone_Pilot_P2_Helmet;
+	class HeadgearItem;
 
 	class JA_104th_Pilot_P2_Helmet : SWLB_Clone_Pilot_P2_Helmet
 	{
-		class ItemInfo : ItemInfo
+		class ItemInfo : HeadgearItem
 		{
 			class HitpointsProtectionInfo
 			{
@@ -88,6 +86,7 @@ class CfgWeapons
 	class JA_104th_Bail_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -98,6 +97,7 @@ class CfgWeapons
 	class JA_104th_Beef_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -108,6 +108,7 @@ class CfgWeapons
 	class JA_104th_Haze_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -118,6 +119,7 @@ class CfgWeapons
 	class JA_104th_Varelli_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -128,6 +130,7 @@ class CfgWeapons
 	class JA_104th_OD_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -138,6 +141,7 @@ class CfgWeapons
 	class JA_104th_Cherryy_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Fish";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -148,6 +152,7 @@ class CfgWeapons
 	class JA_104th_Fish_Pilot_Helmet : JA_104th_Pilot_P2_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;

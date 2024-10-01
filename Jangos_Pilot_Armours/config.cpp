@@ -72,14 +72,14 @@ class CfgWeapons
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
+	class JA_104th_Base_Clone_Uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
 	class SWLB_CEE_Airborne_Officer;
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -93,10 +93,11 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
-	class JA_104th_Bail_Uniform : SWLB_clone_uniform // TEXTURE PATH UPD + UNIT
+	class JA_104th_Bail_Uniform : JA_104th_Base_Clone_Uniform // TEXTURE PATH UPD + UNIT
 	{
 		author = "Jango's Finest";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (104th Bail)";
 		hiddenSelections[] =
@@ -118,10 +119,11 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Beef_Uniform : SWLB_clone_uniform
+	class JA_104th_Beef_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Beef)";
 		hiddenSelections[] =
@@ -141,10 +143,11 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Haze_Uniform : SWLB_clone_uniform 
+	class JA_104th_Haze_Uniform : JA_104th_Base_Clone_Uniform 
 	{
 		author = "Jango's Finest";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (104th Haze)";
 		hiddenSelections[] =
@@ -168,10 +171,11 @@ class CfgWeapons
 	};
 
 
-	class JA_104th_Varelli_Uniform : SWLB_clone_uniform
+	class JA_104th_Varelli_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (104th Varelli)";
 		hiddenSelections[] =
@@ -194,10 +198,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_OD_Uniform : SWLB_clone_uniform
+	class JA_104th_OD_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Fish";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (104th OD)";
 		hiddenSelections[] =
@@ -220,10 +225,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_Cherryy_Uniform : SWLB_clone_uniform
+	class JA_104th_Cherryy_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Fish";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (104th Cherryy)";
 		hiddenSelections[] =
@@ -246,10 +252,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_Fish_Uniform : SWLB_clone_uniform
+	class JA_104th_Fish_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (104th Fish)";
 		hiddenSelections[] =

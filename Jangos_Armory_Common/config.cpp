@@ -101,11 +101,11 @@ class CfgWeapons
     class ItemInfo;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
+	class JA_104th_Base_Clone_Uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_CEE_Recon_Lieutenant;
@@ -123,7 +123,8 @@ class CfgWeapons
     class SWLB_clone_airborne_armor;
     class JA_104_Force_Recon_NCO: SWLB_clone_airborne_armor
     {
-       class ItemInfo: VestItem
+		scope = 0;
+       	class ItemInfo: VestItem
         {
             vestType = "Rebreather";
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -171,6 +172,7 @@ class CfgWeapons
 	class JA_LGC_Quick_Helmet : SWLB_clone_P2_Helmet // Legacy Quick Set
 	{
 		author = "Tundra";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -178,10 +180,11 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (Quick)";								  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\Textures\104_LGC_Quick_P2_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_LGC_Quick_Uniform : SWLB_clone_uniform
+	class JA_LGC_Quick_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Quick)";
 		hiddenSelections[] =
@@ -204,6 +207,7 @@ class CfgWeapons
 	class JA_332nd_Chich_Helmet : SWLB_clone_P2_Helmet // Legacy Chich Set
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
@@ -211,10 +215,11 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (332nd Chich)";							// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\Textures\332nd_Chich_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_332nd_Chich_Uniform : SWLB_clone_uniform
+	class JA_332nd_Chich_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (332nd Chich)";
 		hiddenSelections[] =
@@ -266,7 +271,8 @@ class CfgWeapons
 	class JA_Cadet_Yellow_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Emmet";
-			scopeArsenal = 2;
+			scope = 2;
+		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
@@ -277,7 +283,8 @@ class CfgWeapons
 	class JA_Cadet_Red_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Emmet";
-			scopeArsenal = 2;
+			scope = 2;
+		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
@@ -288,7 +295,8 @@ class CfgWeapons
 	class JA_Cadet_Blue_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Emmet";
-			scopeArsenal = 2;
+			scope = 2;
+		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
@@ -299,7 +307,8 @@ class CfgWeapons
 	class JA_Cadet_Green_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Emmet";
-			scopeArsenal = 2;
+			scope = 2;
+		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = { "camo1" }; // don't change this
@@ -307,10 +316,11 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "Jangos_Armory_Common\data\Textures\Green_P1_Cadet_Helmet.paa" }; // the file path to the texture
 	};
 
-	class JA_Cadet_Yellow1_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Yellow1_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 1)";
 		hiddenSelections[] =
@@ -333,10 +343,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Yellow2_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Yellow2_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 2)";
 		hiddenSelections[] =
@@ -359,10 +370,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Yellow3_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Yellow3_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 3)";
 		hiddenSelections[] =
@@ -385,10 +397,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Yellow4_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Yellow4_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 4)";
 		hiddenSelections[] =
@@ -411,10 +424,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Yellow5_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Yellow5_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Yellow 5)";
 		hiddenSelections[] =
@@ -437,10 +451,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red1_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Red1_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 1)";
 		hiddenSelections[] =
@@ -463,10 +478,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red2_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Red2_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 2)";
 		hiddenSelections[] =
@@ -489,10 +505,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red3_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Red3_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 3)";
 		hiddenSelections[] =
@@ -515,10 +532,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red4_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Red4_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 4)";
 		hiddenSelections[] =
@@ -541,10 +559,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red5_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Red5_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Red 5)";
 		hiddenSelections[] =
@@ -567,10 +586,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue1_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Blue1_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 1)";
 		hiddenSelections[] =
@@ -593,10 +613,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue2_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Blue2_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 2)";
 		hiddenSelections[] =
@@ -619,10 +640,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue3_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Blue3_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 3)";
 		hiddenSelections[] =
@@ -645,10 +667,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue4_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Blue4_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 4)";
 		hiddenSelections[] =
@@ -671,10 +694,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue5_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Blue5_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Blue 5)";
 		hiddenSelections[] =
@@ -697,10 +721,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green1_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Green1_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 1)";
 		hiddenSelections[] =
@@ -723,10 +748,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green2_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Green2_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 2)";
 		hiddenSelections[] =
@@ -749,10 +775,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green3_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Green3_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 3)";
 		hiddenSelections[] =
@@ -775,10 +802,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green4_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Green4_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 4)";
 		hiddenSelections[] =
@@ -801,10 +829,11 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green5_Uniform : SWLB_clone_uniform
+	class JA_Cadet_Green5_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Emmet";
 			scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Cadet Armor (Green 5)";
 		hiddenSelections[] =

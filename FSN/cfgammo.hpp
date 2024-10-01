@@ -91,6 +91,7 @@ class CfgAmmo
 	class FSN_Nuclear_Missile : Missile_AGM_01_F
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		hit = 300;
 		indirectHit = 100;
 		indirectHitRange = 10;
@@ -180,6 +181,7 @@ class CfgAmmo
 	class FSN_Nuclear_Cruise_Missile : ammo_Missile_CruiseBase
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		hit = 300;
 		indirectHit = 100;
 		indirectHitRange = 10;
@@ -299,6 +301,7 @@ class CfgAmmo
 	class FSN_Diamondback_Missile : ammo_Missile_AMRAAM_D
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		
 		proximityExplosionDistance=200;
 		

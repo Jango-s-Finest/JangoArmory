@@ -73,6 +73,7 @@ class CfgWeapons
 	class JA_CIS_B2_Uniform : ls_cis_b2Droid_uniform{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		armor = 10;
 		displayName = "Droid B2";
 	};

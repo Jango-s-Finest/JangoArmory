@@ -97,11 +97,11 @@ class CfgWeapons
 	class InventoryItem_Base_F;
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
+	class JA_104th_Base_Clone_Uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -130,6 +130,7 @@ class CfgWeapons
 	class JA_Howler_SB_Base_Kaleb_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -137,10 +138,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Kaleb - SB)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Kaleb_HelmetSB.paa" }; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Kaleb_Uniform : SWLB_clone_uniform
+	class JA_Howler_SB_Base_Kaleb_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Kaleb - SB)";
 		hiddenSelections[] =
@@ -165,6 +167,7 @@ class CfgWeapons
 	class JA_Howler_SB_Base_NCO_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -172,10 +175,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler NCO - SB)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_NCO_HelmetSB.paa" }; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_NCO_Uniform : SWLB_clone_uniform
+	class JA_Howler_SB_Base_NCO_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler NCO - SB)";
 		hiddenSelections[] =
@@ -200,6 +204,7 @@ class CfgWeapons
 	class JA_Howler_SB_Base_Officer_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -207,10 +212,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Officer - SB)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Officer_HelmetSB.paa" }; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Officer_Uniform : SWLB_clone_uniform
+	class JA_Howler_SB_Base_Officer_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Officer - SB)";
 		hiddenSelections[] =
@@ -235,6 +241,7 @@ class CfgWeapons
 	class JA_Howler_P2_Base_Kaleb_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -242,10 +249,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Kaleb - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Kaleb_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Kaleb_Uniform : SWLB_clone_uniform
+	class JA_Howler_P2_Base_Kaleb_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Kaleb - P2)";
 		hiddenSelections[] =
@@ -270,6 +278,7 @@ class CfgWeapons
 	class JA_Howler_P2_Base_NCO_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -277,10 +286,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler NCO - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_NCO_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_NCO_Uniform : SWLB_clone_uniform
+	class JA_Howler_P2_Base_NCO_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler NCO - P2)";
 		hiddenSelections[] =
@@ -305,6 +315,7 @@ class CfgWeapons
 	class JA_Howler_P2_Base_Officer_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -312,10 +323,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Officer - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Officer_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Officer_Uniform : SWLB_clone_uniform
+	class JA_Howler_P2_Base_Officer_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Officer - P2)";
 		hiddenSelections[] =
@@ -340,6 +352,7 @@ class CfgWeapons
 	class JA_Howler_ME_Base_Kaleb_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -347,10 +360,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Kaleb - ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\helmet_P1_kalebM_-_Kopie.paa" }; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Kaleb_Uniform : SWLB_clone_uniform
+	class JA_Howler_ME_Base_Kaleb_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Kaleb - ME)";
 		hiddenSelections[] =
@@ -375,6 +389,7 @@ class CfgWeapons
 	class JA_Howler_ME_Base_NCO_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -382,10 +397,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler NCO - ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_NCO_HelmetM.paa" }; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_NCO_Uniform : SWLB_clone_uniform
+	class JA_Howler_ME_Base_NCO_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler NCO - ME)";
 		hiddenSelections[] =
@@ -410,6 +426,7 @@ class CfgWeapons
 	class JA_Howler_ME_Base_Officer_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -417,10 +434,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Officer - ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Officer_HelmetM.paa" }; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Officer_Uniform : SWLB_clone_uniform
+	class JA_Howler_ME_Base_Officer_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Officer - ME)";
 		hiddenSelections[] =
@@ -445,6 +463,7 @@ class CfgWeapons
 	class JA_Howler_SB_Base_Paak_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -452,10 +471,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Paak - SB)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Paak_HelmetSB.paa" }; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Paak_Uniform : SWLB_clone_uniform
+	class JA_Howler_SB_Base_Paak_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Paak - SB)";
 		hiddenSelections[] =
@@ -480,6 +500,7 @@ class CfgWeapons
     class JA_Howler_P2_Base_Paak_Helmet : SWLB_clone_P2_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -487,10 +508,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Paak - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Paak_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Paak_Uniform : SWLB_clone_uniform
+	class JA_Howler_P2_Base_Paak_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Paak - P2)";
 		hiddenSelections[] =
@@ -515,6 +537,7 @@ class CfgWeapons
     class JA_Howler_ME_Base_Paak_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -522,10 +545,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Paak - ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Paak_HelmetM.paa" }; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Paak_Uniform : SWLB_clone_uniform
+	class JA_Howler_ME_Base_Paak_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Paak - ME)";
 		hiddenSelections[] =
@@ -550,6 +574,7 @@ class CfgWeapons
 	class JA_Howler_SB_Base_Trooper_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -557,10 +582,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Trooper - SB)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Trooper_HelmetSB.paa" }; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Trooper_Uniform : SWLB_clone_uniform
+	class JA_Howler_SB_Base_Trooper_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Trooper - SB)";
 		hiddenSelections[] =
@@ -585,6 +611,7 @@ class CfgWeapons
     class JA_Howler_P2_Base_Trooper_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -592,10 +619,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Trooper - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Trooper_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Trooper_Uniform : SWLB_clone_uniform
+	class JA_Howler_P2_Base_Trooper_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Trooper - P2)";
 		hiddenSelections[] =
@@ -620,6 +648,7 @@ class CfgWeapons
     class JA_Howler_ME_Base_Trooper_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -627,10 +656,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Trooper - ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Trooper_HelmetM.paa" }; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Trooper_Uniform : SWLB_clone_uniform
+	class JA_Howler_ME_Base_Trooper_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Trooper - ME)";
 		hiddenSelections[] =
@@ -655,6 +685,7 @@ class CfgWeapons
 	class JA_Howler_SB_Base_Medic_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -662,10 +693,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Medic - SB)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Medic_HelmetSB.paa" }; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Medic_Uniform : SWLB_clone_uniform
+	class JA_Howler_SB_Base_Medic_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Medic - SB)";
 		hiddenSelections[] =
@@ -690,6 +722,7 @@ class CfgWeapons
     class JA_Howler_P2_Base_Medic_Helmet : SWLB_clone_AB_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -697,10 +730,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Medic - P2)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Medic_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Medic_Uniform : SWLB_clone_uniform
+	class JA_Howler_P2_Base_Medic_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Medic - P2)";
 		hiddenSelections[] =
@@ -725,6 +759,7 @@ class CfgWeapons
     class JA_Howler_ME_Base_Medic_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -732,10 +767,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Medic - ME)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thHowlerCompany\data\Textures\Howler_Medic_HelmetM.paa" }; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Medic_Uniform : SWLB_clone_uniform
+	class JA_Howler_ME_Base_Medic_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Howler Medic - ME)";
 		hiddenSelections[] =

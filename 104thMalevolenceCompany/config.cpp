@@ -57,11 +57,11 @@ class CfgWeapons
 	class ItemCore;
 	class SWLB_Clone_Pilot_P2_Helmet;
     class SWLB_clone_basic_armor;
-	class SWLB_clone_uniform;
+	class JA_104th_Base_Clone_Uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
+	class JA_104th_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
 	class SWLB_clone_P1_2_helmet;
@@ -98,9 +98,10 @@ class CfgWeapons
 			"SWLB_clones\data\heavy_accessories_co.paa"
 		};
 	};
-	class JA_Malevolence_Base_ARF_Helmet : SWLB_clone_ARF_P1_Helmet
+	class JA_Malevolence_Base_ARF_Helmet : JA_104th_ARF_P1_Helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -108,10 +109,11 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Malevolence)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_ARF_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Malevolence_Base_ARF_Uniform : SWLB_clone_uniform
+	class JA_Malevolence_Base_ARF_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper ARF armor (Malevolence)";
 		hiddenSelections[] =
@@ -136,6 +138,7 @@ class CfgWeapons
 	class JA_Malevolence_Base_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -143,10 +146,11 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Malevolence)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_Trooper_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Malevolence_Base_Uniform : SWLB_clone_uniform
+	class JA_Malevolence_Base_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper armor (Malevolence)";
 		hiddenSelections[] =
@@ -171,6 +175,7 @@ class CfgWeapons
 	class JA_Malevolence_Base_Medic_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
+		scope = 2;
 		scopeArsenal = 2;
         side = 1;
 		grad_slingHelmet_allow = true;
@@ -178,10 +183,11 @@ class CfgWeapons
 		displayname = "Clone Trooper medic Helmet (Malevolence)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thMalevolence\data\Textures\104th_Medic_Helmet.paa" }; // the file path to the texture
 	};
-	class JA_Malevolence_Base_Medic_Uniform : SWLB_clone_uniform
+	class JA_Malevolence_Base_Medic_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Trooper medic armor (Malevolence)";
 		hiddenSelections[] =
@@ -207,6 +213,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		scope = 2;
+		scopeArsenal = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Clone Lightweight Rebreather Vest (Invisible)";
 		hiddenSelections[]=
@@ -310,6 +317,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scope = 2;
+		scopeArsenal = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Malevolence)";
 		hiddenSelectionsTextures[] =

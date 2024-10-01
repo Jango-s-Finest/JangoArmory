@@ -68,7 +68,8 @@ class CfgVehicles
 		mapSize = 1.58;
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\IG_supplyCrate_F.jpg";
 		_generalMacro = "FC_Dropcrate_104th";
-		scope = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		scope = 2;
+		scopeArsenal = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		displayName = "Fishinchips_CfgVehicles_FC_Dropcrate_104th";
 		model = "Dropcrate_FC\dropcrate_DP.p3d";
 		maximumLoad = 4000;
@@ -314,6 +315,7 @@ class CfgMagazines
 	class Pylon_FC_Dropcrate_P_1rnd : VehicleMagazine
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		model = "Dropcrate_FC\crate_proxy.p3d";
 		hardpoints[] = {"B_BOMB_PYLON","B_MISSILE_PYLON","O_BOMB_PYLON","O_MISSILE_PYLON"};
 		pylonWeapon = "FC_Dropcrate_PW1";
@@ -357,6 +359,7 @@ class CfgWeapons
 	class FC_Dropcrate_PW1: weapon_LGBLauncherBase
 	{
 		scope = 2;
+		scopeArsenal = 2;
 		displayName = "Resupply Dropcrate 104TH";
 		displayNameMagazine = "104DC";
 		shortNameMagazine = "104DC";

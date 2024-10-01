@@ -72,13 +72,17 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
     class InventoryItem_Base_F;
+	class ItemInfo;
     class ItemCore;
     class SWLB_Clone_Pilot_P2_Helmet;
     class SWLB_clone_uniform;
+    class JA_104_Force_Recon_NCO;
+    class SWLB_clone_basic_armor;
+    class JA_104th_AB_NCO_Trooper_Armor;
     class SWLB_clone_mc_uniform;
     class SWLB_clone_BARC_helmet;
     class SWLB_clone_AB_helmet;
-    class SWLB_clone_ARF_P1_Helmet;
+    class JA_104th_ARF_P1_Helmet;
     class SWLB_clone_P15_Helmet;
     class SWLB_clone_P1_helmet;
     class SWLB_clone_P1_2_helmet;
@@ -94,20 +98,21 @@ class CfgWeapons
 
     // Inheritance for vests
     // Makes making each vest a rebreather easier
-    class ItemInfo;
-    class SWLB_clone_basic_armor;
-
     class SWLB_clone_airborne_armor;
     class SWLB_clone_kama_armor;
     class SWLB_clone_medic_armor;
-    class JA_104th_AB_NCO_Trooper_Armor;
-    class JA_104_Force_Recon_NCO;
+    class SWLB_clone_airborne_nco_armor;
+    class SWLB_CEE_Airborne_Officer;
+    class SWLB_CEE_Force_Recon_NCO;
     class SWLB_CEE_Officer_Tactical;
-   class SWLB_CEE_Recon_Lieutenant;
+    class SWLB_CEE_Recon_Lieutenant;
     class ls_blueforVest_base;
+    class ls_gar_airborneOfficer_vest;
 
     class SWLB_clone_officer_armor;
     class SWLB_clone_commander_armor;
+    class SWLB_clone_arc_armor;
+    class SWLB_CEE_Lightweight_Rebreather;
 
     class JA_104th_Vest : SWLB_CEE_Recon_Lieutenant
     {
@@ -159,17 +164,24 @@ class CfgWeapons
     {
         author = "Tundra";
         displayName = "Clone Trooper Kama (104th)";
+        model = "\SWLB_clones\SWLB_clone_kama_armor.p3d";
         hiddenSelections[] =
         {
-            "camo1"
+            "camo1","rank"
 
         };
         hiddenSelectionsTextures[] =
         {
-            "Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa"
+            "Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa",""
         };
         class ItemInfo: VestItem
         {
+            uniformModel = "\SWLB_clones\SWLB_clone_kama_armor.p3d";          
+            hiddenSelections[] =
+            {
+                "camo1","rank"
+
+            };  
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -206,7 +218,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa"};
-        class ItemInfo : ItemInfo
+        class ItemInfo : VestItem
         {
             vestType = "Rebreather";
 
@@ -244,7 +256,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Infantry_Vests\data\Textures\104th_Pauldron_and_Kama.paa"};
-        class ItemInfo : ItemInfo
+        class ItemInfo : VestItem
         {
             vestType = "Rebreather";
 
@@ -282,7 +294,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Infantry_Vests\data\Textures\104th_Accessories_Heavy.paa"};
-        class ItemInfo : ItemInfo
+        class ItemInfo : VestItem
         {
             vestType = "Rebreather";
 
@@ -342,7 +354,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Infantry_Vests\data\Textures\104th_Accessories_Heavy_ME.paa"};
-        class ItemInfo : ItemInfo
+        class ItemInfo : VestItem
         {
             vestType = "Rebreather";
 
@@ -376,12 +388,12 @@ class CfgWeapons
         displayName = "Clone Trooper Kama (104th Welty)";
         hiddenSelections[] =
         {
-            "camo1"
+            "camo1","rank"
 
         };
         hiddenSelectionsTextures[] =
         {
-            "Jangos_Infantry_Vests\data\Textures\104th_P2_Welty_Kama.paa"
+            "Jangos_Infantry_Vests\data\Textures\104th_P2_Welty_Kama.paa",""
         };
     };
     class JA_104th_Death_Kama : SWLB_CEE_Officer_Tactical
@@ -396,7 +408,7 @@ class CfgWeapons
             {
                 "Jangos_Infantry_Vests\data\Textures\104th_P2_Death_Kama.paa", // Kama
                 "SWLB_clones\data\light_accessories_co.paa"};
-        class ItemInfo : ItemInfo
+        class ItemInfo : VestItem
         {
             vestType = "Rebreather";
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
