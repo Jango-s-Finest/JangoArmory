@@ -106,9 +106,81 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
-	
+	class JA_104th_Base_ARF_Uniform : SWLB_clone_uniform
+	{
+		class ItemInfo: UniformItem
+		{
+			class HitpointsProtectionInfo
+			{
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				
+				class chest
+				{
+					hitpointName = "HitChest";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
 	// Base
-	class JA_104th_ARF_Uniform : SWLB_clone_uniform
+	class JA_104th_ARF_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -131,7 +203,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_ARF_Desert_Uniform : SWLB_clone_uniform
+	class JA_104th_ARF_Desert_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -155,7 +227,7 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_ARF_Jungle_Uniform : SWLB_clone_uniform
+	class JA_104th_ARF_Jungle_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -179,7 +251,7 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_ARF_Urban_Uniform : SWLB_clone_uniform
+	class JA_104th_ARF_Urban_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -202,7 +274,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_ARF_Medic_Uniform : SWLB_clone_uniform
+	class JA_104th_ARF_Medic_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -226,7 +298,7 @@ class CfgWeapons
 		};
 	};
 	// Customs
-	class JA_104th_Achilles_Uniform : SWLB_clone_uniform
+	class JA_104th_Achilles_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -249,7 +321,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Beans_Uniform : SWLB_clone_uniform
+	class JA_104th_Beans_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Ice";
 		scope = 2;
@@ -272,7 +344,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Fire_Uniform : SWLB_clone_uniform
+	class JA_104th_Fire_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -295,7 +367,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_IQ_Uniform : SWLB_clone_uniform
+	class JA_104th_IQ_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -318,7 +390,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Unix_Uniform : SWLB_clone_uniform
+	class JA_104th_Unix_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -341,7 +413,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Woods_Uniform : SWLB_clone_uniform
+	class JA_104th_Woods_Uniform : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;

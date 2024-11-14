@@ -86,34 +86,9 @@ class CfgWeapons
     // Inheritance for vests
     // Makes making each vest a rebreather easier
     class SWLB_clone_basic_armor;
-    class SWLB_clone_airborne_armor: SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_clone_airborne_nco_armor: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Airborne_Officer: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Force_Recon_NCO: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    class SWLB_CEE_Officer_Tactical: SWLB_clone_airborne_armor
-    {
-        class ItemInfo;
-    };
-    
-    class ls_blueforVest_base;
-    class ls_gar_airborneOfficer_vest: ls_blueforVest_base
-    {
-        class ItemInfo;
-    };
+    class JA_104th_Clone_Base_armor;
 
-    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    class SWLB_clone_officer_armor: JA_104th_Clone_Base_armor
     {
         class ItemInfo;
     };
@@ -125,7 +100,7 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class SWLB_clone_kama_armor: SWLB_clone_basic_armor
+    class SWLB_clone_kama_armor: JA_104th_Clone_Base_armor
     {
         class ItemInfo;
     };
@@ -154,12 +129,6 @@ class CfgWeapons
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -172,6 +141,26 @@ class CfgWeapons
 					armor = 4;
 					passThrough = 0.3;
 				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 			};
 		};
 	};
@@ -199,12 +188,26 @@ class CfgWeapons
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -244,12 +247,26 @@ class CfgWeapons
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -289,12 +306,26 @@ class CfgWeapons
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -334,12 +365,26 @@ class CfgWeapons
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -379,12 +424,26 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -424,12 +483,26 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -469,12 +542,26 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -514,12 +601,26 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
@@ -559,12 +660,26 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			mass = 100;
 			class HitpointsProtectionInfo
 			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
 				class Legs
 				{
 					hitpointName = "HitLegs";
