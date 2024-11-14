@@ -10,6 +10,7 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {
 			"JA_104th_AB_Medic",
+			"JA_104th_Azure",
 			"JA_104th_Carmine",
 			"JA_104th_Clutch",
 			"JA_104th_Dak",
@@ -28,6 +29,7 @@ class CfgPatches
 		};
 		weapons[] = {
 			"JA_104th_AB_Medic_Uniform",
+			"JA_104th_Azure_Uniform",
 			"JA_104th_Carmine_Uniform",
 			"JA_104th_Clutch_Uniform",
 			"JA_104th_Osiris_Uniform",
@@ -135,6 +137,29 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_AB_Medic";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Azure_Uniform : SWLB_clone_uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Azure)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Azure_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Azure_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Azure";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -522,6 +547,25 @@ class CfgVehicles
 		};
 		linkedItems[] = { JA_104th_AB_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_AB_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Azure : SWLB_clone_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        side = 1;
+		displayName = "104th Azure";
+		uniformClass = "JA_104th_Azure_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Azure_Upper.paa",
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Azure_Lower.paa"
+		};
+		linkedItems[] = { JA_104th_Azure_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Azure_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Magnum : SWLB_clone_marshal_commander_base_P2
 	{

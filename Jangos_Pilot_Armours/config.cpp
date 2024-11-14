@@ -13,14 +13,18 @@ class CfgPatches
 			"JA_104th_Beef",
 			"JA_104th_Haze",
 			"JA_104th_Varelli",
-			"JA_104th_Fish"
+			"JA_104th_Fish",
+			"JA_104th_OD",
+			"JA_104th_Cherryy"
 		};
 		weapons[] = {
 			"JA_104th_Bail_Uniform",
 			"JA_104th_Beef_Uniform",
 			"JA_104th_Haze_Uniform",
 			"JA_104th_Varelli_Uniform",
-			"JA_104th_Fish_Uniform"
+			"JA_104th_Fish_Uniform",
+			"JA_104th_OD_Uniform",
+			"JA_104th_Cherryy_Uniform"
 		};
 	};
 };
@@ -195,6 +199,59 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+
+	class JA_104th_OD_Uniform : SWLB_clone_uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th OD)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Pilot_Armours\data\Textures\104th_Pilot_OD_Upper.paa",
+			"Jangos_Pilot_Armours\data\Textures\104th_Pilot_OD_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_OD";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_104th_Cherryy_Uniform : SWLB_clone_uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th Cherryy)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Cherryy_Upper.paa",
+			"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Cherryy_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Cherryy";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
 	class JA_104th_Fish_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -300,6 +357,38 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Varelli_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_Varelli_Lower.paa"};
 		linkedItems[] = { JA_104th_Varelli_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Varelli_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_OD : SWLB_clone_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_OD_Uniform";
+		displayName = "104th OD";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_OD_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_OD_Lower.paa"};
+		linkedItems[] = { JA_104th_OD_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_OD_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Cherryy : SWLB_clone_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Cherryy_Uniform";
+		displayName = "104th Cherryy";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Cherryy_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_Cherryy_Lower.paa"};
+		linkedItems[] = { JA_104th_Cherryy_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Cherryy_Pilot_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Fish : SWLB_clone_base_P2
 	{
