@@ -17,13 +17,13 @@ if(isServer)then{
 				_shooter = ((getShotParents _target) select 0);
 				while {(alive _target)} do {
 					_turret doWatch _target;
-					sleep 1;
-					if ((_target distance _turret < _range) && (_target distance _turret > 100) && (!lineIntersects [getPos _turret,getPos _target]) && (random 100 < 70)) then{
-						_turret fireAtTarget[_target,(currentWeapon _turret)];
+					_turret fireAtTarget[_target,(currentWeapon _turret)];
+					sleep 0.2;
+					if ((_target distance _turret < _range) && (_target distance _turret > 100) && (!lineIntersects [getPos _turret,getPos _target]) && (random 100 < 10)) then{
 						_targetBoom createVehicle (getPos _target);
 						"HelicopterExploBig" createVehicle (getPos _target);
 						deleteVehicle _target;
-						sleep 4;
+						sleep 0.2;
 					};
 				};
 				_i = count _incoming+1;
