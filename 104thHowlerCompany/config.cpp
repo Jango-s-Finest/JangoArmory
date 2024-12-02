@@ -799,7 +799,7 @@ class CfgWeapons
 	};
     class JA_Howler_AB_Base_NCO_Armor: SWLB_clone_airborne_nco_armor
     {
-        displayName = "Clone Airborne NCO Vest (Howler)"
+        displayName = "Clone Airborne NCO Vest (Howler)";
         hiddenSelectionsTextures[] =
         {
             "SWLB_clones\data\heavy_accessories_co.paa",               // Bag and Chest Strap

@@ -11,6 +11,7 @@ class CfgPatches
 		units[] = {
 			"JA_104th_AB_Medic",
 			"JA_104th_Azure",
+			"JA_104th_Stache",
 			"JA_104th_Carmine",
 			"JA_104th_Clutch",
 			"JA_104th_Dak",
@@ -30,6 +31,7 @@ class CfgPatches
 		weapons[] = {
 			"JA_104th_AB_Medic_Uniform",
 			"JA_104th_Azure_Uniform",
+			"JA_104th_Stache_Uniform",
 			"JA_104th_Carmine_Uniform",
 			"JA_104th_Clutch_Uniform",
 			"JA_104th_Osiris_Uniform",
@@ -288,6 +290,29 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Stache_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Stache)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Stache_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Stache_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Stache";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Azure_Uniform : JA_104th_Base_AB_Uniform
 	{
 		author = "Fish";
@@ -464,8 +489,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Bulky_Body_Upper.paa",
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Bulky_Body_Lower.paa"};
+				"Jangos_Airborne_Armours\data\Textures\104th_P2_Bulky_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_P2_Bulky_Lower.paa"};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -694,6 +719,25 @@ class CfgVehicles
 		linkedItems[] = { JA_104th_AB_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_AB_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
+	class JA_104th_Stache : SWLB_clone_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        side = 1;
+		displayName = "104th Stache";
+		uniformClass = "JA_104th_Stache_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Stache_Upper.paa",
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Stache_Lower.paa"
+		};
+		linkedItems[] = { JA_104th_Stache_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Stache_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
 	class JA_104th_Azure : SWLB_clone_base_P2
 	{
 		author = "Fish";
@@ -741,7 +785,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Bulky_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Bulky_Lower.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_P2_Bulky_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_P2_Bulky_Lower.paa"};
 		linkedItems[] = {JA_104th_Bulky_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Bulky_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};

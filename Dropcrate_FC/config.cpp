@@ -255,7 +255,7 @@ class CfgAmmo
         trackLead = 0.95;
         maneuvrability = 16;
         maxSpeed = 600;
-        initSpeed = 30
+        initSpeed = 30;
         multiSoundFly[] = {"soundFly1",0.2,"soundFly2",0.2};
         soundFly1[] = {"FC_Locator_fly",db+0, 1};
         soundFly2[] = {"FC_Crate_Fly",db+0, 1};

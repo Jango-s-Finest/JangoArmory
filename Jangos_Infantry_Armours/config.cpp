@@ -661,8 +661,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Upper.paa",
-			"Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Lower.paa"
+			"Jangos_Infantry_Armours\data\Textures\104th_BARC_Galahad_Upper.paa",
+			"Jangos_Infantry_Armours\data\Textures\104th_BARC_Galahad_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -1234,7 +1234,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Lower.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_BARC_Galahad_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_BARC_Galahad_Lower.paa"};
 		linkedItems[] = { JA_104th_Galahad_Helmet,JA_104th_Galahad_Vest,JA_104th_BARC_Galahad_NVG,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Galahad_Helmet,JA_104th_Galahad_Vest,JA_104th_BARC_Galahad_NVG,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};

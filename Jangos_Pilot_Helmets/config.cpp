@@ -16,6 +16,7 @@ class CfgPatches
 			"JA_104th_Haze_Pilot_Helmet",
 			"JA_104th_Varelli_Pilot_Helmet",
 			"JA_104th_Fish_Pilot_Helmet",
+			"JA_104th_Cherryy_Pilot_Helmet_P1",
 			"JA_104th_OD_Pilot_Helmet",
 			"JA_104th_Cherryy_Pilot_Helmet"
 		};
@@ -75,6 +76,7 @@ class CfgWeapons
 	class SWLB_CEE_Force_Recon_NCO;
 	class SWLB_clone_BARC_helmet;
 	class SWLB_clone_AB_helmet;
+	class SWLB_P1_Pilot_Helmet;
 	class SWLB_clone_ARF_P1_Helmet;
 	class SWLB_clone_P15_Helmet;
 	class SWLB_clone_P1_helmet;
@@ -151,6 +153,22 @@ class CfgWeapons
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper Pilot Helmet (104th Cherryy)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Cherryy_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Cherryy_Pilot_Helmet_P1 : SWLB_P1_Pilot_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { 
+			"Camo1",
+			"Camo2" 
+		}; // don't change this
+		displayname = "Clone Trooper Pilot P1 Helmet (104th Cherryy)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { 
+			"Jangos_Pilot_Helmets\data\Textures\104th_P1_Cherryy_Helmet.paa",
+			"Jangos_Pilot_Helmets\data\Textures\104th_P1_Cherryy_Lifesupport.paa" 
+		}; // the file path to the texture
 	};
 	class JA_104th_Fish_Pilot_Helmet : SWLB_Clone_Pilot_P2_Helmet
 	{

@@ -59,6 +59,8 @@ class CfgWeapons
     class InventoryOpticsItem_Base_F;
 	class ItemCore;
 
+    class muzzle_snds_338_black;
+    class JA_104th_stun_muzzle;
 	class Weapon_Base_F;
     class Rifle_Base_F;
     class UGL_F;
@@ -179,7 +181,7 @@ class CfgWeapons
             "this",
             "Stun"
         };
-        class Stun: JA_104th_stun_muzzle
+        class stun: JA_104th_stun_muzzle
         {
             displayName = "High Energy Stun Mode";
             magazines[] =

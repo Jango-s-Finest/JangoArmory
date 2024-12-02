@@ -147,10 +147,6 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class SWLB_CEE_Lightweight_Rebreather : SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
 
     class JA_104th_Vest : SWLB_CEE_Recon_Lieutenant
     {
@@ -438,6 +434,47 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "Jangos_Infantry_Vests\data\Textures\104th_P2_Welty_Kama.paa"
+        };
+        class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class JA_104th_Irish_Kama : SWLB_clone_kama_armor
+    {
+        author = "Fish";
+        displayName = "Clone Trooper Kama (104th Irish)";
+        hiddenSelections[] =
+        {
+            "camo1"
+
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Jangos_Infantry_Vests\data\Textures\104th_P2_Irish_Officer_Accessories.paa"
         };
         class ItemInfo: ItemInfo
         {
@@ -756,7 +793,7 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] = 
             {
-                "Jangos_Infantry_Vests\data\Textures\104th_P2_Galahad_Kama.paa",
+                "Jangos_Infantry_Vests\data\Textures\104th_BARC_Galahad_Officer_Accessories.paa",
                 "SWLB_clones\data\heavy_accessories_co.paa"};
         class ItemInfo: Vestitem
         {

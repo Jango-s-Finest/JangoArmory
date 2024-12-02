@@ -25,6 +25,8 @@ class CfgPatches
 			"JA_104th_Jumppack_CDV",
 			"JA_104th_Jumppack_JT12_Raider",
 			"JA_104th_Jumppack_JT12_Raider_LR",
+			"JA_104th_Jumppack_JT12_Magnum_LR",
+			"JA_104th_Accessories_Heavy_Backpack_Bulky",
 			"JA_104th_Jumppack_JT12_Raider_1",
 			"JA_104th_Jumppack_JT12_Raider_1_LR",
 			"JA_104th_Jumppack_JT12_Raider_2",
@@ -401,6 +403,27 @@ class CfgVehicles
 				""															// RTO
 			};
 	};
+	class JA_104th_Accessories_Heavy_Backpack_Bulky : SWLB_clone_backpack_heavy
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper Heavy backpack (Bulky)";
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Bulky_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Bulky_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Bulky_Backpack.paa", // Heavy
+				"",															// Medic
+				""															// RTO
+			};
+		tf_dialog = "SWLB_clone_rto_radio_dialog" ;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
 	class JA_104th_Accessories_Heavy_Backpack_Cerberus_4 : SWLB_clone_backpack_heavy
 	{
 		author = "Tundra";
@@ -453,7 +476,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_dialog = "SWLB_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
 		tf_range = 25000;
@@ -475,7 +499,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR - NO RECHARGE";
 		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_dialog = "SWLB_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
 		tf_range = 25000;
@@ -501,7 +526,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR";
 		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_dialog = "SWLB_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
 		tf_range = 25000;
@@ -523,7 +549,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Marshal Commander Jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
-		tf_dialog = "SWLB_clone_rto_radio_dialog" tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_dialog = "SWLB_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_hasLRradio = 1;
 		tf_range = 25000;
@@ -556,6 +583,15 @@ class CfgVehicles
 		tf_hasLRradio = 1;
 		tf_range = 40000;
 		tf_subtype = "airborne";
+	};
+	class JA_104th_Jumppack_JT12_Magnum_LR : JA_104th_Jumppack_JT12_LR
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR (Magnum)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Magnum_Jumppack.paa"};
 	};
 	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR
 	{
