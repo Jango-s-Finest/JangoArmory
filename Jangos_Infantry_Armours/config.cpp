@@ -957,7 +957,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Tinkle_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Tinkle_Uniform : JA_104th_Base_Clone_MC_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -966,11 +966,16 @@ class CfgWeapons
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2"};
+				"camo2",
+				"biceps",
+				"rank"};
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Infantry_Armours\data\Textures\104th_P2_Tinkle_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_P2_Tinkle_Lower.paa"};
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Tinkle_Lower.paa",
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Tinkle_Upper.paa",
+				""
+			};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";

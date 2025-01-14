@@ -624,27 +624,24 @@ class CfgWeapons
             };
 		};
 	};
-	class JA_104th_Magnum_Vest : SWLB_clone_airborne_nco_armor
+	class JA_104th_Magnum_Vest : SWLB_CEE_Force_Recon_NCO
 	{
 		author = "Emmet"; 
 		scope = 2;
 		displayName = "Clone Airborne NCO Vest (104th Magnum)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+		hiddenSelections[] = {"camo1","camo2","camo3","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accessories_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accessories_Light.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accessories_Heavy.paa", // Heavy
+				"SWLB_clones\data\light_accessories_co.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accessories_Heavy.paa"  // Heavy
 			};
 		class ItemInfo : ItemInfo
 		{
 			vestType = "Rebreather";
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
 
             class HitpointsProtectionInfo {
                 class Abdomen {

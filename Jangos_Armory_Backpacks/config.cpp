@@ -115,6 +115,7 @@ class CfgVehicles
 	class SWLB_clone_RTO_mini_backpack;
 	class JLTS_Clone_jumppack;
 	class JLTS_Clone_jumppack_JT12_104;
+	class ls_greenfor_journeymanJetpack_backpack;
 	class JLTS_Clone_jumppack_mc;
 	class RD501_JLTS_Clone_jumppack_cdv;
 	class SWLB_clone_arc_backpack;
@@ -519,6 +520,21 @@ class CfgVehicles
 		JLTS_energy[] = {15, 3000};
 		JLTS_recharge = -1;
 	};
+	class JA_104th_Jumppack_JT12_LR_Journeyman : ls_greenfor_journeymanJetpack_backpack
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR - Journeyman";
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "SWLB_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
 	class JA_104th_Jumppack_JT12_LR : JLTS_Clone_jumppack_JT12_104
 	{
 		author = "Dak";
@@ -584,7 +600,7 @@ class CfgVehicles
 		tf_range = 40000;
 		tf_subtype = "airborne";
 	};
-	class JA_104th_Jumppack_JT12_Magnum_LR : JA_104th_Jumppack_JT12_LR
+	class JA_104th_Jumppack_JT12_Magnum_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
 		scope = 2;

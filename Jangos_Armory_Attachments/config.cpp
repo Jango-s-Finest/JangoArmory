@@ -148,7 +148,7 @@ class CfgWeapons
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
 	};
-	class JA_104th_AB_NVG_Magnum: lsd_gar_standard_nvg
+	class JA_104th_AB_NVG_Magnum: lsd_gar_standardSPC_nvg
 	{
 		author = "Tundra";
 		displayName = "Clone AB NVG Visor (104th Magnum)";
@@ -300,7 +300,7 @@ class CfgWeapons
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
 	};
-	class JA_104th_BARC_Galahad_NVG : lsd_gar_standard_nvg
+	class JA_104th_BARC_Galahad_NVG : lsd_gar_standardSPC_nvg
 	{
 		author = "Fish";
 		displayName = "Clone Commander Visor (104th Galahad)";
