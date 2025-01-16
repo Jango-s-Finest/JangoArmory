@@ -243,9 +243,11 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Common\data\Textures\332nd_Chich_CM_Kama.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
 		};
 	};
 	class JA_332nd_Chich_CM_Visor : lsd_gar_p2MarshalCommander_nvg

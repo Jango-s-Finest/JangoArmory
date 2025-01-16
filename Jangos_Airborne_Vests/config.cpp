@@ -131,49 +131,6 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
-	class JA_104th_AB_ME_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest // Fixes the white pauldron issue
-	{
-		author = "Dak";
-		displayName = "Clone Airborne Officer Vest (ME)";
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa",	  // Small "pocket" on left arm
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa",	  // Heavy Vest Bag / Straps
-				"Jangos_Airborne_Vests\data\Textures\104th_ME_Pauldron_and_Kama.paa", // Kama
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"	  /*,    // Unknown, No change seen in-game when changed
-					 "JangosArmory1\data\Textures\104th_ME_Pauldron_and_Kama.paa"*/
-																			  // Pauldron - Currently broken until LS fixes the selections
-																			  // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
-																			  // Leaving it empty makes it appear invisible.
-			};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-		};
-	};
 	class JA_104th_AB_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest
 	{
 		author = "Dak";
@@ -186,98 +143,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\textures\104th_Pauldron_and_Kama.paa", // Kama
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" 
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
 
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-		};
-	};
-	class JA_104th_AB_ME_NCO_Trooper_Armor : SWLB_clone_airborne_nco_armor
-	{
-		author = "Dak";
-		displayName = "Clone Airborne NCO Vest (ME)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy_ME.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_ME_Pauldron_and_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy_ME.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy_ME.paa"  // Heavy
-			};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-		};
-	};
-	class JA_104th_AB_ME_Base_Trooper_Armor : SWLB_clone_airborne_armor
-	{
-		author = "Dak";
-		displayName = "Clone Airborne Trooper Vest (ME)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy_ME.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_ME_Pauldron_and_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy_ME.paa" // Heavy
-			};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -320,9 +190,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -364,9 +236,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_Pauldron_and_Kama.paa",
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -411,9 +285,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104_AB_Axel_Kama.paa",
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" 
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -504,9 +380,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -550,9 +428,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -596,9 +476,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -637,9 +519,11 @@ class CfgWeapons
 				"SWLB_clones\data\light_accessories_co.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accessories_Heavy.paa"  // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
             hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
 
@@ -685,9 +569,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Heavy.paa"  // Heavy
 			};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply100";
 			vestType = "Rebreather";
+
 
             class HitpointsProtectionInfo {
                 class Abdomen {

@@ -793,7 +793,8 @@ class CfgWeapons
 			"SWLB_clones\data\heavy_accessories_co.paa" //Heavy
 		};
 		class ItemInfo: ItemInfo
-        {
+		{
+            containerClass = "Supply100";
             vestType = "Rebreather";
         };
 	};
@@ -808,7 +809,8 @@ class CfgWeapons
             "SWLB_clones\data\heavy_accessories_co.paa"                // NCO Pauldron
         };
         class ItemInfo: ItemInfo
-        {
+		{
+            containerClass = "Supply100";
             vestType = "Rebreather";
         };
     };
@@ -828,7 +830,8 @@ class CfgWeapons
             // Leaving it empty makes it appear invisible.
 		};
 		class ItemInfo: ItemInfo
-        {
+		{
+            containerClass = "Supply100";
             vestType = "Rebreather";
         };
 	};
@@ -846,7 +849,8 @@ class CfgWeapons
 			"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa"
 		};
 		class ItemInfo: ItemInfo
-        {
+		{
+            containerClass = "Supply100";
             vestType = "Rebreather";
         };
 	};

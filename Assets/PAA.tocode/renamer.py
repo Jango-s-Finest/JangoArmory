@@ -5,6 +5,8 @@ files = os.listdir("./Assets/PAA.tocode")
 for file in files:
     oldname = file
     print(oldname)
+    file=file.replace("JA_","")
+    file=file.replace("ja_","")
     file=file.replace("_p2_","_P2_")
     file=file.replace("_ab_","_AB_")
     file=file.replace("_p1_","_P1_")
