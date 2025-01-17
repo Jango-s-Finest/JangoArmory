@@ -50,7 +50,12 @@ class CfgPatches
 			"JA_104th_Backpack_Cerberus_4",
 			"JA_104th_Accessories_Heavy_Backpack_Cerberus_4",
 			"JA_104th_Medic_Backpack_Cerberus_4",
-			"JA_104th_RTO_Backpack_Cerberus_4"
+			"JA_104th_RTO_Backpack_Cerberus_4",
+			"JA_104th_Backpack_ME",
+			"JA_104th_Accessories_Heavy_Backpack_ME",
+			"JA_104th_Medic_Backpack_ME",
+			"JA_104th_RTO_Backpack_ME",
+			"JA_104th_Accessories_Heavy_Backpack_ME"
 		};
 		weapons[] = {
 		};
@@ -474,7 +479,7 @@ class CfgVehicles
 		author = "Tundra";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper backpack (ME)";
+		displayname = "Clone Trooper backpack (104th MLV)";
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Backpack.paa", // don't change this
@@ -488,7 +493,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone Trooper Heavy backpack (ME)";
+		displayname = "Clone Trooper Heavy backpack (104th MLV)";
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Backpack.paa", // don't change this
@@ -502,7 +507,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone Trooper medic backpack (ME)";
+		displayname = "Clone Trooper medic backpack (104th MLV)";
 		maximumLoad = 300;
 		hiddenSelectionsTextures[] =
 			{
@@ -517,7 +522,7 @@ class CfgVehicles
 	{
 		author = "Tundra";
 		scopeCurator = 2;
-		displayname = "Clone Trooper RTO backpack (ME)";
+		displayname = "Clone Trooper RTO backpack (104th MLV)";
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Backpack.paa", // don't change this
