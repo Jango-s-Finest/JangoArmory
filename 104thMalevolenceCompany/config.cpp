@@ -305,7 +305,66 @@ class CfgWeapons
 	};
 
 	// MLV Base Vests
+	class JA_104th_ARC_ME_Vest : SWLB_clone_arc_armor
+	{
+		author = "DAK";
+		displayName = "Clone Trooper ARC Vest (104th MLV)";
+		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
 
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"104thMalevolenceCompany\data\textures\Accessories_ARC.paa",
+			"104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_ARC_Base.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] = {"camo1","camo2"};
+			mass = 100;
+			class HitpointsProtectionInfo
+			{
+				 class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 10;
+					passThrough = 0.3;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 4;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
 	class JA_104th_Vest_ME : SWLB_CEE_Recon_Lieutenant
     {
         author = "Dak";
@@ -364,6 +423,7 @@ class CfgWeapons
                 "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_Company_Base.paa"};
         class ItemInfo: ItemInfo
         {
+            containerClass = "Supply100";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -400,7 +460,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Base.paa"
+            "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_INF_Base.paa"
         };
         class ItemInfo: ItemInfo
 		{
@@ -528,6 +588,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
         {
+            containerClass = "Supply100";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -568,6 +629,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
         {
+            containerClass = "Supply100";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -645,72 +707,23 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_ME_NCO_Medic_Vest : SWLB_CEE_Force_Recon_NCO
+    class JA_104th_ME_NCO_Medic_Vest : SWLB_clone_airborne_nco_armor
     {
         author = "Fish";
         scope = 2;
         displayName = "Clone Trooper NCO Medic Vest (104th MLV)";
-        hiddenSelections[] = {"camo1","camo2","camo3","pauldron"};
-        hiddenSelectionsTextures[] =
-            {
-                "104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_INF_Medic.paa",
-                "104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa" // Heavy
-            };
-        class ItemInfo: ItemInfo
-		{
-            containerClass = "Supply100";
-            vestType = "Rebreather";
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
-            hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
-
-            class HitpointsProtectionInfo
-            {
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 6;
-                    passThrough = 0.3;
-                };
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class JA_104th_ME_Recon_Vest : SWLB_CEE_Force_Recon_NCO
-	{
-		author = "Emmet"; 
-		scope = 2;
-		displayName = "Clone Force Recon Vest (104th MLV MK1)";
-		hiddenSelections[] =
+        hiddenSelections[] =
 			{
 				"camo1",
 				"camo2",
-				"camo3"};
+				"camo3",
+				"camo4"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_INF_Base.paa",
-				"104thMalevolenceCompany\data\Textures\Heavy_Accessories_Trooper_VetRed.paa" // Heavy
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
+				"104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_INF_Medic.paa",
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa"  // Heavy
 			};
 		class ItemInfo: ItemInfo
 		{
@@ -741,12 +754,12 @@ class CfgWeapons
                 };
             };
 		};
-	};
-	class JA_104th_ME_Recon_Vest2 : SWLB_CEE_Force_Recon
+    };
+	class JA_104th_ME_Recon_Vest : SWLB_CEE_Force_Recon //missing straps
 	{
 		author = "Emmet"; 
 		scope = 2;
-		displayName = "Clone Force Recon Vest (104th MLV MK2)";
+		displayName = "Clone Force Recon Vest (104th MLV)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -756,11 +769,14 @@ class CfgWeapons
 				"104thMalevolenceCompany\data\Textures\Heavy_Accessories_Trooper_VetRed.paa", // Heavy
 				"104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa"
 			};
+		model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
 		class ItemInfo: ItemInfo
 		{
 			containerClass = "Supply100";
 			vestType = "Rebreather";
-
+			hiddenSelections[] ={"camo1","camo2"};
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -798,15 +814,15 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] = {
 			"104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa",
-			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa"
+			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"
 		};
 
 		class ItemInfo: ItemInfo
 		{
 			containerClass = "Supply100";
 			vestType = "Rebreather";
-
-
+			hiddenSelections[] = {"camo1","camo2"};
+			uniformModel = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
             class HitpointsProtectionInfo {
                 class Abdomen {
                     hitpointName = "HitAbdomen";
@@ -838,17 +854,18 @@ class CfgWeapons
 		displayName = "Clone Trooper Heavy Vest (104th MLV)";
 		hiddenSelections[] = {"ammo","camo1","camo2","camo3","pauldron"};
 		hiddenSelectionsTextures[] = {
-			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa",
-			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa",
-			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa",
+			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa",
+			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa",
+			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa",
 			"104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa",
-			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa"};
+			"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"};
 
 		class ItemInfo: ItemInfo
 		{
 			containerClass = "Supply100";
 			vestType = "Rebreather";
-
+			hiddenSelections[] = {"ammo","camo1","camo2","camo3","pauldron"};
+			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Heavy_Vest.p3d";
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -874,17 +891,16 @@ class CfgWeapons
             };
 		};
 	};
-	class JA_104th_ME_basic_Vest : SWLB_clone_basic_armor
+	class JA_104th_basic_Vest_ME : SWLB_clone_kama_armor
 	{
 		author = "Emmet"; 
-		scope = 2;
-		displayName = "Clone Trooper Vest (104th)";
-
-		class ItemInfo: ItemInfo
+		displayName = "Clone Trooper Vest (104th / MLV)";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {""};
+        class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
-			vestType = "Rebreather";
-
+            containerClass = "Supply100";
+            vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -908,7 +924,7 @@ class CfgWeapons
                     passThrough = 0.3;
                 };
             };
-		};
+        };
 	};	
 	//Raider Accessories Officer    
 	class JA_104th_AB_ME_NCO_Base_Trooper_Armor : SWLB_clone_airborne_nco_armor
@@ -1157,9 +1173,9 @@ class CfgWeapons
 				"camo4"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thMalevolenceCompany\data\Textures\104th_ Heavy_Accessories_Medic_VetRed.paa", // Heavy
-				"104thMalevolenceCompany\data\Textures\104th_ Officer_Accessories_P1_AB_Medic.paa",
-				"104thMalevolenceCompany\data\Textures\104th_ Heavy_Accessories_Medic_VetRed.paa" // Heavy
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
+				"104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_AB_Medic.paa",
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa" // Heavy
 			};
 		class ItemInfo: ItemInfo
 		{
@@ -1191,16 +1207,16 @@ class CfgWeapons
             };
 		};
 	};
-	class JA_104th_AB_ME_Officer_Trooper_Armor : ls_gar_airborneOfficer_vest // Fixes the white pauldron issue
+	class JA_104th_AB_ME_Officer_Trooper_Armor : SWLB_CEE_Recon_Lieutenant // Fixes the white pauldron issue
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer Vest (104th MLV)";
 		hiddenSelectionsTextures[] =
 			{
-				"104thMalevolenceCompany\data\Textures\104th_ Heavy_Accessories_Trooper_VetRed.paa",	  // Small "pocket" on left arm
-				"104thMalevolenceCompany\data\Textures\104th_ Heavy_Accessories_Trooper_VetRed.paa",	  // Heavy Vest Bag / Straps
-				"104thMalevolenceCompany\data\Textures104th_ Officer_Accessories_P1_Red_AB_Base.paa", // Kama
-				"104thMalevolenceCompany\data\Textures\104th_ Heavy_Accessories_Trooper_VetRed.paa"	  /*,    // Unknown, No change seen in-game when changed
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa",	  // Small "pocket" on left arm
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa",	  // Heavy Vest Bag / Straps
+				"104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Base.paa", // Kama
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"	  /*,    // Unknown, No change seen in-game when changed
 					 "JangosArmory1\data\Textures104th_ Officer_Accessories_P1_Red_AB_Base.paa"*/
 																			  // Pauldron - Currently broken until LS fixes the selections
 																			  // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
