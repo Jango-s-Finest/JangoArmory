@@ -9,6 +9,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Base",
 			"JA_104th_Bail",
 			"JA_104th_Beef",
 			"JA_104th_Haze",
@@ -18,6 +19,7 @@ class CfgPatches
 			"JA_104th_Cherryy"
 		};
 		weapons[] = {
+			"JA_104th_Base_Uniform",
 			"JA_104th_Bail_Uniform",
 			"JA_104th_Beef_Uniform",
 			"JA_104th_Haze_Uniform",
@@ -99,6 +101,32 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
+
+	class JA_104th_Base_Uniform : SWLB_clone_uniform 
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper armor (104th [1C] Pilot)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Pilot_Armours\data\Textures\JA_104th_P2_1C_Aviation_Upper.paa",
+			"Jangos_Pilot_Armours\data\Textures\JA_104th_P2_1C_Aviation_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Base";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Bail_Uniform : SWLB_clone_uniform // TEXTURE PATH UPD + UNIT
 	{
 		author = "Jango's Finest";
@@ -294,6 +322,22 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
 
+	class JA_104th_Base : SWLB_clone_base_P2
+	{
+		author = "Cherryy";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Base_Uniform";
+		displayName = "104th Base Pilot";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\JA_104th_P2_1C_Aviation_Upper.paa", "Jangos_Pilot_Armours\data\Textures\JA_104th_P2_1C_Aviation_Lower.paa"};
+		linkedItems[] = { JA_104th_Base_Pilot_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Base_Pilot_Helmet,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
 	class JA_104th_Bail : SWLB_clone_base_P2
 	{
 		author = "Tundra";
