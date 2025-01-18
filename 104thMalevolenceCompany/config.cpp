@@ -96,12 +96,7 @@ class CfgWeapons
 	class SWLB_CEE_Recon_Lieutenant;
 	class SWLB_clone_airborne_armor;
 	class ls_gar_airborneOfficer_vest;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_medic_armor;
-	class SWLB_CEE_Force_Recon_NCO;
-	class SWLB_CEE_Force_Recon;
-	class SWLB_CEE_Heavy_Vest;
-	class SWLB_clone_grenadier_armor;
+	class JA_104th_Clone_Base_armor;
 	class SWLB_clone_basic_armor;
 	class UniformItem;
 	class VestItem;
@@ -110,8 +105,35 @@ class CfgWeapons
     // Inheritance for vests
     // Makes making each vest a rebreather easier
     class ItemInfo;
-    class SWLB_clone_officer_armor;
+	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
     class SWLB_clone_arc_armor: SWLB_clone_officer_armor
+    {
+        class ItemInfo;
+    };
+	class SWLB_clone_kama_armor: JA_104th_Clone_Base_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_medic_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Force_Recon_NCO : SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Force_Recon : SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+    class SWLB_CEE_Heavy_Vest : SWLB_clone_airborne_armor
+    {
+        class ItemInfo;
+    };
+	class SWLB_clone_grenadier_armor : SWLB_clone_basic_armor
     {
         class ItemInfo;
     };
@@ -310,7 +332,7 @@ class CfgWeapons
 
 	// MLV Base Vests
 
-	    class JA_104th_Vest_ME : SWLB_CEE_Recon_Lieutenant
+	class JA_104th_Vest_ME : SWLB_CEE_Recon_Lieutenant
     {
         author = "Dak";
         displayName = "Clone Trooper Captain Vest (104th MLV)";
@@ -875,6 +897,42 @@ class CfgWeapons
             };
 		};
 	};
+	class JA_104th_ME_basic_Vest : SWLB_clone_basic_armor
+	{
+		author = "Emmet"; 
+		scope = 2;
+		displayName = "Clone Trooper Vest (104th)";
+
+		class ItemInfo: ItemInfo
+		{
+			containerClass = "Supply100";
+			vestType = "Rebreather";
+
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+		};
+	};	
 	//Raider Accessories Officer    
 	class JA_104th_AB_ME_NCO_Base_Trooper_Armor : SWLB_clone_airborne_nco_armor
 	{
