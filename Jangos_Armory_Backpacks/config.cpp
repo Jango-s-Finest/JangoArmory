@@ -473,7 +473,6 @@ class CfgVehicles
 				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa"	// RTO
 			};
 	};
-
 	class JA_104th_Backpack_ME : SWLB_clone_backpack
 	{
 		author = "Tundra";

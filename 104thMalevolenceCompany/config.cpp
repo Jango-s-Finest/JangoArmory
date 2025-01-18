@@ -23,7 +23,6 @@ class CfgPatches
 			
 			"JA_104th_Malevolence_Base_Uniform",
 			"JA_104th_Malevolence_Base_Medic_Uniform",
-			"JA_104th_Malevolence_Base_ARF_Uniform",
 			"JA_104th_Invisible_Base_Rebreather_Uniform",
 
 			"JA_104th_ME_Vest",
@@ -241,31 +240,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	}
-	class JA_104th_Malevolence_Base_ARF_Uniform : SWLB_clone_uniform
-	{
-		author = "Dak";
-		scope = 2;
-		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper ARF armor (104th MLV)";
-		hiddenSelections[] =
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_Upper.paa",
-			"104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_Lower.paa"
-		};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Base_Malevolence_ARF";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
 	class JA_104th_Invisible_Base_Rebreather_Uniform : SWLB_CEE_Lightweight_Rebreather
 	{
 		author = "Dak";
@@ -528,7 +502,8 @@ class CfgWeapons
                 "camo1"};
         hiddenSelectionsTextures[] =
             {
-                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa"};
+                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa"
+            };
         class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
@@ -563,10 +538,12 @@ class CfgWeapons
         displayName = "Clone Trooper Officer Vest (104th MLV)";
         hiddenSelections[] =
             {
-                "camo1"};
+                "camo1"
+            };
         hiddenSelectionsTextures[] =
             {
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_INF_Base.paa"};
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_INF_Base.paa"
+            };
         class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
@@ -599,7 +576,7 @@ class CfgWeapons
     {
         author = "Fish";
         scope = 2;
-        displayName = "Clone Trooper NCO Vest (104th MLV)";
+        displayName = "Clone Trooper SNCO Vest (104th MLV)";
         hiddenSelections[] = {"camo1","camo2","camo3","pauldron"};
         hiddenSelectionsTextures[] =
             {
@@ -656,7 +633,7 @@ class CfgWeapons
             {
                 "104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa", // Heavy
                 "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_INF_Medic.paa",
-                "104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa",                               // Heavy
+                "104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa", // Heavy
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa" // Heavy
             };
         class ItemInfo: ItemInfo
@@ -1214,22 +1191,8 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
 	class EG_InvisBagMain;
-	class JA_104th_Base_Malevolence_ARF : SWLB_clone_base_P1
-	{
-		author = "Dak";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        side = 1;
-		uniformClass = "JA_104th_Malevolence_Base_ARF_Uniform";
-		displayName = "104th MLV - ARF";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_malevolence";
-		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_Upper.paa", "104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_Lower.paa"};
-		linkedItems[] = {JA_104th_Malevolence_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Malevolence_Base_ARF_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};	
+
+
 	class JA_104th_Base_Malevolence : SWLB_clone_base_P1
 	{
 		author = "Dak";
