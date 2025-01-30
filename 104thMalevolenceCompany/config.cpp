@@ -91,8 +91,11 @@ class CfgWeapons
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_airborne_nco_armor;
+	class SWLB_P1_SpecOps_Helmet;
+    class lsd_gar_standardSPC_nvg;
+    class lsd_gar_standard_nvg;
 	class SWLB_CEE_Lightweight_Rebreather;
-	class SWLB_CEE_Recon_Lieutenant;
+	class ls_blueforVest_base;
 	class SWLB_clone_airborne_armor;
 	class ls_gar_airborneOfficer_vest;
 	class JA_104th_Clone_Base_armor;
@@ -104,6 +107,14 @@ class CfgWeapons
     // Inheritance for vests
     // Makes making each vest a rebreather easier
     class ItemInfo;
+    class ls_gar_airborneOfficer_vest : ls_blueforVest_base
+	{
+		class ItemInfo;
+	};
+    class SWLB_CEE_Recon_Lieutenant: SWLB_clone_basic_armor 
+    {
+        class ItemInfo;
+    };
 	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
     {
         class ItemInfo;
@@ -138,7 +149,6 @@ class CfgWeapons
     };
 
 	// MLV Base Helmets
-
 	class JA_104th_Malevolence_Base_Helmet : SWLB_clone_P1_helmet
 	{
 		author = "Dak";
@@ -209,9 +219,17 @@ class CfgWeapons
 		displayname = "Clone Trooper P1 Helmet (104th MLV SNCO)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_SNCO_Helmet.paa" }; // the file path to the texture
 	};
-
+    class JA_104th_Malevolence_SpecOps_Helmet : SWLB_P1_SpecOps_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper P1 Special Activities Helmet (104th MLV)";					  // the name it will be in game
+		hiddenSelections[] = {"Camo1","Camo2"};	
+		hiddenSelectionsTextures[] = { "104thMalevolenceCompany\data\Textures\104th_P1_Red_Specops_1c_Helmet.paa","swlb_cee\data\swlb_p1_specops_visor_co.paa" }; // the file path to the texture
+	};
 	// MLV Base Uniforms
-
 	class JA_104th_Malevolence_Base_Uniform : SWLB_clone_uniform
 	{
 		author = "Dak";
@@ -261,7 +279,32 @@ class CfgWeapons
 			mass = 40;
 			uniformType = "Neopren";
 		};
-	}
+	};
+	class JA_104th_Malevolence_Base_ARC_Uniform : SWLB_clone_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper P1 ARC armor (104th MLV)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_ARC_Upper.paa",
+			"104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_ARC_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Base_Malevolence_ARC";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Invisible_Base_Rebreather_Uniform : SWLB_CEE_Lightweight_Rebreather
 	{
 		author = "Dak";
@@ -303,7 +346,34 @@ class CfgWeapons
 			};
 		};
 	};
+    // NVG
+    class JA_104th_SPC_NVG_Base_ME : lsd_gar_standardSPC_nvg
+	{
+		ace_nightvision_border = "";
+		author = "Tundra";
+		displayName = "Clone SPC NVG Visor (104th MLV)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
 
+		};
+		hiddenSelectionsTextures[] = { "104thMalevolenceCompany\data\Textures\104th_P1_Red_Macro_Visor.paa" }; // the file path to the texture
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
+    class JA_104th_P2_NVG_Base_ME: lsd_gar_standard_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone P2 NVG Visor (104th MLV)";
+		hiddenSelections[] =
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] = { "104thMalevolenceCompany\data\Textures\104th_P1_Red_Macro_Visor.paa" }; // the file path to the texture
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
 	// MLV Base Vests
 	class JA_104th_ARC_ME_Vest : SWLB_clone_arc_armor
 	{
@@ -318,7 +388,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thMalevolenceCompany\data\textures\Accessories_ARC.paa",
+			"104thMalevolenceCompany\data\textures\104th_ARC_Accessories_P1_Red_ARC_Base.paa",
 			"104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_ARC_Base.paa"
 		};
 		class ItemInfo: ItemInfo
@@ -1211,22 +1281,23 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Officer Vest (104th MLV)";
-		hiddenSelectionsTextures[] =
-			{
-				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa",	  // Small "pocket" on left arm
-				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa",	  // Heavy Vest Bag / Straps
-				"104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Base.paa", // Kama
-				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"	  /*,    // Unknown, No change seen in-game when changed
-					 "JangosArmory1\data\Textures104th_ Officer_Accessories_P1_Red_AB_Base.paa"*/
-																			  // Pauldron - Currently broken until LS fixes the selections
-																			  // Final texture is commented out as the new airborne vest has a small piece of the NCO (small) pauldron that is textured.
-																			  // Leaving it empty makes it appear invisible.
-			};
-		class ItemInfo: ItemInfo
-		{
-			containerClass = "Supply100";
-			vestType = "Rebreather";
-
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"};
+        hiddenSelectionsTextures[] = 
+            {
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Base.paa",
+                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"};
+        class ItemInfo: Vestitem
+        {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1","camo2"};
+            mass = 80;
+            vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -1250,7 +1321,7 @@ class CfgWeapons
                     passThrough = 0.3;
                 };
             };
-		};
+        };
 	};
 };
 
@@ -1298,6 +1369,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_Medic_Upper.paa", "104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_Medic_Lower.paa"};
 		linkedItems[] = {JA_104th_Malevolence_Base_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Malevolence_Base_Medic_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+    class JA_104th_Base_Malevolence_ARC : SWLB_clone_base_P1
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        side = 1;
+		uniformClass = "JA_104th_Malevolence_Base_ARC_Uniform";
+		displayName = "104th MLV - Trooper ARC";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_malevolence";
+		hiddenSelections[] = { "camo1", "camo2" };
+		hiddenSelectionsTextures[] = {"104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_ARC_Upper.paa", "104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_ARC_Lower.paa"};
+		linkedItems[] = {JA_104th_Malevolence_Base_ARC_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Malevolence_Base_ARC_Helmet,SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 
 };
@@ -1402,3 +1489,51 @@ class CfgGroups{
 		};
 	};
 };
+
+class CfgGlasses{
+    class JA_104th_P1_ME_Trooper_Headware
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Satchel Yellow (104th MLV)";
+        descriptionUse = "give sachel";
+        scope = 2;
+        identityTypes[] = {};
+        hiddenSelections[] = {"ammo","camo1","camo2","camo3","camo4","camo5","pauldron"};
+        hiddenSelectionsTextures[] = 
+        {
+            "",
+            "",//"swlb_core\data\common_textures\accessories\light_accessories_co.paa",
+            "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa",
+            "",//"swlb_core\data\common_textures\accessories\\officer_accessories_co.paa",
+            "",//"swlb_core\data\common_textures\equipment\bag_co.paa",
+            "",//"swlb_core\data\common_textures\accessories\light_accessories_co.paa",
+            ""
+        };
+        model = "ls_armor_bluefor\vest\gar\heavy\ls_gar_heavyAlt_vest.p3d";
+        //model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
+	};
+    class JA_104th_P1_ME_Medic_Headware
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Satchel Blue (104th MLV)";
+        descriptionUse = "give sachel";
+        scope = 2;
+        identityTypes[] = {};
+        hiddenSelections[] = {"ammo","camo1","camo2","camo3","camo4","camo5","pauldron"};
+        hiddenSelectionsTextures[] = 
+        {
+            "",
+            "",//"swlb_core\data\common_textures\accessories\light_accessories_co.paa",
+            "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa",
+            "",//"swlb_core\data\common_textures\accessories\\officer_accessories_co.paa",
+            "",//"swlb_core\data\common_textures\equipment\bag_co.paa",
+            "",//"swlb_core\data\common_textures\accessories\light_accessories_co.paa",
+            ""
+        };
+        model = "ls_armor_bluefor\vest\gar\heavy\ls_gar_heavyAlt_vest.p3d";
+        //model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
+	};
+	
+}

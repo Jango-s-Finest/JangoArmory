@@ -219,6 +219,19 @@ class CfgVehicles
 		};
 	};
 
+	class JA_104th_RTO_Mini_Backpack_ME : SWLB_clone_RTO_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th MLV)";
+		maximumLoad = 200;
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Mini_Backpack.paa", // Minipack
+			"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Mini_Backpack_Accumulator.paa" // slotss
+		};
+	};
+
 	// Cerberus Specific
 	class JA_104th_Backpack_Cerberus_1 : SWLB_clone_backpack
 	{

@@ -428,6 +428,29 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Ceasar_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Ceasar)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Ceasar_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Ceasar_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Ceasar";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Osiris_Uniform : JA_104th_Base_AB_Uniform
 	{
 		author = "Jango's Finest";
@@ -820,6 +843,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
 		linkedItems[] = {JA_104th_Dak_Helmet, SWLB_CEE_Airborne_Officer, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Dak_Helmet, SWLB_CEE_Airborne_Officer, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Ceasar : SWLB_clone_base_P2
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Ceasar_Uniform";
+		displayName = "104th Ceasar";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Ceasar_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Ceasar_Lower.paa"};
+		linkedItems[] = {JA_104th_Ceasar_Helmet, SWLB_CEE_Airborne_Officer, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Ceasar_Helmet, SWLB_CEE_Airborne_Officer, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Axel : SWLB_clone_base_P2
 	{

@@ -290,7 +290,7 @@ class CfgWeapons
 		side = 1;
 		grad_slingHelmet_allow = "true";
 		hiddenSelections[] = {"camo1"};															 // don't change this
-		displayname = "Clone Trooper Special Activities Helmet (104th [1C] JTAC)";					 // the name it will be in game
+		displayname = "Clone Trooper P2 Special Activities Helmet (104th [1C] JTAC)";					 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_JTAC_Base_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Desert_1C_Medic_Helmet : ls_gar_desert_helmet

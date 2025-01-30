@@ -11287,15 +11287,28 @@ class CfgWeapons
 			type = 701;
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
 			uniformType = "Default";
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					armor = 6;
-					hitpointName = "HitLegs";
-					passThrough = 0.3;
-				};
-			};
+			class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
 		};
 	};
 	class GBU12BombLauncher;
