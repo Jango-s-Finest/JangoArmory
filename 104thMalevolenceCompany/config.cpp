@@ -20,11 +20,19 @@ class CfgPatches
 			"JA_104th_Malevolence_Commander_Helmet",
 			"JA_104th_Malevolence_JNCO_Helmet",
 			"JA_104th_Malevolence_Officer_Helmet",
+            "JA_104th_Malevolence_SNCO_Helmet",
+            "JA_104th_Malevolence_SpecOps_Helmet",
 			
 			"JA_104th_Malevolence_Base_Uniform",
 			"JA_104th_Malevolence_Base_Medic_Uniform",
+            "JA_104th_Malevolence_Base_ARC_Uniform",
 			"JA_104th_Invisible_Base_Rebreather_Uniform",
 
+            "JA_104th_SPC_NVG_Base_ME",
+            "JA_104th_P2_NVG_Base_ME",
+
+            "JA_104th_ARC_ME_Vest",
+            "JA_104th_Vest_ME",
 			"JA_104th_ME_Vest",
             "JA_104th_ME_PSGT_Base_Kama",
             "JA_104th_ME_PSGT_Alt1_Kama",

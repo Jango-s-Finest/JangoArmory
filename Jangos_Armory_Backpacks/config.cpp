@@ -879,6 +879,7 @@ class CfgVehicles
 	{
 		author = "501st + Echo";
 		scope = 2;
+		side=0;
 		scopeCurator = 2;
 		displayname = "Clone CDV Pilot jumppack";
 		tf_dialog = "anarc210_radio_dialog";
