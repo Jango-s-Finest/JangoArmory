@@ -969,12 +969,22 @@ class CfgWeapons
             };
 		};
 	};
-	class JA_104th_basic_Vest_ME : SWLB_clone_kama_armor
+	class JA_104th_basic_Vest_ME : SWLB_CEE_Lightweight_Rebreather
 	{
 		author = "Emmet"; 
 		displayName = "Clone Trooper Vest (104th / MLV)";
-        hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {""};
+        hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"",
+			""
+		};
         class ItemInfo: ItemInfo
 		{
             containerClass = "Supply100";
