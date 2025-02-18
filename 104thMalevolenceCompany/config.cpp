@@ -844,7 +844,7 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thMalevolenceCompany\data\Textures\Heavy_Accessories_Trooper_VetRed.paa", // Heavy
+				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
 				"104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa"
 			};
 		model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
