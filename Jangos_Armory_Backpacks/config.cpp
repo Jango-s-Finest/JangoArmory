@@ -133,8 +133,8 @@ class CfgVehicles
 		displayname = "Clone Trooper backpack (104th)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Normal.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Normal.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change unless RTO
 				"",																		 // Heavy
 				"",																		 // Medic
 				""																		 // RTO
@@ -166,9 +166,9 @@ class CfgVehicles
 		displayname = "Clone Trooper Heavy backpack (104th)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Normal.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Normal.paa", // don't change unless RTO
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Normal.paa", // Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // Heavy
 				"",																		 // Medic
 				""																		 // RTO
 			};
@@ -181,10 +181,10 @@ class CfgVehicles
 		maximumLoad = 300;
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Medic.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // don't change unless RTO
 				"",																		// Heavy
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Medic.paa", // Medic
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // Medic
 				""																		// RTO
 			};
 	};
@@ -195,11 +195,11 @@ class CfgVehicles
 		displayname = "Clone Trooper RTO backpack (104th)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Normal.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
 				"",																		 // don't change unless RTO
 				"",																		 // Heavy
 				"",																		 // Medic
-				"Jangos_Armory_Backpacks\data\Textures\104th_Clone_Backpack_Normal.paa"	 // RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa"	 // RTO
 			};
 	};
 	class JA_104th_RTO_Mini_Backpack : SWLB_clone_RTO_mini_backpack
@@ -237,8 +237,8 @@ class CfgVehicles
 		displayname = "Clone Trooper backpack (Cerberus 1-1)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_1.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_1.paa", // don't change unless RTO
 				"",																	  // Heavy
 				"",																	  // Medic
 				""																	  // RTO
@@ -251,9 +251,9 @@ class CfgVehicles
 		displayname = "Clone Trooper Heavy backpack (Cerberus 1-1)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change unless RTO
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_1.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_1.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_1.paa", // Heavy
 				"",																	  // Medic
 				""																	  // RTO
 			};
@@ -266,10 +266,10 @@ class CfgVehicles
 		maximumLoad = 300;
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_1.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_1.paa", // don't change unless RTO
 				"",																	  // Heavy
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // Medic
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_1.paa", // Medic
 				""																	  // RTO
 			};
 	};
@@ -280,11 +280,11 @@ class CfgVehicles
 		displayname = "Clone Trooper RTO backpack (Cerberus 1-1)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_1.paa", // don't change this
 				"",																	  // don't change unless RTO
 				"",																	  // Heavy
 				"",																	  // Medic
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-1_Squad_Backpack.paa"  // RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_1.paa"  // RTO
 			};
 	};
 	class JA_104th_Backpack_Cerberus_2 : SWLB_clone_backpack
@@ -295,8 +295,8 @@ class CfgVehicles
 		displayname = "Clone Trooper backpack (Cerberus 1-2)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_2.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_2.paa", // don't change unless RTO
 				"",																	  // Heavy
 				"",																	  // Medic
 				""																	  // RTO
@@ -309,9 +309,9 @@ class CfgVehicles
 		displayname = "Clone Trooper Heavy backpack (Cerberus 1-2)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change unless RTO
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_2.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_2.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_2.paa", // Heavy
 				"",																	  // Medic
 				""																	  // RTO
 			};
@@ -324,10 +324,10 @@ class CfgVehicles
 		maximumLoad = 300;
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_2.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_2.paa", // don't change unless RTO
 				"",																	  // Heavy
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // Medic
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_2.paa", // Medic
 				""																	  // RTO
 			};
 	};
@@ -338,11 +338,11 @@ class CfgVehicles
 		displayname = "Clone Trooper RTO backpack (Cerberus 1-2)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_2.paa", // don't change this
 				"",																	  // don't change unless RTO
 				"",																	  // Heavy
 				"",																	  // Medic
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-2_Squad_Backpack.paa"  // RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_2.paa"  // RTO
 			};
 	};
 	class JA_104th_Backpack_Cerberus_3 : SWLB_clone_backpack
@@ -353,8 +353,8 @@ class CfgVehicles
 		displayname = "Clone Trooper backpack (Cerberus 1-3)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_3.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_3.paa", // don't change unless RTO
 				"",																	  // Heavy
 				"",																	  // Medic
 				""																	  // RTO
@@ -367,9 +367,9 @@ class CfgVehicles
 		displayname = "Clone Trooper Heavy backpack (Cerberus 1-3)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change unless RTO
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_3.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_3.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_3.paa", // Heavy
 				"",																	  // Medic
 				""																	  // RTO
 			};
@@ -382,10 +382,10 @@ class CfgVehicles
 		maximumLoad = 300;
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_3.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_3.paa", // don't change unless RTO
 				"",																	  // Heavy
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // Medic
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_3.paa", // Medic
 				""																	  // RTO
 			};
 	};
@@ -396,11 +396,11 @@ class CfgVehicles
 		displayname = "Clone Trooper RTO backpack (Cerberus 1-3)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_3.paa", // don't change this
 				"",																	  // don't change unless RTO
 				"",																	  // Heavy
 				"",																	  // Medic
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-3_Squad_Backpack.paa"  // RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_3.paa"  // RTO
 			};
 	};
 	class JA_104th_Accessories_Heavy_Backpack_Bulky : SWLB_clone_backpack_heavy
@@ -432,8 +432,8 @@ class CfgVehicles
 		displayname = "Clone Trooper backpack (Cerberus 1-4)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_4.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_4.paa", // don't change unless RTO
 				"",																	  // Heavy
 				"",																	  // Medic
 				""																	  // RTO
@@ -446,9 +446,9 @@ class CfgVehicles
 		displayname = "Clone Trooper Heavy backpack (Cerberus 1-4)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change unless RTO
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_4.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_4.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_4.paa", // Heavy
 				"",																	  // Medic
 				""																	  // RTO
 			};
@@ -461,10 +461,10 @@ class CfgVehicles
 		maximumLoad = 300;
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_4.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_4.paa", // don't change unless RTO
 				"",																	  // Heavy
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // Medic
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack_Cerberus_4.paa", // Medic
 				""																	  // RTO
 			};
 	};
@@ -475,11 +475,11 @@ class CfgVehicles
 		displayname = "Clone Trooper RTO backpack (Cerberus 1-4)";
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_4.paa", // don't change this
 				"",																	  // don't change unless RTO
 				"",																	  // Heavy
 				"",																	  // Medic
-				"Jangos_Armory_Backpacks\data\Textures\104th_1-4_Squad_Backpack.paa"  // RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_4.paa"  // RTO
 			};
 	};
 	class JA_104th_Backpack_ME : SWLB_clone_backpack
@@ -688,7 +688,7 @@ class CfgVehicles
 		// Other
 		BNA_KC_jetpacks_freefallHeight = 500; // Freefall height to set on unit when jetpacking
 	};
-	class JA_104th_Jumppack_JT12_LR_Journeyman : ls_greenfor_journeymanJetpack_backpack
+	class JA_104th_Jumppack_JT12_LR_Journeyman : JLTS_Clone_jumppack_JT12_104
 	{
 		author = "Dak";
 		scope = 2;
@@ -698,6 +698,7 @@ class CfgVehicles
 		tf_dialog = "SWLB_clone_rto_radio_dialog";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
+		model = "\ls_equipment_greenfor\backpack\mandalorian\journeymanJet\ls_greenfor_journeymanJetpack_backpack";
 		tf_hasLRradio = 1;
 		tf_range = 25000;
 		tf_additional_channel = 1;
@@ -921,6 +922,7 @@ class CfgVehicles
 		displayname = "Clone Trooper JT12 LR (Magnum)";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Magnum_Jumppack.paa"};
+		model = "\ls_equipment_greenfor\backpack\mandalorian\journeymanJet\ls_greenfor_journeymanJetpack_backpack";
 	};
 	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR
 	{
