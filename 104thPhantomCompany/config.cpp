@@ -1528,7 +1528,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P2_Aviation.paa"
+                "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_Aviation.paa"
             };
         class ItemInfo: ItemInfo
         {
@@ -1569,7 +1569,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P2_Aviation.paa"
+            "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_Aviation.paa"
         };
         class ItemInfo: ItemInfo
 		{
