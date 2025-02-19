@@ -9,7 +9,6 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
-			"JA_104th_AB_Medic",
 			"JA_104th_Azure",
 			"JA_104th_Stache",
 			"JA_104th_Carmine",
@@ -29,7 +28,6 @@ class CfgPatches
 			"JA_104th_Raptor"
 		};
 		weapons[] = {
-			"JA_104th_AB_Medic_Uniform",
 			"JA_104th_Azure_Uniform",
 			"JA_104th_Stache_Uniform",
 			"JA_104th_Carmine_Uniform",
@@ -265,29 +263,6 @@ class CfgWeapons
 					passThrough = 0.5;
 				};
 			};
-		};
-	};
-	class JA_104th_AB_Medic_Uniform : JA_104th_Base_AB_Uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th AB medic)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Medic_Upper.paa",
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Medic_Lower.paa"};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_AB_Medic";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
 		};
 	};
 	class JA_104th_Stache_Uniform : JA_104th_Base_AB_Uniform
@@ -723,25 +698,6 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
 
-	class JA_104th_AB_Medic : SWLB_clone_base_P2
-	{
-		author = "Dak";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-        side = 1;
-		displayName = "104th AB Medic";
-		uniformClass = "JA_104th_AB_Medic_Uniform";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Basic";
-		hiddenSelectionsTextures[] =
-		{
-			"Jangos_Airborne_Armours\data\Textures\104th_AB_Medic_Upper.paa",
-			"Jangos_Airborne_Armours\data\Textures\104th_AB_Medic_Lower.paa"
-		};
-		linkedItems[] = { JA_104th_AB_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_AB_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
-	};
 	class JA_104th_Stache : SWLB_clone_base_P2
 	{
 		author = "Fish";
