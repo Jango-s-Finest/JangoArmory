@@ -1341,6 +1341,89 @@ class CfgWeapons
             };
         };
 	};
+    //Aviation Accessories
+    class JA_104th_ME_Pilot_officer_Vest : SWLB_clone_officer_armor
+    {
+        author = "Dak";
+        displayName = "Clone Pilot Officer Vest (104th MLV)";
+        hiddenSelections[] =
+            {
+                "camo1"
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_MLV_Aviation.paa"
+            };
+        class ItemInfo: ItemInfo
+        {
+            containerClass = "Supply100";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_ME_Pilot_Base_Kama : SWLB_clone_kama_armor
+    {
+        author = "Tundra";
+        displayName = "Clone Pilot Kama (104th MLV)";
+        hiddenSelections[] =
+        {
+            "camo1"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_MLV_Aviation.paa"
+        };
+        class ItemInfo: ItemInfo
+		{
+            containerClass = "Supply100";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
 };
 
 class CfgVehicles

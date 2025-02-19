@@ -319,6 +319,16 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th [1C] 08 CT)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "104thPhantomCompany\data\Textures\104th_P2_1C_08_CT_Helmet.paa" }; // the file path to the texture
 	};
+	class JA_104th_P2_1C_V8_CT_Helmet : SWLB_clone_P2_helmet
+	{
+		author = "Bulky & Cyan";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = "true";
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper P2 Helmet (104th [1C] V8 CT)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "104thPhantomCompany\data\Textures\104th_PC_P2_CT_V8_Helmet.paa" }; // the file path to the texture
+	};
 	class JA_104th_Engineer_1C_Base_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
@@ -333,7 +343,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Engineer Helmet (104th [1C] Base)"; // the name it will be in game
 		hiddenSelectionsMaterials[] = {};
 		hiddenSelectionsTextures[] = {
-			"104thPhantomCompany\data\Textures\104th_Engineer_Base_Helmet.paa",
+			"104thPhantomCompany\data\Textures\104th_Engineer_1C_Base_Helmet.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"}; // the file path to the texture
 	};
@@ -345,7 +355,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = "true";
 		hiddenSelections[] = { "camo1" }; // don't change this
 		displayname = "Clone Trooper P2 Helmet (104th [1C] Medic)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "104thPhantomCompany\data\Textures\104th_P2_Medic_Helmet.paa" }; // the file path to the texture
+		hiddenSelectionsTextures[] = { "104thPhantomCompany\data\Textures\104th_P2_1C_Medic_Helmet.paa" }; // the file path to the texture
 	};
 	class JA_104th_JTAC_1C_Helmet : SWLB_P2_SpecOps_Helmet
 	{
@@ -411,6 +421,62 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = { "104thPhantomCompany\data\Textures\104th_Desert_Base_Trooper_Helmet.paa","104thPhantomCompany\data\Textures\Visor_Desert.paa" }; // the file path to the texture
 	};
 
+	class JA_104th_AB_1C_01_CT_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};																	 // don't change this
+		displayname = "Clone Trooper Airborne Helmet (104th [1C] 01 CT)";											 // the name it will be in game
+		visionMode[] = {"Normal"};
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_01_CT_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_AB_1C_02_CT_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};																	 // don't change this
+		displayname = "Clone Trooper Airborne Helmet (104th [1C] 02 CT)";											 // the name it will be in game
+		visionMode[] = {"Normal"};
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_02_CT_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_AB_1C_03_CT_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};																	 // don't change this
+		displayname = "Clone Trooper Airborne Helmet (104th [1C] 03 CT)";											 // the name it will be in game
+		visionMode[] = {"Normal"};
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_03_CT_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_AB_1C_04_CT_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};																	 // don't change this
+		displayname = "Clone Trooper Airborne Helmet (104th [1C] 04 CT)";											 // the name it will be in game
+		visionMode[] = {"Normal"};
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_04_CT_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_AB_1C_Medic_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};																	 // don't change this
+		displayname = "Clone Trooper Airborne Helmet (104th [1C] Medic)";											 // the name it will be in game
+		visionMode[] = {"Normal"};
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Helmet.paa"}; // the file path to the texture
+	};
+
 	class JA_104th_P2_1C_01_CT_Uniform : JA_104th_Base_CT_Uniform
 	{
 		author = "Dak";
@@ -450,7 +516,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\104th_P2_1C_01_CT_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Upper.paa",
 			"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Lower.paa"
 		};
 		class ItemInfo : UniformItem
@@ -474,8 +540,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thPhantomCompany\data\Textures\104th_P2_Engineer_Upper.paa",
-				"104thPhantomCompany\data\Textures\104th_P2_Engineer_Lower.paa"};
+				"104thPhantomCompany\data\Textures\104th_P2_1C_Engineer_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_1C_Engineer_Lower.paa"};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -498,8 +564,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\104th_P2_Medic_Upper.paa",
-			"104thPhantomCompany\data\Textures\104th_P2_Medic_Lower.paa"
+			"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Medic_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Medic_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -1451,6 +1517,89 @@ class CfgWeapons
             };
         };
 	};
+	//Aviation Accessories
+    class JA_104th_P2_Pilot_officer_Vest : SWLB_clone_officer_armor
+    {
+        author = "Dak";
+        displayName = "Clone Pilot Officer Vest (104th [1C])";
+        hiddenSelections[] =
+            {
+                "camo1"
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P2_Aviation.paa"
+            };
+        class ItemInfo: ItemInfo
+        {
+            containerClass = "Supply100";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_P2_Pilot_Base_Kama : SWLB_clone_kama_armor
+    {
+        author = "Tundra";
+        displayName = "Clone Pilot Kama (104th [1C])";
+        hiddenSelections[] =
+        {
+            "camo1"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P2_Aviation.paa"
+        };
+        class ItemInfo: ItemInfo
+		{
+            containerClass = "Supply100";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
 };
 
 
@@ -1478,7 +1627,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"SWLB_clones\data\camo1_co.paa","SWLB_clones\data\camo2_co.paa"};
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Upper.paa","104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Lower.paa"};
 		linkedItems[] = {JA_104th_Angel_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Angel_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
@@ -1516,7 +1665,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1", "camo2"};
 				hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\104th_P2_1C_01_CT_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Upper.paa",
 			"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Lower.paa"
 		};
 		linkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
@@ -1536,8 +1685,8 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1", "camo2"};
 				hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\104th_P2_Engineer_Upper.paa",
-			"104thPhantomCompany\data\Textures\104th_P2_Engineer_Lower.paa"
+			"104thPhantomCompany\data\Textures\104th_P2_1C_Engineer_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_Engineer_Lower.paa"
 		};
 		linkedItems[] = {JA_104th_Engineer_1C_Base_Helmet, SWLB_CEE_Engineer_Vest_NCO, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Engineer_1C_Base_Helmet, SWLB_CEE_Engineer_Vest_NCO, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
@@ -1555,8 +1704,8 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\104th_P2_Medic_Upper.paa",
-			"104thPhantomCompany\data\Textures\104th_P2_Medic_Lower.paa"
+			"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Medic_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Medic_Lower.paa"
 		};
 		linkedItems[] = { JA_104th_P2_1C_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_P2_1C_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
