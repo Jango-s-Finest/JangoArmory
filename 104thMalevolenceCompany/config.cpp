@@ -39,6 +39,7 @@ class CfgPatches
             "JA_104th_ME_PSGT_Alt2_Kama",
             "JA_104th_ME_Medic_Vest",
             "JA_104th_ME_officer_Vest",
+            "JA_104th_basic_Vest",
             "JA_104th_ME_NCO_Vest",
             "JA_104th_ME_NCO_Medic_Vest",
             "JA_104th_ME_Recon_Vest",
@@ -969,10 +970,12 @@ class CfgWeapons
             };
 		};
 	};
-	class JA_104th_basic_Vest_ME : SWLB_CEE_Lightweight_Rebreather
+	class JA_104th_basic_Vest : SWLB_CEE_Lightweight_Rebreather
 	{
-		author = "Emmet"; 
-		displayName = "Clone Trooper Vest (104th / MLV)";
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper Vest (104th)";
         hiddenSelections[]=
 		{
 			"camo1",
@@ -985,10 +988,18 @@ class CfgWeapons
 			"",
 			""
 		};
-        class ItemInfo: ItemInfo
+        class ItemInfo: VestItem
 		{
-            containerClass = "Supply100";
-            vestType = "Rebreather";
+            uniformModel="-";
+			containerClass="Supply100";
+			vestType = "Rebreather";
+			mass=80;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
 
             class HitpointsProtectionInfo {
                 class Abdomen {
