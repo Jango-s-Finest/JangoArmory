@@ -543,6 +543,19 @@ class CfgWeapons
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};															 // don't change this
+		displayname = "Clone Trooper Helmet (104th Knockout)";									 // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Knockout_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Bulky_Helmet : SWLB_clone_AB_Helmet
+	{
+		author = "Fish";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};													// don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Knockout)"; // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Knockout_Helmet.paa"}; // the file path to the texture
 		hiddenSelections[] = {"camo1"};																	  // don't change this
 		displayname = "Clone Trooper P2 Helmet (104th Tiger)";											  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Tiger_Helmet.paa"}; // the file path to the texture
