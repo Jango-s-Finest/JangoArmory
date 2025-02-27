@@ -335,7 +335,7 @@ class CfgWeapons
 		class ItemInfo: VestItem
 		{
 			uniformModel="-";
-			containerClass="Supply100";
+			containerClass="Supply80";
 			vestType = "Rebreather";
 			mass=80;
 			hiddenSelections[]=
@@ -387,7 +387,7 @@ class CfgWeapons
 	class JA_104th_ARC_ME_Vest : SWLB_clone_arc_armor
 	{
 		author = "DAK";
-		displayName = "Clone Trooper ARC Vest (104th MLV)";
+		displayName = "Clone ARC Trooper Vest (104th MLV)";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 		{
@@ -461,7 +461,7 @@ class CfgWeapons
         class ItemInfo: Vestitem
         {
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             hiddenSelections[] = {"camo1","camo2"};
             mass = 80;
             vestType = "Rebreather";
@@ -502,7 +502,7 @@ class CfgWeapons
                 "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_Company_Base.paa"};
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -543,7 +543,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -585,7 +585,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -627,7 +627,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -667,7 +667,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -708,7 +708,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -750,7 +750,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
             hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
@@ -806,7 +806,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -852,7 +852,7 @@ class CfgWeapons
 		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 			hiddenSelections[] ={"camo1","camo2"};
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
@@ -898,7 +898,7 @@ class CfgWeapons
 
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 			hiddenSelections[] = {"camo1","camo2"};
 			uniformModel = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
@@ -941,7 +941,7 @@ class CfgWeapons
 
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 			hiddenSelections[] = {"ammo","camo1","camo2","camo3","pauldron"};
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Heavy_Vest.p3d";
@@ -991,7 +991,7 @@ class CfgWeapons
         class ItemInfo: VestItem
 		{
             uniformModel="-";
-			containerClass="Supply100";
+			containerClass="Supply80";
 			vestType = "Rebreather";
 			mass=80;
 			hiddenSelections[]=
@@ -1045,7 +1045,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1092,7 +1092,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1139,7 +1139,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1186,7 +1186,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1232,7 +1232,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1278,7 +1278,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1323,7 +1323,7 @@ class CfgWeapons
         class ItemInfo: Vestitem
         {
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             hiddenSelections[] = {"camo1","camo2"};
             mass = 80;
             vestType = "Rebreather";
@@ -1367,48 +1367,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply100";
-            vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class JA_104th_ME_Pilot_Base_Kama : SWLB_clone_kama_armor
-    {
-        author = "Tundra";
-        displayName = "Clone Pilot Kama (104th MLV)";
-        hiddenSelections[] =
-        {
-            "camo1"
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_MLV_Aviation.paa"
-        };
-        class ItemInfo: ItemInfo
-		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {

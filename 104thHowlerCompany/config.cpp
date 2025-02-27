@@ -794,7 +794,7 @@ class CfgWeapons
 		};
 		class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
         };
 	};
@@ -810,7 +810,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
         };
     };
@@ -831,7 +831,7 @@ class CfgWeapons
 		};
 		class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
         };
 	};
@@ -850,7 +850,7 @@ class CfgWeapons
 		};
 		class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
         };
 	};

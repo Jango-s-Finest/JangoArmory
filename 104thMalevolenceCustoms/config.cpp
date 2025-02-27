@@ -340,4 +340,14 @@ class CfgWeapons
         displayname = "Clone Trooper P1 Helmet (104th Scurvy)";                                // the name it will be in game
         hiddenSelectionsTextures[] = {"104thMalevolenceCustoms\data\Textures\104th_P1_Scurvy_Helmet.paa"}; // the file path to the texture
     };
+    class JA_104th_Kaleck_Helmet_ME : SWLB_clone_P1_Helmet
+    {
+        author = "Dak";
+        scopeArsenal = 2;
+        side = 1;
+        grad_slingHelmet_allow = "true";
+        hiddenSelections[] = {"camo1"};                                                        // don't change this
+        displayname = "Clone Trooper P1 Helmet (104th Kaleck)";                                // the name it will be in game
+        hiddenSelectionsTextures[] = {"104thMalevolenceCustoms\data\Textures\104th_P1_Kaleck_Helmet.paa"}; // the file path to the texture
+    };
 };

@@ -113,7 +113,7 @@ class CfgWeapons
 		class ItemInfo: Vestitem
 		{
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			hiddenSelections[] = {"camo1","camo2"};
 			mass = 80;
 			vestType = "Rebreather";
@@ -160,7 +160,7 @@ class CfgWeapons
 		class ItemInfo: Vestitem
 		{
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			hiddenSelections[] = {"camo1","camo2"};
 			mass = 80;
 			vestType = "Rebreather";

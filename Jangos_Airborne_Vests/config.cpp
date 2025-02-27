@@ -129,52 +129,6 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
-	class JA_104th_AB_Base_Trooper_Armor : SWLB_clone_airborne_armor
-	{
-		author = "Dak";
-		displayName = "Clone Airborne Trooper Vest (104th)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_Pauldron_and_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" // Heavy
-			};
-		class ItemInfo: ItemInfo
-		{
-			containerClass = "Supply100";
-			vestType = "Rebreather";
-
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-		};
-	};
 	class JA_104th_AB_Officer_Vest_Axel : ls_gar_airborneOfficer_vest
 	{
 		author = "Fish";
@@ -196,7 +150,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -242,7 +196,7 @@ class CfgWeapons
 		class ItemInfo: Vestitem
 		{
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			hiddenSelections[] = {"camo1","camo2"};
 			mass = 80;
 			vestType = "Rebreather";
@@ -291,7 +245,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -339,7 +293,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -380,14 +334,14 @@ class CfgWeapons
 				"camo4"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa"  // Heavy
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -426,11 +380,11 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accessories_Light.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Kama.paa",
 				"SWLB_clones\data\light_accessories_co.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accessories_Heavy.paa"  // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accesories_Heavy.paa"  // Heavy
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
@@ -460,29 +414,29 @@ class CfgWeapons
             };
 		};
 	};
-	class JA_104th_Clutch_Vest : SWLB_clone_airborne_nco_armor
+	class JA_104th_Clutch_Vest : SWLB_CEE_Recon_Lieutenant
 	{
 		author = "Emmet"; 
 		scope = 2;
 		displayName = "Clone Airborne NCO Vest (104th Clutch)";
+		model = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Kama.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Heavy.paa"  // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Heavy.paa"
 			};
-		class ItemInfo: ItemInfo
-		{
-			containerClass = "Supply100";
-			vestType = "Rebreather";
-
+		class ItemInfo: Vestitem
+        {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
+            containerClass = "Supply80";
+            hiddenSelections[] = {"camo1","camo2"};
+            mass = 80;
+            vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
                 class Abdomen {
@@ -506,6 +460,6 @@ class CfgWeapons
                     passThrough = 0.3;
                 };
             };
-		};
+        };
 	};
 };

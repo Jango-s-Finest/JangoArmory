@@ -159,7 +159,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -201,7 +201,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -245,7 +245,7 @@ class CfgWeapons
         {
             vestType = "Rebreather";
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             hiddenSelections[] = {"camo1","camo2"};
             mass = 80;
             class HitpointsProtectionInfo
@@ -300,7 +300,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
             class HitpointsProtectionInfo
             {
@@ -348,7 +348,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
             hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
@@ -399,7 +399,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -441,7 +441,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -485,7 +485,7 @@ class CfgWeapons
         class ItemInfo: Vestitem
         {
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             hiddenSelections[] = {"camo1","camo2"};
             mass = 80;
             vestType = "Rebreather";

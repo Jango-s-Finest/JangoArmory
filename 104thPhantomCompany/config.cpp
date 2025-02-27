@@ -482,7 +482,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper P2 Armor (104th [1C] 01 CT)";
+		displayName = "Clone Trooper P2 Armor (104th [1C] Cerberus trooper)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -508,7 +508,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper P2 Armor (104th [1C] 02 CT)";
+		displayName = "Clone Trooper P2 Armor (104th [1C] Warhawk trooper)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -533,7 +533,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper P2 armor (104th [1C] Engineer)";
+		displayName = "Clone Trooper P2 armor (104th [1C] Cerberus Engineer)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -556,7 +556,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
-		displayName = "Clone Trooper P2 armor (104th [1C] Medic)";
+		displayName = "Clone Trooper P2 armor (104th [1C] Cerberus Medic)";
 		hiddenSelections[] =
 		{
 			"camo1",
@@ -566,6 +566,31 @@ class CfgWeapons
 		{
 			"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Medic_Upper.paa",
 			"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Medic_Lower.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_P2_1C_Medic";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_AB_1C_Medic_Uniform : JA_104th_Base_CT_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
+		displayName = "Clone Trooper P2 armor (104th [1C] Warhawk Medic)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"104thPhantomCompany\data\Textures\JA_104th_P2_AB_1C_Medic_Upper.paa",
+			"104thPhantomCompany\data\Textures\JA_104th_P2_AB_1C_Medic_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -607,7 +632,7 @@ class CfgWeapons
 	class JA_104th_ARC_P2_Vest : SWLB_clone_arc_armor
 	{
 		author = "DAK";
-		displayName = "Clone Trooper ARC Vest (104th [1C])";
+		displayName = "Clone ARC Trooper Vest (104th [1C])";
 		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 		hiddenSelections[] =
 		{
@@ -681,7 +706,7 @@ class CfgWeapons
         class ItemInfo: Vestitem
         {
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             hiddenSelections[] = {"camo1","camo2"};
             mass = 80;
             vestType = "Rebreather";
@@ -722,7 +747,7 @@ class CfgWeapons
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_Company_Base.paa"};
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -763,7 +788,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -805,7 +830,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -847,7 +872,7 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -887,7 +912,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -928,7 +953,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -970,7 +995,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
 		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
             hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
@@ -1026,7 +1051,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1072,7 +1097,7 @@ class CfgWeapons
 		uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 			hiddenSelections[] ={"camo1","camo2"};
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
@@ -1118,7 +1143,7 @@ class CfgWeapons
 
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 			hiddenSelections[] = {"camo1","camo2"};
 			uniformModel = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
@@ -1161,7 +1186,7 @@ class CfgWeapons
 
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 			hiddenSelections[] = {"ammo","camo1","camo2","camo3","pauldron"};
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Heavy_Vest.p3d";
@@ -1210,7 +1235,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1257,7 +1282,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1304,7 +1329,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1351,7 +1376,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1397,7 +1422,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1443,7 +1468,7 @@ class CfgWeapons
 			};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 
@@ -1488,7 +1513,7 @@ class CfgWeapons
         class ItemInfo: Vestitem
         {
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Lieutenant.p3d";
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             hiddenSelections[] = {"camo1","camo2"};
             mass = 80;
             vestType = "Rebreather";
@@ -1532,48 +1557,7 @@ class CfgWeapons
             };
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply100";
-            vestType = "Rebreather";
-
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class JA_104th_P2_Pilot_Base_Kama : SWLB_clone_kama_armor
-    {
-        author = "Tundra";
-        displayName = "Clone Pilot Kama (104th [1C])";
-        hiddenSelections[] =
-        {
-            "camo1"
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_Aviation.paa"
-        };
-        class ItemInfo: ItemInfo
-		{
-            containerClass = "Supply100";
+            containerClass = "Supply80";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
@@ -1639,7 +1623,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 1;
 		uniformClass = "JA_104th_P2_1C_01_CT_Uniform";
-		displayName = "P2 1C 01 CT";
+		displayName = "P2 1C Cerberus trooper";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
@@ -1659,7 +1643,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 1;
 		uniformClass = "JA_104th_P2_1C_02_CT_Uniform";
-		displayName = "P2 1C 02 CT";
+		displayName = "P2 1C Warhawk trooper";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
@@ -1706,6 +1690,25 @@ class CfgVehicles
 		{
 			"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Medic_Upper.paa",
 			"104thPhantomCompany\data\Textures\104th_P2_1C_Infantry_Medic_Lower.paa"
+		};
+		linkedItems[] = { JA_104th_P2_1C_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_P2_1C_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_AB_1C_Medic : SWLB_clone_base_P2
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        side = 1;
+		displayName = "104th AB 1C Medic";
+		uniformClass = "JA_104th_AB_1C_Medic_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelectionsTextures[] =
+		{
+			"104thPhantomCompany\data\Textures\JA_104th_P2_AB_1C_Medic_Upper.paa",
+			"104thPhantomCompany\data\Textures\JA_104th_P2_AB_1C_Medic_Lower.paa"
 		};
 		linkedItems[] = { JA_104th_P2_1C_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_P2_1C_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn

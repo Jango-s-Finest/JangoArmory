@@ -245,7 +245,7 @@ class CfgWeapons
 				"Jangos_Armory_Common\data\Textures\332nd_Chich_CM_Kama.paa"};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 		};

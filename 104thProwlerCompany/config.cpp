@@ -298,7 +298,7 @@ class CfgWeapons
 				"104thProwlerCompany\data\Textures\fenriskama.paa"};
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply100";
+			containerClass = "Supply80";
 			vestType = "Rebreather";
 
 		};

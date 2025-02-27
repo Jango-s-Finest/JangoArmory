@@ -207,5 +207,20 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot Helmet (104th Fish)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Fish_Helmet.paa" }; // the file path to the texture
 	};
-	
+	class JA_104th_Duce_Pilot_Helmet_P1 : SWLB_P1_Pilot_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { 
+			"Camo1",
+			"Camo2" 
+		}; // don't change this
+		displayname = "Clone Trooper Pilot P1 Helmet (104th Duce)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { 
+			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Duce_Helmet.paa",
+			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Duce_Life_Support.paa" 
+		}; // the file path to the texture
+	};
 };
