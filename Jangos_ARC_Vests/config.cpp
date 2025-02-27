@@ -11,7 +11,6 @@ class CfgPatches
 		units[] = {
 		};
 		weapons[] = {
-			"JA_104th_Base_Vest",
 			"JA_104th_Angel_Vest",
 			"JA_104th_Frosty_Vest",
 			"JA_104th_Hunter_Vest",
@@ -105,65 +104,6 @@ class CfgWeapons
         class ItemInfo;
     };
 
-	class JA_104th_Base_Vest : SWLB_clone_arc_armor
-	{
-		author = "Dak";
-		displayName = "Clone ARC Trooper Vest (104th)";
-		picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"
-
-			};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_ARC_Accessories.paa",
-				"Jangos_ARC_Vests\data\Textures\104th_Pauldron_and_Kama.paa"};
-		class ItemInfo : ItemInfo
-		{
-			vestType = "Rebreather";
-			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
-			containerClass = "Supply100";
-			hiddenSelections[] = {"camo1", "camo2"};
-			mass = 100;
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 4;
-					passThrough = 0.3;
-				};
-				 class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-			};
-		};
-	};
 	class JA_104th_Angel_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";
@@ -179,7 +119,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Angel_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Angel_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -238,7 +178,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Crowbi_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Crowbi_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -297,7 +237,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -356,7 +296,7 @@ class CfgWeapons
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Frosty_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Frosty_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -415,7 +355,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Hunter_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -474,7 +414,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Sigil_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Sigil_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -533,7 +473,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Spectre_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Spectre_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -592,7 +532,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Loner_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Loner_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
@@ -651,7 +591,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			{
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Vision_ARC_Accessories.paa",
 				"Jangos_ARC_Vests\data\Textures\104th_ARC_Vision_Officer_Accessories.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
 			vestType = "Rebreather";
 			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";

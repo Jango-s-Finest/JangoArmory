@@ -1726,8 +1726,8 @@ class cfgVehicles {
 	class 3AS_Z95_Republic;
 	class JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue: 3AS_Z95_Republic
 	{
-		Author = "212th + 3AS + Echo"
-		displayName = "Z-95 Reaper (Blue)"
+		Author = "212th + 3AS + Echo";
+		displayName = "Z-95 Reaper (Blue)";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -4328,8 +4328,8 @@ class cfgVehicles {
 	class 3as_Vwing_base;
 	class JA_104th_VWing: 3as_Vwing_base
 	{
-		Author = "212th + 3AS + Echo"
-		displayName = "V-Wing Fighter"
+		Author = "212th + 3AS + Echo";
+		displayName = "V-Wing Fighter";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -5649,7 +5649,7 @@ class cfgVehicles {
 	
 	class JA_104th_3AS_Reaper_Y_Wing: Aux212_3AS_Reaper_Y_Wing
 	{
-		Author = "212th + 3AS + Echo"
+		Author = "212th + 3AS + Echo";
 		displayName = "104th Reaper BTL-B Y-Wing";
 		crew = "SWLB_clone_pilot_base_P2";
 		side = 1;
@@ -11287,15 +11287,28 @@ class CfgWeapons
 			type = 701;
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
 			uniformType = "Default";
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					armor = 6;
-					hitpointName = "HitLegs";
-					passThrough = 0.3;
-				};
-			};
+			class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
 		};
 	};
 	class GBU12BombLauncher;

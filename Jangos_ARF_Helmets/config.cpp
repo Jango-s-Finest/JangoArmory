@@ -216,6 +216,46 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th Woods)"; // the name it will be in game
 		hiddenSelectionsTextures[] = { "Jangos_ARF_Helmets\data\Textures\104th_ARF_Woods_Helmet.paa" }; // the file path to the texture
 	};
+	class JA_104th_Woods_Helmet_ME : SWLB_clone_ARF_P1_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper ARF Helmet (104th Woods)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_ARF_Helmets\data\Textures\104th_P1_ARF_Woods_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Achilles_Helmet_ME : SWLB_clone_ARF_P1_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper ARF Helmet (104th Achilles)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_ARF_Helmets\data\Textures\104th_P1_ARF_Achilles_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Fire_Helmet_ME : SWLB_clone_ARF_P1_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper ARF Helmet (104th Fire)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_ARF_Helmets\data\Textures\104th_P1_ARF_Fire_Helmet.paa" }; // the file path to the texture
+	};
+	class JA_104th_Unix_Helmet_ME : SWLB_clone_ARF_P1_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+        side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = { "camo1" }; // don't change this
+		displayname = "Clone Trooper ARF Helmet (104th Unix)"; // the name it will be in game
+		hiddenSelectionsTextures[] = { "Jangos_ARF_Helmets\data\Textures\104th_P1_ARF_Unix_Helmet.paa" }; // the file path to the texture
+	};
 };
 
 class CfgVehicles

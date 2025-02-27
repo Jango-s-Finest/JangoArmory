@@ -137,7 +137,7 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_CIS";
 	};
 	class JA_CIS_B2_Base: ls_cis_b2Droid_base{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -329,7 +329,7 @@ class CfgVehicles
 		};
 	};
 	class JA_CIS_Man_Black_01: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -360,7 +360,7 @@ class CfgVehicles
 		weapons[] = { ls_weapon_westar35s_primary ,"Throw","Put" };
 	};
 	class JA_CIS_Man_Black_02: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -390,7 +390,7 @@ class CfgVehicles
 		weapons[] = { JLTS_E5C_stock ,"Throw","Put" };
 	};
 	class JA_CIS_Man_Black_03: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -421,7 +421,7 @@ class CfgVehicles
 		weapons[] = { ls_weapon_westar35s_primary ,"Throw","Put" };
 	};
 	class JA_CIS_Man_Black_04: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -452,7 +452,7 @@ class CfgVehicles
 		weapons[] = { JLTS_E5C_stock , JLTS_RPS6 ,"Throw","Put" };
 	};
 	class JA_CIS_Man_Black_05: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -483,7 +483,7 @@ class CfgVehicles
 		weapons[] = { JLTS_DW32S ,"Throw","Put" };
 	}
 	class JA_CIS_Man_Woods_01: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -513,7 +513,7 @@ class CfgVehicles
 		weapons[] = { JLTS_E5C_stock ,"Throw","Put" };
 	};
 	class JA_CIS_Man_Woods_02: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -543,7 +543,7 @@ class CfgVehicles
 		weapons[] = { JLTS_E5 , WBK_brush_axe ,"Throw","Put" };
 	};
 	class JA_CIS_Man_Woods_03: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -573,7 +573,7 @@ class CfgVehicles
 		weapons[] = { ls_weapon_westar35c_primary ,"Throw","Put" };
 	};
 	class JA_CIS_Man_Woods_04: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -604,7 +604,7 @@ class CfgVehicles
 		weapons[] = { SWLW_Westar35S ,"Throw","Put" };
 	};
 	class JA_CIS_Man_Woods_05: O_Survivor_F{
-		author = "Dak"
+		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;

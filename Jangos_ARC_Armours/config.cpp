@@ -107,6 +107,11 @@ class CfgWeapons
 	{
 		class ItemInfo: UniformItem
 		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Base_ARC";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
 			class HitpointsProtectionInfo
 			{
 				class Arms
@@ -408,6 +413,23 @@ class CfgVehicles
 	class JA_104th_Jumppack_JT12_LR;
 
 	// General Uniforms
+
+	class JA_104th_Base_ARC : SWLB_clone_base_P2
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Base_ARC_Uniform";
+		displayName = "104th ARC";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"SWLB_clones\data\camo1_co.paa","SWLB_clones\data\camo2_co.paa"};
+		linkedItems[] = {JA_104th_Angel_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Angel_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
 	class JA_104th_Angel : SWLB_clone_base_P2
 	{
 		author = "Ice";

@@ -20,6 +20,8 @@ class CfgPatches
 			"JA_104th_SPC_NVG_Invert",
 			"JA_104th_NVG_NCO",
 			"JA_104th_CM_Visor",
+			"JA_104th_AB_NVG_Magnum",
+			"JA_104th_P2_NVG_Bulky",
 			"JA_104th_BARC_Galahad_NVG",
 			"JA_104th_Death_NVG_Tanker",
 			"JA_104th_Crowbi_NVG_Rangefinder",
@@ -131,6 +133,36 @@ class CfgWeapons
 	};
 
 	// General Attachments
+	class JA_104th_P2_NVG_Bulky: lsd_gar_standard_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone P2 NVG Visor (104th Bulky)";
+		hiddenSelections[] =
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_P2_Bulky_NVG.paa",
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
+	class JA_104th_AB_NVG_Magnum: lsd_gar_standardSPC_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone AB NVG Visor (104th Magnum)";
+		hiddenSelections[] =
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_AB_Magnum_NVG.paa",
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
 	class JA_104th_P2_NVG_Base: lsd_gar_standard_nvg
 	{
 		author = "Tundra";
@@ -174,6 +206,8 @@ class CfgWeapons
 		{
 			"Jangos_Armory_Attachments\data\Textures\104th_P2_NVG_Medic.paa",
 		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
 	};
 	class JA_104th_SPC_NVG_Base : lsd_gar_standardSPC_nvg
 	{
@@ -266,7 +300,7 @@ class CfgWeapons
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
 	};
-	class JA_104th_BARC_Galahad_NVG : lsd_gar_standard_nvg
+	class JA_104th_BARC_Galahad_NVG : lsd_gar_standardSPC_nvg
 	{
 		author = "Fish";
 		displayName = "Clone Commander Visor (104th Galahad)";

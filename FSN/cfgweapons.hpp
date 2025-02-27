@@ -276,7 +276,7 @@ class CfgWeapons
 		
 		magazines[]=
 		{
-			"FSN_Diamondback_Missile_M";
+			"FSN_Diamondback_Missile_M",
 		};
 	};
 	

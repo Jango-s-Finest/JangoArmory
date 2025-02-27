@@ -1,7 +1,7 @@
 if(isServer)then{
 	private["_turret","_range","_incoming","_target","_shooter"];
-	_turret = _this select 0;
-	_range = _this select 1;
+	private _turret = _this select 0;
+	private _range = _this select 1;
 	_turret setAnimSpeedCoef 2;
 	while{alive _turret}do{
 		_incoming = _turret nearObjects["RocketBase",_range];
@@ -16,14 +16,14 @@ if(isServer)then{
 				_targetBoom = getText (configFile >> "CfgAmmo" >> typeOf _target >> "explosionEffects"); 
 				_shooter = ((getShotParents _target) select 0);
 				while {(alive _target)} do {
-					_turret doWatch _target;
-					sleep 1;
-					if ((_target distance _turret < _range) && (_target distance _turret > 100) && (!lineIntersects [getPos _turret,getPos _target]) && (random 100 < 70)) then{
-						_turret fireAtTarget[_target,(currentWeapon _turret)];
-						_targetBoom createVehicle (getPos _target);
+					[_turret,_target] remoteExec ["doWatch"];
+					_turret fireAtTarget[_target,(currentWeapon _turret)];
+					sleep 0.2;
+					if ((_target distance _turret < _range) && (_target distance _turret > 100) && (!lineIntersects [getPos _turret,getPos _target]) && (random 100 < 10)) then{
+						[_targetBoom,(getPos _target)] remoteExec ["createVehicle"];
 						"HelicopterExploBig" createVehicle (getPos _target);
-						deleteVehicle _target;
-						sleep 4;
+						[_target] remoteExec ["deleteVehicle"];
+						sleep 0.2;
 					};
 				};
 				_i = count _incoming+1;
