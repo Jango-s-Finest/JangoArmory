@@ -1386,7 +1386,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot2.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
         };
@@ -1398,7 +1398,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot3.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
         };
@@ -1592,7 +1592,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot4.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
             class SilencedSound: BaseSoundModeType
@@ -1613,7 +1613,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot5.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
             class SilencedSound: BaseSoundModeType
@@ -1925,7 +1925,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC1S_shot1.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.1;
@@ -1947,7 +1947,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC1S_shot2.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.075;
