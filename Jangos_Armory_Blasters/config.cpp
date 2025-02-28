@@ -1373,9 +1373,9 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15A_Rifle_Shot_SoundSet"};
+                weaponSoundEffect = "";
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",1};
             };
         };
         class Burst: Burst
@@ -1385,9 +1385,9 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot2.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15A_Rifle_Shot_SoundSet"};
+                weaponSoundEffect = "";
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot2.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",1};
             };
         };
         class FullAuto: FullAuto
@@ -1397,9 +1397,9 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot3.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15A_Rifle_Shot_SoundSet"};
+                weaponSoundEffect = "";
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot3.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",1};
             };
         };
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1591,15 +1591,18 @@ class CfgWeapons
             sounds[] = {"StandardSound","SilencedSound"};
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15A_Rifle_Shot_SoundSet"};
+                weaponSoundEffect = "";
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot4.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",1};
             };
             class SilencedSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_Shot.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15S_Rifle_Shot_SoundSet"};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                closure1[] = {};
+                closure2[] = {};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {};
+                weaponSoundEffect = "";
             };  
         };
         class Burst: Burst
@@ -1609,15 +1612,18 @@ class CfgWeapons
             sounds[] = {"StandardSound","SilencedSound"};
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15A_Rifle_Shot_SoundSet"};
+                weaponSoundEffect = "";
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot5.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",1};
             };
             class SilencedSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_Shot.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15S_Rifle_Shot_SoundSet"};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                closure1[] = {};
+                closure2[] = {};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {};
+                weaponSoundEffect = "";
             };  
         };
         class FullAuto: FullAuto
@@ -1627,15 +1633,18 @@ class CfgWeapons
             sounds[] = {"StandardSound","SilencedSound"};
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15A_Rifle_Shot_SoundSet", "JA_104th_DC15A_Rifle_Tail_SoundSet" };
+                weaponSoundEffect = "";
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",1};
             };
             class SilencedSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_Shot.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15S_Rifle_Shot_SoundSet"};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                closure1[] = {};
+                closure2[] = {};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {};
+                weaponSoundEffect = "";
             };  
         };
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1915,41 +1924,42 @@ class CfgWeapons
 
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15S_Rifle_Shot_SoundSet"};
+                weaponSoundEffect = "";
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC1S_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.1;
             dispersion = 0.00087;
             class SilencedSound : BaseSoundModeType
 			{
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_Shot.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15S_Rifle_Shot_SoundSet"};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                closure1[] = {};
+                closure2[] = {};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {};
+                weaponSoundEffect = "";
 			};
         };
         class Single: Single
         {
+
             sounds[] = {"StandardSound", "SilencedSound" };
-            class BaseSoundModeType
-            {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot2.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15S_Rifle_Shot_SoundSet"};
-            };
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot2.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15S_Rifle_Shot_SoundSet"};
+                weaponSoundEffect = "";
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC1S_shot2.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.075;
             dispersion = 0.00087;
             class SilencedSound : BaseSoundModeType
 			{
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_Shot.wss",1,1,1800};
-                soundBegin[] = {"begin1",0.33};
-                soundSetShot[] = { "JA_104th_DC15S_Rifle_Shot_SoundSet"};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                closure1[] = {};
+                closure2[] = {};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {};
+                weaponSoundEffect = "";
 			};
         };
   class WeaponSlotsInfo: WeaponSlotsInfo
