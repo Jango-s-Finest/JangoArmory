@@ -75,20 +75,24 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
 	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
+	class JA_104th_Clone_Base_armor;
 	class UniformItem;
     class ItemInfo;
 	class VestItem;
+	class SWLB_clone_kama_armor: JA_104th_Clone_Base_armor
+    {
+        class ItemInfo;
+    };
 	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
     {
         class ItemInfo;
     };
-	class JA_104th_Cherryy_Pilot_officer_Vest : SWLB_clone_officer_armor
+	class JA_104th_Cherryy_Pilot_officer_Vest : SWLB_clone_kama_armor
     {
         author = "Dak";
         displayName = "Clone Pilot Officer Vest (104th Cherryy)";
