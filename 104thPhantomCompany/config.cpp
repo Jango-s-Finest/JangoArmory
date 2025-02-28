@@ -589,13 +589,13 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\JA_104th_P2_AB_1C_Medic_Upper.paa",
-			"104thPhantomCompany\data\Textures\JA_104th_P2_AB_1C_Medic_Lower.paa"
+			"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "JA_104th_P2_1C_Medic";
+			uniformClass = "JA_104th_AB_1C_Medic";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1707,8 +1707,8 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelectionsTextures[] =
 		{
-			"104thPhantomCompany\data\Textures\JA_104th_P2_AB_1C_Medic_Upper.paa",
-			"104thPhantomCompany\data\Textures\JA_104th_P2_AB_1C_Medic_Lower.paa"
+			"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Upper.paa",
+			"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Lower.paa"
 		};
 		linkedItems[] = { JA_104th_P2_1C_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_P2_1C_Medic_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn

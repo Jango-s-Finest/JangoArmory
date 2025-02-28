@@ -120,6 +120,8 @@ class CfgWeapons
 		grad_slingHelmet_allow = "true";													
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Drifter)";								  // the name it will be in game
 		subItems[] = {"OPTRE_Glasses_Visor"};
+		optreHUDStyle = "ODST_1";
+		optreVarietys[] = {"_dp","_dp","_dp"};
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Drifter_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Frosty_Helmet : SWLB_clone_P15_Helmet
