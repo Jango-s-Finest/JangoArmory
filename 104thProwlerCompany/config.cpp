@@ -296,9 +296,11 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"104thProwlerCompany\data\Textures\fenriskama.paa"};
-		class ItemInfo : ItemInfo
+		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply80";
 			vestType = "Rebreather";
+
 		};
 	};
 };

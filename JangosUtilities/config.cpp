@@ -12,7 +12,10 @@ class CfgPatches
             "JA_104th_BlueFor_Thropie_System_SR",
             "JA_104th_BlueFor_Thropie_System_LR",
             "JA_104th_OpFor_Thropie_System_SR",
-            "JA_104th_OpFor_Thropie_System_LR"}; // All the new vehicles/units you've created in cfgVehicles
+            "JA_104th_OpFor_Thropie_System_LR",
+            "JA_104th_Civilian_Escape_Pods",
+            "JA_104th_BlueFor_Escape_Pods",
+            "JA_104th_OpFor_Escape_Pods"}; // All the new vehicles/units you've created in cfgVehicles
         weapons[] = {};
         requiredVersion = 0.1;
         requiredAddons[] = {};
@@ -74,10 +77,11 @@ class cfgEditorSubcategories
 
 class cfgVehicles
 {
-    class OPTRE_Static_Gauss;
-    class JA_104th_Civilian_Thropie_System_SR : OPTRE_Static_Gauss
+    class 3AS_CIS_Naval_Gun;
+    class OPTRE_EscapePod;
+    class JA_104th_Civilian_Thropie_System_SR : 3AS_CIS_Naval_Gun
     {
-        displayName = "104th Defense System 1500M";
+        displayName = "CIV Iron Dome 1500M";
         crew = "B_UAV_AI";
         side = 3;
         faction = "104th_Guys_Civs";
@@ -96,9 +100,9 @@ class cfgVehicles
             Init = "[_this select 0, 1500] execVM '\JangosUtilities\DefenceSystem.sqf';";
         };
     };
-    class JA_104th_Civilian_Thropie_System_LR : OPTRE_Static_Gauss
+    class JA_104th_Civilian_Thropie_System_LR : 3AS_CIS_Naval_Gun
     {
-        displayName = "104th Defense System 3000M";
+        displayName = "CIV Iron Dome 3000M";
         crew = "B_UAV_AI";
         side = 3;
         faction = "104th_Guys_Civs";
@@ -117,9 +121,9 @@ class cfgVehicles
             Init = "[_this select 0, 3000] execVM '\JangosUtilities\DefenceSystem.sqf';";
         };
     };
-    class JA_104th_BlueFor_Thropie_System_SR : OPTRE_Static_Gauss
+    class JA_104th_BlueFor_Thropie_System_SR : 3AS_CIS_Naval_Gun
     {
-        displayName = "104th Defense System 1500M";
+        displayName = "104th Iron Dome 1500M";
         crew = "B_UAV_AI";
         side = 1;
         faction = "104th_Guys";
@@ -138,9 +142,9 @@ class cfgVehicles
             Init = "[_this select 0, 1500] execVM '\JangosUtilities\DefenceSystem.sqf';";
         };
     };
-    class JA_104th_BlueFor_Thropie_System_LR : OPTRE_Static_Gauss
+    class JA_104th_BlueFor_Thropie_System_LR : 3AS_CIS_Naval_Gun
     {
-        displayName = "104th Defense System 3000M";
+        displayName = "104th Iron Dome 3000M";
         crew = "B_UAV_AI";
         side = 1;
         faction = "104th_Guys";
@@ -159,9 +163,9 @@ class cfgVehicles
             Init = "[_this select 0, 3000] execVM '\JangosUtilities\DefenceSystem.sqf';";
         };
     };
-    class JA_104th_OpFor_Thropie_System_SR : OPTRE_Static_Gauss
+    class JA_104th_OpFor_Thropie_System_SR : 3AS_CIS_Naval_Gun
     {
-        displayName = "104th Defense System 1500M";
+        displayName = "CIS Iron Dome 1500M";
         crew = "B_UAV_AI";
         side = 0;
         faction = "104th_Guys_CIS";
@@ -180,9 +184,9 @@ class cfgVehicles
             Init = "[_this select 0, 1500] execVM '\JangosUtilities\DefenceSystem.sqf';";
         };
     };
-    class JA_104th_OpFor_Thropie_System_LR : OPTRE_Static_Gauss
+    class JA_104th_OpFor_Thropie_System_LR : 3AS_CIS_Naval_Gun
     {
-        displayName = "104th Defense System 3000M";
+        displayName = "CIS Iron Dome 3000M";
         crew = "B_UAV_AI";
         side = 0;
         faction = "104th_Guys_CIS";
@@ -201,4 +205,47 @@ class cfgVehicles
             Init = "[_this select 0, 3000] execVM '\JangosUtilities\DefenceSystem.sqf';";
         };
     };
+    class JA_104th_Civilian_Escape_Pods : OPTRE_EscapePod
+    {
+        displayName = "CIV Escape Pods";
+        side = 3;
+        faction = "104th_Guys_Civs";
+        editorSubcategory = "104th_Categ_Utilities_CIV";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0] execVM '\JangosUtilities\EscapePods.sqf';";
+        };
+    };
+    class JA_104th_BlueFor_Escape_Pods : OPTRE_EscapePod
+    {
+        displayName = "104th Escape Pods";
+        side = 1;
+        faction = "104th_Guys";
+        editorSubcategory = "104th_Categ_Utilities";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0] execVM '\JangosUtilities\EscapePods.sqf';";
+        };
+    };
+    class JA_104th_OpFor_Escape_Pods : OPTRE_EscapePod
+    {
+        displayName = "CIS Escape Pods";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0] execVM '\JangosUtilities\EscapePods.sqf';";
+        };
+    };
+    
 };

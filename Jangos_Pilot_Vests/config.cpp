@@ -61,7 +61,6 @@ class CfgWeapons
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
 	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
 	class SWLB_clone_commander_armor;
 	class SWLB_clone_airborne_armor;
 	class SWLB_CEE_Airborne_Officer;
@@ -76,15 +75,64 @@ class CfgWeapons
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
 	class SWLB_clone_medic_armor;
 	class SWLB_clone_basic_armor;
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
+	class JA_104th_Clone_Base_armor;
 	class UniformItem;
+    class ItemInfo;
 	class VestItem;
-	
+	class SWLB_clone_kama_armor: JA_104th_Clone_Base_armor
+    {
+        class ItemInfo;
+    };
+	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
+	class JA_104th_Cherryy_Pilot_officer_Vest : SWLB_clone_kama_armor
+    {
+        author = "Dak";
+        displayName = "Clone Pilot Officer Vest (104th Cherryy)";
+        hiddenSelections[] =
+            {
+                "camo1"
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Pilot_Vests\data\Textures\104th_Pilot_Cherryy_Accessories_Officer.paa"
+            };
+        class ItemInfo: ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
 };
 
 class CfgVehicles

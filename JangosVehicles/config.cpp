@@ -1019,20 +1019,6 @@ class cfgVehicles {
 				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 			};
 			
-			class Haze: base
-			{
-				displayName = "104th Haze";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"JangosVehicles\data\textures\door1_co_echo.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-			};
-			
 			class Beef: base
 			{
 				displayName = "104th Beef";
@@ -1099,6 +1085,19 @@ class cfgVehicles {
 				"lsd_vehicles_heli\laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104Fish.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
+				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
+				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+			};
+			class Cherryy: base
+			{
+				displayName = "104th Cherryy";
+				textures[] = {"JangosVehicles\data\textures\body1_co_104Cherryy.paa",
+				"JangosVehicles\data\textures\body2_co_104Cherryy_104Cherryy_104Cherryy.paa",
+				"lJangosVehicles\data\textures\door1_co_104Cherryy_104Cherryy.paa",
+				"JangosVehicles\data\textures\door2_co_104Cherryy.paa",
+				"JangosVehicles\data\textures\door3_co_104Cherryy.paa",
+				"JangosVehicles\data\textures\wings_co_104Cherryy.paa",
+				"JangosVehicles\data\textures\missiles_co_104Cherryy.paa",
 				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
 				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 			};
@@ -1180,6 +1179,11 @@ class cfgVehicles {
 					{
 						displayName = "Fish";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Fish.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Fish.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_Cherryy: DefaultSkin
+					{
+						displayName = "Cherryy";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Cherryy.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\body2_co_104Cherryy.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_104Cherryy.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_104Cherryy.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_104Cherryy.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Cherryy.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104Cherryy.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
 					};
 				};
 			};
@@ -1722,8 +1726,8 @@ class cfgVehicles {
 	class 3AS_Z95_Republic;
 	class JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue: 3AS_Z95_Republic
 	{
-		Author = "212th + 3AS + Echo"
-		displayName = "Z-95 Reaper (Blue)"
+		Author = "212th + 3AS + Echo";
+		displayName = "Z-95 Reaper (Blue)";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -4324,8 +4328,8 @@ class cfgVehicles {
 	class 3as_Vwing_base;
 	class JA_104th_VWing: 3as_Vwing_base
 	{
-		Author = "212th + 3AS + Echo"
-		displayName = "V-Wing Fighter"
+		Author = "212th + 3AS + Echo";
+		displayName = "V-Wing Fighter";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -5645,7 +5649,7 @@ class cfgVehicles {
 	
 	class JA_104th_3AS_Reaper_Y_Wing: Aux212_3AS_Reaper_Y_Wing
 	{
-		Author = "212th + 3AS + Echo"
+		Author = "212th + 3AS + Echo";
 		displayName = "104th Reaper BTL-B Y-Wing";
 		crew = "SWLB_clone_pilot_base_P2";
 		side = 1;
@@ -11283,15 +11287,28 @@ class CfgWeapons
 			type = 701;
 			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
 			uniformType = "Default";
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					armor = 6;
-					hitpointName = "HitLegs";
-					passThrough = 0.3;
-				};
-			};
+			class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
 		};
 	};
 	class GBU12BombLauncher;

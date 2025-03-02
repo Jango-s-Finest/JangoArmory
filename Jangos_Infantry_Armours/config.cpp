@@ -102,6 +102,7 @@ class CfgWeapons
 {
 	class InventoryItem_Base_F;
 	class ItemCore;
+	class ItemInfo;
 	class SWLB_Clone_Pilot_P2_Helmet;
 	class SWLB_clone_uniform;
 	class SWLB_clone_mc_uniform;
@@ -130,7 +131,154 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
-	class JA_104th_Crash_Uniform : SWLB_clone_mc_uniform
+	class JA_104th_Base_Clone_Uniform : SWLB_clone_uniform
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				
+				class chest
+				{
+					hitpointName = "HitChest";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
+	class JA_104th_Base_Clone_MC_Uniform : SWLB_clone_mc_uniform
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				
+				class chest
+				{
+					hitpointName = "HitChest";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 40;
+					explosionShielding  = 20;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
+
+	class JA_104th_Crash_Uniform : JA_104th_Base_Clone_MC_Uniform
 	{
 		author = "Ice";
 		scope = 2;
@@ -157,7 +305,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Banker_Uniform : SWLB_clone_uniform
+	class JA_104th_Banker_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -180,7 +328,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Bomb_Uniform : SWLB_clone_uniform
+	class JA_104th_Bomb_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -203,7 +351,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Blood_Uniform : SWLB_clone_uniform
+	class JA_104th_Blood_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -226,187 +374,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Dak_Uniform_Test1 : SWLB_clone_uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Dak)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
-		armor = 2;
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Dak";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 2;
-					PassThrough = 0.3;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 2;
-					passThrough = 0.3;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 2;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class JA_104th_Dak_Uniform_Test2 : SWLB_clone_uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Dak)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
-		armor = 5;
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Dak";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 5;
-					PassThrough = 0.3;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 5;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class JA_104th_Dak_Uniform_Test3 : SWLB_clone_uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Dak)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
-		armor = 10;
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Dak";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 10;
-					PassThrough = 0.3;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class JA_104th_Dak_Uniform_Test4 : SWLB_clone_uniform
-	{
-		author = "Jango's Finest";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Dak)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Upper.paa",
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Dak_Lower.paa"};
-		armor = 20;
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "JA_104th_Dak";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-			class HitpointsProtectionInfo
-			{
-				class Chest
-				{
-					HitpointName = "HitChest";
-					armor = 20;
-					PassThrough = 0.3;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 20;
-					passThrough = 0.3;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 20;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class JA_104th_Dart_Uniform : SWLB_clone_uniform
+	class JA_104th_Dart_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -429,7 +397,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Doc_Uniform : SWLB_clone_uniform
+	class JA_104th_Doc_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -452,7 +420,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Death_Uniform : SWLB_clone_uniform
+	class JA_104th_Death_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -475,7 +443,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Ed_Uniform : SWLB_clone_uniform
+	class JA_104th_Ed_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -500,7 +468,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Galahad_Uniform : SWLB_clone_uniform
+	class JA_104th_Galahad_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -513,8 +481,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Upper.paa",
-			"Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Lower.paa"
+			"Jangos_Infantry_Armours\data\Textures\104th_BARC_Galahad_Upper.paa",
+			"Jangos_Infantry_Armours\data\Textures\104th_BARC_Galahad_Lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -525,7 +493,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Irish_Uniform : SWLB_clone_uniform
+	class JA_104th_Irish_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -550,7 +518,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Knightfall_Uniform : SWLB_clone_uniform // UPD
+	class JA_104th_Knightfall_Uniform : JA_104th_Base_Clone_Uniform // UPD
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -575,7 +543,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Knockout_Uniform : SWLB_clone_uniform
+	class JA_104th_Knockout_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -598,7 +566,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Kyo_Uniform : SWLB_clone_uniform
+	class JA_104th_Kyo_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -621,7 +589,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Paraso_Uniform : SWLB_clone_uniform
+	class JA_104th_Paraso_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -644,7 +612,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Pacify_Uniform : SWLB_clone_uniform
+	class JA_104th_Pacify_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -667,7 +635,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Mad_Uniform : SWLB_clone_uniform
+	class JA_104th_Mad_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -690,7 +658,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Skav_Uniform : SWLB_clone_uniform
+	class JA_104th_Skav_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -713,7 +681,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Scurvy_Uniform : SWLB_clone_uniform
+	class JA_104th_Scurvy_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -726,8 +694,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"Jangos_Infantry_Armours\data\Textures\104th_P2_Scurvy_Upper.paa",
-			"Jangos_Infantry_Armours\data\Textures\104th_P2_Scurvy_Lower.paa"
+			"Jangos_Infantry_Armours\data\Textures\104th_p2_scurvy_upper.paa",
+			"Jangos_Infantry_Armours\data\Textures\104th_p2_scurvy_lower.paa"
 		};
 		class ItemInfo : UniformItem
 		{
@@ -738,7 +706,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Spirit_Uniform : SWLB_clone_uniform
+	class JA_104th_Spirit_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -763,7 +731,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Talisman_Uniform : SWLB_clone_uniform
+	class JA_104th_Talisman_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -786,7 +754,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Tiger_Uniform : SWLB_clone_uniform
+	class JA_104th_Tiger_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Ice";
 		scope = 2;
@@ -809,7 +777,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Tinkle_Uniform : SWLB_clone_uniform
+	class JA_104th_Tinkle_Uniform : JA_104th_Base_Clone_MC_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -818,11 +786,16 @@ class CfgWeapons
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2"};
+				"camo2",
+				"biceps",
+				"rank"};
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Infantry_Armours\data\Textures\104th_P2_Tinkle_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_P2_Tinkle_Lower.paa"};
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Tinkle_Lower.paa",
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Tinkle_Upper.paa",
+				""
+			};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -832,7 +805,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Tusk_Uniform : SWLB_clone_uniform // UPD
+	class JA_104th_Tusk_Uniform : JA_104th_Base_Clone_Uniform // UPD
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -857,7 +830,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Test_Uniform : SWLB_clone_uniform // UPD
+	class JA_104th_Test_Uniform : JA_104th_Base_Clone_Uniform // UPD
 	{
 		author = "Fish";
 		scope = 2;
@@ -890,7 +863,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Welty_Uniform : SWLB_clone_uniform
+	class JA_104th_Welty_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Ice";
 		scope = 2;
@@ -1086,7 +1059,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Galahad_Lower.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_BARC_Galahad_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_BARC_Galahad_Lower.paa"};
 		linkedItems[] = { JA_104th_Galahad_Helmet,JA_104th_Galahad_Vest,JA_104th_BARC_Galahad_NVG,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Galahad_Helmet,JA_104th_Galahad_Vest,JA_104th_BARC_Galahad_NVG,SWLB_clone_officer_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
@@ -1284,9 +1257,9 @@ class CfgVehicles
 		editorSubcategory = "104th_categ_clones";
 		uniformClass = "JA_104th_Scurvy_Uniform";
 		hiddenSelections[] = { "camo1", "camo2" };
-		hiddenSelectionsTextures[] = { "Jangos_Infantry_Armours\data\Textures\104th_P2_Scurvy_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Scurvy_Lower.paa" };
-		linkedItems[] = { JA_104th_Scurvy_Uniform,JA_104thScurvyVest ,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
-		respawnLinkedItems[] = { JA_104th_Scurvy_Uniform,JA_104thScurvyVest,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+		hiddenSelectionsTextures[] = { "Jangos_Infantry_Armours\data\Textures\104th_p2_scurvy_upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_p2_scurvy_lower.paa" };
+		linkedItems[] = { JA_104th_Scurvy_Uniform,JA_104th_Scurvy_Vest,JA_104th_Scurvy_NVG_Rangefinder,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Scurvy_Uniform,JA_104th_Scurvy_Vest,JA_104th_Scurvy_NVG_Rangefinder,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Spirit : SWLB_clone_base_P2
 	{
