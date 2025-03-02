@@ -112,6 +112,7 @@ class CfgPatches
 			"JA_104th_Weapons_Ammo_50mw",
 
             "JA_104th_Weapons_Ammo_100mw",
+            "JA_104th_Weapons_Ammo_17MAT",
 
             "JA_104th_Weapons_Ammo_EMP",
 
@@ -1365,23 +1366,11 @@ class CfgWeapons
                 cameraDir = "";
             };
         };
-        modes[] = {"Single","Burst","FullAuto"};
+        modes[] = {"Single","FullAuto"};
         class Single: Single
         {
             reloadTime=0.08;		
             dispersion=0.0003;
-            sounds[] = {"StandardSound"};
-            class StandardSound: BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",1};
-            };
-        };
-        class Burst: Burst
-        {
-            reloadTime=0.055;
-            dispersion=0.0004;
             sounds[] = {"StandardSound"};
             class StandardSound: BaseSoundModeType
             {
@@ -1797,8 +1786,8 @@ class CfgWeapons
         modes[] = {"FullAuto"};
         class FullAuto: FullAuto
         {
-            reloadTime = 0.85;		
-            dispersion = 0.0095;
+            reloadTime = 0.075;		
+            dispersion = 0.00675;
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
@@ -2309,8 +2298,8 @@ class CfgWeapons
         modes[] = {"Single","FullAuto"};
         class Single: Single
         {
-            reloadTime=0.075;     
-            dispersion=0.0006;
+            reloadTime=0.1;     
+            dispersion=0.0005;
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
@@ -2332,13 +2321,13 @@ class CfgWeapons
         };
         class FullAuto: FullAuto
         {
-            reloadTime = 0.075;
-            dispersion = 0.0006;
+            reloadTime = 0.1;
+            dispersion = 0.0005;
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\swlw_rework\sounds\dc\17\DC17_shot.wss",1,1,1800};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC17M_shot1.wss",+3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
                 soundClosure[] = {};
@@ -2346,7 +2335,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\swlw_rework\sounds\dc\17\DC17_shot.wss",1,1,1800};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC17M_shot1.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
                 closure1[] = {};
                 closure2[] = {};
@@ -2933,8 +2922,8 @@ class CfgWeapons
                 begin1[] = {"3AS\3AS_Main\Sounds\Z6\Z61.ogg",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
-            reloadTime = 0.075;
-            dispersion = 0.0125;
+            reloadTime = 0.065;
+            dispersion = 0.0138;
             soundContinuous = 0;
             soundBurst = 0;
             minRange = 0;
@@ -3128,7 +3117,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC17SA_shot.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss",+3db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
             class SilencedSound
@@ -3266,6 +3255,9 @@ class CfgAmmo
 
     class JLTS_ammo_Grenade_EMP;
 
+    class BNA_KC_Bullet_Plasma40MM_AT;
+    class JA_104th_Weapons_Ammo_17MAT: BNA_KC_Bullet_Plasma40MM_AT{};
+
     class B_12Gauge_Pellets;
     class B_12Gauge_Slug;
     class B_19mm_HE;
@@ -3275,6 +3267,7 @@ class CfgAmmo
     class F_40mm_White;
     class B_40mm_APFSDS;
     class RocketBase;
+
 
     class JA_104th_Weapons_Ammo_EMP: JLTS_ammo_Grenade_EMP{};
 
@@ -3950,7 +3943,7 @@ class CfgMagazines
         JA_104th_isATMag = 1;
         author = "Jango's Armory Aux Team";
         displayName = "[104th] 1rnd DC17M AT Pack";
-        ammo = "JA_104th_Weapons_Ammo_GL_HE";
+        ammo = "JA_104th_Weapons_Ammo_17MAT";
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
         count = 1;
