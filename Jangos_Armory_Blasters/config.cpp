@@ -1950,7 +1950,7 @@ class CfgWeapons
                 soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.08;
-            dispersion = 0.004;
+            dispersion = 0.0005;
             class SilencedSound : BaseSoundModeType
 			{
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
@@ -1972,7 +1972,7 @@ class CfgWeapons
                 soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.075;
-            dispersion = 0.004;
+            dispersion = 0.0004;
             class SilencedSound : BaseSoundModeType
 			{
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
