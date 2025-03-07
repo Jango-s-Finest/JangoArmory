@@ -1368,7 +1368,7 @@ class CfgWeapons
         class Single: Single
         {
             reloadTime=0.12;		
-            dispersion=0.0003;
+            dispersion=0.00028;
             sounds[] = {"StandardSound"};
             class StandardSound: BaseSoundModeType
             {
@@ -1577,7 +1577,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1.5db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
             class SilencedSound: BaseSoundModeType
@@ -1598,7 +1598,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1.5db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
             class SilencedSound: BaseSoundModeType
@@ -1619,7 +1619,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+3db,1,2200};
+                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1.5db,1,2200};
                 soundBegin[] = {"begin1",1};
             };
             class SilencedSound: BaseSoundModeType
@@ -1784,7 +1784,7 @@ class CfgWeapons
         class FullAuto: FullAuto
         {
             reloadTime = 0.1;		
-            dispersion = 0.007;
+            dispersion = 0.0065;
             sounds[] = {"StandardSound"};
             textureType = "burst";
             class BaseSoundModeType
@@ -1801,7 +1801,7 @@ class CfgWeapons
         class FullerAuto: FullAuto
         {
             reloadTime = 0.06;      
-            dispersion = 0.008;
+            dispersion = 0.0074;
             textureType = "fullAuto";
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
@@ -1818,7 +1818,7 @@ class CfgWeapons
         class FullestAuto: FullAuto
         {
             reloadTime = 0.05; 
-            dispersion = 0.0085;
+            dispersion = 0.0081;
             displayName = "Overcharge";
             textureType = "fastAuto";
             sounds[] = {"StandardSound"};
@@ -1950,7 +1950,7 @@ class CfgWeapons
                 soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.08;
-            dispersion = 0.00087;
+            dispersion = 0.004;
             class SilencedSound : BaseSoundModeType
 			{
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
@@ -1972,7 +1972,7 @@ class CfgWeapons
                 soundBegin[] = {"begin1",1};
             };
             reloadTime = 0.075;
-            dispersion = 0.00087;
+            dispersion = 0.004;
             class SilencedSound : BaseSoundModeType
 			{
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
