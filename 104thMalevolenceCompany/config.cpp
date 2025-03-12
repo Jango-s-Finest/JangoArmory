@@ -1218,12 +1218,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (104th MLV)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
 				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
@@ -1264,12 +1259,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Medic Vest (104th MLV)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
 				"104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
