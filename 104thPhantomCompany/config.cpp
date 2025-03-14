@@ -1408,12 +1408,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (104th [1C])";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
 				"104thPhantomCompany\data\Textures\104th_Heavy_Accessories_Trooper_Grey.paa", // Heavy
@@ -1454,12 +1449,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Medic Vest (104th [1C])";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
 				"104thPhantomCompany\data\Textures\104th_Heavy_Accessories_Medic_Grey.paa", // Heavy
@@ -1740,12 +1730,7 @@ class CfgGlasses{
         descriptionUse = "give sachel";
         scope = 2;
         identityTypes[] = {};
-        hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+        hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
 				"104thPhantomCompany\data\Textures\104th_AB_Magnum_Accesories_Heavy.paa", // Heavy
