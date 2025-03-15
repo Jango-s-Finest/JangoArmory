@@ -4030,7 +4030,7 @@ class CfgMagazines
     // DC15SA Standard mag
     class JA_104th_Weapons_Mags_10mw50: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th]  Secondary Standard Capacity";
+        displayName = "[104th] Secondary Standard Capacity";
         displayNameShort = "50Rnd 10MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
