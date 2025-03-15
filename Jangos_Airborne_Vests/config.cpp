@@ -380,7 +380,7 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accessories_Light.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Kama.paa",
 				"SWLB_clones\data\light_accessories_co.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Accesories_Heavy.paa"  // Heavy
+				"104thPhantomCompany\data\Textures\104th_AB_Magnum_Accesories_Heavy.paa"  // Heavy
 			};
 		class ItemInfo: ItemInfo
 		{

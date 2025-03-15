@@ -1408,12 +1408,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (104th [1C])";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
 				"104thPhantomCompany\data\Textures\104th_Heavy_Accessories_Trooper_Grey.paa", // Heavy
@@ -1454,12 +1449,7 @@ class CfgWeapons
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Medic Vest (104th [1C])";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2",
-				"camo3",
-				"camo4"};
+		hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
 				"104thPhantomCompany\data\Textures\104th_Heavy_Accessories_Medic_Grey.paa", // Heavy
@@ -1733,26 +1723,22 @@ class CfgVehicles
 
 class CfgGroups{};
 class CfgGlasses{
-    class JA_104th_P2_Magnum_Medic_Headware
+    class JA_104th_P2_Magnum_Headware
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Satchel Magnum (104th Magnum)";
         descriptionUse = "give sachel";
         scope = 2;
         identityTypes[] = {};
-        hiddenSelections[] = {"ammo","camo1","camo2","camo3","camo4","camo5","pauldron"};
-        hiddenSelectionsTextures[] = 
-        {
-            "",
-            "",//"swlb_core\data\common_textures\accessories\light_accessories_co.paa",
-            "104thPhantomCompany\data\Textures\104th_AB_Magnum_Accesories_Heavy.paa",
-            "",//"swlb_core\data\common_textures\accessories\\officer_accessories_co.paa",
-            "",//"swlb_core\data\common_textures\equipment\bag_co.paa",
-            "",//"swlb_core\data\common_textures\accessories\light_accessories_co.paa",
-            ""
-        };
-        model = "ls_armor_bluefor\vest\gar\heavy\ls_gar_heavyAlt_vest.p3d";
-        //model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
+        hiddenSelections[] = {"camo1","camo2","ammo","pauldron"};
+		hiddenSelectionsTextures[] =
+			{
+				"104thPhantomCompany\data\Textures\104th_AB_Magnum_Accesories_Heavy.paa", // Heavy
+				"",
+				"104thPhantomCompany\data\Textures\104th_AB_Magnum_Accesories_Heavy.paa" // Heavy
+			};
+        // model = "ls_armor_bluefor\vest\gar\heavy\ls_gar_heavyAlt_vest.p3d";
+        model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
 	};
 	
