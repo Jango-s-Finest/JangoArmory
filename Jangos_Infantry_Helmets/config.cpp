@@ -172,7 +172,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Byte)";								   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Byte_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Quick_Helmet : SWLB_clone_P2_Helmet
+	class JA_104th_Quick_Helmet : SWLB_P2_SpecOps_Helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -180,7 +180,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		hiddenSelections[] = {"camo1"};														   // don't change this
 		displayname = "Clone Trooper P2 Helmet (104th Quick)";								   // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Quick_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Quick_JTAC_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Duce_Helmet : SWLB_clone_P2_Helmet
 	{

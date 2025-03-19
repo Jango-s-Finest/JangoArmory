@@ -305,6 +305,29 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Quick_Uniform : JA_104th_Base_Clone_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Quick)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Quick_Upper.paa",
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_Quick_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Quick";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Banker_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
@@ -1094,6 +1117,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_Welty_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Welty_Lower.paa"};
 		linkedItems[] = {JA_104th_Welty_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Welty_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Quick : SWLB_clone_base_P2
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Quick_Uniform";
+		displayName = "104th Quick";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_Quick_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_Quick_Lower.paa"};
+		linkedItems[] = {JA_104th_Quick_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Quick_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Doc : SWLB_clone_base_P2
 	{
