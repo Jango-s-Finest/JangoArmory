@@ -103,6 +103,7 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
+	class JA_104th_Base_MC_AB_Uniform;
 	class JA_104th_Base_ARC_Uniform : SWLB_clone_uniform
 	{
 		class ItemInfo: UniformItem
@@ -347,7 +348,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Spectre_Uniform : JA_104th_Base_ARC_Uniform
+	class JA_104th_Spectre_Uniform : JA_104th_Base_MC_AB_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -357,11 +358,14 @@ class CfgWeapons
 			{
 				"camo1",
 				"camo2",
+				"biceps",
+				"rank"
 			};
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa",
 				"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Lower.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa",
 			};
 		class ItemInfo : UniformItem
 		{
@@ -511,7 +515,7 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Frosty_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Frosty_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Spectre : SWLB_clone_base_P2
+	class JA_104th_Spectre : SWLB_clone_marshal_commander_base_P2
 	{
 		author = "Dak";
 		scope = 2;
@@ -524,7 +528,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2", "biceps", "rank"};
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Lower.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Lower.paa","Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa"};
 		linkedItems[] = {JA_104th_Spectre_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Spectre_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};

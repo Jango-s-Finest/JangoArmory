@@ -75,6 +75,8 @@ class cfgEditorSubcategories
 class CfgWeapons
 {
 	class SWLB_clone_AB_helmet;
+	class SWLB_P2_SpecOps_Helmet;
+
 
 	class JA_104th_Red_Helmet : SWLB_clone_AB_helmet
 	{
@@ -242,7 +244,7 @@ class CfgWeapons
 		visionMode[] = {"Normal"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Kage_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Kaleck_Helmet : SWLB_clone_AB_Helmet
+	class JA_104th_Kaleck_AB_Helmet : SWLB_clone_AB_Helmet
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -252,6 +254,17 @@ class CfgWeapons
 		displayname = "Clone Trooper AB Helmet (104th Kaleck)";											 // the name it will be in game
 		visionMode[] = {"Normal"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Kaleck_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Kaleck_Helmet : SWLB_P2_SpecOps_Helmet
+	{
+		author = "Fish";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};																	 // don't change this
+		displayname = "Clone Trooper P2 Special Activities Helmet (104th Kaleck)";											 // the name it will be in game
+		visionMode[] = {"Normal"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_JTAC_Kaleck_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Soul_Helmet : SWLB_clone_AB_Helmet
 	{

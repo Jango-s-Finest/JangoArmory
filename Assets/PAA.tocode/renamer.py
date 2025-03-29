@@ -7,6 +7,8 @@ for file in files:
     print(oldname)
     file=file.replace(" ","")
     file=file.replace("JA_","")
+    file=file.replace("_co_","_CO_")
+    file=file.replace("_Co_","_CO_")
     file=file.replace("ja_","")
     file=file.replace("_p2_","_P2_")
     file=file.replace("_ab_","_AB_")

@@ -1726,7 +1726,7 @@ class CfgGlasses{
     class JA_104th_P2_Magnum_Headware
 	{
 		author = "Dak";
-		displayName = "Clone Airborne Satchel Magnum (104th Magnum)";
+		displayName = "Clone Airborne Satchel (104th Magnum)";
         descriptionUse = "give sachel";
         scope = 2;
         identityTypes[] = {};
@@ -1741,5 +1741,16 @@ class CfgGlasses{
         model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
 	};
-	
+	// class JA_104th_ARC_Spectre_Headware
+	// {
+	// 	author = "Dak";
+	// 	displayName = "Clone Trooper Officer Vest Reverse (104th Spectre)";
+    //     descriptionUse = "Clone Trooper Officer Vest Reverse";
+    //     scope = 2;
+    //     identityTypes[] = {};
+    //     hiddenSelections[] = {"camo1"};
+	// 	hiddenSelectionsTextures[] = {"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa"};
+    //     model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+	// 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
+	// };
 }
