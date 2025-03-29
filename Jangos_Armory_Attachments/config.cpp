@@ -281,7 +281,24 @@ class CfgWeapons
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
 	};
+	class JA_104th_CM_Spectre_Visor : lsd_gar_p2MarshalCommander_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone Commander Visor (104th Spectre)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2"
 
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_CO_Spectre_Commander_Visor.paa",
+			"Jangos_Armory_Attachments\data\Textures\104th_CO_Spectre_Commander_Visor.paa"
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
 	class JA_104th_CM_Visor : lsd_gar_p2MarshalCommander_nvg
 	{
 		author = "Tundra";

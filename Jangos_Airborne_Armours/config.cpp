@@ -475,6 +475,32 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Kaleck_Uniform : JA_104th_Base_MC_AB_Uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Kaleck)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+				"biceps",
+				"rank"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Lower.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Upper.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Kaleck";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Bulky_Uniform : JA_104th_Base_AB_Uniform
 	{
 		author = "Fish";
@@ -751,6 +777,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Lower.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Magnum_Upper.paa"};
 		linkedItems[] = {JA_104th_Magnum_Helmet, JA_104th_Magnum_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Magnum_Helmet, JA_104th_Magnum_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Kaleck : SWLB_clone_marshal_commander_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Kaleck_Uniform";
+		displayName = "104th Kaleck";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2", "biceps", "rank"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Lower.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Upper.paa"};
+		linkedItems[] = {JA_104th_Kaleck_Helmet, JA_104th_Kaleck_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Kaleck_Helmet, JA_104th_Kaleck_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Bulky : SWLB_clone_base_P2
 	{

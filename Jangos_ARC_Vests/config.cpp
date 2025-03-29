@@ -458,7 +458,7 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			};
 		};
 	};
-	class JA_104th_Spectre_Vest : SWLB_clone_arc_armor
+	class JA_104th_Spectre_ARC_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";
 		displayName = "Clone ARC Trooper Vest (104th Spectre)";
@@ -517,6 +517,48 @@ class JA_104th_Hunter_Vest : SWLB_clone_arc_armor
 			};
 		};
 	};
+	class JA_104th_Spectre_Vest : SWLB_clone_kama_armor
+    {
+        author = "Tundra";
+        displayName = "Clone Trooper Kama (104th Spectre)";
+        hiddenSelections[] =
+        {
+            "camo1"
+        };
+        hiddenSelectionsTextures[] =
+        {
+            "Jangos_ARC_Vests\data\Textures\104th_ARC_Spectre_Officer_Accessories.paa"
+        };
+        class ItemInfo: ItemInfo
+		{
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    
 	class JA_104th_Loner_Vest : SWLB_clone_arc_armor
 	{
 		author = "Dak";
