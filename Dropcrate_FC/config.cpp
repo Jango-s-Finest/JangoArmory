@@ -9,7 +9,7 @@ class CfgPatches
         requiredVersion = 0.1;
 		units[] = {
             "FC_Dropcrate_104th",
-            "FC_Placeblecrate_104th",
+            "FC_Placeblecrate_104th"
         };
 		weapons[] = {};
 	};
@@ -20,6 +20,10 @@ class CfgEditorCategories
 	class 104th_Boxes
 	{
 		displayname = "Jango's Finest";
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 7;
 	};
 };
 class CfgEditorSubcategories
@@ -29,7 +33,8 @@ class CfgEditorSubcategories
 		displayname = "104th - Boxes";
 		scope = 2;
 		scopeCurator = 2;
-        side = 8;
+        scopeArsenal = 2;
+        side = 7;
 	};
 };
 class SensorTemplateLaser;
@@ -258,14 +263,15 @@ class CfgVehicles
 	{
 		author = "Fishinchips";
 		mapSize = 1.58;
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\IG_supplyCrate_F.jpg";
 		_generalMacro = "FC_Placeblecrate_104th";
-		scope = 2; /// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
-		scopeCurator = 2;
-        side = 8;
         faction = "Default";
+        scope = 2; /// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 7;
         editorCategory = "104th_Boxes";
         editorSubcategory = "104th_Boxes_Republic";
+		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\IG_supplyCrate_F.jpg";
 		displayName = "Dropcrate / Placeblecrate 104th";
 		model = "Dropcrate_FC\dropcrate_DP.p3d";
 		maximumLoad = 4000;
