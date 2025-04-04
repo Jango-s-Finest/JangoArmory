@@ -47,7 +47,9 @@ class CfgPatches
 			"JA_104th_Vulture_dynamicLoadout_base",
 			"JA_104th_Vulture_dynamicLoadout",
 			"JA_104th_Vulture_dynamicLoadout_AA",
-			"JA_104th_Vulture_dynamicLoadout_Bare"
+			"JA_104th_Vulture_dynamicLoadout_Bare",
+			"104th_Namerra_tank_mobile",
+			"104th_Namerra_tank_field"
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {"JA_104th_guided_resupply_pod_launcher"};
 		requiredVersion = 0.1;
@@ -11192,7 +11194,7 @@ class cfgVehicles {
 		scopeCurator=2;
 		transportSoldier=8;
 		LESH_canTow=1;
-		crew="JA_104th_Galahad";
+		crew = "SWLB_clone_sniper_base_P2";
 		LESH_AxisOffsetTower[]={0,-6,1};
 		driverCanSee=31;
 		gunnerCanSee=31;
@@ -11592,8 +11594,8 @@ class cfgVehicles {
 			{
 				displayName = "104th Logo";
 				textures[] = {
-					"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa",
-					"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa",
+					"JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa",
 					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
 					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
 					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
@@ -11659,7 +11661,7 @@ class cfgVehicles {
 					{
 						displayName = "104th Logo";
 						statement = 
-						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
 					};
 					class 104th_PloBro: DefaultSkin
 					{

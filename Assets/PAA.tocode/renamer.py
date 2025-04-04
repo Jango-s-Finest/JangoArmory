@@ -1,7 +1,7 @@
 import os;
 import re;
 
-files = os.listdir("./Assets/PAA.tocode")
+files = os.listdir("./Assets")
 for file in files:
     oldname = file
     print(oldname)
@@ -10,10 +10,14 @@ for file in files:
     file=file.replace("_co_","_CO_")
     file=file.replace("_Co_","_CO_")
     file=file.replace("ja_","")
+    file=file.replace("_cerb_","_P2_")
     file=file.replace("_p2_","_P2_")
+    file=file.replace("_p2","")
     file=file.replace("_ab_","_AB_")
     file=file.replace("_p1_","_P1_")
     file=file.replace("_arc_","_ARC_")
+    file=file.replace("_armor","")
+    file=file.replace("_Armor","")
     file=file.replace("_pilot","_Pilot")
     file=file.replace("_barc","_BARC")
     file=file.replace("_jtac","_JTAC")
@@ -61,5 +65,5 @@ for file in files:
     file=file.replace("_m","_M")
 
     print(file)
-    if file.endswith(".paa"):
-        os.rename("./Assets/PAA.tocode/"+oldname,"./Assets/PAA.tocode/"+file)
+    if file.endswith(".png"):
+        os.rename("./Assets/"+oldname,"./Assets/"+file)

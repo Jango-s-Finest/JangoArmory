@@ -16,6 +16,7 @@ class CfgPatches
 			"JA_104th_Medic_Backpack",
 			"JA_104th_RTO_Backpack",
 			"JA_104th_RTO_Mini_Backpack",
+			"JA_104th_RTO_Mini_Spirit_Backpack",
 			"JA_104th_Jumppack_LR", // JT12s to Backpacks
 			"JA_104th_Jumppack",
 			"JA_104th_Jumppack_JT12_LR",
@@ -212,6 +213,19 @@ class CfgVehicles
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_MiniPack.paa",		 // Minipack
 				"Jangos_Armory_Backpacks\data\Textures\104th_MiniPack_slots.paa" // slotss
+			};
+	};
+
+	class JA_104th_RTO_Mini_Spirit_Backpack : SWLB_clone_RTO_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Spirit)";
+		maximumLoad = 200;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Spirit_Mini_Lr_Main.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Spirit_Mini_Lr_Top.paa" // slotss
 			};
 	};
 
