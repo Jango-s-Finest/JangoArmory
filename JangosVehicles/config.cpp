@@ -11173,6 +11173,9 @@ class cfgVehicles {
 			class CommanderOptics;
 		};
 		class Components;
+		class VehicleTransport {
+            class Carrier;
+        };
 	};
 	class 104th_Namerra_tank_mobile: B_APC_Tracked_01_CRV_F
 	{
@@ -11201,7 +11204,6 @@ class cfgVehicles {
 		reportRemoteTargets=1;
 		reportOwnPosition=1;
 		faction="104th_Guys";
-        editorCategory = "104th_Boxes";
 		editorSubcategory="104th_Categ_Clones_Vehicles_Land";
 		vehicleClass="Armored";
 		smokeLauncherGrenadeCount=8;
@@ -11674,7 +11676,13 @@ class cfgVehicles {
 				};
 			};
 		};
-		class VehicleTransport{
+		class VehicleTransport: VehicleTransport{
+			class Cargo {
+                parachuteClass = "B_Parachute_02_F";
+                parachuteHeightLimit = 40;
+                canBeTransported = TRUE;
+                dimensions[] = {"ftr_muzzle", "btl_muzzle"};
+            };
 			class Carrier{
 				cargoAlignment[] = {"center","front"};
 				cargoBayDimentions[] = {"Limit1","limit2"};
