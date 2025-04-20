@@ -13,6 +13,7 @@ class CfgPatches
 			"JA_104th_Box_Explosives",
 			"JA_104th_Box_Medic",
 			"JA_104th_Box_Resupply",
+			"JA_104th_Medical_Droid",
 			"JA_104th_BARC",
 			"JA_104th_BARC_WP",
 			"JA_104th_BARC_Talon",
@@ -48,8 +49,8 @@ class CfgPatches
 			"JA_104th_Vulture_dynamicLoadout",
 			"JA_104th_Vulture_dynamicLoadout_AA",
 			"JA_104th_Vulture_dynamicLoadout_Bare",
-			"104th_Namerra_tank_mobile",
-			"104th_Namerra_tank_field"
+			"104th_MudHorn_tank_mobile",
+			"104th_MudHorn_tank_field"
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {"JA_104th_guided_resupply_pod_launcher"};
 		requiredVersion = 0.1;
@@ -81,6 +82,10 @@ class cfgEditorSubcategories
 	{
 		displayname = "104th - Boxes";
 	};
+	class 104th_Categ_Clones_Droid
+	{
+		displayname = "104th - Droids";
+	};
 };
 
 
@@ -105,13 +110,26 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 class DefaultEventhandlers;
 class Extended_init_EventHandlers
 {
-	class 104th_Namerra_tank_mobile
+	class 104th_MudHorn_tank_mobile
 	{
 		class warden_tank_init_eh
 		{
-			init="['RD501_FuelCan', _this select 0, true] call ace_cargo_fnc_loadItem;['RD501_FuelCan', _this select 0, true] call ace_cargo_fnc_loadItem;['RD501_FuelCan', _this select 0, true] call ace_cargo_fnc_loadItem;['RD501_FuelCan', _this select 0, true] call ace_cargo_fnc_loadItem;['RD501_FuelCan', _this select 0, true] call ace_cargo_fnc_loadItem;['RD501_FuelCan', _this select 0, true] call ace_cargo_fnc_loadItem;";
+			init="['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;";
+		};
+		class adsd_tow
+		{
+			init="[_this select 0] spawn RD501_fnc_warden_tow";
 		};
 	};
+	class JA_104th_Medical_Droid
+	{
+		class areaSlowHealInit {
+            init = "_this call BNA_KC_medical_fnc_areaHealerInit";
+        };
+        class loopSay3D_init {
+            serverInit = "_this call BNA_KC_core_fnc_loopSay3D_init";
+        };
+	}
 };
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
@@ -135,6 +153,7 @@ class cfgVehicles {
 	class OPTRE_Pelican_armed;
 	class Aux212_3AS_Reaper_Y_Wing;
 	class ls_carrybox_base;
+    class Land_3AS_Medical_Droid;
 	
 	
 	//Classes needed for the Bison change
@@ -11116,7 +11135,25 @@ class cfgVehicles {
 			};
 		};
 	};
-	
+	class JA_104th_Medical_Droid: Land_3AS_Medical_Droid{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		author = "Dak";
+		displayName = "Medical Droid - 104th";
+		side = 3;
+		editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Droid";
+		editorPreview = "\ORA\BNA_KC\addons\medical\data\previews\BNA_KC_Deployable_MedicalDroid.jpg";
+		simulation = "house";
+        sound = "";
+		BNA_KC_medical_areaHealMaxPatients = 4;
+		BNA_KC_medical_areaHealRadius = 15;
+		BNA_KC_medical_areaHealRate = 6;
+		class EventHandlers: DefaultEventHandlers {};
+
+        class DestructionEffects {};
+	}
 	
 
 	
@@ -11169,6 +11206,7 @@ class cfgVehicles {
 	};
 	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
 	{
+		class ACE_SelfActions;
 		class Turrets: Turrets
 		{
 			class MainTurret;
@@ -11179,12 +11217,12 @@ class cfgVehicles {
             class Carrier;
         };
 	};
-	class 104th_Namerra_tank_mobile: B_APC_Tracked_01_CRV_F
+	class 104th_MudHorn_tank_mobile: B_APC_Tracked_01_CRV_F
 	{
-		displayName="104th Nammera";
+		displayName="104th MudHorn";
 		ace_refuel_fuelCargo=999999999999;
 		ace_rearm_defaultSupply=999999999999;
-		ace_cargo_space=170;
+		ace_cargo_space=20;
 		ace_repair_canRepair=1;
 		ace_refuel_hooks[]=
 		{
@@ -11212,13 +11250,15 @@ class cfgVehicles {
 		smokeLauncherVelocity=14;
 		smokeLauncherOnTurret=1;
 		smokeLauncherAngle=120;
+		fuelCapacity = 27.5;
+		fuelConsumptionRate = 0.15;
+		TFAR_hasIntercom = 1;
+		tf_hasIntercom = 1;
+		tf_hasLRradio = 1;
+		tf_isolatedAmount = 1;
+		tf_range = 30000;
 		class TransportItems
 		{
-			class _transport_ToolKit
-			{
-				name="ToolKit";
-				count=2;
-			};
 			class _item_ACE_tourniquet
 			{
 				name="ACE_tourniquet";
@@ -11269,11 +11309,6 @@ class cfgVehicles {
 				name="dev_enzymeCapsule";
 				count=4;
 			};
-			class _item_surgicalKit
-			{
-				name="ACE_surgicalKit";
-				count=1;
-			};
 		};
 		class TransportWeapons
 		{
@@ -11293,10 +11328,10 @@ class cfgVehicles {
 			"CamoNet"
 		};
 		hiddenSelectionsTextures[] = {
-			"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa",
-			"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
-			"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
-			"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
+			"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
+			"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
+			"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
+			"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 		forceInGarage=1;
@@ -11576,23 +11611,23 @@ class cfgVehicles {
 				factions[] = {"104th_Guys"};
 			};
 			
-			class blue: base
+			class blue_logo: base
 			{
-				displayName = "104th Blue";
+				displayName = "104th Logo grey";
 				author = "Legion Studio + Echo";
 				textures[] = {
-					"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa",
-					"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
-					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
-					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
+					"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
+					"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
+					"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
+					"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
 					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 				};
 				factions[] = {"104th_Guys"};
 			};
 			
-			class logo: base
+			class logo_white: base
 			{
-				displayName = "104th Logo";
+				displayName = "104th Logo White";
 				textures[] = {
 					"JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa",
 					"JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa",
@@ -11627,8 +11662,8 @@ class cfgVehicles {
 			};
 			
 		};
-		textureList[] = {"base",1,"blue",1,"logo",1,"plobro",1,"medevac",1};
-		class ACE_SelfActions
+		textureList[] = {"base",1,"blue_logo",1,"logo_white",1,"plobro",1,"medevac",1};
+		class ACE_SelfActions: ACE_SelfActions
 		{
 			class Style_Changer
 			{
@@ -11651,15 +11686,15 @@ class cfgVehicles {
 				class 104th_Skins
 				{
 					displayname = "104th Skins";
-					class 104th_Blue: DefaultSkin
+					class 104th_Blue_Logo: DefaultSkin
 					{
-						displayName = "104th Blue";
+						displayName = "104th Logo Grey";
 						statement = 
-						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
 					};
-					class 104th_Logo: DefaultSkin
+					class 104th_Logo_white: DefaultSkin
 					{
-						displayName = "104th Logo";
+						displayName = "104th Logo White";
 						statement = 
 						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
 					};
@@ -11677,13 +11712,56 @@ class cfgVehicles {
 					};
 				};
 			};
+			class TFAR_IntercomChannel
+			{
+				displayName = "$STR_tfar_core_Intercom_ACESelfAction_Name";
+				condition = "true";
+				statement = "";
+				icon = "";
+				class TFAR_IntercomChannel_disabled
+				{
+					displayName = "Disabled";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+				class TFAR_IntercomChannel_1
+				{
+					displayName = "$STR_tfar_core_Intercom_ACESelfAction_Channel1";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					displayName = "$STR_tfar_core_Intercom_ACESelfAction_Channel2";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_Misc_1
+				{
+					displayName = "Misc channel 1";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_Misc_2
+				{
+					displayName = "Misc channel 2";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 3";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],3,true];";
+				};
+				class TFAR_IntercomChannel_Misc_3
+				{
+					displayName = "Misc channel 3";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 4";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],4,true];";
+				};
+			};
 		};
 		class VehicleTransport: VehicleTransport{
 			class Cargo {
                 parachuteClass = "B_Parachute_02_F";
                 parachuteHeightLimit = 40;
                 canBeTransported = TRUE;
-                dimensions[] = {"ftr_muzzle", "btl_muzzle"};
+				dimensions[] = {"BBox_1_1_pos","BBox_1_2_pos"};
             };
 			class Carrier{
 				cargoAlignment[] = {"center","front"};
@@ -11700,14 +11778,15 @@ class cfgVehicles {
 			}
 		}
 	};
-	class 104th_Namerra_tank_field: 104th_Namerra_tank_mobile
+	class 104th_MudHorn_tank_field: 104th_MudHorn_tank_mobile
 	{
-		displayName="104th Nammera Fast";
+		displayName="104th MudHorn Fast";
 		enginePower=2400;
 		gearBox[]={-7,0,11,8,5.6999998,4.1999998};
 		maxSpeed=120;
 		maxOmega=500;
 		peakTorque=7400;
+		fuelConsumptionRate = 0.2;
 		torqueCurve[]=
 		{
 			"[0.291667",
@@ -11746,10 +11825,10 @@ class cfgVehicles {
 			"CamoNet"
 		};
 		hiddenSelectionsTextures[] = {
-			"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa",
-			"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
-			"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
-			"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
+			"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
+			"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
+			"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
+			"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
 		};
 	};
@@ -12014,7 +12093,7 @@ class cfgSounds {
 
 class CfgDigVehicles
 {
-	class 104th_Namerra_tank_mobile
+	class 104th_MudHorn_tank_mobile
 	{
 		type="animate";
 		animation="moveplow";
@@ -12023,7 +12102,7 @@ class CfgDigVehicles
 		plowLowered=0.89999998;
 		distanceToTrench=3.3499999;
 	};
-	class 104th_Namerra_tank_field
+	class 104th_MudHorn_tank_field
 	{
 		type="animate";
 		animation="moveplow";

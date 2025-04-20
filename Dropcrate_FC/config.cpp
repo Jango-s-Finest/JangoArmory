@@ -14,21 +14,6 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
-
-class CfgEditorCategories
-{
-	class 104th_Boxes
-	{
-		displayname = "Jango's Finest";
-	};
-};
-class CfgEditorSubcategories
-{
-	class 104th_Boxes_Republic
-	{
-		displayname = "104th - Boxes";
-	};
-};
 class SensorTemplateLaser;
 class CfgSounds
 {
@@ -258,8 +243,8 @@ class CfgVehicles
 		author = "Fishinchips";
         _generalMacro = "FC_Placeblecrate_104th";
 		displayName = "Dropcrate / Placeblecrate 104th";
-        editorCategory = "104th_Boxes";
-        editorSubcategory = "104th_Boxes_Republic";
+        editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Boxes";
 	};
 
 };
