@@ -11238,6 +11238,8 @@ class cfgVehicles {
 		gunnerCanSee=31;
 		commanderCanSee=31;
 		canUseScanner=1;
+		tas_canBlift = 1;
+		tas_liftVars = "[[[[0, -3, -4.5]]], [0.27], [-0.2]]";
 		incomingMissileDetectionSystem=16;
 		weaponLockSystem="2+4+8";
 		receiveRemoteTargets=1;
