@@ -13,6 +13,7 @@ class CfgPatches
 			"JA_104th_Box_Explosives",
 			"JA_104th_Box_Medic",
 			"JA_104th_Box_Resupply",
+			"JA_104th_Medical_Droid",
 			"JA_104th_BARC",
 			"JA_104th_BARC_WP",
 			"JA_104th_BARC_Talon",
@@ -47,7 +48,9 @@ class CfgPatches
 			"JA_104th_Vulture_dynamicLoadout_base",
 			"JA_104th_Vulture_dynamicLoadout",
 			"JA_104th_Vulture_dynamicLoadout_AA",
-			"JA_104th_Vulture_dynamicLoadout_Bare"
+			"JA_104th_Vulture_dynamicLoadout_Bare",
+			"104th_MudHorn_tank_mobile",
+			"104th_MudHorn_tank_field"
 		};	//All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {"JA_104th_guided_resupply_pod_launcher"};
 		requiredVersion = 0.1;
@@ -79,6 +82,10 @@ class cfgEditorSubcategories
 	{
 		displayname = "104th - Boxes";
 	};
+	class 104th_Categ_Clones_Droid
+	{
+		displayname = "104th - Droids";
+	};
 };
 
 
@@ -101,6 +108,38 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 };
 
 class DefaultEventhandlers;
+class Extended_init_EventHandlers
+{
+	class 104th_MudHorn_tank_mobile
+	{
+		class warden_tank_init_eh
+		{
+			init="['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;";
+		};
+		class adsd_tow
+		{
+			init="[_this select 0] spawn RD501_fnc_warden_tow";
+		};
+	};
+	class JA_104th_Medical_Droid
+	{
+		class areaSlowHealInit {
+            init = "_this call BNA_KC_medical_fnc_areaHealerInit";
+        };
+        class loopSay3D_init {
+            serverInit = "_this call BNA_KC_core_fnc_loopSay3D_init";
+        };
+	}
+};
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+
 class cfgVehicles {
 	
 	class SWLG_tanks_tx130;
@@ -114,6 +153,7 @@ class cfgVehicles {
 	class OPTRE_Pelican_armed;
 	class Aux212_3AS_Reaper_Y_Wing;
 	class ls_carrybox_base;
+    class Land_3AS_Medical_Droid;
 	
 	
 	//Classes needed for the Bison change
@@ -242,8 +282,17 @@ class cfgVehicles {
 		ls_impulsor_fuelDrain_1 = 0.00001;
 		ls_impulsor_fuelDrain_2 = 0.00003;
 		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","212th_A2A_MissileSystem","missiles_DAR","Laserdesignator_pilotCamera","FC_Dropcrate_PW1","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","12rnd_missiles","12rnd_missiles","12rnd_missiles","Laserbatteries","Pylon_FC_Dropcrate_P_1rnd","Pylon_FC_Dropcrate_P_1rnd","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"ls_laat_gun","ls_laat_gun_2","212th_A2A_MissileSystem","missiles_DAR","ace_missileguidance_dagr","Laserdesignator_pilotCamera","FC_Dropcrate_PW1","CMFlareLauncher"};
+		magazines[] = {
+			"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag",
+			"200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag",
+			"212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag",
+			"12rnd_missiles","12rnd_missiles","12rnd_missiles",
+			"Laserbatteries",
+			"Pylon_FC_Dropcrate_P_1rnd","Pylon_FC_Dropcrate_P_1rnd",
+			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
+			"24Rnd_ACE_Hydra70_DAGR",
+		};
 
 		memoryPointDriverOptics = "slingcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
@@ -899,10 +948,6 @@ class cfgVehicles {
 			class _xx_ls_mag_rpg_1rnd{
 				count = 3;
 				magazine = "ls_mag_rpg_1rnd";
-			};
-			class _xx_JA104_mag_T9_1rnd{
-				count = 5;
-				magazine = "JA_104th_LaserCannon_mag";
 			};
 			class _xx_501_ThermalDet{
 				count = 8;
@@ -11090,7 +11135,25 @@ class cfgVehicles {
 			};
 		};
 	};
-	
+	class JA_104th_Medical_Droid: Land_3AS_Medical_Droid{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		author = "Dak";
+		displayName = "Medical Droid - 104th";
+		side = 3;
+		editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Droid";
+		editorPreview = "\ORA\BNA_KC\addons\medical\data\previews\BNA_KC_Deployable_MedicalDroid.jpg";
+		simulation = "house";
+        sound = "";
+		BNA_KC_medical_areaHealMaxPatients = 4;
+		BNA_KC_medical_areaHealRadius = 15;
+		BNA_KC_medical_areaHealRate = 6;
+		class EventHandlers: DefaultEventHandlers {};
+
+        class DestructionEffects {};
+	}
 	
 
 	
@@ -11136,6 +11199,642 @@ class cfgVehicles {
 		};
 	};
 	
+	class APC_Tracked_01_base_F;
+	class B_APC_Tracked_01_base_F: APC_Tracked_01_base_F
+	{
+		class Turrets;
+	};
+	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
+	{
+		class ACE_SelfActions;
+		class Turrets: Turrets
+		{
+			class MainTurret;
+			class CommanderOptics;
+		};
+		class Components;
+		class VehicleTransport {
+            class Carrier;
+        };
+	};
+	class 104th_MudHorn_tank_mobile: B_APC_Tracked_01_CRV_F
+	{
+		displayName="104th MudHorn";
+		ace_refuel_fuelCargo=999999999999;
+		ace_rearm_defaultSupply=999999999999;
+		ace_cargo_space=20;
+		ace_repair_canRepair=1;
+		ace_refuel_hooks[]=
+		{
+			{0.38,-3.1700001,-0.69999999},
+			{-0.41,-3.1700001,-0.69999999}
+		};
+		scopeCurator=2;
+		transportSoldier=8;
+		LESH_canTow=1;
+		crew = "SWLB_clone_sniper_base_P2";
+		LESH_AxisOffsetTower[]={0,-6,1};
+		driverCanSee=31;
+		gunnerCanSee=31;
+		commanderCanSee=31;
+		canUseScanner=1;
+		tas_canBlift = 1;
+		tas_liftVars = "[[[[0, -3, -4.5]]], [0.27], [-0.2]]";
+		incomingMissileDetectionSystem=16;
+		weaponLockSystem="2+4+8";
+		receiveRemoteTargets=1;
+		reportRemoteTargets=1;
+		reportOwnPosition=1;
+		faction="104th_Guys";
+		editorSubcategory="104th_Categ_Clones_Vehicles_Land";
+		vehicleClass="Armored";
+		smokeLauncherGrenadeCount=8;
+		smokeLauncherVelocity=14;
+		smokeLauncherOnTurret=1;
+		smokeLauncherAngle=120;
+		fuelCapacity = 27.5;
+		fuelConsumptionRate = 0.15;
+		TFAR_hasIntercom = 1;
+		tf_hasIntercom = 1;
+		tf_hasLRradio = 1;
+		tf_isolatedAmount = 1;
+		tf_range = 30000;
+		class TransportItems
+		{
+			class _item_ACE_tourniquet
+			{
+				name="ACE_tourniquet";
+				count=12;
+			};
+			class _item_ACE_splint
+			{
+				name="ACE_splint";
+				count=8;
+			};
+			class _item_ACE_Needle
+			{
+				name="kat_IV_16";
+				count=6;
+			};
+			class _item_ACE_plasmaIV_1000
+			{
+				name="ACE_plasmaIV";
+				count=6;
+			};
+			class _item_ACE_elasticBandage
+			{
+				name="ACE_elasticBandage";
+				count=30;
+			};
+			class _item_ACE_quikclot
+			{
+				name="ACE_quikclot";
+				count=15;
+			};
+			class _item_ACE_packingBandage
+			{
+				name="ACE_packingBandage";
+				count=15;
+			};
+			class _item_ACE_painkiller
+			{
+				name="RD501_Painkiller";
+				count=4;
+			};
+			class _item_ACE_epinephrine
+			{
+				name="ACE_epinephrine";
+				count=4;
+			};
+			class _item_Necro_Enzyme
+			{
+				name="dev_enzymeCapsule";
+				count=4;
+			};
+		};
+		class TransportWeapons
+		{
+		};
+		class TransportMagazines
+		{
+		};
+		author="Dak";
+		scope=2;
+		side=1;
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"CamoNet"
+		};
+		hiddenSelectionsTextures[] = {
+			"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
+			"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
+			"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
+			"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
+			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+		};
+		forceInGarage=1;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"Laserdesignator_pilotCamera",
+					"CMFlareLauncher",
+					"ls_laat_gun"
+				};
+				magazines[]=
+				{
+					"Laserbatteries",
+					"300Rnd_CMFlare_Chaff_Magazine",
+					"300Rnd_CMFlare_Chaff_Magazine",
+					"200rnd_laat_he_mag",
+					"200rnd_laat_he_mag"
+				};
+			};
+			class CommanderOptics: CommanderOptics
+			{
+			};
+		};
+		class components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						typeRecognitionDistance=1000;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=1600;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=2000;
+						maxFogSeeThrough=-1;
+						nightRangeCoef=1;
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=2000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+							maxFogSeeThrough=-1;
+							nightRangeCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=2000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+							maxFogSeeThrough=-1;
+							nightRangeCoef=1;
+						};
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						typeRecognitionDistance=750;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=1600;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=2000;
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=1000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=1000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						typeRecognitionDistance=750;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=1600;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=2000;
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=1000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=1000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+					};
+					class ManSensorComponent: SensorTemplateMan
+					{
+						typeRecognitionDistance=300;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=1600;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=2000;
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=300;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=300;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+					};
+					class DataLinkSensorComponent: SensorTemplateDataLink
+					{
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						componentType="DataLinkSensorComponent";
+						allowsMarking=1;
+						typeRecognitionDistance=0;
+						color[]={1,1,1,0};
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight
+			{
+				componentType="VehicleSystemsDisplayManager";
+				defaultDisplay="EmptyDisplay";
+				right=1;
+				x="(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"", ((safezoneX + safezoneW) - (  (10 *    (   ((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 *    (   ((safezoneW / safezoneH) min 1.2) / 40)))])";
+				y="(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"", (safezoneY + safezoneH - 21 *    (   (   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+				class Components
+				{
+					class CrewDisplay
+					{
+						componentType="CrewDisplayComponent";
+					};
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MineDetectorDisplay
+					{
+						componentType="MineDetectorDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+					};
+					class SlingLoadDisplay
+					{
+						componentType="SlingLoadDisplayComponent";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleCommanderDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Commander";
+					};
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={32000,16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft
+			{
+				componentType="VehicleSystemsDisplayManager";
+				defaultDisplay="EmptyDisplay";
+				left=1;
+				x="(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"", (safezoneX + 0.5 *    (   ((safezoneW / safezoneH) min 1.2) / 40))])";
+				y="(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"", (safezoneY + safezoneH - 21 *    (   (   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+				class Components
+				{
+					class CrewDisplay
+					{
+						componentType="CrewDisplayComponent";
+					};
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MineDetectorDisplay
+					{
+						componentType="MineDetectorDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+					};
+					class SlingLoadDisplay
+					{
+						componentType="SlingLoadDisplayComponent";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleCommanderDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Commander";
+					};
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={32000,16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+		};
+		class EventHandlers: DefaultEventhandlers
+		{
+		};
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "White";
+				author = "Legion Studio + Echo";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa",
+					"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
+					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+			
+			class blue_logo: base
+			{
+				displayName = "104th Logo grey";
+				author = "Legion Studio + Echo";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
+					"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
+					"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
+					"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+			
+			class logo_white: base
+			{
+				displayName = "104th Logo White";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa",
+					"JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa",
+					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+				};
+			}
+			
+			class plobro: base
+			{
+				displayName = "104th PloBros";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge_PloBros.paa",
+					"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
+					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+				};
+			};
+			
+			class medevac: base
+			{
+				displayName = "104th MedEvac";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa",
+					"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
+					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
+					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+				};
+			};
+			
+		};
+		textureList[] = {"base",1,"blue_logo",1,"logo_white",1,"plobro",1,"medevac",1};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+			class Style_Changer
+			{
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2;
+				class DefaultSkin
+				{
+					displayName = "White";
+					exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement = 
+						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+					showDisabled = 0;
+					runOnHover = 0;
+					priority = 2.5;
+				};
+				class 104th_Skins
+				{
+					displayname = "104th Skins";
+					class 104th_Blue_Logo: DefaultSkin
+					{
+						displayName = "104th Logo Grey";
+						statement = 
+						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+					};
+					class 104th_Logo_white: DefaultSkin
+					{
+						displayName = "104th Logo White";
+						statement = 
+						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+					};
+					class 104th_PloBro: DefaultSkin
+					{
+						displayName = "104th PloBro";
+						statement = 
+						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge_PloBros.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+					};
+					class 104th_MedEvac: DefaultSkin
+					{
+						displayName = "104th MedEvac";
+						statement = 
+						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+					};
+				};
+			};
+			class TFAR_IntercomChannel
+			{
+				displayName = "$STR_tfar_core_Intercom_ACESelfAction_Name";
+				condition = "true";
+				statement = "";
+				icon = "";
+				class TFAR_IntercomChannel_disabled
+				{
+					displayName = "Disabled";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+				class TFAR_IntercomChannel_1
+				{
+					displayName = "$STR_tfar_core_Intercom_ACESelfAction_Channel1";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					displayName = "$STR_tfar_core_Intercom_ACESelfAction_Channel2";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_Misc_1
+				{
+					displayName = "Misc channel 1";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_Misc_2
+				{
+					displayName = "Misc channel 2";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 3";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],3,true];";
+				};
+				class TFAR_IntercomChannel_Misc_3
+				{
+					displayName = "Misc channel 3";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 4";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],4,true];";
+				};
+			};
+		};
+		class VehicleTransport: VehicleTransport{
+			class Cargo {
+                parachuteClass = "B_Parachute_02_F";
+                parachuteHeightLimit = 40;
+                canBeTransported = TRUE;
+				dimensions[] = {"BBox_1_1_pos","BBox_1_2_pos"};
+            };
+			class Carrier{
+				cargoAlignment[] = {"center","front"};
+				cargoBayDimentions[] = {"Limit1","limit2"};
+				cargoSpacing[] = {0,0,0};
+				disableHeightLimit = 1;
+				exits[] = {"pos_cargo_load"};
+				loadingAngle = 60;
+				loadingDistance = 15;
+				maxLoadMass = 1e+06;
+				parachuteClassDefault = "B_Parachute_02_F";
+				parachuteHeightLimitDefault = 50;
+				unloadingInterval = 2;
+			}
+		}
+	};
+	class 104th_MudHorn_tank_field: 104th_MudHorn_tank_mobile
+	{
+		displayName="104th MudHorn Fast";
+		enginePower=2400;
+		gearBox[]={-7,0,11,8,5.6999998,4.1999998};
+		maxSpeed=120;
+		maxOmega=500;
+		peakTorque=7400;
+		fuelConsumptionRate = 0.2;
+		torqueCurve[]=
+		{
+			"[0.291667",
+			"0.540541]",
+			"[0.416667",
+			"0.675676]",
+			"[0.583333",
+			"0.810811]",
+			"[0.666667",
+			"0.891892]",
+			"[0.75",
+			"0.972973]",
+			"[0.833333",
+			"1.02703]",
+			"[0.916667",
+			"1]",
+			"[1",
+			"0.945946]"
+		};
+		engineMOI=1;
+		armor=500;
+		weapons[]=
+		{
+			"SmokeLauncher"
+		};
+		magazines[]=
+		{
+			"SmokeLauncherMag"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"CamoNet"
+		};
+		hiddenSelectionsTextures[] = {
+			"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
+			"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
+			"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
+			"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
+			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+		};
+	};
+
 };
 
 class CfgAmmo
@@ -11215,7 +11914,7 @@ class CfgMagazines
 	class 2Rnd_GBU12_LGB;
 	class JA_104th_Guided_Resupply_Magazine: 2Rnd_GBU12_LGB
 	{
-		author = "RD501";
+		author = "Dak";
 		ammo = "JA_104th_guided_resupply_ammo";
 		displayName = "Supply Pod";
 		displayNameShort = "Supply Pod";
@@ -11392,4 +12091,26 @@ class cfgSounds {
 		duration = 3;
 	};
 	
+};
+
+class CfgDigVehicles
+{
+	class 104th_MudHorn_tank_mobile
+	{
+		type="animate";
+		animation="moveplow";
+		selection="plow";
+		plowRaised=0;
+		plowLowered=0.89999998;
+		distanceToTrench=3.3499999;
+	};
+	class 104th_MudHorn_tank_field
+	{
+		type="animate";
+		animation="moveplow";
+		selection="plow";
+		plowRaised=0;
+		plowLowered=0.89999998;
+		distanceToTrench=3.3499999;
+	};
 };

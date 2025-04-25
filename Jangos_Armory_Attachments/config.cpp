@@ -288,11 +288,12 @@ class CfgWeapons
 		hiddenSelections[] =
 		{
 			"camo1",
-			"camo2"
-
+			"camo2",
+			"camo3"
 		};
 		hiddenSelectionsTextures[] =
 		{
+			"Jangos_Armory_Attachments\data\Textures\104th_CO_Spectre_Commander_Visor.paa",
 			"Jangos_Armory_Attachments\data\Textures\104th_CO_Spectre_Commander_Visor.paa",
 			"Jangos_Armory_Attachments\data\Textures\104th_CO_Spectre_Commander_Visor.paa"
 		};
@@ -307,7 +308,6 @@ class CfgWeapons
 		{
 			"camo1",
 			"camo2"
-
 		};
 		hiddenSelectionsTextures[] =
 		{
