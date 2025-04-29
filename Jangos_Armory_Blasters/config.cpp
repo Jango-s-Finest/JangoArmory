@@ -1413,8 +1413,7 @@ class CfgWeapons
                     "JA_104th_cows_DMS",
                     "JA_104th_cows_DMS_2",
                     "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
-                    "JA_104th_cows_LEScope_DC15A"
+                    "JA_104th_cows_DMS_4"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -1423,7 +1422,6 @@ class CfgWeapons
                 displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[]=
                 {
-                	"3AS_Muzzle_LE_DC15A",
                     "JA_104th_muzzle_flash"
                 };
             };
@@ -1657,8 +1655,7 @@ class CfgWeapons
                     "JA_104th_cows_DMS_2",
                     "JA_104th_cows_DMS_3",
                     "JA_104th_cows_DMS_4",
-                    "JA_104th_cows_reflex_optic",
-                    "3AS_optic_acog_DC15C"
+                    "3AS_Optic_Scope_WestarM5"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -1864,7 +1861,7 @@ class CfgWeapons
                 scope = 0;
                 compatibleItems[] = 
                 {
-                    "3AS_Optic_DC15L",
+                    "3AS_optic_DC15L_F",
                     "JA_104th_cows_RCO",
                     "JA_104th_cows_RCO_2",
                     "JA_104th_cows_RCO_3",
@@ -2011,7 +2008,8 @@ class CfgWeapons
                     "JA_104th_cows_DMS_2",
                     "JA_104th_cows_DMS_3",
                     "JA_104th_cows_DMS_4",
-                    "JA_104th_cows_reflex_optic"
+                    "3AS_Imp_Optic_1",
+                    "3AS_Imp_Optic_2"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -2114,7 +2112,8 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
                 {
-                    "JA_104th_cows_LRPS"
+                    "JA_104th_cows_LRPS",
+                    "3AS_optic_DC15X_F"
                 };
             };
             class MuzzleSlot : MuzzleSlot
@@ -2218,6 +2217,8 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
                 {
+                    "3AS_Imp_Optic_1",
+                    "3AS_optic_DC15X_F",
                     "JA_104th_cows_LRPS",
                     "OPTRE_SRM_Sight",
                     "k_773_scope1",
@@ -2253,7 +2254,8 @@ class CfgWeapons
                 linkProxy="\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
                 compatibleItems[] =
                 {
-                    "bipod_01_F_blk"
+                    "bipod_01_F_blk",
+                    "3AS_bipod_DC15X_F"
                 };
             };
         };
@@ -2587,8 +2589,11 @@ class CfgWeapons
                     "JA_104th_cows_DMS_2",
                     "JA_104th_cows_DMS_3",
                     "JA_104th_cows_DMS_4",
-                    "JA_104th_cows_reflex_optic",
-                    "3AS_Optic_Scope_WestarM5"
+                    "3AS_Optic_Scope_WestarM5",
+                    "3AS_Imp_Optic_1",
+                    "3AS_Imp_Optic_2",
+                    "3AS_Imp_Optic_3",
+                    "3AS_Imp_Optic_4"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -2775,8 +2780,11 @@ class CfgWeapons
                     "JA_104th_cows_DMS_2",
                     "JA_104th_cows_DMS_3",
                     "JA_104th_cows_DMS_4",
-                    "JA_104th_cows_reflex_optic",
-                    "3AS_Optic_Scope_WestarM5"
+                    "3AS_Optic_Scope_WestarM5",
+                    "3AS_Imp_Optic_1",
+                    "3AS_Imp_Optic_2",
+                    "3AS_Imp_Optic_3",
+                    "3AS_Imp_Optic_4"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -3230,7 +3238,8 @@ class CfgWeapons
                 displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[]=
                 {
-                    "muzzle_snds_L"
+                    "muzzle_snds_L",
+                    "3AS_muzzle_DC17S_F"
                 };
             };
         };
@@ -3298,7 +3307,8 @@ class CfgWeapons
                 displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[]=
                 {
-                    "muzzle_snds_L"
+                    "muzzle_snds_L",
+                    "3AS_muzzle_DC17S_F"
                 };
             };
         };
