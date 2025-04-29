@@ -1523,8 +1523,8 @@ class CfgWeapons
         baseWeapon = "JA_104th_DC15C";
         mass = 68;
         picture = "\Jangos_Armory_Blasters\data\textures\dc15c_ui_ca.paa";
-        model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_f";
-        handAnim[] = {"OFP2_ManSkeleton", "\3AS\3AS_Weapons\DC15C\Data\Anim\DC15C_handanim.rtm"};
+        model = "\3AS\3AS_Weapons\Republic\DC15C\3AS_DC15C_F.p3d";
+        handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15C\Data\Anim\New_DC15C_Handanim.rtm"};
         reloadAction = "GestureReloadMX";
         reloadTime = 0.1;
         recoil = "recoil_mx";
@@ -1687,11 +1687,11 @@ class CfgWeapons
         baseWeapon="JA_104th_DC15C_UGL";
         mass = 95;
         picture = "\Jangos_Armory_Blasters\data\textures\dc15cugl_ui_ca.paa";
-        model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
+        model = "\3AS\3AS_Weapons\Republic\DC15C\3AS_DC15C_GL.p3d";
         handAnim[]=
         {
             "OFP2_ManSkeleton",
-            "\3AS\3AS_Weapons\WestarM5\Data\Anim\WestarM5_handanim.rtm"
+            "3as\3AS_Weapons\Republic\DC15C\Data\Anim\New_DC15CGL_Handanim.rtm"
         };
         reloadAction = "GestureReloadMX";
         muzzles[]=
@@ -1770,8 +1770,8 @@ class CfgWeapons
         baseWeapon = "JA_104th_DC15L";
         mass = 154;
         picture = "\Jangos_Armory_Blasters\data\textures\dc15l_ui_ca.paa";
-        model = "3AS\3AS_Weapons\DC15L\3AS_DC15L_f.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","\3AS\3AS_Weapons\DC15L\Data\Anim\DC15L_handanim.rtm"};
+        model = "\3AS\3AS_Weapons\Republic\DC15L\3AS_DC15L_F.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DC15L\Data\Anims\New_DC15L_Handanim.rtm"};
         recoil = "recoil_SMG_03";
         magazines[]=
         {
