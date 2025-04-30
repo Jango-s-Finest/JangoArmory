@@ -1318,9 +1318,9 @@ class CfgWeapons
         displayName = "[104th] DC-15A";
         baseWeapon = "JA_104th_DC15A";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_ui_ca.paa";
-        model = "\MRC\JLTS\weapons\DC15A\DC15A_plastic.p3d";
+        model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
         mass = 97;
-        handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DC15A\anims\DC15A_handanim.rtm"};
+        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15a_Handanim.rtm"};
         reloadAction = "GestureReload_JLTS_DC15A";
         reloadTime = 0.1;
         recoil = "recoil_mx";
@@ -1401,6 +1401,7 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
+                    "3AS_optic_DC15LE_F",
                     "JA_104th_cows_RCO",
                     "JA_104th_cows_RCO_2",
                     "JA_104th_cows_RCO_3",
@@ -1422,7 +1423,8 @@ class CfgWeapons
                 displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[]=
                 {
-                    "JA_104th_muzzle_flash"
+                    "JA_104th_muzzle_flash",
+                    "3AS_muzzle_DC15LE_F"
                 };
             };
             class PointerSlot: PointerSlot
@@ -1440,8 +1442,8 @@ class CfgWeapons
         displayName="[104th] DC-15A UGL";
         baseWeapon="JA_104th_DC15A_UGL";
         mass = 110;
-        model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl_plastic.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DC15A\anims\DC15A_handanim.rtm"};
+        model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_GL.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15aGL_Handanim.rtm"};
         reloadAction = "3AS_GestureReloadDC15A";
         muzzles[]=
         {
@@ -1920,11 +1922,11 @@ class CfgWeapons
         picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_ui_ca.paa";
         JLTS_canHaveShield = 0; // Finish Later
         JLTS_shieldedWeapon = "";
-        model = "\MRC\JLTS\weapons\DC15S\DC15S.p3d";
+        model = "\3AS\3AS_Weapons\Republic\DC15S\3AS_DC15S_F.p3d";
         handAnim[] =
         {
             "OFP2_ManSkeleton",
-            "\MRC\JLTS\weapons\DC15S\anims\DC15S_handanim.rtm"
+            "3as\3AS_Weapons\Republic\DC15S\Data\Anim\New_DC15S_Handanim.rtm"
         };
 
         reloadAction = "GestureReload_JLTS_DC15S";
@@ -2047,8 +2049,8 @@ class CfgWeapons
         baseWeapon = "JA_104th_DC15X";
         mass = 92;
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
-        model = "\MRC\JLTS\weapons\DC15X\DC15X.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\DC15X\anims\DC15X_handanim.rtm"};
+        model = "\3AS\3AS_Weapons\Republic\DC15X\3AS_DC15X_F.p3d";
+        handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15X\Data\Anim\New_DC15X_handanim.rtm"};
         recoil = "recoil_dmr_01";
         recoilProne = "recoil_single_prone_mx";
         magazines[] =
@@ -2436,8 +2438,8 @@ class CfgWeapons
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_ui_ca.paa";
         JLTS_canHaveShield = 0; // Shield Fix
         JLTS_shieldedWeapon = "";
-        model = "\MRC\JLTS\weapons\DP23\DP23.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DP23\anims\DP23_handanim.rtm"};
+        model = "\3AS\3AS_Weapons\Republic\DP23\3AS_DP23_F.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DP23\Data\Anim\New_DP23_handanim.rtm"};
         reloadMagazineSound[] = {"swlw_rework\sounds\dc\15\DC15A_reload.wss",3,1,30};
         recoil = "JLTS_recoil_DP23";
         magazines[]=
@@ -2475,6 +2477,19 @@ class CfgWeapons
         };
  		class WeaponSlotsInfo: WeaponSlotsInfo
         {
+            class CowsSlot: CowsSlot
+            {
+                displayName = "Optics Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = {0.5,0.35};
+                iconScale = 0.2;
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                compatibleItems[] = 
+                {
+                
+                };
+            };
             class PointerSlot: PointerSlot
             {
                 compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
@@ -3140,7 +3155,7 @@ class CfgWeapons
         baseWeapon = "JA_104th_DC17SA";
         mass = 20;
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_ui_ca.paa";
-        model = "\MRC\JLTS\weapons\DC17SA\DC17SA.p3d";
+        model = "\3AS\3AS_Weapons\Republic\DC17S\3AS_DC17S_F.p3d";
         magazines[] =
         {
             "JA_104th_Weapons_Mags_10mw50"
