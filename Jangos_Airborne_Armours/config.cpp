@@ -311,6 +311,29 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Ratchet_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Ratchet)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Ratchet_Armor_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Ratchet_Armor_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Ratchet";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Carmine_Uniform : JA_104th_Base_AB_Uniform
 	{
 		author = "Jango's Finest";
@@ -761,6 +784,25 @@ class CfgVehicles
 		};
 		linkedItems[] = { JA_104th_Azure_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
 		respawnLinkedItems[] = { JA_104th_Azure_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
+	};
+	class JA_104th_Ratchet : SWLB_clone_base_P2
+	{
+		author = "Fish";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        side = 1;
+		displayName = "104th Ratchet";
+		uniformClass = "JA_104th_Ratchet_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Ratchet_Armor_Upper.paa",
+			"Jangos_Airborne_Armours\data\Textures\104th_AB_Ratchet_Armor_Lower.paa"
+		};
+		linkedItems[] = { JA_104th_Ratchet_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit
+		respawnLinkedItems[] = { JA_104th_Ratchet_Helmet ,SWLB_clone_basic_armor,ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio }; // all items that will be on unit on respawn
 	};
 	class JA_104th_Magnum : SWLB_clone_marshal_commander_base_P2
 	{

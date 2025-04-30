@@ -279,37 +279,25 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Spirit_Vest : SWLB_clone_airborne_nco_armor
+    class JA_104th_Spirit_Vest : SWLB_clone_kama_armor
     {
         author = "Emmet";
         scope = 2;
         displayName = "Clone NCO Vest (104th Spirit)";
         hiddenSelections[] =
         {
-            "camo1",
-            "camo2",
-            "camo3",
-            "camo4"
+            "camo1"
         };
         hiddenSelectionsTextures[] =
         {
-            "Jangos_Infantry_Vests\data\Textures\104th_P2_Spirit_Heavy.paa", // Heavy
-            "Jangos_Infantry_Vests\data\Textures\104th_P2_Spirit_Officer.paa",
-            "Jangos_Infantry_Vests\data\Textures\104th_P2_Spirit_Heavy.paa", //Heavy
-            "Jangos_Infantry_Vests\data\Textures\104th_P2_Spirit_Heavy.paa" //Heavy
+            "Jangos_Infantry_Vests\data\Textures\104th_P2_Spirit_Kama.paa"
         };
         class ItemInfo: ItemInfo
 		{
             containerClass = "Supply80";
             vestType = "Rebreather";
-            class HitpointsProtectionInfo
-            {
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 6;
-                    passThrough = 0.3;
-                };
+
+            class HitpointsProtectionInfo {
                 class Abdomen {
                     hitpointName = "HitAbdomen";
                     armor = 8;

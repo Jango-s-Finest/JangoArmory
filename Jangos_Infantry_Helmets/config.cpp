@@ -142,6 +142,26 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Boris)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Boris_Helmet.paa"}; // the file path to the texture
 	};
+	class JA_104th_Patch_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		hiddenSelections[] = {"camo1"};															// don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Patch)";									// the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Patch_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Lax_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		hiddenSelections[] = {"camo1"};															// don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Lax)";									// the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_P2_Lax_Helmet.paa"}; // the file path to the texture
+	};
 	class JA_104th_Banker_Helmet : SWLB_clone_P2_Helmet
 	{
 		author = "Dak";
@@ -297,6 +317,23 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {};
 		hiddenSelectionsTextures[] = {
 			"Jangos_Infantry_Helmets\data\Textures\104th_P2_Dart_Helmet.paa",
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Archibold_Helmet : ls_gar_engineer_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {
+			"camo1",
+			"illum",
+			"visor"};												// don't change this
+		displayname = "Clone Trooper Engineer Helmet (104th Archibold)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Helmets\data\Textures\104th_Engi_Archibold_Helmet.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"}; // the file path to the texture
 	};
