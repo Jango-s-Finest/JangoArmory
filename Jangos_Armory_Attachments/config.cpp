@@ -300,6 +300,25 @@ class CfgWeapons
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
 	};
+	class JA_104th_CM_Sigil_Visor : lsd_gar_p2MarshalCommander_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone Commander Visor (104th Sigil)";
+		hiddenSelections[] =
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_ARC_Sigil_Cm_Visor.paa",
+			"Jangos_Armory_Attachments\data\Textures\104th_ARC_Sigil_Cm_Visor.paa",
+			"Jangos_Armory_Attachments\data\Textures\104th_ARC_Sigil_Cm_Visor.paa"
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
 	class JA_104th_CM_Visor : lsd_gar_p2MarshalCommander_nvg
 	{
 		author = "Tundra";
