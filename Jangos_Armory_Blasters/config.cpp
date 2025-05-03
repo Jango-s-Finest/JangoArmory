@@ -23,6 +23,7 @@ class CfgPatches
 			"JA_104th_DC15L",
 
 			"JA_104th_DC15S",
+            "JA_104th_DC15S_UGL",
 
 			"JA_104th_DC15X",
 
@@ -37,7 +38,7 @@ class CfgPatches
 
 			"JA_104th_Westar35S",
 
-			"JA_104th_Valken38Y",
+			//"JA_104th_Valken38Y",
 
 			"JA_104th_Z6",
 
@@ -1326,7 +1327,8 @@ class CfgWeapons
         recoil = "recoil_mx";
         magazines[]=
         {
-        	"JA_104th_Weapons_Mags_30mw50"
+            "JA_104th_Weapons_Mags_40mw20",
+        	"JA_104th_Weapons_Mags_30mw30"
         };
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
         class stun: JA_104th_stun_muzzle{};
@@ -1544,7 +1546,8 @@ class CfgWeapons
         recoil = "recoil_mx";
         magazines[]=
         {
-            "JA_104th_Weapons_Mags_20mw200"
+            "JA_104th_Weapons_Mags_10mw50",
+            "JA_104th_Weapons_Mags_20mw40"
         };
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
         class stun: JA_104th_stun_muzzle{};
@@ -1789,8 +1792,7 @@ class CfgWeapons
         recoil = "recoil_SMG_03";
         magazines[]=
         {
-            "JA_104th_Weapons_Mags_20mw200",
-            "JA_104th_Weapons_Mags_20mw300"
+            "JA_104th_Weapons_Mags_20mw240"
         };
         modes[] = {"FullAuto","FullerAuto","FullestAuto"};
 
@@ -1949,7 +1951,8 @@ class CfgWeapons
         recoil = "recoil_SMG_03";
         magazines[] =
         {
-            "JA_104th_Weapons_Mags_20mw200"
+            "JA_104th_Weapons_Mags_10mw50",
+            "JA_104th_Weapons_Mags_20mw40"
         };
         class stun: JA_104th_stun_muzzle{};
         modes[] = {"FullAuto","Single"};
@@ -2149,7 +2152,7 @@ class CfgWeapons
         recoilProne = "recoil_single_prone_mx";
         magazines[] =
         {
-            "JA_104th_Weapons_Mags_40mw40"
+            "JA_104th_Weapons_Mags_40mw20"
         };
         modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F";
         modes[] = {"Single"};
@@ -2247,12 +2250,14 @@ class CfgWeapons
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
         model = "kobra\442_weapons\weapons\773\k_773_rifle.p3d";
         handAnim[] = {"OFP2_ManSkeleton","kobra\442_animations\weapons\k_773_hold.rtm"};
+        reloadAction = "ReloadOverheat_DLT";
+        reloadMagazineSound[] = {"WarMantle\WM_Imperial_Weapons\data\sfx\overheat",5,1,30};
         recoil = "recoil_dmr_01";
         recoilProne = "recoil_single_prone_mx";
         initSpeed = 2000;
         magazines[] =
         {
-            "JA_104th_Weapons_Mags_40mw40",
+            "JA_104th_Weapons_Mags_40mw20",
             "JA_104th_Weapons_Mags_50mw5",
             "JA_104th_Weapons_Mags_100mw1"
         };
@@ -2620,8 +2625,8 @@ class CfgWeapons
         };
         magazines[]=
         {
-            "JA_104th_Weapons_Mags_20mw200",
-            "JA_104th_Weapons_Mags_20mw300"
+            "JA_104th_Weapons_Mags_20mw40",
+            "JA_104th_Weapons_Mags_20mw70"
         };
         class stun: JA_104th_stun_muzzle{};
         modes[] = {"FullAuto","Single"};
@@ -2755,8 +2760,7 @@ class CfgWeapons
         };
         magazines[]=
         {
-        	"JA_104th_Weapons_Mags_20mw200",
-            "JA_104th_Weapons_Mags_20mw300"
+        	"JA_104th_Weapons_Mags_20mw40"
         };
         class stun: JA_104th_stun_muzzle{};
         modes[] = {"FullAuto","Single"};
@@ -2937,8 +2941,8 @@ class CfgWeapons
         fireLightAmbient[] = {0.5,0.5,0.25};
         magazines[] =
         {
-        	"JA_104th_Weapons_Mags_20mw200",
-            "JA_104th_Weapons_Mags_20mw300"
+        	"JA_104th_Weapons_Mags_20mw40",
+            "JA_104th_Weapons_Mags_20mw70"
         };
         muzzles[] =
         {
@@ -3147,7 +3151,7 @@ class CfgWeapons
         model = "\3AS\3AS_Weapons\Republic\DC17S\3AS_DC17S_F.p3d";
         magazines[] =
         {
-            "JA_104th_Weapons_Mags_10mw50"
+            "JA_104th_Weapons_Mags_10mw30"
         };
         modes[] = {"FullAuto","Single"};
         recoil = "recoil_SMG_03";
@@ -3264,14 +3268,14 @@ class CfgWeapons
         model = "3AS\3AS_Weapons\DC15SA\3AS_DC15SA_F.p3d";
         magazines[] =
         {
-            "JA_104th_Weapons_Mags_10mw50",
             "JA_104th_Weapons_Mags_10mw100"
         };
         modes[] = {"Single"};
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         recoil = "recoil_SMG_03";
-        reloadAction = "GestureReloadPistol";
+        reloadAction = "3AS_Vent_Reload_Pistol";
+        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
         class Single: Single
         {
             autoFire = 0;
@@ -3332,7 +3336,7 @@ class CfgWeapons
         model = "SWLW_merc_mando\pistols\westar35sa\westar35sa.p3d";
         magazines[] =
         {
-            "JA_104th_Weapons_Mags_10mw50"
+            "JA_104th_Weapons_Mags_10mw100"
         };
         muzzles[] = {"this"};
         fireLightDiffuse[] = {0.5,0.5,0.25};
@@ -3555,7 +3559,7 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_20mw: JA_104th_Weapons_Ammo_base_blue // Medium Output 
     {
-        hit = 30;
+        hit = 40;
         typicalSpeed = 1500;
         caliber = 2.8;
         waterFriction = -0.009;
@@ -3564,7 +3568,7 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_30mw: JA_104th_Weapons_Ammo_base_blue // High Output 
     {
-        hit = 50;
+        hit = 60;
         typicalSpeed = 3500;
         caliber = 3.6;
         airFriction = 0;
@@ -3574,7 +3578,7 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_40mw: JA_104th_Weapons_Ammo_base_blue // Very High Output
     {
-        hit = 70;
+        hit = 75;
         typicalSpeed = 7000;
         caliber = 4;
         airFriction = 0;
@@ -3584,7 +3588,7 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_50mw: JA_104th_Weapons_Ammo_base_blue // Extreme Output
     {
-        hit = 80;
+        hit = 88;
         typicalSpeed = 10000;
         caliber = 8;
         airFriction = 0;
@@ -3815,14 +3819,32 @@ class CfgMagazines
 
     // Primary Mags
 
-    // Primary Standard Capacity
-    class JA_104th_Weapons_Mags_20mw200: 30Rnd_65x39_caseless_mag
+    // DC-series Rifle Mag
+    class JA_104th_Weapons_Mags_10mw50: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th] Primary Standard Capacity";
-        displayNameShort = "200Rnd 20MW";
+        displayName = "[104th] Low Power Energy Cell";
+        displayNameShort = "50Rnd 10MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
-        count = 200;
+        count = 50;
+        ammo = "JA_104th_Weapons_Ammo_20mw";
+        initSpeed = 600;
+        descriptionShort = "DC Series standard magazine";
+        mass = 10;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 600;
+    };
+    // DC-series Rifle Mag
+    class JA_104th_Weapons_Mags_20mw40: 30Rnd_65x39_caseless_mag
+    {
+        displayName = "[104th] Standard Energy Cell";
+        displayNameShort = "40Rnd 20MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+        count = 40;
         ammo = "JA_104th_Weapons_Ammo_20mw";
         initSpeed = 800;
         descriptionShort = "DC Series standard magazine";
@@ -3835,13 +3857,13 @@ class CfgMagazines
     };
 
     // Med-High Capacity
-    class JA_104th_Weapons_Mags_20mw300: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_20mw240: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th] Primary High Capacity";
-        displayNameShort = "300Rnd 20MW";
+        displayName = "[104th] High Capacity Energy Cell";
+        displayNameShort = "240Rnd 20MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
-        count = 300;
+        count = 240;
         ammo = "JA_104th_Weapons_Ammo_20mw";
         initSpeed = 600;
         descriptionShort = "High capacity magazine";
@@ -3857,7 +3879,7 @@ class CfgMagazines
     // Z-6 Heavy-High
     class JA_104th_Weapons_Mags_10mw500: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th] Primary Heavy High Capacity";
+        displayName = "[104th] Z-6 Standard Energy Cell";
         displayNameShort = "500Rnd 10MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\z6\data\ui\z6_mag_ui_ca.paa";
@@ -3873,14 +3895,14 @@ class CfgMagazines
         typicalSpeed = 800;
     };
 
-    // DW-32S DMR Intermediate round
-        class JA_104th_Weapons_Mags_30mw50: 30Rnd_65x39_caseless_mag
+    // DMR Intermediate round
+        class JA_104th_Weapons_Mags_30mw30: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th] Primary Marksman Standard Capacity";
-        displayNameShort = "50Rnd 30MW";
+        displayName = "[104th] High Power Energy Cell";
+        displayNameShort = "30Rnd 30MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
-        count = 50;
+        count = 30;
         ammo = "JA_104th_Weapons_Ammo_30mw";
         initSpeed = 1000;
         descriptionShort = "DC15 Series High Power magazine";
@@ -3893,13 +3915,13 @@ class CfgMagazines
     };
 
         // 15X / FP773 sniper mag
-        class JA_104th_Weapons_Mags_40mw40: 30Rnd_65x39_caseless_mag
+        class JA_104th_Weapons_Mags_40mw20: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th] Primary HP Standard Capacity";
-        displayNameShort = "40Rnd 40MW";
+        displayName = "[104th] Sniper Energy Cell";
+        displayNameShort = "20Rnd 40MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
-        count = 40;
+        count = 20;
         ammo = "JA_104th_Weapons_Ammo_40mw";
         initSpeed = 1100;
         descriptionShort = "DC15X Specialized High Power magazine";
@@ -3914,7 +3936,7 @@ class CfgMagazines
     class JA_104th_Weapons_Mags_20mw70: 30Rnd_65x39_caseless_mag
     {
         JA_104th_isBlasterMag = 1;
-        displayName = "[104th] Primary SF Blaster Standard Capacity";
+        displayName = "[104th] Extended Capacity Energy Cell";
         displayNameShort = "70Rnd 20MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
@@ -3934,7 +3956,7 @@ class CfgMagazines
     {   
         JA_104th_isATMag = 1;
         author = "Jango's Armory Aux Team";
-        displayName = "[104th] Primary SF HE Standard Capacity";
+        displayName = "[104th] Unguided Explosive Missile";
         ammo = "JA_104th_Weapons_Ammo_17MAT";
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
@@ -3951,26 +3973,26 @@ class CfgMagazines
         class JA_104th_Weapons_Mags_50mw5: 30Rnd_65x39_caseless_mag
     {
         JA_104th_isSniperMag = 1
-        displayName = "[104th] Primary SF HP Standard Capacity";
+        displayName = "[104th] High Power Sniper Energy Cell";
         displayNameShort = "5Rnd 50MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
         count = 5;
         ammo = "JA_104th_Weapons_Ammo_50mw";
-        initSpeed = 1500;
+        initSpeed = 2000;
         descriptionShort = "SF Specialized Overcharged magazine";
         mass = 5;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15X\DC15X_mag.p3d";
         tracersEvery = 1;
-        typicalSpeed = 1500;
+        typicalSpeed = 2000;
     };
         // SF Sniper Special Purpose Rounds
     class JA_104th_Weapons_Mags_100Mw1: 30Rnd_65x39_caseless_mag
     {   
         author = "Jango's Armory Aux Team";
-        displayName = "[104th] Primary SF HE Standard Capacity";
+        displayName = "[104th] Explosive High Power Energy Cell";
         ammo = "JA_104th_Weapons_Ammo_100mw";
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
@@ -4042,13 +4064,13 @@ class CfgMagazines
     // Secondary Mags
 
     // DC15SA Standard mag
-    class JA_104th_Weapons_Mags_10mw50: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_10mw30: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th] Secondary Standard Capacity";
-        displayNameShort = "50Rnd 10MW";
+        displayName = "[104th] Standard Secondary Energy Cell";
+        displayNameShort = "30Rnd 10MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
-        count = 50;
+        count = 30;
         ammo = "JA_104th_Weapons_Ammo_30mw";
         initSpeed = 1100;
         descriptionShort = "DC15SA Standard magazine";
@@ -4062,7 +4084,7 @@ class CfgMagazines
     // SF High Cap secondary mags
     class JA_104th_Weapons_Mags_10mw100: 30Rnd_65x39_caseless_mag
     {
-        displayName = "[104th] Secondary High Capacity";
+        displayName = "[104th] Extended Capacity Energy Cell";
         displayNameShort = "100Rnd 10MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
