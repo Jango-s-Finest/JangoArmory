@@ -20,6 +20,7 @@ class CfgPatches
 			"JA_104th_Axel_Helmet",
 			"JA_104th_Osiris_Helmet",
 			"JA_104th_Magnum_Helmet",
+			"JA_104th_Scrub_Helmet",
 			"JA_104th_Sixes_Helmet",
 			"JA_104th_Bulky_Helmet",
 			"JA_104th_Cyan_Helmet",
@@ -132,6 +133,17 @@ class CfgWeapons
 		displayname = "Clone Trooper AB Helmet (104th Raptor)";											   // the name it will be in game
 		visionMode[] = {"Normal"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Raptor_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Scrub_Helmet : SWLB_clone_AB_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};																	   // don't change this
+		displayname = "Clone Trooper AB Helmet (104th Scrub)";											   // the name it will be in game
+		visionMode[] = {"Normal"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Scrub_Helmet.paa"}; // the file path to the texture
 	};
 	class JA_104th_Dak_Helmet : SWLB_clone_AB_helmet
 	{
