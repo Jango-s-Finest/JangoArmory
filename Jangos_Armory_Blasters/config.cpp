@@ -52,8 +52,9 @@ class CfgPatches
 
 			"JA_104th_RPS6",
 
+            "JA_104th_RPS6_H",
 
-			// "JA_104th_RPS6_disposable",
+			"JA_104th_RPS6_D",
 
 			// "JA_104th_PLX1",
 
@@ -261,6 +262,8 @@ class CfgWeapons
     class ls_weapon_at_plx1;
 	class SWLW_Z7;
 	class SDT_IonDisruptor;
+    class 3AS_RPS6_HP;
+    class 3AS_RPS6_F;
 
     class arifle_MX_Base_F: Rifle_Base_F
     {
@@ -1404,20 +1407,7 @@ class CfgWeapons
                 compatibleItems[] = 
                 {
                     "3AS_optic_DC15LE_F",
-                    "3AS_optic_acog_DC15C",
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4"
+                    "3AS_optic_acog_DC15C"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -1661,21 +1651,7 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
-                    "3AS_optic_acog_DC15C",
-                    "3AS_Optic_Scope_WestarM5"
+                    "3AS_optic_acog_DC15C"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -1880,13 +1856,7 @@ class CfgWeapons
                 scope = 0;
                 compatibleItems[] = 
                 {
-                    "3AS_optic_DC15L_F",
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3"
+                    "3AS_optic_DC15L_F"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -2670,22 +2640,6 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_HoloScope",
-                    "JA_104th_cows_HoloScope_2",
-                    "JA_104th_cows_HoloScope_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
                     "3AS_Optic_Scope_WestarM5",
                     "3AS_Imp_Optic_1",
                     "3AS_Imp_Optic_2",
@@ -2860,22 +2814,6 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_HoloScope",
-                    "JA_104th_cows_HoloScope_2",
-                    "JA_104th_cows_HoloScope_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
                     "3AS_Optic_Scope_WestarM5",
                     "3AS_Imp_Optic_1",
                     "3AS_Imp_Optic_2",
@@ -3028,7 +2966,14 @@ class CfgWeapons
                 iconPosition[] = {0.5,0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = {"SWLW_Westar35S_scope"};
+                compatibleItems[] = 
+                {
+                    "SWLW_Westar35S_scope",
+                    "3AS_Imp_Optic_1",
+                    "3AS_Imp_Optic_2",
+                    "3AS_Imp_Optic_3",
+                    "3AS_Imp_Optic_4"
+                };
             };
         };
     };
@@ -3373,6 +3318,21 @@ class CfgWeapons
         {
             "ls_mag_rpg_1rnd"
         };
+    };
+    class JA_104th_RPS6_H: 3AS_RPS6_HP
+    {
+        scope = 2;
+        displayName = "[104th] RPS-6 Heavy Projectile Rocket Launcher";
+        model = "\3AS\3AS_Weapons\RPS6HP\3AS_RPS6_HP.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\RPS6_HP_Temp.rtm"};
+        
+    };
+    class JA_104th_RPS6_D: 3AS_RPS6_F
+    {
+        scope = 2;
+        displayName = "[104th] RPS-6 Disposable Rocket Launcher";
+        model = "\3AS\3AS_Weapons\RPS6\3AS_RPS6_F.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\rps6_hold.rtm"};
     };
 
 
