@@ -52,8 +52,9 @@ class CfgPatches
 
 			"JA_104th_RPS6",
 
+            "JA_104th_RPS6_H",
 
-			// "JA_104th_RPS6_disposable",
+			"JA_104th_RPS6_D",
 
 			// "JA_104th_PLX1",
 
@@ -143,7 +144,7 @@ class CfgPatches
 		magazines[] = {
 
             "JA_104th_Weapons_Mags_10mw500",
-            "JA_104th_Weapons_Mags_10mw100",
+            "JA_104th_Weapons_Mags_10mw40",
             "JA_104th_Weapons_Mags_10mw50",
 
 			"JA_104th_Weapons_Mags_20mw70",
@@ -261,6 +262,8 @@ class CfgWeapons
     class ls_weapon_at_plx1;
 	class SWLW_Z7;
 	class SDT_IonDisruptor;
+    class 3AS_RPS6_HP;
+    class 3AS_RPS6_F;
 
     class arifle_MX_Base_F: Rifle_Base_F
     {
@@ -1327,7 +1330,7 @@ class CfgWeapons
         recoil = "recoil_mx";
         magazines[]=
         {
-            "JA_104th_Weapons_Mags_40mw20",
+            "JA_104th_Weapons_Mags_20mw40",
         	"JA_104th_Weapons_Mags_30mw30"
         };
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
@@ -1404,20 +1407,7 @@ class CfgWeapons
                 compatibleItems[] = 
                 {
                     "3AS_optic_DC15LE_F",
-                    "3AS_optic_acog_DC15C",
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4"
+                    "3AS_optic_acog_DC15C"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -1661,21 +1651,7 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
-                    "3AS_optic_acog_DC15C",
-                    "3AS_Optic_Scope_WestarM5"
+                    "3AS_optic_acog_DC15C"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -1880,13 +1856,7 @@ class CfgWeapons
                 scope = 0;
                 compatibleItems[] = 
                 {
-                    "3AS_optic_DC15L_F",
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3"
+                    "3AS_optic_DC15L_F"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -2012,24 +1982,11 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_HoloScope",
-                    "JA_104th_cows_HoloScope_2",
-                    "JA_104th_cows_HoloScope_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
+                    "3AS_optic_acog_DC15C",
                     "3AS_Imp_Optic_1",
-                    "3AS_Imp_Optic_2"
+                    "3AS_Imp_Optic_2",
+                    "3AS_Imp_Optic_3",
+                    "3AS_Imp_Optic_4"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -2087,9 +2044,6 @@ class CfgWeapons
             discreteDistanceInitIndex = 0;
             magazines[] = 
             {
-                "3AS_10Rnd_EC30_Pellets",
-                "3AS_10Rnd_ESlug_Mag",
-                "3AS_1Rnd_EC80_Flechette",
                 "ACE_HuntIR_M203",
                 "JA_104th_Weapons_Mags_GL_HE2",
             	"JA_104th_Weapons_Mags_GL_AP2",
@@ -2166,11 +2120,9 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound : BaseSoundModeType
+            class StandardSound: BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire",+3db,1,2200};
-                soundBegin[] = {"begin1", 1};
+                soundSetShot[] = {"3AS_DLT19X_Shot_SoundSet"};
             };
             reloadTime = 1.35;
             dispersion = 0.0001;
@@ -2460,7 +2412,7 @@ class CfgWeapons
             class BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17M_shot1.wss",+1.8db,1,2200};
+                begin1[] = {"\swlw_rework\sounds\dc\17\DC17_shot.wss",1,1,1800};
                 closure1[] = {};
                 closure2[] = {};
                 soundClosure[] = {};
@@ -2468,7 +2420,7 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17M_shot1.wss",+1.8db,1,2200};
+                begin1[] = {"\swlw_rework\sounds\dc\17\DC17_shot.wss",1,1,1800};
                 soundBegin[] = {"begin1",1};
                 closure1[] = {};
                 closure2[] = {};
@@ -2688,22 +2640,6 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_HoloScope",
-                    "JA_104th_cows_HoloScope_2",
-                    "JA_104th_cows_HoloScope_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
                     "3AS_Optic_Scope_WestarM5",
                     "3AS_Imp_Optic_1",
                     "3AS_Imp_Optic_2",
@@ -2878,22 +2814,6 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_HoloScope",
-                    "JA_104th_cows_HoloScope_2",
-                    "JA_104th_cows_HoloScope_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
                     "3AS_Optic_Scope_WestarM5",
                     "3AS_Imp_Optic_1",
                     "3AS_Imp_Optic_2",
@@ -3046,7 +2966,14 @@ class CfgWeapons
                 iconPosition[] = {0.5,0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = {"SWLW_Westar35S_scope"};
+                compatibleItems[] = 
+                {
+                    "SWLW_Westar35S_scope",
+                    "3AS_Imp_Optic_1",
+                    "3AS_Imp_Optic_2",
+                    "3AS_Imp_Optic_3",
+                    "3AS_Imp_Optic_4"
+                };
             };
         };
     };
@@ -3149,13 +3076,13 @@ class CfgWeapons
         mass = 20;
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_ui_ca.paa";
         model = "\3AS\3AS_Weapons\Republic\DC17S\3AS_DC17S_F.p3d";
+        reloadAction = "3AS_Vent_Reload_Pistol";
+        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
         magazines[] =
         {
             "JA_104th_Weapons_Mags_10mw30"
         };
         modes[] = {"FullAuto","Single"};
-        recoil = "recoil_SMG_03";
-        reloadAction = "GestureReloadPistol";
         class stun: JA_104th_stun_muzzle
         {
             reloadAction = "GestureReloadPistol";
@@ -3268,7 +3195,7 @@ class CfgWeapons
         model = "3AS\3AS_Weapons\DC15SA\3AS_DC15SA_F.p3d";
         magazines[] =
         {
-            "JA_104th_Weapons_Mags_10mw100"
+            "JA_104th_Weapons_Mags_10mw40"
         };
         modes[] = {"Single"};
         hiddenSelections[] = {};
@@ -3334,9 +3261,11 @@ class CfgWeapons
         mass = 24;
         picture = "\SWLW_merc_mando\pistols\westar35sa\data\ui\SWLW_westar35sa_ui.paa";
         model = "SWLW_merc_mando\pistols\westar35sa\westar35sa.p3d";
+        reloadAction = "3AS_Vent_Reload_Pistol";
+        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
         magazines[] =
         {
-            "JA_104th_Weapons_Mags_10mw100"
+            "JA_104th_Weapons_Mags_10mw40"
         };
         muzzles[] = {"this"};
         fireLightDiffuse[] = {0.5,0.5,0.25};
@@ -3389,6 +3318,21 @@ class CfgWeapons
         {
             "ls_mag_rpg_1rnd"
         };
+    };
+    class JA_104th_RPS6_H: 3AS_RPS6_HP
+    {
+        scope = 2;
+        displayName = "[104th] RPS-6 Heavy Projectile Rocket Launcher";
+        model = "\3AS\3AS_Weapons\RPS6HP\3AS_RPS6_HP.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\RPS6_HP_Temp.rtm"};
+        
+    };
+    class JA_104th_RPS6_D: 3AS_RPS6_F
+    {
+        scope = 2;
+        displayName = "[104th] RPS-6 Disposable Rocket Launcher";
+        model = "\3AS\3AS_Weapons\RPS6\3AS_RPS6_F.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\rps6_hold.rtm"};
     };
 
 
@@ -4082,13 +4026,13 @@ class CfgMagazines
         typicalSpeed = 1100;
     };
     // SF High Cap secondary mags
-    class JA_104th_Weapons_Mags_10mw100: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_10mw40: 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Extended Capacity Energy Cell";
-        displayNameShort = "100Rnd 10MW";
+        displayNameShort = "40Rnd 10MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
-        count = 100;
+        count = 40;
         ammo = "JA_104th_Weapons_Ammo_10mw";
         initSpeed = 600;
         descriptionShort = "DC17SA High capacity magazine";
