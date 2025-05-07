@@ -11147,9 +11147,9 @@ class cfgVehicles {
 		editorPreview = "\ORA\BNA_KC\addons\medical\data\previews\BNA_KC_Deployable_MedicalDroid.jpg";
 		simulation = "house";
         sound = "";
-		BNA_KC_medical_areaHealMaxPatients = 4;
-		BNA_KC_medical_areaHealRadius = 15;
-		BNA_KC_medical_areaHealRate = 6;
+		BNA_104th_medical_areaHealMaxPatients = 4;
+		BNA_104th_medical_areaHealRadius = 15;
+		BNA_104th_medical_areaHealRate = 6;
 		class EventHandlers: DefaultEventHandlers {};
 
         class DestructionEffects {};
