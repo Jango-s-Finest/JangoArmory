@@ -46,6 +46,8 @@ class CfgPatches
 
 			"JA_104th_DC15SA",
 
+            "JA_104th_DC15ARC",
+
 			"JA_104th_Westar35SA",
 
             //"JA_104th_EPL2",
@@ -60,7 +62,7 @@ class CfgPatches
 
 			"JA_104th_Z7_mk2",
 
-			"JA_104th_ShoulderCannon_mk2",
+			// "JA_104th_ShoulderCannon_mk2",
 
 			"JA_104th_muzzle_flash",
 
@@ -146,6 +148,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_10mw500",
             "JA_104th_Weapons_Mags_10mw40",
             "JA_104th_Weapons_Mags_10mw50",
+            "JA_104th_Weapons_Mags_10mw80",
 
 			"JA_104th_Weapons_Mags_20mw70",
 			"JA_104th_Weapons_Mags_20mw200",
@@ -163,8 +166,9 @@ class CfgPatches
             "JA_104th_Weapons_Mags_20mw16SC_Slug",
 
             "JA_104th_Weapons_Mags_100Mw1",
+            "JA_104th_Weapons_Mags_EMPMw2",
 
-            "JA_104th_Weapons_Mags_LC",
+            "JA_104th_Weapons_Mags_LaserCannon2",
 
             "JA_104th_Weapons_Mags_100mw_AT",
 
@@ -257,6 +261,7 @@ class CfgWeapons
     class UGL_F;
 
     class JLTS_stun_muzzle;
+    class LFP_dc17arc_Dual;
     class ls_weapon_rps6;
     class ls_weapon_rps6_disposable;
     class ls_weapon_at_plx1;
@@ -1379,7 +1384,9 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
         };
         class FullAuto: FullAuto
@@ -1391,7 +1398,9 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
         };
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1585,14 +1594,18 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class SilencedSound: BaseSoundModeType
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };  
@@ -1605,15 +1618,19 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1.5db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class SilencedSound: BaseSoundModeType
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };  
@@ -1626,15 +1643,19 @@ class CfgWeapons
             class StandardSound: BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1.5db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class SilencedSound: BaseSoundModeType
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };  
@@ -1781,13 +1802,17 @@ class CfgWeapons
             textureType = "burst";
             class BaseSoundModeType
             {
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
         };
         class FullerAuto: FullAuto
@@ -1798,13 +1823,17 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
         };
         class FullestAuto: FullAuto
@@ -1816,13 +1845,17 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"\Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
         };
  		class OpticsModes
@@ -1934,16 +1967,20 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             reloadTime = 0.08;
             dispersion = 0.0006;
             class SilencedSound : BaseSoundModeType
 			{
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
 			};
@@ -1956,16 +1993,20 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
-            reloadTime = 0.075;
-            dispersion = 0.00045;
+            reloadTime = 0.08;
+            dispersion = 0.0006;
             class SilencedSound : BaseSoundModeType
 			{
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
 			};
@@ -2211,7 +2252,8 @@ class CfgWeapons
         {
             "JA_104th_Weapons_Mags_40mw20",
             "JA_104th_Weapons_Mags_50mw5",
-            "JA_104th_Weapons_Mags_100mw1"
+            "JA_104th_Weapons_Mags_100mw1",
+            "JA_104th_Weapons_Mags_EMPMw2"
         };
         modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F";
         modes[] = {"Single"};
@@ -2229,7 +2271,9 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1",+3db,1,2200};
-                soundBegin[] = {"begin1", 1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             reloadTime = 1.25;
             dispersion = 0.00008;
@@ -2592,9 +2636,11 @@ class CfgWeapons
             class SilencedSound
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };  
@@ -2621,9 +2667,11 @@ class CfgWeapons
             class SilencedSound
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };  
@@ -2710,9 +2758,11 @@ class CfgWeapons
             class SilencedSound
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };	
@@ -2739,9 +2789,11 @@ class CfgWeapons
             class SilencedSound
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };	
@@ -3108,14 +3160,18 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class SilencedSound: BaseSoundModeType
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.1db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.1db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.1db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };  
@@ -3139,14 +3195,18 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class SilencedSound
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };  
@@ -3181,6 +3241,19 @@ class CfgWeapons
     };
 
    // Dual DC17SA
+   class JA_104th_DC15ARC: LFP_dc17arc_Dual
+   {
+       ACE_barrelTwist = 254;
+       ACE_barrelLength = 104;
+       ACE_twistDirection = 1;
+       displayName = "[104th] DC-15ARC Dual";
+       baseWeapon = "JA_104th_DC15ARC";
+       mass = 40;
+       reloadAction = "3AS_GestureReloadDualDC17S";
+       reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
+   };
+
+
 
    // DC15SA
    class JA_104th_DC15SA: JA_104th_pistol_base
@@ -3222,14 +3295,18 @@ class CfgWeapons
             {
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss",+2db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss",+2db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss",+2db,1,2200};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
             };
             class SilencedSound
             {
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",1};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
             };  
@@ -3327,13 +3404,6 @@ class CfgWeapons
         handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\RPS6_HP_Temp.rtm"};
         
     };
-    class JA_104th_RPS6_D: 3AS_RPS6_F
-    {
-        scope = 2;
-        displayName = "[104th] RPS-6 Disposable Rocket Launcher";
-        model = "\3AS\3AS_Weapons\RPS6\3AS_RPS6_F.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\rps6_hold.rtm"};
-    };
 
 
     // Z7 Chaingun
@@ -3346,21 +3416,8 @@ class CfgWeapons
 		magazines[] = {"ls_mag_flak_800rnd"};
 	};
 
-    class JA_104th_ShoulderCannon_mk2: Launcher_Base_F
-    {
-        author = "Cyan";
-        scope = 2;
-        baseWeapon = "JA_104th_ShoulderCannon_mk2";
-        displayName = "[104th] T9 Shoulder Pulse Cannon";
-        magazines[] = {"OPTRE_SpLaser_Battery_Launcher"};
-        handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\RPS6_HP_Temp.rtm"};
-        picture = "\3AS\3AS_Weapons\RPS6HP\Data\UI\3as_rps6.paa";
-        model = "\3AS\3AS_Weapons\RPS6HP\3AS_RPS6_HP.p3d";
-        modelOptics[] = {"\OPTRE_Weapons\M6GGNR\data\ui\M6V_Optic_2x.p3d","\OPTRE_Weapons\M6GGNR\data\ui\M6V_Optic_4x.p3d","\OPTRE_Weapons\M6GGNR\data\ui\M6V_Optic_10x.p3d"};
-        reloadAction = "ReloadRPG";
-        sound[] = {"OPTRE_Weapons\Vehicle\data\sounds\Laser_1.wss",2.5,1,1500};
-        recoil = "Empty";
-    };
+    //class JA_104th_ShoulderCannon_mk2
+
 	
 };
 
@@ -3932,7 +3989,7 @@ class CfgMagazines
         tracersEvery = 1;
         typicalSpeed = 2000;
     };
-        // SF Sniper Special Purpose Rounds
+        // SF Sniper HVAP Mag
     class JA_104th_Weapons_Mags_100Mw1: 30Rnd_65x39_caseless_mag
     {   
         author = "Jango's Armory Aux Team";
@@ -3949,6 +4006,23 @@ class CfgMagazines
         typicalSpeed = 867;
 
     };
+    class JA_104th_Weapons_Mags_EMPMw2: 30Rnd_65x39_caseless_mag
+    {   
+        author = "Jango's Armory Aux Team";
+        displayName = "[104th] EMP Energy Cell";
+        ammo = "JLTS_ammo_Grenade_EMP";
+        picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
+        model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
+        initSpeed = 867;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        tracersEvery = 1;
+        count = 2;
+        mass = 16;
+        typicalSpeed = 867;
+
+    };
+
     // 12g x 20 rnds equivalent - For DP23
     class JA_104th_Weapons_Mags_10mw20SC: 30Rnd_65x39_caseless_mag
     {
@@ -4037,6 +4111,24 @@ class CfgMagazines
         initSpeed = 600;
         descriptionShort = "DC17SA High capacity magazine";
         mass = 7.5;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 600;
+    };
+    // SF High Cap secondary mags
+    class JA_104th_Weapons_Mags_10mw80: 30Rnd_65x39_caseless_mag
+    {
+        displayName = "[104th] Dual Extended Capacity Energy Cell";
+        displayNameShort = "2x40Rnd 10MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
+        count = 80;
+        ammo = "JA_104th_Weapons_Ammo_10mw";
+        initSpeed = 600;
+        descriptionShort = "DC17SA High capacity magazine";
+        mass = 15;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
