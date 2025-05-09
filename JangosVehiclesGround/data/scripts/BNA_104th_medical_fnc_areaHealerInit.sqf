@@ -36,5 +36,6 @@ _rate = [
 
 _maxPatients = getNumber (configOf _object >> BNA_104th_medical_areaHealMaxPatients);
 
-[_object, _radius, _rate, 0.25, 0.1, false, _maxPatients] call "BNA_104th_medical_fnc_areaSlowHeal";
+[_object, _radius, _rate, 0.25, 0.1, false, _maxPatients] call BNA_104th_medical_fnc_areaSlowHeal;
+remoteExec
 nil;

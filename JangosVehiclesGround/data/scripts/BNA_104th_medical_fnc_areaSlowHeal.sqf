@@ -32,7 +32,7 @@ params [
     ["_maxPatients", -1, [0]]
 ];
 private ["_function", "_condition", "_exitCode", "_areaHandler"];
-TRACE_4("fnc_areaSlowHeal",_object,_radius,_rate,_maxPatients);
+TRACE_4("BNA_104th_medical_fnc_areaSlowHeal",_object,_radius,_rate,_maxPatients);
 
 if (isNull _object or
     {_radius <= 0} or

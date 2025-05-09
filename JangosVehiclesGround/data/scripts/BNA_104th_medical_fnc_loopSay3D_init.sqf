@@ -22,9 +22,9 @@ TRACE_1("BNA_104th_medical_fnc_loopSay3D_init",_object);
 
 if (isNull _object or {!hasInterface}) exitWith {};
 
-_sound = getText (configOf _object >> QGVAR(soundLoop));
-_soundDelay = getNumber (configOf _object >> QGVAR(soundLoopDelay));
-_condition = compile (getText (configOf _object >> QGVAR(soundLoopCondition)));
+_sound = getText (configOf _object >> BNA_104th_medical_soundLoop);
+_soundDelay = getNumber (configOf _object >> BNA_104th_medical_soundLoopDelay);
+_condition = compile (getText (configOf _object >> BNA_104th_medical_soundLoopCondition));
 
 [{!isNull findDisplay 46;}, {
     _this call BNA_104th_medical_fnc_loopSay3D_init;

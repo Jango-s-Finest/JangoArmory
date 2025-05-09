@@ -124,10 +124,10 @@ class Extended_init_EventHandlers
 	class JA_104th_Medical_Droid
 	{
 		class areaSlowHealInit {
-            init = "_this call BNA_KC_medical_fnc_areaHealerInit";
+            init = "_this call BNA_104th_medical_fnc_areaHealerInit";
         };
         class loopSay3D_init {
-            serverInit = "_this call BNA_KC_core_fnc_loopSay3D_init";
+            serverInit = "_this call BNA_104th_medical_fnc_loopSay3D_init";
         };
 	}
 };
@@ -11150,6 +11150,9 @@ class cfgVehicles {
 		BNA_104th_medical_areaHealMaxPatients = 4;
 		BNA_104th_medical_areaHealRadius = 15;
 		BNA_104th_medical_areaHealRate = 6;
+		BNA_104th_medical_soundLoop = "BNA_KC_MedicalDroid_Treat";
+		BNA_104th_medical_soundLoopCondition = "alive (_this#0)";
+		BNA_104th_medical_soundLoopDelay = 15;
 		class EventHandlers: DefaultEventHandlers {};
 
         class DestructionEffects {};
