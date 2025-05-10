@@ -229,6 +229,19 @@ class CfgVehicles
 			};
 	};
 
+	class JA_104th_RTO_Mini_Tusk_Backpack : SWLB_clone_RTO_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Tusk)";
+		maximumLoad = 200;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Tusk_Mini_Lr.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_Tusk_Mini_Lr_Upper.paa" // slotss
+			};
+	};
+
 	class JA_104th_RTO_Mini_Backpack_ME : SWLB_clone_RTO_mini_backpack
 	{
 		author = "Tundra";

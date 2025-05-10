@@ -128,10 +128,24 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class ls_gar_barc_helmet;
 	class ls_gar_desert_helmet;
+	class ls_sob_tech_helmet;
 	class UniformItem;
 	class VestItem;
 	class HeadgearItem;
 
+
+	class JA_104th_Carmine_Tech_Helmet : ls_sob_tech_helmet
+    {
+        author="Jango's Finest";
+        displayName="Clone Trooper Tech Helmet (104th Carmine)"; //in-game name
+        hiddenSelections[] = {"camo1","glass"};
+        hiddenSelectionsTextures[] = 
+            {
+            "Jangos_Infantry_Helmets\data\textures\104th_Tech_Carmine_Helmet.paa",
+            "ls_armor_bluefor\helmet\sob\tech\data\glass_ca.paa"
+            };
+        model = "\ls_armor_bluefor\helmet\sob\tech\ls_sob_tech_helmet.p3d";
+    };
 	class JA_104th_Boris_Helmet : SWLB_clone_P2_Helmet
 	{
 		author = "Dak";
