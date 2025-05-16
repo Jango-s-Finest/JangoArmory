@@ -189,6 +189,22 @@ class CfgVehicles
 				""																		// RTO
 			};
 	};
+
+	class JA_104th_Carmine_Medic_Backpack : SWLB_clone_backpack_medic
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper medic backpack (104th Carmine)";
+		maximumLoad = 300;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // don't change unless RTO
+				"",																		// Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // Medic
+				""																		// RTO
+			};
+	};
 	class JA_104th_RTO_Backpack : SWLB_clone_backpack_RTO
 	{
 		author = "Tundra";

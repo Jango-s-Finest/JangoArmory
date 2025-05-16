@@ -142,7 +142,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
             {
             "Jangos_Infantry_Helmets\data\textures\104th_Tech_Carmine_Helmet.paa",
-            "ls_armor_bluefor\helmet\sob\tech\data\glass_ca.paa"
+            "Jangos_Infantry_Helmets\data\textures\104th_Carmine_Tech_Glasses.paa",
             };
         model = "\ls_armor_bluefor\helmet\sob\tech\ls_sob_tech_helmet.p3d";
     };

@@ -1146,6 +1146,21 @@ class cfgVehicles {
 				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
 				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
 			};
+			class Duce: base
+			{
+				displayName = "104th Duce";
+				textures[] = {
+					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Body_Main.paa",
+					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Body_Interior.paa",
+					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Front.paa",
+					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Back.paa",
+					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Ramp.paa",
+					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Wings.paa",
+					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Missles.paa",
+					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Cockpit.paa",
+					"lsd_vehicles_heli\laati\data\glass_ca.paa"
+				};
+			};
 			
 		};
 		textureList[] = {"base",1,"logo",1,"plobro",1};
@@ -1229,6 +1244,11 @@ class cfgVehicles {
 					{
 						displayName = "Cherryy";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Cherryy.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\body2_co_104Cherryy.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_104Cherryy.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_104Cherryy.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_104Cherryy.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Cherryy.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104Cherryy.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					};
+					class 104th_Duce: DefaultSkin
+					{
+						displayName = "Duce";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Body_Main.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Body_Interior.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Front.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Back.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Ramp.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Wings.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Missles.paa']; _target setObjectTextureGlobal [7,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Cockpit.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
 					};
 				};
 			};
