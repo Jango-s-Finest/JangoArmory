@@ -143,6 +143,10 @@ class CfgWeapons
     {
         class ItemInfo;
     };
+    class SWLB_CEE_Hazard_Vest : SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
 
     class JA_104th_Welty_Kama : SWLB_clone_kama_armor
     {
@@ -159,6 +163,43 @@ class CfgWeapons
         };
         class ItemInfo: ItemInfo
 		{
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Irish_Commander_Vest_P2 : SWLB_clone_commander_armor
+    {
+        author = "Dak";
+        displayName = "Clone Trooper Commander Vest (104th Irish)";
+        hiddenSelections[] = {"camo1","rank"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_Irish_Officer_Accessories.paa"};
+        class ItemInfo: ItemInfo
+        {
             containerClass = "Supply80";
             vestType = "Rebreather";
 
@@ -205,6 +246,59 @@ class CfgWeapons
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+
+    class JA_104th_Carmine_Kama : SWLB_CEE_Hazard_Vest
+    {
+        author = "Dak";
+        displayName = "Clone Trooper Harzard Vest (104th Carmine)";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_Carmine_Light_Accessories.paa", // Kama
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_Carmine_Accessories_Officer.paa", // Kama
+            };
+        model = "\SWLB_CEE\data\SWLB_CEE_Hazard_Vest.p3d";
+        class ItemInfo: ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Hazard_Vest.p3d";
+            containerClass = "Supply80";
+            hiddenSelections[] = {"camo1","camo2"};
+            mass = 80;
+            class HitpointsProtectionInfo
+            {
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 6;
+                    passThrough = 0.3;
+                };
                 class Abdomen {
                     hitpointName = "HitAbdomen";
                     armor = 8;

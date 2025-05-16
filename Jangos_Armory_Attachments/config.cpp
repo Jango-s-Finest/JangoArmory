@@ -148,6 +148,21 @@ class CfgWeapons
 		visionMode[] = {"Normal","NVG","TI"};
 		thermalMode[]= {0, 1};
 	};
+	class JA_104th_P2_NVG_Tusk: lsd_gar_standard_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone P2 NVG Visor (104th Tusk)";
+		hiddenSelections[] =
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_Tusk_Macro_NVG.paa",
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+	};
 	class JA_104th_AB_NVG_Magnum: lsd_gar_standardSPC_nvg
 	{
 		author = "Tundra";

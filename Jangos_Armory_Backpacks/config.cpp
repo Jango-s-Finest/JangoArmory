@@ -189,6 +189,22 @@ class CfgVehicles
 				""																		// RTO
 			};
 	};
+
+	class JA_104th_Carmine_Medic_Backpack : SWLB_clone_backpack_medic
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper medic backpack (104th Carmine)";
+		maximumLoad = 300;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // don't change unless RTO
+				"",																		// Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // Medic
+				""																		// RTO
+			};
+	};
 	class JA_104th_RTO_Backpack : SWLB_clone_backpack_RTO
 	{
 		author = "Tundra";
@@ -226,6 +242,19 @@ class CfgVehicles
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Spirit_Mini_Lr_Main.paa",		 // Minipack
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Spirit_Mini_Lr_Top.paa" // slotss
+			};
+	};
+
+	class JA_104th_RTO_Mini_Tusk_Backpack : SWLB_clone_RTO_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Tusk)";
+		maximumLoad = 200;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Tusk_Mini_Lr.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_Tusk_Mini_Lr_Upper.paa" // slotss
 			};
 	};
 

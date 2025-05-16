@@ -117,6 +117,7 @@ class CfgWeapons
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
+	class JA_104th_P2_1C_JTAC_Uniform;
 	class UniformItem;
 	class VestItem;
 
@@ -334,7 +335,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Carmine_Uniform : JA_104th_Base_AB_Uniform
+	class JA_104th_Carmine_Uniform : JA_104th_P2_1C_JTAC_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -343,11 +344,16 @@ class CfgWeapons
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2"};
+				"camo2",
+				"biceps",
+				"rank"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Carmine_Upper.paa",
-				"Jangos_Airborne_Armours\data\Textures\104th_AB_Carmine_Lower.paa"};
+				"Jangos_Airborne_Armours\data\Textures\104th_P2_Carmine_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_P2_Carmine_Lower.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_P2_Carmine_Upper.paa",
+				"",
+			};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -932,7 +938,7 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Osiris_Helmet, JA_104th_Osiris_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Osiris_Helmet, JA_104th_Osiris_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Carmine : SWLB_clone_base_P2
+	class JA_104th_Carmine : SWLB_clone_marshal_commander_base_P2
 	{
 		author = "Tundra";
 		scope = 2;
@@ -943,8 +949,19 @@ class CfgVehicles
 		displayName = "104th Carmine";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Carmine_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Carmine_Lower.paa"};
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+				"biceps",
+				"rank"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_P2_Carmine_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_P2_Carmine_Lower.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_P2_Carmine_Upper.paa",
+				"",
+			};
 		linkedItems[] = {JA_104th_Carmine_Helmet, JA_104th_Carmine_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Carmine_Helmet, JA_104th_Carmine_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
