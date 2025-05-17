@@ -204,6 +204,13 @@ class CfgVehicles
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // Medic
 				""																		// RTO
 			};
+		tf_dialog = "SWLB_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
 	};
 	class JA_104th_RTO_Backpack : SWLB_clone_backpack_RTO
 	{
