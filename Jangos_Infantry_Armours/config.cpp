@@ -128,6 +128,7 @@ class CfgWeapons
 	class SWLB_clone_airborne_nco_armor;
 	class SWLB_clone_eng_helmet;
 	class SWLB_P2_SpecOps_Helmet;
+	class ls_sob_commando_uniform;
 	class UniformItem;
 	class VestItem;
 
@@ -323,6 +324,30 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Quick";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Spectre_RC_Uniform : ls_sob_commando_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper Republic Commando armor (104th Spectre)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Armours\data\Textures\104th_Company_Spectre_RC_Upper.paa", 
+			"Jangos_Infantry_Armours\data\Textures\104th_Company_Spectre_RC_Lower.paa"
+		};
+
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "JA_104th_Spectre_RC";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -937,6 +962,7 @@ class CfgWeapons
 class CfgVehicles
 {
 	class SWLB_clone_base_P2;
+	class ls_sob_commando_base;
 	class SWLB_clone_marshal_commander_base_P2;
 	class SWLB_clone_backpack;
 	class SWLB_clone_RTO_mini_backpack;
@@ -949,6 +975,22 @@ class CfgVehicles
 
 	// Cerberus PLT, Infantry, Engineer, Medic Uniforms
 
+	class JA_104th_Spectre_RC : ls_sob_commando_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Spectre_RC_Uniform";
+		displayName = "104th Spectre";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_Company_Spectre_RC_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_Company_Spectre_RC_Lower.paa"};
+		linkedItems[] = {JA_104th_Spectre_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Spectre_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
 	class JA_104th_Banker : SWLB_clone_base_P2
 	{
 		author = "Dak";

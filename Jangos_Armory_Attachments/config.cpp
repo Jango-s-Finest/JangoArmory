@@ -19,6 +19,9 @@ class CfgPatches
 			"JA_104th_SPC_NVG_Medic",
 			"JA_104th_SPC_NVG_Invert",
 			"JA_104th_NVG_NCO",
+			"JA_104th_Spectre_RC_NVG",
+			"JA_104th_Spectre_RC_NVG_Antenna",
+			"JA_104th_P2_NVG_Irish",
 			"JA_104th_CM_Visor",
 			"JA_104th_AB_NVG_Magnum",
 			"JA_104th_P2_NVG_Bulky",
@@ -84,6 +87,9 @@ class CfgWeapons
 	class lsd_gar_barcm2_helmet;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
+	class SWLB_clone_commando_nvg;
+	class SWLB_clone_commando_nvg_antenna;
+	class lsd_gar_medicalScannerSPC_nvg;
 	class SWLB_P2_SpecOps_Helmet;
 	class UniformItem;
 	class VestItem;
@@ -91,48 +97,53 @@ class CfgWeapons
 	
 	// Inheritance for vests
 	// Makes making each vest a rebreather easier
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_armor : SWLB_clone_basic_armor
-	{
-		class ItemInfo;
-	};
-	class SWLB_clone_airborne_nco_armor : SWLB_clone_airborne_armor
-	{
-		class ItemInfo;
-	};
-	class SWLB_CEE_Airborne_Officer : SWLB_clone_airborne_armor
-	{
-		class ItemInfo;
-	};
-	class SWLB_CEE_Force_Recon_NCO : SWLB_clone_airborne_armor
-	{
-		class ItemInfo;
-	};
-	class SWLB_CEE_Officer_Tactical : SWLB_clone_airborne_armor
-	{
-		class ItemInfo;
-	};
-
-	class ls_blueforVest_base;
-	class ls_gar_airborneOfficer_vest : ls_blueforVest_base
-	{
-		class ItemInfo;
-	};
-
-	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
-	{
-		class ItemInfo;
-	};
-	class SWLB_clone_commander_armor : SWLB_clone_officer_armor
-	{
-		class ItemInfo;
-	};
-	class SWLB_clone_arc_armor : SWLB_clone_officer_armor
-	{
-		class ItemInfo;
-	};
 
 	// General Attachments
+	class JA_104th_Spectre_RC_NVG: SWLB_clone_commando_nvg{
+		author = "Dak";
+		displayName = "Clone Republic Commando NVG Visor (104th Spectre)";
+		hiddenSelections[] = {"illum","camo1"};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_Company_Spectre_RC_Visor.paa",
+			"Jangos_Armory_Attachments\data\Textures\104th_Company_Spectre_RC_Visor.paa"
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+	};
+	class JA_104th_Spectre_RC_NVG_Antenna: SWLB_clone_commando_nvg_antenna{
+		author = "Dak";
+		displayName = "Clone Republic Commando NVG Antenna (104th Spectre)";
+
+		hiddenSelections[] =
+		{
+			"camo1",
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"Jangos_Armory_Attachments\data\Textures\104th_Company_Spectre_RC_Antenna.paa"
+		};
+		visionMode[] = {"Normal","NVG","TI"};
+		thermalMode[]= {0, 1};
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+	};
+	class JA_104th_P2_NVG_Irish: lsd_gar_medicalScannerSPC_nvg
+    {
+        author = "Dak";
+        displayName = "Clone Medical Scanner NVG (104th Irish)";
+        hiddenSelections[] = {"Camo1","glow"};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Armory_Attachments\data\Textures\104th_Irish_Medical_Scanner_NVG.paa",
+			"#(argb,8,8,3)color(0.501961,1,1,1.0,co)"
+		};
+        visionMode[] = {"Normal","NVG","TI"};
+        thermalMode[]= {0, 1};
+    };
 	class JA_104th_P2_NVG_Bulky: lsd_gar_standard_nvg
 	{
 		author = "Tundra";

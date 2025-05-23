@@ -117,6 +117,7 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
 	class SWLB_clone_RTO_mini_backpack;
+	class SWLB_clone_commando_backpack_k2;
 	class JLTS_Clone_jumppack;
 	class JLTS_Clone_jumppack_JT12_104;
 	class ls_greenfor_journeymanJetpack_backpack;
@@ -159,6 +160,37 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper ARC backpack (104th)";
 		maximumLoad = 360;
+	};
+	class JA_104th_Spectre_RC_Backpack : SWLB_clone_commando_backpack_k2
+	{
+		author = "Dak";
+		scopeCurator = 2;
+		displayname = "Clone Trooper Republic Commando backpack (104th Spectre)";
+		maximumLoad = 450;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Company_Spectre_RC_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Company_Spectre_RC_Backpack.paa",
+			};
+		tf_dialog = "SWLB_clone_rto_radio_dialog";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
+	class JA_104th_RTO_Mini_Irish_Backpack : SWLB_clone_RTO_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Irish)";
+		maximumLoad = 200;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_LR_Main.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_Lr_Top.paa" // slotss
+			};
 	};
 	class JA_104th_Accessories_Heavy_Backpack : SWLB_clone_backpack_heavy
 	{
