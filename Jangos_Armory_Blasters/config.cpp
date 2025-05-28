@@ -1414,7 +1414,7 @@ class CfgWeapons
                 compatibleItems[] = 
                 {
                     "3AS_optic_DC15LE_F",
-                    "3AS_optic_acog_DC15C"
+                    "3AS_optic_DC15C_F"
                 };
             };
             class MuzzleSlot: MuzzleSlot
@@ -1670,7 +1670,7 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "3AS_optic_acog_DC15C",
+                    "3AS_optic_DC15C_F",
                     "3AS_Optic_Scope_WestarM5"
                 };
             };
@@ -2022,7 +2022,7 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
-                    "3AS_optic_acog_DC15C",
+                    "3AS_optic_DC15C_F",
                     "3AS_Imp_Optic_1",
                     "3AS_Imp_Optic_2",
                     "3AS_Imp_Optic_3",
