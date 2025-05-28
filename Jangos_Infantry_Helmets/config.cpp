@@ -128,6 +128,7 @@ class CfgWeapons
 	class SWLB_P2_SpecOps_Helmet;
 	class ls_gar_barc_helmet;
 	class ls_gar_desert_helmet;
+	class lsd_sob_commando_helmet;
 	class ls_sob_tech_helmet;
 	class UniformItem;
 	class VestItem;
@@ -146,6 +147,35 @@ class CfgWeapons
             };
         model = "\ls_armor_bluefor\helmet\sob\tech\ls_sob_tech_helmet.p3d";
     };
+	class JA_104th_Spectre_RC_Helmet: lsd_sob_commando_helmet{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"illum","camo1"};												   // don't change this
+		displayname = "Clone Trooper Republic Commando Helmet (104th Spectre)";								   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_Company_Spectre_RC_Helmet.paa","Jangos_Infantry_Helmets\data\Textures\104th_Company_Spectre_RC_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Hawkeye_Helmet : SWLB_P2_SpecOps_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1"};														   // don't change this
+		displayname = "Clone Trooper P2 Special Activities Helmet (104th Hawkeye)";								   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_Hawkeye_JTAC_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Skipps_Helmet : SWLB_clone_P2_Helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		hiddenSelections[] = {"camo1"};															// don't change this
+		displayname = "Clone Trooper P2 Helmet (104th Skipps)";									// the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_Skipps_P2_Helmet.paa"}; // the file path to the texture
+	};
 	class JA_104th_Boris_Helmet : SWLB_clone_P2_Helmet
 	{
 		author = "Dak";

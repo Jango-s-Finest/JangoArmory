@@ -16,6 +16,7 @@ class CfgPatches
             "JA_104th_ME_officer_Vest",
             "JA_104th_ME_Medic_Vest",   
             "JA_104th_Tusk_Vest",
+            "JA_104th_Spectre_RC_Vest",
             "JA_104th_Knightfall_Vest",
             "JA_104th_Galahad_Vest",
             "JA_104th_Spirit_Vest",
@@ -82,15 +83,19 @@ class CfgWeapons
     class lsd_gar_standart_nvg;
     class lsd_gar_rangefinder_nvg;
     class lsd_gar_p2MarshalCommander_nvg;
+    class V_PlateCarrier1_rgr;
     class SWLB_clone_eng_helmet;
     class SWLB_P2_SpecOps_Helmet;
     class UniformItem;
     class VestItem;
+    class ItemInfo;
 
 
     // Inheritance for vests
     // Makes making each vest a rebreather easier
-    class ItemInfo;
+    class SWLB_clone_commando_sniper_armor_k1 : V_PlateCarrier1_rgr{
+        class ItemInfo;
+    };
     class SWLB_clone_basic_armor;
 
     class SWLB_clone_airborne_armor : SWLB_clone_basic_armor
@@ -197,9 +202,12 @@ class CfgWeapons
         hiddenSelections[] = {"camo1","rank"};
         hiddenSelectionsTextures[] =
             {
-                "Jangos_Infantry_Vests\data\Textures\104th_Irish_Officer_Accessories.paa"};
+                "Jangos_Infantry_Vests\data\Textures\104th_Irish_Officer_Accessories.paa",""};
+        model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
         class ItemInfo: ItemInfo
         {
+            hiddenSelections[] = {"camo1","rank"};
+            uniformModel = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
             containerClass = "Supply80";
             vestType = "Rebreather";
 
@@ -243,6 +251,44 @@ class CfgWeapons
         class ItemInfo: ItemInfo
 		{
             containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+	class JA_104th_Spectre_RC_Vest: SWLB_clone_commando_sniper_armor_k1{
+        author = "Dak";
+        displayName = "Clone Trooper Republic Commando Sniper  (104th Spectre)";
+        hiddenSelections[] = {"illum","camo1"};
+        hiddenSelectionsTextures[] =
+        {
+            "Jangos_Infantry_Vests\data\Textures\104th_Company_Spectre_Sniper_Vest.paa",
+            "Jangos_Infantry_Vests\data\Textures\104th_Company_Spectre_Sniper_Vest.paa",
+        };
+        class ItemInfo: ItemInfo
+		{
+            containerClass = "Supply100";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo {
