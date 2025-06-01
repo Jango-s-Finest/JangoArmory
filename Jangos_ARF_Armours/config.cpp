@@ -19,8 +19,7 @@ class CfgPatches
 			'JA_104th_IQ',
 			"JA_104th_Beans",
 			"JA_104th_Unix",
-			"JA_104th_Woods"
-		};
+			"JA_104th_Woods"};
 		weapons[] = {
 			"JA_104th_ARF",
 			"JA_104th_ARF_Desert_Uniform",
@@ -32,8 +31,7 @@ class CfgPatches
 			"JA_104th_Fire_Uniform",
 			"JA_104th_IQ_Uniform",
 			"JA_104th_Unix_Uniform",
-			"JA_104th_Woods_Uniform"
-		};
+			"JA_104th_Woods_Uniform"};
 	};
 };
 
@@ -43,7 +41,7 @@ class CfgFactionClasses
 	{
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list.scope = 2;
-        side = 1;
+		side = 1;
 		icon = "";
 	};
 };
@@ -55,7 +53,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Basic
 	{
@@ -63,7 +61,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Special
 	{
@@ -71,7 +69,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 };
 
@@ -79,36 +77,36 @@ class CfgWeapons
 {
 	class InventoryItem_Base_F;
 	class ItemCore;
-	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
-	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
-	class SWLB_clone_BARC_helmet;
-	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
-	class SWLB_clone_P15_Helmet;
-	class SWLB_clone_P1_helmet;
-	class SWLB_clone_P1_2_helmet;
-	class SWLB_clone_P2_Helmet;
+	class ls_gar_phase2Pilot_helmet;
+	class ls_gar_phase2_uniform;
+	class ls_gar_marshalCommander_uniform;
+	class ls_gar_arc_vest;
+	class ls_gar_officer_vest;
+	class ls_gar_commander_vest;
+	class ls_gar_airborne_vest;
+	class ls_gar_airborneOfficer_vest;
+	class ls_gar_forceReconNCO_vest;
+	class ls_gar_barc_helmet;
+	class ls_gar_airborne_helmet;
+	class ls_gar_phase1Arf_helmet;
+	class ls_gar_arc_helmet;
+	class ls_gar_phase1_helmet;
+	class ls_gar_rex_helmet;
+	class ls_gar_phase2_helmet;
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_medic_armor;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
-	class SWLB_clone_eng_helmet;
-	class SWLB_P2_SpecOps_Helmet;
+	class ls_gar_kama_vest;
+	class ls_gar_medic_vest;
+	class ls_gar_clone_vest;
+	class ls_gar_airborneNCO_vest;
+	class ls_gar_engineer_helmet;
+	class ls_sob_phase2SpecOp_helmet;
 	class UniformItem;
 	class VestItem;
-	class JA_104th_Base_ARF_Uniform : SWLB_clone_uniform
+	class JA_104th_Base_ARF_Uniform : ls_gar_phase2_uniform
 	{
-		class ItemInfo: UniformItem
+		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
 			uniformClass = "JA_104th_Base_ARF";
@@ -121,64 +119,64 @@ class CfgWeapons
 				{
 					hitpointName = "HitArms";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
 				class Hands
 				{
 					hitpointName = "HitHands";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
 				class Neck
 				{
 					hitpointName = "HitNeck";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
-				
+
 				class chest
 				{
 					hitpointName = "HitChest";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
 				class Diaphragm
 				{
 					hitpointName = "HitDiaphragm";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
 				class Body
 				{
 					hitpointName = "HitBody";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
 				class Abdomen
 				{
 					hitpointName = "HitAbdomen";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
 				class Pelvis
 				{
 					hitpointName = "HitPelvis";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
 				class Legs
 				{
 					hitpointName = "HitLegs";
 					armor = 40;
-					explosionShielding  = 20;
+					explosionShielding = 20;
 					passThrough = 0.5;
 				};
 			};
@@ -441,23 +439,22 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	
 };
 
 class CfgVehicles
 {
-	class SWLB_clone_base_P2;
-	class SWLB_clone_marshal_commander_base_P2;
-	class SWLB_clone_backpack;
-	class SWLB_clone_RTO_mini_backpack;
-	class SWLB_clone_backpack_heavy;
-	class SWLB_clone_backpack_medic;
-	class SWLB_clone_backpack_RTO;
+	class lsd_gar_phase2_base;
+	class ls_gar_marshalCommander_base;
+	class ls_gar_standart_backpack;
+	class ls_gar_rto_mini_backpack;
+	class ls_gar_heavy_backpack;
+	class ls_gar_medic_backpack;
+	class ls_gar_Radio_backpack;
 	class JLTS_Clone_jumppack;
 	class JA_104th_Jumppack_JT12;
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
-	class JA_104th_Base_ARF : SWLB_clone_base_P2
+	class JA_104th_Base_ARF : lsd_gar_phase2_base
 	{
 		author = "Ice";
 		scope = 2;
@@ -468,12 +465,10 @@ class CfgVehicles
 		displayName = "104th ARF";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"SWLB_clones\data\camo1_co.paa","SWLB_clones\data\camo2_co.paa"};
-		linkedItems[] = {JA_104th_Angel_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Angel_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Angel_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Angel_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_ARF : SWLB_clone_base_P2
+	class JA_104th_ARF : lsd_gar_phase2_base
 	{
 		author = "Tundra";
 		scope = 2;
@@ -486,10 +481,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Lower.paa"};
-		linkedItems[] = {JA_104th_ARF_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_ARF_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_ARF_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_ARF_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_ARF_Desert : SWLB_clone_base_P2
+	class JA_104th_ARF_Desert : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -502,10 +497,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Desert_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Desert_Lower.paa"};
-		linkedItems[] = {JA_104th_ARF_Desert_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_ARF_Desert_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_ARF_Desert_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_ARF_Desert_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_ARF_Jungle : SWLB_clone_base_P2
+	class JA_104th_ARF_Jungle : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -518,10 +513,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Jungle_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Jungle_Lower.paa"};
-		linkedItems[] = {JA_104th_ARF_Jungle_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_ARF_Jungle_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_ARF_Jungle_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_ARF_Jungle_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_ARF_Urban : SWLB_clone_base_P2
+	class JA_104th_ARF_Urban : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -534,10 +529,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Urban_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Urban_Lower.paa"};
-		linkedItems[] = {JA_104th_ARF_Urban_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_ARF_Urban_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_ARF_Urban_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_ARF_Urban_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_ARF_Medic : SWLB_clone_base_P2
+	class JA_104th_ARF_Medic : lsd_gar_phase2_base
 	{
 		author = "Tundra";
 		scope = 2;
@@ -550,10 +545,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Medic_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Medic_Lower.paa"};
-		linkedItems[] = {JA_104th_ARFMedic_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_ARFMedic_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_ARFMedic_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_ARFMedic_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Achilles : SWLB_clone_base_P2
+	class JA_104th_Achilles : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -566,10 +561,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Achilles_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Achilles_Lower.paa"};
-		linkedItems[] = {JA_104th_Achilles_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Achilles_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Achilles_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Achilles_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Beans : SWLB_clone_base_P2
+	class JA_104th_Beans : lsd_gar_phase2_base
 	{
 		author = "Ice";
 		scope = 2;
@@ -582,10 +577,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Beans_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Beans_Lower.paa"};
-		linkedItems[] = {JA_104th_Beans_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Beans_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Beans_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Beans_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Fire : SWLB_clone_base_P2
+	class JA_104th_Fire : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -598,10 +593,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Fire_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Fire_Lower.paa"};
-		linkedItems[] = {JA_104th_Fire_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Fire_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_IQ : SWLB_clone_base_P2
+	class JA_104th_IQ : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -614,10 +609,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_IQ_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_IQ_Lower.paa"};
-		linkedItems[] = {JA_104th_Fire_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Fire_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Unix : SWLB_clone_base_P2
+	class JA_104th_Unix : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -630,10 +625,10 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Unix_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Unix_Lower.paa"};
-		linkedItems[] = {JA_104th_Unix_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Unix_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Unix_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Unix_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Woods : SWLB_clone_base_P2
+	class JA_104th_Woods : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -646,7 +641,7 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Woods_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Woods_Lower.paa"};
-		linkedItems[] = {JA_104th_Woods_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Woods_Helmet, SWLB_clone_basic_armor, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Woods_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Woods_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

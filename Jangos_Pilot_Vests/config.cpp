@@ -8,10 +8,8 @@ class CfgPatches
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
-		};
-		weapons[] = {
-		};
+		units[] = {};
+		weapons[] = {};
 	};
 };
 
@@ -21,7 +19,7 @@ class CfgFactionClasses
 	{
 		displayname = "Jango's Finest";
 		priority = 1; // Position in list.scope = 2;
-        side = 1;
+		side = 1;
 		icon = "";
 	};
 };
@@ -33,7 +31,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Basic
 	{
@@ -41,7 +39,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 	class 104th_Categ_Special
 	{
@@ -49,7 +47,7 @@ class cfgEditorSubcategories
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 	};
 };
 
@@ -57,96 +55,98 @@ class CfgWeapons
 {
 	class InventoryItem_Base_F;
 	class ItemCore;
-	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
-	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
-	class SWLB_clone_BARC_helmet;
-	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
-	class SWLB_clone_P15_Helmet;
-	class SWLB_clone_P1_helmet;
-	class SWLB_clone_P1_2_helmet;
-	class SWLB_clone_P2_Helmet;
+	class ls_gar_phase2Pilot_helmet;
+	class ls_gar_phase2_uniform;
+	class ls_gar_marshalCommander_uniform;
+	class ls_gar_arc_vest;
+	class ls_gar_commander_vest;
+	class ls_gar_airborne_vest;
+	class ls_gar_airborneOfficer_vest;
+	class ls_gar_forceReconNCO_vest;
+	class ls_gar_barc_helmet;
+	class ls_gar_airborne_helmet;
+	class ls_gar_phase1Arf_helmet;
+	class ls_gar_arc_helmet;
+	class ls_gar_phase1_helmet;
+	class ls_gar_rex_helmet;
+	class ls_gar_phase2_helmet;
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_medic_armor;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
-	class SWLB_clone_eng_helmet;
-	class SWLB_P2_SpecOps_Helmet;
+	class ls_gar_medic_vest;
+	class ls_gar_clone_vest;
+	class ls_gar_airborneNCO_vest;
+	class ls_gar_engineer_helmet;
+	class ls_sob_phase2SpecOp_helmet;
 	class JA_104th_Clone_Base_armor;
 	class UniformItem;
-    class ItemInfo;
+	class ItemInfo;
 	class VestItem;
-	class SWLB_clone_kama_armor: JA_104th_Clone_Base_armor
-    {
-        class ItemInfo;
-    };
-	class SWLB_clone_officer_armor : SWLB_clone_basic_armor
-    {
-        class ItemInfo;
-    };
-	class JA_104th_Cherryy_Pilot_officer_Vest : SWLB_clone_kama_armor
-    {
-        author = "Dak";
-        displayName = "Clone Pilot Officer Vest (104th Cherryy)";
-        hiddenSelections[] =
-            {
-                "camo1"
-            };
-        hiddenSelectionsTextures[] =
-            {
-                "Jangos_Pilot_Vests\data\Textures\104th_Pilot_Cherryy_Accessories_Officer.paa"
-            };
-        class ItemInfo: ItemInfo
-        {
-            containerClass = "Supply80";
-            vestType = "Rebreather";
+	class ls_gar_kama_vest : JA_104th_Clone_Base_armor
+	{
+		class ItemInfo;
+	};
+	class ls_gar_officer_vest : ls_gar_clone_vest
+	{
+		class ItemInfo;
+	};
+	class JA_104th_Cherryy_Pilot_officer_Vest : ls_gar_kama_vest
+	{
+		author = "Dak";
+		displayName = "Clone Pilot Officer Vest (104th Cherryy)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Pilot_Vests\data\Textures\104th_Pilot_Cherryy_Accessories_Officer.paa"};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
 
-            class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
 };
 
 class CfgVehicles
 {
-	class SWLB_clone_base_P2;
-	class SWLB_clone_marshal_commander_base_P2;
-	class SWLB_clone_backpack;
-	class SWLB_clone_RTO_mini_backpack;
-	class SWLB_clone_backpack_heavy;
-	class SWLB_clone_backpack_medic;
-	class SWLB_clone_backpack_RTO;
+	class lsd_gar_phase2_base;
+	class ls_gar_marshalCommander_base;
+	class ls_gar_standart_backpack;
+	class ls_gar_rto_mini_backpack;
+	class ls_gar_heavy_backpack;
+	class ls_gar_medic_backpack;
+	class ls_gar_Radio_backpack;
 	class JLTS_Clone_jumppack;
 	class JA_104th_Jumppack_JT12;
 	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
-	
 };
