@@ -751,8 +751,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa", // Heavy
+				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa", // Heavy
 				"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa",
-				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa" // Heavy
 			};
 		class ItemInfo : ItemInfo
 		{
@@ -765,9 +765,9 @@ class CfgWeapons
 		displayName = "Clone Airborne NCO Vest (Howler)";
 		hiddenSelectionsTextures[] =
 			{
+				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa", // Left Shoulder Thing
 				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa", // Bag and Chest Strap
 				"104thHowlerCompany\data\Textures\Howler_Officer_Kama.paa",							   // Kama
-				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa", // Left Shoulder Thing
 				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"  // NCO Pauldron
 			};
 		class ItemInfo : ItemInfo
@@ -823,7 +823,7 @@ class CfgVehicles
 	class lsd_gar_phase2_base;
 	class lsd_gar_phase2_base;
 	class ls_gar_marshalCommander_base;
-	class ls_gar_standart_backpack;
+	class ls_gar_standard_backpack;
 	class ls_gar_rto_mini_backpack;
 	class ls_gar_heavy_backpack;
 	class ls_gar_medic_backpack;

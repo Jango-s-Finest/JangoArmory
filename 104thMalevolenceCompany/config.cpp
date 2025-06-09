@@ -810,18 +810,13 @@ class CfgWeapons
         author = "Fish";
         scope = 2;
         displayName = "Clone Trooper NCO Medic Vest (104th MLV)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4"};
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_INF_Medic.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa"  // Heavy
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_INF_Medic.paa",
+                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa",  // Heavy
             };
         class ItemInfo : ItemInfo
         {
@@ -862,21 +857,21 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Force Recon Vest (104th MLV)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2"};
+        hiddenSelections[] = {"camo1","camo2","camo3","pauldron"};
         hiddenSelectionsTextures[] =
             {
+                "104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa",
+                "", // Heavy
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Accessories_Light_P1_Red_Base.paa"};
+                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
+            };
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
             vestType = "Rebreather";
-            hiddenSelections[] = {"camo1", "camo2"};
+            hiddenSelections[] = {"camo1","camo2","camo3","pauldron"};
             uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
 
             class HitpointsProtectionInfo
@@ -1067,17 +1062,12 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Vest (104th MLV)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4"};
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Base.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Base.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"  // Heavy
             };
         class ItemInfo : ItemInfo
@@ -1118,17 +1108,12 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Vest (104th MLV 01)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4"};
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Alt_1.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Alt_1.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"  // Heavy
             };
         class ItemInfo : ItemInfo
@@ -1169,17 +1154,12 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Vest (104th MLV 02)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4"};
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Alt_2.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Alt_2.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"  // Heavy
             };
         class ItemInfo : ItemInfo
@@ -1220,17 +1200,12 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Medic Vest (104th MLV)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4"};
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
-                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_AB_Medic.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
+                "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_AB_Medic.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa"  // Heavy
             };
         class ItemInfo : ItemInfo
@@ -1271,12 +1246,17 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne Trooper Vest (104th MLV)";
-        hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
+        hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
         hiddenSelectionsTextures[] =
             {
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
+                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa", // Heavy
                 "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_AB_Trooper.paa",
-                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa" // Heavy
             };
         class ItemInfo : ItemInfo
         {
@@ -1316,12 +1296,17 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne Medic Vest (104th MLV)";
-        hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
+        hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
         hiddenSelectionsTextures[] =
             {
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
+                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa", // Heavy
                 "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_AB_Medic.paa",
-                "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Medic_VetRed.paa" // Heavy
             };
         class ItemInfo : ItemInfo
         {
@@ -1460,7 +1445,7 @@ class CfgVehicles
     class lsd_gar_phase2_base;
     class lsd_gar_phase2_base;
     class ls_gar_marshalCommander_base;
-    class ls_gar_standart_backpack;
+    class ls_gar_standard_backpack;
     class ls_gar_rto_mini_backpack;
     class ls_gar_heavy_backpack;
     class ls_gar_medic_backpack;

@@ -284,20 +284,19 @@ class cfgVehicles
 		radarType = 4;
 		ls_impulsor_fuelDrain_1 = 0.00001;
 		ls_impulsor_fuelDrain_2 = 0.00003;
-
-		weapons[] = {"ls_laat_gun", "ls_laat_gun_2", "212th_A2A_MissileSystem", "missiles_DAR", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
+		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
 		magazines[] = {
-			"200rnd_laat_he_mag",
-			"200rnd_laat_he_mag",
-			"200rnd_laat_he_mag",
-			"200rnd_laat_he_mag",
-			"200rnd_laat_he_mag",
-			"200rnd_laat_apfsds_mag",
-			"200rnd_laat_apfsds_mag",
-			"200rnd_laat_apfsds_mag",
-			"200rnd_laat_apfsds_mag",
-			"200rnd_laat_apfsds_mag",
-			"200rnd_laat_apfsds_mag",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
 			"212th_Drexl_4Rnd_A2A_mag",
 			"212th_Drexl_4Rnd_A2A_mag",
 			"12rnd_missiles",
@@ -310,6 +309,7 @@ class cfgVehicles
 			"240Rnd_CMFlare_Chaff_Magazine",
 			"240Rnd_CMFlare_Chaff_Magazine",
 			"240Rnd_CMFlare_Chaff_Magazine",
+			"24Rnd_ACE_Hydra70_DAGR",
 			"24Rnd_ACE_Hydra70_DAGR",
 		};
 
@@ -1857,8 +1857,8 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		hiddenselections[] = {"camo", "camo1", "camo2"};
 		hiddenselectionstextures[] = {"3AS\3as_Z95\Data\blue_co.paa", "3AS\3as_Z95\Data\cockpit_co.paa", "3AS\3as_saber\data\glass\glass_ca"};
-		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera", "ls_laat_gun", "ls_laat_gun_2", "3as_V19_Medium_Cannon", "RD501_Republic_Aircraft_Laser_AA"};
-		magazines[] = {"Laserbatteries", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "200rnd_laat_he_mag", "200rnd_laat_he_mag", "200rnd_laat_he_mag", "200rnd_laat_he_mag", "200rnd_laat_he_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600"};
+		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera", "ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3as_V19_Medium_Cannon", "RD501_Republic_Aircraft_Laser_AA"};
+		magazines[] = {"Laserbatteries", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600"};
 		vehicleClass = "GAR_LAATCatNSub";
 		crew = "ls_clone_phase2_pilot";
 		aileronSensitivity = 2.9;
@@ -8750,8 +8750,8 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 		cargoGetInAction[] = {"GetInHigh"};
 		cargoGetOutAction[] = {"GetOutHigh"};
 		textureList[] = {"Tex_Uwing_blue", 1, "Tex_Uwing_white", 1, "Tex_Uwing_rogue", 1, "Tex_Uwing_anvil", 1, "Tex_Uwing_NRearly", 1, "Tex_Uwing_CavernAngels", 1};
-		weapons[] = {"ls_laat_gun", "ls_laat_gun_2", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag", "200rnd_laat_he_mag", "200rnd_laat_he_mag", "200rnd_laat_he_mag", "200rnd_laat_he_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_apfsds_mag", "Laserbatteries", "Pylon_FC_Dropcrate_P_1rnd", "Pylon_FC_Dropcrate_P_1rnd", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
+		magazines[] = {"ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "Laserbatteries", "Pylon_FC_Dropcrate_P_1rnd", "Pylon_FC_Dropcrate_P_1rnd", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -9872,8 +9872,8 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 				memoryPointGun = "usti hlavne"; //"usti hlavne2" is the MG port left of the gun, while "usti hlavne" is the end of the cannon barrel.
 				maxVerticalRotSpeed = "90/45";
 				maxHorizontalRotSpeed = "90/45";
-				weapons[] = {"Laserdesignator_mounted", "ls_laat_gun", "ls_laat_gun_2", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "SmokeLauncher"};
-				magazines[] = {"Laserbatteries", "200rnd_laat_he_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_he_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_he_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_he_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_he_mag", "200rnd_laat_apfsds_mag", "200rnd_laat_he_mag", "200rnd_laat_apfsds_mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
+				weapons[] = {"Laserdesignator_mounted", "ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "SmokeLauncher"};
+				magazines[] = {"Laserbatteries", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
 				minElev = -12;
 				maxElev = 60; // Original 35
 				initElev = 0;
@@ -11510,14 +11510,14 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 					{
 						"Laserdesignator_pilotCamera",
 						"CMFlareLauncher",
-						"ls_laat_gun"};
+						"ls_weapon_laati_turret_50mm_he"};
 				magazines[] =
 					{
 						"Laserbatteries",
 						"300Rnd_CMFlare_Chaff_Magazine",
 						"300Rnd_CMFlare_Chaff_Magazine",
-						"200rnd_laat_he_mag",
-						"200rnd_laat_he_mag"};
+						"ls_magazine_50mm_200Rnd_HE_green",
+						"ls_magazine_50mm_200Rnd_HE_green"};
 			};
 			class CommanderOptics : CommanderOptics
 			{
@@ -12047,8 +12047,8 @@ class CfgAmmo
 class CfgMagazines
 {
 
-	class 200rnd_laat_apfsds_mag;
-	class 200rnd_laat_apfsds_mag_104th : 200rnd_laat_apfsds_mag
+	class ls_magazine_50mm_200Rnd_APFSDS_green;
+	class ls_magazine_50mm_200Rnd_APFSDS_green_104th : ls_magazine_50mm_200Rnd_APFSDS_green
 	{
 		ammo = "ls_50mm_laat_apfsds_104th";
 	};
@@ -12098,10 +12098,10 @@ class CfgWeapons
 		class GunParticles;
 	};
 
-	class ls_laat_gun_2;
-	class ls_laat_gun_2_104th : ls_laat_gun_2
+	class ls_weapon_laati_turret_50mm_ap;
+	class ls_laat_gun_2_104th : ls_weapon_laati_turret_50mm_ap
 	{
-		magazines[] = {"200rnd_laat_apfsds_mag_104th"};
+		magazines[] = {"ls_magazine_50mm_200Rnd_APFSDS_green_104th"};
 	};
 	class ls_aat_127;
 	class ls_127_blue_104th : ls_aat_127

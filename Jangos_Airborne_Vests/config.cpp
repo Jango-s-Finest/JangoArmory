@@ -132,20 +132,14 @@ class CfgWeapons
     {
         author = "Fish";
         displayName = "Clone Airborne Officer Vest (104th Axel)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4",
-                "camo5"};
+        hiddenSelections[] = {"ammo","camo1","camo2","camo3"};
         hiddenSelectionsTextures[] =
             {
                 // Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa doesn't exist
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104_AB_Axel_Kama.paa",
-                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"};
+                "Jangos_Airborne_Vests\data\Textures\104_AB_Axel_Kama.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -237,17 +231,12 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Airborne NCO Vest (104th Carmine)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4"};
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-                "Jangos_Airborne_Vests\data\Textures\104th_AB_Carmine_Kama.paa",
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Carmine_Kama.paa",
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
             };
         class ItemInfo : ItemInfo
@@ -289,17 +278,12 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Airborne NCO Vest (104th Osiris)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4"};
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
-                "Jangos_Airborne_Vests\data\Textures\104th_AB_Osiris_Kama.paa",
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Osiris_Kama.paa",
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
             };
         class ItemInfo : ItemInfo
@@ -341,17 +325,12 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Airborne NCO Vest (104th Kage)";
-        hiddenSelections[] =
-            {
-                "camo1",
-                "camo2",
-                "camo3",
-                "camo4"};
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa", // Heavy
-                "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Kama.paa",
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa", // Heavy
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Kama.paa",
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa"  // Heavy
             };
         class ItemInfo : ItemInfo

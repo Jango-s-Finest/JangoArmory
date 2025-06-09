@@ -140,7 +140,7 @@ class CfgVehicles
 {
 	class lsd_gar_phase2_base;
 	class ls_gar_marshalCommander_base;
-	class ls_gar_standart_backpack;
+	class ls_gar_standard_backpack;
 	class ls_gar_rto_mini_backpack;
 	class ls_gar_heavy_backpack;
 	class ls_gar_medic_backpack;
