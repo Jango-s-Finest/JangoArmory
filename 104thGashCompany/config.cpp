@@ -76,12 +76,13 @@ class CfgWeapons
 	class ls_gar_airborneNCO_vest;
 	class UniformItem;
 
-	class JA_Gash_P2_SGT_Dire_Uniform : ls_gar_phase2_uniform
+	class JA_Gash_P2_SGT_Dire_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P2 armor (Gash - SGT Dire)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -93,6 +94,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_SGT_Dire_P2_Gash";
 			containerClass = "Supply150";
 			mass = 40;
@@ -109,12 +111,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (SGT Dire)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGashCompany\data\Textures\SGT_Dire_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Gash_P2_Lt_Bark_Uniform : ls_gar_phase2_uniform
+	class JA_Gash_P2_Lt_Bark_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P2 armor (Gash - Lt Bark)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -126,6 +129,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Lt_Bark_P2_Gash";
 			containerClass = "Supply150";
 			mass = 40;
@@ -142,12 +146,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (Lt Bark)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGashCompany\data\Textures\LT_Bark_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Gash_P2_Officer_Uniform : ls_gar_phase2_uniform
+	class JA_Gash_P2_Officer_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P2 armor (Gash - Officer)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -159,6 +164,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Officer_P2_Gash";
 			containerClass = "Supply150";
 			mass = 40;
@@ -175,12 +181,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (Officer)";										 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGashCompany\data\Textures\Gash_Officer_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Gash_P2_NCO_Uniform : ls_gar_phase2_uniform
+	class JA_Gash_P2_NCO_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P2 armor (Gash - NCO)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -192,6 +199,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_NCO_P2_Gash";
 			containerClass = "Supply150";
 			mass = 40;
@@ -208,12 +216,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (NCO)";										 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGashCompany\data\Textures\Gash_NCO_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Gash_P2_Base_Uniform : ls_gar_phase2_uniform
+	class JA_Gash_P2_Base_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P2 armor (Gash - Base)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -225,6 +234,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Gash";
 			containerClass = "Supply150";
 			mass = 40;
@@ -241,12 +251,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (Base)";										  // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGashCompany\data\Textures\Gash_Helmet_P3_3.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Gash_P2_Medic_Uniform : ls_gar_phase2_uniform
+	class JA_Gash_P2_Medic_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P2 armor (Gash - Medic)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -258,6 +269,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Medic_P2_Gash";
 			containerClass = "Supply150";
 			mass = 40;
@@ -284,12 +296,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P1 Helmet (Captain Tre)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGashCompany\data\Textures\Captain_tre_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Gash_P1_Captain_Tre_Uniform : ls_gar_phase2_uniform
+	class JA_Gash_P1_Captain_Tre_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper P1 armor (Captain Tre)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -301,6 +314,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Captain_Tre_P1_Gash";
 			containerClass = "Supply150";
 			mass = 40;

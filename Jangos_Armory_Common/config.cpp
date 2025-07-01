@@ -170,12 +170,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (Quick)";												 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\Textures\104_LGC_Quick_P2_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_LGC_Quick_Uniform : ls_gar_phase2_uniform
+	class JA_LGC_Quick_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Quick)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -187,6 +188,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_LGC_Quick";
 			containerClass = "Supply150";
 			mass = 40;
@@ -203,12 +205,13 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (332nd Chich)";										// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\Textures\332nd_Chich_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_332nd_Chich_Uniform : ls_gar_phase2_uniform
+	class JA_332nd_Chich_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (332nd Chich)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -220,6 +223,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_332nd_Chich";
 			containerClass = "Supply150";
 			mass = 40;
@@ -304,12 +308,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\Textures\Green_P1_Cadet_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Cadet_Yellow1_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Yellow1_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Yellow 1)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -321,6 +326,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Yellow1";
 			containerClass = "Supply150";
 			mass = 40;
@@ -328,12 +334,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Yellow2_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Yellow2_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Yellow 2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -345,6 +352,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Yellow2";
 			containerClass = "Supply150";
 			mass = 40;
@@ -352,12 +360,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Yellow3_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Yellow3_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Yellow 3)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -369,6 +378,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Yellow3";
 			containerClass = "Supply150";
 			mass = 40;
@@ -376,12 +386,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Yellow4_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Yellow4_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Yellow 4)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -393,6 +404,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Yellow4";
 			containerClass = "Supply150";
 			mass = 40;
@@ -400,12 +412,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Yellow5_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Yellow5_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Yellow 5)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -417,6 +430,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Yellow5";
 			containerClass = "Supply150";
 			mass = 40;
@@ -424,12 +438,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red1_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Red1_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Red 1)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -441,6 +456,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Red1";
 			containerClass = "Supply150";
 			mass = 40;
@@ -448,12 +464,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red2_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Red2_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Red 2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -465,6 +482,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Red2";
 			containerClass = "Supply150";
 			mass = 40;
@@ -472,12 +490,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red3_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Red3_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Red 3)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -489,6 +508,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Red3";
 			containerClass = "Supply150";
 			mass = 40;
@@ -496,12 +516,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red4_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Red4_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Red 4)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -513,6 +534,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Red4";
 			containerClass = "Supply150";
 			mass = 40;
@@ -520,12 +542,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Red5_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Red5_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Red 5)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -537,6 +560,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Red5";
 			containerClass = "Supply150";
 			mass = 40;
@@ -544,12 +568,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue1_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Blue1_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Blue 1)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -561,6 +586,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Blue1";
 			containerClass = "Supply150";
 			mass = 40;
@@ -568,12 +594,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue2_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Blue2_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Blue 2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -585,6 +612,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Blue2";
 			containerClass = "Supply150";
 			mass = 40;
@@ -592,12 +620,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue3_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Blue3_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Blue 3)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -609,6 +638,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Blue3";
 			containerClass = "Supply150";
 			mass = 40;
@@ -616,12 +646,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue4_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Blue4_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Blue 4)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -633,6 +664,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Blue4";
 			containerClass = "Supply150";
 			mass = 40;
@@ -640,12 +672,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Blue5_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Blue5_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Blue 5)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -657,6 +690,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Blue5";
 			containerClass = "Supply150";
 			mass = 40;
@@ -664,12 +698,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green1_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Green1_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Green 1)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -681,6 +716,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Green1";
 			containerClass = "Supply150";
 			mass = 40;
@@ -688,12 +724,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green2_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Green2_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Green 2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -705,6 +742,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Green2";
 			containerClass = "Supply150";
 			mass = 40;
@@ -712,12 +750,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green3_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Green3_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Green 3)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -729,6 +768,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Green3";
 			containerClass = "Supply150";
 			mass = 40;
@@ -736,12 +776,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green4_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Green4_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Green 4)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -753,6 +794,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Green4";
 			containerClass = "Supply150";
 			mass = 40;
@@ -760,12 +802,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_Cadet_Green5_Uniform : ls_gar_phase2_uniform
+	class JA_Cadet_Green5_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Emmet";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Cadet Armor (Green 5)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -777,6 +820,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_Cadet_Green5";
 			containerClass = "Supply150";
 			mass = 40;

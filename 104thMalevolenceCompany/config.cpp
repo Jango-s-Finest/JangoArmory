@@ -232,12 +232,13 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"104thMalevolenceCompany\data\Textures\104th_P1_Red_Specops_1c_Helmet.paa", "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"}; // the file path to the texturehiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\helmet_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"};
     };
     // MLV Base Uniforms
-    class JA_104th_Malevolence_Base_Uniform : ls_gar_phase2_uniform
+    class JA_104th_Malevolence_Base_Uniform : ls_gar_marshalCommander_uniform
     {
         author = "Dak";
         scope = 2;
         allowedSlots[] = {BACKPACK_SLOT};
         displayName = "Clone Trooper P1 armor (104th MLV)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
         hiddenSelections[] =
             {
                 "camo1",
@@ -249,18 +250,20 @@ class CfgWeapons
         class ItemInfo : UniformItem
         {
             uniformModel = "-";
+			scope = 2;
             uniformClass = "JA_104th_Base_Malevolence";
             containerClass = "Supply150";
             mass = 40;
             uniformType = "Neopren";
         };
     };
-    class JA_104th_Malevolence_Base_Medic_Uniform : ls_gar_phase2_uniform
+    class JA_104th_Malevolence_Base_Medic_Uniform : ls_gar_marshalCommander_uniform
     {
         author = "Dak";
         scope = 2;
         allowedSlots[] = {BACKPACK_SLOT};
         displayName = "Clone Trooper P1 Medic armor (104th MLV)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
         hiddenSelections[] =
             {
                 "camo1",
@@ -272,18 +275,20 @@ class CfgWeapons
         class ItemInfo : UniformItem
         {
             uniformModel = "-";
+			scope = 2;
             uniformClass = "JA_104th_Base_Malevolence_Medic";
             containerClass = "Supply150";
             mass = 40;
             uniformType = "Neopren";
         };
     };
-    class JA_104th_Malevolence_Base_ARC_Uniform : ls_gar_phase2_uniform
+    class JA_104th_Malevolence_Base_ARC_Uniform : ls_gar_marshalCommander_uniform
     {
         author = "Dak";
         scope = 2;
         allowedSlots[] = {BACKPACK_SLOT};
         displayName = "Clone Trooper P1 ARC armor (104th MLV)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
         hiddenSelections[] =
             {
                 "camo1",
@@ -295,6 +300,7 @@ class CfgWeapons
         class ItemInfo : UniformItem
         {
             uniformModel = "-";
+			scope = 2;
             uniformClass = "JA_104th_Base_Malevolence_ARC";
             containerClass = "Supply150";
             mass = 40;
@@ -320,6 +326,7 @@ class CfgWeapons
         class ItemInfo : VestItem
         {
             uniformModel = "-";
+			scope = 2;
             containerClass = "Supply80";
             vestType = "Rebreather";
             mass = 80;
@@ -1019,6 +1026,7 @@ class CfgWeapons
         class ItemInfo : VestItem
         {
             uniformModel = "-";
+			scope = 2;
             containerClass = "Supply80";
             vestType = "Rebreather";
             mass = 80;

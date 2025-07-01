@@ -99,12 +99,13 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
-	class JA_104th_Base_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Base_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th [1C] Pilot)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -116,18 +117,20 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Bail_Uniform : ls_gar_phase2_uniform // TEXTURE PATH UPD + UNIT
+	class JA_104th_Bail_Uniform : ls_gar_marshalCommander_uniform // TEXTURE PATH UPD + UNIT
 	{
 		author = "Jango's Finest";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Bail)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -139,18 +142,20 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Bail";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Beef_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Beef_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Beef)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -162,18 +167,20 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Beef";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Fire_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Fire_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Fire)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -185,13 +192,14 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Fire";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Haze_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Haze_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -215,12 +223,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_Varelli_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Varelli_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Varelli)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -232,6 +241,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Varelli";
 			containerClass = "Supply150";
 			mass = 40;
@@ -239,12 +249,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_OD_Uniform : ls_gar_phase2_uniform
+	class JA_104th_OD_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Fish";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th OD)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -256,6 +267,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_OD";
 			containerClass = "Supply150";
 			mass = 40;
@@ -263,12 +275,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_Cherryy_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Cherryy_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Fish";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Cherryy)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -280,6 +293,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Cherryy";
 			containerClass = "Supply150";
 			mass = 40;
@@ -287,12 +301,13 @@ class CfgWeapons
 		};
 	};
 
-	class JA_104th_Fish_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Fish_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (104th Fish)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -304,6 +319,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Fish";
 			containerClass = "Supply150";
 			mass = 40;

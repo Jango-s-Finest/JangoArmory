@@ -160,12 +160,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Kaleb - SB)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Kaleb_HelmetSB.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Kaleb_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_SB_Base_Kaleb_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Kaleb - SB)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -177,6 +178,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_SB_Howler_Kaleb";
 			containerClass = "Supply150";
 			mass = 40;
@@ -193,12 +195,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler NCO - SB)";									   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_HelmetSB.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_NCO_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_SB_Base_NCO_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler NCO - SB)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -210,6 +213,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_SB_Howler_NCO";
 			containerClass = "Supply150";
 			mass = 40;
@@ -226,12 +230,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Officer - SB)";									   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_HelmetSB.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Officer_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_SB_Base_Officer_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Officer - SB)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -243,6 +248,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_SB_Howler_Officer";
 			containerClass = "Supply150";
 			mass = 40;
@@ -259,12 +265,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Kaleb - P2)";								   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Kaleb_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Kaleb_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_P2_Base_Kaleb_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Kaleb - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -276,6 +283,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Howler_Kaleb";
 			containerClass = "Supply150";
 			mass = 40;
@@ -292,12 +300,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler NCO - P2)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_NCO_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_P2_Base_NCO_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler NCO - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -309,6 +318,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Howler_NCO";
 			containerClass = "Supply150";
 			mass = 40;
@@ -325,12 +335,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Officer - P2)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Officer_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_P2_Base_Officer_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Officer - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -342,6 +353,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Howler_Officer";
 			containerClass = "Supply150";
 			mass = 40;
@@ -358,12 +370,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Kaleb - ME)";										// the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\helmet_P1_kalebM_-_Kopie.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Kaleb_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_ME_Base_Kaleb_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Kaleb - ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -375,6 +388,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Howler_Kaleb";
 			containerClass = "Supply150";
 			mass = 40;
@@ -391,12 +405,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler NCO - ME)";									  // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_HelmetM.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_NCO_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_ME_Base_NCO_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler NCO - ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -408,6 +423,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Howler_NCO";
 			containerClass = "Supply150";
 			mass = 40;
@@ -424,12 +440,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Officer - ME)";									  // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_HelmetM.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Officer_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_ME_Base_Officer_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Officer - ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -441,6 +458,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Howler_Officer";
 			containerClass = "Supply150";
 			mass = 40;
@@ -457,12 +475,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Paak - SB)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Paak_HelmetSB.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Paak_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_SB_Base_Paak_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Paak - SB)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -474,6 +493,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_SB_Howler_Paak";
 			containerClass = "Supply150";
 			mass = 40;
@@ -490,12 +510,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Paak - P2)";								  // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Paak_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Paak_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_P2_Base_Paak_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Paak - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -507,6 +528,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Howler_Paak";
 			containerClass = "Supply150";
 			mass = 40;
@@ -523,12 +545,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Paak - ME)";								   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Paak_HelmetM.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Paak_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_ME_Base_Paak_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Paak - ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -540,6 +563,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Howler_Paak";
 			containerClass = "Supply150";
 			mass = 40;
@@ -556,12 +580,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Trooper - SB)";									   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Trooper_HelmetSB.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Trooper_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_SB_Base_Trooper_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Trooper - SB)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -573,6 +598,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_SB_Howler_Trooper";
 			containerClass = "Supply150";
 			mass = 40;
@@ -589,12 +615,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Trooper - P2)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Trooper_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Trooper_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_P2_Base_Trooper_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Trooper - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -606,6 +633,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Howler_Trooper";
 			containerClass = "Supply150";
 			mass = 40;
@@ -622,12 +650,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Trooper - ME)";									  // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Trooper_HelmetM.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Trooper_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_ME_Base_Trooper_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Trooper - ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -639,6 +668,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Howler_Trooper";
 			containerClass = "Supply150";
 			mass = 40;
@@ -655,12 +685,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Medic - SB)";									 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_HelmetSB.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_SB_Base_Medic_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_SB_Base_Medic_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Medic - SB)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -672,6 +703,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_SB_Howler_Medic";
 			containerClass = "Supply150";
 			mass = 40;
@@ -688,12 +720,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Medic - P2)";								   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_P2_Base_Medic_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_P2_Base_Medic_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Medic - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -705,6 +738,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Howler_Medic";
 			containerClass = "Supply150";
 			mass = 40;
@@ -721,12 +755,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Howler Medic - ME)";									// the name it will be in game
 		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_HelmetM.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
-	class JA_Howler_ME_Base_Medic_Uniform : ls_gar_phase2_uniform
+	class JA_Howler_ME_Base_Medic_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Howler Medic - ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -738,6 +773,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Howler_Medic";
 			containerClass = "Supply150";
 			mass = 40;

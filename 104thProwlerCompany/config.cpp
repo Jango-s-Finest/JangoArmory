@@ -95,12 +95,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler NCO - P2)";										   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_NCO_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_NCO_Uniform : ls_gar_phase2_uniform
+	class JA_Prowler_P2_Base_NCO_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler NCO - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -112,6 +113,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Prowler_NCO";
 			containerClass = "Supply150";
 			mass = 40;
@@ -128,12 +130,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Officer - P2)";										   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Officer_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_Officer_Uniform : ls_gar_phase2_uniform
+	class JA_Prowler_P2_Base_Officer_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler Officer - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -145,6 +148,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Prowler_Officer";
 			containerClass = "Supply150";
 			mass = 40;
@@ -161,12 +165,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Fenris - P2)";									  // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Captain_Fenris_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_Fenris_Uniform : ls_gar_phase2_uniform
+	class JA_Prowler_P2_Base_Fenris_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler Fenris - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -178,6 +183,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Prowler_Fenris";
 			containerClass = "Supply150";
 			mass = 40;
@@ -194,12 +200,13 @@ class CfgWeapons
 		displayname = "Clone Trooper Helmet (Prowler Trooper - P2)";										   // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thProwlerCompany\data\Textures\Prowler_Armored_Trooper_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_Trooper_Uniform : ls_gar_phase2_uniform
+	class JA_Prowler_P2_Base_Trooper_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler Trooper - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -211,6 +218,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Prowler_Trooper";
 			containerClass = "Supply150";
 			mass = 40;
@@ -263,12 +271,13 @@ class CfgWeapons
 			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
 			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_Prowler_P2_Base_Medic_Uniform : ls_gar_phase2_uniform
+	class JA_Prowler_P2_Base_Medic_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Prowler Medic - P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -280,6 +289,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Prowler_Medic";
 			containerClass = "Supply150";
 			mass = 40;

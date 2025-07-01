@@ -101,12 +101,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Captain_Zivi_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_P2_Base_Zivi_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_P2_Base_Zivi_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Captain Zivi)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -118,6 +119,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Dire_Zivi";
 			containerClass = "Supply150";
 			mass = 40;
@@ -135,12 +137,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_ARF_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_P2_Base_ARF_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_P2_Base_ARF_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper ARF armor (Dire P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -152,6 +155,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Dire_ARF";
 			containerClass = "Supply150";
 			mass = 40;
@@ -169,12 +173,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_P2_Base_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_P2_Base_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Dire P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -186,6 +191,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Dire";
 			containerClass = "Supply150";
 			mass = 40;
@@ -204,12 +210,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Medic_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_P2_Base_Medic_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_P2_Base_Medic_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper medic armor (Dire P2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -221,6 +228,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_P2_Dire_Medic";
 			containerClass = "Supply150";
 			mass = 40;
@@ -239,12 +247,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Captain_Zivi_Helmet_Blue.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_Blue_Base_Zivi_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_Blue_Base_Zivi_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Captain Zivi - Blue)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -256,6 +265,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_Blue_Dire_Zivi";
 			containerClass = "Supply150";
 			mass = 40;
@@ -273,12 +283,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_ARF_Helmet_Blue.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_Blue_Base_ARF_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_Blue_Base_ARF_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper ARF armor (Dire Blue)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -290,6 +301,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_Blue_Dire_ARF";
 			containerClass = "Supply150";
 			mass = 40;
@@ -307,12 +319,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Helmet_Blue.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_Blue_Base_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_Blue_Base_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Dire Blue)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -324,6 +337,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_Blue_Dire";
 			containerClass = "Supply150";
 			mass = 40;
@@ -342,12 +356,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_Dire_Medic_Helmet_Blue.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_Blue_Base_Medic_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_Blue_Base_Medic_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper medic armor (Dire Blue)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -359,6 +374,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_Blue_Dire_Medic";
 			containerClass = "Supply150";
 			mass = 40;
@@ -377,12 +393,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Captain_Zivi_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_Base_ME_Zivi_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_Base_ME_Zivi_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Captain Zivi - ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -394,6 +411,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Dire_Zivi";
 			containerClass = "Supply150";
 			mass = 40;
@@ -411,12 +429,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_ARF_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_Base_ME_ARF_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_Base_ME_ARF_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper ARF armor (Dire ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -428,6 +447,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Dire_ARF";
 			containerClass = "Supply150";
 			mass = 40;
@@ -445,12 +465,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_Base_ME_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_Base_ME_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper armor (Dire ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -462,6 +483,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Dire";
 			containerClass = "Supply150";
 			mass = 40;
@@ -480,12 +502,13 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"104thDireCompany\data\Textures\Base_ME_Dire_Medic_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 
-	class JA_Dire_Base_ME_Medic_Uniform : ls_gar_phase2_uniform
+	class JA_Dire_Base_ME_Medic_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper medic armor (Dire ME)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -497,6 +520,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_ME_Dire_Medic";
 			containerClass = "Supply150";
 			mass = 40;

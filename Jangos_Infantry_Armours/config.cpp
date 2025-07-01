@@ -130,8 +130,9 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
-	class JA_104th_Base_Clone_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Base_Clone_Uniform : ls_gar_marshalCommander_uniform
 	{
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		class ItemInfo : ItemInfo
 		{
 			class HitpointsProtectionInfo
@@ -298,6 +299,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Crash";
 			containerClass = "Supply150";
 			mass = 40;
@@ -321,6 +323,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Quick";
 			containerClass = "Supply150";
 			mass = 40;
@@ -344,6 +347,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Spectre_RC";
 			containerClass = "Supply150";
 			mass = 40;
@@ -367,6 +371,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Banker";
 			containerClass = "Supply150";
 			mass = 40;
@@ -390,6 +395,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Archibold";
 			containerClass = "Supply150";
 			mass = 40;
@@ -413,6 +419,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Bomb";
 			containerClass = "Supply150";
 			mass = 40;
@@ -436,6 +443,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Blood";
 			containerClass = "Supply150";
 			mass = 40;
@@ -459,6 +467,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Dart";
 			containerClass = "Supply150";
 			mass = 40;
@@ -482,6 +491,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Doc";
 			containerClass = "Supply150";
 			mass = 40;
@@ -505,6 +515,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Death";
 			containerClass = "Supply150";
 			mass = 40;
@@ -528,6 +539,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Ed";
 			containerClass = "Supply150";
 			mass = 40;
@@ -551,6 +563,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Galahad";
 			containerClass = "Supply150";
 			mass = 40;
@@ -574,6 +587,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Irish";
 			containerClass = "Supply150";
 			mass = 40;
@@ -597,6 +611,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Knightfall";
 			containerClass = "Supply150";
 			mass = 40;
@@ -620,6 +635,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Knockout";
 			containerClass = "Supply150";
 			mass = 40;
@@ -643,6 +659,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Kyo";
 			containerClass = "Supply150";
 			mass = 40;
@@ -666,6 +683,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Paraso";
 			containerClass = "Supply150";
 			mass = 40;
@@ -689,6 +707,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Pacify";
 			containerClass = "Supply150";
 			mass = 40;
@@ -712,6 +731,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Mad";
 			containerClass = "Supply150";
 			mass = 40;
@@ -735,6 +755,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Skav";
 			containerClass = "Supply150";
 			mass = 40;
@@ -758,6 +779,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Scurvy";
 			containerClass = "Supply150";
 			mass = 40;
@@ -781,6 +803,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Spirit";
 			containerClass = "Supply150";
 			mass = 40;
@@ -804,6 +827,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Talisman";
 			containerClass = "Supply150";
 			mass = 40;
@@ -827,6 +851,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Tiger";
 			containerClass = "Supply150";
 			mass = 40;
@@ -854,6 +879,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Tinkle";
 			containerClass = "Supply150";
 			mass = 40;
@@ -877,6 +903,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Tusk";
 			containerClass = "Supply150";
 			mass = 40;
@@ -907,6 +934,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Test";
 			containerClass = "Supply150";
 			mass = 40;
@@ -930,6 +958,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Welty";
 			containerClass = "Supply150";
 			mass = 40;

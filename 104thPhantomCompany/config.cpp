@@ -112,11 +112,13 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	class Bag_Base;
-	class JA_104th_Base_CT_Uniform : ls_gar_phase2_uniform
+	class JA_104th_Base_CT_Uniform : ls_gar_marshalCommander_uniform
 	{
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Base_CT";
 			containerClass = "Supply150";
 			mass = 40;
@@ -492,6 +494,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_P2_1C_01_CT";
 			containerClass = "Supply150";
 			mass = 40;
@@ -515,6 +518,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_P2_1C_02_CT";
 			containerClass = "Supply150";
 			mass = 40;
@@ -538,6 +542,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_P2_1C_Engineer";
 			containerClass = "Supply150";
 			mass = 40;
@@ -561,6 +566,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_P2_1C_Medic";
 			containerClass = "Supply150";
 			mass = 40;
@@ -584,6 +590,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_AB_1C_Medic";
 			containerClass = "Supply150";
 			mass = 40;
@@ -611,6 +618,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_P2_1C_JTAC";
 			containerClass = "Supply150";
 			mass = 40;

@@ -76,12 +76,13 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Bolt)";												// the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGreywindCompany\data\Textures\Vilkas_ARF_Bolt_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_Greywind_P2_Bolt_ARF_Uniform : ls_gar_phase2_uniform
+	class JA_Greywind_P2_Bolt_ARF_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper ARF armor (Bolt)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -93,6 +94,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Bolt_P2_Greywind_ARF";
 			containerClass = "Supply150";
 			mass = 40;
@@ -109,12 +111,13 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Dingo)";												 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGreywindCompany\data\Textures\Vilkas_ARF_Dingo_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_Greywind_P2_Dingo_ARF_Uniform : ls_gar_phase2_uniform
+	class JA_Greywind_P2_Dingo_ARF_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper ARF armor (Dingo)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -126,6 +129,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Dingo_P2_Greywind_ARF";
 			containerClass = "Supply150";
 			mass = 40;
@@ -142,12 +146,13 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Mouse)";												 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGreywindCompany\data\Textures\Vilkas_ARF_Mouse_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_Greywind_P2_Mouse_ARF_Uniform : ls_gar_phase2_uniform
+	class JA_Greywind_P2_Mouse_ARF_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper ARF armor (Mouse)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -159,6 +164,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Mouse_P2_Greywind_ARF";
 			containerClass = "Supply150";
 			mass = 40;
@@ -175,12 +181,13 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (Vilkas)";												  // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGreywindCompany\data\Textures\Vilkas_ARF_Vilkas_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_Greywind_P2_Vilkas_ARF_Uniform : ls_gar_phase2_uniform
+	class JA_Greywind_P2_Vilkas_ARF_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
 		displayName = "Clone Trooper ARF armor (Vilkas)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -192,6 +199,7 @@ class CfgWeapons
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
+			scope = 2;
 			uniformClass = "JA_104th_Vilkas_P2_Greywind_ARF";
 			containerClass = "Supply150";
 			mass = 40;
