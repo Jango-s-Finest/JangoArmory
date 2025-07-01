@@ -4287,8 +4287,10 @@ class CfgMagazines
 class CfgVehicles
 {
     class ls_carrybox_base;
+	class 3AS_Supply_Large_Ammo_Prop;
 
-    class JA_104th_Box_Ammo_mk2 : ls_carrybox_base
+
+    class JA_104th_Box_Ammo_mk2 : 3AS_Supply_Large_Ammo_Prop
     {
         author = "Cyan";
         displayName = "Ammo Box - 104th";

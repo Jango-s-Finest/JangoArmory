@@ -154,6 +154,9 @@ class cfgVehicles
 	class OPTRE_Pelican_armed;
 	class Aux212_3AS_Reaper_Y_Wing;
 	class ls_carrybox_base;
+	class 3AS_Supply_Large_Ammo_Prop;
+	class 3AS_Supply_Large_Black_Prop;
+	class 3AS_Supply_Large_Medical_Prop;
 	class Land_3AS_Medical_Droid;
 
 	// Classes needed for the Bison change
@@ -10901,7 +10904,7 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 
 	// Split
 
-	class JA_104th_Box_Ammo : ls_carrybox_base
+	class JA_104th_Box_Ammo : 3AS_Supply_Large_Ammo_Prop
 	{
 		author = "Dak";
 		displayName = "Ammo Box - JLTS";
@@ -10966,7 +10969,7 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 		{
 		};
 	};
-	class JA_104th_Box_Explosives : ls_carrybox_base
+	class JA_104th_Box_Explosives : 3AS_Supply_Large_Black_Prop
 	{
 		author = "Dak";
 		displayName = "Explosives Box - 104th";
@@ -11026,7 +11029,7 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 		{
 		};
 	};
-	class JA_104th_Box_Medic : ls_carrybox_base
+	class JA_104th_Box_Medic : 3AS_Supply_Large_Medical_Prop
 	{
 		author = "Dak";
 		displayName = "Medical Box - 104th";
