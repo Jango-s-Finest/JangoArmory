@@ -428,7 +428,7 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] 01 CT)"; // the name it will be in game
 		visionMode[] = {"Normal"};
-		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_01_CT_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_01_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_1C_02_CT_Helmet : ls_gar_airborne_helmet
 	{
@@ -439,7 +439,7 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] 02 CT)"; // the name it will be in game
 		visionMode[] = {"Normal"};
-		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_02_CT_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_02_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_1C_03_CT_Helmet : ls_gar_airborne_helmet
 	{
@@ -450,7 +450,7 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] 03 CT)"; // the name it will be in game
 		visionMode[] = {"Normal"};
-		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_03_CT_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_03_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_1C_04_CT_Helmet : ls_gar_airborne_helmet
 	{
@@ -461,7 +461,7 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] 04 CT)"; // the name it will be in game
 		visionMode[] = {"Normal"};
-		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_04_CT_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_04_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_1C_Medic_Helmet : ls_gar_airborne_helmet
 	{
@@ -472,7 +472,7 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] Medic)"; // the name it will be in game
 		visionMode[] = {"Normal"};
-		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
 	};
 
 	class JA_104th_P2_1C_01_CT_Uniform : JA_104th_Base_CT_Uniform
