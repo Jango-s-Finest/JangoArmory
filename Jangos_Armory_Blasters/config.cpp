@@ -2325,19 +2325,20 @@ class CfgWeapons
         ACE_barrelLength = 264;
         ACE_twistDirection = 1;
         BNA_KC_weapons_attachmentSwapEnabled = 1; // Enables attachment swapping
-        BNA_KC_weapons_attachments[] =
-            {// List of a property in the magazine class, and what attachment to apply
-             // Property can be whatever, but should have a TAG
-             {"JA_104th_isBlasterMag", "SWLW_attachment_DC17M_blaster"},
-             {"JA_104th_isATMag", "SWLW_attachment_DC17M_at"},
-             {"JA_104th_isSniperMag", "SWLW_attachment_DC17M_sniper"}};
+        BNA_KC_weapons_attachments[] = 
+                { // List of a property in the magazine class, and what attachment to apply
+            // Property can be whatever, but should have a TAG
+            {"JA_104th_isBlasterMag", "ls_muzzle_dc17m_blaster"},
+            {"JA_104th_isATMag", "ls_muzzle_dc17m_antiArmor"},
+            {"JA_104th_isSniperMag", "ls_muzzle_dc17m_sniper"}
+                };
         scope = 2;
         displayName = "[104th] DC-17M";
         baseWeapon = "JA_104th_DC17M";
         mass = 60;
-        picture = "\SWLW_clones_spec\data\ui\DC17M_ui.paa";
-        model = "\SWLW_clones_spec\DC17M_base.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "\SWLW_clones_spec\anims\DC17M_handanim.rtm"};
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc17m_ui_ca.paa";
+        model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_weapon_dc17m.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","\ls\core\addons\weapons_dcSeries\dc17m\anims\dc17m_handanim.rtm"};
         reloadAction = "GestureReload_JLTS_DC15A";
         reloadTime = 0.1;
         recoil = "recoil_mx";
@@ -2446,32 +2447,47 @@ class CfgWeapons
                 iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] =
-                    {
-                        "SWLW_attachment_scope_DC17M_sniper",
-                        "JA_104th_cows_RCO",
-                        "JA_104th_cows_RCO_2",
-                        "JA_104th_cows_RCO_3",
-                        "JA_104th_cows_Holosight",
-                        "JA_104th_cows_Holosight_2",
-                        "JA_104th_cows_Holosight_3",
-                        "JA_104th_cows_MRCO",
-                        "JA_104th_cows_MRCO_2",
-                        "JA_104th_cows_MRCO_3",
-                        "JA_104th_cows_DMS",
-                        "JA_104th_cows_DMS_2",
-                        "JA_104th_cows_DMS_3",
-                        "JA_104th_cows_DMS_4"};
+                compatibleItems[] = 
+                {
+                    "SWLW_attachment_scope_DC17M_sniper",
+                    "JA_104th_cows_rco",
+                    "JA_104th_cows_rco_2",
+                    "JA_104th_cows_rco_3",
+
+                    "JA_104th_cows_mrco",
+                    "JA_104th_cows_mrco_2",
+                    "JA_104th_cows_mrco_3",
+
+                    "JA_104th_cows_Holosight",
+                    "JA_104th_cows_Holosight_2",
+                    "JA_104th_cows_Holosight_3",
+
+                    "JA_104th_cows_HoloScope",
+                    "JA_104th_cows_HoloScope_2",
+                    "JA_104th_cows_HoloScope_3",
+
+                    "JA_104th_cows_DMS",
+                    "JA_104th_cows_DMS_2",
+                    "JA_104th_cows_DMS_3",
+                    "JA_104th_cows_DMS_4",
+
+                    "JA_104th_cows_Holoscope_LR",
+                    "JA_104th_cows_Holoscope_LR_2",
+                    "JA_104th_cows_Holoscope_LR_3",
+                    "JA_104th_cows_Holoscope_LR_4"
+                    
+                };
             };
             class MuzzleSlot : MuzzleSlot
             {
-                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                compatibleItems[] =
-                    {
-                        "SWLW_attachment_DC17M_blaster",
-                        "SWLW_attachment_DC17M_at",
-                        "SWLW_attachment_DC17M_sniper"};
+                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                compatibleItems[]=
+                {
+                    "ls_muzzle_dc17m_blaster",
+                    "ls_muzzle_dc17m_antiArmor",
+                    "ls_muzzle_dc17m_sniper"
+                };
             };
             class PointerSlot : PointerSlot
             {
@@ -2980,6 +2996,17 @@ class CfgWeapons
                         "3AS_Imp_Optic_3",
                         "3AS_Imp_Optic_4"};
             };
+                        class MuzzleSlot: MuzzleSlot
+            {
+                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint="Center";
+                compatibleItems[]=
+                {
+                    "ls_muzzle_westar35s_suppressor"
+                };
+            };
         };
     };
 
@@ -3183,19 +3210,20 @@ class CfgWeapons
         };
     };
 
-    // Dual DC17SA ARC LFP model
-    class JA_104th_DC15ARC : LFP_dc17arc_Dual
-    {
-        ACE_barrelTwist = 254;
-        ACE_barrelLength = 104;
-        ACE_twistDirection = 1;
-        displayName = "[104th] Dual DC-15ARCs";
-        baseWeapon = "JA_104th_DC15ARC";
-        mass = 40;
-        picture = "\3AS\3AS_Weapons\DC15SA\data\UI\3as_dc15sa.paa";
-        reloadAction = "3AS_GestureReloadDualDC17S";
-        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg", 2, 1, 30};
-    };
+   // Dual DC17SA ARC LFP model
+   class JA_104th_DC15ARC: LFP_dc17arc_Dual
+   {
+       ACE_barrelTwist = 254;
+       ACE_barrelLength = 104;
+       ACE_twistDirection = 1;
+       displayName = "[104th] Dual DC-15ARCs";
+       baseWeapon = "JA_104th_DC15ARC";
+       mass = 40;
+       picture = "\3AS\3AS_Weapons\DC15SA\data\UI\3as_dc15sa.paa";
+       reloadAction = "3AS_GestureReloadDualDC17S";
+       reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
+       magazines[] = {"BNA_KC_Mag_60Rnd_DC17_dualHP"};
+   };
 
     // Dual DC17SA 3AS model LS class for Tusk
     class JA_104th_DC17SA_Dual : ls_weapon_dualDC17_secondary
@@ -3342,6 +3370,7 @@ class CfgWeapons
         scope = 2;
         displayName = "[104th] RPS-6 Rocket Launcher";
         baseWeapon = "JA_104th_RPS6";
+        model = "\ls_weapons\tertiary\rps6\ls_weapon_rps6";
         magazines[] =
             {
                 "ls_mag_rpg_1rnd"};
