@@ -257,7 +257,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Helmet (Howler Kaleb - P2)";								   // the name it will be in game
-		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Kaleb_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Kaleb_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_Howler_P2_Base_Kaleb_Uniform : ls_gar_phase2_uniform
 	{
@@ -290,7 +290,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Helmet (Howler NCO - P2)";									 // the name it will be in game
-		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_NCO_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_Howler_P2_Base_NCO_Uniform : ls_gar_phase2_uniform
 	{
@@ -323,7 +323,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Helmet (Howler Officer - P2)";									 // the name it will be in game
-		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Officer_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_Howler_P2_Base_Officer_Uniform : ls_gar_phase2_uniform
 	{
@@ -587,7 +587,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Helmet (Howler Trooper - P2)";									 // the name it will be in game
-		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Trooper_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Trooper_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_Howler_P2_Base_Trooper_Uniform : ls_gar_phase2_uniform
 	{
@@ -686,7 +686,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Helmet (Howler Medic - P2)";								   // the name it will be in game
-		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"104thHowlerCompany\data\Textures\Howler_Medic_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_Howler_P2_Base_Medic_Uniform : ls_gar_phase2_uniform
 	{
