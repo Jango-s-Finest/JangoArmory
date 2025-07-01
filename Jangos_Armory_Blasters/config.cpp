@@ -2435,22 +2435,9 @@ class CfgWeapons
             reloadTime=0.1;     
             dispersion=0.0005;
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] = {"SWLW_clones_spec\sounds\DC17M_sniper_fire.wss",1,1,1800};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
             class StandardSound: BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"SWLW_clones_spec\sounds\DC17M_sniper_fire.wss",1,1,1800};
-                soundBegin[] = {"begin1",1};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
+                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet","ls_sniper_Tail_SoundSet"};
             };
         };
         class FullAuto: FullAuto
@@ -2458,22 +2445,9 @@ class CfgWeapons
             reloadTime = 0.1;
             dispersion = 0.0005;
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] = {"\swlw_rework\sounds\dc\17\DC17_shot.wss",1,1,1800};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
             class StandardSound: BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"\swlw_rework\sounds\dc\17\DC17_shot.wss",1,1,1800};
-                soundBegin[] = {"begin1",1};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
+                soundSetShot[] = {"ls_dc17m_Shot_SoundSet","ls_mediumBlaster_Tail_SoundSet"};
             };
         };
         class WeaponSlotsInfo: WeaponSlotsInfo
