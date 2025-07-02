@@ -88,7 +88,7 @@ class CfgWeapons
 	class lsd_gar_p2MarshalCommander_nvg;
 	class ls_sob_commando_visor_nvg;
 	class ls_sob_commando_antenna_nvg;
-	class lsd_gar_medicalScannerSPC_nvg;
+	class lsd_gar_medicalScanner_nvg;
 	class ls_sob_phase2SpecOp_helmet;
 	class UniformItem;
 	class VestItem;
@@ -131,7 +131,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		scopeCurator = 2;
 	};
-	class JA_104th_P2_NVG_Irish : lsd_gar_medicalScannerSPC_nvg
+	class JA_104th_P2_NVG_Irish : lsd_gar_medicalScanner_nvg
 	{
 		author = "Dak";
 		displayName = "Clone Medical Scanner NVG (104th Irish)";
