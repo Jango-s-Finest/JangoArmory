@@ -2398,7 +2398,7 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: BaseSoundModeType
             {
-                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet","ls_sniper_Tail_SoundSet"};
+                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet"};
             };
         };
         class FullAuto: FullAuto
@@ -2408,7 +2408,7 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: BaseSoundModeType
             {
-                soundSetShot[] = {"ls_dc17m_Shot_SoundSet","ls_mediumBlaster_Tail_SoundSet"};
+                soundSetShot[] = {"ls_dc17m_Shot_SoundSet"};
             };
         };
         class FullAuto : FullAuto
