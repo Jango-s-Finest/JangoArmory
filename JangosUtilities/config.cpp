@@ -247,5 +247,4 @@ class cfgVehicles
             Init = "[_this select 0] execVM '\JangosUtilities\EscapePods.sqf';";
         };
     };
-    
 };

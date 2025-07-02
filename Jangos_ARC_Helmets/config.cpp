@@ -10,15 +10,15 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {
-				"JA_104th_Angel_Helmet",
-				"JA_104th_Sigil_Helmet",
-				"JA_104th_Crowbi_Helmet",
-				"JA_104th_Drifter_Helmet",
-				"JA_104th_Frosty_Helmet",
-				"JA_104th_Hunter_Helmet",
-				"JA_104th_Loner_Helmet",
-				"JA_104th_Vision_Helmet",
-				"JA_104th_Spectre_Helmet"
+			"JA_104th_Angel_Helmet",
+			"JA_104th_Sigil_Helmet",
+			"JA_104th_Crowbi_Helmet",
+			"JA_104th_Drifter_Helmet",
+			"JA_104th_Frosty_Helmet",
+			"JA_104th_Hunter_Helmet",
+			"JA_104th_Loner_Helmet",
+			"JA_104th_Vision_Helmet",
+			"JA_104th_Spectre_Helmet"
 
 		};
 	};
@@ -66,129 +66,129 @@ class CfgWeapons
 {
 	class InventoryItem_Base_F;
 	class ItemCore;
-	class SWLB_Clone_Pilot_P2_Helmet;
-	class SWLB_clone_uniform;
-	class SWLB_clone_mc_uniform;
-	class SWLB_clone_arc_armor;
-	class SWLB_clone_officer_armor;
-	class SWLB_clone_commander_armor;
-	class SWLB_clone_airborne_armor;
-	class SWLB_CEE_Airborne_Officer;
-	class SWLB_CEE_Force_Recon_NCO;
-	class SWLB_clone_BARC_helmet;
-	class SWLB_clone_AB_helmet;
-	class SWLB_clone_ARF_P1_Helmet;
-	class SWLB_clone_P15_Helmet;
-	class SWLB_clone_P1_helmet;
-	class SWLB_clone_P1_2_helmet;
-	class SWLB_clone_P2_Helmet;
+	class ls_gar_phase2Pilot_helmet;
+	class ls_gar_phase2_uniform;
+	class ls_gar_marshalCommander_uniform;
+	class ls_gar_arc_vest;
+	class ls_gar_officer_vest;
+	class ls_gar_commander_vest;
+	class ls_gar_airborne_vest;
+	class ls_gar_airborneOfficer_vest;
+	class ls_gar_forceReconNCO_vest;
+	class ls_gar_barc_helmet;
+	class ls_gar_airborne_helmet;
+	class ls_gar_phase1Arf_helmet;
+	class ls_gar_arc_helmet;
+	class ls_gar_phase1_helmet;
+	class ls_gar_rex_helmet;
+	class ls_gar_phase2_helmet;
 	class lsd_gar_standart_nvg;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_clone_kama_armor;
-	class SWLB_clone_medic_armor;
-	class SWLB_clone_basic_armor;
-	class SWLB_clone_airborne_nco_armor;
-	class SWLB_clone_eng_helmet;
-	class SWLB_P2_SpecOps_Helmet;
+	class ls_gar_kama_vest;
+	class ls_gar_medic_vest;
+	class ls_gar_clone_vest;
+	class ls_gar_airborneNCO_vest;
+	class ls_gar_engineer_helmet;
+	class ls_sob_phase2SpecOp_helmet;
 	class UniformItem;
 	class VestItem;
 
-	class JA_104th_Angel_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Angel_Helmet : ls_gar_arc_helmet
 	{
 		author = "Ice";
 		scopeArsenal = 2;
 		side = 1;
-		grad_slingHelmet_allow = "true";									
-		displayname = "Clone Trooper ARC Trooper Helmet (104th Angel)";						  // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Angel_Helmet.paa"}; // the file path to the texture
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Angel)";								  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Angel_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Crowbi_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Crowbi_Helmet : ls_gar_arc_helmet
 	{
 		author = "Ice";
 		scopeArsenal = 2;
 		side = 1;
-		grad_slingHelmet_allow = "true";									
-		displayname = "Clone Trooper ARC Trooper Helmet (104th Crowbi)";						  // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Crowbi_Helmet.paa"}; // the file path to the texture
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Crowbi)";							   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Crowbi_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Drifter_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Drifter_Helmet : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
 		side = 1;
-		grad_slingHelmet_allow = "true";													
-		displayname = "Clone Trooper ARC Trooper Helmet (104th Drifter)";								  // the name it will be in game
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Drifter)"; // the name it will be in game
 		subItems[] = {"OPTRE_Glasses_Visor"};
 		optreHUDStyle = "ODST_1";
-		optreVarietys[] = {"_dp","_dp","_dp"};
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Drifter_Helmet.paa"}; // the file path to the texture
+		optreVarietys[] = {"_dp", "_dp", "_dp"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Drifter_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Frosty_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Frosty_Helmet : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
 		side = 1;
-		grad_slingHelmet_allow = "true";													
-		displayname = "Clone Trooper ARC Trooper Helmet (104th Frosty)";								  // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Frosty_Helmet.paa"}; // the file path to the texture
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Frosty)";							   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Frosty_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Hunter_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Hunter_Helmet : ls_gar_arc_helmet
 	{
 		author = "Tundra";
 		scopeArsenal = 2;
-        side = 1;
+		side = 1;
 		grad_slingHelmet_allow = "true";
-		displayname = "Clone Trooper ARC Trooper Helmet (104th Hunter)"; // the name it will be in game
-		hiddenSelectionsTextures[] = { "Jangos_ARC_Helmets\data\textures\104th_ARC_Hunter_Helmet.paa" }; // the file path to the texture
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Hunter)";							   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Hunter_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Loner_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Loner_Helmet : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
 		side = 1;
-		grad_slingHelmet_allow = "true";											
-		displayname = "Clone Trooper ARC Trooper Helmet (104th Loner)";							 // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Loner_Helmet.paa"}; // the file path to the texture
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Loner)";								  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Loner_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Spectre_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Spectre_Helmet : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
 		side = 1;
-		grad_slingHelmet_allow = "true";												
+		grad_slingHelmet_allow = "true";
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Spectre)";								// the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Spectre_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Spectre_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Sigil_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Sigil_Helmet : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
 		side = 1;
-		grad_slingHelmet_allow = "true";													
-		displayname = "Clone Trooper ARC Trooper Helmet (104th Sigil)";							 // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Sigil_Helmet.paa"}; // the file path to the texture
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Sigil)";								  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Sigil_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Vision_Helmet : SWLB_clone_P15_Helmet
+	class JA_104th_Vision_Helmet : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
 		side = 1;
-		grad_slingHelmet_allow = "true";													
-		displayname = "Clone Trooper ARC Trooper Helmet (104th Vision)";								  // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Vision_Helmet.paa"}; // the file path to the texture
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (104th Vision)";							   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Vision_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
 };
 
 class CfgVehicles
 {
-	class SWLB_clone_base_P2;
-	class SWLB_clone_marshal_commander_base_P2;
-	class SWLB_clone_backpack;
-	class SWLB_clone_RTO_mini_backpack;
-	class SWLB_clone_backpack_heavy;
-	class SWLB_clone_backpack_medic;
-	class SWLB_clone_backpack_RTO;
+	class lsd_gar_phase2_base;
+	class ls_gar_marshalCommander_base;
+	class ls_gar_standard_backpack;
+	class ls_gar_rto_mini_backpack;
+	class ls_gar_heavy_backpack;
+	class ls_gar_medic_backpack;
+	class ls_gar_Radio_backpack;
 	class JLTS_Clone_jumppack;
 	class JA_104th_Jumppack_JT12;
 	class JA_104th_Jumppack_JT12_LR;

@@ -50,11 +50,10 @@ class CfgPatches
 			"JA_104th_Vulture_dynamicLoadout_AA",
 			"JA_104th_Vulture_dynamicLoadout_Bare",
 			"104th_MudHorn_tank_mobile",
-			"104th_MudHorn_tank_field"
-		};	//All the new vehicles/units you've created in cfgVehicles
+			"104th_MudHorn_tank_field"}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {"JA_104th_guided_resupply_pod_launcher"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03","A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
+		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
 };
 
@@ -63,8 +62,8 @@ class CfgFactionClasses
 	class 104th_Guys
 	{
 		displayname = "Jango's Finest";
-		priority = 1; // Position in list. 
-        side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
+		priority = 1; // Position in list.
+		side = 1;	  // Opfor = 0, Blufor = 1, Indep = 2.
 		icon = "";
 	};
 };
@@ -88,7 +87,6 @@ class cfgEditorSubcategories
 	};
 };
 
-
 class SensorTemplatePassiveRadar;
 class DefaultVehicleSystemsDisplayManagerLeft
 {
@@ -98,11 +96,11 @@ class DefaultVehicleSystemsDisplayManagerRight
 {
 	class components;
 };
-class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+class VehicleSystemsTemplateLeftPilot : DefaultVehicleSystemsDisplayManagerLeft
 {
 	class components;
 };
-class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+class VehicleSystemsTemplateRightPilot : DefaultVehicleSystemsDisplayManagerRight
 {
 	class components;
 };
@@ -114,21 +112,23 @@ class Extended_init_EventHandlers
 	{
 		class warden_tank_init_eh
 		{
-			init="['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;";
+			init = "['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;";
 		};
 		class adsd_tow
 		{
-			init="[_this select 0] spawn RD501_fnc_warden_tow";
+			init = "[_this select 0] spawn RD501_fnc_warden_tow";
 		};
 	};
 	class JA_104th_Medical_Droid
 	{
-		class areaSlowHealInit {
-            init = "_this call BNA_KC_medical_fnc_areaHealerInit";
-        };
-        class loopSay3D_init {
-            serverInit = "_this call BNA_KC_core_fnc_loopSay3D_init";
-        };
+		class areaSlowHealInit
+		{
+			init = "_this call BNA_KC_medical_fnc_areaHealerInit";
+		};
+		class loopSay3D_init
+		{
+			serverInit = "_this call BNA_KC_core_fnc_loopSay3D_init";
+		};
 	}
 };
 class SensorTemplateAntiRadiation;
@@ -140,35 +140,38 @@ class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
 
-class cfgVehicles {
-	
+class cfgVehicles
+{
+
 	class SWLG_tanks_tx130;
 
-	class lsd_laat_base;
-	class lsd_heli_laati_transport;
-	class lsd_heli_laati_ab; 
-	class lsd_laatc_base;
+	class ls_vehicle_laati_base;
+	class ls_vehicle_laati_transport;
+	class ls_vehicle_laati_airborne;
+	class ls_vehicle_laatc_base;
 	class OPTRE_UNSC_falcon;
 	class OPTRE_Pelican_unarmed;
 	class OPTRE_Pelican_armed;
 	class Aux212_3AS_Reaper_Y_Wing;
 	class ls_carrybox_base;
-    class Land_3AS_Medical_Droid;
-	
-	
-	//Classes needed for the Bison change
+	class 3AS_Supply_Large_Ammo_Prop;
+	class 3AS_Supply_Large_Black_Prop;
+	class 3AS_Supply_Large_Medical_Prop;
+	class Land_3AS_Medical_Droid;
+
+	// Classes needed for the Bison change
 	class OPTRE_Vehicles_Bison;
 	class OPTRE_M413_base;
 	class OPTRE_M412_IFV_UNSC;
 	class Turrets;
 	class MainTurret;
 	class OPTRE_M412_IFV_UNSC_blk;
-	
-	//Classes for the BARC change
+
+	// Classes for the BARC change
 	class LandVehicle;
 	class Car;
-	class ls_barc_base;
-	class ls_ground_barc;
+	class ls_vehicle_barc_base;
+	class ls_vehicle_barc;
 	class HitPoints;
 	class HitLFWheel;
 	class HitLF2Wheel;
@@ -179,7 +182,7 @@ class cfgVehicles {
 	class HitGlass2;
 	class HitGlass3;
 	class HitGlass4;
-	class Car_F: Car
+	class Car_F : Car
 	{
 		class HitPoints
 		{
@@ -196,18 +199,18 @@ class cfgVehicles {
 		class EventHandlers;
 		class AnimationSources;
 	};
-	
-	class Tank: LandVehicle
+
+	class Tank : LandVehicle
 	{
 		class NewTurret;
 		class Sounds;
 		class HitPoints;
 	};
-	class Tank_F: Tank
+	class Tank_F : Tank
 	{
 		class Turrets
 		{
-			class MainTurret: NewTurret
+			class MainTurret : NewTurret
 			{
 				class ViewGunner;
 				class Turrets
@@ -221,7 +224,7 @@ class cfgVehicles {
 		class ViewOptics;
 		class ViewCargo;
 		class HeadLimits;
-		class HitPoints: HitPoints
+		class HitPoints : HitPoints
 		{
 			class HitHull;
 			class HitFuel;
@@ -229,46 +232,49 @@ class cfgVehicles {
 			class HitLTrack;
 			class HitRTrack;
 		};
-		class Sounds: Sounds
+		class Sounds : Sounds
 		{
 			class Engine;
 			class Movement;
 		};
 		class EventHandlers;
 	};
-	class APC_Tracked_03_base_F: Tank_F{};
-	class I_APC_Tracked_03_base_F: APC_Tracked_03_base_F{};
-	class OPTRE_M494: I_APC_Tracked_03_base_F
+	class APC_Tracked_03_base_F : Tank_F
+	{
+	};
+	class I_APC_Tracked_03_base_F : APC_Tracked_03_base_F
+	{
+	};
+	class OPTRE_M494 : I_APC_Tracked_03_base_F
 	{
 		class ACE_SelfActions;
 	};
-	
 
 	class Box_212_Supply_F;
 	class Box_212_Medical_F;
-	
-	//Classes for the Vulture Rebalance
+
+	// Classes for the Vulture Rebalance
 	class 3AS_Vulture_Base_F;
 	class 3AS_CIS_Vulture_F;
 	class 3AS_CIS_Vulture_AA_F;
 	class 3AS_CIS_Vulture_CAS_F;
 
-	class lsd_heli_laati: lsd_laat_base
+	class ls_vehicle_laati : ls_vehicle_laati_base
 	{
 		class ACE_SelfActions;
 	};
-	class JA_104th_LAAT: lsd_heli_laati
+	class JA_104th_LAAT : ls_vehicle_laati
 	{
 		displayName = "LAAT-E 104th";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		
+
 		armor = 250;
 		armorStructural = 2;
-		
+
 		DriverCanEject = 1;
 		cargoCanEject = 1;
-		
+
 		irScanRangeMax = 10000;
 		irScanRangeMin = 100;
 		irScanToEyeFactor = 4;
@@ -281,23 +287,39 @@ class cfgVehicles {
 		radarType = 4;
 		ls_impulsor_fuelDrain_1 = 0.00001;
 		ls_impulsor_fuelDrain_2 = 0.00003;
-		
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","212th_A2A_MissileSystem","missiles_DAR","ace_missileguidance_dagr","Laserdesignator_pilotCamera","FC_Dropcrate_PW1","CMFlareLauncher"};
+		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
 		magazines[] = {
-			"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag",
-			"200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag",
-			"212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag",
-			"12rnd_missiles","12rnd_missiles","12rnd_missiles",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_HE_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"ls_magazine_50mm_200Rnd_APFSDS_green",
+			"212th_Drexl_4Rnd_A2A_mag",
+			"212th_Drexl_4Rnd_A2A_mag",
+			"12rnd_missiles",
+			"12rnd_missiles",
+			"12rnd_missiles",
 			"Laserbatteries",
-			"Pylon_FC_Dropcrate_P_1rnd","Pylon_FC_Dropcrate_P_1rnd",
-			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
+			"Pylon_FC_Dropcrate_P_1rnd",
+			"Pylon_FC_Dropcrate_P_1rnd",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"24Rnd_ACE_Hydra70_DAGR",
 			"24Rnd_ACE_Hydra70_DAGR",
 		};
 
 		memoryPointDriverOptics = "slingcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
-		
+
 		class pilotCamera
 		{
 			class OpticsIn
@@ -315,12 +337,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -328,7 +350,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -336,7 +358,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -344,7 +366,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -352,7 +374,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -376,7 +398,7 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		
+
 		class HitPoints
 		{
 			class HitHull
@@ -416,13 +438,13 @@ class cfgVehicles {
 				visual = "";
 				radius = 0.2;
 			};
-			class HitEngine_1: HitEngine
+			class HitEngine_1 : HitEngine
 			{
 				convexComponent = "engine_hit_1";
 				name = "engine_hit_1";
 				hitpoint = "engine_hit_1";
 			};
-			class HitEngine_2: HitEngine
+			class HitEngine_2 : HitEngine
 			{
 				convexComponent = "engine_hit_2";
 				name = "engine_hit_2";
@@ -475,7 +497,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -508,7 +530,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 90;
 						angleRangeVertical = 90;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -556,7 +578,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -590,7 +612,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -624,7 +646,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -657,7 +679,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -690,7 +712,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -704,7 +726,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -734,7 +756,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -744,7 +766,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -775,7 +797,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -794,36 +816,36 @@ class cfgVehicles {
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 5;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","B_AMRAAM_D","B_AMRAAM_D_RAIL","DAR","DAGR","B_GBU12","B_AGM65_RAIL","I_ORCA_RIGHT_PYLON","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"}; //hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
+						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "B_AMRAAM_D", "B_AMRAAM_D_RAIL", "DAR", "DAGR", "B_GBU12", "B_AGM65_RAIL", "I_ORCA_RIGHT_PYLON", "20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON"}; // hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
 						turret[] = {0};
-						UIposition[] = {0.06,0.4};
+						UIposition[] = {0.06, 0.4};
 					};
-					class PylonLeft2: PylonLeft1
+					class PylonLeft2 : PylonLeft1
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 4;
-						UIposition[] = {0.08,0.35};
+						UIposition[] = {0.08, 0.35};
 					};
-					class PylonLeft3: PylonLeft1
+					class PylonLeft3 : PylonLeft1
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 3;
-						UIposition[] = {0.1,0.3};
+						UIposition[] = {0.1, 0.3};
 					};
-					class PylonRight3: PylonLeft3
+					class PylonRight3 : PylonLeft3
 					{
 						mirroredMissilePos = 3;
-						UIposition[] = {0.59,0.3};
+						UIposition[] = {0.59, 0.3};
 					};
-					class PylonRight2: PylonLeft2
+					class PylonRight2 : PylonLeft2
 					{
 						mirroredMissilePos = 2;
-						UIposition[] = {0.62,0.35};
+						UIposition[] = {0.62, 0.35};
 					};
-					class PylonRight1: PylonLeft1
+					class PylonRight1 : PylonLeft1
 					{
 						mirroredMissilePos = 1;
-						UIposition[] = {0.64,0.4};
+						UIposition[] = {0.64, 0.4};
 					};
 				};
 				class Presets
@@ -836,174 +858,215 @@ class cfgVehicles {
 					class Default
 					{
 						displayName = "Default";
-						attachment[] = {"PylonMissile_1Rnd_AAA_missiles","PylonMissile_1Rnd_AAA_missiles","PylonRack_12Rnd_PG_missiles","PylonRack_12Rnd_PG_missiles","PylonMissile_1Rnd_AAA_missiles","PylonMissile_1Rnd_AAA_missiles"};
+						attachment[] = {"PylonMissile_1Rnd_AAA_missiles", "PylonMissile_1Rnd_AAA_missiles", "PylonRack_12Rnd_PG_missiles", "PylonRack_12Rnd_PG_missiles", "PylonMissile_1Rnd_AAA_missiles", "PylonMissile_1Rnd_AAA_missiles"};
 					};
 					class AT
 					{
 						displayName = "AT";
-						attachment[] = {"PylonRack_12Rnd_PG_missiles","PylonMissile_1Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles","PylonRack_12Rnd_PG_missiles","PylonMissile_1Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles"};
+						attachment[] = {"PylonRack_12Rnd_PG_missiles", "PylonMissile_1Rnd_LG_scalpel", "PylonRack_12Rnd_PG_missiles", "PylonRack_12Rnd_PG_missiles", "PylonMissile_1Rnd_LG_scalpel", "PylonRack_12Rnd_PG_missiles"};
 					};
 					class CAS
 					{
 						displayName = "CAS";
-						attachment[] = {"PylonRack_12Rnd_missiles","PylonMissile_1Rnd_AAA_missiles","PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","PylonMissile_1Rnd_AAA_missiles","PylonRack_12Rnd_missiles"};
+						attachment[] = {"PylonRack_12Rnd_missiles", "PylonMissile_1Rnd_AAA_missiles", "PylonRack_12Rnd_missiles", "PylonRack_12Rnd_missiles", "PylonMissile_1Rnd_AAA_missiles", "PylonRack_12Rnd_missiles"};
 					};
 				};
 			};
 			class TransportCounterMeasuresComponent;
 		};
-		
-		
+
 		maximumLoad = 20000;
-		
+
 		class TransportWeapons
 		{
-			class _xx_ls_weapon_rps6{
+			class _xx_ls_weapon_rps6
+			{
 				count = 1;
 				weapon = "ls_weapon_rps6";
 			};
-			class _xx_501_weapon_DC15S{
+			class _xx_501_weapon_DC15S
+			{
 				count = 1;
 				weapon = "AUX501_Weaps_DC15S";
 			};
 		};
 		class TransportMagazines
 		{
-			class _xx_501_DC15X_mag{
+			class _xx_501_DC15X_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_40mw5";
 			};
-			class _xx_501_DC15L_mag{
+			class _xx_501_DC15L_mag
+			{
 				count = 10;
 				magazine = "AUX501_Weapons_Mags_20mw240";
 			};
-			class _xx_501_DC15C_mag{
+			class _xx_501_DC15C_mag
+			{
 				count = 10;
 				magazine = "AUX501_Weapons_Mags_20mw40";
 			};
-			class _xx_501_DC15ADP_mag{
+			class _xx_501_DC15ADP_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwdp30";
 			};
-			class _xx_501_DC15AUP_mag{
+			class _xx_501_DC15AUP_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwup30";
 			};
-			class _xx_501_DC15S_mag{
+			class _xx_501_DC15S_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_10mw50";
 			};
-			class _xx_501_Stun_mag{
+			class _xx_501_Stun_mag
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_Stun5";
 			};
-			class _xx_501_Z6_mag{
+			class _xx_501_Z6_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_10mw400";
 			};
-			class _xx_501_DC17DP_mag{
+			class _xx_501_DC17DP_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwdp20";
 			};
-			class _xx_JLTS_DC15A_mag{
+			class _xx_JLTS_DC15A_mag
+			{
 				count = 5;
 				magazine = "JLTS_DC15A_mag";
 			};
-			class _xx_UGL_HE{
+			class _xx_UGL_HE
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_GL_HE3";
 			};
-			class _xx_UGL_Smoke_White{
+			class _xx_UGL_Smoke_White
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_white6";
 			};
-			class _xx_UGL_Smoke_Blue{
+			class _xx_UGL_Smoke_Blue
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_blue3";
 			};
-			class _xx_UGL_Smoke_Green{
+			class _xx_UGL_Smoke_Green
+			{
 				count = 1;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_green3";
 			};
-			class _xx_UGL_Smoke_Orange{
+			class _xx_UGL_Smoke_Orange
+			{
 				count = 1;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_orange3";
 			};
-			class _xx_UGL_Smoke_Purple{
+			class _xx_UGL_Smoke_Purple
+			{
 				count = 1;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_purple3";
 			};
-			class _xx_UGL_Smoke_Red{
+			class _xx_UGL_Smoke_Red
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_red3";
 			};
-			class _xx_UGL_Smoke_Yellow{
+			class _xx_UGL_Smoke_Yellow
+			{
 				count = 1;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_yellow3";
 			};
-			class _xx_ls_mag_at_plx{
+			class _xx_ls_mag_at_plx
+			{
 				count = 1;
 				magazine = "ls_mag_at_plx";
 			};
-			class _xx_ls_mag_rpg_1rnd{
+			class _xx_ls_mag_rpg_1rnd
+			{
 				count = 3;
 				magazine = "ls_mag_rpg_1rnd";
 			};
-			class _xx_501_ThermalDet{
+			class _xx_501_ThermalDet
+			{
 				count = 8;
 				magazine = "AUX501_Weapons_Mags_Thermal_Detonator";
 			};
-			class _xx_3AS_ThermalDet{
+			class _xx_3AS_ThermalDet
+			{
 				count = 8;
 				magazine = "3AS_ThermalDetonator";
 			};
-			class _xx_LS_ThermalDet{
+			class _xx_LS_ThermalDet
+			{
 				count = 8;
 				magazine = "LS_mag_classC_thermalDet";
 			};
-			class _xx_BI_SmokeGrenade{
+			class _xx_BI_SmokeGrenade
+			{
 				count = 8;
 				magazine = "SmokeShell";
 			};
 		};
 		class TransportItems
 		{
-			class _xx_ACE_elasticBandage{
+			class _xx_ACE_elasticBandage
+			{
 				count = 50;
 				name = "ACE_elasticBandage";
 			};
-			class _xx_ACE_epinephrine{
+			class _xx_ACE_epinephrine
+			{
 				count = 20;
 				name = "ACE_epinephrine";
 			};
-			class _xx_ACE_morphine{
+			class _xx_ACE_morphine
+			{
 				count = 20;
 				name = "ACE_morphine";
 			};
-			class _xx_ACE_packingBandage{
+			class _xx_ACE_packingBandage
+			{
 				count = 30;
 				name = "ACE_packingBandage";
 			};
-			class _xx_ACE_quikclot{
+			class _xx_ACE_quikclot
+			{
 				count = 30;
 				name = "ACE_quikclot";
 			};
-			class _xx_ACE_salineIV{
+			class _xx_ACE_salineIV
+			{
 				count = 5;
 				name = "ACE_salineIV";
 			};
-			class _xx_ACE_salineIV_500{
+			class _xx_ACE_salineIV_500
+			{
 				count = 5;
 				name = "ACE_salineIV_500";
 			};
-			class _xx_ACE_tourniquet{
+			class _xx_ACE_tourniquet
+			{
 				count = 8;
 				name = "ACE_tourniquet";
 			};
 		};
-		
-		
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
+
+		hiddenselectionstextures[] = {
+			"JangosVehicles\data\textures\body1_co_104bg.paa", 
+			"\ls\core\addons\vehicles_laati\data\body2_co.paa", 
+			"\ls\core\addons\vehicles_laati\data\door1_co.paa", 
+			"\ls\core\addons\vehicles_laati\data\door2_co.paa", 
+			"\ls\core\addons\vehicles_laati\data\door3_co.paa", 
+			"JangosVehicles\data\textures\wings_co_104bg.paa", 
+			"JangosVehicles\data\textures\missiles_co_104.paa", 
+			"\ls\core\addons\vehicles_laati\data\cockpits_co.paa", 
+			"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1011,142 +1074,142 @@ class cfgVehicles {
 				displayName = "104th";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bg.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door1_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door3_co.paa",
+							  "JangosVehicles\data\textures\wings_co_104bg.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
-			
-			class logo: base
+
+			class logo : base
 			{
 				displayName = "104th Logo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bgwp.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door1_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door3_co.paa",
+							  "JangosVehicles\data\textures\wings_co_104bg.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			}
-			
-			class plobro: base
+
+			class plobro : base
 			{
 				displayName = "104th PloBros";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104bgpb.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door1_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door3_co.paa",
+							  "JangosVehicles\data\textures\wings_co_104bg.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			
-			class medevac: base
+
+			class medevac : base
 			{
 				displayName = "104th MedEvac";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"JangosVehicles\data\textures\door1_co_medic2.paa",
-				"JangosVehicles\data\textures\door2_co_medic.paa",
-				"JangosVehicles\data\textures\door3_co_medic.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "JangosVehicles\data\textures\door1_co_medic2.paa",
+							  "JangosVehicles\data\textures\door2_co_medic.paa",
+							  "JangosVehicles\data\textures\door3_co_medic.paa",
+							  "JangosVehicles\data\textures\wings_co_104bg.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			
-			class Beef: base
+
+			class Beef : base
 			{
 				displayName = "104th Beef";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door1_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door3_co.paa",
+							  "JangosVehicles\data\textures\wings_co_104bg.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			
-			class Bail: base
+
+			class Bail : base
 			{
 				displayName = "104th Bail";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door1_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door3_co.paa",
+							  "JangosVehicles\data\textures\wings_co_104bg.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			
-			class Varelli: base
+
+			class Varelli : base
 			{
 				displayName = "104th Varelli";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Varelli.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door1_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door3_co.paa",
+							  "JangosVehicles\data\textures\wings_co_104bg.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			
-			class OD: base
+
+			class OD : base
 			{
 				displayName = "104th OD";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104OD.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door1_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door3_co.paa",
+							  "JangosVehicles\data\textures\wings_co_104bg.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			
-			class Fish: base
+
+			class Fish : base
 			{
 				displayName = "104th Fish";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Fish.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104Fish.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "\ls\core\addons\vehicles_laati\data\body2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door1_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door2_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\door3_co.paa",
+							  "JangosVehicles\data\textures\wings_co_104Fish.paa",
+							  "JangosVehicles\data\textures\missiles_co_104.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			class Cherryy: base
+			class Cherryy : base
 			{
 				displayName = "104th Cherryy";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Cherryy.paa",
-				"JangosVehicles\data\textures\body2_co_104Cherryy_104Cherryy_104Cherryy.paa",
-				"lJangosVehicles\data\textures\door1_co_104Cherryy_104Cherryy.paa",
-				"JangosVehicles\data\textures\door2_co_104Cherryy.paa",
-				"JangosVehicles\data\textures\door3_co_104Cherryy.paa",
-				"JangosVehicles\data\textures\wings_co_104Cherryy.paa",
-				"JangosVehicles\data\textures\missiles_co_104Cherryy.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+							  "JangosVehicles\data\textures\body2_co_104Cherryy_104Cherryy_104Cherryy.paa",
+							  "lJangosVehicles\data\textures\door1_co_104Cherryy_104Cherryy.paa",
+							  "JangosVehicles\data\textures\door2_co_104Cherryy.paa",
+							  "JangosVehicles\data\textures\door3_co_104Cherryy.paa",
+							  "JangosVehicles\data\textures\wings_co_104Cherryy.paa",
+							  "JangosVehicles\data\textures\missiles_co_104Cherryy.paa",
+							  "\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+							  "\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			class Duce: base
+			class Duce : base
 			{
 				displayName = "104th Duce";
 				textures[] = {
@@ -1158,27 +1221,25 @@ class cfgVehicles {
 					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Wings.paa",
 					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Missles.paa",
 					"JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Cockpit.paa",
-					"lsd_vehicles_heli\laati\data\glass_ca.paa"
-				};
+					"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
-			
 		};
-		textureList[] = {"base",1,"logo",1,"plobro",1};
-		class ACE_SelfActions: ACE_SelfActions
+		textureList[] = {"base", 1, "logo", 1, "plobro", 1};
+		class ACE_SelfActions : ACE_SelfActions
 		{
 			class Style_Changer
 			{
 				displayName = "Change Camo";
-				exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
 				showDisabled = 0;
 				priority = 2;
 				class DefaultSkin
 				{
 					displayName = "Republic";
-					exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 					condition = "!(isNull objectParent player)";
-					statement = "_target setObjectTextureGlobal [0,'lsd_vehicles_heli\laati\data\body1_co.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'lsd_vehicles_heli\laati\data\wings_co.paa']; _target setObjectTextureGlobal [6,'lsd_vehicles_heli\laati\data\missiles_co.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+					statement = "_target setObjectTextureGlobal [0,'\ls\core\addons\vehicles_laati\data\body1_co.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\ls\core\addons\vehicles_laati\data\wings_co.paa']; _target setObjectTextureGlobal [6,'\ls\core\addons\vehicles_laati\data\missiles_co.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					showDisabled = 0;
 					runOnHover = 0;
 					priority = 2.5;
@@ -1186,79 +1247,78 @@ class cfgVehicles {
 				class 104th_Skins
 				{
 					displayname = "104th Skins";
-					class 104th_Blue: DefaultSkin
+					class 104th_Blue : DefaultSkin
 					{
 						displayName = "104th Blue";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bg.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bg.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_Logo: DefaultSkin
+					class 104th_Logo : DefaultSkin
 					{
 						displayName = "104th Logo";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bgwp.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bgwp.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_PloBro: DefaultSkin
+					class 104th_PloBro : DefaultSkin
 					{
 						displayName = "104th PloBro";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bgpb.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bgpb.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_MedEvac: DefaultSkin
+					class 104th_MedEvac : DefaultSkin
 					{
 						displayName = "104th MedEvac";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104medic.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_medic2.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_medic.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_medic.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104medic.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_medic2.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_medic.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_medic.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 				};
 				class Custom_Skins
 				{
 					displayname = "Custom Skins";
-					class 104th_Haze: DefaultSkin
+					class 104th_Haze : DefaultSkin
 					{
 						displayName = "Haze";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Echo.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_echo.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Echo.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_echo.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_Beef: DefaultSkin
+					class 104th_Beef : DefaultSkin
 					{
 						displayName = "Beef";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Beef.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Beef.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_Bail: DefaultSkin
+					class 104th_Bail : DefaultSkin
 					{
 						displayName = "Bail";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Bail.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Bail.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_OD: DefaultSkin
+					class 104th_OD : DefaultSkin
 					{
 						displayName = "OD";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104OD.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104OD.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_Varelli: DefaultSkin
+					class 104th_Varelli : DefaultSkin
 					{
 						displayName = "Varelli";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Varelli.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Varelli.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_Fish: DefaultSkin
+					class 104th_Fish : DefaultSkin
 					{
 						displayName = "Fish";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Fish.paa']; _target setObjectTextureGlobal [1,'lsd_vehicles_heli\laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'lsd_vehicles_heli\laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'lsd_vehicles_heli\laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'lsd_vehicles_heli\laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Fish.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Fish.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Fish.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_Cherryy: DefaultSkin
+					class 104th_Cherryy : DefaultSkin
 					{
 						displayName = "Cherryy";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Cherryy.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\body2_co_104Cherryy.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_104Cherryy.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_104Cherryy.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_104Cherryy.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Cherryy.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104Cherryy.paa']; _target setObjectTextureGlobal [7,'lsd_vehicles_heli\laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Cherryy.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\body2_co_104Cherryy.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_104Cherryy.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_104Cherryy.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_104Cherryy.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Cherryy.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104Cherryy.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
-					class 104th_Duce: DefaultSkin
+					class 104th_Duce : DefaultSkin
 					{
 						displayName = "Duce";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Body_Main.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Body_Interior.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Front.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Back.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Ramp.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Wings.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Missles.paa']; _target setObjectTextureGlobal [7,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Cockpit.paa']; _target setObjectTextureGlobal [8,'lsd_vehicles_heli\laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Body_Main.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Body_Interior.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Front.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Back.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Door_Ramp.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Wings.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Missles.paa']; _target setObjectTextureGlobal [7,'JangosVehicles\data\textures\104th_Pilot_Duce_Laat_Cockpit.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 				};
 			};
 		};
 	};
-	class JA_104th_LAAT_AB: JA_104th_LAAT 
+	class JA_104th_LAAT_AB : JA_104th_LAAT
 	{
 		displayName = "LAAT-E 104th Airborne";
-		model = "\lsd_vehicles_heli\laati\lsd_heli_laati_ab";
-		
+		model = "\ls\core\addons\vehicles_laati\ls_vehicle_laati_airborne.p3d";
 		class Components
 		{
 			class SensorsManagerComponent
@@ -1272,7 +1332,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -1305,7 +1365,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 90;
 						angleRangeVertical = 90;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -1353,7 +1413,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -1387,7 +1447,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -1421,7 +1481,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -1454,7 +1514,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -1487,7 +1547,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -1501,7 +1561,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -1531,7 +1591,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -1541,7 +1601,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -1572,7 +1632,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -1584,120 +1644,119 @@ class cfgVehicles {
 			};
 			class TransportCounterMeasuresComponent;
 		};
-		
 	};
-	
+
 	/*
 	class JA_104th_Base_LAAT_Medic: JA_Base_LAAT_AB {
-		displayName = "LAAT-E 104th MedEvac";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		attendant = 1;
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa","lsd_vehicles_heli\laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_medic2.paa","JangosVehicles\data\textures\door2_co_medic.paa","JangosVehicles\data\textures\door3_co_medic.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
-		class TextureSources
-		{
-			class base
-			{
-				displayName = "104th MedEvac";
-				author = "Legion Studio + Echo";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"JangosVehicles\data\textures\door1_co_medic2.paa",
-				"JangosVehicles\data\textures\door2_co_medic.paa",
-				"JangosVehicles\data\textures\door3_co_medic.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-				factions[] = {"104th_Guys"};
-			};
-			
-		};
-		textureList[] = {"base",1};
+displayName = "LAAT-E 104th MedEvac";
+faction = "104th_Guys";
+editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+attendant = 1;
+hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa","\ls\core\addons\vehicles_laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_medic2.paa","JangosVehicles\data\textures\door2_co_medic.paa","JangosVehicles\data\textures\door3_co_medic.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","\ls\core\addons\vehicles_laati\data\cockpits_co.paa","\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
+class TextureSources
+{
+	class base
+	{
+displayName = "104th MedEvac";
+author = "Legion Studio + Echo";
+textures[] = {"JangosVehicles\data\textures\body1_co_104medic.paa",
+"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+"JangosVehicles\data\textures\door1_co_medic2.paa",
+"JangosVehicles\data\textures\door2_co_medic.paa",
+"JangosVehicles\data\textures\door3_co_medic.paa",
+"JangosVehicles\data\textures\wings_co_104bg.paa",
+"JangosVehicles\data\textures\missiles_co_104.paa",
+"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
+factions[] = {"104th_Guys"};
+	};
+
+};
+textureList[] = {"base",1};
 	};
 	class JA_104th_Echo_LAAT: JA_Base_LAAT {
-		displayName = "LAAT-E 104th Echo";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa","lsd_vehicles_heli\laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_echo.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
-		class TextureSources
-		{
-			class base
-			{
-				displayName = "104th Echo";
-				author = "Legion Studio + Echo";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"JangosVehicles\data\textures\door1_co_echo.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-				factions[] = {"104th_Guys"};
-			};
-			
-		};
-		textureList[] = {"base",1};
+displayName = "LAAT-E 104th Echo";
+faction = "104th_Guys";
+editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa","\ls\core\addons\vehicles_laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_echo.paa","\ls\core\addons\vehicles_laati\data\door2_co.paa","\ls\core\addons\vehicles_laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","\ls\core\addons\vehicles_laati\data\cockpits_co.paa","\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
+class TextureSources
+{
+	class base
+	{
+displayName = "104th Echo";
+author = "Legion Studio + Echo";
+textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
+"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+"JangosVehicles\data\textures\door1_co_echo.paa",
+"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+"\ls\core\addons\vehicles_laati\data\door3_co.paa",
+"JangosVehicles\data\textures\wings_co_104bg.paa",
+"JangosVehicles\data\textures\missiles_co_104.paa",
+"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
+factions[] = {"104th_Guys"};
+	};
+
+};
+textureList[] = {"base",1};
 	};
 	class JA_104th_Echo_LAAT_AB: JA_Base_LAAT_AB {
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		displayName = "LAAT-E 104th Echo Airborne";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa","lsd_vehicles_heli\laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_echo.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
-		class TextureSources
-		{
-			class base
-			{
-				displayName = "104th Echo";
-				author = "Legion Studio + Echo";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"JangosVehicles\data\textures\door1_co_echo.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+faction = "104th_Guys";
+editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+displayName = "LAAT-E 104th Echo Airborne";
+hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa","\ls\core\addons\vehicles_laati\data\body2_co.paa","JangosVehicles\data\textures\door1_co_echo.paa","\ls\core\addons\vehicles_laati\data\door2_co.paa","\ls\core\addons\vehicles_laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","\ls\core\addons\vehicles_laati\data\cockpits_co.paa","\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
+class TextureSources
+{
+	class base
+	{
+displayName = "104th Echo";
+author = "Legion Studio + Echo";
+textures[] = {"JangosVehicles\data\textures\body1_co_104Echo.paa",
+"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+"JangosVehicles\data\textures\door1_co_echo.paa",
+"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+"\ls\core\addons\vehicles_laati\data\door3_co.paa",
+"JangosVehicles\data\textures\wings_co_104bg.paa",
+"JangosVehicles\data\textures\missiles_co_104.paa",
+"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
+factions[] = {"104th_Guys"};
+	};
+
+};
+textureList[] = {"base",1};
+	};
+	class JA_104th_Bail_LAAT: JA_Base_LAAT {
+displayName = "LAAT-E 104th Bail";
+faction = "104th_Guys";
+editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa","\ls\core\addons\vehicles_laati\data\body2_co.paa","\ls\core\addons\vehicles_laati\data\door1_co.paa","\ls\core\addons\vehicles_laati\data\door2_co.paa","\ls\core\addons\vehicles_laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","\ls\core\addons\vehicles_laati\data\cockpits_co.paa","\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
+class TextureSources
+{
+	class base
+	{
+displayName = "104th Bail";
+author = "Legion Studio + Echo";
+textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
+"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+"\ls\core\addons\vehicles_laati\data\door3_co.paa",
+"JangosVehicles\data\textures\wings_co_104bg.paa",
+"JangosVehicles\data\textures\missiles_co_104.paa",
+"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
-			
+
 		};
 		textureList[] = {"base",1};
 	};
-	class JA_104th_Bail_LAAT: JA_Base_LAAT {
-		displayName = "LAAT-E 104th Bail";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
-		class TextureSources
-		{
-			class base
-			{
-				displayName = "104th Bail";
-				author = "Legion Studio + Echo";
-				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
-				"JangosVehicles\data\textures\wings_co_104bg.paa",
-				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
-				factions[] = {"104th_Guys"};
-			};
-			
-		};
-		textureList[] = {"base",1};
-	};	
 	class JA_104th_Bail_LAAT_AB: JA_Base_LAAT_AB {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E 104th Bail Airborne";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa","\ls\core\addons\vehicles_laati\data\body2_co.paa","\ls\core\addons\vehicles_laati\data\door1_co.paa","\ls\core\addons\vehicles_laati\data\door2_co.paa","\ls\core\addons\vehicles_laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","\ls\core\addons\vehicles_laati\data\cockpits_co.paa","\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1705,17 +1764,17 @@ class cfgVehicles {
 				displayName = "104th Bail";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
-			
+
 		};
 		textureList[] = {"base",1};
 	};
@@ -1723,7 +1782,7 @@ class cfgVehicles {
 		displayName = "LAAT-E 104th Beef";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa","\ls\core\addons\vehicles_laati\data\body2_co.paa","\ls\core\addons\vehicles_laati\data\door1_co.paa","\ls\core\addons\vehicles_laati\data\door2_co.paa","\ls\core\addons\vehicles_laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","\ls\core\addons\vehicles_laati\data\cockpits_co.paa","\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1731,25 +1790,25 @@ class cfgVehicles {
 				displayName = "104th Beef";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
-			
+
 		};
 		textureList[] = {"base",1};
-	};	
+	};
 	class JA_104th_Beef_LAAT_AB: JA_Base_LAAT_AB {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		displayName = "LAAT-E 104th Beef Airborne";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa","lsd_vehicles_heli\laati\data\body2_co.paa","lsd_vehicles_heli\laati\data\door1_co.paa","lsd_vehicles_heli\laati\data\door2_co.paa","lsd_vehicles_heli\laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","lsd_vehicles_heli\laati\data\cockpits_co.paa","lsd_vehicles_heli\laati\data\glass_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa","\ls\core\addons\vehicles_laati\data\body2_co.paa","\ls\core\addons\vehicles_laati\data\door1_co.paa","\ls\core\addons\vehicles_laati\data\door2_co.paa","\ls\core\addons\vehicles_laati\data\door3_co.paa","JangosVehicles\data\textures\wings_co_104bg.paa","JangosVehicles\data\textures\missiles_co_104.paa","\ls\core\addons\vehicles_laati\data\cockpits_co.paa","\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 		class TextureSources
 		{
 			class base
@@ -1757,22 +1816,22 @@ class cfgVehicles {
 				displayName = "104th Beef";
 				author = "Legion Studio + Echo";
 				textures[] = {"JangosVehicles\data\textures\body1_co_104Beef.paa",
-				"lsd_vehicles_heli\laati\data\body2_co.paa",
-				"lsd_vehicles_heli\laati\data\door1_co.paa",
-				"lsd_vehicles_heli\laati\data\door2_co.paa",
-				"lsd_vehicles_heli\laati\data\door3_co.paa",
+				"\ls\core\addons\vehicles_laati\data\body2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door1_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door2_co.paa",
+				"\ls\core\addons\vehicles_laati\data\door3_co.paa",
 				"JangosVehicles\data\textures\wings_co_104bg.paa",
 				"JangosVehicles\data\textures\missiles_co_104.paa",
-				"lsd_vehicles_heli\laati\data\cockpits_co.paa",
-				"lsd_vehicles_heli\laati\data\glass_ca.paa"};
+				"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
+				"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 				factions[] = {"104th_Guys"};
 			};
-			
+
 		};
 		textureList[] = {"base",1};
 	};
 	*/
-	
+
 	/*
 	class Plane_Fighter_03_base_F;
 	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
@@ -1789,26 +1848,28 @@ class cfgVehicles {
 	};
 	*/
 	class 3AS_Z95_Republic;
-	class JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue: 3AS_Z95_Republic
+	class JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue : 3AS_Z95_Republic
 	{
 		Author = "212th + 3AS + Echo";
 		displayName = "Z-95 Reaper (Blue)";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselections[] = {"camo","camo1","camo2"};
-		hiddenselectionstextures[] = {"3AS\3as_Z95\Data\blue_co.paa","3AS\3as_Z95\Data\cockpit_co.paa","3AS\3as_saber\data\glass\glass_ca"};
-		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera","ls_laat_gun","ls_laat_gun_2","3as_V19_Medium_Cannon","RD501_Republic_Aircraft_Laser_AA"};
-		magazines[] = {"Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600"};
+		hiddenselections[] = {"camo", "camo1", "camo2"};
+		hiddenselectionstextures[] = {"3AS\3as_Z95\Data\blue_co.paa", "3AS\3as_Z95\Data\cockpit_co.paa", "3AS\3as_saber\data\glass\glass_ca"};
+		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera", "ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3as_V19_Medium_Cannon", "RD501_Republic_Aircraft_Laser_AA"};
+		magazines[] = {"Laserbatteries", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600"};
 		vehicleClass = "GAR_LAATCatNSub";
-		crew = "SWLB_clone_pilot_base_P2";
+		crew = "ls_clone_phase2_pilot";
 		aileronSensitivity = 2.9;
 		aileronControlsSensitivityCoef = 4;
-		defaultUserMFDvalues[] = {0,1,0,1,0};
-		class transportweapons{};
+		defaultUserMFDvalues[] = {0, 1, 0, 1, 0};
+		class transportweapons
+		{
+		};
 		class TransportMagazines
 		{
 			class _xx_DemoCharge_Remote_Mag
@@ -1889,15 +1950,15 @@ class cfgVehicles {
 			{
 				enableParallax = 1;
 				helmetMountedDisplay = 1;
-				helmetPosition[] = {-0.0325,0.0325,0.1};
-				helmetRight[] = {0.065,0,0};
-				helmetDown[] = {0,-0.065,0};
+				helmetPosition[] = {-0.0325, 0.0325, 0.1};
+				helmetRight[] = {0.065, 0, 0};
+				helmetDown[] = {0, -0.065, 0};
 				font = "PuristaLight";
 				class Pos10Vector
 				{
 					type = "vector";
-					pos0[] = {0.5,0.5};
-					pos10[] = {1.225,1.1};
+					pos0[] = {0.5, 0.5};
+					pos10[] = {1.225, 1.1};
 				};
 				topLeft = "HUD LH";
 				topRight = "HUD PH";
@@ -1906,7 +1967,7 @@ class cfgVehicles {
 				borderRight = 0;
 				borderTop = 0;
 				borderBottom = 0;
-				color[] = {"user0","user1","user2"};
+				color[] = {"user0", "user1", "user2"};
 				class Bones
 				{
 					class ThrustVectoringRotation
@@ -1914,7 +1975,7 @@ class cfgVehicles {
 						type = "rotational";
 						source = "vtolvectoring";
 						sourceScale = 100;
-						center[] = {0.12,0.75};
+						center[] = {0.12, 0.75};
 						min = 0;
 						max = 100;
 						minAngle = 0;
@@ -1924,37 +1985,37 @@ class cfgVehicles {
 					class PlaneW
 					{
 						type = "fixed";
-						pos[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
-					class Velocity: Pos10Vector
+					class Velocity : Pos10Vector
 					{
 						type = "vector";
 						source = "velocityToView";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
 					class PlaneOrientation
 					{
 						type = "vector";
 						source = "forward";
-						pos[] = {0.5,0.5};
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos[] = {0.5, 0.5};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
 					class WeaponAim
 					{
 						type = "vector";
 						source = "weaponToView";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
 					class ThrustVectoringRotation2
 					{
 						type = "rotational";
 						source = "vtolvectoring";
 						sourceScale = 100;
-						center[] = {0.06,0.145};
+						center[] = {0.06, 0.145};
 						min = 0;
 						max = 100;
 						minAngle = 0;
@@ -1966,104 +2027,104 @@ class cfgVehicles {
 						type = "rotational";
 						source = "MissileFlightTime";
 						sourceScale = 1;
-						center[] = {0,0};
+						center[] = {0, 0};
 						min = 0;
 						max = 0.5;
 						minAngle = 0;
 						maxAngle = 18;
 						aspectRatio = 0.985402;
 					};
-					class MissileFlightTimeRot2: MissileFlightTimeRot1
+					class MissileFlightTimeRot2 : MissileFlightTimeRot1
 					{
 						maxAngle = 36;
 						max = 1;
 					};
-					class MissileFlightTimeRot3: MissileFlightTimeRot1
+					class MissileFlightTimeRot3 : MissileFlightTimeRot1
 					{
 						maxAngle = 54;
 						max = 1.5;
 					};
-					class MissileFlightTimeRot4: MissileFlightTimeRot1
+					class MissileFlightTimeRot4 : MissileFlightTimeRot1
 					{
 						maxAngle = 72;
 						max = 2;
 					};
-					class MissileFlightTimeRot5: MissileFlightTimeRot1
+					class MissileFlightTimeRot5 : MissileFlightTimeRot1
 					{
 						maxAngle = 90;
 						max = 2.5;
 					};
-					class MissileFlightTimeRot6: MissileFlightTimeRot1
+					class MissileFlightTimeRot6 : MissileFlightTimeRot1
 					{
 						maxAngle = 108;
 						max = 3;
 					};
-					class MissileFlightTimeRot7: MissileFlightTimeRot1
+					class MissileFlightTimeRot7 : MissileFlightTimeRot1
 					{
 						maxAngle = 126;
 						max = 3.5;
 					};
-					class MissileFlightTimeRot8: MissileFlightTimeRot1
+					class MissileFlightTimeRot8 : MissileFlightTimeRot1
 					{
 						maxAngle = 144;
 						max = 4;
 					};
-					class MissileFlightTimeRot9: MissileFlightTimeRot1
+					class MissileFlightTimeRot9 : MissileFlightTimeRot1
 					{
 						maxAngle = 162;
 						max = 4.5;
 					};
-					class MissileFlightTimeRot10: MissileFlightTimeRot1
+					class MissileFlightTimeRot10 : MissileFlightTimeRot1
 					{
 						maxAngle = 180;
 						max = 5;
 					};
-					class MissileFlightTimeRot11: MissileFlightTimeRot1
+					class MissileFlightTimeRot11 : MissileFlightTimeRot1
 					{
 						maxAngle = 198;
 						max = 5.5;
 					};
-					class MissileFlightTimeRot12: MissileFlightTimeRot1
+					class MissileFlightTimeRot12 : MissileFlightTimeRot1
 					{
 						maxAngle = 216;
 						max = 6;
 					};
-					class MissileFlightTimeRot13: MissileFlightTimeRot1
+					class MissileFlightTimeRot13 : MissileFlightTimeRot1
 					{
 						maxAngle = 234;
 						max = 6.5;
 					};
-					class MissileFlightTimeRot14: MissileFlightTimeRot1
+					class MissileFlightTimeRot14 : MissileFlightTimeRot1
 					{
 						maxAngle = 252;
 						max = 7;
 					};
-					class MissileFlightTimeRot15: MissileFlightTimeRot1
+					class MissileFlightTimeRot15 : MissileFlightTimeRot1
 					{
 						maxAngle = 270;
 						max = 7.5;
 					};
-					class MissileFlightTimeRot16: MissileFlightTimeRot1
+					class MissileFlightTimeRot16 : MissileFlightTimeRot1
 					{
 						maxAngle = 288;
 						max = 8;
 					};
-					class MissileFlightTimeRot17: MissileFlightTimeRot1
+					class MissileFlightTimeRot17 : MissileFlightTimeRot1
 					{
 						maxAngle = 306;
 						max = 8.5;
 					};
-					class MissileFlightTimeRot18: MissileFlightTimeRot1
+					class MissileFlightTimeRot18 : MissileFlightTimeRot1
 					{
 						maxAngle = 324;
 						max = 9;
 					};
-					class MissileFlightTimeRot19: MissileFlightTimeRot1
+					class MissileFlightTimeRot19 : MissileFlightTimeRot1
 					{
 						maxAngle = 342;
 						max = 9.5;
 					};
-					class MissileFlightTimeRot20: MissileFlightTimeRot1
+					class MissileFlightTimeRot20 : MissileFlightTimeRot1
 					{
 						maxAngle = 360;
 						max = 10;
@@ -2072,36 +2133,36 @@ class cfgVehicles {
 					{
 						type = "vector";
 						source = "targetToView";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
 					class TargetingPodDir
 					{
 						source = "pilotcameratoview";
 						type = "vector";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
 					class TargetingPodTarget
 					{
 						source = "pilotcameratargettoview";
 						type = "vector";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
 					class ImpactPoint
 					{
 						type = "vector";
 						source = "ImpactPointToView";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
 					class ImpactPointRelative
 					{
 						type = "vector";
 						source = "impactpointtoviewweaponRelative";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
 					class NormalizeBombCircle
 					{
@@ -2112,21 +2173,21 @@ class cfgVehicles {
 					class Limit0109
 					{
 						type = "limit";
-						limits[] = {0.1,0.1,0.9,0.9};
+						limits[] = {0.1, 0.1, 0.9, 0.9};
 					};
 					class LimitWaypoint
 					{
 						type = "limit";
-						limits[] = {0.2,0.1,0.8,0.1};
+						limits[] = {0.2, 0.1, 0.8, 0.1};
 					};
 					class WPPoint
 					{
 						type = "vector";
 						source = "WPPoint";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
-					class WPPointToView: WPPoint
+					class WPPointToView : WPPoint
 					{
 						source = "WPPointToView";
 					};
@@ -2134,158 +2195,158 @@ class cfgVehicles {
 					{
 						type = "vector";
 						source = "airportCorner1ToView";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.774,0.77};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.774, 0.77};
 					};
-					class Airport2: Airport1
+					class Airport2 : Airport1
 					{
 						source = "airportCorner2ToView";
 					};
-					class Airport3: Airport1
+					class Airport3 : Airport1
 					{
 						source = "airportCorner3ToView";
 					};
-					class Airport4: Airport1
+					class Airport4 : Airport1
 					{
 						source = "airportCorner4ToView";
 					};
 					class ILS_H
 					{
 						type = "ils";
-						pos0[] = {0.5,0.5};
-						pos3[] = {0.5822,0.5};
+						pos0[] = {0.5, 0.5};
+						pos3[] = {0.5822, 0.5};
 					};
-					class ILS_W: ILS_H
+					class ILS_W : ILS_H
 					{
-						pos3[] = {0.5,0.581};
+						pos3[] = {0.5, 0.581};
 					};
 					class HorizonBankRot
 					{
 						type = "rotational";
 						source = "horizonBank";
-						center[] = {0.5,0.5};
+						center[] = {0.5, 0.5};
 						min = "-rad(30)";
 						max = "rad(30)";
 						minAngle = "180.25-30";
 						maxAngle = "180.75+30";
 						aspectRatio = 1;
 					};
-					class Level0: Pos10Vector
+					class Level0 : Pos10Vector
 					{
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.884,0.88};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.884, 0.88};
 						type = "horizontoview";
 						angle = 0;
 					};
-					class LevelP5: Level0
+					class LevelP5 : Level0
 					{
 						angle = 5;
 					};
-					class LevelM5: Level0
+					class LevelM5 : Level0
 					{
 						angle = -5;
 					};
-					class LevelP10: Level0
+					class LevelP10 : Level0
 					{
 						angle = 10;
 					};
-					class LevelM10: Level0
+					class LevelM10 : Level0
 					{
 						angle = -10;
 					};
-					class LevelP15: Level0
+					class LevelP15 : Level0
 					{
 						angle = 15;
 					};
-					class LevelM15: Level0
+					class LevelM15 : Level0
 					{
 						angle = -15;
 					};
-					class LevelP20: Level0
+					class LevelP20 : Level0
 					{
 						angle = 20;
 					};
-					class LevelM20: Level0
+					class LevelM20 : Level0
 					{
 						angle = -20;
 					};
-					class LevelP25: Level0
+					class LevelP25 : Level0
 					{
 						angle = 25;
 					};
-					class LevelM25: Level0
+					class LevelM25 : Level0
 					{
 						angle = -25;
 					};
-					class LevelP30: Level0
+					class LevelP30 : Level0
 					{
 						angle = 30;
 					};
-					class LevelM30: Level0
+					class LevelM30 : Level0
 					{
 						angle = -30;
 					};
-					class LevelP35: Level0
+					class LevelP35 : Level0
 					{
 						angle = 35;
 					};
-					class LevelM35: Level0
+					class LevelM35 : Level0
 					{
 						angle = -35;
 					};
-					class LevelP40: Level0
+					class LevelP40 : Level0
 					{
 						angle = 40;
 					};
-					class LevelM40: Level0
+					class LevelM40 : Level0
 					{
 						angle = -40;
 					};
-					class LevelP45: Level0
+					class LevelP45 : Level0
 					{
 						angle = 45;
 					};
-					class LevelM45: Level0
+					class LevelM45 : Level0
 					{
 						angle = -45;
 					};
-					class LevelP50: Level0
+					class LevelP50 : Level0
 					{
 						angle = 50;
 					};
-					class LevelM50: Level0
+					class LevelM50 : Level0
 					{
 						angle = -50;
 					};
-					class LevelP60: Level0
+					class LevelP60 : Level0
 					{
 						angle = 60;
 					};
-					class LevelM60: Level0
+					class LevelM60 : Level0
 					{
 						angle = -60;
 					};
-					class LevelP70: Level0
+					class LevelP70 : Level0
 					{
 						angle = 70;
 					};
-					class LevelM70: Level0
+					class LevelM70 : Level0
 					{
 						angle = -70;
 					};
-					class LevelP80: Level0
+					class LevelP80 : Level0
 					{
 						angle = 80;
 					};
-					class LevelM80: Level0
+					class LevelM80 : Level0
 					{
 						angle = -80;
 					};
-					class LevelP90: Level0
+					class LevelP90 : Level0
 					{
 						angle = 90;
 					};
-					class LevelM90: Level0
+					class LevelM90 : Level0
 					{
 						angle = -90;
 					};
@@ -2296,14 +2357,14 @@ class cfgVehicles {
 						sourceScale = 1;
 						min = 0;
 						max = 1;
-						minPos[] = {0,1};
-						maxPos[] = {0,0};
+						minPos[] = {0, 1};
+						maxPos[] = {0, 0};
 					};
-					class LarAmmoMin: LarAmmoMax
+					class LarAmmoMin : LarAmmoMax
 					{
 						source = "LarAmmoMin";
 					};
-					class LarTargetDist: LarAmmoMax
+					class LarTargetDist : LarAmmoMax
 					{
 						source = "LarTargetDist";
 					};
@@ -2312,7 +2373,7 @@ class cfgVehicles {
 				{
 					width = 1;
 					alpha = "user3";
-					color[] = {"user0","user1","user2"};
+					color[] = {"user0", "user1", "user2"};
 					condition = "on";
 					class ThrustVectoring
 					{
@@ -2324,15 +2385,15 @@ class cfgVehicles {
 							sourceScale = 90;
 							align = "left";
 							scale = 1;
-							pos[] = {{0.18,0.71},1};
-							right[] = {{"0.18+.05",0.71},1};
-							down[] = {{0.18,"0.71+.08"},1};
+							pos[] = {{0.18, 0.71}, 1};
+							right[] = {{"0.18+.05", 0.71}, 1};
+							down[] = {{0.18, "0.71+.08"}, 1};
 						};
 						class VectoringArrow
 						{
 							type = "line";
 							width = 6;
-							points[] = {{"ThrustVectoringRotation",{"-0.034","-0.006*4"},1},{"ThrustVectoringRotation",{"-0.044*2","0.0"},1},{"ThrustVectoringRotation",{"-0.034","0.006*4"},1},{"ThrustVectoringRotation",{"-0.034","-0.006*4"},1},{},{"ThrustVectoringRotation",{"-0.044","0.0"},1},{"ThrustVectoringRotation",{"-0.004","0.0"},1},{}};
+							points[] = {{"ThrustVectoringRotation", {"-0.034", "-0.006*4"}, 1}, {"ThrustVectoringRotation", {"-0.044*2", "0.0"}, 1}, {"ThrustVectoringRotation", {"-0.034", "0.006*4"}, 1}, {"ThrustVectoringRotation", {"-0.034", "-0.006*4"}, 1}, {}, {"ThrustVectoringRotation", {"-0.044", "0.0"}, 1}, {"ThrustVectoringRotation", {"-0.004", "0.0"}, 1}, {}};
 						};
 					};
 					class ThrustVectoringAuto
@@ -2346,9 +2407,9 @@ class cfgVehicles {
 							text = "AUTO";
 							align = "left";
 							scale = 1;
-							pos[] = {{0.2,0.71},1};
-							right[] = {{"0.20+.05",0.71},1};
-							down[] = {{0.2,"0.71+.08"},1};
+							pos[] = {{0.2, 0.71}, 1};
+							right[] = {{"0.20+.05", 0.71}, 1};
+							down[] = {{0.2, "0.71+.08"}, 1};
 						};
 					};
 					class ThrustVectoringAuto2
@@ -2362,24 +2423,24 @@ class cfgVehicles {
 							text = "MANUAL";
 							align = "left";
 							scale = 1;
-							pos[] = {{0.103,0.14},1};
-							right[] = {{0.123,0.14},1};
-							down[] = {{0.103,0.155},1};
+							pos[] = {{0.103, 0.14}, 1};
+							right[] = {{0.123, 0.14}, 1};
+							down[] = {{0.103, 0.155}, 1};
 						};
 					};
 					class PlaneW
 					{
-						clipTL[] = {0,1};
-						clipBR[] = {1,0};
+						clipTL[] = {0, 1};
+						clipBR[] = {1, 0};
 						type = "line";
 						width = 3;
-						points[] = {{"PlaneOrientation",{-0.04,0},1},{"PlaneOrientation",{-0.015,0},1},{"PlaneOrientation",{-0.0075,0.015},1},{"PlaneOrientation",{0,0},1},{"PlaneOrientation",{0.0075,0.015},1},{"PlaneOrientation",{0.015,0},1},{"PlaneOrientation",{0.04,0},1}};
+						points[] = {{"PlaneOrientation", {-0.04, 0}, 1}, {"PlaneOrientation", {-0.015, 0}, 1}, {"PlaneOrientation", {-0.0075, 0.015}, 1}, {"PlaneOrientation", {0, 0}, 1}, {"PlaneOrientation", {0.0075, 0.015}, 1}, {"PlaneOrientation", {0.015, 0}, 1}, {"PlaneOrientation", {0.04, 0}, 1}};
 					};
 					class PlaneMovementCrosshair
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"Velocity",{0,-0.02},1},{"Velocity",{0.01,-0.01732},1},{"Velocity",{0.01732,-0.01},1},{"Velocity",{0.02,0},1},{"Velocity",{0.01732,0.01},1},{"Velocity",{0.01,0.01732},1},{"Velocity",{0,0.02},1},{"Velocity",{-0.01,0.01732},1},{"Velocity",{-0.01732,0.01},1},{"Velocity",{-0.02,0},1},{"Velocity",{-0.01732,-0.01},1},{"Velocity",{-0.01,-0.01732},1},{"Velocity",{0,-0.02},1},{},{"Velocity",{0.04,0},1},{"Velocity",{0.02,0},1},{},{"Velocity",{-0.04,0},1},{"Velocity",{-0.02,0},1},{},{"Velocity",{0,-0.04},1},{"Velocity",{0,-0.02},1}};
+						points[] = {{"Velocity", {0, -0.02}, 1}, {"Velocity", {0.01, -0.01732}, 1}, {"Velocity", {0.01732, -0.01}, 1}, {"Velocity", {0.02, 0}, 1}, {"Velocity", {0.01732, 0.01}, 1}, {"Velocity", {0.01, 0.01732}, 1}, {"Velocity", {0, 0.02}, 1}, {"Velocity", {-0.01, 0.01732}, 1}, {"Velocity", {-0.01732, 0.01}, 1}, {"Velocity", {-0.02, 0}, 1}, {"Velocity", {-0.01732, -0.01}, 1}, {"Velocity", {-0.01, -0.01732}, 1}, {"Velocity", {0, -0.02}, 1}, {}, {"Velocity", {0.04, 0}, 1}, {"Velocity", {0.02, 0}, 1}, {}, {"Velocity", {-0.04, 0}, 1}, {"Velocity", {-0.02, 0}, 1}, {}, {"Velocity", {0, -0.04}, 1}, {"Velocity", {0, -0.02}, 1}};
 					};
 					class MachineGunCrosshairGroup
 					{
@@ -2389,19 +2450,19 @@ class cfgVehicles {
 						{
 							type = "line";
 							width = 3;
-							points[] = {{"ImpactPointRelative",{0,-0.0886861},1},{"ImpactPointRelative",{0,-0.0788321},1},{},{"ImpactPointRelative",{0,0.0886861},1},{"ImpactPointRelative",{0,0.0788321},1},{},{"ImpactPointRelative",{-0.09,0},1},{"ImpactPointRelative",{-0.08,0},1},{},{"ImpactPointRelative",{0.09,0},1},{"ImpactPointRelative",{0.08,0},1},{},{"ImpactPointRelative",{0,-0.0019708},1},{"ImpactPointRelative",{0,0.0019708},1},{},{"ImpactPointRelative",{-0.002,0},1},{"ImpactPointRelative",{0.002,0},1},{}};
+							points[] = {{"ImpactPointRelative", {0, -0.0886861}, 1}, {"ImpactPointRelative", {0, -0.0788321}, 1}, {}, {"ImpactPointRelative", {0, 0.0886861}, 1}, {"ImpactPointRelative", {0, 0.0788321}, 1}, {}, {"ImpactPointRelative", {-0.09, 0}, 1}, {"ImpactPointRelative", {-0.08, 0}, 1}, {}, {"ImpactPointRelative", {0.09, 0}, 1}, {"ImpactPointRelative", {0.08, 0}, 1}, {}, {"ImpactPointRelative", {0, -0.0019708}, 1}, {"ImpactPointRelative", {0, 0.0019708}, 1}, {}, {"ImpactPointRelative", {-0.002, 0}, 1}, {"ImpactPointRelative", {0.002, 0}, 1}, {}};
 						};
 						class Circle
 						{
 							type = "line";
 							width = 6;
-							points[] = {{"ImpactPointRelative",{0,-0.0630657},1},{"ImpactPointRelative",{0,-0.0788321},1},{"MissileFlightTimeRot1",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot2",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot3",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot4",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot5",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot6",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot7",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot8",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot9",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot10",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot11",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot12",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot13",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot14",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot15",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot16",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot17",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot18",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot19",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot20",{0,0.08},1,"ImpactPointRelative",1},{"MissileFlightTimeRot20",{0,0.064},1,"ImpactPointRelative",1}};
+							points[] = {{"ImpactPointRelative", {0, -0.0630657}, 1}, {"ImpactPointRelative", {0, -0.0788321}, 1}, {"MissileFlightTimeRot1", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot2", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot3", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot4", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot5", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot6", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot7", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot8", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot9", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot10", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot11", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot12", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot13", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot14", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot15", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot16", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot17", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot18", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot19", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot20", {0, 0.08}, 1, "ImpactPointRelative", 1}, {"MissileFlightTimeRot20", {0, 0.064}, 1, "ImpactPointRelative", 1}};
 						};
 						class Circle_Min_Range
 						{
 							type = "line";
 							width = 3;
-							points[] = {{"ImpactPointRelative",{0,-0.0788321},1},{"ImpactPointRelative",{0.013888,-0.0776339},1},{"ImpactPointRelative",{0.02736,-0.0740785},1},{"ImpactPointRelative",{0.04,-0.0682686},1},{"ImpactPointRelative",{0.051424,-0.0603854},1},{"ImpactPointRelative",{0.06128,-0.0506733},1},{"ImpactPointRelative",{0.06928,-0.0394161},1},{"ImpactPointRelative",{0.075176,-0.0269606},1},{"ImpactPointRelative",{0.078784,-0.0136853},1},{"ImpactPointRelative",{0.08,0},1},{"ImpactPointRelative",{0.078784,0.0136853},1},{"ImpactPointRelative",{0.075176,0.0269606},1},{"ImpactPointRelative",{0.06928,0.0394161},1},{"ImpactPointRelative",{0.06128,0.0506733},1},{"ImpactPointRelative",{0.051424,0.0603854},1},{"ImpactPointRelative",{0.04,0.0682686},1},{"ImpactPointRelative",{0.02736,0.0740785},1},{"ImpactPointRelative",{0.013888,0.0776339},1},{"ImpactPointRelative",{0,0.0788321},1},{"ImpactPointRelative",{-0.013888,0.0776339},1},{"ImpactPointRelative",{-0.02736,0.0740785},1},{"ImpactPointRelative",{-0.04,0.0682686},1},{"ImpactPointRelative",{-0.051424,0.0603854},1},{"ImpactPointRelative",{-0.06128,0.0506733},1},{"ImpactPointRelative",{-0.06928,0.0394161},1},{"ImpactPointRelative",{-0.075176,0.0269606},1},{"ImpactPointRelative",{-0.078784,0.0136853},1},{"ImpactPointRelative",{-0.08,0},1},{"ImpactPointRelative",{-0.078784,-0.0136853},1},{"ImpactPointRelative",{-0.075176,-0.0269606},1},{"ImpactPointRelative",{-0.06928,-0.0394161},1},{"ImpactPointRelative",{-0.06128,-0.0506733},1},{"ImpactPointRelative",{-0.051424,-0.0603854},1},{"ImpactPointRelative",{-0.04,-0.0682686},1},{"ImpactPointRelative",{-0.02736,-0.0740785},1},{"ImpactPointRelative",{-0.013888,-0.0776339},1},{"ImpactPointRelative",{0,-0.0788321},1}};
+							points[] = {{"ImpactPointRelative", {0, -0.0788321}, 1}, {"ImpactPointRelative", {0.013888, -0.0776339}, 1}, {"ImpactPointRelative", {0.02736, -0.0740785}, 1}, {"ImpactPointRelative", {0.04, -0.0682686}, 1}, {"ImpactPointRelative", {0.051424, -0.0603854}, 1}, {"ImpactPointRelative", {0.06128, -0.0506733}, 1}, {"ImpactPointRelative", {0.06928, -0.0394161}, 1}, {"ImpactPointRelative", {0.075176, -0.0269606}, 1}, {"ImpactPointRelative", {0.078784, -0.0136853}, 1}, {"ImpactPointRelative", {0.08, 0}, 1}, {"ImpactPointRelative", {0.078784, 0.0136853}, 1}, {"ImpactPointRelative", {0.075176, 0.0269606}, 1}, {"ImpactPointRelative", {0.06928, 0.0394161}, 1}, {"ImpactPointRelative", {0.06128, 0.0506733}, 1}, {"ImpactPointRelative", {0.051424, 0.0603854}, 1}, {"ImpactPointRelative", {0.04, 0.0682686}, 1}, {"ImpactPointRelative", {0.02736, 0.0740785}, 1}, {"ImpactPointRelative", {0.013888, 0.0776339}, 1}, {"ImpactPointRelative", {0, 0.0788321}, 1}, {"ImpactPointRelative", {-0.013888, 0.0776339}, 1}, {"ImpactPointRelative", {-0.02736, 0.0740785}, 1}, {"ImpactPointRelative", {-0.04, 0.0682686}, 1}, {"ImpactPointRelative", {-0.051424, 0.0603854}, 1}, {"ImpactPointRelative", {-0.06128, 0.0506733}, 1}, {"ImpactPointRelative", {-0.06928, 0.0394161}, 1}, {"ImpactPointRelative", {-0.075176, 0.0269606}, 1}, {"ImpactPointRelative", {-0.078784, 0.0136853}, 1}, {"ImpactPointRelative", {-0.08, 0}, 1}, {"ImpactPointRelative", {-0.078784, -0.0136853}, 1}, {"ImpactPointRelative", {-0.075176, -0.0269606}, 1}, {"ImpactPointRelative", {-0.06928, -0.0394161}, 1}, {"ImpactPointRelative", {-0.06128, -0.0506733}, 1}, {"ImpactPointRelative", {-0.051424, -0.0603854}, 1}, {"ImpactPointRelative", {-0.04, -0.0682686}, 1}, {"ImpactPointRelative", {-0.02736, -0.0740785}, 1}, {"ImpactPointRelative", {-0.013888, -0.0776339}, 1}, {"ImpactPointRelative", {0, -0.0788321}, 1}};
 						};
 						class Distance
 						{
@@ -2412,9 +2473,9 @@ class cfgVehicles {
 							max = 15;
 							align = "center";
 							scale = 1;
-							pos[] = {"ImpactPointRelative",{-0.002,0.11},1};
-							right[] = {"ImpactPointRelative",{0.045,0.11},1};
-							down[] = {"ImpactPointRelative",{-0.002,0.15},1};
+							pos[] = {"ImpactPointRelative", {-0.002, 0.11}, 1};
+							right[] = {"ImpactPointRelative", {0.045, 0.11}, 1};
+							down[] = {"ImpactPointRelative", {-0.002, 0.15}, 1};
 						};
 					};
 					class AAMissileCrosshairGroup
@@ -2425,18 +2486,18 @@ class cfgVehicles {
 						{
 							type = "line";
 							width = 4;
-							points[] = {{"PlaneOrientation",{0,-0.24635},1},{"PlaneOrientation",{0.0434,-0.242606},1},{"PlaneOrientation",{0.0855,-0.231495},1},{"PlaneOrientation",{0.125,-0.213339},1},{"PlaneOrientation",{0.1607,-0.188704},1},{"PlaneOrientation",{0.1915,-0.158354},1},{"PlaneOrientation",{0.2165,-0.123175},1},{"PlaneOrientation",{0.234925,-0.0842518},1},{"PlaneOrientation",{0.2462,-0.0427664},1},{"PlaneOrientation",{0.25,0},1},{"PlaneOrientation",{0.2462,0.0427664},1},{"PlaneOrientation",{0.234925,0.0842518},1},{"PlaneOrientation",{0.2165,0.123175},1},{"PlaneOrientation",{0.1915,0.158354},1},{"PlaneOrientation",{0.1607,0.188704},1},{"PlaneOrientation",{0.125,0.213339},1},{"PlaneOrientation",{0.0855,0.231495},1},{"PlaneOrientation",{0.0434,0.242606},1},{"PlaneOrientation",{0,0.24635},1},{"PlaneOrientation",{-0.0434,0.242606},1},{"PlaneOrientation",{-0.0855,0.231495},1},{"PlaneOrientation",{-0.125,0.213339},1},{"PlaneOrientation",{-0.1607,0.188704},1},{"PlaneOrientation",{-0.1915,0.158354},1},{"PlaneOrientation",{-0.2165,0.123175},1},{"PlaneOrientation",{-0.234925,0.0842518},1},{"PlaneOrientation",{-0.2462,0.0427664},1},{"PlaneOrientation",{-0.25,0},1},{"PlaneOrientation",{-0.2462,-0.0427664},1},{"PlaneOrientation",{-0.234925,-0.0842518},1},{"PlaneOrientation",{-0.2165,-0.123175},1},{"PlaneOrientation",{-0.1915,-0.158354},1},{"PlaneOrientation",{-0.1607,-0.188704},1},{"PlaneOrientation",{-0.125,-0.213339},1},{"PlaneOrientation",{-0.0855,-0.231495},1},{"PlaneOrientation",{-0.0434,-0.242606},1},{"PlaneOrientation",{0,-0.24635},1}};
+							points[] = {{"PlaneOrientation", {0, -0.24635}, 1}, {"PlaneOrientation", {0.0434, -0.242606}, 1}, {"PlaneOrientation", {0.0855, -0.231495}, 1}, {"PlaneOrientation", {0.125, -0.213339}, 1}, {"PlaneOrientation", {0.1607, -0.188704}, 1}, {"PlaneOrientation", {0.1915, -0.158354}, 1}, {"PlaneOrientation", {0.2165, -0.123175}, 1}, {"PlaneOrientation", {0.234925, -0.0842518}, 1}, {"PlaneOrientation", {0.2462, -0.0427664}, 1}, {"PlaneOrientation", {0.25, 0}, 1}, {"PlaneOrientation", {0.2462, 0.0427664}, 1}, {"PlaneOrientation", {0.234925, 0.0842518}, 1}, {"PlaneOrientation", {0.2165, 0.123175}, 1}, {"PlaneOrientation", {0.1915, 0.158354}, 1}, {"PlaneOrientation", {0.1607, 0.188704}, 1}, {"PlaneOrientation", {0.125, 0.213339}, 1}, {"PlaneOrientation", {0.0855, 0.231495}, 1}, {"PlaneOrientation", {0.0434, 0.242606}, 1}, {"PlaneOrientation", {0, 0.24635}, 1}, {"PlaneOrientation", {-0.0434, 0.242606}, 1}, {"PlaneOrientation", {-0.0855, 0.231495}, 1}, {"PlaneOrientation", {-0.125, 0.213339}, 1}, {"PlaneOrientation", {-0.1607, 0.188704}, 1}, {"PlaneOrientation", {-0.1915, 0.158354}, 1}, {"PlaneOrientation", {-0.2165, 0.123175}, 1}, {"PlaneOrientation", {-0.234925, 0.0842518}, 1}, {"PlaneOrientation", {-0.2462, 0.0427664}, 1}, {"PlaneOrientation", {-0.25, 0}, 1}, {"PlaneOrientation", {-0.2462, -0.0427664}, 1}, {"PlaneOrientation", {-0.234925, -0.0842518}, 1}, {"PlaneOrientation", {-0.2165, -0.123175}, 1}, {"PlaneOrientation", {-0.1915, -0.158354}, 1}, {"PlaneOrientation", {-0.1607, -0.188704}, 1}, {"PlaneOrientation", {-0.125, -0.213339}, 1}, {"PlaneOrientation", {-0.0855, -0.231495}, 1}, {"PlaneOrientation", {-0.0434, -0.242606}, 1}, {"PlaneOrientation", {0, -0.24635}, 1}};
 						};
 						class Lines
 						{
 							type = "line";
 							width = 4;
-							points[] = {{{0.21,0.55},1},{{0.19,0.55},1},{{0.19,0.71},1},{{0.21,0.71},1},{},{{0.21,0.67},1},{{0.19,0.67},1},{},{{0.21,0.63},1},{{0.19,0.63},1},{},{{0.21,0.59},1},{{0.19,0.59},1},{},{"LarTargetDist",-0.16,{0.17,0.73},1},{"LarTargetDist",-0.16,{0.19,0.71},1},{"LarTargetDist",-0.16,{0.17,0.69},1},{}};
+							points[] = {{{0.21, 0.55}, 1}, {{0.19, 0.55}, 1}, {{0.19, 0.71}, 1}, {{0.21, 0.71}, 1}, {}, {{0.21, 0.67}, 1}, {{0.19, 0.67}, 1}, {}, {{0.21, 0.63}, 1}, {{0.19, 0.63}, 1}, {}, {{0.21, 0.59}, 1}, {{0.19, 0.59}, 1}, {}, {"LarTargetDist", -0.16, {0.17, 0.73}, 1}, {"LarTargetDist", -0.16, {0.19, 0.71}, 1}, {"LarTargetDist", -0.16, {0.17, 0.69}, 1}, {}};
 						};
 						class Poly
 						{
 							type = "polygon";
-							points[] = {{{"LarAmmoMin",-0.16,{0.191,0.71},1},{"LarAmmoMax",-0.16,{0.191,0.71},1},{"LarAmmoMax",-0.16,{0.208,0.71},1},{"LarAmmoMin",-0.16,{0.208,0.71},1}}};
+							points[] = {{{"LarAmmoMin", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.191, 0.71}, 1}, {"LarAmmoMax", -0.16, {0.208, 0.71}, 1}, {"LarAmmoMin", -0.16, {0.208, 0.71}, 1}}};
 						};
 						class TopText
 						{
@@ -2444,28 +2505,28 @@ class cfgVehicles {
 							source = "LarTop";
 							sourceScale = 0.001;
 							scale = 1;
-							pos[] = {{0.22,0.53},1};
-							right[] = {{0.26,0.53},1};
-							down[] = {{0.22,0.57},1};
+							pos[] = {{0.22, 0.53}, 1};
+							right[] = {{0.26, 0.53}, 1};
+							down[] = {{0.22, 0.57}, 1};
 							align = "right";
 						};
-						class MiddleText: TopText
+						class MiddleText : TopText
 						{
 							source = "LarTop";
 							sourcePrecision = -1;
 							sourceScale = 0.0005;
-							pos[] = {{0.22,0.61},1};
-							right[] = {{0.26,0.61},1};
-							down[] = {{0.22,0.65},1};
+							pos[] = {{0.22, 0.61}, 1};
+							right[] = {{0.26, 0.61}, 1};
+							down[] = {{0.22, 0.65}, 1};
 						};
-						class SpeedText: TopText
+						class SpeedText : TopText
 						{
 							source = "LarTargetSpeed";
 							align = "left";
 							sourceScale = 3.6;
-							pos[] = {"LarTargetDist",-0.16,{0.16,0.69},1};
-							right[] = {"LarTargetDist",-0.16,{0.2,0.69},1};
-							down[] = {"LarTargetDist",-0.16,{0.16,0.73},1};
+							pos[] = {"LarTargetDist", -0.16, {0.16, 0.69}, 1};
+							right[] = {"LarTargetDist", -0.16, {0.2, 0.69}, 1};
+							down[] = {"LarTargetDist", -0.16, {0.16, 0.73}, 1};
 						};
 					};
 					class ATMissileCrosshairGroup
@@ -2476,7 +2537,7 @@ class cfgVehicles {
 						{
 							type = "line";
 							width = 4;
-							points[] = {{"WeaponAim",{-0.15,-0.15},1},{"WeaponAim",{-0.15,-0.13},1},{},{"WeaponAim",{-0.15,0.15},1},{"WeaponAim",{-0.15,0.13},1},{},{"WeaponAim",{0.15,-0.15},1},{"WeaponAim",{0.15,-0.13},1},{},{"WeaponAim",{0.15,0.15},1},{"WeaponAim",{0.15,0.13},1},{},{"WeaponAim",{-0.15,-0.15},1},{"WeaponAim",{-0.13,-0.15},1},{},{"WeaponAim",{-0.15,0.15},1},{"WeaponAim",{-0.13,0.15},1},{},{"WeaponAim",{0.15,-0.15},1},{"WeaponAim",{0.13,-0.15},1},{},{"WeaponAim",{0.15,0.15},1},{"WeaponAim",{0.13,0.15},1}};
+							points[] = {{"WeaponAim", {-0.15, -0.15}, 1}, {"WeaponAim", {-0.15, -0.13}, 1}, {}, {"WeaponAim", {-0.15, 0.15}, 1}, {"WeaponAim", {-0.15, 0.13}, 1}, {}, {"WeaponAim", {0.15, -0.15}, 1}, {"WeaponAim", {0.15, -0.13}, 1}, {}, {"WeaponAim", {0.15, 0.15}, 1}, {"WeaponAim", {0.15, 0.13}, 1}, {}, {"WeaponAim", {-0.15, -0.15}, 1}, {"WeaponAim", {-0.13, -0.15}, 1}, {}, {"WeaponAim", {-0.15, 0.15}, 1}, {"WeaponAim", {-0.13, 0.15}, 1}, {}, {"WeaponAim", {0.15, -0.15}, 1}, {"WeaponAim", {0.13, -0.15}, 1}, {}, {"WeaponAim", {0.15, 0.15}, 1}, {"WeaponAim", {0.13, 0.15}, 1}};
 						};
 					};
 					class RocketCrosshairGroup
@@ -2487,7 +2548,7 @@ class cfgVehicles {
 						{
 							type = "line";
 							width = 3;
-							points[] = {{"ImpactPoint",{0,-0.0394161},1},{"ImpactPoint",{0,-0.019708},1},{},{"ImpactPoint",{0,0.0394161},1},{"ImpactPoint",{0,0.019708},1},{},{"ImpactPoint",{-0.04,0},1},{"ImpactPoint",{-0.02,0},1},{},{"ImpactPoint",{0.04,0},1},{"ImpactPoint",{0.02,0},1},{},{"ImpactPoint",{0.01,-0.0394161},1},{"ImpactPoint",{-0.01,-0.0394161},1},{},{"ImpactPoint",{0,-0.0019708},1},{"ImpactPoint",{0,0.0019708},1},{},{"ImpactPoint",{-0.002,0},1},{"ImpactPoint",{0.002,0},1},{}};
+							points[] = {{"ImpactPoint", {0, -0.0394161}, 1}, {"ImpactPoint", {0, -0.019708}, 1}, {}, {"ImpactPoint", {0, 0.0394161}, 1}, {"ImpactPoint", {0, 0.019708}, 1}, {}, {"ImpactPoint", {-0.04, 0}, 1}, {"ImpactPoint", {-0.02, 0}, 1}, {}, {"ImpactPoint", {0.04, 0}, 1}, {"ImpactPoint", {0.02, 0}, 1}, {}, {"ImpactPoint", {0.01, -0.0394161}, 1}, {"ImpactPoint", {-0.01, -0.0394161}, 1}, {}, {"ImpactPoint", {0, -0.0019708}, 1}, {"ImpactPoint", {0, 0.0019708}, 1}, {}, {"ImpactPoint", {-0.002, 0}, 1}, {"ImpactPoint", {0.002, 0}, 1}, {}};
 						};
 						class Distance
 						{
@@ -2498,9 +2559,9 @@ class cfgVehicles {
 							max = 15;
 							align = "center";
 							scale = 1;
-							pos[] = {"ImpactPoint",{-0.002,0.07},1};
-							right[] = {"ImpactPoint",{0.045,0.07},1};
-							down[] = {"ImpactPoint",{-0.002,0.11},1};
+							pos[] = {"ImpactPoint", {-0.002, 0.07}, 1};
+							right[] = {"ImpactPoint", {0.045, 0.07}, 1};
+							down[] = {"ImpactPoint", {-0.002, 0.11}, 1};
 						};
 					};
 					class BombCrosshairGroup
@@ -2511,13 +2572,13 @@ class cfgVehicles {
 						{
 							width = 4;
 							type = "line";
-							points[] = {{"ImpactPoint",{0,0.0886861},1},{"ImpactPoint",{0,0.0788321},1},{},{"ImpactPoint",{-0.09,0},1},{"ImpactPoint",{-0.08,0},1},{},{"ImpactPoint",{0.09,0},1},{"ImpactPoint",{0.08,0},1},{},{"ImpactPoint",{0,-0.0019708},1},{"ImpactPoint",{0,0.0019708},1},{},{"ImpactPoint",{-0.002,0},1},{"ImpactPoint",{0.002,0},1},{},{"ImpactPoint",{0,-0.0788321},1},{"ImpactPoint",{0.013888,-0.0776339},1},{"ImpactPoint",{0.02736,-0.0740785},1},{"ImpactPoint",{0.04,-0.0682686},1},{"ImpactPoint",{0.051424,-0.0603854},1},{"ImpactPoint",{0.06128,-0.0506733},1},{"ImpactPoint",{0.06928,-0.0394161},1},{"ImpactPoint",{0.075176,-0.0269606},1},{"ImpactPoint",{0.078784,-0.0136853},1},{"ImpactPoint",{0.08,0},1},{"ImpactPoint",{0.078784,0.0136853},1},{"ImpactPoint",{0.075176,0.0269606},1},{"ImpactPoint",{0.06928,0.0394161},1},{"ImpactPoint",{0.06128,0.0506733},1},{"ImpactPoint",{0.051424,0.0603854},1},{"ImpactPoint",{0.04,0.0682686},1},{"ImpactPoint",{0.02736,0.0740785},1},{"ImpactPoint",{0.013888,0.0776339},1},{"ImpactPoint",{0,0.0788321},1},{"ImpactPoint",{-0.013888,0.0776339},1},{"ImpactPoint",{-0.02736,0.0740785},1},{"ImpactPoint",{-0.04,0.0682686},1},{"ImpactPoint",{-0.051424,0.0603854},1},{"ImpactPoint",{-0.06128,0.0506733},1},{"ImpactPoint",{-0.06928,0.0394161},1},{"ImpactPoint",{-0.075176,0.0269606},1},{"ImpactPoint",{-0.078784,0.0136853},1},{"ImpactPoint",{-0.08,0},1},{"ImpactPoint",{-0.078784,-0.0136853},1},{"ImpactPoint",{-0.075176,-0.0269606},1},{"ImpactPoint",{-0.06928,-0.0394161},1},{"ImpactPoint",{-0.06128,-0.0506733},1},{"ImpactPoint",{-0.051424,-0.0603854},1},{"ImpactPoint",{-0.04,-0.0682686},1},{"ImpactPoint",{-0.02736,-0.0740785},1},{"ImpactPoint",{-0.013888,-0.0776339},1},{"ImpactPoint",{0,-0.0788321},1},{},{},{"ImpactPoint",-1,"Velocity",1,"NormalizeBombCircle",1,"ImpactPoint",1,{0,0},1},{"Velocity",1,"Limit0109",1,{0,0},1}};
+							points[] = {{"ImpactPoint", {0, 0.0886861}, 1}, {"ImpactPoint", {0, 0.0788321}, 1}, {}, {"ImpactPoint", {-0.09, 0}, 1}, {"ImpactPoint", {-0.08, 0}, 1}, {}, {"ImpactPoint", {0.09, 0}, 1}, {"ImpactPoint", {0.08, 0}, 1}, {}, {"ImpactPoint", {0, -0.0019708}, 1}, {"ImpactPoint", {0, 0.0019708}, 1}, {}, {"ImpactPoint", {-0.002, 0}, 1}, {"ImpactPoint", {0.002, 0}, 1}, {}, {"ImpactPoint", {0, -0.0788321}, 1}, {"ImpactPoint", {0.013888, -0.0776339}, 1}, {"ImpactPoint", {0.02736, -0.0740785}, 1}, {"ImpactPoint", {0.04, -0.0682686}, 1}, {"ImpactPoint", {0.051424, -0.0603854}, 1}, {"ImpactPoint", {0.06128, -0.0506733}, 1}, {"ImpactPoint", {0.06928, -0.0394161}, 1}, {"ImpactPoint", {0.075176, -0.0269606}, 1}, {"ImpactPoint", {0.078784, -0.0136853}, 1}, {"ImpactPoint", {0.08, 0}, 1}, {"ImpactPoint", {0.078784, 0.0136853}, 1}, {"ImpactPoint", {0.075176, 0.0269606}, 1}, {"ImpactPoint", {0.06928, 0.0394161}, 1}, {"ImpactPoint", {0.06128, 0.0506733}, 1}, {"ImpactPoint", {0.051424, 0.0603854}, 1}, {"ImpactPoint", {0.04, 0.0682686}, 1}, {"ImpactPoint", {0.02736, 0.0740785}, 1}, {"ImpactPoint", {0.013888, 0.0776339}, 1}, {"ImpactPoint", {0, 0.0788321}, 1}, {"ImpactPoint", {-0.013888, 0.0776339}, 1}, {"ImpactPoint", {-0.02736, 0.0740785}, 1}, {"ImpactPoint", {-0.04, 0.0682686}, 1}, {"ImpactPoint", {-0.051424, 0.0603854}, 1}, {"ImpactPoint", {-0.06128, 0.0506733}, 1}, {"ImpactPoint", {-0.06928, 0.0394161}, 1}, {"ImpactPoint", {-0.075176, 0.0269606}, 1}, {"ImpactPoint", {-0.078784, 0.0136853}, 1}, {"ImpactPoint", {-0.08, 0}, 1}, {"ImpactPoint", {-0.078784, -0.0136853}, 1}, {"ImpactPoint", {-0.075176, -0.0269606}, 1}, {"ImpactPoint", {-0.06928, -0.0394161}, 1}, {"ImpactPoint", {-0.06128, -0.0506733}, 1}, {"ImpactPoint", {-0.051424, -0.0603854}, 1}, {"ImpactPoint", {-0.04, -0.0682686}, 1}, {"ImpactPoint", {-0.02736, -0.0740785}, 1}, {"ImpactPoint", {-0.013888, -0.0776339}, 1}, {"ImpactPoint", {0, -0.0788321}, 1}, {}, {}, {"ImpactPoint", -1, "Velocity", 1, "NormalizeBombCircle", 1, "ImpactPoint", 1, {0, 0}, 1}, {"Velocity", 1, "Limit0109", 1, {0, 0}, 1}};
 						};
 						class Circle
 						{
 							type = "line";
 							width = 6;
-							points[] = {{"ImpactPoint",{0,-0.0630657},1},{"ImpactPoint",{0,-0.0788321},1},{"MissileFlightTimeRot1",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot2",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot3",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot4",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot5",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot6",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot7",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot8",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot9",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot10",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot11",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot12",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot13",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot14",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot15",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot16",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot17",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot18",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot19",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot20",{0,0.08},1,"ImpactPoint",1},{"MissileFlightTimeRot20",{0,0.064},1,"ImpactPoint",1}};
+							points[] = {{"ImpactPoint", {0, -0.0630657}, 1}, {"ImpactPoint", {0, -0.0788321}, 1}, {"MissileFlightTimeRot1", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot2", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot3", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot4", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot5", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot6", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot7", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot8", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot9", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot10", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot11", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot12", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot13", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot14", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot15", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot16", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot17", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot18", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot19", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.08}, 1, "ImpactPoint", 1}, {"MissileFlightTimeRot20", {0, 0.064}, 1, "ImpactPoint", 1}};
 						};
 						class Distance
 						{
@@ -2528,9 +2589,9 @@ class cfgVehicles {
 							max = 15;
 							align = "center";
 							scale = 1;
-							pos[] = {"ImpactPoint",{-0.002,0.11},1};
-							right[] = {"ImpactPoint",{0.045,0.11},1};
-							down[] = {"ImpactPoint",{-0.002,0.15},1};
+							pos[] = {"ImpactPoint", {-0.002, 0.11}, 1};
+							right[] = {"ImpactPoint", {0.045, 0.11}, 1};
+							down[] = {"ImpactPoint", {-0.002, 0.15}, 1};
 						};
 					};
 					class WeaponsText
@@ -2543,9 +2604,9 @@ class cfgVehicles {
 							sourceScale = 1;
 							align = "right";
 							scale = 1;
-							pos[] = {{0.032,0.84},1};
-							right[] = {{0.087,0.84},1};
-							down[] = {{0.032,0.885},1};
+							pos[] = {{0.032, 0.84}, 1};
+							right[] = {{0.087, 0.84}, 1};
+							down[] = {{0.032, 0.885}, 1};
 						};
 					};
 					class MGunText
@@ -2559,9 +2620,9 @@ class cfgVehicles {
 							sourceScale = 1;
 							align = "right";
 							scale = 1;
-							pos[] = {{0.032,0.84},1};
-							right[] = {{0.087,0.84},1};
-							down[] = {{0.032,0.885},1};
+							pos[] = {{0.032, 0.84}, 1};
+							right[] = {{0.087, 0.84}, 1};
+							down[] = {{0.032, 0.885}, 1};
 						};
 					};
 					class AmmoText
@@ -2571,9 +2632,9 @@ class cfgVehicles {
 						sourceScale = 1;
 						align = "right";
 						scale = 1;
-						pos[] = {{0.032,0.88},1};
-						right[] = {{0.087,0.88},1};
-						down[] = {{0.032,0.925},1};
+						pos[] = {{0.032, 0.88}, 1};
+						right[] = {{0.087, 0.88}, 1};
+						down[] = {{0.032, 0.925}, 1};
 					};
 					class Laser
 					{
@@ -2585,9 +2646,9 @@ class cfgVehicles {
 							text = "LASER";
 							align = "left";
 							scale = 1;
-							pos[] = {{0.932,0.8},1};
-							right[] = {{0.987,0.8},1};
-							down[] = {{0.932,0.845},1};
+							pos[] = {{0.932, 0.8}, 1};
+							right[] = {{0.987, 0.8}, 1};
+							down[] = {{0.932, 0.845}, 1};
 						};
 					};
 					class Flaps
@@ -2600,9 +2661,9 @@ class cfgVehicles {
 							text = "FLAPS";
 							align = "left";
 							scale = 1;
-							pos[] = {{0.932,0.92},1};
-							right[] = {{0.987,0.92},1};
-							down[] = {{0.932,0.965},1};
+							pos[] = {{0.932, 0.92}, 1};
+							right[] = {{0.987, 0.92}, 1};
+							down[] = {{0.932, 0.965}, 1};
 						};
 					};
 					class ILS
@@ -2615,18 +2676,18 @@ class cfgVehicles {
 							text = "GEAR";
 							align = "left";
 							scale = 1;
-							pos[] = {{0.932,0.84},1};
-							right[] = {{0.987,0.84},1};
-							down[] = {{0.932,0.885},1};
+							pos[] = {{0.932, 0.84}, 1};
+							right[] = {{0.987, 0.84}, 1};
+							down[] = {{0.932, 0.885}, 1};
 						};
 						class Glideslope
 						{
-							clipTL[] = {0,0};
-							clipBR[] = {1,1};
+							clipTL[] = {0, 0};
+							clipBR[] = {1, 1};
 							class airport
 							{
 								type = "line";
-								points[] = {{"airport1",1},{"airport2",1},{"airport4",1},{"airport3",1},{"airport1",1}};
+								points[] = {{"airport1", 1}, {"airport2", 1}, {"airport4", 1}, {"airport3", 1}, {"airport1", 1}};
 							};
 						};
 					};
@@ -2637,9 +2698,9 @@ class cfgVehicles {
 						sourceScale = 100;
 						align = "left";
 						scale = 1;
-						pos[] = {{0.932,0.71},1};
-						right[] = {{"0.932+.05",0.71},1};
-						down[] = {{0.932,"0.71+.08"},1};
+						pos[] = {{0.932, 0.71}, 1};
+						right[] = {{"0.932+.05", 0.71}, 1};
+						down[] = {{0.932, "0.71+.08"}, 1};
 					};
 					class CollectiveText
 					{
@@ -2649,20 +2710,20 @@ class cfgVehicles {
 						scale = 1;
 						sourceScale = 1;
 						align = "right";
-						pos[] = {{0.952,0.71},1};
-						right[] = {{"0.952+.05",0.71},1};
-						down[] = {{0.952,"0.71+.08"},1};
+						pos[] = {{0.952, 0.71}, 1};
+						right[] = {{"0.952+.05", 0.71}, 1};
+						down[] = {{0.952, "0.71+.08"}, 1};
 					};
 					class TargetLocking
 					{
 						condition = "missilelocking";
-						blinkingPattern[] = {0.2,0.2};
+						blinkingPattern[] = {0.2, 0.2};
 						blinkingStartsOn = 1;
 						class shape
 						{
 							type = "line";
 							width = 4;
-							points[] = {{"Target",1,"Limit0109",1,{0,-0.029562},1},{"Target",1,"Limit0109",1,{0.03,0},1},{"Target",1,"Limit0109",1,{0,0.029562},1},{"Target",1,"Limit0109",1,{-0.03,0},1},{"Target",1,"Limit0109",1,{0,-0.029562},1}};
+							points[] = {{"Target", 1, "Limit0109", 1, {0, -0.029562}, 1}, {"Target", 1, "Limit0109", 1, {0.03, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, 0.029562}, 1}, {"Target", 1, "Limit0109", 1, {-0.03, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, -0.029562}, 1}};
 						};
 					};
 					class TargetLocked
@@ -2672,13 +2733,13 @@ class cfgVehicles {
 						{
 							type = "line";
 							width = 4;
-							points[] = {{"Target",1,"Limit0109",1,{0,-0.029562},1},{"Target",1,"Limit0109",1,{0.03,0},1},{"Target",1,"Limit0109",1,{0,0.029562},1},{"Target",1,"Limit0109",1,{-0.03,0},1},{"Target",1,"Limit0109",1,{0,-0.029562},1}};
+							points[] = {{"Target", 1, "Limit0109", 1, {0, -0.029562}, 1}, {"Target", 1, "Limit0109", 1, {0.03, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, 0.029562}, 1}, {"Target", 1, "Limit0109", 1, {-0.03, 0}, 1}, {"Target", 1, "Limit0109", 1, {0, -0.029562}, 1}};
 						};
 					};
 					class IncomingMissile
 					{
 						condition = "incomingmissile";
-						blinkingPattern[] = {0.3,0.3};
+						blinkingPattern[] = {0.3, 0.3};
 						blinkingStartsOn = 1;
 						class Text
 						{
@@ -2687,17 +2748,17 @@ class cfgVehicles {
 							text = "!INCOMING MISSILE!";
 							align = "center";
 							scale = 1;
-							pos[] = {{0.485,0.216788},1};
-							right[] = {{0.545,0.216788},1};
-							down[] = {{0.485,0.266058},1};
+							pos[] = {{0.485, 0.216788}, 1};
+							right[] = {{0.545, 0.216788}, 1};
+							down[] = {{0.485, 0.266058}, 1};
 						};
 					};
 					class StallGroup
 					{
 						type = "group";
 						condition = "stall";
-						color[] = {1,0,0};
-						blinkingPattern[] = {0.2,0.2};
+						color[] = {1, 0, 0};
+						blinkingPattern[] = {0.2, 0.2};
 						blinkingStartsOn = 1;
 						class StallText
 						{
@@ -2706,9 +2767,9 @@ class cfgVehicles {
 							text = "STALL";
 							align = "center";
 							scale = 1;
-							pos[] = {{0.5,0.25},1};
-							right[] = {{0.54,0.25},1};
-							down[] = {{0.5,0.29},1};
+							pos[] = {{0.5, 0.25}, 1};
+							right[] = {{0.54, 0.25}, 1};
+							down[] = {{0.5, 0.29}, 1};
 						};
 					};
 					class TargetingPodGroup
@@ -2718,7 +2779,7 @@ class cfgVehicles {
 						{
 							type = "line";
 							width = 3;
-							points[] = {{"TargetingPodDir",1,{0.0208056,0.00407807},1},{"TargetingPodDir",1,{0.0208056,-0.00407807},1},{},{"TargetingPodDir",1,{0.0176381,-0.0116134},1},{"TargetingPodDir",1,{0.0117854,-0.0173806},1},{},{"TargetingPodDir",1,{0.00413849,-0.0205019},1},{"TargetingPodDir",1,{-0.00413849,-0.0205019},1},{},{"TargetingPodDir",1,{-0.0117854,-0.0173806},1},{"TargetingPodDir",1,{-0.0176381,-0.0116134},1},{},{"TargetingPodDir",1,{-0.0208056,-0.00407807},1},{"TargetingPodDir",1,{-0.0208056,0.00407808},1},{},{"TargetingPodDir",1,{-0.0176381,0.0116134},1},{"TargetingPodDir",1,{-0.0117854,0.0173806},1},{},{"TargetingPodDir",1,{-0.00413849,0.0205019},1},{"TargetingPodDir",1,{0.00413849,0.0205019},1},{},{"TargetingPodDir",1,{0.0117854,0.0173806},1},{"TargetingPodDir",1,{0.0176381,0.0116134},1},{},{"TargetingPodDir",1,{0.0208056,0.00407807},1},{"TargetingPodDir",1,{0.0208056,-0.00407808},1},{},{"TargetingPodDir",1,{0.0176381,-0.0116134},1},{"TargetingPodDir",1,{0.0117854,-0.0173807},1},{},{"TargetingPodDir",1,{0.00413849,-0.0205019},1},{"TargetingPodDir",1,{-0.0041385,-0.0205019},1},{},{"TargetingPodDir",1,{-0.0117854,-0.0173806},1},{"TargetingPodDir",1,{-0.0176381,-0.0116134},1},{},{}};
+							points[] = {{"TargetingPodDir", 1, {0.0208056, 0.00407807}, 1}, {"TargetingPodDir", 1, {0.0208056, -0.00407807}, 1}, {}, {"TargetingPodDir", 1, {0.0176381, -0.0116134}, 1}, {"TargetingPodDir", 1, {0.0117854, -0.0173806}, 1}, {}, {"TargetingPodDir", 1, {0.00413849, -0.0205019}, 1}, {"TargetingPodDir", 1, {-0.00413849, -0.0205019}, 1}, {}, {"TargetingPodDir", 1, {-0.0117854, -0.0173806}, 1}, {"TargetingPodDir", 1, {-0.0176381, -0.0116134}, 1}, {}, {"TargetingPodDir", 1, {-0.0208056, -0.00407807}, 1}, {"TargetingPodDir", 1, {-0.0208056, 0.00407808}, 1}, {}, {"TargetingPodDir", 1, {-0.0176381, 0.0116134}, 1}, {"TargetingPodDir", 1, {-0.0117854, 0.0173806}, 1}, {}, {"TargetingPodDir", 1, {-0.00413849, 0.0205019}, 1}, {"TargetingPodDir", 1, {0.00413849, 0.0205019}, 1}, {}, {"TargetingPodDir", 1, {0.0117854, 0.0173806}, 1}, {"TargetingPodDir", 1, {0.0176381, 0.0116134}, 1}, {}, {"TargetingPodDir", 1, {0.0208056, 0.00407807}, 1}, {"TargetingPodDir", 1, {0.0208056, -0.00407808}, 1}, {}, {"TargetingPodDir", 1, {0.0176381, -0.0116134}, 1}, {"TargetingPodDir", 1, {0.0117854, -0.0173807}, 1}, {}, {"TargetingPodDir", 1, {0.00413849, -0.0205019}, 1}, {"TargetingPodDir", 1, {-0.0041385, -0.0205019}, 1}, {}, {"TargetingPodDir", 1, {-0.0117854, -0.0173806}, 1}, {"TargetingPodDir", 1, {-0.0176381, -0.0116134}, 1}, {}, {}};
 						};
 					};
 					class TargetingPodGroupOn
@@ -2728,32 +2789,32 @@ class cfgVehicles {
 						{
 							type = "line";
 							width = 3;
-							points[] = {{"TargetingPodTarget",1,"Limit0109",1,{0.0208056,0.00407807},1},{"TargetingPodTarget",1,"Limit0109",1,{0.0208056,-0.00407807},1},{},{"TargetingPodTarget",1,"Limit0109",1,{0.0176381,-0.0116134},1},{"TargetingPodTarget",1,"Limit0109",1,{0.0117854,-0.0173806},1},{},{"TargetingPodTarget",1,"Limit0109",1,{0.00413849,-0.0205019},1},{"TargetingPodTarget",1,"Limit0109",1,{-0.00413849,-0.0205019},1},{},{"TargetingPodTarget",1,"Limit0109",1,{-0.0117854,-0.0173806},1},{"TargetingPodTarget",1,"Limit0109",1,{-0.0176381,-0.0116134},1},{},{"TargetingPodTarget",1,"Limit0109",1,{-0.0208056,-0.00407807},1},{"TargetingPodTarget",1,"Limit0109",1,{-0.0208056,0.00407808},1},{},{"TargetingPodTarget",1,"Limit0109",1,{-0.0176381,0.0116134},1},{"TargetingPodTarget",1,"Limit0109",1,{-0.0117854,0.0173806},1},{},{"TargetingPodTarget",1,"Limit0109",1,{-0.00413849,0.0205019},1},{"TargetingPodTarget",1,"Limit0109",1,{0.00413849,0.0205019},1},{},{"TargetingPodTarget",1,"Limit0109",1,{0.0117854,0.0173806},1},{"TargetingPodTarget",1,"Limit0109",1,{0.0176381,0.0116134},1},{},{"TargetingPodTarget",1,"Limit0109",1,{0.0208056,0.00407807},1},{"TargetingPodTarget",1,"Limit0109",1,{0.0208056,-0.00407808},1},{},{"TargetingPodTarget",1,"Limit0109",1,{0.0176381,-0.0116134},1},{"TargetingPodTarget",1,"Limit0109",1,{0.0117854,-0.0173807},1},{},{"TargetingPodTarget",1,"Limit0109",1,{0.00413849,-0.0205019},1},{"TargetingPodTarget",1,"Limit0109",1,{-0.0041385,-0.0205019},1},{},{"TargetingPodTarget",1,"Limit0109",1,{-0.0117854,-0.0173806},1},{"TargetingPodTarget",1,"Limit0109",1,{-0.0176381,-0.0116134},1},{},{}};
+							points[] = {{"TargetingPodTarget", 1, "Limit0109", 1, {0.0208056, 0.00407807}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0208056, -0.00407807}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0176381, -0.0116134}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0117854, -0.0173806}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.00413849, -0.0205019}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.00413849, -0.0205019}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0117854, -0.0173806}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0176381, -0.0116134}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0208056, -0.00407807}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0208056, 0.00407808}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0176381, 0.0116134}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0117854, 0.0173806}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.00413849, 0.0205019}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.00413849, 0.0205019}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0117854, 0.0173806}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0176381, 0.0116134}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0208056, 0.00407807}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0208056, -0.00407808}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0176381, -0.0116134}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.0117854, -0.0173807}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {0.00413849, -0.0205019}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0041385, -0.0205019}, 1}, {}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0117854, -0.0173806}, 1}, {"TargetingPodTarget", 1, "Limit0109", 1, {-0.0176381, -0.0116134}, 1}, {}, {}};
 						};
 					};
 					class MainCenterLine1
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"PlaneW",{-0.49,"0 + 0.025"},1},{"PlaneW",{-0.49,0},1},{"PlaneW",{-0.45,0},1}};
+						points[] = {{"PlaneW", {-0.49, "0 + 0.025"}, 1}, {"PlaneW", {-0.49, 0}, 1}, {"PlaneW", {-0.45, 0}, 1}};
 					};
 					class MainCenterLine2
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"PlaneW",{-0.33,0},1},{"PlaneW",{-0.25,0},1}};
+						points[] = {{"PlaneW", {-0.33, 0}, 1}, {"PlaneW", {-0.25, 0}, 1}};
 					};
 					class MainCenterLine3
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"PlaneW",{0.49,"0 + 0.025"},1},{"PlaneW",{0.49,0},1},{"PlaneW",{0.25,0},1}};
+						points[] = {{"PlaneW", {0.49, "0 + 0.025"}, 1}, {"PlaneW", {0.49, 0}, 1}, {"PlaneW", {0.25, 0}, 1}};
 					};
 					class SpeedIndicatorBox
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"PlaneW",{-0.49,-0.25},1},{"PlaneW",{-0.49,-0.2},1},{"PlaneW",{-0.3,-0.2},1},{"PlaneW",{-0.3,-0.25},1},{"PlaneW",{-0.49,-0.25},1}};
+						points[] = {{"PlaneW", {-0.49, -0.25}, 1}, {"PlaneW", {-0.49, -0.2}, 1}, {"PlaneW", {-0.3, -0.2}, 1}, {"PlaneW", {-0.3, -0.25}, 1}, {"PlaneW", {-0.49, -0.25}, 1}};
 					};
 					class SpeedNumber
 					{
@@ -2762,9 +2823,9 @@ class cfgVehicles {
 						sourceScale = 3.6;
 						align = "center";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.4,-0.25},1};
-						right[] = {"PlaneW",{-0.3,-0.25},1};
-						down[] = {"PlaneW",{-0.4,-0.2},1};
+						pos[] = {"PlaneW", {-0.4, -0.25}, 1};
+						right[] = {"PlaneW", {-0.3, -0.25}, 1};
+						down[] = {"PlaneW", {-0.4, -0.2}, 1};
 					};
 					class AltitudeNumberASL
 					{
@@ -2774,16 +2835,16 @@ class cfgVehicles {
 						sourceLength = 4;
 						align = "center";
 						scale = 1;
-						pos[] = {"PlaneW",{0.4,-0.25},1};
-						right[] = {"PlaneW",{0.48,-0.25},1};
-						down[] = {"PlaneW",{0.4,-0.2},1};
+						pos[] = {"PlaneW", {0.4, -0.25}, 1};
+						right[] = {"PlaneW", {0.48, -0.25}, 1};
+						down[] = {"PlaneW", {0.4, -0.2}, 1};
 					};
-					class AltitudeNumberAGL: AltitudeNumberASL
+					class AltitudeNumberAGL : AltitudeNumberASL
 					{
 						source = "altitudeAGL";
-						pos[] = {"PlaneW",{0.4,-0.2},1};
-						right[] = {"PlaneW",{0.48,-0.2},1};
-						down[] = {"PlaneW",{0.4,-0.15},1};
+						pos[] = {"PlaneW", {0.4, -0.2}, 1};
+						right[] = {"PlaneW", {0.48, -0.2}, 1};
+						down[] = {"PlaneW", {0.4, -0.15}, 1};
 					};
 					class AltitudeRadarTextASL
 					{
@@ -2793,9 +2854,9 @@ class cfgVehicles {
 						align = "left";
 						scale = 1;
 						sourceScale = 1;
-						pos[] = {"PlaneW",{0.32,-0.25},1};
-						right[] = {"PlaneW",{"+0.32 + 0.04",-0.25},1};
-						down[] = {"PlaneW",{0.32,"-0.25 + 0.05"},1};
+						pos[] = {"PlaneW", {0.32, -0.25}, 1};
+						right[] = {"PlaneW", {"+0.32 + 0.04", -0.25}, 1};
+						down[] = {"PlaneW", {0.32, "-0.25 + 0.05"}, 1};
 					};
 					class AltitudeRadarTextAGL
 					{
@@ -2805,9 +2866,9 @@ class cfgVehicles {
 						align = "left";
 						scale = 1;
 						sourceScale = 1;
-						pos[] = {"PlaneW",{0.32,-0.192},1};
-						right[] = {"PlaneW",{"+0.32 + 0.04",-0.192},1};
-						down[] = {"PlaneW",{0.32,"-0.192 + 0.041"},1};
+						pos[] = {"PlaneW", {0.32, -0.192}, 1};
+						right[] = {"PlaneW", {"+0.32 + 0.04", -0.192}, 1};
+						down[] = {"PlaneW", {0.32, "-0.192 + 0.041"}, 1};
 					};
 					class PitchNumber
 					{
@@ -2816,9 +2877,9 @@ class cfgVehicles {
 						sourceScale = 57.2958;
 						align = "right";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.39,-0.076},1};
-						right[] = {"PlaneW",{"-0.39 + 0.05",-0.076},1};
-						down[] = {"PlaneW",{-0.39,"-0.076 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.39, -0.076}, 1};
+						right[] = {"PlaneW", {"-0.39 + 0.05", -0.076}, 1};
+						down[] = {"PlaneW", {-0.39, "-0.076 + 0.05"}, 1};
 					};
 					class PitchText
 					{
@@ -2827,9 +2888,9 @@ class cfgVehicles {
 						text = "P:";
 						align = "left";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.41,-0.076},1};
-						right[] = {"PlaneW",{"-0.41 + 0.04",-0.076},1};
-						down[] = {"PlaneW",{-0.41,"-0.076 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.41, -0.076}, 1};
+						right[] = {"PlaneW", {"-0.41 + 0.04", -0.076}, 1};
+						down[] = {"PlaneW", {-0.41, "-0.076 + 0.05"}, 1};
 					};
 					class RollNumber
 					{
@@ -2838,9 +2899,9 @@ class cfgVehicles {
 						sourceScale = 57.2958;
 						align = "right";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.39,-0.025},1};
-						right[] = {"PlaneW",{"-0.39 + 0.05",-0.025},1};
-						down[] = {"PlaneW",{-0.39,"-0.025 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.39, -0.025}, 1};
+						right[] = {"PlaneW", {"-0.39 + 0.05", -0.025}, 1};
+						down[] = {"PlaneW", {-0.39, "-0.025 + 0.05"}, 1};
 					};
 					class RollText
 					{
@@ -2849,9 +2910,9 @@ class cfgVehicles {
 						text = "R:";
 						align = "left";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.41,-0.025},1};
-						right[] = {"PlaneW",{"-0.41 + 0.04",-0.025},1};
-						down[] = {"PlaneW",{-0.41,"-0.025 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.41, -0.025}, 1};
+						right[] = {"PlaneW", {"-0.41 + 0.04", -0.025}, 1};
+						down[] = {"PlaneW", {-0.41, "-0.025 + 0.05"}, 1};
 					};
 					class ClimbNumber
 					{
@@ -2860,9 +2921,9 @@ class cfgVehicles {
 						sourceScale = 1;
 						align = "right";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.39,0.026},1};
-						right[] = {"PlaneW",{"-0.39 + 0.05",0.026},1};
-						down[] = {"PlaneW",{-0.39,"+0.026 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.39, 0.026}, 1};
+						right[] = {"PlaneW", {"-0.39 + 0.05", 0.026}, 1};
+						down[] = {"PlaneW", {-0.39, "+0.026 + 0.05"}, 1};
 					};
 					class ClimbText
 					{
@@ -2871,9 +2932,9 @@ class cfgVehicles {
 						text = "C:";
 						align = "left";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.41,0.026},1};
-						right[] = {"PlaneW",{"-0.41 + 0.04",0.026},1};
-						down[] = {"PlaneW",{-0.41,"+0.026 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.41, 0.026}, 1};
+						right[] = {"PlaneW", {"-0.41 + 0.04", 0.026}, 1};
+						down[] = {"PlaneW", {-0.41, "+0.026 + 0.05"}, 1};
 					};
 					class fuelNumber
 					{
@@ -2882,9 +2943,9 @@ class cfgVehicles {
 						sourceScale = 100;
 						align = "right";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.4,0.1},1};
-						right[] = {"PlaneW",{"-0.40 + 0.04",0.1},1};
-						down[] = {"PlaneW",{-0.4,"0.10 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.4, 0.1}, 1};
+						right[] = {"PlaneW", {"-0.40 + 0.04", 0.1}, 1};
+						down[] = {"PlaneW", {-0.4, "0.10 + 0.05"}, 1};
 					};
 					class fuelPercent
 					{
@@ -2894,9 +2955,9 @@ class cfgVehicles {
 						scale = 1;
 						sourceScale = 1;
 						align = "right";
-						pos[] = {"PlaneW",{-0.35,0.1},1};
-						right[] = {"PlaneW",{"-0.35 + 0.04",0.1},1};
-						down[] = {"PlaneW",{-0.35,"0.10 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.35, 0.1}, 1};
+						right[] = {"PlaneW", {"-0.35 + 0.04", 0.1}, 1};
+						down[] = {"PlaneW", {-0.35, "0.10 + 0.05"}, 1};
 					};
 					class fuelText
 					{
@@ -2905,15 +2966,15 @@ class cfgVehicles {
 						text = "F:";
 						align = "left";
 						scale = 1;
-						pos[] = {"PlaneW",{-0.41,0.1},1};
-						right[] = {"PlaneW",{"-0.41 + 0.04",0.1},1};
-						down[] = {"PlaneW",{-0.41,"0.1 + 0.05"},1};
+						pos[] = {"PlaneW", {-0.41, 0.1}, 1};
+						right[] = {"PlaneW", {"-0.41 + 0.04", 0.1}, 1};
+						down[] = {"PlaneW", {-0.41, "0.1 + 0.05"}, 1};
 					};
 					class HeadingArrow
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"WPPoint",1,"LimitWaypoint",1,{-0.02,0.042},1},{"WPPoint",1,"LimitWaypoint",1,{0,0.022},1},{"WPPoint",1,"LimitWaypoint",1,{0.02,0.042},1}};
+						points[] = {{"WPPoint", 1, "LimitWaypoint", 1, {-0.02, 0.042}, 1}, {"WPPoint", 1, "LimitWaypoint", 1, {0, 0.022}, 1}, {"WPPoint", 1, "LimitWaypoint", 1, {0.02, 0.042}, 1}};
 					};
 					class WP
 					{
@@ -2926,9 +2987,9 @@ class cfgVehicles {
 							sourcePrecision = 1;
 							align = "right";
 							scale = 1;
-							pos[] = {{0.924,0.505018},1};
-							down[] = {{0.924,0.542464},1};
-							right[] = {{0.964,0.505018},1};
+							pos[] = {{0.924, 0.505018}, 1};
+							down[] = {{0.924, 0.542464}, 1};
+							right[] = {{0.964, 0.505018}, 1};
 						};
 						class WPIndex
 						{
@@ -2938,9 +2999,9 @@ class cfgVehicles {
 							sourceLength = 2;
 							align = "right";
 							scale = 1;
-							pos[] = {{0.877,0.505018},1};
-							right[] = {{0.917,0.505018},1};
-							down[] = {{0.877,0.542464},1};
+							pos[] = {{0.877, 0.505018}, 1};
+							right[] = {{0.917, 0.505018}, 1};
+							down[] = {{0.877, 0.542464}, 1};
 						};
 						class WPstatic
 						{
@@ -2950,9 +3011,9 @@ class cfgVehicles {
 							scale = 1;
 							sourceScale = 1;
 							align = "right";
-							pos[] = {{"0.825+0.01",0.5065},1};
-							right[] = {{0.875,0.5065},1};
-							down[] = {{"0.825+0.01",0.5415},1};
+							pos[] = {{"0.825+0.01", 0.5065}, 1};
+							right[] = {{0.875, 0.5065}, 1};
+							down[] = {{"0.825+0.01", 0.5415}, 1};
 						};
 						class WPKM
 						{
@@ -2962,9 +3023,9 @@ class cfgVehicles {
 							scale = 1;
 							sourceScale = 1;
 							align = "left";
-							pos[] = {{"0.825+0.09",0.5065},1};
-							right[] = {{0.955,0.5065},1};
-							down[] = {{"0.825+0.09",0.5415},1};
+							pos[] = {{"0.825+0.09", 0.5065}, 1};
+							right[] = {{0.955, 0.5065}, 1};
+							down[] = {{"0.825+0.09", 0.5415}, 1};
 						};
 					};
 					class HeadingRotation
@@ -2977,15 +3038,15 @@ class cfgVehicles {
 							sourceScale = 1;
 							align = "center";
 							scale = 1;
-							pos[] = {{"0.80-0.302","0.082+0.065"},1};
-							right[] = {{"0.83-0.302","0.082+0.065"},1};
-							down[] = {{"0.80-0.302","0.113+0.065"},1};
+							pos[] = {{"0.80-0.302", "0.082+0.065"}, 1};
+							right[] = {{"0.83-0.302", "0.082+0.065"}, 1};
+							down[] = {{"0.80-0.302", "0.113+0.065"}, 1};
 						};
 						class HeadingArrow
 						{
 							type = "line";
 							width = 3;
-							points[] = {{{0.488,0.141},1},{{0.512,0.141},1},{{0.542,0.161},1},{{0.512,0.181},1},{{0.488,0.181},1},{{0.458,0.161},1},{{0.488,0.141},1},{}};
+							points[] = {{{0.488, 0.141}, 1}, {{0.512, 0.141}, 1}, {{0.542, 0.161}, 1}, {{0.512, 0.181}, 1}, {{0.488, 0.181}, 1}, {{0.458, 0.161}, 1}, {{0.488, 0.141}, 1}, {}};
 						};
 					};
 					class HeadingScale
@@ -3009,20 +3070,20 @@ class cfgVehicles {
 						stepSize = "(0.70 - 0.3) / 15";
 						align = "center";
 						scale = 1;
-						pos[] = {0.096,0.0546};
-						right[] = {0.143,0.0546};
-						down[] = {0.096,0.093};
+						pos[] = {0.096, 0.0546};
+						right[] = {0.143, 0.0546};
+						down[] = {0.096, 0.093};
 					};
 					class HeadingIndicatorBox
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"PlaneW",{-0.035,-0.455},1},{"PlaneW",{-0.035,-0.5},1},{"PlaneW",{0.035,-0.5},1},{"PlaneW",{0.035,-0.455},1},{"PlaneW",{-0.035,-0.455},1}};
+						points[] = {{"PlaneW", {-0.035, -0.455}, 1}, {"PlaneW", {-0.035, -0.5}, 1}, {"PlaneW", {0.035, -0.5}, 1}, {"PlaneW", {0.035, -0.455}, 1}, {"PlaneW", {-0.035, -0.455}, 1}};
 					};
 					class HeadingIndicatorArrow
 					{
 						type = "polygon";
-						points[] = {{{"PlaneW",{-0.015,-0.455},1},{"PlaneW",{0,-0.445},1},{"PlaneW",{0.015,-0.455},1}}};
+						points[] = {{{"PlaneW", {-0.015, -0.455}, 1}, {"PlaneW", {0, -0.445}, 1}, {"PlaneW", {0.015, -0.455}, 1}}};
 					};
 					class HeadingNumber
 					{
@@ -3031,33 +3092,33 @@ class cfgVehicles {
 						sourceScale = 1;
 						align = "center";
 						scale = 1;
-						pos[] = {"PlaneW",{0,"(-0.5   )"},1};
-						right[] = {"PlaneW",{0.03,"(-0.5   )"},1};
-						down[] = {"PlaneW",{0,"(-0.5 + 0.045 )"},1};
+						pos[] = {"PlaneW", {0, "(-0.5   )"}, 1};
+						right[] = {"PlaneW", {0.03, "(-0.5   )"}, 1};
+						down[] = {"PlaneW", {0, "(-0.5 + 0.045 )"}, 1};
 					};
 					class HorizonBankRot
 					{
 						type = "line";
 						width = 2;
-						points[] = {{"HorizonBankRot",{0,"0.39421001-0.109"},1},{"HorizonBankRot",{0.01,"0.41673699-0.109"},1},{"HorizonBankRot",{-0.01,"0.41673699-0.109"},1},{"HorizonBankRot",{0,"0.39421001-0.109"},1}};
+						points[] = {{"HorizonBankRot", {0, "0.39421001-0.109"}, 1}, {"HorizonBankRot", {0.01, "0.41673699-0.109"}, 1}, {"HorizonBankRot", {-0.01, "0.41673699-0.109"}, 1}, {"HorizonBankRot", {0, "0.39421001-0.109"}, 1}};
 					};
 					class HorizonBankRotLines
 					{
 						type = "line";
 						width = 3;
-						points[] = {{{0.619959,0.712986},1},{{0.631439,0.744203},1},{},{{0.58291,0.739019},1},{{0.588087,0.760778},1},{},{{0.540574,0.748504},1},{{0.543184,0.770838},1},{},{{0.4975,0.740421},1},{{0.4975,0.77421},1},{},{{0.454426,0.748504},1},{{0.451816,0.770838},1},{},{{0.41209,0.739019},1},{{0.406913,0.760778},1},{},{{0.375041,0.712986},1},{{0.363561,0.744203},1}};
+						points[] = {{{0.619959, 0.712986}, 1}, {{0.631439, 0.744203}, 1}, {}, {{0.58291, 0.739019}, 1}, {{0.588087, 0.760778}, 1}, {}, {{0.540574, 0.748504}, 1}, {{0.543184, 0.770838}, 1}, {}, {{0.4975, 0.740421}, 1}, {{0.4975, 0.77421}, 1}, {}, {{0.454426, 0.748504}, 1}, {{0.451816, 0.770838}, 1}, {}, {{0.41209, 0.739019}, 1}, {{0.406913, 0.760778}, 1}, {}, {{0.375041, 0.712986}, 1}, {{0.363561, 0.744203}, 1}};
 					};
 					class Horizont
 					{
-						clipTL[] = {0.2,0.2};
-						clipBR[] = {0.8,0.8};
+						clipTL[] = {0.2, 0.2};
+						clipBR[] = {0.8, 0.8};
 						class Dimmed
 						{
 							class Level0
 							{
 								type = "line";
 								width = 3;
-								points[] = {{"Level0",{0.75,0},1},{"Level0",{0.065,0},1},{},{"Level0",{-0.065,0},1},{"Level0",{-0.75,0},1}};
+								points[] = {{"Level0", {0.75, 0}, 1}, {"Level0", {0.065, 0}, 1}, {}, {"Level0", {-0.065, 0}, 1}, {"Level0", {-0.75, 0}, 1}};
 							};
 						};
 						class HideOnTurn
@@ -3071,10 +3132,10 @@ class cfgVehicles {
 									width = 2;
 									points[] = {};
 								};
-								class LevelM5: Level0
+								class LevelM5 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM5",{-0.235,-0.02},1},{"LevelM5",{-0.235,0},1},{},{"LevelM5",{-0.22,0},1},{"LevelM5",{-0.205,0},1},{},{"LevelM5",{-0.19,0},1},{"LevelM5",{-0.175,0},1},{},{"LevelM5",{-0.16,0},1},{"LevelM5",{-0.145,0},1},{},{"LevelM5",{-0.13,0},1},{"LevelM5",{-0.115,0},1},{},{"LevelM5",{-0.1,0},1},{"LevelM5",{-0.085,0},1},{},{"LevelM5",{-0.07,0},1},{"LevelM5",{-0.055,0},1},{},{},{"LevelM5",{0.235,-0.02},1},{"LevelM5",{0.235,0},1},{},{"LevelM5",{0.22,0},1},{"LevelM5",{0.205,0},1},{},{"LevelM5",{0.19,0},1},{"LevelM5",{0.175,0},1},{},{"LevelM5",{0.16,0},1},{"LevelM5",{0.145,0},1},{},{"LevelM5",{0.13,0},1},{"LevelM5",{0.115,0},1},{},{"LevelM5",{0.1,0},1},{"LevelM5",{0.085,0},1},{},{"LevelM5",{0.07,0},1},{"LevelM5",{0.055,0},1},{}};
+									points[] = {{"LevelM5", {-0.235, -0.02}, 1}, {"LevelM5", {-0.235, 0}, 1}, {}, {"LevelM5", {-0.22, 0}, 1}, {"LevelM5", {-0.205, 0}, 1}, {}, {"LevelM5", {-0.19, 0}, 1}, {"LevelM5", {-0.175, 0}, 1}, {}, {"LevelM5", {-0.16, 0}, 1}, {"LevelM5", {-0.145, 0}, 1}, {}, {"LevelM5", {-0.13, 0}, 1}, {"LevelM5", {-0.115, 0}, 1}, {}, {"LevelM5", {-0.1, 0}, 1}, {"LevelM5", {-0.085, 0}, 1}, {}, {"LevelM5", {-0.07, 0}, 1}, {"LevelM5", {-0.055, 0}, 1}, {}, {}, {"LevelM5", {0.235, -0.02}, 1}, {"LevelM5", {0.235, 0}, 1}, {}, {"LevelM5", {0.22, 0}, 1}, {"LevelM5", {0.205, 0}, 1}, {}, {"LevelM5", {0.19, 0}, 1}, {"LevelM5", {0.175, 0}, 1}, {}, {"LevelM5", {0.16, 0}, 1}, {"LevelM5", {0.145, 0}, 1}, {}, {"LevelM5", {0.13, 0}, 1}, {"LevelM5", {0.115, 0}, 1}, {}, {"LevelM5", {0.1, 0}, 1}, {"LevelM5", {0.085, 0}, 1}, {}, {"LevelM5", {0.07, 0}, 1}, {"LevelM5", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_5
 								{
@@ -3084,9 +3145,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM5",{-0.26,-0.032},1};
-									right[] = {"LevelM5",{-0.2,-0.032},1};
-									down[] = {"LevelM5",{-0.26,0.018},1};
+									pos[] = {"LevelM5", {-0.26, -0.032}, 1};
+									right[] = {"LevelM5", {-0.2, -0.032}, 1};
+									down[] = {"LevelM5", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_5_R
 								{
@@ -3096,14 +3157,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM5",{0.26,-0.032},1};
-									right[] = {"LevelM5",{0.32,-0.032},1};
-									down[] = {"LevelM5",{0.26,0.018},1};
+									pos[] = {"LevelM5", {0.26, -0.032}, 1};
+									right[] = {"LevelM5", {0.32, -0.032}, 1};
+									down[] = {"LevelM5", {0.26, 0.018}, 1};
 								};
-								class LevelP5: Level0
+								class LevelP5 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP5",{"-0.22-0.015",0.02},1},{"LevelP5",{"-0.22-0.015",0},1},{"LevelP5",{-0.06,0},1},{},{"LevelP5",{0.06,0},1},{"LevelP5",{"+0.22+0.015",0},1},{"LevelP5",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP5", {"-0.22-0.015", 0.02}, 1}, {"LevelP5", {"-0.22-0.015", 0}, 1}, {"LevelP5", {-0.06, 0}, 1}, {}, {"LevelP5", {0.06, 0}, 1}, {"LevelP5", {"+0.22+0.015", 0}, 1}, {"LevelP5", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_5
 								{
@@ -3113,9 +3174,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP5",{-0.26,-0.017},1};
-									right[] = {"LevelP5",{-0.2,-0.017},1};
-									down[] = {"LevelP5",{-0.26,0.033},1};
+									pos[] = {"LevelP5", {-0.26, -0.017}, 1};
+									right[] = {"LevelP5", {-0.2, -0.017}, 1};
+									down[] = {"LevelP5", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_5_R
 								{
@@ -3125,14 +3186,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP5",{0.26,-0.017},1};
-									right[] = {"LevelP5",{0.32,-0.017},1};
-									down[] = {"LevelP5",{0.26,0.033},1};
+									pos[] = {"LevelP5", {0.26, -0.017}, 1};
+									right[] = {"LevelP5", {0.32, -0.017}, 1};
+									down[] = {"LevelP5", {0.26, 0.033}, 1};
 								};
-								class LevelM10: Level0
+								class LevelM10 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM10",{-0.235,-0.02},1},{"LevelM10",{-0.235,0},1},{},{"LevelM10",{-0.22,0},1},{"LevelM10",{-0.205,0},1},{},{"LevelM10",{-0.19,0},1},{"LevelM10",{-0.175,0},1},{},{"LevelM10",{-0.16,0},1},{"LevelM10",{-0.145,0},1},{},{"LevelM10",{-0.13,0},1},{"LevelM10",{-0.115,0},1},{},{"LevelM10",{-0.1,0},1},{"LevelM10",{-0.085,0},1},{},{"LevelM10",{-0.07,0},1},{"LevelM10",{-0.055,0},1},{},{},{"LevelM10",{0.235,-0.02},1},{"LevelM10",{0.235,0},1},{},{"LevelM10",{0.22,0},1},{"LevelM10",{0.205,0},1},{},{"LevelM10",{0.19,0},1},{"LevelM10",{0.175,0},1},{},{"LevelM10",{0.16,0},1},{"LevelM10",{0.145,0},1},{},{"LevelM10",{0.13,0},1},{"LevelM10",{0.115,0},1},{},{"LevelM10",{0.1,0},1},{"LevelM10",{0.085,0},1},{},{"LevelM10",{0.07,0},1},{"LevelM10",{0.055,0},1},{}};
+									points[] = {{"LevelM10", {-0.235, -0.02}, 1}, {"LevelM10", {-0.235, 0}, 1}, {}, {"LevelM10", {-0.22, 0}, 1}, {"LevelM10", {-0.205, 0}, 1}, {}, {"LevelM10", {-0.19, 0}, 1}, {"LevelM10", {-0.175, 0}, 1}, {}, {"LevelM10", {-0.16, 0}, 1}, {"LevelM10", {-0.145, 0}, 1}, {}, {"LevelM10", {-0.13, 0}, 1}, {"LevelM10", {-0.115, 0}, 1}, {}, {"LevelM10", {-0.1, 0}, 1}, {"LevelM10", {-0.085, 0}, 1}, {}, {"LevelM10", {-0.07, 0}, 1}, {"LevelM10", {-0.055, 0}, 1}, {}, {}, {"LevelM10", {0.235, -0.02}, 1}, {"LevelM10", {0.235, 0}, 1}, {}, {"LevelM10", {0.22, 0}, 1}, {"LevelM10", {0.205, 0}, 1}, {}, {"LevelM10", {0.19, 0}, 1}, {"LevelM10", {0.175, 0}, 1}, {}, {"LevelM10", {0.16, 0}, 1}, {"LevelM10", {0.145, 0}, 1}, {}, {"LevelM10", {0.13, 0}, 1}, {"LevelM10", {0.115, 0}, 1}, {}, {"LevelM10", {0.1, 0}, 1}, {"LevelM10", {0.085, 0}, 1}, {}, {"LevelM10", {0.07, 0}, 1}, {"LevelM10", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_10
 								{
@@ -3142,9 +3203,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM10",{-0.26,-0.032},1};
-									right[] = {"LevelM10",{-0.2,-0.032},1};
-									down[] = {"LevelM10",{-0.26,0.018},1};
+									pos[] = {"LevelM10", {-0.26, -0.032}, 1};
+									right[] = {"LevelM10", {-0.2, -0.032}, 1};
+									down[] = {"LevelM10", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_10_R
 								{
@@ -3154,14 +3215,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM10",{0.26,-0.032},1};
-									right[] = {"LevelM10",{0.32,-0.032},1};
-									down[] = {"LevelM10",{0.26,0.018},1};
+									pos[] = {"LevelM10", {0.26, -0.032}, 1};
+									right[] = {"LevelM10", {0.32, -0.032}, 1};
+									down[] = {"LevelM10", {0.26, 0.018}, 1};
 								};
-								class LevelP10: Level0
+								class LevelP10 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP10",{"-0.22-0.015",0.02},1},{"LevelP10",{"-0.22-0.015",0},1},{"LevelP10",{-0.06,0},1},{},{"LevelP10",{0.06,0},1},{"LevelP10",{"+0.22+0.015",0},1},{"LevelP10",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP10", {"-0.22-0.015", 0.02}, 1}, {"LevelP10", {"-0.22-0.015", 0}, 1}, {"LevelP10", {-0.06, 0}, 1}, {}, {"LevelP10", {0.06, 0}, 1}, {"LevelP10", {"+0.22+0.015", 0}, 1}, {"LevelP10", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_10
 								{
@@ -3171,9 +3232,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP10",{-0.26,-0.017},1};
-									right[] = {"LevelP10",{-0.2,-0.017},1};
-									down[] = {"LevelP10",{-0.26,0.033},1};
+									pos[] = {"LevelP10", {-0.26, -0.017}, 1};
+									right[] = {"LevelP10", {-0.2, -0.017}, 1};
+									down[] = {"LevelP10", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_10_R
 								{
@@ -3183,14 +3244,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP10",{0.26,-0.017},1};
-									right[] = {"LevelP10",{0.32,-0.017},1};
-									down[] = {"LevelP10",{0.26,0.033},1};
+									pos[] = {"LevelP10", {0.26, -0.017}, 1};
+									right[] = {"LevelP10", {0.32, -0.017}, 1};
+									down[] = {"LevelP10", {0.26, 0.033}, 1};
 								};
-								class LevelM15: Level0
+								class LevelM15 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM15",{-0.235,-0.02},1},{"LevelM15",{-0.235,0},1},{},{"LevelM15",{-0.22,0},1},{"LevelM15",{-0.205,0},1},{},{"LevelM15",{-0.19,0},1},{"LevelM15",{-0.175,0},1},{},{"LevelM15",{-0.16,0},1},{"LevelM15",{-0.145,0},1},{},{"LevelM15",{-0.13,0},1},{"LevelM15",{-0.115,0},1},{},{"LevelM15",{-0.1,0},1},{"LevelM15",{-0.085,0},1},{},{"LevelM15",{-0.07,0},1},{"LevelM15",{-0.055,0},1},{},{},{"LevelM15",{0.235,-0.02},1},{"LevelM15",{0.235,0},1},{},{"LevelM15",{0.22,0},1},{"LevelM15",{0.205,0},1},{},{"LevelM15",{0.19,0},1},{"LevelM15",{0.175,0},1},{},{"LevelM15",{0.16,0},1},{"LevelM15",{0.145,0},1},{},{"LevelM15",{0.13,0},1},{"LevelM15",{0.115,0},1},{},{"LevelM15",{0.1,0},1},{"LevelM15",{0.085,0},1},{},{"LevelM15",{0.07,0},1},{"LevelM15",{0.055,0},1},{}};
+									points[] = {{"LevelM15", {-0.235, -0.02}, 1}, {"LevelM15", {-0.235, 0}, 1}, {}, {"LevelM15", {-0.22, 0}, 1}, {"LevelM15", {-0.205, 0}, 1}, {}, {"LevelM15", {-0.19, 0}, 1}, {"LevelM15", {-0.175, 0}, 1}, {}, {"LevelM15", {-0.16, 0}, 1}, {"LevelM15", {-0.145, 0}, 1}, {}, {"LevelM15", {-0.13, 0}, 1}, {"LevelM15", {-0.115, 0}, 1}, {}, {"LevelM15", {-0.1, 0}, 1}, {"LevelM15", {-0.085, 0}, 1}, {}, {"LevelM15", {-0.07, 0}, 1}, {"LevelM15", {-0.055, 0}, 1}, {}, {}, {"LevelM15", {0.235, -0.02}, 1}, {"LevelM15", {0.235, 0}, 1}, {}, {"LevelM15", {0.22, 0}, 1}, {"LevelM15", {0.205, 0}, 1}, {}, {"LevelM15", {0.19, 0}, 1}, {"LevelM15", {0.175, 0}, 1}, {}, {"LevelM15", {0.16, 0}, 1}, {"LevelM15", {0.145, 0}, 1}, {}, {"LevelM15", {0.13, 0}, 1}, {"LevelM15", {0.115, 0}, 1}, {}, {"LevelM15", {0.1, 0}, 1}, {"LevelM15", {0.085, 0}, 1}, {}, {"LevelM15", {0.07, 0}, 1}, {"LevelM15", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_15
 								{
@@ -3200,9 +3261,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM15",{-0.26,-0.032},1};
-									right[] = {"LevelM15",{-0.2,-0.032},1};
-									down[] = {"LevelM15",{-0.26,0.018},1};
+									pos[] = {"LevelM15", {-0.26, -0.032}, 1};
+									right[] = {"LevelM15", {-0.2, -0.032}, 1};
+									down[] = {"LevelM15", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_15_R
 								{
@@ -3212,14 +3273,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM15",{0.26,-0.032},1};
-									right[] = {"LevelM15",{0.32,-0.032},1};
-									down[] = {"LevelM15",{0.26,0.018},1};
+									pos[] = {"LevelM15", {0.26, -0.032}, 1};
+									right[] = {"LevelM15", {0.32, -0.032}, 1};
+									down[] = {"LevelM15", {0.26, 0.018}, 1};
 								};
-								class LevelP15: Level0
+								class LevelP15 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP15",{"-0.22-0.015",0.02},1},{"LevelP15",{"-0.22-0.015",0},1},{"LevelP15",{-0.06,0},1},{},{"LevelP15",{0.06,0},1},{"LevelP15",{"+0.22+0.015",0},1},{"LevelP15",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP15", {"-0.22-0.015", 0.02}, 1}, {"LevelP15", {"-0.22-0.015", 0}, 1}, {"LevelP15", {-0.06, 0}, 1}, {}, {"LevelP15", {0.06, 0}, 1}, {"LevelP15", {"+0.22+0.015", 0}, 1}, {"LevelP15", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_15
 								{
@@ -3229,9 +3290,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP15",{-0.26,-0.017},1};
-									right[] = {"LevelP15",{-0.2,-0.017},1};
-									down[] = {"LevelP15",{-0.26,0.033},1};
+									pos[] = {"LevelP15", {-0.26, -0.017}, 1};
+									right[] = {"LevelP15", {-0.2, -0.017}, 1};
+									down[] = {"LevelP15", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_15_R
 								{
@@ -3241,14 +3302,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP15",{0.26,-0.017},1};
-									right[] = {"LevelP15",{0.32,-0.017},1};
-									down[] = {"LevelP15",{0.26,0.033},1};
+									pos[] = {"LevelP15", {0.26, -0.017}, 1};
+									right[] = {"LevelP15", {0.32, -0.017}, 1};
+									down[] = {"LevelP15", {0.26, 0.033}, 1};
 								};
-								class LevelM20: Level0
+								class LevelM20 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM20",{-0.235,-0.02},1},{"LevelM20",{-0.235,0},1},{},{"LevelM20",{-0.22,0},1},{"LevelM20",{-0.205,0},1},{},{"LevelM20",{-0.19,0},1},{"LevelM20",{-0.175,0},1},{},{"LevelM20",{-0.16,0},1},{"LevelM20",{-0.145,0},1},{},{"LevelM20",{-0.13,0},1},{"LevelM20",{-0.115,0},1},{},{"LevelM20",{-0.1,0},1},{"LevelM20",{-0.085,0},1},{},{"LevelM20",{-0.07,0},1},{"LevelM20",{-0.055,0},1},{},{},{"LevelM20",{0.235,-0.02},1},{"LevelM20",{0.235,0},1},{},{"LevelM20",{0.22,0},1},{"LevelM20",{0.205,0},1},{},{"LevelM20",{0.19,0},1},{"LevelM20",{0.175,0},1},{},{"LevelM20",{0.16,0},1},{"LevelM20",{0.145,0},1},{},{"LevelM20",{0.13,0},1},{"LevelM20",{0.115,0},1},{},{"LevelM20",{0.1,0},1},{"LevelM20",{0.085,0},1},{},{"LevelM20",{0.07,0},1},{"LevelM20",{0.055,0},1},{}};
+									points[] = {{"LevelM20", {-0.235, -0.02}, 1}, {"LevelM20", {-0.235, 0}, 1}, {}, {"LevelM20", {-0.22, 0}, 1}, {"LevelM20", {-0.205, 0}, 1}, {}, {"LevelM20", {-0.19, 0}, 1}, {"LevelM20", {-0.175, 0}, 1}, {}, {"LevelM20", {-0.16, 0}, 1}, {"LevelM20", {-0.145, 0}, 1}, {}, {"LevelM20", {-0.13, 0}, 1}, {"LevelM20", {-0.115, 0}, 1}, {}, {"LevelM20", {-0.1, 0}, 1}, {"LevelM20", {-0.085, 0}, 1}, {}, {"LevelM20", {-0.07, 0}, 1}, {"LevelM20", {-0.055, 0}, 1}, {}, {}, {"LevelM20", {0.235, -0.02}, 1}, {"LevelM20", {0.235, 0}, 1}, {}, {"LevelM20", {0.22, 0}, 1}, {"LevelM20", {0.205, 0}, 1}, {}, {"LevelM20", {0.19, 0}, 1}, {"LevelM20", {0.175, 0}, 1}, {}, {"LevelM20", {0.16, 0}, 1}, {"LevelM20", {0.145, 0}, 1}, {}, {"LevelM20", {0.13, 0}, 1}, {"LevelM20", {0.115, 0}, 1}, {}, {"LevelM20", {0.1, 0}, 1}, {"LevelM20", {0.085, 0}, 1}, {}, {"LevelM20", {0.07, 0}, 1}, {"LevelM20", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_20
 								{
@@ -3258,9 +3319,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM20",{-0.26,-0.032},1};
-									right[] = {"LevelM20",{-0.2,-0.032},1};
-									down[] = {"LevelM20",{-0.26,0.018},1};
+									pos[] = {"LevelM20", {-0.26, -0.032}, 1};
+									right[] = {"LevelM20", {-0.2, -0.032}, 1};
+									down[] = {"LevelM20", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_20_R
 								{
@@ -3270,14 +3331,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM20",{0.26,-0.032},1};
-									right[] = {"LevelM20",{0.32,-0.032},1};
-									down[] = {"LevelM20",{0.26,0.018},1};
+									pos[] = {"LevelM20", {0.26, -0.032}, 1};
+									right[] = {"LevelM20", {0.32, -0.032}, 1};
+									down[] = {"LevelM20", {0.26, 0.018}, 1};
 								};
-								class LevelP20: Level0
+								class LevelP20 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP20",{"-0.22-0.015",0.02},1},{"LevelP20",{"-0.22-0.015",0},1},{"LevelP20",{-0.06,0},1},{},{"LevelP20",{0.06,0},1},{"LevelP20",{"+0.22+0.015",0},1},{"LevelP20",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP20", {"-0.22-0.015", 0.02}, 1}, {"LevelP20", {"-0.22-0.015", 0}, 1}, {"LevelP20", {-0.06, 0}, 1}, {}, {"LevelP20", {0.06, 0}, 1}, {"LevelP20", {"+0.22+0.015", 0}, 1}, {"LevelP20", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_20
 								{
@@ -3287,9 +3348,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP20",{-0.26,-0.017},1};
-									right[] = {"LevelP20",{-0.2,-0.017},1};
-									down[] = {"LevelP20",{-0.26,0.033},1};
+									pos[] = {"LevelP20", {-0.26, -0.017}, 1};
+									right[] = {"LevelP20", {-0.2, -0.017}, 1};
+									down[] = {"LevelP20", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_20_R
 								{
@@ -3299,14 +3360,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP20",{0.26,-0.017},1};
-									right[] = {"LevelP20",{0.32,-0.017},1};
-									down[] = {"LevelP20",{0.26,0.033},1};
+									pos[] = {"LevelP20", {0.26, -0.017}, 1};
+									right[] = {"LevelP20", {0.32, -0.017}, 1};
+									down[] = {"LevelP20", {0.26, 0.033}, 1};
 								};
-								class LevelM25: Level0
+								class LevelM25 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM25",{-0.235,-0.02},1},{"LevelM25",{-0.235,0},1},{},{"LevelM25",{-0.22,0},1},{"LevelM25",{-0.205,0},1},{},{"LevelM25",{-0.19,0},1},{"LevelM25",{-0.175,0},1},{},{"LevelM25",{-0.16,0},1},{"LevelM25",{-0.145,0},1},{},{"LevelM25",{-0.13,0},1},{"LevelM25",{-0.115,0},1},{},{"LevelM25",{-0.1,0},1},{"LevelM25",{-0.085,0},1},{},{"LevelM25",{-0.07,0},1},{"LevelM25",{-0.055,0},1},{},{},{"LevelM25",{0.235,-0.02},1},{"LevelM25",{0.235,0},1},{},{"LevelM25",{0.22,0},1},{"LevelM25",{0.205,0},1},{},{"LevelM25",{0.19,0},1},{"LevelM25",{0.175,0},1},{},{"LevelM25",{0.16,0},1},{"LevelM25",{0.145,0},1},{},{"LevelM25",{0.13,0},1},{"LevelM25",{0.115,0},1},{},{"LevelM25",{0.1,0},1},{"LevelM25",{0.085,0},1},{},{"LevelM25",{0.07,0},1},{"LevelM25",{0.055,0},1},{}};
+									points[] = {{"LevelM25", {-0.235, -0.02}, 1}, {"LevelM25", {-0.235, 0}, 1}, {}, {"LevelM25", {-0.22, 0}, 1}, {"LevelM25", {-0.205, 0}, 1}, {}, {"LevelM25", {-0.19, 0}, 1}, {"LevelM25", {-0.175, 0}, 1}, {}, {"LevelM25", {-0.16, 0}, 1}, {"LevelM25", {-0.145, 0}, 1}, {}, {"LevelM25", {-0.13, 0}, 1}, {"LevelM25", {-0.115, 0}, 1}, {}, {"LevelM25", {-0.1, 0}, 1}, {"LevelM25", {-0.085, 0}, 1}, {}, {"LevelM25", {-0.07, 0}, 1}, {"LevelM25", {-0.055, 0}, 1}, {}, {}, {"LevelM25", {0.235, -0.02}, 1}, {"LevelM25", {0.235, 0}, 1}, {}, {"LevelM25", {0.22, 0}, 1}, {"LevelM25", {0.205, 0}, 1}, {}, {"LevelM25", {0.19, 0}, 1}, {"LevelM25", {0.175, 0}, 1}, {}, {"LevelM25", {0.16, 0}, 1}, {"LevelM25", {0.145, 0}, 1}, {}, {"LevelM25", {0.13, 0}, 1}, {"LevelM25", {0.115, 0}, 1}, {}, {"LevelM25", {0.1, 0}, 1}, {"LevelM25", {0.085, 0}, 1}, {}, {"LevelM25", {0.07, 0}, 1}, {"LevelM25", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_25
 								{
@@ -3316,9 +3377,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM25",{-0.26,-0.032},1};
-									right[] = {"LevelM25",{-0.2,-0.032},1};
-									down[] = {"LevelM25",{-0.26,0.018},1};
+									pos[] = {"LevelM25", {-0.26, -0.032}, 1};
+									right[] = {"LevelM25", {-0.2, -0.032}, 1};
+									down[] = {"LevelM25", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_25_R
 								{
@@ -3328,14 +3389,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM25",{0.26,-0.032},1};
-									right[] = {"LevelM25",{0.32,-0.032},1};
-									down[] = {"LevelM25",{0.26,0.018},1};
+									pos[] = {"LevelM25", {0.26, -0.032}, 1};
+									right[] = {"LevelM25", {0.32, -0.032}, 1};
+									down[] = {"LevelM25", {0.26, 0.018}, 1};
 								};
-								class LevelP25: Level0
+								class LevelP25 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP25",{"-0.22-0.015",0.02},1},{"LevelP25",{"-0.22-0.015",0},1},{"LevelP25",{-0.06,0},1},{},{"LevelP25",{0.06,0},1},{"LevelP25",{"+0.22+0.015",0},1},{"LevelP25",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP25", {"-0.22-0.015", 0.02}, 1}, {"LevelP25", {"-0.22-0.015", 0}, 1}, {"LevelP25", {-0.06, 0}, 1}, {}, {"LevelP25", {0.06, 0}, 1}, {"LevelP25", {"+0.22+0.015", 0}, 1}, {"LevelP25", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_25
 								{
@@ -3345,9 +3406,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP25",{-0.26,-0.017},1};
-									right[] = {"LevelP25",{-0.2,-0.017},1};
-									down[] = {"LevelP25",{-0.26,0.033},1};
+									pos[] = {"LevelP25", {-0.26, -0.017}, 1};
+									right[] = {"LevelP25", {-0.2, -0.017}, 1};
+									down[] = {"LevelP25", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_25_R
 								{
@@ -3357,14 +3418,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP25",{0.26,-0.017},1};
-									right[] = {"LevelP25",{0.32,-0.017},1};
-									down[] = {"LevelP25",{0.26,0.033},1};
+									pos[] = {"LevelP25", {0.26, -0.017}, 1};
+									right[] = {"LevelP25", {0.32, -0.017}, 1};
+									down[] = {"LevelP25", {0.26, 0.033}, 1};
 								};
-								class LevelM30: Level0
+								class LevelM30 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM30",{-0.235,-0.02},1},{"LevelM30",{-0.235,0},1},{},{"LevelM30",{-0.22,0},1},{"LevelM30",{-0.205,0},1},{},{"LevelM30",{-0.19,0},1},{"LevelM30",{-0.175,0},1},{},{"LevelM30",{-0.16,0},1},{"LevelM30",{-0.145,0},1},{},{"LevelM30",{-0.13,0},1},{"LevelM30",{-0.115,0},1},{},{"LevelM30",{-0.1,0},1},{"LevelM30",{-0.085,0},1},{},{"LevelM30",{-0.07,0},1},{"LevelM30",{-0.055,0},1},{},{},{"LevelM30",{0.235,-0.02},1},{"LevelM30",{0.235,0},1},{},{"LevelM30",{0.22,0},1},{"LevelM30",{0.205,0},1},{},{"LevelM30",{0.19,0},1},{"LevelM30",{0.175,0},1},{},{"LevelM30",{0.16,0},1},{"LevelM30",{0.145,0},1},{},{"LevelM30",{0.13,0},1},{"LevelM30",{0.115,0},1},{},{"LevelM30",{0.1,0},1},{"LevelM30",{0.085,0},1},{},{"LevelM30",{0.07,0},1},{"LevelM30",{0.055,0},1},{}};
+									points[] = {{"LevelM30", {-0.235, -0.02}, 1}, {"LevelM30", {-0.235, 0}, 1}, {}, {"LevelM30", {-0.22, 0}, 1}, {"LevelM30", {-0.205, 0}, 1}, {}, {"LevelM30", {-0.19, 0}, 1}, {"LevelM30", {-0.175, 0}, 1}, {}, {"LevelM30", {-0.16, 0}, 1}, {"LevelM30", {-0.145, 0}, 1}, {}, {"LevelM30", {-0.13, 0}, 1}, {"LevelM30", {-0.115, 0}, 1}, {}, {"LevelM30", {-0.1, 0}, 1}, {"LevelM30", {-0.085, 0}, 1}, {}, {"LevelM30", {-0.07, 0}, 1}, {"LevelM30", {-0.055, 0}, 1}, {}, {}, {"LevelM30", {0.235, -0.02}, 1}, {"LevelM30", {0.235, 0}, 1}, {}, {"LevelM30", {0.22, 0}, 1}, {"LevelM30", {0.205, 0}, 1}, {}, {"LevelM30", {0.19, 0}, 1}, {"LevelM30", {0.175, 0}, 1}, {}, {"LevelM30", {0.16, 0}, 1}, {"LevelM30", {0.145, 0}, 1}, {}, {"LevelM30", {0.13, 0}, 1}, {"LevelM30", {0.115, 0}, 1}, {}, {"LevelM30", {0.1, 0}, 1}, {"LevelM30", {0.085, 0}, 1}, {}, {"LevelM30", {0.07, 0}, 1}, {"LevelM30", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_30
 								{
@@ -3374,9 +3435,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM30",{-0.26,-0.032},1};
-									right[] = {"LevelM30",{-0.2,-0.032},1};
-									down[] = {"LevelM30",{-0.26,0.018},1};
+									pos[] = {"LevelM30", {-0.26, -0.032}, 1};
+									right[] = {"LevelM30", {-0.2, -0.032}, 1};
+									down[] = {"LevelM30", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_30_R
 								{
@@ -3386,14 +3447,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM30",{0.26,-0.032},1};
-									right[] = {"LevelM30",{0.32,-0.032},1};
-									down[] = {"LevelM30",{0.26,0.018},1};
+									pos[] = {"LevelM30", {0.26, -0.032}, 1};
+									right[] = {"LevelM30", {0.32, -0.032}, 1};
+									down[] = {"LevelM30", {0.26, 0.018}, 1};
 								};
-								class LevelP30: Level0
+								class LevelP30 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP30",{"-0.22-0.015",0.02},1},{"LevelP30",{"-0.22-0.015",0},1},{"LevelP30",{-0.06,0},1},{},{"LevelP30",{0.06,0},1},{"LevelP30",{"+0.22+0.015",0},1},{"LevelP30",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP30", {"-0.22-0.015", 0.02}, 1}, {"LevelP30", {"-0.22-0.015", 0}, 1}, {"LevelP30", {-0.06, 0}, 1}, {}, {"LevelP30", {0.06, 0}, 1}, {"LevelP30", {"+0.22+0.015", 0}, 1}, {"LevelP30", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_30
 								{
@@ -3403,9 +3464,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP30",{-0.26,-0.017},1};
-									right[] = {"LevelP30",{-0.2,-0.017},1};
-									down[] = {"LevelP30",{-0.26,0.033},1};
+									pos[] = {"LevelP30", {-0.26, -0.017}, 1};
+									right[] = {"LevelP30", {-0.2, -0.017}, 1};
+									down[] = {"LevelP30", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_30_R
 								{
@@ -3415,14 +3476,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP30",{0.26,-0.017},1};
-									right[] = {"LevelP30",{0.32,-0.017},1};
-									down[] = {"LevelP30",{0.26,0.033},1};
+									pos[] = {"LevelP30", {0.26, -0.017}, 1};
+									right[] = {"LevelP30", {0.32, -0.017}, 1};
+									down[] = {"LevelP30", {0.26, 0.033}, 1};
 								};
-								class LevelM35: Level0
+								class LevelM35 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM35",{-0.235,-0.02},1},{"LevelM35",{-0.235,0},1},{},{"LevelM35",{-0.22,0},1},{"LevelM35",{-0.205,0},1},{},{"LevelM35",{-0.19,0},1},{"LevelM35",{-0.175,0},1},{},{"LevelM35",{-0.16,0},1},{"LevelM35",{-0.145,0},1},{},{"LevelM35",{-0.13,0},1},{"LevelM35",{-0.115,0},1},{},{"LevelM35",{-0.1,0},1},{"LevelM35",{-0.085,0},1},{},{"LevelM35",{-0.07,0},1},{"LevelM35",{-0.055,0},1},{},{},{"LevelM35",{0.235,-0.02},1},{"LevelM35",{0.235,0},1},{},{"LevelM35",{0.22,0},1},{"LevelM35",{0.205,0},1},{},{"LevelM35",{0.19,0},1},{"LevelM35",{0.175,0},1},{},{"LevelM35",{0.16,0},1},{"LevelM35",{0.145,0},1},{},{"LevelM35",{0.13,0},1},{"LevelM35",{0.115,0},1},{},{"LevelM35",{0.1,0},1},{"LevelM35",{0.085,0},1},{},{"LevelM35",{0.07,0},1},{"LevelM35",{0.055,0},1},{}};
+									points[] = {{"LevelM35", {-0.235, -0.02}, 1}, {"LevelM35", {-0.235, 0}, 1}, {}, {"LevelM35", {-0.22, 0}, 1}, {"LevelM35", {-0.205, 0}, 1}, {}, {"LevelM35", {-0.19, 0}, 1}, {"LevelM35", {-0.175, 0}, 1}, {}, {"LevelM35", {-0.16, 0}, 1}, {"LevelM35", {-0.145, 0}, 1}, {}, {"LevelM35", {-0.13, 0}, 1}, {"LevelM35", {-0.115, 0}, 1}, {}, {"LevelM35", {-0.1, 0}, 1}, {"LevelM35", {-0.085, 0}, 1}, {}, {"LevelM35", {-0.07, 0}, 1}, {"LevelM35", {-0.055, 0}, 1}, {}, {}, {"LevelM35", {0.235, -0.02}, 1}, {"LevelM35", {0.235, 0}, 1}, {}, {"LevelM35", {0.22, 0}, 1}, {"LevelM35", {0.205, 0}, 1}, {}, {"LevelM35", {0.19, 0}, 1}, {"LevelM35", {0.175, 0}, 1}, {}, {"LevelM35", {0.16, 0}, 1}, {"LevelM35", {0.145, 0}, 1}, {}, {"LevelM35", {0.13, 0}, 1}, {"LevelM35", {0.115, 0}, 1}, {}, {"LevelM35", {0.1, 0}, 1}, {"LevelM35", {0.085, 0}, 1}, {}, {"LevelM35", {0.07, 0}, 1}, {"LevelM35", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_35
 								{
@@ -3432,9 +3493,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM35",{-0.26,-0.032},1};
-									right[] = {"LevelM35",{-0.2,-0.032},1};
-									down[] = {"LevelM35",{-0.26,0.018},1};
+									pos[] = {"LevelM35", {-0.26, -0.032}, 1};
+									right[] = {"LevelM35", {-0.2, -0.032}, 1};
+									down[] = {"LevelM35", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_35_R
 								{
@@ -3444,14 +3505,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM35",{0.26,-0.032},1};
-									right[] = {"LevelM35",{0.32,-0.032},1};
-									down[] = {"LevelM35",{0.26,0.018},1};
+									pos[] = {"LevelM35", {0.26, -0.032}, 1};
+									right[] = {"LevelM35", {0.32, -0.032}, 1};
+									down[] = {"LevelM35", {0.26, 0.018}, 1};
 								};
-								class LevelP35: Level0
+								class LevelP35 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP35",{"-0.22-0.015",0.02},1},{"LevelP35",{"-0.22-0.015",0},1},{"LevelP35",{-0.06,0},1},{},{"LevelP35",{0.06,0},1},{"LevelP35",{"+0.22+0.015",0},1},{"LevelP35",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP35", {"-0.22-0.015", 0.02}, 1}, {"LevelP35", {"-0.22-0.015", 0}, 1}, {"LevelP35", {-0.06, 0}, 1}, {}, {"LevelP35", {0.06, 0}, 1}, {"LevelP35", {"+0.22+0.015", 0}, 1}, {"LevelP35", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_35
 								{
@@ -3461,9 +3522,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP35",{-0.26,-0.017},1};
-									right[] = {"LevelP35",{-0.2,-0.017},1};
-									down[] = {"LevelP35",{-0.26,0.033},1};
+									pos[] = {"LevelP35", {-0.26, -0.017}, 1};
+									right[] = {"LevelP35", {-0.2, -0.017}, 1};
+									down[] = {"LevelP35", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_35_R
 								{
@@ -3473,14 +3534,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP35",{0.26,-0.017},1};
-									right[] = {"LevelP35",{0.32,-0.017},1};
-									down[] = {"LevelP35",{0.26,0.033},1};
+									pos[] = {"LevelP35", {0.26, -0.017}, 1};
+									right[] = {"LevelP35", {0.32, -0.017}, 1};
+									down[] = {"LevelP35", {0.26, 0.033}, 1};
 								};
-								class LevelM40: Level0
+								class LevelM40 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM40",{-0.235,-0.02},1},{"LevelM40",{-0.235,0},1},{},{"LevelM40",{-0.22,0},1},{"LevelM40",{-0.205,0},1},{},{"LevelM40",{-0.19,0},1},{"LevelM40",{-0.175,0},1},{},{"LevelM40",{-0.16,0},1},{"LevelM40",{-0.145,0},1},{},{"LevelM40",{-0.13,0},1},{"LevelM40",{-0.115,0},1},{},{"LevelM40",{-0.1,0},1},{"LevelM40",{-0.085,0},1},{},{"LevelM40",{-0.07,0},1},{"LevelM40",{-0.055,0},1},{},{},{"LevelM40",{0.235,-0.02},1},{"LevelM40",{0.235,0},1},{},{"LevelM40",{0.22,0},1},{"LevelM40",{0.205,0},1},{},{"LevelM40",{0.19,0},1},{"LevelM40",{0.175,0},1},{},{"LevelM40",{0.16,0},1},{"LevelM40",{0.145,0},1},{},{"LevelM40",{0.13,0},1},{"LevelM40",{0.115,0},1},{},{"LevelM40",{0.1,0},1},{"LevelM40",{0.085,0},1},{},{"LevelM40",{0.07,0},1},{"LevelM40",{0.055,0},1},{}};
+									points[] = {{"LevelM40", {-0.235, -0.02}, 1}, {"LevelM40", {-0.235, 0}, 1}, {}, {"LevelM40", {-0.22, 0}, 1}, {"LevelM40", {-0.205, 0}, 1}, {}, {"LevelM40", {-0.19, 0}, 1}, {"LevelM40", {-0.175, 0}, 1}, {}, {"LevelM40", {-0.16, 0}, 1}, {"LevelM40", {-0.145, 0}, 1}, {}, {"LevelM40", {-0.13, 0}, 1}, {"LevelM40", {-0.115, 0}, 1}, {}, {"LevelM40", {-0.1, 0}, 1}, {"LevelM40", {-0.085, 0}, 1}, {}, {"LevelM40", {-0.07, 0}, 1}, {"LevelM40", {-0.055, 0}, 1}, {}, {}, {"LevelM40", {0.235, -0.02}, 1}, {"LevelM40", {0.235, 0}, 1}, {}, {"LevelM40", {0.22, 0}, 1}, {"LevelM40", {0.205, 0}, 1}, {}, {"LevelM40", {0.19, 0}, 1}, {"LevelM40", {0.175, 0}, 1}, {}, {"LevelM40", {0.16, 0}, 1}, {"LevelM40", {0.145, 0}, 1}, {}, {"LevelM40", {0.13, 0}, 1}, {"LevelM40", {0.115, 0}, 1}, {}, {"LevelM40", {0.1, 0}, 1}, {"LevelM40", {0.085, 0}, 1}, {}, {"LevelM40", {0.07, 0}, 1}, {"LevelM40", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_40
 								{
@@ -3490,9 +3551,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM40",{-0.26,-0.032},1};
-									right[] = {"LevelM40",{-0.2,-0.032},1};
-									down[] = {"LevelM40",{-0.26,0.018},1};
+									pos[] = {"LevelM40", {-0.26, -0.032}, 1};
+									right[] = {"LevelM40", {-0.2, -0.032}, 1};
+									down[] = {"LevelM40", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_40_R
 								{
@@ -3502,14 +3563,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM40",{0.26,-0.032},1};
-									right[] = {"LevelM40",{0.32,-0.032},1};
-									down[] = {"LevelM40",{0.26,0.018},1};
+									pos[] = {"LevelM40", {0.26, -0.032}, 1};
+									right[] = {"LevelM40", {0.32, -0.032}, 1};
+									down[] = {"LevelM40", {0.26, 0.018}, 1};
 								};
-								class LevelP40: Level0
+								class LevelP40 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP40",{"-0.22-0.015",0.02},1},{"LevelP40",{"-0.22-0.015",0},1},{"LevelP40",{-0.06,0},1},{},{"LevelP40",{0.06,0},1},{"LevelP40",{"+0.22+0.015",0},1},{"LevelP40",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP40", {"-0.22-0.015", 0.02}, 1}, {"LevelP40", {"-0.22-0.015", 0}, 1}, {"LevelP40", {-0.06, 0}, 1}, {}, {"LevelP40", {0.06, 0}, 1}, {"LevelP40", {"+0.22+0.015", 0}, 1}, {"LevelP40", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_40
 								{
@@ -3519,9 +3580,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP40",{-0.26,-0.017},1};
-									right[] = {"LevelP40",{-0.2,-0.017},1};
-									down[] = {"LevelP40",{-0.26,0.033},1};
+									pos[] = {"LevelP40", {-0.26, -0.017}, 1};
+									right[] = {"LevelP40", {-0.2, -0.017}, 1};
+									down[] = {"LevelP40", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_40_R
 								{
@@ -3531,14 +3592,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP40",{0.26,-0.017},1};
-									right[] = {"LevelP40",{0.32,-0.017},1};
-									down[] = {"LevelP40",{0.26,0.033},1};
+									pos[] = {"LevelP40", {0.26, -0.017}, 1};
+									right[] = {"LevelP40", {0.32, -0.017}, 1};
+									down[] = {"LevelP40", {0.26, 0.033}, 1};
 								};
-								class LevelM45: Level0
+								class LevelM45 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM45",{-0.235,-0.02},1},{"LevelM45",{-0.235,0},1},{},{"LevelM45",{-0.22,0},1},{"LevelM45",{-0.205,0},1},{},{"LevelM45",{-0.19,0},1},{"LevelM45",{-0.175,0},1},{},{"LevelM45",{-0.16,0},1},{"LevelM45",{-0.145,0},1},{},{"LevelM45",{-0.13,0},1},{"LevelM45",{-0.115,0},1},{},{"LevelM45",{-0.1,0},1},{"LevelM45",{-0.085,0},1},{},{"LevelM45",{-0.07,0},1},{"LevelM45",{-0.055,0},1},{},{},{"LevelM45",{0.235,-0.02},1},{"LevelM45",{0.235,0},1},{},{"LevelM45",{0.22,0},1},{"LevelM45",{0.205,0},1},{},{"LevelM45",{0.19,0},1},{"LevelM45",{0.175,0},1},{},{"LevelM45",{0.16,0},1},{"LevelM45",{0.145,0},1},{},{"LevelM45",{0.13,0},1},{"LevelM45",{0.115,0},1},{},{"LevelM45",{0.1,0},1},{"LevelM45",{0.085,0},1},{},{"LevelM45",{0.07,0},1},{"LevelM45",{0.055,0},1},{}};
+									points[] = {{"LevelM45", {-0.235, -0.02}, 1}, {"LevelM45", {-0.235, 0}, 1}, {}, {"LevelM45", {-0.22, 0}, 1}, {"LevelM45", {-0.205, 0}, 1}, {}, {"LevelM45", {-0.19, 0}, 1}, {"LevelM45", {-0.175, 0}, 1}, {}, {"LevelM45", {-0.16, 0}, 1}, {"LevelM45", {-0.145, 0}, 1}, {}, {"LevelM45", {-0.13, 0}, 1}, {"LevelM45", {-0.115, 0}, 1}, {}, {"LevelM45", {-0.1, 0}, 1}, {"LevelM45", {-0.085, 0}, 1}, {}, {"LevelM45", {-0.07, 0}, 1}, {"LevelM45", {-0.055, 0}, 1}, {}, {}, {"LevelM45", {0.235, -0.02}, 1}, {"LevelM45", {0.235, 0}, 1}, {}, {"LevelM45", {0.22, 0}, 1}, {"LevelM45", {0.205, 0}, 1}, {}, {"LevelM45", {0.19, 0}, 1}, {"LevelM45", {0.175, 0}, 1}, {}, {"LevelM45", {0.16, 0}, 1}, {"LevelM45", {0.145, 0}, 1}, {}, {"LevelM45", {0.13, 0}, 1}, {"LevelM45", {0.115, 0}, 1}, {}, {"LevelM45", {0.1, 0}, 1}, {"LevelM45", {0.085, 0}, 1}, {}, {"LevelM45", {0.07, 0}, 1}, {"LevelM45", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_45
 								{
@@ -3548,9 +3609,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM45",{-0.26,-0.032},1};
-									right[] = {"LevelM45",{-0.2,-0.032},1};
-									down[] = {"LevelM45",{-0.26,0.018},1};
+									pos[] = {"LevelM45", {-0.26, -0.032}, 1};
+									right[] = {"LevelM45", {-0.2, -0.032}, 1};
+									down[] = {"LevelM45", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_45_R
 								{
@@ -3560,14 +3621,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM45",{0.26,-0.032},1};
-									right[] = {"LevelM45",{0.32,-0.032},1};
-									down[] = {"LevelM45",{0.26,0.018},1};
+									pos[] = {"LevelM45", {0.26, -0.032}, 1};
+									right[] = {"LevelM45", {0.32, -0.032}, 1};
+									down[] = {"LevelM45", {0.26, 0.018}, 1};
 								};
-								class LevelP45: Level0
+								class LevelP45 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP45",{"-0.22-0.015",0.02},1},{"LevelP45",{"-0.22-0.015",0},1},{"LevelP45",{-0.06,0},1},{},{"LevelP45",{0.06,0},1},{"LevelP45",{"+0.22+0.015",0},1},{"LevelP45",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP45", {"-0.22-0.015", 0.02}, 1}, {"LevelP45", {"-0.22-0.015", 0}, 1}, {"LevelP45", {-0.06, 0}, 1}, {}, {"LevelP45", {0.06, 0}, 1}, {"LevelP45", {"+0.22+0.015", 0}, 1}, {"LevelP45", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_45
 								{
@@ -3577,9 +3638,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP45",{-0.26,-0.017},1};
-									right[] = {"LevelP45",{-0.2,-0.017},1};
-									down[] = {"LevelP45",{-0.26,0.033},1};
+									pos[] = {"LevelP45", {-0.26, -0.017}, 1};
+									right[] = {"LevelP45", {-0.2, -0.017}, 1};
+									down[] = {"LevelP45", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_45_R
 								{
@@ -3589,14 +3650,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP45",{0.26,-0.017},1};
-									right[] = {"LevelP45",{0.32,-0.017},1};
-									down[] = {"LevelP45",{0.26,0.033},1};
+									pos[] = {"LevelP45", {0.26, -0.017}, 1};
+									right[] = {"LevelP45", {0.32, -0.017}, 1};
+									down[] = {"LevelP45", {0.26, 0.033}, 1};
 								};
-								class LevelM50: Level0
+								class LevelM50 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM50",{-0.235,-0.02},1},{"LevelM50",{-0.235,0},1},{},{"LevelM50",{-0.22,0},1},{"LevelM50",{-0.205,0},1},{},{"LevelM50",{-0.19,0},1},{"LevelM50",{-0.175,0},1},{},{"LevelM50",{-0.16,0},1},{"LevelM50",{-0.145,0},1},{},{"LevelM50",{-0.13,0},1},{"LevelM50",{-0.115,0},1},{},{"LevelM50",{-0.1,0},1},{"LevelM50",{-0.085,0},1},{},{"LevelM50",{-0.07,0},1},{"LevelM50",{-0.055,0},1},{},{},{"LevelM50",{0.235,-0.02},1},{"LevelM50",{0.235,0},1},{},{"LevelM50",{0.22,0},1},{"LevelM50",{0.205,0},1},{},{"LevelM50",{0.19,0},1},{"LevelM50",{0.175,0},1},{},{"LevelM50",{0.16,0},1},{"LevelM50",{0.145,0},1},{},{"LevelM50",{0.13,0},1},{"LevelM50",{0.115,0},1},{},{"LevelM50",{0.1,0},1},{"LevelM50",{0.085,0},1},{},{"LevelM50",{0.07,0},1},{"LevelM50",{0.055,0},1},{}};
+									points[] = {{"LevelM50", {-0.235, -0.02}, 1}, {"LevelM50", {-0.235, 0}, 1}, {}, {"LevelM50", {-0.22, 0}, 1}, {"LevelM50", {-0.205, 0}, 1}, {}, {"LevelM50", {-0.19, 0}, 1}, {"LevelM50", {-0.175, 0}, 1}, {}, {"LevelM50", {-0.16, 0}, 1}, {"LevelM50", {-0.145, 0}, 1}, {}, {"LevelM50", {-0.13, 0}, 1}, {"LevelM50", {-0.115, 0}, 1}, {}, {"LevelM50", {-0.1, 0}, 1}, {"LevelM50", {-0.085, 0}, 1}, {}, {"LevelM50", {-0.07, 0}, 1}, {"LevelM50", {-0.055, 0}, 1}, {}, {}, {"LevelM50", {0.235, -0.02}, 1}, {"LevelM50", {0.235, 0}, 1}, {}, {"LevelM50", {0.22, 0}, 1}, {"LevelM50", {0.205, 0}, 1}, {}, {"LevelM50", {0.19, 0}, 1}, {"LevelM50", {0.175, 0}, 1}, {}, {"LevelM50", {0.16, 0}, 1}, {"LevelM50", {0.145, 0}, 1}, {}, {"LevelM50", {0.13, 0}, 1}, {"LevelM50", {0.115, 0}, 1}, {}, {"LevelM50", {0.1, 0}, 1}, {"LevelM50", {0.085, 0}, 1}, {}, {"LevelM50", {0.07, 0}, 1}, {"LevelM50", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_50
 								{
@@ -3606,9 +3667,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM50",{-0.26,-0.032},1};
-									right[] = {"LevelM50",{-0.2,-0.032},1};
-									down[] = {"LevelM50",{-0.26,0.018},1};
+									pos[] = {"LevelM50", {-0.26, -0.032}, 1};
+									right[] = {"LevelM50", {-0.2, -0.032}, 1};
+									down[] = {"LevelM50", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_50_R
 								{
@@ -3618,14 +3679,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM50",{0.26,-0.032},1};
-									right[] = {"LevelM50",{0.32,-0.032},1};
-									down[] = {"LevelM50",{0.26,0.018},1};
+									pos[] = {"LevelM50", {0.26, -0.032}, 1};
+									right[] = {"LevelM50", {0.32, -0.032}, 1};
+									down[] = {"LevelM50", {0.26, 0.018}, 1};
 								};
-								class LevelP50: Level0
+								class LevelP50 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP50",{"-0.22-0.015",0.02},1},{"LevelP50",{"-0.22-0.015",0},1},{"LevelP50",{-0.06,0},1},{},{"LevelP50",{0.06,0},1},{"LevelP50",{"+0.22+0.015",0},1},{"LevelP50",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP50", {"-0.22-0.015", 0.02}, 1}, {"LevelP50", {"-0.22-0.015", 0}, 1}, {"LevelP50", {-0.06, 0}, 1}, {}, {"LevelP50", {0.06, 0}, 1}, {"LevelP50", {"+0.22+0.015", 0}, 1}, {"LevelP50", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_50
 								{
@@ -3635,9 +3696,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP50",{-0.26,-0.017},1};
-									right[] = {"LevelP50",{-0.2,-0.017},1};
-									down[] = {"LevelP50",{-0.26,0.033},1};
+									pos[] = {"LevelP50", {-0.26, -0.017}, 1};
+									right[] = {"LevelP50", {-0.2, -0.017}, 1};
+									down[] = {"LevelP50", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_50_R
 								{
@@ -3647,14 +3708,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP50",{0.26,-0.017},1};
-									right[] = {"LevelP50",{0.32,-0.017},1};
-									down[] = {"LevelP50",{0.26,0.033},1};
+									pos[] = {"LevelP50", {0.26, -0.017}, 1};
+									right[] = {"LevelP50", {0.32, -0.017}, 1};
+									down[] = {"LevelP50", {0.26, 0.033}, 1};
 								};
-								class LevelM60: Level0
+								class LevelM60 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM60",{-0.235,-0.02},1},{"LevelM60",{-0.235,0},1},{},{"LevelM60",{-0.22,0},1},{"LevelM60",{-0.205,0},1},{},{"LevelM60",{-0.19,0},1},{"LevelM60",{-0.175,0},1},{},{"LevelM60",{-0.16,0},1},{"LevelM60",{-0.145,0},1},{},{"LevelM60",{-0.13,0},1},{"LevelM60",{-0.115,0},1},{},{"LevelM60",{-0.1,0},1},{"LevelM60",{-0.085,0},1},{},{"LevelM60",{-0.07,0},1},{"LevelM60",{-0.055,0},1},{},{},{"LevelM60",{0.235,-0.02},1},{"LevelM60",{0.235,0},1},{},{"LevelM60",{0.22,0},1},{"LevelM60",{0.205,0},1},{},{"LevelM60",{0.19,0},1},{"LevelM60",{0.175,0},1},{},{"LevelM60",{0.16,0},1},{"LevelM60",{0.145,0},1},{},{"LevelM60",{0.13,0},1},{"LevelM60",{0.115,0},1},{},{"LevelM60",{0.1,0},1},{"LevelM60",{0.085,0},1},{},{"LevelM60",{0.07,0},1},{"LevelM60",{0.055,0},1},{}};
+									points[] = {{"LevelM60", {-0.235, -0.02}, 1}, {"LevelM60", {-0.235, 0}, 1}, {}, {"LevelM60", {-0.22, 0}, 1}, {"LevelM60", {-0.205, 0}, 1}, {}, {"LevelM60", {-0.19, 0}, 1}, {"LevelM60", {-0.175, 0}, 1}, {}, {"LevelM60", {-0.16, 0}, 1}, {"LevelM60", {-0.145, 0}, 1}, {}, {"LevelM60", {-0.13, 0}, 1}, {"LevelM60", {-0.115, 0}, 1}, {}, {"LevelM60", {-0.1, 0}, 1}, {"LevelM60", {-0.085, 0}, 1}, {}, {"LevelM60", {-0.07, 0}, 1}, {"LevelM60", {-0.055, 0}, 1}, {}, {}, {"LevelM60", {0.235, -0.02}, 1}, {"LevelM60", {0.235, 0}, 1}, {}, {"LevelM60", {0.22, 0}, 1}, {"LevelM60", {0.205, 0}, 1}, {}, {"LevelM60", {0.19, 0}, 1}, {"LevelM60", {0.175, 0}, 1}, {}, {"LevelM60", {0.16, 0}, 1}, {"LevelM60", {0.145, 0}, 1}, {}, {"LevelM60", {0.13, 0}, 1}, {"LevelM60", {0.115, 0}, 1}, {}, {"LevelM60", {0.1, 0}, 1}, {"LevelM60", {0.085, 0}, 1}, {}, {"LevelM60", {0.07, 0}, 1}, {"LevelM60", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_60
 								{
@@ -3664,9 +3725,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM60",{-0.26,-0.032},1};
-									right[] = {"LevelM60",{-0.2,-0.032},1};
-									down[] = {"LevelM60",{-0.26,0.018},1};
+									pos[] = {"LevelM60", {-0.26, -0.032}, 1};
+									right[] = {"LevelM60", {-0.2, -0.032}, 1};
+									down[] = {"LevelM60", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_60_R
 								{
@@ -3676,14 +3737,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM60",{0.26,-0.032},1};
-									right[] = {"LevelM60",{0.32,-0.032},1};
-									down[] = {"LevelM60",{0.26,0.018},1};
+									pos[] = {"LevelM60", {0.26, -0.032}, 1};
+									right[] = {"LevelM60", {0.32, -0.032}, 1};
+									down[] = {"LevelM60", {0.26, 0.018}, 1};
 								};
-								class LevelP60: Level0
+								class LevelP60 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP60",{"-0.22-0.015",0.02},1},{"LevelP60",{"-0.22-0.015",0},1},{"LevelP60",{-0.06,0},1},{},{"LevelP60",{0.06,0},1},{"LevelP60",{"+0.22+0.015",0},1},{"LevelP60",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP60", {"-0.22-0.015", 0.02}, 1}, {"LevelP60", {"-0.22-0.015", 0}, 1}, {"LevelP60", {-0.06, 0}, 1}, {}, {"LevelP60", {0.06, 0}, 1}, {"LevelP60", {"+0.22+0.015", 0}, 1}, {"LevelP60", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_60
 								{
@@ -3693,9 +3754,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP60",{-0.26,-0.017},1};
-									right[] = {"LevelP60",{-0.2,-0.017},1};
-									down[] = {"LevelP60",{-0.26,0.033},1};
+									pos[] = {"LevelP60", {-0.26, -0.017}, 1};
+									right[] = {"LevelP60", {-0.2, -0.017}, 1};
+									down[] = {"LevelP60", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_60_R
 								{
@@ -3705,14 +3766,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP60",{0.26,-0.017},1};
-									right[] = {"LevelP60",{0.32,-0.017},1};
-									down[] = {"LevelP60",{0.26,0.033},1};
+									pos[] = {"LevelP60", {0.26, -0.017}, 1};
+									right[] = {"LevelP60", {0.32, -0.017}, 1};
+									down[] = {"LevelP60", {0.26, 0.033}, 1};
 								};
-								class LevelM70: Level0
+								class LevelM70 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM70",{-0.235,-0.02},1},{"LevelM70",{-0.235,0},1},{},{"LevelM70",{-0.22,0},1},{"LevelM70",{-0.205,0},1},{},{"LevelM70",{-0.19,0},1},{"LevelM70",{-0.175,0},1},{},{"LevelM70",{-0.16,0},1},{"LevelM70",{-0.145,0},1},{},{"LevelM70",{-0.13,0},1},{"LevelM70",{-0.115,0},1},{},{"LevelM70",{-0.1,0},1},{"LevelM70",{-0.085,0},1},{},{"LevelM70",{-0.07,0},1},{"LevelM70",{-0.055,0},1},{},{},{"LevelM70",{0.235,-0.02},1},{"LevelM70",{0.235,0},1},{},{"LevelM70",{0.22,0},1},{"LevelM70",{0.205,0},1},{},{"LevelM70",{0.19,0},1},{"LevelM70",{0.175,0},1},{},{"LevelM70",{0.16,0},1},{"LevelM70",{0.145,0},1},{},{"LevelM70",{0.13,0},1},{"LevelM70",{0.115,0},1},{},{"LevelM70",{0.1,0},1},{"LevelM70",{0.085,0},1},{},{"LevelM70",{0.07,0},1},{"LevelM70",{0.055,0},1},{}};
+									points[] = {{"LevelM70", {-0.235, -0.02}, 1}, {"LevelM70", {-0.235, 0}, 1}, {}, {"LevelM70", {-0.22, 0}, 1}, {"LevelM70", {-0.205, 0}, 1}, {}, {"LevelM70", {-0.19, 0}, 1}, {"LevelM70", {-0.175, 0}, 1}, {}, {"LevelM70", {-0.16, 0}, 1}, {"LevelM70", {-0.145, 0}, 1}, {}, {"LevelM70", {-0.13, 0}, 1}, {"LevelM70", {-0.115, 0}, 1}, {}, {"LevelM70", {-0.1, 0}, 1}, {"LevelM70", {-0.085, 0}, 1}, {}, {"LevelM70", {-0.07, 0}, 1}, {"LevelM70", {-0.055, 0}, 1}, {}, {}, {"LevelM70", {0.235, -0.02}, 1}, {"LevelM70", {0.235, 0}, 1}, {}, {"LevelM70", {0.22, 0}, 1}, {"LevelM70", {0.205, 0}, 1}, {}, {"LevelM70", {0.19, 0}, 1}, {"LevelM70", {0.175, 0}, 1}, {}, {"LevelM70", {0.16, 0}, 1}, {"LevelM70", {0.145, 0}, 1}, {}, {"LevelM70", {0.13, 0}, 1}, {"LevelM70", {0.115, 0}, 1}, {}, {"LevelM70", {0.1, 0}, 1}, {"LevelM70", {0.085, 0}, 1}, {}, {"LevelM70", {0.07, 0}, 1}, {"LevelM70", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_70
 								{
@@ -3722,9 +3783,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM70",{-0.26,-0.032},1};
-									right[] = {"LevelM70",{-0.2,-0.032},1};
-									down[] = {"LevelM70",{-0.26,0.018},1};
+									pos[] = {"LevelM70", {-0.26, -0.032}, 1};
+									right[] = {"LevelM70", {-0.2, -0.032}, 1};
+									down[] = {"LevelM70", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_70_R
 								{
@@ -3734,14 +3795,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM70",{0.26,-0.032},1};
-									right[] = {"LevelM70",{0.32,-0.032},1};
-									down[] = {"LevelM70",{0.26,0.018},1};
+									pos[] = {"LevelM70", {0.26, -0.032}, 1};
+									right[] = {"LevelM70", {0.32, -0.032}, 1};
+									down[] = {"LevelM70", {0.26, 0.018}, 1};
 								};
-								class LevelP70: Level0
+								class LevelP70 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP70",{"-0.22-0.015",0.02},1},{"LevelP70",{"-0.22-0.015",0},1},{"LevelP70",{-0.06,0},1},{},{"LevelP70",{0.06,0},1},{"LevelP70",{"+0.22+0.015",0},1},{"LevelP70",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP70", {"-0.22-0.015", 0.02}, 1}, {"LevelP70", {"-0.22-0.015", 0}, 1}, {"LevelP70", {-0.06, 0}, 1}, {}, {"LevelP70", {0.06, 0}, 1}, {"LevelP70", {"+0.22+0.015", 0}, 1}, {"LevelP70", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_70
 								{
@@ -3751,9 +3812,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP70",{-0.26,-0.017},1};
-									right[] = {"LevelP70",{-0.2,-0.017},1};
-									down[] = {"LevelP70",{-0.26,0.033},1};
+									pos[] = {"LevelP70", {-0.26, -0.017}, 1};
+									right[] = {"LevelP70", {-0.2, -0.017}, 1};
+									down[] = {"LevelP70", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_70_R
 								{
@@ -3763,14 +3824,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP70",{0.26,-0.017},1};
-									right[] = {"LevelP70",{0.32,-0.017},1};
-									down[] = {"LevelP70",{0.26,0.033},1};
+									pos[] = {"LevelP70", {0.26, -0.017}, 1};
+									right[] = {"LevelP70", {0.32, -0.017}, 1};
+									down[] = {"LevelP70", {0.26, 0.033}, 1};
 								};
-								class LevelM80: Level0
+								class LevelM80 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM80",{-0.235,-0.02},1},{"LevelM80",{-0.235,0},1},{},{"LevelM80",{-0.22,0},1},{"LevelM80",{-0.205,0},1},{},{"LevelM80",{-0.19,0},1},{"LevelM80",{-0.175,0},1},{},{"LevelM80",{-0.16,0},1},{"LevelM80",{-0.145,0},1},{},{"LevelM80",{-0.13,0},1},{"LevelM80",{-0.115,0},1},{},{"LevelM80",{-0.1,0},1},{"LevelM80",{-0.085,0},1},{},{"LevelM80",{-0.07,0},1},{"LevelM80",{-0.055,0},1},{},{},{"LevelM80",{0.235,-0.02},1},{"LevelM80",{0.235,0},1},{},{"LevelM80",{0.22,0},1},{"LevelM80",{0.205,0},1},{},{"LevelM80",{0.19,0},1},{"LevelM80",{0.175,0},1},{},{"LevelM80",{0.16,0},1},{"LevelM80",{0.145,0},1},{},{"LevelM80",{0.13,0},1},{"LevelM80",{0.115,0},1},{},{"LevelM80",{0.1,0},1},{"LevelM80",{0.085,0},1},{},{"LevelM80",{0.07,0},1},{"LevelM80",{0.055,0},1},{}};
+									points[] = {{"LevelM80", {-0.235, -0.02}, 1}, {"LevelM80", {-0.235, 0}, 1}, {}, {"LevelM80", {-0.22, 0}, 1}, {"LevelM80", {-0.205, 0}, 1}, {}, {"LevelM80", {-0.19, 0}, 1}, {"LevelM80", {-0.175, 0}, 1}, {}, {"LevelM80", {-0.16, 0}, 1}, {"LevelM80", {-0.145, 0}, 1}, {}, {"LevelM80", {-0.13, 0}, 1}, {"LevelM80", {-0.115, 0}, 1}, {}, {"LevelM80", {-0.1, 0}, 1}, {"LevelM80", {-0.085, 0}, 1}, {}, {"LevelM80", {-0.07, 0}, 1}, {"LevelM80", {-0.055, 0}, 1}, {}, {}, {"LevelM80", {0.235, -0.02}, 1}, {"LevelM80", {0.235, 0}, 1}, {}, {"LevelM80", {0.22, 0}, 1}, {"LevelM80", {0.205, 0}, 1}, {}, {"LevelM80", {0.19, 0}, 1}, {"LevelM80", {0.175, 0}, 1}, {}, {"LevelM80", {0.16, 0}, 1}, {"LevelM80", {0.145, 0}, 1}, {}, {"LevelM80", {0.13, 0}, 1}, {"LevelM80", {0.115, 0}, 1}, {}, {"LevelM80", {0.1, 0}, 1}, {"LevelM80", {0.085, 0}, 1}, {}, {"LevelM80", {0.07, 0}, 1}, {"LevelM80", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_80
 								{
@@ -3780,9 +3841,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM80",{-0.26,-0.032},1};
-									right[] = {"LevelM80",{-0.2,-0.032},1};
-									down[] = {"LevelM80",{-0.26,0.018},1};
+									pos[] = {"LevelM80", {-0.26, -0.032}, 1};
+									right[] = {"LevelM80", {-0.2, -0.032}, 1};
+									down[] = {"LevelM80", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_80_R
 								{
@@ -3792,14 +3853,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM80",{0.26,-0.032},1};
-									right[] = {"LevelM80",{0.32,-0.032},1};
-									down[] = {"LevelM80",{0.26,0.018},1};
+									pos[] = {"LevelM80", {0.26, -0.032}, 1};
+									right[] = {"LevelM80", {0.32, -0.032}, 1};
+									down[] = {"LevelM80", {0.26, 0.018}, 1};
 								};
-								class LevelP80: Level0
+								class LevelP80 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP80",{"-0.22-0.015",0.02},1},{"LevelP80",{"-0.22-0.015",0},1},{"LevelP80",{-0.06,0},1},{},{"LevelP80",{0.06,0},1},{"LevelP80",{"+0.22+0.015",0},1},{"LevelP80",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP80", {"-0.22-0.015", 0.02}, 1}, {"LevelP80", {"-0.22-0.015", 0}, 1}, {"LevelP80", {-0.06, 0}, 1}, {}, {"LevelP80", {0.06, 0}, 1}, {"LevelP80", {"+0.22+0.015", 0}, 1}, {"LevelP80", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_80
 								{
@@ -3809,9 +3870,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP80",{-0.26,-0.017},1};
-									right[] = {"LevelP80",{-0.2,-0.017},1};
-									down[] = {"LevelP80",{-0.26,0.033},1};
+									pos[] = {"LevelP80", {-0.26, -0.017}, 1};
+									right[] = {"LevelP80", {-0.2, -0.017}, 1};
+									down[] = {"LevelP80", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_80_R
 								{
@@ -3821,14 +3882,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP80",{0.26,-0.017},1};
-									right[] = {"LevelP80",{0.32,-0.017},1};
-									down[] = {"LevelP80",{0.26,0.033},1};
+									pos[] = {"LevelP80", {0.26, -0.017}, 1};
+									right[] = {"LevelP80", {0.32, -0.017}, 1};
+									down[] = {"LevelP80", {0.26, 0.033}, 1};
 								};
-								class LevelM90: Level0
+								class LevelM90 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelM90",{-0.235,-0.02},1},{"LevelM90",{-0.235,0},1},{},{"LevelM90",{-0.22,0},1},{"LevelM90",{-0.205,0},1},{},{"LevelM90",{-0.19,0},1},{"LevelM90",{-0.175,0},1},{},{"LevelM90",{-0.16,0},1},{"LevelM90",{-0.145,0},1},{},{"LevelM90",{-0.13,0},1},{"LevelM90",{-0.115,0},1},{},{"LevelM90",{-0.1,0},1},{"LevelM90",{-0.085,0},1},{},{"LevelM90",{-0.07,0},1},{"LevelM90",{-0.055,0},1},{},{},{"LevelM90",{0.235,-0.02},1},{"LevelM90",{0.235,0},1},{},{"LevelM90",{0.22,0},1},{"LevelM90",{0.205,0},1},{},{"LevelM90",{0.19,0},1},{"LevelM90",{0.175,0},1},{},{"LevelM90",{0.16,0},1},{"LevelM90",{0.145,0},1},{},{"LevelM90",{0.13,0},1},{"LevelM90",{0.115,0},1},{},{"LevelM90",{0.1,0},1},{"LevelM90",{0.085,0},1},{},{"LevelM90",{0.07,0},1},{"LevelM90",{0.055,0},1},{}};
+									points[] = {{"LevelM90", {-0.235, -0.02}, 1}, {"LevelM90", {-0.235, 0}, 1}, {}, {"LevelM90", {-0.22, 0}, 1}, {"LevelM90", {-0.205, 0}, 1}, {}, {"LevelM90", {-0.19, 0}, 1}, {"LevelM90", {-0.175, 0}, 1}, {}, {"LevelM90", {-0.16, 0}, 1}, {"LevelM90", {-0.145, 0}, 1}, {}, {"LevelM90", {-0.13, 0}, 1}, {"LevelM90", {-0.115, 0}, 1}, {}, {"LevelM90", {-0.1, 0}, 1}, {"LevelM90", {-0.085, 0}, 1}, {}, {"LevelM90", {-0.07, 0}, 1}, {"LevelM90", {-0.055, 0}, 1}, {}, {}, {"LevelM90", {0.235, -0.02}, 1}, {"LevelM90", {0.235, 0}, 1}, {}, {"LevelM90", {0.22, 0}, 1}, {"LevelM90", {0.205, 0}, 1}, {}, {"LevelM90", {0.19, 0}, 1}, {"LevelM90", {0.175, 0}, 1}, {}, {"LevelM90", {0.16, 0}, 1}, {"LevelM90", {0.145, 0}, 1}, {}, {"LevelM90", {0.13, 0}, 1}, {"LevelM90", {0.115, 0}, 1}, {}, {"LevelM90", {0.1, 0}, 1}, {"LevelM90", {0.085, 0}, 1}, {}, {"LevelM90", {0.07, 0}, 1}, {"LevelM90", {0.055, 0}, 1}, {}};
 								};
 								class VALM_1_90
 								{
@@ -3838,9 +3899,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM90",{-0.26,-0.032},1};
-									right[] = {"LevelM90",{-0.2,-0.032},1};
-									down[] = {"LevelM90",{-0.26,0.018},1};
+									pos[] = {"LevelM90", {-0.26, -0.032}, 1};
+									right[] = {"LevelM90", {-0.2, -0.032}, 1};
+									down[] = {"LevelM90", {-0.26, 0.018}, 1};
 								};
 								class VALM_1_90_R
 								{
@@ -3850,14 +3911,14 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelM90",{0.26,-0.032},1};
-									right[] = {"LevelM90",{0.32,-0.032},1};
-									down[] = {"LevelM90",{0.26,0.018},1};
+									pos[] = {"LevelM90", {0.26, -0.032}, 1};
+									right[] = {"LevelM90", {0.32, -0.032}, 1};
+									down[] = {"LevelM90", {0.26, 0.018}, 1};
 								};
-								class LevelP90: Level0
+								class LevelP90 : Level0
 								{
 									type = "line";
-									points[] = {{"LevelP90",{"-0.22-0.015",0.02},1},{"LevelP90",{"-0.22-0.015",0},1},{"LevelP90",{-0.06,0},1},{},{"LevelP90",{0.06,0},1},{"LevelP90",{"+0.22+0.015",0},1},{"LevelP90",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP90", {"-0.22-0.015", 0.02}, 1}, {"LevelP90", {"-0.22-0.015", 0}, 1}, {"LevelP90", {-0.06, 0}, 1}, {}, {"LevelP90", {0.06, 0}, 1}, {"LevelP90", {"+0.22+0.015", 0}, 1}, {"LevelP90", {"+0.22+0.015", 0.02}, 1}};
 								};
 								class VALP_1_90
 								{
@@ -3867,9 +3928,9 @@ class cfgVehicles {
 									align = "left";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP90",{-0.26,-0.017},1};
-									right[] = {"LevelP90",{-0.2,-0.017},1};
-									down[] = {"LevelP90",{-0.26,0.033},1};
+									pos[] = {"LevelP90", {-0.26, -0.017}, 1};
+									right[] = {"LevelP90", {-0.2, -0.017}, 1};
+									down[] = {"LevelP90", {-0.26, 0.033}, 1};
 								};
 								class VALP_1_90_R
 								{
@@ -3879,9 +3940,9 @@ class cfgVehicles {
 									align = "right";
 									scale = 1;
 									sourceScale = 1;
-									pos[] = {"LevelP90",{0.26,-0.017},1};
-									right[] = {"LevelP90",{0.32,-0.017},1};
-									down[] = {"LevelP90",{0.26,0.033},1};
+									pos[] = {"LevelP90", {0.26, -0.017}, 1};
+									right[] = {"LevelP90", {0.32, -0.017}, 1};
+									down[] = {"LevelP90", {0.26, 0.033}, 1};
 								};
 							};
 						};
@@ -3892,17 +3953,17 @@ class cfgVehicles {
 							{
 								type = "line";
 								width = 3;
-								points[] = {{"PlaneW",{-0.02,0},1},{"PlaneW",{-0.04,0},1},{},{"PlaneW",{0.02,0},1},{"PlaneW",{0.04,0},1},{},{"PlaneW",{0,-0.019708},1},{"PlaneW",{0,-0.0394161},1},{},{"PlaneW",{0,0.019708},1},{"PlaneW",{0,0.0394161},1},{}};
+								points[] = {{"PlaneW", {-0.02, 0}, 1}, {"PlaneW", {-0.04, 0}, 1}, {}, {"PlaneW", {0.02, 0}, 1}, {"PlaneW", {0.04, 0}, 1}, {}, {"PlaneW", {0, -0.019708}, 1}, {"PlaneW", {0, -0.0394161}, 1}, {}, {"PlaneW", {0, 0.019708}, 1}, {"PlaneW", {0, 0.0394161}, 1}, {}};
 							};
 						};
 					};
 					class RadarBoxes
 					{
 						type = "radartoview";
-						pos0[] = {0.5,0.5};
-						pos10[] = {0.773,0.773};
+						pos0[] = {0.5, 0.5};
+						pos10[] = {0.773, 0.773};
 						width = 4;
-						points[] = {{{-0.002,-0.002},1},{{0.002,-0.002},1},{{0.002,0.002},1},{{-0.002,0.002},1},{{-0.002,-0.002},1}};
+						points[] = {{{-0.002, -0.002}, 1}, {{0.002, -0.002}, 1}, {{0.002, 0.002}, 1}, {{-0.002, 0.002}, 1}, {{-0.002, -0.002}, 1}};
 					};
 					class TargetDiamond
 					{
@@ -3910,7 +3971,7 @@ class cfgVehicles {
 						{
 							type = "line";
 							width = 4;
-							points[] = {{"Target",1,"Limit0109",1,{0.02,0.02},1},{"Target",1,"Limit0109",1,{-0.02,0.02},1},{"Target",1,"Limit0109",1,{-0.02,-0.02},1},{"Target",1,"Limit0109",1,{0.02,-0.02},1},{"Target",1,"Limit0109",1,{0.02,0.02},1}};
+							points[] = {{"Target", 1, "Limit0109", 1, {0.02, 0.02}, 1}, {"Target", 1, "Limit0109", 1, {-0.02, 0.02}, 1}, {"Target", 1, "Limit0109", 1, {-0.02, -0.02}, 1}, {"Target", 1, "Limit0109", 1, {0.02, -0.02}, 1}, {"Target", 1, "Limit0109", 1, {0.02, 0.02}, 1}};
 						};
 					};
 				};
@@ -3933,12 +3994,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -3946,7 +4007,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -3954,7 +4015,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -3962,7 +4023,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -3970,7 +4031,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -3994,15 +4055,15 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\Z95Init.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\Z95Init.sqf';";
 		};
 		class UserActions
 		{
 			class Aircraft_MFD_Open_N
 			{
-				displayName = "Open I-TGT System";
+				// displayName = "Open I-TGT System";
 				position = "pos cano";
 				radius = 15;
 				shortcut = "User4";
@@ -4010,7 +4071,7 @@ class cfgVehicles {
 				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf"";";
 				onlyforplayer = "false";
 				hideOnUse = 1;
-			};  
+			};
 		};
 		class Components
 		{
@@ -4025,7 +4086,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4058,7 +4119,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 90;
 						angleRangeVertical = 90;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4106,7 +4167,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -4140,7 +4201,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -4174,7 +4235,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4207,7 +4268,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4240,7 +4301,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4254,7 +4315,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -4284,7 +4345,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -4294,7 +4355,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -4325,7 +4386,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -4342,37 +4403,37 @@ class cfgVehicles {
 				{
 					class pylons1
 					{
-						hardpoints[] = {"B_MISSILE_PYLON","B_BOMB_PYLON","B_AMRAAM_D","B_AMRAAM_D_RAIL"};
+						hardpoints[] = {"B_MISSILE_PYLON", "B_BOMB_PYLON", "B_AMRAAM_D", "B_AMRAAM_D_RAIL"};
 						attachment = "PylonRack_Missile_BIM9X_x1";
 						priority = 10;
 						maxweight = 50000;
-						UIposition[] = {0.6,0.45};
+						UIposition[] = {0.6, 0.45};
 					};
-					class pylons2: pylons1
+					class pylons2 : pylons1
 					{
-						UIposition[] = {0.05,0.45};
+						UIposition[] = {0.05, 0.45};
 						mirroredMissilePos = 1;
 					};
-					class pylons3: pylons1
+					class pylons3 : pylons1
 					{
 						priority = 9;
-						UIposition[] = {0.55,0.35};
+						UIposition[] = {0.55, 0.35};
 					};
-					class pylons4: pylons3
+					class pylons4 : pylons3
 					{
 						priority = 13;
-						UIposition[] = {0.1,0.35};
+						UIposition[] = {0.1, 0.35};
 						mirroredMissilePos = 3;
 					};
-					class pylons5: pylons1
+					class pylons5 : pylons1
 					{
 						priority = 7;
-						UIposition[] = {0.5,0.25};
+						UIposition[] = {0.5, 0.25};
 					};
-					class pylons6: pylons5
+					class pylons6 : pylons5
 					{
 						priority = 12;
-						UIposition[] = {0.15,0.25};
+						UIposition[] = {0.15, 0.25};
 						mirroredMissilePos = 5;
 					};
 					class Pylons7
@@ -4381,32 +4442,31 @@ class cfgVehicles {
 						priority = 5;
 						attachment = "3as_PylonWeapon_Z95_240Rnd_Heavy_Shells";
 						maxweight = 50000;
-						UIposition[] = {0.325,0.15};
+						UIposition[] = {0.325, 0.15};
 					};
 				};
 			};
 			class TransportCounterMeasuresComponent;
 		};
-		
 	};
-	
+
 	class 3as_Vwing_base;
-	class JA_104th_VWing: 3as_Vwing_base
+	class JA_104th_VWing : 3as_Vwing_base
 	{
 		Author = "212th + 3AS + Echo";
 		displayName = "V-Wing Fighter";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselections[] = {"camo1","camo2","camo3"};
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\vwing_co104.paa","3as\3AS_Vwing\data\vwing_int_co.paa","#(argb,8,8,3)color(0,0,0,1.0,CA)"};
-		weapons[] = {"RD501_Republic_Aircraft_Laser_AA","CMFlareLauncher"};
-		magazines[] = {"RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
-		crew = "SWLB_clone_pilot_base_P2";
-		
+		hiddenselections[] = {"camo1", "camo2", "camo3"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\vwing_co104.paa", "3as\3AS_Vwing\data\vwing_int_co.paa", "#(argb,8,8,3)color(0,0,0,1.0,CA)"};
+		weapons[] = {"RD501_Republic_Aircraft_Laser_AA", "CMFlareLauncher"};
+		magazines[] = {"RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
+		crew = "ls_clone_phase2_pilot";
+
 		class Components
 		{
 			class SensorsManagerComponent
@@ -4420,7 +4480,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4453,7 +4513,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 90;
 						angleRangeVertical = 90;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4501,7 +4561,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -4535,7 +4595,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -4569,7 +4629,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4602,7 +4662,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4635,7 +4695,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4649,7 +4709,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -4679,7 +4739,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -4689,7 +4749,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -4720,7 +4780,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -4737,51 +4797,50 @@ class cfgVehicles {
 				{
 					class pylons1
 					{
-						hardpoints[] = {"B_MISSILE_PYLON","B_AMRAAM_D","B_AMRAAM_D_RAIL"};
+						hardpoints[] = {"B_MISSILE_PYLON", "B_AMRAAM_D", "B_AMRAAM_D_RAIL"};
 						attachment = "PylonRack_Missile_BIM9X_x1";
 						priority = 10;
 						maxweight = 5000;
-						UIposition[] = {0.6,0.45};
+						UIposition[] = {0.6, 0.45};
 					};
-					class pylons2: pylons1
+					class pylons2 : pylons1
 					{
-						UIposition[] = {0.05,0.45};
+						UIposition[] = {0.05, 0.45};
 						mirroredMissilePos = 1;
 					};
-					class pylons3: pylons1
+					class pylons3 : pylons1
 					{
 						priority = 9;
-						UIposition[] = {0.55,0.35};
+						UIposition[] = {0.55, 0.35};
 					};
-					class pylons4: pylons3
+					class pylons4 : pylons3
 					{
 						priority = 13;
-						UIposition[] = {0.1,0.35};
+						UIposition[] = {0.1, 0.35};
 						mirroredMissilePos = 3;
 					};
 				};
 			};
 			class TransportCounterMeasuresComponent;
 		};
-		
-		class EventHandlers: DefaultEventhandlers
+
+		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
 		};
-		
 	};
-	
-	class JA_104th_Base_Falcon_Armed: OPTRE_UNSC_falcon
+
+	class JA_104th_Base_Falcon_Armed : OPTRE_UNSC_falcon
 	{
 		author = "Dak";
-		displayName = "Falcon Armed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		displayName = "Falcon Armed"; // Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		visionMode[] = {"Normal","NVG","Ti"};
+		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
 		class pilotCamera
@@ -4801,12 +4860,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -4814,7 +4873,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -4822,7 +4881,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -4830,7 +4889,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -4838,7 +4897,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -4865,8 +4924,8 @@ class cfgVehicles {
 		memoryPointDriverOptics = "gunner1";
 		unitInfoType = "RscOptics_CAS_Pilot";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
-		weapons[] = {"OPTRE_M638","CMFlareLauncher","Laserdesignator_pilotCamera"};
-		magazines[] = {"OPTRE_2000Rnd_20mm_HE","OPTRE_2000Rnd_20mm_HE","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
+		weapons[] = {"OPTRE_M638", "CMFlareLauncher", "Laserdesignator_pilotCamera"};
+		magazines[] = {"OPTRE_2000Rnd_20mm_HE", "OPTRE_2000Rnd_20mm_HE", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 		class Components
 		{
 			class TransportPylonsComponent
@@ -4877,17 +4936,17 @@ class cfgVehicles {
 					class WingPylonRight1
 					{
 						maxweight = 1200;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AGM65_RAIL","B_MISSILE_PYLON"};
+						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "DAR", "DAGR", "B_AGM65_RAIL", "B_MISSILE_PYLON"};
 						attachment = "PylonRack_12Rnd_PG_missiles";
 						bay = -1;
 						priority = 3;
-						UIposition[] = {0.35,0.1};
+						UIposition[] = {0.35, 0.1};
 						turret[] = {};
 					};
-					class WingPylonLeft1: WingPylonRight1
+					class WingPylonLeft1 : WingPylonRight1
 					{
 						mirroredMissilePos = 1;
-						UIposition[] = {0.35,0.467};
+						UIposition[] = {0.35, 0.467};
 					};
 				};
 				class Presets
@@ -4911,7 +4970,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4944,7 +5003,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 90;
 						angleRangeVertical = 90;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -4992,7 +5051,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -5026,7 +5085,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -5060,7 +5119,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -5093,7 +5152,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -5126,7 +5185,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -5140,7 +5199,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -5170,7 +5229,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -5180,7 +5239,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -5211,7 +5270,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -5271,14 +5330,14 @@ class cfgVehicles {
 			};
 		};
 	};
-	class JA_104th_Base_Pelican_Unarmed: OPTRE_Pelican_unarmed
+	class JA_104th_Base_Pelican_Unarmed : OPTRE_Pelican_unarmed
 	{
 		author = "Dak";
-		displayName = "Pelican Unarmed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		displayName = "Pelican Unarmed"; // Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		class pilotCamera
@@ -5298,12 +5357,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -5311,7 +5370,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -5319,7 +5378,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -5327,7 +5386,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -5335,7 +5394,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -5432,7 +5491,7 @@ class cfgVehicles {
 				statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
 				animPeriod = 5;
 			};
-			class RampClose: RampOpen
+			class RampClose : RampOpen
 			{
 				userActionID = 51;
 				displayName = "Close Ramp";
@@ -5490,18 +5549,18 @@ class cfgVehicles {
 			};
 		};
 	};
-	class JA_104th_Base_Pelican_Armed: OPTRE_Pelican_armed
+	class JA_104th_Base_Pelican_Armed : OPTRE_Pelican_armed
 	{
 		author = "Dak";
-		displayName = "Pelican Armed"; //Name shown for vehicle in Editor/Zeus/Map/Scroll menu
+		displayName = "Pelican Armed"; // Name shown for vehicle in Editor/Zeus/Map/Scroll menu
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		weapons[] = {"CMFlareLauncher","OPTRE_missiles_Anvil1","Laserdesignator_pilotCamera"};
-		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
+		weapons[] = {"CMFlareLauncher", "OPTRE_missiles_Anvil1", "Laserdesignator_pilotCamera"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -5519,12 +5578,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -5532,7 +5591,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -5540,7 +5599,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -5548,7 +5607,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -5556,7 +5615,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -5653,7 +5712,7 @@ class cfgVehicles {
 				statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
 				animPeriod = 5;
 			};
-			class RampClose: RampOpen
+			class RampClose : RampOpen
 			{
 				userActionID = 51;
 				displayName = "Close Ramp";
@@ -5711,28 +5770,28 @@ class cfgVehicles {
 			};
 		};
 	};
-	
-	class JA_104th_3AS_Reaper_Y_Wing: Aux212_3AS_Reaper_Y_Wing
+
+	class JA_104th_3AS_Reaper_Y_Wing : Aux212_3AS_Reaper_Y_Wing
 	{
 		Author = "212th + 3AS + Echo";
 		displayName = "104th Reaper BTL-B Y-Wing";
-		crew = "SWLB_clone_pilot_base_P2";
+		crew = "ls_clone_phase2_pilot";
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		radarTargetSize = 1; //No idea who in 3AS thought it's a good idea to make the Y-Wing more stealthy than the stealth fighters, so I'm changing it.
+		radarTargetSize = 1; // No idea who in 3AS thought it's a good idea to make the Y-Wing more stealthy than the stealth fighters, so I'm changing it.
 		irTargetSize = 1;
 		VTOLPitchInfluence = 12;
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
 		stallSpeed = 0;
-		
+
 		armor = 550;
-		weapons[] = {"Laserdesignator_pilotCamera","CMFlareLauncher","212th_YWing_Voltic_Cannon","RD501_Republic_Aircraft_Laser_AA","212th_A2A_MissileSystem","212th_WGM_MissileSystem","212th_Gizka_Bomb_ReleaseSystem"};
-		magazines[] = {"Laserbatteries","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","300Rnd_CMFlare_Chaff_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","212th_Drexl_4Rnd_A2A_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Basilisk_4Rnd_WGM_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag","212th_Gizka_Bomb_mag"};
+		weapons[] = {"Laserdesignator_pilotCamera", "CMFlareLauncher", "212th_YWing_Voltic_Cannon", "RD501_Republic_Aircraft_Laser_AA", "212th_A2A_MissileSystem", "212th_WGM_MissileSystem", "212th_Gizka_Bomb_ReleaseSystem"};
+		magazines[] = {"Laserbatteries", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -5749,12 +5808,12 @@ class cfgVehicles {
 					initFov = 0.425;
 					minFov = 0.425;
 					maxFov = 0.425;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -5762,7 +5821,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -5770,7 +5829,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -5778,7 +5837,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -5786,7 +5845,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -5810,13 +5869,13 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		
+
 		class ACE_SelfActions
 		{
 			class LAAT_HUD_Changer
 			{
 				displayName = "Change HUD Color";
-				exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
 				showDisabled = 0;
 				priority = 2.5;
@@ -5824,7 +5883,7 @@ class cfgVehicles {
 				class Red_HUD
 				{
 					displayName = "Red HUD Color";
-					exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 					condition = "!(isNull objectParent player)";
 					statement = "[1,0,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					showDisabled = 0;
@@ -5832,55 +5891,55 @@ class cfgVehicles {
 					priority = 2.5;
 					icon = "212th\Other\212th_Func\textures\vic_hud\red.paa";
 				};
-				class Orange_HUD: Red_HUD
+				class Orange_HUD : Red_HUD
 				{
 					displayName = "Orange HUD Color";
 					statement = "[1,.05,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					icon = "212th\Other\212th_Func\textures\vic_hud\orange.paa";
 				};
-				class Yellow_HUD: Red_HUD
+				class Yellow_HUD : Red_HUD
 				{
 					displayName = "Yellow HUD Color";
 					statement = "[1,1,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					icon = "212th\Other\212th_Func\textures\vic_hud\yellow.paa";
 				};
-				class Green_HUD: Red_HUD
+				class Green_HUD : Red_HUD
 				{
 					displayName = "Green HUD Color";
 					statement = "[0,1,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					icon = "212th\Other\212th_Func\textures\vic_hud\green.paa";
 				};
-				class Cyan_HUD: Red_HUD
+				class Cyan_HUD : Red_HUD
 				{
 					displayName = "Cyan HUD Color";
 					statement = "[0,1,1,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					icon = "212th\Other\212th_Func\textures\vic_hud\cyan.paa";
 				};
-				class Blue_HUD: Red_HUD
+				class Blue_HUD : Red_HUD
 				{
 					displayName = "Blue HUD Color";
 					statement = "[0,0,1,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					icon = "212th\Other\212th_Func\textures\vic_hud\blue.paa";
 				};
-				class Purple_HUD: Red_HUD
+				class Purple_HUD : Red_HUD
 				{
 					displayName = "Purple HUD Color";
 					statement = "[.5,0,.5,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					icon = "212th\Other\212th_Func\textures\vic_hud\purple.paa";
 				};
-				class White_HUD: Red_HUD
+				class White_HUD : Red_HUD
 				{
 					displayName = "White HUD Color";
 					statement = "[1,1,1,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					icon = "212th\Other\212th_Func\textures\vic_hud\white.paa";
 				};
-				class Black_HUD: Red_HUD
+				class Black_HUD : Red_HUD
 				{
 					displayName = "Black HUD Color";
 					statement = "[0,0,0,1,vehicle player] spawn Aux212_fnc_hud_color_change;";
 					icon = "212th\Other\212th_Func\textures\vic_hud\black.paa";
 				};
-				class Clear_HUD: Red_HUD
+				class Clear_HUD : Red_HUD
 				{
 					displayName = "No HUD Color";
 					statement = "[1,1,1,0,vehicle player] spawn Aux212_fnc_hud_color_change;";
@@ -5888,7 +5947,7 @@ class cfgVehicles {
 				};
 			};
 		};
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\ECM\YWing-init.sqf';";
 		};
@@ -5900,11 +5959,11 @@ class cfgVehicles {
 				position = "pos cano";
 				radius = 15;
 				shortcut = "User4";
-				condition = "player in this and isengineon this";                
+				condition = "player in this and isengineon this";
 				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf"";";
 				onlyforplayer = "false";
 				hideOnUse = 1;
-			};  
+			};
 
 			class ECM_ON
 			{
@@ -5917,7 +5976,6 @@ class cfgVehicles {
 				onlyforplayer = "False";
 				hideOnUse = 1;
 			};
-
 		};
 
 		class Components
@@ -5933,7 +5991,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -5966,7 +6024,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -6014,7 +6072,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -6048,7 +6106,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -6082,7 +6140,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -6115,7 +6173,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -6148,7 +6206,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -6162,7 +6220,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -6192,7 +6250,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -6202,7 +6260,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -6233,7 +6291,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -6250,45 +6308,45 @@ class cfgVehicles {
 				{
 					class pylons1
 					{
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","B_AMRAAM_D","B_AMRAAM_D_RAIL","DAR","DAGR","B_GBU12","B_AGM65_RAIL","20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON"};
+						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "B_AMRAAM_D", "B_AMRAAM_D_RAIL", "DAR", "DAGR", "B_GBU12", "B_AGM65_RAIL", "20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON"};
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 10;
 						maxweight = 8000;
-						UIposition[] = {0.5,0.25};
+						UIposition[] = {0.5, 0.25};
 					};
-					class pylons2: pylons1
+					class pylons2 : pylons1
 					{
-						UIposition[] = {0.15,0.25};
+						UIposition[] = {0.15, 0.25};
 						mirroredMissilePos = 1;
 					};
-					class pylons3: pylons1
+					class pylons3 : pylons1
 					{
 						priority = 9;
-						UIposition[] = {0.55,0.35};
+						UIposition[] = {0.55, 0.35};
 					};
-					class pylons4: pylons3
+					class pylons4 : pylons3
 					{
-						UIposition[] = {0.1,0.35};
+						UIposition[] = {0.1, 0.35};
 						mirroredMissilePos = 3;
 					};
-					class pylons5: pylons1
+					class pylons5 : pylons1
 					{
 						priority = 7;
-						UIposition[] = {0.6,0.45};
+						UIposition[] = {0.6, 0.45};
 					};
-					class pylons6: pylons5
+					class pylons6 : pylons5
 					{
-						UIposition[] = {0.05,0.45};
+						UIposition[] = {0.05, 0.45};
 						mirroredMissilePos = 5;
 					};
-					class pylons7: pylons1
+					class pylons7 : pylons1
 					{
 						priority = 9;
-						UIposition[] = {0.45,0.4};
+						UIposition[] = {0.45, 0.4};
 					};
-					class pylons8: pylons3
+					class pylons8 : pylons3
 					{
-						UIposition[] = {0.2,0.4};
+						UIposition[] = {0.2, 0.4};
 						mirroredMissilePos = 7;
 					};
 				};
@@ -6302,66 +6360,67 @@ class cfgVehicles {
 					class AA
 					{
 						displayName = "$STR_A3_cfgmagazines_titan_aa_dns";
-						attachment[] = {"PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_BIM9X_x1","PylonRack_Missile_BIM9X_x1","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F"};
+						attachment[] = {"PylonMissile_1Rnd_Bomb_04_F", "PylonMissile_1Rnd_Bomb_04_F", "PylonRack_Missile_AMRAAM_D_x2", "PylonRack_Missile_AMRAAM_D_x2", "PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_BIM9X_x1", "PylonMissile_1Rnd_Bomb_04_F", "PylonMissile_1Rnd_Bomb_04_F"};
 					};
 					class CAS
 					{
 						displayName = "$STR_A3_CAS_PRESET_DISPLAYNAME";
-						attachment[] = {"PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonRack_Missile_AGM_02_x2","PylonRack_Missile_AGM_02_x2","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F"};
+						attachment[] = {"PylonMissile_1Rnd_Bomb_04_F", "PylonMissile_1Rnd_Bomb_04_F", "PylonMissile_1Rnd_Bomb_04_F", "PylonMissile_1Rnd_Bomb_04_F", "PylonRack_Missile_AGM_02_x2", "PylonRack_Missile_AGM_02_x2", "PylonMissile_1Rnd_Bomb_04_F", "PylonMissile_1Rnd_Bomb_04_F"};
 					};
 				};
 			};
 			class TransportCounterMeasuresComponent;
 		};
 	};
-	
-	class JA_104th_3AS_Reaper_Y_Wing_Blue: JA_104th_3AS_Reaper_Y_Wing
+
+	class JA_104th_3AS_Reaper_Y_Wing_Blue : JA_104th_3AS_Reaper_Y_Wing
 	{
 		displayName = "104th Reaper BTL-B Y-Wing Blue";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa","3as\3as_btlb\data\detail_co.paa","3as\3as_btlb\data\interior_co.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
 		class TextureSources
 		{
 			class Blue
 			{
 				displayName = "Blue Leader";
 				author = "$STR_3as_Studio";
-				textures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa","3as\3as_btlb\data\detail_co.paa","3as\3as_btlb\data\interior_co.paa"};
+				textures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
 				factions[] = {"104th_Guys"};
 			};
 		};
 	};
-	
-	class JA_104th_3AS_Reaper_Y_Wing_BlueLeader: JA_104th_3AS_Reaper_Y_Wing
+
+	class JA_104th_3AS_Reaper_Y_Wing_BlueLeader : JA_104th_3AS_Reaper_Y_Wing
 	{
 		displayName = "104th Reaper BTL-B Y-Wing Blue Leader";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa","3as\3as_btlb\data\detail_co.paa","3as\3as_btlb\data\interior_co.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
 		class TextureSources
 		{
 			class BlueLeader
 			{
 				displayName = "Blue Leader";
 				author = "$STR_3as_Studio";
-				textures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa","3as\3as_btlb\data\detail_co.paa","3as\3as_btlb\data\interior_co.paa"};
+				textures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
 				factions[] = {"104th_Guys"};
 			};
 		};
 	};
-	
-	class JA_104th_vulture_dynamicLoadout_base: 3AS_Vulture_Base_F {
+
+	class JA_104th_vulture_dynamicLoadout_base : 3AS_Vulture_Base_F
+	{
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
 		displayName = "Swarm-Vulture Droid";
 	};
-	
-	class JA_104th_Vulture_dynamicLoadout: 3AS_CIS_Vulture_CAS_F {
+
+	class JA_104th_Vulture_dynamicLoadout : 3AS_CIS_Vulture_CAS_F
+	{
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
 		Displayname = "Swarm-Vulture Droid (CAS)";
 	};
-	
-	
+
 	class SensorTemplateIR;
 	class SensorTemplateVisual;
 	class SensorTemplatePassiveRadar;
@@ -6369,8 +6428,8 @@ class cfgVehicles {
 	class SensorTemplateLaser;
 	class SensorTemplateNV;
 
-	
-	class JA_104th_Vulture_dynamicLoadout_AA: 3AS_CIS_Vulture_AA_F {
+	class JA_104th_Vulture_dynamicLoadout_AA : 3AS_CIS_Vulture_AA_F
+	{
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
@@ -6381,7 +6440,7 @@ class cfgVehicles {
 			{
 				class Components
 				{
-					class IRSensorComponent: SensorTemplateIR
+					class IRSensorComponent : SensorTemplateIR
 					{
 						class AirTarget
 						{
@@ -6403,7 +6462,7 @@ class cfgVehicles {
 						componentType = "IRSensorComponent";
 						typeRecognitionDistance = 2000;
 						maxFogSeeThrough = 0.995;
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						allowsMarking = 1;
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -6415,7 +6474,7 @@ class cfgVehicles {
 						minTrackableATL = -1e+10;
 						maxTrackableATL = 1e+10;
 					};
-					class VisualSensorComponent: SensorTemplateVisual
+					class VisualSensorComponent : SensorTemplateVisual
 					{
 						class AirTarget
 						{
@@ -6439,7 +6498,7 @@ class cfgVehicles {
 						componentType = "VisualSensorComponent";
 						nightRangeCoef = 0;
 						maxFogSeeThrough = 0.94;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						typeRecognitionDistance = 2000;
 						allowsMarking = 1;
 						groundNoiseDistanceCoef = -1;
@@ -6450,7 +6509,7 @@ class cfgVehicles {
 						minTrackableATL = -1e+10;
 						maxTrackableATL = 1e+10;
 					};
-					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					class PassiveRadarSensorComponent : SensorTemplatePassiveRadar
 					{
 						componentType = "PassiveRadarSensorComponent";
 						class AirTarget
@@ -6476,14 +6535,14 @@ class cfgVehicles {
 						maxSpeedThreshold = 0;
 						animDirection = "";
 						aimDown = 0;
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						minTrackableSpeed = -1e+10;
 						maxTrackableSpeed = 1e+10;
 						minTrackableATL = -1e+10;
 						maxTrackableATL = 1e+10;
 						allowsMarking = 0;
 					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					class ActiveRadarSensorComponent : SensorTemplateActiveRadar
 					{
 						class AirTarget
 						{
@@ -6507,7 +6566,7 @@ class cfgVehicles {
 						maxGroundNoiseDistance = 200;
 						minSpeedThreshold = 30;
 						maxSpeedThreshold = 40;
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						allowsMarking = 1;
 						animDirection = "";
 						aimDown = 0;
@@ -6516,7 +6575,7 @@ class cfgVehicles {
 						minTrackableATL = -1e+10;
 						maxTrackableATL = 1e+10;
 					};
-					class LaserSensorComponent: SensorTemplateLaser
+					class LaserSensorComponent : SensorTemplateLaser
 					{
 						componentType = "LaserSensorComponent";
 						class AirTarget
@@ -6536,7 +6595,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						typeRecognitionDistance = 0;
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						allowsMarking = 1;
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -6549,10 +6608,10 @@ class cfgVehicles {
 						minTrackableATL = -1e+10;
 						maxTrackableATL = 1e+10;
 					};
-					class NVSensorComponent: SensorTemplateNV
+					class NVSensorComponent : SensorTemplateNV
 					{
 						componentType = "NVSensorComponent";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						typeRecognitionDistance = 0;
 						class AirTarget
 						{
@@ -6590,33 +6649,33 @@ class cfgVehicles {
 				{
 					class Pylons1
 					{
-						hardpoints[] = {"vulture_AA","B_BIM9X_RAIL","B_BIM9X_DUAL_RAIL"};
+						hardpoints[] = {"vulture_AA", "B_BIM9X_RAIL", "B_BIM9X_DUAL_RAIL"};
 						attachment = "3as_PylonMissle_Vulture_2Rnd_Missile_AA";
 						priority = 5;
 						maxweight = 1200;
-						UIposition[] = {0.35,0.15};
+						UIposition[] = {0.35, 0.15};
 					};
-					class Pylons2: Pylons1
+					class Pylons2 : Pylons1
 					{
 						maxweight = 1200;
-						UIposition[] = {0.35,-0.15};
+						UIposition[] = {0.35, -0.15};
 					};
-					class Pylons3: Pylons1
+					class Pylons3 : Pylons1
 					{
-						UIposition[] = {0.35,0.3};
+						UIposition[] = {0.35, 0.3};
 						mirroredMissilePos = 2;
 					};
-					class Pylons4: Pylons2
+					class Pylons4 : Pylons2
 					{
-						UIposition[] = {0.35,-0.3};
+						UIposition[] = {0.35, -0.3};
 						mirroredMissilePos = 1;
 					};
-					class Pylons7: Pylons1
+					class Pylons7 : Pylons1
 					{
 						priority = 10;
 						attachment = "3as_PylonWeapon_100Rnd_Vulture_Heavy_shells";
 						maxweight = 1200;
-						UIposition[] = {0.1,0.27};
+						UIposition[] = {0.1, 0.27};
 						hardpoints[] = {"3as_Vulture_AOE_Cannon"};
 					};
 				};
@@ -6630,11 +6689,11 @@ class cfgVehicles {
 					class Default
 					{
 						displayName = "AA";
-						attachment[] = {"3as_PylonMissle_Vulture_2Rnd_Missile_AA","3as_PylonMissle_Vulture_2Rnd_Missile_AA","3as_PylonWeapon_100Rnd_Vulture_Heavy_shells"};
+						attachment[] = {"3as_PylonMissle_Vulture_2Rnd_Missile_AA", "3as_PylonMissle_Vulture_2Rnd_Missile_AA", "3as_PylonWeapon_100Rnd_Vulture_Heavy_shells"};
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				defaultDisplay = "EmptyDisplay";
 				class Components
@@ -6661,12 +6720,12 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {8000,2000,4000,16000,30000};
+						range[] = {8000, 2000, 4000, 16000, 30000};
 						resource = "RscCustomInfoSensors";
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -6693,51 +6752,49 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {8000,2000,4000,16000,30000};
+						range[] = {8000, 2000, 4000, 16000, 30000};
 						resource = "RscCustomInfoSensors";
 					};
 				};
 			};
 		};
 	};
-	
-	class JA_104th_Vulture_dynamicLoadout_Bare: 3AS_CIS_Vulture_F {
+
+	class JA_104th_Vulture_dynamicLoadout_Bare : 3AS_CIS_Vulture_F
+	{
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
 		Displayname = "Swarm-Vulture Droid (Guns Only)";
 	};
 
+	// Split
 
-	//Split
-	
-	
-
-	class JA_104th_Base_TX130: SWLG_tanks_tx130
+	class JA_104th_Base_TX130 : SWLG_tanks_tx130
 	{
 		author = "Dak";
-		displayName = "TX-130"; 
+		displayName = "TX-130";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\TX130Init.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\TX130Init.sqf';";
 		};
 	};
-	
-	class JA_104th_BARC: ls_ground_barc
+
+	class JA_104th_BARC : ls_vehicle_barc
 	{
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		displayName = "BARC Speeder 104th";
 		author = "Legion Studios + Echo";
 		maxSpeed = 280;
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-		class HitPoints: HitPoints
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
+		class HitPoints : HitPoints
 		{
 			class HitFuel
 			{
@@ -6755,62 +6812,62 @@ class cfgVehicles {
 				visual = "";
 				passThrough = 0.2;
 			};
-			class HitBody: HitBody
+			class HitBody : HitBody
 			{
 				name = "body";
 				visual = "camo1";
 				passThrough = 1;
 			};
-			class HitGlass1: HitGlass1
+			class HitGlass1 : HitGlass1
 			{
 				armor = 0.25;
 			};
-			class HitGlass2: HitGlass2
+			class HitGlass2 : HitGlass2
 			{
 				armor = 0.25;
 			};
-			class HitGlass3: HitGlass3
+			class HitGlass3 : HitGlass3
 			{
 				armor = 0.25;
 			};
-			class HitGlass4: HitGlass4
+			class HitGlass4 : HitGlass4
 			{
 				armor = 0.25;
 			};
 		};
 	};
-	class JA_104th_BARC_WP: JA_104th_BARC
+	class JA_104th_BARC_WP : JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th WP Logo";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_wp_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_wp_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
-	class JA_104th_BARC_Talon: JA_104th_BARC
+	class JA_104th_BARC_Talon : JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th Talon Logo";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_talon_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_talon_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
-	class JA_104th_BARC_Beans: JA_104th_BARC
+	class JA_104th_BARC_Beans : JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th Beans";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_beans_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_beans_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
-	class JA_104th_BARC_Sniper: JA_104th_BARC
+	class JA_104th_BARC_Sniper : JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th Sniper";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_sniper_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_sniper_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
-	class JA_104th_BARC_Medic: JA_104th_BARC
+	class JA_104th_BARC_Medic : JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th Medic";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_medic_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_medic_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
-	class JA_104th_BARC_EOD: JA_104th_BARC
+	class JA_104th_BARC_EOD : JA_104th_BARC
 	{
 		displayName = "BARC Speeder 104th EOD";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_eod_CO.paa","JangosVehiclesGround\data\textures\Weapons_104_CO.paa","JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_eod_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 
-	//class 3as_nuclass_f;
+	// class 3as_nuclass_f;
 	class 3AS_Nuclass;
 	/*
 	class 3AS_Nuclass: 3as_nuclass_f
@@ -6818,20 +6875,20 @@ class cfgVehicles {
 		class ACE_SelfActions;
 	};
 	*/
-	class JA_104th_NU: 3AS_Nuclass
+	class JA_104th_NU : 3AS_Nuclass
 	{
 		displayName = "104th Nu-Class Shuttle";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		armor = 600;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		visionMode[] = {"Normal","NVG","Ti"};
+		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\nu\exterior_104_CO.paa","JangosVehicles\data\textures\nu\wings_104_CO.paa","JangosVehicles\data\textures\nu\interior_104_co.paa","JangosVehicles\data\textures\nu\cockpit_doors_104_co.paa"};
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\nu\exterior_104_CO.paa", "JangosVehicles\data\textures\nu\wings_104_CO.paa", "JangosVehicles\data\textures\nu\interior_104_co.paa", "JangosVehicles\data\textures\nu\cockpit_doors_104_co.paa"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -6849,12 +6906,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -6862,7 +6919,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -6870,7 +6927,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -6878,7 +6935,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -6886,7 +6943,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -6926,7 +6983,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -6959,7 +7016,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 90;
 						angleRangeVertical = 90;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7007,7 +7064,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -7041,7 +7098,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -7075,7 +7132,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7108,7 +7165,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7141,7 +7198,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7155,7 +7212,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -7185,7 +7242,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -7195,7 +7252,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -7226,7 +7283,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -7249,7 +7306,7 @@ class cfgVehicles {
 				onlyforplayer = 0;
 				role = 0;
 			};
-			class rampClose: rampOpen
+			class rampClose : rampOpen
 			{
 				displayName = "Cargo Ramp Close";
 				position = "cargoaction";
@@ -7268,7 +7325,7 @@ class cfgVehicles {
 				statement = "this animateSource ['rampfront',1]";
 				onlyforplayer = 0;
 			};
-			class frontrampClose: frontrampOpen
+			class frontrampClose : frontrampOpen
 			{
 				displayName = "Ramp Close";
 				position = "frontaction";
@@ -7323,50 +7380,49 @@ class cfgVehicles {
 				userActionID = 53;
 			};
 		};
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\NuInit.sqf';";
 		};
 	};
-	
-	
-	//Xi'an for Star Wars
-	//Xian Infantry
-	
+
+	// Xi'an for Star Wars
+	// Xian Infantry
+
 	class VTOL_02_infantry_dynamicLoadout_base_F;
-	class O_T_VTOL_02_infantry_dynamicLoadout_F: VTOL_02_infantry_dynamicLoadout_base_F
+	class O_T_VTOL_02_infantry_dynamicLoadout_F : VTOL_02_infantry_dynamicLoadout_base_F
 	{
 		class NewTurret;
 		class CargoTurret;
 	};
-	class JA_104th_Xian_Infantry: O_T_VTOL_02_infantry_dynamicLoadout_F
+	class JA_104th_Xian_Infantry : O_T_VTOL_02_infantry_dynamicLoadout_F
 	{
 		displayName = "104th Xian Infantry";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
-		visionMode[] = {"Normal","NVG","Ti"};
+		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
-		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera"};
-		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
+		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 		airBrakeFrictionCoef = 75;
-		
+
 		class Turrets
 		{
-			class GunnerTurret: NewTurret
+			class GunnerTurret : NewTurret
 			{
 				animationSourceBody = "Gunner_rotH_source";
 				animationSourceGun = "Gunner_rotV_source";
 				body = "Cannon_turret_rot";
 				castGunnerShadow = 1;
 				commanding = -1;
-				discreteDistance[] = {100,200,300,400,500,600,700,800,1000,1200,1500,1800,2100,2400};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 1000, 1200, 1500, 1800, 2100, 2400};
 				discreteDistanceInitIndex = 5;
 				enableManualFire = 0;
 				gun = "Cannon_rot";
@@ -7406,8 +7462,8 @@ class cfgVehicles {
 				stabilizedInAxes = 3;
 				startEngine = 0;
 				turretInfoType = "RscOptics_VTOL_02_gunner";
-				magazines[] = {"212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","Laserbatteries"};
-				weapons[] = {"212th_YWing_Voltic_Cannon","Laserdesignator_mounted"};
+				magazines[] = {"212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "Laserbatteries"};
+				weapons[] = {"212th_YWing_Voltic_Cannon", "Laserdesignator_mounted"};
 				class OpticsIn
 				{
 					class Wide
@@ -7423,10 +7479,10 @@ class cfgVehicles {
 						maxFov = 0.466;
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_02_Optics_Gunner_wide_F";
 						opticsDisplayName = "W";
-						visionMode[] = {"Normal","NVG","Ti"};
-						thermalMode[] = {0,1};
+						visionMode[] = {"Normal", "NVG", "Ti"};
+						thermalMode[] = {0, 1};
 					};
-					class Medium: Wide
+					class Medium : Wide
 					{
 						initFov = 0.093;
 						minFov = 0.093;
@@ -7434,7 +7490,7 @@ class cfgVehicles {
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_02_Optics_Gunner_medium_F";
 						opticsDisplayName = "M";
 					};
-					class Narrow: Wide
+					class Narrow : Wide
 					{
 						initFov = 0.029;
 						minFov = 0.029;
@@ -7458,12 +7514,12 @@ class cfgVehicles {
 						initFov = 0.75;
 						gunnerOpticsModel = "";
 						gunnerOpticsEffect[] = {};
-						visionMode[] = {"Normal","NVG"};
+						visionMode[] = {"Normal", "NVG"};
 					};
 				};
 				class Components
 				{
-					class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+					class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 					{
 						class Components
 						{
@@ -7498,12 +7554,12 @@ class cfgVehicles {
 							class SensorDisplay
 							{
 								componentType = "SensorsDisplayComponent";
-								range[] = {4000,2000,16000,8000};
+								range[] = {4000, 2000, 16000, 8000};
 								resource = "RscCustomInfoSensors";
 							};
 						};
 					};
-					class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+					class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 					{
 						defaultDisplay = "SensorDisplay";
 						class Components
@@ -7539,14 +7595,14 @@ class cfgVehicles {
 							class SensorDisplay
 							{
 								componentType = "SensorsDisplayComponent";
-								range[] = {4000,2000,16000,8000};
+								range[] = {4000, 2000, 16000, 8000};
 								resource = "RscCustomInfoSensors";
 							};
 						};
 					};
 				};
 			};
-			class CargoTurret_01: CargoTurret
+			class CargoTurret_01 : CargoTurret
 			{
 				gunnerAction = "passenger_inside_2";
 				gunnerCompartments = "Compartment3";
@@ -7564,12 +7620,14 @@ class cfgVehicles {
 				disableSoundAttenuation = 0;
 				class TurnOut
 				{
-					limitsArrayTop[] = {{10.6151,-94.8295},{9.1304,-73.6575},{-11.9946,-56.092}};
-					limitsArrayBottom[] = {{-30.122,-94.8727},{-26.9148,-75.6837},{-26.8921,-56.0434}};
+					limitsArrayTop[] = {{10.6151, -94.8295}, {9.1304, -73.6575}, {-11.9946, -56.092}};
+					limitsArrayBottom[] = {{-30.122, -94.8727}, {-26.9148, -75.6837}, {-26.8921, -56.0434}};
 				};
-				class TurnIn: TurnOut{};
+				class TurnIn : TurnOut
+				{
+				};
 			};
-			class CargoTurret_02: CargoTurret_01
+			class CargoTurret_02 : CargoTurret_01
 			{
 				memoryPointsGetInGunner = "GetIn_cargo_ffv_right_pos";
 				memoryPointsGetInGunnerDir = "GetIn_cargo_ffv_right_dir";
@@ -7577,13 +7635,15 @@ class cfgVehicles {
 				proxyIndex = 8;
 				class TurnOut
 				{
-					limitsArrayTop[] = {{-2.025,25.5708},{15.6257,39.3879},{18.1105,67.7249}};
-					limitsArrayBottom[] = {{-19.7491,25.1857},{-19.2213,45.1216},{-20.604,66.8477}};
+					limitsArrayTop[] = {{-2.025, 25.5708}, {15.6257, 39.3879}, {18.1105, 67.7249}};
+					limitsArrayBottom[] = {{-19.7491, 25.1857}, {-19.2213, 45.1216}, {-20.604, 66.8477}};
 				};
-				class TurnIn: TurnOut{};
+				class TurnIn : TurnOut
+				{
+				};
 			};
 		};
-		
+
 		class Components
 		{
 			class SensorsManagerComponent
@@ -7597,7 +7657,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7630,7 +7690,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7678,7 +7738,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -7712,7 +7772,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -7746,7 +7806,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7779,7 +7839,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7812,7 +7872,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -7826,7 +7886,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				defaultDisplay = "EmptyDisplay";
 				class Components
@@ -7853,12 +7913,12 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {8000,2000,4000,16000,30000};
+						range[] = {8000, 2000, 4000, 16000, 30000};
 						resource = "RscCustomInfoSensors";
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -7885,7 +7945,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {8000,2000,4000,16000,30000};
+						range[] = {8000, 2000, 4000, 16000, 30000};
 						resource = "RscCustomInfoSensors";
 					};
 				};
@@ -7899,26 +7959,26 @@ class cfgVehicles {
 					{
 						attachment = "PylonRack_4Rnd_LG_scalpel";
 						priority = 5;
-						hardpoints[] = {"20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON","O_MISSILE_PYLON","O_BOMB_PYLON","UNI_SCALPEL"};
+						hardpoints[] = {"20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_MISSILE_PYLON", "O_BOMB_PYLON", "UNI_SCALPEL"};
 						turret[] = {0};
-						UIposition[] = {0.35,0.16};
+						UIposition[] = {0.35, 0.16};
 					};
-					class PylonRight2: PylonRight1
+					class PylonRight2 : PylonRight1
 					{
 						attachment = "PylonRack_19Rnd_Rocket_Skyfire";
 						priority = 4;
-						hardpoints[] = {"20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON","O_MISSILE_PYLON","O_BOMB_PYLON","UNI_SCALPEL"};
-						UIposition[] = {0.33,0.21};
+						hardpoints[] = {"20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_MISSILE_PYLON", "O_BOMB_PYLON", "UNI_SCALPEL"};
+						UIposition[] = {0.33, 0.21};
 					};
-					class PylonLeft2: PylonRight2
+					class PylonLeft2 : PylonRight2
 					{
 						mirroredMissilePos = 2;
-						UIposition[] = {0.33,0.34};
+						UIposition[] = {0.33, 0.34};
 					};
-					class PylonLeft1: PylonRight1
+					class PylonLeft1 : PylonRight1
 					{
 						mirroredMissilePos = 1;
-						UIposition[] = {0.35,0.39};
+						UIposition[] = {0.35, 0.39};
 					};
 				};
 				class presets
@@ -7931,22 +7991,22 @@ class cfgVehicles {
 					class Default
 					{
 						displayName = "$STR_vehicle_default";
-						attachment[] = {"PylonRack_4Rnd_LG_scalpel","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_4Rnd_LG_scalpel"};
+						attachment[] = {"PylonRack_4Rnd_LG_scalpel", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_4Rnd_LG_scalpel"};
 					};
 					class AT
 					{
 						displayName = "$STR_A3_cfgmagazines_titan_at_dns";
-						attachment[] = {"PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel"};
+						attachment[] = {"PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel"};
 					};
 					class CAS
 					{
 						displayName = "$STR_A3_CAS_PRESET_DISPLAYNAME";
-						attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire","PylonMissile_1Rnd_Bomb_03_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_19Rnd_Rocket_Skyfire"};
+						attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonMissile_1Rnd_Bomb_03_F", "PylonMissile_1Rnd_Bomb_03_F", "PylonRack_19Rnd_Rocket_Skyfire"};
 					};
 					class HAT
 					{
 						displayName = "$STR_A3_Heavy_AT_preset_displayName";
-						attachment[] = {"PylonRack_4Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_4Rnd_LG_scalpel"};
+						attachment[] = {"PylonRack_4Rnd_LG_scalpel", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_4Rnd_LG_scalpel"};
 					};
 				};
 			};
@@ -7959,51 +8019,50 @@ class cfgVehicles {
 				displayName = "White Camo";
 				author = "The Uiltimate Builder";
 				factions[] = {"104th_Guys"};
-				textures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa","JangosVehicles\data\textures\xian\xian_ext02_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
+				textures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa", "JangosVehicles\data\textures\xian\xian_ext02_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
 			};
 		};
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa","JangosVehicles\data\textures\xian\xian_ext02_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
-		
-		class EventHandlers: DefaultEventhandlers
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa", "JangosVehicles\data\textures\xian\xian_ext02_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
+
+		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
 		};
 	};
-	
-	
-	//Xian Vehicle
+
+	// Xian Vehicle
 	class VTOL_02_vehicle_dynamicLoadout_base_F;
-	class O_T_VTOL_02_vehicle_dynamicLoadout_F: VTOL_02_vehicle_dynamicLoadout_base_F
+	class O_T_VTOL_02_vehicle_dynamicLoadout_F : VTOL_02_vehicle_dynamicLoadout_base_F
 	{
 		class NewTurret;
 	};
-	class JA_104th_Xian_Vehicle: O_T_VTOL_02_vehicle_dynamicLoadout_F
+	class JA_104th_Xian_Vehicle : O_T_VTOL_02_vehicle_dynamicLoadout_F
 	{
 		displayName = "104th Xian Vehicle";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
-		visionMode[] = {"Normal","NVG","Ti"};
+		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
-		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera"};
-		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
+		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 		airBrakeFrictionCoef = 75;
 		class Turrets
 		{
-			class GunnerTurret: NewTurret
+			class GunnerTurret : NewTurret
 			{
 				animationSourceBody = "Gunner_rotH_source";
 				animationSourceGun = "Gunner_rotV_source";
 				body = "Cannon_turret_rot";
 				castGunnerShadow = 1;
 				commanding = -1;
-				discreteDistance[] = {100,200,300,400,500,600,700,800,1000,1200,1500,1800,2100,2400};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 1000, 1200, 1500, 1800, 2100, 2400};
 				discreteDistanceInitIndex = 5;
 				enableManualFire = 0;
 				gun = "Cannon_rot";
@@ -8043,8 +8102,8 @@ class cfgVehicles {
 				stabilizedInAxes = 3;
 				startEngine = 0;
 				turretInfoType = "RscOptics_VTOL_02_gunner";
-				magazines[] = {"212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","212th_Voltic_Cannon_Magazine","Laserbatteries"};
-				weapons[] = {"212th_YWing_Voltic_Cannon","Laserdesignator_mounted"};
+				magazines[] = {"212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "Laserbatteries"};
+				weapons[] = {"212th_YWing_Voltic_Cannon", "Laserdesignator_mounted"};
 				class OpticsIn
 				{
 					class Wide
@@ -8060,10 +8119,10 @@ class cfgVehicles {
 						maxFov = 0.466;
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_02_Optics_Gunner_wide_F";
 						opticsDisplayName = "W";
-						visionMode[] = {"Normal","NVG","Ti"};
-						thermalMode[] = {0,1};
+						visionMode[] = {"Normal", "NVG", "Ti"};
+						thermalMode[] = {0, 1};
 					};
-					class Medium: Wide
+					class Medium : Wide
 					{
 						initFov = 0.093;
 						minFov = 0.093;
@@ -8071,7 +8130,7 @@ class cfgVehicles {
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_02_Optics_Gunner_medium_F";
 						opticsDisplayName = "M";
 					};
-					class Narrow: Wide
+					class Narrow : Wide
 					{
 						initFov = 0.029;
 						minFov = 0.029;
@@ -8095,12 +8154,12 @@ class cfgVehicles {
 						initFov = 0.75;
 						gunnerOpticsModel = "";
 						gunnerOpticsEffect[] = {};
-						visionMode[] = {"Normal","NVG"};
+						visionMode[] = {"Normal", "NVG"};
 					};
 				};
 				class Components
 				{
-					class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+					class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 					{
 						class Components
 						{
@@ -8135,12 +8194,12 @@ class cfgVehicles {
 							class SensorDisplay
 							{
 								componentType = "SensorsDisplayComponent";
-								range[] = {4000,2000,16000,8000};
+								range[] = {4000, 2000, 16000, 8000};
 								resource = "RscCustomInfoSensors";
 							};
 						};
 					};
-					class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+					class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 					{
 						defaultDisplay = "SensorDisplay";
 						class Components
@@ -8176,7 +8235,7 @@ class cfgVehicles {
 							class SensorDisplay
 							{
 								componentType = "SensorsDisplayComponent";
-								range[] = {4000,2000,16000,8000};
+								range[] = {4000, 2000, 16000, 8000};
 								resource = "RscCustomInfoSensors";
 							};
 						};
@@ -8197,7 +8256,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -8230,7 +8289,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -8278,7 +8337,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -8312,7 +8371,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -8346,7 +8405,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -8379,7 +8438,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -8412,7 +8471,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -8426,7 +8485,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				defaultDisplay = "EmptyDisplay";
 				class Components
@@ -8453,12 +8512,12 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {8000,2000,4000,16000,30000};
+						range[] = {8000, 2000, 4000, 16000, 30000};
 						resource = "RscCustomInfoSensors";
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -8485,7 +8544,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {8000,2000,4000,16000,30000};
+						range[] = {8000, 2000, 4000, 16000, 30000};
 						resource = "RscCustomInfoSensors";
 					};
 				};
@@ -8499,26 +8558,26 @@ class cfgVehicles {
 					{
 						attachment = "PylonRack_4Rnd_LG_scalpel";
 						priority = 5;
-						hardpoints[] = {"20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON","O_MISSILE_PYLON","O_BOMB_PYLON","UNI_SCALPEL"};
+						hardpoints[] = {"20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_MISSILE_PYLON", "O_BOMB_PYLON", "UNI_SCALPEL"};
 						turret[] = {0};
-						UIposition[] = {0.35,0.16};
+						UIposition[] = {0.35, 0.16};
 					};
-					class PylonRight2: PylonRight1
+					class PylonRight2 : PylonRight1
 					{
 						attachment = "PylonRack_19Rnd_Rocket_Skyfire";
 						priority = 4;
-						hardpoints[] = {"20MM_TWIN_CANNON","B_MISSILE_PYLON","B_BOMB_PYLON","O_MISSILE_PYLON","O_BOMB_PYLON","UNI_SCALPEL"};
-						UIposition[] = {0.33,0.21};
+						hardpoints[] = {"20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON", "O_MISSILE_PYLON", "O_BOMB_PYLON", "UNI_SCALPEL"};
+						UIposition[] = {0.33, 0.21};
 					};
-					class PylonLeft2: PylonRight2
+					class PylonLeft2 : PylonRight2
 					{
 						mirroredMissilePos = 2;
-						UIposition[] = {0.33,0.34};
+						UIposition[] = {0.33, 0.34};
 					};
-					class PylonLeft1: PylonRight1
+					class PylonLeft1 : PylonRight1
 					{
 						mirroredMissilePos = 1;
-						UIposition[] = {0.35,0.39};
+						UIposition[] = {0.35, 0.39};
 					};
 				};
 				class presets
@@ -8531,22 +8590,22 @@ class cfgVehicles {
 					class Default
 					{
 						displayName = "$STR_vehicle_default";
-						attachment[] = {"PylonRack_4Rnd_LG_scalpel","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_4Rnd_LG_scalpel"};
+						attachment[] = {"PylonRack_4Rnd_LG_scalpel", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_4Rnd_LG_scalpel"};
 					};
 					class AT
 					{
 						displayName = "$STR_A3_cfgmagazines_titan_at_dns";
-						attachment[] = {"PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel","PylonRack_4Rnd_LG_scalpel"};
+						attachment[] = {"PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel"};
 					};
 					class CAS
 					{
 						displayName = "$STR_A3_CAS_PRESET_DISPLAYNAME";
-						attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire","PylonMissile_1Rnd_Bomb_03_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_19Rnd_Rocket_Skyfire"};
+						attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonMissile_1Rnd_Bomb_03_F", "PylonMissile_1Rnd_Bomb_03_F", "PylonRack_19Rnd_Rocket_Skyfire"};
 					};
 					class HAT
 					{
 						displayName = "$STR_A3_Heavy_AT_preset_displayName";
-						attachment[] = {"PylonRack_4Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_4Rnd_LG_scalpel"};
+						attachment[] = {"PylonRack_4Rnd_LG_scalpel", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_1Rnd_Missile_AGM_01_F", "PylonRack_4Rnd_LG_scalpel"};
 					};
 				};
 			};
@@ -8559,36 +8618,36 @@ class cfgVehicles {
 				displayName = "White Camo";
 				author = "The Uiltimate Builder";
 				factions[] = {"104th_Guys"};
-				textures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa","JangosVehicles\data\textures\xian\xian_ext02_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
+				textures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa", "JangosVehicles\data\textures\xian\xian_ext02_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
 			};
 		};
-		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa","JangosVehicles\data\textures\xian\xian_ext02_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa","JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
-		
-		class EventHandlers: DefaultEventhandlers
+		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa", "JangosVehicles\data\textures\xian\xian_ext02_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
+
+		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
 		};
 	};
-	
-	//Republic Transport
+
+	// Republic Transport
 	class 3AS_Republic_Transport_01;
-	class JA_104th_Republic_Transport: 3AS_Republic_Transport_01
+	class JA_104th_Republic_Transport : 3AS_Republic_Transport_01
 	{
 		displayName = "104th Republic Transport";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
-		visionMode[] = {"Normal","NVG","Ti"};
+		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
 		armor = 600;
-		irTargetSize = 1; //Again, raising this value to not make it a Stealth ship.
-		radarTargetSize = 1; //Again, raising this value to not make it a Stealth ship.
+		irTargetSize = 1;	 // Again, raising this value to not make it a Stealth ship.
+		radarTargetSize = 1; // Again, raising this value to not make it a Stealth ship.
 		class pilotCamera
 		{
 			class OpticsIn
@@ -8606,12 +8665,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -8619,7 +8678,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -8627,7 +8686,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -8635,7 +8694,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -8643,7 +8702,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -8667,35 +8726,35 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\RTInit.sqf';";
 		};
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\104_hs_ext_co.paa","3as\3as_starships\data\hs_int_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"};
+		hiddenselectionstextures[] = {"JangosVehicles\data\textures\104_hs_ext_co.paa", "3as\3as_starships\data\hs_int_co.paa", "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"};
 	};
-	
+
 	class JMSLLTE_UwingHeli_Reb_F;
-	class JA_104th_Uwing: JMSLLTE_UwingHeli_Reb_F
+	class JA_104th_Uwing : JMSLLTE_UwingHeli_Reb_F
 	{
 		displayName = "104th U-Wing Dropship";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
-		visionMode[] = {"Normal","NVG","Ti"};
+		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
 		armor = 200;
 		cargoAction[] = {"passenger_generic01_foldhands"};
 		cargoGetInAction[] = {"GetInHigh"};
 		cargoGetOutAction[] = {"GetOutHigh"};
-		textureList[] = {"Tex_Uwing_blue",1,"Tex_Uwing_white",1,"Tex_Uwing_rogue",1,"Tex_Uwing_anvil",1,"Tex_Uwing_NRearly",1,"Tex_Uwing_CavernAngels",1};
-		weapons[] = {"ls_laat_gun","ls_laat_gun_2","Laserdesignator_pilotCamera","FC_Dropcrate_PW1","CMFlareLauncher"};
-		magazines[] = {"200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","Laserbatteries","Pylon_FC_Dropcrate_P_1rnd","Pylon_FC_Dropcrate_P_1rnd","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
+		textureList[] = {"Tex_Uwing_blue", 1, "Tex_Uwing_white", 1, "Tex_Uwing_rogue", 1, "Tex_Uwing_anvil", 1, "Tex_Uwing_NRearly", 1, "Tex_Uwing_CavernAngels", 1};
+		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
+		magazines[] = {"ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "Laserbatteries", "Pylon_FC_Dropcrate_P_1rnd", "Pylon_FC_Dropcrate_P_1rnd", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -8713,12 +8772,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -8726,7 +8785,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -8734,7 +8793,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -8742,7 +8801,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -8750,7 +8809,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -8774,7 +8833,7 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
 		};
@@ -8788,17 +8847,17 @@ class cfgVehicles {
 					class WingPylonRight1
 					{
 						maxweight = 1200;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AGM65_RAIL","B_MISSILE_PYLON"};
+						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "DAR", "DAGR", "B_AGM65_RAIL", "B_MISSILE_PYLON"};
 						attachment = "PylonRack_12Rnd_PG_missiles";
 						bay = -1;
 						priority = 3;
-						UIposition[] = {0.35,0.1};
+						UIposition[] = {0.35, 0.1};
 						turret[] = {};
 					};
-					class WingPylonLeft1: WingPylonRight1
+					class WingPylonLeft1 : WingPylonRight1
 					{
 						mirroredMissilePos = 1;
-						UIposition[] = {0.35,0.467};
+						UIposition[] = {0.35, 0.467};
 					};
 				};
 				class Presets
@@ -8822,7 +8881,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -8855,7 +8914,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 90;
 						angleRangeVertical = 90;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -8903,7 +8962,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -8937,7 +8996,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -8971,7 +9030,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -9004,7 +9063,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -9037,7 +9096,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -9051,7 +9110,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -9081,7 +9140,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -9091,7 +9150,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -9122,7 +9181,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -9216,7 +9275,7 @@ class cfgVehicles {
 				statement = "this animateDoor ['Door_R', 1];this animate ['DoorsHandler',1]";
 				animPeriod = 4;
 			};
-			class CloseRightDoor: OpenRightDoor
+			class CloseRightDoor : OpenRightDoor
 			{
 				displayName = "[Close Right Door]";
 				displayNameDefault = "[Close Right Door]";
@@ -9239,7 +9298,7 @@ class cfgVehicles {
 				statement = "this animateDoor ['Wings', 1];";
 				animPeriod = 5;
 			};
-			class SfoilsClose: SfoilsOpen
+			class SfoilsClose : SfoilsOpen
 			{
 				displayName = "[S-foils close]";
 				displayNameDefault = "[S-foils close]";
@@ -9251,22 +9310,22 @@ class cfgVehicles {
 			};
 		};
 	};
-	
+
 	class JMSLLTE_N1fighter_naboo_F;
-	class JA_104th_N1: JMSLLTE_N1fighter_naboo_F
+	class JA_104th_N1 : JMSLLTE_N1fighter_naboo_F
 	{
 		displayName = "104th N-1 Starfighter";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-        side = 1;
+		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JLTS_Clone_P2_DC15S";
-		visionMode[] = {"Normal","NVG","Ti"};
+		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
-		hiddenSelectionsTextures[] = {"\JMSLLTE_vehicles_air\N1\data\n1_base_co.paa","\JMSLLTE_vehicles_air\Xwing\data\droid_dark_co.paa"};
+		hiddenSelectionsTextures[] = {"\JMSLLTE_vehicles_air\N1\data\n1_base_co.paa", "\JMSLLTE_vehicles_air\Xwing\data\droid_dark_co.paa"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -9284,12 +9343,12 @@ class cfgVehicles {
 					minFov = 0.425;
 					maxFov = 0.425;
 					directionStabilized = 1;
-					thermalMode[] = {0,1};
-					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0, 1};
+					visionMode[] = {"Normal", "NVG", "Ti"};
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
 				};
-				class zoomx4: Wide
+				class zoomx4 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.425/4)";
@@ -9297,7 +9356,7 @@ class cfgVehicles {
 					maxFov = "(0.425/4)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
-				class zoomX8: Wide
+				class zoomX8 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/8)";
@@ -9305,7 +9364,7 @@ class cfgVehicles {
 					maxFov = "(0.42/8)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX20: Wide
+				class zoomX20 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/20)";
@@ -9313,7 +9372,7 @@ class cfgVehicles {
 					maxFov = "(0.42/20)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX50: Wide
+				class zoomX50 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/50)";
@@ -9321,7 +9380,7 @@ class cfgVehicles {
 					maxFov = "(0.42/50)";
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
-				class zoomX70: Wide
+				class zoomX70 : Wide
 				{
 					opticsDisplayName = "NFOV";
 					initFov = "(0.42/70)";
@@ -9345,7 +9404,7 @@ class cfgVehicles {
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\LightAirInit.sqf';";
 		};
@@ -9362,12 +9421,12 @@ class cfgVehicles {
 						hardpoints[] = {"JMSLLTE_N1_CANNON_PYLON"};
 						attachment = "PylonRack_JMSLLTE_1000Rnd_N1_N1_mag";
 						priority = 3;
-						UIposition[] = {0.2,0.3};
+						UIposition[] = {0.2, 0.3};
 						turret[] = {};
 					};
-					class pylons2: pylons1
+					class pylons2 : pylons1
 					{
-						UIposition[] = {0.4,0.3};
+						UIposition[] = {0.4, 0.3};
 						mirroredMissilePos = 1;
 					};
 					class pylons3
@@ -9376,23 +9435,23 @@ class cfgVehicles {
 						hardpoints[] = {"JMSLLTE_MG7A_10RND_PROTON_PYLON"};
 						attachment = "PylonRack_JMSLLTE_10Rnd_MG7_proton_missiles";
 						priority = 1;
-						UIposition[] = {0.3,0.2};
+						UIposition[] = {0.3, 0.2};
 						turret[] = {};
 					};
 					class pylons4
 					{
 						maxweight = 1200;
-						hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AGM65_RAIL","B_MISSILE_PYLON"};
+						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "DAR", "DAGR", "B_AGM65_RAIL", "B_MISSILE_PYLON"};
 						attachment = "PylonRack_12Rnd_PG_missiles";
 						bay = -1;
 						priority = 3;
-						UIposition[] = {0.1,0.1};
+						UIposition[] = {0.1, 0.1};
 						turret[] = {};
 					};
-					class pylons5: pylons4
+					class pylons5 : pylons4
 					{
 						mirroredMissilePos = 4;
-						UIposition[] = {0.5,0.1};
+						UIposition[] = {0.5, 0.1};
 					};
 				};
 				class Presets
@@ -9405,7 +9464,7 @@ class cfgVehicles {
 					class N1
 					{
 						displayName = "N1/MG7-A";
-						attachment[] = {"PylonRack_JMSLLTE_1000Rnd_N1_N1_mag","PylonRack_JMSLLTE_1000Rnd_N1_N1_mag","PylonRack_JMSLLTE_10Rnd_MG7_proton_missiles"};
+						attachment[] = {"PylonRack_JMSLLTE_1000Rnd_N1_N1_mag", "PylonRack_JMSLLTE_1000Rnd_N1_N1_mag", "PylonRack_JMSLLTE_10Rnd_MG7_proton_missiles"};
 					};
 				};
 			};
@@ -9421,7 +9480,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0,1,1,1};
+						color[] = {0, 1, 1, 1};
 						componentType = "ActiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -9454,7 +9513,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 90;
 						angleRangeVertical = 90;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -9502,7 +9561,7 @@ class cfgVehicles {
 						aimDown = 0;
 						allowsMarking = 1;
 						animDirection = "";
-						color[] = {1,0,0,1};
+						color[] = {1, 0, 0, 1};
 						componentType = "IRSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 0.995;
@@ -9536,7 +9595,7 @@ class cfgVehicles {
 						aimDown = 0;
 						animDirection = "";
 						allowsMarking = 1;
-						color[] = {1,1,0.5,0.8};
+						color[] = {1, 1, 0.5, 0.8};
 						componentType = "VisualSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxFogSeeThrough = 1;
@@ -9570,7 +9629,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 360;
 						angleRangeVertical = 360;
 						animDirection = "";
-						color[] = {0.5,1,0.5,0.5};
+						color[] = {0.5, 1, 0.5, 0.5};
 						componentType = "PassiveRadarSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -9603,7 +9662,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "LaserSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -9636,7 +9695,7 @@ class cfgVehicles {
 						angleRangeHorizontal = 180;
 						angleRangeVertical = 180;
 						animDirection = "";
-						color[] = {1,1,1,0};
+						color[] = {1, 1, 1, 0};
 						componentType = "NVSensorComponent";
 						groundNoiseDistanceCoef = -1;
 						maxGroundNoiseDistance = -1;
@@ -9650,7 +9709,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
 			{
 				class Components
 				{
@@ -9680,7 +9739,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -9690,7 +9749,7 @@ class cfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
 			{
 				defaultDisplay = "SensorDisplay";
 				class Components
@@ -9721,7 +9780,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {4000, 2000, 16000, 8000};
 						resource = "RscCustomInfoSensors";
 					};
 					class CrewDisplay
@@ -9732,9 +9791,8 @@ class cfgVehicles {
 				};
 			};
 		};
-		
 	};
-	
+
 	/*
 	class 3AS_ATRT;
 	class JA_104th_ATRT: 3AS_ATRT
@@ -9745,27 +9803,26 @@ class cfgVehicles {
 	};
 	*/
 
-	//class OPTRE_M494;
+	// class OPTRE_M494;
 
-	class JA_104th_OryxNS: OPTRE_M494
+	class JA_104th_OryxNS : OPTRE_M494
 	{
-		
-		
+
 		displayName = "104th Oryx IFV Unshielded";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		crew = "SWLB_clone_pilot_base_P2";
+		crew = "ls_clone_phase2_pilot";
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
-		
-		class Turrets: Turrets
+
+		class Turrets : Turrets
 		{
-			class MainTurret: MainTurret
+			class MainTurret : MainTurret
 			{
-				class Turrets: Turrets
+				class Turrets : Turrets
 				{
-					class CommanderOptics: CommanderOptics
+					class CommanderOptics : CommanderOptics
 					{
 						body = "obsTurret";
 						gun = "obsGun";
@@ -9775,7 +9832,7 @@ class cfgVehicles {
 						maxVerticalRotSpeed = 1.8;
 						stabilizedInAxes = 3;
 						minElev = -12;
-						maxElev = 60; //Original 45
+						maxElev = 60; // Original 45
 						initElev = 0;
 						minTurn = -360;
 						maxTurn = 360;
@@ -9783,10 +9840,10 @@ class cfgVehicles {
 						memoryPointGun = "usti hlavne3";
 						gunBeg = "usti hlavne3";
 						gunEnd = "konec hlavne3";
-						weapons[] = {"3AS_Sabre_MG","Laserdesignator_mounted"};
-						magazines[] = {"3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","Laserbatteries"};
+						weapons[] = {"3AS_Sabre_MG", "Laserdesignator_mounted"};
+						magazines[] = {"3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "Laserbatteries"};
 						turretInfoType = "RscWeaponRangeZeroing";
-						discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+						discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 						discreteDistanceInitIndex = 2;
 						memoryPointGunnerOptics = "commanderview";
 						memoryPointGunnerOutOptics = "commanderview";
@@ -9795,7 +9852,7 @@ class cfgVehicles {
 						gunnerOutOpticsModel = "";
 						gunnerOpticsEffect[] = {};
 						gunnerHasFlares = 1;
-						class ViewOptics: ViewOptics
+						class ViewOptics : ViewOptics
 						{
 							initAngleX = 0;
 							minAngleX = -30;
@@ -9806,8 +9863,8 @@ class cfgVehicles {
 							initFov = 0.155;
 							minFov = 0.034;
 							maxFov = 0.155;
-							visionMode[] = {"Normal","TI"};
-							thermalMode[] = {0,1};
+							visionMode[] = {"Normal", "TI"};
+							thermalMode[] = {0, 1};
 						};
 						startEngine = 0;
 						viewGunnerInExternal = 1;
@@ -9818,12 +9875,12 @@ class cfgVehicles {
 				memoryPointGun = "usti hlavne"; //"usti hlavne2" is the MG port left of the gun, while "usti hlavne" is the end of the cannon barrel.
 				maxVerticalRotSpeed = "90/45";
 				maxHorizontalRotSpeed = "90/45";
-				weapons[] = {"Laserdesignator_mounted","ls_laat_gun","ls_laat_gun_2","3AS_Sabre_MG","OPTRE_M670_ATGM_Launcher","SmokeLauncher"};
-				magazines[] = {"Laserbatteries","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag"};
+				weapons[] = {"Laserdesignator_mounted", "ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "SmokeLauncher"};
+				magazines[] = {"Laserbatteries", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
 				minElev = -12;
-				maxElev = 60; //Original 35
+				maxElev = 60; // Original 35
 				initElev = 0;
-				soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best","db-40",1.0,50};
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best", "db-40", 1.0, 50};
 				turretInfoType = "RscWeaponRangeZeroing";
 				selectionFireAnim = "zasleh2";
 				gun = "maingun";
@@ -9835,7 +9892,7 @@ class cfgVehicles {
 				gunnerGetOutAction = "GetOutLow";
 				LODTurnedIn = 1100;
 				turretAxis = "OsaVeze";
-				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400};
 				discreteDistanceInitIndex = 5;
 				memoryPointGunnerOptics = "gunnerview";
 				gunnerOutOpticsModel = "";
@@ -9843,7 +9900,7 @@ class cfgVehicles {
 				gunnerOpticsEffect[] = {};
 				class OpticsIn
 				{
-					class Wide: ViewOptics
+					class Wide : ViewOptics
 					{
 						initAngleX = 0;
 						minAngleX = -30;
@@ -9854,33 +9911,33 @@ class cfgVehicles {
 						initFov = 0.3;
 						minFov = 0.3;
 						maxFov = 0.3;
-						visionMode[] = {"Normal","NVG","Ti"};
-						thermalMode[] = {2,3};
+						visionMode[] = {"Normal", "NVG", "Ti"};
+						thermalMode[] = {2, 3};
 						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
 						gunnerOpticsEffect[] = {};
 					};
-					class Medium: Wide
+					class Medium : Wide
 					{
 						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
 						initFov = 0.07;
 						minFov = 0.07;
 						maxFov = 0.07;
 					};
-					class Narrow: Wide
+					class Narrow : Wide
 					{
 						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
 						initFov = 0.028;
 						minFov = 0.028;
 						maxFov = 0.028;
 					};
-					class Zoom1: Wide
+					class Zoom1 : Wide
 					{
 						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
 						initFov = 0.014;
 						minFov = 0.014;
 						maxFov = 0.014;
 					};
-					class Zoom2: Wide
+					class Zoom2 : Wide
 					{
 						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
 						initFov = 0.007;
@@ -9896,57 +9953,56 @@ class cfgVehicles {
 				usePip = 1;
 			};
 		};
-		
-		class EventHandlers: DefaultEventhandlers
+
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrew.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrew.sqf';";
 			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
 		};
-	
-		
+
 		class textureSources
 		{
 			class colorclone
 			{
 				displayName = "Clone 104th";
 				author = "Article 2 Studios";
-				textures[] = {"JangosVehiclesGround\data\textures\oryx\oryx_armor_clone_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+				textures[] = {"JangosVehiclesGround\data\textures\oryx\oryx_armor_clone_co.paa", "JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa", "JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa", "\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
 			};
 			class colorcloneblue
 			{
 				displayName = "Clone Blue";
 				author = "Article 2 Studios";
-				textures[] = {"JangosVehiclesGround\data\textures\oryx\oryx_armor_clone_blue_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorpion_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+				textures[] = {"JangosVehiclesGround\data\textures\oryx\oryx_armor_clone_blue_co.paa", "JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa", "JangosVehicles\data\textures\oryx\scorpion_mg_clone_co.paa", "\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
 			};
 			class colorclonewhite
 			{
 				displayName = "Clone White";
 				author = "Article 2 Studios";
-				textures[] = {"JangosVehiclesGround\data\textures\oryx\oryx_armor_clone_white_co.paa","JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+				textures[] = {"JangosVehiclesGround\data\textures\oryx\oryx_armor_clone_white_co.paa", "JangosVehicles\data\textures\oryx\oryx_main_clone_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "JangosVehicles\data\textures\oryx\oryx_turret_clone_co.paa", "JangosVehicles\data\textures\oryx\scorp_mg_clone_co.paa", "\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
 			};
 			class colorstand
 			{
 				displayName = "Standard";
 				author = "Article 2 Studios";
-				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\oryx_armor_co.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_main_co.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\oryx_turret_co.paa","\OPTRE_Vehicles\Oryx\data\texture\scorpion_mg_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\oryx_armor_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\oryx_main_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\oryx_turret_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\scorpion_mg_co.paa", "\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
 			};
 			class colordes
 			{
 				displayName = "Tan";
 				author = "Article 2 Studios";
-				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_desert_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_desert_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_desert_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_desert_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_desert_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_desert_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_desert_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_desert_co.paa", "\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
 			};
 			class colortund
 			{
 				displayName = "White Digital";
 				author = "Article 2 Studios";
-				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_tundra_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_tundra_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_tundra_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_tundra_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+				textures[] = {"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_tundra_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_tundra_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_tundra_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_tundra_co.paa", "\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
 			};
 		};
-		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\oryx\oryx_armor_clone_co.paa","JangosVehiclesGround\data\textures\oryx\oryx_main_clone_co.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa","JangosVehiclesGround\data\textures\oryx\oryx_turret_clone_co.paa","JangosVehiclesGround\data\textures\oryx\scorp_mg_clone_co.paa","\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
-		
-		class ACE_SelfActions: ACE_SelfActions
+		hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6", "camo7", "camo8"};
+		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\oryx\oryx_armor_clone_co.paa", "JangosVehiclesGround\data\textures\oryx\oryx_main_clone_co.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa", "JangosVehiclesGround\data\textures\oryx\oryx_turret_clone_co.paa", "JangosVehiclesGround\data\textures\oryx\scorp_mg_clone_co.paa", "\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal__ca.paa"};
+
+		class ACE_SelfActions : ACE_SelfActions
 		{
 			class TFAR_IntercomChannel
 			{
@@ -9992,447 +10048,445 @@ class cfgVehicles {
 				};
 			};
 		};
-		
-		soundGetIn[] = {"A3\sounds_f\vehicles\armor\noises\get_in_out",0.56234133,1};
-		soundGetOut[] = {"A3\sounds_f\vehicles\armor\noises\get_in_out",0.56234133,1,20};
-		soundTurnIn[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out",1.7782794,1,20};
-		soundTurnOut[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out",1.7782794,1,20};
-		soundTurnInInternal[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out",1.7782794,1,20};
-		soundTurnOutInternal[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out",1.7782794,1,20};
-		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"212th\Vehicles\212th_APC02\data\sounds\engine_start_int",0.39810717,1};
-		soundEngineOnExt[] = {"212th\Vehicles\212th_APC02\data\sounds\engine_star_ext",0.56234133,1,200};
-		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\armor\APC\APC1\int_engine_stop",0.39810717,1};
-		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\armor\APC\APC1\ext_engine_stop",0.56234133,1,200};
-		soundBushCollision1[] = {"A3\Sounds_F\vehicles\crashes\helis\Heli_coll_bush_int_1",0.17782794,1,100};
-		soundBushCollision2[] = {"A3\Sounds_F\vehicles\crashes\helis\Heli_coll_bush_int_2",0.17782794,1,100};
-		soundBushCollision3[] = {"A3\Sounds_F\vehicles\crashes\helis\Heli_coll_bush_int_3",0.17782794,1,100};
-		soundBushCrash[] = {"soundBushCollision1",0.33,"soundBushCollision2",0.33,"soundBushCollision3",0.33};
-		soundGeneralCollision1[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_crash_default_1",1,1,100};
-		soundGeneralCollision2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_crash_default_2",1,1,100};
-		soundGeneralCollision3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_crash_default_3",1,1,100};
-		soundGeneralCollision4[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_crash_default_4",1,1,100};
-		soundCrashes[] = {"soundGeneralCollision1",0.25,"soundGeneralCollision2",0.25,"soundGeneralCollision3",0.25,"soundGeneralCollision4",0.25};
-		buildCrash0[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_building_1",1,1,200};
-		buildCrash1[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_building_2",1,1,200};
-		buildCrash2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_building_3",1,1,200};
-		buildCrash3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_building_4",1,1,200};
-		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-		WoodCrash0[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_wood_1",1,1,200};
-		WoodCrash1[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_wood_2",1,1,200};
-		WoodCrash2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_wood_3",1,1,200};
-		WoodCrash3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_wood_4",1,1,200};
-		soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166};
-		ArmorCrash0[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_1",1,1,200};
-		ArmorCrash1[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_2",1,1,200};
-		ArmorCrash2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_3",1,1,200};
-		ArmorCrash3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_4",1,1,200};
-		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+
+		soundGetIn[] = {"A3\sounds_f\vehicles\armor\noises\get_in_out", 0.56234133, 1};
+		soundGetOut[] = {"A3\sounds_f\vehicles\armor\noises\get_in_out", 0.56234133, 1, 20};
+		soundTurnIn[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.7782794, 1, 20};
+		soundTurnOut[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.7782794, 1, 20};
+		soundTurnInInternal[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.7782794, 1, 20};
+		soundTurnOutInternal[] = {"A3\Sounds_F\vehicles\noises\Turn_in_out", 1.7782794, 1, 20};
+		soundDammage[] = {"", 0.56234133, 1};
+		soundEngineOnInt[] = {"212th\Vehicles\212th_APC02\data\sounds\engine_start_int", 0.39810717, 1};
+		soundEngineOnExt[] = {"212th\Vehicles\212th_APC02\data\sounds\engine_star_ext", 0.56234133, 1, 200};
+		soundEngineOffInt[] = {"A3\Sounds_F\vehicles\armor\APC\APC1\int_engine_stop", 0.39810717, 1};
+		soundEngineOffExt[] = {"A3\Sounds_F\vehicles\armor\APC\APC1\ext_engine_stop", 0.56234133, 1, 200};
+		soundBushCollision1[] = {"A3\Sounds_F\vehicles\crashes\helis\Heli_coll_bush_int_1", 0.17782794, 1, 100};
+		soundBushCollision2[] = {"A3\Sounds_F\vehicles\crashes\helis\Heli_coll_bush_int_2", 0.17782794, 1, 100};
+		soundBushCollision3[] = {"A3\Sounds_F\vehicles\crashes\helis\Heli_coll_bush_int_3", 0.17782794, 1, 100};
+		soundBushCrash[] = {"soundBushCollision1", 0.33, "soundBushCollision2", 0.33, "soundBushCollision3", 0.33};
+		soundGeneralCollision1[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_crash_default_1", 1, 1, 100};
+		soundGeneralCollision2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_crash_default_2", 1, 1, 100};
+		soundGeneralCollision3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_crash_default_3", 1, 1, 100};
+		soundGeneralCollision4[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_crash_default_4", 1, 1, 100};
+		soundCrashes[] = {"soundGeneralCollision1", 0.25, "soundGeneralCollision2", 0.25, "soundGeneralCollision3", 0.25, "soundGeneralCollision4", 0.25};
+		buildCrash0[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_building_1", 1, 1, 200};
+		buildCrash1[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_building_2", 1, 1, 200};
+		buildCrash2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_building_3", 1, 1, 200};
+		buildCrash3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_building_4", 1, 1, 200};
+		soundBuildingCrash[] = {"buildCrash0", 0.25, "buildCrash1", 0.25, "buildCrash2", 0.25, "buildCrash3", 0.25};
+		WoodCrash0[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_wood_1", 1, 1, 200};
+		WoodCrash1[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_wood_2", 1, 1, 200};
+		WoodCrash2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_wood_3", 1, 1, 200};
+		WoodCrash3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_wood_4", 1, 1, 200};
+		soundWoodCrash[] = {"woodCrash0", 0.166, "woodCrash1", 0.166, "woodCrash2", 0.166, "woodCrash3", 0.166};
+		ArmorCrash0[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_1", 1, 1, 200};
+		ArmorCrash1[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_2", 1, 1, 200};
+		ArmorCrash2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_3", 1, 1, 200};
+		ArmorCrash3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_4", 1, 1, 200};
+		soundArmorCrash[] = {"ArmorCrash0", 0.25, "ArmorCrash1", 0.25, "ArmorCrash2", 0.25, "ArmorCrash3", 0.25};
 		class Sounds
 		{
 			class Idle_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext",0.3548134,1,200};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext", 0.3548134, 1, 200};
 				frequency = "0.95 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
 				volume = "engineOn*camPos*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
 			};
 			class Engine
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext",0.39810717,1,200};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext", 0.39810717, 1, 200};
 				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
 				volume = "engineOn*camPos*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
 			};
 			class Engine1_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext",0.4466836,1,200};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext", 0.4466836, 1, 200};
 				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
 				volume = "engineOn*camPos*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
 			};
 			class Engine2_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext",0.5011872,1,250};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext", 0.5011872, 1, 250};
 				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
 				volume = "engineOn*camPos*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
 			};
 			class Engine3_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext",0.56234133,1,300};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext", 0.56234133, 1, 300};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
 				volume = "engineOn*camPos*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
 			};
 			class Engine4_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext",0.63095737,1,300};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext", 0.63095737, 1, 300};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
 				volume = "engineOn*camPos*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
 			};
 			class Engine5_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext",0.70794576,1,300};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_ext", 0.70794576, 1, 300};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
 				volume = "engineOn*camPos*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
 			};
 			class IdleThrust
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext",0.56234133,1,200};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext", 0.56234133, 1, 200};
 				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
 				volume = "engineOn*camPos*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
 			};
 			class EngineThrust
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext",0.63095737,1,200};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext", 0.63095737, 1, 200};
 				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
 				volume = "engineOn*camPos*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
 			};
 			class Engine1_Thrust_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext",0.63095737,1,230};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext", 0.63095737, 1, 230};
 				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
 				volume = "engineOn*camPos*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
 			};
 			class Engine2_Thrust_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext",0.70794576,1,250};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext", 0.70794576, 1, 250};
 				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
 				volume = "engineOn*camPos*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
 			};
 			class Engine3_Thrust_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext",0.70794576,1,350};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext", 0.70794576, 1, 350};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
 				volume = "engineOn*camPos*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
 			};
 			class Engine4_Thrust_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext",1,1,350};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext", 1, 1, 350};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
 				volume = "engineOn*camPos*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
 			};
 			class Engine5_Thrust_ext
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext",1.1220185,1,400};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_ext", 1.1220185, 1, 400};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
 				volume = "engineOn*camPos*(0.8+(0.6*(thrust factor[0.1,1])))*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
 			};
 			class Idle_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int",0.31622776,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int", 0.31622776, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
 				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
 			};
 			class Engine_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int",0.3548134,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int", 0.3548134, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
 				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
 			};
 			class Engine1_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int",0.39810717,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int", 0.39810717, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
 				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
 			};
 			class Engine2_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int",0.4466836,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int", 0.4466836, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
 				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
 			};
 			class Engine3_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int",0.5011872,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int", 0.5011872, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
 				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
 			};
 			class Engine4_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int",0.56234133,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int", 0.56234133, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
 				volume = "engineOn*(1-camPos)*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
 			};
 			class Engine5_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int",0.63095737,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\Engine_int", 0.63095737, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
 				volume = "engineOn*(1-camPos)*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
 			};
 			class IdleThrust_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int",0.3548134,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int", 0.3548134, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(10/ 2300),(200/ 2300)])*0.15";
 				volume = "engineOn*(1-camPos)*(0.4+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(10/ 2300),(200/ 2300)]) * ((rpm/ 2300) factor[(500/ 2300),(425/ 2300)]))";
 			};
 			class EngineThrust_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int",0.39810717,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int", 0.39810717, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(430/ 2300),(730/ 2300)])*0.2";
 				volume = "engineOn*(1-camPos)*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(430/ 2300),(510/ 2300)]) * ((rpm/ 2300) factor[(730/ 2300),(620/ 2300)]))";
 			};
 			class Engine1_Thrust_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int",0.4466836,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int", 0.4466836, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(630/ 2300),(1000/ 2300)])*0.2";
 				volume = "engineOn*(1-camPos)*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(600/ 2300),(720/ 2300)]) * ((rpm/ 2300) factor[(1100/ 2300),(840/ 2300)]))";
 			};
 			class Engine2_Thrust_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int",0.4466836,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int", 0.4466836, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(850/ 2300),(1300/ 2300)])*0.2";
 				volume = "engineOn*(1-camPos)*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(800/ 2300),(1000/ 2300)]) * ((rpm/ 2300) factor[(1300/ 2300),(1100/ 2300)]))";
 			};
 			class Engine3_Thrust_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int",0.5011872,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int", 0.5011872, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1100/ 2300),(1600/ 2300)])*0.1";
 				volume = "engineOn*(1-camPos)*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1100/ 2300),(1270/ 2300)]) * ((rpm/ 2300) factor[(1550/ 2300),(1380/ 2300)]))";
 			};
 			class Engine4_Thrust_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int",0.56234133,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int", 0.56234133, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1400/ 2300),(2000/ 2300)])*0.1";
 				volume = "engineOn*(1-camPos)*(0.8+(0.6*(thrust factor[0.1,1])))*(((rpm/ 2300) factor[(1380/ 2300),(1500/ 2300)]) * ((rpm/ 2300) factor[(2000/ 2300),(1700/ 2300)]))";
 			};
 			class Engine5_Thrust_int
 			{
-				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int",0.63095737,1};
+				sound[] = {"212th\Vehicles\212th_APC02\data\sounds\exhaust_int", 0.63095737, 1};
 				frequency = "0.8 + ((rpm/ 2300) factor[(1700/ 2300),(2300/ 2300)])*0.1";
 				volume = "engineOn*(1-camPos)*(0.8+(0.6*(thrust factor[0.1,1])))*((rpm/ 2300) factor[(1600/ 2300),(2100/ 2300)])";
 			};
 			class NoiseInt
 			{
-				sound[] = {"A3\sounds_f\vehicles\armor\noises\noise_tank_int_1",0.5011872,1};
+				sound[] = {"A3\sounds_f\vehicles\armor\noises\noise_tank_int_1", 0.5011872, 1};
 				frequency = "1";
 				volume = "(1-camPos)*(angVelocity max 0.04)*(Speed factor[4, 15])";
 			};
 			class NoiseExt
 			{
-				sound[] = {"A3\sounds_f\vehicles\armor\noises\noise_tank_ext_1",0.63095737,1,150};
+				sound[] = {"A3\sounds_f\vehicles\armor\noises\noise_tank_ext_1", 0.63095737, 1, 150};
 				frequency = "1";
 				volume = "camPos*(angVelocity max 0.04)*(Speed factor[4, 15])";
 			};
 			class TiresRockOut
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1",1,1,60};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_1", 1, 1, 60};
 				frequency = "1";
 				volume = "camPos*rock*(Speed factor[2, 20])";
 			};
 			class TiresSandOut
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1",1,1,60};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-sand1", 1, 1, 60};
 				frequency = "1";
 				volume = "camPos*sand*(Speed factor[2, 20])";
 			};
 			class TiresGrassOut
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2",1,1,60};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_dirt_soft_2", 1, 1, 60};
 				frequency = "1";
 				volume = "camPos*grass*(Speed factor[2, 20])";
 			};
 			class TiresMudOut
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2",1,1,60};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext-tires-mud2", 1, 1, 60};
 				frequency = "1";
 				volume = "camPos*mud*(Speed factor[2, 20])";
 			};
 			class TiresGravelOut
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1",1,1,60};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_gravel_1", 1, 1, 60};
 				frequency = "1";
 				volume = "camPos*gravel*(Speed factor[2, 20])";
 			};
 			class TiresAsphaltOut
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2",1,1,60};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\ext_tires_asfalt_2", 1, 1, 60};
 				frequency = "1";
 				volume = "camPos*asphalt*(Speed factor[2, 20])";
 			};
 			class NoiseOut
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",1.5848932,1,90};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3", 1.5848932, 1, 90};
 				frequency = "1";
 				volume = "camPos*(damper0 max 0.02)*(Speed factor[0, 8])";
 			};
 			class TiresRockIn
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1",0.70794576,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_1", 0.70794576, 1};
 				frequency = "1";
 				volume = "(1-camPos)*rock*(Speed factor[2, 20])";
 			};
 			class TiresSandIn
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2",0.70794576,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-sand2", 0.70794576, 1};
 				frequency = "1";
 				volume = "(1-camPos)*sand*(Speed factor[2, 20])";
 			};
 			class TiresGrassIn
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2",0.70794576,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_dirt_soft_2", 0.70794576, 1};
 				frequency = "1";
 				volume = "(1-camPos)*grass*(Speed factor[2, 20])";
 			};
 			class TiresMudIn
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2",0.70794576,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int-tires-mud2", 0.70794576, 1};
 				frequency = "1";
 				volume = "(1-camPos)*mud*(Speed factor[2, 20])";
 			};
 			class TiresGravelIn
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1",0.70794576,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_gravel_1", 0.70794576, 1};
 				frequency = "1";
 				volume = "(1-camPos)*gravel*(Speed factor[2, 20])";
 			};
 			class TiresAsphaltIn
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2",0.70794576,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\tires\int_tires_asfalt_2", 0.70794576, 1};
 				frequency = "1";
 				volume = "(1-camPos)*asphalt*(Speed factor[2, 20])";
 			};
 			class NoiseIn
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3",0.5011872,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\noise_int_car_3", 0.5011872, 1};
 				frequency = "1";
 				volume = "(damper0 max 0.1)*(Speed factor[0, 8])*(1-camPos)";
 			};
 			class breaking_ext_road
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04", 1, 1, 100};
 				frequency = 1;
 				volume = "engineOn*camPos*(LongSlipDrive factor[-0.2, -0.3])*(Speed factor[2, 10])";
 			};
 			class acceleration_ext_road
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 1, 1, 100};
 				frequency = 1;
 				volume = "engineOn*camPos*(LongSlipDrive factor[0.2, 0.3])*(Speed factor[10, 1])";
 			};
 			class turn_left_ext_road
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 1, 1, 100};
 				frequency = 1;
 				volume = "engineOn*camPos*(latSlipDrive factor[0.15, 0.3])*(Speed factor[0, 10])";
 			};
 			class turn_right_ext_road
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 1, 1, 100};
 				frequency = 1;
 				volume = "engineOn*camPos*(latSlipDrive factor[-0.15, -0.3])*(Speed factor[0, 10])";
 			};
 			class breaking_ext_dirt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04", 1, 1, 100};
 				frequency = 1;
 				volume = "engineOn*camPos*(LongSlipDrive factor[-0.2, -0.3])*(Speed factor[2, 10])";
 			};
 			class acceleration_ext_dirt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 1, 1, 100};
 				frequency = 1;
 				volume = "engineOn*camPos*(LongSlipDrive factor[0.2, 0.3])*(Speed factor[10, 1])";
 			};
 			class turn_left_ext_dirt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 1, 1, 100};
 				frequency = 1;
 				volume = "engineOn*camPos*(latSlipDrive factor[0.15, 0.3])*(Speed factor[0, 10])";
 			};
 			class turn_right_ext_dirt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02", 1, 1, 100};
 				frequency = 1;
 				volume = "engineOn*camPos*(latSlipDrive factor[-0.15, -0.3])*(Speed factor[0, 10])";
 			};
 			class breaking_int_road
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",1,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int", 1, 1};
 				frequency = 1;
 				volume = "engineOn*(1-camPos)*(LongSlipDrive factor[-0.2, -0.3])*(Speed factor[2, 6])";
 			};
 			class acceleration_int_road
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 1, 1};
 				frequency = 1;
 				volume = "engineOn*(1-camPos)*(LongSlipDrive factor[0.2, 0.3])*(Speed factor[10, 1])";
 			};
 			class turn_left_int_road
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 1, 1};
 				frequency = 1;
 				volume = "engineOn*(1-camPos)*(latSlipDrive factor[0.15, 0.3])*(Speed factor[0, 10])";
 			};
 			class turn_right_int_road
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 1, 1};
 				frequency = 1;
 				volume = "engineOn*(1-camPos)*(latSlipDrive factor[-0.15, -0.3])*(Speed factor[0, 10])";
 			};
 			class breaking_int_dirt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int",1,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_04_int", 1, 1};
 				frequency = 1;
 				volume = "engineOn*(1-camPos)*(LongSlipDrive factor[-0.2, -0.3])*(Speed factor[2, 6])";
 			};
 			class acceleration_int_dirt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 1, 1};
 				frequency = 1;
 				volume = "engineOn*(1-camPos)*(LongSlipDrive factor[0.2, 0.3])*(Speed factor[10, 1])";
 			};
 			class turn_left_int_dirt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 1, 1};
 				frequency = 1;
 				volume = "engineOn*(1-camPos)*(latSlipDrive factor[0.15, 0.3])*(Speed factor[0, 10])";
 			};
 			class turn_right_int_dirt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int",1,1};
+				sound[] = {"A3\Sounds_F\vehicles\soft\noises\slipping_tires_loop_02_int", 1, 1};
 				frequency = 1;
 				volume = "engineOn*(1-camPos)*(latSlipDrive factor[-0.15, -0.3])*(Speed factor[0, 10])";
 			};
 			class RainExt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_ext",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_ext", 1, 1, 100};
 				frequency = 1;
 				volume = "camPos * (rain - rotorSpeed/2) * 2";
 			};
 			class RainInt
 			{
-				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_int",1,1,100};
+				sound[] = {"A3\Sounds_F\vehicles\noises\rain1_int", 1, 1, 100};
 				frequency = 1;
 				volume = "(1-camPos)*(rain - rotorSpeed/2)*2";
 			};
 		};
-		
 	};
-	class JA_104th_Oryx: JA_104th_OryxNS
+	class JA_104th_Oryx : JA_104th_OryxNS
 	{
-		
+
 		displayName = "104th Oryx IFV Shielded";
-		
-		class EventHandlers: DefaultEventhandlers
+
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShield.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShield.sqf';";
 			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
 		};
 	};
-	class JA_104th_OryxSC: JA_104th_OryxNS 
+	class JA_104th_OryxSC : JA_104th_OryxNS
 	{
-		
+
 		displayName = "104th Oryx IFV Shielded Debug";
 		scope = 0;
 		scopeCurator = 0;
-		
-		class EventHandlers: DefaultEventhandlers
+
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShieldComponent.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShieldComponent.sqf';";
 			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
 		};
-		
 	};
-	
+
 	class 212th_B_APC_Wheeled_02_cannon_F;
-	class JA_104th_APC_Light_Bantha: 212th_B_APC_Wheeled_02_cannon_F
+	class JA_104th_APC_Light_Bantha : 212th_B_APC_Wheeled_02_cannon_F
 	{
 		displayName = "104th Light Bantha";
 		faction = "104th_Guys";
@@ -10440,9 +10494,9 @@ class cfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
-		
+
 		crewCrashProtection = 0.05;
-		
+
 		class Components
 		{
 			class VehicleSystemsDisplayManagerComponentRight
@@ -10491,7 +10545,7 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,1000};
+						range[] = {4000, 2000, 1000};
 						resource = "RscCustomInfoSensors";
 					};
 				};
@@ -10542,24 +10596,23 @@ class cfgVehicles {
 					class SensorDisplay
 					{
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,1000};
+						range[] = {4000, 2000, 1000};
 						resource = "RscCustomInfoSensors";
 					};
 				};
 			};
 		};
-		
-		class EventHandlers: DefaultEventhandlers
+
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\BanthaCrew.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\BanthaCrew.sqf';";
 			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
 		};
-		
 	};
-	
+
 	class O_T_LSV_02_armed_F;
-	class JA_104th_LSV: O_T_LSV_02_armed_F
+	class JA_104th_LSV : O_T_LSV_02_armed_F
 	{
 		displayName = "104th Light Strike Vehicle";
 		faction = "104th_Guys";
@@ -10568,164 +10621,185 @@ class cfgVehicles {
 		scopeCurator = 2;
 		side = 1;
 		crew = "SWLB_clone_sniper_base_P2";
-		
-		class EventHandlers: DefaultEventhandlers
+
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\LSVGun.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\LSVGun.sqf';";
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
 		};
-		
 	};
-	
-	
+
 	class House_F;
 	class B_UAV_01_F;
 	class B_UGV_01_F;
-	class shieldtest: House_F {
-		
+	class shieldtest : House_F
+	{
+
 		displayname = "shieldspheretest";
 		model = "JangosVehicles\data\models\ShieldSphereTest.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
-			killed="deleteVehicle (_this select 0)";
+			killed = "deleteVehicle (_this select 0)";
 		};
 	};
-	class oryxshield: shieldtest {
+	class oryxshield : shieldtest
+	{
 		displayname = "Oryx shield bubble";
 		model = "JangosVehicles\data\models\OryxShield.p3d";
 		hiddenSelections[] = {};
 	};
-	class oryxshieldvo: oryxshield {
-		
+	class oryxshieldvo : oryxshield
+	{
+
 		displayname = "Oryx shield bubble Visual";
 		model = "JangosVehicles\data\models\OryxShieldvo.p3d";
 		hiddenSelections[] = {};
 	};
-	class oryxshieldred: oryxshield {
-		
+	class oryxshieldred : oryxshield
+	{
+
 		displayname = "Oryx shield bubble Red";
 		model = "JangosVehicles\data\models\OryxShieldRed.p3d";
 		hiddenSelections[] = {};
 	};
-	class oryxshieldfb: oryxshield {
-		
+	class oryxshieldfb : oryxshield
+	{
+
 		displayname = "Oryx shield bubble Full Blue";
 		model = "JangosVehicles\data\models\OryxShieldfb.p3d";
 		hiddenSelections[] = {};
 	};
-	class oryxshieldhb: oryxshield {
-		
+	class oryxshieldhb : oryxshield
+	{
+
 		displayname = "Oryx shield bubble Half Blue";
 		model = "JangosVehicles\data\models\OryxShieldhb.p3d";
 		hiddenSelections[] = {};
 	};
-	class TX130shield: shieldtest {
+	class TX130shield : shieldtest
+	{
 		displayname = "TX130 shield bubble";
 		model = "JangosVehicles\data\models\TX130Shield.p3d";
 		hiddenSelections[] = {};
 	};
-	class TX130shieldvo: shieldtest {
+	class TX130shieldvo : shieldtest
+	{
 		displayname = "TX130 shield bubble Visual";
 		model = "JangosVehicles\data\models\TX130Shieldvo.p3d";
 		hiddenSelections[] = {};
 	};
-	class TX130shieldfb: shieldtest {
+	class TX130shieldfb : shieldtest
+	{
 		displayname = "TX130 shield bubble Full Blue";
 		model = "JangosVehicles\data\models\TX130Shieldfb.p3d";
 		hiddenSelections[] = {};
 	};
-	class TX130shieldhb: shieldtest {
+	class TX130shieldhb : shieldtest
+	{
 		displayname = "TX130 shield bubble Half Blue";
 		model = "JangosVehicles\data\models\TX130Shieldhn.p3d";
 		hiddenSelections[] = {};
 	};
-	class TX130shieldred: shieldtest {
-		
+	class TX130shieldred : shieldtest
+	{
+
 		displayname = "TX130 shield bubble Red";
 		model = "JangosVehicles\data\models\TX130ShieldRed.p3d";
 		hiddenSelections[] = {};
-		
 	};
-	class ywingshield: shieldtest {
+	class ywingshield : shieldtest
+	{
 		displayname = "Y-Wing shield bubble";
 		model = "JangosVehicles\data\models\YWingShield.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
 	};
-	class ywingshieldvo: shieldtest {
+	class ywingshieldvo : shieldtest
+	{
 		displayname = "Y-Wing shield bubble Visual";
 		model = "JangosVehicles\data\models\YWingShieldvo.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
 	};
-	class ywingshieldfb: shieldtest {
+	class ywingshieldfb : shieldtest
+	{
 		displayname = "Y-Wing shield bubble Full Blue";
 		model = "JangosVehicles\data\models\YWingShieldfb.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
 	};
-	class ywingshieldhb: shieldtest {
+	class ywingshieldhb : shieldtest
+	{
 		displayname = "Y-Wing shield bubble Half Blue";
 		model = "JangosVehicles\data\models\YWingShieldhb.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
 	};
-	class ywingshieldred: shieldtest {
+	class ywingshieldred : shieldtest
+	{
 		displayname = "Y-Wing shield bubble Red";
 		model = "JangosVehicles\data\models\YWingShieldRed.p3d";
 		hiddenSelections[] = {};
 	};
-	class z95shieldvo: shieldtest {
+	class z95shieldvo : shieldtest
+	{
 		displayname = "Z-95 shield bubble Visual";
 		model = "JangosVehicles\data\models\Z95Shieldvo.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
 	};
-	class z95shieldfb: shieldtest {
+	class z95shieldfb : shieldtest
+	{
 		displayname = "Z-95 shield bubble Full Blue";
 		model = "JangosVehicles\data\models\Z95Shieldfb.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
 	};
-	class z95shieldhb: shieldtest {
+	class z95shieldhb : shieldtest
+	{
 		displayname = "Z-95 shield bubble Half Blue";
 		model = "JangosVehicles\data\models\Z95Shieldhb.p3d";
 		hiddenSelections[] = {};
 		scope = 2;
 	};
-	class z95shieldred: shieldtest {
+	class z95shieldred : shieldtest
+	{
 		displayname = "Z-95 shield bubble Red";
 		model = "JangosVehicles\data\models\Z95ShieldRed.p3d";
 		hiddenSelections[] = {};
 	};
-	class droidekashieldvo: shieldtest {
-		
+	class droidekashieldvo : shieldtest
+	{
+
 		displayname = "Droideka shield bubble Visual";
 		model = "JangosVehicles\data\models\Droidekavo.p3d";
 		hiddenSelections[] = {};
 	};
-	class droidekashieldfb: shieldtest {
-		
+	class droidekashieldfb : shieldtest
+	{
+
 		displayname = "Droideka shield bubble Full Blue";
 		model = "JangosVehicles\data\models\Droidekafb.p3d";
 		hiddenSelections[] = {};
 	};
-	class droidekashieldhb: shieldtest {
-		
+	class droidekashieldhb : shieldtest
+	{
+
 		displayname = "Droideka shield bubble Half Blue";
 		model = "JangosVehicles\data\models\Droidekahb.p3d";
 		hiddenSelections[] = {};
 	};
-	class droidekashieldred: shieldtest {
-		
+	class droidekashieldred : shieldtest
+	{
+
 		displayname = "Droideka shield bubble Red";
 		model = "JangosVehicles\data\models\Droidekared.p3d";
 		hiddenSelections[] = {};
 	};
 	/*class BaseShield100m: House_F {
-		
+
 		displayname = "Base Shield Sphere 100m";
 		model = "JangosVehicles\data\models\100mBubble.p3d";
 		hiddenSelections[] = {};
@@ -10740,21 +10814,21 @@ class cfgVehicles {
 		};
 	};
 	class BaseShield100mFB: shieldtest {
-		
+
 		displayname = "Base Shield Sphere 100m Full Blue";
 		model = "JangosVehicles\data\models\100mBubblefb.p3d";
 		hiddenSelections[] = {};
 		scope = 0;
 	};
 	class BaseShield100mHB: shieldtest {
-		
+
 		displayname = "Base Shield Sphere 100m Half Blue";
 		model = "JangosVehicles\data\models\100mBubblehb.p3d";
 		hiddenSelections[] = {};
 		scope = 0;
 	};
 	class BaseShield100mRed: shieldtest {
-		
+
 		displayname = "Base Shield Sphere 100m Red";
 		model = "JangosVehicles\data\models\100mBubblered.p3d";
 		hiddenSelections[] = {};
@@ -10762,7 +10836,7 @@ class cfgVehicles {
 	};
 	class BaseShield100mSpawner: B_UGV_01_F
 	{
-		
+
 		displayname = "100m Base Shield Spawner";
 		scope = 2;
 		scopeCurator = 2;
@@ -10776,7 +10850,7 @@ class cfgVehicles {
 		};
 	};
 	class BaseShield500m: House_F {
-		
+
 		displayname = "Base Shield Sphere 500m";
 		model = "JangosVehicles\data\models\500mBubble.p3d";
 		hiddenSelections[] = {};
@@ -10792,7 +10866,7 @@ class cfgVehicles {
 	};
 	class BaseShield500mSpawner: B_UGV_01_F
 	{
-		
+
 		displayname = "500m Base Shield Spawner";
 		scope = 2;
 		scopeCurator = 2;
@@ -10805,31 +10879,33 @@ class cfgVehicles {
 			killed="deleteVehicle (_this select 0)";
 		};
 	};*/
-	
+
 	class Land_HelipadEmpty_F;
-	class 104th_EmptySoundPad: Land_HelipadEmpty_F {
+	class 104th_EmptySoundPad : Land_HelipadEmpty_F
+	{
 		displayname = "Shield bubble Sound";
 		hiddenSelections[] = {};
 		scope = 2;
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\ShieldSound.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\ShieldSound.sqf';";
 		};
 	};
-	class 104th_GiantEmptySoundPad: Land_HelipadEmpty_F {
+	class 104th_GiantEmptySoundPad : Land_HelipadEmpty_F
+	{
 		displayname = "Giant Shield bubble Sound";
 		hiddenSelections[] = {};
 		scope = 2;
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\GiantShieldSound.sqf';";
+			init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\GiantShieldSound.sqf';";
 		};
 	};
 
+	// Split
 
-	//Split
-
-	class JA_104th_Box_Ammo: ls_carrybox_base{
+	class JA_104th_Box_Ammo : 3AS_Supply_Large_Ammo_Prop
+	{
 		author = "Dak";
 		displayName = "Ammo Box - JLTS";
 		scope = 2;
@@ -10838,51 +10914,63 @@ class cfgVehicles {
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 3000;
-		class TransportWeapons{
+		class TransportWeapons
+		{
 		};
 		class TransportMagazines
 		{
-			class _xx_JLTS_DC15A_mag{
+			class _xx_JLTS_DC15A_mag
+			{
 				count = 20;
 				magazine = "JLTS_DC15A_mag";
 			};
-			class _xx_JLTS_DC17SA_mag{
+			class _xx_JLTS_DC17SA_mag
+			{
 				count = 30;
 				magazine = "JLTS_DC17SA_mag";
 			};
-			class _xx_JLTS_DW32S_mag{
+			class _xx_JLTS_DW32S_mag
+			{
 				count = 10;
 				magazine = "JLTS_DW32S_mag";
 			};
-			class _xx_JLTS_Z6_mag{
+			class _xx_JLTS_Z6_mag
+			{
 				count = 10;
 				magazine = "JLTS_Z6_mag";
 			};
-			class _xx_JLTS_stun_mag_short{
+			class _xx_JLTS_stun_mag_short
+			{
 				count = 10;
 				magazine = "JLTS_stun_mag_short";
 			};
-			class _xx_JLTS_stun_mag_long{
+			class _xx_JLTS_stun_mag_long
+			{
 				count = 10;
 				magazine = "JLTS_stun_mag_long";
 			};
-			class _xx_SWLW_DC15A_mag{
+			class _xx_SWLW_DC15A_mag
+			{
 				count = 20;
 				magazine = "SWLW_DC15A_mag";
 			};
-			class _xx_SWLW_DC15S_mag{
+			class _xx_SWLW_DC15S_mag
+			{
 				count = 20;
 				magazine = "SWLW_DC15S_mag";
 			};
-			class _xx_SWLW_DC17_mag{
+			class _xx_SWLW_DC17_mag
+			{
 				count = 20;
 				magazine = "SWLW_DC17_mag";
 			};
 		};
-		class TransportItems{
+		class TransportItems
+		{
 		};
 	};
-	class JA_104th_Box_Explosives: ls_carrybox_base{
+	class JA_104th_Box_Explosives : 3AS_Supply_Large_Black_Prop
+	{
 		author = "Dak";
 		displayName = "Explosives Box - 104th";
 		scope = 2;
@@ -10891,47 +10979,58 @@ class cfgVehicles {
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 2000;
-		class TransportWeapons{
+		class TransportWeapons
+		{
 		};
 		class TransportMagazines
 		{
-			class _xx_SWLW_smokeRed_mag{
+			class _xx_SWLW_smokeRed_mag
+			{
 				count = 10;
 				magazine = "SWLW_smokeRed_mag";
 			};
-			class _xx_1Rnd_SmokeOrange_Grenade_shell{
+			class _xx_1Rnd_SmokeOrange_Grenade_shell
+			{
 				count = 10;
 				magazine = "1Rnd_SmokeOrange_Grenade_shell";
 			};
-			class _xx_1Rnd_SmokePurple_Grenade_shell{
+			class _xx_1Rnd_SmokePurple_Grenade_shell
+			{
 				count = 10;
 				magazine = "1Rnd_SmokePurple_Grenade_shell";
 			};
-			class _xx_1Rnd_SmokeRed_Grenade_shell{
+			class _xx_1Rnd_SmokeRed_Grenade_shell
+			{
 				count = 10;
 				magazine = "1Rnd_SmokeRed_Grenade_shell";
 			};
-			class _xx_1Rnd_SmokeWhite_Grenade_shell{
+			class _xx_1Rnd_SmokeWhite_Grenade_shell
+			{
 				count = 10;
 				magazine = "1Rnd_Smoke_Grenade_shell";
 			};
-			class _xx_ls_mag_at_plx{
+			class _xx_ls_mag_at_plx
+			{
 				count = 10;
 				magazine = "ls_mag_at_plx";
 			};
-			class _xx_ls_mag_rpg_1rnd{
+			class _xx_ls_mag_rpg_1rnd
+			{
 				count = 10;
 				magazine = "ls_mag_rpg_1rnd";
 			};
-			class _xx_1Rnd_HE_Grenade_shell{ //
+			class _xx_1Rnd_HE_Grenade_shell
+			{ //
 				count = 10;
 				magazine = "1Rnd_HE_Grenade_shell";
 			};
 		};
-		class TransportItems{
+		class TransportItems
+		{
 		};
 	};
-	class JA_104th_Box_Medic: ls_carrybox_base{
+	class JA_104th_Box_Medic : 3AS_Supply_Large_Medical_Prop
+	{
 		author = "Dak";
 		displayName = "Medical Box - 104th";
 		scope = 2;
@@ -10940,64 +11039,79 @@ class cfgVehicles {
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		maximumLoad = 2000;
-		class TransportWeapons{
+		class TransportWeapons
+		{
 		};
-		class TransportMagazines{
+		class TransportMagazines
+		{
 		};
 		class TransportItems
 		{
-			class _xx_ACE_elasticBandage{
+			class _xx_ACE_elasticBandage
+			{
 				count = 110;
 				name = "ACE_elasticBandage";
 			};
-			class _xx_ACE_epinephrine{
+			class _xx_ACE_epinephrine
+			{
 				count = 50;
 				name = "ACE_epinephrine";
 			};
-			class _xx_ACE_morphine{
+			class _xx_ACE_morphine
+			{
 				count = 50;
 				name = "ACE_morphine";
 			};
-			class _xx_ACE_packingBandage{
+			class _xx_ACE_packingBandage
+			{
 				count = 110;
 				name = "ACE_packingBandage";
 			};
-			class _xx_ACE_plasmaIV{
+			class _xx_ACE_plasmaIV
+			{
 				count = 10;
 				name = "ACE_plasmaIV";
 			};
-			class _xx_ACE_plasmaIV_250{
+			class _xx_ACE_plasmaIV_250
+			{
 				count = 10;
 				name = "ACE_plasmaIV_250";
 			};
-			class _xx_ACE_plasmaIV_500{
+			class _xx_ACE_plasmaIV_500
+			{
 				count = 10;
 				name = "ACE_plasmaIV_500";
 			};
-			class _xx_ACE_quikclot{
+			class _xx_ACE_quikclot
+			{
 				count = 110;
 				name = "ACE_quikclot";
 			};
-			class _xx_ACE_salineIV{
+			class _xx_ACE_salineIV
+			{
 				count = 10;
 				name = "ACE_salineIV";
 			};
-			class _xx_ACE_salineIV_250{
+			class _xx_ACE_salineIV_250
+			{
 				count = 10;
 				name = "ACE_salineIV_250";
 			};
-			class _xx_ACE_salineIV_500{
+			class _xx_ACE_salineIV_500
+			{
 				count = 10;
 				name = "ACE_salineIV_500";
 			};
-			class _xx_ACE_tourniquet{
+			class _xx_ACE_tourniquet
+			{
 				count = 20;
 				name = "ACE_tourniquet";
 			};
 		};
 	};
 	class RD501_resuppy_box_pod_ammo;
-	class JA_104th_Box_Resupply: RD501_resuppy_box_pod_ammo{
+	class JA_104th_Box_Resupply : RD501_resuppy_box_pod_ammo
+	{
 		author = "501st + Echo";
 		displayName = "Ammo Box - 501st";
 		scope = 2;
@@ -11007,155 +11121,191 @@ class cfgVehicles {
 		editorSubcategory = "104th_Categ_Clones_Boxes";
 		class TransportWeapons
 		{
-			class _xx_ls_weapon_rps6{
+			class _xx_ls_weapon_rps6
+			{
 				count = 1;
 				weapon = "ls_weapon_rps6";
 			};
-			class _xx_501_weapon_DC15S{
+			class _xx_501_weapon_DC15S
+			{
 				count = 2;
 				weapon = "AUX501_Weaps_DC15S";
 			};
 		};
 		class TransportMagazines
 		{
-			class _xx_501_DC15X_mag{
+			class _xx_501_DC15X_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_40mw5";
 			};
-			class _xx_501_DC15L_mag{
+			class _xx_501_DC15L_mag
+			{
 				count = 10;
 				magazine = "AUX501_Weapons_Mags_20mw240";
 			};
-			class _xx_501_DC15C_mag{
+			class _xx_501_DC15C_mag
+			{
 				count = 10;
 				magazine = "AUX501_Weapons_Mags_20mw40";
 			};
-			class _xx_501_DC15ADP_mag{
+			class _xx_501_DC15ADP_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwdp30";
 			};
-			class _xx_501_DC15AUP_mag{
+			class _xx_501_DC15AUP_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwup30";
 			};
-			class _xx_501_DC15S_mag{
+			class _xx_501_DC15S_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_10mw50";
 			};
-			class _xx_501_Stun_mag{
+			class _xx_501_Stun_mag
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_Stun5";
 			};
-			class _xx_501_Z6_mag{
+			class _xx_501_Z6_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_10mw400";
 			};
-			class _xx_501_DC17DP_mag{
+			class _xx_501_DC17DP_mag
+			{
 				count = 5;
 				magazine = "AUX501_Weapons_Mags_20mwdp20";
 			};
-			class _xx_JLTS_DC15A_mag{
+			class _xx_JLTS_DC15A_mag
+			{
 				count = 5;
 				magazine = "JLTS_DC15A_mag";
 			};
-			class _xx_UGL_HE{
+			class _xx_UGL_HE
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_GL_HE3";
 			};
-			class _xx_UGL_Smoke_White{
+			class _xx_UGL_Smoke_White
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_white6";
 			};
-			class _xx_UGL_Smoke_Blue{
+			class _xx_UGL_Smoke_Blue
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_blue3";
 			};
-			class _xx_UGL_Smoke_Green{
+			class _xx_UGL_Smoke_Green
+			{
 				count = 1;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_green3";
 			};
-			class _xx_UGL_Smoke_Orange{
+			class _xx_UGL_Smoke_Orange
+			{
 				count = 1;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_orange3";
 			};
-			class _xx_UGL_Smoke_Purple{
+			class _xx_UGL_Smoke_Purple
+			{
 				count = 1;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_purple3";
 			};
-			class _xx_UGL_Smoke_Red{
+			class _xx_UGL_Smoke_Red
+			{
 				count = 2;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_red3";
 			};
-			class _xx_UGL_Smoke_Yellow{
+			class _xx_UGL_Smoke_Yellow
+			{
 				count = 1;
 				magazine = "AUX501_Weapons_Mags_GL_smoke_yellow3";
 			};
-			class _xx_ls_mag_at_plx{
+			class _xx_ls_mag_at_plx
+			{
 				count = 1;
 				magazine = "ls_mag_at_plx";
 			};
-			class _xx_ls_mag_rpg_1rnd{
+			class _xx_ls_mag_rpg_1rnd
+			{
 				count = 3;
 				magazine = "ls_mag_rpg_1rnd";
 			};
-			class _xx_JA104_mag_T9_1rnd{
+			class _xx_JA104_mag_T9_1rnd
+			{
 				count = 5;
 				magazine = "JA_104th_LaserCannon_mag";
 			};
-			class _xx_501_ThermalDet{
+			class _xx_501_ThermalDet
+			{
 				count = 8;
 				magazine = "AUX501_Weapons_Mags_Thermal_Detonator";
 			};
-			class _xx_3AS_ThermalDet{
+			class _xx_3AS_ThermalDet
+			{
 				count = 8;
 				magazine = "3AS_ThermalDetonator";
 			};
-			class _xx_LS_ThermalDet{
+			class _xx_LS_ThermalDet
+			{
 				count = 8;
 				magazine = "LS_mag_classC_thermalDet";
 			};
-			class _xx_BI_SmokeGrenade{
+			class _xx_BI_SmokeGrenade
+			{
 				count = 8;
 				magazine = "SmokeShell";
 			};
 		};
 		class TransportItems
 		{
-			class _xx_ACE_elasticBandage{
+			class _xx_ACE_elasticBandage
+			{
 				count = 50;
 				name = "ACE_elasticBandage";
 			};
-			class _xx_ACE_epinephrine{
+			class _xx_ACE_epinephrine
+			{
 				count = 20;
 				name = "ACE_epinephrine";
 			};
-			class _xx_ACE_morphine{
+			class _xx_ACE_morphine
+			{
 				count = 20;
 				name = "ACE_morphine";
 			};
-			class _xx_ACE_packingBandage{
+			class _xx_ACE_packingBandage
+			{
 				count = 30;
 				name = "ACE_packingBandage";
 			};
-			class _xx_ACE_quikclot{
+			class _xx_ACE_quikclot
+			{
 				count = 30;
 				name = "ACE_quikclot";
 			};
-			class _xx_ACE_salineIV{
+			class _xx_ACE_salineIV
+			{
 				count = 5;
 				name = "ACE_salineIV";
 			};
-			class _xx_ACE_salineIV_500{
+			class _xx_ACE_salineIV_500
+			{
 				count = 5;
 				name = "ACE_salineIV_500";
 			};
-			class _xx_ACE_tourniquet{
+			class _xx_ACE_tourniquet
+			{
 				count = 8;
 				name = "ACE_tourniquet";
 			};
 		};
 	};
-	class JA_104th_Medical_Droid: Land_3AS_Medical_Droid{
+	class JA_104th_Medical_Droid : Land_3AS_Medical_Droid
+	{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -11166,45 +11316,45 @@ class cfgVehicles {
 		editorSubcategory = "104th_Categ_Clones_Droid";
 		editorPreview = "\ORA\BNA_KC\addons\medical\data\previews\BNA_KC_Deployable_MedicalDroid.jpg";
 		simulation = "house";
-        sound = "";
+		sound = "";
 		BNA_KC_medical_areaHealMaxPatients = 4;
 		BNA_KC_medical_areaHealRadius = 15;
 		BNA_KC_medical_areaHealRate = 6;
-		class EventHandlers: DefaultEventHandlers {};
+		class EventHandlers : DefaultEventHandlers
+		{
+		};
 
-        class DestructionEffects {};
+		class DestructionEffects
+		{
+		};
 	}
-	
 
-	
 	class 3AS_Republic_HR_Bag;
 	class JA_104th_Republic_HR_Bag : 3AS_Republic_HR_Bag
-    {
-        faction="3AS_REP";
-        author="3AS + Ice";
-        scope=2;
-        editorCategory="EdCat_Equipment";
-        editorSubcategory="EdSubcat_DismantledWeapons";
-        displayName="104th Heavy Repeater";
-        hiddenSelections[]=
-        {
-            "camo1"
-        };
-        hiddenSelectionsTextures[]=
-        {
-            "JangosVehicles\data\textures\Backpack_E-Web_Greyscale.paa"
-        };
-        class assembleInfo
-        {
-            primary=1;
-            base="";
-            displayName="104th Heavy Repeater";
-            assembleTo="JA_104th_HeavyRepeater_Unarmoured";
-        };
-    };
-	
+	{
+		faction = "3AS_REP";
+		author = "3AS + Ice";
+		scope = 2;
+		editorCategory = "EdCat_Equipment";
+		editorSubcategory = "EdSubcat_DismantledWeapons";
+		displayName = "104th Heavy Repeater";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"JangosVehicles\data\textures\Backpack_E-Web_Greyscale.paa"};
+		class assembleInfo
+		{
+			primary = 1;
+			base = "";
+			displayName = "104th Heavy Repeater";
+			assembleTo = "JA_104th_HeavyRepeater_Unarmoured";
+		};
+	};
+
 	class 3AS_HeavyRepeater_Unarmoured;
-	class JA_104th_HeavyRepeater_Unarmoured: 3AS_HeavyRepeater_Unarmoured
+	class JA_104th_HeavyRepeater_Unarmoured : 3AS_HeavyRepeater_Unarmoured
 	{
 		displayName = "104th Heavy Repeater";
 		faction = "104th_Guys";
@@ -11218,60 +11368,60 @@ class cfgVehicles {
 			displayName = "";
 		};
 	};
-	
+
 	class APC_Tracked_01_base_F;
-	class B_APC_Tracked_01_base_F: APC_Tracked_01_base_F
+	class B_APC_Tracked_01_base_F : APC_Tracked_01_base_F
 	{
 		class Turrets;
 	};
-	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
+	class B_APC_Tracked_01_CRV_F : B_APC_Tracked_01_base_F
 	{
 		class ACE_SelfActions;
-		class Turrets: Turrets
+		class Turrets : Turrets
 		{
 			class MainTurret;
 			class CommanderOptics;
 		};
 		class Components;
-		class VehicleTransport {
-            class Carrier;
-        };
-	};
-	class 104th_MudHorn_tank_mobile: B_APC_Tracked_01_CRV_F
-	{
-		displayName="104th MudHorn";
-		ace_refuel_fuelCargo=999999999999;
-		ace_rearm_defaultSupply=999999999999;
-		ace_cargo_space=20;
-		ace_repair_canRepair=1;
-		ace_refuel_hooks[]=
+		class VehicleTransport
 		{
-			{0.38,-3.1700001,-0.69999999},
-			{-0.41,-3.1700001,-0.69999999}
+			class Carrier;
 		};
-		scopeCurator=2;
-		transportSoldier=8;
-		LESH_canTow=1;
+	};
+	class 104th_MudHorn_tank_mobile : B_APC_Tracked_01_CRV_F
+	{
+		displayName = "104th MudHorn";
+		ace_refuel_fuelCargo = 999999999999;
+		ace_rearm_defaultSupply = 999999999999;
+		ace_cargo_space = 20;
+		ace_repair_canRepair = 1;
+		ace_refuel_hooks[] =
+			{
+				{0.38, -3.1700001, -0.69999999},
+				{-0.41, -3.1700001, -0.69999999}};
+		scopeCurator = 2;
+		transportSoldier = 8;
+		LESH_canTow = 1;
 		crew = "SWLB_clone_sniper_base_P2";
-		LESH_AxisOffsetTower[]={0,-6,1};
-		driverCanSee=31;
-		gunnerCanSee=31;
-		commanderCanSee=31;
-		canUseScanner=1;
+		LESH_AxisOffsetTower[] = {0, -6, 1};
+		driverCanSee = 31;
+		gunnerCanSee = 31;
+		commanderCanSee = 31;
+		canUseScanner = 1;
 		tas_canBlift = 1;
 		tas_liftVars = "[[[[0, -3, -4.5]]], [0.27], [-0.2]]";
-		incomingMissileDetectionSystem=16;
-		weaponLockSystem="2+4+8";
-		receiveRemoteTargets=1;
-		reportRemoteTargets=1;
-		reportOwnPosition=1;
-		faction="104th_Guys";
-		editorSubcategory="104th_Categ_Clones_Vehicles_Land";
-		vehicleClass="Armored";
-		smokeLauncherGrenadeCount=8;
-		smokeLauncherVelocity=14;
-		smokeLauncherOnTurret=1;
-		smokeLauncherAngle=120;
+		incomingMissileDetectionSystem = 16;
+		weaponLockSystem = "2+4+8";
+		receiveRemoteTargets = 1;
+		reportRemoteTargets = 1;
+		reportOwnPosition = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		vehicleClass = "Armored";
+		smokeLauncherGrenadeCount = 8;
+		smokeLauncherVelocity = 14;
+		smokeLauncherOnTurret = 1;
+		smokeLauncherAngle = 120;
 		fuelCapacity = 27.5;
 		fuelConsumptionRate = 0.15;
 		TFAR_hasIntercom = 1;
@@ -11283,53 +11433,53 @@ class cfgVehicles {
 		{
 			class _item_ACE_tourniquet
 			{
-				name="ACE_tourniquet";
-				count=12;
+				name = "ACE_tourniquet";
+				count = 12;
 			};
 			class _item_ACE_splint
 			{
-				name="ACE_splint";
-				count=8;
+				name = "ACE_splint";
+				count = 8;
 			};
 			class _item_ACE_Needle
 			{
-				name="kat_IV_16";
-				count=6;
+				name = "kat_IV_16";
+				count = 6;
 			};
 			class _item_ACE_plasmaIV_1000
 			{
-				name="ACE_plasmaIV";
-				count=6;
+				name = "ACE_plasmaIV";
+				count = 6;
 			};
 			class _item_ACE_elasticBandage
 			{
-				name="ACE_elasticBandage";
-				count=30;
+				name = "ACE_elasticBandage";
+				count = 30;
 			};
 			class _item_ACE_quikclot
 			{
-				name="ACE_quikclot";
-				count=15;
+				name = "ACE_quikclot";
+				count = 15;
 			};
 			class _item_ACE_packingBandage
 			{
-				name="ACE_packingBandage";
-				count=15;
+				name = "ACE_packingBandage";
+				count = 15;
 			};
 			class _item_ACE_painkiller
 			{
-				name="RD501_Painkiller";
-				count=4;
+				name = "RD501_Painkiller";
+				count = 4;
 			};
 			class _item_ACE_epinephrine
 			{
-				name="ACE_epinephrine";
-				count=4;
+				name = "ACE_epinephrine";
+				count = 4;
 			};
 			class _item_Necro_Enzyme
 			{
-				name="dev_enzymeCapsule";
-				count=4;
+				name = "dev_enzymeCapsule";
+				count = 4;
 			};
 		};
 		class TransportWeapons
@@ -11338,176 +11488,172 @@ class cfgVehicles {
 		class TransportMagazines
 		{
 		};
-		author="Dak";
-		scope=2;
-		side=1;
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"CamoNet"
-		};
+		author = "Dak";
+		scope = 2;
+		side = 1;
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"CamoNet"};
 		hiddenSelectionsTextures[] = {
 			"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
 			"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
 			"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
 			"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
-			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-		};
-		forceInGarage=1;
-		class Turrets: Turrets
+			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
+		forceInGarage = 1;
+		class Turrets : Turrets
 		{
-			class MainTurret: MainTurret
+			class MainTurret : MainTurret
 			{
-				weapons[]=
-				{
-					"Laserdesignator_pilotCamera",
-					"CMFlareLauncher",
-					"ls_laat_gun"
-				};
-				magazines[]=
-				{
-					"Laserbatteries",
-					"300Rnd_CMFlare_Chaff_Magazine",
-					"300Rnd_CMFlare_Chaff_Magazine",
-					"200rnd_laat_he_mag",
-					"200rnd_laat_he_mag"
-				};
+				weapons[] =
+					{
+						"Laserdesignator_pilotCamera",
+						"CMFlareLauncher",
+						"ls_weapon_laati_turret_50mm_he"};
+				magazines[] =
+					{
+						"Laserbatteries",
+						"300Rnd_CMFlare_Chaff_Magazine",
+						"300Rnd_CMFlare_Chaff_Magazine",
+						"ls_magazine_50mm_200Rnd_HE_green",
+						"ls_magazine_50mm_200Rnd_HE_green"};
 			};
-			class CommanderOptics: CommanderOptics
+			class CommanderOptics : CommanderOptics
 			{
 			};
 		};
-		class components: Components
+		class components : Components
 		{
 			class SensorsManagerComponent
 			{
 				class components
 				{
-					class IRSensorComponent: SensorTemplateIR
+					class IRSensorComponent : SensorTemplateIR
 					{
-						typeRecognitionDistance=1000;
-						angleRangeHorizontal=360;
-						angleRangeVertical=360;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=1600;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=2000;
-						maxFogSeeThrough=-1;
-						nightRangeCoef=1;
+						typeRecognitionDistance = 1000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = 1600;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 2000;
+						maxFogSeeThrough = -1;
+						nightRangeCoef = 1;
 						class AirTarget
 						{
-							minRange=0;
-							maxRange=2000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-							maxFogSeeThrough=-1;
-							nightRangeCoef=1;
+							minRange = 0;
+							maxRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+							maxFogSeeThrough = -1;
+							nightRangeCoef = 1;
 						};
 						class GroundTarget
 						{
-							minRange=0;
-							maxRange=2000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-							maxFogSeeThrough=-1;
-							nightRangeCoef=1;
+							minRange = 0;
+							maxRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+							maxFogSeeThrough = -1;
+							nightRangeCoef = 1;
 						};
 					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					class ActiveRadarSensorComponent : SensorTemplateActiveRadar
 					{
-						typeRecognitionDistance=750;
-						angleRangeHorizontal=360;
-						angleRangeVertical=360;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=1600;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=2000;
+						typeRecognitionDistance = 750;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = 1600;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 2000;
 						class AirTarget
 						{
-							minRange=0;
-							maxRange=1000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
+							minRange = 0;
+							maxRange = 1000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
 						};
 						class GroundTarget
 						{
-							minRange=0;
-							maxRange=1000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
+							minRange = 0;
+							maxRange = 1000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
 						};
 					};
-					class VisualSensorComponent: SensorTemplateVisual
+					class VisualSensorComponent : SensorTemplateVisual
 					{
-						typeRecognitionDistance=750;
-						angleRangeHorizontal=360;
-						angleRangeVertical=360;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=1600;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=2000;
+						typeRecognitionDistance = 750;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = 1600;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 2000;
 						class AirTarget
 						{
-							minRange=0;
-							maxRange=1000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
+							minRange = 0;
+							maxRange = 1000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
 						};
 						class GroundTarget
 						{
-							minRange=0;
-							maxRange=1000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
+							minRange = 0;
+							maxRange = 1000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
 						};
 					};
-					class ManSensorComponent: SensorTemplateMan
+					class ManSensorComponent : SensorTemplateMan
 					{
-						typeRecognitionDistance=300;
-						angleRangeHorizontal=360;
-						angleRangeVertical=360;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=1600;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=2000;
+						typeRecognitionDistance = 300;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = 1600;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 2000;
 						class AirTarget
 						{
-							minRange=0;
-							maxRange=300;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
+							minRange = 0;
+							maxRange = 300;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
 						};
 						class GroundTarget
 						{
-							minRange=0;
-							maxRange=300;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
+							minRange = 0;
+							maxRange = 300;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
 						};
 					};
-					class DataLinkSensorComponent: SensorTemplateDataLink
+					class DataLinkSensorComponent : SensorTemplateDataLink
 					{
 						class AirTarget
 						{
-							minRange=0;
-							maxRange=16000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
+							minRange = 0;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
 						};
 						class GroundTarget
 						{
-							minRange=0;
-							maxRange=16000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
+							minRange = 0;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
 						};
-						componentType="DataLinkSensorComponent";
-						allowsMarking=1;
-						typeRecognitionDistance=0;
-						color[]={1,1,1,0};
+						componentType = "DataLinkSensorComponent";
+						allowsMarking = 1;
+						typeRecognitionDistance = 0;
+						color[] = {1, 1, 1, 0};
 					};
 				};
 			};
@@ -11522,43 +11668,43 @@ class cfgVehicles {
 				{
 					class CrewDisplay
 					{
-						componentType="CrewDisplayComponent";
+						componentType = "CrewDisplayComponent";
 					};
 					class EmptyDisplay
 					{
-						componentType="EmptyDisplayComponent";
+						componentType = "EmptyDisplayComponent";
 					};
 					class MineDetectorDisplay
 					{
-						componentType="MineDetectorDisplayComponent";
+						componentType = "MineDetectorDisplayComponent";
 					};
 					class MinimapDisplay
 					{
-						componentType="MinimapDisplayComponent";
+						componentType = "MinimapDisplayComponent";
 					};
 					class SlingLoadDisplay
 					{
-						componentType="SlingLoadDisplayComponent";
+						componentType = "SlingLoadDisplayComponent";
 					};
 					class UAVDisplay
 					{
-						componentType="UAVFeedDisplayComponent";
+						componentType = "UAVFeedDisplayComponent";
 					};
 					class VehicleCommanderDisplay
 					{
-						componentType="TransportFeedDisplayComponent";
-						source="Commander";
+						componentType = "TransportFeedDisplayComponent";
+						source = "Commander";
 					};
 					class VehiclePrimaryGunnerDisplay
 					{
-						componentType="TransportFeedDisplayComponent";
-						source="PrimaryGunner";
+						componentType = "TransportFeedDisplayComponent";
+						source = "PrimaryGunner";
 					};
 					class SensorDisplay
 					{
-						componentType="SensorsDisplayComponent";
-						range[]={32000,16000,8000,4000,2000};
-						resource="RscCustomInfoSensors";
+						componentType = "SensorsDisplayComponent";
+						range[] = {32000, 16000, 8000, 4000, 2000};
+						resource = "RscCustomInfoSensors";
 					};
 				};
 			};
@@ -11573,48 +11719,48 @@ class cfgVehicles {
 				{
 					class CrewDisplay
 					{
-						componentType="CrewDisplayComponent";
+						componentType = "CrewDisplayComponent";
 					};
 					class EmptyDisplay
 					{
-						componentType="EmptyDisplayComponent";
+						componentType = "EmptyDisplayComponent";
 					};
 					class MineDetectorDisplay
 					{
-						componentType="MineDetectorDisplayComponent";
+						componentType = "MineDetectorDisplayComponent";
 					};
 					class MinimapDisplay
 					{
-						componentType="MinimapDisplayComponent";
+						componentType = "MinimapDisplayComponent";
 					};
 					class SlingLoadDisplay
 					{
-						componentType="SlingLoadDisplayComponent";
+						componentType = "SlingLoadDisplayComponent";
 					};
 					class UAVDisplay
 					{
-						componentType="UAVFeedDisplayComponent";
+						componentType = "UAVFeedDisplayComponent";
 					};
 					class VehicleCommanderDisplay
 					{
-						componentType="TransportFeedDisplayComponent";
-						source="Commander";
+						componentType = "TransportFeedDisplayComponent";
+						source = "Commander";
 					};
 					class VehiclePrimaryGunnerDisplay
 					{
-						componentType="TransportFeedDisplayComponent";
-						source="PrimaryGunner";
+						componentType = "TransportFeedDisplayComponent";
+						source = "PrimaryGunner";
 					};
 					class SensorDisplay
 					{
-						componentType="SensorsDisplayComponent";
-						range[]={32000,16000,8000,4000,2000};
-						resource="RscCustomInfoSensors";
+						componentType = "SensorsDisplayComponent";
+						range[] = {32000, 16000, 8000, 4000, 2000};
+						resource = "RscCustomInfoSensors";
 					};
 				};
 			};
 		};
-		class EventHandlers: DefaultEventhandlers
+		class EventHandlers : DefaultEventhandlers
 		{
 		};
 		class TextureSources
@@ -11628,12 +11774,11 @@ class cfgVehicles {
 					"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
 					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
 					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
-					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-				};
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
 				factions[] = {"104th_Guys"};
 			};
-			
-			class blue_logo: base
+
+			class blue_logo : base
 			{
 				displayName = "104th Logo grey";
 				author = "Legion Studio + Echo";
@@ -11642,12 +11787,11 @@ class cfgVehicles {
 					"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
 					"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
 					"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
-					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-				};
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
 				factions[] = {"104th_Guys"};
 			};
-			
-			class logo_white: base
+
+			class logo_white : base
 			{
 				displayName = "104th Logo White";
 				textures[] = {
@@ -11655,11 +11799,10 @@ class cfgVehicles {
 					"JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa",
 					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
 					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
-					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-				};
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
 			}
-			
-			class plobro: base
+
+			class plobro : base
 			{
 				displayName = "104th PloBros";
 				textures[] = {
@@ -11667,11 +11810,10 @@ class cfgVehicles {
 					"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
 					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
 					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
-					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-				};
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
 			};
-			
-			class medevac: base
+
+			class medevac : base
 			{
 				displayName = "104th MedEvac";
 				textures[] = {
@@ -11679,27 +11821,25 @@ class cfgVehicles {
 					"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
 					"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
 					"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
-					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-				};
+					"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
 			};
-			
 		};
-		textureList[] = {"base",1,"blue_logo",1,"logo_white",1,"plobro",1,"medevac",1};
-		class ACE_SelfActions: ACE_SelfActions
+		textureList[] = {"base", 1, "blue_logo", 1, "logo_white", 1, "plobro", 1, "medevac", 1};
+		class ACE_SelfActions : ACE_SelfActions
 		{
 			class Style_Changer
 			{
 				displayName = "Change Camo";
-				exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
 				showDisabled = 0;
 				priority = 2;
 				class DefaultSkin
 				{
 					displayName = "White";
-					exceptions[] = {"isNotInside","isNotSwimming","isNotSitting"};
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 					condition = "!(isNull objectParent player)";
-					statement = 
+					statement =
 						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
 					showDisabled = 0;
 					runOnHover = 0;
@@ -11708,29 +11848,29 @@ class cfgVehicles {
 				class 104th_Skins
 				{
 					displayname = "104th Skins";
-					class 104th_Blue_Logo: DefaultSkin
+					class 104th_Blue_Logo : DefaultSkin
 					{
 						displayName = "104th Logo Grey";
-						statement = 
-						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+						statement =
+							"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
 					};
-					class 104th_Logo_white: DefaultSkin
+					class 104th_Logo_white : DefaultSkin
 					{
 						displayName = "104th Logo White";
-						statement = 
-						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+						statement =
+							"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
 					};
-					class 104th_PloBro: DefaultSkin
+					class 104th_PloBro : DefaultSkin
 					{
 						displayName = "104th PloBro";
-						statement = 
-						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge_PloBros.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+						statement =
+							"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge_PloBros.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
 					};
-					class 104th_MedEvac: DefaultSkin
+					class 104th_MedEvac : DefaultSkin
 					{
 						displayName = "104th MedEvac";
-						statement = 
-						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
+						statement =
+							"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
 					};
 				};
 			};
@@ -11778,17 +11918,20 @@ class cfgVehicles {
 				};
 			};
 		};
-		class VehicleTransport: VehicleTransport{
-			class Cargo {
-                parachuteClass = "B_Parachute_02_F";
-                parachuteHeightLimit = 40;
-                canBeTransported = TRUE;
-				dimensions[] = {"BBox_1_1_pos","BBox_1_2_pos"};
-            };
-			class Carrier{
-				cargoAlignment[] = {"center","front"};
-				cargoBayDimentions[] = {"Limit1","limit2"};
-				cargoSpacing[] = {0,0,0};
+		class VehicleTransport : VehicleTransport
+		{
+			class Cargo
+			{
+				parachuteClass = "B_Parachute_02_F";
+				parachuteHeightLimit = 40;
+				canBeTransported = TRUE;
+				dimensions[] = {"BBox_1_1_pos", "BBox_1_2_pos"};
+			};
+			class Carrier
+			{
+				cargoAlignment[] = {"center", "front"};
+				cargoBayDimentions[] = {"Limit1", "limit2"};
+				cargoSpacing[] = {0, 0, 0};
 				disableHeightLimit = 1;
 				exits[] = {"pos_cargo_load"};
 				loadingAngle = 60;
@@ -11800,83 +11943,75 @@ class cfgVehicles {
 			}
 		}
 	};
-	class 104th_MudHorn_tank_field: 104th_MudHorn_tank_mobile
+	class 104th_MudHorn_tank_field : 104th_MudHorn_tank_mobile
 	{
-		displayName="104th MudHorn Fast";
-		enginePower=2400;
-		gearBox[]={-7,0,11,8,5.6999998,4.1999998};
-		maxSpeed=120;
-		maxOmega=500;
-		peakTorque=7400;
+		displayName = "104th MudHorn Fast";
+		enginePower = 2400;
+		gearBox[] = {-7, 0, 11, 8, 5.6999998, 4.1999998};
+		maxSpeed = 120;
+		maxOmega = 500;
+		peakTorque = 7400;
 		fuelConsumptionRate = 0.2;
-		torqueCurve[]=
-		{
-			"[0.291667",
-			"0.540541]",
-			"[0.416667",
-			"0.675676]",
-			"[0.583333",
-			"0.810811]",
-			"[0.666667",
-			"0.891892]",
-			"[0.75",
-			"0.972973]",
-			"[0.833333",
-			"1.02703]",
-			"[0.916667",
-			"1]",
-			"[1",
-			"0.945946]"
-		};
-		engineMOI=1;
-		armor=500;
-		weapons[]=
-		{
-			"SmokeLauncher"
-		};
-		magazines[]=
-		{
-			"SmokeLauncherMag"
-		};
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"CamoNet"
-		};
+		torqueCurve[] =
+			{
+				"[0.291667",
+				"0.540541]",
+				"[0.416667",
+				"0.675676]",
+				"[0.583333",
+				"0.810811]",
+				"[0.666667",
+				"0.891892]",
+				"[0.75",
+				"0.972973]",
+				"[0.833333",
+				"1.02703]",
+				"[0.916667",
+				"1]",
+				"[1",
+				"0.945946]"};
+		engineMOI = 1;
+		armor = 500;
+		weapons[] =
+			{
+				"SmokeLauncher"};
+		magazines[] =
+			{
+				"SmokeLauncherMag"};
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"CamoNet"};
 		hiddenSelectionsTextures[] = {
 			"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
 			"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
 			"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
 			"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
-			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-		};
+			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
 	};
-
 };
 
 class CfgAmmo
 {
 	class ls_50mm_laat_apfsds;
-	class ls_50mm_laat_apfsds_104th: ls_50mm_laat_apfsds
+	class ls_50mm_laat_apfsds_104th : ls_50mm_laat_apfsds
 	{
 		hit = 400;
 		indirectHit = 2;
-		
 	};
-	
+
 	class ls_127x99_red;
-	class ls_127x99_blue_104th: ls_127x99_red
+	class ls_127x99_blue_104th : ls_127x99_red
 	{
-		
+
 		model = "ls_weapons_core\effects\laser_blue";
 		effectfly = "ls_plasma_blue";
-		
 	};
 	class Bo_GBU12_LGB;
-	class JA_104th_guided_resupply_ammo: Bo_GBU12_LGB
+	class JA_104th_guided_resupply_ammo : Bo_GBU12_LGB
 	{
 		hit = 0;
 		indirectHit = 0;
@@ -11885,9 +12020,9 @@ class CfgAmmo
 		aiAmmoUsageFlags = 0;
 		model = "kobra\442_misc\box\box10.p3d";
 	};
-	
+
 	class SWLW_ammo_chaingun_blue;
-	class JA_104th_T9_green: SWLW_ammo_chaingun_blue
+	class JA_104th_T9_green : SWLW_ammo_chaingun_blue
 	{
 		caliber = 10;
 		craterEffects = "ExploAmmoCrater";
@@ -11909,30 +12044,26 @@ class CfgAmmo
 		tracerscale = 3;
 		typicalSpeed = 960;
 		warheadName = "AP";
-		
-		
 	};
 };
 
 class CfgMagazines
 {
 
-	
-	class 200rnd_laat_apfsds_mag;
-	class 200rnd_laat_apfsds_mag_104th: 200rnd_laat_apfsds_mag
+	class ls_magazine_50mm_200Rnd_APFSDS_green;
+	class ls_magazine_50mm_200Rnd_APFSDS_green_104th : ls_magazine_50mm_200Rnd_APFSDS_green
 	{
 		ammo = "ls_50mm_laat_apfsds_104th";
 	};
-	
+
 	class ls_500Rnd_127x99_mag_red;
-	class ls_500Rnd_127x99_mag_blue_104th: ls_500Rnd_127x99_mag_red
+	class ls_500Rnd_127x99_mag_blue_104th : ls_500Rnd_127x99_mag_red
 	{
 		displayname = "12.7x99mm 500Rnd plasma cell (Blue)";
 		ammo = "ls_127x99_blue_104th";
-		
 	};
 	class 2Rnd_GBU12_LGB;
-	class JA_104th_Guided_Resupply_Magazine: 2Rnd_GBU12_LGB
+	class JA_104th_Guided_Resupply_Magazine : 2Rnd_GBU12_LGB
 	{
 		author = "Dak";
 		ammo = "JA_104th_guided_resupply_ammo";
@@ -11945,17 +12076,17 @@ class CfgMagazines
 class CfgRecoils
 {
 	class recoil_default;
-	class 104th_Z7_recoil: recoil_default
+	class 104th_Z7_recoil : recoil_default
 	{
-		kickBack[] = {0.045,0.08};
-		muzzleOuter[] = {0.3,0.3,0.3,0.2};
+		kickBack[] = {0.045, 0.08};
+		muzzleOuter[] = {0.3, 0.3, 0.3, 0.2};
 		permanent = 0.03;
 		temporary = 0.02;
 	};
-	class JA_104th_ShoulderCannon_recoil: recoil_default
+	class JA_104th_ShoulderCannon_recoil : recoil_default
 	{
-		kickBack[] = {0.045,0.08};
-		muzzleOuter[] = {0.3,0.3,0.3,0.2};
+		kickBack[] = {0.045, 0.08};
+		muzzleOuter[] = {0.3, 0.3, 0.3, 0.2};
 		permanent = 0.03;
 		temporary = 0.02;
 	};
@@ -11964,81 +12095,81 @@ class CfgRecoils
 class CfgWeapons
 {
 	class Launcher;
-	class Launcher_Base_F: Launcher
+	class Launcher_Base_F : Launcher
 	{
 		class WeaponSlotsInfo;
 		class GunParticles;
 	};
 
-	class ls_laat_gun_2;
-	class ls_laat_gun_2_104th: ls_laat_gun_2
+	class ls_weapon_laati_turret_50mm_ap;
+	class ls_laat_gun_2_104th : ls_weapon_laati_turret_50mm_ap
 	{
-		magazines[] = {"200rnd_laat_apfsds_mag_104th"};
-		
-		
-		
+		magazines[] = {"ls_magazine_50mm_200Rnd_APFSDS_green_104th"};
 	};
 	class ls_aat_127;
-	class ls_127_blue_104th: ls_aat_127
+	class ls_127_blue_104th : ls_aat_127
 	{
-		
+
 		magazines[] = {"ls_500Rnd_127x99_mag_blue_104th"};
-		
-		
 	};
-	class SWLB_CEE_Engineer_Vest_NCO;
-	class JA_104th_Engineer_EWEB_Vest: SWLB_CEE_Engineer_Vest_NCO
+	class ls_gar_engineerNCO_vest;
+	class JA_104th_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest
 	{
-		
+
 		Displayname = "Clone Engineer E-Web Vest";
-		
+
 		class ItemInfo
 		{
-            vestType = "Rebreather";
+			vestType = "Rebreather";
 			_generalMacro = "VestItem";
 			author = "Bohemia Interactive";
 			containerClass = "Supply450";
-			hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
+			hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
 			mass = 80;
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			scope = 0;
 			showHolsteredPistol = 0;
 			type = 701;
-			uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\engineer\ls_gar_engineerNCO_vest.p3d";
 			uniformType = "Default";
-			class HitpointsProtectionInfo {
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    armor = 8;
-                    passThrough = 0.3;
-                };
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
 		};
 	};
 	class GBU12BombLauncher;
-	class JA_104th_guided_resupply_pod_launcher: GBU12BombLauncher
+	class JA_104th_guided_resupply_pod_launcher : GBU12BombLauncher
 	{
 		displayName = "Supply Pod";
 		descriptionShort = "Guided Resupply Pod Launcher";
 		magazines[] = {"JA_104th_Guided_Resupply_Magazine"};
 		class EventHandlers
 		{
-			//fired = "hint 'Fired eventhandler called'";
+			// fired = "hint 'Fired eventhandler called'";
 			fired = "_this spawn JA_104th_fnc_GURE_grplFired";
 		};
 	};
@@ -12064,10 +12195,11 @@ class CfgFunctions
 	};
 };
 
-class cfgSounds {
-	
+class cfgSounds
+{
+
 	sounds[] = {};
-		
+
 	class ShieldHit0
 	{
 		sound[] = {"JangosVehicles\data\sounds\Shield\ShieldHit_0.ogg", 100, 1, 100};
@@ -12110,27 +12242,26 @@ class cfgSounds {
 		titles[] = {"IonCannon1"};
 		duration = 3;
 	};
-	
 };
 
 class CfgDigVehicles
 {
 	class 104th_MudHorn_tank_mobile
 	{
-		type="animate";
-		animation="moveplow";
-		selection="plow";
-		plowRaised=0;
-		plowLowered=0.89999998;
-		distanceToTrench=3.3499999;
+		type = "animate";
+		animation = "moveplow";
+		selection = "plow";
+		plowRaised = 0;
+		plowLowered = 0.89999998;
+		distanceToTrench = 3.3499999;
 	};
 	class 104th_MudHorn_tank_field
 	{
-		type="animate";
-		animation="moveplow";
-		selection="plow";
-		plowRaised=0;
-		plowLowered=0.89999998;
-		distanceToTrench=3.3499999;
+		type = "animate";
+		animation = "moveplow";
+		selection = "plow";
+		plowRaised = 0;
+		plowLowered = 0.89999998;
+		distanceToTrench = 3.3499999;
 	};
 };

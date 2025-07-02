@@ -24,27 +24,27 @@ if (((_fogLevel >= 0.05) || (_rainLevel >= 0.05)) && (_yield != -1)) then
 	//create the rings
 	if(! _airMode) then
 	{
-		for "_i" from 0 to _n do 
-		{
-			[[_blastPos, _radius * 0.5 + _i * _radius * 0.1, _radius - (_i + 1) * _radius * 0.1],"FSN\freestyleNuke\condensationRing.sqf"] remoteExec ["execVM",0];
-			sleep 0.5;
-		};
+for "_i" from 0 to _n do 
+{
+	[[_blastPos, _radius * 0.5 + _i * _radius * 0.1, _radius - (_i + 1) * _radius * 0.1],"FSN\freestyleNuke\condensationRing.sqf"] remoteExec ["execVM",0];
+	sleep 0.5;
+};
 	}
 	else
 	{	
-		for "_j" from 0 to _n do
-		{
-			private _i = switch(_j) do
-			{
-				case 0: {0};
-				case 1:	{1};
-				case 2: {-1};
-				case 3: {2};
-				default {0};
-			};
-			[[_blastPos, _i * _radius * 0.1, _radius - (_i + 1) * _radius * 0.1],"FSN\freestyleNuke\condensationRing.sqf"] remoteExec ["execVM",0];
-			sleep 0.5;
-		};
+for "_j" from 0 to _n do
+{
+	private _i = switch(_j) do
+	{
+case 0: {0};
+case 1:	{1};
+case 2: {-1};
+case 3: {2};
+default {0};
+	};
+	[[_blastPos, _i * _radius * 0.1, _radius - (_i + 1) * _radius * 0.1],"FSN\freestyleNuke\condensationRing.sqf"] remoteExec ["execVM",0];
+	sleep 0.5;
+};
 	};
 };
 
