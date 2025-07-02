@@ -2852,8 +2852,8 @@ class CfgWeapons
         displayName = "[104th] Westar 35S";
         baseWeapon = "JA_104th_Westar35S";
         mass = 74;
-        picture = "\SWLW_merc_mando\rifles\westar35s\data\ui\SWLW_westar35s_ui.paa";
-        model = "SWLW_merc_mando\rifles\westar35s\westar35s.p3d";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westar35s_ui_ca.paa";
+        model = "\ls\core\addons\weapons_westar\westar35s\ls_weapon_westar35s.p3d";
         handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
         fireLightDiffuse[] = {0.5, 0.5, 0.25};
         fireLightAmbient[] = {0.5, 0.5, 0.25};
@@ -3344,7 +3344,7 @@ class CfgWeapons
         scope = 2;
         displayName = "[104th] RPS-6 Rocket Launcher";
         baseWeapon = "JA_104th_RPS6";
-        model = "\ls_weapons\tertiary\rps6\ls_weapon_rps6";
+        model = "\ls\core\addons\weapons_rps\ls_weapon_rps6.p3d";
         magazines[] =
             {
                 "ls_mag_rpg_1rnd"};
