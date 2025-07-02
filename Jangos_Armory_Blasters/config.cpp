@@ -2390,28 +2390,25 @@ class CfgWeapons
                 cameraDir = "";
             };
         };
-        modes[] = {"Single", "FullAuto"};
-        class Single : Single
+        modes[] = {"Single","FullAuto"};
+        class Single: Single
+        {
+            reloadTime=0.1;     
+            dispersion=0.0005;
+            sounds[] = {"StandardSound"};
+            class StandardSound: BaseSoundModeType
+            {
+                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet","ls_sniper_Tail_SoundSet"};
+            };
+        };
+        class FullAuto: FullAuto
         {
             reloadTime = 0.1;
             dispersion = 0.0005;
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType
+            class StandardSound: BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"SWLW_clones_spec\sounds\DC17M_sniper_fire.wss", 1, 1, 1800};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
-            class StandardSound : BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] = {"SWLW_clones_spec\sounds\DC17M_sniper_fire.wss", 1, 1, 1800};
-                soundBegin[] = {"begin1", 1};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
+                soundSetShot[] = {"ls_dc17m_Shot_SoundSet","ls_mediumBlaster_Tail_SoundSet"};
             };
         };
         class FullAuto : FullAuto
