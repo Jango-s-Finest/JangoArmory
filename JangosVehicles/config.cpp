@@ -30,8 +30,6 @@ class CfgPatches
 			"JA_104th_3AS_Reaper_Y_Wing_Blue",
 			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
 			"JA_104th_NU",
-			//"JA_104th_Droideka_Normal",
-			//"BaseShield100m",
 			"JA_104th_Republic_HR_Bag",
 			"JA_104th_HeavyRepeater_Unarmoured",
 			"JA_104th_ATRT",
@@ -41,10 +39,6 @@ class CfgPatches
 			"JA_104th_Uwing",
 			"JA_104th_N1",
 			"JA_104th_VWing",
-			//"BaseShield100mSpawner",
-			//"BaseShield500mSpawner",
-			//"JA_104th_Droideka_Mobile",
-			//"JA_104th_Droideka_Sniper",
 			"JA_104th_Vulture_dynamicLoadout_base",
 			"JA_104th_Vulture_dynamicLoadout",
 			"JA_104th_Vulture_dynamicLoadout_AA",
@@ -816,7 +810,7 @@ class cfgVehicles
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 5;
-						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "B_AMRAAM_D", "B_AMRAAM_D_RAIL", "DAR", "DAGR", "B_GBU12", "B_AGM65_RAIL", "I_ORCA_RIGHT_PYLON", "20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON"}; // hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
+						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "B_AMRAAM_D", "B_AMRAAM_D_RAIL", "DAR", "DAGR", "B_GBU12", "B_AGM65_RAIL", "I_ORCA_RIGHT_PYLON", "20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON", "JA_LAAT_AIM9X"}; // hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
 						turret[] = {0};
 						UIposition[] = {0.06, 0.4};
 					};
@@ -10620,7 +10614,7 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
-		crew = "SWLB_clone_sniper_base_P2";
+		crew = "ls_clone_phase2_pilot";
 
 		class EventHandlers : DefaultEventhandlers
 		{
@@ -11399,10 +11393,9 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 			{
 				{0.38, -3.1700001, -0.69999999},
 				{-0.41, -3.1700001, -0.69999999}};
-		scopeCurator = 2;
 		transportSoldier = 8;
 		LESH_canTow = 1;
-		crew = "SWLB_clone_sniper_base_P2";
+		crew = "ls_clone_phase2_pilot";
 		LESH_AxisOffsetTower[] = {0, -6, 1};
 		driverCanSee = 31;
 		gunnerCanSee = 31;
@@ -11942,6 +11935,8 @@ textures[] = {"JangosVehicles\data\textures\body1_co_104Bail.paa",
 				unloadingInterval = 2;
 			}
 		}
+		scopeArsenal = 2;
+		scopeCurator = 2;
 	};
 	class 104th_MudHorn_tank_field : 104th_MudHorn_tank_mobile
 	{
@@ -12071,6 +12066,26 @@ class CfgMagazines
 		displayNameShort = "Supply Pod";
 		descriptionShort = "Supply Pod";
 	};
+	class FIR_AIM9X_P_1rnd_M;
+	class FIR_AIM120_LAU115_P_2rnd_M;
+	class JA_LAAT_AIM9X: FIR_AIM9X_P_1rnd_M
+    {
+        model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
+        ammo = "FIR_AIM9X";
+        scope = 2;
+        displayName = "AIM-9X Sidewinder x4";
+        count = 4;
+        pylonWeapon = "FIR_AIM9X";
+    };
+	class JA_LAAT_AIM120: FIR_AIM120_LAU115_P_2rnd_M
+    {
+        model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
+        ammo = "FIR_AIM120";
+        scope = 2;
+        displayName = "AIM-120C Sidewinder x4";
+        count = 4;
+        pylonWeapon = "FIR_AIM120";
+    };
 };
 
 class CfgRecoils

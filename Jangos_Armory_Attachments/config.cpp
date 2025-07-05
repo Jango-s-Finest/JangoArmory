@@ -17,6 +17,7 @@ class CfgPatches
 			"JA_104th_P2_NVG_Invert",
 			"JA_104th_SPC_NVG_Base",
 			"JA_104th_SPC_NVG_Medic",
+			"JA_104th_P2_NVG_Doc",
 			"JA_104th_SPC_NVG_Invert",
 			"JA_104th_NVG_NCO",
 			"JA_104th_Spectre_RC_NVG",
@@ -153,6 +154,21 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Attachments\data\Textures\104th_P2_Bulky_NVG.paa",
+			};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
+	class JA_104th_P2_NVG_Doc : lsd_gar_standard_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone AB NVG Visor (104th Doc)";
+		hiddenSelections[] =
+			{
+				"camo1",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_AB_Doc_Visor_NVG.paa",
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
