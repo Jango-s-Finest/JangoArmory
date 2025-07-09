@@ -45,7 +45,10 @@ class CfgPatches
 			"JA_104th_Vulture_dynamicLoadout_Bare",
 			"104th_MudHorn_tank_mobile",
 			"104th_MudHorn_tank_field"}; // All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {"JA_104th_guided_resupply_pod_launcher"};
+		weapons[] = {
+			"JA_104th_guided_resupply_pod_launcher",
+			"JA_104th_AIM9X",
+			"JA_104th_AIM120"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
@@ -279,6 +282,7 @@ class cfgVehicles
 		ReceiveRemoteTargets = True;
 		crewCrashProtection = 0.00001;
 		radarType = 4;
+		fuelCapacity = 4000;
 		ls_impulsor_fuelDrain_1 = 0.00001;
 		ls_impulsor_fuelDrain_2 = 0.00003;
 		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
@@ -810,7 +814,7 @@ class cfgVehicles
 					{
 						attachment = "PylonRack_Missile_AMRAAM_D_x1";
 						priority = 5;
-						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "B_AMRAAM_D", "B_AMRAAM_D_RAIL", "DAR", "DAGR", "B_GBU12", "B_AGM65_RAIL", "I_ORCA_RIGHT_PYLON", "20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON", "JA_LAAT_AIM9X"}; // hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
+						hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "B_AMRAAM_D", "B_AMRAAM_D_RAIL", "DAR", "DAGR", "B_GBU12", "B_AGM65_RAIL", "I_ORCA_RIGHT_PYLON", "20MM_TWIN_CANNON", "B_MISSILE_PYLON", "B_BOMB_PYLON"}; // hardpoints[] = {"SCALPEL_1RND","B_ASRAAM","DAR","DAGR","B_AMRAAM_D_DUAL_RAIL","B_SDB_QUAD_RAIL","B_GBU12","B_AGM65_RAIL"};
 						turret[] = {0};
 						UIposition[] = {0.06, 0.4};
 					};
@@ -12066,16 +12070,16 @@ class CfgMagazines
 		displayNameShort = "Supply Pod";
 		descriptionShort = "Supply Pod";
 	};
-	class FIR_AIM9X_P_1rnd_M;
+	class FIR_AIM9X_P_2rnd_M;
 	class FIR_AIM120_LAU115_P_2rnd_M;
-	class JA_LAAT_AIM9X: FIR_AIM9X_P_1rnd_M
+	class JA_LAAT_AIM9X: FIR_AIM9X_P_2rnd_M
     {
         model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
         ammo = "FIR_AIM9X";
         scope = 2;
         displayName = "AIM-9X Sidewinder x4";
         count = 4;
-        pylonWeapon = "FIR_AIM9X";
+        pylonWeapon = "JA_104th_AIM9X";
     };
 	class JA_LAAT_AIM120: FIR_AIM120_LAU115_P_2rnd_M
     {
@@ -12084,7 +12088,7 @@ class CfgMagazines
         scope = 2;
         displayName = "AIM-120C Sidewinder x4";
         count = 4;
-        pylonWeapon = "FIR_AIM120";
+        pylonWeapon = "JA_104th_AIM120";
     };
 };
 
@@ -12188,6 +12192,15 @@ class CfgWeapons
 			fired = "_this spawn JA_104th_fnc_GURE_grplFired";
 		};
 	};
+	class FIR_AIM120;
+	class FIR_AIM9X;
+	class JA_104th_AIM9X : FIR_AIM9X{
+		magazines[] = {"JA_LAAT_AIM9X"};
+	};
+	class JA_104th_AIM120 : FIR_AIM120{
+		magazines[] = {"JA_LAAT_AIM120"};
+	};
+
 };
 
 class CfgFunctions

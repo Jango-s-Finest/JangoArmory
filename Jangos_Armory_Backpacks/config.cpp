@@ -822,12 +822,14 @@ class CfgVehicles
 		// Other
 		BNA_KC_jetpacks_freefallHeight = 500; // Freefall height to set on unit when jetpacking
 	};
-	class JA_104th_Jumppack_JT12_LR_Journeyman : ls_cloneBackpack_jt12
-	{
+	class JA_104th_Jumppack_JT12_LR_Journeyman : JLTS_Clone_jumppack_JT12_104{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR - Journeyman";
+		model = "\ls\core\addons\characters_clone\backpacks\jt12\ls_backpack_clone_jt12.p3d";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone\backpacks\jt12\data\camo1_co.paa"};
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "ls_radios_cloneLR";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
