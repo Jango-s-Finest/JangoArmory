@@ -267,6 +267,30 @@ class CfgWeapons
 			};
 		};
 	};
+	class JA_104th_Habit_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Habit)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Habit_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Habit_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Habit";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Stache_Uniform : JA_104th_Base_AB_Uniform
 	{
 		author = "Fish";
@@ -812,6 +836,25 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1", "camo2"};
 		linkedItems[] = {JA_104th_Angel_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Angel_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Habit : lsd_gar_phase2_base
+	{
+		author = "Fish";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		side = 1;
+		displayName = "104th Habit";
+		uniformClass = "JA_104th_Habit_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Habit_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Habit_Lower.paa"};
+		linkedItems[] = {JA_104th_Habit_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Habit_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Stache : lsd_gar_phase2_base
 	{

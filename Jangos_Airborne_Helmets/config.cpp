@@ -113,6 +113,18 @@ class CfgWeapons
 		thermalMode[] = {0, 1};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Red_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Red_Helmet.paa"}; // the file path to the texture
 	};
+	class JA_104th_AB_Habit_Helmet : ls_gar_airborne_helmet
+	{
+		author = "Tundra";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper AB Helmet (104th Habit)"; // the name it will be in game
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Habit_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Habit_Helmet.paa"}; // the file path to the texture
+	};
 	class JA_104th_Ratchet_Helmet : ls_gar_airborne_helmet
 	{
 		author = "Tundra";
