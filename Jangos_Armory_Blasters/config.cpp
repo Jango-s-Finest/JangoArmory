@@ -3396,7 +3396,7 @@ class CfgWeapons
         scope = 2;
         displayName = "[104th] RPS-6 Rocket Launcher";
         baseWeapon = "JA_104th_RPS6";
-        model = "\ls_weapons\tertiary\rps6\ls_weapon_rps6";
+        model = "\ls\core\addons\weapons_rps\ls_weapon_rps6.p3d";
         magazines[] =
             {
                 "ls_mag_rpg_1rnd"};
