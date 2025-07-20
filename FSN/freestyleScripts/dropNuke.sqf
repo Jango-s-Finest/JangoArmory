@@ -41,37 +41,37 @@ private _event = _veh addEventHandler ["Fired", {
 	
 	_null = [_projectile, _p, speed _unit] spawn
 	{
-		private _prj = _this select 0;
-		private _p = _this select 1;
-		private _s = _this select 2;
-		
-		private _t1 = time;
-		private _t2 = time + 4 * (_prj distance [_p # 0, _p # 1, 0]) / _s;
-		//hint str(_t2 - _t1);
-		private _pp = getPosASL _prj;
-		while {alive _prj } do {
-		
-			_prj setVelocityTransformation 
-			[
-				_pp,
-				_p,
-				[0,0,0],
-				[0,0,0],
-				vectorDir _prj,
-				vectorDir _prj,
-				[0,0,1],
-				[0,0,1],
-				linearConversion [_t1, _t2, time, 0, 1]
-			];
-		};
+private _prj = _this select 0;
+private _p = _this select 1;
+private _s = _this select 2;
+
+private _t1 = time;
+private _t2 = time + 4 * (_prj distance [_p # 0, _p # 1, 0]) / _s;
+//hint str(_t2 - _t1);
+private _pp = getPosASL _prj;
+while {alive _prj } do {
+
+	_prj setVelocityTransformation 
+	[
+_pp,
+_p,
+[0,0,0],
+[0,0,0],
+vectorDir _prj,
+vectorDir _prj,
+[0,0,1],
+[0,0,1],
+linearConversion [_t1, _t2, time, 0, 1]
+	];
+};
 	};
 
 	if(FSN_Debug) then 
 	{
-		private _tp = _unit getVariable "FSN_TARGET_POS";
-		private _t = createMarker ["Reference Target 2", _tp];
-		_t setMarkerType "hd_destroy";
-		_t setMarkerColor "ColorBlue";
+private _tp = _unit getVariable "FSN_TARGET_POS";
+private _t = createMarker ["Reference Target 2", _tp];
+_t setMarkerType "hd_destroy";
+_t setMarkerColor "ColorBlue";
 	};
 }];
 

@@ -3,71 +3,71 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-	class Jangos_Armory_Blasters
-	{
-		author = "Jango's Finest";
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-		units[] = {
-			"JA_104th_Box_Ammo_mk2",
-			};
-			// Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
-		weapons[] = {
+    class Jangos_Armory_Blasters
+    {
+        author = "Jango's Finest";
+        requiredVersion = 0.1;
+        requiredAddons[] = {};
+        units[] = {
+            "JA_104th_Box_Ammo_mk2",
+        };
+        // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
+        weapons[] = {
 
-			"JA_104th_DC15A",
-			"JA_104th_DC15A_UGL",
+            "JA_104th_DC15A",
+            "JA_104th_DC15A_UGL",
 
-			"JA_104th_DC15C",
-			"JA_104th_DC15C_UGL",
+            "JA_104th_DC15C",
+            "JA_104th_DC15C_UGL",
 
-			"JA_104th_DC15L",
+            "JA_104th_DC15L",
 
-			"JA_104th_DC15S",
+            "JA_104th_DC15S",
             "JA_104th_DC15S_UGL",
 
-			"JA_104th_DC15X",
+            "JA_104th_DC15X",
 
             "JA_104th_FP773",
 
-			"JA_104th_DC17M",
+            "JA_104th_DC17M",
 
-			"JA_104th_DP23",
+            "JA_104th_DP23",
 
             "JA_104th_WestarM4",
-			"JA_104th_WestarM5",
+            "JA_104th_WestarM5",
 
-			"JA_104th_Westar35S",
+            "JA_104th_Westar35S",
 
-			//"JA_104th_Valken38Y",
+            //"JA_104th_Valken38Y",
 
-			"JA_104th_Z6",
+            "JA_104th_Z6",
 
-			"JA_104th_DC17SA",
+            "JA_104th_DC17SA",
 
-			"JA_104th_DC15SA",
+            "JA_104th_DC15SA",
 
             "JA_104th_DC15ARC",
 
             "JA_104th_DC17SA_Dual",
             "JA_104th_DC17SA_Dual_LeftDummy",
 
-			"JA_104th_Westar35SA",
+            "JA_104th_Westar35SA",
 
             //"JA_104th_EPL2",
 
-			"JA_104th_RPS6",
+            "JA_104th_RPS6",
 
             "JA_104th_RPS6_H",
 
-			"JA_104th_RPS6_D",
+            "JA_104th_RPS6_D",
 
-			// "JA_104th_PLX1",
+            // "JA_104th_PLX1",
 
-			"JA_104th_Z7_mk2",
+            "JA_104th_Z7_mk2",
 
-			// "JA_104th_ShoulderCannon_mk2",
+            // "JA_104th_ShoulderCannon_mk2",
 
-			"JA_104th_muzzle_flash",
+            "JA_104th_muzzle_flash",
 
             "JA_104th_muzzle_suppressor",
 
@@ -106,64 +106,64 @@ class CfgPatches
 
             "JA_104th_cows_reflex_optic"
 
-		};
-		ammo[] = {
+        };
+        ammo[] = {
 
-			"JA_104th_Weapons_Ammo_base_blue",
+            "JA_104th_Weapons_Ammo_base_blue",
 
-			"JA_104th_Weapons_Ammo_5mw",
-			"JA_104th_Weapons_Ammo_10mw",
-			"JA_104th_Weapons_Ammo_10mwSC",
-			"JA_104th_Weapons_Ammo_20mw",
-			"JA_104th_Weapons_Ammo_30mw",
-			"JA_104th_Weapons_Ammo_40mw",
-			"JA_104th_Weapons_Ammo_50mw",
+            "JA_104th_Weapons_Ammo_5mw",
+            "JA_104th_Weapons_Ammo_10mw",
+            "JA_104th_Weapons_Ammo_10mwSC",
+            "JA_104th_Weapons_Ammo_20mw",
+            "JA_104th_Weapons_Ammo_30mw",
+            "JA_104th_Weapons_Ammo_40mw",
+            "JA_104th_Weapons_Ammo_50mw",
 
             "JA_104th_Weapons_Ammo_100mw",
             "JA_104th_Weapons_Ammo_17MAT",
 
             "JA_104th_Weapons_Ammo_EMP",
 
-			"JA_104th_Weapons_Ammo_GL_HE",
-			"JA_104th_Weapons_Ammo_GL_AP",
+            "JA_104th_Weapons_Ammo_GL_HE",
+            "JA_104th_Weapons_Ammo_GL_AP",
 
-			"JA_104th_Weapons_Ammo_GL_smoke_white",
-			"JA_104th_Weapons_Ammo_GL_smoke_purple",
-			"JA_104th_Weapons_Ammo_GL_smoke_yellow",
-			"JA_104th_Weapons_Ammo_GL_smoke_red",
-			"JA_104th_Weapons_Ammo_GL_smoke_green",
-			"JA_104th_Weapons_Ammo_GL_smoke_blue",
-			"JA_104th_Weapons_Ammo_GL_smoke_orange",
+            "JA_104th_Weapons_Ammo_GL_smoke_white",
+            "JA_104th_Weapons_Ammo_GL_smoke_purple",
+            "JA_104th_Weapons_Ammo_GL_smoke_yellow",
+            "JA_104th_Weapons_Ammo_GL_smoke_red",
+            "JA_104th_Weapons_Ammo_GL_smoke_green",
+            "JA_104th_Weapons_Ammo_GL_smoke_blue",
+            "JA_104th_Weapons_Ammo_GL_smoke_orange",
 
-			"JA_104th_Weapons_Ammo_flare_white",
-			"JA_104th_Weapons_Ammo_flare_green",
-			"JA_104th_Weapons_Ammo_flare_red",
-			"JA_104th_Weapons_Ammo_flare_yellow",
-			"JA_104th_Weapons_Ammo_flare_ir",
-			"JA_104th_Weapons_Ammo_flare_blue",
-			"JA_104th_Weapons_Ammo_flare_cyan",
-			"JA_104th_Weapons_Ammo_flare_purple",
+            "JA_104th_Weapons_Ammo_flare_white",
+            "JA_104th_Weapons_Ammo_flare_green",
+            "JA_104th_Weapons_Ammo_flare_red",
+            "JA_104th_Weapons_Ammo_flare_yellow",
+            "JA_104th_Weapons_Ammo_flare_ir",
+            "JA_104th_Weapons_Ammo_flare_blue",
+            "JA_104th_Weapons_Ammo_flare_cyan",
+            "JA_104th_Weapons_Ammo_flare_purple",
 
-		};
+        };
 
-		magazines[] = {
+        magazines[] = {
 
             "JA_104th_Weapons_Mags_10mw500",
             "JA_104th_Weapons_Mags_10mw40",
             "JA_104th_Weapons_Mags_10mw50",
             "JA_104th_Weapons_Mags_10mw80",
 
-			"JA_104th_Weapons_Mags_20mw70",
-			"JA_104th_Weapons_Mags_20mw200",
+            "JA_104th_Weapons_Mags_20mw70",
+            "JA_104th_Weapons_Mags_20mw200",
             "JA_104th_Weapons_Mags_20mw300",
 
-			"JA_104th_Weapons_Mags_30mw50",
+            "JA_104th_Weapons_Mags_30mw50",
             "JA_104th_Weapons_Mags_30mw12",
 
-			"JA_104th_Weapons_Mags_40mw40",
+            "JA_104th_Weapons_Mags_40mw40",
             "JA_104th_Weapons_Mags_40mw10",
 
-			"JA_104th_Weapons_Mags_50mw5",
+            "JA_104th_Weapons_Mags_50mw5",
 
             "JA_104th_Weapons_Mags_10mw20SC",
             "JA_104th_Weapons_Mags_20mw16SC_Slug",
@@ -177,28 +177,27 @@ class CfgPatches
 
             "JA_104th_Weapons_Mags_10mw4SC",
 
-			"JA_104th_Weapons_Mags_GL_HE2",
-			"JA_104th_Weapons_Mags_GL_HE3",
-			"JA_104th_Weapons_Mags_GL_AP2",
+            "JA_104th_Weapons_Mags_GL_HE2",
+            "JA_104th_Weapons_Mags_GL_HE3",
+            "JA_104th_Weapons_Mags_GL_AP2",
 
-			"JA_104th_Weapons_Mags_GL_smoke_white6",
-			"JA_104th_Weapons_Mags_GL_smoke_purple3",
-			"JA_104th_Weapons_Mags_GL_smoke_yellow3",
-			"JA_104th_Weapons_Mags_GL_smoke_red3",
-			"JA_104th_Weapons_Mags_GL_smoke_green3",
-			"JA_104th_Weapons_Mags_GL_smoke_blue3",
-			"JA_104th_Weapons_Mags_GL_smoke_orange3",
+            "JA_104th_Weapons_Mags_GL_smoke_white6",
+            "JA_104th_Weapons_Mags_GL_smoke_purple3",
+            "JA_104th_Weapons_Mags_GL_smoke_yellow3",
+            "JA_104th_Weapons_Mags_GL_smoke_red3",
+            "JA_104th_Weapons_Mags_GL_smoke_green3",
+            "JA_104th_Weapons_Mags_GL_smoke_blue3",
+            "JA_104th_Weapons_Mags_GL_smoke_orange3",
 
-			"JA_104th_Weapons_Mags_GL_flare_White3",
-			"JA_104th_Weapons_Mags_GL_flare_IR3",
-			"JA_104th_Weapons_Mags_GL_flare_Green3",
-			"JA_104th_Weapons_Mags_GL_flare_Red3",
-			"JA_104th_Weapons_Mags_GL_flare_Yellow3",
-			"JA_104th_Weapons_Mags_GL_flare_Blue3",
-			"JA_104th_Weapons_Mags_GL_flare_Cyan3",
-			"JA_104th_Weapons_Mags_GL_flare_Purple3"
-		};	
-	};
+            "JA_104th_Weapons_Mags_GL_flare_White3",
+            "JA_104th_Weapons_Mags_GL_flare_IR3",
+            "JA_104th_Weapons_Mags_GL_flare_Green3",
+            "JA_104th_Weapons_Mags_GL_flare_Red3",
+            "JA_104th_Weapons_Mags_GL_flare_Yellow3",
+            "JA_104th_Weapons_Mags_GL_flare_Blue3",
+            "JA_104th_Weapons_Mags_GL_flare_Cyan3",
+            "JA_104th_Weapons_Mags_GL_flare_Purple3"};
+    };
 };
 
 class CfgEditorCategories
@@ -221,23 +220,22 @@ class CfgRecoil
 {
     class recoil_default;
 
-    class JA_104th_Z7_recoil: recoil_default
+    class JA_104th_Z7_recoil : recoil_default
     {
-        kickBack[] = {0.045,0.08};
-        muzzleOuter[] = {0.3,0.3,0.3,0.2};
+        kickBack[] = {0.045, 0.08};
+        muzzleOuter[] = {0.3, 0.3, 0.3, 0.2};
         permanent = 0.03;
         temporary = 0.02;
     };
 
-    class JA_104th_ShoulderCannon_recoil: recoil_default
+    class JA_104th_ShoulderCannon_recoil : recoil_default
     {
-        kickBack[] = {0.045,0.08};
-        muzzleOuter[] = {0.3,0.3,0.3,0.2};
+        kickBack[] = {0.045, 0.08};
+        muzzleOuter[] = {0.3, 0.3, 0.3, 0.2};
         permanent = 0.03;
         temporary = 0.02;
     };
 };
-
 
 class CowsSlot;
 class MuzzleSlot;
@@ -248,16 +246,15 @@ class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
 
-
 class CfgWeapons
 {
-	class InventoryItem_Base_F;
-	class InventoryMuzzleItem_Base_F;
+    class InventoryItem_Base_F;
+    class InventoryMuzzleItem_Base_F;
     class InventoryOpticsItem_Base_F;
-	class ItemCore;
+    class ItemCore;
     class BaseSoundModeType;
 
-	class Weapon_Base_F;
+    class Weapon_Base_F;
     class Rifle_Base_F;
     class Pistol_Base_F;
     class Launcher;
@@ -270,64 +267,64 @@ class CfgWeapons
     class ls_weapon_rps6;
     class ls_weapon_rps6_disposable;
     class ls_weapon_at_plx1;
-	class SWLW_Z7;
-	class SDT_IonDisruptor;
+    class SWLW_Z7;
+    class SDT_IonDisruptor;
     class 3AS_RPS6_HP;
     class 3AS_RPS6_F;
 
-    class arifle_MX_Base_F: Rifle_Base_F
+    class arifle_MX_Base_F : Rifle_Base_F
     {
         class WeaponSlotsInfo;
     };
 
-    class hgun_P07_F: Pistol_Base_F
+    class hgun_P07_F : Pistol_Base_F
     {
         class WeaponSlotsInfo;
     };
 
-    class 3AS_pistol_DC15SA_Base_F: Pistol_Base_F
+    class 3AS_pistol_DC15SA_Base_F : Pistol_Base_F
     {
         class WeaponSlotsInfo;
     };
 
-    class Launcher_Base_F: Launcher
+    class Launcher_Base_F : Launcher
     {
-    	class GunParticles;
+        class GunParticles;
         class WeaponSlotsInfo;
     };
     class launch_Titan_base;
-    class launch_Titan_short_base: launch_Titan_base
+    class launch_Titan_short_base : launch_Titan_base
     {
         class WeaponSlotsInfo;
     };
-	class optic_DMS: ItemCore
+    class optic_DMS : ItemCore
     {
         class ItemInfo;
     };
-    class optic_Hamr: ItemCore
+    class optic_Hamr : ItemCore
     {
         class ItemInfo;
     };
-    class optic_MRCO: ItemCore
+    class optic_MRCO : ItemCore
     {
         class ItemInfo;
     };
-    class optic_Holosight: ItemCore
+    class optic_Holosight : ItemCore
     {
         class ItemInfo;
     };
-    class optic_MRD: ItemCore
+    class optic_MRD : ItemCore
     {
         class ItemInfo;
     };
-    class OPTRE_SRM_Sight: ItemCore
+    class OPTRE_SRM_Sight : ItemCore
     {
         class ItemInfo;
     };
 
     class muzzle_snds_338_black;
 
-   class JA_104th_muzzle_flash: ItemCore
+    class JA_104th_muzzle_flash : ItemCore
     {
         scope = 2;
         scopeInArsenal = 2;
@@ -335,7 +332,7 @@ class CfgWeapons
         displayName = "Flash Hider Chip";
         model = "";
         picture = "\Jangos_Armory_Blasters\data\accessories\icon_flashhider_ca.paa";
-        class ItemInfo: InventoryMuzzleItem_Base_F
+        class ItemInfo : InventoryMuzzleItem_Base_F
         {
             mass = 10;
             class MagazineCoef
@@ -374,14 +371,14 @@ class CfgWeapons
         inertia = 0.1;
     };
 
-    class JA_104th_muzzle_suppressor: muzzle_snds_338_black
+    class JA_104th_muzzle_suppressor : muzzle_snds_338_black
     {
         scope = 2;
         displayName = "Suppressor Chip";
         author = "Jango's Armory Aux Team";
         picture = "\Jangos_Armory_Blasters\data\accessories\icon_gray_chip_64_ca.paa";
         model = "";
-        class ItemInfo: InventoryMuzzleItem_Base_F
+        class ItemInfo : InventoryMuzzleItem_Base_F
         {
             soundTypeIndex = 1;
             class MagazineCoef
@@ -417,8 +414,8 @@ class CfgWeapons
             };
         };
     };
-    
-    class JA_104th_cows_rco: optic_Hamr
+
+    class JA_104th_cows_rco : optic_Hamr
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
@@ -427,7 +424,7 @@ class CfgWeapons
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_hamr_1.p3d";
         descriptionShort = "HAMR SR 2-4x Scope";
         weaponInfoType = "RscOptics_sos";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             mass = 8;
             opticType = 1;
@@ -454,14 +451,14 @@ class CfgWeapons
                 {
                     opticsID = 2;
                     useModelOptics = 0;
-                    opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                     opticsFlare = 1;
                     opticsDisablePeripherialVision = 1;
                     opticsZoomMin = "0.25/2";
                     opticsZoomMax = "0.25/4";
                     opticsZoomInit = "0.25/2";
                     discreteinitIndex = 0;
-                    discretefov[] = {"0.25/2","0.25/4"};
+                    discretefov[] = {"0.25/2", "0.25/4"};
                     discreteDistanceInitIndex = 1;
                     memoryPointCamera = "opticView";
                     visionMode[] = {};
@@ -472,28 +469,28 @@ class CfgWeapons
         };
         inertia = 0.1;
     };
-    class JA_104th_cows_rco_2: JA_104th_cows_rco
+    class JA_104th_cows_rco_2 : JA_104th_cows_rco
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_sr_02_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_hamr_2.p3d";
         displayName = "Short Range Scope B";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             modelOptics = "\Jangos_Armory_Blasters\data\accessories\JA_104th_hamr_scope_2";
         };
     };
-    class JA_104th_cows_rco_3: JA_104th_cows_rco
+    class JA_104th_cows_rco_3 : JA_104th_cows_rco
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_sr_03_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_hamr_3.p3d";
         displayName = "Short Range Scope C";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             modelOptics = "\Jangos_Armory_Blasters\data\accessories\JA_104th_hamr_scope_3";
         };
     };
-    
-    class JA_104th_cows_mrco: optic_mrco
+
+    class JA_104th_cows_mrco : optic_mrco
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
@@ -502,7 +499,7 @@ class CfgWeapons
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_mrco_1.p3d";
         descriptionShort = "MRCO MR 2-6x Scope";
         weaponInfoType = "RscOptics_sos";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             mass = 8;
             opticType = 1;
@@ -529,14 +526,14 @@ class CfgWeapons
                 {
                     opticsID = 2;
                     useModelOptics = 0;
-                    opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                     opticsFlare = 1;
                     opticsDisablePeripherialVision = 1;
                     opticsZoomMin = "0.25/6";
                     opticsZoomMax = "0.25/2";
                     opticsZoomInit = "0.25/2";
                     discreteinitIndex = 0;
-                    discretefov[] = {"0.25/2","0.25/6"};
+                    discretefov[] = {"0.25/2", "0.25/6"};
                     discreteDistanceInitIndex = 1;
                     memoryPointCamera = "opticView";
                     visionMode[] = {};
@@ -547,28 +544,28 @@ class CfgWeapons
         };
         inertia = 0.1;
     };
-    class JA_104th_cows_mrco_2: JA_104th_cows_mrco
+    class JA_104th_cows_mrco_2 : JA_104th_cows_mrco
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_mr_02_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_mrco_2.p3d";
         displayName = "Medium Range Scope B";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             modelOptics = "\Jangos_Armory_Blasters\data\accessories\JA_104th_MRCO_scope_2";
         };
     };
-    class JA_104th_cows_mrco_3: JA_104th_cows_mrco
+    class JA_104th_cows_mrco_3 : JA_104th_cows_mrco
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_mr_03_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_mrco_3.p3d";
         displayName = "Medium Range Scope C";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             modelOptics = "\Jangos_Armory_Blasters\data\accessories\JA_104th_MRCO_scope_3";
         };
     };
-    
-    class JA_104th_cows_Holosight: optic_Holosight
+
+    class JA_104th_cows_Holosight : optic_Holosight
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
@@ -577,7 +574,7 @@ class CfgWeapons
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_holo_1.p3d";
         descriptionShort = "Holo 1x Scope";
         weaponInfoType = "RscWeaponZeroing";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             mass = 6;
             modelOptics = "\A3\Weapons_F\empty";
@@ -604,20 +601,20 @@ class CfgWeapons
         };
         inertia = 0;
     };
-    class JA_104th_cows_Holosight_2: JA_104th_cows_Holosight
+    class JA_104th_cows_Holosight_2 : JA_104th_cows_Holosight
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_holo_02_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_holo_2.p3d";
         displayName = "Holo Sight B";
     };
-    class JA_104th_cows_Holosight_3: JA_104th_cows_Holosight
+    class JA_104th_cows_Holosight_3 : JA_104th_cows_Holosight
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_holo_03_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_holo_3.p3d";
         displayName = "Holo Sight C";
     };
-    
-    class JA_104th_cows_HoloScope: JA_104th_cows_Holosight
+
+    class JA_104th_cows_HoloScope : JA_104th_cows_Holosight
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
@@ -626,7 +623,7 @@ class CfgWeapons
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_holo_1.p3d";
         descriptionShort = "Holo 1x Scope";
         weaponInfoType = "RscWeaponZeroing";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             mass = 6;
             modelOptics = "\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
@@ -649,17 +646,17 @@ class CfgWeapons
                     visionMode[] = {};
                     opticsPPEffects[] = {"OpticsBlur1"};
                 };
-                class Scope: aco
+                class Scope : aco
                 {
                     opticsID = 2;
                     useModelOptics = 1;
-                    opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                     opticsDisablePeripherialVision = 0.67;
                     opticsZoomMin = 0.125;
                     opticsZoomMax = 0.125;
                     opticsZoomInit = 0.125;
                     memoryPointCamera = "opticView";
-                    visionMode[] = {"Normal","NVG"};
+                    visionMode[] = {"Normal", "NVG"};
                     opticsFlare = "true";
                     distanceZoomMin = 100;
                     distanceZoomMax = 100;
@@ -669,20 +666,20 @@ class CfgWeapons
             inertia = 0;
         };
     };
-    class JA_104th_cows_HoloScope_2: JA_104th_cows_HoloScope
+    class JA_104th_cows_HoloScope_2 : JA_104th_cows_HoloScope
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_holo_02_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_holo_2.p3d";
         displayName = "Holo Scope B";
     };
-    class JA_104th_cows_HoloScope_3: JA_104th_cows_HoloScope
+    class JA_104th_cows_HoloScope_3 : JA_104th_cows_HoloScope
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_holo_03_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_holo_3.p3d";
         displayName = "Holo Scope C";
     };
-    
-    class JA_104th_cows_DMS: optic_DMS
+
+    class JA_104th_cows_DMS : optic_DMS
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
@@ -690,7 +687,7 @@ class CfgWeapons
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_lr_01_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_dms.p3d";
         descriptionShort = "Long Range Scope";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             mass = 12;
             opticType = 2;
@@ -702,27 +699,27 @@ class CfgWeapons
                 {
                     opticsID = 1;
                     useModelOptics = 1;
-                    opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+                    opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur3"};
                     opticsZoomMin = "0.25/4";
                     opticsZoomMax = "0.25/8";
                     opticsZoomInit = "0.25/4";
                     discreteinitIndex = 0;
-                    discretefov[] = {"0.25/4","0.25/6"};
+                    discretefov[] = {"0.25/4", "0.25/6"};
                     discreteDistanceInitIndex = 1;
                     distanceZoomMin = 300;
                     distanceZoomMax = 1200;
                     memoryPointCamera = "opticView";
-                    visionMode[] = {"Normal","NVG"};
-                    thermalMode[] = {5,6};
+                    visionMode[] = {"Normal", "NVG"};
+                    thermalMode[] = {5, 6};
                     opticsFlare = 1;
                     opticsDisablePeripherialVision = 0;
                     cameraDir = "";
                 };
-                class Iron: Snip
+                class Iron : Snip
                 {
                     opticsID = 2;
                     useModelOptics = 0;
-                    opticsPPEffects[] = {"",""};
+                    opticsPPEffects[] = {"", ""};
                     opticsFlare = 0;
                     opticsDisablePeripherialVision = 0;
                     opticsZoomMin = 0.25;
@@ -740,40 +737,38 @@ class CfgWeapons
         };
         inertia = 0.2;
     };
-    class JA_104th_cows_DMS_2: JA_104th_cows_DMS
+    class JA_104th_cows_DMS_2 : JA_104th_cows_DMS
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_lr_02_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_dms_2.p3d";
         displayName = "DMS LR 4-8x Scope B";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             modelOptics = "Jangos_Armory_Blasters\data\accessories\JA_104th_scope2_DMS";
         };
     };
-    class JA_104th_cows_DMS_3: JA_104th_cows_DMS
+    class JA_104th_cows_DMS_3 : JA_104th_cows_DMS
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_lr_03_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_dms_3.p3d";
         displayName = "DMS LR 4-8x Scope C";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             modelOptics = "Jangos_Armory_Blasters\data\accessories\JA_104th_scope3_DMS";
         };
     };
-    class JA_104th_cows_DMS_4: JA_104th_cows_DMS
+    class JA_104th_cows_DMS_4 : JA_104th_cows_DMS
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_lr_03_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_dms_4.p3d";
         displayName = "DMS LR 4-8x Scope D";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             modelOptics = "Jangos_Armory_Blasters\data\accessories\JA_104th_scope4_DMS";
         };
     };
-    
-    
-    
-    class JA_104th_cows_pistol: optic_MRD
+
+    class JA_104th_cows_pistol : optic_MRD
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
@@ -781,7 +776,7 @@ class CfgWeapons
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_pistol_01_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_pistol_1.p3d";
         descriptionShort = "Pistol Scope";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             mass = 2;
             modelOptics = "\A3\Weapons_F\empty";
@@ -808,20 +803,19 @@ class CfgWeapons
         };
         inertia = 0;
     };
-    class JA_104th_cows_pistol_2: JA_104th_cows_pistol
+    class JA_104th_cows_pistol_2 : JA_104th_cows_pistol
     {
         picture = "\Jangos_Armory_Blasters\data\accessories\JA_104th_ico_pistol_03_ca.paa";
         model = "\Jangos_Armory_Blasters\data\accessories\JA_104th_pistol_3.p3d";
         displayName = "Pistol Holo B";
     };
 
-    
-    class JA_104th_cows_LRPS: optic_DMS
+    class JA_104th_cows_LRPS : optic_DMS
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
         displayName = "LRPS LR 12-20x Scope";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             mass = 16;
             opticType = 2;
@@ -835,29 +829,29 @@ class CfgWeapons
                     opticsID = 1;
                     opticsDisplayName = "WFOV";
                     useModelOptics = 1;
-                    opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+                    opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
                     opticsZoomMin = 0.01;
                     opticsZoomMax = 0.042;
                     opticsZoomInit = 0.042;
-                    discreteDistance[] = {300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400};
+                    discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400};
                     discreteDistanceInitIndex = 2;
                     distanceZoomMin = 300;
                     distanceZoomMax = 2400;
-                    discretefov[] = {0.042,0.01};
+                    discretefov[] = {0.042, 0.01};
                     discreteInitIndex = 0;
                     memoryPointCamera = "opticView";
-                    modelOptics[] = {"\A3\Weapons_F\acc\reticle_lrps_F","\A3\Weapons_F\acc\reticle_lrps_z_F"};
-                    visionMode[] = {"Normal","NVG","Ti"};
+                    modelOptics[] = {"\A3\Weapons_F\acc\reticle_lrps_F", "\A3\Weapons_F\acc\reticle_lrps_z_F"};
+                    visionMode[] = {"Normal", "NVG", "Ti"};
                     thermalMode[] = {0};
                     opticsFlare = 1;
                     opticsDisablePeripherialVision = 1;
                     cameraDir = "";
                 };
-                class Iron: Snip
+                class Iron : Snip
                 {
                     opticsID = 2;
                     useModelOptics = 0;
-                    opticsPPEffects[] = {"",""};
+                    opticsPPEffects[] = {"", ""};
                     opticsFlare = 0;
                     opticsDisablePeripherialVision = 0;
                     opticsZoomMin = 0.25;
@@ -875,14 +869,14 @@ class CfgWeapons
         };
     };
 
-    class JA_104th_cows_LEScope_DC15A: optic_DMS
+    class JA_104th_cows_LEScope_DC15A : optic_DMS
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_scope_ui_ca.paa";
         displayName = "DC-15LE Scope";
         model = "\3AS\3AS_Weapons\DC15A\3AS_DC15A_LE_Scope.p3d";
-        class ItemInfo: ItemInfo
+        class ItemInfo : ItemInfo
         {
             mass = 16;
             opticType = 2;
@@ -896,7 +890,7 @@ class CfgWeapons
                     opticsID = 1;
                     useModelOptics = 0;
                     opticsFlare = "true";
-                    opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                     opticsDisablePeripherialVision = 0.67;
                     opticsZoomMin = 0.375;
                     opticsZoomMax = 1.1;
@@ -906,17 +900,17 @@ class CfgWeapons
                     distanceZoomMin = 100;
                     distanceZoomMax = 100;
                 };
-                class Scope: Ironsights
+                class Scope : Ironsights
                 {
                     opticsID = 2;
                     useModelOptics = 1;
-                    opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                     opticsDisablePeripherialVision = 0.67;
                     opticsZoomMin = 0.03125;
                     opticsZoomMax = 0.0625;
                     opticsZoomInit = 0.0625;
                     memoryPointCamera = "opticView";
-                    visionMode[] = {"Normal","NVG"};
+                    visionMode[] = {"Normal", "NVG"};
                     opticsFlare = "true";
                     distanceZoomMin = 100;
                     distanceZoomMax = 100;
@@ -925,8 +919,8 @@ class CfgWeapons
             };
         };
     };
-    
-    class JA_104th_cows_reflex_optic: ItemCore
+
+    class JA_104th_cows_reflex_optic : ItemCore
     {
         scope = 2;
         author = "Jango's Armory Aux Team";
@@ -934,7 +928,7 @@ class CfgWeapons
         picture = "\A3\Weapons_F_EPA\Acc\data\UI\gear_acco_yorris_CA.paa";
         model = "\3AS\3AS_Weapons\DC15C\3AS_DC15C_Reflex_f.p3d";
         weaponInfoType = "RscWeaponZeroing";
-        class ItemInfo: InventoryOpticsItem_Base_F
+        class ItemInfo : InventoryOpticsItem_Base_F
         {
             mass = 6;
             modelOptics = "\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
@@ -957,17 +951,17 @@ class CfgWeapons
                     visionMode[] = {};
                     opticsPPEffects[] = {"OpticsBlur1"};
                 };
-                class Scope: aco
+                class Scope : aco
                 {
                     opticsID = 2;
                     useModelOptics = 1;
-                    opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                     opticsDisablePeripherialVision = 0.67;
                     opticsZoomMin = 0.125;
                     opticsZoomMax = 0.125;
                     opticsZoomInit = 0.125;
                     memoryPointCamera = "opticView";
-                    visionMode[] = {"Normal","NVG"};
+                    visionMode[] = {"Normal", "NVG"};
                     opticsFlare = "true";
                     distanceZoomMin = 100;
                     distanceZoomMax = 100;
@@ -977,7 +971,7 @@ class CfgWeapons
         };
     };
 
-	class JA_104th_stun_muzzle: JLTS_stun_muzzle
+    class JA_104th_stun_muzzle : JLTS_stun_muzzle
     {
         ACE_barrelTwist = 0;
         ACE_barrelLength = 0;
@@ -988,30 +982,30 @@ class CfgWeapons
         discreteDistance[] = {50};
         discreteDistanceInitIndex = 0;
         displayName = "[104th] High Energy Stun Mode";
-        drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10};
+        drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
         fireSpreadAngle = 0.95;
-        magazines[] = {"JLTS_stun_mag_short","JLTS_stun_mag_long"};
+        magazines[] = {"JLTS_stun_mag_short", "JLTS_stun_mag_long"};
         magazineWell[] = {};
         maxZeroing = 50;
         reloadAction = "GestureReloadMX";
-        reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
+        reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx", 1, 1, 10};
         modes[] = {"Single"};
-        class Single: Mode_SemiAuto
-        {	
+        class Single : Mode_SemiAuto
+        {
 
-        	class BaseSoundModeType 
-        	{
-    			weaponSoundEffect = "";
-    			closure1[] = {};
-    			closure2[] = {};
-    			soundClosure[] = {};
-			};
-            sounds[] = {"StandardSound"};
-            class StandardSound: BaseSoundModeType
+            class BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"MRC\JLTS\weapons\Core\sounds\stun",5,1.5,1800};
-                soundBegin[] = {"begin1",1};
+                closure1[] = {};
+                closure2[] = {};
+                soundClosure[] = {};
+            };
+            sounds[] = {"StandardSound"};
+            class StandardSound : BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                begin1[] = {"MRC\JLTS\weapons\Core\sounds\stun", 5, 1.5, 1800};
+                soundBegin[] = {"begin1", 1};
             };
             recoil = "recoil_pistol_light";
             recoilProne = "recoil_prone_pistol_light";
@@ -1028,56 +1022,54 @@ class CfgWeapons
         };
     };
 
-  class JA_104th_rifle_base: arifle_MX_Base_F
+    class JA_104th_rifle_base : arifle_MX_Base_F
     {
         author = "Jango's Armory Aux Team";
         ACE_Overheating_mrbs = 0;
         canShootInWater = 1;
         fireLightDuration = 0.05;
         fireLightIntensity = 0.2;
-        fireLightDiffuse[] = {0,0,1};
-        fireLightAmbient[] = {0,0,1};
+        fireLightDiffuse[] = {0, 0, 1};
+        fireLightAmbient[] = {0, 0, 1};
         JLTS_hasElectronics = 0;
         JLTS_hasEMPProtection = 0;
         magazines[] = {};
         magazineWell[] = {};
-        modes[] = {"Single","Burst","FullAuto"};
-        drySound[] = {"swlw_rework\sounds\dc\DC_noAmmo.wss",5,1,20};
+        modes[] = {"Single", "Burst", "FullAuto"};
+        drySound[] = {"swlw_rework\sounds\dc\DC_noAmmo.wss", 5, 1, 20};
         muzzles[] =
-        {
-            "this",
-            "Stun"
-        };
-        class Stun: JA_104th_stun_muzzle
+            {
+                "this",
+                "Stun"};
+        class Stun : JA_104th_stun_muzzle
         {
             displayName = "High Energy Stun Mode";
             magazines[] =
-            {
-                "JA_104th_Weapons_Mags_stun10"
-            };
+                {
+                    "JA_104th_Weapons_Mags_stun10"};
         };
-        class Single: Mode_SemiAuto
+        class Single : Mode_SemiAuto
         {
             reloadTime = 0.096;
             recoil = "recoil_single_mx";
             recoilProne = "recoil_single_prone_mx";
             dispersion = 0.00073;
         };
-        class Burst: Mode_Burst
+        class Burst : Mode_Burst
         {
             reloadTime = 0.1;
             dispersion = 0.00066;
             soundContinuous = 0;
             soundBurst = 0;
         };
-        class FullAuto: Mode_FullAuto
+        class FullAuto : Mode_FullAuto
         {
             reloadTime = 0.125;
             recoil = "recoil_auto_mx";
             recoilProne = "recoil_auto_prone_mx";
             dispersion = 0.00073;
         };
-        class fullauto_medium: FullAuto
+        class fullauto_medium : FullAuto
         {
             dispersion = 0.00073;
             showToPlayer = 0;
@@ -1092,7 +1084,7 @@ class CfgWeapons
             aiRateOfFire = 0.125;
             aiRateOfFireDistance = 200;
         };
-        class single_medium: Single
+        class single_medium : Single
         {
             showToPlayer = 0;
             dispersion = 0.00073;
@@ -1106,7 +1098,7 @@ class CfgWeapons
             aiRateOfFire = 0.096;
             aiRateOfFireDistance = 600;
         };
-        class single_far: single_medium
+        class single_far : single_medium
         {
             dispersion = 0.00073;
             requiredOpticType = 2;
@@ -1122,68 +1114,67 @@ class CfgWeapons
         class WeaponSlotsInfo
         {
             mass = 30;
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 scope = 0;
                 compatibleItems[] = {};
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
                 compatibleItems[] = {};
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
-                iconPosition[] = {0.24,0.35};
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                iconPosition[] = {0.24, 0.35};
                 iconScale = 0.2;
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
                 displayName = "Pointer Slot";
-                compatibleItems[] = {}; 
+                compatibleItems[] = {};
             };
-            class UnderBarrelSlot: UnderBarrelSlot
+            class UnderBarrelSlot : UnderBarrelSlot
             {
-                iconPicture="\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
-                iconPinpoint="Bottom";
-                linkProxy="\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
+                iconPinpoint = "Bottom";
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
                 compatibleItems[] = {};
             };
         };
     };
 
-   class JA_104th_rifle_base_stunless: JA_104th_rifle_base
+    class JA_104th_rifle_base_stunless : JA_104th_rifle_base
     {
         muzzles[] = {"this"};
     };
 
-	class JA_104th_pistol_base: hgun_P07_F
+    class JA_104th_pistol_base : hgun_P07_F
     {
         author = "Jango's Armory Aux Team";
         ACE_Overheating_mrbs = 0;
         canShootInWater = 1;
         fireLightDuration = 0.05;
         fireLightIntensity = 0.2;
-        fireLightDiffuse[] = {0,0,1};
-        fireLightAmbient[] = {0,0,1};
+        fireLightDiffuse[] = {0, 0, 1};
+        fireLightAmbient[] = {0, 0, 1};
         JLTS_hasElectronics = 0;
         JLTS_hasEMPProtection = 0;
         magazines[] = {};
         magazineWell[] = {};
         modes[] = {"Single"};
-        drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10};
+        drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
         muzzles[] =
-        {
-            "this"
-        };
-        class Single: Mode_SemiAuto
+            {
+                "this"};
+        class Single : Mode_SemiAuto
         {
             recoil = "recoil_pistol_light";
             recoilProne = "recoil_prone_pistol_light";
@@ -1198,47 +1189,46 @@ class CfgWeapons
             aiRateOfFire = 0;
             aiRateOfFireDistance = 25;
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
             mass = 30;
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
                 scope = 0;
                 compatibleItems[] = {};
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
                 compatibleItems[] = {};
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
-                compatibleItems[] = 
-                {
-                    "jlts_dc17sa_flashlight"
-                }; 
+                compatibleItems[] =
+                    {
+                        "jlts_dc17sa_flashlight"};
             };
-            class UnderBarrelSlot: UnderBarrelSlot
+            class UnderBarrelSlot : UnderBarrelSlot
             {
                 compatibleItems[] = {};
             };
         };
     };
-    
-    class JA_104th_launcher_base: Launcher_Base_F
+
+    class JA_104th_launcher_base : Launcher_Base_F
     {
         author = "Jango's Armory Aux Team";
         _generalMacro = "launch_RPG32_F";
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
             mass = 132;
         };
@@ -1256,14 +1246,16 @@ class CfgWeapons
         modes[] = {"Single"};
         reloadAction = "ReloadRPG";
         recoil = "";
-        class Single: Mode_SemiAuto
+        class Single : Mode_SemiAuto
         {
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType{};
-            class StandardSound: BaseSoundModeType
+            class BaseSoundModeType
             {
-                begin1[] = {"swlw_rework\sounds\launcher\PLX_shot.wss",10,1,2000};
-                soundBegin[] = {"begin1",1};
+            };
+            class StandardSound : BaseSoundModeType
+            {
+                begin1[] = {"swlw_rework\sounds\launcher\PLX_shot.wss", 10, 1, 2000};
+                soundBegin[] = {"begin1", 1};
             };
             recoil = "recoil_single_law";
             aiRateOfFire = 5;
@@ -1276,8 +1268,8 @@ class CfgWeapons
             maxRange = 600;
             maxRangeProbab = 0.85;
         };
-        drySound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32",0.4466836,1,20};
-        reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32",0.25118864,1,10};
+        drySound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32", 0.4466836, 1, 20};
+        reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32", 0.25118864, 1, 10};
         canLock = 0;
         weaponLockDelay = 3;
         lockAcquire = 0;
@@ -1295,7 +1287,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_guided_launcher_base: launch_Titan_short_base
+    class JA_104th_guided_launcher_base : launch_Titan_short_base
     {
         author = "Jango's Armory Aux Team";
         modelSpecial = "";
@@ -1308,36 +1300,36 @@ class CfgWeapons
         ace_reloadlaunchers_enabled = 1;
         ace_javelin_enabled = 1;
         mass = 220;
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            
         };
     };
-    	// Primaries
+    // Primaries
 
     // DC15A
-    class JA_104th_DC15A: JA_104th_rifle_base
+    class JA_104th_DC15A : JA_104th_rifle_base
     {
-    	ACE_barrelTwist = 279;
-    	ACE_barrelLength = 508;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 279;
+        ACE_barrelLength = 508;
+        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] DC-15A";
         baseWeapon = "JA_104th_DC15A";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_ui_ca.paa";
         model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
         mass = 97;
-        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15a_Handanim.rtm"};
+        handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15a_Handanim.rtm"};
         reloadAction = "GestureReload_JLTS_DC15A";
         reloadTime = 0.1;
         recoil = "recoil_mx";
-        magazines[]=
-        {
-            "JA_104th_Weapons_Mags_20mw40",
-        	"JA_104th_Weapons_Mags_30mw30"
-        };
+        magazines[] =
+            {
+                "JA_104th_Weapons_Mags_20mw40",
+                "JA_104th_Weapons_Mags_30mw30"};
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
-        class stun: JA_104th_stun_muzzle{};
+        class stun : JA_104th_stun_muzzle
+        {
+        };
         class OpticsModes
         {
             class Ironsights
@@ -1345,7 +1337,7 @@ class CfgWeapons
                 opticsID = 1;
                 useModelOptics = 0;
                 opticsFlare = "true";
-                opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 opticsDisablePeripherialVision = 0.67;
                 opticsZoomMin = 0.25;
                 opticsZoomMax = 1.1;
@@ -1355,116 +1347,113 @@ class CfgWeapons
                 distanceZoomMin = 100;
                 distanceZoomMax = 100;
             };
-            class Scope: Ironsights
+            class Scope : Ironsights
             {
                 opticsID = 2;
                 useModelOptics = 1;
-                opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 opticsDisablePeripherialVision = 0.67;
                 opticsZoomMin = 0.125;
                 opticsZoomMax = 0.125;
                 opticsZoomInit = 0.125;
                 memoryPointCamera = "opticView";
-                visionMode[] = {"Normal","NVG"};
+                visionMode[] = {"Normal", "NVG"};
                 opticsFlare = "true";
                 distanceZoomMin = 100;
                 distanceZoomMax = 100;
                 cameraDir = "";
             };
         };
-        modes[] = {"Single","FullAuto"};
-        class Single: Single
+        modes[] = {"Single", "FullAuto"};
+        class Single : Single
         {
-            reloadTime=0.18;		
-            dispersion=0.00028;
+            reloadTime = 0.18;
+            dispersion = 0.00028;
             sounds[] = {"StandardSound"};
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
-        class FullAuto: FullAuto
+        class FullAuto : FullAuto
         {
             reloadTime = 0.18;
             dispersion = 0.0005;
             sounds[] = {"StandardSound"};
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
-		class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = 
-                {
-                    "3AS_optic_DC15LE_F",
-                    "3AS_optic_DC15C_F"
+                compatibleItems[] =
+                    {
+                        "3AS_optic_DC15LE_F",
+                        "3AS_optic_DC15C_F",
+                        "3AS_Optic_Scope_WestarM5"
                 };
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                compatibleItems[]=
-                {
-                    "JA_104th_muzzle_flash",
-                    "3AS_muzzle_DC15LE_F"
-                };
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                compatibleItems[] =
+                    {
+                        "JA_104th_muzzle_flash",
+                        "3AS_muzzle_DC15LE_F"};
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
                 displayName = "Pointer Slot";
-                compatibleItems[] = 
-                {
-                    "acc_flashlight",
-                    "acc_pointer_IR"
-                }; 
+                compatibleItems[] =
+                    {
+                        "acc_flashlight",
+                        "acc_pointer_IR"};
             };
-            class UnderBarrelSlot: UnderBarrelSlot
+            class UnderBarrelSlot : UnderBarrelSlot
             {
-                iconPicture="\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
-                iconPinpoint="Bottom";
-                linkProxy="\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
-                compatibleItems[] = 
-                {
-                    "bipod_01_f_blk",
-                    "3AS_Bipod_DC15L_f"
-                };
+                iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
+                iconPinpoint = "Bottom";
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                compatibleItems[] =
+                    {
+                        "bipod_01_f_blk",
+                        "3AS_Bipod_DC15L_f"};
             };
         };
     };
-   class JA_104th_DC15A_UGL: JA_104th_DC15A
+    class JA_104th_DC15A_UGL : JA_104th_DC15A
     {
-        displayName="[104th] DC-15A UGL";
-        baseWeapon="JA_104th_DC15A_UGL";
+        displayName = "[104th] DC-15A UGL";
+        baseWeapon = "JA_104th_DC15A_UGL";
         mass = 110;
         model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_GL.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15aGL_Handanim.rtm"};
+        handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15aGL_Handanim.rtm"};
         reloadAction = "3AS_GestureReloadDC15A";
-        muzzles[]=
-        {
-            "this",
-            "Stun",
-            "DC15A_UGL"
-        };
-        class DC15A_UGL: UGL_F
+        muzzles[] =
+            {
+                "this",
+                "Stun",
+                "DC15A_UGL"};
+        class DC15A_UGL : UGL_F
         {
             cursorAim = "gl";
             displayName = "[104th] Over-Under Grenade Launcher";
@@ -1474,63 +1463,61 @@ class CfgWeapons
             useModelOptics = 0;
             useExternalOptic = 0;
             cameraDir = "OP_look";
-            discreteDistance[] = {100,200,300,400};
-            discreteDistanceCameraPoint[] = {"OP_eye","OP_eye2","OP_eye3","OP_eye4"};
-            discreteDistanceInitIndex = 0;
+            discreteDistance[] = {50,75,100,150,200,250,300,350,400};
+            discreteDistanceCameraPoint[] = {"OP_eye_50","OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
+            discreteDistanceInitIndex = 1;
             memoryPointCamera = "UGL eye";
             modelOptics = "-";
             optics = 1;
-            magazines[] = 
-            {
-                "ACE_HuntIR_M203",
-                "JA_104th_Weapons_Mags_GL_HE3",
-            	"JA_104th_Weapons_Mags_GL_AP2",
-                "JA_104th_Weapons_Mags_10mw4SC",
+            magazines[] =
+                {
+                    "ACE_HuntIR_M203",
+                    "JA_104th_Weapons_Mags_GL_HE3",
+                    "JA_104th_Weapons_Mags_GL_AP2",
+                    "JA_104th_Weapons_Mags_10mw4SC",
 
-            	"JA_104th_Weapons_Mags_GL_smoke_white6",
-            	"JA_104th_Weapons_Mags_GL_smoke_purple3",
-            	"JA_104th_Weapons_Mags_GL_smoke_yellow3",
-            	"JA_104th_Weapons_Mags_GL_smoke_red3",
-            	"JA_104th_Weapons_Mags_GL_smoke_green3",
-            	"JA_104th_Weapons_Mags_GL_smoke_blue3",
-            	"JA_104th_Weapons_Mags_GL_smoke_orange3",
+                    "JA_104th_Weapons_Mags_GL_smoke_white6",
+                    "JA_104th_Weapons_Mags_GL_smoke_purple3",
+                    "JA_104th_Weapons_Mags_GL_smoke_yellow3",
+                    "JA_104th_Weapons_Mags_GL_smoke_red3",
+                    "JA_104th_Weapons_Mags_GL_smoke_green3",
+                    "JA_104th_Weapons_Mags_GL_smoke_blue3",
+                    "JA_104th_Weapons_Mags_GL_smoke_orange3",
 
-            	"JA_104th_Weapons_Mags_GL_flare_White3",
-            	"JA_104th_Weapons_Mags_GL_flare_IR3",
-            	"JA_104th_Weapons_Mags_GL_flare_Green3",
-            	"JA_104th_Weapons_Mags_GL_flare_Red3",
-            	"JA_104th_Weapons_Mags_GL_flare_Yellow3",
-            	"JA_104th_Weapons_Mags_GL_flare_Blue3",
-            	"JA_104th_Weapons_Mags_GL_flare_Cyan3",
-            	"JA_104th_Weapons_Mags_GL_flare_Purple3"
-            };
-            magazineWell[] = {"UGL_40x36","CBA_40mm_M203","CBA_40mm_EGLM"};
+                    "JA_104th_Weapons_Mags_GL_flare_White3",
+                    "JA_104th_Weapons_Mags_GL_flare_IR3",
+                    "JA_104th_Weapons_Mags_GL_flare_Green3",
+                    "JA_104th_Weapons_Mags_GL_flare_Red3",
+                    "JA_104th_Weapons_Mags_GL_flare_Yellow3",
+                    "JA_104th_Weapons_Mags_GL_flare_Blue3",
+                    "JA_104th_Weapons_Mags_GL_flare_Cyan3",
+                    "JA_104th_Weapons_Mags_GL_flare_Purple3"};
+            magazineWell[] = {"UGL_40x36", "CBA_40mm_M203", "CBA_40mm_EGLM"};
             maxRange = 400;
             midRange = 200;
             minRange = 30;
             reloadAction = "GestureReloadMXUGL";
-            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
-            class Single: Mode_SemiAuto
+            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
+            class Single : Mode_SemiAuto
             {
                 sounds[] = {"StandardSound"};
-                class StandardSound: BaseSoundModeType
+                class StandardSound : BaseSoundModeType
                 {
                     weaponSoundEffect = "";
-                    begin1[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    begin2[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    begin3[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                    begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
+                    begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
+                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
                 };
             };
         };
     };
 
     // DC15C
-    class JA_104th_DC15C: JA_104th_rifle_base
+    class JA_104th_DC15C : JA_104th_rifle_base
     {
-    	ACE_barrelTwist = 178;
-    	ACE_barrelLength = 264;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 178;
+        ACE_barrelLength = 264;
+        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] DC-15C";
         baseWeapon = "JA_104th_DC15C";
@@ -1541,13 +1528,14 @@ class CfgWeapons
         reloadAction = "GestureReloadMX";
         reloadTime = 0.1;
         recoil = "recoil_mx";
-        magazines[]=
-        {
-            "JA_104th_Weapons_Mags_10mw50",
-            "JA_104th_Weapons_Mags_20mw40"
-        };
+        magazines[] =
+            {
+                "JA_104th_Weapons_Mags_10mw50",
+                "JA_104th_Weapons_Mags_20mw40"};
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
-        class stun: JA_104th_stun_muzzle{};
+        class stun : JA_104th_stun_muzzle
+        {
+        };
         class OpticsModes
         {
             class Ironsights
@@ -1555,7 +1543,7 @@ class CfgWeapons
                 opticsID = 1;
                 useModelOptics = 0;
                 opticsFlare = "true";
-                opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 opticsDisablePeripherialVision = 0.67;
                 opticsZoomMin = 0.25;
                 opticsZoomMax = 1.1;
@@ -1565,191 +1553,186 @@ class CfgWeapons
                 distanceZoomMin = 100;
                 distanceZoomMax = 100;
             };
-            class Scope: Ironsights
+            class Scope : Ironsights
             {
                 opticsID = 2;
                 useModelOptics = 1;
-                opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 opticsDisablePeripherialVision = 0.67;
                 opticsZoomMin = 0.125;
                 opticsZoomMax = 0.125;
                 opticsZoomInit = 0.125;
                 memoryPointCamera = "opticView";
-                visionMode[] = {"Normal","NVG"};
+                visionMode[] = {"Normal", "NVG"};
                 opticsFlare = "true";
                 distanceZoomMin = 100;
                 distanceZoomMax = 100;
                 cameraDir = "";
             };
         };
-        modes[] = {"Single","Burst","FullAuto"};
-        class Single: Single
+        modes[] = {"Single", "Burst", "FullAuto"};
+        class Single : Single
         {
-            reloadTime=0.14;		
-            dispersion=0.00025;
-            sounds[] = {"StandardSound","SilencedSound"};
-            class StandardSound: BaseSoundModeType
+            reloadTime = 0.14;
+            dispersion = 0.00025;
+            sounds[] = {"StandardSound", "SilencedSound"};
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
-            class SilencedSound: BaseSoundModeType
+            class SilencedSound : BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };  
+            };
         };
-        class Burst: Burst
+        class Burst : Burst
         {
-            reloadTime=0.075;
-            dispersion=0.0004;
-            sounds[] = {"StandardSound","SilencedSound"};
-            class StandardSound: BaseSoundModeType
+            reloadTime = 0.075;
+            dispersion = 0.0004;
+            sounds[] = {"StandardSound", "SilencedSound"};
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
-            class SilencedSound: BaseSoundModeType
+            class SilencedSound : BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };  
+            };
         };
-        class FullAuto: FullAuto
+        class FullAuto : FullAuto
         {
             reloadTime = 0.14;
             dispersion = 0.0005;
-            sounds[] = {"StandardSound","SilencedSound"};
-            class StandardSound: BaseSoundModeType
+            sounds[] = {"StandardSound", "SilencedSound"};
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss",+1db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot6.wss", +1db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
-            class SilencedSound: BaseSoundModeType
+            class SilencedSound : BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };  
+            };
         };
-		class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = 
-                {
-                    "3AS_optic_DC15C_F",
-                    "3AS_Optic_Scope_WestarM5"
-                };
+                compatibleItems[] =
+                    {
+                        "3AS_optic_DC15C_F",
+                        "3AS_Optic_Scope_WestarM5"};
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                compatibleItems[]=
-                {
-                    "JA_104th_muzzle_flash",
-                    "muzzle_snds_H"
-                };
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                compatibleItems[] =
+                    {
+                        "JA_104th_muzzle_flash",
+                        "muzzle_snds_H"};
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
-                compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
+                compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot"; 
+                displayName = "Pointer Slot";
             };
         };
     };
-   class JA_104th_DC15C_UGL: JA_104th_DC15C
+    class JA_104th_DC15C_UGL : JA_104th_DC15C
     {
-        displayName="[104th] DC-15C UGL";
-        baseWeapon="JA_104th_DC15C_UGL";
+        displayName = "[104th] DC-15C UGL";
+        baseWeapon = "JA_104th_DC15C_UGL";
         mass = 95;
         picture = "\Jangos_Armory_Blasters\data\textures\dc15cugl_ui_ca.paa";
         model = "\3AS\3AS_Weapons\Republic\DC15C\3AS_DC15C_GL.p3d";
-        handAnim[]=
-        {
-            "OFP2_ManSkeleton",
-            "3as\3AS_Weapons\Republic\DC15C\Data\Anim\New_DC15CGL_Handanim.rtm"
-        };
+        handAnim[] =
+            {
+                "OFP2_ManSkeleton",
+                "3as\3AS_Weapons\Republic\DC15C\Data\Anim\New_DC15CGL_Handanim.rtm"};
         reloadAction = "GestureReloadMX";
-        muzzles[]=
-        {
-            "this",
-            "Stun",
-            "DC15C_UGL"
-        };
-        class DC15C_UGL: UGL_F
+        muzzles[] =
+            {
+                "this",
+                "Stun",
+                "DC15C_UGL"};
+        class DC15C_UGL : UGL_F
         {
             displayName = "[104th] Over-Under Grenade Launcher";
             descriptionShort = "Underbarrel GL Module for DC15A";
             useModelOptics = 0;
             useExternalOptic = 0;
             cameraDir = "OP_look";
-            discreteDistance[] = {75,100,150,200,250,300,350,400};
-            discreteDistanceCameraPoint[] = {"OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
-            discreteDistanceInitIndex = 0;
-            magazines[] = 
-            {
-                "ACE_HuntIR_M203",
-                "JA_104th_Weapons_Mags_GL_HE2",
-            	"JA_104th_Weapons_Mags_GL_AP2",
+            discreteDistance[] = {50,75,100,150,200,250,300,350,400};
+            discreteDistanceCameraPoint[] = {"OP_eye_50","OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
+            discreteDistanceInitIndex = 1;
+            magazines[] =
+                {
+                    "ACE_HuntIR_M203",
+                    "JA_104th_Weapons_Mags_GL_HE2",
+                    "JA_104th_Weapons_Mags_GL_AP2",
 
-            	"JA_104th_Weapons_Mags_GL_smoke_white6",
-            	"JA_104th_Weapons_Mags_GL_smoke_purple3",
-            	"JA_104th_Weapons_Mags_GL_smoke_yellow3",
-            	"JA_104th_Weapons_Mags_GL_smoke_red3",
-            	"JA_104th_Weapons_Mags_GL_smoke_green3",
-            	"JA_104th_Weapons_Mags_GL_smoke_blue3",
-            	"JA_104th_Weapons_Mags_GL_smoke_orange3",
+                    "JA_104th_Weapons_Mags_GL_smoke_white6",
+                    "JA_104th_Weapons_Mags_GL_smoke_purple3",
+                    "JA_104th_Weapons_Mags_GL_smoke_yellow3",
+                    "JA_104th_Weapons_Mags_GL_smoke_red3",
+                    "JA_104th_Weapons_Mags_GL_smoke_green3",
+                    "JA_104th_Weapons_Mags_GL_smoke_blue3",
+                    "JA_104th_Weapons_Mags_GL_smoke_orange3",
 
-            	"JA_104th_Weapons_Mags_GL_flare_White3",
-            	"JA_104th_Weapons_Mags_GL_flare_IR3",
-            	"JA_104th_Weapons_Mags_GL_flare_Green3",
-            	"JA_104th_Weapons_Mags_GL_flare_Red3",
-            	"JA_104th_Weapons_Mags_GL_flare_Yellow3",
-            	"JA_104th_Weapons_Mags_GL_flare_Blue3",
-            	"JA_104th_Weapons_Mags_GL_flare_Cyan3",
-            	"JA_104th_Weapons_Mags_GL_flare_Purple3"
-            };
-            magazineWell[] = {"UGL_40x36","CBA_40mm_M203","CBA_40mm_EGLM"};
+                    "JA_104th_Weapons_Mags_GL_flare_White3",
+                    "JA_104th_Weapons_Mags_GL_flare_IR3",
+                    "JA_104th_Weapons_Mags_GL_flare_Green3",
+                    "JA_104th_Weapons_Mags_GL_flare_Red3",
+                    "JA_104th_Weapons_Mags_GL_flare_Yellow3",
+                    "JA_104th_Weapons_Mags_GL_flare_Blue3",
+                    "JA_104th_Weapons_Mags_GL_flare_Cyan3",
+                    "JA_104th_Weapons_Mags_GL_flare_Purple3"};
+            magazineWell[] = {"UGL_40x36", "CBA_40mm_M203", "CBA_40mm_EGLM"};
             reloadAction = "GestureReloadMXUGL";
-            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
-            class Single: Mode_SemiAuto
+            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
+            class Single : Mode_SemiAuto
             {
                 sounds[] = {"StandardSound"};
                 class BaseSoundModeType
@@ -1759,112 +1742,108 @@ class CfgWeapons
                     closure2[] = {};
                     soundClosure[] = {};
                 };
-                class StandardSound: BaseSoundModeType
+                class StandardSound : BaseSoundModeType
                 {
                     weaponSoundEffect = "";
-                    begin1[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    begin2[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    begin3[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                    begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
+                    begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
+                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
                 };
             };
         };
     };
 
-
     // DC15L
-    class JA_104th_DC15L: JA_104th_rifle_base_stunless
+    class JA_104th_DC15L : JA_104th_rifle_base_stunless
     {
-    	ACE_barrelTwist = 178;
-    	ACE_barrelLength = 414;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 178;
+        ACE_barrelLength = 414;
+        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] DC-15L";
         baseWeapon = "JA_104th_DC15L";
         mass = 154;
         picture = "\Jangos_Armory_Blasters\data\textures\dc15l_ui_ca.paa";
         model = "\3AS\3AS_Weapons\Republic\DC15L\3AS_DC15L_F.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DC15L\Data\Anims\New_DC15L_Handanim.rtm"};
+        handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15L\Data\Anims\New_DC15L_Handanim.rtm"};
         recoil = "recoil_SMG_03";
-        magazines[]=
-        {
-            "JA_104th_Weapons_Mags_20mw240"
-        };
-        modes[] = {"FullAuto","FullerAuto","FullestAuto"};
+        magazines[] =
+            {
+                "JA_104th_Weapons_Mags_20mw240"};
+        modes[] = {"FullAuto", "FullerAuto", "FullestAuto"};
 
-
-        class FullAuto: FullAuto
+        class FullAuto : FullAuto
         {
-            reloadTime = 0.1;		
+            reloadTime = 0.1;
             dispersion = 0.0065;
             sounds[] = {"StandardSound"};
             textureType = "burst";
             class BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
-        class FullerAuto: FullAuto
+        class FullerAuto : FullAuto
         {
-            reloadTime = 0.06;      
+            reloadTime = 0.06;
             dispersion = 0.0074;
             textureType = "fullAuto";
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
-        class FullestAuto: FullAuto
+        class FullestAuto : FullAuto
         {
-            reloadTime = 0.05; 
+            reloadTime = 0.05;
             dispersion = 0.0081;
             displayName = "Overcharge";
             textureType = "fastAuto";
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
- 		class OpticsModes
+        class OpticsModes
         {
             class Ironsights
             {
                 opticsID = 1;
                 useModelOptics = 0;
                 opticsFlare = "true";
-                opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 opticsDisablePeripherialVision = 0.67;
                 opticsZoomMin = 0.375;
                 opticsZoomMax = 1.1;
@@ -1875,65 +1854,61 @@ class CfgWeapons
                 distanceZoomMax = 100;
             };
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 scope = 0;
-                compatibleItems[] = 
-                {
-                    "3AS_optic_DC15L_F"
-                };
+                compatibleItems[] =
+                    {
+                        "3AS_optic_DC15L_F"};
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
-                iconPosition[] = {0.24,0.35};
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                iconPosition[] = {0.24, 0.35};
                 iconScale = 0.2;
-                compatibleItems[]=
-                {
-                    "JA_104th_muzzle_flash"
-                };
+                compatibleItems[] =
+                    {
+                        "JA_104th_muzzle_flash"};
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
                 displayName = "Pointer Slot";
-                compatibleItems[] = 
-                {
-                    "acc_flashlight",
-                    "acc_pointer_IR"
-                }; 
+                compatibleItems[] =
+                    {
+                        "acc_flashlight",
+                        "acc_pointer_IR"};
             };
-            class UnderBarrelSlot: UnderBarrelSlot
+            class UnderBarrelSlot : UnderBarrelSlot
             {
-                iconPicture="\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
-                iconPinpoint="Bottom";
-                linkProxy="\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
-                compatibleItems[] = 
-                {
-                    "bipod_01_f_blk",
-                    "3AS_Bipod_DC15L_f"
-                };
+                iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
+                iconPinpoint = "Bottom";
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                compatibleItems[] =
+                    {
+                        "bipod_01_f_blk",
+                        "3AS_Bipod_DC15L_f"};
             };
         };
     };
 
     // DC15S
-	class JA_104th_DC15S: JA_104th_rifle_base
+    class JA_104th_DC15S : JA_104th_rifle_base
     {
-    	ACE_barrelTwist = 254;
-    	ACE_barrelLength = 115;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 254;
+        ACE_barrelLength = 115;
+        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] DC-15S";
         baseWeapon = "JA_104th_DC15S";
@@ -1943,172 +1918,168 @@ class CfgWeapons
         JLTS_shieldedWeapon = "";
         model = "\3AS\3AS_Weapons\Republic\DC15S\3AS_DC15S_F.p3d";
         handAnim[] =
-        {
-            "OFP2_ManSkeleton",
-            "3as\3AS_Weapons\Republic\DC15S\Data\Anim\New_DC15S_Handanim.rtm"
-        };
+            {
+                "OFP2_ManSkeleton",
+                "3as\3AS_Weapons\Republic\DC15S\Data\Anim\New_DC15S_Handanim.rtm"};
 
         reloadAction = "GestureReload_JLTS_DC15S";
-        reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\DC15A\DC15aReload",1,1,30};
+        reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\DC15A\DC15aReload", 1, 1, 30};
         recoil = "recoil_SMG_03";
         magazines[] =
+            {
+                "JA_104th_Weapons_Mags_10mw50",
+                "JA_104th_Weapons_Mags_20mw40"};
+        class stun : JA_104th_stun_muzzle
         {
-            "JA_104th_Weapons_Mags_10mw50",
-            "JA_104th_Weapons_Mags_20mw40"
         };
-        class stun: JA_104th_stun_muzzle{};
-        modes[] = {"FullAuto","Single"};
-        class FullAuto: FullAuto
+        modes[] = {"FullAuto", "Single"};
+        class FullAuto : FullAuto
         {
-            sounds[] = {"StandardSound", "SilencedSound" };
+            sounds[] = {"StandardSound", "SilencedSound"};
 
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss", +2db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss", +2db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss", +2db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
             reloadTime = 0.08;
             dispersion = 0.0006;
             class SilencedSound : BaseSoundModeType
-			{
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+            {
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-			};
+            };
         };
-        class Single: Single
+        class Single : Single
         {
 
-            sounds[] = {"StandardSound", "SilencedSound" };
-            class StandardSound: BaseSoundModeType
+            sounds[] = {"StandardSound", "SilencedSound"};
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss",+2db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss", +2db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss", +2db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15S_shot1.wss", +2db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
             reloadTime = 0.08;
             dispersion = 0.0006;
             class SilencedSound : BaseSoundModeType
-			{
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+            {
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-			};
+            };
         };
-  class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = 
-                {
-                    "3AS_optic_DC15C_F",
-                    "3AS_Imp_Optic_1",
-                    "3AS_Imp_Optic_2",
-                    "3AS_Imp_Optic_3",
-                    "3AS_Imp_Optic_4"
-                };
+                compatibleItems[] =
+                    {
+                        "3AS_optic_DC15C_F",
+                        "3AS_Imp_Optic_1",
+                        "3AS_Imp_Optic_2",
+                        "3AS_Imp_Optic_3",
+                        "3AS_Imp_Optic_4"};
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
-                compatibleItems[]=
-                {
-                    "JA_104th_muzzle_flash",
-                    "muzzle_snds_H"
-                };
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                compatibleItems[] =
+                    {
+                        "JA_104th_muzzle_flash",
+                        "muzzle_snds_H"};
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
-                compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
+                compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot"; 
+                displayName = "Pointer Slot";
             };
         };
     };
 
     // DC15S UGL
-	class JA_104th_DC15S_UGL: JA_104th_DC15S
+    class JA_104th_DC15S_UGL : JA_104th_DC15S
     {
-        displayName="[104th] DC-15S UGL";
-        baseWeapon="JA_104th_DC15S_UGL";
+        displayName = "[104th] DC-15S UGL";
+        baseWeapon = "JA_104th_DC15S_UGL";
         mass = 75;
         picture = "\3AS\3AS_Weapons\Republic\DC15S\Data\UI\3as_dc15s.paa";
         model = "\3AS\3AS_Weapons\Republic\DC15S\3AS_DC15S_GL.p3d";
-        handAnim[]=
-        {
-            "OFP2_ManSkeleton",
-            "3as\3AS_Weapons\Republic\DC15S\Data\Anim\New_DC15SGL_Handanim.rtm"
-        };
+        handAnim[] =
+            {
+                "OFP2_ManSkeleton",
+                "3as\3AS_Weapons\Republic\DC15S\Data\Anim\New_DC15SGL_Handanim.rtm"};
         reloadAction = "GestureReloadMX";
-        muzzles[]=
-        {
-            "this",
-            "Stun",
-            "DC15S_UGL"
-        };
-        class DC15S_UGL: UGL_F
+        muzzles[] =
+            {
+                "this",
+                "Stun",
+                "DC15S_UGL"
+            };
+        class DC15S_UGL : UGL_F
         {
             displayName = "[104th] Over-Under Grenade Launcher";
             descriptionShort = "Underbarrel GL Module for DC15A";
             useModelOptics = 0;
             useExternalOptic = 0;
             cameraDir = "OP_look";
-            discreteDistance[] = {75,100,150,200,250,300,350,400};
-            discreteDistanceCameraPoint[] = {"OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
+            discreteDistance[] = {75, 100, 150, 200, 250, 300, 350, 400};
+            discreteDistanceCameraPoint[] = {"OP_eye_75", "OP_eye_100", "OP_eye_150", "OP_eye_200", "OP_eye_250", "OP_eye_300", "OP_eye_350", "OP_eye_400"};
             discreteDistanceInitIndex = 0;
-            magazines[] = 
-            {
-                "ACE_HuntIR_M203",
-                "JA_104th_Weapons_Mags_GL_HE2",
-            	"JA_104th_Weapons_Mags_GL_AP2",
+            magazines[] =
+                {
+                    "ACE_HuntIR_M203",
+                    "JA_104th_Weapons_Mags_GL_HE2",
+                    "JA_104th_Weapons_Mags_GL_AP2",
 
-            	"JA_104th_Weapons_Mags_GL_smoke_white6",
-            	"JA_104th_Weapons_Mags_GL_smoke_purple3",
-            	"JA_104th_Weapons_Mags_GL_smoke_yellow3",
-            	"JA_104th_Weapons_Mags_GL_smoke_red3",
-            	"JA_104th_Weapons_Mags_GL_smoke_green3",
-            	"JA_104th_Weapons_Mags_GL_smoke_blue3",
-            	"JA_104th_Weapons_Mags_GL_smoke_orange3",
+                    "JA_104th_Weapons_Mags_GL_smoke_white6",
+                    "JA_104th_Weapons_Mags_GL_smoke_purple3",
+                    "JA_104th_Weapons_Mags_GL_smoke_yellow3",
+                    "JA_104th_Weapons_Mags_GL_smoke_red3",
+                    "JA_104th_Weapons_Mags_GL_smoke_green3",
+                    "JA_104th_Weapons_Mags_GL_smoke_blue3",
+                    "JA_104th_Weapons_Mags_GL_smoke_orange3",
 
-            	"JA_104th_Weapons_Mags_GL_flare_White3",
-            	"JA_104th_Weapons_Mags_GL_flare_IR3",
-            	"JA_104th_Weapons_Mags_GL_flare_Green3",
-            	"JA_104th_Weapons_Mags_GL_flare_Red3",
-            	"JA_104th_Weapons_Mags_GL_flare_Yellow3",
-            	"JA_104th_Weapons_Mags_GL_flare_Blue3",
-            	"JA_104th_Weapons_Mags_GL_flare_Cyan3",
-            	"JA_104th_Weapons_Mags_GL_flare_Purple3"
-            };
-            magazineWell[] = {"UGL_40x36","CBA_40mm_M203","CBA_40mm_EGLM"};
+                    "JA_104th_Weapons_Mags_GL_flare_White3",
+                    "JA_104th_Weapons_Mags_GL_flare_IR3",
+                    "JA_104th_Weapons_Mags_GL_flare_Green3",
+                    "JA_104th_Weapons_Mags_GL_flare_Red3",
+                    "JA_104th_Weapons_Mags_GL_flare_Yellow3",
+                    "JA_104th_Weapons_Mags_GL_flare_Blue3",
+                    "JA_104th_Weapons_Mags_GL_flare_Cyan3",
+                    "JA_104th_Weapons_Mags_GL_flare_Purple3"};
+            magazineWell[] = {"UGL_40x36", "CBA_40mm_M203", "CBA_40mm_EGLM"};
             reloadAction = "GestureReloadMXUGL";
-            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
-            class Single: Mode_SemiAuto
+            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
+            class Single : Mode_SemiAuto
             {
                 sounds[] = {"StandardSound"};
                 class BaseSoundModeType
@@ -2118,13 +2089,13 @@ class CfgWeapons
                     closure2[] = {};
                     soundClosure[] = {};
                 };
-                class StandardSound: BaseSoundModeType
+                class StandardSound : BaseSoundModeType
                 {
                     weaponSoundEffect = "";
-                    begin1[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    begin2[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    begin3[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                    begin1[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
+                    begin2[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
+                    begin3[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
+                    soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 };
             };
         };
@@ -2132,9 +2103,9 @@ class CfgWeapons
     // DC15X
     class JA_104th_DC15X : JA_104th_rifle_base_stunless
     {
-    	ACE_barrelTwist = 330;
-    	ACE_barrelLength = 737;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 330;
+        ACE_barrelLength = 737;
+        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] DC-15X";
         baseWeapon = "JA_104th_DC15X";
@@ -2145,12 +2116,11 @@ class CfgWeapons
         recoil = "recoil_dmr_01";
         recoilProne = "recoil_single_prone_mx";
         magazines[] =
-        {
-            "JA_104th_Weapons_Mags_40mw20"
-        };
+            {
+                "JA_104th_Weapons_Mags_40mw20"};
         modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F";
         modes[] = {"Single"};
-        class Single: Single
+        class Single : Single
         {
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
@@ -2160,7 +2130,7 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 soundSetShot[] = {"3AS_DLT19X_Shot_SoundSet"};
             };
@@ -2198,38 +2168,35 @@ class CfgWeapons
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
-                {
-                    "JA_104th_cows_LRPS",
-                    "3AS_optic_DC15X_F"
-                };
+                    {
+                        "JA_104th_cows_LRPS",
+                        "3AS_optic_DC15X_F"};
             };
             class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[] =
-                {
-                    "JA_104th_muzzle_flash"
-                };
+                    {
+                        "JA_104th_muzzle_flash"};
             };
-            class UnderBarrelSlot: UnderBarrelSlot
+            class UnderBarrelSlot : UnderBarrelSlot
             {
-                iconPicture="\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
-                iconPinpoint="Bottom";
-                linkProxy="\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
+                iconPinpoint = "Bottom";
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
                 compatibleItems[] =
-                {
-                    "bipod_01_F_blk"
-                };
+                    {
+                        "bipod_01_F_blk"};
             };
         };
     };
 
-        // Firepuncher 773
+    // Firepuncher 773
     class JA_104th_FP773 : JA_104th_rifle_base_stunless
     {
         ACE_barrelTwist = 330;
@@ -2241,22 +2208,22 @@ class CfgWeapons
         mass = 120;
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
         model = "kobra\442_weapons\weapons\773\k_773_rifle.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","kobra\442_animations\weapons\k_773_hold.rtm"};
+        handAnim[] = {"OFP2_ManSkeleton", "kobra\442_animations\weapons\k_773_hold.rtm"};
         reloadAction = "ReloadOverheat_DLT";
-        reloadMagazineSound[] = {"WarMantle\WM_Imperial_Weapons\data\sfx\overheat",5,1,30};
+        reloadMagazineSound[] = {"WarMantle\WM_Imperial_Weapons\data\sfx\overheat", 5, 1, 30};
         recoil = "recoil_dmr_01";
         recoilProne = "recoil_single_prone_mx";
         initSpeed = 2000;
         magazines[] =
-        {
-            "JA_104th_Weapons_Mags_40mw20",
-            "JA_104th_Weapons_Mags_50mw5",
-            "JA_104th_Weapons_Mags_100mw1",
-            "JA_104th_Weapons_Mags_EMPMw2"
-        };
+            {
+                "JA_104th_Weapons_Mags_40mw20",
+                "JA_104th_Weapons_Mags_50mw5",
+                "JA_104th_Weapons_Mags_100mw1",
+                "JA_104th_Weapons_Mags_EMPMw2"
+            };
         modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F";
         modes[] = {"Single"};
-        class Single: Single
+        class Single : Single
         {
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
@@ -2269,10 +2236,10 @@ class CfgWeapons
             class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
             reloadTime = 1.25;
             dispersion = 0.00008;
@@ -2308,57 +2275,53 @@ class CfgWeapons
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
-                {
-                    "3AS_Imp_Optic_1",
-                    "3AS_optic_DC15X_F",
-                    "JA_104th_cows_LRPS",
-                    "OPTRE_SRM_Sight",
-                    "k_773_scope1",
-                    "k_773_scope2"
-                };
+                    {
+                        "3AS_Imp_Optic_1",
+                        "3AS_optic_DC15X_F",
+                        "JA_104th_cows_LRPS",
+                        "OPTRE_SRM_Sight",
+                        "k_773_scope1",
+                        "k_773_scope2"};
             };
             class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[] =
-                {
-                    "k_773_snds",
-                    "OPTRE_SRS99D_Suppressor"
-                };
+                    {
+                        "k_773_snds",
+                        "OPTRE_SRS99D_Suppressor"};
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
                 compatibleItems[] = {
                     "acc_flashlight",
                     "acc_pointer_IR",
-                    "ACE_acc_pointer_green"
-                };
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
+                    "ACE_acc_pointer_green"};
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot"; 
+                displayName = "Pointer Slot";
             };
-            class UnderBarrelSlot: UnderBarrelSlot
+            class UnderBarrelSlot : UnderBarrelSlot
             {
-                iconPicture="\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
-                iconPinpoint="Bottom";
-                linkProxy="\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
+                iconPinpoint = "Bottom";
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
                 compatibleItems[] =
-                {
-                    "bipod_01_F_blk",
-                    "3AS_bipod_DC15X_F"
-                };
+                    {
+                        "bipod_01_F_blk",
+                        "3AS_bipod_DC15X_F"};
             };
         };
     };
 
     // DC17M
-    class JA_104th_DC17M: JA_104th_rifle_base
+    class JA_104th_DC17M : JA_104th_rifle_base
     {
         ACE_barrelTwist = 178;
         ACE_barrelLength = 264;
@@ -2367,32 +2330,67 @@ class CfgWeapons
         BNA_KC_weapons_attachments[] = 
                 { // List of a property in the magazine class, and what attachment to apply
             // Property can be whatever, but should have a TAG
-            {"JA_104th_isBlasterMag", "SWLW_attachment_DC17M_blaster"},
-            {"JA_104th_isATMag", "SWLW_attachment_DC17M_at"},
-            {"JA_104th_isSniperMag", "SWLW_attachment_DC17M_sniper"}
+            {"JA_104th_isBlasterMag", "ls_muzzle_dc17m_blaster"},
+            {"JA_104th_isATMag", "ls_muzzle_dc17m_antiArmor"},
+            {"JA_104th_isSniperMag", "ls_muzzle_dc17m_sniper"}
                 };
         scope = 2;
         displayName = "[104th] DC-17M";
         baseWeapon = "JA_104th_DC17M";
         mass = 60;
-        picture = "\SWLW_clones_spec\data\ui\DC17M_ui.paa";
-        model = "\SWLW_clones_spec\DC17M_base.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","\SWLW_clones_spec\anims\DC17M_handanim.rtm"};
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc17m_ui_ca.paa";
+        model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_weapon_dc17m.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","\ls\core\addons\weapons_dcSeries\dc17m\anims\dc17m_handanim.rtm"};
         reloadAction = "GestureReload_JLTS_DC15A";
         reloadTime = 0.1;
         recoil = "recoil_mx";
-        magazines[]=
-        {
-            "JA_104th_Weapons_Mags_20mw70",
-            "JA_104th_Weapons_Mags_50mw5",
-            "JA_104th_Weapons_Mags_100mw_AT"
-        };
+        magazines[] =
+            {
+                "JA_104th_Weapons_Mags_20mw70",
+                "JA_104th_Weapons_Mags_50mw5",
+                "JA_104th_Weapons_Mags_100mw_AT"
+            };
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
-        class stun: JA_104th_stun_muzzle{};
-        muzzles[]=
+        muzzles[] =
+            {
+                "this",
+                "AT_muzzle"
+            };
+        class AT_muzzle : UGL_F
         {
-            "this",
-            "Stun"
+            displayName = "[104th] Anti-Tank Attachment";
+            descriptionShort = "Anti-Tank Muzzle for DC17M";
+            useModelOptics = 0;
+            useExternalOptic = 0;
+            cameraDir = "OP_look";
+            discreteDistance[] = {50};
+            discreteDistanceCameraPoint[] = {"OP_eye_50"};
+            discreteDistanceInitIndex = 0;
+            magazines[] =
+                {
+                    "JA_104th_Weapons_Mags_100mw_AT"
+                };
+            magazineWell[] = {"UGL_40x36", "CBA_40mm_M203", "CBA_40mm_EGLM"};
+            reloadAction = "GestureReloadMXUGL";
+            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
+            class Single : Mode_SemiAuto
+            {
+                sounds[] = {"StandardSound"};
+                class BaseSoundModeType
+                {
+                    weaponSoundEffect = "";
+                    closure1[] = {};
+                    closure2[] = {};
+                    soundClosure[] = {};
+                };
+                class StandardSound : BaseSoundModeType
+                {
+                    weaponSoundEffect = "";
+                    begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
+                    begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
+                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+                };
+            };
         };
         class OpticsModes
         {
@@ -2401,7 +2399,7 @@ class CfgWeapons
                 opticsID = 1;
                 useModelOptics = 0;
                 opticsFlare = "true";
-                opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 opticsDisablePeripherialVision = 0.67;
                 opticsZoomMin = 0.25;
                 opticsZoomMax = 1.1;
@@ -2411,18 +2409,18 @@ class CfgWeapons
                 distanceZoomMin = 100;
                 distanceZoomMax = 100;
             };
-            class Scope: Ironsights
+            class Scope : Ironsights
             {
                 opticsID = 2;
                 useModelOptics = 1;
-                opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 opticsDisablePeripherialVision = 0.67;
                 opticsZoomMin = 0.125;
                 opticsZoomMax = 0.125;
                 opticsZoomInit = 0.125;
                 memoryPointCamera = "opticView";
-                visionMode[] = {"Normal","NVG","Ti"};
-                thermalMode[]= {0, 1};
+                visionMode[] = {"Normal", "NVG", "Ti"};
+                thermalMode[] = {0, 1};
                 opticsFlare = "true";
                 distanceZoomMin = 100;
                 distanceZoomMax = 100;
@@ -2435,22 +2433,9 @@ class CfgWeapons
             reloadTime=0.1;     
             dispersion=0.0005;
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] = {"SWLW_clones_spec\sounds\DC17M_sniper_fire.wss",1,1,1800};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
             class StandardSound: BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"SWLW_clones_spec\sounds\DC17M_sniper_fire.wss",1,1,1800};
-                soundBegin[] = {"begin1",1};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
+                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet"};
             };
         };
         class FullAuto: FullAuto
@@ -2458,79 +2443,79 @@ class CfgWeapons
             reloadTime = 0.1;
             dispersion = 0.0005;
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] = {"\swlw_rework\sounds\dc\17\DC17_shot.wss",1,1,1800};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
             class StandardSound: BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"\swlw_rework\sounds\dc\17\DC17_shot.wss",1,1,1800};
-                soundBegin[] = {"begin1",1};
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
+                soundSetShot[] = {"ls_dc17m_Shot_SoundSet"};
             };
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = 
                 {
                     "SWLW_attachment_scope_DC17M_sniper",
-                    "JA_104th_cows_RCO",
-                    "JA_104th_cows_RCO_2",
-                    "JA_104th_cows_RCO_3",
+                    "JA_104th_cows_rco",
+                    "JA_104th_cows_rco_2",
+                    "JA_104th_cows_rco_3",
+
+                    "JA_104th_cows_mrco",
+                    "JA_104th_cows_mrco_2",
+                    "JA_104th_cows_mrco_3",
+
                     "JA_104th_cows_Holosight",
                     "JA_104th_cows_Holosight_2",
                     "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_MRCO",
-                    "JA_104th_cows_MRCO_2",
-                    "JA_104th_cows_MRCO_3",
+
+                    "JA_104th_cows_HoloScope",
+                    "JA_104th_cows_HoloScope_2",
+                    "JA_104th_cows_HoloScope_3",
+
                     "JA_104th_cows_DMS",
                     "JA_104th_cows_DMS_2",
                     "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4"
+                    "JA_104th_cows_DMS_4",
+
+                    "JA_104th_cows_Holoscope_LR",
+                    "JA_104th_cows_Holoscope_LR_2",
+                    "JA_104th_cows_Holoscope_LR_3",
+                    "JA_104th_cows_Holoscope_LR_4"
+                    
                 };
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
                 linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
                 displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[]=
                 {
-                    "SWLW_attachment_DC17M_blaster",
-                    "SWLW_attachment_DC17M_at",
-                    "SWLW_attachment_DC17M_sniper"
+                    "ls_muzzle_dc17m_blaster",
+                    "ls_muzzle_dc17m_sniper"
                 };
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
-                compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
+                compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot"; 
+                displayName = "Pointer Slot";
             };
         };
     };
+
     // DP23
-	class JA_104th_DP23: JA_104th_rifle_base_stunless
+    class JA_104th_DP23 : JA_104th_rifle_base_stunless
     {
-    	ACE_barrelTwist = 178;
-    	ACE_barrelLength = 506;
-    	ACE_twistDirection = 0;
+        ACE_barrelTwist = 178;
+        ACE_barrelLength = 506;
+        ACE_twistDirection = 0;
         scope = 2;
         displayName = "[104th] DP-23";
         baseWeapon = "JA_104th_DP23";
@@ -2539,17 +2524,16 @@ class CfgWeapons
         JLTS_canHaveShield = 0; // Shield Fix
         JLTS_shieldedWeapon = "";
         model = "\3AS\3AS_Weapons\Republic\DP23\3AS_DP23_F.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DP23\Data\Anim\New_DP23_handanim.rtm"};
-        reloadMagazineSound[] = {"swlw_rework\sounds\dc\15\DC15A_reload.wss",3,1,30};
+        handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DP23\Data\Anim\New_DP23_handanim.rtm"};
+        reloadMagazineSound[] = {"swlw_rework\sounds\dc\15\DC15A_reload.wss", 3, 1, 30};
         recoil = "JLTS_recoil_DP23";
-        magazines[]=
-        {
-            "3AS_10Rnd_EC30_Pellets",
-            "3AS_10Rnd_ESlug_Mag",
-            "3AS_1Rnd_EC80_Flechette"
-        };
+        magazines[] =
+            {
+                "3AS_10Rnd_EC30_Pellets",
+                "3AS_10Rnd_ESlug_Mag",
+                "3AS_1Rnd_EC80_Flechette"};
         modes[] = {"Single"};
-        class Single: Single
+        class Single : Single
         {
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
@@ -2559,13 +2543,13 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss",+3db,1,2200};
-                begin2[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss",+3db,1,2200};
-                begin3[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+                begin1[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss", +3db, 1, 2200};
+                begin2[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss", +3db, 1, 2200};
+                begin3[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.34};
             };
             reloadTime = 0.28;
             dispersion = 0.00035;
@@ -2576,33 +2560,33 @@ class CfgWeapons
             maxRange = 80;
             maxRangeProbab = 0.3;
         };
- 		class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = 
-                {
-                
-                };
+                compatibleItems[] =
+                    {
+
+                    };
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
-                compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
+                compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
                 iconPinpoint = "Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot"; 
+                displayName = "Pointer Slot";
             };
         };
     };
     // Westar M5
-   class JA_104th_WestarM4: JA_104th_rifle_base
+    class JA_104th_WestarM4 : JA_104th_rifle_base
     {
         ACE_barrelTwist = 406;
         ACE_barrelLength = 200;
@@ -2611,46 +2595,46 @@ class CfgWeapons
         displayName = "[104th] Westar M4";
         baseWeapon = "JA_104th_WestarM4";
         mass = 74;
-        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westarM5_ui_ca.paa";
         model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_F.p3d";
-        handAnim[]=
-        {
-            "OFP2_ManSkeleton",
-            "\3AS\3AS_Weapons\WestarM5\Data\Anim\WestarM5_handanim.rtm"
-        };
+        handAnim[] =
+            {
+                "OFP2_ManSkeleton",
+                "\3AS\3AS_Weapons\WestarM5\Data\Anim\WestarM5_handanim.rtm"};
         recoil = "recoil_SMG_03";
-        muzzles[]=
+        muzzles[] =
+            {
+                "this",
+                "Stun",
+            };
+        magazines[] =
+            {
+                "JA_104th_Weapons_Mags_20mw40",
+                "JA_104th_Weapons_Mags_20mw70"};
+        class stun : JA_104th_stun_muzzle
         {
-            "this",
-            "Stun",
         };
-        magazines[]=
-        {
-            "JA_104th_Weapons_Mags_20mw40",
-            "JA_104th_Weapons_Mags_20mw70"
-        };
-        class stun: JA_104th_stun_muzzle{};
-        modes[] = {"FullAuto","Single"};
-        class FullAuto: FullAuto
+        modes[] = {"FullAuto", "Single"};
+        class FullAuto : FullAuto
         {
             class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
             };
             class SilencedSound
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };  
+            };
             reloadTime = 0.0775;
-            dispersion=0.0004;
+            dispersion = 0.0004;
             minRange = 0;
             minRangeProbab = 1;
             midRange = 10;
@@ -2660,119 +2644,116 @@ class CfgWeapons
             aiRateOfFire = 0;
             aiRateOfFireDistance = 600;
         };
-        class Single: Single
+        class Single : Single
         {
-            dispersion=0.0003;
+            dispersion = 0.0003;
             reloadTime = 0.08;
             class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
             };
             class SilencedSound
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };  
+            };
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = 
-                {
-                    "3AS_Optic_Scope_WestarM5",
-                    "3AS_Imp_Optic_1",
-                    "3AS_Imp_Optic_2",
-                    "3AS_Imp_Optic_3",
-                    "3AS_Imp_Optic_4"
-                };
+                compatibleItems[] =
+                    {
+                        "3AS_Optic_Scope_WestarM5",
+                        "3AS_Imp_Optic_1",
+                        "3AS_Imp_Optic_2",
+                        "3AS_Imp_Optic_3",
+                        "3AS_Imp_Optic_4"};
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
-                compatibleItems[]=
-                {
-                    "JA_104th_muzzle_flash",
-                    "JA_104th_muzzle_suppressor"
-                };
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                compatibleItems[] =
+                    {
+                        "JA_104th_muzzle_flash",
+                        "JA_104th_muzzle_suppressor"};
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
-                compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
+                compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot"; 
+                displayName = "Pointer Slot";
             };
         };
     };
 
     // Westar M5
-   class JA_104th_WestarM5: JA_104th_rifle_base
+    class JA_104th_WestarM5 : JA_104th_rifle_base
     {
-    	ACE_barrelTwist = 406;
-    	ACE_barrelLength = 200;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 406;
+        ACE_barrelLength = 200;
+        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] Westar M5";
         baseWeapon = "JA_104th_WestarM5";
         mass = 74;
-        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westarM5_ui_ca.paa";
         model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
-        handAnim[]=
-        {
-            "OFP2_ManSkeleton",
-            "\3AS\3AS_Weapons\WestarM5\Data\Anim\WestarM5_handanim.rtm"
-        };
+        handAnim[] =
+            {
+                "OFP2_ManSkeleton",
+                "\3AS\3AS_Weapons\WestarM5\Data\Anim\WestarM5_handanim.rtm"};
         recoil = "recoil_SMG_03";
-        muzzles[]=
+        muzzles[] =
+            {
+                "this",
+                "Stun",
+                "JA_104th_WestarM5_UGL_F"};
+        magazines[] =
+            {
+                "JA_104th_Weapons_Mags_20mw40"};
+        class stun : JA_104th_stun_muzzle
         {
-            "this",
-            "Stun",
-            "JA_104th_WestarM5_UGL_F"
         };
-        magazines[]=
-        {
-        	"JA_104th_Weapons_Mags_20mw40"
-        };
-        class stun: JA_104th_stun_muzzle{};
-        modes[] = {"FullAuto","Single"};
-        class FullAuto: FullAuto
+        modes[] = {"FullAuto", "Single"};
+        class FullAuto : FullAuto
         {
             class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
             };
             class SilencedSound
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };	
+            };
             reloadTime = 0.125;
-            dispersion=0.000325;
+            dispersion = 0.000325;
             minRange = 0;
             minRangeProbab = 1;
             midRange = 10;
@@ -2782,64 +2763,63 @@ class CfgWeapons
             aiRateOfFire = 0;
             aiRateOfFireDistance = 600;
         };
-        class Single: Single
+        class Single : Single
         {
-            dispersion=0.0003;
+            dispersion = 0.0003;
             reloadTime = 0.125;
             class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
             };
             class SilencedSound
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };	
+            };
         };
-		class JA_104th_WestarM5_UGL_F: UGL_F
+        class JA_104th_WestarM5_UGL_F : UGL_F
         {
             displayName = "[104th] Underbarrel Grenade Launcher";
             descriptionShort = "Underbarrel GL Module for the Westar M5";
             useModelOptics = 0;
             useExternalOptic = 0;
-            magazines[] = 
-            {
-                "ACE_HuntIR_M203",
-                "JA_104th_Weapons_Mags_GL_HE3",
-            	"JA_104th_Weapons_Mags_GL_AP2",
+            magazines[] =
+                {
+                    "ACE_HuntIR_M203",
+                    "JA_104th_Weapons_Mags_GL_HE3",
+                    "JA_104th_Weapons_Mags_GL_AP2",
 
-            	"JA_104th_Weapons_Mags_GL_smoke_white6",
-            	"JA_104th_Weapons_Mags_GL_smoke_purple3",
-            	"JA_104th_Weapons_Mags_GL_smoke_yellow3",
-            	"JA_104th_Weapons_Mags_GL_smoke_red3",
-            	"JA_104th_Weapons_Mags_GL_smoke_green3",
-            	"JA_104th_Weapons_Mags_GL_smoke_blue3",
-            	"JA_104th_Weapons_Mags_GL_smoke_orange3",
+                    "JA_104th_Weapons_Mags_GL_smoke_white6",
+                    "JA_104th_Weapons_Mags_GL_smoke_purple3",
+                    "JA_104th_Weapons_Mags_GL_smoke_yellow3",
+                    "JA_104th_Weapons_Mags_GL_smoke_red3",
+                    "JA_104th_Weapons_Mags_GL_smoke_green3",
+                    "JA_104th_Weapons_Mags_GL_smoke_blue3",
+                    "JA_104th_Weapons_Mags_GL_smoke_orange3",
 
-            	"JA_104th_Weapons_Mags_GL_flare_White3",
-            	"JA_104th_Weapons_Mags_GL_flare_IR3",
-            	"JA_104th_Weapons_Mags_GL_flare_Green3",
-            	"JA_104th_Weapons_Mags_GL_flare_Red3",
-            	"JA_104th_Weapons_Mags_GL_flare_Yellow3",
-            	"JA_104th_Weapons_Mags_GL_flare_Blue3",
-            	"JA_104th_Weapons_Mags_GL_flare_Cyan3",
-            	"JA_104th_Weapons_Mags_GL_flare_Purple3"
-            };
+                    "JA_104th_Weapons_Mags_GL_flare_White3",
+                    "JA_104th_Weapons_Mags_GL_flare_IR3",
+                    "JA_104th_Weapons_Mags_GL_flare_Green3",
+                    "JA_104th_Weapons_Mags_GL_flare_Red3",
+                    "JA_104th_Weapons_Mags_GL_flare_Yellow3",
+                    "JA_104th_Weapons_Mags_GL_flare_Blue3",
+                    "JA_104th_Weapons_Mags_GL_flare_Cyan3",
+                    "JA_104th_Weapons_Mags_GL_flare_Purple3"};
             magazineWell[] = {};
             cameraDir = "OP_look";
-            discreteDistance[] = {75,100,150,200,250,300,350,400};
-            discreteDistanceCameraPoint[] = {"OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
+            discreteDistance[] = {75, 100, 150, 200, 250, 300, 350, 400};
+            discreteDistanceCameraPoint[] = {"OP_eye_75", "OP_eye_100", "OP_eye_150", "OP_eye_200", "OP_eye_250", "OP_eye_300", "OP_eye_350", "OP_eye_400"};
             discreteDistanceInitIndex = 1;
             reloadAction = "GestureReloadMXUGL";
-            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
-            class Single: Mode_SemiAuto
+            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
+            class Single : Mode_SemiAuto
             {
                 sounds[] = {"StandardSound"};
                 class BaseSoundModeType
@@ -2849,85 +2829,81 @@ class CfgWeapons
                     closure2[] = {};
                     soundClosure[] = {};
                 };
-                class StandardSound: BaseSoundModeType
+                class StandardSound : BaseSoundModeType
                 {
                     weaponSoundEffect = "";
-                    begin1[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    begin2[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    begin3[] = {"SWLW_clones\rifles\gl\sounds\gl",1,1,1800};
-                    soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                    begin1[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
+                    begin2[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
+                    begin3[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
+                    soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 };
             };
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = 
-                {
-                    "3AS_Optic_Scope_WestarM5",
-                    "3AS_Imp_Optic_1",
-                    "3AS_Imp_Optic_2",
-                    "3AS_Imp_Optic_3",
-                    "3AS_Imp_Optic_4"
-                };
+                compatibleItems[] =
+                    {
+                        "3AS_Optic_Scope_WestarM5",
+                        "3AS_Imp_Optic_1",
+                        "3AS_Imp_Optic_2",
+                        "3AS_Imp_Optic_3",
+                        "3AS_Imp_Optic_4"};
             };
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
-                compatibleItems[]=
-                {
-                    "JA_104th_muzzle_flash",
-                    "JA_104th_muzzle_suppressor"
-                };
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                compatibleItems[] =
+                    {
+                        "JA_104th_muzzle_flash",
+                        "JA_104th_muzzle_suppressor"};
             };
-            class PointerSlot: PointerSlot
+            class PointerSlot : PointerSlot
             {
-                compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
+                compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot"; 
+                displayName = "Pointer Slot";
             };
         };
     };
 
     // Westar 35S
-	class JA_104th_Westar35S: JA_104th_rifle_base
+    class JA_104th_Westar35S : JA_104th_rifle_base
     {
-    	ACE_barrelTwist = 240;
-    	ACE_barrelLength = 415;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 240;
+        ACE_barrelLength = 415;
+        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] Westar 35S";
         baseWeapon = "JA_104th_Westar35S";
         mass = 74;
-        picture = "\SWLW_merc_mando\rifles\westar35s\data\ui\SWLW_westar35s_ui.paa";
-        model = "SWLW_merc_mando\rifles\westar35s\westar35s.p3d";
-		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
-        fireLightDiffuse[] = {0.5,0.5,0.25};
-        fireLightAmbient[] = {0.5,0.5,0.25};
+        picture = "\ls\core\addons\weapons_westar\data\ui\westar35s_ui_ca.paa";
+        model = "\ls\core\addons\weapons_westar\westar35s\ls_weapon_westar35s.p3d";
+        handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
+        fireLightDiffuse[] = {0.5, 0.5, 0.25};
+        fireLightAmbient[] = {0.5, 0.5, 0.25};
         magazines[] =
-        {
-        	"JA_104th_Weapons_Mags_20mw40",
-            "JA_104th_Weapons_Mags_20mw70"
-        };
+            {
+                "JA_104th_Weapons_Mags_20mw40",
+                "JA_104th_Weapons_Mags_20mw70"};
         muzzles[] =
-        {
-            "this",
-            "Scatter"
-        };
-        modes[] = {"FullAuto","Single"};
-        class FullAuto: FullAuto
+            {
+                "this",
+                "Scatter"};
+        modes[] = {"FullAuto", "Single"};
+        class FullAuto : FullAuto
         {
             minRange = 30;
             reloadTime = 0.096;
@@ -2940,16 +2916,16 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                begin2[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                begin3[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                begin2[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                begin3[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
-        class Single: Single
+        class Single : Single
         {
             minRange = 30;
             sounds[] = {"StandardSound"};
@@ -2960,34 +2936,34 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                begin2[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                begin3[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                begin2[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                begin3[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
-        class Scatter: UGL_F
+        class Scatter : UGL_F
         {
             displayName = "[104th] Underbarrel Shotgun";
             descriptionShort = "Underbarrel Shotgun Module for the 35s";
             cursor = "";
-			useModelOptics = 0;
-			useExternalOptic = 1;
-			magazineWell[] = {};
-			cameraDir = "eye";
-			memoryPointCamera = "";
-			discreteDistance[] = {100};
-			discreteDistanceCameraPoint[] = {"eye"};
-			discreteDistanceInitIndex = 0;
-			initSpeed = -1;
-			muzzleEnd = "shotgun pos";
-			muzzlePos = "shotgun dir";
-			reloadMagazineSound[] = {"\SWLW_main\sounds\scatter_reload",0.56234133,1,30};
+            useModelOptics = 0;
+            useExternalOptic = 1;
+            magazineWell[] = {};
+            cameraDir = "eye";
+            memoryPointCamera = "";
+            discreteDistance[] = {100};
+            discreteDistanceCameraPoint[] = {"eye"};
+            discreteDistanceInitIndex = 0;
+            initSpeed = -1;
+            muzzleEnd = "shotgun pos";
+            muzzlePos = "shotgun dir";
+            reloadMagazineSound[] = {"\SWLW_main\sounds\scatter_reload", 0.56234133, 1, 30};
             magazines[] = {"JA_104th_Weapons_Mags_10mw20SC"};
-			class Single: Mode_SemiAuto
+            class Single : Mode_SemiAuto
             {
                 sounds[] = {"StandardSound"};
                 class BaseSoundModeType
@@ -2997,11 +2973,11 @@ class CfgWeapons
                     closure2[] = {};
                     soundClosure[] = {};
                 };
-                class StandardSound: BaseSoundModeType
+                class StandardSound : BaseSoundModeType
                 {
                     weaponSoundEffect = "";
-                    begin1[] = {"\MRC\JLTS\weapons\SBB3\sounds\SBB3_fire.wss",+3db,1,2200};
-                    soundBegin[] = {"begin1",1};
+                    begin1[] = {"\MRC\JLTS\weapons\SBB3\sounds\SBB3_fire.wss", +3db, 1, 2200};
+                    soundBegin[] = {"begin1", 1};
                 };
                 reloadTime = 0.5;
                 dispersion = 0.00073;
@@ -3013,37 +2989,47 @@ class CfgWeapons
                 maxRangeProbab = 0.3;
             };
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = 
+                compatibleItems[] =
+                    {
+                        "ls_cows_westar35s_scope",
+                        "3AS_Imp_Optic_1",
+                        "3AS_Imp_Optic_2",
+                        "3AS_Imp_Optic_3",
+                        "3AS_Imp_Optic_4"
+                    };
+            };
+                        class MuzzleSlot: MuzzleSlot
+            {
+                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint="Center";
+                compatibleItems[]=
                 {
-                    "SWLW_Westar35S_scope",
-                    "3AS_Imp_Optic_1",
-                    "3AS_Imp_Optic_2",
-                    "3AS_Imp_Optic_3",
-                    "3AS_Imp_Optic_4"
+                    "ls_muzzle_westar35s_suppressor"
                 };
             };
         };
     };
 
     // Valken 38Y - Deprecated, functionality moved to 15A
- 
 
     // Z6
-    class JA_104th_Z6: JA_104th_rifle_base_stunless
+    class JA_104th_Z6 : JA_104th_rifle_base_stunless
     {
-    	ACE_barrelTwist = 279;
-    	ACE_barrelLength = 381;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 279;
+        ACE_barrelLength = 381;
+        ACE_twistDirection = 1;
         scope = 2;
         scopeArsenal = 2;
         displayName = "[104th] Z-6 Rotary Blaster Cannon";
@@ -3051,22 +3037,21 @@ class CfgWeapons
         mass = 264;
         picture = "\MRC\JLTS\weapons\Z6\data\ui\Z6_ui_ca.paa";
         model = "\MRC\JLTS\weapons\Z6\Z6.p3d";
-        hiddenSelections[] = {"camo1","camo2"};
-        hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\Z6\data\Z6_1_co.paa","\MRC\JLTS\weapons\Z6\data\Z6_2_co.paa"};
-        handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\Z6\anims\Z6_handanim.rtm"};
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\Z6\data\Z6_1_co.paa", "\MRC\JLTS\weapons\Z6\data\Z6_2_co.paa"};
+        handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\Z6\anims\Z6_handanim.rtm"};
         recoil = "recoil_lim";
         reloadAction = "ReloadMagazine";
-        reloadMagazineSound[] = {"swlw_rework\sounds\z-series\z6\Z6_reload.wss",3,1,30};
+        reloadMagazineSound[] = {"swlw_rework\sounds\z-series\z6\Z6_reload.wss", 3, 1, 30};
         magazines[] =
-        {
-            "JA_104th_Weapons_Mags_10mw500",
-        };
-        modes[] = {"manual","Overcharge"};
+            {
+                "JA_104th_Weapons_Mags_10mw500",
+            };
+        modes[] = {"manual", "Overcharge"};
         muzzles[] =
-        {
-            "this"
-        };
-        class manual: Mode_FullAuto
+            {
+                "this"};
+        class manual : Mode_FullAuto
         {
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
@@ -3076,11 +3061,11 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"3AS\3AS_Main\Sounds\Z6\Z61.ogg",+3db,1,2200};
-                soundBegin[] = {"begin1",1};
+                begin1[] = {"3AS\3AS_Main\Sounds\Z6\Z61.ogg", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 1};
             };
             reloadTime = 0.065;
             dispersion = 0.0138;
@@ -3094,7 +3079,7 @@ class CfgWeapons
             maxRangeProbab = 0.04;
             showToPlayer = 1;
         };
-        class Overcharge: manual
+        class Overcharge : manual
         {
             dispersion = "0.013*4";
             displayName = "Overcharge";
@@ -3102,45 +3087,43 @@ class CfgWeapons
             burst = 25;
             textureType = "fastAuto";
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                iconPicture="\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint="Center";
-                iconPosition[] = {0.24,0.35};
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                iconPosition[] = {0.24, 0.35};
                 iconScale = 0.2;
-                compatibleItems[]=
-                {
-                    "JA_104th_muzzle_flash"
-                };
+                compatibleItems[] =
+                    {
+                        "JA_104th_muzzle_flash"};
             };
         };
     };
 
-    	// Secondaries
+    // Secondaries
 
-   // DC17SA
-   class JA_104th_DC17SA: JA_104th_pistol_base
+    // DC17SA
+    class JA_104th_DC17SA : JA_104th_pistol_base
     {
-    	ACE_barrelTwist = 254;
-    	ACE_barrelLength = 104;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 254;
+        ACE_barrelLength = 104;
+        ACE_twistDirection = 1;
         displayName = "[104th] DC-17SA";
         baseWeapon = "JA_104th_DC17SA";
         mass = 20;
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_ui_ca.paa";
         model = "\3AS\3AS_Weapons\Republic\DC17S\3AS_DC17S_F.p3d";
         reloadAction = "3AS_Vent_Reload_Pistol";
-        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
+        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg", 2, 1, 30};
         magazines[] =
-        {
-            "JA_104th_Weapons_Mags_10mw30"
-        };
-        modes[] = {"FullAuto","Single"};
-        class FullAuto: Single
+            {
+                "JA_104th_Weapons_Mags_10mw30"};
+        modes[] = {"FullAuto", "Single"};
+        class FullAuto : Single
         {
             autoFire = 1;
             reloadTime = 0.1;
@@ -3149,7 +3132,7 @@ class CfgWeapons
             aiDispersionCoefY = 3;
             aiDispersionCoefX = 2;
             soundBurst = 0;
-            sounds[] = {"StandardSound","SilencedSound"};
+            sounds[] = {"StandardSound", "SilencedSound"};
             class BaseSoundModeType
             {
                 weaponSoundEffect = "";
@@ -3157,34 +3140,34 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
-            class SilencedSound: BaseSoundModeType
+            class SilencedSound : BaseSoundModeType
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.1db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.1db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.1db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.1db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.1db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.1db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };  
+            };
         };
-        class Single: Single
+        class Single : Single
         {
             autoFire = 0;
             reloadTime = 0.1;
             aiDispersionCoefY = 3;
             aiDispersionCoefX = 2;
             soundBurst = 0;
-            sounds[] = {"StandardSound","SilencedSound"};
+            sounds[] = {"StandardSound", "SilencedSound"};
             class BaseSoundModeType
             {
                 weaponSoundEffect = "";
@@ -3192,51 +3175,49 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC17SA_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
             class SilencedSound
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };  
+            };
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-        	class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
-                {
-                "JA_104th_cows_pistol",
-                "JA_104th_cows_pistol_2"
-                };
+                    {
+                        "JA_104th_cows_pistol",
+                        "JA_104th_cows_pistol_2"};
             };
-          	class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                compatibleItems[]=
-                {
-                    "muzzle_snds_L",
-                    "3AS_muzzle_DC17S_F"
-                };
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                compatibleItems[] =
+                    {
+                        "muzzle_snds_L",
+                        "3AS_muzzle_DC17S_F"};
             };
         };
     };
@@ -3253,23 +3234,23 @@ class CfgWeapons
        picture = "\3AS\3AS_Weapons\DC15SA\data\UI\3as_dc15sa.paa";
        reloadAction = "3AS_GestureReloadDualDC17S";
        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
+       magazines[] = {"BNA_KC_Mag_60Rnd_DC17_dualHP"};
    };
 
-   // Dual DC17SA 3AS model LS class for Tusk
-   class JA_104th_DC17SA_Dual: ls_weapon_dualDC17_secondary
-   {
-       displayName = "[104th] Dual DC-17SAs";
-       picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_ui_ca.paa";
-       baseWeapon = "JA_104th_DC17SA_Dual";
-       mass = 40;
-   };
-   class JA_104th_DC17SA_Dual_LeftDummy: ls_weapon_dualDC17Left_dummy
-   {
-    
-   };
+    // Dual DC17SA 3AS model LS class for Tusk
+    class JA_104th_DC17SA_Dual : ls_weapon_dualDC17_secondary
+    {
+        displayName = "[104th] Dual DC-17SAs";
+        picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_ui_ca.paa";
+        baseWeapon = "JA_104th_DC17SA_Dual";
+        mass = 40;
+    };
+    class JA_104th_DC17SA_Dual_LeftDummy : ls_weapon_dualDC17Left_dummy
+    {
+    };
 
-   // DC15SA
-   class JA_104th_DC15SA: JA_104th_pistol_base
+    // DC15SA
+    class JA_104th_DC15SA : JA_104th_pistol_base
     {
         ACE_barrelTwist = 254;
         ACE_barrelLength = 104;
@@ -3280,23 +3261,22 @@ class CfgWeapons
         picture = "\3AS\3AS_Weapons\DC15SA\data\UI\3as_dc15sa.paa";
         model = "3AS\3AS_Weapons\DC15SA\3AS_DC15SA_F.p3d";
         magazines[] =
-        {
-            "JA_104th_Weapons_Mags_10mw40"
-        };
+            {
+                "JA_104th_Weapons_Mags_10mw40"};
         modes[] = {"Single"};
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         recoil = "recoil_SMG_03";
         reloadAction = "3AS_Vent_Reload_Pistol";
-        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
-        class Single: Single
+        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg", 2, 1, 30};
+        class Single : Single
         {
             autoFire = 0;
             reloadTime = 0.12;
             aiDispersionCoefY = 3;
             aiDispersionCoefX = 2;
             soundBurst = 0;
-            sounds[] = {"StandardSound","SilencedSound"};
+            sounds[] = {"StandardSound", "SilencedSound"};
             class BaseSoundModeType
             {
                 weaponSoundEffect = "";
@@ -3304,63 +3284,63 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss",+2db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss",+2db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss",+2db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss", +2db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss", +2db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15SA_shot1.wss", +2db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
             class SilencedSound
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss",+0.3db,1,2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
                 soundClosure[] = {};
                 weaponSoundEffect = "";
-            };  
+            };
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class MuzzleSlot: MuzzleSlot
+            class MuzzleSlot : MuzzleSlot
             {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                compatibleItems[]=
-                {
-                    "muzzle_snds_L",
-                    "3AS_muzzle_DC17S_F"
-                };
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                compatibleItems[] =
+                    {
+                        "muzzle_snds_L",
+                        "3AS_muzzle_DC17S_F"
+                    };
             };
         };
     };
 
     // Westar 35SA
-  	class JA_104th_Westar35SA: JA_104th_pistol_base
+    class JA_104th_Westar35SA : JA_104th_pistol_base
     {
-    	ACE_barrelTwist = 254;
-    	ACE_barrelLength = 104;
-    	ACE_twistDirection = 1;
+        ACE_barrelTwist = 254;
+        ACE_barrelLength = 104;
+        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] Westar 35SA";
         baseWeapon = "JA_104th_Westar35SA";
         mass = 24;
-        picture = "\SWLW_merc_mando\pistols\westar35sa\data\ui\SWLW_westar35sa_ui.paa";
-        model = "SWLW_merc_mando\pistols\westar35sa\westar35sa.p3d";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westar35sa_ui_ca.paa";
+        model = "\ls\core\addons\weapons_westar\westar35sa\ls_weapon_westar35sa.p3d";
         reloadAction = "3AS_Vent_Reload_Pistol";
-        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
+        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg", 2, 1, 30};
         magazines[] =
-        {
-            "JA_104th_Weapons_Mags_10mw40"
-        };
+            {
+                "JA_104th_Weapons_Mags_10mw40"
+            };
         muzzles[] = {"this"};
-        fireLightDiffuse[] = {0.5,0.5,0.25};
-        fireLightAmbient[] = {0.5,0.5,0.25};
-        class Single: Single
+        fireLightDiffuse[] = {0.5, 0.5, 0.25};
+        fireLightAmbient[] = {0.5, 0.5, 0.25};
+        class Single : Single
         {
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
@@ -3370,76 +3350,84 @@ class CfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound: BaseSoundModeType
+            class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                begin2[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                begin3[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s",+3db,1,2200};
-                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.33};
+                begin1[] = {"\ls\core\addons\sounds\weapons\westar35sa\shot1.wss",1,1,1800};
+                begin2[] = {"\ls\core\addons\sounds\weapons\westar35sa\shot1.wss",1,1,1800};
+                begin3[] = {"\ls\core\addons\sounds\weapons\westar35sa\shot1.wss",1,1,1800};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class WeaponSlotsInfo : WeaponSlotsInfo
         {
-        	class CowsSlot: CowsSlot
+            class CowsSlot : CowsSlot
             {
                 displayName = "Optics Slot";
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] ={};
+                compatibleItems[] = {};
+            };
+            class PointerSlot : PointerSlot
+            {
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+                displayName = "Pointer Slot";
+                compatibleItems[] = 
+                {
+                    "ls_pointer_westar35sa_flashlight",
+                    "ls_pointer_westar35sa_laser"
+                };
             };
         };
     };
 
     // Clone Knife
 
-    	// Tertiaries
+    // Tertiaries
 
     // RPS
-  	class JA_104th_RPS6: ls_weapon_rps6
+    class JA_104th_RPS6 : ls_weapon_rps6
     {
         scope = 2;
         displayName = "[104th] RPS-6 Rocket Launcher";
         baseWeapon = "JA_104th_RPS6";
+        model = "\ls\core\addons\weapons_rps\ls_weapon_rps6.p3d";
         magazines[] =
-        {
-            "ls_mag_rpg_1rnd"
-        };
+            {
+                "ls_mag_rpg_1rnd"};
     };
-    class JA_104th_RPS6_H: 3AS_RPS6_HP
+    class JA_104th_RPS6_H : 3AS_RPS6_HP
     {
         scope = 2;
         displayName = "[104th] RPS-6 Heavy Projectile Rocket Launcher";
         model = "\3AS\3AS_Weapons\RPS6HP\3AS_RPS6_HP.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","3as\3as_weapons\data\anim\RPS6_HP_Temp.rtm"};
-        
+        handAnim[] = {"OFP2_ManSkeleton", "3as\3as_weapons\data\anim\RPS6_HP_Temp.rtm"};
     };
 
-
     // Z7 Chaingun
-	class JA_104th_Z7_mk2: SWLW_Z7
-	{
-		author = "SW Legion Studios + Echo";
-		baseWeapon = "JA_104th_Z7";
-		scope = 2;
-		displayName = "[104th] Z7 Rotary Shoulder Gun";
-		magazines[] = {"ls_mag_flak_800rnd"};
-	};
+    class JA_104th_Z7_mk2 : SWLW_Z7
+    {
+        author = "SW Legion Studios + Echo";
+        baseWeapon = "JA_104th_Z7";
+        scope = 2;
+        displayName = "[104th] Z7 Rotary Shoulder Gun";
+        magazines[] = {"ls_mag_flak_800rnd"};
+    };
 
-    //class JA_104th_ShoulderCannon_mk2
-
-	
+    // class JA_104th_ShoulderCannon_mk2
 };
 
 class CfgAmmo
 {
-	class JLTS_bullet_stun;
+    class JLTS_bullet_stun;
     class JLTS_bullet_carbine_blue;
     class JLTS_bullet_pistol_blue;
-	class JLTS_bullet_scatter_blue;
+    class JLTS_bullet_scatter_blue;
 
     class JLTS_bullet_carbine_red;
     class JLTS_bullet_carbine_yellow;
@@ -3448,7 +3436,9 @@ class CfgAmmo
     class JLTS_ammo_Grenade_EMP;
 
     class BNA_KC_Bullet_Plasma40MM_AT;
-    class JA_104th_Weapons_Ammo_17MAT: BNA_KC_Bullet_Plasma40MM_AT{};
+    class JA_104th_Weapons_Ammo_17MAT : BNA_KC_Bullet_Plasma40MM_AT
+    {
+    };
 
     class B_12Gauge_Pellets;
     class B_12Gauge_Slug;
@@ -3460,10 +3450,11 @@ class CfgAmmo
     class B_40mm_APFSDS;
     class RocketBase;
 
+    class JA_104th_Weapons_Ammo_EMP : JLTS_ammo_Grenade_EMP
+    {
+    };
 
-    class JA_104th_Weapons_Ammo_EMP: JLTS_ammo_Grenade_EMP{};
-
-    class JA_104th_Weapons_Ammo_base_blue: JLTS_bullet_carbine_blue
+    class JA_104th_Weapons_Ammo_base_blue : JLTS_bullet_carbine_blue
     {
         ACE_ammoTempMuzzleVelocityShifts = [ -26.55, -25.47, -22.85, -20.12, -16.98, -12.8, -7.64, -1.53, 5.96, 15.17, 26.19 ];
         ACE_ballisticCoefficients = [0.322];
@@ -3553,7 +3544,7 @@ class CfgAmmo
         whistleOnFire = 0;
     };
 
-	class JA_104th_Weapons_Ammo_5mw: JA_104th_Weapons_Ammo_base_blue // Very Low Output
+    class JA_104th_Weapons_Ammo_5mw : JA_104th_Weapons_Ammo_base_blue // Very Low Output
     {
         hit = 15;
         typicalSpeed = 1000;
@@ -3562,7 +3553,7 @@ class CfgAmmo
         thrust = 800;
         thrustTime = 1.5;
     };
-	class JA_104th_Weapons_Ammo_10mw: JA_104th_Weapons_Ammo_base_blue // Low Output
+    class JA_104th_Weapons_Ammo_10mw : JA_104th_Weapons_Ammo_base_blue // Low Output
     {
         hit = 25;
         typicalSpeed = 1200;
@@ -3571,7 +3562,7 @@ class CfgAmmo
         thrust = 1000;
         thrustTime = 1.5;
     };
-    class JA_104th_Weapons_Ammo_20mw: JA_104th_Weapons_Ammo_base_blue // Medium Output 
+    class JA_104th_Weapons_Ammo_20mw : JA_104th_Weapons_Ammo_base_blue // Medium Output
     {
         hit = 40;
         typicalSpeed = 1500;
@@ -3580,7 +3571,7 @@ class CfgAmmo
         thrust = 2000;
         thrustTime = 1.6;
     };
-    class JA_104th_Weapons_Ammo_30mw: JA_104th_Weapons_Ammo_base_blue // High Output 
+    class JA_104th_Weapons_Ammo_30mw : JA_104th_Weapons_Ammo_base_blue // High Output
     {
         hit = 60;
         typicalSpeed = 3500;
@@ -3590,7 +3581,7 @@ class CfgAmmo
         thrust = 3500;
         thrustTime = 1.8;
     };
-    class JA_104th_Weapons_Ammo_40mw: JA_104th_Weapons_Ammo_base_blue // Very High Output
+    class JA_104th_Weapons_Ammo_40mw : JA_104th_Weapons_Ammo_base_blue // Very High Output
     {
         hit = 75;
         typicalSpeed = 7000;
@@ -3600,7 +3591,7 @@ class CfgAmmo
         thrust = 6000;
         thrustTime = 2;
     };
-    class JA_104th_Weapons_Ammo_50mw: JA_104th_Weapons_Ammo_base_blue // Extreme Output
+    class JA_104th_Weapons_Ammo_50mw : JA_104th_Weapons_Ammo_base_blue // Extreme Output
     {
         hit = 95;
         typicalSpeed = 10000;
@@ -3610,7 +3601,7 @@ class CfgAmmo
         thrust = 7730;
         thrustTime = 2;
     };
-    class JA_104th_Weapons_Ammo_10mwSC: JLTS_bullet_scatter_blue // Shotgun Rounds
+    class JA_104th_Weapons_Ammo_10mwSC : JLTS_bullet_scatter_blue // Shotgun Rounds
     {
         hit = 25;
         typicalSpeed = 750;
@@ -3621,7 +3612,7 @@ class CfgAmmo
         thrustTime = 1.4;
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
     };
-    class JA_104th_Weapons_Ammo_20mwSC_Slug: B_12Gauge_Slug // Shotgun Slug Rounds
+    class JA_104th_Weapons_Ammo_20mwSC_Slug : B_12Gauge_Slug // Shotgun Slug Rounds
     {
         hit = 50;
         typicalSpeed = 900;
@@ -3632,7 +3623,7 @@ class CfgAmmo
         thrustTime = 1.4;
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
     };
-    class JA_104th_Weapons_Ammo_20mwSC_HE: B_19mm_HE // Shotgun HE Rounds
+    class JA_104th_Weapons_Ammo_20mwSC_HE : B_19mm_HE // Shotgun HE Rounds
     {
         hit = 25;
         typicalSpeed = 750;
@@ -3643,7 +3634,7 @@ class CfgAmmo
         thrustTime = 1.4;
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
     };
-    class JA_104th_Weapons_Ammo_100mw: B_40mm_APFSDS // Test Railgun Rounds
+    class JA_104th_Weapons_Ammo_100mw : B_40mm_APFSDS // Test Railgun Rounds
     {
         hit = 95;
         typicalSpeed = 1200;
@@ -3658,8 +3649,8 @@ class CfgAmmo
         indirectHitRange = 0.5;
         suppressionRadiusBulletClose = 10;
         suppressionRadiusHit = 14;
-        tracerColor[] = {0.7,0.7,0.5,0.04};
-        tracerColorR[] = {0.7,0.7,0.5,0.04};
+        tracerColor[] = {0.7, 0.7, 0.5, 0.04};
+        tracerColorR[] = {0.7, 0.7, 0.5, 0.04};
         thrust = 600;
         thrustTime = 2;
         warheadName = "AP";
@@ -3667,7 +3658,7 @@ class CfgAmmo
     };
 
     // Test Rocket Rounds
-    class JA_104th_Weapons_Ammo_LC: RocketBase 
+    class JA_104th_Weapons_Ammo_LC : RocketBase
     {
         hit = 200;
         typicalSpeed = 1200;
@@ -3684,15 +3675,14 @@ class CfgAmmo
         suppressionRadiusBulletClose = 10;
         suppressionRadiusHit = 14;
         thrust = 250;
-        tracerColor[] = {0.7,0.7,0.5,0.04};
-        tracerColorR[] = {0.7,0.7,0.5,0.04};
+        tracerColor[] = {0.7, 0.7, 0.5, 0.04};
+        tracerColorR[] = {0.7, 0.7, 0.5, 0.04};
         warheadName = "AP";
         weaponType = "cannon";
     };
 
-
     // GL Ammo
-  class JA_104th_Weapons_Ammo_GL_HE: G_40mm_HE
+    class JA_104th_Weapons_Ammo_GL_HE : G_40mm_HE
     {
         hit = 60;
         indirectHit = 50;
@@ -3701,7 +3691,7 @@ class CfgAmmo
         fuseDistance = 3;
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
     };
-    class JA_104th_Weapons_Ammo_GL_AP: JA_104th_Weapons_Ammo_GL_HE
+    class JA_104th_Weapons_Ammo_GL_AP : JA_104th_Weapons_Ammo_GL_HE
     {
         hit = 350;
         indirectHit = 0;
@@ -3719,49 +3709,49 @@ class CfgAmmo
         ace_frag_gurney_k = "0";
         ace_rearm_caliber = 0;
     };
-    
-    //UGL Smoke - Remove RD501 FX dependencies, switch to JLTS?
-    class JA_104th_Weapons_Ammo_GL_smoke_white: SmokeShell
+
+    // UGL Smoke - Remove RD501 FX dependencies, switch to JLTS?
+    class JA_104th_Weapons_Ammo_GL_smoke_white : SmokeShell
     {
-        smokeColor[] = {1,1,1,1};
+        smokeColor[] = {1, 1, 1, 1};
         effectsSmoke = "SmokeShellWhiteSmall";
         model = "\A3\Weapons_F\Ammo\UGL_Flare";
     };
-    class JA_104th_Weapons_Ammo_GL_smoke_purple: JA_104th_Weapons_Ammo_GL_smoke_white
+    class JA_104th_Weapons_Ammo_GL_smoke_purple : JA_104th_Weapons_Ammo_GL_smoke_white
     {
-        smokeColor[] = {0.4341,0.1388,0.41439998,1};
+        smokeColor[] = {0.4341, 0.1388, 0.41439998, 1};
         effectsSmoke = "SmokeShellPurpleEffect";
     };
-    class JA_104th_Weapons_Ammo_GL_smoke_yellow: JA_104th_Weapons_Ammo_GL_smoke_white
+    class JA_104th_Weapons_Ammo_GL_smoke_yellow : JA_104th_Weapons_Ammo_GL_smoke_white
     {
-        smokeColor[] = {0.9883,0.8606,0.0719,1};
+        smokeColor[] = {0.9883, 0.8606, 0.0719, 1};
         effectsSmoke = "SmokeShellYellowEffect";
     };
-    class JA_104th_Weapons_Ammo_GL_smoke_red: JA_104th_Weapons_Ammo_GL_smoke_white
+    class JA_104th_Weapons_Ammo_GL_smoke_red : JA_104th_Weapons_Ammo_GL_smoke_white
     {
-        smokeColor[] = {0.8438,0.1383,0.1353,1};
+        smokeColor[] = {0.8438, 0.1383, 0.1353, 1};
         effectsSmoke = "SmokeShellRedEffect";
     };
-    class JA_104th_Weapons_Ammo_GL_smoke_green: JA_104th_Weapons_Ammo_GL_smoke_white
+    class JA_104th_Weapons_Ammo_GL_smoke_green : JA_104th_Weapons_Ammo_GL_smoke_white
     {
-        smokeColor[] = {0.1383,0.8438,0.1353,1};
+        smokeColor[] = {0.1383, 0.8438, 0.1353, 1};
         effectsSmoke = "SmokeShellGreenEffect";
     };
-    class JA_104th_Weapons_Ammo_GL_smoke_blue: JA_104th_Weapons_Ammo_GL_smoke_white
+    class JA_104th_Weapons_Ammo_GL_smoke_blue : JA_104th_Weapons_Ammo_GL_smoke_white
     {
-        smokeColor[] = {0.1183,0.1867,1,1};
+        smokeColor[] = {0.1183, 0.1867, 1, 1};
         effectsSmoke = "SmokeShellBlueEffect";
     };
-    class JA_104th_Weapons_Ammo_GL_smoke_orange: JA_104th_Weapons_Ammo_GL_smoke_white
+    class JA_104th_Weapons_Ammo_GL_smoke_orange : JA_104th_Weapons_Ammo_GL_smoke_white
     {
-        smokeColor[] = {0.6697,0.2275,0.10053,1};
+        smokeColor[] = {0.6697, 0.2275, 0.10053, 1};
         effectsSmoke = "SmokeShellOrangeEffect";
     };
-    
-    //UGL Flare
-    class JA_104th_Weapons_Ammo_flare_white: F_40mm_White
+
+    // UGL Flare
+    class JA_104th_Weapons_Ammo_flare_white : F_40mm_White
     {
-        lightColor[] = {1, 1, 1 ,1};
+        lightColor[] = {1, 1, 1, 1};
         useFlare = 1;
         deflecting = 30;
         smokeColor[] = {1, 1, 1, 1};
@@ -3769,35 +3759,35 @@ class CfgAmmo
         triggerTime = 3;
         triggerSpeedCoef = 1;
         audibleFire = 20;
-        intensity  = 1000000;
+        intensity = 1000000;
         timeToLive = 120;
         flareMaxDistance = 300;
     };
-    class JA_104th_Weapons_Ammo_flare_green: JA_104th_Weapons_Ammo_flare_white
+    class JA_104th_Weapons_Ammo_flare_green : JA_104th_Weapons_Ammo_flare_white
     {
         lightColor[] = {0, 1, 0, 0};
     };
-    class JA_104th_Weapons_Ammo_flare_red: JA_104th_Weapons_Ammo_flare_white
+    class JA_104th_Weapons_Ammo_flare_red : JA_104th_Weapons_Ammo_flare_white
     {
         lightColor[] = {1, 0, 0, 0};
     };
-    class JA_104th_Weapons_Ammo_flare_yellow: JA_104th_Weapons_Ammo_flare_white
+    class JA_104th_Weapons_Ammo_flare_yellow : JA_104th_Weapons_Ammo_flare_white
     {
         lightColor[] = {1, 1, 0, 0};
     };
-    class JA_104th_Weapons_Ammo_flare_ir: JA_104th_Weapons_Ammo_flare_white
+    class JA_104th_Weapons_Ammo_flare_ir : JA_104th_Weapons_Ammo_flare_white
     {
         lightColor[] = {0.5, 0.5, 0.25, 0};
     };
-    class JA_104th_Weapons_Ammo_flare_blue: JA_104th_Weapons_Ammo_flare_white
+    class JA_104th_Weapons_Ammo_flare_blue : JA_104th_Weapons_Ammo_flare_white
     {
         lightColor[] = {0, 0, 1, 0};
     };
-    class JA_104th_Weapons_Ammo_flare_cyan: JA_104th_Weapons_Ammo_flare_white
+    class JA_104th_Weapons_Ammo_flare_cyan : JA_104th_Weapons_Ammo_flare_white
     {
         lightColor[] = {0, 1, 1, 0};
     };
-    class JA_104th_Weapons_Ammo_flare_purple: JA_104th_Weapons_Ammo_flare_white
+    class JA_104th_Weapons_Ammo_flare_purple : JA_104th_Weapons_Ammo_flare_white
     {
         lightColor[] = {.7, 0, 1, 0};
     };
@@ -3805,18 +3795,18 @@ class CfgAmmo
 
 class CfgMagazines
 {
-	class 30Rnd_65x39_caseless_mag;
-	class 3Rnd_HE_Grenade_shell;
+    class 30Rnd_65x39_caseless_mag;
+    class 3Rnd_HE_Grenade_shell;
     class 3Rnd_Smoke_Grenade_shell;
     class UGL_FlareWhite_F;
-	class SWLW_Z7_mag;
+    class SWLW_Z7_mag;
     class ls_mag_rpg_1rnd;
 
-    //Universal
+    // Universal
 
-    class JA_104th_Weapons_Mags_stun10: 30Rnd_65x39_caseless_mag
-    {	
-    	author = "Jango's Armory Aux Team";
+    class JA_104th_Weapons_Mags_stun10 : 30Rnd_65x39_caseless_mag
+    {
+        author = "Jango's Armory Aux Team";
         displayName = "[104th] 10Rnd Stun Cell";
         displayNameShort = "10rnd Stun";
         descriptionShort = "Stun Rounds to stop muhfuckas from running";
@@ -3834,7 +3824,7 @@ class CfgMagazines
     // Primary Mags
 
     // DC-series Rifle Mag
-    class JA_104th_Weapons_Mags_10mw50: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_10mw50 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Low Power Energy Cell";
         displayNameShort = "50Rnd 10MW";
@@ -3852,7 +3842,7 @@ class CfgMagazines
         typicalSpeed = 600;
     };
     // DC-series Rifle Mag
-    class JA_104th_Weapons_Mags_20mw40: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_20mw40 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Standard Energy Cell";
         displayNameShort = "40Rnd 20MW";
@@ -3871,7 +3861,7 @@ class CfgMagazines
     };
 
     // Med-High Capacity
-    class JA_104th_Weapons_Mags_20mw240: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_20mw240 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] High Capacity Energy Cell";
         displayNameShort = "240Rnd 20MW";
@@ -3889,9 +3879,8 @@ class CfgMagazines
         typicalSpeed = 600;
     };
 
-
     // Z-6 Heavy-High
-    class JA_104th_Weapons_Mags_10mw500: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_10mw500 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Z-6 Standard Energy Cell";
         displayNameShort = "500Rnd 10MW";
@@ -3910,7 +3899,7 @@ class CfgMagazines
     };
 
     // DMR Intermediate round
-        class JA_104th_Weapons_Mags_30mw30: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_30mw30 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] High Power Energy Cell";
         displayNameShort = "30Rnd 30MW";
@@ -3928,8 +3917,8 @@ class CfgMagazines
         typicalSpeed = 1000;
     };
 
-        // 15X / FP773 sniper mag
-        class JA_104th_Weapons_Mags_40mw20: 30Rnd_65x39_caseless_mag
+    // 15X / FP773 sniper mag
+    class JA_104th_Weapons_Mags_40mw20 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Sniper Energy Cell";
         displayNameShort = "20Rnd 40MW";
@@ -3946,8 +3935,8 @@ class CfgMagazines
         tracersEvery = 1;
         typicalSpeed = 1100;
     };
-        // DC17M Blaster Mag
-    class JA_104th_Weapons_Mags_20mw70: 30Rnd_65x39_caseless_mag
+    // DC17M Blaster Mag
+    class JA_104th_Weapons_Mags_20mw70 : 30Rnd_65x39_caseless_mag
     {
         JA_104th_isBlasterMag = 1;
         displayName = "[104th] Extended Capacity Energy Cell";
@@ -3966,8 +3955,8 @@ class CfgMagazines
         typicalSpeed = 700;
     };
     // DC17M AT Mag
-    class JA_104th_Weapons_Mags_100mw_AT: 30Rnd_65x39_caseless_mag
-    {   
+    class JA_104th_Weapons_Mags_100mw_AT : 30Rnd_65x39_caseless_mag
+    {
         JA_104th_isATMag = 1;
         author = "Jango's Armory Aux Team";
         displayName = "[104th] Unguided Explosive Missile";
@@ -3983,10 +3972,10 @@ class CfgMagazines
         typicalSpeed = 1500;
     };
 
-        // FP773 HP + 17M sniper
-        class JA_104th_Weapons_Mags_50mw5: 30Rnd_65x39_caseless_mag
+    // FP773 HP + 17M sniper
+    class JA_104th_Weapons_Mags_50mw5 : 30Rnd_65x39_caseless_mag
     {
-        JA_104th_isSniperMag = 1
+        JA_104th_isSniperMag = 1;
         displayName = "[104th] High Power Sniper Energy Cell";
         displayNameShort = "5Rnd 50MW";
         author = "Jango's Armory Aux Team";
@@ -4002,9 +3991,9 @@ class CfgMagazines
         tracersEvery = 1;
         typicalSpeed = 2000;
     };
-        // SF Sniper HVAP Mag
-    class JA_104th_Weapons_Mags_100Mw1: 30Rnd_65x39_caseless_mag
-    {   
+    // SF Sniper HVAP Mag
+    class JA_104th_Weapons_Mags_100Mw1 : 30Rnd_65x39_caseless_mag
+    {
         author = "Jango's Armory Aux Team";
         displayName = "[104th] Explosive High Power Energy Cell";
         ammo = "JA_104th_Weapons_Ammo_100mw";
@@ -4017,10 +4006,9 @@ class CfgMagazines
         count = 1;
         mass = 15;
         typicalSpeed = 867;
-
     };
-    class JA_104th_Weapons_Mags_EMPMw2: 30Rnd_65x39_caseless_mag
-    {   
+    class JA_104th_Weapons_Mags_EMPMw2 : 30Rnd_65x39_caseless_mag
+    {
         author = "Jango's Armory Aux Team";
         displayName = "[104th] EMP Energy Cell";
         ammo = "JLTS_ammo_Grenade_EMP";
@@ -4033,11 +4021,10 @@ class CfgMagazines
         count = 2;
         mass = 15;
         typicalSpeed = 867;
-
     };
 
     // 12g x 20 rnds equivalent - For DP23
-    class JA_104th_Weapons_Mags_10mw20SC: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_10mw20SC : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Scatter Wide Spread";
         displayNameShort = "20Rnd 10MW SC";
@@ -4055,7 +4042,7 @@ class CfgMagazines
         typicalSpeed = 600;
     };
     // DP-23 slug rounds
-    class JA_104th_Weapons_Mags_20mw16SC_Slug: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_20mw16SC_Slug : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Slug Rounds";
         displayNameShort = "16Rnd 20MW SC Slug";
@@ -4074,7 +4061,7 @@ class CfgMagazines
     };
 
     // Unused HE rounds
-    class JA_104th_Weapons_Mags_20mw6SC_HE: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_20mw6SC_HE : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] 6Rnd 20MW HE Cell";
         displayNameShort = "6Rnd 20MW SC HE";
@@ -4095,7 +4082,7 @@ class CfgMagazines
     // Secondary Mags
 
     // DC15SA Standard mag
-    class JA_104th_Weapons_Mags_10mw30: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_10mw30 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Standard Secondary Energy Cell";
         displayNameShort = "30Rnd 10MW";
@@ -4113,7 +4100,7 @@ class CfgMagazines
         typicalSpeed = 1100;
     };
     // SF High Cap secondary mags
-    class JA_104th_Weapons_Mags_10mw40: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_10mw40 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Extended Capacity Energy Cell";
         displayNameShort = "40Rnd 10MW";
@@ -4131,7 +4118,7 @@ class CfgMagazines
         typicalSpeed = 600;
     };
     // SF High Cap secondary mags
-    class JA_104th_Weapons_Mags_10mw80: 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_10mw80 : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] Dual Extended Capacity Energy Cell";
         displayNameShort = "2x40Rnd 10MW";
@@ -4150,23 +4137,21 @@ class CfgMagazines
     };
 
     // Tertiaries
-    class JA_104th_Weapons_Mags_LC: SWLW_Z7_mag
-    {   
+    class JA_104th_Weapons_Mags_LC : SWLW_Z7_mag
+    {
         author = "Jango's Armory Aux Team";
         displayName = "[104th] 1rnd LC 100Mw APFSDS";
         ammo = "JA_104th_Weapons_ammo_LC";
-        //ammo = "ls_50mm_laat_apfsds";
+        // ammo = "ls_50mm_laat_apfsds";
         count = 1;
         mass = 12;
         tracersEvery = 1;
     };
 
+    // UGL Rnds
 
-
-    //UGL Rnds
-
-    //UGL scatter rounds
-    class JA_104th_Weapons_Mags_10mw4SC: 30Rnd_65x39_caseless_mag
+    // UGL scatter rounds
+    class JA_104th_Weapons_Mags_10mw4SC : 30Rnd_65x39_caseless_mag
     {
         displayName = "[104th] 4Rnd 10MW Scatter Cell";
         displayNameShort = "4Rnd 10MW SC";
@@ -4183,7 +4168,7 @@ class CfgMagazines
         tracersEvery = 1;
         typicalSpeed = 600;
     };
-    class JA_104th_Weapons_Mags_GL_HE2: 3Rnd_HE_Grenade_shell
+    class JA_104th_Weapons_Mags_GL_HE2 : 3Rnd_HE_Grenade_shell
     {
         displayName = "[104th] 2Rnd High Explosive";
         displayNameShort = "2Rnd HE";
@@ -4192,7 +4177,7 @@ class CfgMagazines
         count = 2;
         ammo = "JA_104th_Weapons_Ammo_GL_HE";
     };
-    class JA_104th_Weapons_Mags_GL_HE3: 3Rnd_HE_Grenade_shell
+    class JA_104th_Weapons_Mags_GL_HE3 : 3Rnd_HE_Grenade_shell
     {
         displayName = "[104th] 3Rnd High Explosive";
         displayNameShort = "3Rnd HE";
@@ -4201,7 +4186,7 @@ class CfgMagazines
         count = 3;
         ammo = "JA_104th_Weapons_Ammo_GL_HE";
     };
-    class JA_104th_Weapons_Mags_GL_AP2: 3Rnd_HE_Grenade_shell
+    class JA_104th_Weapons_Mags_GL_AP2 : 3Rnd_HE_Grenade_shell
     {
         displayName = "[104th] 2Rnd Anti Personnel";
         displayNameShort = "2Rnd AP";
@@ -4210,7 +4195,7 @@ class CfgMagazines
         count = 2;
         ammo = "JA_104th_Weapons_Ammo_GL_AP";
     };
-    class JA_104th_Weapons_Mags_GL_smoke_white6: 3Rnd_Smoke_Grenade_shell
+    class JA_104th_Weapons_Mags_GL_smoke_white6 : 3Rnd_Smoke_Grenade_shell
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
@@ -4222,7 +4207,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_GL_smoke_white";
         model = "kobra\442_weapons\explosive\basic_smoke.p3d";
     };
-    class JA_104th_Weapons_Mags_GL_smoke_purple3: JA_104th_Weapons_Mags_GL_smoke_white6
+    class JA_104th_Weapons_Mags_GL_smoke_purple3 : JA_104th_Weapons_Mags_GL_smoke_white6
     {
         displayName = "[104th] 3Rnd Smoke (Purple)";
         displayNameShort = "3Rnd Purple";
@@ -4231,7 +4216,7 @@ class CfgMagazines
         count = 3;
         ammo = "JA_104th_Weapons_Ammo_GL_smoke_purple";
     };
-    class JA_104th_Weapons_Mags_GL_smoke_yellow3: JA_104th_Weapons_Mags_GL_smoke_purple3
+    class JA_104th_Weapons_Mags_GL_smoke_yellow3 : JA_104th_Weapons_Mags_GL_smoke_purple3
     {
         displayName = "[104th] 3Rnd Smoke (Yellow)";
         displayNameShort = "3Rnd Yellow";
@@ -4239,7 +4224,7 @@ class CfgMagazines
         picture = "\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_yellow_CA.paa";
         ammo = "JA_104th_Weapons_Ammo_GL_smoke_yellow";
     };
-    class JA_104th_Weapons_Mags_GL_smoke_red3: JA_104th_Weapons_Mags_GL_smoke_purple3
+    class JA_104th_Weapons_Mags_GL_smoke_red3 : JA_104th_Weapons_Mags_GL_smoke_purple3
     {
         displayName = "[104th] 3Rnd Smoke (Red)";
         displayNameShort = "3Rnd Red";
@@ -4247,7 +4232,7 @@ class CfgMagazines
         picture = "\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_red_CA.paa";
         ammo = "JA_104th_Weapons_Ammo_GL_smoke_red";
     };
-    class JA_104th_Weapons_Mags_GL_smoke_green3: JA_104th_Weapons_Mags_GL_smoke_purple3
+    class JA_104th_Weapons_Mags_GL_smoke_green3 : JA_104th_Weapons_Mags_GL_smoke_purple3
     {
         displayName = "[104th] 3Rnd Smoke (Green)";
         displayNameShort = "3Rnd Green";
@@ -4255,7 +4240,7 @@ class CfgMagazines
         picture = "\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_green_CA.paa";
         ammo = "JA_104th_Weapons_Ammo_GL_smoke_green";
     };
-    class JA_104th_Weapons_Mags_GL_smoke_blue3: JA_104th_Weapons_Mags_GL_smoke_purple3
+    class JA_104th_Weapons_Mags_GL_smoke_blue3 : JA_104th_Weapons_Mags_GL_smoke_purple3
     {
         displayName = "[104th] 3Rnd Smoke (Blue)";
         displayNameShort = "3Rnd Blue";
@@ -4263,7 +4248,7 @@ class CfgMagazines
         picture = "\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_blue_CA.paa";
         ammo = "JA_104th_Weapons_Ammo_GL_smoke_blue";
     };
-    class JA_104th_Weapons_Mags_GL_smoke_orange3: JA_104th_Weapons_Mags_GL_smoke_purple3
+    class JA_104th_Weapons_Mags_GL_smoke_orange3 : JA_104th_Weapons_Mags_GL_smoke_purple3
     {
         displayName = "[104th] 3Rnd Smoke (Orange)";
         displayNameShort = "3Rnd Orange";
@@ -4271,9 +4256,9 @@ class CfgMagazines
         picture = "\A3\Weapons_f\Data\UI\gear_UGL_Smokeshell_orange_CA.paa";
         ammo = "JA_104th_Weapons_Ammo_GL_smoke_orange";
     };
-    
-    //UGL Flares
-    class JA_104th_Weapons_Mags_GL_flare_White3: UGL_FlareWhite_F
+
+    // UGL Flares
+    class JA_104th_Weapons_Mags_GL_flare_White3 : UGL_FlareWhite_F
     {
         author = "Jango's Armory Aux Team";
         scope = 2;
@@ -4290,7 +4275,7 @@ class CfgMagazines
         weaponPoolAvailable = 1;
         mass = 4;
     };
-    class JA_104th_Weapons_Mags_GL_flare_IR3: JA_104th_Weapons_Mags_GL_flare_white3
+    class JA_104th_Weapons_Mags_GL_flare_IR3 : JA_104th_Weapons_Mags_GL_flare_white3
     {
         displayName = "[104th] 3Rnd Flare (IR)";
         displayNameShort = "IR Flares";
@@ -4298,7 +4283,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_flare_ir";
         picture = "A3\Weapons_F\Data\UI\gear_UGL_Flare_CA.paa";
     };
-    class JA_104th_Weapons_Mags_GL_flare_Green3: JA_104th_Weapons_Mags_GL_flare_white3
+    class JA_104th_Weapons_Mags_GL_flare_Green3 : JA_104th_Weapons_Mags_GL_flare_white3
     {
         displayName = "[104th] 3Rnd Flare (Green)";
         displayNameShort = "Green Flares";
@@ -4306,7 +4291,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_flare_green";
         picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_Green_CA.paa";
     };
-    class JA_104th_Weapons_Mags_GL_flare_Red3: JA_104th_Weapons_Mags_GL_flare_white3
+    class JA_104th_Weapons_Mags_GL_flare_Red3 : JA_104th_Weapons_Mags_GL_flare_white3
     {
         displayName = "[104th] 3Rnd Flare (Red)";
         displayNameShort = "Red Flares";
@@ -4314,7 +4299,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_flare_red";
         picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_Red_CA.paa";
     };
-    class JA_104th_Weapons_Mags_GL_flare_Yellow3: JA_104th_Weapons_Mags_GL_flare_white3
+    class JA_104th_Weapons_Mags_GL_flare_Yellow3 : JA_104th_Weapons_Mags_GL_flare_white3
     {
         displayName = "[104th] 3Rnd Flare (Yellow)";
         displayNameShort = "Yellow Flares";
@@ -4322,7 +4307,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_flare_yellow";
         picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_yelow_CA.paa";
     };
-    class JA_104th_Weapons_Mags_GL_flare_Blue3: JA_104th_Weapons_Mags_GL_flare_white3
+    class JA_104th_Weapons_Mags_GL_flare_Blue3 : JA_104th_Weapons_Mags_GL_flare_white3
     {
         displayName = "[104th] 3Rnd Flare (Blue)";
         displayNameShort = "Blue Flares";
@@ -4330,7 +4315,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_flare_blue";
         picture = "A3\Weapons_F\Data\UI\gear_UGL_Flare_CA.paa";
     };
-    class JA_104th_Weapons_Mags_GL_flare_Cyan3: JA_104th_Weapons_Mags_GL_flare_white3
+    class JA_104th_Weapons_Mags_GL_flare_Cyan3 : JA_104th_Weapons_Mags_GL_flare_white3
     {
         displayName = "[104th] 3Rnd Flare (Cyan)";
         displayNameShort = "Cyan Flares";
@@ -4338,7 +4323,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_flare_cyan";
         picture = "A3\Weapons_F\Data\UI\gear_UGL_Flare_CA.paa";
     };
-    class JA_104th_Weapons_Mags_GL_flare_Purple3: JA_104th_Weapons_Mags_GL_flare_white3
+    class JA_104th_Weapons_Mags_GL_flare_Purple3 : JA_104th_Weapons_Mags_GL_flare_white3
     {
         displayName = "[104th] 3Rnd Flare (Purple)";
         displayNameShort = "Purple Flares";
@@ -4346,7 +4331,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_flare_Purple";
         picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_Purple_CA.paa";
     };
-    class JA_104th_Weapons_Mags_RPS6H_6rnd: ls_mag_rpg_1rnd
+    class JA_104th_Weapons_Mags_RPS6H_6rnd : ls_mag_rpg_1rnd
     {
         author = "Jango's Armory Aux Team";
         displayName = "[104th] 6rnd RPS-6H Magazine";
@@ -4355,12 +4340,13 @@ class CfgMagazines
     };
 };
 
-
 class CfgVehicles
 {
     class ls_carrybox_base;
+	class 3AS_Supply_Large_Ammo_Prop;
 
-    class JA_104th_Box_Ammo_mk2: ls_carrybox_base
+
+    class JA_104th_Box_Ammo_mk2 : 3AS_Supply_Large_Ammo_Prop
     {
         author = "Cyan";
         displayName = "Ammo Box - 104th";
@@ -4370,125 +4356,156 @@ class CfgVehicles
         editorCategory = "JA_104_EdCat_Objects";
         editorSubcategory = "104th_Categ_Clones_Boxes";
         maximumLoad = 3000;
-        class TransportWeapons{
-            class _xx_ls_weapon_rps6{
+        class TransportWeapons
+        {
+            class _xx_ls_weapon_rps6
+            {
                 count = 3;
                 weapon = "ls_weapon_rps6";
             };
-            class _xx_104_weapon_DC15S{
+            class _xx_104_weapon_DC15S
+            {
                 count = 4;
                 weapon = "JA_104th_DC15S";
             };
-            class _xx_104_weapon_DC17SA{
+            class _xx_104_weapon_DC17SA
+            {
                 count = 8;
                 weapon = "JA_104th_DC17SA";
             };
         };
         class TransportMagazines
         {
-            class _xx_JLTS_stun_mag_long{
+            class _xx_JLTS_stun_mag_long
+            {
                 count = 10;
                 magazine = "JLTS_stun_mag_long";
             };
-            class _xx_JLTS_stun_mag_short{
+            class _xx_JLTS_stun_mag_short
+            {
                 count = 10;
                 magazine = "JLTS_stun_mag_short";
             };
-            class _xx_JA_104th_Weapons_Mags_10mw30{
+            class _xx_JA_104th_Weapons_Mags_10mw30
+            {
                 count = 50;
                 magazine = "JA_104th_Weapons_Mags_10mw30";
             };
-            class _xx_JA_104th_Weapons_Mags_10mw40{
+            class _xx_JA_104th_Weapons_Mags_10mw40
+            {
                 count = 50;
                 magazine = "JA_104th_Weapons_Mags_10mw40";
             };
-            class _xx_JA_104th_Weapons_Mags_10mw50{
+            class _xx_JA_104th_Weapons_Mags_10mw50
+            {
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_10mw50";
             };
-            class _xx_JA_104th_Weapons_Mags_10mw500{
+            class _xx_JA_104th_Weapons_Mags_10mw500
+            {
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_10mw500";
             };
-            class _xx_JA_104th_Weapons_Mags_20mw40{
+            class _xx_JA_104th_Weapons_Mags_20mw40
+            {
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_20mw40";
             };
-            class _xx_JA_104th_Weapons_Mags_20mw70{
+            class _xx_JA_104th_Weapons_Mags_20mw70
+            {
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_20mw70";
             };
-            class _xx_JA_104th_Weapons_Mags_20mw240{
+            class _xx_JA_104th_Weapons_Mags_20mw240
+            {
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_20mw240";
             };
-            class _xx_JA_104th_Weapons_Mags_30mw30{
+            class _xx_JA_104th_Weapons_Mags_30mw30
+            {
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_30mw30";
             };
-            class _xx_JA_104th_Weapons_Mags_40mw20{
+            class _xx_JA_104th_Weapons_Mags_40mw20
+            {
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_40mw20";
             };
-            class _xx_JA_104th_Weapons_Mags_50mw5{
+            class _xx_JA_104th_Weapons_Mags_50mw5
+            {
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_50mw5";
             };
-            class _xx_JA_104th_Weapons_Mags_100Mw1{
+            class _xx_JA_104th_Weapons_Mags_100Mw1
+            {
                 count = 10;
                 magazine = "JA_104th_Weapons_Mags_100Mw1";
             };
-            class _xx_3AS_10Rnd_EC30_Pellets{
+            class _xx_3AS_10Rnd_EC30_Pellets
+            {
                 count = 25;
                 magazine = "3AS_10Rnd_EC30_Pellets";
             };
-            class _xx_3AS_10Rnd_ESlug_Mag{
+            class _xx_3AS_10Rnd_ESlug_Mag
+            {
                 count = 25;
                 magazine = "3AS_10Rnd_ESlug_Mag";
             };
-            class _xx_3AS_1Rnd_EC80_Flechette{
+            class _xx_3AS_1Rnd_EC80_Flechette
+            {
                 count = 25;
                 magazine = "3AS_1Rnd_EC80_Flechette";
             };
-            class _xx_JA_104th_Weapons_Mags_LC{
+            class _xx_JA_104th_Weapons_Mags_LC
+            {
                 count = 10;
                 magazine = "JA_104th_Weapons_Mags_LC";
             };
-            class _xx_JA_104th_Weapons_Mags_RPS{
+            class _xx_JA_104th_Weapons_Mags_RPS
+            {
                 count = 20;
                 magazine = "ls_mag_rpg_1rnd";
             };
         };
-        class TransportItems{
-            class _xx_ACE_elasticBandage{
+        class TransportItems
+        {
+            class _xx_ACE_elasticBandage
+            {
                 count = 50;
                 name = "ACE_elasticBandage";
             };
-            class _xx_ACE_epinephrine{
+            class _xx_ACE_epinephrine
+            {
                 count = 20;
                 name = "ACE_epinephrine";
             };
-            class _xx_ACE_morphine{
+            class _xx_ACE_morphine
+            {
                 count = 20;
                 name = "ACE_morphine";
             };
-            class _xx_ACE_packingBandage{
+            class _xx_ACE_packingBandage
+            {
                 count = 30;
                 name = "ACE_packingBandage";
             };
-            class _xx_ACE_quikclot{
+            class _xx_ACE_quikclot
+            {
                 count = 30;
                 name = "ACE_quikclot";
             };
-            class _xx_ACE_salineIV{
+            class _xx_ACE_salineIV
+            {
                 count = 5;
                 name = "ACE_salineIV";
             };
-            class _xx_ACE_salineIV_500{
+            class _xx_ACE_salineIV_500
+            {
                 count = 5;
                 name = "ACE_salineIV_500";
             };
-            class _xx_ACE_tourniquet{
+            class _xx_ACE_tourniquet
+            {
                 count = 8;
                 name = "ACE_tourniquet";
             };
