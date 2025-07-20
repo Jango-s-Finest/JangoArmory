@@ -353,7 +353,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Spectre_Uniform : JA_104th_Base_MC_AB_Uniform
+	class JA_104th_Spectre_Uniform : JA_104th_Base_ARC_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -363,13 +363,11 @@ class CfgWeapons
 			{
 				"camo1",
 				"camo2",
-				"biceps",
-				"rank"};
+			};
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa",
 				"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Lower.paa",
-				"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa",
 			};
 		class ItemInfo : UniformItem
 		{
@@ -520,20 +518,19 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Frosty_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Frosty_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Spectre : ls_gar_marshalCommander_base
+	class JA_104th_Spectre : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		vehicleClass = "Men";
 		side = 1;
 		uniformClass = "JA_104th_Spectre_Uniform";
 		displayName = "104th Spectre";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		hiddenSelections[] = {"camo1", "camo2", "biceps", "rank"};
-		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Lower.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa"};
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Spectre_Lower.paa"};
 		linkedItems[] = {JA_104th_Spectre_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Spectre_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
