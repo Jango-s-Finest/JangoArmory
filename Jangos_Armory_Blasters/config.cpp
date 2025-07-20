@@ -1406,7 +1406,9 @@ class CfgWeapons
                 compatibleItems[] =
                     {
                         "3AS_optic_DC15LE_F",
-                        "3AS_optic_DC15C_F"};
+                        "3AS_optic_DC15C_F",
+                        "3AS_Optic_Scope_WestarM5"
+                };
             };
             class MuzzleSlot : MuzzleSlot
             {
@@ -1461,9 +1463,9 @@ class CfgWeapons
             useModelOptics = 0;
             useExternalOptic = 0;
             cameraDir = "OP_look";
-            discreteDistance[] = {100, 200, 300, 400};
-            discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"};
-            discreteDistanceInitIndex = 0;
+            discreteDistance[] = {50,75,100,150,200,250,300,350,400};
+            discreteDistanceCameraPoint[] = {"OP_eye_50","OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
+            discreteDistanceInitIndex = 1;
             memoryPointCamera = "UGL eye";
             modelOptics = "-";
             optics = 1;
@@ -1502,10 +1504,9 @@ class CfgWeapons
                 class StandardSound : BaseSoundModeType
                 {
                     weaponSoundEffect = "";
-                    begin1[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
-                    begin2[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
-                    begin3[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
-                    soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+                    begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
+                    begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
+                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
                 };
             };
         };
@@ -1703,9 +1704,9 @@ class CfgWeapons
             useModelOptics = 0;
             useExternalOptic = 0;
             cameraDir = "OP_look";
-            discreteDistance[] = {75, 100, 150, 200, 250, 300, 350, 400};
-            discreteDistanceCameraPoint[] = {"OP_eye_75", "OP_eye_100", "OP_eye_150", "OP_eye_200", "OP_eye_250", "OP_eye_300", "OP_eye_350", "OP_eye_400"};
-            discreteDistanceInitIndex = 0;
+            discreteDistance[] = {50,75,100,150,200,250,300,350,400};
+            discreteDistanceCameraPoint[] = {"OP_eye_50","OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
+            discreteDistanceInitIndex = 1;
             magazines[] =
                 {
                     "ACE_HuntIR_M203",
@@ -1744,10 +1745,9 @@ class CfgWeapons
                 class StandardSound : BaseSoundModeType
                 {
                     weaponSoundEffect = "";
-                    begin1[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
-                    begin2[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
-                    begin3[] = {"SWLW_clones\rifles\gl\sounds\gl", 1, 1, 1800};
-                    soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+                    begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
+                    begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
+                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
                 };
             };
         };
@@ -2042,7 +2042,8 @@ class CfgWeapons
             {
                 "this",
                 "Stun",
-                "DC15S_UGL"};
+                "DC15S_UGL"
+            };
         class DC15S_UGL : UGL_F
         {
             displayName = "[104th] Over-Under Grenade Launcher";
@@ -2218,7 +2219,8 @@ class CfgWeapons
                 "JA_104th_Weapons_Mags_40mw20",
                 "JA_104th_Weapons_Mags_50mw5",
                 "JA_104th_Weapons_Mags_100mw1",
-                "JA_104th_Weapons_Mags_EMPMw2"};
+                "JA_104th_Weapons_Mags_EMPMw2"
+            };
         modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F";
         modes[] = {"Single"};
         class Single : Single
@@ -2346,15 +2348,50 @@ class CfgWeapons
             {
                 "JA_104th_Weapons_Mags_20mw70",
                 "JA_104th_Weapons_Mags_50mw5",
-                "JA_104th_Weapons_Mags_100mw_AT"};
+                "JA_104th_Weapons_Mags_100mw_AT"
+            };
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
-        class stun : JA_104th_stun_muzzle
-        {
-        };
         muzzles[] =
             {
                 "this",
-                "Stun"};
+                "AT_muzzle"
+            };
+        class AT_muzzle : UGL_F
+        {
+            displayName = "[104th] Anti-Tank Attachment";
+            descriptionShort = "Anti-Tank Muzzle for DC17M";
+            useModelOptics = 0;
+            useExternalOptic = 0;
+            cameraDir = "OP_look";
+            discreteDistance[] = {50};
+            discreteDistanceCameraPoint[] = {"OP_eye_50"};
+            discreteDistanceInitIndex = 0;
+            magazines[] =
+                {
+                    "JA_104th_Weapons_Mags_100mw_AT"
+                };
+            magazineWell[] = {"UGL_40x36", "CBA_40mm_M203", "CBA_40mm_EGLM"};
+            reloadAction = "GestureReloadMXUGL";
+            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
+            class Single : Mode_SemiAuto
+            {
+                sounds[] = {"StandardSound"};
+                class BaseSoundModeType
+                {
+                    weaponSoundEffect = "";
+                    closure1[] = {};
+                    closure2[] = {};
+                    soundClosure[] = {};
+                };
+                class StandardSound : BaseSoundModeType
+                {
+                    weaponSoundEffect = "";
+                    begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
+                    begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
+                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+                };
+            };
+        };
         class OpticsModes
         {
             class Ironsights
@@ -2459,7 +2496,6 @@ class CfgWeapons
                 compatibleItems[]=
                 {
                     "ls_muzzle_dc17m_blaster",
-                    "ls_muzzle_dc17m_antiArmor",
                     "ls_muzzle_dc17m_sniper"
                 };
             };
@@ -2473,6 +2509,7 @@ class CfgWeapons
             };
         };
     };
+
     // DP23
     class JA_104th_DP23 : JA_104th_rifle_base_stunless
     {
@@ -2558,7 +2595,7 @@ class CfgWeapons
         displayName = "[104th] Westar M4";
         baseWeapon = "JA_104th_WestarM4";
         mass = 74;
-        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westarM5_ui_ca.paa";
         model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_F.p3d";
         handAnim[] =
             {
@@ -2678,7 +2715,7 @@ class CfgWeapons
         displayName = "[104th] Westar M5";
         baseWeapon = "JA_104th_WestarM5";
         mass = 74;
-        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westarM5_ui_ca.paa";
         model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
         handAnim[] =
             {
@@ -2882,9 +2919,9 @@ class CfgWeapons
             class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
-                begin2[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
-                begin3[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
+                begin1[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                begin2[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                begin3[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
@@ -2902,9 +2939,9 @@ class CfgWeapons
             class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
-                begin2[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
-                begin3[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
+                begin1[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                begin2[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
+                begin3[] = {"\ls\core\addons\sounds\weapons\westar35s\shot1.wss", +3db, 1, 2200};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
@@ -2964,11 +3001,12 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
                     {
-                        "SWLW_Westar35S_scope",
+                        "ls_cows_westar35s_scope",
                         "3AS_Imp_Optic_1",
                         "3AS_Imp_Optic_2",
                         "3AS_Imp_Optic_3",
-                        "3AS_Imp_Optic_4"};
+                        "3AS_Imp_Optic_4"
+                    };
             };
                         class MuzzleSlot: MuzzleSlot
             {
@@ -3275,7 +3313,8 @@ class CfgWeapons
                 compatibleItems[] =
                     {
                         "muzzle_snds_L",
-                        "3AS_muzzle_DC17S_F"};
+                        "3AS_muzzle_DC17S_F"
+                    };
             };
         };
     };
@@ -3290,13 +3329,14 @@ class CfgWeapons
         displayName = "[104th] Westar 35SA";
         baseWeapon = "JA_104th_Westar35SA";
         mass = 24;
-        picture = "\SWLW_merc_mando\pistols\westar35sa\data\ui\SWLW_westar35sa_ui.paa";
-        model = "SWLW_merc_mando\pistols\westar35sa\westar35sa.p3d";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westar35sa_ui_ca.paa";
+        model = "\ls\core\addons\weapons_westar\westar35sa\ls_weapon_westar35sa.p3d";
         reloadAction = "3AS_Vent_Reload_Pistol";
         reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg", 2, 1, 30};
         magazines[] =
             {
-                "JA_104th_Weapons_Mags_10mw40"};
+                "JA_104th_Weapons_Mags_10mw40"
+            };
         muzzles[] = {"this"};
         fireLightDiffuse[] = {0.5, 0.5, 0.25};
         fireLightAmbient[] = {0.5, 0.5, 0.25};
@@ -3313,9 +3353,9 @@ class CfgWeapons
             class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
-                begin2[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
-                begin3[] = {"SWLW_merc_mando\rifles\westar35s\sounds\westar35s", +3db, 1, 2200};
+                begin1[] = {"\ls\core\addons\sounds\weapons\westar35sa\shot1.wss",1,1,1800};
+                begin2[] = {"\ls\core\addons\sounds\weapons\westar35sa\shot1.wss",1,1,1800};
+                begin3[] = {"\ls\core\addons\sounds\weapons\westar35sa\shot1.wss",1,1,1800};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
         };
@@ -3330,6 +3370,18 @@ class CfgWeapons
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] = {};
+            };
+            class PointerSlot : PointerSlot
+            {
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+                displayName = "Pointer Slot";
+                compatibleItems[] = 
+                {
+                    "ls_pointer_westar35sa_flashlight",
+                    "ls_pointer_westar35sa_laser"
+                };
             };
         };
     };
@@ -3923,7 +3975,8 @@ class CfgMagazines
     // FP773 HP + 17M sniper
     class JA_104th_Weapons_Mags_50mw5 : 30Rnd_65x39_caseless_mag
     {
-        JA_104th_isSniperMag = 1 displayName = "[104th] High Power Sniper Energy Cell";
+        JA_104th_isSniperMag = 1;
+        displayName = "[104th] High Power Sniper Energy Cell";
         displayNameShort = "5Rnd 50MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
