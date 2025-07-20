@@ -245,6 +245,7 @@ class cfgVehicles
 	};
 	class OPTRE_M494 : I_APC_Tracked_03_base_F
 	{
+		class VehicleTransport;
 		class ACE_SelfActions;
 	};
 
@@ -10664,6 +10665,17 @@ class cfgVehicles
 				volume = "(1-camPos)*(rain - rotorSpeed/2)*2";
 			};
 		};
+		tas_canBlift = 1;
+		tas_liftVars = "[[[[0.1, -3, -5.3]]], [0.27], [-0.2]]";
+		class VehicleTransport : VehicleTransport
+		{
+			class Cargo
+			{
+				parachuteClass = "B_Parachute_02_F";
+				parachuteHeightLimit = 40;
+				canBeTransported = TRUE;
+			};
+		}
 	};
 	class JA_104th_Oryx : JA_104th_OryxNS
 	{
@@ -12129,22 +12141,7 @@ class cfgVehicles
 				parachuteClass = "B_Parachute_02_F";
 				parachuteHeightLimit = 40;
 				canBeTransported = TRUE;
-				dimensions[] = {"BBox_1_1_pos", "BBox_1_2_pos"};
 			};
-			class Carrier
-			{
-				cargoAlignment[] = {"center", "front"};
-				cargoBayDimentions[] = {"Limit1", "limit2"};
-				cargoSpacing[] = {0, 0, 0};
-				disableHeightLimit = 1;
-				exits[] = {"pos_cargo_load"};
-				loadingAngle = 60;
-				loadingDistance = 15;
-				maxLoadMass = 1e+06;
-				parachuteClassDefault = "B_Parachute_02_F";
-				parachuteHeightLimitDefault = 50;
-				unloadingInterval = 2;
-			}
 		}
 		scopeArsenal = 2;
 		scopeCurator = 2;

@@ -162,6 +162,13 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper ARC backpack (104th)";
 		maximumLoad = 360;
+		tf_dialog = "ls_radios_cloneLR";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
 	};
 	class JA_104th_Spectre_RC_Backpack : ls_sob_commando_backpack
 	{
@@ -193,6 +200,7 @@ class CfgVehicles
 				"Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_LR_Main.paa", // Minipack
 				"Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_Lr_Top.paa"	  // slotss
 			};
+		tf_range = 25000;
 	};
 	class JA_104th_Accessories_Heavy_Backpack : ls_gar_heavy_backpack
 	{
@@ -267,6 +275,7 @@ class CfgVehicles
 				"",															// Medic
 				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa"	// RTO
 			};
+		tf_range = 25000;
 	};
 	class JA_104th_RTO_Mini_Backpack : ls_gar_rto_mini_backpack
 	{
@@ -279,6 +288,7 @@ class CfgVehicles
 				"Jangos_Armory_Backpacks\data\Textures\104th_MiniPack.paa",		 // Minipack
 				"Jangos_Armory_Backpacks\data\Textures\104th_MiniPack_slots.paa" // slotss
 			};
+		tf_range = 25000;
 	};
 
 	class JA_104th_RTO_Mini_Spirit_Backpack : ls_gar_rto_mini_backpack
@@ -292,6 +302,7 @@ class CfgVehicles
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Spirit_Mini_Lr_Main.paa", // Minipack
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Spirit_Mini_Lr_Top.paa"	  // slotss
 			};
+		tf_range = 25000;
 	};
 
 	class JA_104th_RTO_Mini_Tusk_Backpack : ls_gar_rto_mini_backpack
@@ -305,6 +316,7 @@ class CfgVehicles
 				"Jangos_Armory_Backpacks\data\Textures\104th_Tusk_Mini_Lr.paa",		 // Minipack
 				"Jangos_Armory_Backpacks\data\Textures\104th_Tusk_Mini_Lr_Upper.paa" // slotss
 			};
+		tf_range = 25000;
 	};
 
 	class JA_104th_RTO_Mini_Backpack_ME : ls_gar_rto_mini_backpack
@@ -318,6 +330,7 @@ class CfgVehicles
 				"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Mini_Backpack.paa",			   // Minipack
 				"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Mini_Backpack_Accumulator.paa" // slotss
 			};
+		tf_range = 25000;
 	};
 
 	// Cerberus Specific
@@ -386,6 +399,7 @@ class CfgVehicles
 				"",																	   // Medic
 				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_1.paa"  // RTO
 			};
+		tf_range = 25000;
 	};
 	class JA_104th_Backpack_Cerberus_2 : ls_gar_standard_backpack
 	{
@@ -452,6 +466,7 @@ class CfgVehicles
 				"",																	   // Medic
 				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_2.paa"  // RTO
 			};
+		tf_range = 25000;
 	};
 	class JA_104th_Backpack_Cerberus_3 : ls_gar_standard_backpack
 	{
@@ -518,6 +533,7 @@ class CfgVehicles
 				"",																	   // Medic
 				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_3.paa"  // RTO
 			};
+		tf_range = 25000;
 	};
 	class JA_104th_Accessories_Heavy_Backpack_Bulky : ls_gar_heavy_backpack
 	{
@@ -607,6 +623,7 @@ class CfgVehicles
 				"",																	   // Medic
 				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack_Cerberus_4.paa"  // RTO
 			};
+		tf_range = 25000;
 	};
 	class JA_104th_Backpack_ME : ls_gar_standard_backpack
 	{
@@ -673,6 +690,7 @@ class CfgVehicles
 				"",																   // Medic
 				"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Backpack.paa"  // RTO
 			};
+		tf_range = 25000;
 	};
 
 	// Airborne JT12s
