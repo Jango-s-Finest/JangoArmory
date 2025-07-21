@@ -50,6 +50,14 @@ class CfgPatches
 			"JA_104th_guided_resupply_pod_launcher",
 			"JA_104th_AIM9X",
 			"JA_104th_AIM120"};
+		magazines[] = {
+			"JA_104_Personal_Shield",
+			"JA_104_Personal_Shield_Body",
+		};
+		ammo[] = {
+			"JA_104_Personal_Shield_Ammo",
+			"JA_104_Personal_Shield_Body_Ammo",
+		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
@@ -106,8 +114,7 @@ class VehicleSystemsTemplateRightPilot : DefaultVehicleSystemsDisplayManagerRigh
 class DefaultEventhandlers;
 class Extended_init_EventHandlers
 {
-	class 104th_MudHorn_tank_mobile
-	{
+	class 104th_MudHorn_tank_mobile{
 		class warden_tank_init_eh
 		{
 			init = "['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;";
@@ -117,8 +124,7 @@ class Extended_init_EventHandlers
 			init = "[_this select 0] spawn RD501_fnc_warden_tow";
 		};
 	};
-	class JA_104th_Medical_Droid
-	{
+	class JA_104th_Medical_Droid{
 		class areaSlowHealInit
 		{
 			init = "_this call BNA_KC_medical_fnc_areaHealerInit";
@@ -1647,8 +1653,7 @@ class cfgVehicles
 	};
 
 	class 3AS_Z95_Republic;
-	class JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue : 3AS_Z95_Republic
-	{
+	class JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue : 3AS_Z95_Republic{
 		Author = "212th + 3AS + Echo";
 		displayName = "Z-95 Reaper (Blue)";
 		scope = 2;
@@ -4250,8 +4255,7 @@ class cfgVehicles
 	};
 	class 3AS_ARC_170_Blue;
 	class UserActions;
-	class JA_104th_3AS_Reaper_ARC_170_Blue : 3AS_ARC_170_Blue
-	{
+	class JA_104th_3AS_Reaper_ARC_170_Blue : 3AS_ARC_170_Blue{
 		Author = "212th + 3AS + Echo";
 		displayName = "104th ARC 170 Blue";
 		scope = 2;
@@ -4657,8 +4661,7 @@ class cfgVehicles
 	};
 
 	class 3as_Vwing_base;
-	class JA_104th_VWing : 3as_Vwing_base
-	{
+	class JA_104th_VWing : 3as_Vwing_base{
 		Author = "212th + 3AS + Echo";
 		displayName = "V-Wing Fighter";
 		scope = 2;
@@ -5033,6 +5036,375 @@ class cfgVehicles
 		class EventHandlers : DefaultEventhandlers
 		{
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
+		};
+	};
+	class 3as_V19_base;
+	class JA_104th_V19_Torrent : 3as_V19_base{
+		Author = "212th + 3AS + Echo";
+		displayName = "V-19 Torrent Heavy Interceptor";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		crew = "ls_clone_phase2_pilot";
+
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class activeRadarSenorComponent
+					{
+						aimDown = 30;
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {0, 1, 1, 1};
+						componentType = "ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 1000;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 3000;
+						class AirTarget
+						{
+							maxRange = 8000;
+							minRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 8000;
+							minRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class AntiRadiationSensorComponent
+					{
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 90;
+						angleRangeVertical = 90;
+						animDirection = "";
+						color[] = {0.5, 1, 0.5, 0.5};
+						componentType = "PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 12000;
+						class AirTarget
+						{
+							maxRange = 8000;
+							minRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 8000;
+							minRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class IRSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 37;
+						maxTrackableSpeed = 100;
+						aimDown = 0;
+						allowsMarking = 1;
+						animDirection = "";
+						color[] = {1, 0, 0, 1};
+						componentType = "IRSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxFogSeeThrough = 0.995;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 2000;
+					};
+					class VisualSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 3000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 37;
+						maxTrackableSpeed = 1000;
+						aimDown = 0;
+						animDirection = "";
+						allowsMarking = 1;
+						color[] = {1, 1, 0.5, 0.8};
+						componentType = "VisualSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxFogSeeThrough = 1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						nightRangeCoef = 0;
+						typeRecognitionDistance = 2000;
+					};
+					class PassiveRadarSensorComponent
+					{
+						class AirTarget
+						{
+							minRange = 16000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 16000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 0;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {0.5, 1, 0.5, 0.5};
+						componentType = "PassiveRadarSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 12000;
+					};
+					class LaserSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						animDirection = "";
+						color[] = {1, 1, 1, 0};
+						componentType = "LaserSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 0;
+					};
+					class NVSensorComponent
+					{
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						aimDown = 0;
+						allowsMarking = 1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 180;
+						animDirection = "";
+						color[] = {1, 1, 1, 0};
+						componentType = "NVSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+10;
+						maxTrackableSpeed = 1e+10;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+10;
+						minTrackableSpeed = -1e+10;
+						typeRecognitionDistance = 0;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000, 2000, 16000, 8000};
+						resource = "RscCustomInfoSensors";
+					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+						resource = "RscCustomInfoCrew";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay = "SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000, 2000, 16000, 8000};
+						resource = "RscCustomInfoSensors";
+					};
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+						resource = "RscCustomInfoCrew";
+					};
+				};
+			};
+			class TransportPylonsComponent
+			{
+				UIPicture = "JangosVehicles\data\textures\plane_vwing_pylon_ca.paa";
+				class pylons
+				{
+					class pylons1
+					{
+						hardpoints[] = {"B_MISSILE_PYLON", "B_AMRAAM_D", "B_AMRAAM_D_RAIL"};
+						attachment = "PylonRack_Missile_BIM9X_x1";
+						priority = 10;
+						maxweight = 5000;
+						UIposition[] = {0.6, 0.45};
+					};
+					class pylons2 : pylons1
+					{
+						UIposition[] = {0.05, 0.45};
+						mirroredMissilePos = 1;
+					};
+					class pylons3 : pylons1
+					{
+						priority = 9;
+						UIposition[] = {0.55, 0.35};
+					};
+					class pylons4 : pylons3
+					{
+						priority = 13;
+						UIposition[] = {0.1, 0.35};
+						mirroredMissilePos = 3;
+					};
+				};
+			};
+			class TransportCounterMeasuresComponent;
 		};
 	};
 
@@ -6611,16 +6983,14 @@ class cfgVehicles
 		};
 	};
 
-	class JA_104th_vulture_dynamicLoadout_base : 3AS_Vulture_Base_F
-	{
+	class JA_104th_vulture_dynamicLoadout_base : 3AS_Vulture_Base_F{
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
 		displayName = "Swarm-Vulture Droid";
 	};
 
-	class JA_104th_Vulture_dynamicLoadout : 3AS_CIS_Vulture_CAS_F
-	{
+	class JA_104th_Vulture_dynamicLoadout : 3AS_CIS_Vulture_CAS_F{
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
@@ -6634,8 +7004,7 @@ class cfgVehicles
 	class SensorTemplateLaser;
 	class SensorTemplateNV;
 
-	class JA_104th_Vulture_dynamicLoadout_AA : 3AS_CIS_Vulture_AA_F
-	{
+	class JA_104th_Vulture_dynamicLoadout_AA : 3AS_CIS_Vulture_AA_F{
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
@@ -6966,8 +7335,7 @@ class cfgVehicles
 		};
 	};
 
-	class JA_104th_Vulture_dynamicLoadout_Bare : 3AS_CIS_Vulture_F
-	{
+	class JA_104th_Vulture_dynamicLoadout_Bare : 3AS_CIS_Vulture_F{
 		irTargetSize = 1;
 		radarTargetSize = 1;
 		armor = 50;
@@ -7081,8 +7449,7 @@ class cfgVehicles
 		class ACE_SelfActions;
 	};
 	*/
-	class JA_104th_NU : 3AS_Nuclass
-	{
+	class JA_104th_NU : 3AS_Nuclass{
 		displayName = "104th Nu-Class Shuttle";
 		scope = 2;
 		scopeArsenal = 2;
@@ -7596,8 +7963,7 @@ class cfgVehicles
 	// Xian Infantry
 
 	class VTOL_02_infantry_dynamicLoadout_base_F;
-	class O_T_VTOL_02_infantry_dynamicLoadout_F : VTOL_02_infantry_dynamicLoadout_base_F
-	{
+	class O_T_VTOL_02_infantry_dynamicLoadout_F : VTOL_02_infantry_dynamicLoadout_base_F{
 		class NewTurret;
 		class CargoTurret;
 	};
@@ -8238,12 +8604,10 @@ class cfgVehicles
 
 	// Xian Vehicle
 	class VTOL_02_vehicle_dynamicLoadout_base_F;
-	class O_T_VTOL_02_vehicle_dynamicLoadout_F : VTOL_02_vehicle_dynamicLoadout_base_F
-	{
+	class O_T_VTOL_02_vehicle_dynamicLoadout_F : VTOL_02_vehicle_dynamicLoadout_base_F{
 		class NewTurret;
 	};
-	class JA_104th_Xian_Vehicle : O_T_VTOL_02_vehicle_dynamicLoadout_F
-	{
+	class JA_104th_Xian_Vehicle : O_T_VTOL_02_vehicle_dynamicLoadout_F{
 		displayName = "104th Xian Vehicle";
 		scope = 2;
 		scopeArsenal = 2;
@@ -8837,8 +9201,7 @@ class cfgVehicles
 
 	// Republic Transport
 	class 3AS_Republic_Transport_01;
-	class JA_104th_Republic_Transport : 3AS_Republic_Transport_01
-	{
+	class JA_104th_Republic_Transport : 3AS_Republic_Transport_01{
 		displayName = "104th Republic Transport";
 		scope = 2;
 		scopeArsenal = 2;
@@ -9999,18 +10362,6 @@ class cfgVehicles
 		};
 	};
 
-	/*
-	class 3AS_ATRT;
-	class JA_104th_ATRT: 3AS_ATRT
-	{
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		displayName = "104th ATRT";
-	};
-	*/
-
-	// class OPTRE_M494;
-
 	class JA_104th_OryxNS : OPTRE_M494
 	{
 
@@ -10703,8 +11054,7 @@ class cfgVehicles
 	};
 
 	class 212th_B_APC_Wheeled_02_cannon_F;
-	class JA_104th_APC_Light_Bantha : 212th_B_APC_Wheeled_02_cannon_F
-	{
+	class JA_104th_APC_Light_Bantha : 212th_B_APC_Wheeled_02_cannon_F{
 		displayName = "104th Light Bantha";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
@@ -11015,91 +11365,9 @@ class cfgVehicles
 		model = "JangosVehicles\data\models\Droidekared.p3d";
 		hiddenSelections[] = {};
 	};
-	/*class BaseShield100m: House_F {
-
-		displayname = "Base Shield Sphere 100m";
-		model = "JangosVehicles\data\models\100mBubble.p3d";
-		hiddenSelections[] = {};
-		scope = 2;
-		scopeCurator = 2;
-		author = "Echo";
-		armor = 10000;
-		class EventHandlers: DefaultEventhandlers
-		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\BaseShieldInit.sqf';";
-			killed="deleteVehicle (_this select 0)";
-		};
-	};
-	class BaseShield100mFB: shieldtest {
-
-		displayname = "Base Shield Sphere 100m Full Blue";
-		model = "JangosVehicles\data\models\100mBubblefb.p3d";
-		hiddenSelections[] = {};
-		scope = 0;
-	};
-	class BaseShield100mHB: shieldtest {
-
-		displayname = "Base Shield Sphere 100m Half Blue";
-		model = "JangosVehicles\data\models\100mBubblehb.p3d";
-		hiddenSelections[] = {};
-		scope = 0;
-	};
-	class BaseShield100mRed: shieldtest {
-
-		displayname = "Base Shield Sphere 100m Red";
-		model = "JangosVehicles\data\models\100mBubblered.p3d";
-		hiddenSelections[] = {};
-		scope = 0;
-	};
-	class BaseShield100mSpawner: B_UGV_01_F
-	{
-
-		displayname = "100m Base Shield Spawner";
-		scope = 2;
-		scopeCurator = 2;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		author = "Echo";
-		class EventHandlers: DefaultEventhandlers
-		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\100mBaseShieldSpawner.sqf';";
-			killed="deleteVehicle (_this select 0)";
-		};
-	};
-	class BaseShield500m: House_F {
-
-		displayname = "Base Shield Sphere 500m";
-		model = "JangosVehicles\data\models\500mBubble.p3d";
-		hiddenSelections[] = {};
-		scope = 2;
-		scopeCurator = 2;
-		author = "Echo";
-		armor = 10000;
-		class EventHandlers: DefaultEventhandlers
-		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\BaseShieldInit.sqf';";
-			killed="deleteVehicle (_this select 0)";
-		};
-	};
-	class BaseShield500mSpawner: B_UGV_01_F
-	{
-
-		displayname = "500m Base Shield Spawner";
-		scope = 2;
-		scopeCurator = 2;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		author = "Echo";
-		class EventHandlers: DefaultEventhandlers
-		{
-			init="[_this select 0] execVM '\JangosVehicles\Script\Shield\500mBaseShieldSpawner.sqf';";
-			killed="deleteVehicle (_this select 0)";
-		};
-	};*/
-
+	
 	class Land_HelipadEmpty_F;
-	class 104th_EmptySoundPad : Land_HelipadEmpty_F
-	{
+	class 104th_EmptySoundPad : Land_HelipadEmpty_F{
 		displayname = "Shield bubble Sound";
 		hiddenSelections[] = {};
 		scope = 2;
@@ -11108,8 +11376,7 @@ class cfgVehicles
 			init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\ShieldSound.sqf';";
 		};
 	};
-	class 104th_GiantEmptySoundPad : Land_HelipadEmpty_F
-	{
+	class 104th_GiantEmptySoundPad : Land_HelipadEmpty_F{
 		displayname = "Giant Shield bubble Sound";
 		hiddenSelections[] = {};
 		scope = 2;
@@ -11121,8 +11388,7 @@ class cfgVehicles
 
 	// Split
 
-	class JA_104th_Box_Ammo : 3AS_Supply_Large_Ammo_Prop
-	{
+	class JA_104th_Box_Ammo : 3AS_Supply_Large_Ammo_Prop{
 		author = "Dak";
 		displayName = "Ammo Box - JLTS";
 		scope = 2;
@@ -11186,8 +11452,7 @@ class cfgVehicles
 		{
 		};
 	};
-	class JA_104th_Box_Explosives : 3AS_Supply_Large_Black_Prop
-	{
+	class JA_104th_Box_Explosives : 3AS_Supply_Large_Black_Prop{
 		author = "Dak";
 		displayName = "Explosives Box - 104th";
 		scope = 2;
@@ -11246,8 +11511,7 @@ class cfgVehicles
 		{
 		};
 	};
-	class JA_104th_Box_Medic : 3AS_Supply_Large_Medical_Prop
-	{
+	class JA_104th_Box_Medic : 3AS_Supply_Large_Medical_Prop{
 		author = "Dak";
 		displayName = "Medical Box - 104th";
 		scope = 2;
@@ -11547,8 +11811,7 @@ class cfgVehicles
 	}
 
 	class 3AS_Republic_HR_Bag;
-	class JA_104th_Republic_HR_Bag : 3AS_Republic_HR_Bag
-	{
+	class JA_104th_Republic_HR_Bag : 3AS_Republic_HR_Bag{
 		faction = "3AS_REP";
 		author = "3AS + Ice";
 		scope = 2;
@@ -11571,8 +11834,7 @@ class cfgVehicles
 	};
 
 	class 3AS_HeavyRepeater_Unarmoured;
-	class JA_104th_HeavyRepeater_Unarmoured : 3AS_HeavyRepeater_Unarmoured
-	{
+	class JA_104th_HeavyRepeater_Unarmoured : 3AS_HeavyRepeater_Unarmoured{
 		displayName = "104th Heavy Repeater";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
@@ -11605,8 +11867,7 @@ class cfgVehicles
 			class Carrier;
 		};
 	};
-	class 104th_MudHorn_tank_mobile : B_APC_Tracked_01_CRV_F
-	{
+	class 104th_MudHorn_tank_mobile : B_APC_Tracked_01_CRV_F{
 		displayName = "104th MudHorn";
 		ace_refuel_fuelCargo = 999999999999;
 		ace_rearm_defaultSupply = 999999999999;
@@ -12146,8 +12407,7 @@ class cfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
 	};
-	class 104th_MudHorn_tank_field : 104th_MudHorn_tank_mobile
-	{
+	class 104th_MudHorn_tank_field : 104th_MudHorn_tank_mobile{
 		displayName = "104th MudHorn Fast";
 		enginePower = 2400;
 		gearBox[] = {-7, 0, 11, 8, 5.6999998, 4.1999998};
@@ -12248,6 +12508,10 @@ class CfgAmmo
 		typicalSpeed = 960;
 		warheadName = "AP";
 	};
+	class Aux501_Weapons_Ammo_Grenades_Personal_Shield;
+	class Aux501_Weapons_Ammo_Grenades_Personal_Shield_pee_pee;
+	class JA_104_Personal_Shield_Ammo: Aux501_Weapons_Ammo_Grenades_Personal_Shield {};
+	class JA_104_Personal_Shield_Body_Ammo: Aux501_Weapons_Ammo_Grenades_Personal_Shield_pee_pee {};
 };
 
 class CfgMagazines
@@ -12294,6 +12558,28 @@ class CfgMagazines
         count = 4;
         pylonWeapon = "JA_104th_AIM120";
     };
+	class Aux501_Weapons_Mags_Grenades_Shield_Personal;
+	class Aux501_Weapons_Mags_Grenades_Shield_Personal_pee_pee;
+	class JA_104_Personal_Shield: Aux501_Weapons_Mags_Grenades_Shield_Personal {
+		ammo = "JA_104_Personal_Shield_Ammo";
+		displayName = "[104th] Personal Shield - Weapon";
+        scope = 2;
+		mass = 8;
+		class Library
+		{
+			libTextDesc = "";
+		};
+	};
+	class JA_104_Personal_Shield_Body: Aux501_Weapons_Mags_Grenades_Shield_Personal_pee_pee {
+		ammo = "JA_104_Personal_Shield_Body_Ammo";
+		displayName = "[104th] Personal Shield - Body";
+        scope = 2;
+		mass = 16;
+		class Library
+		{
+			libTextDesc = "";
+		};
+	};
 };
 
 class CfgRecoils
