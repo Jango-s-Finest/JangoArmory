@@ -2,7 +2,8 @@
 [h2]Custom Gear[/h2]
 [h3]Added[/h3]
 [list]
-    [*] 
+    [*] Clone Trooper medic backpack LR (104th)
+    [*] Clone Trooper P2 Helmet (104th Granite)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -51,7 +52,8 @@ _______________
 ```
 New Gear
 --------------
-- 
+- Clone Trooper medic backpack LR (104th)
+- Clone Trooper P2 Helmet (104th Granite)
 
 Changed Gear
 ------------------
@@ -62,14 +64,13 @@ Changed Gear
 ```
 New Weapons & Attachments
 --------------
-- 
+- [104th] Personal Shield - Body
+- [104th] Personal Shield - Weapon
 
 Changed Weapons & Attachments
 ------------------
 - fixed the first person UGL ranging 
 - Replaced some of the remaining old LS classnames
-- [104th] Personal Shield - Body
-- [104th] Personal Shield - Weapon
 
 Removed Weapons & Attachments
 ------------------

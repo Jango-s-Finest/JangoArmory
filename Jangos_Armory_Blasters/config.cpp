@@ -143,7 +143,8 @@ class CfgPatches
             "JA_104th_Weapons_Ammo_flare_blue",
             "JA_104th_Weapons_Ammo_flare_cyan",
             "JA_104th_Weapons_Ammo_flare_purple",
-
+            "JA_104_Personal_Shield_Ammo",
+			"JA_104_Personal_Shield_Body_Ammo",
         };
 
         magazines[] = {
@@ -196,10 +197,12 @@ class CfgPatches
             "JA_104th_Weapons_Mags_GL_flare_Yellow3",
             "JA_104th_Weapons_Mags_GL_flare_Blue3",
             "JA_104th_Weapons_Mags_GL_flare_Cyan3",
-            "JA_104th_Weapons_Mags_GL_flare_Purple3"};
+            "JA_104th_Weapons_Mags_GL_flare_Purple3",
+            "JA_104_Personal_Shield",
+			"JA_104_Personal_Shield_Body",
+        };
     };
 };
-
 class CfgEditorCategories
 {
     class JA_104_EdCat_Objects
@@ -3791,6 +3794,10 @@ class CfgAmmo
     {
         lightColor[] = {.7, 0, 1, 0};
     };
+    class Aux501_Weapons_Ammo_Grenades_Personal_Shield;
+	class Aux501_Weapons_Ammo_Grenades_Personal_Shield_pee_pee;
+	class JA_104_Personal_Shield_Ammo: Aux501_Weapons_Ammo_Grenades_Personal_Shield {};
+	class JA_104_Personal_Shield_Body_Ammo: Aux501_Weapons_Ammo_Grenades_Personal_Shield_pee_pee {};
 };
 
 class CfgMagazines
@@ -4338,6 +4345,30 @@ class CfgMagazines
         count = 6;
         mass = 30;
     };
+
+    // Grenades
+    class Aux501_Weapons_Mags_Grenades_Shield_Personal;
+	class Aux501_Weapons_Mags_Grenades_Shield_Personal_pee_pee;
+	class JA_104_Personal_Shield: Aux501_Weapons_Mags_Grenades_Shield_Personal {
+		ammo = "JA_104_Personal_Shield_Ammo";
+		displayName = "[104th] Personal Shield - Weapon";
+        scope = 2;
+		mass = 8;
+		class Library
+		{
+			libTextDesc = "";
+		};
+	};
+	class JA_104_Personal_Shield_Body: Aux501_Weapons_Mags_Grenades_Shield_Personal_pee_pee {
+		ammo = "JA_104_Personal_Shield_Body_Ammo";
+		displayName = "[104th] Personal Shield - Body";
+        scope = 2;
+		mass = 16;
+		class Library
+		{
+			libTextDesc = "";
+		};
+	};
 };
 
 class CfgVehicles

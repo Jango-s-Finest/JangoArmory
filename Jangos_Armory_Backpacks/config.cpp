@@ -236,6 +236,31 @@ class CfgVehicles
 			};
 	};
 
+	class JA_104th_Medic_Backpack_LR : JA_104th_Medic_Backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper medic backpack LR (104th)";
+		maximumLoad = 300;
+		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
+		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // don't change unless RTO
+				"",																  // Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // Medic
+				""																  // RTO
+			};
+		tf_dialog = "ls_radios_cloneLR";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
+
 	class JA_104th_Carmine_Medic_Backpack : ls_gar_medic_backpack
 	{
 		author = "Tundra";
