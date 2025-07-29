@@ -11,9 +11,12 @@ class CfgPatches
 			"JA_104th_Base_TX130",
 			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
+			"JA_104th_Box_Engineer",
 			"JA_104th_Box_Medic",
 			"JA_104th_Box_Resupply",
 			"JA_104th_Medical_Droid",
+			"JA_104th_Vehicle_spawner_Droid_Air",
+			"JA_104th_Vehicle_spawner_Droid_Ground",
 			"JA_104th_BARC",
 			"JA_104th_BARC_WP",
 			"JA_104th_BARC_Talon",
@@ -40,6 +43,7 @@ class CfgPatches
 			"JA_104th_Uwing",
 			"JA_104th_N1",
 			"JA_104th_VWing",
+			"JA_104th_V19_Torrent",
 			"JA_104th_Vulture_dynamicLoadout_base",
 			"JA_104th_Vulture_dynamicLoadout",
 			"JA_104th_Vulture_dynamicLoadout_AA",
@@ -50,14 +54,6 @@ class CfgPatches
 			"JA_104th_guided_resupply_pod_launcher",
 			"JA_104th_AIM9X",
 			"JA_104th_AIM120"};
-		magazines[] = {
-			"JA_104_Personal_Shield",
-			"JA_104_Personal_Shield_Body",
-		};
-		ammo[] = {
-			"JA_104_Personal_Shield_Ammo",
-			"JA_104_Personal_Shield_Body_Ammo",
-		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
@@ -91,6 +87,10 @@ class cfgEditorSubcategories
 	{
 		displayname = "104th - Droids";
 	};
+	class 104th_Categ_Clones_Terminals
+	{
+		displayname = "104th - Terminals";
+	};
 };
 
 class SensorTemplatePassiveRadar;
@@ -115,10 +115,6 @@ class DefaultEventhandlers;
 class Extended_init_EventHandlers
 {
 	class 104th_MudHorn_tank_mobile{
-		class warden_tank_init_eh
-		{
-			init = "['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Ammo_mk2', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Explosives', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;['JA_104th_Box_Medic', _this select 0, true] call ace_cargo_fnc_loadItem;";
-		};
 		class adsd_tow
 		{
 			init = "[_this select 0] spawn RD501_fnc_warden_tow";
@@ -159,6 +155,8 @@ class cfgVehicles
 	class Aux212_3AS_Reaper_Y_Wing;
 	class ls_carrybox_base;
 	class 3AS_Supply_Large_Ammo_Prop;
+	class 3AS_Supply_Large_Orange_Prop;
+	class 3AS_Supply_Large_Blue_Prop;
 	class 3AS_Supply_Large_Black_Prop;
 	class 3AS_Supply_Large_Medical_Prop;
 	class Land_3AS_Medical_Droid;
@@ -175,7 +173,10 @@ class cfgVehicles
 	class LandVehicle;
 	class Car;
 	class ls_vehicle_barc_base;
-	class ls_vehicle_barc;
+	class ls_vehicle_barc{
+		class HitPoints;
+		class ACE_SelfActions;
+	};
 	class HitPoints;
 	class HitLFWheel;
 	class HitLF2Wheel;
@@ -6976,9 +6977,57 @@ class cfgVehicles
 			class BlueLeader
 			{
 				displayName = "Blue Leader";
-				author = "$STR_3as_Studio";
-				textures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
+				author = "Dak";
+				textures[] = {
+					"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", 
+					"3as\3as_btlb\data\detail_co.paa", 
+					"3as\3as_btlb\data\interior_co.paa"
+				};
 				factions[] = {"104th_Guys"};
+			};
+			class Blue: BlueLeader
+			{
+				displayName = "Blue";
+				textures[] = {
+					"JangosVehicles\data\textures\YWing_Body_Blue.paa", 
+					"3as\3as_btlb\data\detail_co.paa", 
+					"3as\3as_btlb\data\interior_co.paa"
+				};
+			};
+		};
+		textureList[] = {"BlueLeader", 1, "Blue", 1};
+		class ACE_SelfActions : ACE_SelfActions
+		{
+			class Style_Changer
+			{
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2;
+				class DefaultSkin
+				{
+					displayName = "104th";
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\YWing_Body_BlueLeader.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+					showDisabled = 0;
+					runOnHover = 0;
+					priority = 2.5;
+				};
+				class JA_104th_Skins
+				{
+					displayname = "104th Skins";
+					class 104th_Blue : DefaultSkin
+					{
+						displayName = "104th Blue";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\YWing_Body_Blue.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+					};
+				};
+				class Custom_Skins
+				{
+					displayname = "Custom Skins";
+				};
 			};
 		};
 	};
@@ -7407,6 +7456,98 @@ class cfgVehicles
 			class HitGlass4 : HitGlass4
 			{
 				armor = 0.25;
+			};
+		};
+		class TextureSources
+		{
+			class barc_base
+			{
+				displayName = "104th";
+				author = "Dak";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\Body_104_CO.paa", 
+					"JangosVehiclesGround\data\textures\Weapons_104_CO.paa", 
+					"JangosVehiclesGround\data\textures\Dashboard_104_CO.paa",
+				};
+				factions[] = {"104th_Guys"};
+			};
+			class barc_WP: barc_base
+			{
+				displayName = "104th WolfPack Logo";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\Body_104_wp_CO.paa", 
+					"JangosVehiclesGround\data\textures\Weapons_104_CO.paa", 
+					"JangosVehiclesGround\data\textures\Dashboard_104_CO.paa",
+				};
+			};
+			class barc_Talon: barc_base
+			{
+				displayName = "104th Talon Logo";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\Body_104_talon_CO.paa", 
+					"JangosVehiclesGround\data\textures\Weapons_104_CO.paa", 
+					"JangosVehiclesGround\data\textures\Dashboard_104_CO.paa",
+				};
+			};
+		};
+		textureList[] = {"barc_base", 1, "barc_WP", 1, "barc_Talon", 1};
+		class ACE_SelfActions : ACE_SelfActions
+		{
+			class Style_Changer
+			{
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2;
+				class DefaultSkin
+				{
+					displayName = "104th";
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement = "_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\Body_104_CO.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\Weapons_104_CO.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Dashboard_104_CO.paa'];";
+					showDisabled = 0;
+					runOnHover = 0;
+					priority = 2.5;
+				};
+				class JA_104th_Skins
+				{
+					displayname = "104th Skins";
+					class 104th_Logo : DefaultSkin
+					{
+						displayName = "104th Logo";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\Body_104_wp_CO.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\Weapons_104_CO.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Dashboard_104_CO.paa'];";
+					};
+					class 104th_Talon : DefaultSkin
+					{
+						displayName = "104th Talon";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\Body_104_talon_CO.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\Weapons_104_CO.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Dashboard_104_CO.paa'];";
+					};
+					class 104th_Sniper : DefaultSkin
+					{
+						displayName = "104th Sniper";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\Body_104_sniper_CO.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\Weapons_104_CO.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Dashboard_104_CO.paa'];";
+					};
+					class 104th_Medic : DefaultSkin
+					{
+						displayName = "104th Medic";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\Body_104_medic_CO.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\Weapons_104_CO.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Dashboard_104_CO.paa'];";
+					};
+					class 104th_EOD : DefaultSkin
+					{
+						displayName = "104th EOD";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\Body_104_eod_CO.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\Weapons_104_CO.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Dashboard_104_CO.paa'];";
+					};
+				};
+				class Custom_Skins
+				{
+					displayname = "Custom Skins";
+					class 104th_Beans : DefaultSkin
+					{
+						displayName = "Beans";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\Body_104_beans_CO.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\Weapons_104_CO.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Dashboard_104_CO.paa'];";
+					};
+				};
 			};
 		};
 	};
@@ -11390,7 +11531,7 @@ class cfgVehicles
 
 	class JA_104th_Box_Ammo : 3AS_Supply_Large_Ammo_Prop{
 		author = "Dak";
-		displayName = "Ammo Box - JLTS";
+		displayName = "Engineer Ammo Box - 104th";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -11399,60 +11540,241 @@ class cfgVehicles
 		maximumLoad = 3000;
 		class TransportWeapons
 		{
+			class _xx_3AS_RPS6_HP{
+				count = 3;
+				weapon = "3AS_RPS6_HP";
+			};
+			class _xx_JA_104th_DC17SA{
+				count = 6;
+				weapon = "JA_104th_DC17SA";
+			};
+			class _xx_JA_104th_DC15A{
+				count = 2;
+				weapon = "JA_104th_DC15A";
+			};
+			class _xx_JA_104th_DC15S{
+				count = 2;
+				weapon = "JA_104th_DC15S";
+			};
 		};
 		class TransportMagazines
 		{
-			class _xx_JLTS_DC15A_mag
-			{
-				count = 20;
-				magazine = "JLTS_DC15A_mag";
-			};
-			class _xx_JLTS_DC17SA_mag
-			{
-				count = 30;
-				magazine = "JLTS_DC17SA_mag";
-			};
-			class _xx_JLTS_DW32S_mag
+			class _xx_JA_104th_Weapons_Mags_100Mw1
 			{
 				count = 10;
-				magazine = "JLTS_DW32S_mag";
+				magazine = "JA_104th_Weapons_Mags_100Mw1";
 			};
-			class _xx_JLTS_Z6_mag
+			class _xx_JA_104th_Weapons_Mags_10mw40
 			{
-				count = 10;
-				magazine = "JLTS_Z6_mag";
+				count = 50;
+				magazine = "JA_104th_Weapons_Mags_10mw40";
 			};
-			class _xx_JLTS_stun_mag_short
+			class _xx_JA_104th_Weapons_Mags_20mw70
 			{
-				count = 10;
-				magazine = "JLTS_stun_mag_short";
+				count = 25;
+				magazine = "JA_104th_Weapons_Mags_20mw70";
+			};
+			class _xx_JA_104th_Weapons_Mags_20mw240
+			{
+				count = 25;
+				magazine = "JA_104th_Weapons_Mags_20mw240";
+			};
+			class _xx_JA_104th_Weapons_Mags_30mw30
+			{
+				count = 25;
+				magazine = "JA_104th_Weapons_Mags_30mw30";
+			};
+			class _xx_JA_104th_Weapons_Mags_10mw50
+			{
+				count = 25;
+				magazine = "JA_104th_Weapons_Mags_10mw50";
+			};
+			class _xx_JA_104th_Weapons_Mags_40mw20
+			{
+				count = 25;
+				magazine = "JA_104th_Weapons_Mags_40mw20";
+			};
+			class _xx_JA_104th_Weapons_Mags_20mw40
+			{
+				count = 25;
+				magazine = "JA_104th_Weapons_Mags_20mw40";
+			};
+			class _xx_JA_104th_Weapons_Mags_10mw30
+			{
+				count = 25;
+				magazine = "JA_104th_Weapons_Mags_10mw30";
+			};
+			class _xx_JA_104th_Weapons_Mags_10mw500
+			{
+				count = 25;
+				magazine = "JA_104th_Weapons_Mags_10mw500";
+			};
+			class _xx_3AS_10Rnd_EC30_Pellets
+			{
+				count = 25;
+				magazine = "3AS_10Rnd_EC30_Pellets";
+			};
+			class _xx_3AS_1Rnd_EC80_Flechette
+			{
+				count = 25;
+				magazine = "3AS_1Rnd_EC80_Flechette";
+			};
+			class _xx_3AS_10Rnd_ESlug_Mag
+			{
+				count = 25;
+				magazine = "3AS_10Rnd_ESlug_Mag";
 			};
 			class _xx_JLTS_stun_mag_long
 			{
 				count = 10;
 				magazine = "JLTS_stun_mag_long";
 			};
-			class _xx_SWLW_DC15A_mag
+			class _xx_JLTS_stun_mag_short
 			{
-				count = 20;
-				magazine = "SWLW_DC15A_mag";
+				count = 10;
+				magazine = "JLTS_stun_mag_short";
 			};
-			class _xx_SWLW_DC15S_mag
+			class _xx_3AS_MK41_AT
 			{
-				count = 20;
-				magazine = "SWLW_DC15S_mag";
+				count = 6;
+				magazine = "3AS_MK41_AT";
 			};
-			class _xx_SWLW_DC17_mag
+			class _xx_3AS_MK42_HE
 			{
-				count = 20;
-				magazine = "SWLW_DC17_mag";
+				count = 6;
+				magazine = "3AS_MK42_HE";
+			};
+			class _xx_ls_magazine_plx1_at
+			{
+				count = 3;
+				magazine = "ls_magazine_plx1_at";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_HE3
+			{
+				count = 4;
+				magazine = "JA_104th_Weapons_Mags_GL_HE3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_HE2
+			{
+				count = 4;
+				magazine = "JA_104th_Weapons_Mags_GL_HE2";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_AP2
+			{
+				count = 4;
+				magazine = "JA_104th_Weapons_Mags_GL_AP2";
+			};
+			class _xx_1Rnd_HE_Grenade_shell
+			{
+				count = 12;
+				magazine = "1Rnd_HE_Grenade_shell";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_smoke_blue3
+			{
+				count = 4;
+				magazine = "JA_104th_Weapons_Mags_GL_smoke_blue3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_smoke_purple3
+			{
+				count = 2;
+				magazine = "JA_104th_Weapons_Mags_GL_smoke_purple3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_smoke_red3
+			{
+				count = 4;
+				magazine = "JA_104th_Weapons_Mags_GL_smoke_red3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_smoke_white6
+			{
+				count = 6;
+				magazine = "JA_104th_Weapons_Mags_GL_smoke_white6";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_Blue3
+			{
+				count = 4;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_Blue3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_Purple3
+			{
+				count = 2;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_Purple3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_Red3
+			{
+				count = 4;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_Red3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_White3
+			{
+				count = 6;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_White3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_Green3
+			{
+				count = 2;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_Green3";
+			};
+			class _xx_Aux501_Weapons_Mags_Thermal_Detonator
+			{
+				count = 40;
+				magazine = "Aux501_Weapons_Mags_Thermal_Detonator";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_White
+			{
+				count = 40;
+				magazine = "Aux501_Weapons_Mags_Smoke_White";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Red
+			{
+				count = 4;
+				magazine = "Aux501_Weapons_Mags_Smoke_Red";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Blue
+			{
+				count = 4;
+				magazine = "Aux501_Weapons_Mags_Smoke_Blue";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Purple
+			{
+				count = 2;
+				magazine = "Aux501_Weapons_Mags_Smoke_Purple";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Orange
+			{
+				count = 2;
+				magazine = "Aux501_Weapons_Mags_Smoke_Orange";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Green
+			{
+				count = 2;
+				magazine = "Aux501_Weapons_Mags_Smoke_Green";
+			};
+			class _xx_ShieldGrenade_Mag
+			{
+				count = 1;
+				magazine = "ShieldGrenade_Mag";
+			};
+			class _xx_BNA_KC_jetpacks_fuelCan_mag
+			{
+				count = 5;
+				magazine = "BNA_KC_jetpacks_fuelCan_mag";
+			};
+			class _xx_Aux501_Weapons_Mags_Grenades_Shield_Personal
+			{
+				count = 8;
+				magazine = "Aux501_Weapons_Mags_Grenades_Shield_Personal";
 			};
 		};
 		class TransportItems
 		{
+			class _xx_JLTS_clone_comlink
+			{
+				count = 10;
+				name = "JLTS_clone_comlink";
+			};
 		};
 	};
-	class JA_104th_Box_Explosives : 3AS_Supply_Large_Black_Prop{
+	class JA_104th_Box_Explosives : 3AS_Supply_Large_Orange_Prop{
 		author = "Dak";
 		displayName = "Explosives Box - 104th";
 		scope = 2;
@@ -11466,49 +11788,214 @@ class cfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_SWLW_smokeRed_mag
+			class _xx_C12_Remote_Mag
 			{
 				count = 10;
-				magazine = "SWLW_smokeRed_mag";
+				magazine = "C12_Remote_Mag";
 			};
-			class _xx_1Rnd_SmokeOrange_Grenade_shell
+			class _xx_SatchelCharge_Remote_Mag
+			{
+				count = 15;
+				magazine = "SatchelCharge_Remote_Mag";
+			};
+			class _xx_DemoCharge_Remote_Mag
+			{
+				count = 25;
+				magazine = "DemoCharge_Remote_Mag";
+			};
+			class _xx_ATMine_Range_Mag
 			{
 				count = 10;
-				magazine = "1Rnd_SmokeOrange_Grenade_shell";
+				magazine = "ATMine_Range_Mag";
 			};
-			class _xx_1Rnd_SmokePurple_Grenade_shell
+			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
-				count = 10;
-				magazine = "1Rnd_SmokePurple_Grenade_shell";
+				count = 20;
+				magazine = "SLAMDirectionalMine_Wire_Mag";
 			};
-			class _xx_1Rnd_SmokeRed_Grenade_shell
+			class _xx_APERSMine_Range_Mag
 			{
-				count = 10;
-				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 25;
+				magazine = "APERSMine_Range_Mag";
 			};
-			class _xx_1Rnd_SmokeWhite_Grenade_shell
+			class _xx_APERSBoundingMine_Range_Mag
 			{
-				count = 10;
-				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 25;
+				magazine = "APERSBoundingMine_Range_Mag";
 			};
-			class _xx_ls_mag_at_plx
+			class _xx_tsp_breach_silhouette_mag
 			{
-				count = 10;
-				magazine = "ls_mag_at_plx";
+				count = 2;
+				magazine = "tsp_breach_silhouette_mag";
 			};
-			class _xx_ls_mag_rpg_1rnd
+			class _xx_tsp_breach_popper_auto_mag
 			{
-				count = 10;
-				magazine = "ls_mag_rpg_1rnd";
+				count = 12;
+				magazine = "tsp_breach_popper_auto_mag";
 			};
-			class _xx_1Rnd_HE_Grenade_shell
-			{ //
-				count = 10;
-				magazine = "1Rnd_HE_Grenade_shell";
+			class _xx_tsp_breach_stick_mag
+			{
+				count = 2;
+				magazine = "tsp_breach_stick_mag";
+			};
+			class _xx_tsp_breach_block_mag
+			{
+				count = 4;
+				magazine = "tsp_breach_block_mag";
+			};
+			class _xx_tsp_breach_package_mag
+			{
+				count = 2;
+				magazine = "tsp_breach_package_mag";
 			};
 		};
 		class TransportItems
 		{
+			class _xx_ACE_DefusalKit{
+				count = 5;
+				name = "ACE_DefusalKit";
+			};
+			class _xx_ACE_M26_Clacker{
+				count = 5;
+				name = "ACE_M26_Clacker";
+			};
+			class _xx_MineDetector{
+				count = 5;
+				name = "MineDetector";
+			};
+		};
+	};
+	class JA_104th_Box_Engineer : 3AS_Supply_Large_Blue_Prop{
+		author = "Dak";
+		displayName = "Engineer Box - 104th";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Boxes";
+		maximumLoad = 2000;
+		class TransportWeapons
+		{
+			class _xx_Aux501_Weaps_MAR1_carry{
+				count = 2;
+				weapon = "Aux501_Weaps_MAR1_carry";
+			};
+			class _xx_Aux501_Weaps_AAP4_carry{
+				count = 2;
+				weapon = "Aux501_Weaps_AAP4_carry";
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Aux501_Weapons_Mags_mar1_csw
+			{
+				count = 60;
+				magazine = "Aux501_Weapons_Mags_mar1_csw";
+			};
+			class _xx_Aux501_Weapons_Mags_AAP4_csw
+			{
+				count = 16;
+				magazine = "Aux501_Weapons_Mags_AAP4_csw";
+			};
+			class _xx_Aux501_Weapons_Mags_Grenades_Trench_Shield
+			{
+				count = 8;
+				magazine = "Aux501_Weapons_Mags_Grenades_Trench_Shield";
+			};
+			class _xx_APERSMineDispenser_Mag
+			{
+				count = 30;
+				magazine = "APERSMineDispenser_Mag";
+			};
+			class _xx_APERSTripMine_Wire_Mag
+			{
+				count = 30;
+				magazine = "APERSTripMine_Wire_Mag";
+			};
+			class _xx_IEDUrbanSmall_Remote_Mag
+			{
+				count = 5;
+				magazine = "IEDUrbanSmall_Remote_Mag";
+			};
+			class _xx_IEDLandSmall_Remote_Mag
+			{
+				count = 5;
+				magazine = "IEDLandSmall_Remote_Mag";
+			};
+			class _xx_IEDUrbanBig_Remote_Mag
+			{
+				count = 5;
+				magazine = "IEDUrbanBig_Remote_Mag";
+			};
+			class _xx_IEDLandBig_Remote_Mag
+			{
+				count = 5;
+				magazine = "IEDLandBig_Remote_Mag";
+			};
+		};
+		class TransportItems
+		{
+			class _xx_JLTS_clone_comlink{
+				count = 5;
+				name = "JLTS_clone_comlink";
+			};
+			class _xx_ACE_artilleryTable{
+				count = 3;
+				name = "ACE_artilleryTable";
+			};
+			class _xx_ACE_Fortify{
+				count = 3;
+				name = "ACE_Fortify";
+			};
+			class _xx_ACE_IR_Strobe_Item{
+				count = 12;
+				name = "ACE_IR_Strobe_Item";
+			};
+			class _xx_ACE_M26_Clacker{
+				count = 3;
+				name = "ACE_M26_Clacker";
+			};
+			class _xx_ACE_wirecutter{
+				count = 3;
+				name = "ACE_wirecutter";
+			};
+			class _xx_ACE_MapTools{
+				count = 3;
+				name = "ACE_MapTools";
+			};
+			class _xx_MineDetector{
+				count = 3;
+				name = "MineDetector";
+			};
+			class _xx_ItemcTabHCam{
+				count = 3;
+				name = "ItemcTabHCam";
+			};
+			class _xx_ToolKit{
+				count = 2;
+				name = "ToolKit";
+			};
+			class _xx_ACE_DefusalKit{
+				count = 3;
+				name = "ACE_DefusalKit";
+			};
+			class _xx_SCH_B_AR2e_Packed{
+				count = 2;
+				name = "SCH_B_AR2e_Packed";
+			};
+		};
+		class TransportBackpacks
+		{
+			class _xx_JA_104th_Republic_HR_Bag
+			{
+				backpack = "JA_104th_Republic_HR_Bag";
+				count = 3;
+			};
+			class _xx_3AS_Republic_Mortar_Bag
+			{
+				backpack = "3AS_Republic_Mortar_Bag";
+				count = 3;
+			};
 		};
 	};
 	class JA_104th_Box_Medic : 3AS_Supply_Large_Medical_Prop{
@@ -11525,9 +12012,24 @@ class cfgVehicles
 		};
 		class TransportMagazines
 		{
+			class _xx_Aux501_Weapons_Mags_Grenades_Squad_Shield
+			{
+				count = 12;
+				magazine = "Aux501_Weapons_Mags_Grenades_Squad_Shield";
+			};
 		};
 		class TransportItems
 		{
+			class _xx_ACE_quikclot
+			{
+				count = 110;
+				name = "ACE_quikclot";
+			};
+			class _xx_ACE_packingBandage
+			{
+				count = 110;
+				name = "ACE_packingBandage";
+			};
 			class _xx_ACE_elasticBandage
 			{
 				count = 110;
@@ -11543,10 +12045,15 @@ class cfgVehicles
 				count = 50;
 				name = "ACE_morphine";
 			};
-			class _xx_ACE_packingBandage
+			class _xx_ACE_adenosine
 			{
-				count = 110;
-				name = "ACE_packingBandage";
+				count = 50;
+				name = "ACE_adenosine";
+			};
+			class _xx_RD501_Painkiller
+			{
+				count = 100;
+				name = "RD501_Painkiller";
 			};
 			class _xx_ACE_plasmaIV
 			{
@@ -11563,33 +12070,44 @@ class cfgVehicles
 				count = 10;
 				name = "ACE_plasmaIV_500";
 			};
-			class _xx_ACE_quikclot
-			{
-				count = 110;
-				name = "ACE_quikclot";
-			};
-			class _xx_ACE_salineIV
+			class _xx_ACE_bloodIV_500
 			{
 				count = 10;
-				name = "ACE_salineIV";
+				name = "ACE_bloodIV_500";
 			};
-			class _xx_ACE_salineIV_250
+			class _xx_ACE_bloodIV_250
 			{
 				count = 10;
-				name = "ACE_salineIV_250";
+				name = "ACE_bloodIV_250";
+			};
+			class _xx_ACE_bloodIV
+			{
+				count = 10;
+				name = "ACE_bloodIV";
 			};
 			class _xx_ACE_salineIV_500
 			{
 				count = 10;
 				name = "ACE_salineIV_500";
 			};
+			class _xx_ACE_salineIV_250
+			{
+				count = 10;
+				name = "ACE_salineIV_250";
+			};
+			class _xx_ACE_salineIV
+			{
+				count = 10;
+				name = "ACE_salineIV";
+			};
 			class _xx_ACE_tourniquet
 			{
-				count = 20;
+				count = 10;
 				name = "ACE_tourniquet";
 			};
 		};
 	};
+	
 	class RD501_resuppy_box_pod_ammo;
 	class JA_104th_Box_Resupply : RD501_resuppy_box_pod_ammo
 	{
@@ -11809,7 +12327,226 @@ class cfgVehicles
 		{
 		};
 	}
+          
+//   "JA_104th_LAAT_AB",
+//   "JA_104th_Vwing",                    
+//   "BNA_KC_Standard_laati",                 
+//   "BNA_KC_Standard_laati_transport",                    
+//   "JA_104th_N1",                  
+//   "JA_104th_Uwing",                   
+//   "JA_104th_LSV",                           
+//   "JA_104th_BARC",                           
+//   "JA_104th_APC_Light_Bantha",                 
+//   "212th_B_APC_Wheeled_mg_F",                
+//   "212th_B_APC_Wheeled_unarmed_F",   
+//   "B_Truck_01_ammo_F",                  
+//   "B_Truck_01_fuel_F",                     
+//   "B_Truck_01_Repair_F",
 
+	class 3AS_T_Screen;
+	class JA_104th_Vehicle_spawner_Droid_Air : 3AS_T_Screen
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		author = "Dak";
+		displayName = "Spawner Terminal - 104th Air frames";
+		side = 3;
+		hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(0.5,0,0,0.25)"};
+		editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Terminals";
+		class UserActions
+		{
+			// Choppers
+			class Spawn_JA_104th_LAAT
+			{
+				displayName = "Spawn 104th LAAT";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_LAAT'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_LAAT_AB
+			{
+				displayName = "Spawn 104th LAAT Airborne";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_LAAT_AB'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_ls_vehicle_laatc
+			{
+				displayName = "Spawn LS LAAT/C";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'ls_vehicle_laatc'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_3AS_LAATC
+			{
+				displayName = "Spawn 3AS LAAT/C";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, '3AS_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			// fixed wing
+			class Spawn_JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue
+			{
+				displayName = "Spawn 104th Z-95 HeadHunter";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_3AS_Reaper_Y_Wing_BlueLeader
+			{
+				displayName = "Spawn 104th Y-Wing";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_3AS_Reaper_Y_Wing_BlueLeader'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_3AS_Reaper_ARC_170_Blue
+			{
+				displayName = "Spawn 104th ARC-170";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_3AS_Reaper_ARC_170_Blue'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_V19_Torrent
+			{
+				displayName = "Spawn 104th V-19 Torrent";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_V19_Torrent'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_VWing
+			{
+				displayName = "Spawn 104th V-Wing";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_VWing'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+		};
+	};
+	class JA_104th_Vehicle_spawner_Droid_Ground : 3AS_T_Screen
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		author = "Dak";
+		displayName = "Spawner Terminal - 104th Ground Assets";
+		side = 3;
+		hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(0,0,0.5,0.25)"};
+		editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Terminals";
+		class UserActions
+		{
+			// Ground vehicles
+			class Spawn_104th_MudHorn_tank_field
+			{
+				displayName = "Spawn 104th MudHorn Fast";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, '104th_MudHorn_tank_field'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_Oryx
+			{
+				displayName = "Spawn 104th Oryx";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_Oryx'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_WM_M1
+			{
+				displayName = "Spawn WM TX-130";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'WM_M1'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_Aux212_Bantha_C_IFV
+			{
+				displayName = "Spawn 212th Bantha IFV";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'Aux212_Bantha_C_IFV'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_Aux212_Bantha_T_Assault
+			{
+				displayName = "Spawn 212th Bantha Assault";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'Aux212_Bantha_T_Assault'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_Aux212_Bantha_T_Cargo
+			{
+				displayName = "Spawn 212th Bantha Cargo";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'Aux212_Bantha_T_Cargo'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_3AS_ATTE_TCW
+			{
+				displayName = "Spawn 3AS ATTE";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, '3AS_ATTE_TCW'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_BARC
+			{
+				displayName = "Spawn 104th BARC Speeder";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_BARC'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+		};
+	};
 	class 3AS_Republic_HR_Bag;
 	class JA_104th_Republic_HR_Bag : 3AS_Republic_HR_Bag{
 		faction = "3AS_REP";
@@ -12404,6 +13141,30 @@ class cfgVehicles
 				canBeTransported = TRUE;
 			};
 		}
+		class ace_cargo {
+            class cargo {
+				class cargo_JA_104th_Box_Ammo {
+					type = "JA_104th_Box_Ammo";
+                    amount = 1;
+				};
+				class cargo_JA_104th_Box_Explosives {
+					type = "JA_104th_Box_Explosives";
+                    amount = 1;
+				};
+				class cargo_JA_104th_Box_Engineer {
+					type = "JA_104th_Box_Engineer";
+                    amount = 1;
+				};
+				class cargo_JA_104th_Box_Medic {
+					type = "JA_104th_Box_Medic";
+                    amount = 1;
+				};
+				class cargo_ACE_Track {
+					type = "ACE_Track";
+                    amount = 4;
+				};
+			};
+		};
 		scopeArsenal = 2;
 		scopeCurator = 2;
 	};
@@ -12508,10 +13269,6 @@ class CfgAmmo
 		typicalSpeed = 960;
 		warheadName = "AP";
 	};
-	class Aux501_Weapons_Ammo_Grenades_Personal_Shield;
-	class Aux501_Weapons_Ammo_Grenades_Personal_Shield_pee_pee;
-	class JA_104_Personal_Shield_Ammo: Aux501_Weapons_Ammo_Grenades_Personal_Shield {};
-	class JA_104_Personal_Shield_Body_Ammo: Aux501_Weapons_Ammo_Grenades_Personal_Shield_pee_pee {};
 };
 
 class CfgMagazines
@@ -12558,28 +13315,6 @@ class CfgMagazines
         count = 4;
         pylonWeapon = "JA_104th_AIM120";
     };
-	class Aux501_Weapons_Mags_Grenades_Shield_Personal;
-	class Aux501_Weapons_Mags_Grenades_Shield_Personal_pee_pee;
-	class JA_104_Personal_Shield: Aux501_Weapons_Mags_Grenades_Shield_Personal {
-		ammo = "JA_104_Personal_Shield_Ammo";
-		displayName = "[104th] Personal Shield - Weapon";
-        scope = 2;
-		mass = 8;
-		class Library
-		{
-			libTextDesc = "";
-		};
-	};
-	class JA_104_Personal_Shield_Body: Aux501_Weapons_Mags_Grenades_Shield_Personal_pee_pee {
-		ammo = "JA_104_Personal_Shield_Body_Ammo";
-		displayName = "[104th] Personal Shield - Body";
-        scope = 2;
-		mass = 16;
-		class Library
-		{
-			libTextDesc = "";
-		};
-	};
 };
 
 class CfgRecoils
