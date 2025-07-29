@@ -2,8 +2,7 @@
 [h2]Custom Gear[/h2]
 [h3]Added[/h3]
 [list]
-    [*] Clone Trooper medic backpack LR (104th)
-    [*] Clone Trooper P2 Helmet (104th Granite)
+    [*] Clone Trooper armor (104th Scrub)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -17,8 +16,7 @@
 [h2]Custom Weapons & Attachments[/h2]
 [h3]Added[/h3]
 [list]
-    [*] [104th] Personal Shield - Body
-    [*] [104th] Personal Shield - Weapon
+    [*] 
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -26,15 +24,18 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] fixed the first person UGL ranging 
-    [*] Replaced some of the remaining old LS classnames
-    [*] All LR Backpacks have a 25KM range
+    [*] 
 [/list]
 
 [h2]Custom Vehicles & Supplies[/h2]
 [h3]Added[/h3]
 [list]
-    [*] V-19 Torrent Heavy Interceptor
+    [*] Explosives Box - 104th
+    [*] Engineer Ammo Box - 104th
+    [*] Engineer Box - 104th
+    [*] Medical Box - 104th
+    [*] Spawner Terminal - 104th Air frames
+    [*] Spawner Terminal - 104th Ground Assets
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -42,8 +43,9 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] Oryx is now airlifteble (2 Orix per LS LAAT/C )
-    [*] 2 Mudhorns fit in a single LS LAAT/C
+    [*] Mudhorns now spawn with the correct 104th boxes
+    [*] BARC Speeder 104th now has selectable textures
+    [*] 104th Reaper BTL-B Y-Wing Blue Leader now has selectable textures
 [/list]
 
 
@@ -52,25 +54,26 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper medic backpack LR (104th)
-- Clone Trooper P2 Helmet (104th Granite)
+- Clone Trooper armor (104th Scrub)
 
 Changed Gear
 ------------------
-- All LR Backpacks have a 25KM range
+- 
+
+Removed Gear
+------------------
+- 
 
 ```
 ##  Custom Weapons & Attachments
 ```
 New Weapons & Attachments
 --------------
-- [104th] Personal Shield - Body
-- [104th] Personal Shield - Weapon
+- 
 
 Changed Weapons & Attachments
 ------------------
-- fixed the first person UGL ranging 
-- Replaced some of the remaining old LS classnames
+- 
 
 Removed Weapons & Attachments
 ------------------
@@ -81,12 +84,18 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- V-19 Torrent Heavy Interceptor
+- Explosives Box - 104th
+- Engineer Ammo Box - 104th
+- Engineer Box - 104th
+- Medical Box - 104th
+- Spawner Terminal - 104th Air frames
+- Spawner Terminal - 104th Ground Assets
 
 Changed Vehicles & Supplies
 ------------------
-- Oryx is now airlifteble (2 Orix per LS LAAT/C )
-- 2 Mudhorns fit in a single LS LAAT/C
+- Mudhorns now spawn with the correct 104th boxes
+- BARC Speeder 104th now has selectable textures
+- 104th Reaper BTL-B Y-Wing Blue Leader now has selectable textures
 
 Removed Vehicles & Supplies
 ------------------
