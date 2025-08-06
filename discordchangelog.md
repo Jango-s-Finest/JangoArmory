@@ -3,7 +3,8 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper armor (104th Scrub)
+- Clone Trooper P2 Helmet (104th Miniminer)
+- Clone Trooper armor (104th Miniminer)
 
 Changed Gear
 ------------------
@@ -18,7 +19,7 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
-- 
+- Mandoade Beskad
 
 Changed Weapons & Attachments
 ------------------
@@ -33,18 +34,16 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- Explosives Box - 104th
-- Engineer Ammo Box - 104th
-- Engineer Box - 104th
-- Medical Box - 104th
-- Spawner Terminal - 104th Air frames
-- Spawner Terminal - 104th Ground Assets
+- 
 
 Changed Vehicles & Supplies
 ------------------
-- Mudhorns now spawn with the correct 104th boxes
-- BARC Speeder 104th now has selectable textures
-- 104th Reaper BTL-B Y-Wing Blue Leader now has selectable textures
+- test - 104th AA cannon
+- Medical Box - 104th
+- Engineer Box - 104th
+- Explosives Box - 104th
+- Engineer Ammo Box - 104th
+- FC_Dropcrate_104th
 
 Removed Vehicles & Supplies
 ------------------
