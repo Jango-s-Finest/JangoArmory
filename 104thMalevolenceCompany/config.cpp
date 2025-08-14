@@ -200,7 +200,7 @@ class CfgWeapons
         scopeArsenal = 2;
         side = 1;
         grad_slingHelmet_allow = "true";
-        displayname = "Clone Trooper P1 Helmet (104th MLV JNCO)";                                               // the name it will be in game
+        displayname = "Clone Trooper P1 Helmet (104th MLV NCO)";                                               // the name it will be in game
         hiddenSelectionsTextures[] = {"104thMalevolenceCompany\data\Textures\104th_P1_Red_1C_JNCO_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
     };
     class JA_104th_Malevolence_Officer_Helmet : ls_gar_phase1_helmet

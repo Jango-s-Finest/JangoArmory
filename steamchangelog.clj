@@ -2,7 +2,9 @@
 [h2]Custom Gear[/h2]
 [h3]Added[/h3]
 [list]
-    [*] Clone Trooper armor (104th Scrub)
+    [*] Clone Trooper Rocket backpack (104th)
+    [*] Clone Trooper JT12 Medic LR (Warhawk 2-1)
+    [*] Clone Trooper JT12 Medic LR (Warhawk 2-2)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -10,7 +12,8 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] 
+    [*] Fix on the airborne helmets termals and NVGs
+    [*] Fix on Medic backpack capacity
 [/list]
 
 [h2]Custom Weapons & Attachments[/h2]
@@ -24,18 +27,13 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] 
+    [*] Rename of [104th] 2rnd Anti Personnel to [104th] 2rnd Armor Penetrating
 [/list]
 
 [h2]Custom Vehicles & Supplies[/h2]
 [h3]Added[/h3]
 [list]
-    [*] Explosives Box - 104th
-    [*] Engineer Ammo Box - 104th
-    [*] Engineer Box - 104th
-    [*] Medical Box - 104th
-    [*] Spawner Terminal - 104th Air frames
-    [*] Spawner Terminal - 104th Ground Assets
+    [*] 
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -43,7 +41,5 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] Mudhorns now spawn with the correct 104th boxes
-    [*] BARC Speeder 104th now has selectable textures
-    [*] 104th Reaper BTL-B Y-Wing Blue Leader now has selectable textures
+    [*] 
 [/list]

@@ -4195,9 +4195,9 @@ class CfgMagazines
     };
     class JA_104th_Weapons_Mags_GL_AP2 : 3Rnd_HE_Grenade_shell
     {
-        displayName = "[104th] 2Rnd Anti Personnel";
+        displayName = "[104th] 2rnd Armor Penetrating";
         displayNameShort = "2Rnd AP";
-        descriptionShort = "UGL 2Rnd Anti-Personnel";
+        descriptionShort = "UGL 2Rnd Armor-Penetrating";
         picture = "\A3\Weapons_f\Data\ui\gear_UGL_slug_CA.paa";
         count = 2;
         ammo = "JA_104th_Weapons_Ammo_GL_AP";

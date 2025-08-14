@@ -13,7 +13,6 @@ class CfgPatches
 			"JA_104th_Box_Explosives",
 			"JA_104th_Box_Engineer",
 			"JA_104th_Box_Medic",
-			"JA_104th_Box_Resupply",
 			"JA_104th_Medical_Droid",
 			"JA_104th_Vehicle_spawner_Droid_Air",
 			"JA_104th_Vehicle_spawner_Droid_Ground",
@@ -52,8 +51,7 @@ class CfgPatches
 			"104th_MudHorn_tank_field"}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
-			"JA_104th_AIM9X",
-			"JA_104th_AIM120"};
+		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
@@ -268,6 +266,7 @@ class cfgVehicles
 	class ls_vehicle_laati : ls_vehicle_laati_base
 	{
 		class ACE_SelfActions;
+		class UserActions;
 	};
 	class JA_104th_LAAT : ls_vehicle_laati
 	{
@@ -886,16 +885,6 @@ class cfgVehicles
 
 		class TransportWeapons
 		{
-			class _xx_ls_weapon_rps6
-			{
-				count = 1;
-				weapon = "ls_weapon_rps6";
-			};
-			class _xx_501_weapon_DC15S
-			{
-				count = 1;
-				weapon = "AUX501_Weaps_DC15S";
-			};
 		};
 		class TransportMagazines
 		{
@@ -5039,7 +5028,9 @@ class cfgVehicles
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
 		};
 	};
-	class 3as_V19_base;
+	class 3as_V19_base{
+		class ACE_SelfActions;
+	};
 	class JA_104th_V19_Torrent : 3as_V19_base{
 		Author = "212th + 3AS + Echo";
 		displayName = "V-19 Torrent Heavy Interceptor";
@@ -5050,7 +5041,80 @@ class cfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "ls_clone_phase2_pilot";
-
+		hiddenselectionstextures[] = {
+			"3as\3as_v19\textures\wings_co.paa",
+			"3as\3as_v19\textures\wing plates_co.paa",
+			"3as\3as_v19\textures\hull_co.paa",
+			"3as\3as_v19\textures\gun gear_co.paa",
+			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+			"3as\3as_v19\textures\pizzlepit_co.paa"
+		};
+		weapons[] = {"RD501_Republic_Aircraft_Laser_AA","3as_V19_Medium_Cannon","3as_ARC_Missile_AA","weapon_AMRAAMLauncher","CMFlareLauncher"};
+		magazines[] = {"RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_C_x2","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells"};
+		class TextureSources
+		{
+			class ME
+			{
+				displayName = "Malevolence";
+				author = "Dak";
+				textures[] = {
+					"3as\3as_v19\textures\wings_co.paa",
+					"3as\3as_v19\textures\wing plates_co.paa",
+					"3as\3as_v19\textures\hull_co.paa",
+					"3as\3as_v19\textures\gun gear_co.paa",
+					"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+					"3as\3as_v19\textures\pizzlepit_co.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+			class Blue: ME
+			{
+				displayName = "Blue";
+				textures[] = {
+					"JangosVehicles\data\textures\wings_CO_104.paa", 
+					"JangosVehicles\data\textures\wing_plates_CO_104.paa", 
+					"JangosVehicles\data\textures\Hull_CO_104.paa", 
+					"3as\3as_v19\textures\gun gear_co.paa",
+					"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+					"3as\3as_v19\textures\pizzlepit_co.paa"
+				};
+			};
+		};
+		textureList[] = {"ME", 1, "Blue", 1};
+		class ACE_SelfActions : ACE_SelfActions
+		{
+			class Style_Changer
+			{
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2;
+				class DefaultSkin
+				{
+					displayName = "104th";
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement = "_target setObjectTextureGlobal [0,'3as\3as_v19\textures\wings_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_v19\textures\wing plates_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_v19\textures\hull_co.paa']; _target setObjectTextureGlobal [3,'3as\3as_v19\textures\gun gear_co.paa']; _target setObjectTextureGlobal [4,'a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa']; _target setObjectTextureGlobal [5,'3as\3as_v19\textures\pizzlepit_co.paa'];";
+					showDisabled = 0;
+					runOnHover = 0;
+					priority = 2.5;
+				};
+				class JA_104th_Skins
+				{
+					displayname = "104th Skins";
+					class 104th_Blue : DefaultSkin
+					{
+						displayName = "104th Blue";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\wings_CO_104.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\wing_plates_CO_104.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\Hull_CO_104.paa']; _target setObjectTextureGlobal [3,'3as\3as_v19\textures\gun gear_co.paa']; _target setObjectTextureGlobal [4,'a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa']; _target setObjectTextureGlobal [5,'3as\3as_v19\textures\pizzlepit_co.paa'];";
+					};
+				};
+				class Custom_Skins
+				{
+					displayname = "Custom Skins";
+				};
+			};
+		};
 		class Components
 		{
 			class SensorsManagerComponent
@@ -7550,36 +7614,6 @@ class cfgVehicles
 				};
 			};
 		};
-	};
-	class JA_104th_BARC_WP : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th WP Logo";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_wp_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_Talon : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th Talon Logo";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_talon_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_Beans : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th Beans";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_beans_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_Sniper : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th Sniper";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_sniper_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_Medic : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th Medic";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_medic_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_EOD : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th EOD";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_eod_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 
 	// class 3as_nuclass_f;
@@ -11537,12 +11571,12 @@ class cfgVehicles
 		scopeCurator = 2;
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
-		maximumLoad = 3000;
+		maximumLoad = 10000;
 		class TransportWeapons
 		{
 			class _xx_3AS_RPS6_HP{
 				count = 3;
-				weapon = "3AS_RPS6_HP";
+				weapon = "JA_104th_RPS6_H";
 			};
 			class _xx_JA_104th_DC17SA{
 				count = 6;
@@ -11782,7 +11816,7 @@ class cfgVehicles
 		scopeCurator = 2;
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
-		maximumLoad = 2000;
+		maximumLoad = 10000;
 		class TransportWeapons
 		{
 		};
@@ -11797,11 +11831,6 @@ class cfgVehicles
 			{
 				count = 15;
 				magazine = "SatchelCharge_Remote_Mag";
-			};
-			class _xx_DemoCharge_Remote_Mag
-			{
-				count = 25;
-				magazine = "DemoCharge_Remote_Mag";
 			};
 			class _xx_ATMine_Range_Mag
 			{
@@ -11848,6 +11877,16 @@ class cfgVehicles
 				count = 2;
 				magazine = "tsp_breach_package_mag";
 			};
+			class _xx_LFP_type_A_Remote_Mag
+			{
+				count = 25;
+				magazine = "LFP_type_A_Remote_Mag";
+			};
+			class _xx_LFP_type_B_Remote_Mag
+			{
+				count = 15;
+				magazine = "LFP_type_B_Remote_Mag";
+			};
 		};
 		class TransportItems
 		{
@@ -11873,7 +11912,7 @@ class cfgVehicles
 		scopeCurator = 2;
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
-		maximumLoad = 2000;
+		maximumLoad = 10000;
 		class TransportWeapons
 		{
 			class _xx_Aux501_Weaps_MAR1_carry{
@@ -12006,7 +12045,7 @@ class cfgVehicles
 		scopeCurator = 2;
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Boxes";
-		maximumLoad = 2000;
+		maximumLoad = 10000;
 		class TransportWeapons
 		{
 		};
@@ -12103,202 +12142,6 @@ class cfgVehicles
 			class _xx_ACE_tourniquet
 			{
 				count = 10;
-				name = "ACE_tourniquet";
-			};
-		};
-	};
-	
-	class RD501_resuppy_box_pod_ammo;
-	class JA_104th_Box_Resupply : RD501_resuppy_box_pod_ammo
-	{
-		author = "501st + Echo";
-		displayName = "Ammo Box - 501st";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		editorCategory = "JA_104_EdCat_Objects";
-		editorSubcategory = "104th_Categ_Clones_Boxes";
-		class TransportWeapons
-		{
-			class _xx_ls_weapon_rps6
-			{
-				count = 1;
-				weapon = "ls_weapon_rps6";
-			};
-			class _xx_501_weapon_DC15S
-			{
-				count = 2;
-				weapon = "AUX501_Weaps_DC15S";
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_501_DC15X_mag
-			{
-				count = 5;
-				magazine = "AUX501_Weapons_Mags_40mw5";
-			};
-			class _xx_501_DC15L_mag
-			{
-				count = 10;
-				magazine = "AUX501_Weapons_Mags_20mw240";
-			};
-			class _xx_501_DC15C_mag
-			{
-				count = 10;
-				magazine = "AUX501_Weapons_Mags_20mw40";
-			};
-			class _xx_501_DC15ADP_mag
-			{
-				count = 5;
-				magazine = "AUX501_Weapons_Mags_20mwdp30";
-			};
-			class _xx_501_DC15AUP_mag
-			{
-				count = 5;
-				magazine = "AUX501_Weapons_Mags_20mwup30";
-			};
-			class _xx_501_DC15S_mag
-			{
-				count = 5;
-				magazine = "AUX501_Weapons_Mags_10mw50";
-			};
-			class _xx_501_Stun_mag
-			{
-				count = 2;
-				magazine = "AUX501_Weapons_Mags_Stun5";
-			};
-			class _xx_501_Z6_mag
-			{
-				count = 5;
-				magazine = "AUX501_Weapons_Mags_10mw400";
-			};
-			class _xx_501_DC17DP_mag
-			{
-				count = 5;
-				magazine = "AUX501_Weapons_Mags_20mwdp20";
-			};
-			class _xx_JLTS_DC15A_mag
-			{
-				count = 5;
-				magazine = "JLTS_DC15A_mag";
-			};
-			class _xx_UGL_HE
-			{
-				count = 2;
-				magazine = "AUX501_Weapons_Mags_GL_HE3";
-			};
-			class _xx_UGL_Smoke_White
-			{
-				count = 2;
-				magazine = "AUX501_Weapons_Mags_GL_smoke_white6";
-			};
-			class _xx_UGL_Smoke_Blue
-			{
-				count = 2;
-				magazine = "AUX501_Weapons_Mags_GL_smoke_blue3";
-			};
-			class _xx_UGL_Smoke_Green
-			{
-				count = 1;
-				magazine = "AUX501_Weapons_Mags_GL_smoke_green3";
-			};
-			class _xx_UGL_Smoke_Orange
-			{
-				count = 1;
-				magazine = "AUX501_Weapons_Mags_GL_smoke_orange3";
-			};
-			class _xx_UGL_Smoke_Purple
-			{
-				count = 1;
-				magazine = "AUX501_Weapons_Mags_GL_smoke_purple3";
-			};
-			class _xx_UGL_Smoke_Red
-			{
-				count = 2;
-				magazine = "AUX501_Weapons_Mags_GL_smoke_red3";
-			};
-			class _xx_UGL_Smoke_Yellow
-			{
-				count = 1;
-				magazine = "AUX501_Weapons_Mags_GL_smoke_yellow3";
-			};
-			class _xx_ls_mag_at_plx
-			{
-				count = 1;
-				magazine = "ls_mag_at_plx";
-			};
-			class _xx_ls_mag_rpg_1rnd
-			{
-				count = 3;
-				magazine = "ls_mag_rpg_1rnd";
-			};
-			class _xx_JA104_mag_T9_1rnd
-			{
-				count = 5;
-				magazine = "JA_104th_LaserCannon_mag";
-			};
-			class _xx_501_ThermalDet
-			{
-				count = 8;
-				magazine = "AUX501_Weapons_Mags_Thermal_Detonator";
-			};
-			class _xx_3AS_ThermalDet
-			{
-				count = 8;
-				magazine = "3AS_ThermalDetonator";
-			};
-			class _xx_LS_ThermalDet
-			{
-				count = 8;
-				magazine = "LS_mag_classC_thermalDet";
-			};
-			class _xx_BI_SmokeGrenade
-			{
-				count = 8;
-				magazine = "SmokeShell";
-			};
-		};
-		class TransportItems
-		{
-			class _xx_ACE_elasticBandage
-			{
-				count = 50;
-				name = "ACE_elasticBandage";
-			};
-			class _xx_ACE_epinephrine
-			{
-				count = 20;
-				name = "ACE_epinephrine";
-			};
-			class _xx_ACE_morphine
-			{
-				count = 20;
-				name = "ACE_morphine";
-			};
-			class _xx_ACE_packingBandage
-			{
-				count = 30;
-				name = "ACE_packingBandage";
-			};
-			class _xx_ACE_quikclot
-			{
-				count = 30;
-				name = "ACE_quikclot";
-			};
-			class _xx_ACE_salineIV
-			{
-				count = 5;
-				name = "ACE_salineIV";
-			};
-			class _xx_ACE_salineIV_500
-			{
-				count = 5;
-				name = "ACE_salineIV_500";
-			};
-			class _xx_ACE_tourniquet
-			{
-				count = 8;
 				name = "ACE_tourniquet";
 			};
 		};
@@ -13295,26 +13138,6 @@ class CfgMagazines
 		displayNameShort = "Supply Pod";
 		descriptionShort = "Supply Pod";
 	};
-	class FIR_AIM9X_P_2rnd_M;
-	class FIR_AIM120_LAU115_P_2rnd_M;
-	class JA_LAAT_AIM9X: FIR_AIM9X_P_2rnd_M
-    {
-        model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
-        ammo = "FIR_AIM9X";
-        scope = 2;
-        displayName = "AIM-9X Sidewinder x4";
-        count = 4;
-        pylonWeapon = "JA_104th_AIM9X";
-    };
-	class JA_LAAT_AIM120: FIR_AIM120_LAU115_P_2rnd_M
-    {
-        model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
-        ammo = "FIR_AIM120";
-        scope = 2;
-        displayName = "AIM-120C Sidewinder x4";
-        count = 4;
-        pylonWeapon = "JA_104th_AIM120";
-    };
 };
 
 class CfgRecoils
@@ -13417,15 +13240,6 @@ class CfgWeapons
 			fired = "_this spawn JA_104th_fnc_GURE_grplFired";
 		};
 	};
-	class FIR_AIM120;
-	class FIR_AIM9X;
-	class JA_104th_AIM9X : FIR_AIM9X{
-		magazines[] = {"JA_LAAT_AIM9X"};
-	};
-	class JA_104th_AIM120 : FIR_AIM120{
-		magazines[] = {"JA_LAAT_AIM120"};
-	};
-
 };
 
 class CfgFunctions
