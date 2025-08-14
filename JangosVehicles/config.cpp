@@ -51,8 +51,7 @@ class CfgPatches
 			"104th_MudHorn_tank_field"}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
-			"JA_104th_AIM9X",
-			"JA_104th_AIM120"};
+		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
@@ -5029,7 +5028,9 @@ class cfgVehicles
 			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
 		};
 	};
-	class 3as_V19_base;
+	class 3as_V19_base{
+		class ACE_SelfActions;
+	};
 	class JA_104th_V19_Torrent : 3as_V19_base{
 		Author = "212th + 3AS + Echo";
 		displayName = "V-19 Torrent Heavy Interceptor";
@@ -5040,9 +5041,80 @@ class cfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "ls_clone_phase2_pilot";
+		hiddenselectionstextures[] = {
+			"3as\3as_v19\textures\wings_co.paa",
+			"3as\3as_v19\textures\wing plates_co.paa",
+			"3as\3as_v19\textures\hull_co.paa",
+			"3as\3as_v19\textures\gun gear_co.paa",
+			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+			"3as\3as_v19\textures\pizzlepit_co.paa"
+		};
 		weapons[] = {"RD501_Republic_Aircraft_Laser_AA","3as_V19_Medium_Cannon","3as_ARC_Missile_AA","weapon_AMRAAMLauncher","CMFlareLauncher"};
 		magazines[] = {"RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_C_x2","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells"};
-
+		class TextureSources
+		{
+			class ME
+			{
+				displayName = "Malevolence";
+				author = "Dak";
+				textures[] = {
+					"3as\3as_v19\textures\wings_co.paa",
+					"3as\3as_v19\textures\wing plates_co.paa",
+					"3as\3as_v19\textures\hull_co.paa",
+					"3as\3as_v19\textures\gun gear_co.paa",
+					"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+					"3as\3as_v19\textures\pizzlepit_co.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+			class Blue: ME
+			{
+				displayName = "Blue";
+				textures[] = {
+					"JangosVehicles\data\textures\wings_CO_104.paa", 
+					"JangosVehicles\data\textures\wing_plates_CO_104.paa", 
+					"JangosVehicles\data\textures\Hull_CO_104.paa", 
+					"3as\3as_v19\textures\gun gear_co.paa",
+					"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+					"3as\3as_v19\textures\pizzlepit_co.paa"
+				};
+			};
+		};
+		textureList[] = {"ME", 1, "Blue", 1};
+		class ACE_SelfActions : ACE_SelfActions
+		{
+			class Style_Changer
+			{
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2;
+				class DefaultSkin
+				{
+					displayName = "104th";
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement = "_target setObjectTextureGlobal [0,'3as\3as_v19\textures\wings_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_v19\textures\wing plates_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_v19\textures\hull_co.paa']; _target setObjectTextureGlobal [3,'3as\3as_v19\textures\gun gear_co.paa']; _target setObjectTextureGlobal [4,'a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa']; _target setObjectTextureGlobal [5,'3as\3as_v19\textures\pizzlepit_co.paa'];";
+					showDisabled = 0;
+					runOnHover = 0;
+					priority = 2.5;
+				};
+				class JA_104th_Skins
+				{
+					displayname = "104th Skins";
+					class 104th_Blue : DefaultSkin
+					{
+						displayName = "104th Blue";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\wings_CO_104.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\wing_plates_CO_104.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\Hull_CO_104.paa']; _target setObjectTextureGlobal [3,'3as\3as_v19\textures\gun gear_co.paa']; _target setObjectTextureGlobal [4,'a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa']; _target setObjectTextureGlobal [5,'3as\3as_v19\textures\pizzlepit_co.paa'];";
+					};
+				};
+				class Custom_Skins
+				{
+					displayname = "Custom Skins";
+				};
+			};
+		};
 		class Components
 		{
 			class SensorsManagerComponent
@@ -7542,36 +7614,6 @@ class cfgVehicles
 				};
 			};
 		};
-	};
-	class JA_104th_BARC_WP : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th WP Logo";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_wp_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_Talon : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th Talon Logo";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_talon_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_Beans : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th Beans";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_beans_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_Sniper : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th Sniper";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_sniper_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_Medic : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th Medic";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_medic_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
-	};
-	class JA_104th_BARC_EOD : JA_104th_BARC
-	{
-		displayName = "BARC Speeder 104th EOD";
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_eod_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
 	};
 
 	// class 3as_nuclass_f;
@@ -13096,26 +13138,6 @@ class CfgMagazines
 		displayNameShort = "Supply Pod";
 		descriptionShort = "Supply Pod";
 	};
-	class FIR_AIM9X_P_2rnd_M;
-	class FIR_AIM120_LAU115_P_2rnd_M;
-	class JA_LAAT_AIM9X: FIR_AIM9X_P_2rnd_M
-    {
-        model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
-        ammo = "FIR_AIM9X";
-        scope = 2;
-        displayName = "AIM-9X Sidewinder x4";
-        count = 4;
-        pylonWeapon = "JA_104th_AIM9X";
-    };
-	class JA_LAAT_AIM120: FIR_AIM120_LAU115_P_2rnd_M
-    {
-        model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
-        ammo = "FIR_AIM120";
-        scope = 2;
-        displayName = "AIM-120C Sidewinder x4";
-        count = 4;
-        pylonWeapon = "JA_104th_AIM120";
-    };
 };
 
 class CfgRecoils
@@ -13218,15 +13240,6 @@ class CfgWeapons
 			fired = "_this spawn JA_104th_fnc_GURE_grplFired";
 		};
 	};
-	class FIR_AIM120;
-	class FIR_AIM9X;
-	class JA_104th_AIM9X : FIR_AIM9X{
-		magazines[] = {"JA_LAAT_AIM9X"};
-	};
-	class JA_104th_AIM120 : FIR_AIM120{
-		magazines[] = {"JA_LAAT_AIM120"};
-	};
-	
 };
 
 class CfgFunctions

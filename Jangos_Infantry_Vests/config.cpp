@@ -304,6 +304,8 @@ class CfgWeapons
         {
             containerClass = "Supply100";
             vestType = "Rebreather";
+            hiddenSelections[] = {"illum", "camo1"};
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_sniper.p3d";
 
             class HitpointsProtectionInfo
             {

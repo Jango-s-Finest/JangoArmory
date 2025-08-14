@@ -3,12 +3,14 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper P2 Helmet (104th Miniminer)
-- Clone Trooper armor (104th Miniminer)
+- Clone Trooper Rocket backpack (104th)
+- Clone Trooper JT12 Medic LR (Warhawk 2-1)
+- Clone Trooper JT12 Medic LR (Warhawk 2-2)
 
 Changed Gear
 ------------------
-- 
+- Fix on Medic backpack capacity
+- Fix on the airborne helmets termals and NVGs
 
 Removed Gear
 ------------------
@@ -19,11 +21,11 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
-- Mandoade Beskad
+- 
 
 Changed Weapons & Attachments
 ------------------
-- 
+- Rename of [104th] 2rnd Anti Personnel to [104th] 2rnd Armor Penetrating
 
 Removed Weapons & Attachments
 ------------------
@@ -38,12 +40,7 @@ New Vehicles & Supplies
 
 Changed Vehicles & Supplies
 ------------------
-- test - 104th AA cannon
-- Medical Box - 104th
-- Engineer Box - 104th
-- Explosives Box - 104th
-- Engineer Ammo Box - 104th
-- FC_Dropcrate_104th
+- 
 
 Removed Vehicles & Supplies
 ------------------
