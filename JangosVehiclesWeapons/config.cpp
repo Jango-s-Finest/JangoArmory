@@ -61,6 +61,15 @@ class CfgAmmo
 		hit = 200;
 		explosive = 0.5;
 	};
+	class FIR_AIM9X;
+	class JA_LAAT_AIM9X_BULLDOG_Ammo: FIR_AIM9X{
+		autoSeekTarget = 1;
+		cmimmunity = 0.80;
+		lockSeekRadius = 10;
+		missileManualControlCone = 10;
+		missileKeepLockedCone = 10;
+		missileLockCone = 10;
+	};
 };
 
 class CfgMagazines
@@ -131,6 +140,15 @@ class CfgMagazines
         count = 4;
         pylonWeapon = "JA_104th_AIM9X";
     };
+	class JA_LAAT_AIM9X_BULLDOG_Mag: FIR_AIM9X_P_2rnd_M
+    {
+        model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
+        ammo = "JA_LAAT_AIM9X_BULLDOG_Ammo";
+        scope = 2;
+        displayName = "Test - AIM-9X Bulldog x4";
+        count = 4;
+        pylonWeapon = "JA_LAAT_AIM9X_BULLDOG";
+    };
 	class JA_LAAT_AIM120: FIR_AIM120_LAU115_P_2rnd_M
     {
         model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
@@ -192,6 +210,10 @@ class CfgWeapons
 	
 	class JA_104th_AIM9X : FIR_AIM9X{
 		magazines[] = {"JA_LAAT_AIM9X"};
+	};
+	class JA_LAAT_AIM9X_BULLDOG : FIR_AIM9X{
+		displayName = "AIM-9X Bulldog";
+		magazines[] = {"JA_LAAT_AIM9X_BULLDOG_Mag"};
 	};
 	class JA_104th_AIM120 : FIR_AIM120{
 		magazines[] = {"JA_LAAT_AIM120"};

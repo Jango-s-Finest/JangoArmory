@@ -17,9 +17,12 @@ class CfgPatches
 			"JA_104th_ARF_Medic_Helmet",
 			"JA_104th_Achilles_Helmet",
 			"JA_104th_Beans_Helmet",
+			"JA_104th_Cyan_Helmet_A",
+			"JA_104th_Gravity_Helmet_A",
 			"JA_104th_IQ_Helmet",
 			"JA_104th_Fire_Helmet",
 			"JA_104th_Unix_Helmet",
+			"JA_104th_Welty_Helmet_A",
 			"JA_104th_Woods_Helmet"};
 	};
 };
@@ -157,6 +160,26 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th Achilles)";										 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Achilles_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
+	class JA_104th_Cyan_Helmet : ls_gar_phase1Arf_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Clone Trooper ARF Helmet (104th Cyan)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Cyan_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Welty_Helmet : ls_gar_phase1Arf_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Clone Trooper ARF Helmet (104th Welty)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Welty_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+	};
 	class JA_104th_Beans_Helmet : ls_gar_phase1Arf_helmet
 	{
 		author = "Ice";
@@ -166,6 +189,17 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper ARF Helmet (104th Beans)";										  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+	};
+	class JA_104th_Gravity_Helmet_A : ls_gar_phase1Arf_helmet
+	{
+		author = "Cyan";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper ARF Helmet (104th Gravity)";										  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Gravity_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
 	class JA_104th_Fire_Helmet : ls_gar_phase1Arf_helmet
