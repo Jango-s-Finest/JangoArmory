@@ -3,14 +3,23 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper Rocket backpack (104th)
-- Clone Trooper JT12 Medic LR (Warhawk 2-1)
-- Clone Trooper JT12 Medic LR (Warhawk 2-2)
+- Clone Trooper armor (104th IQ)
+- Clone Trooper armor (104th Axel)
+- Clone Trooper armor (104th Granite)
+- Clone Trooper armor (104th Lax)
+- Clone Trooper armor (104th Patch)
+- Clone Trooper ARF Helmet (104th Cyan)
+- Clone Trooper ARF Helmet (104th Welty)
+- Clone Trooper AB Helmet (104th Squid)
+- Clone Airborne NCO Vest (104th Granite)
+- Clone Trooper Engineer Helmet (104th Axel)
+- Clone Trooper armor (104th Welty)
+- Clone Trooper armor (104th Cyan)
 
 Changed Gear
 ------------------
-- Fix on Medic backpack capacity
-- Fix on the airborne helmets termals and NVGs
+- Renamed from Raider to Warhawk - Clone Trooper JT12 (Warhawk)
+- Clone Trooper P2 Helmet (104th Patch)
 
 Removed Gear
 ------------------
@@ -25,7 +34,7 @@ New Weapons & Attachments
 
 Changed Weapons & Attachments
 ------------------
-- Rename of [104th] 2rnd Anti Personnel to [104th] 2rnd Armor Penetrating
+- 
 
 Removed Weapons & Attachments
 ------------------
@@ -36,14 +45,15 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- 
+- Test - AIM-9X Bulldog x4
+- LAAT-E 104th - Hightower skin
 
 Changed Vehicles & Supplies
 ------------------
-- 
+- Ammo Box - 104th
 
 Removed Vehicles & Supplies
 ------------------
-- 
+- Engineer Ammo Box - 104th
 
 ```

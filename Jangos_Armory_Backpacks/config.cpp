@@ -1147,7 +1147,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider)";
+		displayname = "Clone Trooper JT12 LR (Warhawk)";
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_Jumppack.paa"};
 	};
 	class JA_104th_Jumppack_JT12_Raider : JA_104th_Jumppack_JT12
@@ -1155,7 +1155,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider)";
+		displayname = "Clone Trooper JT12 (Warhawk)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_Jumppack.paa"};
 	};
@@ -1164,7 +1164,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider 2-1)";
+		displayname = "Clone Trooper JT12 LR (Warhawk 2-1)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-1_Jumppack.paa"};
 	};
@@ -1173,7 +1173,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider 2-1)";
+		displayname = "Clone Trooper JT12 (Warhawk 2-1)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-1_Jumppack.paa"};
 	};
@@ -1182,7 +1182,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider 2-2)";
+		displayname = "Clone Trooper JT12 LR (Warhawk 2-2)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-2_Jumppack.paa"};
 	};
@@ -1191,7 +1191,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider 2-2)";
+		displayname = "Clone Trooper JT12 (Warhawk 2-2)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-2_Jumppack.paa"};
 	};
@@ -1200,7 +1200,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider 2-3)";
+		displayname = "Clone Trooper JT12 LR (Warhawk 2-3)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-3_Jumppack.paa"};
 	};
@@ -1209,7 +1209,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider 2-3)";
+		displayname = "Clone Trooper JT12 (Warhawk 2-3)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-3_Jumppack.paa"};
 	};
@@ -1218,7 +1218,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Raider 2-4)";
+		displayname = "Clone Trooper JT12 LR (Warhawk 2-4)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
 	};
@@ -1227,7 +1227,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 (Raider 2-4)";
+		displayname = "Clone Trooper JT12 (Warhawk 2-4)";
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
 	};

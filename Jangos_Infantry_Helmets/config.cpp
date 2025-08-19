@@ -202,7 +202,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Special Activities Helmet (104th Ghost)";							// the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets\data\Textures\104th_JTAC_Ghost_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Welty_Helmet : ls_sob_phase2SpecOp_helmet
+	class JA_104th_Welty_Helmet_old : ls_sob_phase2SpecOp_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -247,7 +247,7 @@ class CfgWeapons
 			"camo1",
 			"illum",
 			"visor"};													 // don't change this
-		displayname = "Clone Trooper Engineer Helmet (104th Archibold)"; // the name it will be in game
+		displayname = "Clone Trooper Engineer Helmet (104th Axel)"; // the name it will be in game
 		hiddenSelectionsTextures[] = {
 			"Jangos_Infantry_Helmets\data\Textures\104th_Engi_Archibold_Helmet.paa",
 			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
