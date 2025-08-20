@@ -450,7 +450,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_IQ_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_IQ_Uniform : JA_104th_Base_Clone_MC_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -459,11 +459,16 @@ class CfgWeapons
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2"};
+				"camo2",
+				"biceps",
+				"rank"};
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Upper.paa",
-				"Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Lower.paa"};
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Lower.paa",
+				"Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Upper.paa",
+				"",
+			};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -1207,7 +1212,7 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Axel_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Axel_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_IQ : lsd_gar_phase2_base
+	class JA_104th_IQ : ls_gar_marshalCommander_base
 	{
 		author = "Dak";
 		scope = 2;
@@ -1218,8 +1223,8 @@ class CfgVehicles
 		displayName = "104th IQ";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Lower.paa"};
+		hiddenSelections[] = {"camo1", "camo2", "biceps", "rank"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Upper.paa", "Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Lower.paa","Jangos_Infantry_Armours\data\Textures\104th_P2_IQ_Upper.paa",""};
 		linkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
