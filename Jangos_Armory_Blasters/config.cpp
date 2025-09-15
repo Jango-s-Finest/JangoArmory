@@ -14,6 +14,11 @@ class CfgPatches
         // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
         weapons[] = {
 
+            "JA_104th_rifle_base",
+            "JA_104th_rifle_base_stunless",
+            "JA_104th_pistol_base",
+            "JA_104th_launcher_base",
+            
             "JA_104th_DC15A",
             "JA_104th_DC15A_UGL",
 
@@ -164,7 +169,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_40mw40",
             "JA_104th_Weapons_Mags_40mw10",
 
-            "JA_104th_Weapons_Mags_50mw5",
+            "JA_104th_Weapons_Mags_50mw7",
 
             "JA_104th_Weapons_Mags_10mw20SC",
             "JA_104th_Weapons_Mags_20mw16SC_Slug",
@@ -265,12 +270,13 @@ class CfgWeapons
 
     class JLTS_stun_muzzle;
     class LFP_dc17arc_Dual;
+    class ls_weapon_dc17m;
     class ls_weapon_dualDC17_secondary;
     class ls_weapon_dualDC17Left_dummy;
     class ls_weapon_rps6;
     class ls_weapon_rps6_disposable;
     class ls_weapon_at_plx1;
-    class SWLW_Z7;
+    class ls_weapon_z7;
     class SDT_IonDisruptor;
     class 3AS_RPS6_HP;
     class 3AS_RPS6_F;
@@ -1474,7 +1480,6 @@ class CfgWeapons
             optics = 1;
             magazines[] =
                 {
-                    "ACE_HuntIR_M203",
                     "JA_104th_Weapons_Mags_GL_HE3",
                     "JA_104th_Weapons_Mags_GL_AP2",
                     "JA_104th_Weapons_Mags_10mw4SC",
@@ -1662,7 +1667,33 @@ class CfgWeapons
                 compatibleItems[] =
                     {
                         "3AS_optic_DC15C_F",
-                        "3AS_Optic_Scope_WestarM5"};
+                        "3AS_Optic_Scope_WestarM5",
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
+
+                        "JA_104th_cows_mrco",
+                        "JA_104th_cows_mrco_2",
+                        "JA_104th_cows_mrco_3",
+
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3",
+
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3",
+
+                        "JA_104th_cows_DMS",
+                        "JA_104th_cows_DMS_2",
+                        "JA_104th_cows_DMS_3",
+                        "JA_104th_cows_DMS_4",
+
+                        "JA_104th_cows_Holoscope_LR",
+                        "JA_104th_cows_Holoscope_LR_2",
+                        "JA_104th_cows_Holoscope_LR_3",
+                        "JA_104th_cows_Holoscope_LR_4"
+                    };
             };
             class MuzzleSlot : MuzzleSlot
             {
@@ -1712,7 +1743,6 @@ class CfgWeapons
             discreteDistanceInitIndex = 1;
             magazines[] =
                 {
-                    "ACE_HuntIR_M203",
                     "JA_104th_Weapons_Mags_GL_HE2",
                     "JA_104th_Weapons_Mags_GL_AP2",
 
@@ -1731,7 +1761,8 @@ class CfgWeapons
                     "JA_104th_Weapons_Mags_GL_flare_Yellow3",
                     "JA_104th_Weapons_Mags_GL_flare_Blue3",
                     "JA_104th_Weapons_Mags_GL_flare_Cyan3",
-                    "JA_104th_Weapons_Mags_GL_flare_Purple3"};
+                    "JA_104th_Weapons_Mags_GL_flare_Purple3"
+                };
             magazineWell[] = {"UGL_40x36", "CBA_40mm_M203", "CBA_40mm_EGLM"};
             reloadAction = "GestureReloadMXUGL";
             reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
@@ -1772,13 +1803,14 @@ class CfgWeapons
         recoil = "recoil_SMG_03";
         magazines[] =
             {
-                "JA_104th_Weapons_Mags_20mw240"};
+                "JA_104th_Weapons_Mags_20mw240"
+            };
         modes[] = {"FullAuto", "FullerAuto", "FullestAuto"};
 
         class FullAuto : FullAuto
         {
             reloadTime = 0.1;
-            dispersion = 0.0065;
+            dispersion = 0.006;
             sounds[] = {"StandardSound"};
             textureType = "burst";
             class BaseSoundModeType
@@ -1799,7 +1831,7 @@ class CfgWeapons
         class FullerAuto : FullAuto
         {
             reloadTime = 0.06;
-            dispersion = 0.0074;
+            dispersion = 0.007;
             textureType = "fullAuto";
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
@@ -1820,7 +1852,7 @@ class CfgWeapons
         class FullestAuto : FullAuto
         {
             reloadTime = 0.05;
-            dispersion = 0.0081;
+            dispersion = 0.0072;
             displayName = "Overcharge";
             textureType = "fastAuto";
             sounds[] = {"StandardSound"};
@@ -2059,7 +2091,6 @@ class CfgWeapons
             discreteDistanceInitIndex = 0;
             magazines[] =
                 {
-                    "ACE_HuntIR_M203",
                     "JA_104th_Weapons_Mags_GL_HE2",
                     "JA_104th_Weapons_Mags_GL_AP2",
 
@@ -2220,7 +2251,7 @@ class CfgWeapons
         magazines[] =
             {
                 "JA_104th_Weapons_Mags_40mw20",
-                "JA_104th_Weapons_Mags_50mw5",
+                "JA_104th_Weapons_Mags_50mw7",
                 "JA_104th_Weapons_Mags_100mw1",
                 "JA_104th_Weapons_Mags_EMPMw2"
             };
@@ -2244,15 +2275,6 @@ class CfgWeapons
                 begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
-            reloadTime = 1.25;
-            dispersion = 0.00008;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 250;
-            midRangeProbab = 0.7;
-            maxRange = 450;
-            maxRangeProbab = 0.3;
-        };
         class OpticsModes
         {
             class Ironsights
@@ -2304,6 +2326,8 @@ class CfgWeapons
                 compatibleItems[] = {
                     "acc_flashlight",
                     "acc_pointer_IR",
+                    "3AS_Imp_Light_E11",
+                    "3AS_Imp_Laser_E11",
                     "ACE_acc_pointer_green"};
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
                 iconPinpoint = "Center";
@@ -2324,19 +2348,11 @@ class CfgWeapons
     };
 
     // DC17M
-    class JA_104th_DC17M : JA_104th_rifle_base
+    class JA_104th_DC17M : ls_weapon_dc17m
     {
         ACE_barrelTwist = 178;
         ACE_barrelLength = 264;
         ACE_twistDirection = 1;
-        BNA_KC_weapons_attachmentSwapEnabled = 1; // Enables attachment swapping
-        BNA_KC_weapons_attachments[] = 
-                { // List of a property in the magazine class, and what attachment to apply
-            // Property can be whatever, but should have a TAG
-            {"JA_104th_isBlasterMag", "ls_muzzle_dc17m_blaster"},
-            {"JA_104th_isATMag", "ls_muzzle_dc17m_antiArmor"},
-            {"JA_104th_isSniperMag", "ls_muzzle_dc17m_sniper"}
-                };
         scope = 2;
         displayName = "[104th] DC-17M";
         baseWeapon = "JA_104th_DC17M";
@@ -2347,170 +2363,9 @@ class CfgWeapons
         reloadAction = "GestureReload_JLTS_DC15A";
         reloadTime = 0.1;
         recoil = "recoil_mx";
-        magazines[] =
-            {
-                "JA_104th_Weapons_Mags_20mw70",
-                "JA_104th_Weapons_Mags_50mw5",
-                "JA_104th_Weapons_Mags_100mw_AT"
-            };
+        ls_weapons_attachmentSwapEnabled = 1;
+        ls_weapons_attachments[] = {{"ls_weapons_isBlasterMag","ls_muzzle_dc17m_blaster"},{"ls_weapons_isATMag","ls_muzzle_dc17m_antiArmor"},{"ls_weapons_isSniperMag","ls_muzzle_dc17m_sniper"}};
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
-        muzzles[] =
-            {
-                "this",
-                "AT_muzzle"
-            };
-        class AT_muzzle : UGL_F
-        {
-            displayName = "[104th] Anti-Tank Attachment";
-            descriptionShort = "Anti-Tank Muzzle for DC17M";
-            useModelOptics = 0;
-            useExternalOptic = 0;
-            cameraDir = "OP_look";
-            discreteDistance[] = {50};
-            discreteDistanceCameraPoint[] = {"OP_eye_50"};
-            discreteDistanceInitIndex = 0;
-            magazines[] =
-                {
-                    "JA_104th_Weapons_Mags_100mw_AT"
-                };
-            magazineWell[] = {"UGL_40x36", "CBA_40mm_M203", "CBA_40mm_EGLM"};
-            reloadAction = "GestureReloadMXUGL";
-            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
-            class Single : Mode_SemiAuto
-            {
-                sounds[] = {"StandardSound"};
-                class BaseSoundModeType
-                {
-                    weaponSoundEffect = "";
-                    closure1[] = {};
-                    closure2[] = {};
-                    soundClosure[] = {};
-                };
-                class StandardSound : BaseSoundModeType
-                {
-                    weaponSoundEffect = "";
-                    begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.707946,1,200};
-                    begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
-                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
-                };
-            };
-        };
-        class OpticsModes
-        {
-            class Ironsights
-            {
-                opticsID = 1;
-                useModelOptics = 0;
-                opticsFlare = "true";
-                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
-                opticsDisablePeripherialVision = 0.67;
-                opticsZoomMin = 0.25;
-                opticsZoomMax = 1.1;
-                opticsZoomInit = 0.75;
-                memoryPointCamera = "eye";
-                visionMode[] = {};
-                distanceZoomMin = 100;
-                distanceZoomMax = 100;
-            };
-            class Scope : Ironsights
-            {
-                opticsID = 2;
-                useModelOptics = 1;
-                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
-                opticsDisablePeripherialVision = 0.67;
-                opticsZoomMin = 0.125;
-                opticsZoomMax = 0.125;
-                opticsZoomInit = 0.125;
-                memoryPointCamera = "opticView";
-                visionMode[] = {"Normal", "NVG", "Ti"};
-                thermalMode[] = {0, 1};
-                opticsFlare = "true";
-                distanceZoomMin = 100;
-                distanceZoomMax = 100;
-                cameraDir = "";
-            };
-        };
-        modes[] = {"Single","FullAuto"};
-        class Single: Single
-        {
-            reloadTime=0.1;     
-            dispersion=0.0005;
-            sounds[] = {"StandardSound"};
-            class StandardSound: BaseSoundModeType
-            {
-                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet"};
-            };
-        };
-        class FullAuto: FullAuto
-        {
-            reloadTime = 0.1;
-            dispersion = 0.0005;
-            sounds[] = {"StandardSound"};
-            class StandardSound: BaseSoundModeType
-            {
-                soundSetShot[] = {"ls_dc17m_Shot_SoundSet"};
-            };
-        };
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot : CowsSlot
-            {
-                displayName = "Optics Slot";
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinpoint = "Bottom";
-                iconPosition[] = {0.5, 0.35};
-                iconScale = 0.2;
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] = 
-                {
-                    "SWLW_attachment_scope_DC17M_sniper",
-                    "JA_104th_cows_rco",
-                    "JA_104th_cows_rco_2",
-                    "JA_104th_cows_rco_3",
-
-                    "JA_104th_cows_mrco",
-                    "JA_104th_cows_mrco_2",
-                    "JA_104th_cows_mrco_3",
-
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-
-                    "JA_104th_cows_HoloScope",
-                    "JA_104th_cows_HoloScope_2",
-                    "JA_104th_cows_HoloScope_3",
-
-                    "JA_104th_cows_DMS",
-                    "JA_104th_cows_DMS_2",
-                    "JA_104th_cows_DMS_3",
-                    "JA_104th_cows_DMS_4",
-
-                    "JA_104th_cows_Holoscope_LR",
-                    "JA_104th_cows_Holoscope_LR_2",
-                    "JA_104th_cows_Holoscope_LR_3",
-                    "JA_104th_cows_Holoscope_LR_4"
-                    
-                };
-            };
-            class MuzzleSlot : MuzzleSlot
-            {
-                linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName="$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                compatibleItems[]=
-                {
-                    "ls_muzzle_dc17m_blaster",
-                    "ls_muzzle_dc17m_sniper"
-                };
-            };
-            class PointerSlot : PointerSlot
-            {
-                compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint = "Center";
-                linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot";
-            };
-        };
     };
 
     // DP23
@@ -2795,7 +2650,6 @@ class CfgWeapons
             useExternalOptic = 0;
             magazines[] =
                 {
-                    "ACE_HuntIR_M203",
                     "JA_104th_Weapons_Mags_GL_HE3",
                     "JA_104th_Weapons_Mags_GL_AP2",
 
@@ -3413,13 +3267,13 @@ class CfgWeapons
     };
 
     // Z7 Chaingun
-    class JA_104th_Z7_mk2 : SWLW_Z7
+    class JA_104th_Z7_mk2 : ls_weapon_z7
     {
         author = "SW Legion Studios + Echo";
         baseWeapon = "JA_104th_Z7";
         scope = 2;
         displayName = "[104th] Z7 Rotary Shoulder Gun";
-        magazines[] = {"ls_mag_flak_800rnd"};
+        magazines[] = {"ls_magazine_z7"};
     };
 
     // class JA_104th_ShoulderCannon_mk2
@@ -3980,14 +3834,14 @@ class CfgMagazines
     };
 
     // FP773 HP + 17M sniper
-    class JA_104th_Weapons_Mags_50mw5 : 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_50mw7 : 30Rnd_65x39_caseless_mag
     {
         JA_104th_isSniperMag = 1;
         displayName = "[104th] High Power Sniper Energy Cell";
-        displayNameShort = "5Rnd 50MW";
+        displayNameShort = "7Rnd 50MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
-        count = 5;
+        count = 7;
         ammo = "JA_104th_Weapons_Ammo_50mw";
         initSpeed = 2000;
         descriptionShort = "SF Specialized Overcharged magazine";
@@ -4462,10 +4316,10 @@ class CfgVehicles
                 count = 25;
                 magazine = "JA_104th_Weapons_Mags_40mw20";
             };
-            class _xx_JA_104th_Weapons_Mags_50mw5
+            class _xx_JA_104th_Weapons_Mags_50mw7
             {
                 count = 25;
-                magazine = "JA_104th_Weapons_Mags_50mw5";
+                magazine = "JA_104th_Weapons_Mags_50mw7";
             };
             class _xx_JA_104th_Weapons_Mags_100Mw1
             {
