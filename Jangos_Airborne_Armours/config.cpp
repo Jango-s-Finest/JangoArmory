@@ -464,7 +464,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Cyan_Uniform : JA_104th_Base_AB_Uniform
+	class JA_104th_Cyan_Uniform_old : JA_104th_Base_AB_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -482,7 +482,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Cyan";
+			uniformClass = "JA_104th_Cyan_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -638,7 +638,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Axel_Uniform : JA_104th_Base_AB_Uniform
+	class JA_104th_Axel_Uniform_old : JA_104th_Base_AB_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -656,7 +656,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Axel";
+			uniformClass = "JA_104th_Axel_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1004,14 +1004,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Bulky_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Bulky_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Cyan : lsd_gar_phase2_base
+	class JA_104th_Cyan_old : lsd_gar_phase2_base
 	{
 		author = "Cyan";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Cyan_Uniform";
+		uniformClass = "JA_104th_Cyan_Uniform_old";
 		displayName = "104th Cyan";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
@@ -1052,14 +1052,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Ceasar_Helmet, ls_gar_airborneOfficer_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Ceasar_Helmet, ls_gar_airborneOfficer_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Axel : lsd_gar_phase2_base
+	class JA_104th_Axel_old : lsd_gar_phase2_base
 	{
 		author = "Fish";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Axel_Uniform";
+		uniformClass = "JA_104th_Axel_Uniform_old";
 		displayName = "104th Axel";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";

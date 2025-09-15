@@ -362,30 +362,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Cyan_Uniform_A : JA_104th_Base_ARF_Uniform
-	{
-		author = "Cyan";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Cyan)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_ARF_Armours\data\Textures\104th_ARF_Cyan_Upper.paa",
-				"Jangos_ARF_Armours\data\Textures\104th_ARF_Cyan_Lower.paa"};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			scope = 2;
-			uniformClass = "JA_104th_Cyan_A";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
 	class JA_104th_Gravity_Uniform_A : JA_104th_Base_ARF_Uniform
 	{
 		author = "Cyan";
@@ -434,7 +410,55 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_IQ_Uniform : JA_104th_Base_ARF_Uniform
+	class JA_104th_Welty_Uniform : JA_104th_Base_ARF_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Welty)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Welty_Upper.paa",
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Welty_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Welty";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Cyan_Uniform : JA_104th_Base_ARF_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Cyan)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Cyan_Upper.paa",
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Cyan_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Cyan";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_IQ_Uniform_old : JA_104th_Base_ARF_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -452,7 +476,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_IQ";
+			uniformClass = "JA_104th_IQ_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -477,30 +501,6 @@ class CfgWeapons
 			uniformModel = "-";
 			scope = 2;
 			uniformClass = "JA_104th_Unix";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
-	class JA_104th_Welty_Uniform_A : JA_104th_Base_ARF_Uniform
-	{
-		author = "Cyan";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Welty)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_ARF_Armours\data\Textures\104th_ARF_Welty_Upper.paa",
-				"Jangos_ARF_Armours\data\Textures\104th_ARF_Welty_Lower.paa"};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			scope = 2;
-			uniformClass = "JA_104th_Welty_A";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -671,22 +671,6 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Beans_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Beans_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Cyan_A : lsd_gar_phase2_base
-	{
-		author = "Cyan";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		side = 1;
-		uniformClass = "JA_104th_Cyan_Uniform_A";
-		displayName = "104th Cyan A";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Cyan_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Cyan_Lower.paa"};
-		linkedItems[] = {JA_104th_Cyan_Helmet_A, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Cyan_Helmet_A, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
-	};
 	class JA_104th_Gravity_A : lsd_gar_phase2_base
 	{
 		author = "Cyan";
@@ -719,14 +703,46 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_IQ : lsd_gar_phase2_base
+	class JA_104th_Cyan : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_IQ_Uniform";
+		uniformClass = "JA_104th_Cyan_Uniform";
+		displayName = "104th Cyan";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Cyan_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Cyan_Lower.paa"};
+		linkedItems[] = {JA_104th_Cyan_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Cyan_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Welty : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Welty_Uniform";
+		displayName = "104th Welty";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Welty_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Welty_Lower.paa"};
+		linkedItems[] = {JA_104th_Welty_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Welty_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_IQ_old : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_IQ_Uniform_old";
 		displayName = "104th IQ";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
@@ -750,22 +766,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Unix_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Unix_Lower.paa"};
 		linkedItems[] = {JA_104th_Unix_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Unix_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
-	};
-	class JA_104th_Welty_A : lsd_gar_phase2_base
-	{
-		author = "Cyan";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		side = 1;
-		uniformClass = "JA_104th_Welty_Uniform_A";
-		displayName = "104th Welty A";
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Welty_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Welty_Lower.paa"};
-		linkedItems[] = {JA_104th_Welty_Helmet_A, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Welty_Helmet_A, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Woods : lsd_gar_phase2_base
 	{

@@ -122,6 +122,17 @@ class CfgWeapons
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Habit_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Habit_Helmet.paa"}; // the file path to the texture
 	};
+	class JA_104th_AB_Squid_Helmet : ls_gar_airborne_helmet
+	{
+		author = "Tundra";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper AB Helmet (104th Squid)"; // the name it will be in game
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Squid_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Squid_Helmet.paa"}; // the file path to the texture
+	};
 	class JA_104th_Ratchet_Helmet : ls_gar_airborne_helmet
 	{
 		author = "Tundra";
@@ -277,7 +288,7 @@ class CfgWeapons
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Sixes_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Sixes_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Cyan_Helmet : ls_gar_airborne_helmet
+	class JA_104th_Cyan_Helmet_old : ls_gar_airborne_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
