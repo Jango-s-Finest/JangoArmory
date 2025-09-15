@@ -11,16 +11,13 @@ if(isServer)then{
 			_target = _incoming select _i;
 			_shooter = ((getShotParents _target) select 0);
 			if(side _turret != side _shooter)then{
-				_fromTarget = _target getDir _turret;
-				_dirTarget = direction _target;
 				_targetBoom = getText (configFile >> "CfgAmmo" >> typeOf _target >> "explosionEffects"); 
-				_shooter = ((getShotParents _target) select 0);
 				while {(alive _target)} do {
-					if ((_target distance _turret < _range) && (!lineIntersects [getPos _turret,getPos _target]) && (random 100 < 85)) then{
+					if ((_target distance _turret < _range) && (!lineIntersects [getPos _turret,getPos _target]) && (!terrainIntersect [getPos _turret,getPos _target]) && (random 100 < 85)) then{
 						[_targetBoom,(getPos _target)] remoteExec ["createVehicle"];
 						"HelicopterExploBig" createVehicle (getPos _target);
 						[_target] remoteExec ["deleteVehicle"];
-						sleep 5;
+						sleep 15;
 					};
 					sleep 0.1;
 				};

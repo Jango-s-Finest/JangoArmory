@@ -9884,6 +9884,11 @@ class cfgVehicles
 				count = 5;
 				magazine = "IEDLandBig_Remote_Mag";
 			};
+			class _xx_LFP_type_C_explosive
+			{
+				count = 2;
+				magazine = "LFP_type_C_explosive";
+			};
 		};
 		class TransportItems
 		{
@@ -10233,11 +10238,21 @@ class cfgVehicles
 			};
 			class Spawn_JA_104th_Oryx
 			{
-				displayName = "Spawn 104th Oryx";
+				displayName = "Spawn 104th Oryx Shielded";
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
 				statement = "[this, 'JA_104th_Oryx'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_OryxTS
+			{
+				displayName = "Spawn 104th Oryx Trophy System";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_OryxTS'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
@@ -10281,13 +10296,13 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
-			class Spawn_3AS_ATTE_TCW
+			class Spawn_104th_ATTE
 			{
 				displayName = "Spawn 3AS ATTE";
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this, '3AS_ATTE_TCW'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = "[this, '104th_ATTE'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};

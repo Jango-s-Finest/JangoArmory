@@ -8,6 +8,9 @@ class CfgPatches
 			"104th_ATTE",
 			"104th_TX_130_Super_Saber",
 			"104th_ATAP",
+			"JA_104th_OryxNS",
+			"JA_104th_Oryx",
+			"JA_104th_OryxTS",
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
@@ -491,6 +494,10 @@ class cfgVehicles
 		};
 		class EventHandlers : DefaultEventhandlers
 		{
+			class EventHandlers : DefaultEventhandlers
+			{
+				Init = "_this call BNA_KC_jetpacks_fnc_addRefuelAction;";
+			};
 		};
 		class TextureSources
 		{
@@ -1747,7 +1754,7 @@ class cfgVehicles
 
 		class EventHandlers : DefaultEventhandlers
 		{
-            Init = "[_this select 0, 100] execVM '\JangosVehiclesGround\DefenceSystem.sqf';";
+            Init = "[_this select 0, 150] execVM '\JangosVehiclesGround\DefenceSystem.sqf';";
 		};
 	};
 
