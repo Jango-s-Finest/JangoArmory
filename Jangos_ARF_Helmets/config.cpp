@@ -17,8 +17,8 @@ class CfgPatches
 			"JA_104th_ARF_Medic_Helmet",
 			"JA_104th_Achilles_Helmet",
 			"JA_104th_Beans_Helmet",
-			"JA_104th_Cyan_Helmet_A",
-			"JA_104th_Gravity_Helmet_A",
+			"JA_104th_Cyan_Helmet",
+			"JA_104th_Gravity_Helmet",
 			"JA_104th_IQ_Helmet",
 			"JA_104th_Fire_Helmet",
 			"JA_104th_Unix_Helmet",
@@ -191,7 +191,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Beans_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
-	class JA_104th_Gravity_Helmet_A : ls_gar_phase1Arf_helmet
+	class JA_104th_Gravity_Helmet : ls_gar_phase1Arf_helmet
 	{
 		author = "Cyan";
 		scopeArsenal = 2;

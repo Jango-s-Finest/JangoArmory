@@ -37,10 +37,10 @@ class CfgAmmo
 		caliber = 7;
 		indirectHit = 10;
 		indirectHitRange = 3;
-		hit = 200;
+		hit = 100;
 	};
 	class JA_104th_AP_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 14;
+		caliber = 10;
 		indirectHit = 0;
 		indirectHitRange = 0;
 		hit = 200;
@@ -49,26 +49,68 @@ class CfgAmmo
 	};
 	class JA_104th_HE_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 7;
-		indirectHit = 100;
+		indirectHit = 60;
 		indirectHitRange = 6;
-		hit = 200;
+		hit = 100;
 		explosive = 0.9;
 	};
 	class JA_104th_APHE_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 14;
-		indirectHit = 100;
+		caliber = 10;
+		indirectHit = 60;
 		indirectHitRange = 6;
-		hit = 200;
+		hit = 100;
 		explosive = 0.5;
 	};
+	
 	class FIR_AIM9X;
 	class JA_LAAT_AIM9X_BULLDOG_Ammo: FIR_AIM9X{
 		autoSeekTarget = 1;
-		cmimmunity = 0.80;
-		lockSeekRadius = 10;
-		missileManualControlCone = 10;
-		missileKeepLockedCone = 10;
-		missileLockCone = 10;
+		lockSeekRadius = 500;
+		missileManualControlCone = 180;
+		missileKeepLockedCone = 180;
+		missileLockCone = 180;
+		weaponLockSystem = "2 + 16";
+		flightProfiles[] = {"LoalDistance"};
+		lockSeekDistanceFromParent = 100;
+		class LoalDistance {
+			lockSeekDistanceFromParent = 100;
+		};
+		// class ace_missileguidance {
+		// 	attackProfiles[] = {"DIR"};
+		// 	canVanillaLock = 0;
+		// 	defaultAttackProfile = "DIR";
+		// 	lockableTypes[] = {"Air"};
+		// 	defaultNavigationType = "AugmentedProportionalNavigation";
+		// 	defaultSeekerLockMode = "LOAL";
+		// 	defaultSeekerType = "IR";
+		// 	enabled = 1;
+		// 	navigationTypes[] = {"AugmentedProportionalNavigation"};
+		// 	pitchRate = 60;
+		// 	yawRate = 60;
+		// 	seekLastTargetPos = 0;
+		// 	seekerAccuracy = 1;
+		// 	seekerAngle = 45;
+		// 	seekerLockModes[] = {"LOAL",};
+		// 	seekerMaxRange = 2500;
+		// 	seekerMinRange = 1;
+		// 	seekerTypes[] = {"IR"};
+		// };
+		class Direct{};
+	};
+	
+	class 3AS_Mass_Driver_Shell;
+	class JA_ATTE_Maingun_Normal_Ammo: 3AS_Mass_Driver_Shell{
+		caliber = 14;
+		hit = 900;
+		indirectHit = 70;
+		explosive = 0.25;
+
+	};
+	class JA_ATTE_Maingun_HE_Ammo: 3AS_Mass_Driver_Shell{
+		caliber = 14;
+		hit = 450;
+		indirectHit = 250;
+		explosive = 0.9;
 	};
 };
 
@@ -158,6 +200,18 @@ class CfgMagazines
         count = 4;
         pylonWeapon = "JA_104th_AIM120";
     };
+
+	class 3AS_30Rnd_Mass_Driver_shells;
+	class JA_ATTE_Maingun_Normal_Mag: 3AS_30Rnd_Mass_Driver_shells{
+		ammo = "JA_ATTE_Maingun_Normal_Ammo";
+		displayNameShort = "Mass Driver AP";
+
+	};
+	class JA_ATTE_Maingun_HE_Mag: 3AS_30Rnd_Mass_Driver_shells{
+		ammo = "JA_ATTE_Maingun_HE_Ammo";
+		displayNameShort = "Mass Driver HE";
+
+	};
 };
 
 class CfgWeapons
@@ -177,7 +231,7 @@ class CfgWeapons
 		modes[] = {"manual"};
 		class manual: manual{
 			burst = 1;
-			reloadtime = 0.1;
+			reloadtime = 0.08;
 		};
 	};
 	class JA_104th_AP_Lazer : RD501_Republic_Aircraft_Laser_AA{
@@ -217,5 +271,10 @@ class CfgWeapons
 	};
 	class JA_104th_AIM120 : FIR_AIM120{
 		magazines[] = {"JA_LAAT_AIM120"};
+	};
+
+	class 3AS_Mass_Driver_Cannon;
+	class JA_ATTE_Maingun_Cannon: 3AS_Mass_Driver_Cannon{
+		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
 	};
 };
