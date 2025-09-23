@@ -3264,8 +3264,8 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		hiddenselections[] = {"camo1", "camo2", "camo3"};
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\vwing_co104.paa", "3as\3AS_Vwing\data\vwing_int_co.paa", "#(argb,8,8,3)color(0,0,0,1.0,CA)"};
+		hiddenselections[] = {"camo1","camo4","camo5"};
+		hiddenselectionstextures[] = {"3AS\3AS_Vwing\data\vwing_main_co.paa","3AS\3AS_Vwing\data\Vwing_AstromechDroid_co.paa","3AS\3AS_Vwing\data\vwing_wings_co.paa"};
 		weapons[] = {"RD501_Republic_Aircraft_Laser_AA", "CMFlareLauncher"};
 		magazines[] = {"RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "RD501_Republic_Aircraft_Laser_AA_Mag_600", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 		crew = "ls_clone_phase2_pilot";
@@ -9884,10 +9884,10 @@ class cfgVehicles
 				count = 5;
 				magazine = "IEDLandBig_Remote_Mag";
 			};
-			class _xx_LFP_type_C_explosive
+			class _xx_LFP_type_C_Remote_Mag
 			{
 				count = 2;
-				magazine = "LFP_type_C_explosive";
+				magazine = "LFP_type_C_Remote_Mag";
 			};
 		};
 		class TransportItems
@@ -10211,6 +10211,13 @@ class cfgVehicles
 				hideOnUse = 0;
 			};
 		};
+		class VehicleTransport
+		{
+			class Cargo
+			{
+				canBeTransported = FALSE;
+			};
+		}
 	};
 	class JA_104th_Vehicle_spawner_Droid_Ground : 3AS_T_Screen
 	{
@@ -10256,13 +10263,13 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
-			class Spawn_WM_M1
+			class Spawn_104th_TX_130_Super_Saber
 			{
-				displayName = "Spawn WM TX-130";
+				displayName = "Spawn 104 TX-130";
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this, 'WM_M1'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = "[this, '104th_TX_130_Super_Saber'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
@@ -10298,7 +10305,7 @@ class cfgVehicles
 			};
 			class Spawn_104th_ATTE
 			{
-				displayName = "Spawn 3AS ATTE";
+				displayName = "Spawn 104 ATTE";
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
@@ -10316,7 +10323,24 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
+			class Spawn_104th_ATAP
+			{
+				displayName = "Spawn [104th] AT-AP";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, '104th_ATAP'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
 		};
+		class VehicleTransport
+		{
+			class Cargo
+			{
+				canBeTransported = FALSE;
+			};
+		}
 	};
 	class 3AS_Republic_HR_Bag;
 	class JA_104th_Republic_HR_Bag : 3AS_Republic_HR_Bag{
