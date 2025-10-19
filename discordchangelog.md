@@ -3,13 +3,14 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper Engineer Helmet (104th Poet)
-- Clone Trooper ARF Helmet (104th Gravity)
-- Clone Trooper armor (104th Gravity)
+- Clone Trooper armor (104th Squid)
+- Clone Trooper armor (104th Poet)
 
 Changed Gear
 ------------------
-- Clone Trooper AB Helmet (104th Scrub)
+- Clone ARC Trooper Vest (104th Drifter)
+- Clone Trooper ARC Trooper Helmet (104th Drifter)
+- Clone Trooper armor (104th Drifter)
 
 Removed Gear
 ------------------
@@ -35,14 +36,11 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- [104th] AT-TE
-- [104th] TX-130 Super Saber
-- [104th] AT-AP
-- [104th] Oryx IFV Trophy System
+- 
 
 Changed Vehicles & Supplies
 ------------------
-- 104th ARC-170 Blue - Back gun fixed
+- 
 
 Removed Vehicles & Supplies
 ------------------
