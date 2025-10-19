@@ -20,6 +20,7 @@ class CfgPatches
             "JA_104th_launcher_base",
             
             "JA_104th_DC15A",
+            "JA_104th_DC15LE",
             "JA_104th_DC15A_UGL",
 
             "JA_104th_DC15C",
@@ -1333,8 +1334,8 @@ class CfgWeapons
         recoil = "recoil_mx";
         magazines[] =
             {
-                "JA_104th_Weapons_Mags_20mw40",
-                "JA_104th_Weapons_Mags_30mw30"};
+                "JA_104th_Weapons_Mags_20mw40"
+            };
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
         class stun : JA_104th_stun_muzzle
         {
@@ -1516,6 +1517,88 @@ class CfgWeapons
                     begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.707946,1,200};
                     soundBegin[] = {"begin1",0.5,"begin2",0.5};
                 };
+            };
+        };
+    };
+    class JA_104th_DC15LE : JA_104th_DC15A
+    {
+        displayName = "[104th] DC-15LE";
+        baseWeapon = "JA_104th_DC15LE";
+        mass = 110;
+        model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
+        handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15a_Handanim.rtm"};
+        reloadAction = "3AS_GestureReloadDC15A";
+        magazines[] =
+            {
+                "JA_104th_Weapons_Mags_30mw30"
+            };
+        muzzles[] =
+            {
+                "this",
+                "Stun"
+            };
+                modes[] = {"Single"};
+        class Single : Single
+        {
+            reloadTime = 0.24;
+            dispersion = 0.00022;
+            sounds[] = {"StandardSound"};
+            class StandardSound : BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15A_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+            };
+        };
+    ls_weapons_attachmentSwapEnabled = 1;
+    ls_weapons_attachments[] = {{"ls_weapons_isBlasterMag","3AS_muzzle_DC15LE_F"}};
+    class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot : CowsSlot
+            {
+                displayName = "Optics Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = {0.5, 0.35};
+                iconScale = 0.2;
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                compatibleItems[] =
+                    {
+                        "3AS_optic_DC15LE_F",
+                        "3AS_optic_DC15C_F",
+                        "3AS_Optic_Scope_WestarM5"
+                };
+            };
+            class MuzzleSlot : MuzzleSlot
+            {
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                compatibleItems[] =
+                    {
+                        
+                        "3AS_muzzle_DC15LE_F"
+                    };
+            };
+            class PointerSlot : PointerSlot
+            {
+                linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+                displayName = "Pointer Slot";
+                compatibleItems[] =
+                    {
+                        "acc_flashlight",
+                        "acc_pointer_IR"};
+            };
+            class UnderBarrelSlot : UnderBarrelSlot
+            {
+                iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
+                iconPinpoint = "Bottom";
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                compatibleItems[] =
+                    {
+                        "bipod_01_f_blk",
+                        "3AS_Bipod_DC15L_f"};
             };
         };
     };
@@ -2360,6 +2443,12 @@ class CfgWeapons
         mass = 60;
         picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc17m_ui_ca.paa";
         model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_weapon_dc17m.p3d";
+        magazines[] =
+            {
+                "JA_104th_Weapons_Mags_20mw70",
+                "JA_104th_Weapons_Mags_50mw7",
+                "ls_magazine_dc17m_antiArmor"
+            };
         handAnim[] = {"OFP2_ManSkeleton","\ls\core\addons\weapons_dcSeries\dc17m\anims\dc17m_handanim.rtm"};
         reloadAction = "GestureReload_JLTS_DC15A";
         reloadTime = 0.1;
@@ -2367,6 +2456,66 @@ class CfgWeapons
         ls_weapons_attachmentSwapEnabled = 1;
         ls_weapons_attachments[] = {{"ls_weapons_isBlasterMag","ls_muzzle_dc17m_blaster"},{"ls_weapons_isATMag","ls_muzzle_dc17m_antiArmor"},{"ls_weapons_isSniperMag","ls_muzzle_dc17m_sniper"}};
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot : CowsSlot
+            {
+                displayName = "Optics Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = {0.5, 0.35};
+                iconScale = 0.2;
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                compatibleItems[] =
+                    {
+                        "ls_cows_dc17m_sniper",
+                        "3AS_optic_DC15C_F",
+                        "3AS_Imp_Optic_1",
+                        "3AS_Imp_Optic_2",
+                        "3AS_Imp_Optic_3",
+                        "3AS_Imp_Optic_4",
+                        "3AS_Optic_Scope_WestarM5",
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
+
+                        "JA_104th_cows_mrco",
+                        "JA_104th_cows_mrco_2",
+                        "JA_104th_cows_mrco_3",
+
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3",
+
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3",
+
+                        "JA_104th_cows_DMS",
+                        "JA_104th_cows_DMS_2",
+                        "JA_104th_cows_DMS_3",
+                        "JA_104th_cows_DMS_4",
+
+                        "JA_104th_cows_Holoscope_LR",
+                        "JA_104th_cows_Holoscope_LR_2",
+                        "JA_104th_cows_Holoscope_LR_3",
+                        "JA_104th_cows_Holoscope_LR_4"
+                    };
+            };
+            class MuzzleSlot : MuzzleSlot
+            {
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                compatibleItems[] =
+                    {
+                        "ls_muzzle_dc17m_blaster",
+                        "ls_muzzle_dc17m_antiArmor",
+                        "ls_muzzle_dc17m_sniper"
+                    };
+            };
+        };
     };
 
     // DP23
@@ -2811,16 +2960,16 @@ class CfgWeapons
             useModelOptics = 0;
             useExternalOptic = 1;
             magazineWell[] = {};
-            cameraDir = "eye";
+            cameraDir = "OP_look";
+            discreteDistance[] = {75, 100, 150, 200, 250, 300, 350, 400};
+            discreteDistanceCameraPoint[] = {"OP_eye_75", "OP_eye_100", "OP_eye_150", "OP_eye_200", "OP_eye_250", "OP_eye_300", "OP_eye_350", "OP_eye_400"};
+            discreteDistanceInitIndex = 1;
             memoryPointCamera = "";
-            discreteDistance[] = {100};
-            discreteDistanceCameraPoint[] = {"eye"};
-            discreteDistanceInitIndex = 0;
             initSpeed = -1;
             muzzleEnd = "shotgun pos";
             muzzlePos = "shotgun dir";
             reloadMagazineSound[] = {"\SWLW_main\sounds\scatter_reload", 0.56234133, 1, 30};
-            magazines[] = {"JA_104th_Weapons_Mags_10mw20SC"};
+            magazines[] = {"3AS_8Rnd_EY30_Pellets"};
             class Single : Mode_SemiAuto
             {
                 sounds[] = {"StandardSound"};
@@ -2926,7 +3075,7 @@ class CfgWeapons
                 soundBegin[] = {"begin1", 1};
             };
             reloadTime = 0.065;
-            dispersion = 0.0138;
+            dispersion = 0.007;
             soundContinuous = 0;
             soundBurst = 0;
             minRange = 0;
@@ -2939,7 +3088,7 @@ class CfgWeapons
         };
         class Overcharge : manual
         {
-            dispersion = "0.013*4";
+            dispersion = "0.009";
             displayName = "Overcharge";
             reloadTime = "0.015";
             burst = 25;
@@ -3763,6 +3912,7 @@ class CfgMagazines
     // DMR Intermediate round
     class JA_104th_Weapons_Mags_30mw30 : 30Rnd_65x39_caseless_mag
     {
+        ls_weapons_isBlasterMag = 1;
         displayName = "[104th] High Power Energy Cell";
         displayNameShort = "30Rnd 30MW";
         author = "Jango's Armory Aux Team";
@@ -3800,7 +3950,7 @@ class CfgMagazines
     // DC17M Blaster Mag
     class JA_104th_Weapons_Mags_20mw70 : 30Rnd_65x39_caseless_mag
     {
-        JA_104th_isBlasterMag = 1;
+        ls_weapons_isBlasterMag = 1;
         displayName = "[104th] Extended Capacity Energy Cell";
         displayNameShort = "70Rnd 20MW";
         author = "Jango's Armory Aux Team";
@@ -3819,7 +3969,7 @@ class CfgMagazines
     // DC17M AT Mag
     class JA_104th_Weapons_Mags_100mw_AT : 30Rnd_65x39_caseless_mag
     {
-        JA_104th_isATMag = 1;
+        ls_weapons_isATMag = 1;
         author = "Jango's Armory Aux Team";
         displayName = "[104th] Unguided Explosive Missile";
         ammo = "JA_104th_Weapons_Ammo_17MAT";
@@ -3837,7 +3987,7 @@ class CfgMagazines
     // FP773 HP + 17M sniper
     class JA_104th_Weapons_Mags_50mw7 : 30Rnd_65x39_caseless_mag
     {
-        JA_104th_isSniperMag = 1;
+        ls_weapons_isSniperMag = 1;
         displayName = "[104th] High Power Sniper Energy Cell";
         displayNameShort = "7Rnd 50MW";
         author = "Jango's Armory Aux Team";
