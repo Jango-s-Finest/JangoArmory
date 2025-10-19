@@ -241,8 +241,9 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_Officer_Accessories.paa",
                 "Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_ARC_Accessories.paa",
-                "Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_Officer_Accessories.paa"};
+            };
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
