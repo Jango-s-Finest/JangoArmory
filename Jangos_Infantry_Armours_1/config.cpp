@@ -311,7 +311,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Quick)";
+		displayName = "Clone Trooper armor (104th Castle)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -1460,7 +1460,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 1;
 		uniformClass = "JA_104th_Quick_Uniform";
-		displayName = "104th Quick";
+		displayName = "104th Castle";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};

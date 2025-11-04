@@ -245,14 +245,16 @@ class cfgVehicles
 					{
 						"Laserdesignator_pilotCamera",
 						"CMFlareLauncher",
-						"ls_weapon_laati_turret_50mm_he"};
+						"JA_104th_AP_Lazer"};
 				magazines[] =
 					{
 						"Laserbatteries",
 						"300Rnd_CMFlare_Chaff_Magazine",
 						"300Rnd_CMFlare_Chaff_Magazine",
-						"ls_magazine_50mm_200Rnd_HE_green",
-						"ls_magazine_50mm_200Rnd_HE_green"};
+						"JA_104th_AP_Lazer_MAG_250",
+						"JA_104th_AP_Lazer_MAG_250",
+						"JA_104th_AP_Lazer_MAG_250",
+						"JA_104th_AP_Lazer_MAG_250"};
 			};
 			class CommanderOptics : CommanderOptics
 			{
@@ -765,7 +767,8 @@ class cfgVehicles
 		scope = 2;
 		side = 1;
 		forceInGarage = 1;
-		
+		weapons[] = {"SmokeLauncher","CMFlareLauncher"};
+		magazines[] = {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
 		// hiddenSelections[] =
 		// 	{
 		// 		"camo1",
@@ -783,8 +786,8 @@ class cfgVehicles
 		{
 			class MainTurretTop: MainTurretTop
 			{
-				weapons[] = {"JA_ATTE_Maingun_Cannon","SmokeLauncher"};
-				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag","SmokeLauncherMag"};
+				weapons[] = {"JA_ATTE_Maingun_Cannon"};
+				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
 			};
 			class MainTurretBack: MainTurretBack{
 				weapons[] = {"3AS_ATTE_Turret"};

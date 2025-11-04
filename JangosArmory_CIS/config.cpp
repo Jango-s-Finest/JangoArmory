@@ -29,6 +29,7 @@ class CfgPatches
 		weapons[] = {
 			"U_O_R_Gorka_01_black_F",
 			"U_O_R_Gorka_01_black_F",
+			"JA_CIS_B1_Uniform",
 			"JA_CIS_B2_Uniform"};
 	};
 };
@@ -45,9 +46,9 @@ class CfgFactionClasses
 };
 class cfgEditorSubcategories
 {
-	class 104th_Categ_CIS
+	class 104th_Categ_CIS_UW
 	{
-		displayname = "CIS - INF";
+		displayname = "CIS - INF - under water";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -65,27 +66,104 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
+	class ls_droidHelmet_b1;
+	class JA_CIS_B1_Helmet : ls_droidHelmet_b1{
+		hiddenSelectionsTextures[] = {"\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Upper.paa"};
+	};
+
+	class ItemInfo;
+	class ls_droidUniform_b1;
 	class ls_cis_b2Droid_uniform;
-	class UniformItem;
-	class U_O_R_Gorka_01_black_F;
+	class JA_CIS_B1_Uniform : ls_droidUniform_b1
+	{
+		author = "Dak";
+		scope = 2;
+		displayName = "Droid B1";
+		hiddenSelectionsTextures[] = {"\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Upper.paa","\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Lower.paa"};
+		class ItemInfo : ItemInfo{
+			uniformClass = "JA_CIS_B1_Base";
+		}
+	};
 	class JA_CIS_B2_Uniform : ls_cis_b2Droid_uniform
 	{
 		author = "Dak";
 		scope = 2;
-		armor = 10;
 		displayName = "Droid B2";
+		hiddenSelectionsTextures[] = {"\JangosArmory_CIS\data\textures\104th_B2_Aquatic_Arms.paa","\JangosArmory_CIS\data\textures\104th_B2_Aquatic_Legs.paa","\JangosArmory_CIS\data\textures\104th_B2_Aquatic_Torso.paa"};
+	};
+
+	class ls_weapon_e5;
+	class ls_weapon_e5c;
+	class ls_weapon_mercenarySniper_scoped;
+	class BNA_KC_AquaB2Blaster;
+	class JA_CIS_Weapon_E5 : ls_weapon_e5{
+		magazines[] = {"JA_CIS_Weapon_E5_Mag"};
+		canShootInWater = 1;
+	};
+	class JA_CIS_Weapon_E5C : ls_weapon_e5c{
+		magazines[] = {"JA_CIS_Weapon_E5C_Mag"};
+		canShootInWater = 1;
+	};
+	class JA_CIS_Weapon_mercenarySniper : ls_weapon_mercenarySniper_scoped{
+		magazines[] = {"JA_CIS_Weapon_mercenarySniper_Mag"};
+		canShootInWater = 1;
+	};
+	class JA_CIS_Weapon_B2_Blaster : BNA_KC_AquaB2Blaster{
+		magazines[] = {"JA_CIS_Weapon_B2_Blaster_Mag"};
+		canShootInWater = 1;
+	};
+
+};
+class CfgMagazines{
+	class ls_magazine_e5;
+	class JA_CIS_Weapon_E5_Mag : ls_magazine_e5{
+		ammo = "JA_CIS_Weapon_E5_Ammo";
+	};
+	class ls_magazine_mercenarySniper;
+	class JA_CIS_Weapon_mercenarySniper_Mag : ls_magazine_mercenarySniper{
+		ammo = "JA_CIS_Weapon_mercenarySniper_Ammo";
+	};
+	class ls_magazine_e5c;
+	class JA_CIS_Weapon_E5C_Mag : ls_magazine_e5c{
+		ammo = "JA_CIS_Weapon_E5C_Ammo";
+	};
+	class BNA_KC_Mag_60rnd_B2Blaster;
+	class JA_CIS_Weapon_B2_Blaster_Mag : BNA_KC_Mag_60rnd_B2Blaster{
+		ammo = "JA_CIS_Weapon_B2_Blaster_Ammo";
+	};
+};
+class CfgAmmo{
+	class ls_bullet_9mw_red;
+	class JA_CIS_Weapon_E5_Ammo : ls_bullet_9mw_red{
+		waterEffectOffset = 0.8;
+		waterFriction = -0.009;
+	};
+	class ls_bullet_22mw_yellow;
+	class JA_CIS_Weapon_mercenarySniper_Ammo : ls_bullet_22mw_yellow{
+		waterEffectOffset = 0.8;
+		waterFriction = -0.009;
+	};
+	class ls_bullet_192mw_red;
+	class JA_CIS_Weapon_E5C_Ammo : ls_bullet_192mw_red{
+		waterEffectOffset = 0.8;
+		waterFriction = -0.009;
+	};
+	class BNA_KC_Bullet_PlasmaRifle_Red;
+	class JA_CIS_Weapon_B2_Blaster_Ammo : BNA_KC_Bullet_PlasmaRifle_Red{
+		waterEffectOffset = 0.8;
+		waterFriction = -0.009;
 	};
 };
 
 class CfgVehicles
 {
-	class ls_cis_b2Droid_base;
-	class SWLB_b1_base;
-	class ls_cis_b1Heavy_standard;
+	class ls_droid_b2;
+	class ls_droid_b1;
+	class ls_droid_b1_heavy;
 	class SWLB_b1_AA_base;
-	class SWLB_b1_marksman_base;
+	class ls_droid_b1_marksman;
 	class SWLB_BX_Assassin;
-	class SWLB_BX_Commando;
+	class ls_droid_bx;
 	class O_Survivor_F;
 	class JA_CIS_BX_Assassin : SWLB_BX_Assassin
 	{
@@ -94,25 +172,37 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 0;
 		faction = "104th_Guys_CIS";
-		editorSubcategory = "104th_Categ_CIS";
+		editorSubcategory = "104th_Categ_CIS_UW";
 	};
-	class JA_CIS_BX_Commando : SWLB_BX_Commando
+	class JA_CIS_BX_Commando : ls_droid_bx
 	{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 0;
 		faction = "104th_Guys_CIS";
-		editorSubcategory = "104th_Categ_CIS";
+		editorSubcategory = "104th_Categ_CIS_UW";
+		respawnMagazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		respawnWeapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
 	};
-	class JA_CIS_B1_Marksman : SWLB_b1_marksman_base
+	class JA_CIS_B1_Marksman : ls_droid_b1_marksman
 	{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 0;
 		faction = "104th_Guys_CIS";
-		editorSubcategory = "104th_Categ_CIS";
+		editorSubcategory = "104th_Categ_CIS_UW";
+		respawnLinkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
+		linkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
+		respawnMagazines[] = {"JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		respawnweapons[] = {"JA_CIS_Weapon_mercenarySniper","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_mercenarySniper","Throw","Put"};
+		hiddenSelectionsTextures[] = {"\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Upper.paa","\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Lower.paa"};
+		uniformClass = "JA_CIS_B1_Uniform";
 	};
 	class JA_CIS_B1_AA : SWLB_b1_AA_base
 	{
@@ -121,235 +211,59 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 0;
 		faction = "104th_Guys_CIS";
-		editorSubcategory = "104th_Categ_CIS";
+		editorSubcategory = "104th_Categ_CIS_UW";
 	};
-	class JA_CIS_B1_Heavy : ls_cis_b1Heavy_standard
+	class JA_CIS_B1_Heavy : ls_droid_b1_heavy
 	{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 0;
 		faction = "104th_Guys_CIS";
-		editorSubcategory = "104th_Categ_CIS";
+		editorSubcategory = "104th_Categ_CIS_UW";
+		respawnLinkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
+		linkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
+		respawnMagazines[] = {"JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		respawnWeapons[] = {"JA_CIS_Weapon_E5C","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_E5C","Throw","Put"};
+		hiddenSelectionsTextures[] = {"\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Upper.paa","\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Lower.paa"};
+		uniformClass = "JA_CIS_B1_Uniform";
 	};
-	class JA_CIS_B1_Base : SWLB_b1_base
+	class JA_CIS_B1_Base : ls_droid_b1
 	{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 0;
 		faction = "104th_Guys_CIS";
-		editorSubcategory = "104th_Categ_CIS";
+		editorSubcategory = "104th_Categ_CIS_UW";
+		respawnLinkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
+		linkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
+		respawnMagazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		respawnWeapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
+		hiddenSelectionsTextures[] = {"\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Upper.paa","\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Lower.paa"};
+		uniformClass = "JA_CIS_B1_Uniform";
 	};
-	class JA_CIS_B2_Base : ls_cis_b2Droid_base
+	class JA_CIS_B2_Base : ls_droid_b2
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 0;
-		armor = 10;
 		faction = "104th_Guys_CIS";
-		editorSubcategory = "104th_Categ_CIS";
-		displayName = "CIS B2 Blaster";
+		editorSubcategory = "104th_Categ_CIS_UW";
+		respawnLinkedItems[] = {"JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
+		linkedItems[] = {"JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
+		respawnMagazines[] = {"JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		respawnWeapons[] = {"JA_CIS_Weapon_B2_Blaster","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_B2_Blaster","Throw","Put"};
+		hiddenSelectionsTextures[] = {"\JangosArmory_CIS\data\textures\104th_B2_Aquatic_Arms.paa","\JangosArmory_CIS\data\textures\104th_B2_Aquatic_Legs.paa","\JangosArmory_CIS\data\textures\104th_B2_Aquatic_Torso.paa"};
 		uniformClass = "JA_CIS_B2_Uniform";
-		hiddenSelections[] = {"arms", "legs", "torso"};
-		hiddenSelectionsTextures[] = {"ls_armor_redfor\uniform\cis\b2\data\arms_co.paa", "ls_armor_redfor\uniform\cis\b2\data\legs_co.paa", "ls_armor_redfor\uniform\cis\b2\data\torso_co.paa"};
-		linkeditems[] = {"SWOP_ImpNVChip", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
-		magazines[] = {"SWOP_B2gun_Mag", "SWOP_B2gun_Mag", "SWOP_B2gun_Mag", "SWOP_B2gun_Mag", "SWOP_B2gun_Mag", "SWOP_B2gun_Mag", "SWOP_B2gun_Mag", "SWOP_B2rocket_Mag", "SWOP_B2rocket_Mag"};
-		weapons[] = {"SWOP_B2gun", "Throw", "Put"};
-		class HitPoints
-		{
-			class HitArms
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "arms";
-				passThrough = 0.1;
-				radius = 0.1;
-				visual = "injury_hands";
-			};
-			class HitHands : HitArms
-			{
-				armor = 10;
-				depends = "HitArms";
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "hands";
-				passThrough = 0.1;
-				radius = 0.1;
-				visual = "injury_hands";
-			};
-			class HitLeftArm
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "hand_l";
-				passThrough = 0.1;
-				radius = 0.1;
-				visual = "injury_hands";
-			};
-			class HitLeftLeg
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "leg_l";
-				passThrough = 0.1;
-				radius = 0.1;
-				visual = "injury_hands";
-			};
-			class HitLegs
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "legs";
-				passThrough = 0.1;
-				radius = 0.12;
-				visual = "injury_legs";
-			};
-			class HitFace
-			{
-				armor = 10;
-				explosionShielding = 0.1;
-				material = -1;
-				minimalHit = 0.01;
-				name = "face_hub";
-				passThrough = 0.1;
-				radius = 0.08;
-			};
-			class HitNeck : HitFace
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "neck";
-				passThrough = 0.1;
-				radius = 0.1;
-			};
-			class HitHead : HitNeck
-			{
-				armor = 10;
-				depends = "HitFace max HitNeck";
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "head";
-				passThrough = 0.2;
-				radius = 0.15;
-			};
-			class ACE_HDBracket : HitHead
-			{
-				armor = 10;
-				depends = "HitHead";
-				explosionShielding = 1;
-				material = -1;
-				minimalHit = 0;
-				name = "head";
-				passThrough = 0;
-				radius = 1;
-				visual = "";
-			};
-			class HitPelvis
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "pelvis";
-				passThrough = 0.1;
-				radius = 0.2;
-				visual = "injury_body";
-			};
-			class HitAbdomen : HitPelvis
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "spine1";
-				passThrough = 0.1;
-				radius = 0.15;
-				visual = "injury_body";
-			};
-			class HitDiaphragm : HitAbdomen
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "spine2";
-				passThrough = 0.1;
-				radius = 0.15;
-				visual = "injury_body";
-			};
-			class HitChest : HitDiaphragm
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "spine3";
-				passThrough = 0.1;
-				radius = 0.15;
-				visual = "injury_body";
-			};
-			class HitBody : HitChest
-			{
-				armor = 10;
-				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "body";
-				passThrough = 0.1;
-				radius = 0.16;
-				visual = "injury_body";
-			};
-			class HitRightArm
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "hand_r";
-				passThrough = 0.1;
-				radius = 0.1;
-				visual = "injury_hands";
-			};
-			class HitRightLeg
-			{
-				armor = 10;
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "leg_r";
-				passThrough = 0.1;
-				radius = 0.1;
-				visual = "injury_hands";
-			};
-			class Incapacitated
-			{
-				armor = 10;
-				depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-				explosionShielding = 0.25;
-				material = -1;
-				minimalHit = 0.01;
-				name = "body";
-				passThrough = 0.1;
-				radius = 0;
-				visual = "";
-			};
-		};
 	};
 	class JA_CIS_Man_Black_01 : O_Survivor_F
 	{
@@ -1276,6 +1190,25 @@ class CfgGroups
 			class JA_Opfor_Droid_Groups
 			{
 				name = "Droid infantry";
+				class JA_Group_B2_Team
+				{
+					name = "B2 - Team";
+					side = 0;
+					class Unit0
+					{
+						vehicle = "JA_CIS_B2_Base";
+						rank = "CORPORAL";
+						position[] = {0, 0, 0};
+						side = 0;
+					};
+					class Unit1
+					{
+						vehicle = "JA_CIS_B2_Base";
+						rank = "PRIVATE";
+						position[] = {-5, -5, 0};
+						side = 0;
+					};
+				};
 				class JA_Group_BX_Team
 				{
 					name = "BX - Team";
@@ -1417,6 +1350,53 @@ class CfgGroups
 					class Unit5
 					{
 						vehicle = "JA_CIS_B1_Heavy";
+						rank = "PRIVATE";
+						position[] = {2, -2, 0};
+						side = 0;
+					};
+				};
+				class JA_Group_B1_Group_Basic
+				{
+					name = "B1 - Group Basic";
+					side = 0;
+					class Unit0
+					{
+						vehicle = "JA_CIS_B1_Base";
+						rank = "CORPORAL";
+						position[] = {0, 0, 0};
+						side = 0;
+					};
+					class Unit1
+					{
+						vehicle = "JA_CIS_B1_Base";
+						rank = "PRIVATE";
+						position[] = {-5, -5, 0};
+						side = 0;
+					};
+					class Unit2
+					{
+						vehicle = "JA_CIS_B1_Base";
+						rank = "PRIVATE";
+						position[] = {5, -5, 0};
+						side = 0;
+					};
+					class Unit3
+					{
+						vehicle = "JA_CIS_B1_Base";
+						rank = "PRIVATE";
+						position[] = {2, 2, 0};
+						side = 0;
+					};
+					class Unit4
+					{
+						vehicle = "JA_CIS_B1_Base";
+						rank = "PRIVATE";
+						position[] = {-2, -2, 0};
+						side = 0;
+					};
+					class Unit5
+					{
+						vehicle = "JA_CIS_B1_Base";
 						rank = "PRIVATE";
 						position[] = {2, -2, 0};
 						side = 0;

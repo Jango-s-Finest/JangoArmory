@@ -212,6 +212,26 @@ class CfgMagazines
 		displayNameShort = "Mass Driver HE";
 
 	};
+
+	class TKE_Ext_1250Rnd_30mm;
+	class JA_104th_Heavy_Assault_Ship_MAG_1250: TKE_Ext_1250Rnd_30mm{
+		ammo = "3AS_ATTE_30mm_MP";
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_1250";
+	};
+	class TKE_Ext_200Rnd_105mm;
+	class JA_104th_Heavy_Assault_Ship_MAG_200: TKE_Ext_200Rnd_105mm{
+		ammo = "JA_ATTE_Maingun_HE_Ammo";
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_200";
+	};
+
+	class FIR_F15C_Fueltank_P_1rnd_M;
+	class JA_104th_LAAT_Fueltank_P: FIR_F15C_Fueltank_P_1rnd_M{
+		hardpoints[] = {"B_AMRAAM_D"};
+		displayName = "test - 104th Laat Fuel Pod";
+		displayNameShort = "Fuel Pod";
+		descriptionShort = "Fuel Pod";
+
+	};
 };
 
 class CfgWeapons
@@ -222,9 +242,6 @@ class CfgWeapons
 		class close;
 		class LowROF;
 	};
-	class FIR_AIM120;
-	class FIR_AIM9X;
-	
 	class JA_104th_AA_Lazer : RD501_Republic_Aircraft_Laser_AA{
 		displayName = "Air Superiority laser";
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500"};
@@ -262,6 +279,8 @@ class CfgWeapons
 		};
 	};
 	
+	class FIR_AIM120;
+	class FIR_AIM9X;
 	class JA_104th_AIM9X : FIR_AIM9X{
 		magazines[] = {"JA_LAAT_AIM9X"};
 	};
@@ -276,5 +295,36 @@ class CfgWeapons
 	class 3AS_Mass_Driver_Cannon;
 	class JA_ATTE_Maingun_Cannon: 3AS_Mass_Driver_Cannon{
 		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
+	};
+
+	class TKE_Ext_PDC_30mm{
+		class LowROF;
+	};
+	class TKE_Ext_TwinCannon{
+		class player;
+	};
+	class JA_104th_Heavy_Assault_Ship_1250 : TKE_Ext_PDC_30mm{
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_1250"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
+		modes[] = {"LowROF"};
+		class LowROF: LowROF{
+			burst = 1;
+			reloadtime = 0.2;
+			sounds[] = {"StandardSound"};
+			class StandardSound{
+				soundSetShot[] = {"3AS_HeavyBlaster_SoundSet"};
+			}
+		};
+	};
+	class JA_104th_Heavy_Assault_Ship_200 : TKE_Ext_TwinCannon{
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_200"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
+		modes[] = {"player"};
+		class player: player{
+			sounds[] = {"StandardSound"};
+			class StandardSound{
+				soundSetShot[] = {"3AS_Maincanon_Shot_SoundSet"};
+			}
+		};
 	};
 };

@@ -387,6 +387,30 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Bear_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Fish";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Bear)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Bear_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Bear_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Bear";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 	class JA_104th_Ratchet_Uniform : JA_104th_Base_AB_Uniform
 	{
 		author = "Fish";
@@ -979,6 +1003,25 @@ class CfgVehicles
 				"Jangos_Airborne_Armours\data\Textures\104th_AB_Squid_Lower.paa"};
 		linkedItems[] = {JA_104th_Squid_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Squid_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Bear : lsd_gar_phase2_base
+	{
+		author = "Fish";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		side = 1;
+		displayName = "104th Bear";
+		uniformClass = "JA_104th_Bear_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Bear_Upper.paa",
+				"Jangos_Airborne_Armours\data\Textures\104th_AB_Bear_Lower.paa"};
+		linkedItems[] = {JA_104th_Bear_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Bear_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Ratchet : lsd_gar_phase2_base
 	{

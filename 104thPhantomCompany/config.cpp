@@ -1816,4 +1816,18 @@ class CfgGlasses
 	//     model = "\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
 	// 	picture = "\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestPauldron_ui_ca.paa";
 	// };
+	class JA_104th_P2_PSGT_Kama_HeadWare
+	{
+		author = "Tundra";
+		displayName = "Clone Trooper Kama (104th [1C])";
+		descriptionUse = "Kama for the Sargents";
+		scope = 2;
+		hiddenSelections[] = {
+				"camo1"
+			};
+		hiddenSelectionsTextures[] = {
+				"104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_INF_Base.paa"
+			};
+		model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kama_vest.p3d";
+	};
 }

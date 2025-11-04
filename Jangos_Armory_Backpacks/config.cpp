@@ -202,6 +202,19 @@ class CfgVehicles
 			};
 		tf_range = 25000;
 	};
+	class JA_104th_RTO_Mini_Boris_Backpack : ls_gar_rto_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Boris)";
+		maximumLoad = 200;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Boris_Minipack.paa", // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Boris_Minipack_Slots.paa"	  // slotss
+			};
+		tf_range = 25000;
+	};
 	class JA_104th_Accessories_Heavy_Backpack : ls_gar_heavy_backpack
 	{
 		author = "Tundra";
@@ -293,6 +306,30 @@ class CfgVehicles
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // don't change unless RTO
 				"",																	   // Heavy
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Carmine_Backpack.paa", // Medic
+				""																	   // RTO
+			};
+		tf_dialog = "ls_radios_cloneLR";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 25000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
+	class JA_104th_Lax_Medic_Backpack : ls_gar_medic_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper medic backpack (104th Lax)";
+		maximumLoad = 400;
+		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
+		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Lax_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Lax_Backpack.paa", // don't change unless RTO
+				"",																	   // Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Lax_Backpack.paa", // Medic
 				""																	   // RTO
 			};
 		tf_dialog = "ls_radios_cloneLR";

@@ -39,6 +39,7 @@ class CfgPatches
 			"JA_104th_Xian_Infantry",
 			"JA_104th_Xian_Vehicle",
 			"JA_104th_Republic_Transport",
+			"JA_104th_Heavy_Assault_Ship",
 			"JA_104th_Uwing",
 			"JA_104th_N1",
 			"JA_104th_VWing",
@@ -10379,7 +10380,97 @@ class cfgVehicles
 			displayName = "";
 		};
 	};
-
+	class Plane_Fighter_03_base_F;
+	class TKE_Ext_Corvette_BASE;
+	
+	class Turret_Left;
+	class Turret_Left1;
+	class Turret_Right;
+	class Turret_Right1;
+	class Turret_Low;
+	class Turrets;
+	class Components;
+	class TKE_Ext_Gunship_OPF;
+	class JA_104th_Heavy_Assault_Ship : TKE_Ext_Gunship_OPF{
+		displayName = "104th Heavy Assault Ship";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		crew = "ls_clone_phase2_pilot";
+		class Components: Components{
+			class TransportPylonsComponent{
+				UIPicture = "\TKE_Ext_Ships\data\ui\icon_gunship_pylons_ca.paa";
+				class Pylons{
+					class pylons1{
+						attachment = "TKE_Ext_VLS10_Sparrow_AA";
+						hardpoints[] = {"VLS3","VLS6","VLS10"};
+						maxweight = 5000;
+						priority = 10;
+						UIposition[] = {0.1,0.15};
+					};
+					class pylons2{
+						attachment = "JA_104th_Heavy_Assault_Ship_MAG_1250";
+						hardpoints[] = {"Turret_PDC","Turret_MPTC"};
+						maxweight = 5000;
+						priority = 5;
+						turret[] = {1};
+						UIposition[] = {0.1,0.45};
+					};
+					class pylons3{
+						attachment = "JA_104th_Heavy_Assault_Ship_MAG_1250";
+						hardpoints[] = {"Turret_PDC","Turret_MPTC"};
+						maxweight = 5000;
+						mirroredMissilePos = 2;
+						priority = 5;
+						turret[] = {2};
+						UIposition[] = {0.55,0.45};
+					};
+					class pylons4{
+						attachment = "JA_104th_Heavy_Assault_Ship_MAG_200";
+						hardpoints[] = {"Turret_PDC","Turret_MPTC"};
+						maxweight = 5000;
+						priority = 5;
+						turret[] = {3};
+						UIposition[] = {0.1,0.25};
+					};
+					class pylons5{
+						attachment = "JA_104th_Heavy_Assault_Ship_MAG_200";
+						hardpoints[] = {"Turret_PDC","Turret_MPTC"};
+						maxweight = 5000;
+						mirroredMissilePos = 4;
+						priority = 5;
+						turret[] = {4};
+						UIposition[] = {0.55,0.25};
+					};
+					class pylons6{
+						attachment = "TKE_Ext_75mm_60Rnd";
+						hardpoints[] = {"Turret_Light"};
+						maxweight = 5000;
+						priority = 10;
+						turret[] = {0};
+						UIposition[] = {0.55,0.15};
+					};
+				};
+			};
+		};
+		class Turrets: Turrets{
+			class Turret_Low: Turret_Low{
+				weapons[] = {"3AS_ATAP_Siege_Cannon"};
+				magazines[] = {"3AS_10Rnd_Siege_Cannon_HHE_shells","3AS_10Rnd_Siege_Cannon_HHE_shells"};
+			};
+			class Turret_Left: Turret_Left{
+			};
+			class Turret_Right: Turret_Right{
+			};
+			class Turret_Left1:  Turret_Left1{
+			};
+			class Turret_Right1: Turret_Right1{
+			};
+		};
+	};
 };
 
 class CfgAmmo
