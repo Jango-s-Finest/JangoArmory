@@ -10485,7 +10485,6 @@ class CfgAmmo
 	class ls_127x99_red;
 	class ls_127x99_blue_104th : ls_127x99_red
 	{
-
 		model = "ls_weapons_core\effects\laser_blue";
 		effectfly = "ls_plasma_blue";
 	};
@@ -10555,15 +10554,13 @@ class CfgMagazines
 class CfgRecoils
 {
 	class recoil_default;
-	class 104th_Z7_recoil : recoil_default
-	{
+	class 104th_Z7_recoil : recoil_default{
 		kickBack[] = {0.045, 0.08};
 		muzzleOuter[] = {0.3, 0.3, 0.3, 0.2};
 		permanent = 0.03;
 		temporary = 0.02;
 	};
-	class JA_104th_ShoulderCannon_recoil : recoil_default
-	{
+	class JA_104th_ShoulderCannon_recoil : recoil_default{
 		kickBack[] = {0.045, 0.08};
 		muzzleOuter[] = {0.3, 0.3, 0.3, 0.2};
 		permanent = 0.03;
@@ -10574,26 +10571,22 @@ class CfgRecoils
 class CfgWeapons
 {
 	class Launcher;
-	class Launcher_Base_F : Launcher
-	{
+	class Launcher_Base_F : Launcher{
 		class WeaponSlotsInfo;
 		class GunParticles;
 	};
 
 	class ls_weapon_laati_turret_50mm_ap;
-	class ls_laat_gun_2_104th : ls_weapon_laati_turret_50mm_ap
-	{
+	class ls_laat_gun_2_104th : ls_weapon_laati_turret_50mm_ap{
 		magazines[] = {"ls_magazine_50mm_200Rnd_APFSDS_green_104th"};
 	};
 	class ls_aat_127;
-	class ls_127_blue_104th : ls_aat_127
-	{
+	class ls_127_blue_104th : ls_aat_127{
 
 		magazines[] = {"ls_500Rnd_127x99_mag_blue_104th"};
 	};
 	class ls_gar_engineerNCO_vest;
-	class JA_104th_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest
-	{
+	class JA_104th_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest{
 
 		Displayname = "Clone Engineer E-Web Vest";
 
@@ -10641,8 +10634,7 @@ class CfgWeapons
 		};
 	};
 	class GBU12BombLauncher;
-	class JA_104th_guided_resupply_pod_launcher : GBU12BombLauncher
-	{
+	class JA_104th_guided_resupply_pod_launcher : GBU12BombLauncher{
 		displayName = "Supply Pod";
 		descriptionShort = "Guided Resupply Pod Launcher";
 		magazines[] = {"JA_104th_Guided_Resupply_Magazine"};
@@ -10654,20 +10646,15 @@ class CfgWeapons
 	};
 };
 
-class CfgFunctions
-{
-	class JA_104th
-	{
+class CfgFunctions{
+	class JA_104th{
 		tag = "JA_104th";
-		class guidedResupply
-		{
+		class guidedResupply{
 			file = "JangosVehicles\Script\501Resupply";
-			class GURE_spawnResupply
-			{
+			class GURE_spawnResupply{
 				file = "JangosVehicles\Script\501Resupply\spawn_resupply.sqf";
 			};
-			class GURE_grplFired
-			{
+			class GURE_grplFired{
 				file = "JangosVehicles\Script\501Resupply\grpl_fired.sqf";
 			};
 		};

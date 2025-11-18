@@ -11,6 +11,7 @@ class CfgPatches
 			"JA_104th_OryxNS",
 			"JA_104th_Oryx",
 			"JA_104th_OryxTS",
+			"JA_104th_Repair_Droid",
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
@@ -1760,7 +1761,70 @@ class cfgVehicles
             Init = "[_this select 0, 150] execVM '\JangosVehiclesGround\DefenceSystem.sqf';";
 		};
 	};
-
+	class 3AS_Repair_Facility;
+	class JA_104th_Repair_Droid: 3AS_Repair_Facility{
+		author = "Dak";
+		ace_refuel_fuelCargo = 999999999999;
+		ace_tagging_canTag = 1;
+		ace_refuel_flowRate = 4;
+		ace_rearm_defaultSupply = 999999999999;
+		ace_interaction_bodyWidth = 3;
+		ace_cargo_space = 20;
+		ace_repair_canRepair = 1;
+		ace_refuel_hooks[] = {
+			{0.38, -2.1700001, -0.69999999},
+			{-0.41, -2.1700001, -0.69999999},
+		};
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "Repair Droid - 104th";
+		side = 3;
+		editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Droid";
+		class EventHandlers : DefaultEventhandlers
+		{
+            Init = "[_this select 0, 20] execVM '\JangosVehiclesGround\RepairSystem.sqf';";
+		};
+		class ACE_Actions{
+			class ACE_MainActions{
+				condition = "true";
+				displayName = "Interactions";
+				distance = 4;
+				selection = "";
+				class ace_repair_Repair{
+					displayName = "Repair";
+					distance = 4;
+					exceptions[] = {"isNotSwimming","isNotOnLadder"};
+					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
+				}
+				class ace_rearm_Rearm{
+					condition = "call ace_rearm_fnc_canRearm";
+					displayName = "Rearm";
+					distance = 9;
+					exceptions[] = {"isNotInside"};
+					icon = "\z\ace\addons\rearm\ui\icon_rearm_interact.paa";
+					statement = "call ace_rearm_fnc_rearm";
+				}
+				class ace_attach_AttachVehicle{
+					condition = "call ace_attach_fnc_canAttach";
+					displayName = "Attach item";
+					exceptions[] = {"isNotSwimming"};
+					icon = "\z\ace\addons\attach\UI\attach_ca.paa";
+					insertChildren = "call ace_attach_fnc_getChildrenActions";
+					showDisabled = 0;
+				}
+				class ace_attach_DetachVehicle{
+					condition = "call ace_attach_fnc_canDetach";
+					displayName = "Detach item";
+					exceptions[] = {"isNotSwimming"};
+					icon = "\z\ace\addons\attach\UI\detach_ca.paa";
+					showDisabled = 0;
+					statement = "call ace_attach_fnc_detach";
+				}
+			}
+		}
+	}
 };
 
 

@@ -1,0 +1,13 @@
+# 
+# Wavefront material file
+# Converted by 3D Exploration 1.71
+# XDimension Software, LLC
+# http://www.xdsoft.com/explorer/
+# 
+newmtl Material_1
+	 Ka 1 1 1
+	 Kd 1 1 1
+	 Ks 1 1 1
+	 illum 2
+	 Ns 8
+	 map_Kd Cruero LigeroImperial Arquitens1.jpg

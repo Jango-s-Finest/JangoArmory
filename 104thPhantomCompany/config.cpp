@@ -319,16 +319,6 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th [1C] 08 CT)";										 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_1C_08_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_P2_1C_V8_CT_Helmet : ls_gar_phase2_helmet
-	{
-		author = "Bulky & Cyan";
-		scopeArsenal = 2;
-		side = 1;
-		grad_slingHelmet_allow = "true";
-
-		displayname = "Clone Trooper P2 Helmet (104th [1C] V8 CT)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_PC_P2_CT_V8_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
-	};
 	class JA_104th_Engineer_1C_Base_Helmet : ls_gar_engineer_helmet
 	{
 		author = "Dak";
@@ -1822,6 +1812,7 @@ class CfgGlasses
 		displayName = "Clone Trooper Kama (104th [1C])";
 		descriptionUse = "Kama for the Sargents";
 		scope = 2;
+		identityTypes[] = {};
 		hiddenSelections[] = {
 				"camo1"
 			};
