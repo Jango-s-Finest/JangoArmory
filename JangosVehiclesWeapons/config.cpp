@@ -112,6 +112,15 @@ class CfgAmmo
 		indirectHit = 250;
 		explosive = 0.9;
 	};
+	class TKE_Ext_Bullet_Railgun;
+	class JA_104th_Heavy_Assault_Ship_RailGun_AMMO : TKE_Ext_Bullet_Railgun{
+		hit = 1500;
+	};
+	class 3AS_SIEGE_Cannon_HHE_Shell;
+	class JA_104th_Heavy_Assault_Ship_Siegecannon_AMMO : 3AS_SIEGE_Cannon_HHE_Shell{
+		indirectHit = 200;
+		indirectHitRange = 20;
+	};
 };
 
 class CfgMagazines
@@ -214,14 +223,36 @@ class CfgMagazines
 	};
 
 	class TKE_Ext_1250Rnd_30mm;
-	class JA_104th_Heavy_Assault_Ship_MAG_1250: TKE_Ext_1250Rnd_30mm{
+	class JA_104th_Heavy_Assault_Ship_MAG_2500: TKE_Ext_1250Rnd_30mm{
+		displayName = "104th HE cannon";
+		displayNameShort = "Laser HE";
 		ammo = "3AS_ATTE_30mm_MP";
-		pylonWeapon = "JA_104th_Heavy_Assault_Ship_1250";
+        count = 2500;
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_2500";
+	};
+	class JA_104th_Heavy_Assault_AA_Ship_MAG_2500: TKE_Ext_1250Rnd_30mm{
+		displayName = "104th AA cannon";
+		displayNameShort = "Laser AA";
+		ammo = "JA_104th_AA_Lazer_Ammo";
+        count = 2500;
+		pylonWeapon = "JA_104th_Heavy_Assault_AA_Ship_2500";
 	};
 	class TKE_Ext_200Rnd_105mm;
-	class JA_104th_Heavy_Assault_Ship_MAG_200: TKE_Ext_200Rnd_105mm{
+	class JA_104th_Heavy_Assault_Ship_MAG_400: TKE_Ext_200Rnd_105mm{
 		ammo = "JA_ATTE_Maingun_HE_Ammo";
-		pylonWeapon = "JA_104th_Heavy_Assault_Ship_200";
+        count = 400;
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_400";
+	};
+	class TKE_Ext_75mm_60Rnd;
+	class JA_104th_Heavy_Assault_Ship_RailGun_MAG_75 : TKE_Ext_75mm_60Rnd{
+		ammo = "JA_104th_Heavy_Assault_Ship_RailGun_AMMO";
+        count = 75;
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_RailGun_75";
+	}
+	class 3AS_10Rnd_Siege_Cannon_HHE_shells;
+	class JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10 : 3AS_10Rnd_Siege_Cannon_HHE_shells{
+		ammo = "JA_104th_Heavy_Assault_Ship_Siegecannon_AMMO";
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_Siegecannon_10";
 	};
 
 	class FIR_F15C_Fueltank_P_1rnd_M;
@@ -303,8 +334,9 @@ class CfgWeapons
 	class TKE_Ext_TwinCannon{
 		class player;
 	};
-	class JA_104th_Heavy_Assault_Ship_1250 : TKE_Ext_PDC_30mm{
-		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_1250"};
+	class JA_104th_Heavy_Assault_Ship_2500 : TKE_Ext_PDC_30mm{
+		displayName = "HE laser";
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_2500"};
 		ballisticsComputer = "1 + 2 + 8 + 16";
 		modes[] = {"LowROF"};
 		class LowROF: LowROF{
@@ -316,8 +348,22 @@ class CfgWeapons
 			}
 		};
 	};
-	class JA_104th_Heavy_Assault_Ship_200 : TKE_Ext_TwinCannon{
-		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_200"};
+	class JA_104th_Heavy_Assault_AA_Ship_2500 : TKE_Ext_PDC_30mm{
+		displayName = "Air Superiority laser";
+		magazines[] = {"JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
+		modes[] = {"LowROF"};
+		class LowROF: LowROF{
+			burst = 1;
+			reloadtime = 0.08;
+			sounds[] = {"StandardSound"};
+			class StandardSound{
+				soundSetShot[] = {"3AS_HeavyBlaster_SoundSet"};
+			}
+		};
+	};
+	class JA_104th_Heavy_Assault_Ship_400 : TKE_Ext_TwinCannon{
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_400"};
 		ballisticsComputer = "1 + 2 + 8 + 16";
 		modes[] = {"player"};
 		class player: player{
@@ -326,5 +372,15 @@ class CfgWeapons
 				soundSetShot[] = {"3AS_Maincanon_Shot_SoundSet"};
 			}
 		};
+	};
+	class TKE_Ext_Cannon_Railgun_Light;
+	class JA_104th_Heavy_Assault_Ship_RailGun_75 : TKE_Ext_Cannon_Railgun_Light{
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_RailGun_MAG_75"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
+	}
+	class 3AS_ATAP_Siege_Cannon;
+	class JA_104th_Heavy_Assault_Ship_Siegecannon_10 : 3AS_ATAP_Siege_Cannon{
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
 	};
 };

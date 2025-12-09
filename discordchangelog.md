@@ -3,11 +3,12 @@ _______________
 ```
 New Gear
 --------------
-- 
+- Clone Trooper armor (104th Skipps)
+- Clone Trooper P2 Special Activities Helmet (104th Sobek)
+- Clone Trooper Kama (104th IQ)
 Changed Gear
 ------------------
-- Clone Trooper medic backpack (104th Lax)
-- Clone Trooper armor (104th Lax)
+- 
 Removed Gear
 ------------------
 - 
@@ -28,7 +29,7 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- Repair Droid - 104th
+- 
 Changed Vehicles & Supplies
 ------------------
 -

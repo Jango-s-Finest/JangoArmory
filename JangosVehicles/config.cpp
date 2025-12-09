@@ -10391,8 +10391,8 @@ class cfgVehicles
 	class Turrets;
 	class Components;
 	class TKE_Ext_Gunship_OPF;
-	class JA_104th_Heavy_Assault_Ship : TKE_Ext_Gunship_OPF{
-		displayName = "104th Heavy Assault Ship";
+	class JA_104th_Impetus_Class_MAAG : TKE_Ext_Gunship_OPF{
+		displayName = "[104th] Impetus Class MAAG";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -10412,7 +10412,7 @@ class cfgVehicles
 						UIposition[] = {0.1,0.15};
 					};
 					class pylons2{
-						attachment = "JA_104th_Heavy_Assault_Ship_MAG_1250";
+						attachment = "JA_104th_Heavy_Assault_Ship_MAG_2500";
 						hardpoints[] = {"Turret_PDC","Turret_MPTC"};
 						maxweight = 5000;
 						priority = 5;
@@ -10420,7 +10420,7 @@ class cfgVehicles
 						UIposition[] = {0.1,0.45};
 					};
 					class pylons3{
-						attachment = "JA_104th_Heavy_Assault_Ship_MAG_1250";
+						attachment = "JA_104th_Heavy_Assault_Ship_MAG_2500";
 						hardpoints[] = {"Turret_PDC","Turret_MPTC"};
 						maxweight = 5000;
 						mirroredMissilePos = 2;
@@ -10429,7 +10429,7 @@ class cfgVehicles
 						UIposition[] = {0.55,0.45};
 					};
 					class pylons4{
-						attachment = "JA_104th_Heavy_Assault_Ship_MAG_200";
+						attachment = "JA_104th_Heavy_Assault_Ship_MAG_400";
 						hardpoints[] = {"Turret_PDC","Turret_MPTC"};
 						maxweight = 5000;
 						priority = 5;
@@ -10437,7 +10437,7 @@ class cfgVehicles
 						UIposition[] = {0.1,0.25};
 					};
 					class pylons5{
-						attachment = "JA_104th_Heavy_Assault_Ship_MAG_200";
+						attachment = "JA_104th_Heavy_Assault_Ship_MAG_400";
 						hardpoints[] = {"Turret_PDC","Turret_MPTC"};
 						maxweight = 5000;
 						mirroredMissilePos = 4;
@@ -10446,7 +10446,7 @@ class cfgVehicles
 						UIposition[] = {0.55,0.25};
 					};
 					class pylons6{
-						attachment = "TKE_Ext_75mm_60Rnd";
+						attachment = "JA_104th_Heavy_Assault_Ship_RailGun_MAG_75";
 						hardpoints[] = {"Turret_Light"};
 						maxweight = 5000;
 						priority = 10;
@@ -10458,16 +10458,29 @@ class cfgVehicles
 		};
 		class Turrets: Turrets{
 			class Turret_Low: Turret_Low{
-				weapons[] = {"3AS_ATAP_Siege_Cannon"};
-				magazines[] = {"3AS_10Rnd_Siege_Cannon_HHE_shells","3AS_10Rnd_Siege_Cannon_HHE_shells"};
+				weapons[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_10","Laserdesignator_mounted"};
+				magazines[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","Laserbatteries"};
+				gunnerUsesPilotView = 1;
 			};
 			class Turret_Left: Turret_Left{
+				weapons[] = {"Laserdesignator_mounted","JA_104th_Heavy_Assault_AA_Ship_2500"};
+				magazines[] = {"Laserbatteries","JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
+				gunnerUsesPilotView = 1;
 			};
 			class Turret_Right: Turret_Right{
+				weapons[] = {"Laserdesignator_mounted","JA_104th_Heavy_Assault_AA_Ship_2500"};
+				magazines[] = {"Laserbatteries","JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
+				gunnerUsesPilotView = 1;
 			};
 			class Turret_Left1:  Turret_Left1{
+				weapons[] = {"Laserdesignator_mounted"};
+				magazines[] = {"Laserbatteries"};
+				gunnerUsesPilotView = 1;
 			};
 			class Turret_Right1: Turret_Right1{
+				weapons[] = {"Laserdesignator_mounted"};
+				magazines[] = {"Laserbatteries"};
+				gunnerUsesPilotView = 1;
 			};
 		};
 	};

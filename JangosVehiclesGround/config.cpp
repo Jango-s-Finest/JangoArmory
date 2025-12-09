@@ -12,6 +12,7 @@ class CfgPatches
 			"JA_104th_Oryx",
 			"JA_104th_OryxTS",
 			"JA_104th_Repair_Droid",
+			"JA_104th_Repair_Droid_1",
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
@@ -1761,24 +1762,36 @@ class cfgVehicles
             Init = "[_this select 0, 150] execVM '\JangosVehiclesGround\DefenceSystem.sqf';";
 		};
 	};
+	
 	class 3AS_Repair_Facility;
+	class ACE_Actions;
+	class ACE_MainActions;
 	class JA_104th_Repair_Droid: 3AS_Repair_Facility{
 		author = "Dak";
-		ace_refuel_fuelCargo = 999999999999;
-		ace_tagging_canTag = 1;
-		ace_refuel_flowRate = 4;
-		ace_rearm_defaultSupply = 999999999999;
-		ace_interaction_bodyWidth = 3;
+		ace_cargo_hasCargo = 1;
 		ace_cargo_space = 20;
+		ace_cookoff_canHaveFireJet = 1;
+		ace_cookoff_cookoffSelections[] = {"poklop_gunner","poklop_commander"};
+		ace_rearm_defaultSupply = 1e+12;
+		ace_refuel_canReceive = 1;
+		ace_refuel_flowRate = 4;
+		ace_refuel_fuelCapacity = 1400;
+		ace_refuel_fuelCargo = 1e+12;
+		ace_refuel_hooks[] = {{0.38,-3.17,-0.7},{-0.41,-3.17,-0.7}};
 		ace_repair_canRepair = 1;
-		ace_refuel_hooks[] = {
-			{0.38, -2.1700001, -0.69999999},
-			{-0.41, -2.1700001, -0.69999999},
-		};
+		ace_tagging_canTag = 1;
+		ace_vehicle_damage_canHaveFireRing = 0;
+		ace_vehicle_damage_detonationDuringFireProb = 0.5;
+		ace_vehicle_damage_engineDetonationProb = 0.1;
+		ace_vehicle_damage_engineFireProb = 0.8;
+		ace_vehicle_damage_hullDetonationProb = 0.3;
+		ace_vehicle_damage_hullFireProb = 0.8;
+		ace_vehicle_damage_turretDetonationProb = 0;
+		ace_vehicle_damage_turretFireProb = 0;
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		displayName = "Repair Droid - 104th";
+		displayName = "[104th] Repair Droid - NO AMMO";
 		side = 3;
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Droid";
@@ -1786,8 +1799,8 @@ class cfgVehicles
 		{
             Init = "[_this select 0, 20] execVM '\JangosVehiclesGround\RepairSystem.sqf';";
 		};
-		class ACE_Actions{
-			class ACE_MainActions{
+		class ACE_Actions : ACE_Actions{
+			class ACE_MainActions : ACE_MainActions{
 				condition = "true";
 				displayName = "Interactions";
 				distance = 4;
@@ -1797,7 +1810,7 @@ class cfgVehicles
 					distance = 4;
 					exceptions[] = {"isNotSwimming","isNotOnLadder"};
 					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				}
+				};
 				class ace_rearm_Rearm{
 					condition = "call ace_rearm_fnc_canRearm";
 					displayName = "Rearm";
@@ -1805,7 +1818,7 @@ class cfgVehicles
 					exceptions[] = {"isNotInside"};
 					icon = "\z\ace\addons\rearm\ui\icon_rearm_interact.paa";
 					statement = "call ace_rearm_fnc_rearm";
-				}
+				};
 				class ace_attach_AttachVehicle{
 					condition = "call ace_attach_fnc_canAttach";
 					displayName = "Attach item";
@@ -1813,7 +1826,7 @@ class cfgVehicles
 					icon = "\z\ace\addons\attach\UI\attach_ca.paa";
 					insertChildren = "call ace_attach_fnc_getChildrenActions";
 					showDisabled = 0;
-				}
+				};
 				class ace_attach_DetachVehicle{
 					condition = "call ace_attach_fnc_canDetach";
 					displayName = "Detach item";
@@ -1821,10 +1834,27 @@ class cfgVehicles
 					icon = "\z\ace\addons\attach\UI\detach_ca.paa";
 					showDisabled = 0;
 					statement = "call ace_attach_fnc_detach";
-				}
-			}
-		}
-	}
+				};
+			};
+		};
+	};
+	class JA_104th_Repair_Droid_1: 104th_MudHorn_tank_field{
+		author = "Dak";
+		model = "3as\3AS_CIS_Wheeled\PAC\Model\3AS_Droid_Repair_Module.p3d";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "Repair Droid - 104th";
+		side = 3;
+		editorCategory = "JA_104_EdCat_Objects";
+		editorSubcategory = "104th_Categ_Clones_Droid";
+		simulation = "thingX";
+		crew="";
+		class EventHandlers : DefaultEventhandlers
+		{
+            Init = "[_this select 0, 20] execVM '\JangosVehiclesGround\RepairSystem.sqf';";
+		};
+	};
 };
 
 
