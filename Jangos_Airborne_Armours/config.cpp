@@ -560,7 +560,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Ceasar_Uniform : JA_104th_Base_AB_Uniform
+	class JA_104th_Ceasar_Uniform_old : JA_104th_Base_AB_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -578,7 +578,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Ceasar";
+			uniformClass = "JA_104th_Ceasar_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1122,21 +1122,21 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Dak_Helmet, ls_gar_airborneOfficer_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Dak_Helmet, ls_gar_airborneOfficer_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Ceasar : lsd_gar_phase2_base
+	class JA_104th_Ceasar_old : lsd_gar_phase2_base
 	{
 		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Ceasar_Uniform";
+		uniformClass = "JA_104th_Ceasar_Uniform_old";
 		displayName = "104th Ceasar";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Ceasar_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Ceasar_Lower.paa"};
-		linkedItems[] = {JA_104th_Ceasar_Helmet, ls_gar_airborneOfficer_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Ceasar_Helmet, ls_gar_airborneOfficer_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Ceasar_Helmet_old, ls_gar_airborneOfficer_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Ceasar_Helmet_old, ls_gar_airborneOfficer_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Axel_old : lsd_gar_phase2_base
 	{
