@@ -14,7 +14,7 @@ class CfgPatches
 			"JA_104th_Carmine",
 			"JA_104th_Clutch",
 			"JA_104th_Dak",
-			"JA_104th_Osiris",
+			"JA_104th_Osiris_old",
 			"JA_104th_Magnum",
 			"JA_104th_Bulky",
 			"JA_104th_Cyan",
@@ -32,7 +32,7 @@ class CfgPatches
 			"JA_104th_Stache_Uniform",
 			"JA_104th_Carmine_Uniform",
 			"JA_104th_Clutch_Uniform",
-			"JA_104th_Osiris_Uniform",
+			"JA_104th_Osiris_Uniform_old",
 			"JA_104th_Dak_Uniform",
 			"JA_104th_Magnum_Uniform",
 			"JA_104th_Bulky_Uniform",
@@ -584,7 +584,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Osiris_Uniform : JA_104th_Base_AB_Uniform
+	class JA_104th_Osiris_Uniform_old : JA_104th_Base_AB_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -602,7 +602,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Osiris";
+			uniformClass = "JA_104th_Osiris_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -635,7 +635,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Kaleck_Uniform : JA_104th_Base_MC_AB_Uniform
+	class JA_104th_Kaleck_Uniform_old : JA_104th_Base_MC_AB_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -656,7 +656,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Kaleck";
+			uniformClass = "JA_104th_Kaleck_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1058,21 +1058,21 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Magnum_Helmet, JA_104th_Magnum_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Magnum_Helmet, JA_104th_Magnum_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Kaleck : ls_gar_marshalCommander_base
+	class JA_104th_Kaleck_old : ls_gar_marshalCommander_base
 	{
 		author = "Fish";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Kaleck_Uniform";
+		uniformClass = "JA_104th_Kaleck_Uniform_old";
 		displayName = "104th Kaleck";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2", "biceps", "rank"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Lower.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Kaleck_Armor_Upper.paa"};
-		linkedItems[] = {JA_104th_Kaleck_Helmet, JA_104th_Kaleck_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Kaleck_Helmet, JA_104th_Kaleck_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Kaleck_Helmet_old, JA_104th_Kaleck_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Kaleck_Helmet_old, JA_104th_Kaleck_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Bulky : lsd_gar_phase2_base
 	{
@@ -1154,21 +1154,21 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Axel_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Axel_Helmet, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Osiris : lsd_gar_phase2_base
+	class JA_104th_Osiris_old : lsd_gar_phase2_base
 	{
 		author = "Tundra";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Osiris_Uniform";
+		uniformClass = "JA_104th_Osiris_Uniform_old";
 		displayName = "104th Osiris";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours\data\Textures\104th_AB_Osiris_Upper.paa", "Jangos_Airborne_Armours\data\Textures\104th_AB_Osiris_Lower.paa"};
-		linkedItems[] = {JA_104th_Osiris_Helmet, JA_104th_Osiris_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Osiris_Helmet, JA_104th_Osiris_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Osiris_Helmet_old, JA_104th_Osiris_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Osiris_Helmet_old, JA_104th_Osiris_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Carmine : ls_gar_marshalCommander_base
 	{

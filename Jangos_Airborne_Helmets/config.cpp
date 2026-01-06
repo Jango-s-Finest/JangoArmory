@@ -18,7 +18,7 @@ class CfgPatches
 			"JA_104th_Clutch_Helmet",
 			"JA_104th_Garm_Helmet",
 			"JA_104th_Axel_Helmet",
-			"JA_104th_Osiris_Helmet",
+			"JA_104th_Osiris_Helmet_old",
 			"JA_104th_Skav_AB_Helmet",
 			"JA_104th_Magnum_Helmet",
 			"JA_104th_Scrub_Helmet",
@@ -27,7 +27,7 @@ class CfgPatches
 			"JA_104th_Cyan_Helmet",
 			"JA_104th_Azure_Helmet",
 			"JA_104th_Kage_Helmet",
-			"104th_Kaleck_Helmet",
+			"104th_Kaleck_Helmet_old",
 			"JA_104th_Soul_Helmet",
 			"JA_104th_Trustful_Helmet",
 			"JA_104th_Stache_Helmet"};
@@ -79,7 +79,7 @@ class CfgWeapons
 	class ls_sob_phase2SpecOp_helmet;
 	class ls_gar_phase1_helmet;
 
-	class JA_104th_Kaleck_Helmet : ls_sob_phase2SpecOp_helmet
+	class JA_104th_Kaleck_Helmet_old : ls_sob_phase2SpecOp_helmet
 	{
 		author = "Fish";
 		scopeArsenal = 2;
@@ -254,7 +254,7 @@ class CfgWeapons
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Axel_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Axel_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Osiris_Helmet : ls_gar_airborne_helmet
+	class JA_104th_Osiris_Helmet_old : ls_gar_airborne_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -343,7 +343,7 @@ class CfgWeapons
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Kage_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Kage_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_AB_Kaleck_Helmet : ls_gar_airborne_helmet
+	class JA_104th_AB_Kaleck_Helmet_old : ls_gar_airborne_helmet
 	{
 		author = "Fish";
 		scopeArsenal = 2;

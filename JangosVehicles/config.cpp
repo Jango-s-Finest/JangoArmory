@@ -2848,6 +2848,7 @@ class cfgVehicles
 		};
 	};
 	class 3AS_ARC_170_Republic;
+	class ACE_SelfActions;
 	class UserActions;
 	class JA_104th_3AS_Reaper_ARC_170_Blue : 3AS_ARC_170_Republic{
 		Author = "212th + 3AS + Echo";
@@ -3255,6 +3256,19 @@ class cfgVehicles
 				};
 			};
 			class TransportCounterMeasuresComponent;
+		};
+		class ACE_SelfActions : ACE_SelfActions
+		{
+			class JA_vehicles_spawnCrew {
+				condition = "_this#0 call BNA_KC_vehicles_fnc_canSpawnCrew";
+				displayName = "Create Vehicle Crew";
+				statement = "(group ace_player) createVehicleCrew _this#0";
+			};
+			class JA_vehicles_deleteCrew {
+				condition = "_this#0 call BNA_KC_vehicles_fnc_canDeleteCrew";
+				displayName = "Delete Vehicle Crew";
+				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
+			};
 		};
 	};
 
@@ -5702,6 +5716,16 @@ class cfgVehicles
 				{
 					displayname = "Custom Skins";
 				};
+			};
+			class JA_vehicles_spawnCrew {
+				condition = "_this#0 call BNA_KC_vehicles_fnc_canSpawnCrew";
+				displayName = "Create Vehicle Crew";
+				statement = "(group ace_player) createVehicleCrew _this#0";
+			};
+			class JA_vehicles_deleteCrew {
+				condition = "_this#0 call BNA_KC_vehicles_fnc_canDeleteCrew";
+				displayName = "Delete Vehicle Crew";
+				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
 			};
 		};
 	};

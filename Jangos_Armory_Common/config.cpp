@@ -827,6 +827,122 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Base_ARC_Uniform;
+	class JA_Keeli_Tugz_Uniform : JA_104th_Base_ARC_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (Keeli Tugz)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Common\data\textures\Tugz_Body_Upper_2D_View.paa",
+				"Jangos_Armory_Common\data\textures\Tugz_Body_Lower_2D_View.paa",
+			};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Keeli_Tugz";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_Keeli_Tugz_Helmet : ls_gar_arc_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (Keeli Tugz)";							   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\textures\Tugz_Helmet_ARC_2D_View.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
+	};
+	class JA_Keeli_Tugz_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (Keeli Tugz)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Armory_Common\data\Textures\Tugz_Accessories_ARC_2D_View.paa",
+                "Jangos_Armory_Common\data\Textures\Tugz_Accessories_Officer_2D_View.paa"};
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+	class JA_Keeli_Tugz_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Cyan";
+		displayName = "Clone NVG Rangefinder Visor (Keeli Tugz)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Common\data\Textures\Tugz_Visor_Rangefinder_2D_View.paa",
+				"Jangos_Armory_Common\data\Textures\Tugz_Visor_Rangefinder_2D_View.paa"};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
 };
 
 class CfgVehicles
@@ -1191,5 +1307,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\textures\Green_P1_Cadet_Upper_5.paa", "Jangos_Armory_Common\data\Textures\Green_P1_Cadet_Lower.paa"};
 		linkedItems[] = {JA_Cadet_Green_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_Cadet_Green_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_Keeli_Tugz : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_Keeli_Tugz_Uniform";
+		displayName = "Keeli Tugz";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\textures\Tugz_Body_Upper_2D_View.paa", "Jangos_Armory_Common\data\textures\Tugz_Body_Lower_2D_View.paa"};
+		linkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };
