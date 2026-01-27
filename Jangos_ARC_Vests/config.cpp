@@ -715,6 +715,258 @@ class CfgWeapons
             };
         };
     };
+    class JA_104th_Ceasar_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (104th Ceasar)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Ceasar_Accessories_ARC.paa",
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Ceasar_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Vegas_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (104th Vegas)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Vegas_Accessories_ARC.paa",
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Vegas_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Osiris_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (104th Osiris)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Osiris_Accessories_ARC.paa",
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Osiris_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Kaleck_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (104th Kaleck)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Kaleck_Accessories_ARC.paa",
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Kaleck_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
 };
 
 class CfgVehicles

@@ -112,6 +112,15 @@ class CfgAmmo
 		indirectHit = 250;
 		explosive = 0.9;
 	};
+	class TKE_Ext_Bullet_Railgun;
+	class JA_104th_Heavy_Assault_Ship_RailGun_AMMO : TKE_Ext_Bullet_Railgun{
+		hit = 1500;
+	};
+	class 3AS_SIEGE_Cannon_HHE_Shell;
+	class JA_104th_Heavy_Assault_Ship_Siegecannon_AMMO : 3AS_SIEGE_Cannon_HHE_Shell{
+		indirectHit = 200;
+		indirectHitRange = 20;
+	};
 };
 
 class CfgMagazines
@@ -212,6 +221,48 @@ class CfgMagazines
 		displayNameShort = "Mass Driver HE";
 
 	};
+
+	class TKE_Ext_1250Rnd_30mm;
+	class JA_104th_Heavy_Assault_Ship_MAG_2500: TKE_Ext_1250Rnd_30mm{
+		displayName = "104th HE cannon";
+		displayNameShort = "Laser HE";
+		ammo = "3AS_ATTE_30mm_MP";
+        count = 2500;
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_2500";
+	};
+	class JA_104th_Heavy_Assault_AA_Ship_MAG_2500: TKE_Ext_1250Rnd_30mm{
+		displayName = "104th AA cannon";
+		displayNameShort = "Laser AA";
+		ammo = "JA_104th_AA_Lazer_Ammo";
+        count = 2500;
+		pylonWeapon = "JA_104th_Heavy_Assault_AA_Ship_2500";
+	};
+	class TKE_Ext_200Rnd_105mm;
+	class JA_104th_Heavy_Assault_Ship_MAG_400: TKE_Ext_200Rnd_105mm{
+		ammo = "JA_ATTE_Maingun_HE_Ammo";
+        count = 400;
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_400";
+	};
+	class TKE_Ext_75mm_60Rnd;
+	class JA_104th_Heavy_Assault_Ship_RailGun_MAG_75 : TKE_Ext_75mm_60Rnd{
+		ammo = "JA_104th_Heavy_Assault_Ship_RailGun_AMMO";
+        count = 75;
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_RailGun_75";
+	}
+	class 3AS_10Rnd_Siege_Cannon_HHE_shells;
+	class JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10 : 3AS_10Rnd_Siege_Cannon_HHE_shells{
+		ammo = "JA_104th_Heavy_Assault_Ship_Siegecannon_AMMO";
+		pylonWeapon = "JA_104th_Heavy_Assault_Ship_Siegecannon_10";
+	};
+
+	class FIR_F15C_Fueltank_P_1rnd_M;
+	class JA_104th_LAAT_Fueltank_P: FIR_F15C_Fueltank_P_1rnd_M{
+		hardpoints[] = {"B_AMRAAM_D"};
+		displayName = "test - 104th Laat Fuel Pod";
+		displayNameShort = "Fuel Pod";
+		descriptionShort = "Fuel Pod";
+
+	};
 };
 
 class CfgWeapons
@@ -222,9 +273,6 @@ class CfgWeapons
 		class close;
 		class LowROF;
 	};
-	class FIR_AIM120;
-	class FIR_AIM9X;
-	
 	class JA_104th_AA_Lazer : RD501_Republic_Aircraft_Laser_AA{
 		displayName = "Air Superiority laser";
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500"};
@@ -262,6 +310,8 @@ class CfgWeapons
 		};
 	};
 	
+	class FIR_AIM120;
+	class FIR_AIM9X;
 	class JA_104th_AIM9X : FIR_AIM9X{
 		magazines[] = {"JA_LAAT_AIM9X"};
 	};
@@ -276,5 +326,61 @@ class CfgWeapons
 	class 3AS_Mass_Driver_Cannon;
 	class JA_ATTE_Maingun_Cannon: 3AS_Mass_Driver_Cannon{
 		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
+	};
+
+	class TKE_Ext_PDC_30mm{
+		class LowROF;
+	};
+	class TKE_Ext_TwinCannon{
+		class player;
+	};
+	class JA_104th_Heavy_Assault_Ship_2500 : TKE_Ext_PDC_30mm{
+		displayName = "HE laser";
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_2500"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
+		modes[] = {"LowROF"};
+		class LowROF: LowROF{
+			burst = 1;
+			reloadtime = 0.2;
+			sounds[] = {"StandardSound"};
+			class StandardSound{
+				soundSetShot[] = {"3AS_HeavyBlaster_SoundSet"};
+			}
+		};
+	};
+	class JA_104th_Heavy_Assault_AA_Ship_2500 : TKE_Ext_PDC_30mm{
+		displayName = "Air Superiority laser";
+		magazines[] = {"JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
+		modes[] = {"LowROF"};
+		class LowROF: LowROF{
+			burst = 1;
+			reloadtime = 0.08;
+			sounds[] = {"StandardSound"};
+			class StandardSound{
+				soundSetShot[] = {"3AS_HeavyBlaster_SoundSet"};
+			}
+		};
+	};
+	class JA_104th_Heavy_Assault_Ship_400 : TKE_Ext_TwinCannon{
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_400"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
+		modes[] = {"player"};
+		class player: player{
+			sounds[] = {"StandardSound"};
+			class StandardSound{
+				soundSetShot[] = {"3AS_Maincanon_Shot_SoundSet"};
+			}
+		};
+	};
+	class TKE_Ext_Cannon_Railgun_Light;
+	class JA_104th_Heavy_Assault_Ship_RailGun_75 : TKE_Ext_Cannon_Railgun_Light{
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_RailGun_MAG_75"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
+	}
+	class 3AS_ATAP_Siege_Cannon;
+	class JA_104th_Heavy_Assault_Ship_Siegecannon_10 : 3AS_ATAP_Siege_Cannon{
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
 	};
 };

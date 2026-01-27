@@ -537,6 +537,74 @@ class CfgWeapons
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
+	class JA_104th_Ceasar_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Cyan";
+		displayName = "Clone NVG Rangefinder Visor (104th Ceasar)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Ceasar_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Ceasar_Rangefinder.paa"};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
+	class JA_104th_Vegas_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Cyan";
+		displayName = "Clone NVG Rangefinder Visor (104th Vegas)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Vegas_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Vegas_Rangefinder.paa"};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
+	class JA_104th_Osiris_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Cyan";
+		displayName = "Clone NVG Rangefinder Visor (104th Osiris)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Osiris_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Osiris_Rangefinder.paa"};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
+	class JA_104th_Kaleck_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Cyan";
+		displayName = "Clone NVG Rangefinder Visor (104th Kaleck)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Kaleck_Rangefinder.paa",
+				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Kaleck_Rangefinder.paa"};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
 };
 
 class CfgGlasses
