@@ -2517,11 +2517,7 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17M_Sniper_Shot.wss", +3db, 1, 2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC17M_Sniper_Shot.wss", +3db, 1, 2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC17M_Sniper_Shot.wss", +3db, 1, 2200};
-                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
             };
         };
         class FullAuto : FullAuto
@@ -2531,11 +2527,7 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
-                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
             };
         };
         class WeaponSlotsInfo : WeaponSlotsInfo
