@@ -71,6 +71,8 @@ class CfgPatches
 
             "JA_104th_Z7_mk2",
 
+            "JA_104th_BPX14",
+
             // "JA_104th_ShoulderCannon_mk2",
 
             "JA_104th_muzzle_flash",
@@ -127,6 +129,7 @@ class CfgPatches
 
             "JA_104th_Weapons_Ammo_100mw",
             "JA_104th_Weapons_Ammo_17MAT",
+            "JA_104th_Weapons_Ammo_BPX14",
 
             "JA_104th_Weapons_Ammo_EMP",
 
@@ -178,7 +181,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_100Mw1",
             "JA_104th_Weapons_Mags_EMPMw2",
 
-            "JA_104th_Weapons_Mags_LaserCannon2",
+            "JA_104th_Weapons_Mags_BPX14",
 
             "JA_104th_Weapons_Mags_100mw_AT",
 
@@ -282,6 +285,7 @@ class CfgWeapons
     class SDT_IonDisruptor;
     class 3AS_RPS6_HP;
     class 3AS_RPS6_F;
+    class 3AS_HH12_F;
 
     class arifle_MX_Base_F : Rifle_Base_F
     {
@@ -1418,7 +1422,32 @@ class CfgWeapons
                     {
                         "3AS_optic_DC15LE_F",
                         "3AS_optic_DC15C_F",
-                        "3AS_Optic_Scope_WestarM5"
+                        "3AS_Optic_Scope_WestarM5",
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
+
+                        "JA_104th_cows_mrco",
+                        "JA_104th_cows_mrco_2",
+                        "JA_104th_cows_mrco_3",
+
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3",
+
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3",
+
+                        "JA_104th_cows_DMS",
+                        "JA_104th_cows_DMS_2",
+                        "JA_104th_cows_DMS_3",
+                        "JA_104th_cows_DMS_4",
+
+                        "JA_104th_cows_Holoscope_LR",
+                        "JA_104th_cows_Holoscope_LR_2",
+                        "JA_104th_cows_Holoscope_LR_3",
+                        "JA_104th_cows_Holoscope_LR_4"
                 };
             };
             class MuzzleSlot : MuzzleSlot
@@ -2253,7 +2282,7 @@ class CfgWeapons
                 soundSetShot[] = {"3AS_DLT19X_Shot_SoundSet"};
             };
             reloadTime = 1.35;
-            dispersion = 0.0001;
+            dispersion = 0.00005;
             minRange = 2;
             minRangeProbab = 0.5;
             midRange = 250;
@@ -2324,9 +2353,10 @@ class CfgWeapons
         displayName = "[104th] FP-773";
         baseWeapon = "JA_104th_FP773";
         mass = 120;
-        picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
-        model = "kobra\442_weapons\weapons\773\k_773_rifle.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "kobra\442_animations\weapons\k_773_hold.rtm"};
+        picture = "\ls\core\addons\weapons_firepuncher\data\ui\firepuncher_ui_ca.paa";
+        model = "\ls\core\addons\weapons_firepuncher\ls_weapon_firepuncher.p3d";
+        modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","\ls\core\addons\weapons_firepuncher\anims\firepuncher_handanim.rtm"};
         reloadAction = "ReloadOverheat_DLT";
         reloadMagazineSound[] = {"WarMantle\WM_Imperial_Weapons\data\sfx\overheat", 5, 1, 30};
         recoil = "recoil_dmr_01";
@@ -2339,11 +2369,10 @@ class CfgWeapons
                 "JA_104th_Weapons_Mags_100mw1",
                 "JA_104th_Weapons_Mags_EMPMw2"
             };
-        modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F";
         modes[] = {"Single"};
         class Single : Single
         {
-            sounds[] = {"StandardSound"};
+            sounds[] = {"StandardSound","SilencedSound"};
             class BaseSoundModeType
             {
                 weaponSoundEffect = "";
@@ -2353,49 +2382,74 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
+                reloadTime = 0.008;
+                dispersion = 0.00001;
+                sounds[] = {"StandardSound"};
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
                 begin2[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
                 begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
             };
+            class SilencedSound
+            {
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1.3db, 1, 2200};
+                closure1[] = {};
+                closure2[] = {};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+                soundClosure[] = {};
+                weaponSoundEffect = "";
+            };
         };
         class OpticsModes
         {
-            class Ironsights
+            class Scope
             {
+                optics = 1;
                 opticsID = 1;
-                useModelOptics = 0;
+                useModelOptics = 1;
                 opticsFlare = "true";
-                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
-                opticsDisablePeripherialVision = 0.67;
+                opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur3"};
+                opticsDisablePeripherialVision = 0;
+                opticsZoomInit = "0.25/4";
+                opticsZoomMax = "0.25/4";
+                opticsZoomMin = "0.25/40";
+                memoryPointCamera = "opticView";
+                modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
+                visionMode[] = {"Normal", "NVG", "Ti"};
+                thermalMode[] = {0};
+                discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400};
+                discreteDistanceInitIndex = 2;
+                distanceZoomMin = 300;
+                distanceZoomMax = 4000;
+            };
+            class sight
+            {
+                opticsID = 2;
+                useModelOptics = 0;
+                opticsPPEffects[] = {"", ""};
+                opticsFlare = 0;
+                opticsDisablePeripherialVision = 0;
                 opticsZoomMin = 0.25;
-                opticsZoomMax = 1.1;
+                opticsZoomMax = 1.25;
                 opticsZoomInit = 0.75;
                 memoryPointCamera = "eye";
+                modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
                 visionMode[] = {};
-                distanceZoomMin = 100;
-                distanceZoomMax = 100;
+                discretefov[] = {};
+                distanceZoomMin = 200;
+                distanceZoomMax = 200;
+                discreteDistance[] = {200};
+                discreteDistanceInitIndex = 0;
             };
         };
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             class CowsSlot : CowsSlot
             {
-                displayName = "Optics Slot";
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinpoint = "Bottom";
-                iconPosition[] = {0.5, 0.35};
-                iconScale = 0.2;
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] =
-                    {
-                        "3AS_Imp_Optic_1",
-                        "3AS_optic_DC15X_F",
-                        "JA_104th_cows_LRPS",
-                        "OPTRE_SRM_Sight",
-                        "k_773_scope1",
-                        "k_773_scope2"};
+
             };
             class MuzzleSlot : MuzzleSlot
             {
@@ -2403,8 +2457,8 @@ class CfgWeapons
                 displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[] =
                     {
-                        "k_773_snds",
-                        "OPTRE_SRS99D_Suppressor"};
+                        "JA_104th_muzzle_suppressor"
+                    };
             };
             class PointerSlot : PointerSlot
             {
@@ -2433,7 +2487,7 @@ class CfgWeapons
     };
 
     // DC17M
-    class JA_104th_DC17M : ls_weapon_dc17m
+    class JA_104th_DC17M : JA_104th_rifle_base_stunless
     {
         ACE_barrelTwist = 178;
         ACE_barrelLength = 264;
@@ -2457,6 +2511,35 @@ class CfgWeapons
         ls_weapons_attachmentSwapEnabled = 1;
         ls_weapons_attachments[] = {{"ls_weapons_isBlasterMag","ls_muzzle_dc17m_blaster"},{"ls_weapons_isATMag","ls_muzzle_dc17m_antiArmor"},{"ls_weapons_isSniperMag","ls_muzzle_dc17m_sniper"}};
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+        modes[] = {"Single", "FullAuto"};
+        class Single : Single
+        {
+            reloadTime = 0.5;
+            dispersion = 0.00015;
+            sounds[] = {"StandardSound"};
+            class StandardSound : BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC17M_Sniper_Shot.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC17M_Sniper_Shot.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC17M_Sniper_Shot.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+            };
+        };
+        class FullAuto : FullAuto
+        {
+            reloadTime = 0.085;
+            dispersion = 0.00015;
+            sounds[] = {"StandardSound"};
+            class StandardSound : BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\DC15L_shot1.wss", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+            };
+        };
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             class CowsSlot : CowsSlot
@@ -2470,12 +2553,6 @@ class CfgWeapons
                 compatibleItems[] =
                     {
                         "ls_cows_dc17m_sniper",
-                        "3AS_optic_DC15C_F",
-                        "3AS_Imp_Optic_1",
-                        "3AS_Imp_Optic_2",
-                        "3AS_Imp_Optic_3",
-                        "3AS_Imp_Optic_4",
-                        "3AS_Optic_Scope_WestarM5",
                         "JA_104th_cows_rco",
                         "JA_104th_cows_rco_2",
                         "JA_104th_cows_rco_3",
@@ -3302,9 +3379,9 @@ class CfgWeapons
             };
             class SilencedSound
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot.wss", +0.3db, 1, 2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot2.wss", +0.8db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot2.wss", +0.8db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_pistol_shot2.wss", +0.8db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
@@ -3427,7 +3504,22 @@ class CfgWeapons
         magazines[] = {"ls_magazine_z7"};
     };
 
-    // class JA_104th_ShoulderCannon_mk2
+    // BPX-14 Visions 5 year weapon
+        class JA_104th_BPX14 : 3AS_HH12_F
+    {
+        author = "Third Army Studios + Cyan";
+        baseWeapon = "JA_104th_BPX14";
+        scope = 2;
+        displayName = "[104th] BPX-14 Shoulder Cannon";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Imperial\anims\HH12hand.rtm"};
+        model = "3as\3AS_Weapons\Imperial\3AS_HH12.p3d";
+        picture = "3as\3AS_Weapons\Data\UI\3as_hh12.paa";
+        magazines[] = 
+        {
+        "JA_104th_Weapons_Mags_BPX14",
+        "OPTRE_SpLaser_Battery_Launcher"
+        };
+    };
 };
 
 class CfgAmmo
@@ -3457,6 +3549,7 @@ class CfgAmmo
     class F_40mm_White;
     class B_40mm_APFSDS;
     class RocketBase;
+    class OPTRE_SpLaserAmmo;
 
     class JA_104th_Weapons_Ammo_EMP : JLTS_ammo_Grenade_EMP
     {
@@ -3582,8 +3675,8 @@ class CfgAmmo
     class JA_104th_Weapons_Ammo_30mw : JA_104th_Weapons_Ammo_base_blue // High Output
     {
         hit = 60;
-        typicalSpeed = 3500;
-        caliber = 3.6;
+        typicalSpeed = 5000;
+        caliber = 4;
         airFriction = 0;
         waterFriction = -0.009;
         thrust = 3500;
@@ -3592,8 +3685,8 @@ class CfgAmmo
     class JA_104th_Weapons_Ammo_40mw : JA_104th_Weapons_Ammo_base_blue // Very High Output
     {
         hit = 75;
-        typicalSpeed = 7000;
-        caliber = 4;
+        typicalSpeed = 10000;
+        caliber = 6;
         airFriction = 0;
         waterFriction = -0.009;
         thrust = 6000;
@@ -3602,12 +3695,12 @@ class CfgAmmo
     class JA_104th_Weapons_Ammo_50mw : JA_104th_Weapons_Ammo_base_blue // Extreme Output
     {
         hit = 95;
-        typicalSpeed = 10000;
+        typicalSpeed = 12000;
         caliber = 10;
         airFriction = 0;
         waterFriction = -0.009;
-        thrust = 7730;
-        thrustTime = 2;
+        thrust = 8000;
+        thrustTime = 4;
     };
     class JA_104th_Weapons_Ammo_10mwSC : JLTS_bullet_scatter_blue // Shotgun Rounds
     {
@@ -3665,10 +3758,10 @@ class CfgAmmo
         weaponType = "default";
     };
 
-    // Test Rocket Rounds
-    class JA_104th_Weapons_Ammo_LC : RocketBase
+    // BPX14 Energy Cells
+    class JA_104th_Weapons_Ammo_BPX14 : OPTRE_SpLaserAmmo
     {
-        hit = 200;
+        hit = 350;
         typicalSpeed = 1200;
         caliber = 150;
         airFriction = 0;
@@ -3677,12 +3770,10 @@ class CfgAmmo
         ExplosionEffects = "HEShellExplosion";
         explosionType = "explosive";
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
-        indirectHit = 75;
+        indirectHit = 25;
         indirectHitRange = 1;
-        submunitionAmmo = "ammo_Penetrator_Titan_AT";
         suppressionRadiusBulletClose = 10;
         suppressionRadiusHit = 14;
-        thrust = 250;
         tracerColor[] = {0.7, 0.7, 0.5, 0.04};
         tracerColorR[] = {0.7, 0.7, 0.5, 0.04};
         warheadName = "AP";
@@ -3813,6 +3904,7 @@ class CfgMagazines
     class UGL_FlareWhite_F;
     class SWLW_Z7_mag;
     class ls_mag_rpg_1rnd;
+    class OPTRE_SpLaser_Battery_Launcher;
 
     // Universal
 
@@ -3846,7 +3938,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_20mw";
         initSpeed = 600;
         descriptionShort = "DC Series standard magazine";
-        mass = 10;
+        mass = 8;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
@@ -3864,7 +3956,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_20mw";
         initSpeed = 800;
         descriptionShort = "DC Series standard magazine";
-        mass = 10;
+        mass = 8;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
@@ -3922,7 +4014,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_30mw";
         initSpeed = 1000;
         descriptionShort = "DC15 Series High Power magazine";
-        mass = 10;
+        mass = 8;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
@@ -3941,7 +4033,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_40mw";
         initSpeed = 1100;
         descriptionShort = "DC15X Specialized High Power magazine";
-        mass = 10;
+        mass = 8;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
@@ -3960,7 +4052,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_20mw";
         initSpeed = 700;
         descriptionShort = "DC17M Blaster magazine";
-        mass = 7.5;
+        mass = 6;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
@@ -3977,7 +4069,7 @@ class CfgMagazines
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
         count = 1;
-        mass = 20;
+        mass = 16;
         modelSpecial = "";
         initSpeed = 1500;
         modelSpecialIsProxy = 0;
@@ -3997,7 +4089,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_50mw";
         initSpeed = 2000;
         descriptionShort = "SF Specialized Overcharged magazine";
-        mass = 5;
+        mass = 4;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC15X\DC15X_mag.p3d";
@@ -4017,7 +4109,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         tracersEvery = 1;
         count = 1;
-        mass = 15;
+        mass = 12;
         typicalSpeed = 867;
     };
     class JA_104th_Weapons_Mags_EMPMw2 : 30Rnd_65x39_caseless_mag
@@ -4032,7 +4124,7 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         tracersEvery = 1;
         count = 2;
-        mass = 15;
+        mass = 12;
         typicalSpeed = 867;
     };
 
@@ -4047,7 +4139,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_10mwSC";
         initSpeed = 600;
         descriptionShort = "DP23 Low Power scatter magazine";
-        mass = 7.5;
+        mass = 6;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
@@ -4065,7 +4157,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_20mwSC_Slug";
         initSpeed = 600;
         descriptionShort = "DP23 slug round magazine";
-        mass = 7.5;
+        mass = 6;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
@@ -4105,7 +4197,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_30mw";
         initSpeed = 1100;
         descriptionShort = "DC15SA Standard magazine";
-        mass = 4;
+        mass = 3;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
@@ -4123,7 +4215,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_10mw";
         initSpeed = 600;
         descriptionShort = "DC17SA High capacity magazine";
-        mass = 5;
+        mass = 4;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
@@ -4141,7 +4233,7 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_10mw";
         initSpeed = 600;
         descriptionShort = "DC17SA High capacity magazine";
-        mass = 15;
+        mass = 12;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
@@ -4150,14 +4242,13 @@ class CfgMagazines
     };
 
     // Tertiaries
-    class JA_104th_Weapons_Mags_LC : SWLW_Z7_mag
+    class JA_104th_Weapons_Mags_BPX14 : SWLW_Z7_mag
     {
         author = "Jango's Armory Aux Team";
-        displayName = "[104th] 1rnd LC 100Mw APFSDS";
-        ammo = "JA_104th_Weapons_ammo_LC";
-        // ammo = "ls_50mm_laat_apfsds";
-        count = 1;
-        mass = 12;
+        displayName = "[104th] 3rnd 300Mw APFSDS Energy Cell";
+        ammo = "JA_104th_Weapons_Ammo_BPX14";
+        count = 3;
+        mass = 16;
         tracersEvery = 1;
     };
 
