@@ -274,6 +274,8 @@ class CfgWeapons
 
     class JLTS_stun_muzzle;
     class LFP_dc17arc_Dual;
+    class ls_weapon_dc17m;
+    class WeaponSlotsInfo;
     class ls_weapon_dualDC17_secondary;
     class ls_weapon_dualDC17Left_dummy;
     class ls_weapon_rps6;

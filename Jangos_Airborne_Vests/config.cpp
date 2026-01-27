@@ -18,7 +18,7 @@ class CfgPatches
             "JA_104th_AB_Officer_Vest_Axel",
             "JA_104th_AB_Officer_Vest_Dak",
             "JA_104th_Carmine_Vest",
-            "JA_104th_Osiris_Vest",
+            "JA_104th_Osiris_Vest_old",
             "JA_104th_Kage_Vest",
             "JA_104th_Magnum_Vest",
             "JA_104th_Clutch_Vest"};
@@ -273,7 +273,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Osiris_Vest : ls_gar_airborneNCO_vest
+    class JA_104th_Osiris_Vest_old : ls_gar_airborneNCO_vest
     {
         author = "Emmet";
         scope = 2;

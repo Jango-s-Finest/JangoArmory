@@ -405,6 +405,110 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Ceasar_Uniform : JA_104th_Base_ARC_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Ceasar)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Ceasar_Upper.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Ceasar_Lower.paa",
+			};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Ceasar";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Vegas_Uniform : JA_104th_Base_ARC_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Vegas)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Vegas_Upper.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Vegas_Lower.paa",
+			};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Vegas";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Osiris_Uniform : JA_104th_Base_ARC_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Osiris)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Osiris_Upper.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Osiris_Lower.paa",
+			};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Osiris";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Kaleck_Uniform : JA_104th_Base_ARC_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Kaleck)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Kaleck_Upper.paa",
+				"Jangos_ARC_Armours\data\textures\104th_ARC_Kaleck_Lower.paa",
+			};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Kaleck";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -579,6 +683,70 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Vision_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Vision_Lower.paa"};
+		linkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Ceasar : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Ceasar_Uniform";
+		displayName = "104th Ceasar";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Ceasar_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Ceasar_Lower.paa"};
+		linkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Vegas : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Vegas_Uniform";
+		displayName = "104th Vegas";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Vegas_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Vegas_Lower.paa"};
+		linkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Osiris : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Osiris_Uniform";
+		displayName = "104th Osiris";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Osiris_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Osiris_Lower.paa"};
+		linkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Kaleck : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Kaleck_Uniform";
+		displayName = "104th Kaleck";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARC_Armours\data\textures\104th_ARC_Kaleck_Upper.paa", "Jangos_ARC_Armours\data\textures\104th_ARC_Kaleck_Lower.paa"};
 		linkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};

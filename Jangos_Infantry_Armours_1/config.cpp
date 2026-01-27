@@ -311,7 +311,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Quick)";
+		displayName = "Clone Trooper armor (104th Castle)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -479,7 +479,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Lax_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Lax_Uniform_old : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -497,7 +497,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Lax";
+			uniformClass = "JA_104th_Lax_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1228,14 +1228,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Fire_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Lax : lsd_gar_phase2_base
+	class JA_104th_Lax_old : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Lax_Uniform";
+		uniformClass = "JA_104th_Lax_Uniform_old";
 		displayName = "104th Lax";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
@@ -1460,7 +1460,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 1;
 		uniformClass = "JA_104th_Quick_Uniform";
-		displayName = "104th Quick";
+		displayName = "104th Castle";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};

@@ -290,6 +290,52 @@ class CfgWeapons
             };
         };
     };
+    class JA_104th_Castle_Kama : ls_gar_kama_vest
+    {
+        author = "Fish";
+        displayName = "Clone Trooper Kama (104th Castle)";
+        hiddenSelections[] =
+            {
+                "camo1"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_Quick_Officer_Accessories.paa"};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
     class JA_104th_Spectre_RC_Vest : ls_sob_commando_sniper_vest
     {
         author = "Dak";
@@ -709,6 +755,56 @@ class CfgWeapons
             hiddenSelections[] = {"camo1", "camo2"};
             mass = 80;
             vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_IQ_Vest : ls_gar_forceReconNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Trooper Kama (104th IQ)";
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                "", // Heavy
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_IQ_Accessories_Officer.paa",
+                "", // Heavy
+                "" // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
 
             class HitpointsProtectionInfo
             {

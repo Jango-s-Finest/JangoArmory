@@ -994,6 +994,20 @@ class cfgVehicles
 					"\ls\core\addons\vehicles_laati\data\cockpits_co.paa",
 					"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
 			};
+			class Dak : base
+			{
+				displayName = "104th Dak";
+				textures[] = {
+					"JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Body_Main.paa",
+					"JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Interior.paa",
+					"JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Door_Front.paa",
+					"JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Door_Back.paa",
+					"JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Door_Ramp.paa",
+					"JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Wings.paa",
+					"JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Missiles.paa",
+					"JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Cockpit.paa",
+					"\ls\core\addons\vehicles_laati\data\glass_ca.paa"};
+			};
 		};
 		textureList[] = {"base", 1, "logo", 1, "plobro", 1};
 		class ACE_SelfActions : ACE_SelfActions
@@ -1086,6 +1100,11 @@ class cfgVehicles
 					{
 						displayName = "Hightower";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehiclesLaat\data\textures\104th_Pilot_Hightower_Laat_Body_Main.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesLaat\data\textures\104th_Pilot_Hightower_Laat_Body_Interior.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesLaat\data\textures\104th_Pilot_Hightower_Laat_Door_Front.paa']; _target setObjectTextureGlobal [3,'JangosVehiclesLaat\data\textures\104th_Pilot_Hightower_Laat_Door_Back.paa']; _target setObjectTextureGlobal [4,'JangosVehiclesLaat\data\textures\104th_Pilot_Hightower_Laat_Door_Ramp.paa']; _target setObjectTextureGlobal [5,'JangosVehiclesLaat\data\textures\104th_Pilot_Hightower_Laat_Wings.paa']; _target setObjectTextureGlobal [6,'JangosVehiclesLaat\data\textures\104th_Pilot_Hightower_Laat_Missles.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+					};
+					class 104th_Dak : DefaultSkin
+					{
+						displayName = "Dak";
+						statement = "_target setObjectTextureGlobal [0,'JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Body_Main.paa']; _target setObjectTextureGlobal [1,'JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Interior.paa']; _target setObjectTextureGlobal [2,'JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Door_Front.paa']; _target setObjectTextureGlobal [3,'JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Door_Back.paa']; _target setObjectTextureGlobal [4,'JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Door_Ramp.paa']; _target setObjectTextureGlobal [5,'JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Wings.paa']; _target setObjectTextureGlobal [6,'JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Missiles.paa']; _target setObjectTextureGlobal [7,'JangosVehiclesLaat\data\textures\104th_Pilot_Dak_Laat_Cockpit.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 				};
 			};
