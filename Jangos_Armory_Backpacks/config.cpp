@@ -133,7 +133,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (104th)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -154,7 +154,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] =
 			{
 				""};
-		maximumload = 280; // In LBS (320 = 32 lbs original, 400 = 40 lbs)
+		maximumLoad = 250; // In LBS (320 = 32 lbs original, 400 = 40 lbs)
 	};
 	class JA_104th_ARC_Backpack : ls_gar_arc_backpack
 	{
@@ -162,7 +162,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper ARC backpack (104th)";
-		maximumLoad = 360;
+		maximumLoad = 400;
 		tf_dialog = "ls_radios_cloneLR";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode = "tf_west_radio_code";
@@ -176,7 +176,7 @@ class CfgVehicles
 		author = "Dak";
 		scopeCurator = 2;
 		displayname = "Clone Trooper Republic Commando backpack (104th Spectre)";
-		maximumLoad = 450;
+		maximumLoad = 500;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_Company_Spectre_RC_Backpack.paa", // don't change this
@@ -195,7 +195,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO mini backpack (104th Irish)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_LR_Main.paa", // Minipack
@@ -208,7 +208,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO mini backpack (104th Boris)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Boris_Minipack.paa", // Minipack
@@ -221,7 +221,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper Heavy backpack (104th)";
-		maximumLoad = 300;
+		maximumLoad = 350;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -255,7 +255,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (104th)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -273,7 +273,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack LR (104th)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -298,7 +298,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (104th Carmine)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -322,7 +322,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (104th Lax)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -346,7 +346,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (104th Patch)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -370,7 +370,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO backpack (104th)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -388,7 +388,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO mini backpack (104th)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_MiniPack.paa",		 // Minipack
@@ -402,7 +402,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO mini backpack (104th Spirit)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Spirit_Mini_Lr_Main.paa", // Minipack
@@ -416,7 +416,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO mini backpack (104th Tusk)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_Tusk_Mini_Lr.paa",		 // Minipack
@@ -430,7 +430,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO mini backpack (104th MLV)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Backpacks\data\Textures\104th_P1_Red_Mini_Backpack.paa",			   // Minipack
@@ -445,7 +445,7 @@ class CfgVehicles
 		author = "Tundra";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Trooper backpack (Cerberus 1-1)";
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
@@ -463,7 +463,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper Heavy backpack (Cerberus 1-1)";
-		maximumLoad = 300;
+		maximumLoad = 350;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -480,7 +480,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (Cerberus 1-1)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -497,7 +497,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO backpack (Cerberus 1-1)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -516,7 +516,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Cerberus 1-2)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -533,7 +533,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper Heavy backpack (Cerberus 1-2)";
-		maximumLoad = 300;
+		maximumLoad = 350;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -550,7 +550,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (Cerberus 1-2)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -567,7 +567,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO backpack (Cerberus 1-2)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -586,7 +586,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Cerberus 1-3)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -603,7 +603,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper Heavy backpack (Cerberus 1-3)";
-		maximumLoad = 300;
+		maximumLoad = 350;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -620,7 +620,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (Cerberus 1-3)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -637,7 +637,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO backpack (Cerberus 1-3)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -655,7 +655,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper Heavy backpack (Bulky)";
-		maximumLoad = 300;
+		maximumLoad = 350;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -680,7 +680,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (Cerberus 1-4)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -697,7 +697,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper Heavy backpack (Cerberus 1-4)";
-		maximumLoad = 300;
+		maximumLoad = 350;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -714,7 +714,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (Cerberus 1-4)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -731,7 +731,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO backpack (Cerberus 1-4)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -750,7 +750,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper backpack (104th MLV)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -767,7 +767,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper Heavy backpack (104th MLV)";
-		maximumLoad = 350;
+		maximumLoad = 300;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -784,7 +784,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper medic backpack (104th MLV)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -801,7 +801,7 @@ class CfgVehicles
 		author = "Tundra";
 		scopeCurator = 2;
 		displayname = "Clone Trooper RTO backpack (104th MLV)";
-		maximumLoad = 200;
+		maximumLoad = 250;
 		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
@@ -821,7 +821,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Trooper jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "ls_radios_cloneLR";
@@ -861,7 +861,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Trooper jumppack";
 		RD501_jumppack_energy_capacity = 100;
 		// Movement
@@ -894,7 +894,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Trooper JT12 LR - NO RECHARGE";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "ls_radios_cloneLR";
@@ -936,7 +936,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Trooper JT12  - NO RECHARGE";
 		RD501_jumppack_energy_capacity = 100;
 		JLTS_energy[] = {15, 3000};
@@ -970,7 +970,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Trooper JT12 LR - Journeyman";
 		model = "\ls\core\addons\characters_clone\backpacks\jt12\ls_backpack_clone_jt12.p3d";
 		hiddenSelections[] = {"camo1"};
@@ -1013,7 +1013,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Trooper JT12 LR";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "ls_radios_cloneLR";
@@ -1053,7 +1053,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Trooper JT12";
 		RD501_jumppack_energy_capacity = 100;
 		// Movement
@@ -1086,7 +1086,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Marshal Commander Jumppack LR";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "ls_radios_cloneLR";
@@ -1126,7 +1126,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone Marshal Commander jumppack";
 		RD501_jumppack_energy_capacity = 100;
 		tf_dialog = "";
@@ -1166,7 +1166,7 @@ class CfgVehicles
 		scope = 2;
 		side = 0;
 		scopeCurator = 2;
-		maximumLoad = 200;
+		maximumLoad = 250;
 		displayname = "Clone CDV Pilot jumppack";
 		tf_dialog = "anarc210_radio_dialog";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -1213,7 +1213,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-1)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_JT12_Medic_2-1.paa"};
 	};
 	class JA_104th_Jumppack_JT12_Warhawk_2_Medic_LR : JA_104th_Jumppack_JT12_LR_Journeyman
@@ -1222,7 +1222,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-2)";
-		maximumLoad = 400;
+		maximumLoad = 450;
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_JT12_Medic_2-2.paa"};
 	};
 	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR

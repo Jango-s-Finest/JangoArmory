@@ -789,7 +789,7 @@ class cfgVehicles
 			class MainTurretTop: MainTurretTop
 			{
 				weapons[] = {"JA_ATTE_Maingun_Cannon"};
-				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag"};
+				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag"};
 			};
 			class MainTurretBack: MainTurretBack{
 				weapons[] = {"3AS_ATTE_Turret"};

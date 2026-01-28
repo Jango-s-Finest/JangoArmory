@@ -37,7 +37,7 @@ class CfgAmmo
 		caliber = 7;
 		indirectHit = 10;
 		indirectHitRange = 3;
-		hit = 100;
+		hit = 150;
 	};
 	class JA_104th_AP_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 10;

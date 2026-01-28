@@ -419,7 +419,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] 01 CT)"; // the name it will be in game
-		visionMode[] = {"Normal"};
+		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_01_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_1C_02_CT_Helmet : ls_gar_airborne_helmet
@@ -430,7 +430,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] 02 CT)"; // the name it will be in game
-		visionMode[] = {"Normal"};
+		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_02_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_1C_03_CT_Helmet : ls_gar_airborne_helmet
@@ -441,7 +441,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] 03 CT)"; // the name it will be in game
-		visionMode[] = {"Normal"};
+		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_03_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_1C_04_CT_Helmet : ls_gar_airborne_helmet
@@ -452,7 +452,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] 04 CT)"; // the name it will be in game
-		visionMode[] = {"Normal"};
+		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_04_CT_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_1C_Medic_Helmet : ls_gar_airborne_helmet
@@ -463,7 +463,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper Airborne Helmet (104th [1C] Medic)"; // the name it will be in game
-		visionMode[] = {"Normal"};
+		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\airborne\data\camo1_co.paa"}; // the file path to the texture
 	};
 
@@ -503,7 +503,7 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Warhawk_Upper.paa",
 				"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Lower.paa"};
 		class ItemInfo : UniformItem
 		{
@@ -575,7 +575,7 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Warhawk_Medic_Upper.paa",
 				"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Lower.paa"};
 		class ItemInfo : UniformItem
 		{
@@ -1692,7 +1692,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Warhawk_Upper.paa",
 				"104thPhantomCompany\data\Textures\104th_P2_1C_02_CT_Lower.paa"};
 		linkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
@@ -1749,7 +1749,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Warhawk_Medic_Upper.paa",
 				"104thPhantomCompany\data\Textures\104th_P2_AB_1C_Medic_Lower.paa"};
 		linkedItems[] = {JA_104th_P2_1C_Medic_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_P2_1C_Medic_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn

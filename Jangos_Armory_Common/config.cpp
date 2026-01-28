@@ -833,7 +833,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (Keeli Tugz)";
+		displayName = "Clone Trooper armor (Tugz)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -860,13 +860,13 @@ class CfgWeapons
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";
-		displayname = "Clone Trooper ARC Trooper Helmet (Keeli Tugz)";							   // the name it will be in game
+		displayname = "Clone Trooper ARC Trooper Helmet (Tugz)";							   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\textures\Tugz_Helmet_ARC_2D_View.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_Keeli_Tugz_Vest : ls_gar_arc_vest
     {
         author = "Dak";
-        displayName = "Clone ARC Trooper Vest (Keeli Tugz)";
+        displayName = "Clone ARC Trooper Vest (Tugz)";
         picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
         hiddenSelections[] =
             {
@@ -926,10 +926,20 @@ class CfgWeapons
             };
         };
     };
+	class JA_Keeli_Tugz_Helmet_ME : ls_gar_phase1_helmet
+    {
+        author = "Dak";
+        scopeArsenal = 2;
+        side = 1;
+        grad_slingHelmet_allow = true;
+        displayname = "Clone Trooper P1 Helmet (Tugz MLV)";                                                  // the name it will be in game
+        hiddenSelectionsTextures[] = {"Jangos_Armory_Common\data\Textures\104th_P1_Tugz_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+    };
+    
 	class JA_Keeli_Tugz_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Cyan";
-		displayName = "Clone NVG Rangefinder Visor (Keeli Tugz)";
+		displayName = "Clone NVG Rangefinder Visor (Tugz)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -1316,7 +1326,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 1;
 		uniformClass = "JA_Keeli_Tugz_Uniform";
-		displayName = "Keeli Tugz";
+		displayName = "Tugz";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
