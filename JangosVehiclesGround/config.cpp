@@ -12,7 +12,6 @@ class CfgPatches
 			"JA_104th_Oryx",
 			"JA_104th_OryxTS",
 			"JA_104th_Repair_Droid",
-			"JA_104th_Repair_Droid_1",
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
@@ -1836,23 +1835,6 @@ class cfgVehicles
 					statement = "call ace_attach_fnc_detach";
 				};
 			};
-		};
-	};
-	class JA_104th_Repair_Droid_1: 104th_MudHorn_tank_field{
-		author = "Dak";
-		model = "3as\3AS_CIS_Wheeled\PAC\Model\3AS_Droid_Repair_Module.p3d";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		displayName = "Repair Droid - 104th";
-		side = 3;
-		editorCategory = "JA_104_EdCat_Objects";
-		editorSubcategory = "104th_Categ_Clones_Droid";
-		simulation = "thingX";
-		crew="";
-		class EventHandlers : DefaultEventhandlers
-		{
-            Init = "[_this select 0, 50] execVM '\JangosVehiclesGround\RepairSystem.sqf';";
 		};
 	};
 };

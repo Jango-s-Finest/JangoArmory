@@ -214,9 +214,19 @@ class cfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        class EventHandlers : DefaultEventhandlers
-        {
-            Init = "[_this select 0] execVM '\JangosUtilities\EscapePods.sqf';";
+        class UserActions
+		{
+			// Choppers
+			class Eject
+			{
+				displayName = "Eject";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this] execVM '\JangosUtilities\EscapePods.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 1;
+			};
         };
     };
     class JA_104th_BlueFor_Escape_Pods : OPTRE_EscapePod
@@ -228,9 +238,19 @@ class cfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        class EventHandlers : DefaultEventhandlers
-        {
-            Init = "[_this select 0] execVM '\JangosUtilities\EscapePods.sqf';";
+        class UserActions
+		{
+			// Choppers
+			class Eject
+			{
+				displayName = "Eject";
+				position = "pos cano";
+				radius = 15;
+                condition = "player in this";
+				statement = "[this] execVM '\JangosUtilities\EscapePods.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 1;
+			};
         };
     };
     class JA_104th_OpFor_Escape_Pods : OPTRE_EscapePod
@@ -242,9 +262,19 @@ class cfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        class EventHandlers : DefaultEventhandlers
-        {
-            Init = "[_this select 0] execVM '\JangosUtilities\EscapePods.sqf';";
+        class UserActions
+		{
+			// Choppers
+			class Eject
+			{
+				displayName = "Eject";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this] execVM '\JangosUtilities\EscapePods.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 1;
+			};
         };
     };
 };

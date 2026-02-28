@@ -1109,6 +1109,32 @@ class cfgVehicles
 				};
 			};
 		};
+		class UserActions: UserActions
+		{
+			class Aircraft_MFD_Open_N
+			{
+				displayName = "Open I-TGT System";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User4";
+				condition = "player in this and isengineon this";
+				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf"";";
+				onlyforplayer = "false";
+				hideOnUse = 1;
+			};
+
+			class ECM_ON
+			{
+				displayName = "ECM JAMMER ON";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User2";
+				condition = "player in this and isengineon this";
+				statement = "[this] execVM ""\JangosVehicles\Script\ECM\ECM_ON.sqf"";";
+				onlyforplayer = "False";
+				hideOnUse = 1;
+			};
+		};
 	};
 	class JA_104th_LAAT_AB : JA_104th_LAAT
 	{

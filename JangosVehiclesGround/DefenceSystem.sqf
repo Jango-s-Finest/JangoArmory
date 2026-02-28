@@ -13,7 +13,7 @@ if(isServer)then{
 			if(side _turret != side _shooter)then{
 				_targetBoom = getText (configFile >> "CfgAmmo" >> typeOf _target >> "explosionEffects"); 
 				while {(alive _target)} do {
-					if ((_target distance _turret < _range) && (!lineIntersects [getPos _turret,getPos _target]) && (random 100 < 85)) then{
+					if ((_target distance _turret < _range) && (!lineIntersects [getPos _turret,getPos _target])) then{
 						[_targetBoom,(getPos _target)] remoteExec ["createVehicle"];
 						"HelicopterExploBig" createVehicle (getPos _target);
 						[_target] remoteExec ["deleteVehicle"];
