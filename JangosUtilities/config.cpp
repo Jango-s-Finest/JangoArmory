@@ -349,7 +349,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 'JA_104th_OpFor_Hyena_bomber, 20] execVM 'JangosUtilities\Scripts\spawner.sqf';";
+            Init = "[_this select 0, 'JA_104th_OpFor_Hyena_bomber', 20] execVM 'JangosUtilities\Scripts\spawner.sqf';";
         };
     };
 };

@@ -2,7 +2,8 @@
 [h2]Custom Gear[/h2]
 [h3]Added[/h3]
 [list]
-    [*] 
+    [*] Clone Trooper P2 Helmet (104th Dash)
+    [*] Clone Trooper AB Helmet (104th Artorias)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -30,11 +31,7 @@
 [h2]Custom Vehicles & Supplies[/h2]
 [h3]Added[/h3]
 [list]
-    [*] Droid Dispenser Vulture AA
-    [*] Droid Dispenser Vengeance Fighter
-    [*] Droid Dispenser Vulture
-    [*] Droid Dispenser Hyena bomber
-    [*] Hyena bomber
+    [*] 
 [/list]
 [h3]Removed[/h3]
 [list]

@@ -3,7 +3,8 @@ _______________
 ```
 New Gear
 --------------
--
+- Clone Trooper P2 Helmet (104th Dash)
+- Clone Trooper AB Helmet (104th Artorias)
 
 Changed Gear
 ------------------
@@ -33,11 +34,7 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- Droid Dispenser Vulture AA
-- Droid Dispenser Vengeance Fighter
-- Droid Dispenser Vulture
-- Droid Dispenser Hyena bomber
-- Hyena bomber
+-
 
 Changed Vehicles & Supplies
 ------------------
