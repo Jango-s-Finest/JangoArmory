@@ -3,9 +3,7 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper P2 Helmet (104th Chaser)
-- Clone Trooper armor (104th Chaser)
-- Clone Trooper AB Helmet (104th Grimmer)
+-
 
 Changed Gear
 ------------------
@@ -24,7 +22,7 @@ New Weapons & Attachments
 
 Changed Weapons & Attachments
 ------------------
-- Nuke Crater Removal
+-
 
 ------------------
 Removed Weapons & Attachments
@@ -35,12 +33,15 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
--
+- Droid Dispenser Vulture AA
+- Droid Dispenser Vengeance Fighter
+- Droid Dispenser Vulture
+- Droid Dispenser Hyena bomber
+- Hyena bomber
 
 Changed Vehicles & Supplies
 ------------------
-- LAAT-E 104th - I-TGT System
-- Escape Pods - Escape
+-
 
 Removed Vehicles & Supplies
 ------------------

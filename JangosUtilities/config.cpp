@@ -15,7 +15,13 @@ class CfgPatches
             "JA_104th_OpFor_Thropie_System_LR",
             "JA_104th_Civilian_Escape_Pods",
             "JA_104th_BlueFor_Escape_Pods",
-            "JA_104th_OpFor_Escape_Pods"}; // All the new vehicles/units you've created in cfgVehicles
+            "JA_104th_OpFor_Escape_Pods",
+            "JA_104th_OpFor_Hyena_bomber",
+            "JA_104th_OpFor_Spawner_3AS_CIS_Vulture_AA_F",
+            "JA_104th_OpFor_Spawner_3AS_CIS_Vulture_F",
+            "JA_104th_OpFor_Spawner_SFA_Vengeance_F",
+            "JA_104th_OpFor_Spawner_JA_104th_OpFor_Hyena_bomber",
+        }; // All the new vehicles/units you've created in cfgVehicles
         weapons[] = {};
         requiredVersion = 0.1;
         requiredAddons[] = {};
@@ -97,7 +103,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 1500] execVM '\JangosUtilities\DefenceSystem.sqf';";
+            Init = "[_this select 0, 1500] execVM '\JangosUtilities\Scripts\DefenceSystem.sqf';";
         };
     };
     class JA_104th_Civilian_Thropie_System_LR : 3AS_CIS_Naval_Gun
@@ -118,7 +124,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 3000] execVM '\JangosUtilities\DefenceSystem.sqf';";
+            Init = "[_this select 0, 3000] execVM '\JangosUtilities\Scripts\DefenceSystem.sqf';";
         };
     };
     class JA_104th_BlueFor_Thropie_System_SR : 3AS_CIS_Naval_Gun
@@ -139,7 +145,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 1500] execVM '\JangosUtilities\DefenceSystem.sqf';";
+            Init = "[_this select 0, 1500] execVM '\JangosUtilities\Scripts\DefenceSystem.sqf';";
         };
     };
     class JA_104th_BlueFor_Thropie_System_LR : 3AS_CIS_Naval_Gun
@@ -160,7 +166,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 3000] execVM '\JangosUtilities\DefenceSystem.sqf';";
+            Init = "[_this select 0, 3000] execVM '\JangosUtilities\Scripts\DefenceSystem.sqf';";
         };
     };
     class JA_104th_OpFor_Thropie_System_SR : 3AS_CIS_Naval_Gun
@@ -181,7 +187,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 1500] execVM '\JangosUtilities\DefenceSystem.sqf';";
+            Init = "[_this select 0, 1500] execVM '\JangosUtilities\Scripts\DefenceSystem.sqf';";
         };
     };
     class JA_104th_OpFor_Thropie_System_LR : 3AS_CIS_Naval_Gun
@@ -202,7 +208,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 3000] execVM '\JangosUtilities\DefenceSystem.sqf';";
+            Init = "[_this select 0, 3000] execVM '\JangosUtilities\Scripts\DefenceSystem.sqf';";
         };
     };
     class JA_104th_Civilian_Escape_Pods : OPTRE_EscapePod
@@ -223,7 +229,7 @@ class cfgVehicles
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this] execVM '\JangosUtilities\EscapePods.sqf';";
+				statement = "[this] execVM '\JangosUtilities\Scripts\EscapePods.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 1;
 			};
@@ -247,7 +253,7 @@ class cfgVehicles
 				position = "pos cano";
 				radius = 15;
                 condition = "player in this";
-				statement = "[this] execVM '\JangosUtilities\EscapePods.sqf';";
+				statement = "[this] execVM '\JangosUtilities\Scripts\EscapePods.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 1;
 			};
@@ -271,10 +277,79 @@ class cfgVehicles
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this] execVM '\JangosUtilities\EscapePods.sqf';";
+				statement = "[this] execVM '\JangosUtilities\Scripts\EscapePods.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 1;
 			};
+        };
+    };
+    class SDT_Hyena_bomber;
+    class JA_104th_OpFor_Hyena_bomber: SDT_Hyena_bomber
+    {
+        crew = "B_UAV_AI";
+        displayName = "Hyena bomber";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+    };
+    class 3AS_Droid_Dispenser_F;
+    class JA_104th_OpFor_Spawner_3AS_CIS_Vulture_AA_F : 3AS_Droid_Dispenser_F
+    {
+        displayName = "Droid Dispenser Vulture AA";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0, '3AS_CIS_Vulture_AA_F', 10] execVM 'JangosUtilities\Scripts\spawner.sqf';";
+        };
+    };
+    class JA_104th_OpFor_Spawner_3AS_CIS_Vulture_F : 3AS_Droid_Dispenser_F
+    {
+        displayName = "Droid Dispenser Vulture";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0, '3AS_CIS_Vulture_F', 10] execVM 'JangosUtilities\Scripts\spawner.sqf';";
+        };
+    };
+    class JA_104th_OpFor_Spawner_SFA_Vengeance_F : 3AS_Droid_Dispenser_F
+    {
+        displayName = "Droid Dispenser Vengeance Fighter";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0, 'SFA_Vengeance_F', 10] execVM 'JangosUtilities\Scripts\spawner.sqf';";
+        };
+    };
+    class JA_104th_OpFor_Spawner_JA_104th_OpFor_Hyena_bomber : 3AS_Droid_Dispenser_F
+    {
+        displayName = "Droid Dispenser Hyena bomber";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0, 'JA_104th_OpFor_Hyena_bomber, 20] execVM 'JangosUtilities\Scripts\spawner.sqf';";
         };
     };
 };

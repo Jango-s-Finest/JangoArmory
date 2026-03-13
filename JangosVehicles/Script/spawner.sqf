@@ -1,11 +1,10 @@
-private["_console","_vehicle","_dir","_spawn","_veh"];
+private["_console","_vehicle","_dir","_veh"];
 _console = _this select 0;
-_vehicle = _this select 1;
-_spawn = getPosAsL _console;         
+_vehicle = _this select 1;     
 _dir = getDir _console;         
-_veh = createVehicle [_vehicle,[0,0,0],[],0,"NONE"];           
-_veh setDir _dir;      
-// _veh setPosASL [(_spawn select 0) + 15, (_spawn select 1) + 0,( _spawn select 2) + 1];   
+_veh = createVehicle [_vehicle,[0,0,0],[],0,"NONE"];     
+_veh setVehicleAmmo 1;      
+_veh setDir _dir;
 _veh setPosASL (_console modelToWorldWorld [15,0,1]);   
 sleep 1;
 _veh setDamage 0; 

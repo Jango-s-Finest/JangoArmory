@@ -769,20 +769,7 @@ class cfgVehicles
 		side = 1;
 		forceInGarage = 1;
 		weapons[] = {"SmokeLauncher","CMFlareLauncher"};
-		magazines[] = {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
-		// hiddenSelections[] =
-		// 	{
-		// 		"camo1",
-		// 		"camo2",
-		// 		"camo3",
-		// 		"camo4",
-		// 		"CamoNet"};
-		// hiddenSelectionsTextures[] = {
-		// 	"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
-		// 	"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
-		// 	"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
-		// 	"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
-		// 	"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
+		magazines[] = {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
 		class Turrets : Turrets
 		{
 			class MainTurretTop: MainTurretTop
@@ -799,117 +786,8 @@ class cfgVehicles
 				magazines[] = {"3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells"};
 			};
 		};
-		// class TextureSources
-		// {
-		// 	class base
-		// 	{
-		// 		displayName = "White";
-		// 		author = "Legion Studio + Echo";
-		// 		textures[] = {
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa",
-		// 			"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
-		// 			"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
-		// 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
-		// 		factions[] = {"104th_Guys"};
-		// 	};
-
-		// 	class blue_logo : base
-		// 	{
-		// 		displayName = "104th Logo grey";
-		// 		author = "Legion Studio + Echo";
-		// 		textures[] = {
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa",
-		// 			"JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa",
-		// 			"JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa",
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa",
-		// 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
-		// 		factions[] = {"104th_Guys"};
-		// 	};
-
-		// 	class logo_white : base
-		// 	{
-		// 		displayName = "104th Logo White";
-		// 		textures[] = {
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa",
-		// 			"JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa",
-		// 			"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
-		// 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
-		// 	}
-
-		// 	class plobro : base
-		// 	{
-		// 		displayName = "104th PloBros";
-		// 		textures[] = {
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge_PloBros.paa",
-		// 			"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
-		// 			"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
-		// 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
-		// 	};
-
-		// 	class medevac : base
-		// 	{
-		// 		displayName = "104th MedEvac";
-		// 		textures[] = {
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa",
-		// 			"JangosVehiclesGround\data\textures\MBT_02_body_CO.paa",
-		// 			"JangosVehiclesGround\data\textures\Turret_02_CO.paa",
-		// 			"JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa",
-		// 			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
-		// 	};
-		// };
-		// textureList[] = {"base", 1, "blue_logo", 1, "logo_white", 1, "plobro", 1, "medevac", 1};
 		class ACE_SelfActions : ACE_SelfActions
 		{
-			// class Style_Changer
-			// {
-			// 	displayName = "Change Camo";
-			// 	exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-			// 	condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-			// 	showDisabled = 0;
-			// 	priority = 2;
-			// 	class DefaultSkin
-			// 	{
-			// 		displayName = "White";
-			// 		exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-			// 		condition = "!(isNull objectParent player)";
-			// 		statement =
-			// 			"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
-			// 		showDisabled = 0;
-			// 		runOnHover = 0;
-			// 		priority = 2.5;
-			// 	};
-			// 	class 104th_Skins
-			// 	{
-			// 		displayname = "104th Skins";
-			// 		class 104th_Blue_Logo : DefaultSkin
-			// 		{
-			// 			displayName = "104th Logo Grey";
-			// 			statement =
-			// 				"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_03_body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_03_body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_03_CO_104th.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_03_CRV_CO_104th.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
-			// 		};
-			// 		class 104th_Logo_white : DefaultSkin
-			// 		{
-			// 			displayName = "104th Logo White";
-			// 			statement =
-			// 				"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_Body_CRV_CO_Huge_104th.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_Body_CO_104th.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
-			// 		};
-			// 		class 104th_PloBro : DefaultSkin
-			// 		{
-			// 			displayName = "104th PloBro";
-			// 			statement =
-			// 				"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge_PloBros.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
-			// 		};
-			// 		class 104th_MedEvac : DefaultSkin
-			// 		{
-			// 			displayName = "104th MedEvac";
-			// 			statement =
-			// 				"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\APC_Tracked_02_body_CRV_CO_Huge.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\MBT_02_body_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Turret_02_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\APC_Tracked_02_CRV_CO.paa'];_target setObjectTextureGlobal [4,'a3\Armor_F\Data\camonet_NATO_Desert_CO.paa']";
-			// 		};
-			// 	};
-			// };
 			class TFAR_IntercomChannel
 			{
 				displayName = "$STR_tfar_core_Intercom_ACESelfAction_Name";
