@@ -161,7 +161,7 @@ class cfgVehicles
 		tf_hasIntercom = 1;
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 1;
-		tf_range = 30000;
+		tf_range = 35000;
 		class TransportItems
 		{
 			class _item_ACE_tourniquet
@@ -763,7 +763,7 @@ class cfgVehicles
 		tf_hasIntercom = 1;
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 1;
-		tf_range = 30000;
+		tf_range = 35000;
 		author = "Dak";
 		scope = 2;
 		side = 1;
@@ -845,7 +845,7 @@ class cfgVehicles
 		tf_hasIntercom = 1;
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 1;
-		tf_range = 30000;
+		tf_range = 35000;
 		author = "Dak";
 		scope = 2;
 		side = 1;
@@ -866,7 +866,7 @@ class cfgVehicles
 		tf_hasIntercom = 1;
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 1;
-		tf_range = 30000;
+		tf_range = 35000;
 		author = "Dak";
 		scope = 2;
 		side = 1;
