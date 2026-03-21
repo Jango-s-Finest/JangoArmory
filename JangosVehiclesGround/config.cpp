@@ -12,6 +12,7 @@ class CfgPatches
 			"JA_104th_Oryx",
 			"JA_104th_OryxTS",
 			"JA_104th_Repair_Droid",
+			"JA_104th_Ulik",
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
@@ -775,7 +776,7 @@ class cfgVehicles
 			class MainTurretTop: MainTurretTop
 			{
 				weapons[] = {"JA_ATTE_Maingun_Cannon"};
-				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag"};
+				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag","JA_ATTE_Maingun_HE_Mag"};
 			};
 			class MainTurretBack: MainTurretBack{
 				weapons[] = {"3AS_ATTE_Turret"};
@@ -873,7 +874,8 @@ class cfgVehicles
 		forceInGarage = 1;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		armor = 415;
+		armor = 500;
+		armorStructural = 10;
 		class Turrets : Turrets
 		{
 			class MainTurretTop: MainTurretTop
@@ -1715,6 +1717,276 @@ class cfgVehicles
 			};
 		};
 	};
+	
+	class MainTurret;
+	class APC_Wheeled_02_base_F;
+	class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_F{
+		class Turrets;
+		class Components;
+	};
+	class JA_104th_Ulik : O_APC_Wheeled_02_rcws_v2_F{
+		crew = "ls_clone_phase2_pilot";
+		displayname = "[104th] Ulik";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		TFAR_hasIntercom = 1;
+		tf_hasIntercom = 1;
+		tf_hasLRradio = 1;
+		tf_isolatedAmount = 1;
+		tf_range = 35000;
+		author = "Dak";
+		scope = 2;
+		side = 1;
+		forceInGarage = 1;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		armor = 350;
+		weapons[] = {"SmokeLauncher"};
+		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag"};
+		class Turrets : Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+			};
+		};
+		class components : Components
+		{
+			class SensorsManagerComponent
+			{
+				class components
+				{
+					class IRSensorComponent : SensorTemplateIR
+					{
+						typeRecognitionDistance = 1000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = 1600;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 2000;
+						maxFogSeeThrough = -1;
+						nightRangeCoef = 1;
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+							maxFogSeeThrough = -1;
+							nightRangeCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 0;
+							maxRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+							maxFogSeeThrough = -1;
+							nightRangeCoef = 1;
+						};
+					};
+					class ActiveRadarSensorComponent : SensorTemplateActiveRadar
+					{
+						typeRecognitionDistance = 750;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = 1600;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 2000;
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 1000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 0;
+							maxRange = 1000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class VisualSensorComponent : SensorTemplateVisual
+					{
+						typeRecognitionDistance = 750;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = 1600;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 2000;
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 1000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 0;
+							maxRange = 1000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class ManSensorComponent : SensorTemplateMan
+					{
+						typeRecognitionDistance = 300;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = 1600;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 2000;
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 300;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 0;
+							maxRange = 300;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class DataLinkSensorComponent : SensorTemplateDataLink
+					{
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 0;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						componentType = "DataLinkSensorComponent";
+						allowsMarking = 1;
+						typeRecognitionDistance = 0;
+						color[] = {1, 1, 1, 0};
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight
+			{
+				componentType="VehicleSystemsDisplayManager";
+				defaultDisplay="EmptyDisplay";
+				right=1;
+				x="(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"", ((safezoneX + safezoneW) - (  (10 *    (   ((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 *    (   ((safezoneW / safezoneH) min 1.2) / 40)))])";
+				y="(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"", (safezoneY + safezoneH - 21 *    (   (   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+				class Components
+				{
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+					};
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MineDetectorDisplay
+					{
+						componentType = "MineDetectorDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+					};
+					class SlingLoadDisplay
+					{
+						componentType = "SlingLoadDisplayComponent";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleCommanderDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Commander";
+					};
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "PrimaryGunner";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {8000, 4000, 2000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft
+			{
+				componentType="VehicleSystemsDisplayManager";
+				defaultDisplay="EmptyDisplay";
+				left=1;
+				x="(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"", (safezoneX + 0.5 *    (   ((safezoneW / safezoneH) min 1.2) / 40))])";
+				y="(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"", (safezoneY + safezoneH - 21 *    (   (   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+				class Components
+				{
+					class CrewDisplay
+					{
+						componentType = "CrewDisplayComponent";
+					};
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MineDetectorDisplay
+					{
+						componentType = "MineDetectorDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+					};
+					class SlingLoadDisplay
+					{
+						componentType = "SlingLoadDisplayComponent";
+					};
+					class UAVDisplay
+					{
+						componentType = "UAVFeedDisplayComponent";
+					};
+					class VehicleCommanderDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Commander";
+					};
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "PrimaryGunner";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {8000, 4000, 2000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+		};
+	};
+	
 };
 
 

@@ -19,7 +19,7 @@ _yield = switch (_mode) do
 			case "F": {5};
 			case "G": {15};
 			case "H": {25};
-			case "Cruise" : {100};
+			case "Cruise" : {350};
 			case "U" : {50};
 			case "V" : {150};
 			case "W" : {350};

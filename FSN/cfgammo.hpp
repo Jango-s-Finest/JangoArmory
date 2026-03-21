@@ -212,6 +212,10 @@ class CfgAmmo
 		missileLockMaxSpeed 	= 20000;
 		missileLockCone			= 360;
 		
+		FIR_AWS_Crater = 1;
+		FIR_AWS_DUAL = 1;
+		FIR_AWS_DUAL_Type = "Laser";
+		FIR_AWS_GPS_Bomb_Guide = 1;
 		
 		cmImmunity=1;
 		

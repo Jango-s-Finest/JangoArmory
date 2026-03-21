@@ -2,6 +2,7 @@ class CfgWeapons
 {
 	
 	class Mk82BombLauncher;
+	class EventHandlers;
 	class FSN_B61_Nuclear_W : Mk82BombLauncher
 	{
 		scope = 2;
@@ -249,10 +250,18 @@ class CfgWeapons
 		
 		class Cruise : MissileLauncher
 		{
-			displayName = "NX-02 ALCM 100 kT";
+			displayName = "NX-02 ALCM 350 kT";
 			displayNameMagazine = "NX-02 ALCM";
-			shortNameMagazine = "100 kT";
+			shortNameMagazine = "350 kT";
 			textureType = "terrain";
+			class EventHandlers:EventHandlers
+			{
+				fired = "[_this] execVM '\FIR_AirWeaponSystem_US_Cfg\sqs\TGTSystem\FCS\GuidedBomb_EH.sqf';";
+			};
+		};
+		class EventHandlers:EventHandlers
+		{
+			fired = "[_this] execVM '\FIR_AirWeaponSystem_US_Cfg\sqs\TGTSystem\FCS\GuidedBomb_EH.sqf';";
 		};
 	};
 	

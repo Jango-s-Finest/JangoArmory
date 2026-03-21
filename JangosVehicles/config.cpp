@@ -17,12 +17,6 @@ class CfgPatches
 			"JA_104th_Vehicle_spawner_Droid_Air",
 			"JA_104th_Vehicle_spawner_Droid_Ground",
 			"JA_104th_BARC",
-			"JA_104th_BARC_WP",
-			"JA_104th_BARC_Talon",
-			"JA_104th_BARC_Beans",
-			"JA_104th_BARC_Sniper",
-			"JA_104th_BARC_EOD",
-			"JA_104th_BARC_Medic",
 			"JA_104th_Oryx",
 			"JA_104th_OryxNS",
 			"JA_104th_APC_Light_Bantha",
@@ -153,10 +147,8 @@ class cfgVehicles
 	class LandVehicle;
 	class Car;
 	class ls_vehicle_barc_base;
-	class ls_vehicle_barc{
-		class HitPoints;
-		class ACE_SelfActions;
-	};
+	class ACE_SelfActions;
+	class 3AS_Barc;
 	class HitPoints;
 	class HitLFWheel;
 	class HitLF2Wheel;
@@ -5658,7 +5650,7 @@ class cfgVehicles
 
 	class JA_104th_3AS_Reaper_Y_Wing_BlueLeader : JA_104th_3AS_Reaper_Y_Wing
 	{
-		displayName = "104th Reaper BTL-B Y-Wing Blue Leader";
+		displayName = "[104th] BTL-B Y-Wing Blue Leader";
 		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
 		class TextureSources
 		{
@@ -5682,8 +5674,44 @@ class cfgVehicles
 					"3as\3as_btlb\data\interior_co.paa"
 				};
 			};
+			class Yellow: BlueLeader
+			{
+				displayName = "Yellow";
+				textures[] = {
+					"\3as\3AS_btlb\textures\chasis_shadow_co.paa",
+					"\3as\3AS_btlb\data\detail_co.paa",
+					"\3as\3AS_btlb\data\interior_co.paa"
+				};
+			};
+			class YellowLeader: BlueLeader
+			{
+				displayName = "Yellow Leader";
+				textures[] = {
+					"\3as\3AS_btlb\textures\chasis_shadowleader_co.paa",
+					"\3as\3AS_btlb\data\detail_co.paa",
+					"\3as\3AS_btlb\data\interior_co.paa"
+				};
+			};
+			class Red: BlueLeader
+			{
+				displayName = "Red";
+				textures[] = {
+					"\3as\3AS_btlb\textures\chasis_co.paa",
+					"\3as\3AS_btlb\data\detail_co.paa",
+					"\3as\3AS_btlb\data\interior_co.paa"
+				};
+			};
+			class RedLeader: BlueLeader
+			{
+				displayName = "Red Leader";
+				textures[] = {
+					"\3as\3AS_btlb\textures\chasis_redleader_co.paa",
+					"\3as\3AS_btlb\data\detail_co.paa",
+					"\3as\3AS_btlb\data\interior_co.paa"
+				};
+			};
 		};
-		textureList[] = {"BlueLeader", 1, "Blue", 1};
+		textureList[] = {"BlueLeader", 1, "Blue", 1, "Yellow", 1, "Red", 1, "YellowLeader", 1, "RedLeader", 1};
 		class ACE_SelfActions : ACE_SelfActions
 		{
 			class Style_Changer
@@ -5710,6 +5738,26 @@ class cfgVehicles
 					{
 						displayName = "104th Blue";
 						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\YWing_Body_Blue.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+					};
+					class 104th_Yellow : DefaultSkin
+					{
+						displayName = "104th Yellow";
+						statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_shadow_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+					};
+					class 104th_Yellow_Leader : DefaultSkin
+					{
+						displayName = "104th Yellow Leader";
+						statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_shadowleader_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+					};
+					class 104th_Red : DefaultSkin
+					{
+						displayName = "104th Red";
+						statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+					};
+					class 104th_Red_Leader : DefaultSkin
+					{
+						displayName = "104th Red Leader";
+						statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_redleader_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
 					};
 				};
 				class Custom_Skins
@@ -6107,14 +6155,14 @@ class cfgVehicles
 		};
 	};
 
-	class JA_104th_BARC : ls_vehicle_barc
+	class JA_104th_BARC : 3AS_Barc
 	{
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		displayName = "BARC Speeder 104th";
+		displayName = "[104th] BARC Speeder";
 		author = "Legion Studios + Echo";
 		maxSpeed = 280;
-		hiddenSelectionsTextures[] = {"JangosVehiclesGround\data\textures\Body_104_CO.paa", "JangosVehiclesGround\data\textures\Weapons_104_CO.paa", "JangosVehiclesGround\data\textures\Dashboard_104_CO.paa"};
+		hiddenSelectionsTextures[] = {"3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa"};
 		class HitPoints : HitPoints
 		{
 			class HitFuel
@@ -6163,9 +6211,7 @@ class cfgVehicles
 				displayName = "104th";
 				author = "Dak";
 				textures[] = {
-					"JangosVehiclesGround\data\textures\Body_104_CO.paa", 
-					"JangosVehiclesGround\data\textures\Weapons_104_CO.paa", 
-					"JangosVehiclesGround\data\textures\Dashboard_104_CO.paa",
+					"3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa",
 				};
 				factions[] = {"104th_Guys"};
 			};
@@ -6188,7 +6234,7 @@ class cfgVehicles
 				};
 			};
 		};
-		textureList[] = {"barc_base", 1, "barc_WP", 1, "barc_Talon", 1};
+		textureList[] = {"barc_base", 1, "barc_WP", 0, "barc_Talon", 0};
 		class ACE_SelfActions : ACE_SelfActions
 		{
 			class Style_Changer
@@ -10370,6 +10416,16 @@ class cfgVehicles
 				radius = 15;
 				condition = "true";
 				statement = "[this, '104th_ATAP'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_3AS_RX200_Base
+			{
+				displayName = "Spawn [104th] RX200";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, '3AS_RX200_Base'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};

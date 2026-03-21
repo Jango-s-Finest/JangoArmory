@@ -448,9 +448,14 @@ class CfgMagazines
 		initSpeed=0;
 		model = "\A3\Weapons_F\DynamicLoadout\PylonMissile_1x_Bomb_02_F.p3d";
 
-		descriptionShort = "NX-02 ALCM \n Air Launched Cruise Missile with a yield of 100 kT TNT equivalent";
+		descriptionShort = "NX-02 ALCM \n Air Launched Cruise Missile with a yield of 350 kT TNT equivalent";
 		displayName="NX-02 ALCM";
 		displayNameShort="Nuclear";
+		FIR_AWS_AMS_Cat = "NX-02 ALCM";
+		FIR_AWS_SMS_A10C_CODE = "FIR_AirWeaponSystem_US\ui\sms\a10\egbu12.paa";
+		FIR_AWS_SMS_F16_CODE = "FIR_AirWeaponSystem_US\ui\sms\f16\sms_gbu12_1_ca.paa";
+		FIR_AWS_SMS_F23_CODE = "FIR_AirWeaponSystem_US\ui\sms\f23\egbu12.paa";
+		FIR_AWS_WPN_Pic = "FIR_AirWeaponSystem_US_cfg\ui\weapons\egbu12_pic.jpg";
 		ammo="FSN_Nuclear_Cruise_Missile";
 		count=1;
 		pylonWeapon="FSN_Nuclear_Cruise_Missile_W";

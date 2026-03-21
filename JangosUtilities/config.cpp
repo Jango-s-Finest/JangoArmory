@@ -21,6 +21,9 @@ class CfgPatches
             "JA_104th_OpFor_Spawner_3AS_CIS_Vulture_F",
             "JA_104th_OpFor_Spawner_SFA_Vengeance_F",
             "JA_104th_OpFor_Spawner_JA_104th_OpFor_Hyena_bomber",
+            "JA_104th_OpFor_Spawner_SFA_Dragonfly",
+            "JA_104th_OpFor_Spawner_ls_vehicle_hmp",
+            "JA_104th_OpFor_Spawner_3AS_MAF_Gunship_F",
         }; // All the new vehicles/units you've created in cfgVehicles
         weapons[] = {};
         requiredVersion = 0.1;
@@ -350,6 +353,48 @@ class cfgVehicles
         class EventHandlers : DefaultEventhandlers
         {
             Init = "[_this select 0, 'JA_104th_OpFor_Hyena_bomber', 20] execVM 'JangosUtilities\Scripts\spawner.sqf';";
+        };
+    };
+    class JA_104th_OpFor_Spawner_SFA_Dragonfly : 3AS_Droid_Dispenser_F
+    {
+        displayName = "Droid Dispenser Dragonfly";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0, 'SFA_Dragonfly', 10] execVM 'JangosUtilities\Scripts\spawner.sqf';";
+        };
+    };
+    class JA_104th_OpFor_Spawner_ls_vehicle_hmp : 3AS_Droid_Dispenser_F
+    {
+        displayName = "Droid Dispenser HMP";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0, 'ls_vehicle_hmp', 10] execVM 'JangosUtilities\Scripts\spawner.sqf';";
+        };
+    };
+    class JA_104th_OpFor_Spawner_3AS_MAF_Gunship_F : 3AS_Droid_Dispenser_F
+    {
+        displayName = "Droid Dispenser MAF";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0, '3AS_MAF_Gunship_F', 20] execVM 'JangosUtilities\Scripts\spawner.sqf';";
         };
     };
 };
