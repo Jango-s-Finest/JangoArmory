@@ -63,6 +63,7 @@ Changed Vehicles & Supplies
 - 104th ARC-170 Blue - Shield change
 - [104th] BTL-B Y-Wing Blue Leader - Shield change
 - [104th] Oryx IFV Shielded - Shield change
+- [104th] Ulik
 
 Removed Vehicles & Supplies
 ------------------

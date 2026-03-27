@@ -1741,6 +1741,7 @@ class cfgVehicles
 	class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_F{
 		class Turrets;
 		class Components;
+		class ACE_SelfActions;
 	};
 	class JA_104th_Ulik : O_APC_Wheeled_02_rcws_v2_F{
 		crew = "ls_clone_phase2_pilot";
@@ -1761,6 +1762,101 @@ class cfgVehicles
 		armor = 500;
 		weapons[] = {"SmokeLauncher"};
 		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag"};
+		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet","CamoSlat"};
+		hiddenSelectionsTextures[] = {
+			"JangosVehiclesGround\data\textures\Ulik_APC_Wheeled_02_ext_01_CO.paa",
+			"JangosVehiclesGround\data\textures\Ulik_APC_Wheeled_02_ext_02_CO.paa",
+			"JangosVehiclesGround\data\textures\Ulik_Turret_CO.paa",
+			"JangosVehiclesGround\data\textures\Ulik_camonet_Desert_CO.paa",
+			"A3\armor_f\data\cage_csat_co.paa"
+		};
+		class TextureSources
+		{
+			class base
+			{
+				displayName = "White";
+				author = "Legion Studio + Echo";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\Ulik_APC_Wheeled_02_ext_01_CO.paa",
+					"JangosVehiclesGround\data\textures\Ulik_APC_Wheeled_02_ext_02_CO.paa",
+					"JangosVehiclesGround\data\textures\Ulik_Turret_CO.paa",
+					"JangosVehiclesGround\data\textures\Ulik_camonet_Desert_CO.paa",
+					"A3\armor_f\data\cage_csat_co.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+		};
+		textureList[] = {"base", 1};
+		class ACE_SelfActions : ACE_SelfActions
+		{
+			class Style_Changer
+			{
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2;
+				class DefaultSkin
+				{
+					displayName = "Base";
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement =
+						"_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\Ulik_APC_Wheeled_02_ext_01_CO.paa'];_target setObjectTextureGlobal [1,'JangosVehiclesGround\data\textures\Ulik_APC_Wheeled_02_ext_02_CO.paa'];_target setObjectTextureGlobal [2,'JangosVehiclesGround\data\textures\Ulik_Turret_CO.paa'];_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\Ulik_camonet_Desert_CO.paa'];_target setObjectTextureGlobal [4,'A3\armor_f\data\cage_csat_co.paa']";
+					showDisabled = 0;
+					runOnHover = 0;
+					priority = 2.5;
+				};
+				class 104th_Skins
+				{
+					displayname = "104th Skins";
+				};
+			};
+			class TFAR_IntercomChannel
+			{
+				displayName = "$STR_tfar_core_Intercom_ACESelfAction_Name";
+				condition = "true";
+				statement = "";
+				icon = "";
+				class TFAR_IntercomChannel_disabled
+				{
+					displayName = "Disabled";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+				class TFAR_IntercomChannel_1
+				{
+					displayName = "$STR_tfar_core_Intercom_ACESelfAction_Channel1";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 0";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+				class TFAR_IntercomChannel_2
+				{
+					displayName = "$STR_tfar_core_Intercom_ACESelfAction_Channel2";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+				class TFAR_IntercomChannel_Misc_1
+				{
+					displayName = "Misc channel 1";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 2";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+				class TFAR_IntercomChannel_Misc_2
+				{
+					displayName = "Misc channel 2";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 3";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],3,true];";
+				};
+				class TFAR_IntercomChannel_Misc_3
+				{
+					displayName = "Misc channel 3";
+					condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 4";
+					statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],4,true];";
+				};
+			};
+		};
+		
 		class Turrets : Turrets
 		{
 			class MainTurret: MainTurret
