@@ -229,6 +229,7 @@ class cfgVehicles
 		class HitPoints;
 	};
 
+	class ACE_SelfActions;
 	class Box_212_Supply_F;
 	class Box_212_Medical_F;
 
@@ -257,6 +258,28 @@ class cfgVehicles
 		aileronSensitivity = 2.9;
 		aileronControlsSensitivityCoef = 4;
 		defaultUserMFDvalues[] = {0, 1, 0, 1, 0};
+		BNA_KC_shields_hasShield = 1;
+		BNA_KC_shields_health = 5;
+		BNA_KC_shields_regenAmount = 1;
+		BNA_KC_shields_regenDelay = 20;
+		class ACE_SelfActions : ACE_SelfActions{
+			class shields_toggle {
+				condition = "true";
+				displayName = "Shield Health: %1";
+				modifierFunction = "call BNA_KC_shields_fnc_modifyInteraction";
+				statement = "";
+				class Activate{
+					condition = "ace_player call BNA_KC_shields_fnc_canActivate";
+					displayName = "Activate Shield";
+					statement = "call BNA_KC_shields_fnc_activate";
+				};
+				class Deactivate{
+					condition = "ace_player call BNA_KC_shields_fnc_canDeactivate";
+					displayName = "Deactivate Shield";
+					statement = "call BNA_KC_shields_fnc_deactivate";
+				};
+			};
+		};
 		class transportweapons
 		{
 		};
@@ -2445,10 +2468,6 @@ class cfgVehicles
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
 		};
-		class EventHandlers : DefaultEventhandlers
-		{
-			init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\Z95Init.sqf';";
-		};
 		class UserActions
 		{
 			class Aircraft_MFD_Open_N
@@ -2856,10 +2875,6 @@ class cfgVehicles
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500","3AS_ARC_500Rnd_Light_Shells","3AS_ARC_500Rnd_Light_Shells","120Rnd_CMFlare_Chaff_Magazine","Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine"};
 		hiddenselections[] = {"camo1","camo2","guns"};
 		hiddenselectionstextures[] = {"3as\3AS_ARC170\Data\units\501st_Main_Frame_CO.paa","3as\3AS_ARC170\Data\units\501st_Wings_Engines_CO.paa","3as\3AS_ARC170\Data\units\501st_Guns_CO.paa"};
-		class EventHandlers : DefaultEventhandlers
-		{
-			init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\Z95Init.sqf';";
-		};
 		class UserActions : UserActions
 		{
 			class Aircraft_MFD_Open_N
@@ -3249,8 +3264,27 @@ class cfgVehicles
 			};
 			class TransportCounterMeasuresComponent;
 		};
-		class ACE_SelfActions : ACE_SelfActions
-		{
+		BNA_KC_shields_hasShield = 1;
+		BNA_KC_shields_health = 5;
+		BNA_KC_shields_regenAmount = 1;
+		BNA_KC_shields_regenDelay = 20;
+		class ACE_SelfActions : ACE_SelfActions{
+			class shields_toggle {
+				condition = "true";
+				displayName = "Shield Health: %1";
+				modifierFunction = "call BNA_KC_shields_fnc_modifyInteraction";
+				statement = "";
+				class Activate{
+					condition = "ace_player call BNA_KC_shields_fnc_canActivate";
+					displayName = "Activate Shield";
+					statement = "call BNA_KC_shields_fnc_activate";
+				};
+				class Deactivate{
+					condition = "ace_player call BNA_KC_shields_fnc_canDeactivate";
+					displayName = "Deactivate Shield";
+					statement = "call BNA_KC_shields_fnc_deactivate";
+				};
+			};
 			class JA_vehicles_spawnCrew {
 				condition = "_this#0 call BNA_KC_vehicles_fnc_canSpawnCrew";
 				displayName = "Create Vehicle Crew";
@@ -3639,10 +3673,6 @@ class cfgVehicles
 			class TransportCounterMeasuresComponent;
 		};
 
-		class EventHandlers : DefaultEventhandlers
-		{
-			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
-		};
 	};
 	class 3as_V19_base{
 		class ACE_SelfActions;
@@ -5712,8 +5742,27 @@ class cfgVehicles
 			};
 		};
 		textureList[] = {"BlueLeader", 1, "Blue", 1, "Yellow", 1, "Red", 1, "YellowLeader", 1, "RedLeader", 1};
-		class ACE_SelfActions : ACE_SelfActions
-		{
+		BNA_KC_shields_hasShield = 1;
+		BNA_KC_shields_health = 5;
+		BNA_KC_shields_regenAmount = 1;
+		BNA_KC_shields_regenDelay = 20;
+		class ACE_SelfActions : ACE_SelfActions{
+			class shields_toggle {
+				condition = "true";
+				displayName = "Shield Health: %1";
+				modifierFunction = "call BNA_KC_shields_fnc_modifyInteraction";
+				statement = "";
+				class Activate{
+					condition = "ace_player call BNA_KC_shields_fnc_canActivate";
+					displayName = "Activate Shield";
+					statement = "call BNA_KC_shields_fnc_activate";
+				};
+				class Deactivate{
+					condition = "ace_player call BNA_KC_shields_fnc_canDeactivate";
+					displayName = "Deactivate Shield";
+					statement = "call BNA_KC_shields_fnc_deactivate";
+				};
+			};
 			class Style_Changer
 			{
 				displayName = "Change Camo";
@@ -6149,10 +6198,6 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		class EventHandlers : DefaultEventhandlers
-		{
-			init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\TX130Init.sqf';";
-		};
 	};
 
 	class JA_104th_BARC : 3AS_Barc
@@ -6808,10 +6853,6 @@ class cfgVehicles
 				userActionID = 53;
 			};
 		};
-		class EventHandlers : DefaultEventhandlers
-		{
-			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\NuInit.sqf';";
-		};
 	};
 
 	// Xi'an for Star Wars
@@ -7451,10 +7492,6 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa", "JangosVehicles\data\textures\xian\xian_ext02_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
 
-		class EventHandlers : DefaultEventhandlers
-		{
-			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
-		};
 	};
 
 	// Xian Vehicle
@@ -8048,10 +8085,6 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\xian\xian_ext01_CO.paa", "JangosVehicles\data\textures\xian\xian_ext02_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_L_CO.paa", "JangosVehicles\data\textures\xian\xian_ext03_R_CO.paa"};
 
-		class EventHandlers : DefaultEventhandlers
-		{
-			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
-		};
 	};
 
 	// Republic Transport
@@ -8149,10 +8182,6 @@ class cfgVehicles
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
-		};
-		class EventHandlers : DefaultEventhandlers
-		{
-			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\RTInit.sqf';";
 		};
 		hiddenselectionstextures[] = {"JangosVehicles\data\textures\104_hs_ext_co.paa", "3as\3as_starships\data\hs_int_co.paa", "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"};
 	};
@@ -8256,10 +8285,6 @@ class cfgVehicles
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
-		};
-		class EventHandlers : DefaultEventhandlers
-		{
-			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\MedAirInit.sqf';";
 		};
 		class Components
 		{
@@ -8827,10 +8852,6 @@ class cfgVehicles
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
 			ace_missileguidance_usePilotCameraForTargeting = 1;
-		};
-		class EventHandlers : DefaultEventhandlers
-		{
-			Init = "[_this select 0] execVM '\JangosVehicles\Script\Shield\LightAirInit.sqf';";
 		};
 		class Components
 		{

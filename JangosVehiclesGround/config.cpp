@@ -698,7 +698,7 @@ class cfgVehicles
 		displayName = "104th MudHorn Fast";
 		enginePower = 2400;
 		gearBox[] = {-7, 0, 11, 8, 5.6999998, 4.1999998};
-		maxSpeed = 120;
+		maxSpeed = 100;
 		maxOmega = 500;
 		peakTorque = 7400;
 		fuelConsumptionRate = 0.2;
@@ -769,6 +769,7 @@ class cfgVehicles
 		scope = 2;
 		side = 1;
 		forceInGarage = 1;
+		armor = 500;
 		weapons[] = {"SmokeLauncher","CMFlareLauncher"};
 		magazines[] = {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
 		class Turrets : Turrets
@@ -1625,10 +1626,27 @@ class cfgVehicles
 
 		displayName = "[104th] Oryx IFV Shielded";
 		armorStructural = 10;
-		class EventHandlers : DefaultEventhandlers
-		{
-			init = "[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShield.sqf';";
-			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+		BNA_KC_shields_hasShield = 1;
+		BNA_KC_shields_health = 5;
+		BNA_KC_shields_regenAmount = 1;
+		BNA_KC_shields_regenDelay = 20;
+		class ACE_SelfActions : ACE_SelfActions{
+			class shields_toggle {
+				condition = "true";
+				displayName = "Shield Health: %1";
+				modifierFunction = "call BNA_KC_shields_fnc_modifyInteraction";
+				statement = "";
+				class Activate{
+					condition = "ace_player call BNA_KC_shields_fnc_canActivate";
+					displayName = "Activate Shield";
+					statement = "call BNA_KC_shields_fnc_activate";
+				};
+				class Deactivate{
+					condition = "ace_player call BNA_KC_shields_fnc_canDeactivate";
+					displayName = "Deactivate Shield";
+					statement = "call BNA_KC_shields_fnc_deactivate";
+				};
+			};
 		};
 	};
 	class JA_104th_OryxTS : JA_104th_OryxNS
@@ -1740,7 +1758,7 @@ class cfgVehicles
 		forceInGarage = 1;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		armor = 350;
+		armor = 500;
 		weapons[] = {"SmokeLauncher"};
 		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag"};
 		class Turrets : Turrets

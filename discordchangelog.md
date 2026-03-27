@@ -3,13 +3,32 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper P2 Helmet (104th Six)
-- Clone Trooper AB Helmet (104th Freq)
-- Clone Trooper P2 Special Activities Helmet (104th Rust)
-- Clone Trooper armor (104th Sobek)
+- Clone Trooper Engineer Helmet (104th Marx)
+- Clone Trooper P2 Helmet (104th Keeper)
+- Clone Trooper armor (104th Ink)
+- Clone Trooper armor (104th Castle)
+- Clone Trooper AB Helmet (104th Hound)
+- Clone Trooper AB Helmet (104th Hacksaw)
+- Republic Armored Plating NVG (104th Castle)
+- Clone Trooper AB Helmet (104th Reaper)
+- Clone Trooper P2 Special Activities Helmet (104th Hawkeye)
+- Clone Trooper armor (104th Hawkeye)
+- Clone Trooper P2 Helmet (104th Castle)
+- Clone Trooper Engineer Helmet (104th Lucky)
+- Clone Trooper RTO mini backpack (104th Castle)
+- Clone Trooper AB Helmet (104th Ink)
+- Clone Trooper RTO mini backpack (104th Poet)
+- Clone Trooper AB Helmet (104th Klaus)
+- Clone Trooper Kama (104th Castle)
+- Clone Trooper Engineer Helmet (104th Lock)
+- Clone Trooper armor (104th Aloo)
 
 Changed Gear
 ------------------
+- Clone Trooper armor (104th Patch)
+- Clone Trooper armor (104th Sobek)
+- Clone Trooper P2 Helmet (104th Aloo)
+- Clone Trooper armor (104th Sobek)
 - Clone Trooper P2 Special Activities Helmet (104th Sobek)
 
 Removed Gear
@@ -21,19 +40,11 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
-- [104th] Drexl AA Missile
-- [104th] Brimstone Dual-mode x3
+-
 
 Changed Weapons & Attachments
 ------------------
-- [104th] AIM-9X Bulldog x4 - Model change
-- [104th] AIM-9X Sidewinder x4 - Model change
-- [104th] AIM-120C Sidewinder x4 - Model change
-- [104th] 104th Laat Fuel Pod - Name change
-- [104th] 104th HE cannon - Name change
-- [104th] 104th AP cannon - Name change
-- [104th] 104th APHE cannon - Name change
-- [104th] 104th AA cannon - Name change
+-
 
 ------------------
 Removed Weapons & Attachments
@@ -44,18 +55,14 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- Droid Dispenser MAF
-- Droid Dispenser Dragonfly
-- Droid Dispenser HMP
-- [104th] Ulik
-- [104th] AT-TE ammo types
-- [104th] AT-AP armor ammount
+-
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] BTL-B Y-Wing Blue Leader - new textures
-- [104th] BARC Speeder - fix the model - textures are broken on the current model
-- Spawner Terminal - 104th Ground Assets - new vehicle RX200
+- Z-95 Reaper (Blue) - Shield change
+- 104th ARC-170 Blue - Shield change
+- [104th] BTL-B Y-Wing Blue Leader - Shield change
+- [104th] Oryx IFV Shielded - Shield change
 
 Removed Vehicles & Supplies
 ------------------

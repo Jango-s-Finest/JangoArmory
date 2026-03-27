@@ -301,7 +301,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "Jangos_Infantry_Vests\data\Textures\104th_Quick_Officer_Accessories.paa"};
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_Castle_Officer_Accessories.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";

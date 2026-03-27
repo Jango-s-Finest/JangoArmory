@@ -401,6 +401,21 @@ class CfgWeapons
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
+	class JA_104th_Castle_NVG_Tanker : lsd_gar_tanker_nvg
+	{
+		author = "Fish";
+		displayName = "Republic Armored Plating NVG (104th Castle)";
+		hiddenSelections[] =
+			{
+				"camo1"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_P2_Castle_NVG_Tanker.paa"};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
 	class JA_104th_Crowbi_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Ice";

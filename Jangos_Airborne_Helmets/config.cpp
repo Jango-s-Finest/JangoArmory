@@ -420,4 +420,59 @@ class CfgWeapons
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Freq_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Freq_Helmet.paa"}; // the file path to the texture
 	};
+	class JA_104th_Ink_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper P1 Helmet (104th Ink)"; // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Ink_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+		visionMode[] = {"Normal"};
+	};
+	class JA_104th_Hacksaw_Helmet : ls_gar_airborne_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper AB Helmet (104th Hacksaw)"; // the name it will be in game
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Hacksaw_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Hacksaw_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Hound_Helmet : ls_gar_airborne_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper AB Helmet (104th Hound)"; // the name it will be in game
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Hound_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Hound_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Klaus_Helmet : ls_gar_airborne_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper AB Helmet (104th Klaus)"; // the name it will be in game
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Klaus_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Klaus_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Reaper_Helmet : ls_gar_airborne_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper AB Helmet (104th Reaper)"; // the name it will be in game
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Reaper_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Reaper_Helmet.paa"}; // the file path to the texture
+	};
 };
