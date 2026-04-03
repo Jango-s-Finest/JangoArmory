@@ -249,4 +249,14 @@ class CfgWeapons
 			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Dak_Mlv_Helmet.paa",
 			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Dak_Mlv_Life_Support.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
+	class JA_104th_Strawberry_Pilot_Helmet : ls_gar_phase2Pilot_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Clone Trooper Pilot Helmet (104th Strawberry)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Helmets\data\Textures\104_P2_Strawberry_Pilot_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+	};
 };
