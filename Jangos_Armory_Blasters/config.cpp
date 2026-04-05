@@ -4240,7 +4240,7 @@ class CfgMagazines
         displayName = "[104th] 3rnd 300Mw APFSDS Energy Cell";
         ammo = "JA_104th_Weapons_Ammo_BPX14";
         count = 3;
-        mass = 16;
+        mass = 8;
         tracersEvery = 1;
     };
 
