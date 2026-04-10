@@ -45,15 +45,11 @@
     [*] [104th] Ulik - weapon has less recoil
     [*] [104th] Ulik - added squad shield to the inventory
     [*] 104th AA cannon - increased damage
+    [*] BPX mag weight reduced
 [/list]
 
 
 [h2]Changed Display Names[/h2]
 [list]
     [*] 
-    [*] Surtr
-    [*] 104th Skins
-    [*] Change Camo
-    [*] Talos
-    [*] Republic
 [/list]

@@ -3894,7 +3894,7 @@ class CfgMagazines
     class 3Rnd_HE_Grenade_shell;
     class 3Rnd_Smoke_Grenade_shell;
     class UGL_FlareWhite_F;
-    class SWLW_Z7_mag;
+    class ls_magazine_z7;
     class ls_mag_rpg_1rnd;
     class OPTRE_SpLaser_Battery_Launcher;
 
@@ -4234,13 +4234,13 @@ class CfgMagazines
     };
 
     // Tertiaries
-    class JA_104th_Weapons_Mags_BPX14 : SWLW_Z7_mag
+    class JA_104th_Weapons_Mags_BPX14 : OPTRE_SpLaser_Battery_Launcher
     {
         author = "Jango's Armory Aux Team";
-        displayName = "[104th] 3rnd 300Mw APFSDS Energy Cell";
+        displayName = "[104th] 4rnd 300Mw APFSDS Energy Cell";
         ammo = "JA_104th_Weapons_Ammo_BPX14";
-        count = 3;
-        mass = 8;
+        count = 4;
+        mass = 100;
         tracersEvery = 1;
     };
 
