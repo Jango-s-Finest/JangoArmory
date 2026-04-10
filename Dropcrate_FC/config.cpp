@@ -94,9 +94,9 @@ class CfgVehicles
 		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1","SlingLoadCargo2","SlingLoadCargo3","SlingLoadCargo4"};
         class TransportWeapons
 		{
-			class _xx_3AS_RPS6_HP{
+			class _xx_ls_weapon_rps6_loadedP{
 				count = 3;
-				weapon = "JA_104th_RPS6_H";
+				weapon = "ls_weapon_rps6_loaded";
 			};
 			class _xx_JA_104th_DC17SA{
 				count = 6;
@@ -188,19 +188,14 @@ class CfgVehicles
 				count = 10;
 				magazine = "JLTS_stun_mag_short";
 			};
-			class _xx_3AS_MK41_AT
+			class _xx_ls_magazine_rps6_heat
 			{
-				count = 6;
-				magazine = "3AS_MK41_AT";
-			};
-			class _xx_3AS_MK42_HE
-			{
-				count = 6;
-				magazine = "3AS_MK42_HE";
+				count = 12;
+				magazine = "ls_magazine_rps6_heat";
 			};
 			class _xx_ls_magazine_plx1_at
 			{
-				count = 3;
+				count = 6;
 				magazine = "ls_magazine_plx1_at";
 			};
 			class _xx_JA_104th_Weapons_Mags_GL_HE3

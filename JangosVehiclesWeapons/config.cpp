@@ -72,9 +72,9 @@ class CfgAmmo
 
 	class JA_104th_AA_Lazer_Ammo: RD501_Republic_Aircraft_Laser_Repeater_Ammo{
 		caliber = 7;
-		indirectHit = 10;
+		indirectHit = 50;
 		indirectHitRange = 3;
-		hit = 150;
+		hit = 130;
 	};
 	class JA_104th_AP_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 10;
@@ -370,6 +370,7 @@ class CfgWeapons
 	class 212th_A2A_MissileSystem;
 	class FIR_Brimstone;
 	class JA_104th_Z6;
+	class manual;
 
 	class JA_104th_AA_Lazer : RD501_Republic_Aircraft_Laser_AA{
 		displayName = "Air Superiority laser";
@@ -480,5 +481,33 @@ class CfgWeapons
 	class JA_104th_Z6_weaker : JA_104th_Z6{
 		modes[] = {"manual"};
 		scopeArsenal = 0;
+		class manual : manual
+        {
+            sounds[] = {"StandardSound"};
+            class BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                closure1[] = {};
+                closure2[] = {};
+                soundClosure[] = {};
+            };
+            class StandardSound : BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                begin1[] = {"3AS\3AS_Main\Sounds\Z6\Z61.ogg", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            reloadTime = 0.065;
+            dispersion = 0.001;
+            soundContinuous = 0;
+            soundBurst = 0;
+            minRange = 0;
+            minRangeProbab = 0.3;
+            midRange = 5;
+            midRangeProbab = 0.7;
+            maxRange = 10;
+            maxRangeProbab = 0.04;
+            showToPlayer = 1;
+        };
 	};
 };

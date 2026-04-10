@@ -755,6 +755,7 @@ class cfgVehicles
 	class 3AS_ATTE_TCW: 3AS_ATTE_Base{
 		class Turrets;
 		class ACE_SelfActions;
+		class TextureSources;
 	};
 	class 104th_ATTE : 3AS_ATTE_TCW{
 		displayname = "[104th] AT-TE";
@@ -772,6 +773,74 @@ class cfgVehicles
 		armor = 500;
 		weapons[] = {"SmokeLauncher","CMFlareLauncher"};
 		magazines[] = {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
+		hiddenselectionstextures[] = {
+			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_TCW_co.paa",
+			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+			"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+		};
+		class TextureSources : TextureSources
+		{
+			class 104_base
+			{
+				displayName = "Republic";
+				author = "Legion Studio + Echo";
+				textures[] = {
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_TCW_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+			class 104_Freyr
+			{
+				displayName = "Freyr";
+				author = "Legion Studio + Echo";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Freyr_2D_View.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+			class 104_Surtr
+			{
+				displayName = "Surtr";
+				author = "Legion Studio + Echo";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Surtr_2D_View.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+			class 104_Talos
+			{
+				displayName = "Talos";
+				author = "Legion Studio + Echo";
+				textures[] = {
+					"JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Talos_2D_View.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa",
+					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+				};
+				factions[] = {"104th_Guys"};
+			};
+		};
+		textureList[] = {"104_base", 1, "104_Freyr", 1, "104_Surtr", 1, "104_Talos", 1};
 		class Turrets : Turrets
 		{
 			class MainTurretTop: MainTurretTop
@@ -790,6 +859,86 @@ class cfgVehicles
 		};
 		class ACE_SelfActions : ACE_SelfActions
 		{
+			class Style_Changer
+			{
+				displayName = "Change Camo";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				showDisabled = 0;
+				priority = 2;
+				class DefaultSkin
+				{
+					displayName = "Republic";
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+					condition = "!(isNull objectParent player)";
+					statement = "\
+						_target setObjectTextureGlobal [0,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_TCW_co.paa'];\
+						_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa'];\
+						_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa'];\
+						_target setObjectTextureGlobal [3,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa'];\
+						_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa'];\
+						_target setObjectTextureGlobal [5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];\
+					";
+					showDisabled = 0;
+					runOnHover = 0;
+					priority = 2.5;
+				};
+				class 104th_Skins
+				{
+					displayname = "104th Skins";
+					class 104_Freyr
+					{
+						displayName = "Freyr";
+						exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+						condition = "!(isNull objectParent player)";
+						statement = "\
+							_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Freyr_2D_View.paa'];\
+							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa'];\
+							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa'];\
+							_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa'];\
+							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa'];\
+							_target setObjectTextureGlobal [5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];\
+						";
+						showDisabled = 0;
+						runOnHover = 0;
+						priority = 2.5;
+					};
+					class 104_Surtr
+					{
+						displayName = "Surtr";
+						exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+						condition = "!(isNull objectParent player)";
+						statement = "\
+							_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Surtr_2D_View.paa'];\
+							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa'];\
+							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa'];\
+							_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa'];\
+							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa'];\
+							_target setObjectTextureGlobal [5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];\
+						";
+						showDisabled = 0;
+						runOnHover = 0;
+						priority = 2.5;
+					};
+					class 104_Talos
+					{
+						displayName = "Talos";
+						exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+						condition = "!(isNull objectParent player)";
+						statement = "\
+							_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Talos_2D_View.paa'];\
+							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa'];\
+							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa'];\
+							_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa'];\
+							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa'];\
+							_target setObjectTextureGlobal [5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];\
+						";
+						showDisabled = 0;
+						runOnHover = 0;
+						priority = 2.5;
+					};
+				};
+			};
 			class TFAR_IntercomChannel
 			{
 				displayName = "$STR_tfar_core_Intercom_ACESelfAction_Name";
@@ -1856,7 +2005,14 @@ class cfgVehicles
 				};
 			};
 		};
-		
+		class TransportMagazines
+		{
+			class _xx_Aux501_Weapons_Mags_Grenades_Squad_Shield
+			{
+				count = 2;
+				magazine = "Aux501_Weapons_Mags_Grenades_Squad_Shield";
+			};
+		};
 		class Turrets : Turrets
 		{
 			class MainTurret: MainTurret
