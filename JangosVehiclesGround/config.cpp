@@ -136,7 +136,7 @@ class cfgVehicles
 				{-0.41, -3.1700001, -0.69999999}};
 		transportSoldier = 8;
 		LESH_canTow = 1;
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		LESH_AxisOffsetTower[] = {0, -6, 1};
 		driverCanSee = 31;
 		gunnerCanSee = 31;
@@ -1098,7 +1098,7 @@ class cfgVehicles
 		displayName = "[104th] Oryx IFV Unshielded";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
@@ -1812,6 +1812,16 @@ class cfgVehicles
 	class 3AS_Repair_Facility;
 	class ACE_Actions;
 	class ACE_MainActions;
+	class HitPoints;
+	class HitHull;
+	class HitLBWheel;
+	class HitLF2Wheel;
+	class HitLFWheel;
+	class HitLMWheel;
+	class HitRBWheel;
+	class HitRF2Wheel;
+	class HitRFWheel;
+	class HitRMWheel;
 	class JA_104th_Repair_Droid: 3AS_Repair_Facility{
 		author = "Dak";
 		ace_cargo_hasCargo = 1;
@@ -1886,14 +1896,12 @@ class cfgVehicles
 	};
 	
 	class MainTurret;
-	class APC_Wheeled_02_base_F;
-	class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_F{
-		class Turrets;
-		class Components;
-		class ACE_SelfActions;
-	};
+	class Turrets;
+	class Components;
+	class ACE_SelfActions;
+	class O_APC_Wheeled_02_rcws_v2_F;
 	class JA_104th_Ulik : O_APC_Wheeled_02_rcws_v2_F{
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		displayname = "[104th] Ulik";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
@@ -1902,6 +1910,29 @@ class cfgVehicles
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 1;
 		tf_range = 35000;
+		crew = "JA_104th_P2_1C_Engineer";
+		enginePower = 1000;
+		gearBox[] = {-7, 0, 11, 8, 5.6999998, 4.1999998};
+		maxOmega = 500;
+		peakTorque = 7400;
+		torqueCurve[] =
+			{
+				"[0.291667",
+				"0.540541]",
+				"[0.416667",
+				"0.675676]",
+				"[0.583333",
+				"0.810811]",
+				"[0.666667",
+				"0.891892]",
+				"[0.75",
+				"0.972973]",
+				"[0.833333",
+				"1.02703]",
+				"[0.916667",
+				"1]",
+				"[1",
+				"0.945946]"};
 		author = "Dak";
 		scope = 2;
 		side = 1;
@@ -1909,6 +1940,8 @@ class cfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		armor = 500;
+		armorStructural = 10;
+		explosionShielding = 1.5;
 		weapons[] = {"SmokeLauncher"};
 		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag"};
 		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet","CamoSlat"};
@@ -2005,12 +2038,92 @@ class cfgVehicles
 				};
 			};
 		};
+		class TransportWeapons
+		{};
 		class TransportMagazines
 		{
 			class _xx_Aux501_Weapons_Mags_Grenades_Squad_Shield
 			{
 				count = 2;
 				magazine = "Aux501_Weapons_Mags_Grenades_Squad_Shield";
+			};
+		};
+		class TransportItems
+		{
+			class _xx_ACE_quikclot
+			{
+				count = 50;
+				name = "ACE_quikclot";
+			};
+			class _xx_ACE_packingBandage
+			{
+				count = 100;
+				name = "ACE_packingBandage";
+			};
+			class _xx_ACE_elasticBandage
+			{
+				count = 300;
+				name = "ACE_elasticBandage";
+			};
+			class _xx_ACE_epinephrine
+			{
+				count = 40;
+				name = "ACE_epinephrine";
+			};
+			class _xx_ACE_morphine
+			{
+				count = 40;
+				name = "ACE_morphine";
+			};
+			class _xx_ACE_adenosine
+			{
+				count = 20;
+				name = "ACE_adenosine";
+			};
+			class _xx_RD501_Painkiller
+			{
+				count = 60;
+				name = "RD501_Painkiller";
+			};
+			class _xx_ACE_plasmaIV
+			{
+				count = 10;
+				name = "ACE_plasmaIV";
+			};
+			class _xx_ACE_plasmaIV_500
+			{
+				count = 5;
+				name = "ACE_plasmaIV_500";
+			};
+			class _xx_ACE_bloodIV_500
+			{
+				count = 5;
+				name = "ACE_bloodIV_500";
+			};
+			class _xx_ACE_bloodIV
+			{
+				count = 10;
+				name = "ACE_bloodIV";
+			};
+			class _xx_ACE_salineIV_500
+			{
+				count = 5;
+				name = "ACE_salineIV_500";
+			};
+			class _xx_ACE_salineIV
+			{
+				count = 10;
+				name = "ACE_salineIV";
+			};
+			class _xx_ACE_tourniquet
+			{
+				count = 25;
+				name = "ACE_tourniquet";
+			};
+			class _xx_Aux501_Carbonate
+			{
+				count = 25;
+				name = "Aux501_Carbonate";
 			};
 		};
 		class Turrets : Turrets
@@ -2253,6 +2366,37 @@ class cfgVehicles
 						resource = "RscCustomInfoSensors";
 					};
 				};
+			};
+		};
+		class HitPoints: HitPoints{
+			class HitHull : HitHull{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel : HitLBWheel{
+				armor = 0.5;
+			};
+			class HitLF2Wheel : HitLF2Wheel{
+				armor = 0.5;
+			};
+			class HitLFWheel : HitLFWheel{
+				armor = 0.5;
+			};
+			class HitLMWheel : HitLMWheel{
+				armor = 0.5;
+			};
+			class HitRBWheel : HitRBWheel{
+				armor = 0.5;
+			};
+			class HitRF2Wheel : HitRF2Wheel{
+				armor = 0.5;
+			};
+			class HitRFWheel : HitRFWheel{
+				armor = 0.5;
+			};
+			class HitRMWheel : HitRMWheel{
+				armor = 0.5;
 			};
 		};
 	};

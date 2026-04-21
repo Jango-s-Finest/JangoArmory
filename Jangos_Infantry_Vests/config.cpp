@@ -835,6 +835,92 @@ class CfgWeapons
             };
         };
     };
+    class ls_gar_engineerNCO_vest;
+	class JA_104th_Knockout_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest{
+
+		displayName = "Clone Engineer E-Web Vest (104th Knockout)";
+        hiddenSelectionsTextures[] = {
+            "",
+            "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+            "",
+            "",
+            "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
+            "Jangos_Infantry_Vests\data\textures\104th_P2_Knockout_Accessories_ARC.paa",
+        };
+		class ItemInfo
+		{
+			vestType = "Rebreather";
+			_generalMacro = "VestItem";
+			author = "Bohemia Interactive";
+			containerClass = "Supply450";
+			hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
+            hiddenSelectionsTextures[] = {
+                "",
+                "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+                "",
+                "",
+                "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Knockout_Accessories_ARC.paa",
+            };
+			mass = 80;
+			overlaySelectionsInfo[] = {"Ghillie_hide"};
+			scope = 0;
+			showHolsteredPistol = 0;
+			type = 701;
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\engineer\ls_gar_engineerNCO_vest.p3d";
+			uniformType = "Default";
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	
+};
+class CfgGlasses
+{
+    class JA_104th_AB_Officer_Vest_Knockout
+    {
+        author = "Dak";
+        displayName = "Clone Trooper Officer Vest (104th Knockout)";
+        descriptionUse = "";
+        scope = 2;
+        identityTypes[] = {};
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2",
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Knockout_Accessories_Officer.paa",
+                "",
+            };
+        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+    };
 };
 
 class CfgVehicles
