@@ -18,7 +18,7 @@ class CfgPatches
 			"JA_104th_Hunter_Helmet",
 			"JA_104th_Loner_Helmet",
 			"JA_104th_Vision_Helmet",
-			"JA_104th_Spectre_Helmet"
+			"JA_104th_Spectre_Helmet_old"
 
 		};
 	};
@@ -151,7 +151,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Loner)";								  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Loner_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Spectre_Helmet : ls_gar_arc_helmet
+	class JA_104th_Spectre_Helmet_old : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;

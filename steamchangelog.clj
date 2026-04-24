@@ -2,15 +2,16 @@
 [h2]Custom Gear[/h2]
 [h3]Added[/h3]
 [list]
-    [*] Clone Trooper P2 Special Activities Helmet (104th Ravager)
-    [*] Clone Trooper Officer Vest (104th Knockout)
-    [*] Clone Trooper Engineer Helmet (104th Knockout)
-    [*] Clone Trooper armor (104th Lykos)
-    [*] Clone Engineer E-Web Vest (104th Knockout)
-    [*] Clone Trooper P2 Helmet (104th Lykos)
-    [*] Clone Trooper armor (104th Hound)
-    [*] Clone Trooper RTO mini backpack (104th Knockout)
-    [*] Clone Trooper AB Helmet (104th Jesse)
+    [*] Clone Trooper armor (104th Spectre)
+    [*] Clone ARC Trooper Vest (104th Spectre)
+    [*] Clone Trooper P1-2 Helmet (104th Spectre)
+    [*] Clone Trooper armor (104th Squid)
+    [*] Clone Trooper P1 Helmet (104th Squid)
+    [*] Clone Trooper P2 Helmet (104th Seven)
+    [*] Clone Trooper armor (104th Tiger)
+    [*] Clone Trooper SNCO Vest (104th Tiger)
+    [*] Clone Trooper P1 Helmet (104th Tiger)
+    [*] Clone Trooper RTO mini backpack (104th Tiger)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -18,10 +19,7 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] Clone Trooper P2 Helmet (104th Larkkit)
-    [*] Clone Trooper armor (104th Knockout)
-    [*] Clone Trooper P2 Helmet (104th Castle)
-    [*] Republic Armored Plating NVG (104th Castle)
+    [*] Clone Trooper P2 armor (104th [1C] Talos Engineer)
 [/list]
 
 [h2]Custom Weapons & Attachments[/h2]
@@ -50,10 +48,11 @@
 [h3]Changes[/h3]
 [list]
     [*] Repair Script fix
-    [*] [104th] Ulik - new itens on the inventory
+    [*] [104th] Ulik - Wheel armor increase
 [/list]
 
 
 [h2]Changed Display Names[/h2]
 [list]
+    [*] 
 [/list]

@@ -481,7 +481,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Spectre_ARC_Vest : ls_gar_arc_vest
+    class JA_104th_Spectre_ARC_Vest_old : ls_gar_arc_vest
     {
         author = "Dak";
         displayName = "Clone ARC Trooper Vest (104th Spectre)";

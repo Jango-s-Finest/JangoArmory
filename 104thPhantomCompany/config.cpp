@@ -520,15 +520,15 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper P2 armor (104th [1C] Cerberus Engineer)";
+		displayName = "Clone Trooper P2 armor (104th [1C] Talos Engineer)";
 		hiddenSelections[] =
 			{
 				"camo1",
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thPhantomCompany\data\Textures\104th_P2_1C_Engineer_Upper.paa",
-				"104thPhantomCompany\data\Textures\104th_P2_1C_Engineer_Lower.paa"};
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Talos_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Talos_Lower.paa"};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -1711,8 +1711,8 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"104thPhantomCompany\data\Textures\104th_P2_1C_Engineer_Upper.paa",
-				"104thPhantomCompany\data\Textures\104th_P2_1C_Engineer_Lower.paa"};
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Talos_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Talos_Lower.paa"};
 		linkedItems[] = {JA_104th_Engineer_1C_Base_Helmet, ls_gar_engineerNCO_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Engineer_1C_Base_Helmet, ls_gar_engineerNCO_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};

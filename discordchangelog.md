@@ -3,22 +3,20 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper P2 Special Activities Helmet (104th Ravager)
-- Clone Trooper Officer Vest (104th Knockout)
-- Clone Trooper Engineer Helmet (104th Knockout)
-- Clone Trooper armor (104th Lykos)
-- Clone Engineer E-Web Vest (104th Knockout)
-- Clone Trooper P2 Helmet (104th Lykos)
-- Clone Trooper armor (104th Hound)
-- Clone Trooper RTO mini backpack (104th Knockout)
-- Clone Trooper AB Helmet (104th Jesse)
+- Clone Trooper armor (104th Spectre)
+- Clone ARC Trooper Vest (104th Spectre)
+- Clone Trooper P1-2 Helmet (104th Spectre)
+- Clone Trooper armor (104th Squid)
+- Clone Trooper P1 Helmet (104th Squid)
+- Clone Trooper P2 Helmet (104th Seven)
+- Clone Trooper armor (104th Tiger)
+- Clone Trooper SNCO Vest (104th Tiger)
+- Clone Trooper P1 Helmet (104th Tiger)
+- Clone Trooper RTO mini backpack (104th Tiger)
 
 Changed Gear
 ------------------
-- Clone Trooper P2 Helmet (104th Larkkit)
-- Clone Trooper armor (104th Knockout)
-- Clone Trooper P2 Helmet (104th Castle)
-- Republic Armored Plating NVG (104th Castle)
+- Clone Trooper P2 armor (104th [1C] Talos Engineer)
 
 Removed Gear
 ------------------
@@ -49,7 +47,7 @@ New Vehicles & Supplies
 Changed Vehicles & Supplies
 ------------------
 - Repair Script fix
-- [104th] Ulik - new itens on the inventory
+- [104th] Ulik - Wheel armor increase
 
 Removed Vehicles & Supplies
 ------------------

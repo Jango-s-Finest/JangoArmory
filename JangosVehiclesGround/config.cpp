@@ -1847,7 +1847,7 @@ class cfgVehicles
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		displayName = "[104th] Repair Droid - NO AMMO";
+		displayName = "[104th] Repair Droid";
 		side = 3;
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Droid";
@@ -2375,28 +2375,44 @@ class cfgVehicles
 				explosionShielding = 1.5;
 			};
 			class HitLBWheel : HitLBWheel{
-				armor = 0.5;
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 			class HitLF2Wheel : HitLF2Wheel{
-				armor = 0.5;
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 			class HitLFWheel : HitLFWheel{
-				armor = 0.5;
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 			class HitLMWheel : HitLMWheel{
-				armor = 0.5;
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 			class HitRBWheel : HitRBWheel{
-				armor = 0.5;
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 			class HitRF2Wheel : HitRF2Wheel{
-				armor = 0.5;
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 			class HitRFWheel : HitRFWheel{
-				armor = 0.5;
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 			class HitRMWheel : HitRMWheel{
-				armor = 0.5;
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 		};
 	};
