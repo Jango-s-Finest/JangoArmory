@@ -17,7 +17,7 @@ if(isServer)then{
 						_health = damage _target;
 					};
 					_health = _health - 0.01;
-					[_target, (_health)] call ace_repair_fnc_setDamage;
+					[_target, (_health)] remoteExec ["ace_repair_fnc_setDamage"];
 					sleep 0.5;
 				};
 			};
