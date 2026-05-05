@@ -283,6 +283,7 @@ class CfgWeapons
     class ls_weapon_at_plx1;
     class ls_weapon_z7;
     class SDT_IonDisruptor;
+    class launch_RPG32_F;
     class 3AS_RPS6_HP;
     class 3AS_RPS6_F;
     class 3AS_HH12_F;
@@ -2015,7 +2016,19 @@ class CfgWeapons
                 scope = 0;
                 compatibleItems[] =
                     {
-                        "3AS_optic_DC15L_F"};
+                        "3AS_optic_DC15L_F",
+                        "JA_104th_cows_mrco",
+                        "JA_104th_cows_mrco_2",
+                        "JA_104th_cows_mrco_3",
+
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3",
+
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3"
+                    };
             };
             class MuzzleSlot : MuzzleSlot
             {
@@ -2149,7 +2162,14 @@ class CfgWeapons
                         "3AS_Imp_Optic_1",
                         "3AS_Imp_Optic_2",
                         "3AS_Imp_Optic_3",
-                        "3AS_Imp_Optic_4"};
+                        "3AS_Imp_Optic_4",
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3"
+                    };
             };
             class MuzzleSlot : MuzzleSlot
             {
@@ -2502,7 +2522,7 @@ class CfgWeapons
             {
                 "JA_104th_Weapons_Mags_20mw70",
                 "JA_104th_Weapons_Mags_50mw7",
-                "ls_magazine_dc17m_antiArmor"
+                "JA_104th_Weapons_Mags_17M_AT"
             };
         handAnim[] = {"OFP2_ManSkeleton","\ls\core\addons\weapons_dcSeries\dc17m\anims\dc17m_handanim.rtm"};
         reloadAction = "GestureReload_JLTS_DC15A";
@@ -2650,6 +2670,12 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
                     {
+                    "JA_104th_cows_rco",
+                    "JA_104th_cows_rco_2",
+                    "JA_104th_cows_rco_3",
+                    "JA_104th_cows_Holosight",
+                    "JA_104th_cows_Holosight_2",
+                    "JA_104th_cows_Holosight_3"
 
                     };
             };
@@ -2759,7 +2785,14 @@ class CfgWeapons
                         "3AS_Imp_Optic_1",
                         "3AS_Imp_Optic_2",
                         "3AS_Imp_Optic_3",
-                        "3AS_Imp_Optic_4"};
+                        "3AS_Imp_Optic_4",
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3"
+                    };
             };
             class MuzzleSlot : MuzzleSlot
             {
@@ -2932,7 +2965,22 @@ class CfgWeapons
                         "3AS_Imp_Optic_1",
                         "3AS_Imp_Optic_2",
                         "3AS_Imp_Optic_3",
-                        "3AS_Imp_Optic_4"};
+                        "3AS_Imp_Optic_4",
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3",
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3",
+                        "JA_104th_cows_DMS",
+                        "JA_104th_cows_DMS_2",
+                        "JA_104th_cows_DMS_3",
+                        "JA_104th_cows_DMS_4"
+
+                    };
             };
             class MuzzleSlot : MuzzleSlot
             {
@@ -3082,7 +3130,16 @@ class CfgWeapons
                         "3AS_Imp_Optic_1",
                         "3AS_Imp_Optic_2",
                         "3AS_Imp_Optic_3",
-                        "3AS_Imp_Optic_4"
+                        "3AS_Imp_Optic_4",
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3",
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3"
                     };
             };
                         class MuzzleSlot: MuzzleSlot
@@ -3497,19 +3554,22 @@ class CfgWeapons
     };
 
     // BPX-14 Visions 5 year weapon
-        class JA_104th_BPX14 : 3AS_HH12_F
+        class JA_104th_BPX14 : launch_RPG32_F
     {
         author = "Third Army Studios + Cyan";
         baseWeapon = "JA_104th_BPX14";
         scope = 2;
+        dispersion = 0.0001;
         displayName = "[104th] BPX-14 Shoulder Cannon";
         handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Imperial\anims\HH12hand.rtm"};
         model = "3as\3AS_Weapons\Imperial\3AS_HH12.p3d";
         picture = "3as\3AS_Weapons\Data\UI\3as_hh12.paa";
+        reloadAction = "ReloadRPG";
+        modelOptics = "A3\Weapons_F_Tank\acc\reticle_Vorona.p3d";
+        magazineWell[] = {};
         magazines[] = 
         {
-        "JA_104th_Weapons_Mags_BPX14",
-        "OPTRE_SpLaser_Battery_Launcher"
+        "JA_104th_Weapons_Mags_BPX14"
         };
     };
 };
@@ -3530,6 +3590,26 @@ class CfgAmmo
     class BNA_KC_Bullet_Plasma40MM_AT;
     class JA_104th_Weapons_Ammo_17MAT : BNA_KC_Bullet_Plasma40MM_AT
     {
+        ACE_bulletLength = 69;
+        ACE_bulletMass = 60;
+        ACE_caliber = 25;
+        hit = 300;
+        airFriction = 0;
+        craterEffects = "ImpactEffectsMedium";
+        waterFriction = -0.009;
+        explosionAngle = 60;
+        ExplosionEffects = "HEShellExplosion";
+        explosionType = "explosive";
+        indirectHit = 120;
+        indirectHitRange = 1;
+        suppressionRadiusBulletClose = 10;
+        suppressionRadiusHit = 14;
+        tracerColor[] = {0.7, 0.7, 0.5, 0.04};
+        tracerColorR[] = {0.7, 0.7, 0.5, 0.04};
+        thrust = 600;
+        thrustTime = 2;
+        warheadName = "AP";
+        weaponType = "default"; 
     };
 
     class B_12Gauge_Pellets;
@@ -3541,7 +3621,7 @@ class CfgAmmo
     class F_40mm_White;
     class B_40mm_APFSDS;
     class RocketBase;
-    class OPTRE_SpLaserAmmo;
+    class OPTRE_SpLaserAmmo_Launcher;
 
     class JA_104th_Weapons_Ammo_EMP : JLTS_ammo_Grenade_EMP
     {
@@ -3639,6 +3719,9 @@ class CfgAmmo
 
     class JA_104th_Weapons_Ammo_5mw : JA_104th_Weapons_Ammo_base_blue // Very Low Output
     {
+        ACE_bulletLength = 39.573;
+        ACE_bulletMass = 16.2;
+        ACE_caliber = 8.585;
         hit = 15;
         typicalSpeed = 1000;
         caliber = 2;
@@ -3648,6 +3731,9 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_10mw : JA_104th_Weapons_Ammo_base_blue // Low Output
     {
+        ACE_bulletLength = 45;
+        ACE_bulletMass = 18;
+        ACE_caliber = 9.4;
         hit = 25;
         typicalSpeed = 1200;
         caliber = 2.4;
@@ -3657,6 +3743,9 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_20mw : JA_104th_Weapons_Ammo_base_blue // Medium Output
     {
+        ACE_bulletLength = 50;
+        ACE_bulletMass = 20;
+        ACE_caliber = 10.2;
         hit = 40;
         typicalSpeed = 1500;
         caliber = 2.8;
@@ -3666,6 +3755,9 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_30mw : JA_104th_Weapons_Ammo_base_blue // High Output
     {
+        ACE_bulletLength = 60;
+        ACE_bulletMass = 24;
+        ACE_caliber = 12;
         hit = 60;
         typicalSpeed = 5000;
         caliber = 4;
@@ -3676,6 +3768,9 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_40mw : JA_104th_Weapons_Ammo_base_blue // Very High Output
     {
+        ACE_bulletLength = 66;
+        ACE_bulletMass = 24;
+        ACE_caliber = 14;
         hit = 75;
         typicalSpeed = 10000;
         caliber = 6;
@@ -3686,6 +3781,9 @@ class CfgAmmo
     };
     class JA_104th_Weapons_Ammo_50mw : JA_104th_Weapons_Ammo_base_blue // Extreme Output
     {
+        ACE_bulletLength = 70;
+        ACE_bulletMass = 28;
+        ACE_caliber = 18;
         hit = 95;
         typicalSpeed = 12000;
         caliber = 10;
@@ -3694,6 +3792,32 @@ class CfgAmmo
         thrust = 8000;
         thrustTime = 4;
     };
+    class JA_104th_Weapons_Ammo_100mw : B_40mm_APFSDS // Test Railgun Rounds
+    {
+        ACE_bulletLength = 80;
+        ACE_bulletMass = 50;
+        ACE_caliber = 20;
+        hit = 95;
+        typicalSpeed = 10000;
+        caliber = 25;
+        airFriction = 0;
+        craterEffects = "ImpactEffectsMedium";
+        waterFriction = -0.009;
+        explosionAngle = 60;
+        ExplosionEffects = "HEShellExplosion";
+        explosionType = "explosive";
+        indirectHit = 40;
+        indirectHitRange = 0.5;
+        suppressionRadiusBulletClose = 10;
+        suppressionRadiusHit = 14;
+        tracerColor[] = {0.7, 0.7, 0.5, 0.04};
+        tracerColorR[] = {0.7, 0.7, 0.5, 0.04};
+        thrust = 600;
+        thrustTime = 2;
+        warheadName = "AP";
+        weaponType = "default";
+    };
+
     class JA_104th_Weapons_Ammo_10mwSC : JLTS_bullet_scatter_blue // Shotgun Rounds
     {
         hit = 25;
@@ -3727,49 +3851,14 @@ class CfgAmmo
         thrustTime = 1.4;
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
     };
-    class JA_104th_Weapons_Ammo_100mw : B_40mm_APFSDS // Test Railgun Rounds
-    {
-        hit = 95;
-        typicalSpeed = 1200;
-        caliber = 25;
-        airFriction = 0;
-        craterEffects = "ImpactEffectsMedium";
-        waterFriction = -0.009;
-        explosionAngle = 60;
-        ExplosionEffects = "HEShellExplosion";
-        explosionType = "explosive";
-        indirectHit = 27;
-        indirectHitRange = 0.5;
-        suppressionRadiusBulletClose = 10;
-        suppressionRadiusHit = 14;
-        tracerColor[] = {0.7, 0.7, 0.5, 0.04};
-        tracerColorR[] = {0.7, 0.7, 0.5, 0.04};
-        thrust = 600;
-        thrustTime = 2;
-        warheadName = "AP";
-        weaponType = "default";
-    };
 
     // BPX14 Energy Cells
-    class JA_104th_Weapons_Ammo_BPX14 : OPTRE_SpLaserAmmo
+    class JA_104th_Weapons_Ammo_BPX14 : OPTRE_SpLaserAmmo_Launcher
     {
-        hit = 350;
-        typicalSpeed = 1200;
-        caliber = 150;
-        airFriction = 0;
-        waterFriction = -0.009;
-        explosionAngle = 60;
-        ExplosionEffects = "HEShellExplosion";
-        explosionType = "explosive";
-        model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Medium_Blue.p3d";
-        indirectHit = 25;
-        indirectHitRange = 1;
-        suppressionRadiusBulletClose = 10;
-        suppressionRadiusHit = 14;
-        tracerColor[] = {0.7, 0.7, 0.5, 0.04};
-        tracerColorR[] = {0.7, 0.7, 0.5, 0.04};
-        warheadName = "AP";
-        weaponType = "cannon";
+        ACE_damageType = "explosive";
+        effectfly = "ls_plasma_blue";
+        ExplosionEffects = "ls_plasma_impact";
+        model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Big_Blue.p3d";
     };
 
     // GL Ammo
@@ -4052,7 +4141,7 @@ class CfgMagazines
         typicalSpeed = 700;
     };
     // DC17M AT Mag
-    class JA_104th_Weapons_Mags_100mw_AT : 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_17M_AT : 30Rnd_65x39_caseless_mag
     {
         ls_weapons_isATMag = 1;
         author = "Jango's Armory Aux Team";
@@ -4061,7 +4150,7 @@ class CfgMagazines
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
         count = 1;
-        mass = 16;
+        mass = 10;
         modelSpecial = "";
         initSpeed = 1500;
         modelSpecialIsProxy = 0;
@@ -4234,10 +4323,10 @@ class CfgMagazines
     };
 
     // Tertiaries
-    class JA_104th_Weapons_Mags_BPX14 : OPTRE_SpLaser_Battery_Launcher
+    class JA_104th_Weapons_Mags_BPX14 : ls_magazine_z7
     {
         author = "Jango's Armory Aux Team";
-        displayName = "[104th] 4rnd 300Mw APFSDS Energy Cell";
+        displayName = "[104th] 4rnd BPX-14 Energy Cell";
         ammo = "JA_104th_Weapons_Ammo_BPX14";
         count = 4;
         mass = 100;
