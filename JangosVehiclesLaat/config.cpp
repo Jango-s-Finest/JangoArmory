@@ -204,6 +204,7 @@ class cfgVehicles
 		displayName = "LAAT-E 104th";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		crew = "JA_104th_P2_1C_Engineer";
 
 		armor = 250;
 		armorStructural = 2;

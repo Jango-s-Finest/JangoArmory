@@ -17,7 +17,7 @@ class CfgPatches
 			"JA_104th_Hunter",
 			"JA_104th_Loner",
 			"JA_104th_Vision",
-			"JA_104th_Spectre"};
+			"JA_104th_Spectre_old"};
 		weapons[] = {
 			"JA_104th_Angel_Uniform",
 			"JA_104th_Sigil_Uniform",
@@ -27,7 +27,7 @@ class CfgPatches
 			"JA_104th_Hunter_Uniform",
 			"JA_104th_Loner_Uniform",
 			"JA_104th_Vision_Uniform",
-			"JA_104th_Spectre_Uniform"
+			"JA_104th_Spectre_Uniform_old"
 
 		};
 	};
@@ -353,7 +353,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Spectre_Uniform : JA_104th_Base_ARC_Uniform
+	class JA_104th_Spectre_Uniform_old : JA_104th_Base_ARC_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -373,7 +373,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Spectre";
+			uniformClass = "JA_104th_Spectre_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -622,14 +622,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Frosty_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Frosty_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Spectre : lsd_gar_phase2_base
+	class JA_104th_Spectre_old : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Spectre_Uniform";
+		uniformClass = "JA_104th_Spectre_Uniform_old";
 		displayName = "104th Spectre";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
