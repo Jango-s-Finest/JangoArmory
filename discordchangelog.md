@@ -3,20 +3,11 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper armor (104th Spectre)
-- Clone ARC Trooper Vest (104th Spectre)
-- Clone Trooper P1-2 Helmet (104th Spectre)
-- Clone Trooper armor (104th Squid)
-- Clone Trooper P1 Helmet (104th Squid)
-- Clone Trooper P2 Helmet (104th Seven)
-- Clone Trooper armor (104th Tiger)
-- Clone Trooper SNCO Vest (104th Tiger)
-- Clone Trooper P1 Helmet (104th Tiger)
-- Clone Trooper RTO mini backpack (104th Tiger)
+- Clone Trooper Pilot Helmet (104th Storm)
 
 Changed Gear
 ------------------
-- Clone Trooper P2 armor (104th [1C] Talos Engineer)
+- Clone Trooper armor (104th Hound)
 
 Removed Gear
 ------------------
@@ -42,12 +33,12 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
--
+- [104th] Oryx IFV Command Trophy System
 
 Changed Vehicles & Supplies
 ------------------
-- Repair Script fix
-- [104th] Ulik - Wheel armor increase
+- [104th] Ulik - Main Gun Changes
+- [104th] Ulik - Extra Mags on the inventory
 
 Removed Vehicles & Supplies
 ------------------

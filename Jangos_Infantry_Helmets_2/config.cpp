@@ -375,8 +375,61 @@ class CfgWeapons
 		displayname = "Clone Trooper P1-2 Helmet (104th Spectre)";	
 		subItems[] = {"OPTRE_Glasses_Visor"};
 		optreHUDStyle = "ODST_1";
-		optreVarietys[] = {"_dp", "_dp", "_dp"};										   // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_Company_Spectre_Rex_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\rex\data\visor_co.paa"}; // the file path to the texture
+		optreVarietys[] = {"_dp", "_dp", "_dp"};
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_Company_Spectre_Rex_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camo2_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Spectre_Helmet_red : ls_gar_rex_helmet
+	{
+		author = "Tundra";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper P1-2 Helmet (104th Spectre)";	
+		subItems[] = {"OPTRE_Glasses_Visor"};
+		optreHUDStyle = "ODST_1";
+		optreVarietys[] = {"_dp", "_dp", "_dp"};
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_Company_Spectre_Rex_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Crimson_camo2_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Spectre_Helmet_green : ls_gar_rex_helmet
+	{
+		author = "Tundra";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper P1-2 Helmet (104th Spectre)";	
+		subItems[] = {"OPTRE_Glasses_Visor"};
+		optreHUDStyle = "ODST_1";
+		optreVarietys[] = {"_dp", "_dp", "_dp"};
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_Company_Spectre_Rex_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Kyber_camo2_co_old.paa"}; // the file path to the texture
+	};
+	class JA_104th_Spectre_Helmet_darkgreen : ls_gar_rex_helmet
+	{
+		author = "Tundra";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper P1-2 Helmet (104th Spectre)";	
+		subItems[] = {"OPTRE_Glasses_Visor"};
+		optreHUDStyle = "ODST_1";
+		optreVarietys[] = {"_dp", "_dp", "_dp"};
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_Company_Spectre_Rex_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Kyber_camo2_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Spectre_Helmet_purple : ls_gar_rex_helmet
+	{
+		author = "Tundra";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper P1-2 Helmet (104th Spectre)";	
+		subItems[] = {"OPTRE_Glasses_Visor"};
+		optreHUDStyle = "ODST_1";
+		optreVarietys[] = {"_dp", "_dp", "_dp"};
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_Company_Spectre_Rex_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Plasma_camo2_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Aloo_Helmet : ls_gar_phase2_helmet
 	{

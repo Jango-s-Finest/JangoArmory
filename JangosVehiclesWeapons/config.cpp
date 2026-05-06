@@ -7,6 +7,7 @@ class CfgPatches
 			"JA_104th_AA_Lazer",
 			"JA_104th_AP_Lazer",
 			"JA_104th_HE_Lazer",
+			"JA_104th_HE_Lazer_Ulik",
 			"JA_104th_APHE_Lazer",
 			"JA_104th_AIM9X",
 			"JA_LAAT_AIM9X_BULLDOG",
@@ -397,6 +398,15 @@ class CfgWeapons
 		class manual: manual{
 			burst = 1;
 			reloadtime = 0.2;
+		};
+	};
+	class JA_104th_HE_Lazer_Ulik : RD501_Republic_Aircraft_Laser_AA{
+		displayName = "HE laser";
+		magazines[] = {"JA_104th_HE_Lazer_MAG_250"};
+		modes[] = {"manual"};
+		class manual: manual{
+			burst = 1;
+			reloadtime = 0.5;
 		};
 	};
 	class JA_104th_APHE_Lazer : RD501_Republic_Aircraft_Laser_AA{

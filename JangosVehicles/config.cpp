@@ -5089,9 +5089,9 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
 		radarTargetSize = 1; // No idea who in 3AS thought it's a good idea to make the Y-Wing more stealthy than the stealth fighters, so I'm changing it.
 		irTargetSize = 1;
 		VTOLPitchInfluence = 12;
@@ -5680,22 +5680,6 @@ class cfgVehicles
 				};
 			};
 			class TransportCounterMeasuresComponent;
-		};
-	};
-
-	class JA_104th_3AS_Reaper_Y_Wing_Blue : JA_104th_3AS_Reaper_Y_Wing
-	{
-		displayName = "104th Reaper BTL-B Y-Wing Blue";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
-		class TextureSources
-		{
-			class Blue
-			{
-				displayName = "Blue Leader";
-				author = "$STR_3as_Studio";
-				textures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
-				factions[] = {"104th_Guys"};
-			};
 		};
 	};
 
@@ -9778,6 +9762,11 @@ class cfgVehicles
 			{
 				count = 40;
 				magazine = "Aux501_Weapons_Mags_Thermal_Detonator";
+			};
+			class _xx_BNA_KC_Grenade_EMP
+			{
+				count = 40;
+				magazine = "BNA_KC_Grenade_EMP";
 			};
 			class _xx_Aux501_Weapons_Mags_Smoke_White
 			{

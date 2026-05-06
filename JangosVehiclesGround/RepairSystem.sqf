@@ -4,8 +4,8 @@ if(isServer)then{
 	private _range = _this select 1;
 	_health = 0;
 	_fuel = 1;
-	[_droid, 120000] call ace_rearm_fnc_makeSource;
-	[_droid, 120000] call ace_rearm_fnc_setSupplyCount;
+	[_droid, 120000] remoteExec ["ace_rearm_fnc_makeSource"];
+	[_droid, 120000] remoteExec ["ace_rearm_fnc_setSupplyCount"];
 	while{alive _droid}do{
 		_vehicles = _droid nearEntities [["Air", "LandVehicle"],_range];
 		for [{_i = 0}, {_i < (count _vehicles)}, {_i = _i + 1}] do {
