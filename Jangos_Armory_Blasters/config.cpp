@@ -2372,6 +2372,7 @@ class CfgWeapons
         scope = 2;
         displayName = "[104th] FP-773";
         baseWeapon = "JA_104th_FP773";
+        dispersion = 0.00001;
         mass = 120;
         picture = "\ls\core\addons\weapons_firepuncher\data\ui\firepuncher_ui_ca.paa";
         model = "\ls\core\addons\weapons_firepuncher\ls_weapon_firepuncher.p3d";
@@ -2401,8 +2402,7 @@ class CfgWeapons
             };
             class StandardSound : BaseSoundModeType
             {
-                reloadTime = 0.008;
-                dispersion = 0.00001;
+                reloadTime = 0.009;
                 sounds[] = {"StandardSound"};
                 weaponSoundEffect = "";
                 begin1[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
@@ -3728,10 +3728,10 @@ class CfgAmmo
         ACE_bulletMass = 16.2;
         ACE_caliber = 8.585;
         hit = 15;
-        typicalSpeed = 1000;
+        typicalSpeed = 500;
         caliber = 2;
         waterFriction = -0.009;
-        thrust = 800;
+        thrust = 210;
         thrustTime = 1.5;
     };
     class JA_104th_Weapons_Ammo_10mw : JA_104th_Weapons_Ammo_base_blue // Low Output
@@ -3740,62 +3740,68 @@ class CfgAmmo
         ACE_bulletMass = 18;
         ACE_caliber = 9.4;
         hit = 25;
-        typicalSpeed = 1200;
+        typicalSpeed = 600;
         caliber = 2.4;
         waterFriction = -0.009;
-        thrust = 1000;
+        thrust = 210;
         thrustTime = 1.5;
     };
     class JA_104th_Weapons_Ammo_20mw : JA_104th_Weapons_Ammo_base_blue // Medium Output
     {
         ACE_bulletLength = 50;
-        ACE_bulletMass = 20;
+        ACE_bulletMass = 19;
         ACE_caliber = 10.2;
         hit = 40;
-        typicalSpeed = 1500;
+        typicalSpeed = 800;
         caliber = 2.8;
         waterFriction = -0.009;
-        thrust = 2000;
-        thrustTime = 1.6;
+        thrust = 210;
+        thrustTime = 1.5;
     };
     class JA_104th_Weapons_Ammo_30mw : JA_104th_Weapons_Ammo_base_blue // High Output
     {
         ACE_bulletLength = 60;
-        ACE_bulletMass = 24;
+        ACE_bulletMass = 19.5;
         ACE_caliber = 12;
         hit = 60;
-        typicalSpeed = 5000;
+        typicalSpeed = 1000;
         caliber = 4;
         airFriction = 0;
         waterFriction = -0.009;
-        thrust = 3500;
-        thrustTime = 1.8;
+        thrust = 210;
+        thrustTime = 1.5;
     };
     class JA_104th_Weapons_Ammo_40mw : JA_104th_Weapons_Ammo_base_blue // Very High Output
     {
+        ACE_ballisticCoefficients = "[0.322]";
         ACE_bulletLength = 66;
-        ACE_bulletMass = 24;
+        ACE_bulletMass = 20;
         ACE_caliber = 14;
+        cmImmunity = 1;
+        coefgravity = 1e-05;
         hit = 80;
-        typicalSpeed = 10000;
+        typicalSpeed = 1500;
         caliber = 6;
-        airFriction = 0;
+        airFriction = -0.0002;
         waterFriction = -0.009;
-        thrust = 6000;
-        thrustTime = 2;
+        thrust = 210;
+        thrustTime = 1.5;
     };
     class JA_104th_Weapons_Ammo_50mw : JA_104th_Weapons_Ammo_base_blue // Extreme Output
     {
+        ACE_ballisticCoefficients = "[0.322]";
         ACE_bulletLength = 70;
-        ACE_bulletMass = 28;
+        ACE_bulletMass = 21;
         ACE_caliber = 18;
+        cmImmunity = 1;
         hit = 100;
-        typicalSpeed = 12000;
+        typicalSpeed = 1800;
+        coefgravity = 1e-05;
         caliber = 10;
-        airFriction = 0;
+        airFriction = -0.0002;
         waterFriction = -0.009;
-        thrust = 8000;
-        thrustTime = 4;
+        thrust = 210;
+        thrustTime = 1.5;
     };
     class JA_104th_Weapons_Ammo_100mw : B_40mm_APFSDS // Test Railgun Rounds
     {
