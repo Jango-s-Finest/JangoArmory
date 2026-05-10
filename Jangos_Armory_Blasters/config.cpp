@@ -1798,11 +1798,6 @@ class CfgWeapons
                         "JA_104th_cows_HoloScope_2",
                         "JA_104th_cows_HoloScope_3",
 
-                        "JA_104th_cows_DMS",
-                        "JA_104th_cows_DMS_2",
-                        "JA_104th_cows_DMS_3",
-                        "JA_104th_cows_DMS_4",
-
                         "JA_104th_cows_Holoscope_LR",
                         "JA_104th_cows_Holoscope_LR_2",
                         "JA_104th_cows_Holoscope_LR_3",
@@ -2017,9 +2012,14 @@ class CfgWeapons
                 compatibleItems[] =
                     {
                         "3AS_optic_DC15L_F",
+
                         "JA_104th_cows_mrco",
                         "JA_104th_cows_mrco_2",
                         "JA_104th_cows_mrco_3",
+
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
 
                         "JA_104th_cows_Holosight",
                         "JA_104th_cows_Holosight_2",
@@ -2381,7 +2381,6 @@ class CfgWeapons
         reloadMagazineSound[] = {"WarMantle\WM_Imperial_Weapons\data\sfx\overheat", 5, 1, 30};
         recoil = "recoil_dmr_01";
         recoilProne = "recoil_single_prone_mx";
-        initSpeed = 2000;
         magazines[] =
             {
                 "JA_104th_Weapons_Mags_40mw20",
@@ -2539,7 +2538,7 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType
             {
-                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet"};
             };
         };
         class FullAuto : FullAuto
@@ -2549,7 +2548,7 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType
             {
-                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+                soundSetShot[] = {"ls_dc17m_Shot_SoundSet"};
             };
         };
         class WeaponSlotsInfo : WeaponSlotsInfo
@@ -2969,6 +2968,9 @@ class CfgWeapons
                         "JA_104th_cows_rco",
                         "JA_104th_cows_rco_2",
                         "JA_104th_cows_rco_3",
+                        "JA_104th_cows_mrco",
+                        "JA_104th_cows_mrco_2",
+                        "JA_104th_cows_mrco_3",
                         "JA_104th_cows_Holosight",
                         "JA_104th_cows_Holosight_2",
                         "JA_104th_cows_Holosight_3",
@@ -3134,6 +3136,9 @@ class CfgWeapons
                         "JA_104th_cows_rco",
                         "JA_104th_cows_rco_2",
                         "JA_104th_cows_rco_3",
+                        "JA_104th_cows_mrco",
+                        "JA_104th_cows_mrco_2",
+                        "JA_104th_cows_mrco_3",
                         "JA_104th_cows_Holosight",
                         "JA_104th_cows_Holosight_2",
                         "JA_104th_cows_Holosight_3",
@@ -3202,7 +3207,7 @@ class CfgWeapons
                 soundBegin[] = {"begin1", 1};
             };
             reloadTime = 0.065;
-            dispersion = 0.007;
+            dispersion = 0.006;
             soundContinuous = 0;
             soundBurst = 0;
             minRange = 0;
@@ -3215,7 +3220,7 @@ class CfgWeapons
         };
         class Overcharge : manual
         {
-            dispersion = "0.009";
+            dispersion = "0.008";
             displayName = "Overcharge";
             reloadTime = "0.015";
             burst = 25;
@@ -3593,15 +3598,15 @@ class CfgAmmo
         ACE_bulletLength = 69;
         ACE_bulletMass = 60;
         ACE_caliber = 25;
-        hit = 300;
+        hit = 800;
         airFriction = 0;
         craterEffects = "ImpactEffectsMedium";
         waterFriction = -0.009;
         explosionAngle = 60;
         ExplosionEffects = "HEShellExplosion";
         explosionType = "explosive";
-        indirectHit = 120;
-        indirectHitRange = 1;
+        indirectHit = 8;
+        indirectHitRange = 6;
         suppressionRadiusBulletClose = 10;
         suppressionRadiusHit = 14;
         tracerColor[] = {0.7, 0.7, 0.5, 0.04};
@@ -3771,7 +3776,7 @@ class CfgAmmo
         ACE_bulletLength = 66;
         ACE_bulletMass = 24;
         ACE_caliber = 14;
-        hit = 75;
+        hit = 80;
         typicalSpeed = 10000;
         caliber = 6;
         airFriction = 0;
@@ -3784,7 +3789,7 @@ class CfgAmmo
         ACE_bulletLength = 70;
         ACE_bulletMass = 28;
         ACE_caliber = 18;
-        hit = 95;
+        hit = 100;
         typicalSpeed = 12000;
         caliber = 10;
         airFriction = 0;
@@ -3797,7 +3802,7 @@ class CfgAmmo
         ACE_bulletLength = 80;
         ACE_bulletMass = 50;
         ACE_caliber = 20;
-        hit = 95;
+        hit = 350;
         typicalSpeed = 10000;
         caliber = 25;
         airFriction = 0;
