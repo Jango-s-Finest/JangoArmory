@@ -437,6 +437,19 @@ class CfgVehicles
 			};
 		tf_range = 35000;
 	};
+	class JA_104th_RTO_Mini_Tiger_Backpack : ls_gar_rto_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Tiger)";
+		maximumLoad = 250;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Tiger_MiniPack.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Tiger_MiniPack_Slots.paa" // slotss
+			};
+		tf_range = 35000;
+	};
 	class JA_104th_RTO_Mini_Castle_Backpack : ls_gar_rto_mini_backpack
 	{
 		author = "Tundra";
@@ -450,7 +463,19 @@ class CfgVehicles
 			};
 		tf_range = 35000;
 	};
-
+	class JA_104th_RTO_Mini_Knockout_Backpack : ls_gar_rto_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Knockout)";
+		maximumLoad = 250;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Knockout_MiniPack.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Knockout_MiniPack_Slots.paa" // slotss
+			};
+		tf_range = 35000;
+	};
 	class JA_104th_RTO_Mini_Backpack_ME : ls_gar_rto_mini_backpack
 	{
 		author = "Tundra";

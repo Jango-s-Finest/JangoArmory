@@ -269,4 +269,14 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot Helmet (104th Boris)";										 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Pilot_Helmets\data\Textures\104th_P2_Boris_Pilot_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
+	class JA_104th_Storm_Pilot_Helmet : ls_gar_phase2Pilot_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Clone Trooper Pilot Helmet (104th Storm)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Helmets\data\Textures\104th_P2_Storm_Pilot_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+	};
 };

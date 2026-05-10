@@ -254,7 +254,7 @@ class cfgVehicles
 		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera", "ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3as_V19_Medium_Cannon", "JA_104th_AA_Lazer"};
 		magazines[] = {"Laserbatteries", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500"};
 		vehicleClass = "GAR_LAATCatNSub";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		aileronSensitivity = 2.9;
 		aileronControlsSensitivityCoef = 4;
 		defaultUserMFDvalues[] = {0, 1, 0, 1, 0};
@@ -2870,7 +2870,7 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		weapons[] = {"JA_104th_AA_Lazer","3AS_ARC_Light_Canon","CMFlareLauncher","Laserdesignator_pilotCamera"};
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500","3AS_ARC_500Rnd_Light_Shells","3AS_ARC_500Rnd_Light_Shells","120Rnd_CMFlare_Chaff_Magazine","Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine"};
 		hiddenselections[] = {"camo1","camo2","guns"};
@@ -3314,7 +3314,7 @@ class cfgVehicles
 		hiddenselectionstextures[] = {"3AS\3AS_Vwing\data\vwing_main_co.paa","3AS\3AS_Vwing\data\Vwing_AstromechDroid_co.paa","3AS\3AS_Vwing\data\vwing_wings_co.paa"};
 		weapons[] = {"JA_104th_AA_Lazer", "CMFlareLauncher"};
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 
 		class Components
 		{
@@ -3672,7 +3672,28 @@ class cfgVehicles
 			};
 			class TransportCounterMeasuresComponent;
 		};
-
+		BNA_KC_shields_hasShield = 1;
+		BNA_KC_shields_health = 5;
+		BNA_KC_shields_regenAmount = 1;
+		BNA_KC_shields_regenDelay = 20;
+		class ACE_SelfActions : ACE_SelfActions{
+			class shields_toggle {
+				condition = "true";
+				displayName = "Shield Health: %1";
+				modifierFunction = "call BNA_KC_shields_fnc_modifyInteraction";
+				statement = "";
+				class Activate{
+					condition = "ace_player call BNA_KC_shields_fnc_canActivate";
+					displayName = "Activate Shield";
+					statement = "call BNA_KC_shields_fnc_activate";
+				};
+				class Deactivate{
+					condition = "ace_player call BNA_KC_shields_fnc_canDeactivate";
+					displayName = "Deactivate Shield";
+					statement = "call BNA_KC_shields_fnc_deactivate";
+				};
+			};
+		};
 	};
 	class 3as_V19_base{
 		class ACE_SelfActions;
@@ -3686,7 +3707,7 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		hiddenselectionstextures[] = {
 			"3as\3as_v19\textures\wings_co.paa",
 			"3as\3as_v19\textures\wing plates_co.paa",
@@ -5064,13 +5085,13 @@ class cfgVehicles
 	{
 		Author = "212th + 3AS + Echo";
 		displayName = "104th Reaper BTL-B Y-Wing";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
 		radarTargetSize = 1; // No idea who in 3AS thought it's a good idea to make the Y-Wing more stealthy than the stealth fighters, so I'm changing it.
 		irTargetSize = 1;
 		VTOLPitchInfluence = 12;
@@ -5659,22 +5680,6 @@ class cfgVehicles
 				};
 			};
 			class TransportCounterMeasuresComponent;
-		};
-	};
-
-	class JA_104th_3AS_Reaper_Y_Wing_Blue : JA_104th_3AS_Reaper_Y_Wing
-	{
-		displayName = "104th Reaper BTL-B Y-Wing Blue";
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
-		class TextureSources
-		{
-			class Blue
-			{
-				displayName = "Blue Leader";
-				author = "$STR_3as_Studio";
-				textures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
-				factions[] = {"104th_Guys"};
-			};
 		};
 	};
 
@@ -6872,8 +6877,8 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		crew = "JLTS_Clone_P2_DC15S";
-		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
+		crew = "JA_104th_P2_1C_Engineer";
+		typicalcargo[] = {"JA_104th_P2_1C_Engineer"};
 		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
@@ -7507,8 +7512,8 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		crew = "JLTS_Clone_P2_DC15S";
-		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
+		crew = "JA_104th_P2_1C_Engineer";
+		typicalcargo[] = {"JA_104th_P2_1C_Engineer"};
 		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
@@ -8097,8 +8102,8 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		crew = "JLTS_Clone_P2_DC15S";
-		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
+		crew = "JA_104th_P2_1C_Engineer";
+		typicalcargo[] = {"JA_104th_P2_1C_Engineer"};
 		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
@@ -8196,8 +8201,8 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		crew = "JLTS_Clone_P2_DC15S";
-		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
+		crew = "JA_104th_P2_1C_Engineer";
+		typicalcargo[] = {"JA_104th_P2_1C_Engineer"};
 		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
@@ -8770,7 +8775,7 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		crew = "JLTS_Clone_P2_DC15S";
+		crew = "JA_104th_P2_1C_Engineer";
 		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = "2+4+8+16";
 		incomingMissileDetectionSystem = "2+4+8+16";
@@ -9372,7 +9377,7 @@ class cfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 
 		class EventHandlers : DefaultEventhandlers
 		{
@@ -9757,6 +9762,11 @@ class cfgVehicles
 			{
 				count = 40;
 				magazine = "Aux501_Weapons_Mags_Thermal_Detonator";
+			};
+			class _xx_BNA_KC_Grenade_EMP
+			{
+				count = 40;
+				magazine = "BNA_KC_Grenade_EMP";
 			};
 			class _xx_Aux501_Weapons_Mags_Smoke_White
 			{
@@ -10302,6 +10312,26 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
+			class Spawn_JA_104th_Nu_class
+			{
+				displayName = "Spawn 104th Nu Class";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_Nu_class'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_Rho_class
+			{
+				displayName = "Spawn 104th Rho Class";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_Rho_class'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
 			class Spawn_JA_104th_Impetus_Class_MAAG
 			{
 				displayName = "Spawn 104th Impetus Class MAAG";
@@ -10520,7 +10550,7 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		class Components: Components{
 			class TransportPylonsComponent{
 				UIPicture = "\TKE_Ext_Ships\data\ui\icon_gunship_pylons_ca.paa";

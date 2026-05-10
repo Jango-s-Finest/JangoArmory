@@ -1735,7 +1735,7 @@ class cfgVehicles {
 		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera","ls_laat_gun","ls_laat_gun_2","3as_V19_Medium_Cannon","RD501_Republic_Aircraft_Laser_AA"};
 		magazines[] = {"Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","200rnd_laat_apfsds_mag","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600"};
 		vehicleClass = "GAR_LAATCatNSub";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		aileronSensitivity = 2.9;
 		aileronControlsSensitivityCoef = 4;
 		defaultUserMFDvalues[] = {0,1,0,1,0};
@@ -4336,7 +4336,7 @@ class cfgVehicles {
 		hiddenselectionstextures[] = {"JangosVehicles\data\textures\vwing_co104.paa","3as\3AS_Vwing\data\vwing_int_co.paa","#(argb,8,8,3)color(0,0,0,1.0,CA)"};
 		weapons[] = {"RD501_Republic_Aircraft_Laser_AA","CMFlareLauncher"};
 		magazines[] = {"RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","RD501_Republic_Aircraft_Laser_AA_Mag_600","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine"};
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		
 		class Components
 		{
@@ -5647,7 +5647,7 @@ class cfgVehicles {
 	{
 		Author = "212th + 3AS + Echo"
 		displayName = "104th Reaper BTL-B Y-Wing";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
@@ -9685,7 +9685,7 @@ class cfgVehicles {
 		displayName = "104th Oryx IFV Unshielded";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;

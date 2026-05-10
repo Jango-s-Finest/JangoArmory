@@ -13,6 +13,7 @@ class CfgPatches
 			"JA_104th_OryxTS",
 			"JA_104th_Repair_Droid",
 			"JA_104th_Ulik",
+			"JA_104th_OryxTS_Command",
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
@@ -136,7 +137,7 @@ class cfgVehicles
 				{-0.41, -3.1700001, -0.69999999}};
 		transportSoldier = 8;
 		LESH_canTow = 1;
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		LESH_AxisOffsetTower[] = {0, -6, 1};
 		driverCanSee = 31;
 		gunnerCanSee = 31;
@@ -1098,7 +1099,7 @@ class cfgVehicles
 		displayName = "[104th] Oryx IFV Unshielded";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
@@ -1776,7 +1777,7 @@ class cfgVehicles
 		displayName = "[104th] Oryx IFV Shielded";
 		armorStructural = 10;
 		BNA_KC_shields_hasShield = 1;
-		BNA_KC_shields_health = 5;
+		BNA_KC_shields_health = 1;
 		BNA_KC_shields_regenAmount = 1;
 		BNA_KC_shields_regenDelay = 20;
 		class ACE_SelfActions : ACE_SelfActions{
@@ -1808,10 +1809,172 @@ class cfgVehicles
             Init = "[_this select 0, 150] execVM '\JangosVehiclesGround\DefenceSystem.sqf';";
 		};
 	};
+	class JA_104th_OryxTS_Command : JA_104th_OryxNS
+	{
+
+		displayName = "[104th] Oryx IFV Command Trophy System";
+		weapons[] = {"SmokeLauncher"};
+		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
+		armor = 1200;
+		armorStructural = 8;
+		explosionShielding = 2;
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						body = "obsTurret";
+						gun = "obsGun";
+						animationSourceBody = "obsTurret";
+						animationSourceGun = "obsGun";
+						maxHorizontalRotSpeed = 1.8;
+						maxVerticalRotSpeed = 1.8;
+						stabilizedInAxes = 3;
+						minElev = -12;
+						maxElev = 60; // Original 45
+						initElev = 0;
+						minTurn = -360;
+						maxTurn = 360;
+						initTurn = 0;
+						memoryPointGun = "usti hlavne3";
+						gunBeg = "usti hlavne3";
+						gunEnd = "konec hlavne3";
+						weapons[] = {"3AS_Sabre_MG", "Laserdesignator_mounted"};
+						magazines[] = {"3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "Laserbatteries"};
+						turretInfoType = "RscWeaponRangeZeroing";
+						discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+						discreteDistanceInitIndex = 2;
+						memoryPointGunnerOptics = "commanderview";
+						memoryPointGunnerOutOptics = "commanderview";
+						gunnerForceOptics = 0;
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+						gunnerOutOpticsModel = "";
+						gunnerOpticsEffect[] = {};
+						gunnerHasFlares = 1;
+						class ViewOptics : ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov = 0.155;
+							minFov = 0.034;
+							maxFov = 0.155;
+							visionMode[] = {"Normal", "TI"};
+							thermalMode[] = {0, 1};
+						};
+						startEngine = 0;
+						viewGunnerInExternal = 1;
+						LODTurnedIn = 1100;
+						selectionFireAnim = "zasleh3";
+					};
+				};
+				memoryPointGun = "usti hlavne"; //"usti hlavne2" is the MG port left of the gun, while "usti hlavne" is the end of the cannon barrel.
+				maxVerticalRotSpeed = "90/45";
+				maxHorizontalRotSpeed = "90/45";
+				weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] = {"Laserbatteries", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
+				minElev = -12;
+				maxElev = 60; // Original 35
+				initElev = 0;
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best", "db-40", 1.0, 50};
+				turretInfoType = "RscWeaponRangeZeroing";
+				selectionFireAnim = "zasleh2";
+				gun = "maingun";
+				body = "mainturret";
+				gunAxis = "Osa Hlavne";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				LODTurnedIn = 1100;
+				turretAxis = "OsaVeze";
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400};
+				discreteDistanceInitIndex = 5;
+				memoryPointGunnerOptics = "gunnerview";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsEffect[] = {};
+				gunnerOpticsEffect[] = {};
+				class OpticsIn
+				{
+					class Wide : ViewOptics
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.3;
+						minFov = 0.3;
+						maxFov = 0.3;
+						visionMode[] = {"Normal", "NVG", "Ti"};
+						thermalMode[] = {2, 3};
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						gunnerOpticsEffect[] = {};
+					};
+					class Medium : Wide
+					{
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						initFov = 0.07;
+						minFov = 0.07;
+						maxFov = 0.07;
+					};
+					class Narrow : Wide
+					{
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						initFov = 0.028;
+						minFov = 0.028;
+						maxFov = 0.028;
+					};
+					class Zoom1 : Wide
+					{
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						initFov = 0.014;
+						minFov = 0.014;
+						maxFov = 0.014;
+					};
+					class Zoom2 : Wide
+					{
+						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+						initFov = 0.007;
+						minFov = 0.007;
+						maxFov = 0.007;
+					};
+				};
+				castGunnerShadow = 0;
+				stabilizedInAxes = 3;
+				viewGunnerInExternal = 1;
+				forceHideGunner = 1;
+				gunnerForceOptics = 0;
+				usePip = 1;
+			};
+		};
+
+		class EventHandlers : DefaultEventhandlers
+		{
+            Init = "[_this select 0, 200] execVM '\JangosVehiclesGround\DefenceSystem.sqf';";
+		};
+	};
 	
 	class 3AS_Repair_Facility;
 	class ACE_Actions;
 	class ACE_MainActions;
+	class HitPoints;
+	class HitHull;
+	class HitLBWheel;
+	class HitLF2Wheel;
+	class HitLFWheel;
+	class HitLMWheel;
+	class HitRBWheel;
+	class HitRF2Wheel;
+	class HitRFWheel;
+	class HitRMWheel;
 	class JA_104th_Repair_Droid: 3AS_Repair_Facility{
 		author = "Dak";
 		ace_cargo_hasCargo = 1;
@@ -1837,7 +2000,7 @@ class cfgVehicles
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		displayName = "[104th] Repair Droid - NO AMMO";
+		displayName = "[104th] Repair Droid";
 		side = 3;
 		editorCategory = "JA_104_EdCat_Objects";
 		editorSubcategory = "104th_Categ_Clones_Droid";
@@ -1885,15 +2048,14 @@ class cfgVehicles
 		};
 	};
 	
-	class MainTurret;
-	class APC_Wheeled_02_base_F;
-	class O_APC_Wheeled_02_rcws_v2_F : APC_Wheeled_02_base_F{
-		class Turrets;
-		class Components;
-		class ACE_SelfActions;
-	};
+	class Turrets;
+	class CommanderOptics;
+	class ViewOptics;
+	class Components;
+	class ACE_SelfActions;
+	class O_APC_Wheeled_02_rcws_v2_F;
 	class JA_104th_Ulik : O_APC_Wheeled_02_rcws_v2_F{
-		crew = "ls_clone_phase2_pilot";
+		crew = "JA_104th_P2_1C_Engineer";
 		displayname = "[104th] Ulik";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
@@ -1902,6 +2064,28 @@ class cfgVehicles
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 1;
 		tf_range = 35000;
+		enginePower = 1000;
+		gearBox[] = {-7, 0, 11, 8, 5.6999998, 4.1999998};
+		maxOmega = 500;
+		peakTorque = 7400;
+		torqueCurve[] =
+			{
+				"[0.291667",
+				"0.540541]",
+				"[0.416667",
+				"0.675676]",
+				"[0.583333",
+				"0.810811]",
+				"[0.666667",
+				"0.891892]",
+				"[0.75",
+				"0.972973]",
+				"[0.833333",
+				"1.02703]",
+				"[0.916667",
+				"1]",
+				"[1",
+				"0.945946]"};
 		author = "Dak";
 		scope = 2;
 		side = 1;
@@ -1909,6 +2093,8 @@ class cfgVehicles
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		armor = 500;
+		armorStructural = 10;
+		explosionShielding = 1.5;
 		weapons[] = {"SmokeLauncher"};
 		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag"};
 		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet","CamoSlat"};
@@ -2005,6 +2191,25 @@ class cfgVehicles
 				};
 			};
 		};
+		class TransportWeapons
+		{
+			class _xx_ls_weapon_rps6{
+				count = 2;
+				weapon = "ls_weapon_rps6";
+			};
+			class _xx_ls_weapon_rps6_loaded{
+				count = 4;
+				weapon = "ls_weapon_rps6_loaded";
+			};
+			class _xx_JA_104th_DC17SA{
+				count = 2;
+				weapon = "JA_104th_DC17SA";
+			};
+			class _xx_JA_104th_DC15S{
+				count = 2;
+				weapon = "JA_104th_DC15S";
+			};
+		};
 		class TransportMagazines
 		{
 			class _xx_Aux501_Weapons_Mags_Grenades_Squad_Shield
@@ -2012,13 +2217,275 @@ class cfgVehicles
 				count = 2;
 				magazine = "Aux501_Weapons_Mags_Grenades_Squad_Shield";
 			};
+			class _xx_JA_104th_Weapons_Mags_20mw240
+			{
+				count = 40;
+				magazine = "JA_104th_Weapons_Mags_20mw240";
+			};
+			class _xx_JA_104th_Weapons_Mags_30mw30
+			{
+				count = 10;
+				magazine = "JA_104th_Weapons_Mags_30mw30";
+			};
+			class _xx_JA_104th_Weapons_Mags_10mw50
+			{
+				count = 150;
+				magazine = "JA_104th_Weapons_Mags_10mw50";
+			};
+			class _xx_JA_104th_Weapons_Mags_40mw20
+			{
+				count = 10;
+				magazine = "JA_104th_Weapons_Mags_40mw20";
+			};
+			class _xx_JA_104th_Weapons_Mags_20mw40
+			{
+				count = 150;
+				magazine = "JA_104th_Weapons_Mags_20mw40";
+			};
+			class _xx_JA_104th_Weapons_Mags_10mw30
+			{
+				count = 35;
+				magazine = "JA_104th_Weapons_Mags_10mw30";
+			};
+			class _xx_JA_104th_Weapons_Mags_10mw500
+			{
+				count = 10;
+				magazine = "JA_104th_Weapons_Mags_10mw500";
+			};
+			class _xx_3AS_10Rnd_EC30_Pellets
+			{
+				count = 60;
+				magazine = "3AS_10Rnd_EC30_Pellets";
+			};
+			class _xx_3AS_10Rnd_ESlug_Mag
+			{
+				count = 60;
+				magazine = "3AS_10Rnd_ESlug_Mag";
+			};
+			class _xx_JLTS_stun_mag_long
+			{
+				count = 8;
+				magazine = "JLTS_stun_mag_long";
+			};
+			class _xx_JLTS_stun_mag_short
+			{
+				count = 8;
+				magazine = "JLTS_stun_mag_short";
+			};
+			class _xx_ls_magazine_rps6_heat
+			{
+				count = 8;
+				magazine = "ls_magazine_rps6_heat";
+			};
+			class _xx_ls_magazine_plx1_at
+			{
+				count = 6;
+				magazine = "ls_magazine_plx1_at";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_HE3
+			{
+				count = 20;
+				magazine = "JA_104th_Weapons_Mags_GL_HE3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_HE2
+			{
+				count = 20;
+				magazine = "JA_104th_Weapons_Mags_GL_HE2";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_smoke_blue3
+			{
+				count = 6;
+				magazine = "JA_104th_Weapons_Mags_GL_smoke_blue3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_smoke_purple3
+			{
+				count = 6;
+				magazine = "JA_104th_Weapons_Mags_GL_smoke_purple3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_smoke_red3
+			{
+				count = 6;
+				magazine = "JA_104th_Weapons_Mags_GL_smoke_red3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_smoke_white6
+			{
+				count = 12;
+				magazine = "JA_104th_Weapons_Mags_GL_smoke_white6";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_Blue3
+			{
+				count = 3;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_Blue3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_Purple3
+			{
+				count = 6;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_Purple3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_Red3
+			{
+				count = 6;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_Red3";
+			};
+			class _xx_JA_104th_Weapons_Mags_GL_flare_White3
+			{
+				count = 6;
+				magazine = "JA_104th_Weapons_Mags_GL_flare_White3";
+			};
+			class _xx_Aux501_Weapons_Mags_Thermal_Detonator
+			{
+				count =30;
+				magazine = "Aux501_Weapons_Mags_Thermal_Detonator";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_White
+			{
+				count = 40;
+				magazine = "Aux501_Weapons_Mags_Smoke_White";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Red
+			{
+				count = 6;
+				magazine = "Aux501_Weapons_Mags_Smoke_Red";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Blue
+			{
+				count = 6;
+				magazine = "Aux501_Weapons_Mags_Smoke_Blue";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Purple
+			{
+				count = 6;
+				magazine = "Aux501_Weapons_Mags_Smoke_Purple";
+			};
+			class _xx_Aux501_Weapons_Mags_Smoke_Green
+			{
+				count = 6;
+				magazine = "Aux501_Weapons_Mags_Smoke_Green";
+			};
+			class _xx_Laserbatteries
+			{
+				count = 10;
+				magazine = "Laserbatteries";
+			};
+			class _xx_BNA_KC_Grenade_EMP
+			{
+				count = 6;
+				magazine = "BNA_KC_Grenade_EMP";
+			};
+			class _xx_Aux501_Weapons_Mags_Grenades_Shield_Personal
+			{
+				count = 8;
+				magazine = "Aux501_Weapons_Mags_Grenades_Shield_Personal";
+			};
+		};
+		class TransportItems
+		{
+			class _xx_ACE_quikclot
+			{
+				count = 50;
+				name = "ACE_quikclot";
+			};
+			class _xx_ACE_packingBandage
+			{
+				count = 100;
+				name = "ACE_packingBandage";
+			};
+			class _xx_ACE_elasticBandage
+			{
+				count = 300;
+				name = "ACE_elasticBandage";
+			};
+			class _xx_ACE_epinephrine
+			{
+				count = 40;
+				name = "ACE_epinephrine";
+			};
+			class _xx_ACE_morphine
+			{
+				count = 40;
+				name = "ACE_morphine";
+			};
+			class _xx_ACE_adenosine
+			{
+				count = 20;
+				name = "ACE_adenosine";
+			};
+			class _xx_RD501_Painkiller
+			{
+				count = 60;
+				name = "RD501_Painkiller";
+			};
+			class _xx_ACE_plasmaIV
+			{
+				count = 10;
+				name = "ACE_plasmaIV";
+			};
+			class _xx_ACE_plasmaIV_500
+			{
+				count = 5;
+				name = "ACE_plasmaIV_500";
+			};
+			class _xx_ACE_bloodIV_500
+			{
+				count = 5;
+				name = "ACE_bloodIV_500";
+			};
+			class _xx_ACE_bloodIV
+			{
+				count = 10;
+				name = "ACE_bloodIV";
+			};
+			class _xx_ACE_salineIV_500
+			{
+				count = 5;
+				name = "ACE_salineIV_500";
+			};
+			class _xx_ACE_salineIV
+			{
+				count = 10;
+				name = "ACE_salineIV";
+			};
+			class _xx_ACE_tourniquet
+			{
+				count = 25;
+				name = "ACE_tourniquet";
+			};
+			class _xx_Aux501_Carbonate
+			{
+				count = 25;
+				name = "Aux501_Carbonate";
+			};
+			class _xx_JLTS_clone_comlink{
+				count = 5;
+				name = "JLTS_clone_comlink";
+			};
 		};
 		class Turrets : Turrets
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
-				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+				weapons[] = {"JA_104th_Z6_weaker","JA_104th_HE_Lazer_Ulik", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500","JA_104th_HE_Lazer_MAG_250", "JA_104th_HE_Lazer_MAG_250", "JA_104th_HE_Lazer_MAG_250", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewOptics : ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov = 0.155;
+							minFov = 0.034;
+							maxFov = 0.155;
+							visionMode[] = {"Normal", "TI"};
+							thermalMode[] = {0, 1};
+						};
+					};
+				};
 			};
 		};
 		class components : Components
@@ -2253,6 +2720,53 @@ class cfgVehicles
 						resource = "RscCustomInfoSensors";
 					};
 				};
+			};
+		};
+		class HitPoints: HitPoints{
+			class HitHull : HitHull{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitLBWheel : HitLBWheel{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitLF2Wheel : HitLF2Wheel{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitLFWheel : HitLFWheel{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitLMWheel : HitLMWheel{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitRBWheel : HitRBWheel{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitRF2Wheel : HitRF2Wheel{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitRFWheel : HitRFWheel{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
+			};
+			class HitRMWheel : HitRMWheel{
+				armor = 8;
+				passThrough = 1;
+				explosionShielding = 1.5;
 			};
 		};
 	};
