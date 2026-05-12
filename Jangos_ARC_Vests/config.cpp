@@ -241,8 +241,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_Officer_Accessories.paa",
-                "Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_ARC_Accessories.paa",
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_Accessories_ARC.paa",
+                "Jangos_ARC_Vests\data\Textures\104th_ARC_Drifter_Accessories_Officer.paa",
             };
         class ItemInfo : ItemInfo
         {

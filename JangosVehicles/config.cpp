@@ -10181,7 +10181,7 @@ class cfgVehicles
 		sound = "";
 		BNA_KC_medical_areaHealMaxPatients = 4;
 		BNA_KC_medical_areaHealRadius = 15;
-		BNA_KC_medical_areaHealRate = 6;
+		BNA_KC_medical_areaHealRate = 2;
 		class EventHandlers : DefaultEventHandlers
 		{
 		};

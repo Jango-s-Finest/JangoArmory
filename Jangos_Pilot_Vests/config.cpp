@@ -134,6 +134,50 @@ class CfgWeapons
 			};
 		};
 	};
+	class JA_104th_Fire_Pilot_officer_Vest : ls_gar_kama_vest
+	{
+		author = "Dak";
+		displayName = "Clone Pilot Officer Vest (104th Fire)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Pilot_Vests\data\Textures\104th_Pilot_Fire_Accessories_Officer.paa"};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
+
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
 };
 
 class CfgVehicles

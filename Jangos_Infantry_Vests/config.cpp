@@ -22,8 +22,8 @@ class CfgPatches
             "JA_104th_Spirit_Vest",
             "JA_104th_Scurvy_Vest",
             "JA_104th_Welty_Kama",
-            "JA_104th_Death_Kama"
-
+            "JA_104th_Rich_NCO_Vest",
+            "JA_104th_Death_Kama",
         };
     };
 };
@@ -132,6 +132,10 @@ class CfgWeapons
     };
     class ls_cloneVest_base;
     class ls_gar_airborneOfficer_vest : ls_cloneVest_base
+    {
+        class ItemInfo;
+    };
+    class ls_gar_reconOfficer_vest : ls_cloneVest_base
     {
         class ItemInfo;
     };
@@ -980,6 +984,62 @@ class CfgWeapons
 			vestType = "Rebreather";
 			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
 			hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
+
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+    class JA_104th_Rich_NCO_Vest : ls_gar_reconOfficer_vest
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "Clone Trooper SNCO Vest (104th Rich)";
+		hiddenSelections[] = {"camo1","camo2","pauldron"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
+				"Jangos_Infantry_Vests\data\textures\104th_P2_Rich_Accessories_Officer.paa",
+				"Jangos_Infantry_Vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
+			};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_reconOfficer_vest.p3d";
+			hiddenSelections[] = {"camo1","camo2","pauldron"};
 
 			class HitpointsProtectionInfo
 			{

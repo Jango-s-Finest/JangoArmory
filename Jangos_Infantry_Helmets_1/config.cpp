@@ -230,15 +230,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_1\data\Textures\104th_P1-2_Tusk_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\rex\data\visor_co.paa"}; // the file path to the texture
 	};
 	// P1
-	class JA_104th_Soul_Helmet : ls_gar_phase1_helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-		side = 1;
-		grad_slingHelmet_allow = true;
-		displayname = "Clone Trooper P1 Helmet (104th Soul)";											 // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_1\data\Textures\104th_P1_Soul_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
-	};
 	// BARC
 	class JA_104th_Galahad_Helmet : ls_gar_barc_helmet // BARC HELMET DON'T USE AS P2 BASE
 	{

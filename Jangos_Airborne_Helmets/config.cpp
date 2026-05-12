@@ -341,7 +341,8 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper AB Helmet (104th Kage)"; // the name it will be in game
 		subItems[] = {"Integrated_NVG_TI_0_F"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Kage_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Kage_Helmet.paa"}; // the file path to the texture
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Kage_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camo1_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_AB_Kaleck_Helmet_old : ls_gar_airborne_helmet
 	{
@@ -364,6 +365,16 @@ class CfgWeapons
 		displayname = "Clone Trooper AB Helmet (104th Soul)"; // the name it will be in game
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Soul_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Soul_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Soul_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper P1 Helmet (104th Soul)";											 // the name it will be in game
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\textures\104th_AB_Soul_Helmet_P1.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Trustful_Helmet : ls_gar_airborne_helmet
 	{

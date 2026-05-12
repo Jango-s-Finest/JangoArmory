@@ -3,11 +3,23 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper Pilot Helmet (104th Storm)
+- Clone Airborne NCO Vest (104th Soul)
+- Clone Trooper SNCO Vest (104th Rich)
+- Clone Pilot Officer Vest (104th Fire)
+- Clone Trooper RTO mini backpack (104th Rich)
+- Clone Trooper P2 Helmet (104th Rich)
+- Clone Trooper armor (104th Rich)
+- Clone Trooper P2 Helmet (104th Fenrir)
 
 Changed Gear
 ------------------
-- Clone Trooper armor (104th Hound)
+- Clone Trooper P1 Helmet (104th Soul)
+- Clone Trooper Pilot P1 Helmet (104th Fire)
+- Clone Trooper Engineer Helmet (104th Knockout)
+- Clone Trooper backpack (Cerberus 1-1)
+- Clone Trooper medic backpack (Cerberus 1-1)
+- Clone ARC Trooper Vest (104th Drifter)
+- Clone Trooper AB Helmet (104th Kage)
 
 Removed Gear
 ------------------
@@ -18,11 +30,13 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
--
+- holo scopes to most primary rifles.
+- ACE values for bullet caliber, mass, and length.
 
 Changed Weapons & Attachments
 ------------------
--
+- 17M AT rounds.
+- BPX-14 base class and ammo.
 
 ------------------
 Removed Weapons & Attachments
@@ -33,12 +47,11 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- [104th] Oryx IFV Command Trophy System
+-
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] Ulik - Main Gun Changes
-- [104th] Ulik - Extra Mags on the inventory
+-
 
 Removed Vehicles & Supplies
 ------------------

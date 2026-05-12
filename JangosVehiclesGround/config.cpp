@@ -2466,25 +2466,23 @@ class cfgVehicles
 			{
 				weapons[] = {"JA_104th_Z6_weaker","JA_104th_HE_Lazer_Ulik", "CMFlareLauncher", "Laserdesignator_mounted"};
 				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500","JA_104th_HE_Lazer_MAG_250", "JA_104th_HE_Lazer_MAG_250", "JA_104th_HE_Lazer_MAG_250", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
-				class Turrets : Turrets
+				gunnerName = "Gunner";
+			};
+			class CommanderOptics : CommanderOptics
+			{
+				class ViewOptics : ViewOptics
 				{
-					class CommanderOptics : CommanderOptics
-					{
-						class ViewOptics : ViewOptics
-						{
-							initAngleX = 0;
-							minAngleX = -30;
-							maxAngleX = 30;
-							initAngleY = 0;
-							minAngleY = -100;
-							maxAngleY = 100;
-							initFov = 0.155;
-							minFov = 0.034;
-							maxFov = 0.155;
-							visionMode[] = {"Normal", "TI"};
-							thermalMode[] = {0, 1};
-						};
-					};
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.155;
+					minFov = 0.034;
+					maxFov = 0.155;
+					visionMode[] = {"Normal", "TI"};
+					thermalMode[] = {0, 1};
 				};
 			};
 		};
