@@ -5686,6 +5686,9 @@ class cfgVehicles
 	class JA_104th_3AS_Reaper_Y_Wing_BlueLeader : JA_104th_3AS_Reaper_Y_Wing
 	{
 		displayName = "[104th] BTL-B Y-Wing Blue Leader";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
 		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
 		class TextureSources
 		{
@@ -10329,6 +10332,16 @@ class cfgVehicles
 				radius = 15;
 				condition = "true";
 				statement = "[this, 'JA_104th_Rho_class'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_LAS_1A
+			{
+				displayName = "Spawn 104th LAS-1A";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_LAS_1A'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
