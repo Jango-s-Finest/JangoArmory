@@ -476,6 +476,19 @@ class CfgVehicles
 			};
 		tf_range = 35000;
 	};
+	class JA_104th_RTO_Mini_Lykos_Backpack : ls_gar_rto_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Lykos)";
+		maximumLoad = 250;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Lykos_MiniPack.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Lykos_MiniPack_Slots.paa" // slotss
+			};
+		tf_range = 35000;
+	};
 	class JA_104th_RTO_Mini_Knockout_Backpack : ls_gar_rto_mini_backpack
 	{
 		author = "Tundra";

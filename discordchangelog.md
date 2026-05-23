@@ -3,13 +3,21 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper armor (104th Nerd)
-- Clone Trooper P2 Helmet (104th Hades)
-- Clone Trooper P2 Helmet (104th Nerd)
+- Clone Trooper armor (104th Marx)
+- Clone Trooper Kama (104th Chaser)
+- Clone Trooper Kama (104th Hawkeye)
+- Clone Trooper armor (104th Lock)
+- Clone Trooper P1 Helmet (104th Chaser)
+- Clone Trooper armor (104th Boombox)
+- Clone Trooper P2 Helmet (104th Harpy)
+- Clone Trooper P2 Helmet (104th Trident)
+- Clone Trooper RTO mini backpack (104th Lykos)
 
 Changed Gear
 ------------------
--
+- Clone Trooper P2 Helmet (104th Boombox)
+- Clone Trooper Engineer Helmet (104th Lock)
+- Clone Trooper armor (104th Chaser)
 
 Removed Gear
 ------------------
@@ -20,14 +28,7 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
-- Flag (Lancer)
-- Flag (WolfPack)
-- Flag (Cerberus 1-1)
-- Flag (Cerberus 1-4)
-- Flag (Talon)
-- Flag (Cerberus 1-3)
-- Flag (Warhawk 2-1)
-- Flag (Warhawk 2-2)
+-
 
 Changed Weapons & Attachments
 ------------------
@@ -42,11 +43,11 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- [104th] LAS-1A
+-
 
 Changed Vehicles & Supplies
 ------------------
-- Spawner Terminal - 104th Air frames - Spawn 104th LAS-1A
+-
 
 Removed Vehicles & Supplies
 ------------------

@@ -1076,6 +1076,99 @@ class CfgWeapons
 			};
 		};
 	};
+    class JA_104th_Chaser_Kama : ls_gar_kama_vest
+    {
+        author = "Fish";
+        displayName = "Clone Trooper Kama (104th Chaser)";
+        hiddenSelections[] =
+            {
+                "camo1"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_Chaser_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Hawkeye_Kama : ls_gar_kama_vest
+    {
+        author = "Fish";
+        displayName = "Clone Trooper Kama (104th Hawkeye)";
+        hiddenSelections[] =
+            {
+                "camo1"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_Hawkeye_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    
 };
 class CfgGlasses
 {
