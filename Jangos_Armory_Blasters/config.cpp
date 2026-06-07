@@ -130,6 +130,7 @@ class CfgPatches
             "JA_104th_Weapons_Ammo_100mw",
             "JA_104th_Weapons_Ammo_17MAT",
             "JA_104th_Weapons_Ammo_BPX14",
+            "JA_104th_Weapons_Ammo_Z7",
 
             "JA_104th_Weapons_Ammo_EMP",
 
@@ -181,6 +182,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_100Mw1",
             "JA_104th_Weapons_Mags_EMPMw2",
 
+            "JA_104th_Weapons_Mags_80mw500",
             "JA_104th_Weapons_Mags_BPX14",
 
             "JA_104th_Weapons_Mags_100mw_AT",
@@ -1599,7 +1601,11 @@ class CfgWeapons
                     {
                         "3AS_optic_DC15LE_F",
                         "3AS_optic_DC15C_F",
-                        "3AS_Optic_Scope_WestarM5"
+                        "3AS_Optic_Scope_WestarM5",
+                        "JA_104th_cows_DMS",
+                        "JA_104th_cows_DMS_2",
+                        "JA_104th_cows_DMS_3",
+                        "JA_104th_cows_DMS_4 "
                 };
             };
             class MuzzleSlot : MuzzleSlot
@@ -2168,7 +2174,10 @@ class CfgWeapons
                         "JA_104th_cows_rco_3",
                         "JA_104th_cows_Holosight",
                         "JA_104th_cows_Holosight_2",
-                        "JA_104th_cows_Holosight_3"
+                        "JA_104th_cows_Holosight_3",
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3"
                     };
             };
             class MuzzleSlot : MuzzleSlot
@@ -2289,6 +2298,14 @@ class CfgWeapons
         modes[] = {"Single"};
         class Single : Single
         {
+            reloadTime = 1.35;
+            dispersion = 0.00005;
+            minRange = 2;
+            minRangeProbab = 0.5;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            maxRange = 450;
+            maxRangeProbab = 0.3;
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
@@ -2301,14 +2318,6 @@ class CfgWeapons
             {
                 soundSetShot[] = {"3AS_DLT19X_Shot_SoundSet"};
             };
-            reloadTime = 1.35;
-            dispersion = 0.00005;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 250;
-            midRangeProbab = 0.7;
-            maxRange = 450;
-            maxRangeProbab = 0.3;
         };
         class OpticsModes
         {
@@ -2372,7 +2381,6 @@ class CfgWeapons
         scope = 2;
         displayName = "[104th] FP-773";
         baseWeapon = "JA_104th_FP773";
-        dispersion = 0.00001;
         mass = 120;
         picture = "\ls\core\addons\weapons_firepuncher\data\ui\firepuncher_ui_ca.paa";
         model = "\ls\core\addons\weapons_firepuncher\ls_weapon_firepuncher.p3d";
@@ -2392,6 +2400,14 @@ class CfgWeapons
         modes[] = {"Single"};
         class Single : Single
         {
+            reloadTime = 0.8;
+            dispersion = 0.00001;
+            minRange = 2;
+            minRangeProbab = 0.5;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            maxRange = 450;
+            maxRangeProbab = 0.3;
             sounds[] = {"StandardSound","SilencedSound"};
             class BaseSoundModeType
             {
@@ -2409,12 +2425,13 @@ class CfgWeapons
                 begin2[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
                 begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_shot1", +3db, 1, 2200};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+    
             };
             class SilencedSound
             {
-                begin1[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1.3db, 1, 2200};
-                begin2[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1.3db, 1, 2200};
-                begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1.3db, 1, 2200};
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\FP773_Suppressed_shot.wss", +1db, 1, 2200};
                 closure1[] = {};
                 closure2[] = {};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
@@ -2632,21 +2649,10 @@ class CfgWeapons
         modes[] = {"Single"};
         class Single : Single
         {
-            sounds[] = {"StandardSound"};
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
+            class BaseSoundModeType;
             class StandardSound : BaseSoundModeType
             {
-                weaponSoundEffect = "";
-                begin1[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss", +3db, 1, 2200};
-                begin2[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss", +3db, 1, 2200};
-                begin3[] = {"swlw_rework\sounds\shotgun\DP23_shot.wss", +3db, 1, 2200};
-                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.34};
+                soundSetShot[] = {"3AS_DP23_Shot_SoundSet"};
             };
             reloadTime = 0.28;
             dispersion = 0.00035;
@@ -2674,7 +2680,10 @@ class CfgWeapons
                     "JA_104th_cows_rco_3",
                     "JA_104th_cows_Holosight",
                     "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3"
+                    "JA_104th_cows_Holosight_3",
+                    "JA_104th_cows_HoloScope",
+                    "JA_104th_cows_HoloScope_2",
+                    "JA_104th_cows_HoloScope_3"
 
                     };
             };
@@ -2790,7 +2799,10 @@ class CfgWeapons
                         "JA_104th_cows_rco_3",
                         "JA_104th_cows_Holosight",
                         "JA_104th_cows_Holosight_2",
-                        "JA_104th_cows_Holosight_3"
+                        "JA_104th_cows_Holosight_3",
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3"
                     };
             };
             class MuzzleSlot : MuzzleSlot
@@ -3555,7 +3567,11 @@ class CfgWeapons
         baseWeapon = "JA_104th_Z7";
         scope = 2;
         displayName = "[104th] Z7 Rotary Shoulder Gun";
-        magazines[] = {"ls_magazine_z7"};
+        magazines[] = 
+        {
+            "ls_magazine_z7",
+            "JA_104th_Weapons_Mags_80mw500",
+        };
     };
 
     // BPX-14 Visions 5 year weapon
@@ -3591,6 +3607,7 @@ class CfgAmmo
     class JLTS_bullet_carbine_green;
 
     class JLTS_ammo_Grenade_EMP;
+    class ls_bullet_z7_blue;
 
     class BNA_KC_Bullet_Plasma40MM_AT;
     class JA_104th_Weapons_Ammo_17MAT : BNA_KC_Bullet_Plasma40MM_AT
@@ -3728,7 +3745,7 @@ class CfgAmmo
         ACE_bulletMass = 16.2;
         ACE_caliber = 8.585;
         hit = 15;
-        typicalSpeed = 500;
+        typicalSpeed = 650;
         caliber = 2;
         waterFriction = -0.009;
         thrust = 210;
@@ -3740,7 +3757,7 @@ class CfgAmmo
         ACE_bulletMass = 18;
         ACE_caliber = 9.4;
         hit = 25;
-        typicalSpeed = 600;
+        typicalSpeed = 800;
         caliber = 2.4;
         waterFriction = -0.009;
         thrust = 210;
@@ -3752,7 +3769,7 @@ class CfgAmmo
         ACE_bulletMass = 19;
         ACE_caliber = 10.2;
         hit = 40;
-        typicalSpeed = 800;
+        typicalSpeed = 1200;
         caliber = 2.8;
         waterFriction = -0.009;
         thrust = 210;
@@ -3764,7 +3781,7 @@ class CfgAmmo
         ACE_bulletMass = 19.5;
         ACE_caliber = 12;
         hit = 60;
-        typicalSpeed = 1000;
+        typicalSpeed = 1600;
         caliber = 4;
         airFriction = 0;
         waterFriction = -0.009;
@@ -3780,7 +3797,7 @@ class CfgAmmo
         cmImmunity = 1;
         coefgravity = 1e-05;
         hit = 80;
-        typicalSpeed = 1500;
+        typicalSpeed = 2200;
         caliber = 6;
         airFriction = -0.0002;
         waterFriction = -0.009;
@@ -3795,7 +3812,7 @@ class CfgAmmo
         ACE_caliber = 18;
         cmImmunity = 1;
         hit = 100;
-        typicalSpeed = 1800;
+        typicalSpeed = 3000;
         coefgravity = 1e-05;
         caliber = 10;
         airFriction = -0.0002;
@@ -3870,6 +3887,17 @@ class CfgAmmo
         effectfly = "ls_plasma_blue";
         ExplosionEffects = "ls_plasma_impact";
         model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Big_Blue.p3d";
+    };
+
+    class JA_104th_Weapons_Ammo_Z7 : ls_bullet_z7_blue
+    {
+        ACE_damageType = "explosive";
+        effectfly = "ls_plasma_blue";
+        ExplosionEffects = "ls_plasma_impact";
+        explosionType = "explosive";
+        model = "Jangos_Armory_Blasters\data\JA_104th_Weapons_Ammo_Tracers_Big_Blue.p3d";
+        indirectHit = 40;
+        indirectHitRange = 0.5;
     };
 
     // GL Ammo
@@ -4340,6 +4368,16 @@ class CfgMagazines
         displayName = "[104th] 4rnd BPX-14 Energy Cell";
         ammo = "JA_104th_Weapons_Ammo_BPX14";
         count = 4;
+        mass = 100;
+        tracersEvery = 1;
+    };
+
+    class JA_104th_Weapons_Mags_80mw500 : ls_magazine_z7
+    {
+        author = "Jango's Armory Aux Team";
+        displayName = "[104th] 500rnd Z-7 Energy Cell";
+        ammo = "JA_104th_Weapons_Ammo_Z7";
+        count = 500;
         mass = 100;
         tracersEvery = 1;
     };
