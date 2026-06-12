@@ -235,9 +235,10 @@ class CfgWeapons
 		side = 1;
 		grad_slingHelmet_allow = true;
 		displayname = "Clone Trooper Pilot P1 Helmet (104th Dak)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		hiddenSelectionsTextures[] = {
 			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Dak_P1_Helmet.paa",
-			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Dak_P1_Life_Support.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
+			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Dak_P1_Life_Support.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_ME_Dak_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -279,5 +280,17 @@ class CfgWeapons
 
 		displayname = "Clone Trooper Pilot Helmet (104th Storm)";										 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Pilot_Helmets\data\Textures\104th_P2_Storm_Pilot_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Spirit_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper Pilot P1 Helmet (104th Spirit)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Spirit_Pilot_P1_Helmet.paa",
+			"Jangos_Pilot_Helmets\data\Textures\104th_Pilot_Spirit_Pilot_Life_Support.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
 	};
 };

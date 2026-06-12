@@ -27,7 +27,7 @@ class CfgPatches
 			"JA_104th_Talisman",
 			"JA_104th_Tusk",
 			"JA_104th_Test",
-			"JA_104th_Spirit",
+			"JA_104th_Spirit_old",
 			"JA_104th_Scurvy",
 			"JA_104th_Knightfall",
 			"JA_104th_Irish",
@@ -51,7 +51,7 @@ class CfgPatches
 			"JA_104th_Kyo_Uniform",
 			"JA_104th_Crash_Uniform",
 			"JA_104th_Paraso_Uniform",
-			"JA_104th_Spirit_Uniform",
+			"JA_104th_Spirit_Uniform_old",
 			"JA_104th_Scurvy_Uniform",
 			"JA_104th_Irish_Uniform",
 			"JA_104th_Death_Uniform"};
@@ -935,7 +935,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Spirit_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Spirit_Uniform_old : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -953,7 +953,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Spirit";
+			uniformClass = "JA_104th_Spirit_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1633,7 +1633,7 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Scurvy_Uniform, JA_104th_Scurvy_Vest, JA_104th_Scurvy_NVG_Rangefinder, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Scurvy_Uniform, JA_104th_Scurvy_Vest, JA_104th_Scurvy_NVG_Rangefinder, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Spirit : lsd_gar_phase2_base
+	class JA_104th_Spirit_old : lsd_gar_phase2_base
 	{
 		author = "Cyan";
 		scope = 2;
@@ -1643,11 +1643,11 @@ class CfgVehicles
 		displayName = "104th Spirit";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		uniformClass = "JA_104th_Spirit_Uniform";
+		uniformClass = "JA_104th_Spirit_Uniform_old";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_1\data\Textures\104th_P2_Spirit_Upper.paa", "Jangos_Infantry_Armours_1\data\Textures\104th_P2_Spirit_Lower.paa"};
-		linkedItems[] = {JA_104th_Spirit_Uniform, JA_104thScurvyVest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Spirit_Uniform, JA_104thScurvyVest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Spirit_Uniform_old, JA_104thScurvyVest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Spirit_Uniform_old, JA_104thScurvyVest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Mad : lsd_gar_phase2_base
 	{

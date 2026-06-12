@@ -2464,8 +2464,8 @@ class cfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {"JA_104th_Z6_weaker","JA_104th_HE_Lazer_Ulik", "CMFlareLauncher", "Laserdesignator_mounted"};
-				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500","JA_104th_HE_Lazer_MAG_250", "JA_104th_HE_Lazer_MAG_250", "JA_104th_HE_Lazer_MAG_250", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+				weapons[] = {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 				gunnerName = "Gunner";
 			};
 			class CommanderOptics : CommanderOptics

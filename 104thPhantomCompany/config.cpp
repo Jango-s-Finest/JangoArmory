@@ -1628,6 +1628,29 @@ class CfgWeapons
 				};
 			};
 		};
+	};class JA_104th_P2_1C_Surtr_Uniform : JA_104th_Base_CT_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper P2 armor (104th [1C] Talos Surtr)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Surtr_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Surtr_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_P2_1C_Surtr";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
 	};
 };
 
@@ -1769,6 +1792,25 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_JTAC_Base_Upper.paa", "104thPhantomCompany\data\Textures\104th_JTAC_Base_Lower.paa", "104thPhantomCompany\data\Textures\104th_JTAC_Base_Upper.paa", ""};
 		linkedItems[] = {JA_104th_JTAC_1C_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_JTAC_1C_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_P2_1C_Surtr : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_P2_1C_Surtr_Uniform";
+		displayName = "104th 1C Surtr";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Surtr_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Surtr_Lower.paa"};
+		linkedItems[] = {JA_104th_Surtr_1C_Base_Helmet, ls_gar_SurtrNCO_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Surtr_1C_Base_Helmet, ls_gar_SurtrNCO_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };
 

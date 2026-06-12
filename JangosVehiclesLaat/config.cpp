@@ -221,6 +221,7 @@ class cfgVehicles
 		reportRemoteTargets = True;
 		ReceiveRemoteTargets = True;
 		crewCrashProtection = 0.00001;
+		allowTabLock = 1;
 		radarType = 4;
 		fuelCapacity = 4000;
 		ls_impulsor_fuelDrain_1 = 0.00001;

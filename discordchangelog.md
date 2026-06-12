@@ -3,21 +3,25 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper armor (104th Marx)
-- Clone Trooper Kama (104th Chaser)
-- Clone Trooper Kama (104th Hawkeye)
-- Clone Trooper armor (104th Lock)
-- Clone Trooper P1 Helmet (104th Chaser)
-- Clone Trooper armor (104th Boombox)
-- Clone Trooper P2 Helmet (104th Harpy)
-- Clone Trooper P2 Helmet (104th Trident)
-- Clone Trooper RTO mini backpack (104th Lykos)
+- Clone Trooper armor (104th Spirit)
+- Clone Trooper armor (104th Inari)
+- Clone Trooper armor (104th Six)
+- Clone Trooper armor (104th Freq)
+- Clone Trooper armor (104th Dash)
+- Clone Trooper P2 armor (104th [1C] Talos Surtr)
+- Clone Trooper P2 Helmet (104th Inari)
+- Clone Trooper P2 Helmet (104th Vee)
+- Clone Trooper Pilot P1 Helmet (104th Spirit)
 
 Changed Gear
 ------------------
+- Clone Trooper armor (104th Boombox)
+- Clone Trooper armor (104th Marx)
 - Clone Trooper P2 Helmet (104th Boombox)
-- Clone Trooper Engineer Helmet (104th Lock)
-- Clone Trooper armor (104th Chaser)
+- Clone Trooper P2 Helmet (104th Harpy)
+- Clone Trooper P2 Helmet (104th Six)
+- Clone Trooper AB Helmet (104th Freq)
+- Clone Trooper Pilot P1 Helmet (104th Dak)
 
 Removed Gear
 ------------------
@@ -32,7 +36,12 @@ New Weapons & Attachments
 
 Changed Weapons & Attachments
 ------------------
--
+- scopes are fixed
+- 773 inaccuracy is fixed
+- 773 has a better suppressed shot sound
+- DP-23 has sounds again
+- Z-7 has our own version of the mag with HE properties again
+- reverted velocity nerf from previous update to try and fix inaccuracy issue
 
 ------------------
 Removed Weapons & Attachments
@@ -47,7 +56,7 @@ New Vehicles & Supplies
 
 Changed Vehicles & Supplies
 ------------------
--
+- Removed the HE from the Ulik
 
 Removed Vehicles & Supplies
 ------------------
