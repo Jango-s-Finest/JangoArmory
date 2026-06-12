@@ -24,6 +24,7 @@ class CfgPatches
             "JA_104th_OpFor_Spawner_SFA_Dragonfly",
             "JA_104th_OpFor_Spawner_ls_vehicle_hmp",
             "JA_104th_OpFor_Spawner_3AS_MAF_Gunship_F",
+            "JA_104th_OpFor_Spawner_3AS_CIS_Vulture_CAS_F",
         }; // All the new vehicles/units you've created in cfgVehicles
         weapons[] = {};
         requiredVersion = 0.1;
@@ -325,6 +326,20 @@ class cfgVehicles
         class EventHandlers : DefaultEventhandlers
         {
             Init = "[_this select 0, '3AS_CIS_Vulture_F', 10] execVM 'JangosUtilities\Scripts\spawner.sqf';";
+        };
+    };
+    class JA_104th_OpFor_Spawner_3AS_CIS_Vulture_CAS_F : 3AS_Droid_Dispenser_F
+    {
+        displayName = "Droid Dispenser Vulture CAS";
+        side = 0;
+        faction = "104th_Guys_CIS";
+        editorSubcategory = "104th_Categ_Utilities_CIS";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        class EventHandlers : DefaultEventhandlers
+        {
+            Init = "[_this select 0, '3AS_CIS_Vulture_CAS_F', 10] execVM 'JangosUtilities\Scripts\spawner.sqf';";
         };
     };
     class JA_104th_OpFor_Spawner_SFA_Vengeance_F : 3AS_Droid_Dispenser_F

@@ -516,4 +516,54 @@ class CfgWeapons
             };
         };
     };
+    class JA_104th_Granite_Vest : ls_gar_airborne_vest
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Trooper Vest (104th Granite)";
+		hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
+		hiddenSelectionsTextures[] =
+			{
+				"104thPhantomCompany\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
+				"104thPhantomCompany\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
+				"104thPhantomCompany\data\Textures\104th_AB_Granite_Accessories_Officer.paa",
+			};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
+
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
 };

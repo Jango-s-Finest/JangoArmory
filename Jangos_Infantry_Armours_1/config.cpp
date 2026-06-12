@@ -426,7 +426,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Granite_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Granite_Uniform_old : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -444,7 +444,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Granite";
+			uniformClass = "JA_104th_Granite_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1180,21 +1180,21 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Miniminer_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Miniminer_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Granite : lsd_gar_phase2_base
+	class JA_104th_Granite_old : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Granite_Uniform";
+		uniformClass = "JA_104th_Granite_Uniform_old";
 		displayName = "104th Granite";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_1\data\Textures\104th_P2_Granite_Upper.paa", "Jangos_Infantry_Armours_1\data\Textures\104th_P2_Granite_Lower.paa"};
-		linkedItems[] = {JA_104th_Granite_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Granite_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Granite_Helmet_old, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Granite_Helmet_old, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Axel : lsd_gar_phase2_base
 	{

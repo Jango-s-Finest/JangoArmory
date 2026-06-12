@@ -8,15 +8,20 @@ New Gear
 - Clone Trooper armor (104th Six)
 - Clone Trooper armor (104th Freq)
 - Clone Trooper armor (104th Dash)
+- Clone Trooper armor (104th Granite)
 - Clone Trooper P2 armor (104th [1C] Talos Surtr)
 - Clone Trooper P2 Helmet (104th Inari)
 - Clone Trooper P2 Helmet (104th Vee)
+- Clone Trooper P1 Helmet (104th Bear)
+- Clone Trooper P1 Helmet (104th Granite)
 - Clone Trooper Pilot P1 Helmet (104th Spirit)
+- Clone Airborne Trooper Vest (104th Granite)
 
 Changed Gear
 ------------------
 - Clone Trooper armor (104th Boombox)
 - Clone Trooper armor (104th Marx)
+- Clone Trooper armor (104th Bear)
 - Clone Trooper P2 Helmet (104th Boombox)
 - Clone Trooper P2 Helmet (104th Harpy)
 - Clone Trooper P2 Helmet (104th Six)
@@ -52,7 +57,8 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
--
+- Droid Dispenser Vulture CAS
+- CIS Units grouped together in the spawn menu
 
 Changed Vehicles & Supplies
 ------------------
