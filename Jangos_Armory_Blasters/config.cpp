@@ -3571,6 +3571,7 @@ class CfgWeapons
         {
             "ls_magazine_z7",
             "JA_104th_Weapons_Mags_80mw500",
+            "BNA_KC_Mag_800rnd_Z7"
         };
     };
 
