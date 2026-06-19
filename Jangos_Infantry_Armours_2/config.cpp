@@ -639,6 +639,30 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Larkkit_Uniform : JA_104th_Base_Clone_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Larkkit)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Larkkit_Upper.paa",
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Larkkit_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Larkkit";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -1024,5 +1048,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Six_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Six_Lower.paa"};
 		linkedItems[] = {JA_104th_Six_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Six_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Larkkit : lsd_gar_phase2_base
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Larkkit_Uniform";
+		displayName = "104th Larkkit";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Larkkit_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Larkkit_Lower.paa"};
+		linkedItems[] = {JA_104th_Larkkit_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Larkkit_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

@@ -386,7 +386,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Granite_Vest : ls_gar_airborneNCO_vest
+    class JA_104th_Granite_Vest_old : ls_gar_airborneNCO_vest
     {
         author = "Emmet";
         scope = 2;
@@ -1186,10 +1186,10 @@ class CfgGlasses
             };
         hiddenSelectionsTextures[] =
             {
-                "Jangos_Infantry_Vests\data\textures\104th_P2_Knockout_Accessories_Officer.paa",
                 "",
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Knockout_Accessories_Officer.paa",
             };
-        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";
     };
 };
 

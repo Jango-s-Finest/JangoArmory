@@ -277,6 +277,22 @@ class CfgWeapons
 			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
 			"Jangos_Infantry_Helmets_2\data\textures\Bacta_Engineer_camo2_co.paa"}; // the file path to the texture
 	};
+	class JA_104th_Orange_Helmet : ls_gar_engineer_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {
+			"camo1",
+			"illum",
+			"visor"};												  // don't change this
+		displayname = "Clone Trooper Engineer Helmet (104th Orange)"; // the name it will be in game
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Orange_Helmet.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
+			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\visor_co.paa"}; // the file path to the texture
+	};
 	class JA_104th_Boris_Helmet : ls_gar_phase1_helmet
 	{
 		author = "Dak";
@@ -321,6 +337,15 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		displayname = "Clone Trooper P2 Special Activities Helmet (104th Rust)";							  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Rust_SpecOps_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Larkkit_Helmet : ls_sob_phase2SpecOp_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper P2 Special Activities Helmet (104th Larkkit)";							  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Larkkit_SpecOps_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Hawkeye_Helmet : ls_sob_phase2SpecOp_helmet
 	{
@@ -513,7 +538,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Snoob)";											   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Snoob_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Larkkit_Helmet : ls_gar_phase2_helmet
+	class JA_104th_Larkkit_Helmet_old : ls_gar_phase2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;

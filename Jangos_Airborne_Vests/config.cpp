@@ -528,9 +528,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 			{
-				"104thPhantomCompany\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
-				"104thPhantomCompany\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
-				"104thPhantomCompany\data\Textures\104th_AB_Granite_Accessories_Officer.paa",
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Officer.paa",
 			};
 		class ItemInfo : ItemInfo
 		{

@@ -527,7 +527,8 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper P1 Helmet (104th Granite)"; // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_P1_Granite_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_P1_Granite_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 		visionMode[] = {"Normal"};
 	};
 };
