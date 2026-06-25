@@ -236,7 +236,8 @@ class CfgVehicles
 	class WBK_LS_B2;
 	class ls_droid_b1;
 	class ls_droid_b1_heavy;
-	class SWLB_b1_AA_base;
+	class ls_droid_b1_heavyAA;
+	class ls_droid_b1_at;
 	class ls_droid_b1_marksman;
 	class WBK_LS_BX_Command;
 	class WBK_LS_BX_Sniper;
@@ -318,7 +319,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Upper.paa","\JangosArmory_CIS\data\textures\104th_B1_Aquatic_Lower.paa"};
 		uniformClass = "JA_CIS_B1_Uniform";
 	};
-	class JA_CIS_B1_AA_UnderWater : SWLB_b1_AA_base
+	class JA_CIS_B1_AA_UnderWater : ls_droid_b1_heavyAA
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -389,6 +390,17 @@ class CfgVehicles
 		faction = "104th_Guys_CIS";
 		editorSubcategory = "104th_Categ_CIS";
 	};
+	class JA_CIS_BX_Magna : WBK_LS_BX_Command
+	{
+		displayName = "BX Commando Magna";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_CIS";
+		weapons[] = {"ls_weapon_e5","ls_weapon_electrostaff_black","Throw","Put"};
+	};
 	class JA_CIS_BX_Commando : WBK_LS_BX_Sniper
 	{
 		scope = 2;
@@ -407,7 +419,16 @@ class CfgVehicles
 		faction = "104th_Guys_CIS";
 		editorSubcategory = "104th_Categ_CIS";
 	};
-	class JA_CIS_B1_AA : SWLB_b1_AA_base
+	class JA_CIS_B1_AA : ls_droid_b1_heavyAA
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 0;
+		faction = "104th_Guys_CIS";
+		editorSubcategory = "104th_Categ_CIS";
+	};
+	class JA_CIS_B1_AT : ls_droid_b1_at
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -2078,6 +2099,32 @@ class CfgGroups
 						side = 0;
 					};
 				};
+				class JA_Group_BX_Magna_Team
+				{
+					name = "BX Magna - Team";
+					side = 0;
+					class Unit0
+					{
+						vehicle = "JA_CIS_BX_Magna";
+						rank = "CORPORAL";
+						position[] = {0, 0, 0};
+						side = 0;
+					};
+					class Unit1
+					{
+						vehicle = "JA_CIS_BX_Magna";
+						rank = "PRIVATE";
+						position[] = {-5, -5, 0};
+						side = 0;
+					};
+					class Unit2
+					{
+						vehicle = "JA_CIS_BX_Magna";
+						rank = "PRIVATE";
+						position[] = {5, -5, 0};
+						side = 0;
+					};
+				};
 				class JA_Group_BX_Group
 				{
 					name = "BX - Group";
@@ -2185,7 +2232,7 @@ class CfgGroups
 					};
 					class Unit4
 					{
-						vehicle = "JA_CIS_B1_Base";
+						vehicle = "JA_CIS_B1_AT";
 						rank = "PRIVATE";
 						position[] = {-2, -2, 0};
 						side = 0;
@@ -2284,7 +2331,7 @@ class CfgGroups
 					};
 					class Unit1
 					{
-						vehicle = "JA_CIS_B1_Base";
+						vehicle = "JA_CIS_B1_AT";
 						rank = "PRIVATE";
 						position[] = {-5, -5, 0};
 						side = 0;

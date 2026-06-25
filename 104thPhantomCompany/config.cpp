@@ -774,6 +774,50 @@ class CfgWeapons
 			};
 		};
 	};
+	class JA_104th_Base_Commander_Vest_GEO : ls_gar_commander_vest
+    {
+        author = "Dak";
+        displayName = "Clone Trooper Commander Vest (104th CMD)";
+        hiddenSelections[] =
+            {
+                "camo1"};
+        hiddenSelectionsTextures[] =
+            {
+                "104thGeonosisCompany\data\textures\104th_P1_Geonosis_Commander_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
 	class JA_104th_P2_PSGT_Base_Kama : ls_gar_kama_vest
 	{
 		author = "Tundra";
