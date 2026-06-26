@@ -238,23 +238,23 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_P1_Geonosis_CMD_Helmet : ls_gar_phase1_helmet
+	class JA_104th_P1_Geonosis_CMDR_Helmet : ls_gar_phase1_helmet
 	{
 		author = "Bulky & Cyan";
 		scopeArsenal = 2;
 		side = 1;
 		grad_slingHelmet_allow = "true";
 
-		displayname = "Clone Trooper P1 Helmet (104th Geonosis CMD)";										 // the name it will be in game
+		displayname = "Clone Trooper P1 Helmet (104th Geonosis CMDR)";										 // the name it will be in game
 		hiddenSelectionsTextures[] = {"104thGeonosisCompany\data\Textures\104th_P1_Geonosis_Commander_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 
-	class JA_104th_P1_Geonosis_CMD_Uniform : JA_104th_Base_CT_Uniform
+	class JA_104th_P1_Geonosis_CMDR_Uniform : JA_104th_Base_CT_Uniform
 	{
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper P1 Armor (104th Geonosis CMD)";
+		displayName = "Clone Trooper P1 Armor (104th Geonosis CMDR)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -267,7 +267,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_P1_Geonosis_CMD";
+			uniformClass = "JA_104th_P1_Geonosis_CMDR";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -458,15 +458,15 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_P1_Geonosis_CMD : lsd_gar_phase2_base
+	class JA_104th_P1_Geonosis_CMDR : lsd_gar_phase2_base
 	{
 		author = "Bulky & Cyan";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_P1_Geonosis_CMD_Uniform";
-		displayName = "P1 CMD Clone Trooper";
+		uniformClass = "JA_104th_P1_Geonosis_CMDR_Uniform";
+		displayName = "P1 CMDR Clone Trooper";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Geonosis";
 		hiddenSelections[] = {"camo1", "camo2"};

@@ -188,6 +188,21 @@ class CfgAmmo
 		indirectHit = 200;
 		indirectHitRange = 20;
 	};
+	class JA_104th_AP_Lazer_Oryx_Ammo: JA_104th_AA_Lazer_Ammo{
+		caliber = 10;
+		indirectHit = 10;
+		indirectHitRange = 1;
+		hit = 250;
+		explosionType = "";
+		explosive = 0.1;
+	};
+	class JA_104th_HE_Lazer_Oryx_Ammo: JA_104th_AA_Lazer_Ammo{
+		caliber = 7;
+		indirectHit = 80;
+		indirectHitRange = 6;
+		hit = 120;
+		explosive = 0.9;
+	};
 };
 
 class CfgMagazines
@@ -347,6 +362,32 @@ class CfgMagazines
         pylonWeapon = "JA_104th_Brimstone";
         scope = 2;
     };
+	class JA_104th_AP_Lazer_Oryx_MAG_250: JA_104th_AA_Lazer_MAG_500
+    {
+        ammo = "JA_104th_AP_Lazer_Oryx_Ammo";
+		descriptionShort = "High speed Weapon";
+        // model = "\FIR_AirWeaponSystem_US\data\proxies\pod_GEPOD30.p3d";
+		model = "\FIR_AirWeaponSystem_US\data\proxies\pod_SUU23.p3d";
+        scope = 2;
+        displayName = "[104th] 104th AP cannon";
+		displayNameShort = "Laser AP";
+        count = 250;
+		hardpoints[] = {"B_AMRAAM_D"};
+        pylonWeapon = "JA_104th_AP_Lazer";
+    };
+	class JA_104th_HE_Lazer_Oryx_MAG_250: JA_104th_AA_Lazer_MAG_500
+    {
+        ammo = "JA_104th_HE_Lazer_Oryx_Ammo";
+		descriptionShort = "High speed Weapon";
+        // model = "\FIR_AirWeaponSystem_US\data\proxies\pod_GEPOD30.p3d";
+		model = "\FIR_AirWeaponSystem_US\data\proxies\pod_SUU23.p3d";
+        scope = 2;
+        displayName = "[104th] 104th HE cannon";
+		displayNameShort = "Laser HE";
+        count = 250;
+		hardpoints[] = {"B_AMRAAM_D"};
+        pylonWeapon = "JA_104th_HE_Lazer";
+    };
 };
 
 class CfgWeapons
@@ -400,13 +441,22 @@ class CfgWeapons
 			reloadtime = 0.2;
 		};
 	};
-	class JA_104th_HE_Lazer_Ulik : RD501_Republic_Aircraft_Laser_AA{
-		displayName = "HE laser";
-		magazines[] = {"JA_104th_HE_Lazer_MAG_250"};
+	class JA_104th_AP_Lazer_Oryx  : RD501_Republic_Aircraft_Laser_AA{
+		displayName = "AP laser";
+		magazines[] = {"JA_104th_AP_Lazer_Oryx_MAG_250"};
 		modes[] = {"manual"};
 		class manual: manual{
 			burst = 1;
-			reloadtime = 0.5;
+			reloadtime = 1;
+		};
+	};
+	class JA_104th_HE_Lazer_Oryx : RD501_Republic_Aircraft_Laser_AA{
+		displayName = "HE laser";
+		magazines[] = {"JA_104th_HE_Lazer_Oryx_MAG_250"};
+		modes[] = {"manual"};
+		class manual: manual{
+			burst = 1;
+			reloadtime = 0.4;
 		};
 	};
 	class JA_104th_APHE_Lazer : RD501_Republic_Aircraft_Laser_AA{

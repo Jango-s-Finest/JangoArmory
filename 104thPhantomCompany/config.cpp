@@ -777,7 +777,7 @@ class CfgWeapons
 	class JA_104th_Base_Commander_Vest_GEO : ls_gar_commander_vest
     {
         author = "Dak";
-        displayName = "Clone Trooper Commander Vest (104th CMD)";
+        displayName = "Clone Trooper Commander Vest (104th CMDR)";
         hiddenSelections[] =
             {
                 "camo1"};
