@@ -20,6 +20,8 @@ class CfgPatches
 			"JA_CIS_BX_Commando",
 			"JA_CIS_B1_Marksman",
 			"JA_CIS_B1_AA",
+			"JA_CIS_B1_AT",
+			"JA_CIS_BX_Magna",
 			"JA_CIS_B1_Heavy",
 			"JA_CIS_B1_Base",
 			"JA_CIS_B2_Base",

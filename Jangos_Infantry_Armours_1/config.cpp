@@ -1007,7 +1007,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Tinkle_Uniform : JA_104th_Base_Clone_MC_Uniform
+	class JA_104th_Tinkle_Uniform_old : JA_104th_Base_Clone_MC_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -1029,7 +1029,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Tinkle";
+			uniformClass = "JA_104th_Tinkle_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1484,14 +1484,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Doc_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Doc_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Tinkle : ls_gar_marshalCommander_base
+	class JA_104th_Tinkle_old : ls_gar_marshalCommander_base
 	{
 		author = "Fish";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Tinkle_Uniform";
+		uniformClass = "JA_104th_Tinkle_Uniform_old";
 		displayName = "104th Tinkle";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";

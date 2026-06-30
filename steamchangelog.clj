@@ -15,6 +15,11 @@
     [*] Clone Trooper Officer Vest (104th Geonosis)
     [*] Clone Trooper Captain Vest (104th Geonosis)
     [*] Clone Trooper Commander Vest (104th CMDR)
+    [*] Clone Trooper armor (104th Tinkle)
+    [*] Clone Trooper AB Helmet (104th Tinkle)
+    [*] Clone Trooper AB Helmet (104th Boombox)
+    [*] Clone Trooper armor (104th Keeper)
+    [*] Clone Trooper P2 Special Activities Helmet (104th Song)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -51,10 +56,11 @@
 [h3]Changes[/h3]
 [list]
     [*] [104th] Oryx IFV - Weapons
+    [*] [104th] LAAT-I - Fix for the slots 
 [/list]
 
 
 [h2]Changed Display Names[/h2]
 [list]
-    [*] BX Commando Magna
+    [*]
 [/list]

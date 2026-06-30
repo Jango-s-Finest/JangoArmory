@@ -198,9 +198,9 @@ class CfgAmmo
 	};
 	class JA_104th_HE_Lazer_Oryx_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 7;
-		indirectHit = 80;
+		indirectHit = 60;
 		indirectHitRange = 6;
-		hit = 120;
+		hit = 100;
 		explosive = 0.9;
 	};
 };
@@ -447,7 +447,7 @@ class CfgWeapons
 		modes[] = {"manual"};
 		class manual: manual{
 			burst = 1;
-			reloadtime = 1;
+			reloadtime = 0.5;
 		};
 	};
 	class JA_104th_HE_Lazer_Oryx : RD501_Republic_Aircraft_Laser_AA{
@@ -456,7 +456,7 @@ class CfgWeapons
 		modes[] = {"manual"};
 		class manual: manual{
 			burst = 1;
-			reloadtime = 0.4;
+			reloadtime = 0.5;
 		};
 	};
 	class JA_104th_APHE_Lazer : RD501_Republic_Aircraft_Laser_AA{
