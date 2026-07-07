@@ -552,7 +552,7 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper AB Helmet (104th Boombox)"; // the name it will be in game
 		subItems[] = {"Integrated_NVG_TI_0_F"};
-		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Boombox_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camo1_co.paa"}; // the file path to the texture
+		hiddenSelectionsMaterials[] = {"",""};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Boombox_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Boombox_Helmet.paa"}; // the file path to the texture
 	};
 };

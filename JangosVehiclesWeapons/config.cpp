@@ -443,20 +443,32 @@ class CfgWeapons
 	};
 	class JA_104th_AP_Lazer_Oryx  : RD501_Republic_Aircraft_Laser_AA{
 		displayName = "AP laser";
+		ballisticsComputer = "2 + 8 + 16";
 		magazines[] = {"JA_104th_AP_Lazer_Oryx_MAG_250"};
+		muzzleEnd = "konec hlavne";
+		muzzlePos = "usti hlavne";
 		modes[] = {"manual"};
 		class manual: manual{
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
 			burst = 1;
 			reloadtime = 0.5;
+			maxRange = 1500;
 		};
 	};
 	class JA_104th_HE_Lazer_Oryx : RD501_Republic_Aircraft_Laser_AA{
 		displayName = "HE laser";
+		ballisticsComputer = "2 + 8 + 16";
 		magazines[] = {"JA_104th_HE_Lazer_Oryx_MAG_250"};
+		muzzleEnd = "konec hlavne";
+		muzzlePos = "usti hlavne";
 		modes[] = {"manual"};
 		class manual: manual{
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
 			burst = 1;
 			reloadtime = 0.5;
+			maxRange = 1500;
 		};
 	};
 	class JA_104th_APHE_Lazer : RD501_Republic_Aircraft_Laser_AA{
