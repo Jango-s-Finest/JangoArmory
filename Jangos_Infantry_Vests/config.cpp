@@ -86,6 +86,7 @@ class CfgWeapons
     class V_PlateCarrier1_rgr;
     class ls_gar_engineer_helmet;
     class ls_sob_phase2SpecOp_helmet;
+    class ls_gar_tacticalCommander_vest;
     class UniformItem;
     class VestItem;
     class ItemInfo;
@@ -131,10 +132,6 @@ class CfgWeapons
         class ItemInfo;
     };
     class ls_cloneVest_base;
-    class ls_gar_airborneOfficer_vest : ls_cloneVest_base
-    {
-        class ItemInfo;
-    };
     class ls_gar_reconOfficer_vest : ls_cloneVest_base
     {
         class ItemInfo;
@@ -1168,7 +1165,110 @@ class CfgWeapons
             };
         };
     };
-    
+    class JA_104th_Osiris_Company_Vest : ls_gar_tacticalCommander_vest{
+        author = "Dak";
+        displayName = "Clone Tactical Commander Vest (104th Osiris)";
+        hiddenSelections[] = {"camo1","camo2","camo3"};
+        hiddenSelectionsTextures[] = {
+            "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
+            "Jangos_Infantry_Vests\data\textures\104th_CMD_Osiris_Accessories_Officer.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Poet_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest{
+		displayName = "Clone Engineer E-Web Vest (104th Poet)";
+        hiddenSelectionsTextures[] = {
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+            "Jangos_Infantry_Vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
+        };
+		class ItemInfo
+		{
+			vestType = "Rebreather";
+			_generalMacro = "VestItem";
+			author = "Bohemia Interactive";
+			containerClass = "Supply450";
+			hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
+            hiddenSelectionsTextures[] = {
+                "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
+                "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
+                "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+                "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
+                "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
+            };
+			mass = 80;
+			overlaySelectionsInfo[] = {"Ghillie_hide"};
+			scope = 0;
+			showHolsteredPistol = 0;
+			type = 701;
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\engineer\ls_gar_engineerNCO_vest.p3d";
+			uniformType = "Default";
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	
 };
 class CfgGlasses
 {
@@ -1191,6 +1291,22 @@ class CfgGlasses
             };
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";
     };
+    class JA_104th_Poet_Kama
+    {
+        author = "Tundra";
+        displayName = "Clone Trooper Kama (104th Poet)";
+        descriptionUse = "";
+        scope = 2;
+        identityTypes[] = {};
+        model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kama_vest.p3d";
+        hiddenSelections[] =
+            {
+                "camo1"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Poet_Accessories_Officer.paa"};
+    };
+    
 };
 
 class CfgVehicles

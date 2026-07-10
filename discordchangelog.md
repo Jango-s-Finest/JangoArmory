@@ -3,24 +3,16 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper P1 Helmet (104th Geonosis CT)
-- Clone Trooper P1 Armor (104th Geonosis CT)
-- Clone Trooper P1 Helmet (104th Geonosis SGT)
-- Clone Trooper P1 Armor (104th Geonosis SGT)
-- Clone Trooper P1 Helmet (104th Geonosis LT)
-- Clone Trooper P1 Armor (104th Geonosis LT)
-- Clone Trooper P1 Helmet (104th Geonosis CPT)
-- Clone Trooper P1 Armor (104th Geonosis CPT)
-- Clone Trooper P1 Helmet (104th Geonosis CMDR)
-- Clone Trooper P1 Armor (104th Geonosis CMDR)
-- Clone Trooper Officer Vest (104th Geonosis)
-- Clone Trooper Captain Vest (104th Geonosis)
-- Clone Trooper Commander Vest (104th CMDR)
-- Clone Trooper armor (104th Tinkle)
-- Clone Trooper AB Helmet (104th Tinkle)
-- Clone Trooper AB Helmet (104th Boombox)
-- Clone Trooper armor (104th Keeper)
-- Clone Trooper P2 Special Activities Helmet (104th Song)
+- Clone Trooper Kama (104th Geonosis)
+- Clone ARC Trooper Vest (104th Geonosis)
+- Clone NVG Republic Rangefinder Visor (104th Osiris)
+- Clone Tactical Commander Vest (104th Osiris)
+- Clone Engineer E-Web Vest (104th Poet)
+- Clone Trooper armor (104th Skav)
+- Clone Trooper armor (104th Fenrir)
+- Clone Trooper armor (104th Osiris)
+- Clone Trooper P2 Helmet (104th Skav)
+- Clone Trooper BARC Helmet (104th Osiris)
 
 Changed Gear
 ------------------
@@ -50,12 +42,11 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- BX Commando Magna
+- [104th] AGM-88 HARM x4
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] Oryx IFV - Weapons
-- [104th] LAAT-I - Fix for the slots
+-
 
 Removed Vehicles & Supplies
 ------------------

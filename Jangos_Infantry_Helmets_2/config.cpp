@@ -123,7 +123,6 @@ class CfgWeapons
 	class ls_gar_airborneNCO_vest;
 	class ls_gar_engineer_helmet;
 	class ls_sob_phase2SpecOp_helmet;
-	class ls_gar_barc_helmet;
 	class ls_gar_desert_helmet;
 	class ls_sob_commando_helmet;
 	class ls_sob_tech_helmet;
@@ -645,5 +644,27 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		displayname = "Clone Trooper P2 Special Activities Helmet (104th Song)";							  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104_P2_Song_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Skav_Helmet : ls_gar_phase2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper P2 Helmet (104th Skav)";											   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Skav_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Osiris_Helmet : ls_gar_barc_helmet // BARC HELMET DON'T USE AS P2 BASE
+	{
+		author = "Fish";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		hiddenSelections[] = {"camo1", "visor"};				   // don't change this
+		displayname = "Clone Trooper BARC Helmet (104th Osiris)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Infantry_Helmets_2\data\textures\104th_CMD_Osiris_Helmet_BARC.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"
+		}; 
 	};
 };

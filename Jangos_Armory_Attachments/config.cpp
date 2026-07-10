@@ -94,6 +94,7 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 	class lsd_gar_tanker_nvg; // Death NVGs
+	class lsd_gar_recon_nvg;
 
 	// Inheritance for vests
 	// Makes making each vest a rebreather easier
@@ -617,6 +618,15 @@ class CfgWeapons
 			{
 				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Kaleck_Rangefinder.paa",
 				"Jangos_Armory_Attachments\data\Textures\104th_ARC_Kaleck_Rangefinder.paa"};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
+	class JA_104th_Osiris_NVG_Republic_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Dak";
+		displayName = "Clone NVG Republic Rangefinder Visor (104th Osiris)";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Attachments\data\textures\104th_CMD_Osiris_NVG.paa"};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};

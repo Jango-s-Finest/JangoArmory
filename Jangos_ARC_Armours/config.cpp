@@ -457,7 +457,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Osiris_Uniform : JA_104th_Base_ARC_Uniform
+	class JA_104th_Osiris_Uniform_old_arc : JA_104th_Base_ARC_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -477,7 +477,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Osiris";
+			uniformClass = "JA_104th_Osiris_old_arc";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -718,14 +718,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Sigil_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Osiris : lsd_gar_phase2_base
+	class JA_104th_Osiris_old_arc : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Osiris_Uniform";
+		uniformClass = "JA_104th_Osiris_Uniform_old_arc";
 		displayName = "104th Osiris";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";

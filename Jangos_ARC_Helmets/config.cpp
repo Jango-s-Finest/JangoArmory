@@ -228,7 +228,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Vegas)";							   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Vegas_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Osiris_Helmet : ls_gar_arc_helmet
+	class JA_104th_Osiris_Helmet_old_arc : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;

@@ -70,6 +70,7 @@ class CfgAmmo
 	class 3AS_Mass_Driver_Shell;
 	class TKE_Ext_Bullet_Railgun;
 	class 3AS_SIEGE_Cannon_HHE_Shell;
+	class FIR_AGM88;
 
 	class JA_104th_AA_Lazer_Ammo: RD501_Republic_Aircraft_Laser_Repeater_Ammo{
 		caliber = 7;
@@ -203,6 +204,16 @@ class CfgAmmo
 		hit = 100;
 		explosive = 0.9;
 	};
+	class JA_104th_AGM_88_M : FIR_AGM88{
+		model = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
+		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
+		effectFly = "3AS_Rocket_effect_Yellow_fly";
+		effectsMissile = "3AS_Rocket_effect_Yellow_fly";
+		effectsMissileInit = "PylonBackEffects";
+		class LoalDistance{
+			lockSeekDistanceFromParent = 10;
+		};
+	}
 };
 
 class CfgMagazines
@@ -218,6 +229,7 @@ class CfgMagazines
 	class FIR_F15C_Fueltank_P_1rnd_M;
 	class 212th_Drexl_4Rnd_A2A_mag;
 	class FIR_Brimstone_DM_std_P_3rnd_M;
+	class FIR_AGM88_P_1rnd_M;
 
 	class JA_104th_AA_Lazer_MAG_500: RD501_Republic_Aircraft_Laser_AA_Mag_600
     {
@@ -388,6 +400,14 @@ class CfgMagazines
 		hardpoints[] = {"B_AMRAAM_D"};
         pylonWeapon = "JA_104th_HE_Lazer";
     };
+	class JA_104th_AGM_88_2rnd_M : FIR_AGM88_P_1rnd_M{
+		ammo = "JA_104th_AGM_88_M";
+		model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
+        scope = 2;
+        displayName = "[104th] AGM-88 HARM x4";
+        count = 4;
+        pylonWeapon = "JA_104th_AGM_88";
+	};
 };
 
 class CfgWeapons
@@ -582,4 +602,10 @@ class CfgWeapons
             showToPlayer = 1;
         };
 	};
+
+	class FIR_AGM88;
+	class JA_104th_AGM_88 : FIR_AGM88{
+		initspeed = 30;
+		magazines[] = {"JA_104th_AGM_88_2rnd_M"};
+	}
 };

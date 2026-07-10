@@ -26,7 +26,8 @@ class CfgPatches
 			"JA_104th_P1_Geonosis_CMD_Uniform",
 			"JA_104th_Vest_P1",
 			"JA_104th_Base_Commander_Vest_GEO",
-			"JA_104th_P1_officer_Vest"
+			"JA_104th_P1_officer_Vest",
+			"JA_104th_ARC_PSGT_Vest"
 		};
 	};
 };
@@ -79,6 +80,8 @@ class CfgWeapons
 	class JA_104th_Clone_Base_armor;
 	class ls_cloneVest_base;
 	class ls_gar_airborne_vest;
+	class ls_gar_kama_vest;
+	class ls_gar_arc_vest;
 	class UniformItem;
 	class VestItem;
 	class Bag_Base;
