@@ -86,6 +86,7 @@ class CfgWeapons
     class V_PlateCarrier1_rgr;
     class ls_gar_engineer_helmet;
     class ls_sob_phase2SpecOp_helmet;
+    class ls_gar_tacticalOfficer_vest;
     class ls_gar_tacticalCommander_vest;
     class UniformItem;
     class VestItem;
@@ -1172,12 +1173,23 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {
             "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
             "Jangos_Infantry_Vests\data\textures\104th_CMD_Osiris_Accessories_Officer.paa",
-            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"};
-        class ItemInfo : ItemInfo
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"
+        };
+        model = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalCommander_vest.p3d";
+        class ItemInfo
         {
+            hiddenSelections[] = {"camo1","camo2","camo3"};
+            mass = 80;
+            author = "Bohemia Interactive";
+            _generalMacro = "VestItem";
+            type = 701;
+            uniformType = "Default";
+            overlaySelectionsInfo[] = {"Ghillie_hide"};
+            showHolsteredPistol = 0;
+            scope = 0;
             containerClass = "Supply80";
             vestType = "Rebreather";
-
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalCommander_vest.p3d";
             class HitpointsProtectionInfo
             {
                 class Abdomen
