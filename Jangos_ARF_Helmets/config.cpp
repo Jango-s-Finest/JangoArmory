@@ -287,6 +287,26 @@ class CfgWeapons
 				"Jangos_ARF_Helmets\data\Textures\104th_ARF_IQ_Helmet.paa"};
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
+	class JA_104th_Keeper_Helmet : ls_gar_phase1Arf_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Clone Trooper ARF Helmet (104th Keeper)";										  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Keeper_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Poet_Helmet : ls_gar_phase1Arf_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Clone Trooper ARF Helmet (104th Poet)";										  // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Helmets\data\Textures\104th_ARF_Poet_Helmet.paa","","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+	};
 };
 
 class CfgVehicles

@@ -621,12 +621,12 @@ class CfgWeapons
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
-	class JA_104th_Osiris_NVG_Republic_Rangefinder : lsd_gar_rangefinder_nvg
+	class JA_104th_Osiris_NVG_Republic_Rangefinder : lsd_gar_recon_nvg 
 	{
 		author = "Dak";
 		displayName = "Clone NVG Republic Rangefinder Visor (104th Osiris)";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Attachments\data\textures\104th_CMD_Osiris_NVG.paa"};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Attachments\data\textures\104th_CMD_Osiris_NVG.paa","Jangos_Armory_Attachments\data\textures\104th_CMD_Osiris_NVG.paa"};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};

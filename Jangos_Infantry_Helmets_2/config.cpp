@@ -195,7 +195,7 @@ class CfgWeapons
 			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
 			"\ls\core\addons\characters_clone_legacy\helmets\engineer\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Poet_Helmet : ls_gar_engineer_helmet
+	class JA_104th_Poet_Helmet_old : ls_gar_engineer_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -400,6 +400,15 @@ class CfgWeapons
 		displayname = "Clone Trooper P1 Helmet (104th Tiger)";											 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P1_Tiger_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
+	class JA_104th_Aiomi_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		displayname = "Clone Trooper P1 Helmet (104th Aiomi)";											 // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P1_Aiomi_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
 	class JA_104th_Spectre_Helmet : ls_gar_rex_helmet
 	{
 		author = "Tundra";
@@ -519,7 +528,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Castle)";											   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Castle_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Keeper_Helmet : ls_gar_phase2_helmet
+	class JA_104th_Keeper_Helmet_old : ls_gar_phase2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -666,5 +675,14 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {
 			"Jangos_Infantry_Helmets_2\data\textures\104th_CMD_Osiris_Helmet_BARC.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"
 		}; 
+	};
+	class JA_104th_Snout_Helmet : ls_gar_phase2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper P2 Helmet (104th Snout)";											   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Snout_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
 };

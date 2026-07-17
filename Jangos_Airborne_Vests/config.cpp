@@ -516,7 +516,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Granite_Vest : ls_gar_airborne_vest
+    class JA_104th_Granite_Vest : ls_gar_airborneNCO_vest
 	{
 		author = "Dak";
 		displayName = "Clone Airborne Trooper Vest (104th Granite)";
@@ -531,6 +531,7 @@ class CfgWeapons
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
 				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Officer.paa",
+				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
 			};
 		class ItemInfo : ItemInfo
 		{

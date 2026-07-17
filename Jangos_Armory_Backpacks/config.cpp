@@ -502,6 +502,19 @@ class CfgVehicles
 			};
 		tf_range = 35000;
 	};
+	class JA_104th_RTO_Mini_Aiomi_Backpack : ls_gar_rto_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Aiomi)";
+		maximumLoad = 250;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Aiomi_MiniPack.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Aiomi_MiniPack_Slots.paa" // slotss
+			};
+		tf_range = 35000;
+	};
 	class JA_104th_RTO_Mini_Backpack_ME : ls_gar_rto_mini_backpack
 	{
 		author = "Tundra";

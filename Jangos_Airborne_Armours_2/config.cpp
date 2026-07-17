@@ -115,7 +115,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Tinkle_Uniform : JA_104th_Base_AB_Uniform
+	class JA_104th_Tinkle_Uniform : JA_104th_Base_MC_AB_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -128,12 +128,38 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Tinkle_Upper.paa",
-				"Jangos_Airborne_Armours_2\data\textures\104th_AB_Tinkle_Lower.paa"};
+				"Jangos_Airborne_Armours_2\data\textures\104th_AB_Tinkle_Lower.paa",
+				"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Tinkle_Upper.paa",
+			};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
 			scope = 2;
 			uniformClass = "JA_104th_Tinkle";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Grimmer_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Grimmer)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Grimmer_Upper.paa",
+				"Jangos_Airborne_Armours_2\data\textures\104th_AB_Grimmer_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Grimmer";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -170,7 +196,7 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Granite_Helmet, JA_104th_Granite_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Granite_Helmet, JA_104th_Granite_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Tinkle : lsd_gar_phase2_base
+	class JA_104th_Tinkle : ls_gar_marshalCommander_base
 	{
 		author = "Fish";
 		scope = 2;
@@ -182,8 +208,24 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Tinkle_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Tinkle_Lower.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Tinkle_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Tinkle_Lower.paa","Jangos_Airborne_Armours_2\data\Textures\104th_AB_Tinkle_Upper.paa"};
 		linkedItems[] = {JA_104th_Tinkle_Helmet, JA_104th_Tinkle_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Tinkle_Helmet, JA_104th_Tinkle_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Grimmer : lsd_gar_phase2_base
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Grimmer_Uniform";
+		displayName = "104th Grimmer";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Grimmer_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Grimmer_Lower.paa"};
+		linkedItems[] = {JA_104th_Grimmer_Helmet, JA_104th_Grimmer_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Grimmer_Helmet, JA_104th_Grimmer_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

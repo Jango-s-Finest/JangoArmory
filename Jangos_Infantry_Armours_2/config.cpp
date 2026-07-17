@@ -87,7 +87,7 @@ class CfgWeapons
 
 	class JA_104th_Base_Clone_Uniform;
 	class JA_104th_Base_Clone_MC_Uniform;
-	class JA_104th_Poet_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Poet_Uniform_old : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -105,7 +105,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Poet";
+			uniformClass = "JA_104th_Poet_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -663,7 +663,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Keeper_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Keeper_Uniform_old : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -681,7 +681,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Keeper";
+			uniformClass = "JA_104th_Keeper_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -759,6 +759,31 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Aiomi_Uniform : JA_104th_Base_Clone_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Aiomi)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Aiomi_Upper.paa",
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Aiomi_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Aiomi";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
 };
 
 class CfgVehicles
@@ -777,21 +802,21 @@ class CfgVehicles
 
 	// Cerberus PLT, Infantry, Engineer, Medic Uniforms
 
-	class JA_104th_Poet : lsd_gar_phase2_base
+	class JA_104th_Poet_old : lsd_gar_phase2_base
 	{
 		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Poet_Uniform";
+		uniformClass = "JA_104th_Poet_Uniform_old";
 		displayName = "104th Poet";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Poet_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Poet_Lower.paa"};
-		linkedItems[] = {JA_104th_Poet_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Poet_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Poet_Helmet_old, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Poet_Helmet_old, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Boris : lsd_gar_phase2_base
 	{
@@ -1161,21 +1186,21 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Larkkit_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Larkkit_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Keeper : lsd_gar_phase2_base
+	class JA_104th_Keeper_old : lsd_gar_phase2_base
 	{
 		author = "Ice";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Keeper_Uniform";
+		uniformClass = "JA_104th_Keeper_Uniform_old";
 		displayName = "104th Keeper";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Keeper_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Keeper_Lower.paa"};
-		linkedItems[] = {JA_104th_Keeper_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Keeper_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Keeper_Helmet_old, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Keeper_Helmet_old, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Skav : lsd_gar_phase2_base
 	{
@@ -1225,5 +1250,21 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Osiris_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Osiris_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-
+	class JA_104th_Aiomi : lsd_gar_phase2_base
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Aiomi_Uniform";
+		displayName = "104th Aiomi";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Aiomi_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Aiomi_Lower.paa"};
+		linkedItems[] = {JA_104th_Aiomi_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Aiomi_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	
 };
