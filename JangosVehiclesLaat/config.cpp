@@ -259,6 +259,12 @@ class cfgVehicles
 		memoryPointDriverOptics = "slingcamera";
 		unitInfoType = "RscOptics_CAS_Pilot";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
+		htMin = 60;
+		htMax = 1800;
+		afMax = 200;
+		mfMax = 100;
+		mFact = 0.2;
+		tBody = 150;
 
 		class pilotCamera
 		{

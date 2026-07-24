@@ -480,4 +480,22 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_P2_1C_CT_V1_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
+
+	class JA_104th_Medic_Backpack_Geonosis : ls_gar_medic_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper medic backpack (104th Geonosis)";
+		maximumLoad = 450;
+		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
+		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
+		hiddenSelectionsTextures[] =
+			{
+				"104thGeonosisCompany\data\textures\104th_P1_Geonosis_Backpack_Medic.paa", // don't change this
+				"104thGeonosisCompany\data\textures\104th_P1_Geonosis_Backpack_Medic.paa", // don't change unless RTO
+				"",																			 // Heavy
+				"104thGeonosisCompany\data\textures\104th_P1_Geonosis_Backpack_Medic.paa", // Medic
+				""																			 // RTO
+			};
+	};
 };
