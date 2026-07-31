@@ -453,7 +453,7 @@ class CfgWeapons
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Hacksaw_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Hacksaw_Helmet.paa"}; // the file path to the texture
 	};
-	class JA_104th_Hound_Helmet : ls_gar_airborne_helmet
+	class JA_104th_Hound_Helmet_old_old : ls_gar_airborne_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -578,5 +578,17 @@ class CfgWeapons
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsMaterials[] = {"",""};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Number_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Number_Helmet.paa"}; // the file path to the texture
+	};
+	class JA_104th_Hound_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper P1 Helmet (104th Hound)"; // the name it will be in game
+		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_P1_Hound_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+		visionMode[] = {"Normal"};
 	};
 };

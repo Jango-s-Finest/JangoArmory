@@ -437,6 +437,19 @@ class CfgVehicles
 			};
 		tf_range = 35000;
 	};
+	class JA_104th_RTO_Mini_Marx_Backpack : ls_gar_rto_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Marx)";
+		maximumLoad = 250;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Marx_Backpack_Mini_Main.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_Marx_Backpack_Mini_Pouches.paa" // slotss
+			};
+		tf_range = 35000;
+	};
 	class JA_104th_RTO_Mini_Tiger_Backpack : ls_gar_rto_mini_backpack
 	{
 		author = "Tundra";

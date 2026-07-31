@@ -630,6 +630,21 @@ class CfgWeapons
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
+	class JA_104th_Hound_P1_NVG_Base : lsd_gar_standard_nvg
+	{
+		author = "Tundra";
+		displayName = "Clone P1 NVG Visor (104th Hound)";
+		hiddenSelections[] =
+			{
+				"camo1",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\Textures\104th_P1_Hound_NVG.paa",
+			};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
 };
 
 class CfgGlasses

@@ -165,6 +165,54 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Artorias_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Artorias)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Artorias_Upper.paa",
+				"Jangos_Airborne_Armours_2\data\textures\104th_AB_Artorias_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Artorias";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Hound_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Hound)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Hound_Upper.paa",
+				"Jangos_Airborne_Armours_2\data\textures\104th_AB_Hound_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Hound";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -227,5 +275,37 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Grimmer_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Grimmer_Lower.paa"};
 		linkedItems[] = {JA_104th_Grimmer_Helmet, JA_104th_Grimmer_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Grimmer_Helmet, JA_104th_Grimmer_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Artorias : lsd_gar_phase2_base
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Artorias_Uniform";
+		displayName = "104th Artorias";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Artorias_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Artorias_Lower.paa"};
+		linkedItems[] = {JA_104th_Artorias_Helmet, JA_104th_Artorias_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Artorias_Helmet, JA_104th_Artorias_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Hound : lsd_gar_phase2_base
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Hound_Uniform";
+		displayName = "104th Hound";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Hound_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Hound_Lower.paa"};
+		linkedItems[] = {JA_104th_Hound_Helmet, JA_104th_Hound_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Hound_Helmet, JA_104th_Hound_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };
