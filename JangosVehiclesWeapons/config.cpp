@@ -384,8 +384,6 @@ class CfgMagazines
         displayName = "[104th] 104th AP cannon";
 		displayNameShort = "Laser AP";
         count = 250;
-		hardpoints[] = {"B_AMRAAM_D"};
-        pylonWeapon = "JA_104th_AP_Lazer";
     };
 	class JA_104th_HE_Lazer_Oryx_MAG_250: JA_104th_AA_Lazer_MAG_500
     {
@@ -397,8 +395,6 @@ class CfgMagazines
         displayName = "[104th] 104th HE cannon";
 		displayNameShort = "Laser HE";
         count = 250;
-		hardpoints[] = {"B_AMRAAM_D"};
-        pylonWeapon = "JA_104th_HE_Lazer";
     };
 	class JA_104th_AGM_88_2rnd_M : FIR_AGM88_P_1rnd_M{
 		ammo = "JA_104th_AGM_88_M";
