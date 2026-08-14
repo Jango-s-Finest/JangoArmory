@@ -9870,31 +9870,6 @@ class cfgVehicles
 				count = 25;
 				magazine = "APERSBoundingMine_Range_Mag";
 			};
-			class _xx_tsp_breach_silhouette_mag
-			{
-				count = 2;
-				magazine = "tsp_breach_silhouette_mag";
-			};
-			class _xx_tsp_breach_popper_auto_mag
-			{
-				count = 12;
-				magazine = "tsp_breach_popper_auto_mag";
-			};
-			class _xx_tsp_breach_stick_mag
-			{
-				count = 2;
-				magazine = "tsp_breach_stick_mag";
-			};
-			class _xx_tsp_breach_block_mag
-			{
-				count = 4;
-				magazine = "tsp_breach_block_mag";
-			};
-			class _xx_tsp_breach_package_mag
-			{
-				count = 2;
-				magazine = "tsp_breach_package_mag";
-			};
 			class _xx_LFP_type_A_Remote_Mag
 			{
 				count = 25;
@@ -10495,6 +10470,16 @@ class cfgVehicles
 				radius = 15;
 				condition = "true";
 				statement = "[this, 'JA_104th_Ulik'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_3AS_Rho_Crate_REP_Transport
+			{
+				displayName = "Spawn Rho Crate Transport";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, '3AS_Rho_Crate_REP_Transport'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};

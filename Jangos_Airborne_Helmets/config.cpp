@@ -591,4 +591,16 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_P1_Hound_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 		visionMode[] = {"Normal"};
 	};
+	class JA_104th_Angel_Helmet : ls_gar_airborne_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper AB Helmet (104th Angel)"; // the name it will be in game
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+		hiddenSelectionsMaterials[] = {"",""};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Angel_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Angel_Helmet.paa"}; // the file path to the texture
+	};
 };

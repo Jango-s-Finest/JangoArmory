@@ -94,7 +94,7 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
-	class JA_104th_Angel_Helmet : ls_gar_arc_helmet
+	class JA_104th_Angel_Helmet_old : ls_gar_arc_helmet
 	{
 		author = "Ice";
 		scopeArsenal = 2;

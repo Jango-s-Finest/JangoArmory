@@ -75,6 +75,7 @@ class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
+class UserActions;
 
 class cfgVehicles
 {
@@ -103,6 +104,21 @@ class cfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JA_104th_P2_1C_Engineer";
+		class UserActions : UserActions{
+			class UnLoadCargo{
+				condition = "(count(this getVariable [""TAS_Loaded"",[]]) > 0) AND (player == driver this)";
+				displayName = "Unload Rho-Crate";
+				displayNameDefault = "Unload Rho-Crate";
+				onlyForPlayer = 0;
+				position = "pilotview";
+				priority = 8;
+				radius = 15;
+				showWindow = 0;
+				statement = "[this] spawn TAS_fnc_MagRhoDrop;";
+				textToolTip = "Unload Rho-Crate";
+				userActionID = 7;
+			};
+		};
 	};
 	class JA_104th_LAS_1A : 3AS_Rep_LAS_Z6_F{
 		Author = "3AS + Dak";

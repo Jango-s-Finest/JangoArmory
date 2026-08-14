@@ -225,9 +225,9 @@ class cfgVehicles
 		allowTabLock = 1;
 		radarType = 4;
 		fuelCapacity = 4000;
-		ls_impulsor_fuelDrain_1 = 0.00001;
-		ls_impulsor_fuelDrain_2 = 0.00003;
-		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
+		ls_impulsor_fuelDrain_1 = 0.000005;
+		ls_impulsor_fuelDrain_2 = 0.000015;
+		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "ls_weapon_CMFlareLauncher"};
 		magazines[] = {
 			"ls_magazine_50mm_200Rnd_HE_green",
 			"ls_magazine_50mm_200Rnd_HE_green",
@@ -248,16 +248,16 @@ class cfgVehicles
 			"Laserbatteries",
 			"Pylon_FC_Dropcrate_P_1rnd",
 			"Pylon_FC_Dropcrate_P_1rnd",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
+			"ls_mag_240rnd_CMFlareChaff_green",
+			"ls_mag_240rnd_CMFlareChaff_green",
+			"ls_mag_240rnd_CMFlareChaff_green",
+			"ls_mag_240rnd_CMFlareChaff_green",
 			"24Rnd_ACE_Hydra70_DAGR",
 			"24Rnd_ACE_Hydra70_DAGR",
 		};
 
 		memoryPointDriverOptics = "slingcamera";
-		unitInfoType = "RscOptics_CAS_Pilot";
+		unitInfoType = "RscUnitInfoAirRTDFullDigital";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
 		htMin = 60;
 		htMax = 1800;
@@ -1144,7 +1144,20 @@ class cfgVehicles
 				hideOnUse = 1;
 			};
 		};
-		class Turrets
+		class ls_impulsor
+		{
+			enabled = 1;
+			speed = 400;
+			fuelDrain = 0.00005;
+			overchargeSpeed = 800;
+			overchargeFuelDrain = 0.00020;
+			overchargeCooldown = 60;
+			impulseSoundOn = "ls_impulseOn_laat";
+			impulseSoundOff = "ls_impulseOff_laat";
+			repulseSoundOn = "";
+			repulseSoundOff = "";
+		};
+		class Turrets:Turrets
 		{
 			class MainTurret
 			{

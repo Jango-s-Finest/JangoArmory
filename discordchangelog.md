@@ -3,22 +3,33 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper Kama (104th Geonosis SGT)
-- Clone ARC Trooper Vest (104th Geonosis LT)
-- Clone ARC Trooper Vest (104th Geonosis CPT)
-- Clone Trooper armor (104th Artorias)
-- Clone Trooper armor (104th Hound)
-- Clone P1 NVG Visor (104th Hound)
-- Clone Trooper RTO mini backpack (104th Marx)
-- Clone Trooper P1 Helmet (104th Hound)
-- Clone Trooper P2 Special Activities Helmet (104th Lock)
+- Clone Trooper AB Helmet (104th Angel)
+- Clone Force Recon Officer Vest (104th Achilles)
+- Clone Trooper P2 Special Activities Helmet (104th Kobold)
+- Clone Airborne Trooper Vest (104th 2-2)
+- Clone Airborne Trooper Vest (104th 2-2 MLV)
+- Clone Airborne Trooper Vest (104th 2-2 Blue)
+- Clone Airborne Medic Vest (104th 2-2)
+- Clone Airborne Medic Vest (104th 2-2 MLV)
+- Clone Airborne Medic Vest (104th 2-2 Blue)
+- Clone Airborne NCO Vest (104th 2-2)
+- Clone Airborne NCO Vest (104th 2-2 MLV)
+- Clone Airborne NCO Vest (104th 2-2 Blue)
+- Clone Airborne NCO Medic Vest (104th 2-2)
+- Clone Airborne NCO Medic Vest (104th 2-2 MLV)
+- Clone Airborne NCO Medic Vest (104th 2-2 Blue)
 
 Changed Gear
 ------------------
-- Clone Trooper Kama (104th Irish)
-- Clone Trooper armor (104th Irish)
-- Clone Trooper AB Helmet (104th Artorias)
-- Clone Trooper armor (104th Lock)
+- Clone Trooper armor (104th Soul)
+- Clone Trooper armor (104th Poet)
+- Clone Trooper armor (104th Boombox)
+- Clone Trooper armor (104th Vegas)
+- Clone Trooper ARC Trooper Helmet (104th Vegas)
+- Clone ARC Trooper Vest (104th Vegas)
+- Clone NVG Rangefinder Visor (104th Vegas)
+- Clone Trooper armor (104th Kaleck)
+- Clone ARC Trooper Vest (104th Kaleck)
 
 Removed Gear
 ------------------
@@ -44,11 +55,16 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
--
+- [104th] GBU-53 SDB II x6
 
 Changed Vehicles & Supplies
 ------------------
--
+- Changed the LAAT/I chaff and flare color to green.
+- Fix for the LAAT/I fuel consumption and speed.
+- Fix for the LAAT/I not rearming the gunner weapons.
+- Spawner Terminal - 104th Ground Assets - Added the Rho Crate Transport
+- [104th] Rho Class - now only the pilot can drop the Rho Crate Transport
+- Fire rate increase 20% of the Oryx main gun and increase the velocity of the rounds themselves by roughly 20%
 
 Removed Vehicles & Supplies
 ------------------

@@ -196,6 +196,7 @@ class CfgAmmo
 		hit = 250;
 		explosionType = "";
 		explosive = 0.1;
+		typicalSpeed = 1200;
 	};
 	class JA_104th_HE_Lazer_Oryx_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 7;
@@ -203,6 +204,7 @@ class CfgAmmo
 		indirectHitRange = 6;
 		hit = 100;
 		explosive = 0.9;
+		typicalSpeed = 1200;
 	};
 	class JA_104th_AGM_88_M : FIR_AGM88{
 		model = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
@@ -230,6 +232,7 @@ class CfgMagazines
 	class 212th_Drexl_4Rnd_A2A_mag;
 	class FIR_Brimstone_DM_std_P_3rnd_M;
 	class FIR_AGM88_P_1rnd_M;
+	class FIR_GBU53_EWP_6rnd_M;
 
 	class JA_104th_AA_Lazer_MAG_500: RD501_Republic_Aircraft_Laser_AA_Mag_600
     {
@@ -404,6 +407,14 @@ class CfgMagazines
         count = 4;
         pylonWeapon = "JA_104th_AGM_88";
 	};
+	class JA_104th_GBU53_6rnd_M : FIR_GBU53_EWP_6rnd_M{
+		model = "\FIR_AirWeaponSystem_US\data\proxies\rack_6x_mer.p3d";
+        ammo = "FIR_GBU53";
+        scope = 2;
+        displayName = "[104th] GBU-53 SDB II x6";
+        count = 6;
+        pylonWeapon = "JA_104th_GBU53";
+	}
 };
 
 class CfgWeapons
@@ -429,6 +440,8 @@ class CfgWeapons
 	class FIR_Brimstone;
 	class JA_104th_Z6;
 	class manual;
+	class FIR_AGM88;
+	class FIR_GBU53;
 
 	class JA_104th_AA_Lazer : RD501_Republic_Aircraft_Laser_AA{
 		displayName = "Air Superiority laser";
@@ -468,8 +481,9 @@ class CfgWeapons
 			muzzleEnd = "konec hlavne";
 			muzzlePos = "usti hlavne";
 			burst = 1;
-			reloadtime = 0.5;
-			maxRange = 1500;
+            dispersion = 0.001;
+			reloadtime = 0.35;
+			maxRange = 4000;
 		};
 	};
 	class JA_104th_HE_Lazer_Oryx : RD501_Republic_Aircraft_Laser_AA{
@@ -483,8 +497,9 @@ class CfgWeapons
 			muzzleEnd = "konec hlavne";
 			muzzlePos = "usti hlavne";
 			burst = 1;
-			reloadtime = 0.5;
-			maxRange = 1500;
+            dispersion = 0.001;
+			reloadtime = 0.35;
+			maxRange = 4000;
 		};
 	};
 	class JA_104th_APHE_Lazer : RD501_Republic_Aircraft_Laser_AA{
@@ -599,9 +614,12 @@ class CfgWeapons
         };
 	};
 
-	class FIR_AGM88;
 	class JA_104th_AGM_88 : FIR_AGM88{
 		initspeed = 30;
 		magazines[] = {"JA_104th_AGM_88_2rnd_M"};
-	}
+	};
+	class JA_104th_GBU53 : FIR_GBU53{
+		initspeed = 30;
+		magazines[] = {"JA_104th_GBU53_6rnd_M"};
+	};
 };

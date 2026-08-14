@@ -196,6 +196,59 @@ class CfgWeapons
 			};
 		};
 	};
+	class JA_104th_Achilles_Vest : ls_gar_forceReconLieutenant_vest
+	{
+		author = "Dak";
+		scope = 2;
+		displayName = "Clone Force Recon Officer Vest (104th Achilles)";
+		model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARF_Vests\data\Textures\104th_ARF_Achilles_Accessories_Officer.paa",
+				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
+		class ItemInfo : Vestitem
+		{
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+			containerClass = "Supply80";
+			hiddenSelections[] = {"camo1", "camo2"};
+			mass = 80;
+			vestType = "Rebreather";
+
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+
 };
 
 class CfgVehicles
