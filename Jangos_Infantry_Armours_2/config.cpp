@@ -111,30 +111,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Boris_Uniform : JA_104th_Base_Clone_Uniform
-	{
-		author = "Dak";
-		scope = 2;
-		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Boris)";
-		hiddenSelections[] =
-			{
-				"camo1",
-				"camo2"};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Boris_Upper.paa",
-				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Boris_Lower.paa"};
-		class ItemInfo : UniformItem
-		{
-			uniformModel = "-";
-			scope = 2;
-			uniformClass = "JA_104th_Boris";
-			containerClass = "Supply150";
-			mass = 40;
-			uniformType = "Neopren";
-		};
-	};
 	class JA_104th_Lax_Uniform : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
@@ -399,7 +375,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Squid_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Squid_Uniform : JA_104th_Base_Clone_MC_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -408,11 +384,16 @@ class CfgWeapons
 		hiddenSelections[] =
 			{
 				"camo1",
-				"camo2"};
+				"camo2",
+				"biceps",
+				"rank"};
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Upper.paa",
-				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Lower.paa"};
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Lower.paa",
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Upper.paa",
+				"",
+			};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -783,6 +764,30 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Dragon_Uniform : JA_104th_Base_Clone_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Dragon)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Dragon_Upper.paa",
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Dragon_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Dragon";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 
 };
 
@@ -1010,7 +1015,7 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Spectre_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Spectre_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Squid : lsd_gar_phase2_base
+	class JA_104th_Squid : ls_gar_marshalCommander_base
 	{
 		author = "Ice";
 		scope = 2;
@@ -1021,8 +1026,8 @@ class CfgVehicles
 		displayName = "104th Squid";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
-		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Lower.paa"};
+		hiddenSelections[] ={"camo1","camo2","biceps","rank"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Upper.paa","Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Lower.paa","Jangos_Infantry_Armours_2\data\Textures\104th_P2_Squid_Upper.paa","",};
 		linkedItems[] = {JA_104th_Squid_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Squid_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
@@ -1265,6 +1270,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Aiomi_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Aiomi_Lower.paa"};
 		linkedItems[] = {JA_104th_Aiomi_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Aiomi_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Dragon : lsd_gar_phase2_base
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Dragon_Uniform";
+		displayName = "104th Dragon";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Dragon_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Dragon_Lower.paa"};
+		linkedItems[] = {JA_104th_Dragon_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Dragon_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	
 };

@@ -14,6 +14,7 @@ class CfgPatches
 			"JA_104th_Repair_Droid",
 			"JA_104th_Ulik",
 			"JA_104th_OryxTS_Command",
+			"JA_104th_AV7",
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 			"JA_104th_guided_resupply_pod_launcher",
@@ -2768,7 +2769,25 @@ class cfgVehicles
 			};
 		};
 	};
-	
+	class 3AS_AV7;
+	class JA_104th_AV7 : 3AS_AV7{
+		author = "Dak";
+		displayName = "[104th] AV-7";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
+		crew = "JA_104th_P2_1C_Engineer";
+		forceInGarage = 1;
+		scopeArsenal = 2;
+		scope = 2;
+		side = 1;
+		scopeCurator = 2;
+		class Turrets : Turrets{
+			class MainTurret : MainTurret{
+				magazines[] = {"3AS_32Rnd_300mm_Mo_shells","3AS_12Rnd_300mm_Mo_smoke","3AS_4Rnd_300mm_Mo_guided","3AS_4Rnd_300mm_Mo_LG","3AS_4Rnd_300mm_Mo_LG","3AS_12Rnd_300mm_Mo_mine","3AS_4Rnd_300mm_Mo_Cluster","3AS_4Rnd_300mm_Mo_Cluster","3AS_12Rnd_300mm_Mo_AT_mine","Arty_FC_Dropcrate_P_1rnd"};
+				weapons[] = {"JA_104th_AV7_300mm_AMOS"};
+			};
+		};
+	};
 };
 
 

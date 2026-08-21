@@ -62,7 +62,7 @@ class CfgPatches
 
 class CfgAmmo
 {
-	class RD501_Republic_Aircraft_Laser_Repeater_Ammo;
+	class 3AS_ATTE_30mm_MP;
 	class 212th_Drexl_A2A_Missile;
 	class FIR_Brimstone_dm;
 	class FIR_AIM120;
@@ -72,7 +72,7 @@ class CfgAmmo
 	class 3AS_SIEGE_Cannon_HHE_Shell;
 	class FIR_AGM88;
 
-	class JA_104th_AA_Lazer_Ammo: RD501_Republic_Aircraft_Laser_Repeater_Ammo{
+	class JA_104th_AA_Lazer_Ammo: 3AS_ATTE_30mm_MP{
 		caliber = 7;
 		indirectHit = 50;
 		indirectHitRange = 3;
@@ -216,11 +216,77 @@ class CfgAmmo
 			lockSeekDistanceFromParent = 10;
 		};
 	}
+	class SensorTemplateLaser;
+	class 3AS_Smoke_300mm_AMOS_White;
+	class Arty_Dropcrate_A: 3AS_Smoke_300mm_AMOS_White
+    {
+        model = "Dropcrate_FC\Falling_Dropcrate.p3d";
+        proxyshape = "Dropcrate_FC\Dropcrate_closed.p3d";
+        hit = 0;
+		effectsSmoke = "SmokeShellYellow";
+		submunitionAmmo = "SmokeShellYellow";
+        indirectHit = 0;
+        explosive = 0;
+        whistleOnFire = 1;
+        laserLock = 1;
+        missileLockCone = 180;
+        missileKeepLockedCone = 90;
+        autoSeekTarget = 0;
+        artilleryLock = 1;
+        multiSoundFly[] = {"soundFly1",0.2,"soundFly2",0.2};
+        soundFly1[] = {"FC_Locator_fly",db+0, 1};
+        soundFly2[] = {"FC_Crate_Fly",db+0, 1};
+        multiSoundHit[] = {"soundHit1",0.2,"soundHit2",0.2,"soundHit3",0.2,"soundHit4",0.2};
+        soundHit1[] = {"FC_Hit_Ground",db+0, 1};
+        soundHit2[] = {"FC_Hit_Thud",db+0, 1};
+        soundHit3[] = {"FC_Hit_Echo",db+0, 1};
+        soundHit4[] = {"FC_Sputter_T",db+0, 1};
+        whistleDist = 24;
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"Dropcrate_FC\Data\crate_clean_co.paa"};
+        class Eventhandlers
+        {
+            Init = "[_this select 0] execVM 'Dropcrate_FC\Scripts\grpl_fired.sqf';";
+        };
+        class Components
+        {
+                class SensorsManagerComponent
+                {
+                    class Components
+                    {
+                        class LaserSensorComponent: SensorTemplateLaser {
+                            class GroundTarget {
+                                minRange = 30000;
+                                maxRange = 30000;
+                                objectDistanceLimitCoef = -1;
+                                viewDistanceLimitCoef = -1;
+                            };
+                            maxTrackableSpeed = 300;
+                            angleRangeHorizontal = 180;
+                            angleRangeVertical = 180;
+                            componentType = "LaserSensorComponent";
+                            typeRecognitionDistance = 0;
+                            color[] = {1, 1, 1, 0};
+                            allowsMarking = 1;
+                            groundNoiseDistanceCoef = -1;
+                            maxGroundNoiseDistance = -1;
+                            minSpeedThreshold = 0;
+                            maxSpeedThreshold = 0;
+                            animDirection = "";
+                            aimDown = 0;
+                            minTrackableSpeed = -1e+010;
+                            minTrackableATL = -1e+010;
+                            maxTrackableATL = 1e+010;
+                        };
+                    };
+                };
+            };
+    	};
 };
 
 class CfgMagazines
 {
-	class RD501_Republic_Aircraft_Laser_AA_Mag_600;
+	class 3AS_250Rnd_ATTE_30mm_MP_shells;
 	class FIR_AIM9X_P_2rnd_M;
 	class FIR_AIM120_LAU115_P_2rnd_M;
 	class 3AS_30Rnd_Mass_Driver_shells;
@@ -234,7 +300,7 @@ class CfgMagazines
 	class FIR_AGM88_P_1rnd_M;
 	class FIR_GBU53_EWP_6rnd_M;
 
-	class JA_104th_AA_Lazer_MAG_500: RD501_Republic_Aircraft_Laser_AA_Mag_600
+	class JA_104th_AA_Lazer_MAG_500: 3AS_250Rnd_ATTE_30mm_MP_shells
     {
         ammo = "JA_104th_AA_Lazer_Ammo";
 		descriptionShort = "High speed Weapon";
@@ -414,17 +480,35 @@ class CfgMagazines
         displayName = "[104th] GBU-53 SDB II x6";
         count = 6;
         pylonWeapon = "JA_104th_GBU53";
-	}
+	};
+	class 3AS_12Rnd_300mm_Mo_smoke;
+	class AnimationSources;
+	class Arty_FC_Dropcrate_P_1rnd : 3AS_12Rnd_300mm_Mo_smoke
+	{
+		scope = 2;
+		model = "Dropcrate_FC\crate_proxy.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"Dropcrate_FC\Data\crate_clean_co.paa"};
+        class AnimationSources: AnimationSources    /// custom made animation sources
+        {
+            class Missiles_revolving
+            {
+                source = "revolving";
+                weapon = "FC_Dropcrate_PW1";
+            };                  
+        };  
+		displayName = "104th Dropcrate x 1";
+		displayNameShort = "Laser Guided";
+		descriptionShort = "FC_Dropcrate";					
+		ammo = "Arty_Dropcrate_A";
+		count = 1;
+		mass = 200;
+	};
 };
 
 class CfgWeapons
 {
-	class RD501_Republic_Aircraft_Laser_AA{
-		class medium;
-		class manual;
-		class close;
-		class LowROF;
-	};
+	class 3AS_ATTE_Turret;
 	class FIR_AIM120;
 	class FIR_AIM9X;
 	class 3AS_Mass_Driver_Cannon;
@@ -443,34 +527,37 @@ class CfgWeapons
 	class FIR_AGM88;
 	class FIR_GBU53;
 
-	class JA_104th_AA_Lazer : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_AA_Lazer : 3AS_ATTE_Turret{
 		displayName = "Air Superiority laser";
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500"};
 		modes[] = {"manual"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
 		class manual: manual{
 			burst = 1;
 			reloadtime = 0.08;
 		};
 	};
-	class JA_104th_AP_Lazer : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_AP_Lazer : 3AS_ATTE_Turret{
 		displayName = "AP laser";
 		magazines[] = {"JA_104th_AP_Lazer_MAG_250"};
 		modes[] = {"manual"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
 		class manual: manual{
 			burst = 1;
 			reloadtime = 0.2;
 		};
 	};
-	class JA_104th_HE_Lazer : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_HE_Lazer : 3AS_ATTE_Turret{
 		displayName = "HE laser";
 		magazines[] = {"JA_104th_HE_Lazer_MAG_250"};
 		modes[] = {"manual"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
 		class manual: manual{
 			burst = 1;
 			reloadtime = 0.2;
 		};
 	};
-	class JA_104th_AP_Lazer_Oryx  : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_AP_Lazer_Oryx  : 3AS_ATTE_Turret{
 		displayName = "AP laser";
 		ballisticsComputer = "2 + 8 + 16";
 		magazines[] = {"JA_104th_AP_Lazer_Oryx_MAG_250"};
@@ -486,7 +573,7 @@ class CfgWeapons
 			maxRange = 4000;
 		};
 	};
-	class JA_104th_HE_Lazer_Oryx : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_HE_Lazer_Oryx : 3AS_ATTE_Turret{
 		displayName = "HE laser";
 		ballisticsComputer = "2 + 8 + 16";
 		magazines[] = {"JA_104th_HE_Lazer_Oryx_MAG_250"};
@@ -502,10 +589,11 @@ class CfgWeapons
 			maxRange = 4000;
 		};
 	};
-	class JA_104th_APHE_Lazer : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_APHE_Lazer : 3AS_ATTE_Turret{
 		displayName = "APHE laser";
 		magazines[] = {"JA_104th_APHE_Lazer_MAG_100"};
 		modes[] = {"manual"};
+		ballisticsComputer = "1 + 2 + 8 + 16";
 		class manual: manual{
 			burst = 1;
 			reloadtime = 0.4;
@@ -621,5 +709,11 @@ class CfgWeapons
 	class JA_104th_GBU53 : FIR_GBU53{
 		initspeed = 30;
 		magazines[] = {"JA_104th_GBU53_6rnd_M"};
+	};
+	class 3AS_AV7_300mm_AMOS;
+	class JA_104th_AV7_300mm_AMOS: 3AS_AV7_300mm_AMOS
+	{
+		scope = 2;
+		magazines[] = {"3AS_32Rnd_300mm_Mo_shells","3AS_12Rnd_300mm_Mo_smoke","3AS_4Rnd_300mm_Mo_guided","3AS_4Rnd_300mm_Mo_LG","3AS_12Rnd_300mm_Mo_mine","3AS_4Rnd_300mm_Mo_Cluster","3AS_12Rnd_300mm_Mo_AT_mine","Arty_FC_Dropcrate_P_1rnd"};
 	};
 };

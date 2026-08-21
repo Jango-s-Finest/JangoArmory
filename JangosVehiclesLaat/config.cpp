@@ -257,7 +257,7 @@ class cfgVehicles
 		};
 
 		memoryPointDriverOptics = "slingcamera";
-		unitInfoType = "RscUnitInfoAirRTDFullDigital";
+		unitInfoType = "RscOptics_CAS_Pilot";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
 		htMin = 60;
 		htMax = 1800;

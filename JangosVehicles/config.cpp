@@ -10483,6 +10483,16 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
+			class Spawn_JA_104th_AV7
+			{
+				displayName = "Spawn [104th] AV-7";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_AV7'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
 		};
 		class VehicleTransport
 		{
