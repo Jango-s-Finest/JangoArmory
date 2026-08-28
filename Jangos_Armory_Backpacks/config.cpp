@@ -1111,6 +1111,49 @@ class CfgVehicles
 		// Other
 		BNA_KC_jetpacks_freefallHeight = 500; // Freefall height to set on unit when jetpacking
 	};
+	class JA_104th_Jumppack_JT12_Journeyman : JLTS_Clone_jumppack_JT12_104{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		maximumLoad = 250;
+		displayname = "Clone Trooper JT12 LR - Journeyman";
+		model = "\ls\core\addons\characters_clone\backpacks\jt12\ls_backpack_clone_jt12.p3d";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone\backpacks\jt12\data\camo1_co.paa"};
+		RD501_jumppack_energy_capacity = 100;
+		tf_dialog = "";
+		tf_dialogUpdate = "";
+		tf_encryptionCode = "";
+		tf_hasLRradio = 0;
+		tf_range = 0;
+		tf_additional_channel = 1;
+		tf_subtype = "";
+		// Movement
+		BNA_KC_jetpacks_isJetpack = 1; // Enables jetpack functionality (1-yes, 0-no)
+		BNA_KC_jetpacks_speed = 4;	   // Horizontal speed for jetpack, rough formula is speed * 21 = speed in km/h
+		BNA_KC_jetpacks_strength = 15; // Vertical speed for jetpack, rough formula is (speed - 10) * 4.3 = speed in km/h. Strength of <10 will not be able to fly
+		BNA_KC_jetpacks_fuel = 50;	   // Amount of fuel this jetpack has, (fuel / 10) = fuel in liters
+		BNA_KC_jetpacks_canHover = 1;  // Enables jetpack hovering (1-yes, 0-no)
+
+		// Effects
+		// Effect points can either be array in format PositionRelative (offset from model center)
+		// or memory point name
+		BNA_KC_jetpacks_effectPoints[] = {
+			"effect_left", // Can be mixed
+			{0.15051, -0.219357, -0.247619}};
+		// CfgCloudlet classes to spawn *for each effect point*
+		// e.g. these values will create 5 effects, 4 particles + light
+		BNA_KC_jetpacks_effects[] = {
+			"BNA_KC_cloudlet_jetpackFire_blue",
+			"BNA_KC_cloudlet_jetpackSmoke"};
+		// Sound effect to play every 0.3 seconds
+		BNA_KC_jetpacks_effectSound = "\ORA\BNA_KC\addons\jetpacks,data\audio\Jetpack_Loop.wss";
+		BNA_KC_jetpacks_lightColor[] = {0, 0.1, 0.9}; // Light color in format [R, G, B]
+
+		// Other
+		BNA_KC_jetpacks_freefallHeight = 500; // Freefall height to set on unit when jetpacking
+	};
+	
 	class JA_104th_Jumppack_JT12_LR : JLTS_Clone_jumppack_JT12_104
 	{
 		author = "Dak";
@@ -1310,6 +1353,16 @@ class CfgVehicles
 		displayname = "Clone Trooper JT12 LR (Magnum)";
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Magnum_Jumppack.paa"};
 	};
+	
+	class JA_104th_Jumppack_JT12_Warhawk_Medic_LR : JA_104th_Jumppack_JT12_LR_Journeyman
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 Medic LR (Warhawk)";
+		maximumLoad = 450;
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_Medic.paa"};
+	};
 	class JA_104th_Jumppack_JT12_Warhawk_Medic_1_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
@@ -1317,7 +1370,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-1)";
 		maximumLoad = 450;
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_JT12_Medic_2-1.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_1_Medic.paa"};
 	};
 	class JA_104th_Jumppack_JT12_Warhawk_2_Medic_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1326,95 +1379,114 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-2)";
 		maximumLoad = 450;
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_JT12_Medic_2-2.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_2_Medic.paa"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR
+	class JA_104th_Jumppack_JT12_Warhawk_Medic_3_LR : JA_104th_Jumppack_JT12_LR_Journeyman
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-3)";
+		maximumLoad = 450;
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_3_Medic.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Warhawk_4_Medic_LR : JA_104th_Jumppack_JT12_LR_Journeyman
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-4)";
+		maximumLoad = 450;
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\textures\104th_Jumppack_JT12_Warhawk_4_Medic.paa"};
+	};
+	
+	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk)";
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk.paa"};
 	};
-	class JA_104th_Jumppack_JT12_Raider : JA_104th_Jumppack_JT12
+	class JA_104th_Jumppack_JT12_Raider : JA_104th_Jumppack_JT12_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk.paa"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_1_LR : JA_104th_Jumppack_JT12_LR
+	class JA_104th_Jumppack_JT12_Raider_1_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk 2-1)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-1_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_1"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_1 : JA_104th_Jumppack_JT12
+	class JA_104th_Jumppack_JT12_Raider_1 : JA_104th_Jumppack_JT12_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk 2-1)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-1_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_1"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_2_LR : JA_104th_Jumppack_JT12_LR
+	class JA_104th_Jumppack_JT12_Raider_2_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk 2-2)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-2_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_2"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_2 : JA_104th_Jumppack_JT12
+	class JA_104th_Jumppack_JT12_Raider_2 : JA_104th_Jumppack_JT12_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk 2-2)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-2_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_2"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_3_LR : JA_104th_Jumppack_JT12_LR
+	class JA_104th_Jumppack_JT12_Raider_3_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk 2-3)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-3_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_3"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_3 : JA_104th_Jumppack_JT12
+	class JA_104th_Jumppack_JT12_Raider_3 : JA_104th_Jumppack_JT12_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk 2-3)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-3_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_3"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_4_LR : JA_104th_Jumppack_JT12_LR
+	class JA_104th_Jumppack_JT12_Raider_4_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk 2-4)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_4"};
 	};
-	class JA_104th_Jumppack_JT12_Raider_4 : JA_104th_Jumppack_JT12
+	class JA_104th_Jumppack_JT12_Raider_4 : JA_104th_Jumppack_JT12_Journeyman
 	{
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk 2-4)";
 
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Raider_2-4_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_4"};
 	};
 };

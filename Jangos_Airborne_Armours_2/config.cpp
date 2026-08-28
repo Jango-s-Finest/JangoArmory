@@ -88,6 +88,80 @@ class CfgWeapons
 	class VestItem;
 	class JA_104th_Base_MC_AB_Uniform;
 	class JA_104th_Base_AB_Uniform;
+	class ls_csfUniform_senateCommando;
+	class JA_104th_SenateComando_Uniform : ls_csfUniform_senateCommando
+	{
+		class ItemInfo : UniformItem
+		{
+			class HitpointsProtectionInfo
+			{
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+
+				class chest
+				{
+					hitpointName = "HitChest";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 40;
+					explosionShielding = 20;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
 	class JA_104th_Granite_Uniform : JA_104th_Base_MC_AB_Uniform
 	{
 		author = "Jango's Finest";
@@ -213,6 +287,33 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Kage_Uniform_test : JA_104th_SenateComando_Uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Senate Commando Trooper Armor (104th Kage)";
+		hiddenSelections[] = {
+			"camo1",
+			"camo2",
+			"undersuit",
+			"insignia"
+		};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Kage_Upper.paa",
+			"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Kage_Lower.paa",
+			"\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+		};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Kage_test";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -227,6 +328,7 @@ class CfgVehicles
 	class JLTS_Clone_jumppack;
 	class JA_104th_Jumppack_JT12;
 	class JA_104th_Jumppack_JT12_LR;
+	class ls_csf_senateCommando;
 	// General Uniforms
 	class JA_104th_Granite : ls_gar_marshalCommander_base
 	{
@@ -307,5 +409,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Hound_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Hound_Lower.paa"};
 		linkedItems[] = {JA_104th_Hound_Helmet, JA_104th_Hound_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Hound_Helmet, JA_104th_Hound_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Kage_test : ls_csf_senateCommando
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Kage_Uniform_test";
+		displayName = "104th Kage";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1","camo2","undersuit","insignia"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Kage_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Kage_Lower.paa","\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"};
+		linkedItems[] = {JA_104th_Kage_Helmet, JA_104th_Kage_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Kage_Helmet, JA_104th_Kage_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

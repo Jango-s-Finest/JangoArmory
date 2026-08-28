@@ -9374,7 +9374,7 @@ class cfgVehicles
 	class O_T_LSV_02_armed_F;
 	class JA_104th_LSV : O_T_LSV_02_armed_F
 	{
-		displayName = "104th Light Strike Vehicle";
+		displayName = "[104th] Light Strike Vehicle";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		scope = 2;
@@ -9386,6 +9386,15 @@ class cfgVehicles
 		{
 			init = "[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\LSVGun.sqf';";
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+		};
+		class Turrets : Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+				gunnerName = "Gunner";
+			};
 		};
 	};
 
@@ -10470,6 +10479,16 @@ class cfgVehicles
 				radius = 15;
 				condition = "true";
 				statement = "[this, 'JA_104th_Ulik'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_LSV
+			{
+				displayName = "Spawn [104th] Light Strike Vehicle";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_LSV'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};

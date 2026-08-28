@@ -615,4 +615,16 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"",""};
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Phoenix_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Phoenix_Helmet.paa"}; // the file path to the texture
 	};
+	class JA_104th_Skid_Helmet : ls_gar_airborne_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper AB Helmet (104th Skid)"; // the name it will be in game
+		subItems[] = {"Integrated_NVG_TI_0_F"};
+		hiddenSelectionsMaterials[] = {"",""};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Skid_Helmet.paa","Jangos_Airborne_Helmets\data\Textures\104th_AB_Skid_Helmet.paa"}; // the file path to the texture
+	};
 };

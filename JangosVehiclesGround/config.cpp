@@ -13,7 +13,7 @@ class CfgPatches
 			"JA_104th_OryxTS",
 			"JA_104th_Repair_Droid",
 			"JA_104th_Ulik",
-			"JA_104th_OryxTS_Command",
+			"JA_104th_Oryx_Command",
 			"JA_104th_AV7",
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
@@ -1810,10 +1810,13 @@ class cfgVehicles
             Init = "[_this select 0, 150] execVM '\JangosVehiclesGround\DefenceSystem.sqf';";
 		};
 	};
-	class JA_104th_OryxTS_Command : JA_104th_OryxNS
+	class JA_104th_Oryx_Command : JA_104th_Oryx
 	{
-
-		displayName = "[104th] Oryx IFV Command Trophy System";
+		BNA_KC_shields_hasShield = 1;
+		BNA_KC_shields_health = 1;
+		BNA_KC_shields_regenAmount = 1;
+		BNA_KC_shields_regenDelay = 20;
+		displayName = "[104th] Oryx IFV Command Shielded";
 		weapons[] = {"SmokeLauncher"};
 		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
 		armor = 1200;
@@ -1955,11 +1958,6 @@ class cfgVehicles
 				gunnerForceOptics = 0;
 				usePip = 1;
 			};
-		};
-
-		class EventHandlers : DefaultEventhandlers
-		{
-            Init = "[_this select 0, 200] execVM '\JangosVehiclesGround\DefenceSystem.sqf';";
 		};
 	};
 	

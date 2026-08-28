@@ -1146,5 +1146,52 @@ class CfgWeapons
             };
         };
     };
+    class JA_104th_Bear_Vest : ls_gar_airborneNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne NCO Vest (104th Bear)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Bear_Accessories_Officer.paa",
+                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
     
 };
