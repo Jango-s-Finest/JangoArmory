@@ -22,7 +22,7 @@ class CfgAmmo{
 		indirectHit = 14;
 		indirectHitRange = 8;
 		ace_grenades_pullPinSound[] = {"\ls\core\addons\sounds\weapons\grenade\pin.wss",3,1,10};
-		model = "\kobra\442_weapons\explosive\thermal_det.p3d"; 
+		model = "jangos_Armory_Grenades\data\models\thermal_det.p3d"; 
 		explosionEffectsRadius = 1.5;
 		suppressionRadiusHit = 24;
 		typicalspeed = 18;
@@ -76,7 +76,7 @@ class CfgAmmo{
 
 class CfgMagazines{
 	class HandGrenade;
-	
+
 	class JA_104th_Thermal_Detonator_Mag: HandGrenade
 	{
 		author = "Knockout";
