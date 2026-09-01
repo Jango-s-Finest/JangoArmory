@@ -4,13 +4,16 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {
+			JA_104th_Thermal_Detonator_ThrowMuzzle
 		};
 		ammo[] = {
+			JA_104th_Thermal_Detonator_Ammo
 		};
 		magazines[] = {
+			JA_104th_Thermal_Detonator_Mag
 		};
 		requiredVersion = 0.1;
-		requiredAddons[] = {};
+		requiredAddons[] = {"A3_Weapons_F"};
 	};
 };
 
@@ -22,7 +25,7 @@ class CfgAmmo{
 		indirectHit = 14;
 		indirectHitRange = 8;
 		ace_grenades_pullPinSound[] = {"\ls\core\addons\sounds\weapons\grenade\pin.wss",3,1,10};
-		model = "jangos_Armory_Grenades\data\models\thermal_det.p3d"; 
+		model = "\kobra\442_weapons\explosive\thermal_det.p3d"; 
 		explosionEffectsRadius = 1.5;
 		suppressionRadiusHit = 24;
 		typicalspeed = 18;
@@ -97,4 +100,18 @@ class CfgMagazines{
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_thermal_det_ui_ca.paa";
 	};
 
+};
+
+class CfgWeapons
+{
+    class GrenadeLauncher;
+    class Throw: GrenadeLauncher
+    {
+		class ThrowMuzzle;
+        muzzles[] += {"JA_104th_Thermal_Detonator_ThrowMuzzle"};
+        class JA_104th_Thermal_Detonator_ThrowMuzzle: ThrowMuzzle
+        {
+            magazines[] += {"JA_104th_Thermal_Detonator_Mag"};
+        };
+    };
 };
