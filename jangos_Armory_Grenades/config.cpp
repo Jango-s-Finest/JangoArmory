@@ -232,15 +232,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Green: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.2125,0.6258,0.2125,0.2],[0.2125,0.6258,0.2125,0.05],[0.2125,0.6258,0.2125,0]};
+		color[] = {[0.2125,0.8438,0.2125,0.2],[0.2125,0.8438,0.2125,0.05],[0.2125,0.8438,0.2125,0]};
 	};
 	class JA_104th_cloudlet_smokeshell_Green2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.2125,0.6258,0.2125,0.2],[0.2125,0.6258,0.2125,0.05],[0.2125,0.6258,0.2125,0]};
+		color[] = {[0.2125,0.8438,0.2125,0.2],[0.2125,0.8438,0.2125,0.05],[0.2125,0.8438,0.2125,0]};
 	};
 	class JA_104th_cloudlet_SmokeShellGreenUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.2125,0.6258,0.2125,1]};
+		color[] = {[0.2125,0.8438,0.2125,1]};
 	};
 	class JA_104th_cloudlet_SmokeShellGreen2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
@@ -410,7 +410,7 @@ class CfgAmmo{
 	};
 	class JA_104th_Green_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
-		smokeColor[] = {0.2125,0.6258,0.2125,1};
+		smokeColor[] = {0.2125,0.8438,0.2125,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeGreen";
 	};
 	class JA_104th_Purple_Smoke_Ammo: JA_104th_White_Smoke_Ammo
