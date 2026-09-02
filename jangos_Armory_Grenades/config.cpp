@@ -392,6 +392,7 @@ class CfgAmmo{
 			};
 		};
 	};
+	
 	class JA_104th_White_Smoke_Ammo: SmokeShell
 	{
 		simulation = "shotSmokeX";
@@ -557,6 +558,7 @@ class CfgWeapons
         {
             magazines[] = {"JA_104th_Thermal_Detonator_Mag"};
         };
+		
 		class JA_104th_White_Smoke_ThrowMuzzle: ThrowMuzzle
         {
             magazines[] = {"JA_104th_White_Smoke_Mag"};
