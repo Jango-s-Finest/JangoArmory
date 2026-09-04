@@ -300,15 +300,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Orange: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.98,0.46,0,0.2],[0.98,0.46,0,0.05],[0.98,0.46,0,0]};
+		color[] = {[0.88, 0.36, 0,0.2],[0.88, 0.36, 0,0.05],[0.88, 0.36, 0,0]};
 	};
 	class JA_104th_cloudlet_smokeshell_Orange2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.98,0.46,0,0.2],[0.98,0.46,0,0.05],[0.98,0.46,0,0]};
+		color[] = {[0.88, 0.36, 0,0.2],[0.88, 0.36, 0,0.05],[0.88, 0.36, 0,0]};
 	};
 	class JA_104th_cloudlet_SmokeShellOrangeUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.98,0.46,0,1]};
+		color[] = {[0.88, 0.36, 0,1]};
 	};
 	class JA_104th_cloudlet_SmokeShellOrange2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
@@ -431,7 +431,7 @@ class CfgAmmo{
 	};
 	class JA_104th_Orange_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
-		smokeColor[] = {0.98,0.46,0,1};
+		smokeColor[] = {0.88, 0.36, 0,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeOrange";
 	};
 	class JA_104th_Black_Smoke_Ammo: JA_104th_White_Smoke_Ammo
@@ -537,8 +537,7 @@ class CfgMagazines{
 	
 };
 
-class CfgWeapons
-{
+class CfgWeapons{
     class GrenadeLauncher;
     class Throw: GrenadeLauncher
     {
@@ -558,7 +557,7 @@ class CfgWeapons
         {
             magazines[] = {"JA_104th_Thermal_Detonator_Mag"};
         };
-		
+
 		class JA_104th_White_Smoke_ThrowMuzzle: ThrowMuzzle
         {
             magazines[] = {"JA_104th_White_Smoke_Mag"};
