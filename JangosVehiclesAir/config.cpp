@@ -104,6 +104,22 @@ class cfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JA_104th_P2_1C_Engineer";
+		tas_can_impulse = 0;
+		tas_max_impulse = 0;
+		tas_impulse_break = 0;
+		class ls_impulsor
+		{
+			enabled = 1;
+			speed = 400;
+			fuelDrain = 0.00005;
+			overchargeSpeed = 600;
+			overchargeFuelDrain = 0.00020;
+			overchargeCooldown = 60;
+			impulseSoundOn = "ls_impulseOn_laat";
+			impulseSoundOff = "ls_impulseOff_laat";
+			repulseSoundOn = "";
+			repulseSoundOff = "";
+		};
 		class UserActions : UserActions{
 			class UnLoadCargo{
 				condition = "(count(this getVariable [""TAS_Loaded"",[]]) > 0) AND (player == driver this)";
