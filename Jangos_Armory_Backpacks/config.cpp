@@ -1361,6 +1361,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Freq)";
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Freq_Jumppack.paa"};
+		maximumLoad = 450;
 	};
 	
 	class JA_104th_Jumppack_JT12_Warhawk_Medic_LR : JA_104th_Jumppack_JT12_LR_Journeyman
