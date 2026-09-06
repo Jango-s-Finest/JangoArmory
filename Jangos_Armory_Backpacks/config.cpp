@@ -1324,7 +1324,7 @@ class CfgVehicles
 		BNA_KC_jetpacks_isJetpack = 1; // Enables jetpack functionality (1-yes, 0-no)
 		BNA_KC_jetpacks_speed = 4;	   // Horizontal speed for jetpack, rough formula is speed * 21 = speed in km/h
 		BNA_KC_jetpacks_strength = 15; // Vertical speed for jetpack, rough formula is (speed - 10) * 4.3 = speed in km/h. Strength of <10 will not be able to fly
-		BNA_KC_jetpacks_fuel = 50;	   // Amount of fuel this jetpack has, (fuel / 10) = fuel in liters
+		BNA_KC_jetpacks_fuel = 60;	   // Amount of fuel this jetpack has, (fuel / 10) = fuel in liters
 		BNA_KC_jetpacks_canHover = 1;  // Enables jetpack hovering (1-yes, 0-no)
 
 		// Effects
@@ -1345,6 +1345,7 @@ class CfgVehicles
 		// Other
 		BNA_KC_jetpacks_freefallHeight = 500; // Freefall height to set on unit when jetpacking
 	};
+	
 	class JA_104th_Jumppack_JT12_Magnum_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
@@ -1352,6 +1353,14 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Magnum)";
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Magnum_Jumppack.paa"};
+	};
+	class JA_104th_Jumppack_JT12_Freq_LR : JA_104th_Jumppack_JT12_LR_Journeyman
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 LR (Freq)";
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Freq_Jumppack.paa"};
 	};
 	
 	class JA_104th_Jumppack_JT12_Warhawk_Medic_LR : JA_104th_Jumppack_JT12_LR_Journeyman
@@ -1417,6 +1426,17 @@ class CfgVehicles
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk.paa"};
 	};
+	class JA_104th_Jumppack_JT12_Raider_AmmoBearer : JA_104th_Jumppack_JT12_Journeyman
+	{
+		author = "Dak";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper JT12 Ammo Bearer (Warhawk)";
+		maximumLoad = 450;
+
+		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_AmmoBearer.paa"};
+	};
+	
 	class JA_104th_Jumppack_JT12_Raider_1_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
 		author = "Dak";
@@ -1489,4 +1509,5 @@ class CfgVehicles
 
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_Jumppack_JT12_Warhawk_4"};
 	};
+	
 };
