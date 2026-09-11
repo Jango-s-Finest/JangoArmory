@@ -79,35 +79,8 @@ class cfgEditorSubcategories
 	};
 };
 
-class CfgWeapons
-{
-	class ItemCore;
-	class ls_gar_phase2Pilot_helmet;
-	class ls_gar_phase2_uniform;
-	class ls_gar_marshalCommander_uniform;
-	class ls_gar_arc_vest;
-	class ls_gar_commander_vest;
-	class ls_gar_barc_helmet;
-	class ls_gar_airborne_helmet;
-	class ls_gar_phase1Arf_helmet;
-	class ls_gar_arc_helmet;
-	class ls_gar_phase1_helmet;
-	class ls_gar_rex_helmet;
-	class ls_gar_phase2_helmet;
-	class lsd_gar_standart_nvg;
-	class lsd_gar_rangefinder_nvg;
-	class ls_gar_medic_vest;
-	class ls_gar_clone_vest;
-	class lsd_gar_p2MarshalCommander_nvg;
-	class ls_gar_airborneNCO_vest;
-	class ls_gar_desert_helmet;
-	class UniformItem;
-};
-
 class CfgVehicles
 {
-	class lsd_gar_phase2_base;
-	class ls_gar_marshalCommander_base;
 	class ls_gar_standard_backpack;
 	class ls_gar_heavy_backpack;
 	class ls_gar_medic_backpack;
@@ -116,7 +89,6 @@ class CfgVehicles
 	class ls_sob_commando_backpack;
 	class JLTS_Clone_jumppack;
 	class JLTS_Clone_jumppack_JT12_104;
-	class ls_cloneBackpack_jt12;
 	class JLTS_Clone_jumppack_mc;
 	class RD501_JLTS_Clone_jumppack_cdv;
 	class ls_gar_arc_backpack;

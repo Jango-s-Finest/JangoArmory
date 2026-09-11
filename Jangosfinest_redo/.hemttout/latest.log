@@ -1,482 +1,376 @@
-2026-09-11T23:24:34.506843Z TRACE ThreadId(01) version: 1.21.0
-2026-09-11T23:24:34.506902Z TRACE ThreadId(01) platform: windows
-2026-09-11T23:24:34.506913Z TRACE ThreadId(01) args: [
+2026-09-11T23:36:00.856465Z TRACE ThreadId(01) version: 1.21.0
+2026-09-11T23:36:00.856522Z TRACE ThreadId(01) platform: windows
+2026-09-11T23:36:00.856533Z TRACE ThreadId(01) args: [
     "C:\\Users\\Nicholas_Brant\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrettMayson.HEMTT_Microsoft.Winget.Source_8wekyb3d8bbwe\\hemtt.exe",
     "build",
 ]
-2026-09-11T23:24:34.513185Z TRACE ThreadId(01) using temporary folder: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo"
-2026-09-11T23:24:34.513201Z TRACE ThreadId(01) using project folder: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo"
-2026-09-11T23:24:34.513284Z TRACE ThreadId(01) using out folder: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout"
-2026-09-11T23:24:34.513523Z TRACE ThreadId(01) using build folder: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build"
-2026-09-11T23:24:34.532763Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/x/cba/addons/xeh/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.534155Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/x/cba/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.538727Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/a3/ui_f/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.545178Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/pilot_vests/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.545896Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/pilot_vests/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.548496Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/melee/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.549251Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/melee/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.554949Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/pilot_helmets/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.555135Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/pilot_helmets/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.563435Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.563810Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.565718Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/cis/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.565915Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/cis/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.568759Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/pilot_armours/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.568977Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/pilot_armours/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.576551Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/grenades/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.577468Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/grenades/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.579956Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/backpacks/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.580695Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/backpacks/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.594666Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
-2026-09-11T23:24:34.608364Z  INFO ThreadId(01) Config loaded for Jango's finest 4.0.0.0-78c2a539
-2026-09-11T23:24:34.608506Z TRACE ThreadId(01) Scanning C:\Users\Nicholas_Brant\Documents\github\JangoArmory\Jangosfinest_redo\addons for addons
-2026-09-11T23:24:34.611919Z DEBUG ThreadId(01) using global config directory: "C:\\Users\\Nicholas_Brant\\AppData\\Roaming\\hemtt"
-2026-09-11T23:24:34.612056Z  INFO ThreadId(01) Creating `build` version
-2026-09-11T23:24:34.612076Z TRACE ThreadId(01) phase: init (BOM Check) (start)
-2026-09-11T23:24:34.612083Z TRACE ThreadId(01) phase: init (BOM Check) (done)
-2026-09-11T23:24:34.612086Z TRACE ThreadId(01) phase: init (Final New Line Check) (start)
-2026-09-11T23:24:34.612088Z TRACE ThreadId(01) phase: init (Final New Line Check) (done)
-2026-09-11T23:24:34.612090Z TRACE ThreadId(01) phase: init (git) (start)
-2026-09-11T23:24:34.612092Z TRACE ThreadId(01) phase: init (git) (done)
-2026-09-11T23:24:34.612094Z TRACE ThreadId(01) phase: init (Hooks) (start)
-2026-09-11T23:24:34.612176Z TRACE ThreadId(01) no hooks folder
-2026-09-11T23:24:34.612180Z TRACE ThreadId(01) phase: init (Hooks) (done)
-2026-09-11T23:24:34.612182Z TRACE ThreadId(01) phase: init (pboprefix) (start)
-2026-09-11T23:24:34.612184Z TRACE ThreadId(01) phase: init (pboprefix) (done)
-2026-09-11T23:24:34.612187Z TRACE ThreadId(01) phase: init (Binarize) (start)
-2026-09-11T23:24:34.612193Z TRACE ThreadId(01) Using Binarize path from registry
-2026-09-11T23:24:34.613174Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\backpacks" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\backpacks"
-2026-09-11T23:24:34.633158Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\cis" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\cis"
-2026-09-11T23:24:34.650761Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\grenades" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\grenades"
-2026-09-11T23:24:34.667372Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\main" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\main"
-2026-09-11T23:24:34.684655Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\melee" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\melee"
-2026-09-11T23:24:34.702353Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\pilot_armours" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\pilot_armours"
-2026-09-11T23:24:34.719324Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\pilot_helmets" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\pilot_helmets"
-2026-09-11T23:24:34.735307Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\pilot_vests" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\pilot_vests"
-2026-09-11T23:24:34.753545Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\a3\\ui_f" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include\\a3\\ui_f"
-2026-09-11T23:24:34.769774Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\x\\cba" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include\\x\\cba"
-2026-09-11T23:24:34.786593Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\z\\ace" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include\\z\\ace"
-2026-09-11T23:24:34.802314Z TRACE ThreadId(01) phase: init (Binarize) (done)
-2026-09-11T23:24:34.802325Z TRACE ThreadId(01) phase: init (tex_headers) (start)
-2026-09-11T23:24:34.802328Z TRACE ThreadId(01) phase: init (tex_headers) (done)
-2026-09-11T23:24:34.802330Z TRACE ThreadId(01) phase: init (Files) (start)
-2026-09-11T23:24:34.802332Z TRACE ThreadId(01) phase: init (Files) (done)
-2026-09-11T23:24:34.802334Z TRACE ThreadId(01) phase: init (Meta) (start)
-2026-09-11T23:24:34.802336Z TRACE ThreadId(01) phase: init (Meta) (done)
-2026-09-11T23:24:34.802338Z TRACE ThreadId(01) phase: init (summary) (start)
-2026-09-11T23:24:34.802340Z TRACE ThreadId(01) phase: init (summary) (done)
-2026-09-11T23:24:34.802342Z TRACE ThreadId(01) phase: init (Rapifier) (start)
-2026-09-11T23:24:34.802344Z TRACE ThreadId(01) phase: init (Rapifier) (done)
-2026-09-11T23:24:34.802346Z TRACE ThreadId(01) phase: init (SQF) (start)
-2026-09-11T23:24:35.297418Z TRACE ThreadId(01) phase: init (SQF) (done)
-2026-09-11T23:24:35.297434Z TRACE ThreadId(01) phase: init (Stringtables) (start)
-2026-09-11T23:24:35.297437Z TRACE ThreadId(01) phase: init (Stringtables) (done)
-2026-09-11T23:24:35.297440Z TRACE ThreadId(01) phase: check (BOM Check) (start)
-2026-09-11T23:24:35.302855Z TRACE ThreadId(01) phase: check (BOM Check) (done)
-2026-09-11T23:24:35.302865Z TRACE ThreadId(01) phase: check (Final New Line Check) (start)
-2026-09-11T23:24:35.305898Z TRACE ThreadId(01) phase: check (Final New Line Check) (done)
-2026-09-11T23:24:35.305907Z TRACE ThreadId(01) phase: check (git) (start)
-2026-09-11T23:24:35.311671Z TRACE ThreadId(01) phase: check (git) (done)
-2026-09-11T23:24:35.311678Z TRACE ThreadId(01) phase: check (Hooks) (start)
-2026-09-11T23:24:35.311681Z TRACE ThreadId(01) phase: check (Hooks) (done)
-2026-09-11T23:24:35.311683Z TRACE ThreadId(01) phase: check (pboprefix) (start)
-2026-09-11T23:24:35.311687Z TRACE ThreadId(01) Checking prefixes against expected project path: ja\jangos_armory\
-2026-09-11T23:24:35.312026Z TRACE ThreadId(01) phase: check (pboprefix) (done)
-2026-09-11T23:24:35.312048Z TRACE ThreadId(01) phase: check (Binarize) (start)
-2026-09-11T23:24:35.354194Z TRACE ThreadId(01) checking textures & materials for /addons/melee/Beskad.p3d
-2026-09-11T23:24:35.391488Z  INFO ThreadId(01) Validated 1 files for binarization
-2026-09-11T23:24:35.391502Z TRACE ThreadId(01) phase: check (Binarize) (done)
-2026-09-11T23:24:35.391506Z TRACE ThreadId(01) phase: check (tex_headers) (start)
-2026-09-11T23:24:35.391509Z TRACE ThreadId(01) phase: check (tex_headers) (done)
-2026-09-11T23:24:35.391511Z TRACE ThreadId(01) phase: check (Files) (start)
-2026-09-11T23:24:35.391513Z TRACE ThreadId(01) phase: check (Files) (done)
-2026-09-11T23:24:35.391515Z TRACE ThreadId(01) phase: check (Meta) (start)
-2026-09-11T23:24:35.391517Z TRACE ThreadId(01) phase: check (Meta) (done)
-2026-09-11T23:24:35.391519Z TRACE ThreadId(01) phase: check (summary) (start)
-2026-09-11T23:24:35.391521Z TRACE ThreadId(01) phase: check (summary) (done)
-2026-09-11T23:24:35.391523Z TRACE ThreadId(01) phase: check (Rapifier) (start)
-2026-09-11T23:24:35.391568Z TRACE ThreadId(01) phase: check (Rapifier) (done)
-2026-09-11T23:24:35.391570Z TRACE ThreadId(01) phase: check (SQF) (start)
-2026-09-11T23:24:35.391623Z TRACE ThreadId(01) phase: check (SQF) (done)
-2026-09-11T23:24:35.391625Z TRACE ThreadId(01) phase: check (Stringtables) (start)
-2026-09-11T23:24:35.391645Z TRACE ThreadId(01) phase: check (Stringtables) (done)
-2026-09-11T23:24:35.391648Z TRACE ThreadId(01) phase: pre_build (BOM Check) (start)
-2026-09-11T23:24:35.391650Z TRACE ThreadId(01) phase: pre_build (BOM Check) (done)
-2026-09-11T23:24:35.391652Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (start)
-2026-09-11T23:24:35.391654Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (done)
-2026-09-11T23:24:35.391655Z TRACE ThreadId(01) phase: pre_build (git) (start)
-2026-09-11T23:24:35.391657Z TRACE ThreadId(01) phase: pre_build (git) (done)
-2026-09-11T23:24:35.391659Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
-2026-09-11T23:24:35.391663Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
-2026-09-11T23:24:35.391665Z TRACE ThreadId(01) phase: pre_build (pboprefix) (start)
-2026-09-11T23:24:35.391666Z TRACE ThreadId(01) phase: pre_build (pboprefix) (done)
-2026-09-11T23:24:35.391668Z TRACE ThreadId(01) phase: pre_build (Binarize) (start)
-2026-09-11T23:24:35.392376Z DEBUG ThreadId(01) binarizing Beskad.p3d
-2026-09-11T23:24:35.392389Z TRACE ThreadId(01) "H:\\SteamLibrary\\steamapps\\common\\Arma 3 Tools\\Binarize\\binarize_x64.exe" "-norecurse" "-always" "-silent" "-maxProcesses=0" "JA\\jangos_Armory\\addons\\melee\\" "hemtt_binarize_output\\addons\\melee" "Beskad.p3d"
-2026-09-11T23:24:35.544114Z  INFO ThreadId(01) Binarized 1 files
-2026-09-11T23:24:35.544133Z TRACE ThreadId(01) phase: pre_build (Binarize) (done)
-2026-09-11T23:24:35.544136Z TRACE ThreadId(01) phase: pre_build (tex_headers) (start)
-2026-09-11T23:24:35.552983Z DEBUG ThreadId(17) Writing texture headers to "/addons/pilot_vests/texHeaders.bin"
-2026-09-11T23:24:35.554463Z DEBUG ThreadId(04) Writing texture headers to "/addons/melee/texHeaders.bin"
-2026-09-11T23:24:35.555632Z DEBUG ThreadId(06) Writing texture headers to "/addons/cis/texHeaders.bin"
-2026-09-11T23:24:35.573474Z DEBUG ThreadId(07) Writing texture headers to "/addons/pilot_armours/texHeaders.bin"
-2026-09-11T23:24:35.579607Z DEBUG ThreadId(09) Writing texture headers to "/addons/pilot_helmets/texHeaders.bin"
-2026-09-11T23:24:35.601374Z DEBUG ThreadId(03) Writing texture headers to "/addons/backpacks/texHeaders.bin"
-2026-09-11T23:24:35.602317Z  INFO ThreadId(01) Generated 6 texture headers
-2026-09-11T23:24:35.602335Z TRACE ThreadId(01) phase: pre_build (tex_headers) (done)
-2026-09-11T23:24:35.602339Z TRACE ThreadId(01) phase: pre_build (Files) (start)
-2026-09-11T23:24:35.602342Z TRACE ThreadId(01) phase: pre_build (Files) (done)
-2026-09-11T23:24:35.602344Z TRACE ThreadId(01) phase: pre_build (Meta) (start)
-2026-09-11T23:24:35.602346Z TRACE ThreadId(01) phase: pre_build (Meta) (done)
-2026-09-11T23:24:35.602348Z TRACE ThreadId(01) phase: pre_build (summary) (start)
-2026-09-11T23:24:35.602350Z TRACE ThreadId(01) phase: pre_build (summary) (done)
-2026-09-11T23:24:35.602352Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
-2026-09-11T23:24:35.748018Z  INFO ThreadId(01) Rapified 9 addon configs
-2026-09-11T23:24:35.748094Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
-2026-09-11T23:24:35.748101Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
-2026-09-11T23:24:35.849717Z  INFO ThreadId(01) Compiled 0 sqf files
-2026-09-11T23:24:35.849774Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
-2026-09-11T23:24:35.849777Z TRACE ThreadId(01) phase: pre_build (Stringtables) (start)
-2026-09-11T23:24:35.888963Z  INFO ThreadId(01) Checked 0 stringtables
-2026-09-11T23:24:35.888978Z TRACE ThreadId(01) phase: pre_build (Stringtables) (done)
-2026-09-11T23:24:35.888983Z TRACE ThreadId(01) phase: build (start)
-2026-09-11T23:24:35.894431Z DEBUG ThreadId(01) creating "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons"
-2026-09-11T23:24:35.894610Z DEBUG ThreadId(01) building "addons/backpacks" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_backpacks.pbo"
-2026-09-11T23:24:35.908525Z TRACE ThreadId(01) adding file "config.bin"
-2026-09-11T23:24:35.908716Z TRACE ThreadId(01) adding file "model.cfg"
-2026-09-11T23:24:35.908882Z TRACE ThreadId(01) adding file "texHeaders.bin"
-2026-09-11T23:24:35.909540Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack_Cerberus_2.paa"
-2026-09-11T23:24:35.909881Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack_Cerberus_2.paa"
-2026-09-11T23:24:35.910311Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Knockout_MiniPack_Slots.paa"
-2026-09-11T23:24:35.910719Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_2-3_Jumppack.paa"
-2026-09-11T23:24:35.911083Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack_Cerberus_4.paa"
-2026-09-11T23:24:35.911431Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Tiger_MiniPack_Slots.paa"
-2026-09-11T23:24:35.911769Z TRACE ThreadId(01) adding file "data\\textures\\104th_Irish_Mini_Lr_Top.paa"
-2026-09-11T23:24:35.912113Z TRACE ThreadId(01) adding file "data\\textures\\104th_Marx_Backpack_Mini_Main.paa"
-2026-09-11T23:24:35.912454Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Spirit_Mini_Lr_Top.paa"
-2026-09-11T23:24:35.912788Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_2-4_Jumppack.paa"
-2026-09-11T23:24:35.913131Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack.paa"
-2026-09-11T23:24:35.913464Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Medic_Backpack.paa"
-2026-09-11T23:24:35.913817Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack_Cerberus_4.paa"
-2026-09-11T23:24:35.914157Z TRACE ThreadId(01) adding file "data\\textures\\104th_AB_Freq_Jumppack.paa"
-2026-09-11T23:24:35.914494Z TRACE ThreadId(01) adding file "data\\textures\\104th_Tusk_Mini_Lr_Upper.paa"
-2026-09-11T23:24:35.914841Z TRACE ThreadId(01) adding file "data\\textures\\104th_MiniPack_Slots.paa"
-2026-09-11T23:24:35.915195Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Boris_Minipack.paa"
-2026-09-11T23:24:35.915545Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_4.paa"
-2026-09-11T23:24:35.915888Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Rich_Minipack.paa"
-2026-09-11T23:24:35.916230Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Backpack.paa"
-2026-09-11T23:24:35.916567Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Bulky_Backpack.paa"
-2026-09-11T23:24:35.916903Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack_Cerberus_1.paa"
-2026-09-11T23:24:35.917241Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Mini_Backpack_Accumulator.paa"
-2026-09-11T23:24:35.917588Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Boris_Minipack_Slots.paa"
-2026-09-11T23:24:35.917926Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Poet_MiniPack_Slots.paa"
-2026-09-11T23:24:35.918268Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Spirit_Mini_Lr_Main.paa"
-2026-09-11T23:24:35.918604Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_1.paa"
-2026-09-11T23:24:35.918949Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack.paa"
-2026-09-11T23:24:35.919287Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Aiomi_MiniPack_Slots.paa"
-2026-09-11T23:24:35.919632Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_Jumppack.paa"
-2026-09-11T23:24:35.919971Z TRACE ThreadId(01) adding file "data\\textures\\104th_JT12_Medic_2-2.paa"
-2026-09-11T23:24:35.920308Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Lykos_MiniPack_Slots.paa"
-2026-09-11T23:24:35.920644Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk.paa"
-2026-09-11T23:24:35.921001Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_1_Medic.paa"
-2026-09-11T23:24:35.921350Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_AmmoBearer.paa"
-2026-09-11T23:24:35.921760Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_3.paa"
-2026-09-11T23:24:35.922148Z TRACE ThreadId(01) adding file "data\\textures\\104th_Company_Spectre_RC_Backpack.paa"
-2026-09-11T23:24:35.922487Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Poet_MiniPack.paa"
-2026-09-11T23:24:35.922833Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Tiger_MiniPack.paa"
-2026-09-11T23:24:35.923169Z TRACE ThreadId(01) adding file "data\\textures\\104th_Tusk_Mini_Lr.paa"
-2026-09-11T23:24:35.923515Z TRACE ThreadId(01) adding file "data\\textures\\104th_Irish_Mini_LR_Main.paa"
-2026-09-11T23:24:35.923862Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_2_Medic.paa"
-2026-09-11T23:24:35.924204Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Mini_Backpack.paa"
-2026-09-11T23:24:35.924537Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Lykos_MiniPack.paa"
-2026-09-11T23:24:35.924873Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_Medic.paa"
-2026-09-11T23:24:35.925212Z TRACE ThreadId(01) adding file "data\\textures\\104th_Marx_Backpack_Mini_Pouches.paa"
-2026-09-11T23:24:35.925558Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack_Cerberus_1.paa"
-2026-09-11T23:24:35.926374Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_3_Medic.paa"
-2026-09-11T23:24:35.926749Z TRACE ThreadId(01) adding file "data\\textures\\104th_JT12_Medic_2-1.paa"
-2026-09-11T23:24:35.927096Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Castle_Minipack.paa"
-2026-09-11T23:24:35.927433Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Patch_Medic_Backpack.paa"
-2026-09-11T23:24:35.927776Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_2-2_Jumppack.paa"
-2026-09-11T23:24:35.928121Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_2.paa"
-2026-09-11T23:24:35.928459Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack_Cerberus_3.paa"
-2026-09-11T23:24:35.928808Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Castle_Minipack_Slots.paa"
-2026-09-11T23:24:35.929149Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_4_Medic.paa"
-2026-09-11T23:24:35.929501Z TRACE ThreadId(01) adding file "data\\textures\\104th_AB_Magnum_Jumppack.paa"
-2026-09-11T23:24:35.929846Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Lax_Backpack.paa"
-2026-09-11T23:24:35.930189Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Carmine_Backpack.paa"
-2026-09-11T23:24:35.930531Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack_Cerberus_3.paa"
-2026-09-11T23:24:35.930871Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Aiomi_MiniPack.paa"
-2026-09-11T23:24:35.931209Z TRACE ThreadId(01) adding file "data\\textures\\104th_MiniPack.paa"
-2026-09-11T23:24:35.931553Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Rich_Minipack_Slots.paa"
-2026-09-11T23:24:35.931891Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Knockout_MiniPack.paa"
-2026-09-11T23:24:35.932232Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_2-1_Jumppack.paa"
-2026-09-11T23:24:35.979999Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
-2026-09-11T23:24:35.980015Z DEBUG ThreadId(01) building "addons/cis" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_cis.pbo"
-2026-09-11T23:24:35.984163Z TRACE ThreadId(01) adding file "model.cfg"
-2026-09-11T23:24:35.984355Z TRACE ThreadId(01) adding file "config.bin"
-2026-09-11T23:24:35.984361Z TRACE ThreadId(01) adding file "texHeaders.bin"
-2026-09-11T23:24:35.984721Z TRACE ThreadId(01) adding file "data\\textures\\104th_B1_Aquatic_Upper.paa"
-2026-09-11T23:24:35.985075Z TRACE ThreadId(01) adding file "data\\textures\\104th_B2_Aquatic_Torso.paa"
-2026-09-11T23:24:35.985437Z TRACE ThreadId(01) adding file "data\\textures\\104th_B2_Aquatic_Arms.paa"
-2026-09-11T23:24:35.985819Z TRACE ThreadId(01) adding file "data\\textures\\104th_B1_Aquatic_Lower.paa"
-2026-09-11T23:24:35.986161Z TRACE ThreadId(01) adding file "data\\textures\\104th_B2_Aquatic_Legs.paa"
-2026-09-11T23:24:35.990490Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
-2026-09-11T23:24:35.990502Z DEBUG ThreadId(01) building "addons/grenades" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_grenades.pbo"
-2026-09-11T23:24:35.993614Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
-2026-09-11T23:24:35.993977Z TRACE ThreadId(01) adding file "config.bin"
-2026-09-11T23:24:35.995158Z TRACE ThreadId(01) adding file "data\\textures\\textures"
-2026-09-11T23:24:35.995493Z TRACE ThreadId(01) adding file "data\\models\\models"
-2026-09-11T23:24:35.996359Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
-2026-09-11T23:24:35.996371Z DEBUG ThreadId(01) building "addons/main" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_main.pbo"
-2026-09-11T23:24:35.998057Z TRACE ThreadId(01) adding file "script_mod.hpp"
-2026-09-11T23:24:35.998388Z TRACE ThreadId(01) adding file "script_version.hpp"
-2026-09-11T23:24:35.998715Z TRACE ThreadId(01) adding file "script_macros.hpp"
-2026-09-11T23:24:35.999382Z TRACE ThreadId(01) adding file "config.bin"
-2026-09-11T23:24:35.999557Z TRACE ThreadId(01) adding file "script_component.hpp"
-2026-09-11T23:24:36.000251Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
-2026-09-11T23:24:36.000260Z DEBUG ThreadId(01) building "addons/melee" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_melee.pbo"
-2026-09-11T23:24:36.004676Z TRACE ThreadId(01) adding file "texHeaders.bin"
-2026-09-11T23:24:36.005493Z TRACE ThreadId(01) adding file "model.cfg"
-2026-09-11T23:24:36.005977Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
-2026-09-11T23:24:36.006359Z TRACE ThreadId(01) adding file "config.bin"
-2026-09-11T23:24:36.006517Z TRACE ThreadId(01) adding file "Beskad.p3d"
-2026-09-11T23:24:36.007004Z TRACE ThreadId(01) adding file "data\\textures\\Base_co.paa"
-2026-09-11T23:24:36.007349Z TRACE ThreadId(01) adding file "data\\textures\\Base_as.paa"
-2026-09-11T23:24:36.007686Z TRACE ThreadId(01) adding file "data\\textures\\Base_smdi.paa"
-2026-09-11T23:24:36.007856Z TRACE ThreadId(01) adding file "data\\textures\\Beskad.rvmat"
-2026-09-11T23:24:36.008029Z TRACE ThreadId(01) adding file "data\\textures\\Base_nohq.paa"
-2026-09-11T23:24:36.008367Z TRACE ThreadId(01) adding file "data\\Sounds\\Unsheath_bescar_1.ogg"
-2026-09-11T23:24:36.008705Z TRACE ThreadId(01) adding file "data\\Sounds\\Block_bescar_1.ogg"
-2026-09-11T23:24:36.009051Z TRACE ThreadId(01) adding file "data\\Sounds\\Block_bescar_3.ogg"
-2026-09-11T23:24:36.009389Z TRACE ThreadId(01) adding file "data\\Sounds\\Block_bescar_2.ogg"
-2026-09-11T23:24:36.009728Z TRACE ThreadId(01) adding file "data\\Sounds\\Strike_bescar_2.ogg"
-2026-09-11T23:24:36.010066Z TRACE ThreadId(01) adding file "data\\Sounds\\Strike_bescar_3.ogg"
-2026-09-11T23:24:36.010398Z TRACE ThreadId(01) adding file "data\\Sounds\\Block_bescar_4.ogg"
-2026-09-11T23:24:36.013483Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
-2026-09-11T23:24:36.013494Z DEBUG ThreadId(01) building "addons/pilot_armours" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_pilot_armours.pbo"
-2026-09-11T23:24:36.021640Z TRACE ThreadId(01) adding file "texHeaders.bin"
-2026-09-11T23:24:36.023108Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
-2026-09-11T23:24:36.023317Z TRACE ThreadId(01) adding file "config.bin"
-2026-09-11T23:24:36.023498Z TRACE ThreadId(01) adding file "model.cfg"
-2026-09-11T23:24:36.024012Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Beef_Upper.paa"
-2026-09-11T23:24:36.024407Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Boris_Lower.paa"
-2026-09-11T23:24:36.024753Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Bail_Lower.paa"
-2026-09-11T23:24:36.025100Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_1C_Aviation_Lower.paa"
-2026-09-11T23:24:36.025462Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Cherryy_Lower.paa"
-2026-09-11T23:24:36.025817Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fish_Lower.paa"
-2026-09-11T23:24:36.026163Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fish_Upper.paa"
-2026-09-11T23:24:36.026539Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_1C_Aviation_Upper.paa"
-2026-09-11T23:24:36.026887Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Cherryy_Upper.paa"
-2026-09-11T23:24:36.027322Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Uniform_Lower.paa"
-2026-09-11T23:24:36.027751Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Uniform_Upper.paa"
-2026-09-11T23:24:36.028109Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Haze_Lower.paa"
-2026-09-11T23:24:36.028464Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Haze_Upper.paa"
-2026-09-11T23:24:36.028814Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Boris_Upper.paa"
-2026-09-11T23:24:36.029170Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_OD_Lower.paa"
-2026-09-11T23:24:36.029546Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Spirit_Upper.paa"
-2026-09-11T23:24:36.029889Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Beef_Lower.paa"
-2026-09-11T23:24:36.030241Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Varelli_Lower.paa"
-2026-09-11T23:24:36.030603Z TRACE ThreadId(01) adding file "data\\textures\\JA_104th_P2_1C_Aviation_Upper.paa"
-2026-09-11T23:24:36.030960Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Spirit_Lower.paa"
-2026-09-11T23:24:36.031318Z TRACE ThreadId(01) adding file "data\\textures\\JA_104th_P2_1C_Aviation_Lower.paa"
-2026-09-11T23:24:36.031667Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Bail_Upper.paa"
-2026-09-11T23:24:36.032010Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Varelli_Upper.paa"
-2026-09-11T23:24:36.032358Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_OD_Upper.paa"
-2026-09-11T23:24:36.051375Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
-2026-09-11T23:24:36.051390Z DEBUG ThreadId(01) building "addons/pilot_helmets" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_pilot_helmets.pbo"
-2026-09-11T23:24:36.059357Z TRACE ThreadId(01) adding file "config.bin"
-2026-09-11T23:24:36.059549Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
-2026-09-11T23:24:36.059906Z TRACE ThreadId(01) adding file "model.cfg"
-2026-09-11T23:24:36.060869Z TRACE ThreadId(01) adding file "texHeaders.bin"
-2026-09-11T23:24:36.061442Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Cherryy_Helmet.paa"
-2026-09-11T23:24:36.061813Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Boris_Pilot_Helmet.paa"
-2026-09-11T23:24:36.062164Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Helmet.paa"
-2026-09-11T23:24:36.062535Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Haze_Helmet.paa"
-2026-09-11T23:24:36.062898Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fish_Helmet.paa"
-2026-09-11T23:24:36.063327Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Storm_Pilot_Helmet.paa"
-2026-09-11T23:24:36.063687Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_1C_Pilot_Helmet.paa"
-2026-09-11T23:24:36.064063Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Dak_Mlv_Life_Support.paa"
-2026-09-11T23:24:36.064408Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Duce_Life_Support.paa"
-2026-09-11T23:24:36.064860Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Life_Support.paa"
-2026-09-11T23:24:36.065262Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Dak_P1_Life_Support.paa"
-2026-09-11T23:24:36.065789Z TRACE ThreadId(01) adding file "data\\textures\\104_P2_Strawberry_Pilot_Helmet.paa"
-2026-09-11T23:24:36.066452Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Varelli_Helmet.paa"
-2026-09-11T23:24:36.066869Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Pilot_Helmet.paa"
-2026-09-11T23:24:36.067227Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Hightower_P2_Helmet.paa"
-2026-09-11T23:24:36.067608Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Pilot_Lifesupport.paa"
-2026-09-11T23:24:36.068105Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Duce_Helmet.paa"
-2026-09-11T23:24:36.068470Z TRACE ThreadId(01) adding file "data\\textures\\JA_104th_P2_1C_Pilot_Helmet.paa"
-2026-09-11T23:24:36.068821Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Spirit_Pilot_P1_Helmet.paa"
-2026-09-11T23:24:36.069183Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Bail_Helmet.paa"
-2026-09-11T23:24:36.069620Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_OD_Helmet.paa"
-2026-09-11T23:24:36.069971Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Beef_Helmet.paa"
-2026-09-11T23:24:36.070313Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Dak_P1_Helmet.paa"
-2026-09-11T23:24:36.070675Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Spirit_Pilot_Life_Support.paa"
-2026-09-11T23:24:36.071160Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Dak_Mlv_Helmet.paa"
-2026-09-11T23:24:36.071981Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Cherryy_Lifesupport.paa"
-2026-09-11T23:24:36.072643Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Cherryy_Helmet.paa"
-2026-09-11T23:24:36.097824Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
-2026-09-11T23:24:36.097842Z DEBUG ThreadId(01) building "addons/pilot_vests" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_pilot_vests.pbo"
-2026-09-11T23:24:36.100543Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
-2026-09-11T23:24:36.100896Z TRACE ThreadId(01) adding file "texHeaders.bin"
-2026-09-11T23:24:36.101805Z TRACE ThreadId(01) adding file "model.cfg"
-2026-09-11T23:24:36.101986Z TRACE ThreadId(01) adding file "config.bin"
-2026-09-11T23:24:36.102370Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Cherryy_Accessories_Officer.paa"
-2026-09-11T23:24:36.102757Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Accessories_Officer.paa"
-2026-09-11T23:24:36.104936Z  INFO ThreadId(01) Built 8 PBOs
-2026-09-11T23:24:36.104955Z TRACE ThreadId(01) phase: build (done)
-2026-09-11T23:24:36.104961Z TRACE ThreadId(01) phase: post_build (BOM Check) (start)
-2026-09-11T23:24:36.104964Z TRACE ThreadId(01) phase: post_build (BOM Check) (done)
-2026-09-11T23:24:36.104966Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (start)
-2026-09-11T23:24:36.104968Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (done)
-2026-09-11T23:24:36.104970Z TRACE ThreadId(01) phase: post_build (git) (start)
-2026-09-11T23:24:36.104972Z TRACE ThreadId(01) phase: post_build (git) (done)
-2026-09-11T23:24:36.104974Z TRACE ThreadId(01) phase: post_build (Hooks) (start)
-2026-09-11T23:24:36.104976Z TRACE ThreadId(01) phase: post_build (Hooks) (done)
-2026-09-11T23:24:36.104978Z TRACE ThreadId(01) phase: post_build (pboprefix) (start)
-2026-09-11T23:24:36.104980Z TRACE ThreadId(01) phase: post_build (pboprefix) (done)
-2026-09-11T23:24:36.104982Z TRACE ThreadId(01) phase: post_build (Binarize) (start)
-2026-09-11T23:24:36.104984Z TRACE ThreadId(01) phase: post_build (Binarize) (done)
-2026-09-11T23:24:36.104987Z TRACE ThreadId(01) phase: post_build (tex_headers) (start)
-2026-09-11T23:24:36.104989Z TRACE ThreadId(01) phase: post_build (tex_headers) (done)
-2026-09-11T23:24:36.104990Z TRACE ThreadId(01) phase: post_build (Files) (start)
-2026-09-11T23:24:36.254442Z DEBUG ThreadId(01) copying "/mod.cpp" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\mod.cpp"
-2026-09-11T23:24:36.255568Z DEBUG ThreadId(01) copying "/LICENSE" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\LICENSE"
-2026-09-11T23:24:36.256488Z DEBUG ThreadId(01) copying "/jfalogo.paa" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\jfalogo.paa"
-2026-09-11T23:24:36.257250Z DEBUG ThreadId(01) copying "/meta.cpp" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\meta.cpp"
-2026-09-11T23:24:36.258042Z  INFO ThreadId(01) Copied 4 files
-2026-09-11T23:24:36.258056Z TRACE ThreadId(01) phase: post_build (Files) (done)
-2026-09-11T23:24:36.258059Z TRACE ThreadId(01) phase: post_build (Meta) (start)
-2026-09-11T23:24:36.258061Z TRACE ThreadId(01) phase: post_build (Meta) (done)
-2026-09-11T23:24:36.258063Z TRACE ThreadId(01) phase: post_build (summary) (start)
-2026-09-11T23:24:36.259320Z TRACE ThreadId(01) phase: post_build (summary) (done)
-2026-09-11T23:24:36.259326Z TRACE ThreadId(01) phase: post_build (Rapifier) (start)
-2026-09-11T23:24:36.259329Z TRACE ThreadId(01) phase: post_build (Rapifier) (done)
-2026-09-11T23:24:36.259331Z TRACE ThreadId(01) phase: post_build (SQF) (start)
-2026-09-11T23:24:36.259339Z TRACE ThreadId(01) phase: post_build (SQF) (done)
-2026-09-11T23:24:36.259341Z TRACE ThreadId(01) phase: post_build (Stringtables) (start)
-2026-09-11T23:24:36.259343Z TRACE ThreadId(01) phase: post_build (Stringtables) (done)
-2026-09-11T23:24:36.268000Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
-2026-09-11T23:24:36.268142Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268147Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268149Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268151Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268153Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268155Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268157Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268159Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268161Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268162Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268164Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268166Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268168Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268170Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268172Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268174Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268176Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268178Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268180Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268182Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268184Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268186Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268187Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268189Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268191Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268193Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268195Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268197Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268199Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268201Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268203Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268205Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268207Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268209Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268211Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268212Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268214Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268216Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268218Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268220Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268222Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268224Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268228Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268230Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268232Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268234Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268236Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268238Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268240Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268242Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268244Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268246Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268248Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268249Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268251Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268253Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268255Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268257Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268259Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268261Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268263Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268265Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268267Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268268Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268270Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268272Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268274Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268276Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268278Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268280Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268282Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268284Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268286Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268287Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268289Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268291Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268293Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268295Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268297Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268299Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268301Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268303Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268305Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268307Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268309Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268311Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268314Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268316Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268318Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268320Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268322Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268324Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268326Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268328Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268330Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268332Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268334Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268336Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268338Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268339Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268341Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268343Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268345Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268347Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268349Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268351Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268353Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268356Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268358Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268361Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268364Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268367Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268369Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268372Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268374Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268377Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268380Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268382Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268385Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268387Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268390Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268392Z TRACE ThreadId(01) Code L-C14 does not have a diagnostic, skipping
-2026-09-11T23:24:36.268396Z TRACE ThreadId(01) wrote 0 ci annotations to .hemttout/ci_annotations.txt
+2026-09-11T23:36:00.862422Z TRACE ThreadId(01) using temporary folder: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo"
+2026-09-11T23:36:00.862438Z TRACE ThreadId(01) using project folder: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo"
+2026-09-11T23:36:00.862520Z TRACE ThreadId(01) using out folder: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout"
+2026-09-11T23:36:00.862774Z TRACE ThreadId(01) using build folder: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build"
+2026-09-11T23:36:00.877188Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/a3/ui_f/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.884972Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/x/cba/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.886141Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/x/cba/addons/xeh/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.889440Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/cis/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.890034Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/cis/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.892840Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/flags/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.893369Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/flags/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.896284Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/pilot_vests/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.896829Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/pilot_vests/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.899353Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/grenades/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.899909Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/grenades/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.902793Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/pilot_armours/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.903523Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/pilot_armours/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.909961Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/pilot_helmets/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.910496Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/pilot_helmets/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.916766Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.917110Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.918780Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/backpacks/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.918955Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/backpacks/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.932317Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/melee/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.933530Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/melee/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.937258Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\hemtt_binarize_output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo" } } } } } }] } } }
+2026-09-11T23:36:00.948730Z  INFO ThreadId(01) Config loaded for Jango's finest 4.0.0.0-26038a42
+2026-09-11T23:36:00.948862Z TRACE ThreadId(01) Scanning C:\Users\Nicholas_Brant\Documents\github\JangoArmory\Jangosfinest_redo\addons for addons
+2026-09-11T23:36:00.952612Z DEBUG ThreadId(01) using global config directory: "C:\\Users\\Nicholas_Brant\\AppData\\Roaming\\hemtt"
+2026-09-11T23:36:00.952765Z  INFO ThreadId(01) Creating `build` version
+2026-09-11T23:36:00.952787Z TRACE ThreadId(01) phase: init (BOM Check) (start)
+2026-09-11T23:36:00.952794Z TRACE ThreadId(01) phase: init (BOM Check) (done)
+2026-09-11T23:36:00.952796Z TRACE ThreadId(01) phase: init (Final New Line Check) (start)
+2026-09-11T23:36:00.952798Z TRACE ThreadId(01) phase: init (Final New Line Check) (done)
+2026-09-11T23:36:00.952800Z TRACE ThreadId(01) phase: init (git) (start)
+2026-09-11T23:36:00.952802Z TRACE ThreadId(01) phase: init (git) (done)
+2026-09-11T23:36:00.952804Z TRACE ThreadId(01) phase: init (Hooks) (start)
+2026-09-11T23:36:00.952894Z TRACE ThreadId(01) no hooks folder
+2026-09-11T23:36:00.952898Z TRACE ThreadId(01) phase: init (Hooks) (done)
+2026-09-11T23:36:00.952900Z TRACE ThreadId(01) phase: init (pboprefix) (start)
+2026-09-11T23:36:00.952902Z TRACE ThreadId(01) phase: init (pboprefix) (done)
+2026-09-11T23:36:00.952904Z TRACE ThreadId(01) phase: init (Binarize) (start)
+2026-09-11T23:36:00.952910Z TRACE ThreadId(01) Using Binarize path from registry
+2026-09-11T23:36:00.953867Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\backpacks" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\backpacks"
+2026-09-11T23:36:00.972270Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\cis" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\cis"
+2026-09-11T23:36:00.989283Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\flags" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\flags"
+2026-09-11T23:36:01.005760Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\grenades" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\grenades"
+2026-09-11T23:36:01.021832Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\main" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\main"
+2026-09-11T23:36:01.037864Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\melee" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\melee"
+2026-09-11T23:36:01.054524Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\pilot_armours" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\pilot_armours"
+2026-09-11T23:36:01.070198Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\pilot_helmets" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\pilot_helmets"
+2026-09-11T23:36:01.086508Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\JA\\jangos_Armory\\addons\\pilot_vests" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\addons\\pilot_vests"
+2026-09-11T23:36:01.104984Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\a3\\ui_f" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include\\a3\\ui_f"
+2026-09-11T23:36:01.121920Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\x\\cba" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include\\x\\cba"
+2026-09-11T23:36:01.139130Z TRACE ThreadId(01) junction link "C:\\Users\\NICHOL~1\\AppData\\Local\\Temp\\hemtt\\Users_Nicholas_Brant_Documents_github_JangoArmory_Jangosfinest_redo\\z\\ace" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\include\\z\\ace"
+2026-09-11T23:36:01.155004Z TRACE ThreadId(01) phase: init (Binarize) (done)
+2026-09-11T23:36:01.155014Z TRACE ThreadId(01) phase: init (tex_headers) (start)
+2026-09-11T23:36:01.155018Z TRACE ThreadId(01) phase: init (tex_headers) (done)
+2026-09-11T23:36:01.155020Z TRACE ThreadId(01) phase: init (Files) (start)
+2026-09-11T23:36:01.155022Z TRACE ThreadId(01) phase: init (Files) (done)
+2026-09-11T23:36:01.155024Z TRACE ThreadId(01) phase: init (Meta) (start)
+2026-09-11T23:36:01.155026Z TRACE ThreadId(01) phase: init (Meta) (done)
+2026-09-11T23:36:01.155028Z TRACE ThreadId(01) phase: init (summary) (start)
+2026-09-11T23:36:01.155030Z TRACE ThreadId(01) phase: init (summary) (done)
+2026-09-11T23:36:01.155032Z TRACE ThreadId(01) phase: init (Rapifier) (start)
+2026-09-11T23:36:01.155034Z TRACE ThreadId(01) phase: init (Rapifier) (done)
+2026-09-11T23:36:01.155036Z TRACE ThreadId(01) phase: init (SQF) (start)
+2026-09-11T23:36:01.645671Z TRACE ThreadId(01) phase: init (SQF) (done)
+2026-09-11T23:36:01.645687Z TRACE ThreadId(01) phase: init (Stringtables) (start)
+2026-09-11T23:36:01.645689Z TRACE ThreadId(01) phase: init (Stringtables) (done)
+2026-09-11T23:36:01.645692Z TRACE ThreadId(01) phase: check (BOM Check) (start)
+2026-09-11T23:36:01.651759Z TRACE ThreadId(01) phase: check (BOM Check) (done)
+2026-09-11T23:36:01.651771Z TRACE ThreadId(01) phase: check (Final New Line Check) (start)
+2026-09-11T23:36:01.654855Z TRACE ThreadId(01) phase: check (Final New Line Check) (done)
+2026-09-11T23:36:01.654863Z TRACE ThreadId(01) phase: check (git) (start)
+2026-09-11T23:36:01.661009Z TRACE ThreadId(01) phase: check (git) (done)
+2026-09-11T23:36:01.661018Z TRACE ThreadId(01) phase: check (Hooks) (start)
+2026-09-11T23:36:01.661021Z TRACE ThreadId(01) phase: check (Hooks) (done)
+2026-09-11T23:36:01.661023Z TRACE ThreadId(01) phase: check (pboprefix) (start)
+2026-09-11T23:36:01.661028Z TRACE ThreadId(01) Checking prefixes against expected project path: ja\jangos_armory\
+2026-09-11T23:36:01.661309Z TRACE ThreadId(01) phase: check (pboprefix) (done)
+2026-09-11T23:36:01.661323Z TRACE ThreadId(01) phase: check (Binarize) (start)
+2026-09-11T23:36:01.713109Z TRACE ThreadId(01) checking textures & materials for /addons/melee/Beskad.p3d
+2026-09-11T23:36:01.747944Z  INFO ThreadId(01) Validated 1 files for binarization
+2026-09-11T23:36:01.747968Z TRACE ThreadId(01) phase: check (Binarize) (done)
+2026-09-11T23:36:01.747975Z TRACE ThreadId(01) phase: check (tex_headers) (start)
+2026-09-11T23:36:01.747980Z TRACE ThreadId(01) phase: check (tex_headers) (done)
+2026-09-11T23:36:01.747984Z TRACE ThreadId(01) phase: check (Files) (start)
+2026-09-11T23:36:01.747988Z TRACE ThreadId(01) phase: check (Files) (done)
+2026-09-11T23:36:01.747992Z TRACE ThreadId(01) phase: check (Meta) (start)
+2026-09-11T23:36:01.747996Z TRACE ThreadId(01) phase: check (Meta) (done)
+2026-09-11T23:36:01.747999Z TRACE ThreadId(01) phase: check (summary) (start)
+2026-09-11T23:36:01.748003Z TRACE ThreadId(01) phase: check (summary) (done)
+2026-09-11T23:36:01.748007Z TRACE ThreadId(01) phase: check (Rapifier) (start)
+2026-09-11T23:36:01.748078Z TRACE ThreadId(01) phase: check (Rapifier) (done)
+2026-09-11T23:36:01.748082Z TRACE ThreadId(01) phase: check (SQF) (start)
+2026-09-11T23:36:01.748170Z TRACE ThreadId(01) phase: check (SQF) (done)
+2026-09-11T23:36:01.748178Z TRACE ThreadId(01) phase: check (Stringtables) (start)
+2026-09-11T23:36:01.748213Z TRACE ThreadId(01) phase: check (Stringtables) (done)
+2026-09-11T23:36:01.748218Z TRACE ThreadId(01) phase: pre_build (BOM Check) (start)
+2026-09-11T23:36:01.748223Z TRACE ThreadId(01) phase: pre_build (BOM Check) (done)
+2026-09-11T23:36:01.748226Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (start)
+2026-09-11T23:36:01.748230Z TRACE ThreadId(01) phase: pre_build (Final New Line Check) (done)
+2026-09-11T23:36:01.748234Z TRACE ThreadId(01) phase: pre_build (git) (start)
+2026-09-11T23:36:01.748238Z TRACE ThreadId(01) phase: pre_build (git) (done)
+2026-09-11T23:36:01.748242Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
+2026-09-11T23:36:01.748248Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
+2026-09-11T23:36:01.748252Z TRACE ThreadId(01) phase: pre_build (pboprefix) (start)
+2026-09-11T23:36:01.748256Z TRACE ThreadId(01) phase: pre_build (pboprefix) (done)
+2026-09-11T23:36:01.748260Z TRACE ThreadId(01) phase: pre_build (Binarize) (start)
+2026-09-11T23:36:01.748963Z DEBUG ThreadId(01) binarizing Beskad.p3d
+2026-09-11T23:36:01.748976Z TRACE ThreadId(01) "H:\\SteamLibrary\\steamapps\\common\\Arma 3 Tools\\Binarize\\binarize_x64.exe" "-norecurse" "-always" "-silent" "-maxProcesses=0" "JA\\jangos_Armory\\addons\\melee\\" "hemtt_binarize_output\\addons\\melee" "Beskad.p3d"
+2026-09-11T23:36:01.985429Z  INFO ThreadId(01) Binarized 1 files
+2026-09-11T23:36:01.985453Z TRACE ThreadId(01) phase: pre_build (Binarize) (done)
+2026-09-11T23:36:01.985458Z TRACE ThreadId(01) phase: pre_build (tex_headers) (start)
+2026-09-11T23:36:01.995439Z DEBUG ThreadId(13) Writing texture headers to "/addons/pilot_vests/texHeaders.bin"
+2026-09-11T23:36:01.998533Z DEBUG ThreadId(09) Writing texture headers to "/addons/melee/texHeaders.bin"
+2026-09-11T23:36:01.998595Z DEBUG ThreadId(04) Writing texture headers to "/addons/flags/texHeaders.bin"
+2026-09-11T23:36:01.998790Z DEBUG ThreadId(06) Writing texture headers to "/addons/cis/texHeaders.bin"
+2026-09-11T23:36:02.017408Z DEBUG ThreadId(07) Writing texture headers to "/addons/pilot_armours/texHeaders.bin"
+2026-09-11T23:36:02.023044Z DEBUG ThreadId(10) Writing texture headers to "/addons/pilot_helmets/texHeaders.bin"
+2026-09-11T23:36:02.046287Z DEBUG ThreadId(03) Writing texture headers to "/addons/backpacks/texHeaders.bin"
+2026-09-11T23:36:02.047120Z  INFO ThreadId(01) Generated 7 texture headers
+2026-09-11T23:36:02.047132Z TRACE ThreadId(01) phase: pre_build (tex_headers) (done)
+2026-09-11T23:36:02.047135Z TRACE ThreadId(01) phase: pre_build (Files) (start)
+2026-09-11T23:36:02.047137Z TRACE ThreadId(01) phase: pre_build (Files) (done)
+2026-09-11T23:36:02.047140Z TRACE ThreadId(01) phase: pre_build (Meta) (start)
+2026-09-11T23:36:02.047142Z TRACE ThreadId(01) phase: pre_build (Meta) (done)
+2026-09-11T23:36:02.047144Z TRACE ThreadId(01) phase: pre_build (summary) (start)
+2026-09-11T23:36:02.047146Z TRACE ThreadId(01) phase: pre_build (summary) (done)
+2026-09-11T23:36:02.047148Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
+2026-09-11T23:36:02.199058Z  INFO ThreadId(01) Rapified 10 addon configs
+2026-09-11T23:36:02.199100Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
+2026-09-11T23:36:02.199104Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
+2026-09-11T23:36:02.311542Z  INFO ThreadId(01) Compiled 0 sqf files
+2026-09-11T23:36:02.311603Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
+2026-09-11T23:36:02.311607Z TRACE ThreadId(01) phase: pre_build (Stringtables) (start)
+2026-09-11T23:36:02.354875Z  INFO ThreadId(01) Checked 0 stringtables
+2026-09-11T23:36:02.354900Z TRACE ThreadId(01) phase: pre_build (Stringtables) (done)
+2026-09-11T23:36:02.354908Z TRACE ThreadId(01) phase: build (start)
+2026-09-11T23:36:02.360686Z DEBUG ThreadId(01) creating "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons"
+2026-09-11T23:36:02.360845Z DEBUG ThreadId(01) building "addons/backpacks" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_backpacks.pbo"
+2026-09-11T23:36:02.374726Z TRACE ThreadId(01) adding file "model.cfg"
+2026-09-11T23:36:02.375431Z TRACE ThreadId(01) adding file "texHeaders.bin"
+2026-09-11T23:36:02.375438Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.375950Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack_Cerberus_3.paa"
+2026-09-11T23:36:02.376298Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_2-4_Jumppack.paa"
+2026-09-11T23:36:02.376675Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Medic_Backpack.paa"
+2026-09-11T23:36:02.377184Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Boris_Minipack.paa"
+2026-09-11T23:36:02.377538Z TRACE ThreadId(01) adding file "data\\textures\\104th_Tusk_Mini_Lr_Upper.paa"
+2026-09-11T23:36:02.377883Z TRACE ThreadId(01) adding file "data\\textures\\104th_Marx_Backpack_Mini_Main.paa"
+2026-09-11T23:36:02.378232Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Aiomi_MiniPack_Slots.paa"
+2026-09-11T23:36:02.378579Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack_Cerberus_2.paa"
+2026-09-11T23:36:02.378919Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack_Cerberus_4.paa"
+2026-09-11T23:36:02.379258Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Knockout_MiniPack_Slots.paa"
+2026-09-11T23:36:02.379641Z TRACE ThreadId(01) adding file "data\\textures\\104th_JT12_Medic_2-1.paa"
+2026-09-11T23:36:02.379989Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_2_Medic.paa"
+2026-09-11T23:36:02.380340Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Poet_MiniPack_Slots.paa"
+2026-09-11T23:36:02.380677Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Rich_Minipack_Slots.paa"
+2026-09-11T23:36:02.381015Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_4.paa"
+2026-09-11T23:36:02.381362Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Mini_Backpack.paa"
+2026-09-11T23:36:02.381698Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Lax_Backpack.paa"
+2026-09-11T23:36:02.382050Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Spirit_Mini_Lr_Main.paa"
+2026-09-11T23:36:02.382387Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_2-1_Jumppack.paa"
+2026-09-11T23:36:02.382727Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack_Cerberus_1.paa"
+2026-09-11T23:36:02.383085Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_2-2_Jumppack.paa"
+2026-09-11T23:36:02.383494Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack.paa"
+2026-09-11T23:36:02.383881Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack_Cerberus_2.paa"
+2026-09-11T23:36:02.384230Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_Medic.paa"
+2026-09-11T23:36:02.384587Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_Jumppack.paa"
+2026-09-11T23:36:02.384926Z TRACE ThreadId(01) adding file "data\\textures\\104th_JT12_Medic_2-2.paa"
+2026-09-11T23:36:02.385271Z TRACE ThreadId(01) adding file "data\\textures\\104th_Company_Spectre_RC_Backpack.paa"
+2026-09-11T23:36:02.385615Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_2.paa"
+2026-09-11T23:36:02.385961Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_AmmoBearer.paa"
+2026-09-11T23:36:02.386300Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack_Cerberus_3.paa"
+2026-09-11T23:36:02.386642Z TRACE ThreadId(01) adding file "data\\textures\\104th_Raider_2-3_Jumppack.paa"
+2026-09-11T23:36:02.386979Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Tiger_MiniPack.paa"
+2026-09-11T23:36:02.387328Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Boris_Minipack_Slots.paa"
+2026-09-11T23:36:02.387675Z TRACE ThreadId(01) adding file "data\\textures\\104th_Irish_Mini_LR_Main.paa"
+2026-09-11T23:36:02.388022Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_3.paa"
+2026-09-11T23:36:02.388367Z TRACE ThreadId(01) adding file "data\\textures\\104th_Irish_Mini_Lr_Top.paa"
+2026-09-11T23:36:02.388709Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Castle_Minipack.paa"
+2026-09-11T23:36:02.389049Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk.paa"
+2026-09-11T23:36:02.389421Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Lykos_MiniPack_Slots.paa"
+2026-09-11T23:36:02.389765Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_1_Medic.paa"
+2026-09-11T23:36:02.390104Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_1.paa"
+2026-09-11T23:36:02.390449Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Carmine_Backpack.paa"
+2026-09-11T23:36:02.390788Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Tiger_MiniPack_Slots.paa"
+2026-09-11T23:36:02.391130Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack_Cerberus_1.paa"
+2026-09-11T23:36:02.391471Z TRACE ThreadId(01) adding file "data\\textures\\104th_Medic_Backpack.paa"
+2026-09-11T23:36:02.391804Z TRACE ThreadId(01) adding file "data\\textures\\104th_AB_Freq_Jumppack.paa"
+2026-09-11T23:36:02.392146Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Bulky_Backpack.paa"
+2026-09-11T23:36:02.392679Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_3_Medic.paa"
+2026-09-11T23:36:02.393070Z TRACE ThreadId(01) adding file "data\\textures\\104th_MiniPack_Slots.paa"
+2026-09-11T23:36:02.393418Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Backpack.paa"
+2026-09-11T23:36:02.393754Z TRACE ThreadId(01) adding file "data\\textures\\104th_MiniPack.paa"
+2026-09-11T23:36:02.394095Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Lykos_MiniPack.paa"
+2026-09-11T23:36:02.394441Z TRACE ThreadId(01) adding file "data\\textures\\104th_Tusk_Mini_Lr.paa"
+2026-09-11T23:36:02.394783Z TRACE ThreadId(01) adding file "data\\textures\\104th_Marx_Backpack_Mini_Pouches.paa"
+2026-09-11T23:36:02.395135Z TRACE ThreadId(01) adding file "data\\textures\\104th_Backpack_Cerberus_4.paa"
+2026-09-11T23:36:02.395482Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Castle_Minipack_Slots.paa"
+2026-09-11T23:36:02.395822Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Rich_Minipack.paa"
+2026-09-11T23:36:02.396163Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Spirit_Mini_Lr_Top.paa"
+2026-09-11T23:36:02.396505Z TRACE ThreadId(01) adding file "data\\textures\\104th_Jumppack_JT12_Warhawk_4_Medic.paa"
+2026-09-11T23:36:02.396844Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Aiomi_MiniPack.paa"
+2026-09-11T23:36:02.397191Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Knockout_MiniPack.paa"
+2026-09-11T23:36:02.397543Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Poet_MiniPack.paa"
+2026-09-11T23:36:02.397895Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Patch_Medic_Backpack.paa"
+2026-09-11T23:36:02.398236Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Mini_Backpack_Accumulator.paa"
+2026-09-11T23:36:02.398579Z TRACE ThreadId(01) adding file "data\\textures\\104th_AB_Magnum_Jumppack.paa"
+2026-09-11T23:36:02.445185Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
+2026-09-11T23:36:02.445200Z DEBUG ThreadId(01) building "addons/cis" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_cis.pbo"
+2026-09-11T23:36:02.447959Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.448668Z TRACE ThreadId(01) adding file "texHeaders.bin"
+2026-09-11T23:36:02.449010Z TRACE ThreadId(01) adding file "model.cfg"
+2026-09-11T23:36:02.449535Z TRACE ThreadId(01) adding file "data\\textures\\104th_B1_Aquatic_Lower.paa"
+2026-09-11T23:36:02.449880Z TRACE ThreadId(01) adding file "data\\textures\\104th_B2_Aquatic_Legs.paa"
+2026-09-11T23:36:02.450244Z TRACE ThreadId(01) adding file "data\\textures\\104th_B2_Aquatic_Arms.paa"
+2026-09-11T23:36:02.450588Z TRACE ThreadId(01) adding file "data\\textures\\104th_B2_Aquatic_Torso.paa"
+2026-09-11T23:36:02.450929Z TRACE ThreadId(01) adding file "data\\textures\\104th_B1_Aquatic_Upper.paa"
+2026-09-11T23:36:02.455000Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
+2026-09-11T23:36:02.455015Z DEBUG ThreadId(01) building "addons/flags" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_flags.pbo"
+2026-09-11T23:36:02.459394Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.459830Z TRACE ThreadId(01) adding file "texHeaders.bin"
+2026-09-11T23:36:02.460198Z TRACE ThreadId(01) adding file "data\\textures\\Warhawk_2-1.paa"
+2026-09-11T23:36:02.460622Z TRACE ThreadId(01) adding file "data\\textures\\Talon_Flag.paa"
+2026-09-11T23:36:02.461152Z TRACE ThreadId(01) adding file "data\\textures\\Warhawk_2-2.paa"
+2026-09-11T23:36:02.461601Z TRACE ThreadId(01) adding file "data\\textures\\Cerberus_1-3.paa"
+2026-09-11T23:36:02.461964Z TRACE ThreadId(01) adding file "data\\textures\\flag_wolfpack_co.paa"
+2026-09-11T23:36:02.462309Z TRACE ThreadId(01) adding file "data\\textures\\Lancer_Flag.paa"
+2026-09-11T23:36:02.462656Z TRACE ThreadId(01) adding file "data\\textures\\Cerberus_1-1_Flag.paa"
+2026-09-11T23:36:02.462993Z TRACE ThreadId(01) adding file "data\\textures\\Cerberus_1-4_Flag.paa"
+2026-09-11T23:36:02.465160Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
+2026-09-11T23:36:02.465171Z DEBUG ThreadId(01) building "addons/grenades" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_grenades.pbo"
+2026-09-11T23:36:02.468738Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
+2026-09-11T23:36:02.468996Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.470070Z TRACE ThreadId(01) adding file "data\\textures\\textures"
+2026-09-11T23:36:02.470639Z TRACE ThreadId(01) adding file "data\\models\\models"
+2026-09-11T23:36:02.471525Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
+2026-09-11T23:36:02.471536Z DEBUG ThreadId(01) building "addons/main" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_main.pbo"
+2026-09-11T23:36:02.473683Z TRACE ThreadId(01) adding file "script_component.hpp"
+2026-09-11T23:36:02.474172Z TRACE ThreadId(01) adding file "script_version.hpp"
+2026-09-11T23:36:02.474736Z TRACE ThreadId(01) adding file "script_macros.hpp"
+2026-09-11T23:36:02.475201Z TRACE ThreadId(01) adding file "script_mod.hpp"
+2026-09-11T23:36:02.475474Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.476910Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
+2026-09-11T23:36:02.476923Z DEBUG ThreadId(01) building "addons/melee" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_melee.pbo"
+2026-09-11T23:36:02.481446Z TRACE ThreadId(01) adding file "Beskad.p3d"
+2026-09-11T23:36:02.481800Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.482374Z TRACE ThreadId(01) adding file "texHeaders.bin"
+2026-09-11T23:36:02.482596Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
+2026-09-11T23:36:02.482971Z TRACE ThreadId(01) adding file "model.cfg"
+2026-09-11T23:36:02.483487Z TRACE ThreadId(01) adding file "data\\textures\\Base_co.paa"
+2026-09-11T23:36:02.483655Z TRACE ThreadId(01) adding file "data\\textures\\Beskad.rvmat"
+2026-09-11T23:36:02.483832Z TRACE ThreadId(01) adding file "data\\textures\\Base_as.paa"
+2026-09-11T23:36:02.484170Z TRACE ThreadId(01) adding file "data\\textures\\Base_smdi.paa"
+2026-09-11T23:36:02.484548Z TRACE ThreadId(01) adding file "data\\textures\\Base_nohq.paa"
+2026-09-11T23:36:02.485001Z TRACE ThreadId(01) adding file "data\\Sounds\\Block_bescar_2.ogg"
+2026-09-11T23:36:02.485351Z TRACE ThreadId(01) adding file "data\\Sounds\\Block_bescar_3.ogg"
+2026-09-11T23:36:02.485933Z TRACE ThreadId(01) adding file "data\\Sounds\\Strike_bescar_2.ogg"
+2026-09-11T23:36:02.486289Z TRACE ThreadId(01) adding file "data\\Sounds\\Strike_bescar_3.ogg"
+2026-09-11T23:36:02.486644Z TRACE ThreadId(01) adding file "data\\Sounds\\Unsheath_bescar_1.ogg"
+2026-09-11T23:36:02.487015Z TRACE ThreadId(01) adding file "data\\Sounds\\Block_bescar_1.ogg"
+2026-09-11T23:36:02.487513Z TRACE ThreadId(01) adding file "data\\Sounds\\Block_bescar_4.ogg"
+2026-09-11T23:36:02.491161Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
+2026-09-11T23:36:02.491170Z DEBUG ThreadId(01) building "addons/pilot_armours" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_pilot_armours.pbo"
+2026-09-11T23:36:02.498297Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.498309Z TRACE ThreadId(01) adding file "texHeaders.bin"
+2026-09-11T23:36:02.498484Z TRACE ThreadId(01) adding file "model.cfg"
+2026-09-11T23:36:02.499363Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
+2026-09-11T23:36:02.500142Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_OD_Lower.paa"
+2026-09-11T23:36:02.500515Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Spirit_Upper.paa"
+2026-09-11T23:36:02.500865Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_1C_Aviation_Upper.paa"
+2026-09-11T23:36:02.501345Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Haze_Upper.paa"
+2026-09-11T23:36:02.501918Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Varelli_Lower.paa"
+2026-09-11T23:36:02.502294Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Boris_Lower.paa"
+2026-09-11T23:36:02.502663Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Bail_Upper.paa"
+2026-09-11T23:36:02.503026Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_OD_Upper.paa"
+2026-09-11T23:36:02.503392Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Cherryy_Lower.paa"
+2026-09-11T23:36:02.503741Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Boris_Upper.paa"
+2026-09-11T23:36:02.504087Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Varelli_Upper.paa"
+2026-09-11T23:36:02.504456Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Uniform_Upper.paa"
+2026-09-11T23:36:02.504817Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Bail_Lower.paa"
+2026-09-11T23:36:02.505163Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fish_Lower.paa"
+2026-09-11T23:36:02.505511Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Spirit_Lower.paa"
+2026-09-11T23:36:02.505856Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Cherryy_Upper.paa"
+2026-09-11T23:36:02.506211Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Uniform_Lower.paa"
+2026-09-11T23:36:02.506561Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Haze_Lower.paa"
+2026-09-11T23:36:02.506903Z TRACE ThreadId(01) adding file "data\\textures\\JA_104th_P2_1C_Aviation_Lower.paa"
+2026-09-11T23:36:02.507272Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Beef_Upper.paa"
+2026-09-11T23:36:02.507617Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fish_Upper.paa"
+2026-09-11T23:36:02.507966Z TRACE ThreadId(01) adding file "data\\textures\\JA_104th_P2_1C_Aviation_Upper.paa"
+2026-09-11T23:36:02.508310Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_1C_Aviation_Lower.paa"
+2026-09-11T23:36:02.508657Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Beef_Lower.paa"
+2026-09-11T23:36:02.527700Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
+2026-09-11T23:36:02.527716Z DEBUG ThreadId(01) building "addons/pilot_helmets" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_pilot_helmets.pbo"
+2026-09-11T23:36:02.535525Z TRACE ThreadId(01) adding file "model.cfg"
+2026-09-11T23:36:02.535713Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.536252Z TRACE ThreadId(01) adding file "texHeaders.bin"
+2026-09-11T23:36:02.536744Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
+2026-09-11T23:36:02.537431Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Varelli_Helmet.paa"
+2026-09-11T23:36:02.537800Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Pilot_Helmet.paa"
+2026-09-11T23:36:02.538166Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Haze_Helmet.paa"
+2026-09-11T23:36:02.538648Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Spirit_Pilot_P1_Helmet.paa"
+2026-09-11T23:36:02.539016Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Dak_Mlv_Life_Support.paa"
+2026-09-11T23:36:02.539371Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Helmet.paa"
+2026-09-11T23:36:02.539716Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Hightower_P2_Helmet.paa"
+2026-09-11T23:36:02.540077Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_OD_Helmet.paa"
+2026-09-11T23:36:02.540425Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Life_Support.paa"
+2026-09-11T23:36:02.540801Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Duce_Helmet.paa"
+2026-09-11T23:36:02.541144Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Duce_Life_Support.paa"
+2026-09-11T23:36:02.541497Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Cherryy_Helmet.paa"
+2026-09-11T23:36:02.541952Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Cherryy_Lifesupport.paa"
+2026-09-11T23:36:02.542304Z TRACE ThreadId(01) adding file "data\\textures\\JA_104th_P2_1C_Pilot_Helmet.paa"
+2026-09-11T23:36:02.542649Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Dak_P1_Life_Support.paa"
+2026-09-11T23:36:02.543020Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Storm_Pilot_Helmet.paa"
+2026-09-11T23:36:02.543364Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Beef_Helmet.paa"
+2026-09-11T23:36:02.543706Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Dak_Mlv_Helmet.paa"
+2026-09-11T23:36:02.544046Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_1C_Pilot_Helmet.paa"
+2026-09-11T23:36:02.544406Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Bail_Helmet.paa"
+2026-09-11T23:36:02.544904Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fish_Helmet.paa"
+2026-09-11T23:36:02.545272Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Spirit_Pilot_Life_Support.paa"
+2026-09-11T23:36:02.545620Z TRACE ThreadId(01) adding file "data\\textures\\104_P2_Strawberry_Pilot_Helmet.paa"
+2026-09-11T23:36:02.545976Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Cherryy_Helmet.paa"
+2026-09-11T23:36:02.546340Z TRACE ThreadId(01) adding file "data\\textures\\104th_P2_Boris_Pilot_Helmet.paa"
+2026-09-11T23:36:02.546689Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Dak_P1_Helmet.paa"
+2026-09-11T23:36:02.547044Z TRACE ThreadId(01) adding file "data\\textures\\104th_P1_Red_Pilot_Lifesupport.paa"
+2026-09-11T23:36:02.573321Z DEBUG ThreadId(01) "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons" already exists
+2026-09-11T23:36:02.573334Z DEBUG ThreadId(01) building "addons/pilot_vests" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\addons\\Jangos_Armory_pilot_vests.pbo"
+2026-09-11T23:36:02.576460Z TRACE ThreadId(01) adding file "model.cfg"
+2026-09-11T23:36:02.576699Z TRACE ThreadId(01) adding file "config.bin"
+2026-09-11T23:36:02.577536Z TRACE ThreadId(01) adding file "texHeaders.bin"
+2026-09-11T23:36:02.577753Z TRACE ThreadId(01) adding file "basicDefines_A3.hpp"
+2026-09-11T23:36:02.578481Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Cherryy_Accessories_Officer.paa"
+2026-09-11T23:36:02.578863Z TRACE ThreadId(01) adding file "data\\textures\\104th_Pilot_Fire_Accessories_Officer.paa"
+2026-09-11T23:36:02.581346Z  INFO ThreadId(01) Built 9 PBOs
+2026-09-11T23:36:02.581367Z TRACE ThreadId(01) phase: build (done)
+2026-09-11T23:36:02.581371Z TRACE ThreadId(01) phase: post_build (BOM Check) (start)
+2026-09-11T23:36:02.581374Z TRACE ThreadId(01) phase: post_build (BOM Check) (done)
+2026-09-11T23:36:02.581377Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (start)
+2026-09-11T23:36:02.581379Z TRACE ThreadId(01) phase: post_build (Final New Line Check) (done)
+2026-09-11T23:36:02.581381Z TRACE ThreadId(01) phase: post_build (git) (start)
+2026-09-11T23:36:02.581383Z TRACE ThreadId(01) phase: post_build (git) (done)
+2026-09-11T23:36:02.581385Z TRACE ThreadId(01) phase: post_build (Hooks) (start)
+2026-09-11T23:36:02.581387Z TRACE ThreadId(01) phase: post_build (Hooks) (done)
+2026-09-11T23:36:02.581389Z TRACE ThreadId(01) phase: post_build (pboprefix) (start)
+2026-09-11T23:36:02.581391Z TRACE ThreadId(01) phase: post_build (pboprefix) (done)
+2026-09-11T23:36:02.581393Z TRACE ThreadId(01) phase: post_build (Binarize) (start)
+2026-09-11T23:36:02.581395Z TRACE ThreadId(01) phase: post_build (Binarize) (done)
+2026-09-11T23:36:02.581397Z TRACE ThreadId(01) phase: post_build (tex_headers) (start)
+2026-09-11T23:36:02.581400Z TRACE ThreadId(01) phase: post_build (tex_headers) (done)
+2026-09-11T23:36:02.581402Z TRACE ThreadId(01) phase: post_build (Files) (start)
+2026-09-11T23:36:02.730334Z DEBUG ThreadId(01) copying "/jfalogo.paa" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\jfalogo.paa"
+2026-09-11T23:36:02.731052Z DEBUG ThreadId(01) copying "/meta.cpp" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\meta.cpp"
+2026-09-11T23:36:02.732199Z DEBUG ThreadId(01) copying "/LICENSE" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\LICENSE"
+2026-09-11T23:36:02.733156Z DEBUG ThreadId(01) copying "/mod.cpp" => "C:\\Users\\Nicholas_Brant\\Documents\\github\\JangoArmory\\Jangosfinest_redo\\.hemttout\\build\\mod.cpp"
+2026-09-11T23:36:02.733990Z  INFO ThreadId(01) Copied 4 files
+2026-09-11T23:36:02.734004Z TRACE ThreadId(01) phase: post_build (Files) (done)
+2026-09-11T23:36:02.734008Z TRACE ThreadId(01) phase: post_build (Meta) (start)
+2026-09-11T23:36:02.734010Z TRACE ThreadId(01) phase: post_build (Meta) (done)
+2026-09-11T23:36:02.734012Z TRACE ThreadId(01) phase: post_build (summary) (start)
+2026-09-11T23:36:02.735316Z TRACE ThreadId(01) phase: post_build (summary) (done)
+2026-09-11T23:36:02.735326Z TRACE ThreadId(01) phase: post_build (Rapifier) (start)
+2026-09-11T23:36:02.735329Z TRACE ThreadId(01) phase: post_build (Rapifier) (done)
+2026-09-11T23:36:02.735332Z TRACE ThreadId(01) phase: post_build (SQF) (start)
+2026-09-11T23:36:02.735340Z TRACE ThreadId(01) phase: post_build (SQF) (done)
+2026-09-11T23:36:02.735342Z TRACE ThreadId(01) phase: post_build (Stringtables) (start)
+2026-09-11T23:36:02.735344Z TRACE ThreadId(01) phase: post_build (Stringtables) (done)
+2026-09-11T23:36:02.743621Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
+2026-09-11T23:36:02.743755Z TRACE ThreadId(01) wrote 0 ci annotations to .hemttout/ci_annotations.txt

@@ -67,34 +67,8 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
-	class ItemCore;
-	class ls_gar_phase2Pilot_helmet;
-	class ls_gar_phase2_uniform;
 	class ls_gar_marshalCommander_uniform;
-	class ls_gar_arc_vest;
-	class ls_gar_officer_vest;
-	class ls_gar_commander_vest;
-	class ls_gar_airborne_vest;
-	class ls_gar_airborneOfficer_vest;
-	class ls_gar_forceReconNCO_vest;
-	class ls_gar_barc_helmet;
-	class ls_gar_airborne_helmet;
-	class ls_gar_phase1Arf_helmet;
-	class ls_gar_arc_helmet;
-	class ls_gar_phase1_helmet;
-	class ls_gar_rex_helmet;
-	class ls_gar_phase2_helmet;
-	class lsd_gar_standart_nvg;
-	class lsd_gar_rangefinder_nvg;
-	class lsd_gar_p2MarshalCommander_nvg;
-	class ls_gar_kama_vest;
-	class ls_gar_medic_vest;
-	class ls_gar_clone_vest;
-	class ls_gar_airborneNCO_vest;
-	class ls_gar_engineer_helmet;
-	class ls_sob_phase2SpecOp_helmet;
 	class UniformItem;
-	class VestItem;
 
 	class JA_104th_Base_Uniform : ls_gar_marshalCommander_uniform
 	{
@@ -377,15 +351,6 @@ class CfgWeapons
 class CfgVehicles
 {
 	class lsd_gar_phase2_base;
-	class ls_gar_marshalCommander_base;
-	class ls_gar_standard_backpack;
-	class ls_gar_rto_mini_backpack;
-	class ls_gar_heavy_backpack;
-	class ls_gar_medic_backpack;
-	class ls_gar_Radio_backpack;
-	class JLTS_Clone_jumppack;
-	class JA_104th_Jumppack_JT12;
-	class JA_104th_Jumppack_JT12_LR;
 	// General Uniforms
 
 	class JA_104th_Base : lsd_gar_phase2_base
