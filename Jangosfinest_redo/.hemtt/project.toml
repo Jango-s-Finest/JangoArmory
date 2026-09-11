@@ -1,0 +1,15 @@
+name = "Jango's finest"
+author = "Nicbrant"
+prefix = "Jangos_Armory"
+mainprefix = "JA"
+[files]
+include = [
+    "mod.cpp",
+    "README.md",
+    "meta.cpp",
+    "jfalogo.paa",
+    "LICENSE"
+]
+
+[signing]
+authority = "Jangos_finest"
