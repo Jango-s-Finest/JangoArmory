@@ -71,8 +71,26 @@ class CfgPatches
 			"JA_CIS_Man_Woods_04",
 			"JA_CIS_Man_Woods_05"};
 		weapons[] = {
+			"JA_CIS_B1_Helmet",
 			"JA_CIS_B1_Uniform",
-			"JA_CIS_B2_Uniform"};
+			"JA_CIS_B2_Uniform",
+			"JA_CIS_Weapon_E5",
+			"JA_CIS_Weapon_E5C",
+			"JA_CIS_Weapon_mercenarySniper",
+			"JA_CIS_Weapon_B2_Blaster"
+		};
+	magazines[] = {
+		"JA_CIS_Weapon_E5_Mag",
+		"JA_CIS_Weapon_mercenarySniper_Mag",
+		"JA_CIS_Weapon_E5C_Mag",
+		"JA_CIS_Weapon_B2_Blaster_Mag"
+	};
+	ammo[] = {
+		"JA_CIS_Weapon_E5_Ammo",
+		"JA_CIS_Weapon_mercenarySniper_Ammo",
+		"JA_CIS_Weapon_E5C_Ammo",
+		"JA_CIS_Weapon_B2_Blaster_Ammo"
+	};
 	};
 };
 

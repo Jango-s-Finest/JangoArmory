@@ -6,6 +6,14 @@ class CfgPatches
 		units[] = {
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
+			"JA_Flag_WolfPack",
+			"JA_Flag_Lancer",
+			"JA_Flag_Cerberus_1_1",
+			"JA_Flag_Cerberus_1_4",
+			"JA_Flag_Talon",
+			"JA_Flag_Cerberus_1_3",
+			"JA_Flag_Warhawk_2_1",
+			"JA_Flag_Warhawk_2_2"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
@@ -52,56 +60,56 @@ class CfgWeapons
 	class JA_Flag_WolfPack : ace_flags_white
 	{
 		ace_flags_carrier = "JA_Flag_Carrier_WolfPack";
-		ace_flags_texture = "JA\jangos_Armory\addons\flags\data\textures\flag_wolfpack_co.paa";
+		ace_flags_texture = "\JA\jangos_Armory\addons\flags\data\textures\flag_wolfpack_co.paa";
 		author = "Dak";
 		displayName = "Flag (WolfPack)";
 	};
 	class JA_Flag_Lancer : ace_flags_white
 	{
 		ace_flags_carrier = "JA_Flag_Carrier_Lancer";
-		ace_flags_texture = "JA\jangos_Armory\addons\flags\data\textures\Lancer_Flag.paa";
+		ace_flags_texture = "\JA\jangos_Armory\addons\flags\data\textures\Lancer_Flag.paa";
 		author = "Dak";
 		displayName = "Flag (Lancer)";
 	};
 	class JA_Flag_Cerberus_1_1: ace_flags_white
 	{
 		ace_flags_carrier = "JA_Flag_Carrier_Cerberus_1_1";
-		ace_flags_texture = "JA\jangos_Armory\addons\flags\data\textures\Cerberus_1-1_Flag.paa";
+		ace_flags_texture = "\JA\jangos_Armory\addons\flags\data\textures\Cerberus_1-1_Flag.paa";
 		author = "Dak";
 		displayName = "Flag (Cerberus 1-1)";
 	};
 	class JA_Flag_Cerberus_1_4 : ace_flags_white
 	{
 		ace_flags_carrier = "JA_Flag_Carrier_Cerberus_1_4";
-		ace_flags_texture = "JA\jangos_Armory\addons\flags\data\textures\Cerberus_1-4_Flag.paa";
+		ace_flags_texture = "\JA\jangos_Armory\addons\flags\data\textures\Cerberus_1-4_Flag.paa";
 		author = "Dak";
 		displayName = "Flag (Cerberus 1-4)";
 	};
 	class JA_Flag_Talon : ace_flags_white
 	{
 		ace_flags_carrier = "JA_Flag_Carrier_Talon";
-		ace_flags_texture = "JA\jangos_Armory\addons\flags\data\textures\Talon_Flag.paa";
+		ace_flags_texture = "\JA\jangos_Armory\addons\flags\data\textures\Talon_Flag.paa";
 		author = "Dak";
 		displayName = "Flag (Talon)";
 	};
 	class JA_Flag_Cerberus_1_3 : ace_flags_white
 	{
 		ace_flags_carrier = "JA_Flag_Carrier_Cerberus_1_3";
-		ace_flags_texture = "JA\jangos_Armory\addons\flags\data\textures\Cerberus_1-3.paa";
+		ace_flags_texture = "\JA\jangos_Armory\addons\flags\data\textures\Cerberus_1-3.paa";
 		author = "Dak";
 		displayName = "Flag (Cerberus 1-3)";
 	};
 	class JA_Flag_Warhawk_2_1 : ace_flags_white
 	{
 		ace_flags_carrier = "JA_Flag_Carrier_Warhawk_2_1";
-		ace_flags_texture = "JA\jangos_Armory\addons\flags\data\textures\Warhawk_2-1.paa";
+		ace_flags_texture = "\JA\jangos_Armory\addons\flags\data\textures\Warhawk_2-1.paa";
 		author = "Dak";
 		displayName = "Flag (Warhawk 2-1)";
 	};
 	class JA_Flag_Warhawk_2_2 : ace_flags_white
 	{
 		ace_flags_carrier = "JA_Flag_Carrier_Warhawk_2_2";
-		ace_flags_texture = "JA\jangos_Armory\addons\flags\data\textures\Warhawk_2-2.paa";
+		ace_flags_texture = "\JA\jangos_Armory\addons\flags\data\textures\Warhawk_2-2.paa";
 		author = "Dak";
 		displayName = "Flag (Warhawk 2-2)";
 	};

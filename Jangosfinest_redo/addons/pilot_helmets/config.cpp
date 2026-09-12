@@ -14,10 +14,21 @@ class CfgPatches
 			"JA_104th_Beef_Pilot_Helmet",
 			"JA_104th_Haze_Pilot_Helmet",
 			"JA_104th_Varelli_Pilot_Helmet",
+			"JA_104th_OD_Pilot_Helmet",
+			"JA_104th_Cherryy_Pilot_Helmet",
+			"JA_104th_Hightower_Pilot_Helmet",
 			"JA_104th_Fish_Pilot_Helmet",
 			"JA_104th_Cherryy_Pilot_Helmet_P1",
-			"JA_104th_OD_Pilot_Helmet",
-			"JA_104th_Cherryy_Pilot_Helmet"};
+			"JA_104th_ME_Pilot_Helmet_P1",
+			"JA_104th_Duce_Pilot_Helmet_P1",
+			"JA_104th_Fire_Pilot_Helmet_P1",
+			"JA_104th_Dak_Pilot_Helmet_P1",
+			"JA_104th_ME_Dak_Pilot_Helmet_P1",
+			"JA_104th_Strawberry_Pilot_Helmet",
+			"JA_104th_Boris_Pilot_Helmet",
+			"JA_104th_Storm_Pilot_Helmet",
+			"JA_104th_Spirit_Pilot_Helmet_P1"
+		};
 	};
 };
 

@@ -8,23 +8,25 @@ class CfgPatches
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
-			"JA_104th_Box_Ammo_mk2",
-			};
+		units[] = {};
 			// Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
 		weapons[] = {
-
-			"JA_AB_T32C"
+			"arifle_MX_Base_F",
+			"JA_104th_muzzle_flash",
+			"JA_104th_muzzle_suppressor",
+			"Blaster_base",
+			"JA_104th_DC15A",
+			"JA_AB_T_32C_UGL"
 		};
 		ammo[] = {
-
-			"JA_104th_Weapons_Ammo_base_blue"
+			"JA_T32C_Ammo_base_blue",
+			"JA_T32C_Ammo_40mw",
+			"JA_T32C_Ammo_30mw"
 		};
 
 		magazines[] = {
-
-
-			"JA_104th_Weapons_Mags_5mw70"
+			"JA_104th_Weapons_Mags_40mw30",
+			"JA_104th_Weapons_Mags_30mw60"
 		};	
 	};
 };

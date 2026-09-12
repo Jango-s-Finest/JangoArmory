@@ -26,6 +26,14 @@ class CfgPatches
 			"JA_104th_Base_P2_Howler_Medic",
 			"JA_104th_Base_SB_Howler_Medic"};
 		weapons[] = {
+			"ls_gar_airborne_vest",
+			"ls_gar_airborneNCO_vest",
+			"ls_gar_airborneOfficer_vest",
+			"ls_gar_forceReconNCO_vest",
+			"ls_gar_airborneOfficer_vest",
+			"ls_gar_officer_vest",
+			"ls_gar_commander_vest",
+			"ls_gar_arc_vest",
 			"JA_Howler_SB_Base_Kaleb_Helmet",
 			"JA_Howler_SB_Base_Kaleb_Uniform",
 			"JA_Howler_SB_Base_NCO_Helmet",
@@ -65,7 +73,8 @@ class CfgPatches
 			"JA_Howler_AB_Base_Trooper_Armor",
 			"JA_Howler_AB_Base_NCO_Armor",
 			"JA_Howler_AB_Base_Officer_Armor",
-			"JA_Howler_P2_Base_Officer_Armor"};
+			"JA_Howler_P2_Base_Officer_Armor"
+		};
 	};
 };
 

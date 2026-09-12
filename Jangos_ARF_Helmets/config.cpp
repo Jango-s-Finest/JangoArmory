@@ -16,14 +16,21 @@ class CfgPatches
 			"JA_104th_ARF_Desert_Helmet",
 			"JA_104th_ARF_Medic_Helmet",
 			"JA_104th_Achilles_Helmet",
-			"JA_104th_Beans_Helmet",
 			"JA_104th_Cyan_Helmet",
+			"JA_104th_Welty_Helmet",
+			"JA_104th_Beans_Helmet",
 			"JA_104th_Gravity_Helmet",
-			"JA_104th_IQ_Helmet",
 			"JA_104th_Fire_Helmet",
 			"JA_104th_Unix_Helmet",
-			"JA_104th_Welty_Helmet_A",
-			"JA_104th_Woods_Helmet"};
+			"JA_104th_Woods_Helmet",
+			"JA_104th_Woods_Helmet_ME",
+			"JA_104th_Achilles_Helmet_ME",
+			"JA_104th_Fire_Helmet_ME",
+			"JA_104th_Unix_Helmet_ME",
+			"JA_104th_IQ_Helmet",
+			"JA_104th_Keeper_Helmet",
+			"JA_104th_Poet_Helmet"
+		};
 	};
 };
 

@@ -7,13 +7,19 @@ class CfgPatches
 	{
 		author = "Jango's Finest";
 		units[] = {
-            "JA_104th_P1_Geonosis_CT",
-            "JA_104th_P1_Geonosis_SGT",
-            "JA_104th_P1_Geonosis_LT",
-            "JA_104th_P1_Geonosis_CPT",
-            "JA_104th_P1_Geonosis_CMDR"
-        };
+			"JA_104th_P1_Geonosis_CT",
+			"JA_104th_P1_Geonosis_SGT",
+			"JA_104th_P1_Geonosis_LT",
+			"JA_104th_P1_Geonosis_CPT",
+			"JA_104th_P1_Geonosis_CMDR",
+			"JA_104th_Medic_Backpack_Geonosis"
+		};
         weapons[] = {
+            "ls_gar_kama_vest",
+            "ls_gar_forceReconLieutenant_vest",
+            "ls_gar_officer_vest",
+            "ls_gar_commander_vest",
+            "ls_gar_arc_vest",
             "JA_104th_P1_Geonosis_CT_Helmet",
             "JA_104th_P1_Geonosis_CT_Uniform",
             "JA_104th_P1_Geonosis_SGT_Helmet",
@@ -24,11 +30,11 @@ class CfgPatches
             "JA_104th_P1_Geonosis_CPT_Uniform",
             "JA_104th_P1_Geonosis_CMDR_Helmet",
             "JA_104th_P1_Geonosis_CMDR_Uniform",
-            "JA_104th_Vest_P1",
             "JA_104th_Base_Commander_Vest_GEO",
+            "JA_104th_Vest_P1",
             "JA_104th_P1_officer_Vest",
-			"JA_104th_P1_PSGT_Base_Kama",
-			"JA_104th_ARC_PSGT_Vest",
+            "JA_104th_P1_PSGT_Base_Kama",
+            "JA_104th_ARC_PSGT_Vest",
             "JA_104th_ARC_LT_Vest",
             "JA_104th_ARC_CPT_Vest"
         };

@@ -4,8 +4,8 @@ class CfgPatches
 	class ADDON
 	{
 		units[]={};
-		weapons[]=
-		{
+		weapons[] = {
+			"IMS_NewCoolMeleeWeapon"
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=

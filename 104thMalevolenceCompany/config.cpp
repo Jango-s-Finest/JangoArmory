@@ -7,13 +7,21 @@ class CfgPatches
     {
         author = "Jango's Finest";
         units[] = {
-            "JA_104th_Base_Malevolence_ARF",
             "JA_104th_Base_Malevolence",
             "JA_104th_Base_Malevolence_Medic",
-
+            "JA_104th_Base_Malevolence_ARC"
         };
         weapons[] = {
-
+            "ls_gar_airborneOfficer_vest",
+            "ls_gar_forceReconLieutenant_vest",
+            "ls_gar_officer_vest",
+            "ls_gar_arc_vest",
+            "ls_gar_kama_vest",
+            "ls_gar_medic_vest",
+            "ls_gar_forceReconNCO_vest",
+            "ls_gar_forceRecon_vest",
+            "ls_gar_heavy_vest",
+            "ls_gar_grenadier_vest",
             "JA_104th_Malevolence_Base_Helmet",
             "JA_104th_Malevolence_Base_Medic_Helmet",
             "JA_104th_Malevolence_Base_ARF_Helmet",
@@ -22,41 +30,39 @@ class CfgPatches
             "JA_104th_Malevolence_Officer_Helmet",
             "JA_104th_Malevolence_SNCO_Helmet",
             "JA_104th_Malevolence_SpecOps_Helmet",
-
             "JA_104th_Malevolence_Base_Uniform",
             "JA_104th_Malevolence_Base_Medic_Uniform",
             "JA_104th_Malevolence_Base_ARC_Uniform",
             "JA_104th_Invisible_Base_Rebreather_Uniform",
-
             "JA_104th_SPC_NVG_Base_ME",
             "JA_104th_P2_NVG_Base_ME",
-
             "JA_104th_ARC_ME_Vest",
             "JA_104th_Vest_ME",
-            "JA_104th_ME_Vest",
+            "JA_104th_Base_Commander_Vest_ME",
             "JA_104th_ME_PSGT_Base_Kama",
             "JA_104th_ME_PSGT_Alt1_Kama",
             "JA_104th_ME_PSGT_Alt2_Kama",
             "JA_104th_ME_Medic_Vest",
             "JA_104th_ME_officer_Vest",
-            "JA_104th_basic_Vest",
             "JA_104th_ME_NCO_Vest",
             "JA_104th_ME_NCO_Medic_Vest",
             "JA_104th_ME_Recon_Vest",
-            "JA_104th_ME_Recon_Vest2",
             "JA_104th_ME_Grenadier_Vest",
-            "JA_104th_ME_basic_Vest",
             "JA_104th_ME_Heavy_Vest",
-            "JA_104th_Base_Commander_Vest_ME",
+            "JA_104th_basic_Vest",
             "JA_104th_AB_ME_NCO_Base_Trooper_Armor",
             "JA_104th_AB_ME_NCO_Alt1_Trooper_Armor",
             "JA_104th_AB_ME_NCO_Alt2_Trooper_Armor",
             "JA_104th_AB_ME_NCO_Medic_Trooper_Armor",
             "JA_104th_AB_ME_Base_Trooper_Armor",
             "JA_104th_AB_ME_Medic_Trooper_Armor",
-            "JA_104th_AB_ME_Officer_Trooper_Armor"
-
+            "JA_104th_AB_ME_Officer_Trooper_Armor",
+            "JA_104th_ME_Pilot_officer_Vest"
         };
+    glasses[] = {
+        "JA_104th_P1_ME_Trooper_Headware",
+        "JA_104th_P1_ME_Medic_Headware"
+    };
     };
 };
 

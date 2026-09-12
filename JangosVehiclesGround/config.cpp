@@ -2,23 +2,8 @@ class CfgPatches
 {
 	class Jangos_Armory_Vehicles_Ground
 	{
-		units[] = {
-			"104th_MudHorn_tank_mobile",
-			"104th_MudHorn_tank_field",
-			"104th_ATTE",
-			"104th_TX_130_Super_Saber",
-			"104th_ATAP",
-			"JA_104th_OryxNS",
-			"JA_104th_Oryx",
-			"JA_104th_OryxTS",
-			"JA_104th_Repair_Droid",
-			"JA_104th_Ulik",
-			"JA_104th_Oryx_Command",
-			"JA_104th_AV7",
-		}; // All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {
-			"JA_104th_guided_resupply_pod_launcher",
-		};
+		units[] = {}; // All the new vehicles/units you've created in cfgVehicles
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"3AS_ATTE"};
 	};

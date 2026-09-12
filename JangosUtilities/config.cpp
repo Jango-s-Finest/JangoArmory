@@ -6,26 +6,7 @@ class CfgPatches
     class Jangos_Utilities
     {
         author = "Jango's Finest";
-        units[] = {
-            "JA_104th_Civilian_Thropie_System_SR",
-            "JA_104th_Civilian_Thropie_System_LR",
-            "JA_104th_BlueFor_Thropie_System_SR",
-            "JA_104th_BlueFor_Thropie_System_LR",
-            "JA_104th_OpFor_Thropie_System_SR",
-            "JA_104th_OpFor_Thropie_System_LR",
-            "JA_104th_Civilian_Escape_Pods",
-            "JA_104th_BlueFor_Escape_Pods",
-            "JA_104th_OpFor_Escape_Pods",
-            "JA_104th_OpFor_Hyena_bomber",
-            "JA_104th_OpFor_Spawner_3AS_CIS_Vulture_AA_F",
-            "JA_104th_OpFor_Spawner_3AS_CIS_Vulture_F",
-            "JA_104th_OpFor_Spawner_SFA_Vengeance_F",
-            "JA_104th_OpFor_Spawner_JA_104th_OpFor_Hyena_bomber",
-            "JA_104th_OpFor_Spawner_SFA_Dragonfly",
-            "JA_104th_OpFor_Spawner_ls_vehicle_hmp",
-            "JA_104th_OpFor_Spawner_3AS_MAF_Gunship_F",
-            "JA_104th_OpFor_Spawner_3AS_CIS_Vulture_CAS_F",
-        }; // All the new vehicles/units you've created in cfgVehicles
+        units[] = {}; // All the new vehicles/units you've created in cfgVehicles
         weapons[] = {};
         requiredVersion = 0.1;
         requiredAddons[] = {};

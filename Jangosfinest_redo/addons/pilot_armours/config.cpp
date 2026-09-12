@@ -11,20 +11,28 @@ class CfgPatches
 			"JA_104th_Base",
 			"JA_104th_Bail",
 			"JA_104th_Beef",
+			"JA_104th_Fire",
 			"JA_104th_Haze",
 			"JA_104th_Varelli",
-			"JA_104th_Fish",
 			"JA_104th_OD",
-			"JA_104th_Cherryy"};
+			"JA_104th_Cherryy",
+			"JA_104th_Fish",
+			"JA_104th_Spirit",
+			"JA_104th_Boris"
+		};
 		weapons[] = {
 			"JA_104th_Base_Uniform",
 			"JA_104th_Bail_Uniform",
 			"JA_104th_Beef_Uniform",
+			"JA_104th_Fire_Uniform",
 			"JA_104th_Haze_Uniform",
 			"JA_104th_Varelli_Uniform",
-			"JA_104th_Fish_Uniform",
 			"JA_104th_OD_Uniform",
-			"JA_104th_Cherryy_Uniform"};
+			"JA_104th_Cherryy_Uniform",
+			"JA_104th_Fish_Uniform",
+			"JA_104th_Spirit_Uniform",
+			"JA_104th_Boris_Uniform"
+		};
 	};
 };
 

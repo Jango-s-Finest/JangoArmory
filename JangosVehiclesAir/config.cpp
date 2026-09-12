@@ -2,11 +2,7 @@ class CfgPatches
 {
 	class Jangos_Armory_Vehicles_Air
 	{
-		units[] = {
-			"JA_104th_Nu_class",
-			"JA_104th_Rho_class",
-			"JA_104th_LAS_1A",
-			}; // All the new vehicles/units you've created in cfgVehicles
+		units[] = {}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
 		};
 		requiredVersion = 0.1;

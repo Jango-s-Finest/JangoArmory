@@ -2,53 +2,27 @@ class CfgPatches
 {
 	class Jangos_Armory_Vehicles
 	{
-		units[] = {
-			"JA_104th_LAAT",
-			"JA_104th_LAAT_AB",
-			"JA_104th_Base_Falcon_Armed",
-			"JA_104th_Base_Pelican_Unarmed",
-			"JA_104th_Base_Pelican_Armed",
-			"JA_104th_Base_TX130",
-			"JA_104th_Box_Ammo",
-			"JA_104th_Box_Explosives",
-			"JA_104th_Box_Engineer",
-			"JA_104th_Box_Medic",
-			"JA_104th_Medical_Droid",
-			"JA_104th_Vehicle_spawner_Droid_Air",
-			"JA_104th_Vehicle_spawner_Droid_Ground",
-			"JA_104th_BARC",
-			"JA_104th_Oryx",
-			"JA_104th_OryxNS",
-			"JA_104th_APC_Light_Bantha",
-			"JA_104th_LSV",
-			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
-			"JA_104th_3AS_Reaper_ARC_170_Blue",
-			"JA_104th_3AS_Reaper_Y_Wing",
-			"JA_104th_3AS_Reaper_Y_Wing_Blue",
-			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
-			"JA_104th_NU",
-			"JA_104th_Republic_HR_Bag",
-			"JA_104th_HeavyRepeater_Unarmoured",
-			"JA_104th_ATRT",
-			"JA_104th_Xian_Infantry",
-			"JA_104th_Xian_Vehicle",
-			"JA_104th_Republic_Transport",
-			"JA_104th_Heavy_Assault_Ship",
-			"JA_104th_Uwing",
-			"JA_104th_N1",
-			"JA_104th_VWing",
-			"JA_104th_V19_Torrent",
-			"JA_104th_Vulture_dynamicLoadout_base",
-			"JA_104th_Vulture_dynamicLoadout",
-			"JA_104th_Vulture_dynamicLoadout_AA",
-			"JA_104th_Vulture_dynamicLoadout_Bare",
-			"JA_104th_Impetus_Class_MAAG",
-			}; // All the new vehicles/units you've created in cfgVehicles
+		units[] = {}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
-			"JA_104th_guided_resupply_pod_launcher",
+			"Launcher_Base_F",
+			"ls_laat_gun_2_104th",
+			"ls_127_blue_104th",
+			"JA_104th_Engineer_EWEB_Vest",
+			"JA_104th_guided_resupply_pod_launcher"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
+	magazines[] = {
+		"ls_magazine_50mm_200Rnd_APFSDS_green_104th",
+		"ls_500Rnd_127x99_mag_blue_104th",
+		"JA_104th_Guided_Resupply_Magazine"
+	};
+	ammo[] = {
+		"ls_50mm_laat_apfsds_104th",
+		"ls_127x99_blue_104th",
+		"JA_104th_guided_resupply_ammo",
+		"JA_104th_T9_green"
+	};
 	};
 };
 

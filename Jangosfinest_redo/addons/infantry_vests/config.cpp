@@ -9,7 +9,49 @@ class CfgPatches
         requiredAddons[] = {};
         units[] = {};
         weapons[] = {
+            "ls_sob_commando_sniper_vest",
+            "ls_gar_airborne_vest",
+            "ls_gar_kama_vest",
+            "ls_gar_medic_vest",
+            "ls_gar_airborneNCO_vest",
+            "ls_gar_airborneOfficer_vest",
+            "ls_gar_forceReconNCO_vest",
+            "ls_gar_tacticalOfficer_vest",
+            "ls_gar_forceReconLieutenant_vest",
+            "ls_gar_reconOfficer_vest",
+            "ls_gar_officer_vest",
+            "ls_gar_commander_vest",
+            "ls_gar_arc_vest",
+            "ls_gar_hazard_vest",
+            "JA_104th_Welty_Kama",
+            "JA_104th_Irish_Commander_Vest_P2",
+            "JA_104th_Irish_Kama",
+            "JA_104th_Castle_Kama",
+            "JA_104th_Spectre_RC_Vest",
+            "JA_104th_Granite_Vest_old",
+            "JA_104th_Carmine_Kama",
+            "JA_104th_Death_Kama",
+            "JA_104th_Spirit_Vest",
+            "JA_104th_Scurvy_Vest",
+            "JA_104th_Knightfall_Vest",
+            "JA_104th_Tusk_Vest",
+            "JA_104th_Galahad_Vest",
+            "JA_104th_IQ_Vest",
+            "JA_104th_Knockout_Engineer_EWEB_Vest",
+            "JA_104th_Spectre_ARC_Vest",
+            "JA_104th_Tiger_NCO_Vest",
+            "JA_104th_Rich_NCO_Vest",
+            "JA_104th_Chaser_Kama",
+            "JA_104th_Hawkeye_Kama",
+            "JA_104th_Osiris_Company_Vest",
+            "JA_104th_Poet_Engineer_EWEB_Vest",
+            "JA_104th_Aiomi_Kama",
+            "JA_104th_Lax_Vest"
         };
+    glasses[] = {
+        "JA_104th_AB_Officer_Vest_Knockout",
+        "JA_104th_Poet_Kama"
+    };
     };
 };
 
@@ -126,7 +168,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Welty_Kama.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Welty_Kama.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -168,7 +210,7 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "rank"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Irish_Officer_Accessories.paa", ""};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Irish_Officer_Accessories.paa", ""};
         model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_commander_vest.p3d";
         class ItemInfo : ItemInfo
         {
@@ -217,7 +259,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Irish_Officer_Accessories.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Irish_Officer_Accessories.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -263,7 +305,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Castle_Officer_Accessories.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Castle_Officer_Accessories.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -305,8 +347,8 @@ class CfgWeapons
         hiddenSelections[] = {"illum", "camo1"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Company_Spectre_Sniper_Vest.paa",
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Company_Spectre_Sniper_Vest.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Company_Spectre_Sniper_Vest.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Company_Spectre_Sniper_Vest.paa",
             };
         class ItemInfo : ItemInfo
         {
@@ -352,10 +394,10 @@ class CfgWeapons
         hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa", // Heavy
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa", // Heavy
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Officer.paa",
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa"  // Heavy
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa", // Heavy
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa", // Heavy
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Officer.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa"  // Heavy
             };
         class ItemInfo : ItemInfo
         {
@@ -401,8 +443,8 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Carmine_Light_Accessories.paa",   // Kama
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Carmine_Accessories_Officer.paa", // Kama
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Carmine_Light_Accessories.paa",   // Kama
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Carmine_Accessories_Officer.paa", // Kama
             };
         model = "\ls\core\addons\characters_clone_legacy\vests\hazard\ls_gar_hazard_vest.p3d";
         class ItemInfo : ItemInfo
@@ -458,7 +500,7 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Death_Kama.paa", // Kama
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Death_Kama.paa", // Kama
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"};
 
         model = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalOfficer_vest.p3d";
@@ -514,7 +556,7 @@ class CfgWeapons
                 "camo1"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Spirit_Kama.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Spirit_Kama.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -557,10 +599,10 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_light_accessories.paa", // Heavy
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_accessories_officer.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_light_accessories.paa", // Heavy
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_accessories_officer.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa", // Heavy
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_accesories_heavy.paa"             // Heavy
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_accesories_heavy.paa"             // Heavy
             };
         class ItemInfo : ItemInfo
         {
@@ -615,7 +657,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Knightfall_Accessories.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Knightfall_Accessories.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -661,7 +703,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Tusk_Accessories.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Tusk_Accessories.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -708,7 +750,7 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_BARC_Galahad_Officer_Accessories.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_BARC_Galahad_Officer_Accessories.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
         class ItemInfo : VestItem
         {
@@ -756,7 +798,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "", // Heavy
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_IQ_Accessories_Officer.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_IQ_Accessories_Officer.paa",
                 "", // Heavy
                 "" // Heavy
             };
@@ -807,7 +849,7 @@ class CfgWeapons
             "",
             "",
             "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
-            "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_ARC.paa",
+            "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_ARC.paa",
         };
 		class ItemInfo
 		{
@@ -822,7 +864,7 @@ class CfgWeapons
                 "",
                 "",
                 "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_ARC.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_ARC.paa",
             };
 			mass = 80;
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
@@ -873,8 +915,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_Company_Spectre_Accessories_ARC.paa",
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_Company_Spectre_Accessories_Officer.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_Company_Spectre_Accessories_ARC.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_Company_Spectre_Accessories_Officer.paa"};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -932,9 +974,9 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"104thPhantomCompany\data\Textures\104th_Accessories_Light_P2_Base.paa", // Heavy
-				"JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Tiger_Accessories_Officer.paa",
+				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Tiger_Accessories_Officer.paa",
 				"104thPhantomCompany\data\Textures\104th_Accessories_Light_P2_Base.paa",	 // Heavy
-				"JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Tiger_Accessories_Heavy.paa" // Heavy
+				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Tiger_Accessories_Heavy.paa" // Heavy
 			};
 		class ItemInfo : ItemInfo
 		{
@@ -988,9 +1030,9 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2","pauldron"};
 		hiddenSelectionsTextures[] =
 			{
-				"JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
-				"JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Officer.paa",
-				"JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
+				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
+				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Officer.paa",
+				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
 			};
 		class ItemInfo : ItemInfo
 		{
@@ -1045,7 +1087,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Chaser_Accessories_Officer.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Chaser_Accessories_Officer.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1091,7 +1133,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Hawkeye_Accessories_Officer.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Hawkeye_Accessories_Officer.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1132,7 +1174,7 @@ class CfgWeapons
         hiddenSelections[] = {"camo1","camo2","camo3"};
         hiddenSelectionsTextures[] = {
             "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
-            "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_CMD_Osiris_Accessories_Officer.paa",
+            "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_CMD_Osiris_Accessories_Officer.paa",
             "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"
         };
         model = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalCommander_vest.p3d";
@@ -1184,7 +1226,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {
             "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
             "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
-            "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
+            "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
             "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
             "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
             "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
@@ -1199,7 +1241,7 @@ class CfgWeapons
             hiddenSelectionsTextures[] = {
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
@@ -1251,7 +1293,7 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Aiomi_Accessories_Officer.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Aiomi_Accessories_Officer.paa"};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1294,10 +1336,10 @@ class CfgWeapons
         hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa", // Heavy
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa", // Heavy
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Officer.paa",
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa"  // Heavy
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa", // Heavy
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa", // Heavy
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Officer.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa"  // Heavy
             };
         class ItemInfo : ItemInfo
         {
@@ -1352,7 +1394,7 @@ class CfgGlasses
         hiddenSelectionsTextures[] =
             {
                 "",
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_Officer.paa",
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_Officer.paa",
             };
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";
     };
@@ -1369,7 +1411,7 @@ class CfgGlasses
                 "camo1"};
         hiddenSelectionsTextures[] =
             {
-                "JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa"};
+                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa"};
     };
     
 };
