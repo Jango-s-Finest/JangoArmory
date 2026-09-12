@@ -1,6 +1,7 @@
+#include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class IMS_AdditionalWeapons
+	class ADDON
 	{
 		units[]={};
 		weapons[]=

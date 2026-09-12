@@ -1,7 +1,8 @@
 #include "basicDefines_A3.hpp"
+#include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_Pilot_Armours
+	class ADDON
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;

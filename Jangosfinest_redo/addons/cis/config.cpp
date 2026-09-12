@@ -1,6 +1,7 @@
+#include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class Jangos_CIS
+	class ADDON
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;

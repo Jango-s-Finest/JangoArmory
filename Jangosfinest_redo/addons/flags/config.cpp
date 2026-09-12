@@ -1,6 +1,7 @@
+#include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class Jangos_Flags
+	class ADDON
 	{
 		units[] = {
 		}; // All the new vehicles/units you've created in cfgVehicles
