@@ -189,7 +189,7 @@ class CfgCloudlets{
 	{
 		colorCoef[] = {"colorR","colorG","colorB","colorA"};
 		blockAIVisibility = 1;
-		color[] = {[0.6,0.6,0.6,0.2],[0.6,0.6,0.6,0.05],[0.6,0.6,0.6,0]};
+		color[] = {{0.6,0.6,0.6,0.2},{0.6,0.6,0.6,0.05},{0.6,0.6,0.6,0}};
 		moveVelocity[] = {0.2,0.5,0.1};
 		size[] = {0.46,4.5,18};
 		MoveVelocityVar[] = {0.7,0.4,0.7};
@@ -200,11 +200,11 @@ class CfgCloudlets{
 		particleFSIndex = 12;
 		particleFSFrameCount = 4;
 		particleFSLoop = 0;
-		color[] = {[0.6,0.6,0.6,1],[0.6,0.6,0.6,0.5],[0.6,0.6,0.6,0]};
+		color[] = {{0.6,0.6,0.6,1},{0.6,0.6,0.6,0.5},{0.6,0.6,0.6,0}};
 	};
 	class JA_104th_cloudlet_SmokeShellWhiteUW: SmokeShellWhiteUW
 	{
-		color[] = {[1,1,1,1]};
+		color[] = {{1,1,1,1}};
 		randomDirectionIntensity = 0.2;
 		MoveVelocityVar[] = {0.5,0.5,0.5};
 	};
@@ -215,15 +215,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Blue: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.1183,0.1867,1,0.2],[0.1183,0.1867,1,0.05],[0.1183,0.1867,1,0]};
+		color[] = {{0.1183,0.1867,1,0.2},{0.1183,0.1867,1,0.05},{0.1183,0.1867,1,0}};
 	};
 	class JA_104th_cloudlet_smokeshell_Blue2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.1183,0.1867,1,0.2],[0.1183,0.1867,1,0.05],[0.1183,0.1867,1,0]};
+		color[] = {{0.1183,0.1867,1,1},{0.1183,0.1867,1,0.05},{0.1183,0.1867,1,0}};
 	};
 	class JA_104th_cloudlet_SmokeShellBlueUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.1183,0.1867,1,1]};
+		color[] = {{0.1183,0.1867,1,1}};
 	};
 	class JA_104th_cloudlet_SmokeShellBlue2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
@@ -232,15 +232,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Green: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.2125,0.8438,0.2125,0.2],[0.2125,0.8438,0.2125,0.05],[0.2125,0.8438,0.2125,0]};
+		color[] = {{0.2125,0.8438,0.2125,0.2},{0.2125,0.8438,0.2125,0.05},{0.2125,0.8438,0.2125,0}};
 	};
 	class JA_104th_cloudlet_smokeshell_Green2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.2125,0.8438,0.2125,0.2],[0.2125,0.8438,0.2125,0.05],[0.2125,0.8438,0.2125,0]};
+		color[] = {{0.2125,0.8438,0.2125,1},{0.2125,0.8438,0.2125,0.05},{0.2125,0.8438,0.2125,0}};
 	};
 	class JA_104th_cloudlet_SmokeShellGreenUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.2125,0.8438,0.2125,1]};
+		color[] = {{0.2125,0.8438,0.2125,1}};
 	};
 	class JA_104th_cloudlet_SmokeShellGreen2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
@@ -249,15 +249,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Purple: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.4341,0.1388,0.4144,0.2],[0.4341,0.1388,0.4144,0.05],[0.4341,0.1388,0.4144,0]};
+		color[] = {{0.4341,0.1388,0.4144,0.2},{0.4341,0.1388,0.4144,0.05},{0.4341,0.1388,0.4144,0}};
 	};
 	class JA_104th_cloudlet_smokeshell_Purple2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.4341,0.1388,0.4144,0.2],[0.4341,0.1388,0.4144,0.05],[0.4341,0.1388,0.4144,0]};
+		color[] = {{0.4341,0.1388,0.4144,1},{0.4341,0.1388,0.4144,0.05},{0.4341,0.1388,0.4144,0}};
 	};
 	class JA_104th_cloudlet_SmokeShellPurpleUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.4341,0.1388,0.4144,1]};
+		color[] = {{0.4341,0.1388,0.4144,1}};
 	};
 	class JA_104th_cloudlet_SmokeShellPurple2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
@@ -266,15 +266,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Red: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.8438,0.1383,0.1353,0.2],[0.8438,0.1383,0.1353,0.05],[0.8438,0.1383,0.1353,0]};
+		color[] = {{0.8438,0.1383,0.1353,0.2},{0.8438,0.1383,0.1353,0.05},{0.8438,0.1383,0.1353,0}};
 	};
 	class JA_104th_cloudlet_smokeshell_Red2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.8438,0.1383,0.1353,0.2],[0.8438,0.1383,0.1353,0.05],[0.8438,0.1383,0.1353,0]};
+		color[] = {{0.8438,0.1383,0.1353,1},{0.8438,0.1383,0.1353,0.05},{0.8438,0.1383,0.1353,0}};
 	};
 	class JA_104th_cloudlet_SmokeShellRedUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.8438,0.1383,0.1353,1]};
+		color[] = {{0.8438,0.1383,0.1353,1}};
 	};
 	class JA_104th_cloudlet_SmokeShellRed2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
@@ -283,15 +283,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Yellow: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.9883,0.8606,0.0719,0.2],[0.9883,0.8606,0.0719,0.05],[0.9883,0.8606,0.0719,0]};
+		color[] = {{0.9883,0.8606,0.0719,0.2},{0.9883,0.8606,0.0719,0.05},{0.9883,0.8606,0.0719,0}};
 	};
 	class JA_104th_cloudlet_smokeshell_Yellow2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.9883,0.8606,0.0719,0.2],[0.9883,0.8606,0.0719,0.05],[0.9883,0.8606,0.0719,0]};
+		color[] = {{0.9883,0.8606,0.0719,1},{0.9883,0.8606,0.0719,0.05},{0.9883,0.8606,0.0719,0}};
 	};
 	class JA_104th_cloudlet_SmokeShellYellowUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.9883,0.8606,0.0719,1]};
+		color[] = {{0.9883,0.8606,0.0719,1}};
 	};
 	class JA_104th_cloudlet_SmokeShellYellow2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
@@ -300,15 +300,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Orange: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.88, 0.36, 0,0.2],[0.88, 0.36, 0,0.05],[0.88, 0.36, 0,0]};
+		color[] = {{0.88, 0.36, 0,0.2},{0.88, 0.36, 0,0.05},{0.88, 0.36, 0,0}};
 	};
 	class JA_104th_cloudlet_smokeshell_Orange2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.88, 0.36, 0,0.2],[0.88, 0.36, 0,0.05],[0.88, 0.36, 0,0]};
+		color[] = {{0.88, 0.36, 0,1},{0.88, 0.36, 0,0.05},{0.88, 0.36, 0,0}};
 	};
 	class JA_104th_cloudlet_SmokeShellOrangeUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.88, 0.36, 0,1]};
+		color[] = {{0.88, 0.36, 0,1}};
 	};
 	class JA_104th_cloudlet_SmokeShellOrange2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
@@ -317,15 +317,15 @@ class CfgCloudlets{
 
 	class JA_104th_cloudlet_smokeshell_Black: JA_104th_cloudlet_smokeshell_White
 	{
-		color[] = {[0.0,0.0,0,0.2],[0.0,0.0,0,0.05],[0.0,0.0,0,0]};
+		color[] = {{0.0,0.0,0,0.2},{0.0,0.0,0,0.05},{0.0,0.0,0,0}};
 	};
 	class JA_104th_cloudlet_smokeshell_Black2: JA_104th_cloudlet_smokeshell_White2
 	{
-		color[] = {[0.0,0.0,0,0.2],[0.0,0.0,0,0.05],[0.0,0.0,0,0]};
+		color[] = {{0.0,0.0,0,1},{0.0,0.0,0,0.05},{0.0,0.0,0,0}};
 	};
 	class JA_104th_cloudlet_SmokeShellBlackUW: JA_104th_cloudlet_SmokeShellWhiteUW
 	{
-		color[] = {[0.0,0.0,0,1]};
+		color[] = {{0.0,0.0,0,1}};
 	};
 	class JA_104th_cloudlet_SmokeShellBlack2UW: JA_104th_cloudlet_SmokeShellWhite2UW
 	{
