@@ -1,0 +1,1189 @@
+#include "\JA\jangos_Armory\addons\main\script_component.hpp"
+#include "basicDefines_A3.hpp"
+class CfgPatches
+{
+    class ADDON
+    {
+        author = "Jango's Finest";
+        requiredVersion = 0.1;
+        requiredAddons[] = {};
+        units[] = {};
+        weapons[] = {
+            "ls_gar_airborne_vest",
+            "ls_gar_airborneNCO_vest",
+            "ls_gar_airborneOfficer_vest",
+            "ls_gar_forceReconNCO_vest",
+            "ls_gar_forceReconLieutenant_vest",
+            "ls_gar_airborneOfficer_vest",
+            "ls_gar_officer_vest",
+            "ls_gar_commander_vest",
+            "ls_gar_arc_vest",
+            "JA_104th_AB_Officer_Vest_Axel",
+            "JA_104th_AB_Officer_Vest_Dak",
+            "JA_104th_Carmine_Vest",
+            "JA_104th_Osiris_Vest_old",
+            "JA_104th_Kage_Vest",
+            "JA_104th_Magnum_Vest",
+            "JA_104th_Clutch_Vest",
+            "JA_104th_Soul_Vest",
+            "JA_104th_Granite_Vest",
+            "JA_104th_AB_2_2_Base_Trooper_Armor",
+            "JA_104th_AB_2_2_Medic_Base_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Base_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Medic_Base_Trooper_Armor",
+            "JA_104th_AB_2_2_MLV_Trooper_Armor",
+            "JA_104th_AB_2_2_Medic_MLV_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_MLV_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Medic_MLV_Trooper_Armor",
+            "JA_104th_AB_2_2_Blue_Trooper_Armor",
+            "JA_104th_AB_2_2_Medic_Blue_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Blue_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Medic_Blue_Trooper_Armor",
+            "JA_104th_Bear_Vest"
+        };
+    };
+};
+
+class CfgFactionClasses
+{
+    class 104th_Guys
+    {
+        displayname = "Jango's Finest";
+        priority = 1; // Position in list.scope = 2;
+        side = 1;
+        icon = "";
+    };
+};
+class cfgEditorSubcategories
+{
+    class 104th_Categ_Clones
+    {
+        displayname = "104th - Customs";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        side = 1;
+    };
+    class 104th_Categ_Basic
+    {
+        displayname = "104th - Base";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        side = 1;
+    };
+    class 104th_Categ_Special
+    {
+        displayname = "104th - Special";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        side = 1;
+    };
+};
+
+class CfgWeapons
+{
+    class VestItem;
+
+    // Inheritance for vests
+    // Makes making each vest a rebreather easier
+    class ls_gar_clone_vest;
+    class ls_gar_airborne_vest : ls_gar_clone_vest
+    {
+        class ItemInfo;
+    };
+    class ls_gar_airborneNCO_vest : ls_gar_airborne_vest
+    {
+        class ItemInfo;
+    };
+    class ls_gar_forceReconNCO_vest : ls_gar_airborne_vest
+    {
+        class ItemInfo;
+    };
+    class ls_gar_forceReconLieutenant_vest : ls_gar_clone_vest
+    {
+    };
+    class ls_cloneVest_base;
+    class ls_gar_airborneOfficer_vest : ls_cloneVest_base
+    {
+        class ItemInfo;
+    };
+
+    class ls_gar_officer_vest : ls_gar_clone_vest
+    {
+    };
+    class ls_gar_commander_vest : ls_gar_officer_vest
+    {
+    };
+    class ls_gar_arc_vest : ls_gar_officer_vest
+    {
+    };
+
+    class JA_104th_AB_Officer_Vest_Axel : ls_gar_airborneOfficer_vest
+    {
+        author = "Fish";
+        displayName = "Clone Airborne Officer Vest (104th Axel)";
+        hiddenSelections[] = {"ammo","camo1","camo2","camo3"};
+        hiddenSelectionsTextures[] =
+            {
+                // Jangos_Airborne_Vests\data\textures\104th_Accessories_Heavy.paa doesn't exist
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104_AB_Axel_Kama.paa),
+                QPATHTOEF(airborne_vests,data\textures\104_AB_Axel_Kama.paa)};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_Officer_Vest_Dak : ls_gar_forceReconLieutenant_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne Officer Vest (104th Dak)";
+        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Dak_Kama.paa),
+                "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
+        class ItemInfo : VestItem
+        {
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+            containerClass = "Supply80";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 80;
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Carmine_Vest : ls_gar_airborneNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne NCO Vest (104th Carmine)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Carmine_Kama.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Osiris_Vest_old : ls_gar_airborneNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne NCO Vest (104th Osiris)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Osiris_Kama.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Kage_Vest : ls_gar_airborneNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne NCO Vest (104th Kage)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Kage_Chest.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Kage_Chest.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Kage_Kama.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Kage_Chest.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Magnum_Vest : ls_gar_forceReconNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne NCO Vest (104th Magnum)";
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Magnum_Accessories_Light.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Magnum_Kama.paa),
+                "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa", // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_AB_Magnum_Accesories_Heavy.paa)               // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Clutch_Vest : ls_gar_forceReconLieutenant_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne NCO Vest (104th Clutch)";
+        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Clutch_Kama.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Clutch_Heavy.paa)};
+        class ItemInfo : VestItem
+        {
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+            containerClass = "Supply80";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 80;
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Soul_Vest : ls_gar_airborneNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne NCO Vest (104th Soul)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Soul_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Soul_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Soul_Accessories_Officer.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Soul_Accessories_Heavy.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Granite_Vest : ls_gar_airborneNCO_vest
+	{
+		author = "Dak";
+		displayName = "Clone Airborne Trooper Vest (104th Granite)";
+		hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(airborne_vests,data\textures\104th_AB_Granite_Accessories_Heavy.paa), // Heavy
+				QPATHTOEF(airborne_vests,data\textures\104th_AB_Granite_Accessories_Heavy.paa), // Heavy
+				QPATHTOEF(airborne_vests,data\textures\104th_AB_Granite_Accessories_Officer.paa),
+				QPATHTOEF(airborne_vests,data\textures\104th_AB_Granite_Accessories_Heavy.paa), // Heavy
+			};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
+
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+    
+    class JA_104th_AB_2_2_Base_Trooper_Armor : ls_gar_airborne_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne Trooper Vest (104th 2-2)";
+        hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Base.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Base.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Trooper.paa),
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_2_2_Medic_Base_Trooper_Armor : ls_gar_airborne_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne Medic Vest (104th 2-2)";
+        hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Base.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Base.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Medic.paa),
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_NCO_2_2_Base_Trooper_Armor : ls_gar_airborneNCO_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne NCO Vest (104th 2-2)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Base.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Base.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Trooper.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Base.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_NCO_2_2_Medic_Base_Trooper_Armor : ls_gar_airborneNCO_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne NCO Medic Vest (104th 2-2)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Base.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Base.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Medic.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Base.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    
+    class JA_104th_AB_2_2_MLV_Trooper_Armor : ls_gar_airborne_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne Trooper Vest (104th 2-2 MLV)";
+        hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Red.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Red.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Trooper.paa),
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_2_2_Medic_MLV_Trooper_Armor : ls_gar_airborne_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne Medic Vest (104th 2-2 MLV)";
+        hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Medic.paa),
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_NCO_2_2_MLV_Trooper_Armor : ls_gar_airborneNCO_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne NCO Vest (104th 2-2 MLV)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Red.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Red.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Trooper.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Red.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_NCO_2_2_Medic_MLV_Trooper_Armor : ls_gar_airborneNCO_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne NCO Medic Vest (104th 2-2 MLV)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Medic.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    
+    class JA_104th_AB_2_2_Blue_Trooper_Armor : ls_gar_airborne_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne Trooper Vest (104th 2-2 Blue)";
+        hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Blue.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Blue.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Trooper.paa),
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_2_2_Medic_Blue_Trooper_Armor : ls_gar_airborne_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne Medic Vest (104th 2-2 Blue)";
+        hiddenSelections[] = {
+			"ammo", 
+			"camo1", 
+			"camo2", 
+			"pauldron",
+		};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Medic.paa),
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_NCO_2_2_Blue_Trooper_Armor : ls_gar_airborneNCO_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne NCO Vest (104th 2-2 Blue)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Blue.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Blue.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Trooper.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Vest_Vet_Blue.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_AB_NCO_2_2_Medic_Blue_Trooper_Armor : ls_gar_airborneNCO_vest
+    {
+        author = "Dak";
+        displayName = "Clone Airborne NCO Medic Vest (104th 2-2 Blue)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa), // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Officer_Accessories_P2_AB_Medic.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Bear_Vest : ls_gar_airborneNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Airborne NCO Vest (104th Bear)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(airborne_vests,data\textures\104th_AB_Bear_Accessories_Officer.paa),
+                QPATHTOEF(airborne_vests,data\textures\104th_Accessories_Heavy.paa)  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    
+};

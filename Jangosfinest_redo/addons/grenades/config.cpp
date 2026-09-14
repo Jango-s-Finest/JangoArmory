@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Jangos_Armory_Grenades
+	class ADDON
 	{
 		units[] = {};
 		weapons[] = {

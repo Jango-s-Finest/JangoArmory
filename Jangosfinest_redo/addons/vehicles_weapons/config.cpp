@@ -3,7 +3,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_Vehicles_Weapons
+	class ADDON
 	{
 		units[] = {};
 		weapons[] = {

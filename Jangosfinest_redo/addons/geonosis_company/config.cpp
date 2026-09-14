@@ -1,0 +1,766 @@
+#include "\JA\jangos_Armory\addons\main\script_component.hpp"
+#include "basicDefines_A3.hpp"
+class CfgPatches
+{
+	class ADDON
+	{
+		author = "Jango's Finest";
+		units[] = {
+			"JA_104th_P1_Geonosis_CT",
+			"JA_104th_P1_Geonosis_SGT",
+			"JA_104th_P1_Geonosis_LT",
+			"JA_104th_P1_Geonosis_CPT",
+			"JA_104th_P1_Geonosis_CMDR",
+			"JA_104th_Medic_Backpack_Geonosis"
+		};
+        weapons[] = {
+            "ls_gar_kama_vest",
+            "ls_gar_forceReconLieutenant_vest",
+            "ls_gar_officer_vest",
+            "ls_gar_commander_vest",
+            "ls_gar_arc_vest",
+            "JA_104th_P1_Geonosis_CT_Helmet",
+            "JA_104th_P1_Geonosis_CT_Uniform",
+            "JA_104th_P1_Geonosis_SGT_Helmet",
+            "JA_104th_P1_Geonosis_SGT_Uniform",
+            "JA_104th_P1_Geonosis_LT_Helmet",
+            "JA_104th_P1_Geonosis_LT_Uniform",
+            "JA_104th_P1_Geonosis_CPT_Helmet",
+            "JA_104th_P1_Geonosis_CPT_Uniform",
+            "JA_104th_P1_Geonosis_CMDR_Helmet",
+            "JA_104th_P1_Geonosis_CMDR_Uniform",
+            "JA_104th_Base_Commander_Vest_GEO",
+            "JA_104th_Vest_P1",
+            "JA_104th_P1_officer_Vest",
+            "JA_104th_P1_PSGT_Base_Kama",
+            "JA_104th_ARC_PSGT_Vest",
+            "JA_104th_ARC_LT_Vest",
+            "JA_104th_ARC_CPT_Vest"
+        };
+	};
+};
+
+class CfgFactionClasses
+{
+	class CfgFactionClasses
+	{
+		class 104th_Guys
+		{
+			displayname = "Jango's Finest";
+			priority = 1; // Position in list.
+			side = 1;	  // Opfor = 0, Blufor = 1, Indep = 2.
+			icon = "";
+		};
+	};
+};
+class cfgEditorSubcategories
+{
+	class 104th_Categ_Clones_Geonosis
+	{
+		displayname = "104th - Geonosis";
+	};
+};
+
+class CfgWeapons
+{
+	class ls_gar_phase1_helmet;
+	class ls_gar_clone_vest;
+	class JA_104th_Clone_Base_armor;
+	class ls_gar_kama_vest : JA_104th_Clone_Base_armor
+	{
+		class ItemInfo;
+	};
+	class UniformItem;
+	class VestItem;
+	class JA_104th_Base_CT_Uniform;
+	
+	// Inheritance for vests
+	// Makes making each vest a rebreather easier
+	// Inheritance for vests
+	// Makes making each vest a rebreather easier
+	class ls_gar_forceReconLieutenant_vest : ls_gar_clone_vest
+	{
+	};
+	class ls_gar_officer_vest : ls_gar_clone_vest
+	{
+		class ItemInfo;
+	};
+	class ls_gar_commander_vest : ls_gar_officer_vest
+	{
+		class ItemInfo;
+	};
+	class ls_gar_arc_vest : ls_gar_officer_vest
+	{
+		class ItemInfo;
+	};
+
+	class JA_104th_P1_Geonosis_CT_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Bulky & Cyan";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+
+		displayname = "Clone Trooper P1 Helmet (104th Geonosis CT)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_104th_P1_Geonosis_CT_Uniform : JA_104th_Base_CT_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper P1 Armor (104th Geonosis CT)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_P1_Geonosis_CT";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_P1_Geonosis_SGT_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Bulky & Cyan";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+
+		displayname = "Clone Trooper P1 Helmet (104th Geonosis SGT)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Sargeant_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_104th_P1_Geonosis_SGT_Uniform : JA_104th_Base_CT_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper P1 Armor (104th Geonosis SGT)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Sargeant_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_P1_Geonosis_SGT";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_P1_Geonosis_LT_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Bulky & Cyan";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+
+		displayname = "Clone Trooper P1 Helmet (104th Geonosis LT)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Lieutenant_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_104th_P1_Geonosis_LT_Uniform : JA_104th_Base_CT_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper P1 Armor (104th Geonosis LT)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Lieutenant_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_P1_Geonosis_LT";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_P1_Geonosis_CPT_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Bulky & Cyan";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+
+		displayname = "Clone Trooper P1 Helmet (104th Geonosis CPT)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Captain_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_104th_P1_Geonosis_CPT_Uniform : JA_104th_Base_CT_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper P1 Armor (104th Geonosis CPT)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Captain_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_P1_Geonosis_CPT";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_P1_Geonosis_CMDR_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Bulky & Cyan";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+
+		displayname = "Clone Trooper P1 Helmet (104th Geonosis CMDR)";										 // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Commander_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_104th_P1_Geonosis_CMDR_Uniform : JA_104th_Base_CT_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper P1 Armor (104th Geonosis CMDR)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Commander_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_P1_Geonosis_CMDR";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	
+	class JA_104th_Base_Commander_Vest_GEO : ls_gar_commander_vest
+    {
+        author = "Dak";
+        displayName = "Clone Trooper Commander Vest (104th CMDR)";
+        hiddenSelections[] =
+            {
+                "camo1"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Commander_Accessories_Officer.paa)};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+	class JA_104th_Vest_P1 : ls_gar_forceReconLieutenant_vest
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Captain Vest (104th Geonosis)";
+		model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+		uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Captain_Accessories_Officer.paa),
+				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
+		class ItemInfo : VestItem
+		{
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+			containerClass = "Supply80";
+			hiddenSelections[] = {"camo1", "camo2"};
+			mass = 80;
+			vestType = "Rebreather";
+
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	class JA_104th_P1_officer_Vest : ls_gar_officer_vest
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Officer Vest (104th Geonosis)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Lieutenant_Accessories_Officer.paa)};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
+
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	class JA_104th_P1_PSGT_Base_Kama : ls_gar_kama_vest
+	{
+		author = "Tundra";
+		displayName = "Clone Trooper Kama (104th Geonosis SGT)";
+		hiddenSelections[] =
+			{
+				"camo1"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Sergeant_Accessories_Officer.paa)};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
+
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	
+	class JA_104th_ARC_PSGT_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (104th Geonosis SGT)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "",
+                QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Sergeant_Accessories_Officer.paa)
+            };
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+	class JA_104th_ARC_LT_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (104th Geonosis LT)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "",
+                QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Lieutenant_Accessories_Officer.paa)
+            };
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+	class JA_104th_ARC_CPT_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (104th Geonosis CPT)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "",
+                QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Captain_Accessories_Officer.paa)
+            };
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+};
+
+class CfgVehicles
+{
+	class lsd_gar_phase2_base;
+	class ls_gar_medic_backpack;
+
+	class JA_104th_P1_Geonosis_CT : lsd_gar_phase2_base
+	{
+		author = "Bulky & Cyan";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_P1_Geonosis_CT_Uniform";
+		displayName = "P1 Clone Trooper";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Geonosis";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		linkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_104th_P1_Geonosis_SGT : lsd_gar_phase2_base
+	{
+		author = "Bulky & Cyan";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_P1_Geonosis_SGT_Uniform";
+		displayName = "P1 SGT Clone Trooper";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Geonosis";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Sargeant_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		linkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_104th_P1_Geonosis_LT : lsd_gar_phase2_base
+	{
+		author = "Bulky & Cyan";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_P1_Geonosis_LT_Uniform";
+		displayName = "P1 LT Clone Trooper";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Geonosis";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Lieutenant_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		linkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_104th_P1_Geonosis_CPT : lsd_gar_phase2_base
+	{
+		author = "Bulky & Cyan";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_P1_Geonosis_CPT_Uniform";
+		displayName = "P1 CPT Clone Trooper";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Geonosis";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Captain_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		linkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_104th_P1_Geonosis_CMDR : lsd_gar_phase2_base
+	{
+		author = "Bulky & Cyan";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_P1_Geonosis_CMDR_Uniform";
+		displayName = "P1 CMDR Clone Trooper";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Geonosis";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Commander_Upper.paa),
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Shiny_Lower.paa)};
+		linkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_104th_P2_1C_CT_V1_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+
+	class JA_104th_Medic_Backpack_Geonosis : ls_gar_medic_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper medic backpack (104th Geonosis)";
+		maximumLoad = 450;
+		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
+		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Backpack_Medic.paa), // don't change this
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Backpack_Medic.paa), // don't change unless RTO
+				"",																			 // Heavy
+				QPATHTOEF(geonosis_company,data\textures\104th_P1_Geonosis_Backpack_Medic.paa), // Medic
+				""																			 // RTO
+			};
+	};
+};

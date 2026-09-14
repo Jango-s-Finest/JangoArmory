@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-    class Jangos_Armory_ARC_Vests
+    class ADDON
     {
         author = "Jango's Finest";
         requiredVersion = 0.1;
@@ -103,8 +103,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Angel_ARC_Accessories.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Angel_Officer_Accessories.paa)
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Angel_ARC_Accessories.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Angel_Officer_Accessories.paa)
             };
         class ItemInfo : ItemInfo
         {
@@ -167,8 +167,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Crowbi_ARC_Accessories.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Crowbi_Officer_Accessories.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Crowbi_ARC_Accessories.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Crowbi_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -230,8 +230,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Drifter_Accessories_ARC.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Drifter_Accessories_Officer.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Drifter_Accessories_ARC.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Drifter_Accessories_Officer.paa),
             };
         class ItemInfo : ItemInfo
         {
@@ -294,8 +294,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Frosty_ARC_Accessories.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Frosty_Officer_Accessories.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Frosty_ARC_Accessories.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Frosty_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -357,8 +357,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Hunter_ARC_Accessories.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Hunter_Officer_Accessories.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Hunter_ARC_Accessories.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Hunter_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -420,8 +420,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Sigil_ARC_Accessories.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Sigil_Officer_Accessories.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Sigil_ARC_Accessories.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Sigil_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -483,8 +483,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Spectre_ARC_Accessories.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Spectre_Officer_Accessories.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Spectre_ARC_Accessories.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Spectre_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -542,7 +542,7 @@ class CfgWeapons
                 "camo1"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Spectre_Officer_Accessories.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Spectre_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -591,8 +591,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Loner_ARC_Accessories.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Loner_Officer_Accessories.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Loner_ARC_Accessories.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Loner_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -654,8 +654,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Vision_ARC_Accessories.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Vision_Officer_Accessories.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Vision_ARC_Accessories.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Vision_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -717,8 +717,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Ceasar_Accessories_ARC.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Ceasar_Accessories_Officer.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Ceasar_Accessories_ARC.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Ceasar_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -780,8 +780,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Vegas_Accessories_ARC.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Vegas_Accessories_Officer.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Vegas_Accessories_ARC.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Vegas_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -843,8 +843,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Osiris_Accessories_ARC.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Osiris_Accessories_Officer.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Osiris_Accessories_ARC.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Osiris_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -906,8 +906,8 @@ class CfgWeapons
             };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Kaleck_Accessories_ARC.paa),
-                QPATHTOEF(arc_vests,data\Textures\104th_ARC_Kaleck_Accessories_Officer.paa)};
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Kaleck_Accessories_ARC.paa),
+                QPATHTOEF(arc_vests,data\textures\104th_ARC_Kaleck_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";

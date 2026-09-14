@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_Vehicles_Laat
+	class ADDON
 	{
 		units[] = {
 			"ls_vehicle_barc",

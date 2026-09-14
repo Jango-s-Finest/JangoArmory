@@ -1,7 +1,7 @@
 #define _ARMA_
 class CfgPatches
 {
-	class FC_Dropcrate
+	class ADDON
 	{
 		author = "Fishinchips";
 		name = "LAAT_Dropcrate";

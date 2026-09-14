@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_ARC_Armours
+	class ADDON
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;

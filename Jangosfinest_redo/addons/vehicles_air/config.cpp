@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_Vehicles_Air
+	class ADDON
 	{
 		units[] = {
 			"JA_104th_Nu_class",

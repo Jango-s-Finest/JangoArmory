@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_ARF_Helmets
+	class ADDON
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
@@ -85,7 +85,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF)";								// the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_ARF_Urban_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -95,7 +95,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF Urban)";								  // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Urban_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Urban_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_ARF_Jungle_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -105,7 +105,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF Jungle)";								   // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Jungle_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Jungle_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_ARF_Desert_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -115,7 +115,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF Desert)";								   // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Desert_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Desert_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_ARF_Medic_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -125,7 +125,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper ARF P1 Helmet (104th ARF Medic)";								  // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Medic_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Medic_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	// Customs
 	class JA_104th_Achilles_Helmet : ls_gar_phase1Arf_helmet
@@ -136,7 +136,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Achilles)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Achilles_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Achilles_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Cyan_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -146,7 +146,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Cyan)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Cyan_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Cyan_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Welty_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -156,7 +156,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Welty)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Welty_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Welty_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Beans_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -166,7 +166,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper ARF Helmet (104th Beans)";										  // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Beans_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Beans_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
 	class JA_104th_Gravity_Helmet : ls_gar_phase1Arf_helmet
@@ -177,7 +177,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper ARF Helmet (104th Gravity)";										  // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Gravity_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Gravity_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
 	class JA_104th_Fire_Helmet : ls_gar_phase1Arf_helmet
@@ -188,7 +188,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper ARF Helmet (104th Fire)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Fire_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Fire_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Unix_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -198,7 +198,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Unix)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Unix_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Unix_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Woods_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -208,7 +208,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Woods)";										  // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Woods_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Woods_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Woods_Helmet_ME : ls_gar_phase1Arf_helmet
 	{
@@ -218,7 +218,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Woods)";											 // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_P1_ARF_Woods_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_P1_ARF_Woods_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Achilles_Helmet_ME : ls_gar_phase1Arf_helmet
 	{
@@ -228,7 +228,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Achilles)";											// the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_P1_ARF_Achilles_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_P1_ARF_Achilles_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Fire_Helmet_ME : ls_gar_phase1Arf_helmet
 	{
@@ -238,7 +238,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Fire)";											// the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_P1_ARF_Fire_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_P1_ARF_Fire_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Unix_Helmet_ME : ls_gar_phase1Arf_helmet
 	{
@@ -248,7 +248,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Unix)";											// the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_P1_ARF_Unix_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_P1_ARF_Unix_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_IQ_Helmet : ls_gar_phase2Arf_helmet // Use for ARF + Chops template
 	{
@@ -260,9 +260,9 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th IQ)"; // the name it will be in game
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_helmets,data\Textures\104th_ARF_IQ_Helmet.paa),
-				QPATHTOEF(arf_helmets,data\Textures\104th_ARF_IQ_Flaps.paa),
-				QPATHTOEF(arf_helmets,data\Textures\104th_ARF_IQ_Helmet.paa)};
+				QPATHTOEF(arf_helmets,data\textures\104th_ARF_IQ_Helmet.paa),
+				QPATHTOEF(arf_helmets,data\textures\104th_ARF_IQ_Flaps.paa),
+				QPATHTOEF(arf_helmets,data\textures\104th_ARF_IQ_Helmet.paa)};
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 	};
 	class JA_104th_Keeper_Helmet : ls_gar_phase1Arf_helmet
@@ -273,7 +273,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Keeper)";										  // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Keeper_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Keeper_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Poet_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -283,7 +283,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Poet)";										  // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\Textures\104th_ARF_Poet_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Poet_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
 	};
 };
 

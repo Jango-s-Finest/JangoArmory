@@ -8,7 +8,7 @@ renderFlags[]=
 {
 	"NoAlphaWrite"
 };
-nextPass="Jangos_Infantry_Helmets\data\Textures\JA_visor2.rvmat";
+nextPass="Jangos_Infantry_Helmets\data\textures\JA_visor2.rvmat";
 PixelShaderID="Glass";
 VertexShaderID="Glass";
 class Stage1

@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_Vehicles_Ground
+	class ADDON
 	{
 		units[] = {
 			"B_APC_Tracked_01_base_F",
@@ -776,11 +776,11 @@ class cfgVehicles
 		weapons[] = {"SmokeLauncher","CMFlareLauncher"};
 		magazines[] = {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
 		hiddenselectionstextures[] = {
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_TCW_co.paa",
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
-			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+			"3as\3AS_ATTE\data\textures\3AS_ATTE_Shell_TCW_co.paa",
+			"3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa",
+			"3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa",
+			"3as\3AS_ATTE\data\textures\3AS_ATTE_Legs_co.paa",
+			"3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa",
 			"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 		};
 		class TextureSources : TextureSources
@@ -790,11 +790,11 @@ class cfgVehicles
 				displayName = "Republic";
 				author = "Legion Studio + Echo";
 				textures[] = {
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_TCW_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Shell_TCW_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Legs_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa",
 					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 				};
 				factions[] = {"104th_Guys"};
@@ -805,10 +805,10 @@ class cfgVehicles
 				author = "Legion Studio + Echo";
 				textures[] = {
 					QPATHTOEF(vehicles_ground,data\textures\3AS_ATTE_Shell_Freyr_2D_View.paa),
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa",
 					QPATHTOEF(vehicles_ground,data\textures\3AS_ATTE_Legs_2D_View.paa),
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa",
 					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 				};
 				factions[] = {"104th_Guys"};
@@ -819,10 +819,10 @@ class cfgVehicles
 				author = "Legion Studio + Echo";
 				textures[] = {
 					QPATHTOEF(vehicles_ground,data\textures\3AS_ATTE_Shell_Surtr_2D_View.paa),
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa",
 					QPATHTOEF(vehicles_ground,data\textures\3AS_ATTE_Legs_2D_View.paa),
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa",
 					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 				};
 				factions[] = {"104th_Guys"};
@@ -833,10 +833,10 @@ class cfgVehicles
 				author = "Legion Studio + Echo";
 				textures[] = {
 					QPATHTOEF(vehicles_ground,data\textures\3AS_ATTE_Shell_Talos_2D_View.paa),
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa",
 					QPATHTOEF(vehicles_ground,data\textures\3AS_ATTE_Legs_2D_View.paa),
-					"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+					"3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa",
 					"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
 				};
 				factions[] = {"104th_Guys"};
@@ -874,11 +874,11 @@ class cfgVehicles
 					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 					condition = "!(isNull objectParent player)";
 					statement = "\
-						_target setObjectTextureGlobal [0,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_TCW_co.paa'];\
-						_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa'];\
-						_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa'];\
-						_target setObjectTextureGlobal [3,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa'];\
-						_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa'];\
+						_target setObjectTextureGlobal [0,'3as\3AS_ATTE\data\textures\3AS_ATTE_Shell_TCW_co.paa'];\
+						_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa'];\
+						_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa'];\
+						_target setObjectTextureGlobal [3,'3as\3AS_ATTE\data\textures\3AS_ATTE_Legs_co.paa'];\
+						_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa'];\
 						_target setObjectTextureGlobal [5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];\
 					";
 					showDisabled = 0;
@@ -895,10 +895,10 @@ class cfgVehicles
 						condition = "!(isNull objectParent player)";
 						statement = "\
 							_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Freyr_2D_View.paa'];\
-							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa'];\
-							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa'];\
+							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa'];\
+							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa'];\
 							_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa'];\
-							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa'];\
+							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa'];\
 							_target setObjectTextureGlobal [5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];\
 						";
 						showDisabled = 0;
@@ -912,10 +912,10 @@ class cfgVehicles
 						condition = "!(isNull objectParent player)";
 						statement = "\
 							_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Surtr_2D_View.paa'];\
-							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa'];\
-							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa'];\
+							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa'];\
+							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa'];\
 							_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa'];\
-							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa'];\
+							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa'];\
 							_target setObjectTextureGlobal [5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];\
 						";
 						showDisabled = 0;
@@ -929,10 +929,10 @@ class cfgVehicles
 						condition = "!(isNull objectParent player)";
 						statement = "\
 							_target setObjectTextureGlobal [0,'JangosVehiclesGround\data\textures\3AS_ATTE_Shell_Talos_2D_View.paa'];\
-							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa'];\
-							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa'];\
+							_target setObjectTextureGlobal [1,'3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa'];\
+							_target setObjectTextureGlobal [2,'3as\3AS_ATTE\data\textures\3AS_ATTE_Detail_co.paa'];\
 							_target setObjectTextureGlobal [3,'JangosVehiclesGround\data\textures\3AS_ATTE_Legs_2D_View.paa'];\
-							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa'];\
+							_target setObjectTextureGlobal [4,'3as\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa'];\
 							_target setObjectTextureGlobal [5,'3as\3as_atte\data\textures\3as_atte_armor_co.paa'];\
 						";
 						showDisabled = 0;

@@ -166,7 +166,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Welty_Kama.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Welty_Kama.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -208,7 +208,7 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "rank"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_Irish_Officer_Accessories.paa), ""};
+                QPATHTOEF(infantry_vests,data\textures\104th_Irish_Officer_Accessories.paa), ""};
         model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_commander_vest.p3d";
         class ItemInfo : ItemInfo
         {
@@ -257,7 +257,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Irish_Officer_Accessories.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Irish_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -303,7 +303,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Castle_Officer_Accessories.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Castle_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -345,8 +345,8 @@ class CfgWeapons
         hiddenSelections[] = {"illum", "camo1"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_Company_Spectre_Sniper_Vest.paa),
-                QPATHTOEF(infantry_vests,data\Textures\104th_Company_Spectre_Sniper_Vest.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_Company_Spectre_Sniper_Vest.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_Company_Spectre_Sniper_Vest.paa),
         };
         class ItemInfo : ItemInfo
         {
@@ -392,10 +392,10 @@ class CfgWeapons
         hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Granite_Accessories_Heavy.paa), // Heavy
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Granite_Accessories_Heavy.paa), // Heavy
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Granite_Accessories_Officer.paa),
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Granite_Accessories_Heavy.paa) // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Granite_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Granite_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Granite_Accessories_Officer.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Granite_Accessories_Heavy.paa) // Heavy
         };
         class ItemInfo : ItemInfo
         {
@@ -441,8 +441,8 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Carmine_Light_Accessories.paa),   // Kama
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Carmine_Accessories_Officer.paa), // Kama
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Carmine_Light_Accessories.paa),   // Kama
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Carmine_Accessories_Officer.paa), // Kama
         };
         model = "\ls\core\addons\characters_clone_legacy\vests\hazard\ls_gar_hazard_vest.p3d";
         class ItemInfo : ItemInfo
@@ -498,7 +498,7 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Death_Kama.paa), // Kama
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Death_Kama.paa), // Kama
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"};
 
         model = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalOfficer_vest.p3d";
@@ -554,7 +554,7 @@ class CfgWeapons
                 "camo1"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Spirit_Kama.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Spirit_Kama.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -597,10 +597,10 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_p2_scurvy_light_accessories.paa), // Heavy
-                QPATHTOEF(infantry_vests,data\Textures\104th_p2_scurvy_accessories_officer.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_p2_scurvy_light_accessories.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_p2_scurvy_accessories_officer.paa),
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa", // Heavy
-                QPATHTOEF(infantry_vests,data\Textures\104th_p2_scurvy_accesories_heavy.paa)                           // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_p2_scurvy_accesories_heavy.paa)                           // Heavy
         };
         class ItemInfo : ItemInfo
         {
@@ -655,7 +655,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_Knightfall_Accessories.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_Knightfall_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -701,7 +701,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_Tusk_Accessories.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_Tusk_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -748,7 +748,7 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_BARC_Galahad_Officer_Accessories.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_BARC_Galahad_Officer_Accessories.paa),
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
         class ItemInfo : VestItem
         {
@@ -796,7 +796,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "", // Heavy
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_IQ_Accessories_Officer.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_IQ_Accessories_Officer.paa),
                 "", // Heavy
                 ""  // Heavy
         };
@@ -972,9 +972,9 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
         hiddenSelectionsTextures[] =
             {
-                "104thPhantomCompany\data\Textures\104th_Accessories_Light_P2_Base.paa", // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Accessories_Light_P2_Base.paa), // Heavy
                 QPATHTOEF(infantry_vests,data\textures\104th_P2_Tiger_Accessories_Officer.paa),
-                "104thPhantomCompany\data\Textures\104th_Accessories_Light_P2_Base.paa", // Heavy
+                QPATHTOEF(phantom_company,data\textures\104th_Accessories_Light_P2_Base.paa), // Heavy
                 QPATHTOEF(infantry_vests,data\textures\104th_P2_Tiger_Accessories_Heavy.paa)             // Heavy
         };
         class ItemInfo : ItemInfo
@@ -1086,7 +1086,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Chaser_Accessories_Officer.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Chaser_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1132,7 +1132,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Hawkeye_Accessories_Officer.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Hawkeye_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1292,7 +1292,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
             {
-                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Aiomi_Accessories_Officer.paa)};
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Aiomi_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";

@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_Vehicles
+	class ADDON
 	{
 		units[] = {
 			"Car_F",

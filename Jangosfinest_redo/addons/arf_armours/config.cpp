@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_ARF_Armours
+	class ADDON
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
@@ -183,8 +183,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -207,8 +207,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Desert_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Desert_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Desert_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Desert_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -232,8 +232,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Jungle_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Jungle_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Jungle_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Jungle_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -257,8 +257,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Urban_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Urban_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Urban_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Urban_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -281,8 +281,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Medic_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Medic_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Medic_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Medic_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -306,8 +306,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Achilles_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Achilles_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Achilles_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Achilles_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -330,8 +330,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Beans_Upper.paa),
-				"JJangos_ARF_Armours\data\Textures\104th_ARF_Beans_Lower.paa"};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Beans_Upper.paa),
+				"JJangos_ARF_Armours\data\textures\104th_ARF_Beans_Lower.paa"};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -354,8 +354,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Gravity_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Gravity_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Gravity_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Gravity_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -378,8 +378,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Fire_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Fire_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Fire_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Fire_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -402,8 +402,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Welty_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Welty_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Welty_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Welty_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -426,8 +426,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Cyan_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Cyan_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Cyan_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Cyan_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -450,8 +450,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_IQ_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_IQ_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_IQ_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_IQ_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -474,8 +474,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Unix_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Unix_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Unix_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Unix_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -498,8 +498,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Woods_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Woods_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Woods_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Woods_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -522,8 +522,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Keeper_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Keeper_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Keeper_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Keeper_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -546,8 +546,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Poet_Upper.paa),
-				QPATHTOEF(arf_armours,data\Textures\104th_ARF_Poet_Lower.paa)};
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Poet_Upper.paa),
+				QPATHTOEF(arf_armours,data\textures\104th_ARF_Poet_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -590,7 +590,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Lower.paa)};
 		linkedItems[] = {"JA_104th_ARF_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_ARF_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -606,7 +606,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Desert_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Desert_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Desert_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Desert_Lower.paa)};
 		linkedItems[] = {"JA_104th_ARF_Desert_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_ARF_Desert_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -622,7 +622,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Jungle_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Jungle_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Jungle_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Jungle_Lower.paa)};
 		linkedItems[] = {"JA_104th_ARF_Jungle_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_ARF_Jungle_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -638,7 +638,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Urban_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Urban_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Urban_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Urban_Lower.paa)};
 		linkedItems[] = {"JA_104th_ARF_Urban_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_ARF_Urban_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -654,7 +654,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Basic";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Medic_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Medic_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Medic_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Medic_Lower.paa)};
 		linkedItems[] = {"JA_104th_ARFMedic_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_ARFMedic_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -670,7 +670,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Achilles_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Achilles_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Achilles_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Achilles_Lower.paa)};
 		linkedItems[] = {"JA_104th_Achilles_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Achilles_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -686,7 +686,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Beans_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Beans_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Beans_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Beans_Lower.paa)};
 		linkedItems[] = {"JA_104th_Beans_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Beans_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -702,7 +702,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Gravity_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Gravity_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Gravity_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Gravity_Lower.paa)};
 		linkedItems[] = {"JA_104th_Gravity_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Gravity_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -718,7 +718,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Fire_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Fire_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Fire_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Fire_Lower.paa)};
 		linkedItems[] = {"JA_104th_Fire_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Fire_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -734,7 +734,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Cyan_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Cyan_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Cyan_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Cyan_Lower.paa)};
 		linkedItems[] = {"JA_104th_Cyan_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Cyan_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -750,7 +750,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Welty_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Welty_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Welty_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Welty_Lower.paa)};
 		linkedItems[] = {"JA_104th_Welty_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Welty_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -766,7 +766,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_IQ_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_IQ_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_IQ_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_IQ_Lower.paa)};
 		linkedItems[] = {"JA_104th_Fire_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Fire_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -782,7 +782,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Unix_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Unix_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Unix_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Unix_Lower.paa)};
 		linkedItems[] = {"JA_104th_Unix_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Unix_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -798,7 +798,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Woods_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Woods_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Woods_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Woods_Lower.paa)};
 		linkedItems[] = {"JA_104th_Woods_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Woods_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -814,7 +814,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Keeper_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Keeper_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Keeper_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Keeper_Lower.paa)};
 		linkedItems[] = {"JA_104th_Keeper_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Keeper_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -830,7 +830,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\Textures\104th_ARF_Poet_Upper.paa), QPATHTOEF(arf_armours,data\Textures\104th_ARF_Poet_Lower.paa)};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_armours,data\textures\104th_ARF_Poet_Upper.paa), QPATHTOEF(arf_armours,data\textures\104th_ARF_Poet_Lower.paa)};
 		linkedItems[] = {"JA_104th_Poet_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Poet_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};

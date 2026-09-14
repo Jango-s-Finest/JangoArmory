@@ -2,7 +2,7 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class Jangos_Armory_ARF_Vests
+	class ADDON
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
@@ -79,7 +79,7 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_vests,data\Textures\104th_ARF_IQ_Officer_Kama.paa),
+				QPATHTOEF(arf_vests,data\textures\104th_ARF_IQ_Officer_Kama.paa),
 				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
 		class ItemInfo : VestItem
 		{
@@ -131,7 +131,7 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_vests,data\Textures\104th_ARF_Woods_Officer_Kama.paa),
+				QPATHTOEF(arf_vests,data\textures\104th_ARF_Woods_Officer_Kama.paa),
 				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
 		class ItemInfo : VestItem
 		{
@@ -183,7 +183,7 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				QPATHTOEF(arf_vests,data\Textures\104th_ARF_Achilles_Accessories_Officer.paa),
+				QPATHTOEF(arf_vests,data\textures\104th_ARF_Achilles_Accessories_Officer.paa),
 				"\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
 		class ItemInfo : VestItem
 		{

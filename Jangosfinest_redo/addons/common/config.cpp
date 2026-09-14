@@ -1,0 +1,1312 @@
+#include "\JA\jangos_Armory\addons\main\script_component.hpp"
+#include "basicDefines_A3.hpp"
+class CfgPatches
+{
+	class ADDON // Texture Path Fix Req
+	{
+		author = "Jango's Finest";
+		requiredVersion = 0.1;
+		requiredAddons[] = {};
+		units[] = {
+			"JA_LGC_Quick",
+			"JA_332nd_Chich",
+			"JA_Cadet_Yellow1",
+			"JA_Cadet_Yellow2",
+			"JA_Cadet_Yellow3",
+			"JA_Cadet_Yellow4",
+			"JA_Cadet_Yellow5",
+			"JA_Cadet_Red1",
+			"JA_Cadet_Red2",
+			"JA_Cadet_Red3",
+			"JA_Cadet_Red4",
+			"JA_Cadet_Red5",
+			"JA_Cadet_Blue1",
+			"JA_Cadet_Blue2",
+			"JA_Cadet_Blue3",
+			"JA_Cadet_Blue4",
+			"JA_Cadet_Blue5",
+			"JA_Cadet_Green1",
+			"JA_Cadet_Green2",
+			"JA_Cadet_Green3",
+			"JA_Cadet_Green4",
+			"JA_Cadet_Green5",
+			"JA_Keeli_Tugz"
+		};
+		weapons[] = {
+			"ls_gar_airborne_vest",
+			"ls_gar_airborneNCO_vest",
+			"ls_gar_airborneOfficer_vest",
+			"ls_gar_forceReconNCO_vest",
+			"ls_gar_tacticalOfficer_vest",
+			"ls_gar_airborneOfficer_vest",
+			"ls_gar_officer_vest",
+			"ls_gar_commander_vest",
+			"ls_gar_arc_vest",
+			"ls_gar_kama_vest",
+			"JA_LGC_Quick_Helmet",
+			"JA_LGC_Quick_Uniform",
+			"JA_332nd_Chich_Helmet",
+			"JA_332nd_Chich_Uniform",
+			"JA_332nd_Chich_Vest",
+			"JA_332nd_Chich_CM_Visor",
+			"JA_Cadet_Yellow_Helmet",
+			"JA_Cadet_Red_Helmet",
+			"JA_Cadet_Blue_Helmet",
+			"JA_Cadet_Green_Helmet",
+			"JA_Cadet_Yellow1_Uniform",
+			"JA_Cadet_Yellow2_Uniform",
+			"JA_Cadet_Yellow3_Uniform",
+			"JA_Cadet_Yellow4_Uniform",
+			"JA_Cadet_Yellow5_Uniform",
+			"JA_Cadet_Red1_Uniform",
+			"JA_Cadet_Red2_Uniform",
+			"JA_Cadet_Red3_Uniform",
+			"JA_Cadet_Red4_Uniform",
+			"JA_Cadet_Red5_Uniform",
+			"JA_Cadet_Blue1_Uniform",
+			"JA_Cadet_Blue2_Uniform",
+			"JA_Cadet_Blue3_Uniform",
+			"JA_Cadet_Blue4_Uniform",
+			"JA_Cadet_Blue5_Uniform",
+			"JA_Cadet_Green1_Uniform",
+			"JA_Cadet_Green2_Uniform",
+			"JA_Cadet_Green3_Uniform",
+			"JA_Cadet_Green4_Uniform",
+			"JA_Cadet_Green5_Uniform",
+			"JA_Keeli_Tugz_Uniform",
+			"JA_Keeli_Tugz_Helmet",
+			"JA_Keeli_Tugz_Vest",
+			"JA_Keeli_Tugz_Helmet_ME",
+			"JA_Keeli_Tugz_NVG_Rangefinder"
+		};
+	};
+};
+
+class CfgFactionClasses
+{
+	class 104th_Guys
+	{
+		displayname = "Jango's Finest";
+		priority = 1; // Position in list.
+		side = 1;	  // Opfor = 0, Blufor = 1, Indep = 2.
+		icon = "";
+	};
+};
+
+class cfgEditorSubcategories
+{
+	class 104th_Categ_Clones
+	{
+		displayname = "104th - Customs";
+	};
+	class 104th_Categ_Basic
+	{
+		displayname = "104th - Base";
+	};
+	class 104th_Categ_Special
+	{
+		displayname = "104th - Special";
+	};
+};
+
+class CfgWeapons
+{
+	class ls_gar_marshalCommander_uniform;
+	class ls_gar_arc_helmet;
+	class ls_gar_phase1_helmet;
+	class ls_gar_phase2_helmet;
+	class lsd_gar_rangefinder_nvg;
+	class lsd_gar_p2MarshalCommander_nvg;
+	class UniformItem;
+
+	// Inheritance for vests
+	// Makes making each vest a rebreather easier
+	class ls_gar_clone_vest;
+	class ls_gar_airborne_vest : ls_gar_clone_vest {};
+	class ls_gar_airborneNCO_vest : ls_gar_airborne_vest {};
+	class ls_gar_forceReconNCO_vest : ls_gar_airborne_vest {};
+	class ls_gar_tacticalOfficer_vest : ls_gar_airborne_vest {};
+
+	class ls_cloneVest_base;
+	class ls_gar_airborneOfficer_vest : ls_cloneVest_base {};
+
+	class ls_gar_officer_vest : ls_gar_clone_vest {};
+	class ls_gar_commander_vest : ls_gar_officer_vest
+	{
+		class ItemInfo;
+	};
+	class ls_gar_arc_vest : ls_gar_officer_vest
+	{
+		class ItemInfo;
+	};
+	class ls_gar_kama_vest : ls_gar_clone_vest {};
+
+	class JA_LGC_Quick_Helmet : ls_gar_phase2_helmet // Legacy Quick Set
+	{
+		author = "Tundra";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper P2 Helmet (Quick)";												 // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\104_LGC_Quick_P2_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_LGC_Quick_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (Quick)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\104_LGC_Quick_Upper.paa),
+				QPATHTOEF(common,data\textures\104_LGC_Quick_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_LGC_Quick";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_332nd_Chich_Helmet : ls_gar_phase2_helmet // Legacy Chich Set
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper P2 Helmet (332nd Chich)";										// the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\332nd_Chich_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_332nd_Chich_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (332nd Chich)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\332nd_Chich_Upper.paa),
+				QPATHTOEF(common,data\textures\332nd_Chich_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_332nd_Chich";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_332nd_Chich_Vest : ls_gar_commander_vest
+	{
+		author = "Dak";
+		displayName = "Clone Trooper Commander Vest (332nd Chich)";
+		hiddenSelections[] =
+			{
+				"camo1"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\332nd_Chich_CM_Kama.paa)};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
+		};
+	};
+	class JA_332nd_Chich_CM_Visor : lsd_gar_p2MarshalCommander_nvg
+	{
+		author = "Dak";
+		displayName = "Clone Commander Visor (332nd Chich)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\332nd_Chich_CM_Visor.paa),
+				QPATHTOEF(common,data\textures\332nd_Chich_CM_Visor.paa)};
+	};
+
+	class JA_Cadet_Yellow_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Emmet";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Cadet Helmet (Yellow)";															// the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_Cadet_Red_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Emmet";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Cadet Helmet (Red)";															 // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Red_P1_Cadet_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_Cadet_Blue_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Emmet";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Cadet Helmet (Blue)";														  // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Blue_P1_Cadet_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_Cadet_Green_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Emmet";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+
+		displayname = "Cadet Helmet (Green)";														   // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Green_P1_Cadet_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+	};
+
+	class JA_Cadet_Yellow1_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Yellow 1)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_1.paa),
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Yellow1";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Yellow2_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Yellow 2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_2.paa),
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Yellow2";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Yellow3_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Yellow 3)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_3.paa),
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Yellow3";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Yellow4_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Yellow 4)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_4.paa),
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Yellow4";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Yellow5_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Yellow 5)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_5.paa),
+				QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Yellow5";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Red1_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Red 1)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_1.paa),
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Red1";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Red2_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Red 2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_2.paa),
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Red2";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Red3_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Red 3)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_3.paa),
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Red3";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Red4_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Red 4)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_4.paa),
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Red4";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Red5_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Red 5)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_5.paa),
+				QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Red5";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Blue1_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Blue 1)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_1.paa),
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Blue1";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Blue2_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Blue 2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_2.paa),
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Blue2";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Blue3_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Blue 3)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_3.paa),
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Blue3";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Blue4_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Blue 4)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_4.paa),
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Blue4";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Blue5_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Blue 5)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_5.paa),
+				QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Blue5";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Green1_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Green 1)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_1.paa),
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Green1";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Green2_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Green 2)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_2.paa),
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Green2";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Green3_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Green 3)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_3.paa),
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Green3";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Green4_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Green 4)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_4.paa),
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Green4";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class JA_Cadet_Green5_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Emmet";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Cadet Armor (Green 5)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_5.paa),
+				QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Cadet_Green5";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Base_ARC_Uniform;
+	class JA_Keeli_Tugz_Uniform : JA_104th_Base_ARC_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (Tugz)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2",
+			};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Tugz_Body_Upper_2D_View.paa),
+				QPATHTOEF(common,data\textures\Tugz_Body_Lower_2D_View.paa),
+			};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_Keeli_Tugz";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_Keeli_Tugz_Helmet : ls_gar_arc_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper ARC Trooper Helmet (Tugz)";							   // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Tugz_Helmet_ARC_2D_View.paa),"\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
+	};
+	class JA_Keeli_Tugz_Vest : ls_gar_arc_vest
+    {
+        author = "Dak";
+        displayName = "Clone ARC Trooper Vest (Tugz)";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+        hiddenSelections[] =
+            {
+                "camo1",
+                "camo2"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(common,data\textures\Tugz_Accessories_ARC_2D_View.paa),
+                QPATHTOEF(common,data\textures\Tugz_Accessories_Officer_2D_View.paa)};
+        class ItemInfo : ItemInfo
+        {
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+            containerClass = "Supply100";
+            hiddenSelections[] = {"camo1", "camo2"};
+            mass = 100;
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 4;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+	class JA_Keeli_Tugz_Helmet_ME : ls_gar_phase1_helmet
+    {
+        author = "Dak";
+        scopeArsenal = 2;
+        side = 1;
+        grad_slingHelmet_allow = true;
+        displayname = "Clone Trooper P1 Helmet (Tugz MLV)";                                                  // the name it will be in game
+        hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\104th_P1_Tugz_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+    };
+    
+	class JA_Keeli_Tugz_NVG_Rangefinder : lsd_gar_rangefinder_nvg
+	{
+		author = "Cyan";
+		displayName = "Clone NVG Rangefinder Visor (Tugz)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(common,data\textures\Tugz_Visor_Rangefinder_2D_View.paa),
+				QPATHTOEF(common,data\textures\Tugz_Visor_Rangefinder_2D_View.paa)};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
+};
+
+class CfgVehicles
+{
+	class lsd_gar_phase2_base;
+
+	class JA_LGC_Quick : lsd_gar_phase2_base
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_LGC_Quick_Uniform";
+		displayName = "104th Quick";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Special";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\104_LGC_Quick_Upper.paa), QPATHTOEF(common,data\textures\104_LGC_Quick_Lower.paa)};
+		linkedItems[] = {"JA_Quick_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Quick_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_332nd_Chich : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_332nd_Chich_Uniform";
+		displayName = "332nd Chich";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Special";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\332nd_Chich_Upper.paa), QPATHTOEF(common,data\textures\332nd_Chich_Lower.paa)};
+		linkedItems[] = {"JA_302nd_Chich_Helmet", "JA_302nd_Chich_Vest", "JA_302nd_CommanderVisor", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
+		respawnLinkedItems[] = {"JA_302nd_Chich_Helmet", "JA_302nd_Chich_Vest", "JA_302nd_CommanderVisor", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	// Cadet Armor
+	class JA_Cadet_Yellow1 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Yellow 1";
+		uniformClass = "JA_Cadet_Yellow1_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_1.paa), QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Yellow2 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Yellow 2";
+		uniformClass = "JA_Cadet_Yellow2_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_2.paa), QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Yellow3 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Yellow 3";
+		uniformClass = "JA_Cadet_Yellow3_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_3.paa), QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Yellow4 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Yellow 4";
+		uniformClass = "JA_Cadet_Yellow4_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_4.paa), QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Yellow5 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Yellow 5";
+		uniformClass = "JA_Cadet_Yellow5_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Upper_5.paa), QPATHTOEF(common,data\textures\Yellow_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Yellow_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Red1 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Red 1";
+		uniformClass = "JA_Cadet_Red1_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_1.paa), QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Red2 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Red 2";
+		uniformClass = "JA_Cadet_Red2_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_2.paa), QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Red3 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Red 3";
+		uniformClass = "JA_Cadet_Red3_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_3.paa), QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Red4 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Red 4";
+		uniformClass = "JA_Cadet_Red4_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_4.paa), QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Red5 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Red 5";
+		uniformClass = "JA_Cadet_Red5_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Red_P1_Cadet_Upper_5.paa), QPATHTOEF(common,data\textures\Red_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		  // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Red_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Blue1 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Blue 1";
+		uniformClass = "JA_Cadet_Blue1_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_1.paa), QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Blue2 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Blue 2";
+		uniformClass = "JA_Cadet_Blue2_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_2.paa), QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Blue3 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Blue 3";
+		uniformClass = "JA_Cadet_Blue3_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_3.paa), QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Blue4 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Blue 4";
+		uniformClass = "JA_Cadet_Blue4_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_4.paa), QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Blue5 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Blue 5";
+		uniformClass = "JA_Cadet_Blue5_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Blue_P1_Cadet_Upper_5.paa), QPATHTOEF(common,data\textures\Blue_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Blue_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Green1 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Green 1";
+		uniformClass = "JA_Cadet_Green1_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_1.paa), QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Green2 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Green 2";
+		uniformClass = "JA_Cadet_Green2_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_2.paa), QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Green3 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Green 3";
+		uniformClass = "JA_Cadet_Green3_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_3.paa), QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Green4 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Green 4";
+		uniformClass = "JA_Cadet_Green4_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_4.paa), QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Cadet_Green5 : lsd_gar_phase2_base
+	{
+		author = "Emmet";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		displayName = "104th Cadet Green 5";
+		uniformClass = "JA_Cadet_Green5_Uniform";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Green_P1_Cadet_Upper_5.paa), QPATHTOEF(common,data\textures\Green_P1_Cadet_Lower.paa)};
+		linkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
+		respawnLinkedItems[] = {"JA_Cadet_Green_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+	class JA_Keeli_Tugz : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_Keeli_Tugz_Uniform";
+		displayName = "Tugz";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(common,data\textures\Tugz_Body_Upper_2D_View.paa), QPATHTOEF(common,data\textures\Tugz_Body_Lower_2D_View.paa)};
+		linkedItems[] = {"JA_104th_Sigil_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
+		respawnLinkedItems[] = {"JA_104th_Sigil_Helmet", "ls_gar_clone_vest", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
+	};
+};

@@ -7,7 +7,7 @@
 
 class CfgPatches
 {
-	class FSN_Freestyle_Nuke
+	class ADDON
 	{
 		name="Freestyles Nuke";
 		author="Freestyle_Build";

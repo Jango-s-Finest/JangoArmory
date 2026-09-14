@@ -3,7 +3,7 @@
 class DefaultEventhandlers;
 class CfgPatches
 {
-    class Jangos_Utilities
+    class ADDON
     {
         author = "Jango's Finest";
         units[] = {
