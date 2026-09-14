@@ -92,8 +92,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_P2_1C_Aviation_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_P2_1C_Aviation_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_P2_1C_Aviation_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_P2_1C_Aviation_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -117,8 +117,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Bail_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Bail_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Bail_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Bail_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -142,8 +142,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Beef_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Beef_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Beef_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Beef_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -167,8 +167,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Fire_Uniform_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Fire_Uniform_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Fire_Uniform_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Fire_Uniform_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -191,8 +191,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Haze_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Haze_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Haze_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Haze_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "";
@@ -216,8 +216,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Varelli_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Varelli_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Varelli_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Varelli_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -242,8 +242,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_OD_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_OD_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_OD_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_OD_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -268,8 +268,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Cherryy_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Cherryy_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Cherryy_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Cherryy_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -293,8 +293,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Fish_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Fish_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Fish_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Fish_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -318,8 +318,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Spirit_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Spirit_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Spirit_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Spirit_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -343,8 +343,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Boris_Upper.paa",
-				"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Boris_Lower.paa"};
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Boris_Upper.paa),
+				QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Boris_Lower.paa)};
 		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
@@ -374,7 +374,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_P2_1C_Aviation_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_P2_1C_Aviation_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_P2_1C_Aviation_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_P2_1C_Aviation_Lower.paa)};
 		linkedItems[] = {"JA_104th_Base_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Base_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -390,7 +390,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Bail_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Bail_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Bail_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Bail_Lower.paa)};
 		linkedItems[] = {"JA_104th_Bail_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Bail_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -406,7 +406,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Beef_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Beef_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Beef_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Beef_Lower.paa)};
 		linkedItems[] = {"JA_104th_Beef_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Beef_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -422,7 +422,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Fire_Uniform_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Fire_Uniform_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Fire_Uniform_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Fire_Uniform_Lower.paa)};
 		linkedItems[] = {"JA_104th_Fire_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Fire_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -438,7 +438,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Haze_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Haze_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Haze_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Haze_Lower.paa)};
 		linkedItems[] = {"JA_104th_Echo_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Echo_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -454,7 +454,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Varelli_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Varelli_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Varelli_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Varelli_Lower.paa)};
 		linkedItems[] = {"JA_104th_Varelli_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Varelli_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -470,7 +470,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_OD_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_OD_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_OD_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_OD_Lower.paa)};
 		linkedItems[] = {"JA_104th_OD_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		   // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_OD_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -486,7 +486,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Cherryy_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Cherryy_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Cherryy_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Cherryy_Lower.paa)};
 		linkedItems[] = {"JA_104th_Cherryy_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		// all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Cherryy_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -502,7 +502,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Fish_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Fish_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Fish_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Fish_Lower.paa)};
 		linkedItems[] = {"JA_104th_Fish_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Fish_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -518,7 +518,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Spirit_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Spirit_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Spirit_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Spirit_Lower.paa)};
 		linkedItems[] = {"JA_104th_Spirit_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Spirit_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};
@@ -534,7 +534,7 @@ class CfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Boris_Upper.paa", "\JA\jangos_Armory\addons\pilot_armours\data\textures\104th_Pilot_Boris_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Boris_Upper.paa), QPATHTOEF(pilot_armours,data\textures\104th_Pilot_Boris_Lower.paa)};
 		linkedItems[] = {"JA_104th_Boris_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"};		 // all items that will be on unit
 		respawnLinkedItems[] = {"JA_104th_Boris_Pilot_Helmet", "'ls_gar_clone_vest'", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "ItemRadio"}; // all items that will be on unit on respawn
 	};

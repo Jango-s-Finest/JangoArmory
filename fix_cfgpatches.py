@@ -110,7 +110,7 @@ def section_classes(stripped, section):
         if c == '}':
             d -= 1; i += 1; continue
         if d == 0:
-            m = re.match(r'class\s+' + re.escape(section) + r'\b', stripped[i:])
+            m = re.match(r'class\s+' + re.escape(section) + r'\b', stripped[i:], re.IGNORECASE)
             if m:
                 a = i + m.end()
                 ih = re.match(r'\s*:\s*\w+\s*', stripped[a:])

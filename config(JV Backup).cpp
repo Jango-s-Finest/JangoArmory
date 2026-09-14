@@ -274,41 +274,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -2095,10 +2095,10 @@ class cfgVehicles {
 						type = "rotational";
 						source = "horizonBank";
 						center[] = {0.5,0.5};
-						min = "-rad(30)";
+						min = -rad(30);
 						max = "rad(30)";
-						minAngle = "180.25-30";
-						maxAngle = "180.75+30";
+						minAngle = 180.25-30;
+						maxAngle = 180.75+30;
 						aspectRatio = 1;
 					};
 					class Level0: Pos10Vector
@@ -2256,14 +2256,14 @@ class cfgVehicles {
 							align = "left";
 							scale = 1;
 							pos[] = {{0.18,0.71},1};
-							right[] = {{"0.18+.05",0.71},1};
-							down[] = {{0.18,"0.71+.08"},1};
+							right[] = {{0.18+.05,0.71},1};
+							down[] = {{0.18,0.71+.08},1};
 						};
 						class VectoringArrow
 						{
 							type = "line";
 							width = 6;
-							points[] = {{"ThrustVectoringRotation",{"-0.034","-0.006*4"},1},{"ThrustVectoringRotation",{"-0.044*2","0.0"},1},{"ThrustVectoringRotation",{"-0.034","0.006*4"},1},{"ThrustVectoringRotation",{"-0.034","-0.006*4"},1},{},{"ThrustVectoringRotation",{"-0.044","0.0"},1},{"ThrustVectoringRotation",{"-0.004","0.0"},1},{}};
+							points[] = {{"ThrustVectoringRotation",{-0.034,-0.006*4},1},{"ThrustVectoringRotation",{-0.044*2,"0.0"},1},{"ThrustVectoringRotation",{-0.034,0.006*4},1},{"ThrustVectoringRotation",{-0.034,-0.006*4},1},{},{"ThrustVectoringRotation",{-0.044,"0.0"},1},{"ThrustVectoringRotation",{-0.004,"0.0"},1},{}};
 						};
 					};
 					class ThrustVectoringAuto
@@ -2278,8 +2278,8 @@ class cfgVehicles {
 							align = "left";
 							scale = 1;
 							pos[] = {{0.2,0.71},1};
-							right[] = {{"0.20+.05",0.71},1};
-							down[] = {{0.2,"0.71+.08"},1};
+							right[] = {{0.20+.05,0.71},1};
+							down[] = {{0.2,0.71+.08},1};
 						};
 					};
 					class ThrustVectoringAuto2
@@ -2569,8 +2569,8 @@ class cfgVehicles {
 						align = "left";
 						scale = 1;
 						pos[] = {{0.932,0.71},1};
-						right[] = {{"0.932+.05",0.71},1};
-						down[] = {{0.932,"0.71+.08"},1};
+						right[] = {{0.932+.05,0.71},1};
+						down[] = {{0.932,0.71+.08},1};
 					};
 					class CollectiveText
 					{
@@ -2581,8 +2581,8 @@ class cfgVehicles {
 						sourceScale = 1;
 						align = "right";
 						pos[] = {{0.952,0.71},1};
-						right[] = {{"0.952+.05",0.71},1};
-						down[] = {{0.952,"0.71+.08"},1};
+						right[] = {{0.952+.05,0.71},1};
+						down[] = {{0.952,0.71+.08},1};
 					};
 					class TargetLocking
 					{
@@ -2666,7 +2666,7 @@ class cfgVehicles {
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"PlaneW",{-0.49,"0 + 0.025"},1},{"PlaneW",{-0.49,0},1},{"PlaneW",{-0.45,0},1}};
+						points[] = {{"PlaneW",{-0.49,0 + 0.025},1},{"PlaneW",{-0.49,0},1},{"PlaneW",{-0.45,0},1}};
 					};
 					class MainCenterLine2
 					{
@@ -2678,7 +2678,7 @@ class cfgVehicles {
 					{
 						type = "line";
 						width = 3;
-						points[] = {{"PlaneW",{0.49,"0 + 0.025"},1},{"PlaneW",{0.49,0},1},{"PlaneW",{0.25,0},1}};
+						points[] = {{"PlaneW",{0.49,0 + 0.025},1},{"PlaneW",{0.49,0},1},{"PlaneW",{0.25,0},1}};
 					};
 					class SpeedIndicatorBox
 					{
@@ -2726,7 +2726,7 @@ class cfgVehicles {
 						sourceScale = 1;
 						pos[] = {"PlaneW",{0.32,-0.25},1};
 						right[] = {"PlaneW",{"+0.32 + 0.04",-0.25},1};
-						down[] = {"PlaneW",{0.32,"-0.25 + 0.05"},1};
+						down[] = {"PlaneW",{0.32,-0.25 + 0.05},1};
 					};
 					class AltitudeRadarTextAGL
 					{
@@ -2738,7 +2738,7 @@ class cfgVehicles {
 						sourceScale = 1;
 						pos[] = {"PlaneW",{0.32,-0.192},1};
 						right[] = {"PlaneW",{"+0.32 + 0.04",-0.192},1};
-						down[] = {"PlaneW",{0.32,"-0.192 + 0.041"},1};
+						down[] = {"PlaneW",{0.32,-0.192 + 0.041},1};
 					};
 					class PitchNumber
 					{
@@ -2748,8 +2748,8 @@ class cfgVehicles {
 						align = "right";
 						scale = 1;
 						pos[] = {"PlaneW",{-0.39,-0.076},1};
-						right[] = {"PlaneW",{"-0.39 + 0.05",-0.076},1};
-						down[] = {"PlaneW",{-0.39,"-0.076 + 0.05"},1};
+						right[] = {"PlaneW",{-0.39 + 0.05,-0.076},1};
+						down[] = {"PlaneW",{-0.39,-0.076 + 0.05},1};
 					};
 					class PitchText
 					{
@@ -2759,8 +2759,8 @@ class cfgVehicles {
 						align = "left";
 						scale = 1;
 						pos[] = {"PlaneW",{-0.41,-0.076},1};
-						right[] = {"PlaneW",{"-0.41 + 0.04",-0.076},1};
-						down[] = {"PlaneW",{-0.41,"-0.076 + 0.05"},1};
+						right[] = {"PlaneW",{-0.41 + 0.04,-0.076},1};
+						down[] = {"PlaneW",{-0.41,-0.076 + 0.05},1};
 					};
 					class RollNumber
 					{
@@ -2770,8 +2770,8 @@ class cfgVehicles {
 						align = "right";
 						scale = 1;
 						pos[] = {"PlaneW",{-0.39,-0.025},1};
-						right[] = {"PlaneW",{"-0.39 + 0.05",-0.025},1};
-						down[] = {"PlaneW",{-0.39,"-0.025 + 0.05"},1};
+						right[] = {"PlaneW",{-0.39 + 0.05,-0.025},1};
+						down[] = {"PlaneW",{-0.39,-0.025 + 0.05},1};
 					};
 					class RollText
 					{
@@ -2781,8 +2781,8 @@ class cfgVehicles {
 						align = "left";
 						scale = 1;
 						pos[] = {"PlaneW",{-0.41,-0.025},1};
-						right[] = {"PlaneW",{"-0.41 + 0.04",-0.025},1};
-						down[] = {"PlaneW",{-0.41,"-0.025 + 0.05"},1};
+						right[] = {"PlaneW",{-0.41 + 0.04,-0.025},1};
+						down[] = {"PlaneW",{-0.41,-0.025 + 0.05},1};
 					};
 					class ClimbNumber
 					{
@@ -2792,7 +2792,7 @@ class cfgVehicles {
 						align = "right";
 						scale = 1;
 						pos[] = {"PlaneW",{-0.39,0.026},1};
-						right[] = {"PlaneW",{"-0.39 + 0.05",0.026},1};
+						right[] = {"PlaneW",{-0.39 + 0.05,0.026},1};
 						down[] = {"PlaneW",{-0.39,"+0.026 + 0.05"},1};
 					};
 					class ClimbText
@@ -2803,7 +2803,7 @@ class cfgVehicles {
 						align = "left";
 						scale = 1;
 						pos[] = {"PlaneW",{-0.41,0.026},1};
-						right[] = {"PlaneW",{"-0.41 + 0.04",0.026},1};
+						right[] = {"PlaneW",{-0.41 + 0.04,0.026},1};
 						down[] = {"PlaneW",{-0.41,"+0.026 + 0.05"},1};
 					};
 					class fuelNumber
@@ -2814,8 +2814,8 @@ class cfgVehicles {
 						align = "right";
 						scale = 1;
 						pos[] = {"PlaneW",{-0.4,0.1},1};
-						right[] = {"PlaneW",{"-0.40 + 0.04",0.1},1};
-						down[] = {"PlaneW",{-0.4,"0.10 + 0.05"},1};
+						right[] = {"PlaneW",{-0.40 + 0.04,0.1},1};
+						down[] = {"PlaneW",{-0.4,0.10 + 0.05},1};
 					};
 					class fuelPercent
 					{
@@ -2826,8 +2826,8 @@ class cfgVehicles {
 						sourceScale = 1;
 						align = "right";
 						pos[] = {"PlaneW",{-0.35,0.1},1};
-						right[] = {"PlaneW",{"-0.35 + 0.04",0.1},1};
-						down[] = {"PlaneW",{-0.35,"0.10 + 0.05"},1};
+						right[] = {"PlaneW",{-0.35 + 0.04,0.1},1};
+						down[] = {"PlaneW",{-0.35,0.10 + 0.05},1};
 					};
 					class fuelText
 					{
@@ -2837,8 +2837,8 @@ class cfgVehicles {
 						align = "left";
 						scale = 1;
 						pos[] = {"PlaneW",{-0.41,0.1},1};
-						right[] = {"PlaneW",{"-0.41 + 0.04",0.1},1};
-						down[] = {"PlaneW",{-0.41,"0.1 + 0.05"},1};
+						right[] = {"PlaneW",{-0.41 + 0.04,0.1},1};
+						down[] = {"PlaneW",{-0.41,0.1 + 0.05},1};
 					};
 					class HeadingArrow
 					{
@@ -2881,9 +2881,9 @@ class cfgVehicles {
 							scale = 1;
 							sourceScale = 1;
 							align = "right";
-							pos[] = {{"0.825+0.01",0.5065},1};
+							pos[] = {{0.825+0.01,0.5065},1};
 							right[] = {{0.875,0.5065},1};
-							down[] = {{"0.825+0.01",0.5415},1};
+							down[] = {{0.825+0.01,0.5415},1};
 						};
 						class WPKM
 						{
@@ -2893,9 +2893,9 @@ class cfgVehicles {
 							scale = 1;
 							sourceScale = 1;
 							align = "left";
-							pos[] = {{"0.825+0.09",0.5065},1};
+							pos[] = {{0.825+0.09,0.5065},1};
 							right[] = {{0.955,0.5065},1};
-							down[] = {{"0.825+0.09",0.5415},1};
+							down[] = {{0.825+0.09,0.5415},1};
 						};
 					};
 					class HeadingRotation
@@ -2908,9 +2908,9 @@ class cfgVehicles {
 							sourceScale = 1;
 							align = "center";
 							scale = 1;
-							pos[] = {{"0.80-0.302","0.082+0.065"},1};
-							right[] = {{"0.83-0.302","0.082+0.065"},1};
-							down[] = {{"0.80-0.302","0.113+0.065"},1};
+							pos[] = {{0.80-0.302,0.082+0.065},1};
+							right[] = {{0.83-0.302,0.082+0.065},1};
+							down[] = {{0.80-0.302,0.113+0.065},1};
 						};
 						class HeadingArrow
 						{
@@ -2936,8 +2936,8 @@ class cfgVehicles {
 						lineYrightMajor = 0.115;
 						majorLineEach = 5;
 						numberEach = 5;
-						step = "18 / 9";
-						stepSize = "(0.70 - 0.3) / 15";
+						step = 18 / 9;
+						stepSize = (0.70 - 0.3) / 15;
 						align = "center";
 						scale = 1;
 						pos[] = {0.096,0.0546};
@@ -2962,15 +2962,15 @@ class cfgVehicles {
 						sourceScale = 1;
 						align = "center";
 						scale = 1;
-						pos[] = {"PlaneW",{0,"(-0.5   )"},1};
-						right[] = {"PlaneW",{0.03,"(-0.5   )"},1};
-						down[] = {"PlaneW",{0,"(-0.5 + 0.045 )"},1};
+						pos[] = {"PlaneW",{0,(-0.5   )},1};
+						right[] = {"PlaneW",{0.03,(-0.5   )},1};
+						down[] = {"PlaneW",{0,(-0.5 + 0.045 )},1};
 					};
 					class HorizonBankRot
 					{
 						type = "line";
 						width = 2;
-						points[] = {{"HorizonBankRot",{0,"0.39421001-0.109"},1},{"HorizonBankRot",{0.01,"0.41673699-0.109"},1},{"HorizonBankRot",{-0.01,"0.41673699-0.109"},1},{"HorizonBankRot",{0,"0.39421001-0.109"},1}};
+						points[] = {{"HorizonBankRot",{0,0.39421001-0.109},1},{"HorizonBankRot",{0.01,0.41673699-0.109},1},{"HorizonBankRot",{-0.01,0.41673699-0.109},1},{"HorizonBankRot",{0,0.39421001-0.109},1}};
 					};
 					class HorizonBankRotLines
 					{
@@ -3034,7 +3034,7 @@ class cfgVehicles {
 								class LevelP5: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP5",{"-0.22-0.015",0.02},1},{"LevelP5",{"-0.22-0.015",0},1},{"LevelP5",{-0.06,0},1},{},{"LevelP5",{0.06,0},1},{"LevelP5",{"+0.22+0.015",0},1},{"LevelP5",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP5",{-0.22-0.015,0.02},1},{"LevelP5",{-0.22-0.015,0},1},{"LevelP5",{-0.06,0},1},{},{"LevelP5",{0.06,0},1},{"LevelP5",{"+0.22+0.015",0},1},{"LevelP5",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_5
 								{
@@ -3092,7 +3092,7 @@ class cfgVehicles {
 								class LevelP10: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP10",{"-0.22-0.015",0.02},1},{"LevelP10",{"-0.22-0.015",0},1},{"LevelP10",{-0.06,0},1},{},{"LevelP10",{0.06,0},1},{"LevelP10",{"+0.22+0.015",0},1},{"LevelP10",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP10",{-0.22-0.015,0.02},1},{"LevelP10",{-0.22-0.015,0},1},{"LevelP10",{-0.06,0},1},{},{"LevelP10",{0.06,0},1},{"LevelP10",{"+0.22+0.015",0},1},{"LevelP10",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_10
 								{
@@ -3150,7 +3150,7 @@ class cfgVehicles {
 								class LevelP15: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP15",{"-0.22-0.015",0.02},1},{"LevelP15",{"-0.22-0.015",0},1},{"LevelP15",{-0.06,0},1},{},{"LevelP15",{0.06,0},1},{"LevelP15",{"+0.22+0.015",0},1},{"LevelP15",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP15",{-0.22-0.015,0.02},1},{"LevelP15",{-0.22-0.015,0},1},{"LevelP15",{-0.06,0},1},{},{"LevelP15",{0.06,0},1},{"LevelP15",{"+0.22+0.015",0},1},{"LevelP15",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_15
 								{
@@ -3208,7 +3208,7 @@ class cfgVehicles {
 								class LevelP20: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP20",{"-0.22-0.015",0.02},1},{"LevelP20",{"-0.22-0.015",0},1},{"LevelP20",{-0.06,0},1},{},{"LevelP20",{0.06,0},1},{"LevelP20",{"+0.22+0.015",0},1},{"LevelP20",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP20",{-0.22-0.015,0.02},1},{"LevelP20",{-0.22-0.015,0},1},{"LevelP20",{-0.06,0},1},{},{"LevelP20",{0.06,0},1},{"LevelP20",{"+0.22+0.015",0},1},{"LevelP20",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_20
 								{
@@ -3266,7 +3266,7 @@ class cfgVehicles {
 								class LevelP25: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP25",{"-0.22-0.015",0.02},1},{"LevelP25",{"-0.22-0.015",0},1},{"LevelP25",{-0.06,0},1},{},{"LevelP25",{0.06,0},1},{"LevelP25",{"+0.22+0.015",0},1},{"LevelP25",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP25",{-0.22-0.015,0.02},1},{"LevelP25",{-0.22-0.015,0},1},{"LevelP25",{-0.06,0},1},{},{"LevelP25",{0.06,0},1},{"LevelP25",{"+0.22+0.015",0},1},{"LevelP25",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_25
 								{
@@ -3324,7 +3324,7 @@ class cfgVehicles {
 								class LevelP30: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP30",{"-0.22-0.015",0.02},1},{"LevelP30",{"-0.22-0.015",0},1},{"LevelP30",{-0.06,0},1},{},{"LevelP30",{0.06,0},1},{"LevelP30",{"+0.22+0.015",0},1},{"LevelP30",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP30",{-0.22-0.015,0.02},1},{"LevelP30",{-0.22-0.015,0},1},{"LevelP30",{-0.06,0},1},{},{"LevelP30",{0.06,0},1},{"LevelP30",{"+0.22+0.015",0},1},{"LevelP30",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_30
 								{
@@ -3382,7 +3382,7 @@ class cfgVehicles {
 								class LevelP35: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP35",{"-0.22-0.015",0.02},1},{"LevelP35",{"-0.22-0.015",0},1},{"LevelP35",{-0.06,0},1},{},{"LevelP35",{0.06,0},1},{"LevelP35",{"+0.22+0.015",0},1},{"LevelP35",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP35",{-0.22-0.015,0.02},1},{"LevelP35",{-0.22-0.015,0},1},{"LevelP35",{-0.06,0},1},{},{"LevelP35",{0.06,0},1},{"LevelP35",{"+0.22+0.015",0},1},{"LevelP35",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_35
 								{
@@ -3440,7 +3440,7 @@ class cfgVehicles {
 								class LevelP40: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP40",{"-0.22-0.015",0.02},1},{"LevelP40",{"-0.22-0.015",0},1},{"LevelP40",{-0.06,0},1},{},{"LevelP40",{0.06,0},1},{"LevelP40",{"+0.22+0.015",0},1},{"LevelP40",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP40",{-0.22-0.015,0.02},1},{"LevelP40",{-0.22-0.015,0},1},{"LevelP40",{-0.06,0},1},{},{"LevelP40",{0.06,0},1},{"LevelP40",{"+0.22+0.015",0},1},{"LevelP40",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_40
 								{
@@ -3498,7 +3498,7 @@ class cfgVehicles {
 								class LevelP45: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP45",{"-0.22-0.015",0.02},1},{"LevelP45",{"-0.22-0.015",0},1},{"LevelP45",{-0.06,0},1},{},{"LevelP45",{0.06,0},1},{"LevelP45",{"+0.22+0.015",0},1},{"LevelP45",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP45",{-0.22-0.015,0.02},1},{"LevelP45",{-0.22-0.015,0},1},{"LevelP45",{-0.06,0},1},{},{"LevelP45",{0.06,0},1},{"LevelP45",{"+0.22+0.015",0},1},{"LevelP45",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_45
 								{
@@ -3556,7 +3556,7 @@ class cfgVehicles {
 								class LevelP50: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP50",{"-0.22-0.015",0.02},1},{"LevelP50",{"-0.22-0.015",0},1},{"LevelP50",{-0.06,0},1},{},{"LevelP50",{0.06,0},1},{"LevelP50",{"+0.22+0.015",0},1},{"LevelP50",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP50",{-0.22-0.015,0.02},1},{"LevelP50",{-0.22-0.015,0},1},{"LevelP50",{-0.06,0},1},{},{"LevelP50",{0.06,0},1},{"LevelP50",{"+0.22+0.015",0},1},{"LevelP50",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_50
 								{
@@ -3614,7 +3614,7 @@ class cfgVehicles {
 								class LevelP60: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP60",{"-0.22-0.015",0.02},1},{"LevelP60",{"-0.22-0.015",0},1},{"LevelP60",{-0.06,0},1},{},{"LevelP60",{0.06,0},1},{"LevelP60",{"+0.22+0.015",0},1},{"LevelP60",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP60",{-0.22-0.015,0.02},1},{"LevelP60",{-0.22-0.015,0},1},{"LevelP60",{-0.06,0},1},{},{"LevelP60",{0.06,0},1},{"LevelP60",{"+0.22+0.015",0},1},{"LevelP60",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_60
 								{
@@ -3672,7 +3672,7 @@ class cfgVehicles {
 								class LevelP70: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP70",{"-0.22-0.015",0.02},1},{"LevelP70",{"-0.22-0.015",0},1},{"LevelP70",{-0.06,0},1},{},{"LevelP70",{0.06,0},1},{"LevelP70",{"+0.22+0.015",0},1},{"LevelP70",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP70",{-0.22-0.015,0.02},1},{"LevelP70",{-0.22-0.015,0},1},{"LevelP70",{-0.06,0},1},{},{"LevelP70",{0.06,0},1},{"LevelP70",{"+0.22+0.015",0},1},{"LevelP70",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_70
 								{
@@ -3730,7 +3730,7 @@ class cfgVehicles {
 								class LevelP80: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP80",{"-0.22-0.015",0.02},1},{"LevelP80",{"-0.22-0.015",0},1},{"LevelP80",{-0.06,0},1},{},{"LevelP80",{0.06,0},1},{"LevelP80",{"+0.22+0.015",0},1},{"LevelP80",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP80",{-0.22-0.015,0.02},1},{"LevelP80",{-0.22-0.015,0},1},{"LevelP80",{-0.06,0},1},{},{"LevelP80",{0.06,0},1},{"LevelP80",{"+0.22+0.015",0},1},{"LevelP80",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_80
 								{
@@ -3788,7 +3788,7 @@ class cfgVehicles {
 								class LevelP90: Level0
 								{
 									type = "line";
-									points[] = {{"LevelP90",{"-0.22-0.015",0.02},1},{"LevelP90",{"-0.22-0.015",0},1},{"LevelP90",{-0.06,0},1},{},{"LevelP90",{0.06,0},1},{"LevelP90",{"+0.22+0.015",0},1},{"LevelP90",{"+0.22+0.015",0.02},1}};
+									points[] = {{"LevelP90",{-0.22-0.015,0.02},1},{"LevelP90",{-0.22-0.015,0},1},{"LevelP90",{-0.06,0},1},{},{"LevelP90",{0.06,0},1},{"LevelP90",{"+0.22+0.015",0},1},{"LevelP90",{"+0.22+0.015",0.02},1}};
 								};
 								class VALP_1_90
 								{
@@ -3872,41 +3872,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -4713,8 +4713,8 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		visionMode[] = {"Normal","NVG","Ti"};
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
+		LockDetectionSystem = 2+4+8+16;
+		incomingMissileDetectionSystem = 2+4+8+16;
 		class pilotCamera
 		{
 			class OpticsIn
@@ -4740,41 +4740,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -5173,7 +5173,7 @@ class cfgVehicles {
 			class Thruster400Engage
 			{
 				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition = "(!(this getVariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
 				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -5188,7 +5188,7 @@ class cfgVehicles {
 			class Thruster400Disengage
 			{
 				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition = "(this getVariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
 				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -5237,41 +5237,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -5392,7 +5392,7 @@ class cfgVehicles {
 			class Thruster400Engage
 			{
 				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition = "(!(this getVariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
 				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -5407,7 +5407,7 @@ class cfgVehicles {
 			class Thruster400Disengage
 			{
 				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition = "(this getVariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
 				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -5458,41 +5458,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -5613,7 +5613,7 @@ class cfgVehicles {
 			class Thruster400Engage
 			{
 				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition = "(!(this getVariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
 				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -5628,7 +5628,7 @@ class cfgVehicles {
 			class Thruster400Disengage
 			{
 				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition = "(this getVariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
 				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -5657,8 +5657,8 @@ class cfgVehicles {
 		radarTargetSize = 1; //No idea who in 3AS thought it's a good idea to make the Y-Wing more stealthy than the stealth fighters, so I'm changing it.
 		irTargetSize = 1;
 		VTOLPitchInfluence = 12;
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
+		LockDetectionSystem = 2+4+8+16;
+		incomingMissileDetectionSystem = 2+4+8+16;
 		stallSpeed = 0;
 		
 		armor = 550;
@@ -5688,41 +5688,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -6760,8 +6760,8 @@ class cfgVehicles {
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		visionMode[] = {"Normal","NVG","Ti"};
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
+		LockDetectionSystem = 2+4+8+16;
+		incomingMissileDetectionSystem = 2+4+8+16;
 		hiddenSelectionsTextures[] = {"JangosVehicles\data\textures\nu\exterior_104_CO.paa","JangosVehicles\data\textures\nu\wings_104_CO.paa","JangosVehicles\data\textures\nu\interior_104_co.paa","JangosVehicles\data\textures\nu\cockpit_doors_104_co.paa"};
 		class pilotCamera
 		{
@@ -6788,41 +6788,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -7226,7 +7226,7 @@ class cfgVehicles {
 			class Thruster400Engage
 			{
 				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition = "(!(this getVariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
 				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -7241,7 +7241,7 @@ class cfgVehicles {
 			class Thruster400Disengage
 			{
 				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition = "(this getVariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
 				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -7282,8 +7282,8 @@ class cfgVehicles {
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
 		visionMode[] = {"Normal","NVG","Ti"};
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
+		LockDetectionSystem = 2+4+8+16;
+		incomingMissileDetectionSystem = 2+4+8+16;
 		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
 		airBrakeFrictionCoef = 75;
@@ -7920,8 +7920,8 @@ class cfgVehicles {
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
 		visionMode[] = {"Normal","NVG","Ti"};
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
+		LockDetectionSystem = 2+4+8+16;
+		incomingMissileDetectionSystem = 2+4+8+16;
 		weapons[] = {"CMFlareLauncher","Laserdesignator_pilotCamera"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"};
 		airBrakeFrictionCoef = 75;
@@ -8515,8 +8515,8 @@ class cfgVehicles {
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
 		visionMode[] = {"Normal","NVG","Ti"};
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
+		LockDetectionSystem = 2+4+8+16;
+		incomingMissileDetectionSystem = 2+4+8+16;
 		armor = 600;
 		irTargetSize = 1; //Again, raising this value to not make it a Stealth ship.
 		radarTargetSize = 1; //Again, raising this value to not make it a Stealth ship.
@@ -8545,41 +8545,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -8618,8 +8618,8 @@ class cfgVehicles {
 		crew = "JLTS_Clone_P2_DC15S";
 		typicalcargo[] = {"JLTS_Clone_P2_DC15S"};
 		visionMode[] = {"Normal","NVG","Ti"};
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
+		LockDetectionSystem = 2+4+8+16;
+		incomingMissileDetectionSystem = 2+4+8+16;
 		armor = 200;
 		cargoAction[] = {"passenger_generic01_foldhands"};
 		cargoGetInAction[] = {"GetInHigh"};
@@ -8652,41 +8652,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -9084,7 +9084,7 @@ class cfgVehicles {
 			class Thruster400Engage
 			{
 				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition = "(!(this getVariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
 				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -9099,7 +9099,7 @@ class cfgVehicles {
 			class Thruster400Disengage
 			{
 				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition = "(this getVariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
 				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer = 0;
@@ -9195,8 +9195,8 @@ class cfgVehicles {
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JLTS_Clone_P2_DC15S";
 		visionMode[] = {"Normal","NVG","Ti"};
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
+		LockDetectionSystem = 2+4+8+16;
+		incomingMissileDetectionSystem = 2+4+8+16;
 		hiddenSelectionsTextures[] = {"\JMSLLTE_vehicles_air\N1\data\n1_base_co.paa","\JMSLLTE_vehicles_air\Xwing\data\droid_dark_co.paa"};
 		class pilotCamera
 		{
@@ -9223,41 +9223,41 @@ class cfgVehicles {
 				class zoomx4: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
+					initFov = (0.425/4);
+					minFov = (0.425/4);
+					maxFov = (0.425/4);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class zoomX8: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
+					initFov = (0.42/8);
+					minFov = (0.42/8);
+					maxFov = (0.42/8);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX20: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
+					initFov = (0.42/20);
+					minFov = (0.42/20);
+					maxFov = (0.42/20);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX50: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
+					initFov = (0.42/50);
+					minFov = (0.42/50);
+					maxFov = (0.42/50);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				class zoomX70: Wide
 				{
 					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
+					initFov = (0.42/70);
+					minFov = (0.42/70);
+					maxFov = (0.42/70);
 					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 				showMiniMapInOptics = 1;
@@ -9747,8 +9747,8 @@ class cfgVehicles {
 					};
 				};
 				memoryPointGun = "usti hlavne"; //"usti hlavne2" is the MG port left of the gun, while "usti hlavne" is the end of the cannon barrel.
-				maxVerticalRotSpeed = "90/45";
-				maxHorizontalRotSpeed = "90/45";
+				maxVerticalRotSpeed = 90/45;
+				maxHorizontalRotSpeed = 90/45;
 				weapons[] = {"Laserdesignator_mounted","ls_laat_gun","ls_laat_gun_2","3AS_Sabre_MG","OPTRE_M670_ATGM_Launcher","SmokeLauncher"};
 				magazines[] = {"Laserbatteries","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","200rnd_laat_he_mag","200rnd_laat_apfsds_mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","OPTRE_2Rnd_GAT_missiles","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag"};
 				minElev = -12;
@@ -9831,7 +9831,7 @@ class cfgVehicles {
 		class EventHandlers: DefaultEventhandlers
 		{
 			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrew.sqf';";
-			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getVariable 'BIS_fnc_effectFired');";
 		};
 	
 		
@@ -10344,7 +10344,7 @@ class cfgVehicles {
 		class EventHandlers: DefaultEventhandlers
 		{
 			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShield.sqf';";
-			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getVariable 'BIS_fnc_effectFired');";
 		};
 	};
 	class JA_104th_OryxSC: JA_104th_OryxNS 
@@ -10357,7 +10357,7 @@ class cfgVehicles {
 		class EventHandlers: DefaultEventhandlers
 		{
 			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\OryxCrewShieldComponent.sqf';";
-			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getVariable 'BIS_fnc_effectFired');";
 		};
 		
 	};
@@ -10381,8 +10381,8 @@ class cfgVehicles {
 				componentType = "VehicleSystemsDisplayManager";
 				defaultDisplay = "EmptyDisplay";
 				right = 1;
-				x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"", ((safezoneX + safezoneW) - (  (10 *    (   ((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 *    (   ((safezoneW / safezoneH) min 1.2) / 40)))])";
-				y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"", (safezoneY + safezoneH - 21 *    (   (   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+				x = "(profilenamespace getVariable [""IGUI_GRID_CUSTOMINFORIGHT_X"", ((safezoneX + safezoneW) - (  (10 *    (   ((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 *    (   ((safezoneW / safezoneH) min 1.2) / 40)))])";
+				y = "(profilenamespace getVariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"", (safezoneY + safezoneH - 21 *    (   (   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
 				class Components
 				{
 					class CrewDisplay
@@ -10432,8 +10432,8 @@ class cfgVehicles {
 				componentType = "VehicleSystemsDisplayManager";
 				defaultDisplay = "EmptyDisplay";
 				left = 1;
-				x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"", (safezoneX + 0.5 *    (   ((safezoneW / safezoneH) min 1.2) / 40))])";
-				y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"", (safezoneY + safezoneH - 21 *    (   (   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+				x = "(profilenamespace getVariable [""IGUI_GRID_CUSTOMINFOLEFT_X"", (safezoneX + 0.5 *    (   ((safezoneW / safezoneH) min 1.2) / 40))])";
+				y = "(profilenamespace getVariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"", (safezoneY + safezoneH - 21 *    (   (   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
 				class Components
 				{
 					class CrewDisplay
@@ -10483,8 +10483,8 @@ class cfgVehicles {
 		class EventHandlers: DefaultEventhandlers
 		{
 			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\BanthaCrew.sqf';";
-			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
-			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getVariable 'BIS_fnc_effectFired');";
+			killed = "_this call (uinamespace getVariable 'BIS_fnc_effectKilled');";
 		};
 		
 	};
@@ -10503,7 +10503,7 @@ class cfgVehicles {
 		class EventHandlers: DefaultEventhandlers
 		{
 			init="[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\LSVGun.sqf';";
-			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+			killed = "_this call (uinamespace getVariable 'BIS_fnc_effectKilled');";
 		};
 		
 	};

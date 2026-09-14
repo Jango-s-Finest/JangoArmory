@@ -70,7 +70,7 @@ class CfgWeapons
 				"camo1"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_vests\data\textures\104th_Pilot_Cherryy_Accessories_Officer.paa"};
+				QPATHTOEF(pilot_vests,data\textures\104th_Pilot_Cherryy_Accessories_Officer.paa)};
 		class ItemInfo : ItemInfo
 		{
 			containerClass = "Supply80";
@@ -114,7 +114,7 @@ class CfgWeapons
 				"camo1"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\pilot_vests\data\textures\104th_Pilot_Fire_Accessories_Officer.paa"};
+				QPATHTOEF(pilot_vests,data\textures\104th_Pilot_Fire_Accessories_Officer.paa)};
 		class ItemInfo : ItemInfo
 		{
 			containerClass = "Supply80";

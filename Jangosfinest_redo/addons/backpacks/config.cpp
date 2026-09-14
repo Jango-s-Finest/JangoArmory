@@ -136,8 +136,8 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // don't change unless RTO
 				"",															// Heavy
 				"",															// Medic
 				""															// RTO
@@ -177,8 +177,8 @@ class CfgVehicles
 		maximumLoad = 500;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Company_Spectre_RC_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Company_Spectre_RC_Backpack.paa",
+				QPATHTOEF(backpacks,data\textures\104th_Company_Spectre_RC_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Company_Spectre_RC_Backpack.paa),
 			};
 		tf_dialog = "ls_radios_cloneLR";
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
@@ -196,8 +196,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Irish_Mini_LR_Main.paa", // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Irish_Mini_Lr_Top.paa"	  // slotss
+				QPATHTOEF(backpacks,data\textures\104th_Irish_Mini_LR_Main.paa), // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_Irish_Mini_Lr_Top.paa)	  // slotss
 			};
 		tf_range = 35000;
 	};
@@ -209,8 +209,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Boris_Minipack.paa", // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Boris_Minipack_Slots.paa"	  // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Boris_Minipack.paa), // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Boris_Minipack_Slots.paa)	  // slotss
 			};
 		tf_range = 35000;
 	};
@@ -224,9 +224,9 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // don't change unless RTO
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // Heavy
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // Heavy
 				"",															// Medic
 				""															// RTO
 			};
@@ -241,11 +241,11 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // don't change unless RTO
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // Heavy
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // Heavy
 				"",															// Medic
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa"	// RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa)	// RTO
 			};
 	};
 	class JA_104th_Medic_Backpack : ls_gar_medic_backpack
@@ -258,10 +258,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack.paa), // don't change unless RTO
 				"",																  // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack.paa), // Medic
 				""																  // RTO
 			};
 	};
@@ -276,10 +276,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack.paa), // don't change unless RTO
 				"",																  // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack.paa), // Medic
 				""																  // RTO
 			};
 		tf_dialog = "ls_radios_cloneLR";
@@ -301,10 +301,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Carmine_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Carmine_Backpack.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_P2_Carmine_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_P2_Carmine_Backpack.paa), // don't change unless RTO
 				"",																	   // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Carmine_Backpack.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_P2_Carmine_Backpack.paa), // Medic
 				""																	   // RTO
 			};
 		tf_dialog = "ls_radios_cloneLR";
@@ -325,10 +325,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Lax_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Lax_Backpack.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_P2_Lax_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_P2_Lax_Backpack.paa), // don't change unless RTO
 				"",																	   // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Lax_Backpack.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_P2_Lax_Backpack.paa), // Medic
 				""																	   // RTO
 			};
 		tf_dialog = "ls_radios_cloneLR";
@@ -349,10 +349,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Patch_Medic_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Patch_Medic_Backpack.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_P2_Patch_Medic_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_P2_Patch_Medic_Backpack.paa), // don't change unless RTO
 				"",																	   // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Patch_Medic_Backpack.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_P2_Patch_Medic_Backpack.paa), // Medic
 				""																	   // RTO
 			};
 		tf_dialog = "ls_radios_cloneLR";
@@ -373,11 +373,11 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa", // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa), // don't change this
 				"",															// don't change unless RTO
 				"",															// Heavy
 				"",															// Medic
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack.paa"	// RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack.paa)	// RTO
 			};
 		tf_range = 35000;
 	};
@@ -389,8 +389,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_MiniPack.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_MiniPack_slots.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_MiniPack.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_MiniPack_slots.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -403,8 +403,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Spirit_Mini_Lr_Main.paa", // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Spirit_Mini_Lr_Top.paa"	  // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Spirit_Mini_Lr_Main.paa), // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Spirit_Mini_Lr_Top.paa)	  // slotss
 			};
 		tf_range = 35000;
 	};
@@ -417,8 +417,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Tusk_Mini_Lr.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Tusk_Mini_Lr_Upper.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_Tusk_Mini_Lr.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_Tusk_Mini_Lr_Upper.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -430,8 +430,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Poet_MiniPack.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Poet_MiniPack_Slots.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Poet_MiniPack.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Poet_MiniPack_Slots.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -443,8 +443,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Marx_Backpack_Mini_Main.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Marx_Backpack_Mini_Pouches.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_Marx_Backpack_Mini_Main.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_Marx_Backpack_Mini_Pouches.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -456,8 +456,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Tiger_MiniPack.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Tiger_MiniPack_Slots.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Tiger_MiniPack.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Tiger_MiniPack_Slots.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -469,8 +469,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Rich_MiniPack.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Rich_MiniPack_Slots.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Rich_MiniPack.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Rich_MiniPack_Slots.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -482,8 +482,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Castle_MiniPack.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Castle_MiniPack_Slots.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Castle_MiniPack.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Castle_MiniPack_Slots.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -495,8 +495,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Lykos_MiniPack.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Lykos_MiniPack_Slots.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Lykos_MiniPack.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Lykos_MiniPack_Slots.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -508,8 +508,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Knockout_MiniPack.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Knockout_MiniPack_Slots.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Knockout_MiniPack.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Knockout_MiniPack_Slots.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -521,8 +521,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Aiomi_MiniPack.paa",		 // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Aiomi_MiniPack_Slots.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P2_Aiomi_MiniPack.paa),		 // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P2_Aiomi_MiniPack_Slots.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -534,8 +534,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Mini_Backpack.paa",			   // Minipack
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Mini_Backpack_Accumulator.paa" // slotss
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Mini_Backpack.paa),			   // Minipack
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Mini_Backpack_Accumulator.paa) // slotss
 			};
 		tf_range = 35000;
 	};
@@ -552,8 +552,8 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_1.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_1.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_1.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_1.paa), // don't change unless RTO
 				"",																	   // Heavy
 				"",																	   // Medic
 				""																	   // RTO
@@ -569,9 +569,9 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_1.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_1.paa", // don't change unless RTO
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_1.paa", // Heavy
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_1.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_1.paa), // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_1.paa), // Heavy
 				"",																	   // Medic
 				""																	   // RTO
 			};
@@ -586,10 +586,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_1.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_1.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_1.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_1.paa), // don't change unless RTO
 				"",																			 // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_1.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_1.paa), // Medic
 				""																			 // RTO
 			};
 	};
@@ -603,11 +603,11 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_1.paa", // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_1.paa), // don't change this
 				"",																	   // don't change unless RTO
 				"",																	   // Heavy
 				"",																	   // Medic
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_1.paa"  // RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_1.paa)  // RTO
 			};
 		tf_range = 35000;
 	};
@@ -622,8 +622,8 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_2.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_2.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_2.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_2.paa), // don't change unless RTO
 				"",																	   // Heavy
 				"",																	   // Medic
 				""																	   // RTO
@@ -639,9 +639,9 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_2.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_2.paa", // don't change unless RTO
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_2.paa", // Heavy
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_2.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_2.paa), // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_2.paa), // Heavy
 				"",																	   // Medic
 				""																	   // RTO
 			};
@@ -656,10 +656,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_2.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_2.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_2.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_2.paa), // don't change unless RTO
 				"",																			 // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_2.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_2.paa), // Medic
 				""																			 // RTO
 			};
 	};
@@ -673,11 +673,11 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_2.paa", // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_2.paa), // don't change this
 				"",																	   // don't change unless RTO
 				"",																	   // Heavy
 				"",																	   // Medic
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_2.paa"  // RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_2.paa)  // RTO
 			};
 		tf_range = 35000;
 	};
@@ -692,8 +692,8 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_3.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_3.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_3.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_3.paa), // don't change unless RTO
 				"",																	   // Heavy
 				"",																	   // Medic
 				""																	   // RTO
@@ -709,9 +709,9 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_3.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_3.paa", // don't change unless RTO
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_3.paa", // Heavy
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_3.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_3.paa), // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_3.paa), // Heavy
 				"",																	   // Medic
 				""																	   // RTO
 			};
@@ -726,10 +726,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_3.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_3.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_3.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_3.paa), // don't change unless RTO
 				"",																			 // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_3.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_3.paa), // Medic
 				""																			 // RTO
 			};
 	};
@@ -743,11 +743,11 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_3.paa", // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_3.paa), // don't change this
 				"",																	   // don't change unless RTO
 				"",																	   // Heavy
 				"",																	   // Medic
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_3.paa"  // RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_3.paa)  // RTO
 			};
 		tf_range = 35000;
 	};
@@ -761,9 +761,9 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Bulky_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Bulky_Backpack.paa", // don't change unless RTO
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P2_Bulky_Backpack.paa", // Heavy
+				QPATHTOEF(backpacks,data\textures\104th_P2_Bulky_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_P2_Bulky_Backpack.paa), // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_P2_Bulky_Backpack.paa), // Heavy
 				"",																	 // Medic
 				""																	 // RTO
 			};
@@ -786,8 +786,8 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_4.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_4.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_4.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_4.paa), // don't change unless RTO
 				"",																	   // Heavy
 				"",																	   // Medic
 				""																	   // RTO
@@ -803,9 +803,9 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_4.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_4.paa", // don't change unless RTO
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_4.paa", // Heavy
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_4.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_4.paa), // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_4.paa), // Heavy
 				"",																	   // Medic
 				""																	   // RTO
 			};
@@ -820,10 +820,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_4.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_4.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_4.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_4.paa), // don't change unless RTO
 				"",																			 // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Medic_Backpack_Cerberus_4.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_Medic_Backpack_Cerberus_4.paa), // Medic
 				""																			 // RTO
 			};
 	};
@@ -837,11 +837,11 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_4.paa", // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_4.paa), // don't change this
 				"",																	   // don't change unless RTO
 				"",																	   // Heavy
 				"",																	   // Medic
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Backpack_Cerberus_4.paa"  // RTO
+				QPATHTOEF(backpacks,data\textures\104th_Backpack_Cerberus_4.paa)  // RTO
 			};
 		tf_range = 35000;
 	};
@@ -856,8 +856,8 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Backpack.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Backpack.paa), // don't change unless RTO
 				"",																   // Heavy
 				"",																   // Medic
 				""																   // RTO
@@ -873,9 +873,9 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Backpack.paa", // don't change unless RTO
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Backpack.paa", // Heavy
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Backpack.paa), // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Backpack.paa), // Heavy
 				"",																   // Medic
 				""																   // RTO
 			};
@@ -890,10 +890,10 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Medic_Backpack.paa", // don't change this
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Medic_Backpack.paa", // don't change unless RTO
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Medic_Backpack.paa), // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Medic_Backpack.paa), // don't change unless RTO
 				"",																		 // Heavy
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Medic_Backpack.paa", // Medic
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Medic_Backpack.paa), // Medic
 				""																		 // RTO
 			};
 	};
@@ -907,11 +907,11 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
 		hiddenSelectionsTextures[] =
 			{
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Backpack.paa", // don't change this
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Backpack.paa), // don't change this
 				"",																   // don't change unless RTO
 				"",																   // Heavy
 				"",																   // Medic
-				"\JA\jangos_Armory\addons\backpacks\data\textures\104th_P1_Red_Backpack.paa"  // RTO
+				QPATHTOEF(backpacks,data\textures\104th_P1_Red_Backpack.paa)  // RTO
 			};
 		tf_range = 35000;
 	};
@@ -1350,7 +1350,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Magnum)";
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_AB_Magnum_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_AB_Magnum_Jumppack.paa)};
 	};
 	class JA_104th_Jumppack_JT12_Freq_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1358,7 +1358,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Freq)";
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_AB_Freq_Jumppack.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_AB_Freq_Jumppack.paa)};
 		maximumLoad = 450;
 	};
 	
@@ -1369,7 +1369,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk)";
 		maximumLoad = 450;
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_Medic.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_Medic.paa)};
 	};
 	class JA_104th_Jumppack_JT12_Warhawk_Medic_1_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1378,7 +1378,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-1)";
 		maximumLoad = 450;
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_1_Medic.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_1_Medic.paa)};
 	};
 	class JA_104th_Jumppack_JT12_Warhawk_2_Medic_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1387,7 +1387,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-2)";
 		maximumLoad = 450;
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_2_Medic.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_2_Medic.paa)};
 	};
 	class JA_104th_Jumppack_JT12_Warhawk_Medic_3_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1396,7 +1396,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-3)";
 		maximumLoad = 450;
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_3_Medic.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_3_Medic.paa)};
 	};
 	class JA_104th_Jumppack_JT12_Warhawk_4_Medic_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1405,7 +1405,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 Medic LR (Warhawk 2-4)";
 		maximumLoad = 450;
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_4_Medic.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_4_Medic.paa)};
 	};
 	
 	class JA_104th_Jumppack_JT12_Raider_LR : JA_104th_Jumppack_JT12_LR_Journeyman
@@ -1414,7 +1414,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk)";
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk.paa)};
 	};
 	class JA_104th_Jumppack_JT12_Raider : JA_104th_Jumppack_JT12_Journeyman
 	{
@@ -1423,7 +1423,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk.paa)};
 	};
 	class JA_104th_Jumppack_JT12_Raider_AmmoBearer : JA_104th_Jumppack_JT12_Journeyman
 	{
@@ -1433,7 +1433,7 @@ class CfgVehicles
 		displayname = "Clone Trooper JT12 Ammo Bearer (Warhawk)";
 		maximumLoad = 450;
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_AmmoBearer.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_AmmoBearer.paa)};
 	};
 	
 	class JA_104th_Jumppack_JT12_Raider_1_LR : JA_104th_Jumppack_JT12_LR_Journeyman
@@ -1443,7 +1443,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk 2-1)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_1"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_1)};
 	};
 	class JA_104th_Jumppack_JT12_Raider_1 : JA_104th_Jumppack_JT12_Journeyman
 	{
@@ -1452,7 +1452,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk 2-1)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_1"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_1)};
 	};
 	class JA_104th_Jumppack_JT12_Raider_2_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1461,7 +1461,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk 2-2)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_2)};
 	};
 	class JA_104th_Jumppack_JT12_Raider_2 : JA_104th_Jumppack_JT12_Journeyman
 	{
@@ -1470,7 +1470,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk 2-2)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_2"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_2)};
 	};
 	class JA_104th_Jumppack_JT12_Raider_3_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1479,7 +1479,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk 2-3)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_3"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_3)};
 	};
 	class JA_104th_Jumppack_JT12_Raider_3 : JA_104th_Jumppack_JT12_Journeyman
 	{
@@ -1488,7 +1488,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk 2-3)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_3"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_3)};
 	};
 	class JA_104th_Jumppack_JT12_Raider_4_LR : JA_104th_Jumppack_JT12_LR_Journeyman
 	{
@@ -1497,7 +1497,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 LR (Warhawk 2-4)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_4"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_4)};
 	};
 	class JA_104th_Jumppack_JT12_Raider_4 : JA_104th_Jumppack_JT12_Journeyman
 	{
@@ -1506,7 +1506,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayname = "Clone Trooper JT12 (Warhawk 2-4)";
 
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\backpacks\data\textures\104th_Jumppack_JT12_Warhawk_4"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(backpacks,data\textures\104th_Jumppack_JT12_Warhawk_4)};
 	};
 	
 };

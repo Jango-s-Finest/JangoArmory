@@ -160,7 +160,7 @@ class CfgWeapons
 {
 	class ls_droidHelmet_b1;
 	class JA_CIS_B1_Helmet : ls_droidHelmet_b1{
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Upper.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Upper.paa)};
 	};
 
 	class ItemInfo;
@@ -171,7 +171,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		displayName = "Droid B1";
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Upper.paa","\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Upper.paa),QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Lower.paa)};
 		class ItemInfo : ItemInfo{
 			uniformClass = "JA_CIS_B1_Base_UnderWater";
 		};
@@ -181,7 +181,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		displayName = "Droid B2";
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\cis\data\textures\104th_B2_Aquatic_Arms.paa","\JA\jangos_Armory\addons\cis\data\textures\104th_B2_Aquatic_Legs.paa","\JA\jangos_Armory\addons\cis\data\textures\104th_B2_Aquatic_Torso.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Arms.paa),QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Legs.paa),QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Torso.paa)};
 	};
 
 	class ls_weapon_e5;
@@ -332,7 +332,7 @@ class CfgVehicles
 		respawnweapons[] = {"JA_CIS_Weapon_mercenarySniper","Throw","Put"};
 		magazines[] = {"JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		weapons[] = {"JA_CIS_Weapon_mercenarySniper","Throw","Put"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Upper.paa","\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Upper.paa),QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Lower.paa)};
 		uniformClass = "JA_CIS_B1_Uniform";
 	};
 	class JA_CIS_B1_AA_UnderWater : ls_droid_b1_heavyAA
@@ -358,7 +358,7 @@ class CfgVehicles
 		respawnWeapons[] = {"JA_CIS_Weapon_E5C","Throw","Put"};
 		magazines[] = {"JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		weapons[] = {"JA_CIS_Weapon_E5C","Throw","Put"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Upper.paa","\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Upper.paa),QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Lower.paa)};
 		uniformClass = "JA_CIS_B1_Uniform";
 	};
 	class JA_CIS_B1_Base_UnderWater : ls_droid_b1
@@ -375,7 +375,7 @@ class CfgVehicles
 		respawnWeapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
 		magazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		weapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Upper.paa","\JA\jangos_Armory\addons\cis\data\textures\104th_B1_Aquatic_Lower.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Upper.paa),QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Lower.paa)};
 		uniformClass = "JA_CIS_B1_Uniform";
 	};
 	class JA_CIS_B2_Base_UnderWater : WBK_LS_B2
@@ -393,7 +393,7 @@ class CfgVehicles
 		respawnWeapons[] = {"JA_CIS_Weapon_B2_Blaster","Throw","Put"};
 		magazines[] = {"JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		weapons[] = {"JA_CIS_Weapon_B2_Blaster","Throw","Put"};
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\cis\data\textures\104th_B2_Aquatic_Arms.paa","\JA\jangos_Armory\addons\cis\data\textures\104th_B2_Aquatic_Legs.paa","\JA\jangos_Armory\addons\cis\data\textures\104th_B2_Aquatic_Torso.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Arms.paa),QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Legs.paa),QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Torso.paa)};
 		uniformClass = "JA_CIS_B2_Uniform";
 	};
 // 104th_Categ_CIS

@@ -141,7 +141,7 @@
 #define DIK_RWIN                0xDC                /* Right Windows key */
 #define DIK_APPS                0xDD                /* AppMenu key */
 #define DIK_POWER               0xDE                /* System Power */
-#define DIK_SLEEP               0xDF                /* System Sleep */
+#define DIK_SLEEP               0xDF                /* System sleep */
 #define DIK_WAKE                0xE3                /* System Wake */
 #define DIK_WEBSEARCH           0xE5                /* Web Search */
 #define DIK_WEBFAVORITES        0xE6                /* Web Favorites */

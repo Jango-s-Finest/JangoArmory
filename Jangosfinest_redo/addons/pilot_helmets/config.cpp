@@ -83,7 +83,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th [1C] 01)";										  // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_P2_1C_Pilot_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_P2_1C_Pilot_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Bail_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -93,7 +93,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Bail)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Bail_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Bail_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Beef_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -103,7 +103,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		// don't change this
 		displayname = "Clone Trooper Pilot Helmet (104th Beef)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Beef_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Beef_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Haze_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -113,7 +113,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Haze)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Haze_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Haze_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Varelli_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -123,7 +123,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Varelli)";											// the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Varelli_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Varelli_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_OD_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -133,7 +133,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th OD)";										   // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_OD_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_OD_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Cherryy_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -143,7 +143,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Cherryy)";											// the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Cherryy_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Cherryy_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Hightower_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -153,7 +153,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Hightower)";											 // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Hightower_P2_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Hightower_P2_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Fish_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -163,7 +163,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Fish)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Fish_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Fish_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Cherryy_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -173,8 +173,8 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		displayname = "Clone Trooper Pilot P1 Helmet (104th Cherryy)"; // the name it will be in game
 		hiddenSelectionsTextures[] = {
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_P1_Cherryy_Helmet.paa",
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_P1_Cherryy_Lifesupport.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_P1_Cherryy_Helmet.paa),
+			QPATHTOEF(pilot_helmets,data\textures\104th_P1_Cherryy_Lifesupport.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_ME_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -184,8 +184,8 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		displayname = "Clone Trooper Pilot P1 Helmet (104th MLV)"; // the name it will be in game
 		hiddenSelectionsTextures[] = {
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_P1_Red_Pilot_Helmet.paa",
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_P1_Red_Pilot_Lifesupport.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_P1_Red_Pilot_Helmet.paa),
+			QPATHTOEF(pilot_helmets,data\textures\104th_P1_Red_Pilot_Lifesupport.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Duce_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -195,8 +195,8 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		displayname = "Clone Trooper Pilot P1 Helmet (104th Duce)"; // the name it will be in game
 		hiddenSelectionsTextures[] = {
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Duce_Helmet.paa",
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Duce_Life_Support.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Duce_Helmet.paa),
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Duce_Life_Support.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Fire_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -207,8 +207,8 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot P1 Helmet (104th Fire)"; // the name it will be in game
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		hiddenSelectionsTextures[] = {
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Fire_Helmet.paa",
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Fire_Life_Support.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Fire_Helmet.paa),
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Fire_Life_Support.paa),"Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Dak_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -219,8 +219,8 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot P1 Helmet (104th Dak)"; // the name it will be in game
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		hiddenSelectionsTextures[] = {
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Dak_P1_Helmet.paa",
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Dak_P1_Life_Support.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Dak_P1_Helmet.paa),
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Dak_P1_Life_Support.paa),"Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_ME_Dak_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -230,8 +230,8 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		displayname = "Clone Trooper Pilot P1 Helmet (104th Dak MLV)"; // the name it will be in game
 		hiddenSelectionsTextures[] = {
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Dak_Mlv_Helmet.paa",
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Dak_Mlv_Life_Support.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Dak_Mlv_Helmet.paa),
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Dak_Mlv_Life_Support.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Strawberry_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -241,7 +241,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Strawberry)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104_P2_Strawberry_Pilot_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104_P2_Strawberry_Pilot_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Boris_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -251,7 +251,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Boris)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_P2_Boris_Pilot_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_P2_Boris_Pilot_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Storm_Pilot_Helmet : ls_gar_phase2Pilot_helmet
 	{
@@ -261,7 +261,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper Pilot Helmet (104th Storm)";										 // the name it will be in game
-		hiddenSelectionsTextures[] = {"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_P2_Storm_Pilot_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(pilot_helmets,data\textures\104th_P2_Storm_Pilot_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Spirit_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -272,7 +272,7 @@ class CfgWeapons
 		displayname = "Clone Trooper Pilot P1 Helmet (104th Spirit)"; // the name it will be in game
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		hiddenSelectionsTextures[] = {
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Spirit_Pilot_P1_Helmet.paa",
-			"\JA\jangos_Armory\addons\pilot_helmets\data\textures\104th_Pilot_Spirit_Pilot_Life_Support.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Spirit_Pilot_P1_Helmet.paa),
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Spirit_Pilot_Life_Support.paa),"Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
 	};
 };

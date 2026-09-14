@@ -21,7 +21,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-    texture = "\JA\jangos_Armory\addons\melee\data\textures\Base_nohq.paa";
+    texture = "JA\jangos_Armory\addons\melee\data\textures\Base_nohq.paa";
     uvSource = "tex";
     class uvTransform
     {
@@ -57,7 +57,7 @@ class Stage3
 };
 class Stage4
 {
-    texture = "\JA\jangos_Armory\addons\melee\data\textures\Base_as.paa";
+    texture = "JA\jangos_Armory\addons\melee\data\textures\Base_as.paa";
     uvSource = "tex";
     class uvTransform
     {
@@ -69,7 +69,7 @@ class Stage4
 };
 class Stage5
 {
-    texture = "\JA\jangos_Armory\addons\melee\data\textures\Base_smdi.paa";
+    texture = "JA\jangos_Armory\addons\melee\data\textures\Base_smdi.paa";
     uvSource = "tex";
     class uvTransform
     {
@@ -93,7 +93,7 @@ class Stage6
 };
 class Stage7
 {
-    texture = "\JA\jangos_Armory\addons\melee\data\textures\Base_co.paa";
+    texture = "JA\jangos_Armory\addons\melee\data\textures\Base_co.paa";
     useWorldEnvMap = "true";
     uvSource = "tex";
     class uvTransform

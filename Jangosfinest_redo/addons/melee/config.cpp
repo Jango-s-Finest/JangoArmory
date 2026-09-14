@@ -22,13 +22,13 @@ class CfgSounds
     class Beskad_Hit_1 //// Classname that will be used in weapon config
     {
     name = "Beskad_Hit_1"; ///// Name
-    sound[] = {"Jangos_Armory_Melee\data\Sounds\Strike_bescar_2.ogg", "db+10", 1}; /// Path, volume, sound acceleration
+    sound[] = {QPATHTOEF(melee,data\Sounds\Strike_bescar_2.ogg), "db+10", 1}; /// Path, volume, sound acceleration
     titles[]={};
 	};
 	class Beskad_Hit_2
     {
     name = "Beskad_Hit_2";
-    sound[] = {"Jangos_Armory_Melee\data\Sounds\Strike_bescar_3.ogg", "db+10", 1};
+    sound[] = {QPATHTOEF(melee,data\Sounds\Strike_bescar_3.ogg), "db+10", 1};
     titles[]={};
 	};
 	
@@ -47,31 +47,31 @@ class CfgSounds
 	class Beskad_Block_1
     {
     name = "Beskad_Block_1";
-    sound[] = {"Jangos_Armory_Melee\data\Sounds\Block_bescar_1.ogg", "db+10", 1};
+    sound[] = {QPATHTOEF(melee,data\Sounds\Block_bescar_1.ogg), "db+10", 1};
     titles[]={};
 	};
 	class Beskad_Block_2
     {
     name = "Beskad_Block_2";
-    sound[] = {"Jangos_Armory_Melee\data\Sounds\Block_bescar_2.ogg", "db+10", 1};
+    sound[] = {QPATHTOEF(melee,data\Sounds\Block_bescar_2.ogg), "db+10", 1};
     titles[]={};
 	};
 	class Beskad_Block_3
     {
     name = "Beskad_Block_3";
-    sound[] = {"Jangos_Armory_Melee\data\Sounds\Block_bescar_3.ogg", "db+10", 1};
+    sound[] = {QPATHTOEF(melee,data\Sounds\Block_bescar_3.ogg), "db+10", 1};
     titles[]={};
 	};
 	class Beskad_Block_4
     {
     name = "Beskad_Block_4";
-    sound[] = {"Jangos_Armory_Melee\data\Sounds\Block_bescar_4.ogg", "db+10", 1};
+    sound[] = {QPATHTOEF(melee,data\Sounds\Block_bescar_4.ogg), "db+10", 1};
     titles[]={};
 	};
 	class Beskad_Unsheath_1
     {
     name = "Beskad_Unsheath_1";
-    sound[] = {"Jangos_Armory_Melee\data\Sounds\Unsheath_bescar_1.ogg", "db+10", 1};
+    sound[] = {QPATHTOEF(melee,data\Sounds\Unsheath_bescar_1.ogg), "db+10", 1};
     titles[]={};
 	};
 	
@@ -85,7 +85,7 @@ class CfgWeapons
 	class IMS_NewCoolMeleeWeapon: WBK_pipeStyledSword
 	{
 		displayName="Mandoade Beskad"; //// Name of the weapon
-		model="Jangos_Armory_Melee\Beskad.p3d"; //// Path to your model
+		model=QPATHTOEF(melee,Beskad.p3d); //// Path to your model
 		IMS_Melee_Param_Damage = 0.3; //// Your melee weapon damage (Notice that this param is multiplied by engine in a way that 0.2 will become 40. So this weapon deals 40 hp damage. 0.25 will deal 50 damage.
 		
 		IMS_Melee_Param_Sounds = "['Beskad_Swing_1','Beskad_Swing_2']"; // sounds that weapon will play on swings. The sounds must be defined through cfgSounds.

@@ -46,12 +46,10 @@ class CfgPatches
             "JA_104th_Osiris_Company_Vest",
             "JA_104th_Poet_Engineer_EWEB_Vest",
             "JA_104th_Aiomi_Kama",
-            "JA_104th_Lax_Vest"
-        };
-    glasses[] = {
-        "JA_104th_AB_Officer_Vest_Knockout",
-        "JA_104th_Poet_Kama"
-    };
+            "JA_104th_Lax_Vest"};
+        glasses[] = {
+            "JA_104th_AB_Officer_Vest_Knockout",
+            "JA_104th_Poet_Kama"};
     };
 };
 
@@ -165,10 +163,10 @@ class CfgWeapons
             {
                 "camo1"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Welty_Kama.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Welty_Kama.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -210,7 +208,7 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "rank"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Irish_Officer_Accessories.paa", ""};
+                QPATHTOEF(infantry_vests,data\Textures\104th_Irish_Officer_Accessories.paa), ""};
         model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_commander_vest.p3d";
         class ItemInfo : ItemInfo
         {
@@ -256,10 +254,10 @@ class CfgWeapons
             {
                 "camo1"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Irish_Officer_Accessories.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Irish_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -302,10 +300,10 @@ class CfgWeapons
             {
                 "camo1"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Castle_Officer_Accessories.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Castle_Officer_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -347,9 +345,9 @@ class CfgWeapons
         hiddenSelections[] = {"illum", "camo1"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Company_Spectre_Sniper_Vest.paa",
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Company_Spectre_Sniper_Vest.paa",
-            };
+                QPATHTOEF(infantry_vests,data\Textures\104th_Company_Spectre_Sniper_Vest.paa),
+                QPATHTOEF(infantry_vests,data\Textures\104th_Company_Spectre_Sniper_Vest.paa),
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply100";
@@ -391,14 +389,14 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Airborne NCO Vest (104th Granite)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa", // Heavy
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa", // Heavy
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Officer.paa",
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Granite_Accessories_Heavy.paa"  // Heavy
-            };
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Granite_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Granite_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Granite_Accessories_Officer.paa),
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Granite_Accessories_Heavy.paa) // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -443,9 +441,9 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Carmine_Light_Accessories.paa",   // Kama
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Carmine_Accessories_Officer.paa", // Kama
-            };
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Carmine_Light_Accessories.paa),   // Kama
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Carmine_Accessories_Officer.paa), // Kama
+        };
         model = "\ls\core\addons\characters_clone_legacy\vests\hazard\ls_gar_hazard_vest.p3d";
         class ItemInfo : ItemInfo
         {
@@ -500,7 +498,7 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Death_Kama.paa", // Kama
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Death_Kama.paa), // Kama
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"};
 
         model = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalOfficer_vest.p3d";
@@ -556,7 +554,7 @@ class CfgWeapons
                 "camo1"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Spirit_Kama.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Spirit_Kama.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -599,11 +597,11 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_light_accessories.paa", // Heavy
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_accessories_officer.paa",
+                QPATHTOEF(infantry_vests,data\Textures\104th_p2_scurvy_light_accessories.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\Textures\104th_p2_scurvy_accessories_officer.paa),
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa", // Heavy
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_p2_scurvy_accesories_heavy.paa"             // Heavy
-            };
+                QPATHTOEF(infantry_vests,data\Textures\104th_p2_scurvy_accesories_heavy.paa)                           // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -654,10 +652,10 @@ class CfgWeapons
             {
                 "camo1"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Knightfall_Accessories.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_Knightfall_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -700,10 +698,10 @@ class CfgWeapons
             {
                 "camo1"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_Tusk_Accessories.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_Tusk_Accessories.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -750,7 +748,7 @@ class CfgWeapons
                 "camo2"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_BARC_Galahad_Officer_Accessories.paa",
+                QPATHTOEF(infantry_vests,data\Textures\104th_BARC_Galahad_Officer_Accessories.paa),
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
         class ItemInfo : VestItem
         {
@@ -798,10 +796,10 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
             {
                 "", // Heavy
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_IQ_Accessories_Officer.paa",
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_IQ_Accessories_Officer.paa),
                 "", // Heavy
-                "" // Heavy
-            };
+                ""  // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -840,69 +838,70 @@ class CfgWeapons
         };
     };
     class ls_gar_engineerNCO_vest;
-	class JA_104th_Knockout_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest{
+    class JA_104th_Knockout_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest
+    {
 
-		displayName = "Clone Engineer E-Web Vest (104th Knockout)";
+        displayName = "Clone Engineer E-Web Vest (104th Knockout)";
         hiddenSelectionsTextures[] = {
             "",
             "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
             "",
             "",
             "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
-            "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_ARC.paa",
+            QPATHTOEF(infantry_vests,data\textures\104th_P2_Knockout_Accessories_ARC.paa),
         };
-		class ItemInfo
-		{
-			vestType = "Rebreather";
-			_generalMacro = "VestItem";
-			author = "Bohemia Interactive";
-			containerClass = "Supply450";
-			hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
+        class ItemInfo
+        {
+            vestType = "Rebreather";
+            _generalMacro = "VestItem";
+            author = "Bohemia Interactive";
+            containerClass = "Supply450";
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
             hiddenSelectionsTextures[] = {
                 "",
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
                 "",
                 "",
                 "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_ARC.paa",
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Knockout_Accessories_ARC.paa),
             };
-			mass = 80;
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			scope = 0;
-			showHolsteredPistol = 0;
-			type = 701;
-			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\engineer\ls_gar_engineerNCO_vest.p3d";
-			uniformType = "Default";
-			class HitpointsProtectionInfo
-			{
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class JA_104th_Spectre_ARC_Vest : ls_gar_arc_vest
+            mass = 80;
+            overlaySelectionsInfo[] = {"Ghillie_hide"};
+            scope = 0;
+            showHolsteredPistol = 0;
+            type = 701;
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\engineer\ls_gar_engineerNCO_vest.p3d";
+            uniformType = "Default";
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Spectre_ARC_Vest : ls_gar_arc_vest
     {
         author = "Dak";
         displayName = "Clone ARC Trooper Vest (104th Spectre)";
@@ -912,11 +911,11 @@ class CfgWeapons
                 "camo1",
                 "camo2"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_Company_Spectre_Accessories_ARC.paa",
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_Company_Spectre_Accessories_Officer.paa"};
+                QPATHTOEF(infantry_vests,data\textures\104th_Company_Spectre_Accessories_ARC.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_Company_Spectre_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -966,116 +965,116 @@ class CfgWeapons
         };
     };
     class JA_104th_Tiger_NCO_Vest : ls_gar_forceReconNCO_vest
-	{
-		author = "Fish";
-		scope = 2;
-		displayName = "Clone Trooper SNCO Vest (104th Tiger)";
-		hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
-		hiddenSelectionsTextures[] =
-			{
-				"104thPhantomCompany\data\Textures\104th_Accessories_Light_P2_Base.paa", // Heavy
-				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Tiger_Accessories_Officer.paa",
-				"104thPhantomCompany\data\Textures\104th_Accessories_Light_P2_Base.paa",	 // Heavy
-				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Tiger_Accessories_Heavy.paa" // Heavy
-			};
-		class ItemInfo : ItemInfo
-		{
-			containerClass = "Supply80";
-			vestType = "Rebreather";
-			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
-			hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
+    {
+        author = "Fish";
+        scope = 2;
+        displayName = "Clone Trooper SNCO Vest (104th Tiger)";
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                "104thPhantomCompany\data\Textures\104th_Accessories_Light_P2_Base.paa", // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Tiger_Accessories_Officer.paa),
+                "104thPhantomCompany\data\Textures\104th_Accessories_Light_P2_Base.paa", // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Tiger_Accessories_Heavy.paa)             // Heavy
+        };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
 
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 6;
-					passThrough = 0.3;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
+            class HitpointsProtectionInfo
+            {
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 6;
+                    passThrough = 0.3;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
     class JA_104th_Rich_NCO_Vest : ls_gar_reconOfficer_vest
-	{
-		author = "Fish";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		displayName = "Clone Trooper SNCO Vest (104th Rich)";
-		hiddenSelections[] = {"camo1","camo2","pauldron"};
-		hiddenSelectionsTextures[] =
-			{
-				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
-				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Officer.paa",
-				"\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
-			};
-		class ItemInfo : ItemInfo
-		{
-			containerClass = "Supply80";
-			vestType = "Rebreather";
-			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_reconOfficer_vest.p3d";
-			hiddenSelections[] = {"camo1","camo2","pauldron"};
+    {
+        author = "Fish";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "Clone Trooper SNCO Vest (104th Rich)";
+        hiddenSelections[] = {"camo1", "camo2", "pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Rich_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Rich_Accessories_Officer.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Rich_Accessories_Heavy.paa), // Heavy
+        };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_reconOfficer_vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2", "pauldron"};
 
-			class HitpointsProtectionInfo
-			{
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 6;
-					passThrough = 0.3;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
+            class HitpointsProtectionInfo
+            {
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 6;
+                    passThrough = 0.3;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
     class JA_104th_Chaser_Kama : ls_gar_kama_vest
     {
         author = "Fish";
@@ -1084,10 +1083,10 @@ class CfgWeapons
             {
                 "camo1"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Chaser_Accessories_Officer.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Chaser_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1130,10 +1129,10 @@ class CfgWeapons
             {
                 "camo1"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Hawkeye_Accessories_Officer.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Hawkeye_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1168,19 +1167,18 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Osiris_Company_Vest : ls_gar_tacticalCommander_vest{
+    class JA_104th_Osiris_Company_Vest : ls_gar_tacticalCommander_vest
+    {
         author = "Dak";
         displayName = "Clone Tactical Commander Vest (104th Osiris)";
-        hiddenSelections[] = {"camo1","camo2","camo3"};
-        hiddenSelectionsTextures[] = {
-            "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
-            "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_CMD_Osiris_Accessories_Officer.paa",
-            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"
-        };
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
+                                      QPATHTOEF(infantry_vests,data\textures\104th_CMD_Osiris_Accessories_Officer.paa),
+                                      "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"};
         model = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalCommander_vest.p3d";
         class ItemInfo
         {
-            hiddenSelections[] = {"camo1","camo2","camo3"};
+            hiddenSelections[] = {"camo1", "camo2", "camo3"};
             mass = 80;
             author = "Bohemia Interactive";
             _generalMacro = "VestItem";
@@ -1221,68 +1219,69 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Poet_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest{
-		displayName = "Clone Engineer E-Web Vest (104th Poet)";
+    class JA_104th_Poet_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest
+    {
+        displayName = "Clone Engineer E-Web Vest (104th Poet)";
         hiddenSelectionsTextures[] = {
             "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
             "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
-            "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
+            QPATHTOEF(infantry_vests,data\textures\104th_P2_Poet_Accessories_Officer.paa),
             "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
             "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
             "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
         };
-		class ItemInfo
-		{
-			vestType = "Rebreather";
-			_generalMacro = "VestItem";
-			author = "Bohemia Interactive";
-			containerClass = "Supply450";
-			hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
+        class ItemInfo
+        {
+            vestType = "Rebreather";
+            _generalMacro = "VestItem";
+            author = "Bohemia Interactive";
+            containerClass = "Supply450";
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
             hiddenSelectionsTextures[] = {
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Poet_Accessories_Officer.paa),
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
             };
-			mass = 80;
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			scope = 0;
-			showHolsteredPistol = 0;
-			type = 701;
-			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\engineer\ls_gar_engineerNCO_vest.p3d";
-			uniformType = "Default";
-			class HitpointsProtectionInfo
-			{
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class JA_104th_Aiomi_Kama : ls_gar_kama_vest
+            mass = 80;
+            overlaySelectionsInfo[] = {"Ghillie_hide"};
+            scope = 0;
+            showHolsteredPistol = 0;
+            type = 701;
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\engineer\ls_gar_engineerNCO_vest.p3d";
+            uniformType = "Default";
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Aiomi_Kama : ls_gar_kama_vest
     {
         author = "Fish";
         displayName = "Clone Trooper Kama (104th Aiomi)";
@@ -1290,10 +1289,10 @@ class CfgWeapons
             {
                 "camo1"
 
-            };
+        };
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\Textures\104th_P2_Aiomi_Accessories_Officer.paa"};
+                QPATHTOEF(infantry_vests,data\Textures\104th_P2_Aiomi_Accessories_Officer.paa)};
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1333,14 +1332,14 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Medic NCO Vest (104th Lax)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa", // Heavy
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa", // Heavy
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Officer.paa",
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa"  // Heavy
-            };
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Lax_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Lax_Accessories_Heavy.paa), // Heavy
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Lax_Accessories_Officer.paa),
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Lax_Accessories_Heavy.paa) // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1375,7 +1374,6 @@ class CfgWeapons
             };
         };
     };
-    
 };
 class CfgGlasses
 {
@@ -1390,12 +1388,12 @@ class CfgGlasses
             {
                 "camo1",
                 "camo2",
-            };
+        };
         hiddenSelectionsTextures[] =
             {
                 "",
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Knockout_Accessories_Officer.paa",
-            };
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Knockout_Accessories_Officer.paa),
+        };
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";
     };
     class JA_104th_Poet_Kama
@@ -1411,9 +1409,8 @@ class CfgGlasses
                 "camo1"};
         hiddenSelectionsTextures[] =
             {
-                "\JA\jangos_Armory\addons\infantry_vests\data\textures\104th_P2_Poet_Accessories_Officer.paa"};
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Poet_Accessories_Officer.paa)};
     };
-    
 };
 
 class CfgVehicles
