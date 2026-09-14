@@ -209,7 +209,7 @@ class CfgWeapons
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Dak_Kama.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"};
-        class ItemInfo : Vestitem
+        class ItemInfo : VestItem
         {
             uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
             containerClass = "Supply80";
@@ -452,7 +452,7 @@ class CfgWeapons
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Kama.paa",
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Clutch_Heavy.paa"};
-        class ItemInfo : Vestitem
+        class ItemInfo : VestItem
         {
             uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
             containerClass = "Supply80";

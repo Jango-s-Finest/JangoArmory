@@ -370,7 +370,7 @@ class CfgWeapons
 		displayname = "Clone Trooper AB Helmet (104th Kage)"; // the name it will be in game
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Kage_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camo1_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Kage_Helmet.paa",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_camo1_co.paa)}; // the file path to the texture
 	};
 	class JA_104th_AB_Kaleck_Helmet_old : ls_gar_airborne_helmet
 	{
@@ -402,7 +402,7 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 		displayname = "Clone Trooper P1 Helmet (104th Soul)";											 // the name it will be in game
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\textures\104th_AB_Soul_Helmet_P1.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\textures\104th_AB_Soul_Helmet_P1.paa",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_camoP1_P2_co.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 	};
 	class JA_104th_Trustful_Helmet : ls_gar_airborne_helmet
 	{
@@ -556,7 +556,7 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper P1 Helmet (104th Granite)"; // the name it will be in game
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_P1_Granite_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_P1_Granite_Helmet.paa",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_camoP1_P2_co.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 		visionMode[] = {"Normal"};
 	};
 	class JA_104th_Tinkle_Helmet : ls_gar_airborne_helmet
@@ -569,7 +569,7 @@ class CfgWeapons
 		displayname = "Clone Trooper AB Helmet (104th Tinkle)"; // the name it will be in game
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Tinkle_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camo1_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Tinkle_Helmet.paa",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_camo1_co.paa)}; // the file path to the texture
 	};
 	class JA_104th_Boombox_Helmet : ls_gar_airborne_helmet
 	{
@@ -616,7 +616,7 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper P1 Helmet (104th Hound)"; // the name it will be in game
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_P1_Hound_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_P1_Hound_Helmet.paa",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_camoP1_P2_co.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 		visionMode[] = {"Normal"};
 	};
 	class JA_104th_Angel_Helmet : ls_gar_airborne_helmet

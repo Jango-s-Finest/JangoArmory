@@ -208,7 +208,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		hiddenSelectionsTextures[] = {
 			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Fire_Helmet.paa),
-			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Fire_Life_Support.paa),"Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Fire_Life_Support.paa),QPATHTOEF(infantry_helmets_2,data\textures\Bacta_camoP1_P2_co.paa)}; // the file path to the texture
 	};
 	class JA_104th_Dak_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -220,7 +220,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		hiddenSelectionsTextures[] = {
 			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Dak_P1_Helmet.paa),
-			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Dak_P1_Life_Support.paa),"Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Dak_P1_Life_Support.paa),QPATHTOEF(infantry_helmets_2,data\textures\Bacta_camoP1_P2_co.paa)}; // the file path to the texture
 	};
 	class JA_104th_ME_Dak_Pilot_Helmet_P1 : ls_gar_phase1Pilot_helmet
 	{
@@ -273,6 +273,6 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		hiddenSelectionsTextures[] = {
 			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Spirit_Pilot_P1_Helmet.paa),
-			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Spirit_Pilot_Life_Support.paa),"Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa"}; // the file path to the texture
+			QPATHTOEF(pilot_helmets,data\textures\104th_Pilot_Spirit_Pilot_Life_Support.paa),QPATHTOEF(infantry_helmets_2,data\textures\Bacta_camoP1_P2_co.paa)}; // the file path to the texture
 	};
 };

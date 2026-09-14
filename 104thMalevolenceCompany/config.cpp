@@ -458,7 +458,7 @@ class CfgWeapons
             {
                 "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_Company_Base.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"};
-        class ItemInfo : Vestitem
+        class ItemInfo : VestItem
         {
             uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
             containerClass = "Supply80";
@@ -1370,7 +1370,7 @@ class CfgWeapons
             {
                 "104thMalevolenceCompany\data\Textures\104th_Officer_Accessories_P1_Red_AB_Base.paa",
                 "104thMalevolenceCompany\data\Textures\104th_Heavy_Accessories_Trooper_VetRed.paa"};
-        class ItemInfo : Vestitem
+        class ItemInfo : VestItem
         {
             uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
             containerClass = "Supply80";
