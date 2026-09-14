@@ -1,6 +1,5 @@
+#include "\JA\jangos_Armory\addons\main\script_component.hpp"
 #include "basicDefines_A3.hpp"
-class DefaultEventhandlers;
-class UniformSlotInfo;
 class CfgPatches
 {
 	class ADDON
@@ -9,7 +8,6 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
-			"",
 		};
 		weapons[] = {
 			"JA_104th_Spectre_RC_NVG",
@@ -81,29 +79,13 @@ class cfgEditorSubcategories
 
 class CfgWeapons
 {
-	class InventoryItem_Base_F;
-	class ItemCore;
-	class ls_gar_phase2Pilot_helmet;
-	class ls_gar_phase2_uniform;
-	class ls_gar_marshalCommander_uniform;
-	class ls_gar_barc_helmet;
-	class ls_gar_airborne_helmet;
-	class ls_gar_phase1Arf_helmet;
-	class ls_gar_arc_helmet;
-	class ls_gar_phase1_helmet;
-	class ls_gar_rex_helmet;
-	class ls_gar_phase2_helmet;
 	class lsd_gar_standard_nvg;
 	class lsd_gar_standardSPC_nvg;
-	class lsd_gar_barcm2_helmet;
 	class lsd_gar_rangefinder_nvg;
 	class lsd_gar_p2MarshalCommander_nvg;
 	class ls_sob_commando_visor_nvg;
 	class ls_sob_commando_antenna_nvg;
 	class lsd_gar_medicalScanner_nvg;
-	class ls_sob_phase2SpecOp_helmet;
-	class UniformItem;
-	class VestItem;
 	class lsd_gar_tanker_nvg; // Death NVGs
 	class lsd_gar_recon_nvg;
 
@@ -118,8 +100,8 @@ class CfgWeapons
 		hiddenSelections[] = {"illum", "camo1"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_Company_Spectre_RC_Visor.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_Company_Spectre_RC_Visor.paa"};
+				QPATHTOEF(attachments,data\textures\104th_Company_Spectre_RC_Visor.paa),
+				QPATHTOEF(attachments,data\textures\104th_Company_Spectre_RC_Visor.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 		scope = 2;
@@ -137,7 +119,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_Company_Spectre_RC_Antenna.paa"};
+				QPATHTOEF(attachments,data\textures\104th_Company_Spectre_RC_Antenna.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 		scope = 2;
@@ -150,7 +132,7 @@ class CfgWeapons
 		displayName = "Clone Medical Scanner NVG (104th Irish)";
 		hiddenSelections[] = {"Camo1", "glow"};
 		hiddenSelectionsTextures[] = {
-			"Jangos_Armory_Attachments\data\textures\104th_Irish_Medical_Scanner_NVG.paa",
+			QPATHTOEF(attachments,data\textures\104th_Irish_Medical_Scanner_NVG.paa),
 			"#(argb,8,8,3)color(0.501961,1,1,1.0,co)"};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -165,7 +147,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_Bulky_NVG.paa",
+				QPATHTOEF(attachments,data\textures\104th_P2_Bulky_NVG.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -180,7 +162,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_AB_Doc_Visor_NVG.paa",
+				QPATHTOEF(attachments,data\textures\104th_AB_Doc_Visor_NVG.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -195,7 +177,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_Tusk_Macro_NVG.paa",
+				QPATHTOEF(attachments,data\textures\104th_Tusk_Macro_NVG.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -210,7 +192,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_AB_Magnum_NVG.paa",
+				QPATHTOEF(attachments,data\textures\104th_AB_Magnum_NVG.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -225,7 +207,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_NVG_Base.paa",
+				QPATHTOEF(attachments,data\textures\104th_P2_NVG_Base.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -240,7 +222,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_NVG_SPC.paa",
+				QPATHTOEF(attachments,data\textures\104th_P2_NVG_SPC.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -256,7 +238,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_NVG_Medic.paa",
+				QPATHTOEF(attachments,data\textures\104th_P2_NVG_Medic.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -274,7 +256,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_NVG_Base.paa",
+				QPATHTOEF(attachments,data\textures\104th_P2_NVG_Base.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -292,7 +274,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_NVG_SPC.paa",
+				QPATHTOEF(attachments,data\textures\104th_P2_NVG_SPC.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -310,7 +292,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_NVG_Medic.paa",
+				QPATHTOEF(attachments,data\textures\104th_P2_NVG_Medic.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -327,8 +309,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_NVGs.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_NVGs.paa"};
+				QPATHTOEF(attachments,data\textures\104th_NVGs.paa),
+				QPATHTOEF(attachments,data\textures\104th_NVGs.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -343,9 +325,9 @@ class CfgWeapons
 				"camo3"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_CO_Spectre_Commander_Visor.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_CO_Spectre_Commander_Visor.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_CO_Spectre_Commander_Visor.paa"};
+				QPATHTOEF(attachments,data\textures\104th_CO_Spectre_Commander_Visor.paa),
+				QPATHTOEF(attachments,data\textures\104th_CO_Spectre_Commander_Visor.paa),
+				QPATHTOEF(attachments,data\textures\104th_CO_Spectre_Commander_Visor.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -360,9 +342,9 @@ class CfgWeapons
 				"camo3"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Sigil_Cm_Visor.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Sigil_Cm_Visor.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Sigil_Cm_Visor.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Sigil_Cm_Visor.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Sigil_Cm_Visor.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Sigil_Cm_Visor.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -376,8 +358,8 @@ class CfgWeapons
 				"camo2"};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_Commander_NV.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_Commander_NV.paa"};
+				QPATHTOEF(attachments,data\textures\104th_Commander_NV.paa),
+				QPATHTOEF(attachments,data\textures\104th_Commander_NV.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -393,8 +375,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_BARC_Galahad_NVG.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_BARC_Galahad_NVG.paa"};
+				QPATHTOEF(attachments,data\textures\104th_BARC_Galahad_NVG.paa),
+				QPATHTOEF(attachments,data\textures\104th_BARC_Galahad_NVG.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -409,7 +391,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_Death_NVG.paa"};
+				QPATHTOEF(attachments,data\textures\104th_P2_Death_NVG.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -424,7 +406,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_Castle_NVG_Tanker.paa"};
+				QPATHTOEF(attachments,data\textures\104th_P2_Castle_NVG_Tanker.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -440,8 +422,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Crowbi_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Crowbi_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Crowbi_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Crowbi_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -457,8 +439,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Drifter_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Drifter_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Drifter_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Drifter_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -474,8 +456,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Hunter_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Hunter_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Hunter_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Hunter_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -491,8 +473,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Loner_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Loner_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Loner_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Loner_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -508,8 +490,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_p2_scurvy_rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_p2_scurvy_rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_p2_scurvy_rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_p2_scurvy_rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -525,8 +507,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Sigil_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Sigil_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Sigil_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Sigil_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -542,8 +524,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Spectre_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Spectre_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Spectre_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Spectre_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -559,8 +541,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Vision_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Vision_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Vision_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Vision_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -576,8 +558,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Ceasar_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Ceasar_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Ceasar_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Ceasar_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -593,8 +575,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Vegas_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Vegas_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Vegas_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Vegas_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -610,8 +592,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Osiris_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Osiris_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Osiris_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Osiris_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -627,8 +609,8 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Kaleck_Rangefinder.paa",
-				"Jangos_Armory_Attachments\data\textures\104th_ARC_Kaleck_Rangefinder.paa"};
+				QPATHTOEF(attachments,data\textures\104th_ARC_Kaleck_Rangefinder.paa),
+				QPATHTOEF(attachments,data\textures\104th_ARC_Kaleck_Rangefinder.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -637,7 +619,7 @@ class CfgWeapons
 		author = "Dak";
 		displayName = "Clone NVG Republic Rangefinder Visor (104th Osiris)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"Jangos_Armory_Attachments\data\textures\104th_CMD_Osiris_NVG.paa","Jangos_Armory_Attachments\data\textures\104th_CMD_Osiris_NVG.paa"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(attachments,data\textures\104th_CMD_Osiris_NVG.paa),QPATHTOEF(attachments,data\textures\104th_CMD_Osiris_NVG.paa)};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
@@ -651,7 +633,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P1_Hound_NVG.paa",
+				QPATHTOEF(attachments,data\textures\104th_P1_Hound_NVG.paa),
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
@@ -669,13 +651,3 @@ class CfgGlasses
 	};
 };
 
-class CfgVehicles
-{
-	class lsd_gar_phase2_base;
-	class ls_gar_marshalCommander_base;
-	class ls_gar_standard_backpack;
-	class ls_gar_rto_mini_backpack;
-	class ls_gar_heavy_backpack;
-	class ls_gar_medic_backpack;
-	class ls_gar_Radio_backpack;
-};
