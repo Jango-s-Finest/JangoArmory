@@ -1,0 +1,7 @@
+class BIS_AddonInfo
+{
+	author="Freestyle_Build";
+	timepacked="1597075029";
+	requiredVersion=1;
+
+};

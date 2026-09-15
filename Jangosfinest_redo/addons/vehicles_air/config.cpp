@@ -2,14 +2,14 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Vehicles
 	{
-		units[] = {
+		units[] += {
 			"JA_104th_Nu_class",
 			"JA_104th_Rho_class",
 			"JA_104th_LAS_1A"
 		}; // All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {
+		weapons[] += {
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {};

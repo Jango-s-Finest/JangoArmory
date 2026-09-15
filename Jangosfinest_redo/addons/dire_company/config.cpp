@@ -2,10 +2,10 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Dire
 	{
 		author = "Jango's Finest";
-		units[] = {
+		units[] += {
 			"JA_104th_Base_P2_Dire_Zivi",
 			"JA_104th_Base_P2_Dire_ARF",
 			"JA_104th_Base_P2_Dire",
@@ -18,7 +18,7 @@ class CfgPatches
 			"JA_104th_Base_ME_Dire_ARF",
 			"JA_104th_Base_ME_Dire",
 			"JA_104th_Base_ME_Dire_Medic"};
-		weapons[] = {
+		weapons[] += {
 			"JA_Dire_P2_Base_Zivi_Helmet",
 			"JA_Dire_P2_Base_Zivi_Uniform",
 			"JA_Dire_P2_Base_ARF_Helmet",

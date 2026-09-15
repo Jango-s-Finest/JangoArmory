@@ -2,10 +2,10 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Geonosis
 	{
 		author = "Jango's Finest";
-		units[] = {
+		units[] += {
 			"JA_104th_P1_Geonosis_CT",
 			"JA_104th_P1_Geonosis_SGT",
 			"JA_104th_P1_Geonosis_LT",
@@ -13,7 +13,7 @@ class CfgPatches
 			"JA_104th_P1_Geonosis_CMDR",
 			"JA_104th_Medic_Backpack_Geonosis"
 		};
-        weapons[] = {
+        weapons[] += {
             "ls_gar_kama_vest",
             "ls_gar_forceReconLieutenant_vest",
             "ls_gar_officer_vest",

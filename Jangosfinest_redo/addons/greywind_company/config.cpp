@@ -2,15 +2,15 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Greywind
 	{
 		author = "Jango's Finest";
-		units[] = {
+		units[] += {
 			"JA_104th_Bolt_P2_Greywind_ARF",
 			"JA_104th_Dingo_P2_Greywind_ARF",
 			"JA_104th_Mouse_P2_Greywind_ARF",
 			"JA_104th_Vilkas_P2_Greywind_ARF"};
-		weapons[] = {
+		weapons[] += {
 			"JA_Greywind_P2_Bolt_ARF_Helmet",
 			"JA_Greywind_P2_Bolt_ARF_Uniform",
 			"JA_Greywind_P2_Dingo_ARF_Helmet",

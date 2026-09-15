@@ -2,9 +2,9 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Vehicles
 	{
-		units[] = {
+		units[] += {
 			"Car_F",
 			"Tank",
 			"Tank_F",
@@ -70,7 +70,7 @@ class CfgPatches
 			"JA_104th_HeavyRepeater_Unarmoured",
 			"JA_104th_Impetus_Class_MAAG"
 		}; // All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {
+		weapons[] += {
 			"Launcher_Base_F",
 			"ls_laat_gun_2_104th",
 			"ls_127_blue_104th",
@@ -79,12 +79,12 @@ class CfgPatches
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
-	magazines[] = {
+	magazines[] += {
 		"ls_magazine_50mm_200Rnd_APFSDS_green_104th",
 		"ls_500Rnd_127x99_mag_blue_104th",
 		"JA_104th_Guided_Resupply_Magazine"
 	};
-	ammo[] = {
+	ammo[] += {
 		"ls_50mm_laat_apfsds_104th",
 		"ls_127x99_blue_104th",
 		"JA_104th_guided_resupply_ammo",
@@ -232,8 +232,8 @@ class cfgVehicles
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		hiddenselections[] = {"camo", "camo1", "camo2"};
 		hiddenselectionstextures[] = {"3AS\3as_Z95\Data\blue_co.paa", "3AS\3as_Z95\Data\cockpit_co.paa", "3AS\3as_saber\data\glass\glass_ca"};
-		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera", "ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3as_V19_Medium_Cannon", "JA_104th_AA_Lazer"};
-		magazines[] = {"Laserbatteries", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500"};
+		weapons[] += {"CMFlareLauncher", "Laserdesignator_pilotCamera", "ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3as_V19_Medium_Cannon", "JA_104th_AA_Lazer"};
+		magazines[] += {"Laserbatteries", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "3as_V19_800Rnd_Medium_shells", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500"};
 		vehicleClass = "GAR_LAATCatNSub";
 		crew = "JA_104th_P2_1C_Engineer";
 		aileronSensitivity = 2.9;
@@ -2850,8 +2850,8 @@ class cfgVehicles
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		crew = "JA_104th_P2_1C_Engineer";
-		weapons[] = {"JA_104th_AA_Lazer","3AS_ARC_Light_Canon","CMFlareLauncher","Laserdesignator_pilotCamera"};
-		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500","3AS_ARC_500Rnd_Light_Shells","3AS_ARC_500Rnd_Light_Shells","120Rnd_CMFlare_Chaff_Magazine","Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] += {"JA_104th_AA_Lazer","3AS_ARC_Light_Canon","CMFlareLauncher","Laserdesignator_pilotCamera"};
+		magazines[] += {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500","3AS_ARC_500Rnd_Light_Shells","3AS_ARC_500Rnd_Light_Shells","120Rnd_CMFlare_Chaff_Magazine","Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine"};
 		hiddenselections[] = {"camo1","camo2","guns"};
 		hiddenselectionstextures[] = {"3as\3AS_ARC170\Data\units\501st_Main_Frame_CO.paa","3as\3AS_ARC170\Data\units\501st_Wings_Engines_CO.paa","3as\3AS_ARC170\Data\units\501st_Guns_CO.paa"};
 		class UserActions : UserActions
@@ -3290,8 +3290,8 @@ class cfgVehicles
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
 		hiddenselections[] = {"camo1","camo4","camo5"};
 		hiddenselectionstextures[] = {"3AS\3AS_Vwing\data\vwing_main_co.paa","3AS\3AS_Vwing\data\Vwing_AstromechDroid_co.paa","3AS\3AS_Vwing\data\vwing_wings_co.paa"};
-		weapons[] = {"JA_104th_AA_Lazer", "CMFlareLauncher"};
-		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] += {"JA_104th_AA_Lazer", "CMFlareLauncher"};
+		magazines[] += {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 		crew = "JA_104th_P2_1C_Engineer";
 
 		class Components
@@ -3693,8 +3693,8 @@ class cfgVehicles
 			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
 			"3as\3as_v19\textures\pizzlepit_co.paa"
 		};
-		weapons[] = {"JA_104th_AA_Lazer","3as_V19_Medium_Cannon","3as_ARC_Missile_AA","weapon_AMRAAMLauncher","CMFlareLauncher"};
-		magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_C_x2","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells"};
+		weapons[] += {"JA_104th_AA_Lazer","3as_V19_Medium_Cannon","3as_ARC_Missile_AA","weapon_AMRAAMLauncher","CMFlareLauncher"};
+		magazines[] += {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","3as_PylonMissile_ARC_2Rnd_Missile_AA","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_C_x2","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells","3as_V19_800Rnd_Medium_shells"};
 		class TextureSources
 		{
 			class ME
@@ -4210,8 +4210,8 @@ class cfgVehicles
 		memoryPointDriverOptics = "gunner1";
 		unitInfoType = "RscOptics_CAS_Pilot";
 		driverWeaponsInfoType = "RscOptics_CAS_01_TGP";
-		weapons[] = {"OPTRE_M638", "CMFlareLauncher", "Laserdesignator_pilotCamera"};
-		magazines[] = {"OPTRE_2000Rnd_20mm_HE", "OPTRE_2000Rnd_20mm_HE", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+		weapons[] += {"OPTRE_M638", "CMFlareLauncher", "Laserdesignator_pilotCamera"};
+		magazines[] += {"OPTRE_2000Rnd_20mm_HE", "OPTRE_2000Rnd_20mm_HE", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 		class Components
 		{
 			class TransportPylonsComponent
@@ -4844,8 +4844,8 @@ class cfgVehicles
 		side = 1;
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		weapons[] = {"CMFlareLauncher", "OPTRE_missiles_Anvil1", "Laserdesignator_pilotCamera"};
-		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+		weapons[] += {"CMFlareLauncher", "OPTRE_missiles_Anvil1", "Laserdesignator_pilotCamera"};
+		magazines[] += {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -5075,8 +5075,8 @@ class cfgVehicles
 		stallSpeed = 0;
 
 		armor = 550;
-		weapons[] = {"Laserdesignator_pilotCamera", "CMFlareLauncher", "212th_YWing_Voltic_Cannon", "JA_104th_AA_Lazer", "212th_A2A_MissileSystem", "212th_WGM_MissileSystem", "212th_Gizka_Bomb_ReleaseSystem"};
-		magazines[] = {"Laserbatteries", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag"};
+		weapons[] += {"Laserdesignator_pilotCamera", "CMFlareLauncher", "212th_YWing_Voltic_Cannon", "JA_104th_AA_Lazer", "212th_A2A_MissileSystem", "212th_WGM_MissileSystem", "212th_Gizka_Bomb_ReleaseSystem"};
+		magazines[] += {"Laserbatteries", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -6858,8 +6858,8 @@ class cfgVehicles
 		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = 2+4+8+16;
 		incomingMissileDetectionSystem = 2+4+8+16;
-		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
-		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+		weapons[] += {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
+		magazines[] += {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 		airBrakeFrictionCoef = 75;
 
 		class Turrets
@@ -6911,8 +6911,8 @@ class cfgVehicles
 				stabilizedInAxes = 3;
 				startEngine = 0;
 				turretInfoType = "RscOptics_VTOL_02_gunner";
-				magazines[] = {"212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "Laserbatteries"};
-				weapons[] = {"212th_YWing_Voltic_Cannon", "Laserdesignator_mounted"};
+				magazines[] += {"212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "Laserbatteries"};
+				weapons[] += {"212th_YWing_Voltic_Cannon", "Laserdesignator_mounted"};
 				class OpticsIn
 				{
 					class Wide
@@ -7492,8 +7492,8 @@ class cfgVehicles
 		visionMode[] = {"Normal", "NVG", "Ti"};
 		LockDetectionSystem = 2+4+8+16;
 		incomingMissileDetectionSystem = 2+4+8+16;
-		weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
-		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+		weapons[] += {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
+		magazines[] += {"168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 		airBrakeFrictionCoef = 75;
 		class Turrets
 		{
@@ -7544,8 +7544,8 @@ class cfgVehicles
 				stabilizedInAxes = 3;
 				startEngine = 0;
 				turretInfoType = "RscOptics_VTOL_02_gunner";
-				magazines[] = {"212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "Laserbatteries"};
-				weapons[] = {"212th_YWing_Voltic_Cannon", "Laserdesignator_mounted"};
+				magazines[] += {"212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "Laserbatteries"};
+				weapons[] += {"212th_YWing_Voltic_Cannon", "Laserdesignator_mounted"};
 				class OpticsIn
 				{
 					class Wide
@@ -8185,8 +8185,8 @@ class cfgVehicles
 		cargoGetInAction[] = {"GetInHigh"};
 		cargoGetOutAction[] = {"GetOutHigh"};
 		textureList[] = {"Tex_Uwing_blue", 1, "Tex_Uwing_white", 1, "Tex_Uwing_rogue", 1, "Tex_Uwing_anvil", 1, "Tex_Uwing_NRearly", 1, "Tex_Uwing_CavernAngels", 1};
-		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
-		magazines[] = {"ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "Laserbatteries", "Pylon_FC_Dropcrate_P_1rnd", "Pylon_FC_Dropcrate_P_1rnd", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] += {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "CMFlareLauncher"};
+		magazines[] += {"ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "Laserbatteries", "Pylon_FC_Dropcrate_P_1rnd", "Pylon_FC_Dropcrate_P_1rnd", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -9360,8 +9360,8 @@ class cfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
-				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+				weapons[] += {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] += {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 				gunnerName = "Gunner";
 			};
 		};
@@ -10572,28 +10572,28 @@ class cfgVehicles
 		};
 		class Turrets: Turrets{
 			class Turret_Low: Turret_Low{
-				weapons[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_10","Laserdesignator_mounted"};
-				magazines[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","Laserbatteries"};
+				weapons[] += {"JA_104th_Heavy_Assault_Ship_Siegecannon_10","Laserdesignator_mounted"};
+				magazines[] += {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10","Laserbatteries"};
 				gunnerUsesPilotView = 1;
 			};
 			class Turret_Left: Turret_Left{
-				weapons[] = {"Laserdesignator_mounted","JA_104th_Heavy_Assault_AA_Ship_2500"};
-				magazines[] = {"Laserbatteries","JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
+				weapons[] += {"Laserdesignator_mounted","JA_104th_Heavy_Assault_AA_Ship_2500"};
+				magazines[] += {"Laserbatteries","JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
 				gunnerUsesPilotView = 1;
 			};
 			class Turret_Right: Turret_Right{
-				weapons[] = {"Laserdesignator_mounted","JA_104th_Heavy_Assault_AA_Ship_2500"};
-				magazines[] = {"Laserbatteries","JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
+				weapons[] += {"Laserdesignator_mounted","JA_104th_Heavy_Assault_AA_Ship_2500"};
+				magazines[] += {"Laserbatteries","JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
 				gunnerUsesPilotView = 1;
 			};
 			class Turret_Left1:  Turret_Left1{
-				weapons[] = {"Laserdesignator_mounted"};
-				magazines[] = {"Laserbatteries"};
+				weapons[] += {"Laserdesignator_mounted"};
+				magazines[] += {"Laserbatteries"};
 				gunnerUsesPilotView = 1;
 			};
 			class Turret_Right1: Turret_Right1{
-				weapons[] = {"Laserdesignator_mounted"};
-				magazines[] = {"Laserbatteries"};
+				weapons[] += {"Laserdesignator_mounted"};
+				magazines[] += {"Laserbatteries"};
 				gunnerUsesPilotView = 1;
 			};
 		};
@@ -10703,12 +10703,12 @@ class CfgWeapons
 
 	class ls_weapon_laati_turret_50mm_ap;
 	class ls_laat_gun_2_104th : ls_weapon_laati_turret_50mm_ap{
-		magazines[] = {"ls_magazine_50mm_200Rnd_APFSDS_green_104th"};
+		magazines[] += {"ls_magazine_50mm_200Rnd_APFSDS_green_104th"};
 	};
 	class ls_aat_127;
 	class ls_127_blue_104th : ls_aat_127{
 
-		magazines[] = {"ls_500Rnd_127x99_mag_blue_104th"};
+		magazines[] += {"ls_500Rnd_127x99_mag_blue_104th"};
 	};
 	class ls_gar_engineerNCO_vest;
 	class JA_104th_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest{
@@ -10762,7 +10762,7 @@ class CfgWeapons
 	class JA_104th_guided_resupply_pod_launcher : GBU12BombLauncher{
 		displayName = "Supply Pod";
 		descriptionShort = "Guided Resupply Pod Launcher";
-		magazines[] = {"JA_104th_Guided_Resupply_Magazine"};
+		magazines[] += {"JA_104th_Guided_Resupply_Magazine"};
 		class EventHandlers
 		{
 			// fired = "hint 'Fired eventhandler called'";

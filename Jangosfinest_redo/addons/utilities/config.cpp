@@ -3,10 +3,10 @@
 class DefaultEventhandlers;
 class CfgPatches
 {
-    class ADDON
+    class Jangos_Armory_Utilities
     {
         author = "Jango's Finest";
-        units[] = {
+        units[] += {
             "JA_104th_Civilian_Thropie_System_SR",
             "JA_104th_Civilian_Thropie_System_LR",
             "JA_104th_BlueFor_Thropie_System_SR",
@@ -26,7 +26,7 @@ class CfgPatches
             "JA_104th_OpFor_Spawner_ls_vehicle_hmp",
             "JA_104th_OpFor_Spawner_3AS_MAF_Gunship_F"
         }; // All the new vehicles/units you've created in cfgVehicles
-        weapons[] = {};
+        weapons[] += {};
         requiredVersion = 0.1;
         requiredAddons[] = {};
     };

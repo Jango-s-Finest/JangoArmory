@@ -2,9 +2,9 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Vehicles
 	{
-		units[] = {
+		units[] += {
 			"ls_vehicle_barc",
 			"Car_F",
 			"Tank",
@@ -16,7 +16,7 @@ class CfgPatches
 			"JA_104th_LAAT",
 			"JA_104th_LAAT_AB"
 		}; // All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {};
+		weapons[] += {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};
@@ -159,8 +159,8 @@ class cfgVehicles
 		fuelCapacity = 4000;
 		ls_impulsor_fuelDrain_1 = 0.000005;
 		ls_impulsor_fuelDrain_2 = 0.000015;
-		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "ls_weapon_CMFlareLauncher"};
-		magazines[] = {
+		weapons[] += {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "ls_weapon_CMFlareLauncher"};
+		magazines[] += {
 			"ls_magazine_50mm_200Rnd_HE_green",
 			"ls_magazine_50mm_200Rnd_HE_green",
 			"ls_magazine_50mm_200Rnd_HE_green",
@@ -1132,8 +1132,8 @@ class cfgVehicles
 				memoryPointLMissile = "RocketL";
 				memoryPointRMissile = "RocketR";
 				selectionFireAnim = "zasleh_b";
-				weapons[] = {"ls_weapon_laati_turret_50mm_he"};
-				magazines[] = {"ls_magazine_50mm_200Rnd_HE_green","ls_magazine_50mm_200Rnd_HE_green"};
+				weapons[] += {"ls_weapon_laati_turret_50mm_he"};
+				magazines[] += {"ls_magazine_50mm_200Rnd_HE_green","ls_magazine_50mm_200Rnd_HE_green"};
 				gunBeg = "konec hlavne b";
 				gunEnd = "usti hlavne b";
 				memoryPointGun = "konec hlavne b";
@@ -1738,8 +1738,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -2115,8 +2115,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -2492,8 +2492,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -2869,8 +2869,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -3246,8 +3246,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -3623,8 +3623,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -4000,8 +4000,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -4377,8 +4377,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -4754,8 +4754,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -5131,8 +5131,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -5508,8 +5508,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -5885,8 +5885,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -6262,8 +6262,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -6639,8 +6639,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -7016,8 +7016,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -7393,8 +7393,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -7770,8 +7770,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -8147,8 +8147,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -8524,8 +8524,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -8901,8 +8901,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] += {};
+				magazines[] += {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;

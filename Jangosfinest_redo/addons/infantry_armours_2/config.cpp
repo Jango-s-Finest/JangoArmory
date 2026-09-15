@@ -2,12 +2,12 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Infantry
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
+		units[] += {
 			"JA_104th_Poet_old",
 			"JA_104th_Boris",
 			"JA_104th_Lax",
@@ -39,7 +39,7 @@ class CfgPatches
 			"JA_104th_Aiomi",
 			"JA_104th_Dragon"
 		};
-		weapons[] = {
+		weapons[] += {
 			"JA_104th_Poet_Uniform_old",
 			"JA_104th_Lax_Uniform",
 			"JA_104th_Skipps_Uniform",

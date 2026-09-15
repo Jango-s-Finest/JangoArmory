@@ -115,7 +115,7 @@
 /// Sides
 ///////////////////////////////////////////////////////////////////////////
 
-//--- BLUFOR
+//--- blufor
 #define Map_BLUFOR_R                                "(profilenamespace getVariable ['Map_BLUFOR_R',0])"
 #define Map_BLUFOR_G                                "(profilenamespace getVariable ['Map_BLUFOR_G',1])"
 #define Map_BLUFOR_B                                "(profilenamespace getVariable ['Map_BLUFOR_B',1])"
@@ -123,7 +123,7 @@
 #define Map_BLUFOR_RGB                              Map_BLUFOR_R,    Map_BLUFOR_G,    Map_BLUFOR_B
 #define Map_BLUFOR_RGBA                             {Map_BLUFOR_RGB,Map_BLUFOR_A}
 
-//--- OPFOR
+//--- opfor
 #define Map_OPFOR_R                                 "(profilenamespace getVariable ['Map_OPFOR_R',0])"
 #define Map_OPFOR_G                                 "(profilenamespace getVariable ['Map_OPFOR_G',1])"
 #define Map_OPFOR_B                                 "(profilenamespace getVariable ['Map_OPFOR_B',1])"
@@ -131,7 +131,7 @@
 #define Map_OPFOR_RGB                               Map_OPFOR_R,    Map_OPFOR_G,    Map_OPFOR_B
 #define Map_OPFOR_RGBA                              {Map_OPFOR_RGB,Map_OPFOR_A}
 
-//--- Independent
+//--- independent
 #define Map_Independent_R                           "(profilenamespace getVariable ['Map_Independent_R',0])"
 #define Map_Independent_G                           "(profilenamespace getVariable ['Map_Independent_G',1])"
 #define Map_Independent_B                           "(profilenamespace getVariable ['Map_Independent_B',1])"
@@ -139,7 +139,7 @@
 #define Map_Independent_RGB                         Map_Independent_R,    Map_Independent_G,    Map_Independent_B
 #define Map_Independent_RGBA                        {Map_Independent_RGB,Map_Independent_A}
 
-//--- Civilian
+//--- civilian
 #define Map_Civilian_R                              "(profilenamespace getVariable ['Map_Civilian_R',0])"
 #define Map_Civilian_G                              "(profilenamespace getVariable ['Map_Civilian_G',1])"
 #define Map_Civilian_B                              "(profilenamespace getVariable ['Map_Civilian_B',1])"

@@ -1,10 +1,10 @@
 #include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Melee
 	{
 		units[]={};
-		weapons[] = {
+		weapons[] += {
 			"IMS_NewCoolMeleeWeapon"
 		};
 		requiredVersion=0.1;

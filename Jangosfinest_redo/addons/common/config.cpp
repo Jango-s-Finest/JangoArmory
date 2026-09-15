@@ -2,12 +2,12 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON // Texture Path Fix Req
+	class Jangos_Armory_Common // Texture Path Fix Req
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
+		units[] += {
 			"JA_LGC_Quick",
 			"JA_332nd_Chich",
 			"JA_Cadet_Yellow1",
@@ -32,7 +32,7 @@ class CfgPatches
 			"JA_Cadet_Green5",
 			"JA_Keeli_Tugz"
 		};
-		weapons[] = {
+		weapons[] += {
 			"ls_gar_airborne_vest",
 			"ls_gar_airborneNCO_vest",
 			"ls_gar_airborneOfficer_vest",

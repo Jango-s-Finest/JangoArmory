@@ -7,7 +7,7 @@
 
 #define DGVAR(varName)    if(isNil "ACE_DEBUG_NAMESPACE") then { ACE_DEBUG_NAMESPACE = []; }; if(!(QUOTE(GVAR(varName)) in ACE_DEBUG_NAMESPACE)) then { PUSH(ACE_DEBUG_NAMESPACE, QUOTE(GVAR(varName))); }; GVAR(varName)
 #define DVAR(varName)     if(isNil "ACE_DEBUG_NAMESPACE") then { ACE_DEBUG_NAMESPACE = []; }; if(!(QUOTE(varName) in ACE_DEBUG_NAMESPACE)) then { PUSH(ACE_DEBUG_NAMESPACE, QUOTE(varName)); }; varName
-#define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
+#define DFUNC(var1) TRIPLES(Jangos_Armory,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
 #undef QFUNC
@@ -145,7 +145,7 @@
 #define MRAD_TO_DEG(d) ((d) / 17.45329252) // Conversion factor: 9 / (50 * PI)
 #define MOA_TO_RAD(d) ((d) * 0.00029088) // Conversion factor: PI / 10800
 
-#define ZEUS_ACTION_CONDITION ([_target, {QUOTE(QUOTE(ADDON)) in curatorAddons _this}, missionNamespace, QUOTE(QGVAR(zeusCheck)), 1E11, 'ace_interactMenuClosed'] call EFUNC(common,cachedCall))
+#define ZEUS_ACTION_CONDITION ([_target, {QUOTE(QUOTE(Jangos_Armory)) in curatorAddons _this}, missionNamespace, QUOTE(QGVAR(zeusCheck)), 1E11, 'ace_interactMenuClosed'] call EFUNC(common,cachedCall))
 
 #define SUBSKILLS ["aimingAccuracy", "aimingShake", "aimingSpeed", "spotDistance", "spotTime", "courage", "reloadSpeed", "commanding", "general"]
 
@@ -153,8 +153,8 @@
 #define ACE_PATCH_NOT_LOADED(NAME,CAUSE) \
 class CfgPatches { \
     class DOUBLES(NAME,notLoaded) { \
-        units[] = {}; \
-        weapons[] = {}; \
+        units[] += {}; \
+        weapons[] += {}; \
         requiredVersion = REQUIRED_VERSION; \
         requiredAddons[] = {"ace_main"}; \
         VERSION_CONFIG; \

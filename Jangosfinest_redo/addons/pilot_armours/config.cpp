@@ -2,12 +2,12 @@
 #include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Pilot
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
+		units[] += {
 			"JA_104th_Base",
 			"JA_104th_Bail",
 			"JA_104th_Beef",
@@ -20,7 +20,7 @@ class CfgPatches
 			"JA_104th_Spirit",
 			"JA_104th_Boris"
 		};
-		weapons[] = {
+		weapons[] += {
 			"JA_104th_Base_Uniform",
 			"JA_104th_Bail_Uniform",
 			"JA_104th_Beef_Uniform",

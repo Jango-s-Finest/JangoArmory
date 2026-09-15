@@ -2,12 +2,12 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Airborne
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		weapons[] = {
+		weapons[] += {
 			"JA_104th_Kaleck_Helmet_old",
 			"JA_104th_Doc_Helmet",
 			"JA_104th_AB_Red_Helmet",
@@ -58,7 +58,7 @@ class CfgPatches
 			"JA_104th_Phoenix_Helmet",
 			"JA_104th_Skid_Helmet"
 		};
-		units[] = {};
+		units[] += {};
 	};
 };
 

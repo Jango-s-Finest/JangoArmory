@@ -1,12 +1,12 @@
 #include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Backpacks
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
+		units[] += {
 			"JA_104th_Backpack",
 			"JA_104th_Backpack_Invis",
 			"JA_104th_ARC_Backpack",
@@ -84,7 +84,7 @@ class CfgPatches
 			"JA_104th_Jumppack_JT12_Raider_4_LR",
 			"JA_104th_Jumppack_JT12_Raider_4"
 		};
-		weapons[] = {};
+		weapons[] += {};
 	};
 };
 

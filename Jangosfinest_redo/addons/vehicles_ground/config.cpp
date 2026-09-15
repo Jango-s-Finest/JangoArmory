@@ -2,9 +2,9 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Vehicles
 	{
-		units[] = {
+		units[] += {
 			"B_APC_Tracked_01_base_F",
 			"B_APC_Tracked_01_CRV_F",
 			"104th_MudHorn_tank_mobile",
@@ -27,7 +27,7 @@ class CfgPatches
 			"JA_104th_Ulik",
 			"JA_104th_AV7"
 		}; // All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {};
+		weapons[] += {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"3AS_ATTE"};
 	};
@@ -773,8 +773,8 @@ class cfgVehicles
 		side = 1;
 		forceInGarage = 1;
 		armor = 500;
-		weapons[] = {"SmokeLauncher","CMFlareLauncher"};
-		magazines[] = {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] += {"SmokeLauncher","CMFlareLauncher"};
+		magazines[] += {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
 		hiddenselectionstextures[] = {
 			"3as\3AS_ATTE\data\textures\3AS_ATTE_Shell_TCW_co.paa",
 			"3as\3AS_ATTE\data\textures\3AS_ATTE_Cockpit_co.paa",
@@ -847,16 +847,16 @@ class cfgVehicles
 		{
 			class MainTurretTop: MainTurretTop
 			{
-				weapons[] = {"JA_ATTE_Maingun_Cannon"};
-				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag","JA_ATTE_Maingun_HE_Mag"};
+				weapons[] += {"JA_ATTE_Maingun_Cannon"};
+				magazines[] += {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag","JA_ATTE_Maingun_HE_Mag"};
 			};
 			class MainTurretBack: MainTurretBack{
-				weapons[] = {"3AS_ATTE_Turret"};
-				magazines[] = {"3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells"};
+				weapons[] += {"3AS_ATTE_Turret"};
+				magazines[] += {"3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells"};
 			};
 			class MainTurretFront: MainTurretFront{
-				weapons[] = {"3AS_ATTE_Turret"};
-				magazines[] = {"3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells"};
+				weapons[] += {"3AS_ATTE_Turret"};
+				magazines[] += {"3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells"};
 			};
 		};
 		class ACE_SelfActions : ACE_SelfActions
@@ -1032,8 +1032,8 @@ class cfgVehicles
 		{
 			class MainTurretTop: MainTurretTop
 			{
-				weapons[] = {"JA_ATTE_Maingun_Cannon","SmokeLauncher"};
-				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag","SmokeLauncherMag"};
+				weapons[] += {"JA_ATTE_Maingun_Cannon","SmokeLauncher"};
+				magazines[] += {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag","SmokeLauncherMag"};
 			};
 			class MainTurretBottom: MainTurretBottom{
 			};
@@ -1116,8 +1116,8 @@ class cfgVehicles
 						memoryPointGun = "usti hlavne3";
 						gunBeg = "usti hlavne3";
 						gunEnd = "konec hlavne3";
-						weapons[] = {"3AS_Sabre_MG", "Laserdesignator_mounted"};
-						magazines[] = {"3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "Laserbatteries"};
+						weapons[] += {"3AS_Sabre_MG", "Laserdesignator_mounted"};
+						magazines[] += {"3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "Laserbatteries"};
 						turretInfoType = "RscWeaponRangeZeroing";
 						discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 						discreteDistanceInitIndex = 2;
@@ -1151,8 +1151,8 @@ class cfgVehicles
 				memoryPointGun = "usti hlavne"; //"usti hlavne2" is the MG port left of the gun, while "usti hlavne" is the end of the cannon barrel.
 				maxVerticalRotSpeed = 90/45;
 				maxHorizontalRotSpeed = 90/45;
-				weapons[] = {"JA_104th_HE_Lazer_Oryx", "JA_104th_AP_Lazer_Oryx", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "SmokeLauncher", "Laserdesignator_mounted"};
-				magazines[] = {"Laserbatteries", "JA_104th_HE_Lazer_Oryx_MAG_250", "JA_104th_AP_Lazer_Oryx_MAG_250", "JA_104th_HE_Lazer_Oryx_MAG_250", "JA_104th_AP_Lazer_Oryx_MAG_250", "JA_104th_HE_Lazer_Oryx_MAG_250", "JA_104th_AP_Lazer_Oryx_MAG_250", "JA_104th_HE_Lazer_Oryx_MAG_250", "JA_104th_AP_Lazer_Oryx_MAG_250", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
+				weapons[] += {"JA_104th_HE_Lazer_Oryx", "JA_104th_AP_Lazer_Oryx", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "SmokeLauncher", "Laserdesignator_mounted"};
+				magazines[] += {"Laserbatteries", "JA_104th_HE_Lazer_Oryx_MAG_250", "JA_104th_AP_Lazer_Oryx_MAG_250", "JA_104th_HE_Lazer_Oryx_MAG_250", "JA_104th_AP_Lazer_Oryx_MAG_250", "JA_104th_HE_Lazer_Oryx_MAG_250", "JA_104th_AP_Lazer_Oryx_MAG_250", "JA_104th_HE_Lazer_Oryx_MAG_250", "JA_104th_AP_Lazer_Oryx_MAG_250", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
 				minElev = -12;
 				maxElev = 60; // Original 35
 				initElev = 0;
@@ -1804,8 +1804,8 @@ class cfgVehicles
 		BNA_KC_shields_regenAmount = 1;
 		BNA_KC_shields_regenDelay = 20;
 		displayName = "[104th] Oryx IFV Command Shielded";
-		weapons[] = {"SmokeLauncher"};
-		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
+		weapons[] += {"SmokeLauncher"};
+		magazines[] += {"SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
 		armor = 1200;
 		armorStructural = 8;
 		explosionShielding = 2;
@@ -1833,8 +1833,8 @@ class cfgVehicles
 						memoryPointGun = "usti hlavne3";
 						gunBeg = "usti hlavne3";
 						gunEnd = "konec hlavne3";
-						weapons[] = {"3AS_Sabre_MG", "Laserdesignator_mounted"};
-						magazines[] = {"3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "Laserbatteries"};
+						weapons[] += {"3AS_Sabre_MG", "Laserdesignator_mounted"};
+						magazines[] += {"3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "Laserbatteries"};
 						turretInfoType = "RscWeaponRangeZeroing";
 						discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 						discreteDistanceInitIndex = 2;
@@ -1868,8 +1868,8 @@ class cfgVehicles
 				memoryPointGun = "usti hlavne"; //"usti hlavne2" is the MG port left of the gun, while "usti hlavne" is the end of the cannon barrel.
 				maxVerticalRotSpeed = 90/45;
 				maxHorizontalRotSpeed = 90/45;
-				weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "CMFlareLauncher", "Laserdesignator_mounted"};
-				magazines[] = {"Laserbatteries", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
+				weapons[] += {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] += {"Laserbatteries", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 				minElev = -12;
 				maxElev = 60; // Original 35
 				initElev = 0;
@@ -2081,8 +2081,8 @@ class cfgVehicles
 		armor = 500;
 		armorStructural = 10;
 		explosionShielding = 1.5;
-		weapons[] = {"SmokeLauncher"};
-		magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag"};
+		weapons[] += {"SmokeLauncher"};
+		magazines[] += {"SmokeLauncherMag", "SmokeLauncherMag"};
 		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet","CamoSlat"};
 		hiddenSelectionsTextures[] = {
 			QPATHTOEF(vehicles_ground,data\textures\Ulik_APC_Wheeled_02_ext_01_CO.paa),
@@ -2450,8 +2450,8 @@ class cfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
-				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+				weapons[] += {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] += {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 				gunnerName = "Gunner";
 			};
 			class CommanderOptics : CommanderOptics
@@ -2768,8 +2768,8 @@ class cfgVehicles
 		scopeCurator = 2;
 		class Turrets : Turrets{
 			class MainTurret : MainTurret{
-				magazines[] = {"3AS_32Rnd_300mm_Mo_shells","3AS_12Rnd_300mm_Mo_smoke","3AS_4Rnd_300mm_Mo_guided","3AS_4Rnd_300mm_Mo_LG","3AS_4Rnd_300mm_Mo_LG","3AS_12Rnd_300mm_Mo_mine","3AS_4Rnd_300mm_Mo_Cluster","3AS_4Rnd_300mm_Mo_Cluster","3AS_12Rnd_300mm_Mo_AT_mine","Arty_FC_Dropcrate_P_1rnd"};
-				weapons[] = {"JA_104th_AV7_300mm_AMOS"};
+				magazines[] += {"3AS_32Rnd_300mm_Mo_shells","3AS_12Rnd_300mm_Mo_smoke","3AS_4Rnd_300mm_Mo_guided","3AS_4Rnd_300mm_Mo_LG","3AS_4Rnd_300mm_Mo_LG","3AS_12Rnd_300mm_Mo_mine","3AS_4Rnd_300mm_Mo_Cluster","3AS_4Rnd_300mm_Mo_Cluster","3AS_12Rnd_300mm_Mo_AT_mine","Arty_FC_Dropcrate_P_1rnd"};
+				weapons[] += {"JA_104th_AV7_300mm_AMOS"};
 			};
 		};
 	};

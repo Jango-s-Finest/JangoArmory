@@ -2,14 +2,14 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Weapons
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {
+		units[] += {
 		};
-		weapons[] = {
+		weapons[] += {
 			"JA_104th_Spectre_RC_NVG",
 			"JA_104th_Spectre_RC_NVG_Antenna",
 			"JA_104th_P2_NVG_Irish",

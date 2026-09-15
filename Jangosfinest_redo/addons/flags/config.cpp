@@ -1,9 +1,9 @@
 #include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Flags
 	{
-		units[] = {
+		units[] += {
 			"JA_Flag_Carrier_WolfPack",
 			"JA_Flag_Carrier_Lancer",
 			"JA_Flag_Carrier_Cerberus_1_1",
@@ -13,7 +13,7 @@ class CfgPatches
 			"JA_Flag_Carrier_Warhawk_2_1",
 			"JA_Flag_Carrier_Warhawk_2_2"
 		}; // All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {
+		weapons[] += {
 			"JA_Flag_WolfPack",
 			"JA_Flag_Lancer",
 			"JA_Flag_Cerberus_1_1",

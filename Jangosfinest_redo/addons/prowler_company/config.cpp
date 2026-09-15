@@ -2,16 +2,16 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Prowler
 	{
 		author = "Jango's Finest";
-		units[] = {
+		units[] += {
 			"JA_104th_Base_P2_Prowler_NCO",
 			"JA_104th_Base_P2_Prowler_Officer",
 			"JA_104th_Base_P2_Prowler_Fenris",
 			"JA_104th_Base_P2_Prowler_Trooper",
 			"JA_104th_Base_P2_Prowler_Medic"};
-		weapons[] = {
+		weapons[] += {
 			"ls_gar_officer_vest",
 			"JA_Prowler_P2_Base_NCO_Helmet",
 			"JA_Prowler_P2_Base_NCO_Uniform",

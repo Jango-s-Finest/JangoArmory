@@ -2,10 +2,10 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Gash
 	{
 		author = "Jango's Finest";
-		units[] = {
+		units[] += {
 			"JA_104th_Captain_Tre_P1_Gash",
 			"JA_104th_Medic_P2_Gash",
 			"JA_104th_Base_P2_Gash",
@@ -14,7 +14,7 @@ class CfgPatches
 			"JA_104th_Lt_Bark_P2_Gash",
 			"JA_104th_Officer_P2_Gash",
 			"JA_104th_Base_BARC_Gash"};
-		weapons[] = {
+		weapons[] += {
 			"JA_Gash_P2_SGT_Dire_Uniform",
 			"JA_Gash_P2_SGT_Dire_Helmet",
 			"JA_Gash_P2_Lt_Bark_Uniform",

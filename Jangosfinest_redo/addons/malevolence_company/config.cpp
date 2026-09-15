@@ -2,15 +2,15 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-    class ADDON
+    class Jangos_Armory_Malevolence
     {
         author = "Jango's Finest";
-        units[] = {
+        units[] += {
             "JA_104th_Base_Malevolence",
             "JA_104th_Base_Malevolence_Medic",
             "JA_104th_Base_Malevolence_ARC"
         };
-        weapons[] = {
+        weapons[] += {
             "ls_gar_airborneOfficer_vest",
             "ls_gar_forceReconLieutenant_vest",
             "ls_gar_officer_vest",

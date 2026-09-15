@@ -2,13 +2,13 @@
 #include "\JA\jangos_Armory\addons\main\script_component.hpp"
 class CfgPatches
 {
-	class ADDON
+	class Jangos_Armory_Pilot
 	{
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {};
-		weapons[] = {
+		units[] += {};
+		weapons[] += {
 			"ls_gar_kama_vest",
 			"JA_104th_Cherryy_Pilot_officer_Vest",
 			"JA_104th_Fire_Pilot_officer_Vest"

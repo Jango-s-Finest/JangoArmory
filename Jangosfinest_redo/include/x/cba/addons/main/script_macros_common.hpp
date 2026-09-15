@@ -51,7 +51,7 @@
     #define MAINLOGIC main
 #endif
 
-#define ADDON DOUBLES(PREFIX,COMPONENT)
+#define Jangos_Armory DOUBLES(PREFIX,COMPONENT)
 #define MAIN_ADDON DOUBLES(PREFIX,main)
 
 /* -------------------------------------------
@@ -776,7 +776,7 @@ Author:
 #define CREATELOGICS(var1,var2) var1##_##var2 = ([sideLogic] call CBA_fnc_getSharedGroup) createUnit ["LOGIC", [0, 0, 0], [], 0, "NONE"]
 #define CREATELOGICLOCALS(var1,var2) var1##_##var2 = "LOGIC" createVehicleLocal [0, 0, 0]
 #define CREATELOGICGLOBALS(var1,var2) var1##_##var2 = ([sideLogic] call CBA_fnc_getSharedGroup) createUnit ["LOGIC", [0, 0, 0], [], 0, "NONE"]; publicVariable QUOTE(DOUBLES(var1,var2))
-#define CREATELOGICGLOBALTESTS(var1,var2) var1##_##var2 = ([sideLogic] call CBA_fnc_getSharedGroup) createUnit [QUOTE(DOUBLES(ADDON,logic)), [0, 0, 0], [], 0, "NONE"]
+#define CREATELOGICGLOBALTESTS(var1,var2) var1##_##var2 = ([sideLogic] call CBA_fnc_getSharedGroup) createUnit [QUOTE(DOUBLES(Jangos_Armory,logic)), [0, 0, 0], [], 0, "NONE"]
 
 #define GETVARS(var1,var2,var3) (var1##_##var2 getVariable #var3)
 #define GETVARMAINS(var1,var2) GETVARS(var1,MAINLOGIC,var2)
@@ -832,13 +832,13 @@ Author:
 #define PREP_SYS(var1,var2,var3) var1##_##var2##_fnc_##var3 = COMPILE_FILE_SYS(var1,var2,DOUBLES(fnc,var3))
 #define PREP_SYS2(var1,var2,var3,var4) var1##_##var2##_fnc_##var4 = COMPILE_FILE_SYS(var1,var3,DOUBLES(fnc,var4))
 
-#define LSTR(var1) TRIPLES(ADDON,STR,var1)
+#define LSTR(var1) TRIPLES(Jangos_Armory,STR,var1)
 
 #ifndef DEBUG_SETTINGS
     #define DEBUG_SETTINGS [false, true, false]
 #endif
 
-#define MSG_INIT QUOTE(Initializing: ADDON version: VERSION)
+#define MSG_INIT QUOTE(Initializing: Jangos_Armory version: VERSION)
 
 // *************************************
 // User Functions
@@ -888,7 +888,7 @@ Example:
 Author:
     Sickboy
 ------------------------------------------- */
-#define GVAR(var1) DOUBLES(ADDON,var1)
+#define GVAR(var1) DOUBLES(Jangos_Armory,var1)
 #define EGVAR(var1,var2) TRIPLES(PREFIX,var1,var2)
 #define QGVAR(var1) QUOTE(GVAR(var1))
 #define QEGVAR(var1,var2) QUOTE(EGVAR(var1,var2))
@@ -962,10 +962,10 @@ Author:
 //#define PREP(var1) PREP_SYS(PREFIX,COMPONENT_F,var1)
 
 #ifdef DISABLE_COMPILE_CACHE
-    #define PREP(var1) TRIPLES(ADDON,fnc,var1) = compile preProcessFileLineNumbers 'PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))'
+    #define PREP(var1) TRIPLES(Jangos_Armory,fnc,var1) = compile preProcessFileLineNumbers 'PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))'
     #define PREPMAIN(var1) TRIPLES(PREFIX,fnc,var1) = compile preProcessFileLineNumbers 'PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))'
 #else
-    #define PREP(var1) ['PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))', 'TRIPLES(ADDON,fnc,var1)'] call SLX_XEH_COMPILE_NEW
+    #define PREP(var1) ['PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))', 'TRIPLES(Jangos_Armory,fnc,var1)'] call SLX_XEH_COMPILE_NEW
     #define PREPMAIN(var1) ['PATHTO_SYS(PREFIX,COMPONENT_F,DOUBLES(fnc,var1))', 'TRIPLES(PREFIX,fnc,var1)'] call SLX_XEH_COMPILE_NEW
 #endif
 
@@ -1018,7 +1018,7 @@ Author:
     RECOMPILE;\
 }
 
-#define FUNC(var1) TRIPLES(ADDON,fnc,var1)
+#define FUNC(var1) TRIPLES(Jangos_Armory,fnc,var1)
 #define FUNCMAIN(var1) TRIPLES(PREFIX,fnc,var1)
 #define FUNC_INNER(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 #define EFUNC(var1,var2) FUNC_INNER(var1,var2)
@@ -1036,9 +1036,9 @@ Author:
 { \
     class PreloadAddons \
     { \
-        class ADDON \
+        class Jangos_Armory \
         { \
-            list[]={ QUOTE(ADDON) }; \
+            list[]={ QUOTE(Jangos_Armory) }; \
         }; \
     }; \
 }
@@ -1258,7 +1258,7 @@ Parameters:
     VARIABLE - Partial name of global variable owned by this component [Any].
 
 Example:
-    ADDON is CBA_Balls.
+    Jangos_Armory is CBA_Balls.
     (begin example)
         // Localized String (localize command must still be used with it)
         LSTRING(Example); // STR_CBA_Balls_Example;
@@ -1271,12 +1271,12 @@ Author:
 ------------------------------------------- */
 #ifndef STRING_MACROS_GUARD
 #define STRING_MACROS_GUARD
-    #define LSTRING(var1) QUOTE(TRIPLES(STR,ADDON,var1))
+    #define LSTRING(var1) QUOTE(TRIPLES(STR,Jangos_Armory,var1))
     #define ELSTRING(var1,var2) QUOTE(TRIPLES(STR,DOUBLES(PREFIX,var1),var2))
-    #define CSTRING(var1) QUOTE(TRIPLES($STR,ADDON,var1))
+    #define CSTRING(var1) QUOTE(TRIPLES($STR,Jangos_Armory,var1))
     #define ECSTRING(var1,var2) QUOTE(TRIPLES($STR,DOUBLES(PREFIX,var1),var2))
 
-    #define LLSTRING(var1) localize QUOTE(TRIPLES(STR,ADDON,var1))
+    #define LLSTRING(var1) localize QUOTE(TRIPLES(STR,Jangos_Armory,var1))
     #define LELSTRING(var1,var2) localize QUOTE(TRIPLES(STR,DOUBLES(PREFIX,var1),var2))
 #endif
 
@@ -1664,7 +1664,7 @@ Author:
 ------------------------------------------- */
 #define DEPRECATE_SYS(OLD_FUNCTION,NEW_FUNCTION) \
     OLD_FUNCTION = { \
-        WARNING('Deprecated function used: OLD_FUNCTION (new: NEW_FUNCTION) in ADDON'); \
+        WARNING('Deprecated function used: OLD_FUNCTION (new: NEW_FUNCTION) in Jangos_Armory'); \
         if (isNil "_this") then { call NEW_FUNCTION } else { _this call NEW_FUNCTION }; \
     }
 
@@ -1717,7 +1717,7 @@ Author:
 ------------------------------------------- */
 #define OBSOLETE_SYS(OLD_FUNCTION,COMMAND_CODE) \
     OLD_FUNCTION = { \
-        WARNING('Obsolete function used: (use: OLD_FUNCTION) in ADDON'); \
+        WARNING('Obsolete function used: (use: OLD_FUNCTION) in Jangos_Armory'); \
         if (isNil "_this") then { call COMMAND_CODE } else { _this call COMMAND_CODE }; \
     }
 
@@ -1748,8 +1748,8 @@ Author:
     OBSOLETE_SYS(DOUBLES(PREFIX,OLD_FUNCTION),COMMAND_CODE)
 
 #define BWC_CONFIG(NAME) class NAME { \
-        units[] = {}; \
-        weapons[] = {}; \
+        units[] += {}; \
+        weapons[] += {}; \
         requiredVersion = REQUIRED_VERSION; \
         requiredAddons[] = {}; \
         version = VERSION; \

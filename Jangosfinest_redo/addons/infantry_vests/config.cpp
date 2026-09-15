@@ -2,13 +2,13 @@
 #include "basicDefines_A3.hpp"
 class CfgPatches
 {
-    class ADDON
+    class Jangos_Armory_Infantry
     {
         author = "Jango's Finest";
         requiredVersion = 0.1;
         requiredAddons[] = {};
-        units[] = {};
-        weapons[] = {
+        units[] += {};
+        weapons[] += {
             "ls_sob_commando_sniper_vest",
             "ls_gar_airborne_vest",
             "ls_gar_kama_vest",

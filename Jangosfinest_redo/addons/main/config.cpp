@@ -2,11 +2,11 @@
 
 class CfgPatches
 {
-    class ADDON
+    class Jangos_Armory
     {
         name = COMPONENT_NAME;
-        units[] = {};
-        weapons[] = {};
+        units[] += {};
+        weapons[] += {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { };             // Addon dependencies
         authors[] = {                       // Authors
@@ -16,9 +16,9 @@ class CfgPatches
         VERSION_CONFIG;
     };
 
-    class XADDON: ADDON { // just in-case anything requires "acex_main"
-        units[] = {};
-        weapons[] = {};
+    class XADDON: Jangos_Armory { // just in-case anything requires "acex_main"
+        units[] += {};
+        weapons[] += {};
     };
 };
 
