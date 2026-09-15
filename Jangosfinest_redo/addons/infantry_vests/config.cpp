@@ -126,6 +126,10 @@ class CfgWeapons
     {
         class ItemInfo;
     };
+    class ls_gar_tacticalNCO_vest : ls_gar_airborne_vest
+    {
+        class ItemInfo;
+    };
     class ls_gar_tacticalOfficer_vest : ls_gar_airborne_vest
     {
         class ItemInfo;
@@ -1374,6 +1378,61 @@ class CfgWeapons
             };
         };
     };
+    class JA_104th_Lykos_NCO_Vest : ls_gar_tacticalNCO_vest
+    {
+        author = "Fish";
+        scope = 2;
+        displayName = "Clone Tactical NCO Vest (104th Lykos)";
+        hiddenSelections[] = {"camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Lykos_Accessories_Officer.paa),
+                QPATHTOEF(phantom_company,data\textures\104th_Accessories_Light_P2_Base.paa), 
+                QPATHTOEF(infantry_vests,data\textures\104th_P2_Lykos_Accessories_Heavy.paa)             // Heavy
+        };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalNCO_vest.p3d";
+            hiddenSelections[] = {"camo1","camo2","pauldron"};
+
+            class HitpointsProtectionInfo
+            {
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 6;
+                    passThrough = 0.3;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    
 };
 class CfgGlasses
 {

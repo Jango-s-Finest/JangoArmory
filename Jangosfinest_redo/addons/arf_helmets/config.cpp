@@ -138,7 +138,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th Achilles)";										 // the name it will be in game
 		hiddenSelections[] = {"camo1","camo2","visor"};
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Achilles_Helmet.paa),"",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_ARF_visor_co.paa)}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Achilles_Helmet.paa),"",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_ARF_visor_co.paa)};  // the file path to the texture
 	};
 	class JA_104th_Cyan_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -160,7 +160,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARF Helmet (104th Welty)";										 // the name it will be in game
 		hiddenSelections[] = {"camo1","camo2","visor"};
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Welty_Helmet.paa),"",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_ARF_visor_co.paa)}; // the file path to the texture
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Welty_Helmet.paa),"",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_ARF_visor_co.paa)};  // the file path to the texture
 	};
 	class JA_104th_Beans_Helmet : ls_gar_phase1Arf_helmet
 	{
@@ -212,7 +212,9 @@ class CfgWeapons
 		grad_slingHelmet_allow = true;
 
 		displayname = "Clone Trooper ARF Helmet (104th Woods)";										  // the name it will be in game
-		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Woods_Helmet.paa),"","\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"}; // the file path to the texture
+		hiddenSelections[] = {"camo1","camo2","visor"};
+		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+		hiddenSelectionsTextures[] = {QPATHTOEF(arf_helmets,data\textures\104th_ARF_Woods_Helmet.paa),"",QPATHTOEF(infantry_helmets_2,data\textures\Bacta_ARF_visor_co.paa)}; // the file path to the texture
 	};
 	class JA_104th_Woods_Helmet_ME : ls_gar_phase1Arf_helmet
 	{

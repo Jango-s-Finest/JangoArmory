@@ -436,7 +436,7 @@ class CfgWeapons
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {QPATHTOEF(airborne_helmets,data\textures\104th_AB_Grimmer_Helmet.paa),QPATHTOEF(airborne_helmets,data\textures\104th_AB_Grimmer_Helmet.paa)}; // the file path to the texture
 	};
-	class JA_104th_Artorias_Helmet : ls_gar_airborne_helmet
+	class JA_104th_Artorias_Helmet_old : ls_gar_airborne_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -544,6 +544,17 @@ class CfgWeapons
 		// don't change this
 		displayname = "Clone Trooper P1 Helmet (104th Bear)"; // the name it will be in game
 		hiddenSelectionsTextures[] = {QPATHTOEF(airborne_helmets,data\textures\104th_P1_Bear_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+		visionMode[] = {"Normal"};
+	};
+	class JA_104th_Artorias_Helmet : ls_gar_phase1_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = true;
+		// don't change this
+		displayname = "Clone Trooper P1 Helmet (104th Artorias)"; // the name it will be in game
+		hiddenSelectionsTextures[] = {QPATHTOEF(airborne_helmets,data\textures\104th_P1_Artorias_Helmet.paa),"\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
 		visionMode[] = {"Normal"};
 	};
 	class JA_104th_Granite_Helmet : ls_gar_phase1_helmet

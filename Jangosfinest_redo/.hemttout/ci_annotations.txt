@@ -1,4 +1,13 @@
 5||5||1||5||notice||Undefined variable `_veh`||undefined variable||/addons/FSN/freestyleScripts/dropNuke.sqf
+118||118||1||52||notice||Use `private _cap = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/mushroomcloud.sqf
+124||124||1||48||notice||Use `private _lifetime = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/mushroomcloud.sqf
+125||125||1||52||notice||Use `private _capLifetime = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/mushroomcloud.sqf
+161||161||1||9||notice||Use `private _h = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/mushroomcloud.sqf
+34||40||1||2||notice||Use `private _airMode = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/iniNuke.sqf
+56||56||1||41||notice||Use `private _radFallout = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/iniNuke.sqf
+8||8||1||27||notice||Use `private _blastPos = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/thermal50.sqf
+9||9||1||34||notice||Use `private _radius50thermal = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/thermal50.sqf
+35||35||1||60||notice||Use `private _allUnits = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/thermal50.sqf
 15||15||1||27||notice||Use `private _blastPos = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast20psi.sqf
 16||16||1||27||notice||Use `private _radius20 = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast20psi.sqf
 17||17||1||29||notice||Use `private _hideRadius = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast20psi.sqf
@@ -7,17 +16,6 @@
 31||31||1||151||notice||Use `private _allTrees = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast20psi.sqf
 32||32||1||68||notice||Use `private _allBuildings = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast20psi.sqf
 35||35||1||64||notice||Use `private _allVehicles = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast20psi.sqf
-118||118||1||52||notice||Use `private _cap = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/mushroomcloud.sqf
-124||124||1||48||notice||Use `private _lifetime = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/mushroomcloud.sqf
-125||125||1||52||notice||Use `private _capLifetime = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/mushroomcloud.sqf
-161||161||1||9||notice||Use `private _h = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/mushroomcloud.sqf
-8||8||1||27||notice||Use `private _blastPos = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/thermal50.sqf
-9||9||1||34||notice||Use `private _radius50thermal = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/thermal50.sqf
-35||35||1||60||notice||Use `private _allUnits = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/thermal50.sqf
-20||20||1||51||notice||Use `private _obj = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/blastwave.sqf
-34||40||1||2||notice||Use `private _airMode = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/iniNuke.sqf
-56||56||1||41||notice||Use `private _radFallout = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/iniNuke.sqf
-24||24||1||15||notice||Use `private _abort = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast5psi.sqf
 12||12||1||27||notice||Use `private _blastPos = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast1psi.sqf
 13||13||1||26||notice||Use `private _radius1 = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast1psi.sqf
 14||14||1||26||notice||Use `private _rad5psi = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast1psi.sqf
@@ -27,10 +25,12 @@
 25||25||1||67||notice||Use `private _allBuildings = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast1psi.sqf
 26||26||1||85||notice||Use `private _allVehicles = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast1psi.sqf
 27||27||1||58||notice||Use `private _allUnits = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast1psi.sqf
-7||7||1||22||notice||Use `private _pos = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/crater.sqf
-8||8||1||25||notice||Use `private _radius = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/crater.sqf
-31||31||1||51||notice||Use `private _obj = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/falloutParticle.sqf
-36||36||1||53||notice||Use `private _ring = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/falloutParticle.sqf
+24||24||1||15||notice||Use `private _abort = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/airblast5psi.sqf
 8||8||1||17||notice||Use `private _mode = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/freestyleNukeLaunched.sqf
 70||70||6||22||notice||Unoptimized `count` array comparison||unoptimized comparison||/addons/FSN/freestyleNuke/freestyleNukeLaunched.sqf
+7||7||1||22||notice||Use `private _pos = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/crater.sqf
+8||8||1||25||notice||Use `private _radius = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/crater.sqf
+20||20||1||51||notice||Use `private _obj = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/blastwave.sqf
 33||33||1||58||notice||Use `private _allUnits = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/radioation5000rem.sqf
+31||31||1||51||notice||Use `private _obj = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/falloutParticle.sqf
+36||36||1||53||notice||Use `private _ring = <value>` instead of declaring then assigning||assignment||/addons/FSN/freestyleNuke/falloutParticle.sqf

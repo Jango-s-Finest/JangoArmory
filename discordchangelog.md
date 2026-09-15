@@ -3,14 +3,24 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper JT12 LR (Freq)
-- Clone Trooper JT12 Ammo Bearer (Warhawk)
+- Clone Trooper P2 Helmet (104th Tanx)
+- Clone Trooper P1 Helmet (104th Artorias)
+- Clone Trooper Tactical NCO Vest (104th Lykos)
+- Clone Trooper Armor (104th Jesse)
 
 Changed Gear
 ------------------
-- Clone Trooper P2 Special Activities Helmet (104th Rust)
-- Clone Trooper armor (104th Rust)
-- Clone Trooper armor (104th Lax)
+- 104th RTO Mini Backpack (104th Lykos)
+- Clone Trooper P1 Special Activities Helmet (104th Lock)
+- Clone Trooper P2 Helmet (104th Skav)
+- Clone Trooper Armor (104th Skav)
+- Clone Trooper P2 Helmet (104th Jesse)
+- Clone Trooper Armor (104th Kage)
+- Clone Trooper AB Helmet (104th Skid)
+- Clone Trooper ARF Helmet (104th Woods)
+- Clone Trooper Armor (104th Woods)
+- Clone Trooper ARF Helmet (104th Achilles)
+- Clone Trooper ARF Helmet (104th Welty)
 
 Removed Gear
 ------------------
@@ -21,15 +31,7 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
-- [104th] Thermal Detonator
-- [104th] Smoke Grenade (White)
-- [104th] Smoke Grenade (Blue)
-- [104th] Smoke Grenade (Green)
-- [104th] Smoke Grenade (Purple)
-- [104th] Smoke Grenade (Red)
-- [104th] Smoke Grenade (Yellow)
-- [104th] Smoke Grenade (Orange)
-- [104th] Smoke Grenade (Black)
+-
 
 Changed Weapons & Attachments
 ------------------
@@ -48,7 +50,7 @@ New Vehicles & Supplies
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] Rho Class - Impusor / Repusor fix
+- [104th] LAAT/C - Impusor / Repusor fix
 
 Removed Vehicles & Supplies
 ------------------

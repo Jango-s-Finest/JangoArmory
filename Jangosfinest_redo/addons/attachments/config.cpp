@@ -297,6 +297,24 @@ class CfgWeapons
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
 	};
+	class JA_104th_SPC_NVG_Skav : lsd_gar_standardSPC_nvg
+	{
+		ace_nightvision_border = "";
+		author = "Cyan";
+		displayName = "Clone SPC NVG Visor (104th Skav)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				QPATHTOEF(attachments,data\textures\104th_P2_Skav_Medic_NVG.paa),
+			};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
 	class JA_104th_NVG_Rangefinder : lsd_gar_rangefinder_nvg
 	{
 		author = "Cyan";
