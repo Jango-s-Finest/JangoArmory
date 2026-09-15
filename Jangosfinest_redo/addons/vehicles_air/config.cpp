@@ -70,6 +70,7 @@ class cfgVehicles
 	class 3AS_Nu_REP_F;
 	class 3AS_Rho_REP_F;
 	class 3AS_Rep_LAS_Z6_F;
+	class 3AS_LAATC;
 
 	class JA_104th_Nu_class : 3AS_Nu_REP_F{
 		Author = "3AS + Dak";
@@ -460,6 +461,33 @@ class cfgVehicles
 			};
 		};
 
+	};
+	class JA_104th_LAATC : 3AS_LAATC{
+		Author = "3AS + Dak";
+		displayName = "[104th] LAAT/C";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+		crew = "JA_104th_P2_1C_Engineer";
+		tas_can_impulse = 0;
+		tas_max_impulse = 0;
+		tas_impulse_break = 0;
+		class ls_impulsor
+		{
+			enabled = 1;
+			speed = 400;
+			fuelDrain = 0.00005;
+			overchargeSpeed = 600;
+			overchargeFuelDrain = 0.00020;
+			overchargeCooldown = 60;
+			impulseSoundOn = "ls_impulseOn_laat";
+			impulseSoundOff = "ls_impulseOff_laat";
+			repulseSoundOn = "";
+			repulseSoundOff = "";
+		};
 	};
 	
 };

@@ -466,7 +466,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Clutch)";
+		displayName = "Clone Trooper armor (104th Riker)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -1266,7 +1266,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 1;
 		uniformClass = "JA_104th_Clutch_Uniform";
-		displayName = "104th Clutch";
+		displayName = "104th Riker";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};

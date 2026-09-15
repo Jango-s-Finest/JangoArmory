@@ -413,7 +413,7 @@ class CfgWeapons
     {
         author = "Emmet";
         scope = 2;
-        displayName = "Clone Airborne NCO Vest (104th Clutch)";
+        displayName = "Clone Airborne NCO Vest (104th Riker)";
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
         hiddenSelections[] =

@@ -255,7 +255,7 @@ class CfgWeapons
 		side = 1;
 		grad_slingHelmet_allow = true;
 		// don't change this
-		displayname = "Clone Trooper AB Helmet (104th Clutch)"; // the name it will be in game
+		displayname = "Clone Trooper AB Helmet (104th Riker)"; // the name it will be in game
 		subItems[] = {"Integrated_NVG_TI_0_F"};
 		hiddenSelectionsTextures[] = {QPATHTOEF(airborne_helmets,data\textures\104th_AB_Clutch_Helmet.paa),QPATHTOEF(airborne_helmets,data\textures\104th_AB_Clutch_Helmet.paa)}; // the file path to the texture
 	};

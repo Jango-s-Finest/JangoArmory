@@ -10177,13 +10177,13 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
-			class Spawn_3AS_LAATC
+			class Spawn_JA_104th_LAATC
 			{
-				displayName = "Spawn 3AS LAAT/C";
+				displayName = "Spawn 104th LAAT/C";
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this, '3AS_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = "[this, 'JA_104th_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
