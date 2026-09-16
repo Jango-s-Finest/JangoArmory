@@ -106,7 +106,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 1500] execVM 'JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
+            Init = "[_this select 0, 1500] execVM '\JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
         };
     };
     class JA_104th_Civilian_Thropie_System_LR : 3AS_CIS_Naval_Gun
@@ -127,7 +127,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 3000] execVM 'JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
+            Init = "[_this select 0, 3000] execVM '\JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
         };
     };
     class JA_104th_BlueFor_Thropie_System_SR : 3AS_CIS_Naval_Gun
@@ -148,7 +148,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 1500] execVM 'JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
+            Init = "[_this select 0, 1500] execVM '\JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
         };
     };
     class JA_104th_BlueFor_Thropie_System_LR : 3AS_CIS_Naval_Gun
@@ -169,7 +169,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 3000] execVM 'JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
+            Init = "[_this select 0, 3000] execVM '\JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
         };
     };
     class JA_104th_OpFor_Thropie_System_SR : 3AS_CIS_Naval_Gun
@@ -190,7 +190,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 1500] execVM 'JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
+            Init = "[_this select 0, 1500] execVM '\JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
         };
     };
     class JA_104th_OpFor_Thropie_System_LR : 3AS_CIS_Naval_Gun
@@ -211,7 +211,7 @@ class cfgVehicles
         armor = 200;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 3000] execVM 'JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
+            Init = "[_this select 0, 3000] execVM '\JA\jangos_Armory\addons\utilities\Scripts\DefenceSystem.sqf)';";
         };
     };
     class JA_104th_Civilian_Escape_Pods : OPTRE_EscapePod
@@ -232,7 +232,7 @@ class cfgVehicles
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this] execVM 'JA\jangos_Armory\addons\utilities\Scripts\EscapePods.sqf)';";
+				statement = "[this] execVM '\JA\jangos_Armory\addons\utilities\Scripts\EscapePods.sqf)';";
 				onlyforplayer = "false";
 				hideOnUse = 1;
 			};
@@ -256,7 +256,7 @@ class cfgVehicles
 				position = "pos cano";
 				radius = 15;
                 condition = "player in this";
-				statement = "[this] execVM 'JA\jangos_Armory\addons\utilities\Scripts\EscapePods.sqf)';";
+				statement = "[this] execVM '\JA\jangos_Armory\addons\utilities\Scripts\EscapePods.sqf)';";
 				onlyforplayer = "false";
 				hideOnUse = 1;
 			};
@@ -280,7 +280,7 @@ class cfgVehicles
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this] execVM 'JA\jangos_Armory\addons\utilities\Scripts\EscapePods.sqf)';";
+				statement = "[this] execVM '\JA\jangos_Armory\addons\utilities\Scripts\EscapePods.sqf)';";
 				onlyforplayer = "false";
 				hideOnUse = 1;
 			};
@@ -310,7 +310,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, '3AS_CIS_Vulture_AA_F', 10] execVM 'JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
+            Init = "[_this select 0, '3AS_CIS_Vulture_AA_F', 10] execVM '\JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
         };
     };
     class JA_104th_OpFor_Spawner_3AS_CIS_Vulture_F : 3AS_Droid_Dispenser_F
@@ -324,7 +324,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, '3AS_CIS_Vulture_F', 10] execVM 'JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
+            Init = "[_this select 0, '3AS_CIS_Vulture_F', 10] execVM '\JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
         };
     };
     class JA_104th_OpFor_Spawner_3AS_CIS_Vulture_CAS_F : 3AS_Droid_Dispenser_F
@@ -338,7 +338,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, '3AS_CIS_Vulture_CAS_F', 10] execVM 'JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
+            Init = "[_this select 0, '3AS_CIS_Vulture_CAS_F', 10] execVM '\JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
         };
     };
     class JA_104th_OpFor_Spawner_SFA_Vengeance_F : 3AS_Droid_Dispenser_F
@@ -352,7 +352,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 'SFA_Vengeance_F', 10] execVM 'JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
+            Init = "[_this select 0, 'SFA_Vengeance_F', 10] execVM '\JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
         };
     };
     class JA_104th_OpFor_Spawner_JA_104th_OpFor_Hyena_bomber : 3AS_Droid_Dispenser_F
@@ -366,7 +366,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 'JA_104th_OpFor_Hyena_bomber', 20] execVM 'JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
+            Init = "[_this select 0, 'JA_104th_OpFor_Hyena_bomber', 20] execVM '\JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
         };
     };
     class JA_104th_OpFor_Spawner_SFA_Dragonfly : 3AS_Droid_Dispenser_F
@@ -380,7 +380,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 'SFA_Dragonfly', 10] execVM 'JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
+            Init = "[_this select 0, 'SFA_Dragonfly', 10] execVM '\JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
         };
     };
     class JA_104th_OpFor_Spawner_ls_vehicle_hmp : 3AS_Droid_Dispenser_F
@@ -394,7 +394,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, 'ls_vehicle_hmp', 10] execVM 'JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
+            Init = "[_this select 0, 'ls_vehicle_hmp', 10] execVM '\JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
         };
     };
     class JA_104th_OpFor_Spawner_3AS_MAF_Gunship_F : 3AS_Droid_Dispenser_F
@@ -408,7 +408,7 @@ class cfgVehicles
         scopeCurator = 2;
         class EventHandlers : DefaultEventhandlers
         {
-            Init = "[_this select 0, '3AS_MAF_Gunship_F', 20] execVM 'JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
+            Init = "[_this select 0, '3AS_MAF_Gunship_F', 20] execVM '\JA\jangos_Armory\addons\utilities\Scripts\spawner.sqf)';";
         };
     };
 };

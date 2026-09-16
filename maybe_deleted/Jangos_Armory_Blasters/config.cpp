@@ -157,7 +157,7 @@ class CfgPatches
 			"JA_104_Personal_Shield_Body_Ammo",
         };
 
-        magazines[] += {
+        magazines[] = {
 
             "JA_104th_Weapons_Mags_10mw500",
             "JA_104th_Weapons_Mags_10mw40",
@@ -1002,7 +1002,7 @@ class CfgWeapons
         displayName = "[104th] High Energy Stun Mode";
         drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
         fireSpreadAngle = 0.95;
-        magazines[] += {"JLTS_stun_mag_short", "JLTS_stun_mag_long"};
+        magazines[] = {"JLTS_stun_mag_short", "JLTS_stun_mag_long"};
         magazineWell[] = {};
         maxZeroing = 50;
         reloadAction = "GestureReloadMX";
@@ -1051,7 +1051,7 @@ class CfgWeapons
         fireLightAmbient[] = {0, 0, 1};
         JLTS_hasElectronics = 0;
         JLTS_hasEMPProtection = 0;
-        magazines[] += {};
+        magazines[] = {};
         magazineWell[] = {};
         modes[] = {"Single", "Burst", "FullAuto"};
         drySound[] = {"swlw_rework\sounds\dc\DC_noAmmo.wss", 5, 1, 20};
@@ -1185,7 +1185,7 @@ class CfgWeapons
         fireLightAmbient[] = {0, 0, 1};
         JLTS_hasElectronics = 0;
         JLTS_hasEMPProtection = 0;
-        magazines[] += {};
+        magazines[] = {};
         magazineWell[] = {};
         modes[] = {"Single"};
         drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
@@ -1259,7 +1259,7 @@ class CfgWeapons
         ace_overpressure_priority = 1;
         ace_overpressure_range = 15;
         ace_reloadlaunchers_enabled = 1;
-        magazines[] += {};
+        magazines[] = {};
         magazineWell[] = {};
         modes[] = {"Single"};
         reloadAction = "ReloadRPG";
@@ -1309,7 +1309,7 @@ class CfgWeapons
     {
         author = "Jango's Armory Aux Team";
         modelSpecial = "";
-        magazines[] += {};
+        magazines[] = {};
         magazineWell[] = {};
         ace_overpressure_angle = 0;
         ace_overpressure_damage = 0;
@@ -3101,7 +3101,7 @@ class CfgWeapons
             muzzleEnd = "shotgun pos";
             muzzlePos = "shotgun dir";
             reloadMagazineSound[] = {"\SWLW_main\sounds\scatter_reload", 0.56234133, 1, 30};
-            magazines[] += {"3AS_8Rnd_EY30_Pellets"};
+            magazines[] = {"3AS_8Rnd_EY30_Pellets"};
             class Single : Mode_SemiAuto
             {
                 sounds[] = {"StandardSound"};
@@ -3385,7 +3385,7 @@ class CfgWeapons
        picture = "\3AS\3AS_Weapons\DC15SA\data\UI\3as_dc15sa.paa";
        reloadAction = "3AS_GestureReloadDualDC17S";
        reloadMagazineSound[] = {"3as\3AS_Main\Sounds\Reload\Venting_Sound.ogg",2,1,30};
-       magazines[] += {"BNA_KC_Mag_60Rnd_DC17_dualHP"};
+       magazines[] = {"BNA_KC_Mag_60Rnd_DC17_dualHP"};
    };
 
     // Dual DC17SA 3AS model LS class for Tusk

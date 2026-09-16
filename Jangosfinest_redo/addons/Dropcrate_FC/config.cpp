@@ -420,7 +420,7 @@ class CfgVehicles
 		};
         //class Eventhandlers
         //{
-            //Init = "[_this select 0] execVM 'JA\jangos_Armory\addons\Dropcrate_FC\Scripts\Spawn_menu.sqf';";
+            //Init = "[_this select 0] execVM '\JA\jangos_Armory\addons\Dropcrate_FC\Scripts\Spawn_menu.sqf';";
         //};
 	};
     class FC_Placeblecrate_104th: FC_Dropcrate_104th
@@ -468,7 +468,7 @@ class CfgAmmo
         hiddenSelectionsTextures[] = {"JA\jangos_Armory\addons\Dropcrate_FC\Data\crate_co.paa"};
         class Eventhandlers
         {
-            Init = "[_this select 0] execVM 'JA\jangos_Armory\addons\Dropcrate_FC\Scripts\grpl_fired.sqf';";
+            Init = "[_this select 0] execVM '\JA\jangos_Armory\addons\Dropcrate_FC\Scripts\grpl_fired.sqf';";
         };
         class Components
         {
@@ -566,7 +566,7 @@ class CfgWeapons
 			soundBegin[] = { "begin1", 1 };
 			weaponSoundEffect = "DefaultRifle";
 		};
-		magazines[] += { "Pylon_FC_Dropcrate_P_1rnd" };		
+		magazines[] = { "Pylon_FC_Dropcrate_P_1rnd" };		
 		salvo = 1;
         canLock = 2;
 		modes[] = {"LoalAltitude"};

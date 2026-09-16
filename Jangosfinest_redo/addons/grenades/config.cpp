@@ -570,40 +570,40 @@ class CfgWeapons{
 		};
         class JA_104th_Thermal_Detonator_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_Thermal_Detonator_Mag"};
+            magazines[] = {"JA_104th_Thermal_Detonator_Mag"};
         };
 
 		class JA_104th_White_Smoke_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_White_Smoke_Mag"};
+            magazines[] = {"JA_104th_White_Smoke_Mag"};
         };
 		class JA_104th_Blue_Smoke_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_Blue_Smoke_Mag"};
+            magazines[] = {"JA_104th_Blue_Smoke_Mag"};
         };
 		class JA_104th_Green_Smoke_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_Green_Smoke_Mag"};
+            magazines[] = {"JA_104th_Green_Smoke_Mag"};
         };
 		class JA_104th_Purple_Smoke_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_Purple_Smoke_Mag"};
+            magazines[] = {"JA_104th_Purple_Smoke_Mag"};
         };
 		class JA_104th_Red_Smoke_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_Red_Smoke_Mag"};
+            magazines[] = {"JA_104th_Red_Smoke_Mag"};
         };
 		class JA_104th_Yellow_Smoke_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_Yellow_Smoke_Mag"};
+            magazines[] = {"JA_104th_Yellow_Smoke_Mag"};
         };
 		class JA_104th_Orange_Smoke_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_Orange_Smoke_Mag"};
+            magazines[] = {"JA_104th_Orange_Smoke_Mag"};
         };
 		class JA_104th_Black_Smoke_ThrowMuzzle: ThrowMuzzle
         {
-            magazines[] += {"JA_104th_Black_Smoke_Mag"};
+            magazines[] = {"JA_104th_Black_Smoke_Mag"};
         };
 		
     };

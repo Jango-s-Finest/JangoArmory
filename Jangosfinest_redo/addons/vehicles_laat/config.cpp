@@ -159,8 +159,8 @@ class cfgVehicles
 		fuelCapacity = 4000;
 		ls_impulsor_fuelDrain_1 = 0.000005;
 		ls_impulsor_fuelDrain_2 = 0.000015;
-		weapons[] += {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "ls_weapon_CMFlareLauncher"};
-		magazines[] += {
+		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "ls_weapon_CMFlareLauncher"};
+		magazines[] = {
 			"ls_magazine_50mm_200Rnd_HE_green",
 			"ls_magazine_50mm_200Rnd_HE_green",
 			"ls_magazine_50mm_200Rnd_HE_green",
@@ -975,22 +975,22 @@ class cfgVehicles
 					class 104th_Blue : DefaultSkin
 					{
 						displayName = "104th Blue";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bg.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104bg.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_Logo : DefaultSkin
 					{
 						displayName = "104th Logo";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bgwp.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104bgwp.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_PloBro : DefaultSkin
 					{
 						displayName = "104th PloBro";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104bgpb.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104bgpb.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_MedEvac : DefaultSkin
 					{
 						displayName = "104th MedEvac";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104medic.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_medic2.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_medic.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_medic.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104medic.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\JA\jangos_Armory\addons\vehicles\data\textures\door1_co_medic2.paa']; _target setObjectTextureGlobal [3,'\JA\jangos_Armory\addons\vehicles\data\textures\door2_co_medic.paa']; _target setObjectTextureGlobal [4,'\JA\jangos_Armory\addons\vehicles\data\textures\door3_co_medic.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 				};
 				class Custom_Skins
@@ -999,37 +999,37 @@ class cfgVehicles
 					class 104th_Haze : DefaultSkin
 					{
 						displayName = "Haze";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Echo.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_echo.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104Echo.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\JA\jangos_Armory\addons\vehicles\data\textures\door1_co_echo.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_Beef : DefaultSkin
 					{
 						displayName = "Beef";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Beef.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104Beef.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_Bail : DefaultSkin
 					{
 						displayName = "Bail";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Bail.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104Bail.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_OD : DefaultSkin
 					{
 						displayName = "OD";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104OD.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104OD.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_Varelli : DefaultSkin
 					{
 						displayName = "Varelli";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Varelli.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104Varelli.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104bg.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_Fish : DefaultSkin
 					{
 						displayName = "Fish";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Fish.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Fish.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104Fish.paa']; _target setObjectTextureGlobal [1,'\ls\core\addons\vehicles_laati\data\body2_co.paa']; _target setObjectTextureGlobal [2,'\ls\core\addons\vehicles_laati\data\door1_co.paa']; _target setObjectTextureGlobal [3,'\ls\core\addons\vehicles_laati\data\door2_co.paa']; _target setObjectTextureGlobal [4,'\ls\core\addons\vehicles_laati\data\door3_co.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104Fish.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_Cherryy : DefaultSkin
 					{
 						displayName = "Cherryy";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\body1_co_104Cherryy.paa']; _target setObjectTextureGlobal [1,'JangosVehicles\data\textures\body2_co_104Cherryy.paa']; _target setObjectTextureGlobal [2,'JangosVehicles\data\textures\door1_co_104Cherryy.paa']; _target setObjectTextureGlobal [3,'JangosVehicles\data\textures\door2_co_104Cherryy.paa']; _target setObjectTextureGlobal [4,'JangosVehicles\data\textures\door3_co_104Cherryy.paa']; _target setObjectTextureGlobal [5,'JangosVehicles\data\textures\wings_co_104Cherryy.paa']; _target setObjectTextureGlobal [6,'JangosVehicles\data\textures\missiles_co_104Cherryy.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
+						statement = "_target setObjectTextureGlobal [0,'\JA\jangos_Armory\addons\vehicles\data\textures\body1_co_104Cherryy.paa']; _target setObjectTextureGlobal [1,'\JA\jangos_Armory\addons\vehicles\data\textures\body2_co_104Cherryy.paa']; _target setObjectTextureGlobal [2,'\JA\jangos_Armory\addons\vehicles\data\textures\door1_co_104Cherryy.paa']; _target setObjectTextureGlobal [3,'\JA\jangos_Armory\addons\vehicles\data\textures\door2_co_104Cherryy.paa']; _target setObjectTextureGlobal [4,'\JA\jangos_Armory\addons\vehicles\data\textures\door3_co_104Cherryy.paa']; _target setObjectTextureGlobal [5,'\JA\jangos_Armory\addons\vehicles\data\textures\wings_co_104Cherryy.paa']; _target setObjectTextureGlobal [6,'\JA\jangos_Armory\addons\vehicles\data\textures\missiles_co_104Cherryy.paa']; _target setObjectTextureGlobal [7,'\ls\core\addons\vehicles_laati\data\cockpits_co.paa']; _target setObjectTextureGlobal [8,'\ls\core\addons\vehicles_laati\data\glass_ca.paa']";
 					};
 					class 104th_Duce : DefaultSkin
 					{
@@ -1132,8 +1132,8 @@ class cfgVehicles
 				memoryPointLMissile = "RocketL";
 				memoryPointRMissile = "RocketR";
 				selectionFireAnim = "zasleh_b";
-				weapons[] += {"ls_weapon_laati_turret_50mm_he"};
-				magazines[] += {"ls_magazine_50mm_200Rnd_HE_green","ls_magazine_50mm_200Rnd_HE_green"};
+				weapons[] = {"ls_weapon_laati_turret_50mm_he"};
+				magazines[] = {"ls_magazine_50mm_200Rnd_HE_green","ls_magazine_50mm_200Rnd_HE_green"};
 				gunBeg = "konec hlavne b";
 				gunEnd = "usti hlavne b";
 				memoryPointGun = "konec hlavne b";
@@ -1738,8 +1738,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -2115,8 +2115,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -2492,8 +2492,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -2869,8 +2869,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -3246,8 +3246,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -3623,8 +3623,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -4000,8 +4000,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -4377,8 +4377,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -4754,8 +4754,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -5131,8 +5131,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -5508,8 +5508,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -5885,8 +5885,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -6262,8 +6262,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -6639,8 +6639,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -7016,8 +7016,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -7393,8 +7393,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -7770,8 +7770,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -8147,8 +8147,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -8524,8 +8524,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;
@@ -8901,8 +8901,8 @@ class cfgVehicles
 				animationSourceCamElev = "camElev";
 				gunnerType = "";
 				primaryObserver = 0;
-				weapons[] += {};
-				magazines[] += {};
+				weapons[] = {};
+				magazines[] = {};
 				soundServo[] = {"",0.00316228,1};
 				soundElevation[] = {"",0.00316228,1};
 				initElev = 0;

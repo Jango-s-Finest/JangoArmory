@@ -95,6 +95,8 @@ class CfgAmmo{
 		indirectHit = 50;
 		indirectHitRange = 3;
 		hit = 130;
+		aiAmmoUsageFlags = 256;
+		aiAmmoUsageFlagsStrict = 1;
 	};
 	class JA_104th_AP_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 10;
@@ -103,6 +105,7 @@ class CfgAmmo{
 		hit = 200;
 		explosionType = "";
 		explosive = 0;
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_HE_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 7;
@@ -110,6 +113,7 @@ class CfgAmmo{
 		indirectHitRange = 6;
 		hit = 100;
 		explosive = 0.9;
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_APHE_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 10;
@@ -117,6 +121,7 @@ class CfgAmmo{
 		indirectHitRange = 6;
 		hit = 100;
 		explosive = 0.5;
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	
 	class JA_LAAT_Drexl_Ammo: 212th_Drexl_A2A_Missile{
@@ -215,6 +220,7 @@ class CfgAmmo{
 		explosionType = "";
 		explosive = 0.1;
 		typicalSpeed = 1200;
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_HE_Lazer_Oryx_Ammo: JA_104th_AA_Lazer_Ammo{
 		caliber = 7;
@@ -223,6 +229,7 @@ class CfgAmmo{
 		hit = 100;
 		explosive = 0.9;
 		typicalSpeed = 1200;
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_AGM_88_M : FIR_AGM88{
 		model = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
@@ -264,7 +271,7 @@ class CfgAmmo{
         hiddenSelectionsTextures[] = {"JA\jangos_Armory\addons\Dropcrate_FC\Data\crate_co.paa"};
         class Eventhandlers
         {
-            Init = "[_this select 0] execVM 'JA\jangos_Armory\addons\Dropcrate_FC\Scripts\grpl_fired.sqf';";
+            Init = "[_this select 0] execVM '\JA\jangos_Armory\addons\Dropcrate_FC\Scripts\grpl_fired.sqf';";
         };
         class Components
         {
@@ -545,7 +552,7 @@ class CfgWeapons{
 
 	class JA_104th_AA_Lazer : 3AS_Vwing_Medium_Cannon{
 		displayName = "Air Superiority laser";
-		magazines[] += {"JA_104th_AA_Lazer_MAG_500"};
+		magazines[] = {"JA_104th_AA_Lazer_MAG_500"};
 		modes[] = {"manual"};
 		class manual{
 			burst = 1;
@@ -605,7 +612,7 @@ class CfgWeapons{
 	};
 	class JA_104th_AP_Lazer : 3AS_Vwing_Medium_Cannon{
 		displayName = "AP laser";
-		magazines[] += {"JA_104th_AP_Lazer_MAG_250"};
+		magazines[] = {"JA_104th_AP_Lazer_MAG_250"};
 		modes[] = {"manual"};
 		class manual{
 			burst = 1;
@@ -665,7 +672,7 @@ class CfgWeapons{
 	};
 	class JA_104th_HE_Lazer : 3AS_Vwing_Medium_Cannon{
 		displayName = "HE laser";
-		magazines[] += {"JA_104th_HE_Lazer_MAG_250"};
+		magazines[] = {"JA_104th_HE_Lazer_MAG_250"};
 		modes[] = {"manual"};
 		class manual{
 			burst = 1;
@@ -726,7 +733,7 @@ class CfgWeapons{
 	class JA_104th_AP_Lazer_Oryx  : 3AS_Vwing_Medium_Cannon{
 		displayName = "AP laser";
 		ballisticsComputer = 2 + 8 + 16;
-		magazines[] += {"JA_104th_AP_Lazer_Oryx_MAG_250"};
+		magazines[] = {"JA_104th_AP_Lazer_Oryx_MAG_250"};
 		muzzleEnd = "konec hlavne";
 		muzzlePos = "usti hlavne";
 		modes[] = {"manual"};
@@ -791,7 +798,7 @@ class CfgWeapons{
 	class JA_104th_HE_Lazer_Oryx : 3AS_Vwing_Medium_Cannon{
 		displayName = "HE laser";
 		ballisticsComputer = 2 + 8 + 16;
-		magazines[] += {"JA_104th_HE_Lazer_Oryx_MAG_250"};
+		magazines[] = {"JA_104th_HE_Lazer_Oryx_MAG_250"};
 		muzzleEnd = "konec hlavne";
 		muzzlePos = "usti hlavne";
 		modes[] = {"manual"};
@@ -856,7 +863,7 @@ class CfgWeapons{
 	};
 	class JA_104th_APHE_Lazer : 3AS_Vwing_Medium_Cannon{
 		displayName = "APHE laser";
-		magazines[] += {"JA_104th_APHE_Lazer_MAG_100"};
+		magazines[] = {"JA_104th_APHE_Lazer_MAG_100"};
 		modes[] = {"manual"};
 		class manual{
 			burst = 1;
@@ -916,23 +923,23 @@ class CfgWeapons{
 	};
 	
 	class JA_104th_AIM9X : FIR_AIM9X{
-		magazines[] += {"JA_LAAT_AIM9X"};
+		magazines[] = {"JA_LAAT_AIM9X"};
 	};
 	class JA_LAAT_AIM9X_BULLDOG : FIR_AIM9X{
 		displayName = "AIM-9X Bulldog";
-		magazines[] += {"JA_LAAT_AIM9X_BULLDOG_Mag"};
+		magazines[] = {"JA_LAAT_AIM9X_BULLDOG_Mag"};
 	};
 	class JA_104th_AIM120 : FIR_AIM120{
-		magazines[] += {"JA_LAAT_AIM120"};
+		magazines[] = {"JA_LAAT_AIM120"};
 	};
 
 	class JA_ATTE_Maingun_Cannon: 3AS_Mass_Driver_Cannon{
-		magazines[] += {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
+		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
 	};
 
 	class JA_104th_Heavy_Assault_Ship_2500 : TKE_Ext_PDC_30mm{
 		displayName = "HE laser";
-		magazines[] += {"JA_104th_Heavy_Assault_Ship_MAG_2500"};
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_2500"};
 		ballisticsComputer = 1 + 2 + 8 + 16;
 		modes[] = {"LowROF"};
 		class LowROF: LowROF{
@@ -946,7 +953,7 @@ class CfgWeapons{
 	};
 	class JA_104th_Heavy_Assault_AA_Ship_2500 : TKE_Ext_PDC_30mm{
 		displayName = "Air Superiority laser";
-		magazines[] += {"JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
+		magazines[] = {"JA_104th_Heavy_Assault_AA_Ship_MAG_2500"};
 		ballisticsComputer = 1 + 2 + 8 + 16;
 		modes[] = {"LowROF"};
 		class LowROF: LowROF{
@@ -959,7 +966,7 @@ class CfgWeapons{
 		};
 	};
 	class JA_104th_Heavy_Assault_Ship_400 : TKE_Ext_TwinCannon{
-		magazines[] += {"JA_104th_Heavy_Assault_Ship_MAG_400"};
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_MAG_400"};
 		ballisticsComputer = 1 + 2 + 8 + 16;
 		modes[] = {"player"};
 		class player: player{
@@ -970,18 +977,18 @@ class CfgWeapons{
 		};
 	};
 	class JA_104th_Heavy_Assault_Ship_RailGun_75 : TKE_Ext_Cannon_Railgun_Light{
-		magazines[] += {"JA_104th_Heavy_Assault_Ship_RailGun_MAG_75"};
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_RailGun_MAG_75"};
 		ballisticsComputer = 1 + 2 + 8 + 16;
 	};
 	class JA_104th_Heavy_Assault_Ship_Siegecannon_10 : 3AS_ATAP_Siege_Cannon{
-		magazines[] += {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10"};
+		magazines[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10"};
 		ballisticsComputer = 1 + 2 + 8 + 16;
 	};
 	class JA_104th_Drexl : 212th_A2A_MissileSystem{
-		magazines[] += {"JA_LAAT_Drexl"};
+		magazines[] = {"JA_LAAT_Drexl"};
 	};
 	class JA_104th_Brimstone : FIR_Brimstone{
-		magazines[] += {"JA_LAAT_Brimstone"};
+		magazines[] = {"JA_LAAT_Brimstone"};
 	};
 
 	class JA_104th_Z6_weaker : JA_104th_Z6{
@@ -1019,16 +1026,16 @@ class CfgWeapons{
 
 	class JA_104th_AGM_88 : FIR_AGM88{
 		initspeed = 30;
-		magazines[] += {"JA_104th_AGM_88_2rnd_M"};
+		magazines[] = {"JA_104th_AGM_88_2rnd_M"};
 	};
 	class JA_104th_GBU53 : FIR_GBU53{
 		initspeed = 30;
-		magazines[] += {"JA_104th_GBU53_6rnd_M"};
+		magazines[] = {"JA_104th_GBU53_6rnd_M"};
 	};
 	class 3AS_AV7_300mm_AMOS;
 	class JA_104th_AV7_300mm_AMOS: 3AS_AV7_300mm_AMOS
 	{
 		scope = 2;
-		magazines[] += {"3AS_32Rnd_300mm_Mo_shells","3AS_12Rnd_300mm_Mo_smoke","3AS_4Rnd_300mm_Mo_guided","3AS_4Rnd_300mm_Mo_LG","3AS_12Rnd_300mm_Mo_mine","3AS_4Rnd_300mm_Mo_Cluster","3AS_12Rnd_300mm_Mo_AT_mine","Arty_FC_Dropcrate_P_1rnd"};
+		magazines[] = {"3AS_32Rnd_300mm_Mo_shells","3AS_12Rnd_300mm_Mo_smoke","3AS_4Rnd_300mm_Mo_guided","3AS_4Rnd_300mm_Mo_LG","3AS_12Rnd_300mm_Mo_mine","3AS_4Rnd_300mm_Mo_Cluster","3AS_12Rnd_300mm_Mo_AT_mine","Arty_FC_Dropcrate_P_1rnd"};
 	};
 };

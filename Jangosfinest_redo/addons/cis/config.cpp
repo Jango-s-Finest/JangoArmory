@@ -189,19 +189,19 @@ class CfgWeapons
 	class ls_weapon_mercenarySniper_scoped;
 	class BNA_KC_AquaB2Blaster;
 	class JA_CIS_Weapon_E5 : ls_weapon_e5{
-		magazines[] += {"JA_CIS_Weapon_E5_Mag"};
+		magazines[] = {"JA_CIS_Weapon_E5_Mag"};
 		canShootInWater = 1;
 	};
 	class JA_CIS_Weapon_E5C : ls_weapon_e5c{
-		magazines[] += {"JA_CIS_Weapon_E5C_Mag"};
+		magazines[] = {"JA_CIS_Weapon_E5C_Mag"};
 		canShootInWater = 1;
 	};
 	class JA_CIS_Weapon_mercenarySniper : ls_weapon_mercenarySniper_scoped{
-		magazines[] += {"JA_CIS_Weapon_mercenarySniper_Mag"};
+		magazines[] = {"JA_CIS_Weapon_mercenarySniper_Mag"};
 		canShootInWater = 1;
 	};
 	class JA_CIS_Weapon_B2_Blaster : BNA_KC_AquaB2Blaster{
-		magazines[] += {"JA_CIS_Weapon_B2_Blaster_Mag"};
+		magazines[] = {"JA_CIS_Weapon_B2_Blaster_Mag"};
 		canShootInWater = 1;
 	};
 
@@ -315,8 +315,8 @@ class CfgVehicles
 		editorSubcategory = "104th_Categ_CIS_UW";
 		respawnMagazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		respawnWeapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
-		magazines[] += {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
-		weapons[] += {"JA_CIS_Weapon_E5","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
 	};
 	class JA_CIS_B1_Marksman_UnderWater : ls_droid_b1_marksman
 	{
@@ -330,8 +330,8 @@ class CfgVehicles
 		linkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
 		respawnMagazines[] = {"JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		respawnweapons[] = {"JA_CIS_Weapon_mercenarySniper","Throw","Put"};
-		magazines[] += {"JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
-		weapons[] += {"JA_CIS_Weapon_mercenarySniper","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","JA_CIS_Weapon_mercenarySniper_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_mercenarySniper","Throw","Put"};
 		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Upper.paa),QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Lower.paa)};
 		uniformClass = "JA_CIS_B1_Uniform";
 	};
@@ -356,8 +356,8 @@ class CfgVehicles
 		linkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
 		respawnMagazines[] = {"JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		respawnWeapons[] = {"JA_CIS_Weapon_E5C","Throw","Put"};
-		magazines[] += {"JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
-		weapons[] += {"JA_CIS_Weapon_E5C","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","JA_CIS_Weapon_E5C_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_E5C","Throw","Put"};
 		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Upper.paa),QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Lower.paa)};
 		uniformClass = "JA_CIS_B1_Uniform";
 	};
@@ -373,8 +373,8 @@ class CfgVehicles
 		linkedItems[] = {"JA_CIS_B1_Helmet","JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
 		respawnMagazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		respawnWeapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
-		magazines[] += {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
-		weapons[] += {"JA_CIS_Weapon_E5","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","JA_CIS_Weapon_E5_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_E5","Throw","Put"};
 		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Upper.paa),QPATHTOEF(cis,data\textures\104th_B1_Aquatic_Lower.paa)};
 		uniformClass = "JA_CIS_B1_Uniform";
 	};
@@ -391,8 +391,8 @@ class CfgVehicles
 		linkedItems[] = {"JA_104th_Invisible_Base_Rebreather_Uniform","ItemMap","ItemCompass","ItemGPS","ItemWatch","ls_radios_dcs"};
 		respawnMagazines[] = {"JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
 		respawnWeapons[] = {"JA_CIS_Weapon_B2_Blaster","Throw","Put"};
-		magazines[] += {"JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
-		weapons[] += {"JA_CIS_Weapon_B2_Blaster","Throw","Put"};
+		magazines[] = {"JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","JA_CIS_Weapon_B2_Blaster_Mag","SmokeShell","SmokeShell","Aux501_Weapons_Mags_Thermal_Detonator","Aux501_Weapons_Mags_Thermal_Detonator"};
+		weapons[] = {"JA_CIS_Weapon_B2_Blaster","Throw","Put"};
 		hiddenSelectionsTextures[] = {QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Arms.paa),QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Legs.paa),QPATHTOEF(cis,data\textures\104th_B2_Aquatic_Torso.paa)};
 		uniformClass = "JA_CIS_B2_Uniform";
 	};
@@ -415,7 +415,7 @@ class CfgVehicles
 		side = 0;
 		faction = "104th_Guys_CIS";
 		editorSubcategory = "104th_Categ_CIS";
-		weapons[] += {"ls_weapon_e5","ls_weapon_electrostaff_black","Throw","Put"};
+		weapons[] = {"ls_weapon_e5","ls_weapon_electrostaff_black","Throw","Put"};
 	};
 	class JA_CIS_BX_Commando : WBK_LS_BX_Sniper
 	{
@@ -933,7 +933,7 @@ class CfgVehicles
 			"JLTS_DroidBinocular",
 			"lsd_orsf_trooperAlt_vest",
 		};
-		magazines[] += {
+		magazines[] = {
 			"SWLW_Westar35S_Mag",
 			"SWLW_Westar35S_Mag",
 			"SWLW_Westar35S_Mag",
@@ -948,7 +948,7 @@ class CfgVehicles
 			"SWLW_Westar35S_scatter_Mag",
 			"SWLW_Westar35S_scatter_Mag",
 		};
-		weapons[] += {"ls_weapon_westar35s_primary", "Throw", "Put"};
+		weapons[] = {"ls_weapon_westar35s_primary", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Black_02 : O_Survivor_F
 	{
@@ -1021,7 +1021,7 @@ class CfgVehicles
 			"lsd_orsf_trooperAlt_vest", // vest
 			"OPTRE_UNSC_CH252D_Helmet"  // helmet
 		};
-		magazines[] += {
+		magazines[] = {
 			"JLTS_E5C_mag",
 			"JLTS_E5C_mag",
 			"JLTS_E5C_mag",
@@ -1034,7 +1034,7 @@ class CfgVehicles
 			"JLTS_E5C_mag",
 			"JLTS_E5C_mag",
 		};
-		weapons[] += {"JLTS_E5C_stock", "Throw", "Put"};
+		weapons[] = {"JLTS_E5C_stock", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Black_03 : O_Survivor_F
 	{
@@ -1114,7 +1114,7 @@ class CfgVehicles
 			"JLTS_DroidBinocular",
 			"lsd_orsf_trooperAlt_vest",
 		};
-		magazines[] += {
+		magazines[] = {
 			"SWLW_Westar35S_Mag",
 			"SWLW_Westar35S_Mag",
 			"SWLW_Westar35S_Mag",
@@ -1129,7 +1129,7 @@ class CfgVehicles
 			"SWLW_Westar35S_scatter_Mag",
 			"SWLW_Westar35S_scatter_Mag",
 		};
-		weapons[] += {"ls_weapon_westar35s_primary", "Throw", "Put"};
+		weapons[] = {"ls_weapon_westar35s_primary", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Black_04 : O_Survivor_F
 	{
@@ -1202,7 +1202,7 @@ class CfgVehicles
 			"lsd_orsf_trooperAlt_vest", // vest
 			"OPTRE_UNSC_CH252D_Helmet"  // helmet
 		};
-		magazines[] += {
+		magazines[] = {
 			"JLTS_RPS6_mag",
 			"JLTS_RPS6_mag",
 			"JLTS_RPS6_HE_mag",
@@ -1218,7 +1218,7 @@ class CfgVehicles
 			"JLTS_E5C_mag",
 			"JLTS_E5C_mag",
 		};
-		weapons[] += {"JLTS_E5C_stock", "JLTS_RPS6", "Throw", "Put"};
+		weapons[] = {"JLTS_E5C_stock", "JLTS_RPS6", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Black_05 : O_Survivor_F
 	{
@@ -1298,7 +1298,7 @@ class CfgVehicles
 			"JLTS_DroidBinocular",
 			"lsd_orsf_trooperAlt_vest",
 		};
-		magazines[] += {
+		magazines[] = {
 			"JLTS_DW32S_mag",
 			"JLTS_DW32S_mag",
 			"JLTS_DW32S_mag",
@@ -1313,7 +1313,7 @@ class CfgVehicles
 			"JLTS_stun_mag_short",
 			"JLTS_stun_mag_short",
 		};
-		weapons[] += {"JLTS_DW32S", "Throw", "Put"};
+		weapons[] = {"JLTS_DW32S", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Woods_01 : O_Survivor_F
 	{
@@ -1393,7 +1393,7 @@ class CfgVehicles
 			"JLTS_DroidBinocular",
 			"lsd_orsf_trooperAlt_vest",
 		};
-		magazines[] += {
+		magazines[] = {
 			"JLTS_E5C_mag",
 			"JLTS_E5C_mag",
 			"JLTS_E5C_mag",
@@ -1406,7 +1406,7 @@ class CfgVehicles
 			"JLTS_E5C_mag",
 			"JLTS_E5C_mag",
 		};
-		weapons[] += {"JLTS_E5C_stock", "Throw", "Put"};
+		weapons[] = {"JLTS_E5C_stock", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Woods_02 : O_Survivor_F
 	{
@@ -1479,7 +1479,7 @@ class CfgVehicles
 			"lsd_orsf_trooperAlt_vest", // vest
 			"H_HelmetSpecB_blk"		  // helmet
 		};
-		magazines[] += {
+		magazines[] = {
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
@@ -1492,7 +1492,7 @@ class CfgVehicles
 			"JLTS_E5_mag",
 			"JLTS_E5_mag",
 		};
-		weapons[] += {"JLTS_E5", "WBK_brush_axe", "Throw", "Put"};
+		weapons[] = {"JLTS_E5", "WBK_brush_axe", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Woods_03 : O_Survivor_F
 	{
@@ -1572,7 +1572,7 @@ class CfgVehicles
 			"JLTS_DroidBinocular",
 			"lsd_orsf_trooperAlt_vest",
 		};
-		magazines[] += {
+		magazines[] = {
 			"SWLW_westar35c_Mag",
 			"SWLW_westar35c_Mag",
 			"SWLW_westar35c_Mag",
@@ -1585,7 +1585,7 @@ class CfgVehicles
 			"SWLW_westar35c_Mag",
 			"SWLW_westar35c_Mag",
 		};
-		weapons[] += {"ls_weapon_westar35c_primary", "Throw", "Put"};
+		weapons[] = {"ls_weapon_westar35c_primary", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Woods_04 : O_Survivor_F
 	{
@@ -1658,7 +1658,7 @@ class CfgVehicles
 			"lsd_orsf_trooperAlt_vest", // vest
 			"H_HelmetB_light_black"	  // helmet
 		};
-		magazines[] += {
+		magazines[] = {
 			"SWLW_Westar35S_Mag",
 			"SWLW_Westar35S_Mag",
 			"SWLW_Westar35S_Mag",
@@ -1674,7 +1674,7 @@ class CfgVehicles
 			"SWLW_Westar35S_scatter_Mag",
 			"SWLW_Westar35S_scatter_Mag",
 		};
-		weapons[] += {"SWLW_Westar35S", "Throw", "Put"};
+		weapons[] = {"SWLW_Westar35S", "Throw", "Put"};
 	};
 	class JA_CIS_Man_Woods_05 : O_Survivor_F
 	{
@@ -1754,7 +1754,7 @@ class CfgVehicles
 			"JLTS_DroidBinocular",
 			"lsd_orsf_trooperAlt_vest",
 		};
-		magazines[] += {
+		magazines[] = {
 			"JLTS_DC15X_mag",
 			"JLTS_DC15X_mag",
 			"JLTS_DC15X_mag",
@@ -1767,7 +1767,7 @@ class CfgVehicles
 			"JLTS_DC15X_mag",
 			"JLTS_DC15X_mag",
 		};
-		weapons[] += {"JLTS_DC15X", "Throw", "Put"};
+		weapons[] = {"JLTS_DC15X", "Throw", "Put"};
 	};
 };
 

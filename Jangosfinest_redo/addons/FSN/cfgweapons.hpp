@@ -14,7 +14,7 @@ class CfgWeapons
 		nameSound = "";
 		cursor = "EmptyCursor";
 		cursorAim = "bomb";
-		magazines[] += {"FSN_B61_Nuclear_M"};
+		magazines[] = {"FSN_B61_Nuclear_M"};
 		modes[] = {"A", "B", "C", "D"};
 		burst = 0;
 		salvo=1;
@@ -75,7 +75,7 @@ class CfgWeapons
 	{
 		displayName = "B83 Nuclear Bomb";
 		displayNameMagazine = "B83 Nuclear Bomb";
-		magazines[] += {"FSN_B83_Nuclear_M"};
+		magazines[] = {"FSN_B83_Nuclear_M"};
 		modes[] = {"U", "V", "W", "X"};
 		burst = 0;
 		salvo=1;

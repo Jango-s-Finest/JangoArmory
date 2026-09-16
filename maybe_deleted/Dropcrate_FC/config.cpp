@@ -568,7 +568,7 @@ class CfgWeapons
 			soundBegin[] = { "begin1", 1 };
 			weaponSoundEffect = "DefaultRifle";
 		};
-		magazines[] += { "Pylon_FC_Dropcrate_P_1rnd" };		
+		magazines[] = { "Pylon_FC_Dropcrate_P_1rnd" };		
 		salvo = 1;
         canLock = 2;
 		modes[] = {"LoalAltitude"};
