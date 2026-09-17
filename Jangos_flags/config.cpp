@@ -3,10 +3,24 @@ class CfgPatches
 	class Jangos_Flags
 	{
 		units[] = {
-			"",
+			"JA_Flag_Carrier_WolfPack",
+			"JA_Flag_Carrier_Lancer",
+			"JA_Flag_Carrier_Cerberus_1_1",
+			"JA_Flag_Carrier_Cerberus_1_4",
+			"JA_Flag_Carrier_Talon",
+			"JA_Flag_Carrier_Cerberus_1_3",
+			"JA_Flag_Carrier_Warhawk_2_1",
+			"JA_Flag_Carrier_Warhawk_2_2"
 		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
-			"",
+			"JA_Flag_WolfPack",
+			"JA_Flag_Lancer",
+			"JA_Flag_Cerberus_1_1",
+			"JA_Flag_Cerberus_1_4",
+			"JA_Flag_Talon",
+			"JA_Flag_Cerberus_1_3",
+			"JA_Flag_Warhawk_2_1",
+			"JA_Flag_Warhawk_2_2"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {};

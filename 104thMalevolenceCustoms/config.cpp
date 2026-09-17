@@ -7,11 +7,19 @@ class CfgPatches
     {
         author = "Jango's Finest";
         units[] = {
-            "",
+            "JA_104th_Irish_ME",
+            "JA_104th_Tusk_ME"
         };
         weapons[] = {
-
+            "ls_gar_kama_vest",
+            "ls_gar_medic_vest",
+            "ls_gar_officer_vest",
+            "ls_gar_forceReconNCO_vest",
+            "ls_gar_forceRecon_vest",
+            "ls_gar_heavy_vest",
+            "ls_gar_grenadier_vest",
             "JA_104th_Bulky_Helmet_ME",
+            "JA_104th_Ceasar_Helmet_ME",
             "JA_104th_Carmine_Helmet_ME",
             "JA_104th_Cyan_Helmet_ME",
             "JA_104th_Drifter_Helmet_ME",
@@ -31,8 +39,24 @@ class CfgPatches
             "JA_104th_Frosty_Helmet_ME",
             "JA_104th_Sigil_Helmet_ME",
             "JA_104th_Vision_Helmet_ME",
-            "JA_104th_Scurvy_Helmet_ME"
-
+            "JA_104th_Scurvy_Helmet_ME",
+            "JA_104th_Kaleck_Helmet_ME",
+            "JA_104th_Cyan_ARF_Helmet_ME",
+            "JA_104th_Welty_ARF_Helmet_ME",
+            "JA_104th_Woods_ARF_Helmet_ME",
+            "JA_104th_Scrub_Helmet_ME",
+            "JA_104th_Castle_SpecOps_Helmet_ME",
+            "JA_104th_Granite_SpecOps_Helmet_ME",
+            "JA_104th_Osiris_Helmet_ME",
+            "JA_104th_Vegas_Helmet_ME",
+            "JA_104th_Lax_Helmet_ME",
+            "JA_104th_Poet_Helmet_ME",
+            "JA_104th_Tusk_Helmet_ME",
+            "JA_104th_Boris_Helmet_ME",
+            "JA_104th_Irish_Uniform_ME",
+            "JA_104th_Tusk_Uniform_ME",
+            "JA_104th_Irish_officer_Vest_ME",
+            "JA_104th_Tusk_P2_NVG_ME"
         };
     };
 };

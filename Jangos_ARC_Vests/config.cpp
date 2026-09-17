@@ -10,14 +10,25 @@ class CfgPatches
         requiredAddons[] = {};
         units[] = {};
         weapons[] = {
+            "ls_gar_officer_vest",
+            "ls_gar_commander_vest",
+            "ls_gar_arc_vest",
+            "ls_gar_kama_vest",
             "JA_104th_Angel_Vest",
+            "JA_104th_Crowbi_Vest",
+            "JA_104th_Drifter_Vest",
             "JA_104th_Frosty_Vest",
             "JA_104th_Hunter_Vest",
             "JA_104th_Sigil_Vest",
+            "JA_104th_Spectre_ARC_Vest_old",
             "JA_104th_Spectre_Vest",
             "JA_104th_Loner_Vest",
             "JA_104th_Vision_Vest",
-            "JA_104th_Crowbi_Vest"};
+            "JA_104th_Ceasar_Vest",
+            "JA_104th_Vegas_Vest",
+            "JA_104th_Osiris_Vest",
+            "JA_104th_Kaleck_Vest"
+        };
     };
 };
 

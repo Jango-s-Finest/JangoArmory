@@ -11,7 +11,16 @@ class CfgPatches
             "FC_Dropcrate_104th",
             "FC_Placeblecrate_104th"
         };
-		weapons[] = {};
+		weapons[] = {
+			"weapon_LGBLauncherBase",
+			"FC_Dropcrate_PW1"
+		};
+	magazines[] = {
+		"Pylon_FC_Dropcrate_P_1rnd"
+	};
+	ammo[] = {
+		"FC_Dropcrate_A"
+	};
 	};
 };
 class SensorTemplateLaser;

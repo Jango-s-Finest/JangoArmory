@@ -3,11 +3,18 @@ class CfgPatches
 	class Jangos_Armory_Vehicles_Laat
 	{
 		units[] = {
+			"ls_vehicle_barc",
+			"Car_F",
+			"Tank",
+			"Tank_F",
+			"APC_Tracked_03_base_F",
+			"I_APC_Tracked_03_base_F",
+			"OPTRE_M494",
+			"ls_vehicle_laati",
 			"JA_104th_LAAT",
-			"JA_104th_LAAT_AB"}; // All the new vehicles/units you've created in cfgVehicles
-		weapons[] = {
-			"JA_104th_guided_resupply_pod_launcher",
-		};
+			"JA_104th_LAAT_AB"
+		}; // All the new vehicles/units you've created in cfgVehicles
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
 	};

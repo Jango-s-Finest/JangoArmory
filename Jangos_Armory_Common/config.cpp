@@ -30,8 +30,20 @@ class CfgPatches
 			"JA_Cadet_Green2",
 			"JA_Cadet_Green3",
 			"JA_Cadet_Green4",
-			"JA_Cadet_Green5"};
+			"JA_Cadet_Green5",
+			"JA_Keeli_Tugz"
+		};
 		weapons[] = {
+			"ls_gar_airborne_vest",
+			"ls_gar_airborneNCO_vest",
+			"ls_gar_airborneOfficer_vest",
+			"ls_gar_forceReconNCO_vest",
+			"ls_gar_tacticalOfficer_vest",
+			"ls_gar_airborneOfficer_vest",
+			"ls_gar_officer_vest",
+			"ls_gar_commander_vest",
+			"ls_gar_arc_vest",
+			"ls_gar_kama_vest",
 			"JA_LGC_Quick_Helmet",
 			"JA_LGC_Quick_Uniform",
 			"JA_332nd_Chich_Helmet",
@@ -61,7 +73,13 @@ class CfgPatches
 			"JA_Cadet_Green2_Uniform",
 			"JA_Cadet_Green3_Uniform",
 			"JA_Cadet_Green4_Uniform",
-			"JA_Cadet_Green5_Uniform"};
+			"JA_Cadet_Green5_Uniform",
+			"JA_Keeli_Tugz_Uniform",
+			"JA_Keeli_Tugz_Helmet",
+			"JA_Keeli_Tugz_Vest",
+			"JA_Keeli_Tugz_Helmet_ME",
+			"JA_Keeli_Tugz_NVG_Rangefinder"
+		};
 	};
 };
 

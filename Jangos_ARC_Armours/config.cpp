@@ -9,16 +9,23 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Base_ARC",
 			"JA_104th_Angel",
-			"JA_104th_Sigil",
 			"JA_104th_Crowbi",
 			"JA_104th_Drifter",
 			"JA_104th_Frosty",
 			"JA_104th_Hunter",
+			"JA_104th_Spectre_old",
 			"JA_104th_Loner",
+			"JA_104th_Sigil",
 			"JA_104th_Vision",
-			"JA_104th_Spectre_old"};
+			"JA_104th_Ceasar",
+			"JA_104th_Vegas",
+			"JA_104th_Osiris_old_arc",
+			"JA_104th_Kaleck"
+		};
 		weapons[] = {
+			"JA_104th_Base_ARC_Uniform",
 			"JA_104th_Angel_Uniform",
 			"JA_104th_Sigil_Uniform",
 			"JA_104th_Crowbi_Uniform",
@@ -26,9 +33,12 @@ class CfgPatches
 			"JA_104th_Frosty_Uniform",
 			"JA_104th_Hunter_Uniform",
 			"JA_104th_Loner_Uniform",
+			"JA_104th_Spectre_Uniform_old",
 			"JA_104th_Vision_Uniform",
-			"JA_104th_Spectre_Uniform_old"
-
+			"JA_104th_Ceasar_Uniform",
+			"JA_104th_Vegas_Uniform",
+			"JA_104th_Osiris_Uniform_old_arc",
+			"JA_104th_Kaleck_Uniform"
 		};
 	};
 };

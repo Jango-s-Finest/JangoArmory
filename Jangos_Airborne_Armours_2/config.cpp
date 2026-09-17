@@ -9,9 +9,22 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
-			};
+			"JA_104th_Granite",
+			"JA_104th_Tinkle",
+			"JA_104th_Grimmer",
+			"JA_104th_Artorias",
+			"JA_104th_Hound",
+			"JA_104th_Kage_test"
+		};
 		weapons[] = {
-			};
+			"JA_104th_SenateComando_Uniform",
+			"JA_104th_Granite_Uniform",
+			"JA_104th_Tinkle_Uniform",
+			"JA_104th_Grimmer_Uniform",
+			"JA_104th_Artorias_Uniform",
+			"JA_104th_Hound_Uniform",
+			"JA_104th_Kage_Uniform_test"
+		};
 	};
 };
 

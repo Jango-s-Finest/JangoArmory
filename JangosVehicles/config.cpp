@@ -3,12 +3,64 @@ class CfgPatches
 	class Jangos_Armory_Vehicles
 	{
 		units[] = {
-			"JA_104th_LAAT",
-			"JA_104th_LAAT_AB",
+			"Car_F",
+			"Tank",
+			"Tank_F",
+			"APC_Tracked_03_base_F",
+			"I_APC_Tracked_03_base_F",
+			"OPTRE_M494",
+			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
+			"JA_104th_3AS_Reaper_ARC_170_Blue",
+			"JA_104th_VWing",
+			"3as_V19_base",
+			"JA_104th_V19_Torrent",
 			"JA_104th_Base_Falcon_Armed",
 			"JA_104th_Base_Pelican_Unarmed",
 			"JA_104th_Base_Pelican_Armed",
+			"JA_104th_3AS_Reaper_Y_Wing",
+			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
+			"JA_104th_vulture_dynamicLoadout_base",
+			"JA_104th_Vulture_dynamicLoadout",
+			"JA_104th_Vulture_dynamicLoadout_AA",
+			"JA_104th_Vulture_dynamicLoadout_Bare",
 			"JA_104th_Base_TX130",
+			"JA_104th_BARC",
+			"JA_104th_NU",
+			"O_T_VTOL_02_infantry_dynamicLoadout_F",
+			"JA_104th_Xian_Infantry",
+			"O_T_VTOL_02_vehicle_dynamicLoadout_F",
+			"JA_104th_Xian_Vehicle",
+			"JA_104th_Republic_Transport",
+			"JA_104th_Uwing",
+			"JA_104th_N1",
+			"JA_104th_APC_Light_Bantha",
+			"JA_104th_LSV",
+			"shieldtest",
+			"oryxshield",
+			"oryxshieldvo",
+			"oryxshieldred",
+			"oryxshieldfb",
+			"oryxshieldhb",
+			"TX130shield",
+			"TX130shieldvo",
+			"TX130shieldfb",
+			"TX130shieldhb",
+			"TX130shieldred",
+			"ywingshield",
+			"ywingshieldvo",
+			"ywingshieldfb",
+			"ywingshieldhb",
+			"ywingshieldred",
+			"z95shieldvo",
+			"z95shieldfb",
+			"z95shieldhb",
+			"z95shieldred",
+			"droidekashieldvo",
+			"droidekashieldfb",
+			"droidekashieldhb",
+			"droidekashieldred",
+			"104th_EmptySoundPad",
+			"104th_GiantEmptySoundPad",
 			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
 			"JA_104th_Box_Engineer",
@@ -16,39 +68,30 @@ class CfgPatches
 			"JA_104th_Medical_Droid",
 			"JA_104th_Vehicle_spawner_Droid_Air",
 			"JA_104th_Vehicle_spawner_Droid_Ground",
-			"JA_104th_BARC",
-			"JA_104th_Oryx",
-			"JA_104th_OryxNS",
-			"JA_104th_APC_Light_Bantha",
-			"JA_104th_LSV",
-			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
-			"JA_104th_3AS_Reaper_ARC_170_Blue",
-			"JA_104th_3AS_Reaper_Y_Wing",
-			"JA_104th_3AS_Reaper_Y_Wing_Blue",
-			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
-			"JA_104th_NU",
 			"JA_104th_Republic_HR_Bag",
 			"JA_104th_HeavyRepeater_Unarmoured",
-			"JA_104th_ATRT",
-			"JA_104th_Xian_Infantry",
-			"JA_104th_Xian_Vehicle",
-			"JA_104th_Republic_Transport",
-			"JA_104th_Heavy_Assault_Ship",
-			"JA_104th_Uwing",
-			"JA_104th_N1",
-			"JA_104th_VWing",
-			"JA_104th_V19_Torrent",
-			"JA_104th_Vulture_dynamicLoadout_base",
-			"JA_104th_Vulture_dynamicLoadout",
-			"JA_104th_Vulture_dynamicLoadout_AA",
-			"JA_104th_Vulture_dynamicLoadout_Bare",
-			"JA_104th_Impetus_Class_MAAG",
-			}; // All the new vehicles/units you've created in cfgVehicles
+			"JA_104th_Impetus_Class_MAAG"
+		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
-			"JA_104th_guided_resupply_pod_launcher",
+			"Launcher_Base_F",
+			"ls_laat_gun_2_104th",
+			"ls_127_blue_104th",
+			"JA_104th_Engineer_EWEB_Vest",
+			"JA_104th_guided_resupply_pod_launcher"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
+	magazines[] = {
+		"ls_magazine_50mm_200Rnd_APFSDS_green_104th",
+		"ls_500Rnd_127x99_mag_blue_104th",
+		"JA_104th_Guided_Resupply_Magazine"
+	};
+	ammo[] = {
+		"ls_50mm_laat_apfsds_104th",
+		"ls_127x99_blue_104th",
+		"JA_104th_guided_resupply_ammo",
+		"JA_104th_T9_green"
+	};
 	};
 };
 
@@ -10238,13 +10281,13 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
-			class Spawn_3AS_LAATC
+			class Spawn_JA_104th_LAATC
 			{
-				displayName = "Spawn 3AS LAAT/C";
+				displayName = "Spawn 104th LAAT/C";
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this, '3AS_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = "[this, 'JA_104th_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};

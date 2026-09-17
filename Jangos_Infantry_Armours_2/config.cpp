@@ -8,8 +8,71 @@ class CfgPatches
 		author = "Jango's Finest";
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
-		units[] = {};
-		weapons[] = {};
+		units[] = {
+			"JA_104th_Poet_old",
+			"JA_104th_Boris",
+			"JA_104th_Lax",
+			"JA_104th_Skipps",
+			"JA_104th_Chaser",
+			"JA_104th_Sobek",
+			"JA_104th_Castle",
+			"JA_104th_Aloo",
+			"JA_104th_Hawkeye",
+			"JA_104th_Rust",
+			"JA_104th_Knockout",
+			"JA_104th_Lykos",
+			"JA_104th_Spectre",
+			"JA_104th_Squid",
+			"JA_104th_Tiger",
+			"JA_104th_Rich",
+			"JA_104th_Nerd",
+			"JA_104th_Boombox",
+			"JA_104th_Lock",
+			"JA_104th_Marx",
+			"JA_104th_Dash",
+			"JA_104th_Inari",
+			"JA_104th_Six",
+			"JA_104th_Larkkit",
+			"JA_104th_Keeper_old",
+			"JA_104th_Skav",
+			"JA_104th_Fenrir",
+			"JA_104th_Osiris",
+			"JA_104th_Aiomi",
+			"JA_104th_Dragon",
+			"JA_104th_Jesse"
+		};
+		weapons[] = {
+			"JA_104th_Poet_Uniform_old",
+			"JA_104th_Lax_Uniform",
+			"JA_104th_Skipps_Uniform",
+			"JA_104th_Chaser_Uniform",
+			"JA_104th_Sobek_Uniform",
+			"JA_104th_Castle_Uniform",
+			"JA_104th_Aloo_Uniform",
+			"JA_104th_Hawkeye_Uniform",
+			"JA_104th_Rust_Uniform",
+			"JA_104th_Knockout_Uniform",
+			"JA_104th_Lykos_Uniform",
+			"JA_104th_Spectre_Uniform",
+			"JA_104th_Squid_Uniform",
+			"JA_104th_Tiger_Uniform",
+			"JA_104th_Rich_Uniform",
+			"JA_104th_Nerd_Uniform",
+			"JA_104th_Boombox_Uniform",
+			"JA_104th_Lock_Uniform",
+			"JA_104th_Marx_Uniform",
+			"JA_104th_Dash_Uniform",
+			"JA_104th_Inari_Uniform",
+			"JA_104th_Six_Uniform",
+			"JA_104th_Larkkit_Uniform",
+			"JA_104th_Keeper_Uniform_old",
+			"JA_104th_Skav_Uniform",
+			"JA_104th_Fenrir_Uniform",
+			"JA_104th_Osiris_Uniform",
+			"JA_104th_Aiomi_Uniform",
+			"JA_104th_Dragon_Uniform",
+			"JA_104th_Jesse_Uniform"
+		};
 	};
 };
 
@@ -788,7 +851,30 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-
+	class JA_104th_Jesse_Uniform : JA_104th_Base_Clone_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Jesse)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Jesse_Upper.paa",
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Jesse_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Jesse";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -1287,5 +1373,20 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Dragon_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Dragon_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	
+	class JA_104th_Jesse : lsd_gar_phase2_base
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Jesse_Uniform";
+		displayName = "104th Jesse";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Jesse_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Jesse_Lower.paa"};
+		linkedItems[] = {JA_104th_Jesse_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Jesse_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
 };

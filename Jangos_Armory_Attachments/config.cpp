@@ -12,30 +12,42 @@ class CfgPatches
 			"",
 		};
 		weapons[] = {
-			"JA_104th_P2_NVG_Base",
-			"JA_104th_P2_NVG_Medic",
-			"JA_104th_P2_NVG_Invert",
-			"JA_104th_SPC_NVG_Base",
-			"JA_104th_SPC_NVG_Medic",
-			"JA_104th_P2_NVG_Doc",
-			"JA_104th_SPC_NVG_Invert",
-			"JA_104th_NVG_NCO",
 			"JA_104th_Spectre_RC_NVG",
 			"JA_104th_Spectre_RC_NVG_Antenna",
 			"JA_104th_P2_NVG_Irish",
-			"JA_104th_CM_Visor",
-			"JA_104th_AB_NVG_Magnum",
 			"JA_104th_P2_NVG_Bulky",
+			"JA_104th_P2_NVG_Doc",
+			"JA_104th_P2_NVG_Tusk",
+			"JA_104th_AB_NVG_Magnum",
+			"JA_104th_P2_NVG_Base",
+			"JA_104th_P2_NVG_Invert",
+			"JA_104th_P2_NVG_Medic",
+			"JA_104th_SPC_NVG_Base",
+			"JA_104th_SPC_NVG_Invert",
+			"JA_104th_SPC_NVG_Medic",
+			"JA_104th_NVG_Rangefinder",
+			"JA_104th_CM_Spectre_Visor",
+			"JA_104th_CM_Sigil_Visor",
+			"JA_104th_CM_Visor",
 			"JA_104th_BARC_Galahad_NVG",
 			"JA_104th_Death_NVG_Tanker",
+			"JA_104th_Castle_NVG_Tanker",
 			"JA_104th_Crowbi_NVG_Rangefinder",
 			"JA_104th_Drifter_NVG_Rangefinder",
 			"JA_104th_Hunter_NVG_Rangefinder",
+			"JA_104th_Loner_NVG_Rangefinder",
 			"JA_104th_Scurvy_NVG_Rangefinder",
 			"JA_104th_Sigil_NVG_Rangefinder",
 			"JA_104th_Specter_NVG_Rangefinder",
-			"JA_104th_Loner_NVG_Rangefinder",
-			"JA_104th_Vision_NVG_Rangefinder"};
+			"JA_104th_Vision_NVG_Rangefinder",
+			"JA_104th_Ceasar_NVG_Rangefinder",
+			"JA_104th_Vegas_NVG_Rangefinder",
+			"JA_104th_Osiris_NVG_Rangefinder",
+			"JA_104th_Kaleck_NVG_Rangefinder",
+			"JA_104th_Osiris_NVG_Republic_Rangefinder",
+			"JA_104th_Hound_P1_NVG_Base",
+			"JA_104th_SPC_NVG_Skav"
+		};
 		glasses[] = {
 			"JA_104th_Diving_Visor",
 		};
@@ -641,6 +653,24 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 			{
 				"Jangos_Armory_Attachments\data\Textures\104th_P1_Hound_NVG.paa",
+			};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
+	class JA_104th_SPC_NVG_Skav : lsd_gar_standardSPC_nvg
+	{
+		ace_nightvision_border = "";
+		author = "Cyan";
+		displayName = "Clone SPC NVG Visor (104th Skav)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"
+
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Attachments\data\textures\104th_P2_Skav_Medic_NVG.paa",
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};

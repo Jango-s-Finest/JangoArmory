@@ -10,49 +10,65 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {
-			"JA_104th_Banker_Helmet",
-			"JA_104th_Beans_Helmet",
-			"JA_104th_Blood_Helmet",
-			"JA_104th_Bomb_Helmet",
-			"JA_104th_Duce_Helmet",
-			"JA_104th_Quick_Helmet",
-			"JA_104th_Scurvy_Helmet_ME",
-			"JA_104th_Magnum_Helmet_ME",
-			"JA_104th_Galahad_Helmet_ME",
-			"JA_104th_Bulky_Helmet_ME",
-			"JA_104th_Byte_Helmet",
-			"JA_104th_Bulky_Helmet",
-			"JA_104th_Badger_Helmet",
-			"JA_104th_Carmine_Helmet",
-			"JA_104th_Calvin_Helmet",
 			"JA_104th_Dart_Helmet",
-			"JA_104th_Dragan_Helmet",
-			"JA_104th_Doc_Helmet",
-			"JA_104th_Ed_Helmet",
-			"JA_104th_Galahad_Helmet",
-			"JA_104th_Gravity_Helmet_old",
-			"JA_104th_Tiger_Helmet",
-			"JA_104th_Spirit_Helmet",
-			"JA_104th_Skav_Helmet",
-			"JA_104th_Xan_Helmet",
-			"JA_104th_Tinkle_Helmet",
-			"JA_104th_Spectre_Helmet",
-			"JA_104th_Test_Helmet",
-			"JA_104th_Mad_Helmet",
-			"JA_104th_Mower_Helmet",
-			"JA_104th_Chills_Helmet",
-			"JA_104th_Kyo_Helmet",
-			"JA_104th_Crash_Helmet",
-			"JA_104th_Paraso_Helmet",
-			"JA_104th_Pretz_Helmet",
+			"JA_104th_Archibold_Helmet",
 			"JA_104th_Reaper_Helmet_old",
-			"JA_104th_Red_Helmet",
-			"JA_104th_Knightfall_Helmet",
+			"JA_104th_Walker_Helmet",
+			"JA_104th_Poet_Helmet_old",
+			"JA_104th_Marx_Helmet",
+			"JA_104th_Lucky_Helmet",
+			"JA_104th_Lock_Helmet_old",
 			"JA_104th_Knockout_Helmet",
-			"JA_104th_Scurvy_Helmet",
-			"JA_104th_Death_Helmet",
-			"JA_104th_Irish_Helmet",
-			"JA_104th_Welty_Helmet"};
+			"JA_104th_Orange_Helmet",
+			"JA_104th_Boris_Helmet",
+			"JA_104th_Talisman_Helmet",
+			"JA_104th_Boombox_Helmet_old",
+			"JA_104th_Sobek_Helmet",
+			"JA_104th_Rust_Helmet",
+			"JA_104th_Lock_Helmet",
+			"JA_104th_Larkkit_Helmet",
+			"JA_104th_Hawkeye_Helmet",
+			"JA_104th_Ravager_Helmet",
+			"JA_104th_Patch_Helmet",
+			"JA_104th_Chaser_Helmet",
+			"JA_104th_Squid_Helmet",
+			"JA_104th_Tiger_Helmet",
+			"JA_104th_Aiomi_Helmet",
+			"JA_104th_Spectre_Helmet",
+			"JA_104th_Spectre_Helmet_red",
+			"JA_104th_Spectre_Helmet_green",
+			"JA_104th_Spectre_Helmet_darkgreen",
+			"JA_104th_Spectre_Helmet_purple",
+			"JA_104th_Aloo_Helmet",
+			"JA_104th_Rookie_Helmet",
+			"JA_104th_Chaser_Helmet_old",
+			"JA_104th_Dash_Helmet",
+			"JA_104th_Six_Helmet_old",
+			"JA_104th_Castle_Helmet",
+			"JA_104th_Keeper_Helmet_old",
+			"JA_104th_Snoob_Helmet",
+			"JA_104th_Larkkit_Helmet_old",
+			"JA_104th_Lykos_Helmet",
+			"JA_104th_Seven_Helmet",
+			"JA_104th_Fenrir_Helmet",
+			"JA_104th_Rich_Helmet",
+			"JA_104th_Hades_Helmet",
+			"JA_104th_Nerd_Helmet",
+			"JA_104th_Harpy_Helmet",
+			"JA_104th_Trident_Helmet",
+			"JA_104th_Inari_Helmet",
+			"JA_104th_Vee_Helmet",
+			"JA_104th_Song_Helmet",
+			"JA_104th_Skav_Helmet",
+			"JA_104th_Osiris_Helmet",
+			"JA_104th_Snout_Helmet",
+			"JA_104th_Kobold_Helmet",
+			"JA_104th_Dragon_Helmet",
+			"JA_104th_Krieg_Helmet",
+			"JA_104th_Romeo_Helmet",
+			"JA_104th_Jesse_Helmet",
+			"JA_104th_Tanx_Helmet"
+		};
 	};
 };
 
@@ -743,5 +759,14 @@ class CfgWeapons
 		grad_slingHelmet_allow = "true";
 		displayname = "Clone Trooper P2 Helmet (104th Jesse)";											   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Jesse_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
+	};
+	class JA_104th_Tanx_Helmet : ls_gar_phase2_helmet
+	{
+		author = "Dak";
+		scopeArsenal = 2;
+		side = 1;
+		grad_slingHelmet_allow = "true";
+		displayname = "Clone Trooper P2 Helmet (104th Tanx)";											   // the name it will be in game
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Tanx_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
 };

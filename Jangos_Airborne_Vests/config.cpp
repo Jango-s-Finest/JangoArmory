@@ -10,18 +10,38 @@ class CfgPatches
         requiredAddons[] = {};
         units[] = {};
         weapons[] = {
-            "JA_104th_AB_Base_Trooper_Armor",
-            "JA_104th_AB_Officer_Trooper_Armor_Fixed",
-            "JA_104th_AB_ME_Officer_Trooper_Armor",
-            "JA_104th_AB_ME_NCO_Trooper_Armor",
-            "JA_104th_AB_ME_Base_Trooper_Armor",
+            "ls_gar_airborne_vest",
+            "ls_gar_airborneNCO_vest",
+            "ls_gar_airborneOfficer_vest",
+            "ls_gar_forceReconNCO_vest",
+            "ls_gar_forceReconLieutenant_vest",
+            "ls_gar_airborneOfficer_vest",
+            "ls_gar_officer_vest",
+            "ls_gar_commander_vest",
+            "ls_gar_arc_vest",
             "JA_104th_AB_Officer_Vest_Axel",
             "JA_104th_AB_Officer_Vest_Dak",
             "JA_104th_Carmine_Vest",
             "JA_104th_Osiris_Vest_old",
             "JA_104th_Kage_Vest",
+            "JA_104th_Magnum_Vest",
+            "JA_104th_Clutch_Vest",
             "JA_104th_Soul_Vest",
-            "JA_104th_Clutch_Vest"};
+            "JA_104th_Granite_Vest",
+            "JA_104th_AB_2_2_Base_Trooper_Armor",
+            "JA_104th_AB_2_2_Medic_Base_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Base_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Medic_Base_Trooper_Armor",
+            "JA_104th_AB_2_2_MLV_Trooper_Armor",
+            "JA_104th_AB_2_2_Medic_MLV_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_MLV_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Medic_MLV_Trooper_Armor",
+            "JA_104th_AB_2_2_Blue_Trooper_Armor",
+            "JA_104th_AB_2_2_Medic_Blue_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Blue_Trooper_Armor",
+            "JA_104th_AB_NCO_2_2_Medic_Blue_Trooper_Armor",
+            "JA_104th_Bear_Vest"
+        };
     };
 };
 
@@ -421,7 +441,7 @@ class CfgWeapons
     {
         author = "Emmet";
         scope = 2;
-        displayName = "Clone Airborne NCO Vest (104th Clutch)";
+        displayName = "Clone Airborne NCO Vest (104th Riker)";
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
         hiddenSelections[] =

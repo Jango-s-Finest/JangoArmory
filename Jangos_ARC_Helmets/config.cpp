@@ -10,16 +10,19 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {
-			"JA_104th_Angel_Helmet",
-			"JA_104th_Sigil_Helmet",
+			"JA_104th_Angel_Helmet_old",
 			"JA_104th_Crowbi_Helmet",
 			"JA_104th_Drifter_Helmet",
 			"JA_104th_Frosty_Helmet",
 			"JA_104th_Hunter_Helmet",
 			"JA_104th_Loner_Helmet",
+			"JA_104th_Spectre_Helmet_old",
+			"JA_104th_Sigil_Helmet",
 			"JA_104th_Vision_Helmet",
-			"JA_104th_Spectre_Helmet_old"
-
+			"JA_104th_Ceasar_Helmet",
+			"JA_104th_Vegas_Helmet",
+			"JA_104th_Osiris_Helmet_old_arc",
+			"JA_104th_Kaleck_Helmet"
 		};
 	};
 };

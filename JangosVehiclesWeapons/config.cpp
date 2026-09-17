@@ -4,10 +4,13 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {
+			"TKE_Ext_PDC_30mm",
+			"TKE_Ext_TwinCannon",
 			"JA_104th_AA_Lazer",
 			"JA_104th_AP_Lazer",
 			"JA_104th_HE_Lazer",
-			"JA_104th_HE_Lazer_Ulik",
+			"JA_104th_AP_Lazer_Oryx",
+			"JA_104th_HE_Lazer_Oryx",
 			"JA_104th_APHE_Lazer",
 			"JA_104th_AIM9X",
 			"JA_LAAT_AIM9X_BULLDOG",
@@ -20,12 +23,10 @@ class CfgPatches
 			"JA_104th_Heavy_Assault_Ship_Siegecannon_10",
 			"JA_104th_Drexl",
 			"JA_104th_Brimstone",
-			"JA_104th_AP_Lazer_Oryx",
-			"JA_104th_HE_Lazer_Oryx",
 			"JA_104th_Z6_weaker",
 			"JA_104th_AGM_88",
 			"JA_104th_GBU53",
-			"JA_104th_AV7_300mm_AMOS",
+			"JA_104th_AV7_300mm_AMOS"
 		};
 		ammo[] = {
 			"JA_104th_AA_Lazer_Ammo",
