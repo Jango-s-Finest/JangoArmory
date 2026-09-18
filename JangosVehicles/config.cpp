@@ -2904,9 +2904,12 @@ class cfgVehicles
 	class 3AS_ARC_170_Republic;
 	class ACE_SelfActions;
 	class UserActions;
+	class Reargun;
+	class LaserPilot;
+	class BubbleGun;
 	class JA_104th_3AS_Reaper_ARC_170_Blue : 3AS_ARC_170_Republic{
 		Author = "212th + 3AS + Echo";
-		displayName = "104th ARC-170 Blue";
+		displayName = "[104th] ARC-170 Blue";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -3339,12 +3342,27 @@ class cfgVehicles
 				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
 			};
 		};
+		class Turrets:Turrets
+		{
+			class Reargun: Reargun
+			{
+				gunnerName = "Rear Gunner";
+				weapons[] = {"JA_104th_AA_Lazer","CMFlareLauncher"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500","240Rnd_CMFlare_Chaff_Magazine"};
+			};
+			class LaserPilot: LaserPilot
+			{
+				weapons[] = {"JA_104th_AA_Lazer"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500"};
+				gunnerName = "Co-pilot";
+			};
+		};
 	};
 
 	class 3as_Vwing_base;
 	class JA_104th_VWing : 3as_Vwing_base{
 		Author = "212th + 3AS + Echo";
-		displayName = "V-Wing Fighter";
+		displayName = "[104th] V-Wing Fighter";
 		scope = 2;
 		scopeArsenal = 2;
 		airBrake = 70;
@@ -3358,7 +3376,7 @@ class cfgVehicles
 		weapons[] = {"JA_104th_AA_Lazer", "CMFlareLauncher"};
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 		crew = "JA_104th_P2_1C_Engineer";
-
+		soundEngineOnExt[] = {"3AS\3AS_Vwing\sounds\VwingStartup.ogg","db-0",1,500};
 		class Components
 		{
 			class SensorsManagerComponent
@@ -3735,6 +3753,58 @@ class cfgVehicles
 					displayName = "Deactivate Shield";
 					statement = "call BNA_KC_shields_fnc_deactivate";
 				};
+			};
+		};
+		class Sounds
+		{
+			class EngineLowOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",1,1600};
+				frequency = "1.0 min (rpm + 0.5)";
+				volume = "camPos*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95])";
+			};
+			class EngineHighOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",1.2,3000};
+				frequency = "1";
+				volume = "camPos*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])";
+			};
+			class ForsageOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",0.99,4000};
+				frequency = "1";
+				volume = "engineOn*camPos*(thrust factor[0.6, 1.0])";
+				cone[] = {3.14,3.92,2,0.5};
+			};
+			class WindNoiseOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db-5",1,150};
+				frequency = "(0.1+(1.2*(speed factor[1, 150])))";
+				volume = "camPos*(speed factor[1, 150])";
+			};
+			class EngineLowIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1};
+				frequency = "1.0 min (rpm + 0.5)";
+				volume = "(1-camPos)*((rpm factor[0.7, 0.1])*(rpm factor[0.1, 0.7]))";
+			};
+			class EngineHighIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1.2};
+				frequency = "1";
+				volume = "(1-camPos)*(rpm factor[0.85, 1.0])";
+			};
+			class ForsageIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1};
+				frequency = "1";
+				volume = "(1-camPos)*(engineOn*(thrust factor[0.6, 1.0]))";
+			};
+			class WindNoiseIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-6",1};
+				frequency = "(0.1+(1.2*(speed factor[1, 150])))";
+				volume = "(1-camPos)*(speed factor[1, 150])";
 			};
 		};
 	};
@@ -5876,6 +5946,15 @@ class cfgVehicles
 				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
 			};
 		};
+		class Turrets
+		{
+			class BubbleGun: BubbleGun
+			{
+				gunnerName = "Bubble Gunner";
+				weapons[] = {"JA_104th_AA_Lazer","CMFlareLauncher"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500","240Rnd_CMFlare_Chaff_Magazine"};
+			};
+		};	
 	};
 
 	class JA_104th_vulture_dynamicLoadout_base : 3AS_Vulture_Base_F{

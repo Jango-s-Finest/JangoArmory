@@ -76,7 +76,6 @@ class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
-class UserActions;
 
 class cfgVehicles
 {
@@ -84,6 +83,7 @@ class cfgVehicles
 	class 3AS_Rho_REP_F;
 	class 3AS_Rep_LAS_Z6_F;
 	class 3AS_LAATC;
+	class UserActions;
 
 	class JA_104th_Nu_class : 3AS_Nu_REP_F{
 		Author = "3AS + Dak";
