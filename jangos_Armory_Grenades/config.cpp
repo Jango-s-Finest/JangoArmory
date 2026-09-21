@@ -343,7 +343,7 @@ class CfgAmmo{
 		indirectHit = 14;
 		indirectHitRange = 8;
 		ace_grenades_pullPinSound[] = {"\ls\core\addons\sounds\weapons\grenade\pin.wss",3,1,10};
-		model = "\kobra\442_weapons\explosive\thermal_det.p3d"; 
+		model = "\jangos_Armory_Grenades\data\models\Thermal_Detonator_Test_7_2.p3d"; 
 		explosionEffectsRadius = 1.5;
 		suppressionRadiusHit = 24;
 		typicalspeed = 18;
@@ -462,7 +462,7 @@ class CfgMagazines{
 		nameSound = "handgrenade";
 		maxLeadSpeed = 7;
 		ammo = "JA_104th_Thermal_Detonator_Ammo";
-		model = "\kobra\442_weapons\explosive\thermal_det.p3d";
+		model = "\jangos_Armory_Grenades\data\models\Thermal_Detonator_Test_7_2.p3d";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_thermal_det_ui_ca.paa";
 	};
 
