@@ -80,6 +80,7 @@ class CfgPatches
 			"JA_Keeli_Tugz_Helmet_ME",
 			"JA_Keeli_Tugz_NVG_Rangefinder"
 		};
+		version = "3.6.0.1"
 	};
 };
 

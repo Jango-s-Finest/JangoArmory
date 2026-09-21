@@ -38,10 +38,7 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] [104th] Rho Class - Ramp Fix
-    [*] [104th] V-Wing Fighter - sound decreased
-    [*] [104th] BTL-B Y-Wing Blue Leader - bubble gun should only fire at air targets
-    [*] [104th] ARC-170 Blue - back gun should only fire at air targets
+    [*] [104th] TX-130 Super Saber
 [/list]
 
 

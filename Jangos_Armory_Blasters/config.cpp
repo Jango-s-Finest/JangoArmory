@@ -3541,6 +3541,16 @@ class CfgWeapons
         "JA_104th_Weapons_Mags_BPX14"
         };
     };
+
+    class JA_104th_T32C : JA_104th_DC15A
+    {
+        scope = 2;
+        displayName = "[104th] T-32C";
+        baseWeapon = "JA_104th_T32C";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_ui_ca.paa";
+        model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
+    };
+    
 };
 
 class CfgAmmo

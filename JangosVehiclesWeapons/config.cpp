@@ -16,6 +16,7 @@ class CfgPatches
 			"JA_LAAT_AIM9X_BULLDOG",
 			"JA_104th_AIM120",
 			"JA_ATTE_Maingun_Cannon",
+			"JA_Sabre_Maingun_Cannon",
 			"JA_104th_Heavy_Assault_Ship_2500",
 			"JA_104th_Heavy_Assault_AA_Ship_2500",
 			"JA_104th_Heavy_Assault_Ship_400",
@@ -552,6 +553,7 @@ class CfgWeapons{
 	class manual;
 	class FIR_AGM88;
 	class FIR_GBU53;
+	class 3AS_Sabre_Cannons_Super;
 
 	class JA_104th_AA_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "Air Superiority laser";
@@ -937,6 +939,9 @@ class CfgWeapons{
 	};
 
 	class JA_ATTE_Maingun_Cannon: 3AS_Mass_Driver_Cannon{
+		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
+	};
+	class JA_Sabre_Maingun_Cannon: 3AS_Sabre_Cannons_Super{
 		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
 	};
 
