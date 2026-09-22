@@ -4,15 +4,19 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {
+			"TKE_Ext_PDC_30mm",
+			"TKE_Ext_TwinCannon",
 			"JA_104th_AA_Lazer",
 			"JA_104th_AP_Lazer",
 			"JA_104th_HE_Lazer",
-			"JA_104th_HE_Lazer_Ulik",
+			"JA_104th_AP_Lazer_Oryx",
+			"JA_104th_HE_Lazer_Oryx",
 			"JA_104th_APHE_Lazer",
 			"JA_104th_AIM9X",
 			"JA_LAAT_AIM9X_BULLDOG",
 			"JA_104th_AIM120",
 			"JA_ATTE_Maingun_Cannon",
+			"JA_Sabre_Maingun_Cannon",
 			"JA_104th_Heavy_Assault_Ship_2500",
 			"JA_104th_Heavy_Assault_AA_Ship_2500",
 			"JA_104th_Heavy_Assault_Ship_400",
@@ -20,12 +24,10 @@ class CfgPatches
 			"JA_104th_Heavy_Assault_Ship_Siegecannon_10",
 			"JA_104th_Drexl",
 			"JA_104th_Brimstone",
-			"JA_104th_AP_Lazer_Oryx",
-			"JA_104th_HE_Lazer_Oryx",
 			"JA_104th_Z6_weaker",
 			"JA_104th_AGM_88",
 			"JA_104th_GBU53",
-			"JA_104th_AV7_300mm_AMOS",
+			"JA_104th_AV7_300mm_AMOS"
 		};
 		ammo[] = {
 			"JA_104th_AA_Lazer_Ammo",
@@ -77,6 +79,7 @@ class CfgPatches
 
 class CfgAmmo{
 	class 3AS_Vwing_Medium_Energy_Shells;
+	class 3AS_V19_Medium_Energy_Shells;
 	class 212th_Drexl_A2A_Missile;
 	class FIR_Brimstone_dm;
 	class FIR_AIM120;
@@ -86,33 +89,41 @@ class CfgAmmo{
 	class 3AS_SIEGE_Cannon_HHE_Shell;
 	class FIR_AGM88;
 
-	class JA_104th_AA_Lazer_Ammo: 3AS_Vwing_Medium_Energy_Shells{
-		caliber = 7;
+	class JA_104th_AA_Lazer_Ammo: 3AS_V19_Medium_Energy_Shells{
+		caliber = 22;
 		indirectHit = 50;
 		indirectHitRange = 3;
-		hit = 130;
+		hit = 300;
+		aiAmmoUsageFlags = "256";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_AP_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 10;
+		caliber = 25;
 		indirectHit = 0;
 		indirectHitRange = 0;
-		hit = 200;
+		hit = 450;
 		explosionType = "";
 		explosive = 0;
+		aiAmmoUsageFlags = "128 + 256 + 512 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_HE_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 7;
+		caliber = 22;
 		indirectHit = 60;
 		indirectHitRange = 6;
-		hit = 100;
+		hit = 250;
 		explosive = 0.9;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_APHE_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 10;
+		caliber = 25;
 		indirectHit = 60;
 		indirectHitRange = 6;
-		hit = 100;
+		hit = 250;
 		explosive = 0.5;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	
 	class JA_LAAT_Drexl_Ammo: 212th_Drexl_A2A_Missile{
@@ -200,25 +211,29 @@ class CfgAmmo{
 		hit = 1500;
 	};
 	class JA_104th_Heavy_Assault_Ship_Siegecannon_AMMO : 3AS_SIEGE_Cannon_HHE_Shell{
-		indirectHit = 200;
+		indirecthit = 450;
 		indirectHitRange = 20;
 	};
-	class JA_104th_AP_Lazer_Oryx_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 10;
+	class JA_104th_AP_Lazer_Oryx_Ammo: 3AS_Vwing_Medium_Energy_Shells{
+		caliber = 25;
 		indirectHit = 10;
 		indirectHitRange = 1;
 		hit = 250;
 		explosionType = "";
 		explosive = 0.1;
 		typicalSpeed = 1200;
+		aiAmmoUsageFlags = "128 + 256 + 512 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
 	};
-	class JA_104th_HE_Lazer_Oryx_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 7;
+	class JA_104th_HE_Lazer_Oryx_Ammo: 3AS_Vwing_Medium_Energy_Shells{
+		caliber = 22;
 		indirectHit = 60;
 		indirectHitRange = 6;
-		hit = 100;
+		hit = 250;
 		explosive = 0.9;
 		typicalSpeed = 1200;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_AGM_88_M : FIR_AGM88{
 		model = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
@@ -299,7 +314,7 @@ class CfgAmmo{
 };
 
 class CfgMagazines{
-	class 3AS_Vwing_700Rnd_Medium_Shells;
+	class 3as_V19_800Rnd_Medium_shells;
 	class FIR_AIM9X_P_2rnd_M;
 	class FIR_AIM120_LAU115_P_2rnd_M;
 	class 3AS_30Rnd_Mass_Driver_shells;
@@ -313,7 +328,7 @@ class CfgMagazines{
 	class FIR_AGM88_P_1rnd_M;
 	class FIR_GBU53_EWP_6rnd_M;
 
-	class JA_104th_AA_Lazer_MAG_500: 3AS_Vwing_700Rnd_Medium_Shells
+	class JA_104th_AA_Lazer_MAG_500: 3as_V19_800Rnd_Medium_shells
     {
         ammo = "JA_104th_AA_Lazer_Ammo";
 		descriptionShort = "High speed Weapon";
@@ -520,7 +535,7 @@ class CfgMagazines{
 };
 
 class CfgWeapons{
-	class 3AS_Vwing_Medium_Cannon;
+	class 3as_V19_Medium_Cannon;
 	class FIR_AIM120;
 	class FIR_AIM9X;
 	class 3AS_Mass_Driver_Cannon;
@@ -538,8 +553,9 @@ class CfgWeapons{
 	class manual;
 	class FIR_AGM88;
 	class FIR_GBU53;
+	class 3AS_Sabre_Cannons_Super;
 
-	class JA_104th_AA_Lazer : 3AS_Vwing_Medium_Cannon{
+	class JA_104th_AA_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "Air Superiority laser";
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500"};
 		modes[] = {"manual"};
@@ -599,7 +615,7 @@ class CfgWeapons{
 			aiRateOfFireDispersion = 1;
 		};
 	};
-	class JA_104th_AP_Lazer : 3AS_Vwing_Medium_Cannon{
+	class JA_104th_AP_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "AP laser";
 		magazines[] = {"JA_104th_AP_Lazer_MAG_250"};
 		modes[] = {"manual"};
@@ -659,7 +675,7 @@ class CfgWeapons{
 			aiRateOfFireDispersion = 1;
 		};
 	};
-	class JA_104th_HE_Lazer : 3AS_Vwing_Medium_Cannon{
+	class JA_104th_HE_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "HE laser";
 		magazines[] = {"JA_104th_HE_Lazer_MAG_250"};
 		modes[] = {"manual"};
@@ -719,7 +735,7 @@ class CfgWeapons{
 			aiRateOfFireDispersion = 1;
 		};
 	};
-	class JA_104th_AP_Lazer_Oryx  : 3AS_Vwing_Medium_Cannon{
+	class JA_104th_AP_Lazer_Oryx  : 3as_V19_Medium_Cannon{
 		displayName = "AP laser";
 		ballisticsComputer = "2 + 8 + 16";
 		magazines[] = {"JA_104th_AP_Lazer_Oryx_MAG_250"};
@@ -784,7 +800,7 @@ class CfgWeapons{
 			maxRange = 4000;
 		};
 	};
-	class JA_104th_HE_Lazer_Oryx : 3AS_Vwing_Medium_Cannon{
+	class JA_104th_HE_Lazer_Oryx : 3as_V19_Medium_Cannon{
 		displayName = "HE laser";
 		ballisticsComputer = "2 + 8 + 16";
 		magazines[] = {"JA_104th_HE_Lazer_Oryx_MAG_250"};
@@ -850,7 +866,7 @@ class CfgWeapons{
 			maxRange = 4000;
 		};
 	};
-	class JA_104th_APHE_Lazer : 3AS_Vwing_Medium_Cannon{
+	class JA_104th_APHE_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "APHE laser";
 		magazines[] = {"JA_104th_APHE_Lazer_MAG_100"};
 		modes[] = {"manual"};
@@ -923,6 +939,9 @@ class CfgWeapons{
 	};
 
 	class JA_ATTE_Maingun_Cannon: 3AS_Mass_Driver_Cannon{
+		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
+	};
+	class JA_Sabre_Maingun_Cannon: 3AS_Sabre_Cannons_Super{
 		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
 	};
 

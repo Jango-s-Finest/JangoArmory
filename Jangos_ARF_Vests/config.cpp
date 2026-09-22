@@ -10,8 +10,11 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {
+			"ls_gar_forceReconLieutenant_vest",
 			"JA_104th_IQ_Vest",
-			"JA_104th_Woods_Vest"};
+			"JA_104th_Woods_Vest",
+			"JA_104th_Achilles_Vest"
+		};
 	};
 };
 

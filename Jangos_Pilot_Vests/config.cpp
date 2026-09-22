@@ -9,7 +9,12 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {};
-		weapons[] = {};
+		weapons[] = {
+			"ls_gar_kama_vest",
+			"ls_gar_officer_vest",
+			"JA_104th_Cherryy_Pilot_officer_Vest",
+			"JA_104th_Fire_Pilot_officer_Vest"
+		};
 	};
 };
 

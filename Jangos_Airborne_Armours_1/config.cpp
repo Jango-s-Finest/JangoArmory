@@ -9,43 +9,68 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
-			"JA_104th_Azure",
+			"JA_104th_Base_AB",
+			"JA_104th_Habit",
+			"JA_104th_Scrub",
 			"JA_104th_Stache",
+			"JA_104th_Azure",
+			"JA_104th_Squid",
+			"JA_104th_Bear",
+			"JA_104th_Ratchet",
+			"JA_104th_Magnum",
+			"JA_104th_Kaleck_old",
+			"JA_104th_Bulky",
+			"JA_104th_Cyan_old",
+			"JA_104th_Dak",
+			"JA_104th_Ceasar_old",
+			"JA_104th_Axel_old",
+			"JA_104th_Osiris_old",
 			"JA_104th_Carmine",
 			"JA_104th_Clutch",
-			"JA_104th_Dak",
-			"JA_104th_Osiris_old",
-			"JA_104th_Magnum",
-			"JA_104th_Bulky",
-			"JA_104th_Cyan",
-			"JA_104th_Axel",
-			"JA_104th_Kage",
-			"JA_104th_Red",
-			"JA_104th_Garm",
 			"JA_104th_Doc_AB",
+			"JA_104th_Kage",
 			"JA_104th_Sixes",
 			"JA_104th_Soul",
+			"JA_104th_Red",
+			"JA_104th_Garm",
 			"JA_104th_Trustful",
-			"JA_104th_Raptor"};
+			"JA_104th_Raptor",
+			"JA_104th_Ink",
+			"JA_104th_Hound",
+			"JA_104th_Freq"
+		};
 		weapons[] = {
-			"JA_104th_Azure_Uniform",
+			"JA_104th_Base_AB_Uniform",
+			"JA_104th_Base_MC_AB_Uniform",
+			"JA_104th_Habit_Uniform",
+			"JA_104th_Scrub_Uniform",
 			"JA_104th_Stache_Uniform",
+			"JA_104th_Azure_Uniform",
+			"JA_104th_Squid_Uniform",
+			"JA_104th_Bear_Uniform",
+			"JA_104th_Ratchet_Uniform",
 			"JA_104th_Carmine_Uniform",
 			"JA_104th_Clutch_Uniform",
-			"JA_104th_Osiris_Uniform_old",
-			"JA_104th_Dak_Uniform",
-			"JA_104th_Magnum_Uniform",
-			"JA_104th_Bulky_Uniform",
 			"JA_104th_Doc_AB_Uniform",
-			"JA_104th_Cyan_Uniform",
-			"JA_104th_Axel_Uniform",
+			"JA_104th_Cyan_Uniform_old",
+			"JA_104th_Dak_Uniform",
+			"JA_104th_Ceasar_Uniform_old",
+			"JA_104th_Osiris_Uniform_old",
+			"JA_104th_Magnum_Uniform",
+			"JA_104th_Kaleck_Uniform_old",
+			"JA_104th_Bulky_Uniform",
+			"JA_104th_Axel_Uniform_old",
 			"JA_104th_Kage_Uniform",
-			"JA_104th_Red_Uniform",
-			"JA_104th_Garm_Uniform",
 			"JA_104th_Sixes_Uniform",
 			"JA_104th_Soul_Uniform",
+			"JA_104th_Red_Uniform",
+			"JA_104th_Garm_Uniform",
 			"JA_104th_Trustful_Uniform",
-			"JA_104th_Raptor_Uniform"};
+			"JA_104th_Raptor_Uniform",
+			"JA_104th_Ink_Uniform",
+			"JA_104th_Hound_Uniform",
+			"JA_104th_Freq_Uniform"
+		};
 	};
 };
 
@@ -469,7 +494,7 @@ class CfgWeapons
 		author = "Dak";
 		scope = 2;
 		allowedSlots[] = {BACKPACK_SLOT};
-		displayName = "Clone Trooper armor (104th Clutch)";
+		displayName = "Clone Trooper armor (104th Riker)";
 		hiddenSelections[] =
 			{
 				"camo1",
@@ -1277,7 +1302,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		side = 1;
 		uniformClass = "JA_104th_Clutch_Uniform";
-		displayName = "104th Clutch";
+		displayName = "104th Riker";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};

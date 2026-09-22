@@ -3,12 +3,64 @@ class CfgPatches
 	class Jangos_Armory_Vehicles
 	{
 		units[] = {
-			"JA_104th_LAAT",
-			"JA_104th_LAAT_AB",
+			"Car_F",
+			"Tank",
+			"Tank_F",
+			"APC_Tracked_03_base_F",
+			"I_APC_Tracked_03_base_F",
+			"OPTRE_M494",
+			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
+			"JA_104th_3AS_Reaper_ARC_170_Blue",
+			"JA_104th_VWing",
+			"3as_V19_base",
+			"JA_104th_V19_Torrent",
 			"JA_104th_Base_Falcon_Armed",
 			"JA_104th_Base_Pelican_Unarmed",
 			"JA_104th_Base_Pelican_Armed",
+			"JA_104th_3AS_Reaper_Y_Wing",
+			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
+			"JA_104th_vulture_dynamicLoadout_base",
+			"JA_104th_Vulture_dynamicLoadout",
+			"JA_104th_Vulture_dynamicLoadout_AA",
+			"JA_104th_Vulture_dynamicLoadout_Bare",
 			"JA_104th_Base_TX130",
+			"JA_104th_BARC",
+			"JA_104th_NU",
+			"O_T_VTOL_02_infantry_dynamicLoadout_F",
+			"JA_104th_Xian_Infantry",
+			"O_T_VTOL_02_vehicle_dynamicLoadout_F",
+			"JA_104th_Xian_Vehicle",
+			"JA_104th_Republic_Transport",
+			"JA_104th_Uwing",
+			"JA_104th_N1",
+			"JA_104th_APC_Light_Bantha",
+			"JA_104th_LSV",
+			"shieldtest",
+			"oryxshield",
+			"oryxshieldvo",
+			"oryxshieldred",
+			"oryxshieldfb",
+			"oryxshieldhb",
+			"TX130shield",
+			"TX130shieldvo",
+			"TX130shieldfb",
+			"TX130shieldhb",
+			"TX130shieldred",
+			"ywingshield",
+			"ywingshieldvo",
+			"ywingshieldfb",
+			"ywingshieldhb",
+			"ywingshieldred",
+			"z95shieldvo",
+			"z95shieldfb",
+			"z95shieldhb",
+			"z95shieldred",
+			"droidekashieldvo",
+			"droidekashieldfb",
+			"droidekashieldhb",
+			"droidekashieldred",
+			"104th_EmptySoundPad",
+			"104th_GiantEmptySoundPad",
 			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
 			"JA_104th_Box_Engineer",
@@ -16,39 +68,30 @@ class CfgPatches
 			"JA_104th_Medical_Droid",
 			"JA_104th_Vehicle_spawner_Droid_Air",
 			"JA_104th_Vehicle_spawner_Droid_Ground",
-			"JA_104th_BARC",
-			"JA_104th_Oryx",
-			"JA_104th_OryxNS",
-			"JA_104th_APC_Light_Bantha",
-			"JA_104th_LSV",
-			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
-			"JA_104th_3AS_Reaper_ARC_170_Blue",
-			"JA_104th_3AS_Reaper_Y_Wing",
-			"JA_104th_3AS_Reaper_Y_Wing_Blue",
-			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
-			"JA_104th_NU",
 			"JA_104th_Republic_HR_Bag",
 			"JA_104th_HeavyRepeater_Unarmoured",
-			"JA_104th_ATRT",
-			"JA_104th_Xian_Infantry",
-			"JA_104th_Xian_Vehicle",
-			"JA_104th_Republic_Transport",
-			"JA_104th_Heavy_Assault_Ship",
-			"JA_104th_Uwing",
-			"JA_104th_N1",
-			"JA_104th_VWing",
-			"JA_104th_V19_Torrent",
-			"JA_104th_Vulture_dynamicLoadout_base",
-			"JA_104th_Vulture_dynamicLoadout",
-			"JA_104th_Vulture_dynamicLoadout_AA",
-			"JA_104th_Vulture_dynamicLoadout_Bare",
-			"JA_104th_Impetus_Class_MAAG",
-			}; // All the new vehicles/units you've created in cfgVehicles
+			"JA_104th_Impetus_Class_MAAG"
+		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
-			"JA_104th_guided_resupply_pod_launcher",
+			"Launcher_Base_F",
+			"ls_laat_gun_2_104th",
+			"ls_127_blue_104th",
+			"JA_104th_Engineer_EWEB_Vest",
+			"JA_104th_guided_resupply_pod_launcher"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
+	magazines[] = {
+		"ls_magazine_50mm_200Rnd_APFSDS_green_104th",
+		"ls_500Rnd_127x99_mag_blue_104th",
+		"JA_104th_Guided_Resupply_Magazine"
+	};
+	ammo[] = {
+		"ls_50mm_laat_apfsds_104th",
+		"ls_127x99_blue_104th",
+		"JA_104th_guided_resupply_ammo",
+		"JA_104th_T9_green"
+	};
 	};
 };
 
@@ -2861,9 +2904,12 @@ class cfgVehicles
 	class 3AS_ARC_170_Republic;
 	class ACE_SelfActions;
 	class UserActions;
+	class Reargun;
+	class LaserPilot;
+	class BubbleGun;
 	class JA_104th_3AS_Reaper_ARC_170_Blue : 3AS_ARC_170_Republic{
 		Author = "212th + 3AS + Echo";
-		displayName = "104th ARC-170 Blue";
+		displayName = "[104th] ARC-170 Blue";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -3296,12 +3342,27 @@ class cfgVehicles
 				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
 			};
 		};
+		class Turrets:Turrets
+		{
+			class Reargun: Reargun
+			{
+				gunnerName = "Rear Gunner";
+				weapons[] = {"JA_104th_AA_Lazer","CMFlareLauncher"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500","240Rnd_CMFlare_Chaff_Magazine"};
+			};
+			class LaserPilot: LaserPilot
+			{
+				weapons[] = {"JA_104th_AA_Lazer"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500"};
+				gunnerName = "Co-pilot";
+			};
+		};
 	};
 
 	class 3as_Vwing_base;
 	class JA_104th_VWing : 3as_Vwing_base{
 		Author = "212th + 3AS + Echo";
-		displayName = "V-Wing Fighter";
+		displayName = "[104th] V-Wing Fighter";
 		scope = 2;
 		scopeArsenal = 2;
 		airBrake = 70;
@@ -3315,7 +3376,7 @@ class cfgVehicles
 		weapons[] = {"JA_104th_AA_Lazer", "CMFlareLauncher"};
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 		crew = "JA_104th_P2_1C_Engineer";
-
+		soundEngineOnExt[] = {"3AS\3AS_Vwing\sounds\VwingStartup.ogg","db-0",1,500};
 		class Components
 		{
 			class SensorsManagerComponent
@@ -3692,6 +3753,58 @@ class cfgVehicles
 					displayName = "Deactivate Shield";
 					statement = "call BNA_KC_shields_fnc_deactivate";
 				};
+			};
+		};
+		class Sounds
+		{
+			class EngineLowOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",1,1600};
+				frequency = "1.0 min (rpm + 0.5)";
+				volume = "camPos*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95])";
+			};
+			class EngineHighOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",1.2,3000};
+				frequency = "1";
+				volume = "camPos*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])";
+			};
+			class ForsageOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",0.99,4000};
+				frequency = "1";
+				volume = "engineOn*camPos*(thrust factor[0.6, 1.0])";
+				cone[] = {3.14,3.92,2,0.5};
+			};
+			class WindNoiseOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db-5",1,150};
+				frequency = "(0.1+(1.2*(speed factor[1, 150])))";
+				volume = "camPos*(speed factor[1, 150])";
+			};
+			class EngineLowIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1};
+				frequency = "1.0 min (rpm + 0.5)";
+				volume = "(1-camPos)*((rpm factor[0.7, 0.1])*(rpm factor[0.1, 0.7]))";
+			};
+			class EngineHighIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1.2};
+				frequency = "1";
+				volume = "(1-camPos)*(rpm factor[0.85, 1.0])";
+			};
+			class ForsageIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1};
+				frequency = "1";
+				volume = "(1-camPos)*(engineOn*(thrust factor[0.6, 1.0]))";
+			};
+			class WindNoiseIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-6",1};
+				frequency = "(0.1+(1.2*(speed factor[1, 150])))";
+				volume = "(1-camPos)*(speed factor[1, 150])";
 			};
 		};
 	};
@@ -5833,6 +5946,15 @@ class cfgVehicles
 				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
 			};
 		};
+		class Turrets
+		{
+			class BubbleGun: BubbleGun
+			{
+				gunnerName = "Bubble Gunner";
+				weapons[] = {"JA_104th_AA_Lazer","CMFlareLauncher"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500","240Rnd_CMFlare_Chaff_Magazine"};
+			};
+		};	
 	};
 
 	class JA_104th_vulture_dynamicLoadout_base : 3AS_Vulture_Base_F{
@@ -10238,13 +10360,13 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
-			class Spawn_3AS_LAATC
+			class Spawn_JA_104th_LAATC
 			{
-				displayName = "Spawn 3AS LAAT/C";
+				displayName = "Spawn 104th LAAT/C";
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this, '3AS_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = "[this, 'JA_104th_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};

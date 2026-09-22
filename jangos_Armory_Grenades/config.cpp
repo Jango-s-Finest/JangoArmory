@@ -5,14 +5,29 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {
+			"Throw"
 		};
 		ammo[] = {
 			"JA_104th_Thermal_Detonator_Ammo",
-			"JA_104th_White_Smoke_Ammo"
+			"JA_104th_White_Smoke_Ammo",
+			"JA_104th_Blue_Smoke_Ammo",
+			"JA_104th_Green_Smoke_Ammo",
+			"JA_104th_Purple_Smoke_Ammo",
+			"JA_104th_Red_Smoke_Ammo",
+			"JA_104th_Yellow_Smoke_Ammo",
+			"JA_104th_Orange_Smoke_Ammo",
+			"JA_104th_Black_Smoke_Ammo"
 		};
 		magazines[] = {
 			"JA_104th_Thermal_Detonator_Mag",
-			"JA_104th_White_Smoke_Mag"
+			"JA_104th_White_Smoke_Mag",
+			"JA_104th_Blue_Smoke_Mag",
+			"JA_104th_Green_Smoke_Mag",
+			"JA_104th_Purple_Smoke_Mag",
+			"JA_104th_Red_Smoke_Mag",
+			"JA_104th_Yellow_Smoke_Mag",
+			"JA_104th_Orange_Smoke_Mag",
+			"JA_104th_Black_Smoke_Mag"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Weapons_F"};
