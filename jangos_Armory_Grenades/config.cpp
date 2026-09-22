@@ -1,3 +1,4 @@
+#include "\jangos_Armory_Grenades\data\models\model.cfg"
 class CfgPatches
 {
 	class Jangos_Armory_Grenades
@@ -195,6 +196,102 @@ class JA_104th_particle_effect_SmokeBlack: JA_104th_particle_effect_SmokeShellWh
 	};
 };
 
+class JA_104th_particle_effect_SmokeShellWhite_Aero
+{
+	class SmokeShell
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_White_Aero";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 1000;
+	};
+	class SmokeShellUW
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_White_AeroUW";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 4.5;
+	};
+};
+class JA_104th_particle_effect_SmokeShellGreen_Aero
+{
+	class SmokeShell
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_Green_Aero";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 1000;
+	};
+	class SmokeShellUW
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_Green_AeroUW";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 4.5;
+	};
+};
+class JA_104th_particle_effect_SmokeShellPurple_Aero
+{
+	class SmokeShell
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_Purple_Aero";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 1000;
+	};
+	class SmokeShellUW
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_Purple_AeroUW";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 4.5;
+	};
+};
+class JA_104th_particle_effect_SmokeShellOrange_Aero
+{
+	class SmokeShell
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_Orange_Aero";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 1000;
+	};
+	class SmokeShellUW
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_Orange_AeroUW";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 4.5;
+	};
+};
+class JA_104th_particle_effect_SmokeShellYellow_Aero
+{
+	class SmokeShell
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_Yellow_Aero";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 1000;
+	};
+	class SmokeShellUW
+	{
+		simulation = "particles";
+		type = "JA_104th_cloudlet_smokeshell_Yellow_AeroUW";
+		position[] = {0,0.125,0};
+		intensity = 2;
+		interval = 4.5;
+	};
+};
+
 class CfgCloudlets{
 	class SmokeShellWhite;
 	class SmokeShellWhiteUW;
@@ -347,6 +444,161 @@ class CfgCloudlets{
 		postEffects = "JA_104th_particle_effect_SmokeShellWhiteWater";
 	};
 
+	class JA_104th_cloudlet_smokeshell_White_Aero: SmokeShellWhite
+	{
+		moveVelocity[] = {0.003,0.003,0.005};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.05;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.6,0.6,0.6,0.2},{0.6,0.6,0.6,0.05},{0.6,0.6,0.6,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+	class JA_104th_cloudlet_smokeshell_White_AeroUW: SmokeShellWhiteUW
+	{
+		moveVelocity[] = {0.002,0.002,0.004};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.1;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.6,0.6,0.6,0.2},{0.6,0.6,0.6,0.05},{0.6,0.6,0.6,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+	
+	class JA_104th_cloudlet_smokeshell_Green_Aero: SmokeShellWhite
+	{
+		moveVelocity[] = {0.003,0.003,0.005};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.05;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.2125,0.8438,0.2125,0.2},{0.2125,0.8438,0.2125,0.05},{0.2125,0.8438,0.2125,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+	class JA_104th_cloudlet_smokeshell_Green_AeroUW: SmokeShellWhiteUW
+	{
+		moveVelocity[] = {0.002,0.002,0.004};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.1;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.2125,0.8438,0.2125,0.2},{0.2125,0.8438,0.2125,0.05},{0.2125,0.8438,0.2125,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+	
+	class JA_104th_cloudlet_smokeshell_Purple_Aero: SmokeShellWhite
+	{
+		moveVelocity[] = {0.003,0.003,0.005};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.05;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.4341,0.1388,0.4144,0.2},{0.4341,0.1388,0.4144,0.05},{0.4341,0.1388,0.4144,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+	class JA_104th_cloudlet_smokeshell_Purple_AeroUW: SmokeShellWhiteUW
+	{
+		moveVelocity[] = {0.002,0.002,0.004};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.1;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.4341,0.1388,0.4144,0.2},{0.4341,0.1388,0.4144,0.05},{0.4341,0.1388,0.4144,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+	
+	class JA_104th_cloudlet_smokeshell_Orange_Aero: SmokeShellWhite
+	{
+		moveVelocity[] = {0.003,0.003,0.005};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.05;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.88, 0.36, 0,0.2},{0.88, 0.36, 0,0.05},{0.88, 0.36, 0,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+	class JA_104th_cloudlet_smokeshell_Orange_AeroUW: SmokeShellWhiteUW
+	{
+		moveVelocity[] = {0.002,0.002,0.004};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.1;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.88, 0.36, 0,0.2},{0.88, 0.36, 0,0.05},{0.88, 0.36, 0,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+
+	class JA_104th_cloudlet_smokeshell_Yellow_Aero: SmokeShellWhite
+	{
+		moveVelocity[] = {0.003,0.003,0.005};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.05;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.9883,0.8606,0.0719,0.2},{0.9883,0.8606,0.0719,0.05},{0.9883,0.8606,0.0719,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+	class JA_104th_cloudlet_smokeshell_Yellow_AeroUW: SmokeShellWhiteUW
+	{
+		moveVelocity[] = {0.002,0.002,0.004};
+		MoveVelocityVar[] = {0.02,0.02,0.01};
+		weight = 1.1;
+		size[] = {0.46,4.5,18};
+		randomDirectionPeriod = 1;
+		randomDirectionIntensity = 0.03;
+		rotationVelocityVar = 15;
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+		lifeTime = 16;
+		color[] = {{0.9883,0.8606,0.0719,0.2},{0.9883,0.8606,0.0719,0.05},{0.9883,0.8606,0.0719,0}};
+		emissiveColor[] = {{28,28,26,1},{14,14,13,1},{3,3,2.5,1}};
+	};
+
 };
 
 class CfgAmmo{
@@ -358,7 +610,15 @@ class CfgAmmo{
 		indirectHit = 14;
 		indirectHitRange = 8;
 		ace_grenades_pullPinSound[] = {"\ls\core\addons\sounds\weapons\grenade\pin.wss",3,1,10};
-		model = "\kobra\442_weapons\explosive\thermal_det.p3d"; 
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Thermal_Detonator.paa"
+			};
 		explosionEffectsRadius = 1.5;
 		suppressionRadiusHit = 24;
 		typicalspeed = 18;
@@ -413,48 +673,197 @@ class CfgAmmo{
 		simulation = "shotSmokeX";
 		smokeColor[] = {1,1,1,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeShellWhite";
-		model = "kobra\442_weapons\explosive\basic_smoke.p3d";
 		SmokeShellSoundHit1[] = {"\Aux501\Weapons\Grenades\data\sounds\smoke_explode.wss","+10db",1,500};
 		SmokeShellSoundLoop1[] = {"\Aux501\Weapons\Grenades\data\sounds\smoke_loop.wss","+3db",1,150};
 		grenadeFireSound[] = {"SmokeShellSoundHit1",1};
 		grenadeBurningSound[] = {"SmokeShellSoundLoop1",1};
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_White.paa"
+			};
 	};
 	class JA_104th_Blue_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
 		smokeColor[] = {0.1183,0.1867,1,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeBlue";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Blue.paa"
+			};
 	};
 	class JA_104th_Green_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
 		smokeColor[] = {0.2125,0.8438,0.2125,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeGreen";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Green.paa"
+			};
 	};
 	class JA_104th_Purple_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
 		smokeColor[] = {0.4341,0.1388,0.4144,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokePurple";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Purple.paa"
+			};
 	};
 	class JA_104th_Red_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
 		smokeColor[] = {0.8438,0.1383,0.1353,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeRed";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Red.paa"
+			};
 	};
 	class JA_104th_Yellow_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
 		smokeColor[] = {0.9883,0.8606,0.0719,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeYellow";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Yellow.paa"
+			};
 	};
 	class JA_104th_Orange_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
 		smokeColor[] = {0.88, 0.36, 0,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeOrange";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Orange.paa"
+			};
 	};
 	class JA_104th_Black_Smoke_Ammo: JA_104th_White_Smoke_Ammo
 	{
 		smokeColor[] = {0.0,0.0,0,1};
 		effectsSmoke = "JA_104th_particle_effect_SmokeBlack";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Black.paa"
+			};
 	};
 	
+	class JA_104th_White_Aero_Smoke_Ammo: JA_104th_White_Smoke_Ammo
+	{
+		smokeColor[] = {1,1,1,1};
+		effectsSmoke = "JA_104th_particle_effect_SmokeShellWhite_Aero";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+		simulation = "shotSmoke";
+		explosionTime = 7.5;
+		timeToLive = 300;
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_White.paa"
+			};
+	};
+	class JA_104th_Green_Aero_Smoke_Ammo: JA_104th_White_Smoke_Ammo
+	{
+		smokeColor[] = {0.2125,0.8438,0.2125,1};
+		effectsSmoke = "JA_104th_particle_effect_SmokeShellGreen_Aero";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+		simulation = "shotSmoke";
+		explosionTime = 7.5;
+		timeToLive = 300;
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Green.paa"
+			};
+	};
+	class JA_104th_Purple_Aero_Smoke_Ammo: JA_104th_White_Smoke_Ammo
+	{
+		smokeColor[] = {0.4341,0.1388,0.4144,1};
+		effectsSmoke = "JA_104th_particle_effect_SmokeShellPurple_Aero";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+		simulation = "shotSmoke";
+		explosionTime = 7.5;
+		timeToLive = 300;
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Purple.paa"
+			};
+	};
+	class JA_104th_Orange_Aero_Smoke_Ammo: JA_104th_White_Smoke_Ammo
+	{
+		smokeColor[] = {0.88, 0.36, 0,1};
+		effectsSmoke = "JA_104th_particle_effect_SmokeShellOrange_Aero";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+		simulation = "shotSmoke";
+		explosionTime = 7.5;
+		timeToLive = 300;
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Orange.paa"
+			};
+	};
+	class JA_104th_Yellow_Aero_Smoke_Ammo: JA_104th_White_Smoke_Ammo
+	{
+		smokeColor[] = {0.9883,0.8606,0.0719,1};
+		effectsSmoke = "JA_104th_particle_effect_SmokeShellYellow_Aero";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+		simulation = "shotSmoke";
+		explosionTime = 7.5;
+		timeToLive = 300;
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Yellow.paa"
+			};
+	};
 };
 
 class CfgMagazines{
@@ -477,8 +886,16 @@ class CfgMagazines{
 		nameSound = "handgrenade";
 		maxLeadSpeed = 7;
 		ammo = "JA_104th_Thermal_Detonator_Ammo";
-		model = "\kobra\442_weapons\explosive\thermal_det.p3d";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_thermal_det_ui_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Thermal_Detonator.paa"
+			};
 	};
 
 	class JA_104th_White_Smoke_Mag: SmokeShell
@@ -489,9 +906,17 @@ class CfgMagazines{
 		displayNameShort = "White Smoke";
 		descriptionShort = "Clone White Smoke Grenade";
 		ammo = "JA_104th_White_Smoke_Ammo";
-		model = "\kobra\442_weapons\explosive\basic_smoke.p3d";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_smoke_white_ui_ca.paa";
 		mass = 1;
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_White.paa"
+			};
 	};
 	class JA_104th_Blue_Smoke_Mag: JA_104th_White_Smoke_Mag
 	{
@@ -500,6 +925,14 @@ class CfgMagazines{
 		descriptionShort = "Clone Blue Smoke Grenade";
 		ammo = "JA_104th_Blue_Smoke_Ammo";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_smoke_blue_ui_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Blue.paa"
+			};
 	};
 	class JA_104th_Green_Smoke_Mag: JA_104th_White_Smoke_Mag
 	{
@@ -508,6 +941,14 @@ class CfgMagazines{
 		descriptionShort = "Clone Green Smoke Grenade";
 		ammo = "JA_104th_Green_Smoke_Ammo";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_smoke_Green_ui_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Green.paa"
+			};
 	};
 	class JA_104th_Purple_Smoke_Mag: JA_104th_White_Smoke_Mag
 	{
@@ -516,6 +957,14 @@ class CfgMagazines{
 		descriptionShort = "Clone Purple Smoke Grenade";
 		ammo = "JA_104th_Purple_Smoke_Ammo";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_smoke_Purple_ui_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Purple.paa"
+			};
 	};
 	class JA_104th_Red_Smoke_Mag: JA_104th_White_Smoke_Mag
 	{
@@ -524,6 +973,14 @@ class CfgMagazines{
 		descriptionShort = "Clone Red Smoke Grenade";
 		ammo = "JA_104th_Red_Smoke_Ammo";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_smoke_Red_ui_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Red.paa"
+			};
 	};
 	class JA_104th_Yellow_Smoke_Mag: JA_104th_White_Smoke_Mag
 	{
@@ -532,6 +989,14 @@ class CfgMagazines{
 		descriptionShort = "Clone Yellow Smoke Grenade";
 		ammo = "JA_104th_Yellow_Smoke_Ammo";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_smoke_Yellow_ui_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Yellow.paa"
+			};
 	};
 	class JA_104th_Orange_Smoke_Mag: JA_104th_White_Smoke_Mag
 	{
@@ -540,6 +1005,14 @@ class CfgMagazines{
 		descriptionShort = "Clone Orange Smoke Grenade";
 		ammo = "JA_104th_Orange_Smoke_Ammo";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_smoke_Orange_ui_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Orange.paa"
+			};
 	};
 	class JA_104th_Black_Smoke_Mag: JA_104th_White_Smoke_Mag
 	{
@@ -548,8 +1021,61 @@ class CfgMagazines{
 		descriptionShort = "Clone Black Smoke Grenade";
 		ammo = "JA_104th_Black_Smoke_Ammo";
 		picture = "\Aux501\Weapons\Grenades\data\UI\Aux501_icon_mag_rep_nade_smoke_Black_ui_ca.paa";
+		hiddenSelections[] =
+			{
+				"camo"
+			};
+		hiddenSelectionsTextures[] =
+			{
+				"jangos_Armory_Grenades\data\textures\104th_Weapon_Smoke_Detonator_Black.paa"
+			};
 	};
 	
+	class JA_104th_White_Aero_Smoke_Mag: JA_104th_White_Smoke_Mag
+	{
+		scope = 2;
+		displayName = "[104th] AS-3 (White) Aero Signal Smoke Grenade";
+		displayNameShort = "AS-3 (White)";
+		ammo = "JA_104th_White_Aero_Smoke_Ammo";
+		picture = "\212th\Weapons\212th_Grenades\Aux212_Aero_Smoke_Signal\data\UI\AS_3_Aero_Smoke_Signal_White_UI_ca.paa";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+	};
+	class JA_104th_Green_Aero_Smoke_Mag: JA_104th_White_Smoke_Mag
+	{
+		scope = 2;
+		displayName = "[104th] AS-3 (Green) Aero Signal Smoke Grenade";
+		displayNameShort = "AS-3 (Green)";
+		ammo = "JA_104th_Green_Aero_Smoke_Ammo";
+		picture = "\212th\Weapons\212th_Grenades\Aux212_Aero_Smoke_Signal\data\UI\AS_3_Aero_Smoke_Signal_Green_UI_ca.paa";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+	};
+	class JA_104th_Purple_Aero_Smoke_Mag: JA_104th_White_Smoke_Mag
+	{
+		scope = 2;
+		displayName = "[104th] AS-3 (Purple) Aero Signal Smoke Grenade";
+		displayNameShort = "AS-3 (Purple)";
+		ammo = "JA_104th_Purple_Aero_Smoke_Ammo";
+		picture = "\212th\Weapons\212th_Grenades\Aux212_Aero_Smoke_Signal\data\UI\AS_3_Aero_Smoke_Signal_Purple_UI_ca.paa";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+	};
+	class JA_104th_Orange_Aero_Smoke_Mag: JA_104th_White_Smoke_Mag
+	{
+		scope = 2;
+		displayName = "[104th] AS-3 (Orange) Aero Signal Smoke Grenade";
+		displayNameShort = "AS-3 (Orange)";
+		ammo = "JA_104th_Orange_Aero_Smoke_Ammo";
+		picture = "\212th\Weapons\212th_Grenades\Aux212_Aero_Smoke_Signal\data\UI\AS_3_Aero_Smoke_Signal_Orange_UI_ca.paa";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+	};
+	class JA_104th_Yellow_Aero_Smoke_Mag: JA_104th_White_Smoke_Mag
+	{
+		scope = 2;
+		displayName = "[104th] AS-3 (Yellow) Aero Signal Smoke Grenade";
+		displayNameShort = "AS-3 (Yellow)";
+		ammo = "JA_104th_Yellow_Aero_Smoke_Ammo";
+		picture = "\212th\Weapons\212th_Grenades\Aux212_Aero_Smoke_Signal\data\UI\AS_3_Aero_Smoke_Signal_Yellow_UI_ca.paa";
+		model = "\jangos_Armory_Grenades\data\models\JA_Thermal_Detonator.p3d";
+	};
 };
 
 class CfgWeapons{
@@ -567,6 +1093,11 @@ class CfgWeapons{
 			"JA_104th_Yellow_Smoke_ThrowMuzzle",
 			"JA_104th_Orange_Smoke_ThrowMuzzle",
 			"JA_104th_Black_Smoke_ThrowMuzzle",
+			"JA_104th_White_Aero_Smoke_ThrowMuzzle",
+			"JA_104th_Green_Aero_Smoke_ThrowMuzzle",
+			"JA_104th_Purple_Aero_Smoke_ThrowMuzzle",
+			"JA_104th_Orange_Aero_Smoke_ThrowMuzzle",
+			"JA_104th_Yellow_Aero_Smoke_ThrowMuzzle",
 		};
         class JA_104th_Thermal_Detonator_ThrowMuzzle: ThrowMuzzle
         {
@@ -605,6 +1136,25 @@ class CfgWeapons{
         {
             magazines[] = {"JA_104th_Black_Smoke_Mag"};
         };
-		
+		class JA_104th_White_Aero_Smoke_ThrowMuzzle: ThrowMuzzle
+        {
+            magazines[] = {"JA_104th_White_Aero_Smoke_Mag"};
+        };
+		class JA_104th_Green_Aero_Smoke_ThrowMuzzle: ThrowMuzzle
+        {
+            magazines[] = {"JA_104th_Green_Aero_Smoke_Mag"};
+        };
+		class JA_104th_Purple_Aero_Smoke_ThrowMuzzle: ThrowMuzzle
+        {
+            magazines[] = {"JA_104th_Purple_Aero_Smoke_Mag"};
+        };
+		class JA_104th_Orange_Aero_Smoke_ThrowMuzzle: ThrowMuzzle
+        {
+            magazines[] = {"JA_104th_Orange_Aero_Smoke_Mag"};
+        };
+		class JA_104th_Yellow_Aero_Smoke_ThrowMuzzle: ThrowMuzzle
+        {
+            magazines[] = {"JA_104th_Yellow_Aero_Smoke_Mag"};
+        };
     };
 };

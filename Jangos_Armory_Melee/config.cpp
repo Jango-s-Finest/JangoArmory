@@ -81,7 +81,7 @@ class CfgSounds
 class CfgWeapons
 {
 	class WBK_pipeStyledSword; //// Default melee weapon class that you are inhereting from
-	class IMS_NewCoolMeleeWeapon: WBK_pipeStyledSword
+	class JA_104th_Beskar: WBK_pipeStyledSword
 	{
 		displayName="Mandoade Beskad"; //// Name of the weapon
 		model="Jangos_Armory_Melee\Beskad.p3d"; //// Path to your model
