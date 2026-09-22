@@ -1282,7 +1282,7 @@ class CfgWeapons
         baseWeapon = "JA_104th_DC15A";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_ui_ca.paa";
         model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
-        mass = 97;
+        mass = 95;
         handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15a_Handanim.rtm"};
         reloadAction = "GestureReload_JLTS_DC15A";
         reloadTime = 0.1;
@@ -1332,8 +1332,8 @@ class CfgWeapons
         modes[] = {"Single", "FullAuto"};
         class Single : Single
         {
-            reloadTime = 0.18;
-            dispersion = 0.00028;
+            reloadTime = 0.13;
+            dispersion = 0.00025;
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType
             {
@@ -1346,8 +1346,8 @@ class CfgWeapons
         };
         class FullAuto : FullAuto
         {
-            reloadTime = 0.18;
-            dispersion = 0.0005;
+            reloadTime = 0.13;
+            dispersion = 0.0004;
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType
             {
@@ -2483,7 +2483,7 @@ class CfgWeapons
         model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_weapon_dc17m.p3d";
         magazines[] =
             {
-                "JA_104th_Weapons_Mags_20mw70",
+                "JA_104th_Weapons_Mags_30mw70",
                 "JA_104th_Weapons_Mags_50mw7",
                 "JA_104th_Weapons_Mags_17M_AT"
             };
@@ -2494,25 +2494,47 @@ class CfgWeapons
         ls_weapons_attachmentSwapEnabled = 1;
         ls_weapons_attachments[] = {{"ls_weapons_isBlasterMag","ls_muzzle_dc17m_blaster"},{"ls_weapons_isATMag","ls_muzzle_dc17m_antiArmor"},{"ls_weapons_isSniperMag","ls_muzzle_dc17m_sniper"}};
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+
+        muzzles[] = {"this"};
         modes[] = {"Single", "FullAuto"};
         class Single : Single
         {
             reloadTime = 0.5;
-            dispersion = 0.00015;
-            sounds[] = {"StandardSound"};
-            class StandardSound : BaseSoundModeType
-            {
-                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet"};
+            dispersion = 0.00005;
+            sounds[] = {"StandardSound", "Snipersound", "AntiArmorSound"};
+            class StandardSound {
+                soundSetShot[] = { "ls_dc17m_Shot_SoundSet", "ls_mediumBlaster_Tail_SoundSet" };
+            };
+            class SniperSound {
+                soundSetShot[] = { "ls_dc17m_sniper_Shot_SoundSet", "ls_sniper_Tail_SoundSet" };
+            };
+            class AntiArmorSound {
+                begin1[] = { "\A3\Sounds_F\arsenal\weapons\UGL\UGL_01.wss", 0.707946, 1, 200 };
+                begin2[] = { "\A3\Sounds_F\arsenal\weapons\UGL\UGL_02.wss", 0.707946, 1, 200 };
+                closure1[] = { "\A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL.wss", 1, 1, 10 };
+                soundBegin[] = { "begin1", 0.5, "begin2", 0.5 };
+                soundClosure[] = { "closure1", 1 };
+                soundSetShot[] = { "UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet" };
             };
         };
         class FullAuto : FullAuto
         {
             reloadTime = 0.085;
-            dispersion = 0.00015;
-            sounds[] = {"StandardSound"};
-            class StandardSound : BaseSoundModeType
-            {
-                soundSetShot[] = {"ls_dc17m_Shot_SoundSet"};
+            dispersion = 0.00008;
+            sounds[] = { "StandardSound", "SniperSound", "AntiArmorSound" };
+            class StandardSound {
+                soundSetShot[] = { "ls_dc17m_Shot_SoundSet", "ls_mediumBlaster_Tail_SoundSet" };
+            };
+            class SniperSound {
+                soundSetShot[] = { "ls_dc17m_sniper_Shot_SoundSet", "ls_sniper_Tail_SoundSet" };
+            };
+            class AntiArmorSound {
+                begin1[] = { "\A3\Sounds_F\arsenal\weapons\UGL\UGL_01.wss", 0.707946, 1, 200 };
+                begin2[] = { "\A3\Sounds_F\arsenal\weapons\UGL\UGL_02.wss", 0.707946, 1, 200 };
+                closure1[] = { "\A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL.wss", 1, 1, 10 };
+                soundBegin[] = { "begin1", 0.5, "begin2", 0.5 };
+                soundClosure[] = { "closure1", 1 };
+                soundSetShot[] = { "UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet" };
             };
         };
         class WeaponSlotsInfo : WeaponSlotsInfo
@@ -4119,23 +4141,23 @@ class CfgMagazines
         typicalSpeed = 1100;
     };
     // DC17M Blaster Mag
-    class JA_104th_Weapons_Mags_20mw70 : 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_30mw70 : 30Rnd_65x39_caseless_mag
     {
         ls_weapons_isBlasterMag = 1;
-        displayName = "[104th] Extended Capacity Energy Cell";
-        displayNameShort = "70Rnd 20MW";
+        displayName = "[104th] Commando Energy Cell";
+        displayNameShort = "70Rnd 30MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
         count = 70;
-        ammo = "JA_104th_Weapons_Ammo_20mw";
-        initSpeed = 700;
+        ammo = "JA_104th_Weapons_Ammo_30mw";
+        initSpeed = 800;
         descriptionShort = "DC17M Blaster magazine";
         mass = 6;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
         tracersEvery = 1;
-        typicalSpeed = 700;
+        typicalSpeed = 800;
     };
     // DC17M AT Mag
     class JA_104th_Weapons_Mags_17M_AT : 30Rnd_65x39_caseless_mag
