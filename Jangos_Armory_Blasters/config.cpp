@@ -1,4 +1,5 @@
 #include "basicDefines_A3.hpp"
+#include "model.cfg"
 class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
@@ -76,7 +77,8 @@ class CfgPatches
             "JA_104th_RPS6",
             "JA_104th_RPS6_H",
             "JA_104th_Z7_mk2",
-            "JA_104th_BPX14"
+            "JA_104th_BPX14",
+            "JA_104th_T32C"
         };
         ammo[] = {
             "JA_104th_Weapons_Ammo_17MAT",
@@ -123,7 +125,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_10mw500",
             "JA_104th_Weapons_Mags_30mw30",
             "JA_104th_Weapons_Mags_40mw20",
-            "JA_104th_Weapons_Mags_20mw70",
+            "JA_104th_Weapons_Mags_30mw70",
             "JA_104th_Weapons_Mags_17M_AT",
             "JA_104th_Weapons_Mags_50mw7",
             "JA_104th_Weapons_Mags_100Mw1",
@@ -223,6 +225,7 @@ class CfgWeapons
 
     class JLTS_stun_muzzle;
     class LFP_dc17arc_Dual;
+    class OpticsModes;
     class ls_weapon_dc17m;
     class WeaponSlotsInfo;
     class ls_weapon_dualDC17_secondary;
@@ -1587,6 +1590,37 @@ class CfgWeapons
         };
     };
 
+    class JA_104th_T32C : JA_104th_DC15A{
+        model = "Jangos_Armory_Blasters\data\models\JA_T32C.p3d";
+        displayName = "[104th] T-32C";
+        baseWeapon = "JA_104th_T32C";
+        hiddenSelections[] =
+        {
+            "weapon"
+        };
+		hiddenSelectionsTextures[] =
+        {
+            "Jangos_Armory_Blasters\data\textures\Base_co.paa"
+        };
+        class OpticsModes:OpticsModes
+        {
+            class Ironsights
+            {
+                opticsID = 1;
+                useModelOptics = 0;
+                opticsFlare = "true";
+                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+                opticsDisablePeripherialVision = 0.67;
+                opticsZoomMin = 0.25;
+                opticsZoomMax = 1.1;
+                opticsZoomInit = 0.75;
+                memoryPointCamera = "eye";
+                visionMode[] = {};
+                distanceZoomMin = 100;
+                distanceZoomMax = 100;
+            };
+        };
+    };
     // DC15C
     class JA_104th_DC15C : JA_104th_rifle_base
     {
@@ -3562,15 +3596,6 @@ class CfgWeapons
         {
         "JA_104th_Weapons_Mags_BPX14"
         };
-    };
-
-    class JA_104th_T32C : JA_104th_DC15A
-    {
-        scope = 2;
-        displayName = "[104th] T-32C";
-        baseWeapon = "JA_104th_T32C";
-        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_ui_ca.paa";
-        model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
     };
     
 };

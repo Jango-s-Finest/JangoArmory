@@ -18,11 +18,18 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
--
+- [104th] AS-3 (White) Aero Signal Smoke Grenade
+- [104th] AS-3 (Green) Aero Signal Smoke Grenade
+- [104th] AS-3 (Purple) Aero Signal Smoke Grenade
+- [104th] AS-3 (Yellow) Aero Signal Smoke Grenade
+- [104th] AS-3 (Orange) Aero Signal Smoke Grenade
 
 Changed Weapons & Attachments
 ------------------
--
+- [104th] Smoke Grenades - Model Change
+- [104th] Thermal Detonator - Model Change
+- [104th] DC-15A - Rebalance
+- [104th] DC-17M - Rework
 
 ------------------
 Removed Weapons & Attachments
@@ -37,10 +44,7 @@ New Vehicles & Supplies
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] Rho Class - Ramp Fix
-- [104th] V-Wing Fighter - sound decreased
-- [104th] BTL-B Y-Wing Blue Leader - bubble gun should only fire at air targets
-- [104th] ARC-170 Blue - back gun should only fire at air targets
+- [104th] TX-130 Super Saber
 
 Removed Vehicles & Supplies
 ------------------
