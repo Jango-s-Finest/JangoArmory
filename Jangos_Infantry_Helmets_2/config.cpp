@@ -50,7 +50,7 @@ class CfgPatches
 			"JA_104th_Larkkit_Helmet_old",
 			"JA_104th_Lykos_Helmet",
 			"JA_104th_Seven_Helmet",
-			"JA_104th_Fenrir_Helmet",
+			"JA_104th_Fenrir_Helmet_old",
 			"JA_104th_Rich_Helmet",
 			"JA_104th_Hades_Helmet",
 			"JA_104th_Nerd_Helmet",
@@ -603,7 +603,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Seven)";											   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Seven_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Fenrir_Helmet : ls_gar_phase2_helmet
+	class JA_104th_Fenrir_Helmet_old : ls_gar_phase2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;

@@ -2,7 +2,9 @@
 [h2]Custom Gear[/h2]
 [h3]Added[/h3]
 [list]
-    [*] 
+    [*] Clone Trooper AB Helmet (104th Fenrir)
+    [*] Clone Trooper AB Helmet (104th Jojo)
+    [*] Clone Trooper armor (104th Hacksaw)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -10,17 +12,19 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] 
+    [*] Clone Trooper P1 Helmet (104th Hacksaw)
+    [*] Clone Trooper armor (104th Ceasar)
+    [*] Clone Trooper ARC Trooper Helmet (104th Ceasar)
+    [*] Clone ARC Trooper Vest (104th Ceasar)
+    [*] Clone Trooper armor (104th Larkkit)
+    [*] Clone Trooper P2 Special Activities Helmet (104th Larkkit)
+    [*] Clone Trooper P2 Helmet (104th Skav)
 [/list]
 
 [h2]Custom Weapons & Attachments[/h2]
 [h3]Added[/h3]
 [list]
-    [*] [104th] AS-3 (White) Aero Signal Smoke Grenade
-    [*] [104th] AS-3 (Green) Aero Signal Smoke Grenade
-    [*] [104th] AS-3 (Purple) Aero Signal Smoke Grenade
-    [*] [104th] AS-3 (Yellow) Aero Signal Smoke Grenade
-    [*] [104th] AS-3 (Orange) Aero Signal Smoke Grenade
+    [*] 
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -28,10 +32,7 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] [104th] Smoke Grenades - Model Change
-    [*] [104th] Thermal Detonator - Model Change
-    [*] [104th] DC-15A - Rebalance
-    [*] [104th] DC-17M - Rework
+    [*] Clone Trooper JT12 LR (104th Freq)
 [/list]
 
 [h2]Custom Vehicles & Supplies[/h2]
@@ -45,7 +46,7 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] [104th] TX-130 Super Saber
+    [*] 
 [/list]
 
 

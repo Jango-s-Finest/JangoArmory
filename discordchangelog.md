@@ -3,11 +3,19 @@ _______________
 ```
 New Gear
 --------------
--
+- Clone Trooper AB Helmet (104th Fenrir)
+- Clone Trooper AB Helmet (104th Jojo)
+- Clone Trooper armor (104th Hacksaw)
 
 Changed Gear
 ------------------
--
+- Clone Trooper P1 Helmet (104th Hacksaw)
+- Clone Trooper armor (104th Ceasar)
+- Clone Trooper ARC Trooper Helmet (104th Ceasar)
+- Clone ARC Trooper Vest (104th Ceasar)
+- Clone Trooper armor (104th Larkkit)
+- Clone Trooper P2 Special Activities Helmet (104th Larkkit)
+- Clone Trooper P2 Helmet (104th Skav)
 
 Removed Gear
 ------------------
@@ -18,18 +26,11 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
-- [104th] AS-3 (White) Aero Signal Smoke Grenade
-- [104th] AS-3 (Green) Aero Signal Smoke Grenade
-- [104th] AS-3 (Purple) Aero Signal Smoke Grenade
-- [104th] AS-3 (Yellow) Aero Signal Smoke Grenade
-- [104th] AS-3 (Orange) Aero Signal Smoke Grenade
+-
 
 Changed Weapons & Attachments
 ------------------
-- [104th] Smoke Grenades - Model Change
-- [104th] Thermal Detonator - Model Change
-- [104th] DC-15A - Rebalance
-- [104th] DC-17M - Rework
+- Clone Trooper JT12 LR (104th Freq)
 
 ------------------
 Removed Weapons & Attachments
@@ -44,7 +45,7 @@ New Vehicles & Supplies
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] TX-130 Super Saber
+-
 
 Removed Vehicles & Supplies
 ------------------
