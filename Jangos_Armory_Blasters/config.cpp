@@ -123,7 +123,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_10mw500",
             "JA_104th_Weapons_Mags_30mw30",
             "JA_104th_Weapons_Mags_40mw20",
-            "JA_104th_Weapons_Mags_20mw70",
+            "JA_104th_Weapons_Mags_30mw70",
             "JA_104th_Weapons_Mags_17M_AT",
             "JA_104th_Weapons_Mags_50mw7",
             "JA_104th_Weapons_Mags_100Mw1",
@@ -2691,7 +2691,7 @@ class CfgWeapons
         magazines[] =
             {
                 "JA_104th_Weapons_Mags_20mw40",
-                "JA_104th_Weapons_Mags_20mw70"};
+                "JA_104th_Weapons_Mags_30mw70"};
         class stun : JA_104th_stun_muzzle
         {
         };
@@ -3005,7 +3005,7 @@ class CfgWeapons
         magazines[] =
             {
                 "JA_104th_Weapons_Mags_20mw40",
-                "JA_104th_Weapons_Mags_20mw70"};
+                "JA_104th_Weapons_Mags_30mw70"};
         muzzles[] =
             {
                 "this",
