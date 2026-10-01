@@ -119,6 +119,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_stun10",
             "JA_104th_Weapons_Mags_10mw50",
             "JA_104th_Weapons_Mags_20mw40",
+            "JA_104th_Weapons_Mags_20mw70",
             "JA_104th_Weapons_Mags_20mw240",
             "JA_104th_Weapons_Mags_10mw500",
             "JA_104th_Weapons_Mags_30mw30",
@@ -4064,6 +4065,26 @@ class CfgMagazines
         typicalSpeed = 800;
     };
 
+    // Westar Blaster Extended Mags
+    class JA_104th_Weapons_Mags_20mw70 : 30Rnd_65x39_caseless_mag
+    {
+        ls_weapons_isBlasterMag = 1;
+        displayName = "[104th] Extended Energy Cell";
+        displayNameShort = "70Rnd 20MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
+        count = 70;
+        ammo = "JA_104th_Weapons_Ammo_20mw";
+        initSpeed = 800;
+        descriptionShort = "Westar Blaster Extended magazine";
+        mass = 9;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 800;
+    };
+
     // Med-High Capacity
     class JA_104th_Weapons_Mags_20mw240 : 30Rnd_65x39_caseless_mag
     {
@@ -4159,6 +4180,7 @@ class CfgMagazines
         tracersEvery = 1;
         typicalSpeed = 800;
     };
+    
     // DC17M AT Mag
     class JA_104th_Weapons_Mags_17M_AT : 30Rnd_65x39_caseless_mag
     {
@@ -4196,6 +4218,7 @@ class CfgMagazines
         tracersEvery = 1;
         typicalSpeed = 2000;
     };
+
     // SF Sniper HVAP Mag
     class JA_104th_Weapons_Mags_100Mw1 : 30Rnd_65x39_caseless_mag
     {
