@@ -2112,7 +2112,6 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
                     {
-                        "3AS_optic_DC15C_F",
                         "3AS_Imp_Optic_1",
                         "3AS_Imp_Optic_2",
                         "3AS_Imp_Optic_3",
