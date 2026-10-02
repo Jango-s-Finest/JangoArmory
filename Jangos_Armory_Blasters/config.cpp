@@ -2644,18 +2644,9 @@ class CfgWeapons
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
-                    {
-                    "JA_104th_cows_rco",
-                    "JA_104th_cows_rco_2",
-                    "JA_104th_cows_rco_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_HoloScope",
-                    "JA_104th_cows_HoloScope_2",
-                    "JA_104th_cows_HoloScope_3"
-
-                    };
+                {
+                 
+                };
             };
             class PointerSlot : PointerSlot
             {
