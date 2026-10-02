@@ -5213,8 +5213,8 @@ class cfgVehicles
 		stallSpeed = 0;
 
 		armor = 550;
-		weapons[] = {"Laserdesignator_pilotCamera", "CMFlareLauncher", "212th_YWing_Voltic_Cannon", "JA_104th_AA_Lazer", "212th_A2A_MissileSystem", "212th_WGM_MissileSystem", "212th_Gizka_Bomb_ReleaseSystem"};
-		magazines[] = {"Laserbatteries", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag"};
+		weapons[] = {"Laserdesignator_pilotCamera", "CMFlareLauncher", "212th_YWing_Voltic_Cannon", "JA_104th_AA_Lazer", "JA_104th_AIM9X", "212th_WGM_MissileSystem", "212th_Gizka_Bomb_ReleaseSystem"};
+		magazines[] = {"Laserbatteries", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_LAAT_AIM9X", "JA_LAAT_AIM9X", "JA_LAAT_AIM9X", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag"};
 		class pilotCamera
 		{
 			class OpticsIn

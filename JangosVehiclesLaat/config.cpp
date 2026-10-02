@@ -234,7 +234,7 @@ class cfgVehicles
 		fuelCapacity = 4000;
 		ls_impulsor_fuelDrain_1 = 0.000005;
 		ls_impulsor_fuelDrain_2 = 0.000015;
-		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "212th_A2A_MissileSystem", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "ls_weapon_CMFlareLauncher"};
+		weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "JA_104th_AIM9X", "ls_weapon_laati_missiles", "ace_missileguidance_dagr", "Laserdesignator_pilotCamera", "FC_Dropcrate_PW1", "ls_weapon_CMFlareLauncher"};
 		magazines[] = {
 			"ls_magazine_50mm_200Rnd_HE_green",
 			"ls_magazine_50mm_200Rnd_HE_green",
@@ -247,8 +247,8 @@ class cfgVehicles
 			"ls_magazine_50mm_200Rnd_APFSDS_green",
 			"ls_magazine_50mm_200Rnd_APFSDS_green",
 			"ls_magazine_50mm_200Rnd_APFSDS_green",
-			"212th_Drexl_4Rnd_A2A_mag",
-			"212th_Drexl_4Rnd_A2A_mag",
+			"JA_LAAT_AIM9X",
+			"JA_LAAT_AIM9X",
 			"12rnd_missiles",
 			"12rnd_missiles",
 			"12rnd_missiles",
