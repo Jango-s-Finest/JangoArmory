@@ -2686,7 +2686,7 @@ class CfgWeapons
             };
         };
     };
-    // Westar M5
+    // Westar M4
     class JA_104th_WestarM4 : JA_104th_rifle_base
     {
         ACE_barrelTwist = 406;
@@ -2711,7 +2711,7 @@ class CfgWeapons
         magazines[] =
             {
                 "JA_104th_Weapons_Mags_20mw40",
-                "JA_104th_Weapons_Mags_30mw70"};
+                "JA_104th_Weapons_Mags_20mw70"};
         class stun : JA_104th_stun_muzzle
         {
         };
@@ -2840,7 +2840,8 @@ class CfgWeapons
                 "JA_104th_WestarM5_UGL_F"};
         magazines[] =
             {
-                "JA_104th_Weapons_Mags_20mw40"};
+                "JA_104th_Weapons_Mags_20mw40",
+                "JA_104th_Weapons_Mags_20mw70"};
         class stun : JA_104th_stun_muzzle
         {
         };
