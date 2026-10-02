@@ -1396,12 +1396,7 @@ class CfgWeapons
                         "JA_104th_cows_DMS",
                         "JA_104th_cows_DMS_2",
                         "JA_104th_cows_DMS_3",
-                        "JA_104th_cows_DMS_4",
-
-                        "JA_104th_cows_Holoscope_LR",
-                        "JA_104th_cows_Holoscope_LR_2",
-                        "JA_104th_cows_Holoscope_LR_3",
-                        "JA_104th_cows_Holoscope_LR_4"
+                        "JA_104th_cows_DMS_4"
                 };
             };
             class MuzzleSlot : MuzzleSlot
