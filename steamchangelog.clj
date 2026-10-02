@@ -2,7 +2,7 @@
 [h2]Custom Gear[/h2]
 [h3]Added[/h3]
 [list]
-    [*] 
+    [*] Clone Trooper Engineer Helmet (104th Tired)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -35,7 +35,7 @@
 [/list]
 [h3]Removed[/h3]
 [list]
-    [*] 
+    [*] Chaff Launcher from ground vehicles
 [/list]
 [h3]Changes[/h3]
 [list]
