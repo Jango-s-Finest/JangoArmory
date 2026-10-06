@@ -1598,24 +1598,147 @@ class CfgWeapons
         {
             "Jangos_Armory_Blasters\data\textures\Base_co.paa"
         };
-        class OpticsModes:OpticsModes
+    };
+    class Rifle;
+    class arifle_SPAR_03_blk_F : Rifle
+    {
+        class WeaponSlotsInfo;
+        class GunParticles;
+        class Single;
+        class FullAuto;
+    };
+    class JA_104th_MTR_4 : arifle_SPAR_03_blk_F{
+        model = "Jangos_Armory_Blasters\data\models\mtr_4.p3d";
+        displayName = "[104th] MTR-4";
+        baseWeapon = "JA_104th_MTR_4";
+        hiddenSelections[] =
         {
-            class Ironsights
+            "camo",
+            "magazine"
+        };
+		hiddenSelectionsTextures[] =
+        {
+            "Jangos_Armory_Blasters\data\textures\mtr_4_co.paa",
+            "Jangos_Armory_Blasters\data\textures\mtr_4_co.paa"
+        };
+        class Single : Single
+        {
+            reloadTime = 0.13;
+            dispersion = 0.00025;
+            sounds[] = {"StandardSound", "SilencedSound"};
+            class StandardSound : BaseSoundModeType
             {
-                opticsID = 1;
-                useModelOptics = 0;
-                opticsFlare = "true";
-                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
-                opticsDisablePeripherialVision = 0.67;
-                opticsZoomMin = 0.25;
-                opticsZoomMax = 1.1;
-                opticsZoomInit = 0.75;
-                memoryPointCamera = "eye";
-                visionMode[] = {};
-                distanceZoomMin = 100;
-                distanceZoomMax = 100;
+                weaponSoundEffect = "";
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound.ogg", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound.ogg", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound.ogg", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+            };
+            class SilencedSound : BaseSoundModeType
+            {
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound_supressed.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound_supressed.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound_supressed.wss", +0.3db, 1, 2200};
+                closure1[] = {};
+                closure2[] = {};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+                soundClosure[] = {};
+                weaponSoundEffect = "";
             };
         };
+        class FullAuto : FullAuto
+        {
+            reloadTime = 0.13;
+            dispersion = 0.0004;
+            sounds[] = {"StandardSound", "SilencedSound"};
+            class StandardSound : BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound.ogg", +3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound.ogg", +3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound.ogg", +3db, 1, 2200};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+            };
+            class SilencedSound : BaseSoundModeType
+            {
+                begin1[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin2[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                begin3[] = {"Jangos_Armory_Blasters\data\sounds\Suppressed_Rifle_shot.wss", +0.3db, 1, 2200};
+                closure1[] = {};
+                closure2[] = {};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
+                soundClosure[] = {};
+                weaponSoundEffect = "";
+            };
+        };
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot : CowsSlot
+            {
+                displayName = "Optics Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = {0.5, 0.35};
+                iconScale = 0.2;
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                compatibleItems[] =
+                    {
+                        "3AS_optic_DC15LE_F",
+                        "3AS_optic_DC15C_F",
+                        "3AS_Optic_Scope_WestarM5",
+                        "JA_104th_cows_rco",
+                        "JA_104th_cows_rco_2",
+                        "JA_104th_cows_rco_3",
+
+                        "JA_104th_cows_mrco",
+                        "JA_104th_cows_mrco_2",
+                        "JA_104th_cows_mrco_3",
+
+                        "JA_104th_cows_Holosight",
+                        "JA_104th_cows_Holosight_2",
+                        "JA_104th_cows_Holosight_3",
+
+                        "JA_104th_cows_HoloScope",
+                        "JA_104th_cows_HoloScope_2",
+                        "JA_104th_cows_HoloScope_3",
+
+                        "JA_104th_cows_DMS",
+                        "JA_104th_cows_DMS_2",
+                        "JA_104th_cows_DMS_3",
+                        "JA_104th_cows_DMS_4"
+                };
+            };
+            class MuzzleSlot : MuzzleSlot
+            {
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                compatibleItems[] =
+                    {
+                        "JA_104th_muzzle_flash",
+                        "muzzle_snds_H",
+                        "3AS_muzzle_DC15LE_F"};
+            };
+            class PointerSlot : PointerSlot
+            {
+                linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+                displayName = "Pointer Slot";
+                compatibleItems[] =
+                    {
+                        "acc_flashlight",
+                        "acc_pointer_IR"};
+            };
+            class UnderBarrelSlot : UnderBarrelSlot
+            {
+                iconPicture = "\A3\Weapons_F_Mark\Data\UI\attachment_under.paa";
+                iconPinpoint = "Bottom";
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                compatibleItems[] =
+                    {
+                        "bipod_01_f_blk",
+                        "3AS_Bipod_DC15L_f"};
+            };
+        };
+    
     };
     // DC15C
     class JA_104th_DC15C : JA_104th_rifle_base
