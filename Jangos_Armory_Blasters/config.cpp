@@ -64,6 +64,7 @@ class CfgPatches
             "JA_104th_FP773",
             "JA_104th_DC17M",
             "JA_104th_DP23",
+            "JA_104th_MTR_4",
             "JA_104th_WestarM4",
             "JA_104th_WestarM5",
             "JA_104th_Westar35S",
@@ -126,9 +127,11 @@ class CfgPatches
             "JA_104th_Weapons_Mags_10mw500",
             "JA_104th_Weapons_Mags_30mw30",
             "JA_104th_Weapons_Mags_40mw20",
+            "JA_104th_Weapons_Mags_30mw36",
             "JA_104th_Weapons_Mags_30mw70",
             "JA_104th_Weapons_Mags_17M_AT",
             "JA_104th_Weapons_Mags_50mw7",
+            "JA_104th_Weapons_Mags_50mw24",
             "JA_104th_Weapons_Mags_100Mw1",
             "JA_104th_Weapons_Mags_EMPMw2",
             "JA_104th_Weapons_Mags_10mw20SC",
@@ -162,6 +165,41 @@ class CfgPatches
             "JA_104_Personal_Shield",
             "JA_104_Personal_Shield_Body"
         };
+    };
+};
+class CfgSoundShaders
+{
+    class JA_MTR_4_Shot_SoundShader
+    {
+        samples[] = { {"\data\sounds\mtr4_shotsound.ogg", 1} };
+        volume = 1.0; // Adjust loudness here
+        range = 1800; // How far the sound can be heard in meters
+    };
+    // Suppressed Audio
+    class JA_MTR_4_Supressed_Shot_SoundShader
+    {
+        samples[] = { {"\data\sounds\mtr4_shotsound_supressed.ogg", 1} };
+        volume = 0.6; // Lower base volume for the engine
+        range = 150;  // Considerably smaller sound travel range
+    };
+};
+
+class CfgSoundSets
+{
+    class JA_MTR_4_Shot_SoundSet
+    {
+        soundShaders[] = { "JA_MTR_4_Shot_SoundShader" };
+        volumeFactor = 1;
+        spatial = 1;
+        loop = 0;
+    };
+    // Suppressed Set
+    class JA_MTR_4_Supressed_Shot_SoundSet
+    {
+        soundShaders[] = { "JA_MTR_4_Supressed_Shot_SoundShader" };
+        volumeFactor = 1;
+        spatial = 1;
+        loop = 0;
     };
 };
 class CfgEditorCategories
@@ -220,6 +258,7 @@ class CfgWeapons
 
     class Weapon_Base_F;
     class Rifle_Base_F;
+    class Rifle;
     class Pistol_Base_F;
     class Launcher;
     class UGL_F;
@@ -244,6 +283,12 @@ class CfgWeapons
     class arifle_MX_Base_F : Rifle_Base_F
     {
         class WeaponSlotsInfo;
+    };
+    
+    class arifle_SPAR_03_blk_F : Rifle
+    {
+        class WeaponSlotsInfo;
+        class GunParticles;
     };
 
     class hgun_P07_F : Pistol_Base_F
@@ -1586,7 +1631,8 @@ class CfgWeapons
         };
     };
 
-    class JA_104th_T32C : JA_104th_DC15A{
+    class JA_104th_T32C : JA_104th_DC15A
+{
         model = "Jangos_Armory_Blasters\data\models\JA_T32C.p3d";
         displayName = "[104th] T-32C";
         baseWeapon = "JA_104th_T32C";
@@ -2683,6 +2729,115 @@ class CfgWeapons
                 iconPinpoint = "Center";
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
                 displayName = "Pointer Slot";
+            };
+        };
+    };
+    // MTR-4
+    class JA_104th_MTR_4 : arifle_SPAR_03_blk_F
+    {
+        author = "Ceasar";
+        baseWeapon = "JA_104th_MTR_4";
+        scope = 2;
+        displayName = "[104th] MTR-4";
+        descriptionShort = "Heavy Marksman Rifle";
+        mass = 60;
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc17m_ui_ca.paa";
+        model = "\data\models\mtr_4.p3d";
+        magazines[] =
+        {
+            "JA_104th_Weapons_Mags_30mw36",
+            "JA_104th_Weapons_Mags_50mw24"
+        };
+        modes[] = { "Single", "Burst" };
+
+        class Mode_Single : Mode_Single
+        {
+            reloadTime = 0.2667;
+            dispersion = 0.00005;
+            sounds[] = { "JA_MTR_4_Shot_SoundSet", "JA_MTR_4_Supressed_Shot_SoundSet"};
+            class JA_MTR_4_Shot_SoundSet 
+            {
+                soundShaders[] = { "JA_MTR_4_Shot_SoundShader" };
+                volumeFactor = 1;
+                spatial = 1;
+                loop = 0;
+            };
+            class JA_MTR_4_Supressed_Shot_SoundSet
+            {
+                soundShaders[] = { "JA_MTR_4_Supressed_Shot_SoundShader" };
+                volumeFactor = 1;
+                spatial = 1;
+                loop = 0;
+            };
+        };
+        class Mode_Burst : Mode_Burst
+        {
+            reloadTime = 0.1818;
+            dispersion = 0.00008;
+            burst = 3;
+            sounds[] = { "JA_MTR_4_Shot_SoundSet", "JA_MTR_4_Supressed_Shot_SoundSet" };
+            class JA_MTR_4_Shot_SoundSet
+            {
+                soundShaders[] = { "JA_MTR_4_Shot_SoundShader" };
+                volumeFactor = 1;
+                spatial = 1;
+                loop = 0;
+            };
+            class JA_MTR_4_Supressed_Shot_SoundSet
+            {
+                soundShaders[] = { "JA_MTR_4_Supressed_Shot_SoundShader" };
+                volumeFactor = 1;
+                spatial = 1;
+                loop = 0;
+            };
+        };
+        class GunParticles
+        {
+            class FirstEffect
+            {
+                directionName = "Konec hlavne";
+                effectName = "RifleAssaultCloud";
+                positionName = "Usti hlavne";
+            };
+        };
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot : CowsSlot
+            {
+                displayName = "Optics Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = { 0.5, 0.35 };
+                iconScale = 0.2;
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                compatibleItems[] =
+                {
+                    "3AS_Imp_Optic_2",
+                    "3AS_Imp_Optic_3",
+                    "3AS_Imp_Optic_4",
+                    "JA_104th_cows_LRPS",
+                    "optic_DMS"
+                };
+            };
+            class MuzzleSlot : MuzzleSlot
+            {
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+                iconPinpoint = "Center";
+                compatibleItems[] =
+                {
+                    "JA_104th_muzzle_suppressor"
+                    "JA_104th_muzzle_flash"
+                };
+            class PointerSlot : PointerSlot
+            {
+                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+                 displayName = "Pointer Slot";
+                 compatibleItems[] =
+                 {
+                     "acc_flashlight",
+                     "acc_pointer_IR" };
             };
         };
     };
@@ -4208,6 +4363,44 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         tracersEvery = 1;
         typicalSpeed = 1500;
+    };
+    // MTR-4 Heavy Blaster Mag
+    class JA_104th_Weapons_Mags_50mw24 : 30Rnd_65x39_caseless_mag
+    {
+        ls_weapons_isBlasterMag = 1;
+        displayName = "[104th] Pressurized Cobalt Magazine";
+        displayNameShort = "24Rnd 50MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
+        count = 24;
+        ammo = "JA_104th_Weapons_Ammo_50mw";
+        initSpeed = 1500;
+        descriptionShort = "MTR-4 Pressure Magazine";
+        mass = 6;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 1500;
+    };
+    // MTR-4 Medium Blaster Mag
+    class JA_104th_Weapons_Mags_30mw36 : 30Rnd_65x39_caseless_mag
+    {
+        ls_weapons_isBlasterMag = 1;
+        displayName = "[104th] Pressurized Aqua Magazine";
+        displayNameShort = "36Rnd 30MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
+        count = 36;
+        ammo = "JA_104th_Weapons_Ammo_30mw";
+        initSpeed = 1000;
+        descriptionShort = "MTR-4 Pressure Magazine";
+        mass = 6;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 1000;
     };
 
     // FP773 HP + 17M sniper
