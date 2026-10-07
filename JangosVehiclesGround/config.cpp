@@ -257,13 +257,10 @@ class cfgVehicles
 				weapons[] =
 					{
 						"Laserdesignator_pilotCamera",
-						"CMFlareLauncher",
 						"JA_104th_AP_Lazer"};
 				magazines[] =
 					{
 						"Laserbatteries",
-						"300Rnd_CMFlare_Chaff_Magazine",
-						"300Rnd_CMFlare_Chaff_Magazine",
 						"JA_104th_AP_Lazer_MAG_250",
 						"JA_104th_AP_Lazer_MAG_250",
 						"JA_104th_AP_Lazer_MAG_250",
@@ -782,8 +779,8 @@ class cfgVehicles
 		side = 1;
 		forceInGarage = 1;
 		armor = 500;
-		weapons[] = {"SmokeLauncher","CMFlareLauncher"};
-		magazines[] = {"SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine","SmokeLauncherMag","300Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"SmokeLauncher"};
+		magazines[] = {"SmokeLauncherMag","SmokeLauncherMag",};
 		hiddenselectionstextures[] = {
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_TCW_co.paa",
 			"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
@@ -1022,8 +1019,8 @@ class cfgVehicles
 				gun = "Maingun_Super";
 				animationSourceBody = "MainTurret_Super";
 				animationSourceGun = "Maingun_Super";
-				weapons[] = {"JA_Sabre_Maingun_Cannon"};
-				magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_Normal_Mag"};
+				weapons[] = {"3AS_Sabre_Cannons_Super"};
+				magazines[] = {"3AS_25rnd_Sabre_Super_Mag","3AS_25rnd_Sabre_Super_Mag","3AS_25rnd_Sabre_Super_Mag"};
 				minTurn = -360;
 				maxTurn = 360;
 				initTurn = 0;
@@ -3990,8 +3987,8 @@ class cfgVehicles
 				memoryPointGun = "usti hlavne"; //"usti hlavne2" is the MG port left of the gun, while "usti hlavne" is the end of the cannon barrel.
 				maxVerticalRotSpeed = "90/45";
 				maxHorizontalRotSpeed = "90/45";
-				weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "CMFlareLauncher", "Laserdesignator_mounted"};
-				magazines[] = {"Laserbatteries", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
+				weapons[] = {"ls_weapon_laati_turret_50mm_he", "ls_weapon_laati_turret_50mm_ap", "3AS_Sabre_MG", "OPTRE_M670_ATGM_Launcher", "Laserdesignator_mounted"};
+				magazines[] = {"Laserbatteries", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "ls_magazine_50mm_200Rnd_HE_green", "ls_magazine_50mm_200Rnd_APFSDS_green", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "3AS_300Rnd_SabreMG_Mag", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles", "OPTRE_2Rnd_GAT_missiles"};
 				minElev = -12;
 				maxElev = 60; // Original 35
 				initElev = 0;
@@ -4572,8 +4569,8 @@ class cfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
-				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+				weapons[] = {"JA_104th_Z6_weaker", "Laserdesignator_mounted"};
+				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "Laserbatteries"};
 				gunnerName = "Gunner";
 			};
 			class CommanderOptics : CommanderOptics

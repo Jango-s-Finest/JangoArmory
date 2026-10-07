@@ -80,7 +80,7 @@ class CfgPatches
 class CfgAmmo{
 	class 3AS_Vwing_Medium_Energy_Shells;
 	class 3AS_V19_Medium_Energy_Shells;
-	class 212th_Drexl_A2A_Missile;
+	class 3AS_ammo_AMRAAM;
 	class FIR_Brimstone_dm;
 	class FIR_AIM120;
 	class FIR_AIM9X;
@@ -126,7 +126,7 @@ class CfgAmmo{
 		aiAmmoUsageFlagsStrict = 0;
 	};
 	
-	class JA_LAAT_Drexl_Ammo: 212th_Drexl_A2A_Missile{
+	class JA_LAAT_Drexl_Ammo: 3AS_ammo_AMRAAM{
 		model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
 		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
 	};
@@ -323,7 +323,7 @@ class CfgMagazines{
 	class TKE_Ext_75mm_60Rnd;
 	class 3AS_10Rnd_Siege_Cannon_HHE_shells;
 	class FIR_F15C_Fueltank_P_1rnd_M;
-	class 212th_Drexl_4Rnd_A2A_mag;
+	class 3AS_SAM_6Rnd_AMRAAM;
 	class FIR_Brimstone_DM_std_P_3rnd_M;
 	class FIR_AGM88_P_1rnd_M;
 	class FIR_GBU53_EWP_6rnd_M;
@@ -457,11 +457,12 @@ class CfgMagazines{
 
 	};
 
-	class JA_LAAT_Drexl : 212th_Drexl_4Rnd_A2A_mag{
+	class JA_LAAT_Drexl : 3AS_SAM_6Rnd_AMRAAM{
 		ammo = "JA_LAAT_Drexl_Ammo";
 		displayName = "[104th] Drexl AA Missile";
 		hardpoints[] = {"B_MISSILE_PYLON","FIR_A10C_AA_HP","FIR_BLUFOR_AA_HP","FIR_BLUFOR_Combined_HP","FIR_MQ81_WEP_HP","B_MISSILE_PYLON"};
         pylonWeapon = "JA_104th_Drexl";
+        count = 4;
         model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
 	};
 	
@@ -547,7 +548,7 @@ class CfgWeapons{
 	};
 	class TKE_Ext_Cannon_Railgun_Light;
 	class 3AS_ATAP_Siege_Cannon;
-	class 212th_A2A_MissileSystem;
+	class 3AS_Hailfire_SAM_weapon;
 	class FIR_Brimstone;
 	class JA_104th_Z6;
 	class manual;
@@ -992,7 +993,7 @@ class CfgWeapons{
 		magazines[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10"};
 		ballisticsComputer = "1 + 2 + 8 + 16";
 	};
-	class JA_104th_Drexl : 212th_A2A_MissileSystem{
+	class JA_104th_Drexl : 3AS_Hailfire_SAM_weapon{
 		magazines[] = {"JA_LAAT_Drexl"};
 	};
 	class JA_104th_Brimstone : FIR_Brimstone{
