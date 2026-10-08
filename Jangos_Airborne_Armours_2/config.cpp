@@ -14,7 +14,8 @@ class CfgPatches
 			"JA_104th_Grimmer",
 			"JA_104th_Artorias",
 			"JA_104th_Hound",
-			"JA_104th_Kage_test"
+			"JA_104th_Kage",
+			"JA_104th_Hacksaw"
 		};
 		weapons[] = {
 			"JA_104th_SenateComando_Uniform",
@@ -23,7 +24,8 @@ class CfgPatches
 			"JA_104th_Grimmer_Uniform",
 			"JA_104th_Artorias_Uniform",
 			"JA_104th_Hound_Uniform",
-			"JA_104th_Kage_Uniform_test"
+			"JA_104th_Kage_Uniform",
+			"JA_104th_Hacksaw_Uniform"
 		};
 	};
 };
@@ -300,7 +302,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Kage_Uniform_test : JA_104th_SenateComando_Uniform
+	class JA_104th_Kage_Uniform : JA_104th_SenateComando_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -321,7 +323,31 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Kage_test";
+			uniformClass = "JA_104th_Kage";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Hacksaw_Uniform : JA_104th_Base_AB_Uniform
+	{
+		author = "Jango's Finest";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Hacksaw)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Hacksaw_Upper.paa",
+				"Jangos_Airborne_Armours_2\data\textures\104th_AB_Hacksaw_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Hacksaw";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -423,14 +449,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Hound_Helmet, JA_104th_Hound_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Hound_Helmet, JA_104th_Hound_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Kage_test : ls_csf_senateCommando
+	class JA_104th_Kage : ls_csf_senateCommando
 	{
 		author = "Fish";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Kage_Uniform_test";
+		uniformClass = "JA_104th_Kage_Uniform";
 		displayName = "104th Kage";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
@@ -438,5 +464,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Kage_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Kage_Lower.paa","\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"};
 		linkedItems[] = {JA_104th_Kage_Helmet, JA_104th_Kage_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Kage_Helmet, JA_104th_Kage_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Hacksaw : lsd_gar_phase2_base
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Hacksaw_Uniform";
+		displayName = "104th Hacksaw";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_categ_clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Airborne_Armours_2\data\Textures\104th_AB_Hacksaw_Upper.paa", "Jangos_Airborne_Armours_2\data\Textures\104th_AB_Hacksaw_Lower.paa"};
+		linkedItems[] = {JA_104th_Hacksaw_Helmet, JA_104th_Hacksaw_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Hacksaw_Helmet, JA_104th_Hacksaw_Vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

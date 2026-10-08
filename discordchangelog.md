@@ -3,11 +3,12 @@ _______________
 ```
 New Gear
 --------------
--
+- Clone Trooper Engineer Helmet (104th Tired)
 
 Changed Gear
 ------------------
--
+- Clone Trooper armor (104th Patch)
+- Clone Trooper P1 Helmet (104th Patch)
 
 Removed Gear
 ------------------
@@ -37,14 +38,11 @@ New Vehicles & Supplies
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] Rho Class - Ramp Fix
-- [104th] V-Wing Fighter - sound decreased
-- [104th] BTL-B Y-Wing Blue Leader - bubble gun should only fire at air targets
-- [104th] ARC-170 Blue - back gun should only fire at air targets
+-
 
 Removed Vehicles & Supplies
 ------------------
--
+- Chaff Launcher from ground vehicles
 
 ```
 

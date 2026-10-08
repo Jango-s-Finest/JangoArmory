@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[]={};
 		weapons[] = {
-			"IMS_NewCoolMeleeWeapon"
+			"JA_104th_Beskar"
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=

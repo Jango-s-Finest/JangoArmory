@@ -1380,7 +1380,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Magnum)";
+		displayname = "Clone Trooper JT12 LR (104th Magnum)";
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Magnum_Jumppack.paa"};
 	};
 	class JA_104th_Jumppack_JT12_Freq_LR : JA_104th_Jumppack_JT12_LR_Journeyman
@@ -1388,7 +1388,7 @@ class CfgVehicles
 		author = "Dak";
 		scope = 2;
 		scopeCurator = 2;
-		displayname = "Clone Trooper JT12 LR (Freq)";
+		displayname = "Clone Trooper JT12 LR (104th Freq)";
 		hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Freq_Jumppack.paa"};
 		maximumLoad = 450;
 	};

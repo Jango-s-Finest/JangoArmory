@@ -28,7 +28,7 @@ class CfgPatches
 			"JA_104th_Carmine",
 			"JA_104th_Clutch",
 			"JA_104th_Doc_AB",
-			"JA_104th_Kage",
+			"JA_104th_Kage_old",
 			"JA_104th_Sixes",
 			"JA_104th_Soul",
 			"JA_104th_Red",
@@ -60,7 +60,7 @@ class CfgPatches
 			"JA_104th_Kaleck_Uniform_old",
 			"JA_104th_Bulky_Uniform",
 			"JA_104th_Axel_Uniform_old",
-			"JA_104th_Kage_Uniform",
+			"JA_104th_Kage_Uniform_old",
 			"JA_104th_Sixes_Uniform",
 			"JA_104th_Soul_Uniform",
 			"JA_104th_Red_Uniform",
@@ -735,7 +735,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Kage_Uniform : JA_104th_Base_AB_Uniform
+	class JA_104th_Kage_Uniform_old : JA_104th_Base_AB_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -753,7 +753,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Kage";
+			uniformClass = "JA_104th_Kage_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1326,14 +1326,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Doc_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Doc_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Kage : lsd_gar_phase2_base
+	class JA_104th_Kage_old : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Kage_Uniform";
+		uniformClass = "JA_104th_Kage_Uniform_old";
 		displayName = "104th Kage";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
