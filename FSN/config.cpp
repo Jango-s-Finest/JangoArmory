@@ -12,14 +12,7 @@ class CfgPatches
 		name="Freestyles Nuke";
 		author="Freestyle_Build";
 		units[]={};
-		weapons[]=
-		{
-			"FSN_B83_Nuclear_W",
-			"FSN_B61_Nuclear_W",
-			"FSN_Nuclear_Missile_W",
-			"FSN_Nuclear_Cruise_Missile_W",
-			"FSN_Diamondback_Missile_W"
-		};
+		weapons[] = {};
 		requiredVersion=1;
 		requiredAddons[]=
 		{

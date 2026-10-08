@@ -3,12 +3,64 @@ class CfgPatches
 	class Jangos_Armory_Vehicles
 	{
 		units[] = {
-			"JA_104th_LAAT",
-			"JA_104th_LAAT_AB",
+			"Car_F",
+			"Tank",
+			"Tank_F",
+			"APC_Tracked_03_base_F",
+			"I_APC_Tracked_03_base_F",
+			"OPTRE_M494",
+			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
+			"JA_104th_3AS_Reaper_ARC_170_Blue",
+			"JA_104th_VWing",
+			"3as_V19_base",
+			"JA_104th_V19_Torrent",
 			"JA_104th_Base_Falcon_Armed",
 			"JA_104th_Base_Pelican_Unarmed",
 			"JA_104th_Base_Pelican_Armed",
+			"JA_104th_3AS_Reaper_Y_Wing",
+			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
+			"JA_104th_vulture_dynamicLoadout_base",
+			"JA_104th_Vulture_dynamicLoadout",
+			"JA_104th_Vulture_dynamicLoadout_AA",
+			"JA_104th_Vulture_dynamicLoadout_Bare",
 			"JA_104th_Base_TX130",
+			"JA_104th_BARC",
+			"JA_104th_NU",
+			"O_T_VTOL_02_infantry_dynamicLoadout_F",
+			"JA_104th_Xian_Infantry",
+			"O_T_VTOL_02_vehicle_dynamicLoadout_F",
+			"JA_104th_Xian_Vehicle",
+			"JA_104th_Republic_Transport",
+			"JA_104th_Uwing",
+			"JA_104th_N1",
+			"JA_104th_APC_Light_Bantha",
+			"JA_104th_LSV",
+			"shieldtest",
+			"oryxshield",
+			"oryxshieldvo",
+			"oryxshieldred",
+			"oryxshieldfb",
+			"oryxshieldhb",
+			"TX130shield",
+			"TX130shieldvo",
+			"TX130shieldfb",
+			"TX130shieldhb",
+			"TX130shieldred",
+			"ywingshield",
+			"ywingshieldvo",
+			"ywingshieldfb",
+			"ywingshieldhb",
+			"ywingshieldred",
+			"z95shieldvo",
+			"z95shieldfb",
+			"z95shieldhb",
+			"z95shieldred",
+			"droidekashieldvo",
+			"droidekashieldfb",
+			"droidekashieldhb",
+			"droidekashieldred",
+			"104th_EmptySoundPad",
+			"104th_GiantEmptySoundPad",
 			"JA_104th_Box_Ammo",
 			"JA_104th_Box_Explosives",
 			"JA_104th_Box_Engineer",
@@ -16,39 +68,30 @@ class CfgPatches
 			"JA_104th_Medical_Droid",
 			"JA_104th_Vehicle_spawner_Droid_Air",
 			"JA_104th_Vehicle_spawner_Droid_Ground",
-			"JA_104th_BARC",
-			"JA_104th_Oryx",
-			"JA_104th_OryxNS",
-			"JA_104th_APC_Light_Bantha",
-			"JA_104th_LSV",
-			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
-			"JA_104th_3AS_Reaper_ARC_170_Blue",
-			"JA_104th_3AS_Reaper_Y_Wing",
-			"JA_104th_3AS_Reaper_Y_Wing_Blue",
-			"JA_104th_3AS_Reaper_Y_Wing_BlueLeader",
-			"JA_104th_NU",
 			"JA_104th_Republic_HR_Bag",
 			"JA_104th_HeavyRepeater_Unarmoured",
-			"JA_104th_ATRT",
-			"JA_104th_Xian_Infantry",
-			"JA_104th_Xian_Vehicle",
-			"JA_104th_Republic_Transport",
-			"JA_104th_Heavy_Assault_Ship",
-			"JA_104th_Uwing",
-			"JA_104th_N1",
-			"JA_104th_VWing",
-			"JA_104th_V19_Torrent",
-			"JA_104th_Vulture_dynamicLoadout_base",
-			"JA_104th_Vulture_dynamicLoadout",
-			"JA_104th_Vulture_dynamicLoadout_AA",
-			"JA_104th_Vulture_dynamicLoadout_Bare",
-			"JA_104th_Impetus_Class_MAAG",
-			}; // All the new vehicles/units you've created in cfgVehicles
+			"JA_104th_Impetus_Class_MAAG"
+		}; // All the new vehicles/units you've created in cfgVehicles
 		weapons[] = {
-			"JA_104th_guided_resupply_pod_launcher",
+			"Launcher_Base_F",
+			"ls_laat_gun_2_104th",
+			"ls_127_blue_104th",
+			"JA_104th_Engineer_EWEB_Vest",
+			"JA_104th_guided_resupply_pod_launcher"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_EPB_Heli_Light_03", "A3_Armor_F_Beta", "A3_Soft_F", "lsd_vehicles_heli", "3as_nu", "A3_Air_F_Exp_VTOL_02", "3as_Starships", "A3_Weapons_F_Jets"};
+	magazines[] = {
+		"ls_magazine_50mm_200Rnd_APFSDS_green_104th",
+		"ls_500Rnd_127x99_mag_blue_104th",
+		"JA_104th_Guided_Resupply_Magazine"
+	};
+	ammo[] = {
+		"ls_50mm_laat_apfsds_104th",
+		"ls_127x99_blue_104th",
+		"JA_104th_guided_resupply_ammo",
+		"JA_104th_T9_green"
+	};
 	};
 };
 
@@ -2861,9 +2904,12 @@ class cfgVehicles
 	class 3AS_ARC_170_Republic;
 	class ACE_SelfActions;
 	class UserActions;
+	class Reargun;
+	class LaserPilot;
+	class BubbleGun;
 	class JA_104th_3AS_Reaper_ARC_170_Blue : 3AS_ARC_170_Republic{
 		Author = "212th + 3AS + Echo";
-		displayName = "104th ARC-170 Blue";
+		displayName = "[104th] ARC-170 Blue";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -3296,12 +3342,27 @@ class cfgVehicles
 				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
 			};
 		};
+		class Turrets:Turrets
+		{
+			class Reargun: Reargun
+			{
+				gunnerName = "Rear Gunner";
+				weapons[] = {"JA_104th_AA_Lazer","CMFlareLauncher"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500","240Rnd_CMFlare_Chaff_Magazine"};
+			};
+			class LaserPilot: LaserPilot
+			{
+				weapons[] = {"JA_104th_AA_Lazer"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500"};
+				gunnerName = "Co-pilot";
+			};
+		};
 	};
 
 	class 3as_Vwing_base;
 	class JA_104th_VWing : 3as_Vwing_base{
 		Author = "212th + 3AS + Echo";
-		displayName = "V-Wing Fighter";
+		displayName = "[104th] V-Wing Fighter";
 		scope = 2;
 		scopeArsenal = 2;
 		airBrake = 70;
@@ -3315,7 +3376,7 @@ class cfgVehicles
 		weapons[] = {"JA_104th_AA_Lazer", "CMFlareLauncher"};
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
 		crew = "JA_104th_P2_1C_Engineer";
-
+		soundEngineOnExt[] = {"3AS\3AS_Vwing\sounds\VwingStartup.ogg","db-0",1,500};
 		class Components
 		{
 			class SensorsManagerComponent
@@ -3692,6 +3753,58 @@ class cfgVehicles
 					displayName = "Deactivate Shield";
 					statement = "call BNA_KC_shields_fnc_deactivate";
 				};
+			};
+		};
+		class Sounds
+		{
+			class EngineLowOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",1,1600};
+				frequency = "1.0 min (rpm + 0.5)";
+				volume = "camPos*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95])";
+			};
+			class EngineHighOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",1.2,3000};
+				frequency = "1";
+				volume = "camPos*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])";
+			};
+			class ForsageOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db0",0.99,4000};
+				frequency = "1";
+				volume = "engineOn*camPos*(thrust factor[0.6, 1.0])";
+				cone[] = {3.14,3.92,2,0.5};
+			};
+			class WindNoiseOut
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingIdle.ogg","db-5",1,150};
+				frequency = "(0.1+(1.2*(speed factor[1, 150])))";
+				volume = "camPos*(speed factor[1, 150])";
+			};
+			class EngineLowIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1};
+				frequency = "1.0 min (rpm + 0.5)";
+				volume = "(1-camPos)*((rpm factor[0.7, 0.1])*(rpm factor[0.1, 0.7]))";
+			};
+			class EngineHighIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1.2};
+				frequency = "1";
+				volume = "(1-camPos)*(rpm factor[0.85, 1.0])";
+			};
+			class ForsageIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-2",1};
+				frequency = "1";
+				volume = "(1-camPos)*(engineOn*(thrust factor[0.6, 1.0]))";
+			};
+			class WindNoiseIn
+			{
+				sound[] = {"3AS\3AS_Vwing\sounds\VwingInt.ogg","db-6",1};
+				frequency = "(0.1+(1.2*(speed factor[1, 150])))";
+				volume = "(1-camPos)*(speed factor[1, 150])";
 			};
 		};
 	};
@@ -5100,8 +5213,8 @@ class cfgVehicles
 		stallSpeed = 0;
 
 		armor = 550;
-		weapons[] = {"Laserdesignator_pilotCamera", "CMFlareLauncher", "212th_YWing_Voltic_Cannon", "JA_104th_AA_Lazer", "212th_A2A_MissileSystem", "212th_WGM_MissileSystem", "212th_Gizka_Bomb_ReleaseSystem"};
-		magazines[] = {"Laserbatteries", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Drexl_4Rnd_A2A_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag"};
+		weapons[] = {"Laserdesignator_pilotCamera", "CMFlareLauncher", "212th_YWing_Voltic_Cannon", "JA_104th_AA_Lazer", "JA_104th_Drexl", "212th_WGM_MissileSystem", "212th_Gizka_Bomb_ReleaseSystem"};
+		magazines[] = {"Laserbatteries", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_LAAT_Drexl", "JA_LAAT_Drexl", "JA_LAAT_Drexl", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag"};
 		class pilotCamera
 		{
 			class OpticsIn
@@ -5686,6 +5799,9 @@ class cfgVehicles
 	class JA_104th_3AS_Reaper_Y_Wing_BlueLeader : JA_104th_3AS_Reaper_Y_Wing
 	{
 		displayName = "[104th] BTL-B Y-Wing Blue Leader";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
 		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
 		class TextureSources
 		{
@@ -5830,6 +5946,15 @@ class cfgVehicles
 				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
 			};
 		};
+		class Turrets
+		{
+			class BubbleGun: BubbleGun
+			{
+				gunnerName = "Bubble Gunner";
+				weapons[] = {"JA_104th_AA_Lazer","CMFlareLauncher"};
+				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500","240Rnd_CMFlare_Chaff_Magazine"};
+			};
+		};	
 	};
 
 	class JA_104th_vulture_dynamicLoadout_base : 3AS_Vulture_Base_F{
@@ -9371,7 +9496,7 @@ class cfgVehicles
 	class O_T_LSV_02_armed_F;
 	class JA_104th_LSV : O_T_LSV_02_armed_F
 	{
-		displayName = "104th Light Strike Vehicle";
+		displayName = "[104th] Light Strike Vehicle";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones_Vehicles_Land";
 		scope = 2;
@@ -9383,6 +9508,1925 @@ class cfgVehicles
 		{
 			init = "[_this select 0] execVM '\JangosVehicles\Script\OryxCrew\LSVGun.sqf';";
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled');";
+		};
+		class Turrets : Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"JA_104th_Z6_weaker", "CMFlareLauncher", "Laserdesignator_mounted"};
+				magazines[] = {"JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "JA_104th_Weapons_Mags_10mw500", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+				gunnerName = "Gunner";
+			};
+			class CargoTurret_01
+			{
+				gunnerAction = "passenger_inside_7";
+				gunnerName = "Passenger (Right Seat 1)";
+				memoryPointsGetInGunner = "pos codriver";
+				memoryPointsGetInGunnerDir = "pos codriver dir";
+				gunnerCompartments = "Compartment1";
+				proxyIndex = 1;
+				isPersonTurret = 1;
+				class dynamicViewLimits
+				{
+				};
+				class TurnIn
+				{
+					limitsArrayTop[] = {[-10.0308,-77.8106],[23.9652,-22.232],[7.6953,-8.7069]};
+					limitsArrayBottom[] = {[-41.2052,-81.3128],[-26.7636,-14.0276]};
+				};
+				class TurnOut
+				{
+					limitsArrayTop[] = {[-10.0308,-77.8106],[23.9652,-22.232],[7.6953,-8.7069]};
+					limitsArrayBottom[] = {[-41.2052,-81.3128],[-26.7636,-14.0276]};
+				};
+				class ViewGunner
+				{
+					initAngleX = 5;
+					minAngleX = -75;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				class Hitpoints
+				{
+				};
+				animationSourceBody = "";
+				animationSourceGun = "";
+				body = "";
+				canEject = 1;
+				commanding = 0;
+				dontCreateAI = 1;
+				gun = "";
+				gunnerGetInAction = "GetInLow";
+				gunnerGetOutAction = "GetOutLow";
+				hideWeaponsGunner = 0;
+				isCopilot = 0;
+				primaryGunner = 0;
+				proxyType = "CPCargo";
+				startEngine = 0;
+				turretFollowFreeLook = 0;
+				viewGunnerInExternal = 1;
+				disableSoundAttenuation = 1;
+				outGunnerMayFire = 1;
+				showAsCargo = 1;
+				maxElev = 45;
+				minElev = -45;
+				maxTurn = 95;
+				minTurn = -95;
+				animationSourceHatch = "hatchGunner";
+				animationSourceCamElev = "camElev";
+				gunnerType = "";
+				primaryObserver = 0;
+				weapons[] = {};
+				magazines[] = {};
+				soundServo[] = {"",0.00316228,1};
+				soundElevation[] = {"",0.00316228,1};
+				initElev = 0;
+				initTurn = 0;
+				minOutElev = -4;
+				maxOutElev = 20;
+				initOutElev = 0;
+				minOutTurn = -60;
+				maxOutTurn = 60;
+				initOutTurn = 0;
+				maxHorizontalRotSpeed = 1.2;
+				maxVerticalRotSpeed = 1.2;
+				minCamElev = -90;
+				maxCamElev = 90;
+				initCamElev = 0;
+				stabilizedInAxes = 3;
+				primary = 1;
+				hasGunner = 1;
+				turretCanSee = 0;
+				canUseScanners = 1;
+				class TurretSpec
+				{
+					showHeadPhones = 0;
+				};
+				gunnerOpticsModel = "";
+				gunnerOpticsColor[] = {0,0,0,1};
+				gunnerForceOptics = 1;
+				gunnerOpticsShowCursor = 0;
+				turretInfoType = "";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsColor[] = {0,0,0,1};
+				gunnerOpticsEffect[] = {};
+				gunnerOutOpticsEffect[] = {};
+				memoryPointGunnerOutOptics = "";
+				gunnerOutForceOptics = 0;
+				gunnerOutOpticsShowCursor = 0;
+				gunnerFireAlsoInInternalCamera = 1;
+				gunnerOutFireAlsoInInternalCamera = 1;
+				gunnerUsesPilotView = 0;
+				castGunnerShadow = 0;
+				viewGunnerShadow = 1;
+				viewGunnerShadowDiff = 1;
+				viewGunnerShadowAmb = 1;
+				ejectDeadGunner = 0;
+				canHideGunner = -1;
+				forceHideGunner = 0;
+				inGunnerMayFire = 1;
+				showHMD = 0;
+				lockWhenDriverOut = 0;
+				lockWhenVehicleSpeed = -1;
+				LODTurnedIn = -1;
+				LODTurnedOut = -1;
+				memoryPointsGetInGunnerPrecise = "";
+				missileBeg = "spice rakety";
+				missileEnd = "konec rakety";
+				armorLights = 0.4;
+				class Reflectors
+				{
+				};
+				aggregateReflectors[] = {};
+				class GunFire
+				{
+					access = 0;
+					cloudletDuration = 0.2;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 0.2;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 0.5;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletFire";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.01;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 4500;
+					deltaT = -3000;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {0.82,0.95,0.93,0};
+						};
+						class T1
+						{
+							maxT = 200;
+							color[] = {0.75,0.77,0.9,0};
+						};
+						class T2
+						{
+							maxT = 400;
+							color[] = {0.56,0.62,0.67,0};
+						};
+						class T3
+						{
+							maxT = 600;
+							color[] = {0.39,0.46,0.47,0};
+						};
+						class T4
+						{
+							maxT = 800;
+							color[] = {0.24,0.31,0.31,0};
+						};
+						class T5
+						{
+							maxT = 1000;
+							color[] = {0.23,0.31,0.29,0};
+						};
+						class T6
+						{
+							maxT = 1500;
+							color[] = {0.21,0.29,0.27,0};
+						};
+						class T7
+						{
+							maxT = 2000;
+							color[] = {0.19,0.23,0.21,0};
+						};
+						class T8
+						{
+							maxT = 2300;
+							color[] = {0.22,0.19,0.1,0};
+						};
+						class T9
+						{
+							maxT = 2500;
+							color[] = {0.35,0.2,0.02,0};
+						};
+						class T10
+						{
+							maxT = 2600;
+							color[] = {0.62,0.29,0.03,0};
+						};
+						class T11
+						{
+							maxT = 2650;
+							color[] = {0.59,0.35,0.05,0};
+						};
+						class T12
+						{
+							maxT = 2700;
+							color[] = {0.75,0.37,0.03,0};
+						};
+						class T13
+						{
+							maxT = 2750;
+							color[] = {0.88,0.34,0.03,0};
+						};
+						class T14
+						{
+							maxT = 2800;
+							color[] = {0.91,0.5,0.17,0};
+						};
+						class T15
+						{
+							maxT = 2850;
+							color[] = {1,0.6,0.2,0};
+						};
+						class T16
+						{
+							maxT = 2900;
+							color[] = {1,0.71,0.3,0};
+						};
+						class T17
+						{
+							maxT = 2950;
+							color[] = {0.98,0.83,0.41,0};
+						};
+						class T18
+						{
+							maxT = 3000;
+							color[] = {0.98,0.91,0.54,0};
+						};
+						class T19
+						{
+							maxT = 3100;
+							color[] = {0.98,0.99,0.6,0};
+						};
+						class T20
+						{
+							maxT = 3300;
+							color[] = {0.96,0.99,0.72,0};
+						};
+						class T21
+						{
+							maxT = 3600;
+							color[] = {1,0.98,0.91,0};
+						};
+						class T22
+						{
+							maxT = 4200;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class GunClouds
+				{
+					access = 0;
+					cloudletDuration = 0.3;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 1;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 1;
+					cloudletAccY = 0.4;
+					cloudletMinYSpeed = 0.2;
+					cloudletMaxYSpeed = 0.8;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.05;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class MGunClouds
+				{
+					access = 0;
+					cloudletGrowUp = 0.05;
+					cloudletFadeIn = 0;
+					cloudletFadeOut = 0.1;
+					cloudletDuration = 0.05;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 0.3;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					timeToLive = 0;
+					interval = 0.02;
+					size = 0.3;
+					sourceSize = 0.02;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class Turrets
+				{
+				};
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.3;
+					minFov = 0.07;
+					maxFov = 0.35;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				forceNVG = 0;
+				gunnerLeftHandAnimName = "";
+				gunnerRightHandAnimName = "";
+				gunnerLeftLegAnimName = "";
+				gunnerRightLegAnimName = "";
+				gunnerDoor = "";
+				preciseGetInOut = 0;
+				allowTabLock = 1;
+				showAllTargets = 0;
+				slingLoadOperator = 0;
+				playerPosition = 0;
+				allowLauncherIn = 0;
+				allowLauncherOut = 0;
+				gunnerInAction = "ManActTestDriver";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGun = "kulas";
+				selectionFireAnim = "zasleh";
+				showCrewAim = 0;
+				ace_fcs_Enabled = 0;
+				ace_fcs_MinDistance = 200;
+				ace_fcs_MaxDistance = 5500;
+				ace_fcs_DistanceInterval = 5;
+			};
+			class CargoTurret_02
+			{
+				gunnerAction = "passenger_inside_7";
+				gunnerName = "Passenger (Left Seat 2)";
+				memoryPointsGetInGunner = "pos cargo LR";
+				memoryPointsGetInGunnerDir = "pos cargo LR dir";
+				gunnerCompartments = "Compartment1";
+				proxyIndex = 2;
+				class TurnIn
+				{
+					limitsArrayTop[] = {[21.6077,37.6922],[30.6283,94.8965]};
+					limitsArrayBottom[] = {[-41.0575,37.4281],[-44.889,95]};
+				};
+				class TurnOut
+				{
+					limitsArrayTop[] = {[21.6077,37.6922],[30.6283,94.8965]};
+					limitsArrayBottom[] = {[-41.0575,37.4281],[-44.889,95]};
+				};
+				isPersonTurret = 1;
+				class dynamicViewLimits
+				{
+				};
+				class ViewGunner
+				{
+					initAngleX = 5;
+					minAngleX = -75;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				class Hitpoints
+				{
+				};
+				animationSourceBody = "";
+				animationSourceGun = "";
+				body = "";
+				canEject = 1;
+				commanding = 0;
+				dontCreateAI = 1;
+				gun = "";
+				gunnerGetInAction = "GetInLow";
+				gunnerGetOutAction = "GetOutLow";
+				hideWeaponsGunner = 0;
+				isCopilot = 0;
+				primaryGunner = 0;
+				proxyType = "CPCargo";
+				startEngine = 0;
+				turretFollowFreeLook = 0;
+				viewGunnerInExternal = 1;
+				disableSoundAttenuation = 1;
+				outGunnerMayFire = 1;
+				showAsCargo = 1;
+				maxElev = 45;
+				minElev = -45;
+				maxTurn = 95;
+				minTurn = -95;
+				animationSourceHatch = "hatchGunner";
+				animationSourceCamElev = "camElev";
+				gunnerType = "";
+				primaryObserver = 0;
+				weapons[] = {};
+				magazines[] = {};
+				soundServo[] = {"",0.00316228,1};
+				soundElevation[] = {"",0.00316228,1};
+				initElev = 0;
+				initTurn = 0;
+				minOutElev = -4;
+				maxOutElev = 20;
+				initOutElev = 0;
+				minOutTurn = -60;
+				maxOutTurn = 60;
+				initOutTurn = 0;
+				maxHorizontalRotSpeed = 1.2;
+				maxVerticalRotSpeed = 1.2;
+				minCamElev = -90;
+				maxCamElev = 90;
+				initCamElev = 0;
+				stabilizedInAxes = 3;
+				primary = 1;
+				hasGunner = 1;
+				turretCanSee = 0;
+				canUseScanners = 1;
+				class TurretSpec
+				{
+					showHeadPhones = 0;
+				};
+				gunnerOpticsModel = "";
+				gunnerOpticsColor[] = {0,0,0,1};
+				gunnerForceOptics = 1;
+				gunnerOpticsShowCursor = 0;
+				turretInfoType = "";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsColor[] = {0,0,0,1};
+				gunnerOpticsEffect[] = {};
+				gunnerOutOpticsEffect[] = {};
+				memoryPointGunnerOutOptics = "";
+				gunnerOutForceOptics = 0;
+				gunnerOutOpticsShowCursor = 0;
+				gunnerFireAlsoInInternalCamera = 1;
+				gunnerOutFireAlsoInInternalCamera = 1;
+				gunnerUsesPilotView = 0;
+				castGunnerShadow = 0;
+				viewGunnerShadow = 1;
+				viewGunnerShadowDiff = 1;
+				viewGunnerShadowAmb = 1;
+				ejectDeadGunner = 0;
+				canHideGunner = -1;
+				forceHideGunner = 0;
+				inGunnerMayFire = 1;
+				showHMD = 0;
+				lockWhenDriverOut = 0;
+				lockWhenVehicleSpeed = -1;
+				LODTurnedIn = -1;
+				LODTurnedOut = -1;
+				memoryPointsGetInGunnerPrecise = "";
+				missileBeg = "spice rakety";
+				missileEnd = "konec rakety";
+				armorLights = 0.4;
+				class Reflectors
+				{
+				};
+				aggregateReflectors[] = {};
+				class GunFire
+				{
+					access = 0;
+					cloudletDuration = 0.2;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 0.2;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 0.5;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletFire";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.01;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 4500;
+					deltaT = -3000;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {0.82,0.95,0.93,0};
+						};
+						class T1
+						{
+							maxT = 200;
+							color[] = {0.75,0.77,0.9,0};
+						};
+						class T2
+						{
+							maxT = 400;
+							color[] = {0.56,0.62,0.67,0};
+						};
+						class T3
+						{
+							maxT = 600;
+							color[] = {0.39,0.46,0.47,0};
+						};
+						class T4
+						{
+							maxT = 800;
+							color[] = {0.24,0.31,0.31,0};
+						};
+						class T5
+						{
+							maxT = 1000;
+							color[] = {0.23,0.31,0.29,0};
+						};
+						class T6
+						{
+							maxT = 1500;
+							color[] = {0.21,0.29,0.27,0};
+						};
+						class T7
+						{
+							maxT = 2000;
+							color[] = {0.19,0.23,0.21,0};
+						};
+						class T8
+						{
+							maxT = 2300;
+							color[] = {0.22,0.19,0.1,0};
+						};
+						class T9
+						{
+							maxT = 2500;
+							color[] = {0.35,0.2,0.02,0};
+						};
+						class T10
+						{
+							maxT = 2600;
+							color[] = {0.62,0.29,0.03,0};
+						};
+						class T11
+						{
+							maxT = 2650;
+							color[] = {0.59,0.35,0.05,0};
+						};
+						class T12
+						{
+							maxT = 2700;
+							color[] = {0.75,0.37,0.03,0};
+						};
+						class T13
+						{
+							maxT = 2750;
+							color[] = {0.88,0.34,0.03,0};
+						};
+						class T14
+						{
+							maxT = 2800;
+							color[] = {0.91,0.5,0.17,0};
+						};
+						class T15
+						{
+							maxT = 2850;
+							color[] = {1,0.6,0.2,0};
+						};
+						class T16
+						{
+							maxT = 2900;
+							color[] = {1,0.71,0.3,0};
+						};
+						class T17
+						{
+							maxT = 2950;
+							color[] = {0.98,0.83,0.41,0};
+						};
+						class T18
+						{
+							maxT = 3000;
+							color[] = {0.98,0.91,0.54,0};
+						};
+						class T19
+						{
+							maxT = 3100;
+							color[] = {0.98,0.99,0.6,0};
+						};
+						class T20
+						{
+							maxT = 3300;
+							color[] = {0.96,0.99,0.72,0};
+						};
+						class T21
+						{
+							maxT = 3600;
+							color[] = {1,0.98,0.91,0};
+						};
+						class T22
+						{
+							maxT = 4200;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class GunClouds
+				{
+					access = 0;
+					cloudletDuration = 0.3;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 1;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 1;
+					cloudletAccY = 0.4;
+					cloudletMinYSpeed = 0.2;
+					cloudletMaxYSpeed = 0.8;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.05;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class MGunClouds
+				{
+					access = 0;
+					cloudletGrowUp = 0.05;
+					cloudletFadeIn = 0;
+					cloudletFadeOut = 0.1;
+					cloudletDuration = 0.05;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 0.3;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					timeToLive = 0;
+					interval = 0.02;
+					size = 0.3;
+					sourceSize = 0.02;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class Turrets
+				{
+				};
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.3;
+					minFov = 0.07;
+					maxFov = 0.35;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				forceNVG = 0;
+				gunnerLeftHandAnimName = "";
+				gunnerRightHandAnimName = "";
+				gunnerLeftLegAnimName = "";
+				gunnerRightLegAnimName = "";
+				gunnerDoor = "";
+				preciseGetInOut = 0;
+				allowTabLock = 1;
+				showAllTargets = 0;
+				slingLoadOperator = 0;
+				playerPosition = 0;
+				allowLauncherIn = 0;
+				allowLauncherOut = 0;
+				gunnerInAction = "ManActTestDriver";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGun = "kulas";
+				selectionFireAnim = "zasleh";
+				showCrewAim = 0;
+				ace_fcs_Enabled = 0;
+				ace_fcs_MinDistance = 200;
+				ace_fcs_MaxDistance = 5500;
+				ace_fcs_DistanceInterval = 5;
+			};
+			class CargoTurret_03
+			{
+				gunnerAction = "passenger_inside_7";
+				gunnerName = "Passenger (Right Seat 2)";
+				memoryPointsGetInGunner = "pos cargo RF";
+				memoryPointsGetInGunnerDir = "pos cargo RF dir";
+				gunnerCompartments = "Compartment1";
+				proxyIndex = 3;
+				class TurnIn
+				{
+					limitsArrayTop[] = {[32.7194,-95],[25.9635,-12.7207]};
+					limitsArrayBottom[] = {[-17.6104,-88.914],[-32.6439,-19.3152]};
+				};
+				class TurnOut
+				{
+					limitsArrayTop[] = {[32.7194,-95],[25.9635,-12.7207]};
+					limitsArrayBottom[] = {[-17.6104,-88.914],[-32.6439,-19.3152]};
+				};
+				isPersonTurret = 1;
+				class dynamicViewLimits
+				{
+				};
+				class ViewGunner
+				{
+					initAngleX = 5;
+					minAngleX = -75;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				class Hitpoints
+				{
+				};
+				animationSourceBody = "";
+				animationSourceGun = "";
+				body = "";
+				canEject = 1;
+				commanding = 0;
+				dontCreateAI = 1;
+				gun = "";
+				gunnerGetInAction = "GetInLow";
+				gunnerGetOutAction = "GetOutLow";
+				hideWeaponsGunner = 0;
+				isCopilot = 0;
+				primaryGunner = 0;
+				proxyType = "CPCargo";
+				startEngine = 0;
+				turretFollowFreeLook = 0;
+				viewGunnerInExternal = 1;
+				disableSoundAttenuation = 1;
+				outGunnerMayFire = 1;
+				showAsCargo = 1;
+				maxElev = 45;
+				minElev = -45;
+				maxTurn = 95;
+				minTurn = -95;
+				animationSourceHatch = "hatchGunner";
+				animationSourceCamElev = "camElev";
+				gunnerType = "";
+				primaryObserver = 0;
+				weapons[] = {};
+				magazines[] = {};
+				soundServo[] = {"",0.00316228,1};
+				soundElevation[] = {"",0.00316228,1};
+				initElev = 0;
+				initTurn = 0;
+				minOutElev = -4;
+				maxOutElev = 20;
+				initOutElev = 0;
+				minOutTurn = -60;
+				maxOutTurn = 60;
+				initOutTurn = 0;
+				maxHorizontalRotSpeed = 1.2;
+				maxVerticalRotSpeed = 1.2;
+				minCamElev = -90;
+				maxCamElev = 90;
+				initCamElev = 0;
+				stabilizedInAxes = 3;
+				primary = 1;
+				hasGunner = 1;
+				turretCanSee = 0;
+				canUseScanners = 1;
+				class TurretSpec
+				{
+					showHeadPhones = 0;
+				};
+				gunnerOpticsModel = "";
+				gunnerOpticsColor[] = {0,0,0,1};
+				gunnerForceOptics = 1;
+				gunnerOpticsShowCursor = 0;
+				turretInfoType = "";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsColor[] = {0,0,0,1};
+				gunnerOpticsEffect[] = {};
+				gunnerOutOpticsEffect[] = {};
+				memoryPointGunnerOutOptics = "";
+				gunnerOutForceOptics = 0;
+				gunnerOutOpticsShowCursor = 0;
+				gunnerFireAlsoInInternalCamera = 1;
+				gunnerOutFireAlsoInInternalCamera = 1;
+				gunnerUsesPilotView = 0;
+				castGunnerShadow = 0;
+				viewGunnerShadow = 1;
+				viewGunnerShadowDiff = 1;
+				viewGunnerShadowAmb = 1;
+				ejectDeadGunner = 0;
+				canHideGunner = -1;
+				forceHideGunner = 0;
+				inGunnerMayFire = 1;
+				showHMD = 0;
+				lockWhenDriverOut = 0;
+				lockWhenVehicleSpeed = -1;
+				LODTurnedIn = -1;
+				LODTurnedOut = -1;
+				memoryPointsGetInGunnerPrecise = "";
+				missileBeg = "spice rakety";
+				missileEnd = "konec rakety";
+				armorLights = 0.4;
+				class Reflectors
+				{
+				};
+				aggregateReflectors[] = {};
+				class GunFire
+				{
+					access = 0;
+					cloudletDuration = 0.2;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 0.2;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 0.5;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletFire";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.01;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 4500;
+					deltaT = -3000;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {0.82,0.95,0.93,0};
+						};
+						class T1
+						{
+							maxT = 200;
+							color[] = {0.75,0.77,0.9,0};
+						};
+						class T2
+						{
+							maxT = 400;
+							color[] = {0.56,0.62,0.67,0};
+						};
+						class T3
+						{
+							maxT = 600;
+							color[] = {0.39,0.46,0.47,0};
+						};
+						class T4
+						{
+							maxT = 800;
+							color[] = {0.24,0.31,0.31,0};
+						};
+						class T5
+						{
+							maxT = 1000;
+							color[] = {0.23,0.31,0.29,0};
+						};
+						class T6
+						{
+							maxT = 1500;
+							color[] = {0.21,0.29,0.27,0};
+						};
+						class T7
+						{
+							maxT = 2000;
+							color[] = {0.19,0.23,0.21,0};
+						};
+						class T8
+						{
+							maxT = 2300;
+							color[] = {0.22,0.19,0.1,0};
+						};
+						class T9
+						{
+							maxT = 2500;
+							color[] = {0.35,0.2,0.02,0};
+						};
+						class T10
+						{
+							maxT = 2600;
+							color[] = {0.62,0.29,0.03,0};
+						};
+						class T11
+						{
+							maxT = 2650;
+							color[] = {0.59,0.35,0.05,0};
+						};
+						class T12
+						{
+							maxT = 2700;
+							color[] = {0.75,0.37,0.03,0};
+						};
+						class T13
+						{
+							maxT = 2750;
+							color[] = {0.88,0.34,0.03,0};
+						};
+						class T14
+						{
+							maxT = 2800;
+							color[] = {0.91,0.5,0.17,0};
+						};
+						class T15
+						{
+							maxT = 2850;
+							color[] = {1,0.6,0.2,0};
+						};
+						class T16
+						{
+							maxT = 2900;
+							color[] = {1,0.71,0.3,0};
+						};
+						class T17
+						{
+							maxT = 2950;
+							color[] = {0.98,0.83,0.41,0};
+						};
+						class T18
+						{
+							maxT = 3000;
+							color[] = {0.98,0.91,0.54,0};
+						};
+						class T19
+						{
+							maxT = 3100;
+							color[] = {0.98,0.99,0.6,0};
+						};
+						class T20
+						{
+							maxT = 3300;
+							color[] = {0.96,0.99,0.72,0};
+						};
+						class T21
+						{
+							maxT = 3600;
+							color[] = {1,0.98,0.91,0};
+						};
+						class T22
+						{
+							maxT = 4200;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class GunClouds
+				{
+					access = 0;
+					cloudletDuration = 0.3;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 1;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 1;
+					cloudletAccY = 0.4;
+					cloudletMinYSpeed = 0.2;
+					cloudletMaxYSpeed = 0.8;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.05;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class MGunClouds
+				{
+					access = 0;
+					cloudletGrowUp = 0.05;
+					cloudletFadeIn = 0;
+					cloudletFadeOut = 0.1;
+					cloudletDuration = 0.05;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 0.3;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					timeToLive = 0;
+					interval = 0.02;
+					size = 0.3;
+					sourceSize = 0.02;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class Turrets
+				{
+				};
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.3;
+					minFov = 0.07;
+					maxFov = 0.35;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				forceNVG = 0;
+				gunnerLeftHandAnimName = "";
+				gunnerRightHandAnimName = "";
+				gunnerLeftLegAnimName = "";
+				gunnerRightLegAnimName = "";
+				gunnerDoor = "";
+				preciseGetInOut = 0;
+				allowTabLock = 1;
+				showAllTargets = 0;
+				slingLoadOperator = 0;
+				playerPosition = 0;
+				allowLauncherIn = 0;
+				allowLauncherOut = 0;
+				gunnerInAction = "ManActTestDriver";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGun = "kulas";
+				selectionFireAnim = "zasleh";
+				showCrewAim = 0;
+				ace_fcs_Enabled = 0;
+				ace_fcs_MinDistance = 200;
+				ace_fcs_MaxDistance = 5500;
+				ace_fcs_DistanceInterval = 5;
+			};
+			class CargoTurret_04
+			{
+				gunnerAction = "passenger_inside_7";
+				gunnerName = "Passenger (Left Seat 1)";
+				memoryPointsGetInGunner = "pos cargo LF";
+				memoryPointsGetInGunnerDir = "pos cargo LF dir";
+				gunnerCompartments = "Compartment1";
+				proxyIndex = 4;
+				class TurnIn
+				{
+					limitsArrayTop[] = {[6.8429,29.2755],[24.9081,83.4132]};
+					limitsArrayBottom[] = {[-23.8466,32.4457],[-36.5996,74.5499]};
+				};
+				class TurnOut
+				{
+					limitsArrayTop[] = {[6.8429,29.2755],[24.9081,83.4132]};
+					limitsArrayBottom[] = {[-23.8466,32.4457],[-36.5996,74.5499]};
+				};
+				isPersonTurret = 1;
+				class dynamicViewLimits
+				{
+				};
+				class ViewGunner
+				{
+					initAngleX = 5;
+					minAngleX = -75;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				class Hitpoints
+				{
+				};
+				animationSourceBody = "";
+				animationSourceGun = "";
+				body = "";
+				canEject = 1;
+				commanding = 0;
+				dontCreateAI = 1;
+				gun = "";
+				gunnerGetInAction = "GetInLow";
+				gunnerGetOutAction = "GetOutLow";
+				hideWeaponsGunner = 0;
+				isCopilot = 0;
+				primaryGunner = 0;
+				proxyType = "CPCargo";
+				startEngine = 0;
+				turretFollowFreeLook = 0;
+				viewGunnerInExternal = 1;
+				disableSoundAttenuation = 1;
+				outGunnerMayFire = 1;
+				showAsCargo = 1;
+				maxElev = 45;
+				minElev = -45;
+				maxTurn = 95;
+				minTurn = -95;
+				animationSourceHatch = "hatchGunner";
+				animationSourceCamElev = "camElev";
+				gunnerType = "";
+				primaryObserver = 0;
+				weapons[] = {};
+				magazines[] = {};
+				soundServo[] = {"",0.00316228,1};
+				soundElevation[] = {"",0.00316228,1};
+				initElev = 0;
+				initTurn = 0;
+				minOutElev = -4;
+				maxOutElev = 20;
+				initOutElev = 0;
+				minOutTurn = -60;
+				maxOutTurn = 60;
+				initOutTurn = 0;
+				maxHorizontalRotSpeed = 1.2;
+				maxVerticalRotSpeed = 1.2;
+				minCamElev = -90;
+				maxCamElev = 90;
+				initCamElev = 0;
+				stabilizedInAxes = 3;
+				primary = 1;
+				hasGunner = 1;
+				turretCanSee = 0;
+				canUseScanners = 1;
+				class TurretSpec
+				{
+					showHeadPhones = 0;
+				};
+				gunnerOpticsModel = "";
+				gunnerOpticsColor[] = {0,0,0,1};
+				gunnerForceOptics = 1;
+				gunnerOpticsShowCursor = 0;
+				turretInfoType = "";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsColor[] = {0,0,0,1};
+				gunnerOpticsEffect[] = {};
+				gunnerOutOpticsEffect[] = {};
+				memoryPointGunnerOutOptics = "";
+				gunnerOutForceOptics = 0;
+				gunnerOutOpticsShowCursor = 0;
+				gunnerFireAlsoInInternalCamera = 1;
+				gunnerOutFireAlsoInInternalCamera = 1;
+				gunnerUsesPilotView = 0;
+				castGunnerShadow = 0;
+				viewGunnerShadow = 1;
+				viewGunnerShadowDiff = 1;
+				viewGunnerShadowAmb = 1;
+				ejectDeadGunner = 0;
+				canHideGunner = -1;
+				forceHideGunner = 0;
+				inGunnerMayFire = 1;
+				showHMD = 0;
+				lockWhenDriverOut = 0;
+				lockWhenVehicleSpeed = -1;
+				LODTurnedIn = -1;
+				LODTurnedOut = -1;
+				memoryPointsGetInGunnerPrecise = "";
+				missileBeg = "spice rakety";
+				missileEnd = "konec rakety";
+				armorLights = 0.4;
+				class Reflectors
+				{
+				};
+				aggregateReflectors[] = {};
+				class GunFire
+				{
+					access = 0;
+					cloudletDuration = 0.2;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 0.2;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 0.5;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletFire";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.01;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 4500;
+					deltaT = -3000;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {0.82,0.95,0.93,0};
+						};
+						class T1
+						{
+							maxT = 200;
+							color[] = {0.75,0.77,0.9,0};
+						};
+						class T2
+						{
+							maxT = 400;
+							color[] = {0.56,0.62,0.67,0};
+						};
+						class T3
+						{
+							maxT = 600;
+							color[] = {0.39,0.46,0.47,0};
+						};
+						class T4
+						{
+							maxT = 800;
+							color[] = {0.24,0.31,0.31,0};
+						};
+						class T5
+						{
+							maxT = 1000;
+							color[] = {0.23,0.31,0.29,0};
+						};
+						class T6
+						{
+							maxT = 1500;
+							color[] = {0.21,0.29,0.27,0};
+						};
+						class T7
+						{
+							maxT = 2000;
+							color[] = {0.19,0.23,0.21,0};
+						};
+						class T8
+						{
+							maxT = 2300;
+							color[] = {0.22,0.19,0.1,0};
+						};
+						class T9
+						{
+							maxT = 2500;
+							color[] = {0.35,0.2,0.02,0};
+						};
+						class T10
+						{
+							maxT = 2600;
+							color[] = {0.62,0.29,0.03,0};
+						};
+						class T11
+						{
+							maxT = 2650;
+							color[] = {0.59,0.35,0.05,0};
+						};
+						class T12
+						{
+							maxT = 2700;
+							color[] = {0.75,0.37,0.03,0};
+						};
+						class T13
+						{
+							maxT = 2750;
+							color[] = {0.88,0.34,0.03,0};
+						};
+						class T14
+						{
+							maxT = 2800;
+							color[] = {0.91,0.5,0.17,0};
+						};
+						class T15
+						{
+							maxT = 2850;
+							color[] = {1,0.6,0.2,0};
+						};
+						class T16
+						{
+							maxT = 2900;
+							color[] = {1,0.71,0.3,0};
+						};
+						class T17
+						{
+							maxT = 2950;
+							color[] = {0.98,0.83,0.41,0};
+						};
+						class T18
+						{
+							maxT = 3000;
+							color[] = {0.98,0.91,0.54,0};
+						};
+						class T19
+						{
+							maxT = 3100;
+							color[] = {0.98,0.99,0.6,0};
+						};
+						class T20
+						{
+							maxT = 3300;
+							color[] = {0.96,0.99,0.72,0};
+						};
+						class T21
+						{
+							maxT = 3600;
+							color[] = {1,0.98,0.91,0};
+						};
+						class T22
+						{
+							maxT = 4200;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class GunClouds
+				{
+					access = 0;
+					cloudletDuration = 0.3;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 1;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 1;
+					cloudletAccY = 0.4;
+					cloudletMinYSpeed = 0.2;
+					cloudletMaxYSpeed = 0.8;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.05;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class MGunClouds
+				{
+					access = 0;
+					cloudletGrowUp = 0.05;
+					cloudletFadeIn = 0;
+					cloudletFadeOut = 0.1;
+					cloudletDuration = 0.05;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 0.3;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					timeToLive = 0;
+					interval = 0.02;
+					size = 0.3;
+					sourceSize = 0.02;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class Turrets
+				{
+				};
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.3;
+					minFov = 0.07;
+					maxFov = 0.35;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				forceNVG = 0;
+				gunnerLeftHandAnimName = "";
+				gunnerRightHandAnimName = "";
+				gunnerLeftLegAnimName = "";
+				gunnerRightLegAnimName = "";
+				gunnerDoor = "";
+				preciseGetInOut = 0;
+				allowTabLock = 1;
+				showAllTargets = 0;
+				slingLoadOperator = 0;
+				playerPosition = 0;
+				allowLauncherIn = 0;
+				allowLauncherOut = 0;
+				gunnerInAction = "ManActTestDriver";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGun = "kulas";
+				selectionFireAnim = "zasleh";
+				showCrewAim = 0;
+				ace_fcs_Enabled = 0;
+				ace_fcs_MinDistance = 200;
+				ace_fcs_MaxDistance = 5500;
+				ace_fcs_DistanceInterval = 5;
+			};
+			class CargoTurret_05
+			{
+				gunnerAction = "passenger_inside_7";
+				gunnerName = "Passenger (Right Seat 3)";
+				memoryPointsGetInGunner = "pos cargo RR";
+				memoryPointsGetInGunnerDir = "pos cargo RR dir";
+				gunnerCompartments = "Compartment1";
+				proxyIndex = 5;
+				class TurnIn
+				{
+					limitsArrayTop[] = {[44.8284,-94.9939],[44.8284,94.9939]};
+					limitsArrayBottom[] = {[-4.0748,-94.0037],[-3.3255,-53.5258],[-5.5227,-22.3762],[-11.507,18.5184],[-36.7649,26.4793],[-44.8847,95]};
+				};
+				class TurnOut
+				{
+					limitsArrayTop[] = {[44.8284,-94.9939],[44.8284,94.9939]};
+					limitsArrayBottom[] = {[-4.0748,-94.0037],[-3.3255,-53.5258],[-5.5227,-22.3762],[-11.507,18.5184],[-36.7649,26.4793],[-44.8847,95]};
+				};
+				isPersonTurret = 1;
+				class dynamicViewLimits
+				{
+				};
+				class ViewGunner
+				{
+					initAngleX = 5;
+					minAngleX = -75;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				class Hitpoints
+				{
+				};
+				animationSourceBody = "";
+				animationSourceGun = "";
+				body = "";
+				canEject = 1;
+				commanding = 0;
+				dontCreateAI = 1;
+				gun = "";
+				gunnerGetInAction = "GetInLow";
+				gunnerGetOutAction = "GetOutLow";
+				hideWeaponsGunner = 0;
+				isCopilot = 0;
+				primaryGunner = 0;
+				proxyType = "CPCargo";
+				startEngine = 0;
+				turretFollowFreeLook = 0;
+				viewGunnerInExternal = 1;
+				disableSoundAttenuation = 1;
+				outGunnerMayFire = 1;
+				showAsCargo = 1;
+				maxElev = 45;
+				minElev = -45;
+				maxTurn = 95;
+				minTurn = -95;
+				animationSourceHatch = "hatchGunner";
+				animationSourceCamElev = "camElev";
+				gunnerType = "";
+				primaryObserver = 0;
+				weapons[] = {};
+				magazines[] = {};
+				soundServo[] = {"",0.00316228,1};
+				soundElevation[] = {"",0.00316228,1};
+				initElev = 0;
+				initTurn = 0;
+				minOutElev = -4;
+				maxOutElev = 20;
+				initOutElev = 0;
+				minOutTurn = -60;
+				maxOutTurn = 60;
+				initOutTurn = 0;
+				maxHorizontalRotSpeed = 1.2;
+				maxVerticalRotSpeed = 1.2;
+				minCamElev = -90;
+				maxCamElev = 90;
+				initCamElev = 0;
+				stabilizedInAxes = 3;
+				primary = 1;
+				hasGunner = 1;
+				turretCanSee = 0;
+				canUseScanners = 1;
+				class TurretSpec
+				{
+					showHeadPhones = 0;
+				};
+				gunnerOpticsModel = "";
+				gunnerOpticsColor[] = {0,0,0,1};
+				gunnerForceOptics = 1;
+				gunnerOpticsShowCursor = 0;
+				turretInfoType = "";
+				gunnerOutOpticsModel = "";
+				gunnerOutOpticsColor[] = {0,0,0,1};
+				gunnerOpticsEffect[] = {};
+				gunnerOutOpticsEffect[] = {};
+				memoryPointGunnerOutOptics = "";
+				gunnerOutForceOptics = 0;
+				gunnerOutOpticsShowCursor = 0;
+				gunnerFireAlsoInInternalCamera = 1;
+				gunnerOutFireAlsoInInternalCamera = 1;
+				gunnerUsesPilotView = 0;
+				castGunnerShadow = 0;
+				viewGunnerShadow = 1;
+				viewGunnerShadowDiff = 1;
+				viewGunnerShadowAmb = 1;
+				ejectDeadGunner = 0;
+				canHideGunner = -1;
+				forceHideGunner = 0;
+				inGunnerMayFire = 1;
+				showHMD = 0;
+				lockWhenDriverOut = 0;
+				lockWhenVehicleSpeed = -1;
+				LODTurnedIn = -1;
+				LODTurnedOut = -1;
+				memoryPointsGetInGunnerPrecise = "";
+				missileBeg = "spice rakety";
+				missileEnd = "konec rakety";
+				armorLights = 0.4;
+				class Reflectors
+				{
+				};
+				aggregateReflectors[] = {};
+				class GunFire
+				{
+					access = 0;
+					cloudletDuration = 0.2;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 0.2;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 0.5;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletFire";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.01;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 4500;
+					deltaT = -3000;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {0.82,0.95,0.93,0};
+						};
+						class T1
+						{
+							maxT = 200;
+							color[] = {0.75,0.77,0.9,0};
+						};
+						class T2
+						{
+							maxT = 400;
+							color[] = {0.56,0.62,0.67,0};
+						};
+						class T3
+						{
+							maxT = 600;
+							color[] = {0.39,0.46,0.47,0};
+						};
+						class T4
+						{
+							maxT = 800;
+							color[] = {0.24,0.31,0.31,0};
+						};
+						class T5
+						{
+							maxT = 1000;
+							color[] = {0.23,0.31,0.29,0};
+						};
+						class T6
+						{
+							maxT = 1500;
+							color[] = {0.21,0.29,0.27,0};
+						};
+						class T7
+						{
+							maxT = 2000;
+							color[] = {0.19,0.23,0.21,0};
+						};
+						class T8
+						{
+							maxT = 2300;
+							color[] = {0.22,0.19,0.1,0};
+						};
+						class T9
+						{
+							maxT = 2500;
+							color[] = {0.35,0.2,0.02,0};
+						};
+						class T10
+						{
+							maxT = 2600;
+							color[] = {0.62,0.29,0.03,0};
+						};
+						class T11
+						{
+							maxT = 2650;
+							color[] = {0.59,0.35,0.05,0};
+						};
+						class T12
+						{
+							maxT = 2700;
+							color[] = {0.75,0.37,0.03,0};
+						};
+						class T13
+						{
+							maxT = 2750;
+							color[] = {0.88,0.34,0.03,0};
+						};
+						class T14
+						{
+							maxT = 2800;
+							color[] = {0.91,0.5,0.17,0};
+						};
+						class T15
+						{
+							maxT = 2850;
+							color[] = {1,0.6,0.2,0};
+						};
+						class T16
+						{
+							maxT = 2900;
+							color[] = {1,0.71,0.3,0};
+						};
+						class T17
+						{
+							maxT = 2950;
+							color[] = {0.98,0.83,0.41,0};
+						};
+						class T18
+						{
+							maxT = 3000;
+							color[] = {0.98,0.91,0.54,0};
+						};
+						class T19
+						{
+							maxT = 3100;
+							color[] = {0.98,0.99,0.6,0};
+						};
+						class T20
+						{
+							maxT = 3300;
+							color[] = {0.96,0.99,0.72,0};
+						};
+						class T21
+						{
+							maxT = 3600;
+							color[] = {1,0.98,0.91,0};
+						};
+						class T22
+						{
+							maxT = 4200;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class GunClouds
+				{
+					access = 0;
+					cloudletDuration = 0.3;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 1;
+					cloudletGrowUp = 1;
+					cloudletFadeIn = 0.01;
+					cloudletFadeOut = 1;
+					cloudletAccY = 0.4;
+					cloudletMinYSpeed = 0.2;
+					cloudletMaxYSpeed = 0.8;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					interval = 0.05;
+					size = 3;
+					sourceSize = 0.5;
+					timeToLive = 0;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class MGunClouds
+				{
+					access = 0;
+					cloudletGrowUp = 0.05;
+					cloudletFadeIn = 0;
+					cloudletFadeOut = 0.1;
+					cloudletDuration = 0.05;
+					cloudletAnimPeriod = 1;
+					cloudletSize = 1;
+					cloudletAlpha = 0.3;
+					cloudletAccY = 0;
+					cloudletMinYSpeed = -100;
+					cloudletMaxYSpeed = 100;
+					cloudletShape = "cloudletClouds";
+					cloudletColor[] = {1,1,1,0};
+					timeToLive = 0;
+					interval = 0.02;
+					size = 0.3;
+					sourceSize = 0.02;
+					initT = 0;
+					deltaT = 0;
+					class Table
+					{
+						class T0
+						{
+							maxT = 0;
+							color[] = {1,1,1,0};
+						};
+					};
+				};
+				class Turrets
+				{
+				};
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.3;
+					minFov = 0.07;
+					maxFov = 0.35;
+					minMoveX = 0;
+					maxMoveX = 0;
+					minMoveY = 0;
+					maxMoveY = 0;
+					minMoveZ = 0;
+					maxMoveZ = 0;
+					speedZoomMaxSpeed = 1e+10;
+					speedZoomMaxFOV = 0;
+				};
+				forceNVG = 0;
+				gunnerLeftHandAnimName = "";
+				gunnerRightHandAnimName = "";
+				gunnerLeftLegAnimName = "";
+				gunnerRightLegAnimName = "";
+				gunnerDoor = "";
+				preciseGetInOut = 0;
+				allowTabLock = 1;
+				showAllTargets = 0;
+				slingLoadOperator = 0;
+				playerPosition = 0;
+				allowLauncherIn = 0;
+				allowLauncherOut = 0;
+				gunnerInAction = "ManActTestDriver";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGun = "kulas";
+				selectionFireAnim = "zasleh";
+				showCrewAim = 0;
+				ace_fcs_Enabled = 0;
+				ace_fcs_MinDistance = 200;
+				ace_fcs_MaxDistance = 5500;
+				ace_fcs_DistanceInterval = 5;
+			};
 		};
 	};
 
@@ -9867,31 +11911,6 @@ class cfgVehicles
 				count = 25;
 				magazine = "APERSBoundingMine_Range_Mag";
 			};
-			class _xx_tsp_breach_silhouette_mag
-			{
-				count = 2;
-				magazine = "tsp_breach_silhouette_mag";
-			};
-			class _xx_tsp_breach_popper_auto_mag
-			{
-				count = 12;
-				magazine = "tsp_breach_popper_auto_mag";
-			};
-			class _xx_tsp_breach_stick_mag
-			{
-				count = 2;
-				magazine = "tsp_breach_stick_mag";
-			};
-			class _xx_tsp_breach_block_mag
-			{
-				count = 4;
-				magazine = "tsp_breach_block_mag";
-			};
-			class _xx_tsp_breach_package_mag
-			{
-				count = 2;
-				magazine = "tsp_breach_package_mag";
-			};
 			class _xx_LFP_type_A_Remote_Mag
 			{
 				count = 25;
@@ -10181,7 +12200,7 @@ class cfgVehicles
 		sound = "";
 		BNA_KC_medical_areaHealMaxPatients = 4;
 		BNA_KC_medical_areaHealRadius = 15;
-		BNA_KC_medical_areaHealRate = 6;
+		BNA_KC_medical_areaHealRate = 2;
 		class EventHandlers : DefaultEventHandlers
 		{
 		};
@@ -10251,13 +12270,13 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
-			class Spawn_3AS_LAATC
+			class Spawn_JA_104th_LAATC
 			{
-				displayName = "Spawn 3AS LAAT/C";
+				displayName = "Spawn 104th LAAT/C";
 				position = "pos cano";
 				radius = 15;
 				condition = "true";
-				statement = "[this, '3AS_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = "[this, 'JA_104th_LAATC'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
@@ -10329,6 +12348,16 @@ class cfgVehicles
 				radius = 15;
 				condition = "true";
 				statement = "[this, 'JA_104th_Rho_class'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_LAS_1A
+			{
+				displayName = "Spawn 104th LAS-1A";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_LAS_1A'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};
@@ -10482,6 +12511,36 @@ class cfgVehicles
 				radius = 15;
 				condition = "true";
 				statement = "[this, 'JA_104th_Ulik'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_LSV
+			{
+				displayName = "Spawn [104th] Light Strike Vehicle";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_LSV'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_3AS_Rho_Crate_REP_Transport
+			{
+				displayName = "Spawn Rho Crate Transport";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, '3AS_Rho_Crate_REP_Transport'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+			};
+			class Spawn_JA_104th_AV7
+			{
+				displayName = "Spawn [104th] AV-7";
+				position = "pos cano";
+				radius = 15;
+				condition = "true";
+				statement = "[this, 'JA_104th_AV7'] execVM 'JangosVehicles\Script\spawner.sqf';";
 				onlyforplayer = "false";
 				hideOnUse = 0;
 			};

@@ -9,35 +9,43 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
-			"JA_104th_ARF_Uniform",
-			"JA_104th_ARF_Desert",
-			"JA_104th_ARF_Urban",
-			"JA_104th_ARF_Jungle",
-			"JA_104th_ARF_Medic_Uniform",
-			'JA_104th_Achilles',
-			'JA_104th_Cyan',
-			'JA_104th_Gravity',
-			'JA_104th_Fire',
-			'JA_104th_IQ',
-			"JA_104th_Beans",
-			"JA_104th_Unix",
-			'JA_104th_Welty',
-			"JA_104th_Woods"};
-		weapons[] = {
+			"JA_104th_Base_ARF",
 			"JA_104th_ARF",
-			"JA_104th_ARF_Desert_Uniform",
-			"JA_104th_ARF_Urban_Uniform",
-			"JA_104th_ARF_Jungle_Uniform",
+			"JA_104th_ARF_Desert",
+			"JA_104th_ARF_Jungle",
+			"JA_104th_ARF_Urban",
 			"JA_104th_ARF_Medic",
-			'JA_104th_Achilles_Uniform',
-			"JA_104th_Cyan_Uniform",
-			"JA_104th_Gravity_Uniform",
+			"JA_104th_Achilles",
+			"JA_104th_Beans",
+			"JA_104th_Gravity",
+			"JA_104th_Fire",
+			"JA_104th_Cyan",
+			"JA_104th_Welty",
+			"JA_104th_IQ_old",
+			"JA_104th_Unix",
+			"JA_104th_Woods",
+			"JA_104th_Keeper",
+			"JA_104th_Poet"
+		};
+		weapons[] = {
+			"JA_104th_Base_ARF_Uniform",
+			"JA_104th_ARF_Uniform",
+			"JA_104th_ARF_Desert_Uniform",
+			"JA_104th_ARF_Jungle_Uniform",
+			"JA_104th_ARF_Urban_Uniform",
+			"JA_104th_ARF_Medic_Uniform",
+			"JA_104th_Achilles_Uniform",
 			"JA_104th_Beans_Uniform",
+			"JA_104th_Gravity_Uniform",
 			"JA_104th_Fire_Uniform",
-			"JA_104th_IQ_Uniform",
-			"JA_104th_Unix_Uniform",
 			"JA_104th_Welty_Uniform",
-			"JA_104th_Woods_Uniform"};
+			"JA_104th_Cyan_Uniform",
+			"JA_104th_IQ_Uniform_old",
+			"JA_104th_Unix_Uniform",
+			"JA_104th_Woods_Uniform",
+			"JA_104th_Keeper_Uniform",
+			"JA_104th_Poet_Uniform"
+		};
 	};
 };
 
@@ -530,6 +538,54 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+	class JA_104th_Keeper_Uniform : JA_104th_Base_ARF_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Keeper)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Keeper_Upper.paa",
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Keeper_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Keeper";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Poet_Uniform : JA_104th_Base_ARF_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Poet)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Poet_Upper.paa",
+				"Jangos_ARF_Armours\data\Textures\104th_ARF_Poet_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Poet";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -782,5 +838,37 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Woods_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Woods_Lower.paa"};
 		linkedItems[] = {JA_104th_Woods_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Woods_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Keeper : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Keeper_Uniform";
+		displayName = "104th Keeper";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Keeper_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Keeper_Lower.paa"};
+		linkedItems[] = {JA_104th_Keeper_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Keeper_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Poet : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Poet_Uniform";
+		displayName = "104th Poet";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_ARF_Armours\data\Textures\104th_ARF_Poet_Upper.paa", "Jangos_ARF_Armours\data\Textures\104th_ARF_Poet_Lower.paa"};
+		linkedItems[] = {JA_104th_Poet_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Poet_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

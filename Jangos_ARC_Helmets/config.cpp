@@ -10,16 +10,19 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {
-			"JA_104th_Angel_Helmet",
-			"JA_104th_Sigil_Helmet",
+			"JA_104th_Angel_Helmet_old",
 			"JA_104th_Crowbi_Helmet",
 			"JA_104th_Drifter_Helmet",
 			"JA_104th_Frosty_Helmet",
 			"JA_104th_Hunter_Helmet",
 			"JA_104th_Loner_Helmet",
+			"JA_104th_Spectre_Helmet_old",
+			"JA_104th_Sigil_Helmet",
 			"JA_104th_Vision_Helmet",
-			"JA_104th_Spectre_Helmet_old"
-
+			"JA_104th_Ceasar_Helmet",
+			"JA_104th_Vegas_Helmet",
+			"JA_104th_Osiris_Helmet_old_arc",
+			"JA_104th_Kaleck_Helmet"
 		};
 	};
 };
@@ -94,7 +97,7 @@ class CfgWeapons
 	class UniformItem;
 	class VestItem;
 
-	class JA_104th_Angel_Helmet : ls_gar_arc_helmet
+	class JA_104th_Angel_Helmet_old : ls_gar_arc_helmet
 	{
 		author = "Ice";
 		scopeArsenal = 2;
@@ -169,6 +172,26 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Sigil)";								  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Sigil_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
+	// class JA_104th_Vision_Helmet_1 : ls_gar_arc_helmet
+	// {
+	// 	author = "Dak";
+	// 	scopeArsenal = 2;
+	// 	side = 1;
+	// 	grad_slingHelmet_allow = "true";
+	// 	displayname = "Clone Trooper ARC Trooper Helmet (104th Vision)";							   // the name it will be in game
+	// 	hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+	// 	hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Vision_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
+	// };
+	// class JA_104th_Ceasar_Helmet_1 : ls_gar_arc_helmet
+	// {
+	// 	author = "Dak";
+	// 	scopeArsenal = 2;
+	// 	side = 1;
+	// 	grad_slingHelmet_allow = "true";
+	// 	displayname = "Clone Trooper ARC Trooper Helmet (104th Ceasar)";							   // the name it will be in game
+	// 	hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+	// 	hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Ceasar_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\Bacta_camoP1_P2_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
+	// };
 	class JA_104th_Vision_Helmet : ls_gar_arc_helmet
 	{
 		author = "Dak";
@@ -187,6 +210,16 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Ceasar)";							   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Ceasar_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
+	// class JA_104th_Ceasar_Helmet_2 : ls_gar_arc_helmet
+	// {
+	// 	author = "Dak";
+	// 	scopeArsenal = 2;
+	// 	side = 1;
+	// 	grad_slingHelmet_allow = "true";
+	// 	displayname = "Clone Trooper ARC Trooper Helmet (104th Ceasar)";							   // the name it will be in game
+	// 	hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+	// 	hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Ceasar_Helmet.paa","Jangos_Infantry_Helmets_2\data\textures\cezarvisor.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
+	// };
 	class JA_104th_Vegas_Helmet : ls_gar_arc_helmet
 	{
 		author = "Dak";
@@ -196,7 +229,7 @@ class CfgWeapons
 		displayname = "Clone Trooper ARC Trooper Helmet (104th Vegas)";							   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_ARC_Helmets\data\textures\104th_ARC_Vegas_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Osiris_Helmet : ls_gar_arc_helmet
+	class JA_104th_Osiris_Helmet_old_arc : ls_gar_arc_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;

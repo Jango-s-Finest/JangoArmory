@@ -10,21 +10,51 @@ class CfgPatches
         requiredAddons[] = {};
         units[] = {};
         weapons[] = {
-
-            "",
-            "JA_104th_ME_Commander_Vest",
-            "JA_104th_ME_officer_Vest",
-            "JA_104th_ME_Medic_Vest",
-            "JA_104th_Tusk_Vest",
+            "ls_sob_commando_sniper_vest",
+            "ls_gar_airborne_vest",
+            "ls_gar_kama_vest",
+            "ls_gar_medic_vest",
+            "ls_gar_airborneNCO_vest",
+            "ls_gar_airborneOfficer_vest",
+            "ls_gar_forceReconNCO_vest",
+            "ls_gar_tacticalNCO_vest",
+            "ls_gar_tacticalOfficer_vest",
+            "ls_gar_forceReconLieutenant_vest",
+            "ls_gar_reconOfficer_vest",
+            "ls_gar_officer_vest",
+            "ls_gar_commander_vest",
+            "ls_gar_arc_vest",
+            "ls_gar_hazard_vest",
+            "JA_104th_Welty_Kama",
+            "JA_104th_Irish_Commander_Vest_P2",
+            "JA_104th_Irish_Kama",
+            "JA_104th_Castle_Kama",
             "JA_104th_Spectre_RC_Vest",
-            "JA_104th_Knightfall_Vest",
-            "JA_104th_Galahad_Vest",
+            "JA_104th_Granite_Vest_old",
+            "JA_104th_Carmine_Kama",
+            "JA_104th_Death_Kama",
             "JA_104th_Spirit_Vest",
             "JA_104th_Scurvy_Vest",
-            "JA_104th_Welty_Kama",
-            "JA_104th_Death_Kama"
-
+            "JA_104th_Knightfall_Vest",
+            "JA_104th_Tusk_Vest",
+            "JA_104th_Galahad_Vest",
+            "JA_104th_IQ_Vest",
+            "JA_104th_Knockout_Engineer_EWEB_Vest",
+            "JA_104th_Spectre_ARC_Vest",
+            "JA_104th_Tiger_NCO_Vest",
+            "JA_104th_Rich_NCO_Vest",
+            "JA_104th_Chaser_Kama",
+            "JA_104th_Hawkeye_Kama",
+            "JA_104th_Osiris_Company_Vest",
+            "JA_104th_Poet_Engineer_EWEB_Vest",
+            "JA_104th_Aiomi_Kama",
+            "JA_104th_Lax_Vest",
+            "JA_104th_Lykos_NCO_Vest"
         };
+    glasses[] = {
+        "JA_104th_AB_Officer_Vest_Knockout",
+        "JA_104th_Poet_Kama"
+    };
     };
 };
 
@@ -86,6 +116,8 @@ class CfgWeapons
     class V_PlateCarrier1_rgr;
     class ls_gar_engineer_helmet;
     class ls_sob_phase2SpecOp_helmet;
+    class ls_gar_tacticalOfficer_vest;
+    class ls_gar_tacticalCommander_vest;
     class UniformItem;
     class VestItem;
     class ItemInfo;
@@ -122,6 +154,10 @@ class CfgWeapons
     {
         class ItemInfo;
     };
+    class ls_gar_tacticalNCO_vest : ls_gar_airborne_vest
+    {
+        class ItemInfo;
+    };
     class ls_gar_tacticalOfficer_vest : ls_gar_airborne_vest
     {
         class ItemInfo;
@@ -131,7 +167,7 @@ class CfgWeapons
         class ItemInfo;
     };
     class ls_cloneVest_base;
-    class ls_gar_airborneOfficer_vest : ls_cloneVest_base
+    class ls_gar_reconOfficer_vest : ls_cloneVest_base
     {
         class ItemInfo;
     };
@@ -382,7 +418,7 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Granite_Vest : ls_gar_airborneNCO_vest
+    class JA_104th_Granite_Vest_old : ls_gar_airborneNCO_vest
     {
         author = "Emmet";
         scope = 2;
@@ -1016,6 +1052,416 @@ class CfgWeapons
 			};
 		};
 	};
+    class JA_104th_Rich_NCO_Vest : ls_gar_reconOfficer_vest
+	{
+		author = "Fish";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "Clone Trooper SNCO Vest (104th Rich)";
+		hiddenSelections[] = {"camo1","camo2","pauldron"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
+				"Jangos_Infantry_Vests\data\textures\104th_P2_Rich_Accessories_Officer.paa",
+				"Jangos_Infantry_Vests\data\textures\104th_P2_Rich_Accessories_Heavy.paa", // Heavy
+			};
+		class ItemInfo : ItemInfo
+		{
+			containerClass = "Supply80";
+			vestType = "Rebreather";
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_reconOfficer_vest.p3d";
+			hiddenSelections[] = {"camo1","camo2","pauldron"};
+
+			class HitpointsProtectionInfo
+			{
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 6;
+					passThrough = 0.3;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+    class JA_104th_Chaser_Kama : ls_gar_kama_vest
+    {
+        author = "Fish";
+        displayName = "Clone Trooper Kama (104th Chaser)";
+        hiddenSelections[] =
+            {
+                "camo1"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_Chaser_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Hawkeye_Kama : ls_gar_kama_vest
+    {
+        author = "Fish";
+        displayName = "Clone Trooper Kama (104th Hawkeye)";
+        hiddenSelections[] =
+            {
+                "camo1"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_Hawkeye_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Osiris_Company_Vest : ls_gar_tacticalCommander_vest{
+        author = "Dak";
+        displayName = "Clone Tactical Commander Vest (104th Osiris)";
+        hiddenSelections[] = {"camo1","camo2","camo3"};
+        hiddenSelectionsTextures[] = {
+            "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
+            "Jangos_Infantry_Vests\data\textures\104th_CMD_Osiris_Accessories_Officer.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa"
+        };
+        model = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalCommander_vest.p3d";
+        class ItemInfo
+        {
+            hiddenSelections[] = {"camo1","camo2","camo3"};
+            mass = 80;
+            author = "Bohemia Interactive";
+            _generalMacro = "VestItem";
+            type = 701;
+            uniformType = "Default";
+            overlaySelectionsInfo[] = {"Ghillie_hide"};
+            showHolsteredPistol = 0;
+            scope = 0;
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalCommander_vest.p3d";
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Poet_Engineer_EWEB_Vest : ls_gar_engineerNCO_vest{
+		displayName = "Clone Engineer E-Web Vest (104th Poet)";
+        hiddenSelectionsTextures[] = {
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+            "Jangos_Infantry_Vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
+        };
+		class ItemInfo
+		{
+			vestType = "Rebreather";
+			_generalMacro = "VestItem";
+			author = "Bohemia Interactive";
+			containerClass = "Supply450";
+			hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
+            hiddenSelectionsTextures[] = {
+                "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
+                "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Poet_Accessories_Officer.paa",
+                "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
+                "\ls\core\addons\characters_clone_legacy\vests\engineer\data\heavy_accessories_engineer_co.paa",
+                "\ls\core\addons\characters_clone_legacy\vests\arc\data\arc_accessories_co.paa",
+            };
+			mass = 80;
+			overlaySelectionsInfo[] = {"Ghillie_hide"};
+			scope = 0;
+			showHolsteredPistol = 0;
+			type = 701;
+			uniformModel = "\ls\core\addons\characters_clone_legacy\vests\engineer\ls_gar_engineerNCO_vest.p3d";
+			uniformType = "Default";
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 8;
+					passThrough = 0.3;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 15;
+					passThrough = 0.3;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 10;
+					passThrough = 0.3;
+				};
+			};
+		};
+	};
+	class JA_104th_Aiomi_Kama : ls_gar_kama_vest
+    {
+        author = "Fish";
+        displayName = "Clone Trooper Kama (104th Aiomi)";
+        hiddenSelections[] =
+            {
+                "camo1"
+
+            };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\Textures\104th_P2_Aiomi_Accessories_Officer.paa"};
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Lax_Vest : ls_gar_airborneNCO_vest
+    {
+        author = "Emmet";
+        scope = 2;
+        displayName = "Clone Medic NCO Vest (104th Lax)";
+        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa", // Heavy
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa", // Heavy
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Lax_Accessories_Officer.paa",
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Lax_Accessories_Heavy.paa"  // Heavy
+            };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class JA_104th_Lykos_NCO_Vest : ls_gar_tacticalNCO_vest
+    {
+        author = "Fish";
+        scope = 2;
+        displayName = "Clone Tactical NCO Vest (104th Lykos)";
+        hiddenSelections[] = {"camo1","camo2","pauldron"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Lykos_Accessories_Officer.paa",
+                "104thPhantomCompany\data\textures\104th_Accessories_Light_P2_Base.paa", 
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Lykos_Accessories_Heavy.paa"             // Heavy
+        };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalNCO_vest.p3d";
+            hiddenSelections[] = {"camo1","camo2","pauldron"};
+
+            class HitpointsProtectionInfo
+            {
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 6;
+                    passThrough = 0.3;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    
 };
 class CfgGlasses
 {
@@ -1033,11 +1479,27 @@ class CfgGlasses
             };
         hiddenSelectionsTextures[] =
             {
-                "Jangos_Infantry_Vests\data\textures\104th_P2_Knockout_Accessories_Officer.paa",
                 "",
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Knockout_Accessories_Officer.paa",
             };
-        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconLieutenant_vest.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";
     };
+    class JA_104th_Poet_Kama
+    {
+        author = "Tundra";
+        displayName = "Clone Trooper Kama (104th Poet)";
+        descriptionUse = "";
+        scope = 2;
+        identityTypes[] = {};
+        model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kama_vest.p3d";
+        hiddenSelections[] =
+            {
+                "camo1"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Infantry_Vests\data\textures\104th_P2_Poet_Accessories_Officer.paa"};
+    };
+    
 };
 
 class CfgVehicles

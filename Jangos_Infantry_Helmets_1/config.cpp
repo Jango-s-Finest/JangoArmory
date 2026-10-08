@@ -10,49 +10,59 @@ class CfgPatches
 		requiredAddons[] = {};
 		units[] = {};
 		weapons[] = {
-			"JA_104th_Banker_Helmet",
-			"JA_104th_Beans_Helmet",
-			"JA_104th_Blood_Helmet",
-			"JA_104th_Bomb_Helmet",
-			"JA_104th_Duce_Helmet",
+			"JA_104th_Carmine_Tech_Helmet",
+			"JA_104th_Spectre_RC_Helmet",
+			"JA_104th_Hawkeye_Helmet",
 			"JA_104th_Quick_Helmet",
-			"JA_104th_Scurvy_Helmet_ME",
-			"JA_104th_Magnum_Helmet_ME",
-			"JA_104th_Galahad_Helmet_ME",
-			"JA_104th_Bulky_Helmet_ME",
-			"JA_104th_Byte_Helmet",
-			"JA_104th_Bulky_Helmet",
 			"JA_104th_Badger_Helmet",
+			"JA_104th_Crash_Helmet",
+			"JA_104th_Ghost_Helmet",
+			"JA_104th_Welty_Helmet_old",
+			"JA_104th_Xan_Helmet",
+			"JA_104th_Tusk_Helmet",
+			"JA_104th_Galahad_Helmet",
+			"JA_104th_Skipps_Helmet",
+			"JA_104th_Miniminer_Helmet",
+			"JA_104th_Granite_Helmet_old",
+			"JA_104th_Rich_Helmet",
+			"JA_104th_Boris_Helmet_old",
+			"JA_104th_Patch_Helmet_old",
+			"JA_104th_Lax_Helmet",
+			"JA_104th_Banker_Helmet",
+			"JA_104th_Bomb_Helmet",
+			"JA_104th_Blood_Helmet",
+			"JA_104th_Byte_Helmet",
+			"JA_104th_Duce_Helmet",
+			"JA_104th_Bulky_Helmet",
 			"JA_104th_Carmine_Helmet",
 			"JA_104th_Calvin_Helmet",
-			"JA_104th_Dart_Helmet",
+			"JA_104th_Chills_Helmet",
+			"JA_104th_Death_Helmet",
 			"JA_104th_Dragan_Helmet",
-			"JA_104th_Doc_Helmet",
 			"JA_104th_Ed_Helmet",
-			"JA_104th_Galahad_Helmet",
 			"JA_104th_Gravity_Helmet_old",
+			"JA_104th_Glitch_Helmet",
 			"JA_104th_Hound_Helmet_old",
-			"JA_104th_Tiger_Helmet",
-			"JA_104th_Spirit_Helmet",
-			"JA_104th_Skav_Helmet",
-			"JA_104th_Xan_Helmet",
-			"JA_104th_Tinkle_Helmet",
-			"JA_104th_Tusk_Helmet",
-			"JA_104th_Test_Helmet",
+			"JA_104th_Knightfall_Helmet",
+			"JA_104th_Kyo_Helmet",
 			"JA_104th_Mad_Helmet",
 			"JA_104th_Mower_Helmet",
-			"JA_104th_Chills_Helmet",
-			"JA_104th_Kyo_Helmet",
-			"JA_104th_Crash_Helmet",
 			"JA_104th_Paraso_Helmet",
 			"JA_104th_Pretz_Helmet",
+			"JA_104th_Pulse_Helmet",
 			"JA_104th_Red_Helmet",
-			"JA_104th_Knightfall_Helmet",
-			"JA_104th_Knockout_Helmet",
 			"JA_104th_Scurvy_Helmet",
-			"JA_104th_Death_Helmet",
+			"JA_104th_Skav_Helmet",
+			"JA_104th_Spirit_Helmet_old",
 			"JA_104th_Irish_Helmet",
-			"JA_104th_Welty_Helmet"};
+			"JA_104th_Knockout_Helmet_old",
+			"JA_104th_Talisman_Helmet_old",
+			"JA_104th_Tiger_Helmet",
+			"JA_104th_Tinkle_Helmet_old",
+			"JA_104th_Test_Helmet",
+			"JA_104th_Vertigo_Helmet",
+			"JA_104th_Vegas_Helmet_old"
+		};
 	};
 };
 
@@ -230,15 +240,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_1\data\Textures\104th_P1-2_Tusk_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\rex\data\visor_co.paa"}; // the file path to the texture
 	};
 	// P1
-	class JA_104th_Soul_Helmet : ls_gar_phase1_helmet
-	{
-		author = "Dak";
-		scopeArsenal = 2;
-		side = 1;
-		grad_slingHelmet_allow = true;
-		displayname = "Clone Trooper P1 Helmet (104th Soul)";											 // the name it will be in game
-		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_1\data\Textures\104th_P1_Soul_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa","\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
-	};
 	// BARC
 	class JA_104th_Galahad_Helmet : ls_gar_barc_helmet // BARC HELMET DON'T USE AS P2 BASE
 	{
@@ -270,7 +271,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Miniminer)";											   // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_1\data\Textures\104th_P2_Miniminer_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Granite_Helmet : ls_gar_phase2_helmet
+	class JA_104th_Granite_Helmet_old : ls_gar_phase2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -551,7 +552,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Skav)";											 // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_1\data\Textures\104th_P2_Skav_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Spirit_Helmet : ls_gar_phase2_helmet
+	class JA_104th_Spirit_Helmet_old : ls_gar_phase2_helmet
 	{
 		author = "Dak";
 		scopeArsenal = 2;
@@ -599,7 +600,7 @@ class CfgWeapons
 		displayname = "Clone Trooper P2 Helmet (104th Tiger)";											  // the name it will be in game
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_1\data\Textures\104th_P2_Tiger_Helmet.paa","\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
 	};
-	class JA_104th_Tinkle_Helmet : ls_gar_phase2_helmet
+	class JA_104th_Tinkle_Helmet_old : ls_gar_phase2_helmet
 	{
 		author = "Fish";
 		scopeArsenal = 2;

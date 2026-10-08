@@ -3,11 +3,12 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper Pilot Helmet (104th Storm)
+- Clone Trooper Engineer Helmet (104th Tired)
 
 Changed Gear
 ------------------
-- Clone Trooper armor (104th Hound)
+- Clone Trooper armor (104th Patch)
+- Clone Trooper P1 Helmet (104th Patch)
 
 Removed Gear
 ------------------
@@ -33,16 +34,15 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- [104th] Oryx IFV Command Trophy System
+-
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] Ulik - Main Gun Changes
-- [104th] Ulik - Extra Mags on the inventory
+-
 
 Removed Vehicles & Supplies
 ------------------
--
+- Chaff Launcher from ground vehicles
 
 ```
 

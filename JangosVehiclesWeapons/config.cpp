@@ -4,15 +4,19 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {
+			"TKE_Ext_PDC_30mm",
+			"TKE_Ext_TwinCannon",
 			"JA_104th_AA_Lazer",
 			"JA_104th_AP_Lazer",
 			"JA_104th_HE_Lazer",
-			"JA_104th_HE_Lazer_Ulik",
+			"JA_104th_AP_Lazer_Oryx",
+			"JA_104th_HE_Lazer_Oryx",
 			"JA_104th_APHE_Lazer",
 			"JA_104th_AIM9X",
 			"JA_LAAT_AIM9X_BULLDOG",
 			"JA_104th_AIM120",
 			"JA_ATTE_Maingun_Cannon",
+			"JA_Sabre_Maingun_Cannon",
 			"JA_104th_Heavy_Assault_Ship_2500",
 			"JA_104th_Heavy_Assault_AA_Ship_2500",
 			"JA_104th_Heavy_Assault_Ship_400",
@@ -20,6 +24,10 @@ class CfgPatches
 			"JA_104th_Heavy_Assault_Ship_Siegecannon_10",
 			"JA_104th_Drexl",
 			"JA_104th_Brimstone",
+			"JA_104th_Z6_weaker",
+			"JA_104th_AGM_88",
+			"JA_104th_GBU53",
+			"JA_104th_AV7_300mm_AMOS"
 		};
 		ammo[] = {
 			"JA_104th_AA_Lazer_Ammo",
@@ -35,6 +43,10 @@ class CfgPatches
 			"JA_ATTE_Maingun_HE_Ammo",
 			"JA_104th_Heavy_Assault_Ship_RailGun_AMMO",
 			"JA_104th_Heavy_Assault_Ship_Siegecannon_AMMO",
+			"JA_104th_AP_Lazer_Oryx_Ammo",
+			"JA_104th_HE_Lazer_Oryx_Ammo",
+			"JA_104th_AGM_88_M",
+			"Arty_Dropcrate_A",
 		};
 		magazines[] = {
 			"JA_104th_AA_Lazer_MAG_500",
@@ -54,53 +66,70 @@ class CfgPatches
 			"JA_104th_LAAT_Fueltank_P",
 			"JA_LAAT_Drexl",
 			"JA_LAAT_Brimstone",
+			"JA_104th_AP_Lazer_Oryx_MAG_250",
+			"JA_104th_HE_Lazer_Oryx_MAG_250",
+			"JA_104th_AGM_88_2rnd_M",
+			"JA_104th_GBU53_6rnd_M",
+			"Arty_FC_Dropcrate_P_1rnd",
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 	};
 };
 
-class CfgAmmo
-{
-	class RD501_Republic_Aircraft_Laser_Repeater_Ammo;
-	class 212th_Drexl_A2A_Missile;
+class CfgAmmo{
+	class 3AS_Vwing_Medium_Energy_Shells;
+	class 3AS_V19_Medium_Energy_Shells;
+	class 3AS_ammo_AMRAAM;
 	class FIR_Brimstone_dm;
 	class FIR_AIM120;
 	class FIR_AIM9X;
 	class 3AS_Mass_Driver_Shell;
 	class TKE_Ext_Bullet_Railgun;
 	class 3AS_SIEGE_Cannon_HHE_Shell;
+	class FIR_AGM88;
 
-	class JA_104th_AA_Lazer_Ammo: RD501_Republic_Aircraft_Laser_Repeater_Ammo{
-		caliber = 7;
+	class JA_104th_AA_Lazer_Ammo: 3AS_V19_Medium_Energy_Shells{
+		caliber = 22;
 		indirectHit = 50;
 		indirectHitRange = 3;
-		hit = 130;
+		hit = 300;
+		aiAmmoUsageFlags = "256";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_AP_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 10;
+		caliber = 25;
 		indirectHit = 0;
 		indirectHitRange = 0;
-		hit = 200;
+		hit = 450;
 		explosionType = "";
 		explosive = 0;
+		aiAmmoUsageFlags = "128 + 256 + 512 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_HE_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 7;
+		caliber = 22;
 		indirectHit = 60;
 		indirectHitRange = 6;
-		hit = 100;
+		hit = 250;
 		explosive = 0.9;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	class JA_104th_APHE_Lazer_Ammo: JA_104th_AA_Lazer_Ammo{
-		caliber = 10;
+		caliber = 25;
 		indirectHit = 60;
 		indirectHitRange = 6;
-		hit = 100;
+		hit = 250;
 		explosive = 0.5;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 512 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
 	};
 	
-	class JA_LAAT_Drexl_Ammo: 212th_Drexl_A2A_Missile{
+	class JA_LAAT_Drexl_Ammo: 3AS_ammo_AMRAAM{
+		maneuvrability = 60;
+		lockSeekRadius = 500;
+		missileLockMinDistance = 10;
 		model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
 		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
 	};
@@ -131,6 +160,7 @@ class CfgAmmo
 	class JA_LAAT_AIM9X_BULLDOG_Ammo: FIR_AIM9X{
 		autoSeekTarget = 1;
 		lockSeekRadius = 500;
+		activeSensorAlwaysOn = 0;
 		missileManualControlCone = 180;
 		missileKeepLockedCone = 180;
 		missileLockCone = 180;
@@ -143,7 +173,7 @@ class CfgAmmo
 		effectsMissileInit = "PylonBackEffects";
 		lockSeekDistanceFromParent = 100;
 		class LoalDistance {
-			lockSeekDistanceFromParent = 100;
+			lockSeekDistanceFromParent = 200;
 		};
 		// class ace_missileguidance {
 		// 	attackProfiles[] = {"DIR"};
@@ -185,14 +215,110 @@ class CfgAmmo
 		hit = 1500;
 	};
 	class JA_104th_Heavy_Assault_Ship_Siegecannon_AMMO : 3AS_SIEGE_Cannon_HHE_Shell{
-		indirectHit = 200;
+		indirecthit = 450;
 		indirectHitRange = 20;
 	};
+	class JA_104th_AP_Lazer_Oryx_Ammo: 3AS_Vwing_Medium_Energy_Shells{
+		caliber = 25;
+		indirectHit = 10;
+		indirectHitRange = 1;
+		hit = 250;
+		explosionType = "";
+		explosive = 0.1;
+		typicalSpeed = 1200;
+		aiAmmoUsageFlags = "128 + 256 + 512 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
+	};
+	class JA_104th_HE_Lazer_Oryx_Ammo: 3AS_Vwing_Medium_Energy_Shells{
+		caliber = 22;
+		indirectHit = 60;
+		indirectHitRange = 6;
+		hit = 250;
+		explosive = 0.9;
+		typicalSpeed = 1200;
+		aiAmmoUsageFlags = "64 + 128 + 256 + 1024";
+		aiAmmoUsageFlagsStrict = 0;
+	};
+	class JA_104th_AGM_88_M : FIR_AGM88{
+		model = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
+		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_High_Energy_Missile.p3d";
+		effectFly = "3AS_Rocket_effect_Yellow_fly";
+		effectsMissile = "3AS_Rocket_effect_Yellow_fly";
+		effectsMissileInit = "PylonBackEffects";
+		class LoalDistance{
+			lockSeekDistanceFromParent = 10;
+		};
+	}
+	class SensorTemplateLaser;
+	class 3AS_Smoke_300mm_AMOS_White;
+	class Arty_Dropcrate_A: 3AS_Smoke_300mm_AMOS_White
+    {
+        model = "Dropcrate_FC\Falling_Dropcrate.p3d";
+        proxyshape = "Dropcrate_FC\Dropcrate_closed.p3d";
+        hit = 0;
+		effectsSmoke = "SmokeShellYellow";
+		submunitionAmmo = "SmokeShellYellow";
+        indirectHit = 0;
+        explosive = 0;
+        whistleOnFire = 1;
+        laserLock = 1;
+        missileLockCone = 180;
+        missileKeepLockedCone = 90;
+        autoSeekTarget = 0;
+        artilleryLock = 1;
+        multiSoundFly[] = {"soundFly1",0.2,"soundFly2",0.2};
+        soundFly1[] = {"FC_Locator_fly",db+0, 1};
+        soundFly2[] = {"FC_Crate_Fly",db+0, 1};
+        multiSoundHit[] = {"soundHit1",0.2,"soundHit2",0.2,"soundHit3",0.2,"soundHit4",0.2};
+        soundHit1[] = {"FC_Hit_Ground",db+0, 1};
+        soundHit2[] = {"FC_Hit_Thud",db+0, 1};
+        soundHit3[] = {"FC_Hit_Echo",db+0, 1};
+        soundHit4[] = {"FC_Sputter_T",db+0, 1};
+        whistleDist = 24;
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"Dropcrate_FC\Data\crate_clean_co.paa"};
+        class Eventhandlers
+        {
+            Init = "[_this select 0] execVM 'Dropcrate_FC\Scripts\grpl_fired.sqf';";
+        };
+        class Components
+        {
+                class SensorsManagerComponent
+                {
+                    class Components
+                    {
+                        class LaserSensorComponent: SensorTemplateLaser {
+                            class GroundTarget {
+                                minRange = 30000;
+                                maxRange = 30000;
+                                objectDistanceLimitCoef = -1;
+                                viewDistanceLimitCoef = -1;
+                            };
+                            maxTrackableSpeed = 300;
+                            angleRangeHorizontal = 180;
+                            angleRangeVertical = 180;
+                            componentType = "LaserSensorComponent";
+                            typeRecognitionDistance = 0;
+                            color[] = {1, 1, 1, 0};
+                            allowsMarking = 1;
+                            groundNoiseDistanceCoef = -1;
+                            maxGroundNoiseDistance = -1;
+                            minSpeedThreshold = 0;
+                            maxSpeedThreshold = 0;
+                            animDirection = "";
+                            aimDown = 0;
+                            minTrackableSpeed = -1e+010;
+                            minTrackableATL = -1e+010;
+                            maxTrackableATL = 1e+010;
+                        };
+                    };
+                };
+            };
+    	};
 };
 
-class CfgMagazines
-{
-	class RD501_Republic_Aircraft_Laser_AA_Mag_600;
+class CfgMagazines{
+	class 3as_V19_800Rnd_Medium_shells;
 	class FIR_AIM9X_P_2rnd_M;
 	class FIR_AIM120_LAU115_P_2rnd_M;
 	class 3AS_30Rnd_Mass_Driver_shells;
@@ -201,10 +327,12 @@ class CfgMagazines
 	class TKE_Ext_75mm_60Rnd;
 	class 3AS_10Rnd_Siege_Cannon_HHE_shells;
 	class FIR_F15C_Fueltank_P_1rnd_M;
-	class 212th_Drexl_4Rnd_A2A_mag;
+	class 3AS_SAM_6Rnd_AMRAAM;
 	class FIR_Brimstone_DM_std_P_3rnd_M;
+	class FIR_AGM88_P_1rnd_M;
+	class FIR_GBU53_EWP_6rnd_M;
 
-	class JA_104th_AA_Lazer_MAG_500: RD501_Republic_Aircraft_Laser_AA_Mag_600
+	class JA_104th_AA_Lazer_MAG_500: 3as_V19_800Rnd_Medium_shells
     {
         ammo = "JA_104th_AA_Lazer_Ammo";
 		descriptionShort = "High speed Weapon";
@@ -333,11 +461,12 @@ class CfgMagazines
 
 	};
 
-	class JA_LAAT_Drexl : 212th_Drexl_4Rnd_A2A_mag{
+	class JA_LAAT_Drexl : 3AS_SAM_6Rnd_AMRAAM{
 		ammo = "JA_LAAT_Drexl_Ammo";
 		displayName = "[104th] Drexl AA Missile";
 		hardpoints[] = {"B_MISSILE_PYLON","FIR_A10C_AA_HP","FIR_BLUFOR_AA_HP","FIR_BLUFOR_Combined_HP","FIR_MQ81_WEP_HP","B_MISSILE_PYLON"};
         pylonWeapon = "JA_104th_Drexl";
+        count = 4;
         model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
 	};
 	
@@ -347,16 +476,71 @@ class CfgMagazines
         pylonWeapon = "JA_104th_Brimstone";
         scope = 2;
     };
+	class JA_104th_AP_Lazer_Oryx_MAG_250: JA_104th_AA_Lazer_MAG_500
+    {
+        ammo = "JA_104th_AP_Lazer_Oryx_Ammo";
+		descriptionShort = "High speed Weapon";
+        // model = "\FIR_AirWeaponSystem_US\data\proxies\pod_GEPOD30.p3d";
+		model = "\FIR_AirWeaponSystem_US\data\proxies\pod_SUU23.p3d";
+        scope = 2;
+        displayName = "[104th] 104th AP cannon";
+		displayNameShort = "Laser AP";
+        count = 250;
+    };
+	class JA_104th_HE_Lazer_Oryx_MAG_250: JA_104th_AA_Lazer_MAG_500
+    {
+        ammo = "JA_104th_HE_Lazer_Oryx_Ammo";
+		descriptionShort = "High speed Weapon";
+        // model = "\FIR_AirWeaponSystem_US\data\proxies\pod_GEPOD30.p3d";
+		model = "\FIR_AirWeaponSystem_US\data\proxies\pod_SUU23.p3d";
+        scope = 2;
+        displayName = "[104th] 104th HE cannon";
+		displayNameShort = "Laser HE";
+        count = 250;
+    };
+	class JA_104th_AGM_88_2rnd_M : FIR_AGM88_P_1rnd_M{
+		ammo = "JA_104th_AGM_88_M";
+		model = "\FIR_AirWeaponSystem_US\data\proxies\pod_4x_agm114.p3d";
+        scope = 2;
+        displayName = "[104th] AGM-88 HARM x4";
+        count = 4;
+        pylonWeapon = "JA_104th_AGM_88";
+	};
+	class JA_104th_GBU53_6rnd_M : FIR_GBU53_EWP_6rnd_M{
+		model = "\FIR_AirWeaponSystem_US\data\proxies\rack_6x_mer.p3d";
+        ammo = "FIR_GBU53";
+        scope = 2;
+        displayName = "[104th] GBU-53 SDB II x6";
+        count = 6;
+        pylonWeapon = "JA_104th_GBU53";
+	};
+	class 3AS_12Rnd_300mm_Mo_smoke;
+	class AnimationSources;
+	class Arty_FC_Dropcrate_P_1rnd : 3AS_12Rnd_300mm_Mo_smoke
+	{
+		scope = 2;
+		model = "Dropcrate_FC\crate_proxy.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"Dropcrate_FC\Data\crate_clean_co.paa"};
+        class AnimationSources: AnimationSources    /// custom made animation sources
+        {
+            class Missiles_revolving
+            {
+                source = "revolving";
+                weapon = "FC_Dropcrate_PW1";
+            };                  
+        };  
+		displayName = "104th Dropcrate x 1";
+		displayNameShort = "Laser Guided";
+		descriptionShort = "FC_Dropcrate";					
+		ammo = "Arty_Dropcrate_A";
+		count = 1;
+		mass = 200;
+	};
 };
 
-class CfgWeapons
-{
-	class RD501_Republic_Aircraft_Laser_AA{
-		class medium;
-		class manual;
-		class close;
-		class LowROF;
-	};
+class CfgWeapons{
+	class 3as_V19_Medium_Cannon;
 	class FIR_AIM120;
 	class FIR_AIM9X;
 	class 3AS_Mass_Driver_Cannon;
@@ -368,54 +552,383 @@ class CfgWeapons
 	};
 	class TKE_Ext_Cannon_Railgun_Light;
 	class 3AS_ATAP_Siege_Cannon;
-	class 212th_A2A_MissileSystem;
+	class 3AS_Hailfire_SAM_weapon;
 	class FIR_Brimstone;
 	class JA_104th_Z6;
 	class manual;
+	class FIR_AGM88;
+	class FIR_GBU53;
+	class 3AS_Sabre_Cannons_Super;
 
-	class JA_104th_AA_Lazer : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_AA_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "Air Superiority laser";
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500"};
 		modes[] = {"manual"};
-		class manual: manual{
+		class manual{
 			burst = 1;
 			reloadtime = 0.08;
+			displayName = "";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav",1.99526,1,1500};
+				soundBegin[] = {"begin1",0.33};
+				soundsetshot[] = {"3AS_Tie_Shot_SoundSet"};
+			};
+			canLock = 2;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			showToPlayer = 1;
+			dispersion = 0.003;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+			soundContinuous = 0;
+			sound[] = {"",10,1};
+			soundEnd[] = {"sound",1};
+			autoFire = 1;
+			textureType = "fullAuto";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			aiDispersionCoefY = 3;
+			aiDispersionCoefX = 2;
+			soundBurst = 0;
+			multiplier = 1;
+			burstRangeMax = -1;
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundClosure[] = {"sound",1};
+			soundLoop[] = {};
+			weaponSoundEffect = "";
+			useAction = 0;
+			useActionTitle = "";
+			artilleryDispersion = 1;
+			artilleryCharge = 1;
+			canShootInWater = 0;
+			class BaseSoundModeType
+			{
+			};
+			requiredOpticType = -1;
+			aiRateOfFireDispersion = 1;
 		};
 	};
-	class JA_104th_AP_Lazer : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_AP_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "AP laser";
 		magazines[] = {"JA_104th_AP_Lazer_MAG_250"};
 		modes[] = {"manual"};
-		class manual: manual{
+		class manual{
 			burst = 1;
 			reloadtime = 0.2;
+			displayName = "";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav",1.99526,1,1500};
+				soundBegin[] = {"begin1",0.33};
+				soundsetshot[] = {"3AS_Tie_Shot_SoundSet"};
+			};
+			canLock = 2;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			showToPlayer = 1;
+			dispersion = 0.003;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+			soundContinuous = 0;
+			sound[] = {"",10,1};
+			soundEnd[] = {"sound",1};
+			autoFire = 1;
+			textureType = "fullAuto";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			aiDispersionCoefY = 3;
+			aiDispersionCoefX = 2;
+			soundBurst = 0;
+			multiplier = 1;
+			burstRangeMax = -1;
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundClosure[] = {"sound",1};
+			soundLoop[] = {};
+			weaponSoundEffect = "";
+			useAction = 0;
+			useActionTitle = "";
+			artilleryDispersion = 1;
+			artilleryCharge = 1;
+			canShootInWater = 0;
+			class BaseSoundModeType
+			{
+			};
+			requiredOpticType = -1;
+			aiRateOfFireDispersion = 1;
 		};
 	};
-	class JA_104th_HE_Lazer : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_HE_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "HE laser";
 		magazines[] = {"JA_104th_HE_Lazer_MAG_250"};
 		modes[] = {"manual"};
-		class manual: manual{
+		class manual{
 			burst = 1;
 			reloadtime = 0.2;
+			displayName = "";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav",1.99526,1,1500};
+				soundBegin[] = {"begin1",0.33};
+				soundsetshot[] = {"3AS_Tie_Shot_SoundSet"};
+			};
+			canLock = 2;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			showToPlayer = 1;
+			dispersion = 0.003;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+			soundContinuous = 0;
+			sound[] = {"",10,1};
+			soundEnd[] = {"sound",1};
+			autoFire = 1;
+			textureType = "fullAuto";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			aiDispersionCoefY = 3;
+			aiDispersionCoefX = 2;
+			soundBurst = 0;
+			multiplier = 1;
+			burstRangeMax = -1;
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundClosure[] = {"sound",1};
+			soundLoop[] = {};
+			weaponSoundEffect = "";
+			useAction = 0;
+			useActionTitle = "";
+			artilleryDispersion = 1;
+			artilleryCharge = 1;
+			canShootInWater = 0;
+			class BaseSoundModeType
+			{
+			};
+			requiredOpticType = -1;
+			aiRateOfFireDispersion = 1;
 		};
 	};
-	class JA_104th_HE_Lazer_Ulik : RD501_Republic_Aircraft_Laser_AA{
-		displayName = "HE laser";
-		magazines[] = {"JA_104th_HE_Lazer_MAG_250"};
+	class JA_104th_AP_Lazer_Oryx  : 3as_V19_Medium_Cannon{
+		displayName = "AP laser";
+		ballisticsComputer = "2 + 8 + 16";
+		magazines[] = {"JA_104th_AP_Lazer_Oryx_MAG_250"};
+		muzzleEnd = "konec hlavne";
+		muzzlePos = "usti hlavne";
 		modes[] = {"manual"};
-		class manual: manual{
+		class manual{
+			displayName = "";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav",1.99526,1,1500};
+				soundBegin[] = {"begin1",0.33};
+				soundsetshot[] = {"3AS_Tie_Shot_SoundSet"};
+			};
+			canLock = 2;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			showToPlayer = 1;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRangeProbab = 0.01;
+			soundContinuous = 0;
+			sound[] = {"",10,1};
+			soundEnd[] = {"sound",1};
+			autoFire = 1;
+			textureType = "fullAuto";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			aiDispersionCoefY = 3;
+			aiDispersionCoefX = 2;
+			soundBurst = 0;
+			multiplier = 1;
+			burstRangeMax = -1;
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundClosure[] = {"sound",1};
+			soundLoop[] = {};
+			weaponSoundEffect = "";
+			useAction = 0;
+			useActionTitle = "";
+			artilleryDispersion = 1;
+			artilleryCharge = 1;
+			canShootInWater = 0;
+			class BaseSoundModeType
+			{
+			};
+			requiredOpticType = -1;
+			aiRateOfFireDispersion = 1;
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
 			burst = 1;
-			reloadtime = 0.5;
+            dispersion = 0.001;
+			reloadtime = 0.35;
+			maxRange = 4000;
 		};
 	};
-	class JA_104th_APHE_Lazer : RD501_Republic_Aircraft_Laser_AA{
+	class JA_104th_HE_Lazer_Oryx : 3as_V19_Medium_Cannon{
+		displayName = "HE laser";
+		ballisticsComputer = "2 + 8 + 16";
+		magazines[] = {"JA_104th_HE_Lazer_Oryx_MAG_250"};
+		muzzleEnd = "konec hlavne";
+		muzzlePos = "usti hlavne";
+		modes[] = {"manual"};
+		class manual{
+			
+			displayName = "";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav",1.99526,1,1500};
+				soundBegin[] = {"begin1",0.33};
+				soundsetshot[] = {"3AS_Tie_Shot_SoundSet"};
+			};
+			canLock = 2;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			showToPlayer = 1;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRangeProbab = 0.01;
+			soundContinuous = 0;
+			sound[] = {"",10,1};
+			soundEnd[] = {"sound",1};
+			autoFire = 1;
+			textureType = "fullAuto";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			aiDispersionCoefY = 3;
+			aiDispersionCoefX = 2;
+			soundBurst = 0;
+			multiplier = 1;
+			burstRangeMax = -1;
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundClosure[] = {"sound",1};
+			soundLoop[] = {};
+			weaponSoundEffect = "";
+			useAction = 0;
+			useActionTitle = "";
+			artilleryDispersion = 1;
+			artilleryCharge = 1;
+			canShootInWater = 0;
+			class BaseSoundModeType
+			{
+			};
+			requiredOpticType = -1;
+			aiRateOfFireDispersion = 1;
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+			burst = 1;
+            dispersion = 0.001;
+			reloadtime = 0.35;
+			maxRange = 4000;
+		};
+	};
+	class JA_104th_APHE_Lazer : 3as_V19_Medium_Cannon{
 		displayName = "APHE laser";
 		magazines[] = {"JA_104th_APHE_Lazer_MAG_100"};
 		modes[] = {"manual"};
-		class manual: manual{
+		class manual{
 			burst = 1;
 			reloadtime = 0.4;
+			displayName = "";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"3AS\3as_Laat\sounds\LAAT_Cannon.wav",1.99526,1,1500};
+				soundBegin[] = {"begin1",0.33};
+				soundsetshot[] = {"3AS_Tie_Shot_SoundSet"};
+			};
+			canLock = 2;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			showToPlayer = 1;
+			dispersion = 0.003;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+			soundContinuous = 0;
+			sound[] = {"",10,1};
+			soundEnd[] = {"sound",1};
+			autoFire = 1;
+			textureType = "fullAuto";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			aiDispersionCoefY = 3;
+			aiDispersionCoefX = 2;
+			soundBurst = 0;
+			multiplier = 1;
+			burstRangeMax = -1;
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundClosure[] = {"sound",1};
+			soundLoop[] = {};
+			weaponSoundEffect = "";
+			useAction = 0;
+			useActionTitle = "";
+			artilleryDispersion = 1;
+			artilleryCharge = 1;
+			canShootInWater = 0;
+			class BaseSoundModeType
+			{
+			};
+			requiredOpticType = -1;
+			aiRateOfFireDispersion = 1;
 		};
 	};
 	
@@ -431,6 +944,9 @@ class CfgWeapons
 	};
 
 	class JA_ATTE_Maingun_Cannon: 3AS_Mass_Driver_Cannon{
+		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
+	};
+	class JA_Sabre_Maingun_Cannon: 3AS_Sabre_Cannons_Super{
 		magazines[] = {"JA_ATTE_Maingun_Normal_Mag","JA_ATTE_Maingun_HE_Mag"};
 	};
 
@@ -481,7 +997,8 @@ class CfgWeapons
 		magazines[] = {"JA_104th_Heavy_Assault_Ship_Siegecannon_MAG_10"};
 		ballisticsComputer = "1 + 2 + 8 + 16";
 	};
-	class JA_104th_Drexl : 212th_A2A_MissileSystem{
+	class JA_104th_Drexl : 3AS_Hailfire_SAM_weapon{
+		displayName = "[104th] Drexl";
 		magazines[] = {"JA_LAAT_Drexl"};
 	};
 	class JA_104th_Brimstone : FIR_Brimstone{
@@ -519,5 +1036,20 @@ class CfgWeapons
             maxRangeProbab = 0.04;
             showToPlayer = 1;
         };
+	};
+
+	class JA_104th_AGM_88 : FIR_AGM88{
+		initspeed = 30;
+		magazines[] = {"JA_104th_AGM_88_2rnd_M"};
+	};
+	class JA_104th_GBU53 : FIR_GBU53{
+		initspeed = 30;
+		magazines[] = {"JA_104th_GBU53_6rnd_M"};
+	};
+	class 3AS_AV7_300mm_AMOS;
+	class JA_104th_AV7_300mm_AMOS: 3AS_AV7_300mm_AMOS
+	{
+		scope = 2;
+		magazines[] = {"3AS_32Rnd_300mm_Mo_shells","3AS_12Rnd_300mm_Mo_smoke","3AS_4Rnd_300mm_Mo_guided","3AS_4Rnd_300mm_Mo_LG","3AS_12Rnd_300mm_Mo_mine","3AS_4Rnd_300mm_Mo_Cluster","3AS_12Rnd_300mm_Mo_AT_mine","Arty_FC_Dropcrate_P_1rnd"};
 	};
 };

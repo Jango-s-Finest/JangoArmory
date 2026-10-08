@@ -7,12 +7,27 @@ class CfgPatches
 	{
 		author = "Jango's Finest";
 		units[] = {
+			"JA_104th_Base_CT",
 			"JA_104th_P2_1C_01_CT",
 			"JA_104th_P2_1C_02_CT",
-			"JA_104th_P2_1C_Medic",
 			"JA_104th_P2_1C_Engineer",
-			"JA_104th_P2_1C_JTAC"};
+			"JA_104th_P2_1C_Medic",
+			"JA_104th_AB_1C_Medic",
+			"JA_104th_P2_1C_JTAC",
+			"JA_104th_P2_1C_Surtr"
+		};
 		weapons[] = {
+			"JA_104th_Base_CT_Uniform",
+			"ls_gar_airborneOfficer_vest",
+			"ls_gar_forceReconLieutenant_vest",
+			"ls_gar_officer_vest",
+			"ls_gar_arc_vest",
+			"ls_gar_kama_vest",
+			"ls_gar_medic_vest",
+			"ls_gar_forceReconNCO_vest",
+			"ls_gar_forceRecon_vest",
+			"ls_gar_heavy_vest",
+			"ls_gar_grenadier_vest",
 			"JA_104th_P2_1C_01_CT_Helmet",
 			"JA_104th_P2_1C_02_CT_Helmet",
 			"JA_104th_P2_1C_03_CT_Helmet",
@@ -21,23 +36,28 @@ class CfgPatches
 			"JA_104th_P2_1C_06_CT_Helmet",
 			"JA_104th_P2_1C_07_CT_Helmet",
 			"JA_104th_P2_1C_08_CT_Helmet",
-			"JA_104th_P2_1C_Medic_Helmet",
 			"JA_104th_Engineer_1C_Base_Helmet",
+			"JA_104th_P2_1C_Medic_Helmet",
 			"JA_104th_JTAC_1C_Helmet",
 			"JA_104th_Desert_1C_Medic_Helmet",
 			"JA_104th_Desert_1C_Medic_NCO_Helmet",
 			"JA_104th_Desert_1C_NCO_Helmet",
 			"JA_104th_Desert_1C_Officer_Helmet",
 			"JA_104th_Desert_1C_Base_Helmet",
-
+			"JA_104th_AB_1C_01_CT_Helmet",
+			"JA_104th_AB_1C_02_CT_Helmet",
+			"JA_104th_AB_1C_03_CT_Helmet",
+			"JA_104th_AB_1C_04_CT_Helmet",
+			"JA_104th_AB_1C_Medic_Helmet",
 			"JA_104th_P2_1C_01_CT_Uniform",
 			"JA_104th_P2_1C_02_CT_Uniform",
-			"JA_104th_P2_1C_Medic_Uniform",
-			"JA_104th_P2_1C_JTAC_Uniform",
 			"JA_104th_P2_1C_Engineer_Uniform",
+			"JA_104th_P2_1C_Medic_Uniform",
+			"JA_104th_AB_1C_Medic_Uniform",
+			"JA_104th_P2_1C_JTAC_Uniform",
 			"JA_104th_ARC_P2_Vest",
 			"JA_104th_Vest_P2",
-			"JA_104th_P2_Vest",
+			"JA_104th_Base_Commander_Vest_P2",
 			"JA_104th_P2_PSGT_Base_Kama",
 			"JA_104th_P2_PSGT_Alt1_Kama",
 			"JA_104th_P2_PSGT_Alt2_Kama",
@@ -46,18 +66,22 @@ class CfgPatches
 			"JA_104th_P2_NCO_Vest",
 			"JA_104th_P2_NCO_Medic_Vest",
 			"JA_104th_P2_Recon_Vest",
-			"JA_104th_P2_Recon_Vest2",
 			"JA_104th_P2_Grenadier_Vest",
-			"JA_104th_P2_basic_Vest",
 			"JA_104th_P2_Heavy_Vest",
-			"JA_104th_Base_Commander_Vest_P2",
 			"JA_104th_AB_P2_NCO_Base_Trooper_Armor",
 			"JA_104th_AB_P2_NCO_Alt1_Trooper_Armor",
 			"JA_104th_AB_P2_NCO_Alt2_Trooper_Armor",
 			"JA_104th_AB_P2_NCO_Medic_Trooper_Armor",
 			"JA_104th_AB_P2_Base_Trooper_Armor",
 			"JA_104th_AB_P2_Medic_Trooper_Armor",
-			"JA_104th_AB_P2_Officer_Trooper_Armor"};
+			"JA_104th_AB_P2_Officer_Trooper_Armor",
+			"JA_104th_P2_Pilot_officer_Vest",
+			"JA_104th_P2_1C_Surtr_Uniform"
+		};
+	glasses[] = {
+		"JA_104th_P2_Magnum_Headware",
+		"JA_104th_P2_PSGT_Kama_HeadWare"
+	};
 	};
 };
 
@@ -1628,6 +1652,29 @@ class CfgWeapons
 				};
 			};
 		};
+	};class JA_104th_P2_1C_Surtr_Uniform : JA_104th_Base_CT_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper P2 armor (104th [1C] Talos Surtr)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Surtr_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Surtr_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_P2_1C_Surtr";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
 	};
 };
 
@@ -1769,6 +1816,25 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"104thPhantomCompany\data\Textures\104th_JTAC_Base_Upper.paa", "104thPhantomCompany\data\Textures\104th_JTAC_Base_Lower.paa", "104thPhantomCompany\data\Textures\104th_JTAC_Base_Upper.paa", ""};
 		linkedItems[] = {JA_104th_JTAC_1C_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_JTAC_1C_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_P2_1C_Surtr : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_P2_1C_Surtr_Uniform";
+		displayName = "104th 1C Surtr";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Basic";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Surtr_Upper.paa",
+				"104thPhantomCompany\data\Textures\104th_P2_Base_Uniform_Surtr_Lower.paa"};
+		linkedItems[] = {JA_104th_Surtr_1C_Base_Helmet, ls_gar_SurtrNCO_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Surtr_1C_Base_Helmet, ls_gar_SurtrNCO_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };
 

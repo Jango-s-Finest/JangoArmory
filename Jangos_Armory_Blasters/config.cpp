@@ -8,135 +8,97 @@ class CfgPatches
         author = "Jango's Finest";
         requiredVersion = 0.1;
         requiredAddons[] = {};
-        units[] = {
-            "JA_104th_Box_Ammo_mk2",
-        };
+        units[] = {};
         // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
         weapons[] = {
-
-            "JA_104th_rifle_base",
-            "JA_104th_rifle_base_stunless",
-            "JA_104th_pistol_base",
-            "JA_104th_launcher_base",
-            
-            "JA_104th_DC15A",
-            "JA_104th_DC15LE",
-            "JA_104th_DC15A_UGL",
-
-            "JA_104th_DC15C",
-            "JA_104th_DC15C_UGL",
-
-            "JA_104th_DC15L",
-
-            "JA_104th_DC15S",
-            "JA_104th_DC15S_UGL",
-
-            "JA_104th_DC15X",
-
-            "JA_104th_FP773",
-
-            "JA_104th_DC17M",
-
-            "JA_104th_DP23",
-
-            "JA_104th_WestarM4",
-            "JA_104th_WestarM5",
-
-            "JA_104th_Westar35S",
-
-            //"JA_104th_Valken38Y",
-
-            "JA_104th_Z6",
-
-            "JA_104th_DC17SA",
-
-            "JA_104th_DC15SA",
-
-            "JA_104th_DC15ARC",
-
-            "JA_104th_DC17SA_Dual",
-            "JA_104th_DC17SA_Dual_LeftDummy",
-
-            "JA_104th_Westar35SA",
-
-            //"JA_104th_EPL2",
-
-            "JA_104th_RPS6",
-
-            "JA_104th_RPS6_H",
-
-            "JA_104th_RPS6_D",
-
-            // "JA_104th_PLX1",
-
-            "JA_104th_Z7_mk2",
-
-            "JA_104th_BPX14",
-
-            // "JA_104th_ShoulderCannon_mk2",
-
+            "arifle_MX_Base_F",
+            "arifle_SPAR_03_blk_F",
+            "hgun_P07_F",
+            "3AS_pistol_DC15SA_Base_F",
+            "Launcher_Base_F",
+            "launch_Titan_short_base",
+            "optic_DMS",
+            "optic_Hamr",
+            "optic_MRCO",
+            "optic_Holosight",
+            "optic_MRD",
+            "OPTRE_SRM_Sight",
             "JA_104th_muzzle_flash",
-
             "JA_104th_muzzle_suppressor",
-
             "JA_104th_cows_rco",
             "JA_104th_cows_rco_2",
             "JA_104th_cows_rco_3",
-
             "JA_104th_cows_mrco",
             "JA_104th_cows_mrco_2",
             "JA_104th_cows_mrco_3",
-
             "JA_104th_cows_Holosight",
             "JA_104th_cows_Holosight_2",
             "JA_104th_cows_Holosight_3",
-
             "JA_104th_cows_HoloScope",
             "JA_104th_cows_HoloScope_2",
             "JA_104th_cows_HoloScope_3",
-
             "JA_104th_cows_DMS",
             "JA_104th_cows_DMS_2",
             "JA_104th_cows_DMS_3",
             "JA_104th_cows_DMS_4",
-
-            "JA_104th_cows_Holoscope_LR",
-            "JA_104th_cows_Holoscope_LR_2",
-            "JA_104th_cows_Holoscope_LR_3",
-            "JA_104th_cows_Holoscope_LR_4",
-
             "JA_104th_cows_pistol",
             "JA_104th_cows_pistol_2",
-
             "JA_104th_cows_LRPS",
-
             "JA_104th_cows_LEScope_DC15A",
-
-            "JA_104th_cows_reflex_optic"
-
+            "JA_104th_cows_reflex_optic",
+            "JA_104th_stun_muzzle",
+            "JA_104th_rifle_base",
+            "JA_104th_rifle_base_stunless",
+            "JA_104th_pistol_base",
+            "JA_104th_launcher_base",
+            "JA_104th_guided_launcher_base",
+            "JA_104th_DC15A",
+            "JA_104th_DC15A_UGL",
+            "JA_104th_DC15LE",
+            "JA_104th_T32C",
+            "JA_104th_DC15C",
+            "JA_104th_DC15C_UGL",
+            "JA_104th_DC15L",
+            "JA_104th_DC15S",
+            "JA_104th_DC15S_UGL",
+            "JA_104th_DC15X",
+            "JA_104th_FP773",
+            "JA_104th_DC17M",
+            "JA_104th_DP23",
+            "JA_104th_MTR_4",
+            "JA_104th_WestarM4",
+            "JA_104th_WestarM5",
+            "JA_104th_Westar35S",
+            "JA_104th_Z6",
+            "JA_104th_DC17SA",
+            "JA_104th_DC15ARC",
+            "JA_104th_DC17SA_Dual",
+            "JA_104th_DC17SA_Dual_LeftDummy",
+            "JA_104th_DC15SA",
+            "JA_104th_Westar35SA",
+            "JA_104th_RPS6",
+            "JA_104th_RPS6_H",
+            "JA_104th_Z7_mk2",
+            "JA_104th_BPX14"
         };
         ammo[] = {
-
+            "JA_104th_Weapons_Ammo_17MAT",
+            "JA_104th_Weapons_Ammo_EMP",
             "JA_104th_Weapons_Ammo_base_blue",
-
             "JA_104th_Weapons_Ammo_5mw",
             "JA_104th_Weapons_Ammo_10mw",
-            "JA_104th_Weapons_Ammo_10mwSC",
             "JA_104th_Weapons_Ammo_20mw",
             "JA_104th_Weapons_Ammo_30mw",
             "JA_104th_Weapons_Ammo_40mw",
             "JA_104th_Weapons_Ammo_50mw",
-
             "JA_104th_Weapons_Ammo_100mw",
-            "JA_104th_Weapons_Ammo_17MAT",
+            "JA_104th_Weapons_Ammo_10mwSC",
+            "JA_104th_Weapons_Ammo_20mwSC_Slug",
+            "JA_104th_Weapons_Ammo_20mwSC_HE",
             "JA_104th_Weapons_Ammo_BPX14",
             "JA_104th_Weapons_Ammo_Z7",
-
-            "JA_104th_Weapons_Ammo_EMP",
-
             "JA_104th_Weapons_Ammo_GL_HE",
             "JA_104th_Weapons_Ammo_GL_AP",
-
             "JA_104th_Weapons_Ammo_GL_smoke_white",
             "JA_104th_Weapons_Ammo_GL_smoke_purple",
             "JA_104th_Weapons_Ammo_GL_smoke_yellow",
@@ -144,7 +106,6 @@ class CfgPatches
             "JA_104th_Weapons_Ammo_GL_smoke_green",
             "JA_104th_Weapons_Ammo_GL_smoke_blue",
             "JA_104th_Weapons_Ammo_GL_smoke_orange",
-
             "JA_104th_Weapons_Ammo_flare_white",
             "JA_104th_Weapons_Ammo_flare_green",
             "JA_104th_Weapons_Ammo_flare_red",
@@ -154,45 +115,37 @@ class CfgPatches
             "JA_104th_Weapons_Ammo_flare_cyan",
             "JA_104th_Weapons_Ammo_flare_purple",
             "JA_104_Personal_Shield_Ammo",
-			"JA_104_Personal_Shield_Body_Ammo",
+            "JA_104_Personal_Shield_Body_Ammo"
         };
 
         magazines[] = {
-
-            "JA_104th_Weapons_Mags_10mw500",
-            "JA_104th_Weapons_Mags_10mw40",
+            "JA_104th_Weapons_Mags_stun10",
             "JA_104th_Weapons_Mags_10mw50",
-            "JA_104th_Weapons_Mags_10mw80",
-
+            "JA_104th_Weapons_Mags_20mw40",
             "JA_104th_Weapons_Mags_20mw70",
-            "JA_104th_Weapons_Mags_20mw200",
-            "JA_104th_Weapons_Mags_20mw300",
-
-            "JA_104th_Weapons_Mags_30mw50",
-            "JA_104th_Weapons_Mags_30mw12",
-
-            "JA_104th_Weapons_Mags_40mw40",
-            "JA_104th_Weapons_Mags_40mw10",
-
+            "JA_104th_Weapons_Mags_20mw240",
+            "JA_104th_Weapons_Mags_10mw500",
+            "JA_104th_Weapons_Mags_30mw30",
+            "JA_104th_Weapons_Mags_40mw20",
+            "JA_104th_Weapons_Mags_30mw36",
+            "JA_104th_Weapons_Mags_30mw70",
+            "JA_104th_Weapons_Mags_17M_AT",
             "JA_104th_Weapons_Mags_50mw7",
-
-            "JA_104th_Weapons_Mags_10mw20SC",
-            "JA_104th_Weapons_Mags_20mw16SC_Slug",
-
+            "JA_104th_Weapons_Mags_50mw24",
             "JA_104th_Weapons_Mags_100Mw1",
             "JA_104th_Weapons_Mags_EMPMw2",
-
-            "JA_104th_Weapons_Mags_80mw500",
+            "JA_104th_Weapons_Mags_10mw20SC",
+            "JA_104th_Weapons_Mags_20mw16SC_Slug",
+            "JA_104th_Weapons_Mags_20mw6SC_HE",
+            "JA_104th_Weapons_Mags_10mw30",
+            "JA_104th_Weapons_Mags_10mw40",
+            "JA_104th_Weapons_Mags_10mw80",
             "JA_104th_Weapons_Mags_BPX14",
-
-            "JA_104th_Weapons_Mags_100mw_AT",
-
+            "JA_104th_Weapons_Mags_80mw500",
             "JA_104th_Weapons_Mags_10mw4SC",
-
             "JA_104th_Weapons_Mags_GL_HE2",
             "JA_104th_Weapons_Mags_GL_HE3",
             "JA_104th_Weapons_Mags_GL_AP2",
-
             "JA_104th_Weapons_Mags_GL_smoke_white6",
             "JA_104th_Weapons_Mags_GL_smoke_purple3",
             "JA_104th_Weapons_Mags_GL_smoke_yellow3",
@@ -200,7 +153,6 @@ class CfgPatches
             "JA_104th_Weapons_Mags_GL_smoke_green3",
             "JA_104th_Weapons_Mags_GL_smoke_blue3",
             "JA_104th_Weapons_Mags_GL_smoke_orange3",
-
             "JA_104th_Weapons_Mags_GL_flare_White3",
             "JA_104th_Weapons_Mags_GL_flare_IR3",
             "JA_104th_Weapons_Mags_GL_flare_Green3",
@@ -209,9 +161,45 @@ class CfgPatches
             "JA_104th_Weapons_Mags_GL_flare_Blue3",
             "JA_104th_Weapons_Mags_GL_flare_Cyan3",
             "JA_104th_Weapons_Mags_GL_flare_Purple3",
+            "JA_104th_Weapons_Mags_RPS6H_6rnd",
             "JA_104_Personal_Shield",
-			"JA_104_Personal_Shield_Body",
+            "JA_104_Personal_Shield_Body"
         };
+    };
+};
+class CfgSoundShaders
+{
+    class JA_MTR_4_Shot_SoundShader
+    {
+        samples[] = { {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound.ogg", 1} };
+        volume = 1.0; // Adjust loudness here
+        range = 1800; // How far the sound can be heard in meters
+    };
+    // Suppressed Audio
+    class JA_MTR_4_Supressed_Shot_SoundShader
+    {
+        samples[] = { {"Jangos_Armory_Blasters\data\sounds\mtr4_shotsound_supressed.ogg", 1} };
+        volume = 0.6; // Lower base volume for the engine
+        range = 150;  // Considerably smaller sound travel range
+    };
+};
+
+class CfgSoundSets
+{
+    class JA_MTR_4_Shot_SoundSet
+    {
+        soundShaders[] = { "JA_MTR_4_Shot_SoundShader" };
+        volumeFactor = 1;
+        spatial = 1;
+        loop = 0;
+    };
+    // Suppressed Set
+    class JA_MTR_4_Supressed_Shot_SoundSet
+    {
+        soundShaders[] = { "JA_MTR_4_Supressed_Shot_SoundShader" };
+        volumeFactor = 1;
+        spatial = 1;
+        loop = 0;
     };
 };
 class CfgEditorCategories
@@ -276,6 +264,7 @@ class CfgWeapons
 
     class JLTS_stun_muzzle;
     class LFP_dc17arc_Dual;
+    class OpticsModes;
     class ls_weapon_dc17m;
     class WeaponSlotsInfo;
     class ls_weapon_dualDC17_secondary;
@@ -1335,7 +1324,7 @@ class CfgWeapons
         baseWeapon = "JA_104th_DC15A";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_ui_ca.paa";
         model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
-        mass = 97;
+        mass = 95;
         handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15a_Handanim.rtm"};
         reloadAction = "GestureReload_JLTS_DC15A";
         reloadTime = 0.1;
@@ -1385,8 +1374,8 @@ class CfgWeapons
         modes[] = {"Single", "FullAuto"};
         class Single : Single
         {
-            reloadTime = 0.18;
-            dispersion = 0.00028;
+            reloadTime = 0.13;
+            dispersion = 0.00025;
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType
             {
@@ -1399,8 +1388,8 @@ class CfgWeapons
         };
         class FullAuto : FullAuto
         {
-            reloadTime = 0.18;
-            dispersion = 0.0005;
+            reloadTime = 0.13;
+            dispersion = 0.0004;
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType
             {
@@ -1445,12 +1434,7 @@ class CfgWeapons
                         "JA_104th_cows_DMS",
                         "JA_104th_cows_DMS_2",
                         "JA_104th_cows_DMS_3",
-                        "JA_104th_cows_DMS_4",
-
-                        "JA_104th_cows_Holoscope_LR",
-                        "JA_104th_cows_Holoscope_LR_2",
-                        "JA_104th_cows_Holoscope_LR_3",
-                        "JA_104th_cows_Holoscope_LR_4"
+                        "JA_104th_cows_DMS_4"
                 };
             };
             class MuzzleSlot : MuzzleSlot
@@ -2164,7 +2148,6 @@ class CfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
                     {
-                        "3AS_optic_DC15C_F",
                         "3AS_Imp_Optic_1",
                         "3AS_Imp_Optic_2",
                         "3AS_Imp_Optic_3",
@@ -2536,7 +2519,7 @@ class CfgWeapons
         model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_weapon_dc17m.p3d";
         magazines[] =
             {
-                "JA_104th_Weapons_Mags_20mw70",
+                "JA_104th_Weapons_Mags_30mw70",
                 "JA_104th_Weapons_Mags_50mw7",
                 "JA_104th_Weapons_Mags_17M_AT"
             };
@@ -2547,25 +2530,47 @@ class CfgWeapons
         ls_weapons_attachmentSwapEnabled = 1;
         ls_weapons_attachments[] = {{"ls_weapons_isBlasterMag","ls_muzzle_dc17m_blaster"},{"ls_weapons_isATMag","ls_muzzle_dc17m_antiArmor"},{"ls_weapons_isSniperMag","ls_muzzle_dc17m_sniper"}};
         modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+
+        muzzles[] = {"this"};
         modes[] = {"Single", "FullAuto"};
         class Single : Single
         {
             reloadTime = 0.5;
-            dispersion = 0.00015;
-            sounds[] = {"StandardSound"};
-            class StandardSound : BaseSoundModeType
-            {
-                soundSetShot[] = {"ls_dc17m_sniper_Shot_SoundSet"};
+            dispersion = 0.00005;
+            sounds[] = {"StandardSound", "Snipersound", "AntiArmorSound"};
+            class StandardSound {
+                soundSetShot[] = { "ls_dc17m_Shot_SoundSet", "ls_mediumBlaster_Tail_SoundSet" };
+            };
+            class SniperSound {
+                soundSetShot[] = { "ls_dc17m_sniper_Shot_SoundSet", "ls_sniper_Tail_SoundSet" };
+            };
+            class AntiArmorSound {
+                begin1[] = { "\A3\Sounds_F\arsenal\weapons\UGL\UGL_01.wss", 0.707946, 1, 200 };
+                begin2[] = { "\A3\Sounds_F\arsenal\weapons\UGL\UGL_02.wss", 0.707946, 1, 200 };
+                closure1[] = { "\A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL.wss", 1, 1, 10 };
+                soundBegin[] = { "begin1", 0.5, "begin2", 0.5 };
+                soundClosure[] = { "closure1", 1 };
+                soundSetShot[] = { "UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet" };
             };
         };
         class FullAuto : FullAuto
         {
             reloadTime = 0.085;
-            dispersion = 0.00015;
-            sounds[] = {"StandardSound"};
-            class StandardSound : BaseSoundModeType
-            {
-                soundSetShot[] = {"ls_dc17m_Shot_SoundSet"};
+            dispersion = 0.00008;
+            sounds[] = { "StandardSound", "SniperSound", "AntiArmorSound" };
+            class StandardSound {
+                soundSetShot[] = { "ls_dc17m_Shot_SoundSet", "ls_mediumBlaster_Tail_SoundSet" };
+            };
+            class SniperSound {
+                soundSetShot[] = { "ls_dc17m_sniper_Shot_SoundSet", "ls_sniper_Tail_SoundSet" };
+            };
+            class AntiArmorSound {
+                begin1[] = { "\A3\Sounds_F\arsenal\weapons\UGL\UGL_01.wss", 0.707946, 1, 200 };
+                begin2[] = { "\A3\Sounds_F\arsenal\weapons\UGL\UGL_02.wss", 0.707946, 1, 200 };
+                closure1[] = { "\A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL.wss", 1, 1, 10 };
+                soundBegin[] = { "begin1", 0.5, "begin2", 0.5 };
+                soundClosure[] = { "closure1", 1 };
+                soundSetShot[] = { "UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet" };
             };
         };
         class WeaponSlotsInfo : WeaponSlotsInfo
@@ -2674,18 +2679,9 @@ class CfgWeapons
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
-                    {
-                    "JA_104th_cows_rco",
-                    "JA_104th_cows_rco_2",
-                    "JA_104th_cows_rco_3",
-                    "JA_104th_cows_Holosight",
-                    "JA_104th_cows_Holosight_2",
-                    "JA_104th_cows_Holosight_3",
-                    "JA_104th_cows_HoloScope",
-                    "JA_104th_cows_HoloScope_2",
-                    "JA_104th_cows_HoloScope_3"
-
-                    };
+                {
+                 
+                };
             };
             class PointerSlot : PointerSlot
             {
@@ -2697,7 +2693,9 @@ class CfgWeapons
             };
         };
     };
-    // Westar M5
+    // MTR-4
+    
+    // Westar M4
     class JA_104th_WestarM4 : JA_104th_rifle_base
     {
         ACE_barrelTwist = 406;
@@ -2851,7 +2849,8 @@ class CfgWeapons
                 "JA_104th_WestarM5_UGL_F"};
         magazines[] =
             {
-                "JA_104th_Weapons_Mags_20mw40"};
+                "JA_104th_Weapons_Mags_20mw40",
+                "JA_104th_Weapons_Mags_20mw70"};
         class stun : JA_104th_stun_muzzle
         {
         };
@@ -3036,7 +3035,7 @@ class CfgWeapons
         magazines[] =
             {
                 "JA_104th_Weapons_Mags_20mw40",
-                "JA_104th_Weapons_Mags_20mw70"};
+                "JA_104th_Weapons_Mags_30mw70"};
         muzzles[] =
             {
                 "this",
@@ -3594,6 +3593,7 @@ class CfgWeapons
         "JA_104th_Weapons_Mags_BPX14"
         };
     };
+    
 };
 
 class CfgAmmo
@@ -4085,6 +4085,26 @@ class CfgMagazines
         typicalSpeed = 800;
     };
 
+    // Westar Blaster Extended Mags
+    class JA_104th_Weapons_Mags_20mw70 : 30Rnd_65x39_caseless_mag
+    {
+        ls_weapons_isBlasterMag = 1;
+        displayName = "[104th] Extended Energy Cell";
+        displayNameShort = "70Rnd 20MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
+        count = 70;
+        ammo = "JA_104th_Weapons_Ammo_20mw";
+        initSpeed = 800;
+        descriptionShort = "Westar Blaster Extended magazine";
+        mass = 9;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 800;
+    };
+
     // Med-High Capacity
     class JA_104th_Weapons_Mags_20mw240 : 30Rnd_65x39_caseless_mag
     {
@@ -4162,24 +4182,25 @@ class CfgMagazines
         typicalSpeed = 1100;
     };
     // DC17M Blaster Mag
-    class JA_104th_Weapons_Mags_20mw70 : 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_30mw70 : 30Rnd_65x39_caseless_mag
     {
         ls_weapons_isBlasterMag = 1;
-        displayName = "[104th] Extended Capacity Energy Cell";
-        displayNameShort = "70Rnd 20MW";
+        displayName = "[104th] Commando Energy Cell";
+        displayNameShort = "70Rnd 30MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
         count = 70;
-        ammo = "JA_104th_Weapons_Ammo_20mw";
-        initSpeed = 700;
+        ammo = "JA_104th_Weapons_Ammo_30mw";
+        initSpeed = 800;
         descriptionShort = "DC17M Blaster magazine";
         mass = 6;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
         tracersEvery = 1;
-        typicalSpeed = 700;
+        typicalSpeed = 800;
     };
+    
     // DC17M AT Mag
     class JA_104th_Weapons_Mags_17M_AT : 30Rnd_65x39_caseless_mag
     {
@@ -4196,6 +4217,44 @@ class CfgMagazines
         modelSpecialIsProxy = 0;
         tracersEvery = 1;
         typicalSpeed = 1500;
+    };
+    // MTR-4 Heavy Blaster Mag
+    class JA_104th_Weapons_Mags_50mw24 : 30Rnd_65x39_caseless_mag
+    {
+        ls_weapons_isBlasterMag = 1;
+        displayName = "[104th] Pressurized Cobalt Magazine";
+        displayNameShort = "24Rnd 50MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
+        count = 24;
+        ammo = "JA_104th_Weapons_Ammo_50mw";
+        initSpeed = 1500;
+        descriptionShort = "MTR-4 Pressure Magazine";
+        mass = 6;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 1500;
+    };
+    // MTR-4 Medium Blaster Mag
+    class JA_104th_Weapons_Mags_30mw36 : 30Rnd_65x39_caseless_mag
+    {
+        ls_weapons_isBlasterMag = 1;
+        displayName = "[104th] Pressurized Aqua Magazine";
+        displayNameShort = "36Rnd 30MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
+        count = 36;
+        ammo = "JA_104th_Weapons_Ammo_30mw";
+        initSpeed = 1000;
+        descriptionShort = "MTR-4 Pressure Magazine";
+        mass = 6;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 1000;
     };
 
     // FP773 HP + 17M sniper
@@ -4217,6 +4276,7 @@ class CfgMagazines
         tracersEvery = 1;
         typicalSpeed = 2000;
     };
+
     // SF Sniper HVAP Mag
     class JA_104th_Weapons_Mags_100Mw1 : 30Rnd_65x39_caseless_mag
     {

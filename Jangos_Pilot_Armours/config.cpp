@@ -12,20 +12,28 @@ class CfgPatches
 			"JA_104th_Base",
 			"JA_104th_Bail",
 			"JA_104th_Beef",
+			"JA_104th_Fire",
 			"JA_104th_Haze",
 			"JA_104th_Varelli",
-			"JA_104th_Fish",
 			"JA_104th_OD",
-			"JA_104th_Cherryy"};
+			"JA_104th_Cherryy",
+			"JA_104th_Fish",
+			"JA_104th_Spirit",
+			"JA_104th_Boris"
+		};
 		weapons[] = {
 			"JA_104th_Base_Uniform",
 			"JA_104th_Bail_Uniform",
 			"JA_104th_Beef_Uniform",
+			"JA_104th_Fire_Uniform",
 			"JA_104th_Haze_Uniform",
 			"JA_104th_Varelli_Uniform",
-			"JA_104th_Fish_Uniform",
 			"JA_104th_OD_Uniform",
-			"JA_104th_Cherryy_Uniform"};
+			"JA_104th_Cherryy_Uniform",
+			"JA_104th_Fish_Uniform",
+			"JA_104th_Spirit_Uniform",
+			"JA_104th_Boris_Uniform"
+		};
 	};
 };
 
@@ -300,7 +308,6 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-
 	class JA_104th_Fish_Uniform : ls_gar_marshalCommander_uniform
 	{
 		author = "Dak";
@@ -321,6 +328,56 @@ class CfgWeapons
 			uniformModel = "-";
 			scope = 2;
 			uniformClass = "JA_104th_Fish";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Spirit_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Spirit)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Spirit_Upper.paa",
+				"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Spirit_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Spirit";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+	class JA_104th_Boris_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Boris)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Boris_Upper.paa",
+				"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Boris_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Boris";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -485,5 +542,37 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Fish_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_Fish_Lower.paa"};
 		linkedItems[] = {JA_104th_Fish_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Fish_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Spirit : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Spirit_Uniform";
+		displayName = "104th Spirit";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Spirit_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_Spirit_Lower.paa"};
+		linkedItems[] = {JA_104th_Spirit_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Spirit_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Boris : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Boris_Uniform";
+		displayName = "104th Boris";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Boris_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_Boris_Lower.paa"};
+		linkedItems[] = {JA_104th_Boris_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Boris_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

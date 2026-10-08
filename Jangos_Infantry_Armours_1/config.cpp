@@ -9,52 +9,79 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
 		units[] = {
+			"JA_104th_Spectre_RC",
 			"JA_104th_Banker",
+			"JA_104th_Miniminer",
+			"JA_104th_Granite_old",
+			"JA_104th_Axel",
+			"JA_104th_IQ",
+			"JA_104th_Lax_old",
+			"JA_104th_Patch",
+			"JA_104th_Archibold",
 			"JA_104th_Bomb",
+			"JA_104th_Blood",
+			"JA_104th_Dart",
 			"JA_104th_Crash",
 			"JA_104th_Paraso",
 			"JA_104th_Tiger",
-			"JA_104th_Doc",
 			"JA_104th_Death",
 			"JA_104th_Ed",
 			"JA_104th_Galahad",
-			"JA_104th_Mad",
-			"JA_104th_Pacify",
-			"JA_104th_Garm",
-			"JA_104th_Tinkle",
-			"JA_104th_Skav",
-			"JA_104th_Kyo",
+			"JA_104th_Irish",
+			"JA_104th_Welty_old",
+			"JA_104th_Quick",
+			"JA_104th_Doc",
+			"JA_104th_Tinkle_old",
+			"JA_104th_Knightfall",
+			"JA_104th_Knockout_old",
 			"JA_104th_Talisman",
 			"JA_104th_Tusk",
 			"JA_104th_Test",
-			"JA_104th_Spirit",
+			"JA_104th_Kyo",
+			"JA_104th_Skav",
 			"JA_104th_Scurvy",
-			"JA_104th_Knightfall",
-			"JA_104th_Irish",
-			"JA_104th_Knockout",
-			"JA_104th_Welty"};
+			"JA_104th_Spirit_old",
+			"JA_104th_Mad",
+			"JA_104th_Pacify"
+		};
 		weapons[] = {
+			"JA_104th_Base_Clone_Uniform",
+			"JA_104th_Base_Clone_MC_Uniform",
+			"JA_104th_Crash_Uniform",
+			"JA_104th_Quick_Uniform",
+			"JA_104th_Spectre_RC_Uniform",
 			"JA_104th_Banker_Uniform",
+			"JA_104th_Miniminer_Uniform",
+			"JA_104th_Axel_Uniform",
+			"JA_104th_Granite_Uniform_old",
+			"JA_104th_IQ_Uniform",
+			"JA_104th_Lax_Uniform_old",
+			"JA_104th_Patch_Uniform",
+			"JA_104th_Archibold_Uniform",
 			"JA_104th_Bomb_Uniform",
-			"JA_104th_Galahad_Uniform",
-			"JA_104th_Welty_Uniform",
-			"JA_104th_Tiger_Uniform",
+			"JA_104th_Blood_Uniform",
+			"JA_104th_Dart_Uniform",
 			"JA_104th_Doc_Uniform",
+			"JA_104th_Death_Uniform",
 			"JA_104th_Ed_Uniform",
-			"JA_104th_Tinkle_Uniform",
+			"JA_104th_Galahad_Uniform",
+			"JA_104th_Irish_Uniform",
 			"JA_104th_Knightfall_Uniform",
-			"JA_104th_Knockout_Uniform",
+			"JA_104th_Knockout_Uniform_old",
+			"JA_104th_Kyo_Uniform",
+			"JA_104th_Paraso_Uniform",
+			"JA_104th_Pacify_Uniform",
+			"JA_104th_Mad_Uniform",
 			"JA_104th_Skav_Uniform",
+			"JA_104th_Scurvy_Uniform",
+			"JA_104th_Spirit_Uniform_old",
 			"JA_104th_Talisman_Uniform",
+			"JA_104th_Tiger_Uniform",
+			"JA_104th_Tinkle_Uniform_old",
 			"JA_104th_Tusk_Uniform",
 			"JA_104th_Test_Uniform",
-			"JA_104th_Kyo_Uniform",
-			"JA_104th_Crash_Uniform",
-			"JA_104th_Paraso_Uniform",
-			"JA_104th_Spirit_Uniform",
-			"JA_104th_Scurvy_Uniform",
-			"JA_104th_Irish_Uniform",
-			"JA_104th_Death_Uniform"};
+			"JA_104th_Welty_Uniform_old"
+		};
 	};
 };
 
@@ -426,7 +453,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Granite_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Granite_Uniform_old : JA_104th_Base_Clone_Uniform
 	{
 		author = "Dak";
 		scope = 2;
@@ -444,7 +471,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Granite";
+			uniformClass = "JA_104th_Granite_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -935,7 +962,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Spirit_Uniform : JA_104th_Base_Clone_Uniform
+	class JA_104th_Spirit_Uniform_old : JA_104th_Base_Clone_Uniform
 	{
 		author = "Jango's Finest";
 		scope = 2;
@@ -953,7 +980,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Spirit";
+			uniformClass = "JA_104th_Spirit_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1007,7 +1034,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
-	class JA_104th_Tinkle_Uniform : JA_104th_Base_Clone_MC_Uniform
+	class JA_104th_Tinkle_Uniform_old : JA_104th_Base_Clone_MC_Uniform
 	{
 		author = "Fish";
 		scope = 2;
@@ -1029,7 +1056,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			scope = 2;
-			uniformClass = "JA_104th_Tinkle";
+			uniformClass = "JA_104th_Tinkle_old";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -1180,21 +1207,21 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Miniminer_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Miniminer_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Granite : lsd_gar_phase2_base
+	class JA_104th_Granite_old : lsd_gar_phase2_base
 	{
 		author = "Dak";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Granite_Uniform";
+		uniformClass = "JA_104th_Granite_Uniform_old";
 		displayName = "104th Granite";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_1\data\Textures\104th_P2_Granite_Upper.paa", "Jangos_Infantry_Armours_1\data\Textures\104th_P2_Granite_Lower.paa"};
-		linkedItems[] = {JA_104th_Granite_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Granite_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Granite_Helmet_old, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Granite_Helmet_old, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Axel : lsd_gar_phase2_base
 	{
@@ -1484,14 +1511,14 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Doc_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Doc_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Tinkle : ls_gar_marshalCommander_base
+	class JA_104th_Tinkle_old : ls_gar_marshalCommander_base
 	{
 		author = "Fish";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
 		side = 1;
-		uniformClass = "JA_104th_Tinkle_Uniform";
+		uniformClass = "JA_104th_Tinkle_Uniform_old";
 		displayName = "104th Tinkle";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_Categ_Clones";
@@ -1633,7 +1660,7 @@ class CfgVehicles
 		linkedItems[] = {JA_104th_Scurvy_Uniform, JA_104th_Scurvy_Vest, JA_104th_Scurvy_NVG_Rangefinder, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		  // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Scurvy_Uniform, JA_104th_Scurvy_Vest, JA_104th_Scurvy_NVG_Rangefinder, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
-	class JA_104th_Spirit : lsd_gar_phase2_base
+	class JA_104th_Spirit_old : lsd_gar_phase2_base
 	{
 		author = "Cyan";
 		scope = 2;
@@ -1643,11 +1670,11 @@ class CfgVehicles
 		displayName = "104th Spirit";
 		faction = "104th_Guys";
 		editorSubcategory = "104th_categ_clones";
-		uniformClass = "JA_104th_Spirit_Uniform";
+		uniformClass = "JA_104th_Spirit_Uniform_old";
 		hiddenSelections[] = {"camo1", "camo2"};
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_1\data\Textures\104th_P2_Spirit_Upper.paa", "Jangos_Infantry_Armours_1\data\Textures\104th_P2_Spirit_Lower.paa"};
-		linkedItems[] = {JA_104th_Spirit_Uniform, JA_104thScurvyVest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
-		respawnLinkedItems[] = {JA_104th_Spirit_Uniform, JA_104thScurvyVest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+		linkedItems[] = {JA_104th_Spirit_Uniform_old, JA_104thScurvyVest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		   // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Spirit_Uniform_old, JA_104thScurvyVest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 	class JA_104th_Mad : lsd_gar_phase2_base
 	{
