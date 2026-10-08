@@ -127,6 +127,9 @@ class CfgAmmo{
 	};
 	
 	class JA_LAAT_Drexl_Ammo: 3AS_ammo_AMRAAM{
+		maneuvrability = 60;
+		lockSeekRadius = 500;
+		missileLockMinDistance = 10;
 		model = "3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
 		proxyShape = "3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
 	};
@@ -157,6 +160,7 @@ class CfgAmmo{
 	class JA_LAAT_AIM9X_BULLDOG_Ammo: FIR_AIM9X{
 		autoSeekTarget = 1;
 		lockSeekRadius = 500;
+		activeSensorAlwaysOn = 0;
 		missileManualControlCone = 180;
 		missileKeepLockedCone = 180;
 		missileLockCone = 180;
@@ -169,7 +173,7 @@ class CfgAmmo{
 		effectsMissileInit = "PylonBackEffects";
 		lockSeekDistanceFromParent = 100;
 		class LoalDistance {
-			lockSeekDistanceFromParent = 100;
+			lockSeekDistanceFromParent = 200;
 		};
 		// class ace_missileguidance {
 		// 	attackProfiles[] = {"DIR"};
@@ -994,6 +998,7 @@ class CfgWeapons{
 		ballisticsComputer = "1 + 2 + 8 + 16";
 	};
 	class JA_104th_Drexl : 3AS_Hailfire_SAM_weapon{
+		displayName = "[104th] Drexl";
 		magazines[] = {"JA_LAAT_Drexl"};
 	};
 	class JA_104th_Brimstone : FIR_Brimstone{
