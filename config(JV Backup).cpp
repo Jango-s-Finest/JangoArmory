@@ -6248,7 +6248,7 @@ class cfgVehicles {
 	
 	class JA_104th_3AS_Reaper_Y_Wing_Blue: JA_104th_3AS_Reaper_Y_Wing
 	{
-		displayName = "104th Reaper BTL-B Y-Wing Blue";
+		displayName = "[104th] Reaper BTL-B Y-Wing Blue";
 		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_Blue.paa","3as\3as_btlb\data\detail_co.paa","3as\3as_btlb\data\interior_co.paa"};
 		class TextureSources
 		{
