@@ -256,7 +256,6 @@ class CfgWeapons
         descriptionShort = "Mirafi Tibanna Rifle MKIV";
         mass = 100;
         model = "Jangos_Armory_New_Blasters\data\models\mtr_4.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "Jangos_Armory_New_Blasters\data\anim\mtr_4_handanim.rtm"};
         picture = "Jangos_Armory_New_Blasters\data\pictures\MTR_transparent.paa";
         
         hiddenSelections[] =
