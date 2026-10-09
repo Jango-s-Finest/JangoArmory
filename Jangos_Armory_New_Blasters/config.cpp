@@ -277,7 +277,7 @@ class CfgWeapons
         
         class Single : Mode_Single
         {
-            reloadTime = 0.13;
+            reloadTime = 0.2667;
             dispersion = 0;
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
@@ -304,7 +304,7 @@ class CfgWeapons
         {
             displayname= "Burst";
             burst = 3;
-            reloadTime = 0.13;
+            reloadTime = 0.1818;
             dispersion = 0;
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
