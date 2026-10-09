@@ -239,11 +239,6 @@ class CfgWeapons
     {
         class WeaponSlotsInfo;
         class GunParticles;
-        class Mode_Single;
-        class Mode_Burst;
-        class Single;
-        class Burst;
-        class FullAuto;
     };
 
     class JA_104th_MTR_4 : arifle_SPAR_03_blk_F
@@ -255,7 +250,7 @@ class CfgWeapons
         displayName = "[104th] MTR-4";
         baseWeapon = "JA_104th_MTR_4";
         descriptionShort = "Mirafi Tibanna Rifle MKIV";
-        mass = 100;
+        mass = 75;
         model = "Jangos_Armory_New_Blasters\data\models\mtr_4.p3d";
         picture = "Jangos_Armory_New_Blasters\data\pictures\MTR_transparent.paa";
         
@@ -274,7 +269,7 @@ class CfgWeapons
             "JA_104th_Weapons_Mags_30mw36",
             "JA_104th_Weapons_Mags_50mw24"
         };
-        modes[] = {"Mode_Single", "Mode_Burst"};
+        modes[] = {"Single", "Burst"};
         
         class Mode_Single : Mode_Single
         {
