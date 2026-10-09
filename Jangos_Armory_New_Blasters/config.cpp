@@ -264,10 +264,12 @@ class CfgWeapons
             "JA_104th_Weapons_Mags_30mw36",
             "JA_104th_Weapons_Mags_50mw24"
         };
-        class Single : Single
+        modes[] = {"Single", "Burst"};
+        
+        class Single : Mode_Single
         {
             reloadTime = 0.13;
-            dispersion = 0.00025;
+            dispersion = 0;
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
             {
@@ -289,10 +291,12 @@ class CfgWeapons
                 weaponSoundEffect = "";
             };
         };
-        class FullAuto : FullAuto
+        class Burst : Mode_Burst
         {
+            displayname= "Burst";
+            burst = 3;
             reloadTime = 0.13;
-            dispersion = 0.0004;
+            dispersion = 0;
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
             {
