@@ -253,6 +253,7 @@ class CfgWeapons
         scope = 2;
         displayName = "[104th] MTR-4";
         baseWeapon = "JA_104th_MTR_4";
+        descriptionShort = "Mirafi Tibanna Rifle MKIV";
         mass = 100;
         model = "Jangos_Armory_New_Blasters\data\models\mtr_4.p3d";
         handAnim[] = {"OFP2_ManSkeleton", "Jangos_Armory_New_Blasters\data\anim\mtr_4_handanim.rtm"};
