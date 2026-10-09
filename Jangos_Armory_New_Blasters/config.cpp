@@ -256,7 +256,6 @@ class CfgWeapons
         descriptionShort = "Mirafi Tibanna Rifle MKIV";
         mass = 100;
         model = "Jangos_Armory_New_Blasters\data\models\mtr_4.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "Jangos_Armory_New_Blasters\data\anim\mtr_4_handanim.rtm"};
         picture = "Jangos_Armory_New_Blasters\data\pictures\MTR_transparent.paa";
         
         hiddenSelections[] =
@@ -278,7 +277,7 @@ class CfgWeapons
         
         class Single : Mode_Single
         {
-            reloadTime = 0.13;
+            reloadTime = 0.2667;
             dispersion = 0;
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
@@ -305,7 +304,7 @@ class CfgWeapons
         {
             displayname= "Burst";
             burst = 3;
-            reloadTime = 0.13;
+            reloadTime = 0.1818;
             dispersion = 0;
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType

@@ -2693,8 +2693,6 @@ class CfgWeapons
             };
         };
     };
-    // MTR-4
-    
     // Westar M4
     class JA_104th_WestarM4 : JA_104th_rifle_base
     {
