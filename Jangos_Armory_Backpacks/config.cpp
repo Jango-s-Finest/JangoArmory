@@ -474,8 +474,8 @@ class CfgVehicles
 		maximumLoad = 250;
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Backpacks\data\Textures\104th_Marx_Backpack_Mini_Main.paa",		 // Minipack
-				"Jangos_Armory_Backpacks\data\Textures\104th_Marx_Backpack_Mini_Pouches.paa" // slotss
+				"Jangos_Armory_Backpacks\data\textures\104th_P2_Marx_Minipack.paa",		 // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Marx_Minipackslots.paa" // slotss
 			};
 		tf_range = 35000;
 	};

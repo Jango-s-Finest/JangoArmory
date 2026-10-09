@@ -79,8 +79,7 @@ class CfgPatches
             "JA_104th_RPS6",
             "JA_104th_RPS6_H",
             "JA_104th_Z7_mk2",
-            "JA_104th_BPX14"
-        };
+            "JA_104th_BPX14"};
         ammo[] = {
             "JA_104th_Weapons_Ammo_17MAT",
             "JA_104th_Weapons_Ammo_EMP",
@@ -115,8 +114,7 @@ class CfgPatches
             "JA_104th_Weapons_Ammo_flare_cyan",
             "JA_104th_Weapons_Ammo_flare_purple",
             "JA_104_Personal_Shield_Ammo",
-            "JA_104_Personal_Shield_Body_Ammo"
-        };
+            "JA_104_Personal_Shield_Body_Ammo"};
 
         magazines[] = {
             "JA_104th_Weapons_Mags_stun10",
@@ -163,8 +161,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_GL_flare_Purple3",
             "JA_104th_Weapons_Mags_RPS6H_6rnd",
             "JA_104_Personal_Shield",
-            "JA_104_Personal_Shield_Body"
-        };
+            "JA_104_Personal_Shield_Body"};
     };
 };
 
@@ -172,14 +169,14 @@ class CfgSoundShaders
 {
     class JA_MTR_4_Shot_SoundShader
     {
-        samples[] = { {"Jangos_Armory_New_Blasters\data\sounds\mtr4_shotsound.ogg", 1} };
+        samples[] = {{"Jangos_Armory_New_Blasters\data\sounds\mtr4_shotsound.ogg", 1}};
         volume = 1.0; // Adjust loudness here
         range = 1800; // How far the sound can be heard in meters
     };
     // Suppressed Audio
     class JA_MTR_4_Supressed_Shot_SoundShader
     {
-        samples[] = { {"Jangos_Armory_New_Blasters\data\sounds\mtr4_shotsound_supressed.ogg", 1} };
+        samples[] = {{"Jangos_Armory_New_Blasters\data\sounds\mtr4_shotsound_supressed.ogg", 1}};
         volume = 0.6; // Lower base volume for the engine
         range = 150;  // Considerably smaller sound travel range
     };
@@ -189,7 +186,7 @@ class CfgSoundSets
 {
     class JA_MTR_4_Shot_SoundSet
     {
-        soundShaders[] = { "JA_MTR_4_Shot_SoundShader" };
+        soundShaders[] = {"JA_MTR_4_Shot_SoundShader"};
         volumeFactor = 1;
         spatial = 1;
         loop = 0;
@@ -197,7 +194,7 @@ class CfgSoundSets
     // Suppressed Set
     class JA_MTR_4_Supressed_Shot_SoundSet
     {
-        soundShaders[] = { "JA_MTR_4_Supressed_Shot_SoundShader" };
+        soundShaders[] = {"JA_MTR_4_Supressed_Shot_SoundShader"};
         volumeFactor = 1;
         spatial = 1;
         loop = 0;
@@ -231,19 +228,13 @@ class Mode_FullAuto;
 
 class CfgWeapons
 {
-    class Rifle;
     class JA_104th_DC15A;
     class BaseSoundModeType;
-    
-    class arifle_SPAR_03_blk_F : Rifle
-    {
-        class WeaponSlotsInfo;
-        class GunParticles;
-        class Mode_Single;
-        class Mode_Burst;
-        class Single;
-        class FullAuto;
-    };
+    class WeaponSlotsInfo;
+    class GunParticles;
+    class Single;
+
+    class arifle_SPAR_03_blk_F;
 
     class JA_104th_MTR_4 : arifle_SPAR_03_blk_F
     {
@@ -257,25 +248,22 @@ class CfgWeapons
         mass = 100;
         model = "Jangos_Armory_New_Blasters\data\models\mtr_4.p3d";
         picture = "Jangos_Armory_New_Blasters\data\pictures\MTR_transparent.paa";
-        
+
         hiddenSelections[] =
-        {
-            "camo",
-            "magazine"
-        };
-		hiddenSelectionsTextures[] =
-        {
-            "Jangos_Armory_New_Blasters\data\textures\mtr_4_co.paa",
-            "Jangos_Armory_New_Blasters\data\textures\mtr_4_co.paa"
-        };
+            {
+                "camo",
+                "magazine"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Armory_New_Blasters\data\textures\mtr_4_co.paa",
+                "Jangos_Armory_New_Blasters\data\textures\mtr_4_co.paa"};
         magazines[] =
-        {
-            "JA_104th_Weapons_Mags_30mw36",
-            "JA_104th_Weapons_Mags_50mw24"
-        };
+            {
+                "JA_104th_Weapons_Mags_30mw36",
+                "JA_104th_Weapons_Mags_50mw24"};
         modes[] = {"Single", "Burst"};
-        
-        class Single : Mode_Single
+
+        class Single : Single
         {
             reloadTime = 0.2667;
             dispersion = 0;
@@ -300,12 +288,13 @@ class CfgWeapons
                 weaponSoundEffect = "";
             };
         };
-        class Burst : Mode_Burst
+        class Burst : Single
         {
-            displayname= "Burst";
+            displayname = "Burst";
             burst = 3;
             reloadTime = 0.1818;
             dispersion = 0;
+            textureType = "burst";
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
             {
@@ -338,33 +327,30 @@ class CfgWeapons
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 compatibleItems[] =
-                {
-                    "3AS_Imp_Optic_2",
-                    "3AS_Imp_Optic_3",
-                    "3AS_Imp_Optic_4",
-                    "JA_104th_cows_LRPS",
-                    "optic_DMS"
-                };
+                    {
+                        "3AS_Imp_Optic_2",
+                        "3AS_Imp_Optic_3",
+                        "3AS_Imp_Optic_4",
+                        "JA_104th_cows_LRPS",
+                        "optic_DMS"};
             };
             class MuzzleSlot : MuzzleSlot
             {
                 linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
                 displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[] =
-                {
-                    "JA_104th_muzzle_suppressor",
-                    "JA_104th_muzzle_flash"
-                };
+                    {
+                        "JA_104th_muzzle_suppressor",
+                        "JA_104th_muzzle_flash"};
             };
             class PointerSlot : PointerSlot
             {
                 linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
                 displayName = "Pointer Slot";
                 compatibleItems[] =
-                {
-                     "acc_flashlight",
-                     "acc_pointer_IR" 
-                };
+                    {
+                        "acc_flashlight",
+                        "acc_pointer_IR"};
             };
             class UnderBarrelSlot : UnderBarrelSlot
             {
@@ -377,21 +363,18 @@ class CfgWeapons
                         "3AS_Bipod_DC15L_f"};
             };
         };
-    
     };
-    
+
     class JA_104th_T32C : JA_104th_DC15A
     {
         model = "Jangos_Armory_New_Blasters\data\models\JA_T32C.p3d";
         displayName = "[104th] T-32C";
         baseWeapon = "JA_104th_T32C";
         hiddenSelections[] =
-        {
-            "weapon"
-        };
-		hiddenSelectionsTextures[] =
-        {
-            "Jangos_Armory_new_Blasters\data\textures\Base_co.paa"
-        };
+            {
+                "weapon"};
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Armory_new_Blasters\data\textures\Base_co.paa"};
     };
 };
