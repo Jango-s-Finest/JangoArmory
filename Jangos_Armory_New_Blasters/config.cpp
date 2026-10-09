@@ -245,10 +245,19 @@ class CfgWeapons
         class FullAuto;
     };
 
-    class JA_104th_MTR_4 : arifle_SPAR_03_blk_F{
-        model = "Jangos_Armory_New_Blasters\data\models\mtr_4.p3d";
+    class JA_104th_MTR_4 : arifle_SPAR_03_blk_F
+    {
+        ACE_barrelTwist = 330;
+        ACE_barrelLength = 737;
+        ACE_twistDirection = 1;
+        scope = 2;
         displayName = "[104th] MTR-4";
         baseWeapon = "JA_104th_MTR_4";
+        mass = 100;
+        model = "Jangos_Armory_New_Blasters\data\models\mtr_4.p3d";
+        handAnim[] = {"OFP2_ManSkeleton", "Jangos_Armory_New_Blasters\data\anim\mtr_4_handanim.rtm"};
+        picture = "Jangos_Armory_New_Blasters\data\pictures\MTR_transparent.paa";
+        
         hiddenSelections[] =
         {
             "camo",
