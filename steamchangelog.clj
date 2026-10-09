@@ -24,7 +24,7 @@
 [h2]Custom Weapons & Attachments[/h2]
 [h3]Added[/h3]
 [list]
-    [*] [104th] MTR-4
+    [*] 
 [/list]
 [h3]Removed[/h3]
 [list]

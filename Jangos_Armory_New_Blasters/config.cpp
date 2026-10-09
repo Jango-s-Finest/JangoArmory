@@ -11,157 +11,13 @@ class CfgPatches
         units[] = {};
         // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
         weapons[] = {
-            "arifle_MX_Base_F",
             "arifle_SPAR_03_blk_F",
-            "hgun_P07_F",
-            "3AS_pistol_DC15SA_Base_F",
-            "Launcher_Base_F",
-            "launch_Titan_short_base",
-            "optic_DMS",
-            "optic_Hamr",
-            "optic_MRCO",
-            "optic_Holosight",
-            "optic_MRD",
-            "OPTRE_SRM_Sight",
-            "JA_104th_muzzle_flash",
-            "JA_104th_muzzle_suppressor",
-            "JA_104th_cows_rco",
-            "JA_104th_cows_rco_2",
-            "JA_104th_cows_rco_3",
-            "JA_104th_cows_mrco",
-            "JA_104th_cows_mrco_2",
-            "JA_104th_cows_mrco_3",
-            "JA_104th_cows_Holosight",
-            "JA_104th_cows_Holosight_2",
-            "JA_104th_cows_Holosight_3",
-            "JA_104th_cows_HoloScope",
-            "JA_104th_cows_HoloScope_2",
-            "JA_104th_cows_HoloScope_3",
-            "JA_104th_cows_DMS",
-            "JA_104th_cows_DMS_2",
-            "JA_104th_cows_DMS_3",
-            "JA_104th_cows_DMS_4",
-            "JA_104th_cows_pistol",
-            "JA_104th_cows_pistol_2",
-            "JA_104th_cows_LRPS",
-            "JA_104th_cows_LEScope_DC15A",
-            "JA_104th_cows_reflex_optic",
-            "JA_104th_stun_muzzle",
-            "JA_104th_rifle_base",
-            "JA_104th_rifle_base_stunless",
-            "JA_104th_pistol_base",
-            "JA_104th_launcher_base",
-            "JA_104th_guided_launcher_base",
-            "JA_104th_DC15A",
-            "JA_104th_DC15A_UGL",
-            "JA_104th_DC15LE",
-            "JA_104th_T32C",
-            "JA_104th_DC15C",
-            "JA_104th_DC15C_UGL",
-            "JA_104th_DC15L",
-            "JA_104th_DC15S",
-            "JA_104th_DC15S_UGL",
-            "JA_104th_DC15X",
-            "JA_104th_FP773",
-            "JA_104th_DC17M",
-            "JA_104th_DP23",
             "JA_104th_MTR_4",
-            "JA_104th_WestarM4",
-            "JA_104th_WestarM5",
-            "JA_104th_Westar35S",
-            "JA_104th_Z6",
-            "JA_104th_DC17SA",
-            "JA_104th_DC15ARC",
-            "JA_104th_DC17SA_Dual",
-            "JA_104th_DC17SA_Dual_LeftDummy",
-            "JA_104th_DC15SA",
-            "JA_104th_Westar35SA",
-            "JA_104th_RPS6",
-            "JA_104th_RPS6_H",
-            "JA_104th_Z7_mk2",
-            "JA_104th_BPX14"};
-        ammo[] = {
-            "JA_104th_Weapons_Ammo_17MAT",
-            "JA_104th_Weapons_Ammo_EMP",
-            "JA_104th_Weapons_Ammo_base_blue",
-            "JA_104th_Weapons_Ammo_5mw",
-            "JA_104th_Weapons_Ammo_10mw",
-            "JA_104th_Weapons_Ammo_20mw",
-            "JA_104th_Weapons_Ammo_30mw",
-            "JA_104th_Weapons_Ammo_40mw",
-            "JA_104th_Weapons_Ammo_50mw",
-            "JA_104th_Weapons_Ammo_100mw",
-            "JA_104th_Weapons_Ammo_10mwSC",
-            "JA_104th_Weapons_Ammo_20mwSC_Slug",
-            "JA_104th_Weapons_Ammo_20mwSC_HE",
-            "JA_104th_Weapons_Ammo_BPX14",
-            "JA_104th_Weapons_Ammo_Z7",
-            "JA_104th_Weapons_Ammo_GL_HE",
-            "JA_104th_Weapons_Ammo_GL_AP",
-            "JA_104th_Weapons_Ammo_GL_smoke_white",
-            "JA_104th_Weapons_Ammo_GL_smoke_purple",
-            "JA_104th_Weapons_Ammo_GL_smoke_yellow",
-            "JA_104th_Weapons_Ammo_GL_smoke_red",
-            "JA_104th_Weapons_Ammo_GL_smoke_green",
-            "JA_104th_Weapons_Ammo_GL_smoke_blue",
-            "JA_104th_Weapons_Ammo_GL_smoke_orange",
-            "JA_104th_Weapons_Ammo_flare_white",
-            "JA_104th_Weapons_Ammo_flare_green",
-            "JA_104th_Weapons_Ammo_flare_red",
-            "JA_104th_Weapons_Ammo_flare_yellow",
-            "JA_104th_Weapons_Ammo_flare_ir",
-            "JA_104th_Weapons_Ammo_flare_blue",
-            "JA_104th_Weapons_Ammo_flare_cyan",
-            "JA_104th_Weapons_Ammo_flare_purple",
-            "JA_104_Personal_Shield_Ammo",
-            "JA_104_Personal_Shield_Body_Ammo"};
+            "JA_104th_T32C"
+        };
+        ammo[] = {};
 
-        magazines[] = {
-            "JA_104th_Weapons_Mags_stun10",
-            "JA_104th_Weapons_Mags_10mw50",
-            "JA_104th_Weapons_Mags_20mw40",
-            "JA_104th_Weapons_Mags_20mw70",
-            "JA_104th_Weapons_Mags_20mw240",
-            "JA_104th_Weapons_Mags_10mw500",
-            "JA_104th_Weapons_Mags_30mw30",
-            "JA_104th_Weapons_Mags_40mw20",
-            "JA_104th_Weapons_Mags_30mw36",
-            "JA_104th_Weapons_Mags_30mw70",
-            "JA_104th_Weapons_Mags_17M_AT",
-            "JA_104th_Weapons_Mags_50mw7",
-            "JA_104th_Weapons_Mags_50mw24",
-            "JA_104th_Weapons_Mags_100Mw1",
-            "JA_104th_Weapons_Mags_EMPMw2",
-            "JA_104th_Weapons_Mags_10mw20SC",
-            "JA_104th_Weapons_Mags_20mw16SC_Slug",
-            "JA_104th_Weapons_Mags_20mw6SC_HE",
-            "JA_104th_Weapons_Mags_10mw30",
-            "JA_104th_Weapons_Mags_10mw40",
-            "JA_104th_Weapons_Mags_10mw80",
-            "JA_104th_Weapons_Mags_BPX14",
-            "JA_104th_Weapons_Mags_80mw500",
-            "JA_104th_Weapons_Mags_10mw4SC",
-            "JA_104th_Weapons_Mags_GL_HE2",
-            "JA_104th_Weapons_Mags_GL_HE3",
-            "JA_104th_Weapons_Mags_GL_AP2",
-            "JA_104th_Weapons_Mags_GL_smoke_white6",
-            "JA_104th_Weapons_Mags_GL_smoke_purple3",
-            "JA_104th_Weapons_Mags_GL_smoke_yellow3",
-            "JA_104th_Weapons_Mags_GL_smoke_red3",
-            "JA_104th_Weapons_Mags_GL_smoke_green3",
-            "JA_104th_Weapons_Mags_GL_smoke_blue3",
-            "JA_104th_Weapons_Mags_GL_smoke_orange3",
-            "JA_104th_Weapons_Mags_GL_flare_White3",
-            "JA_104th_Weapons_Mags_GL_flare_IR3",
-            "JA_104th_Weapons_Mags_GL_flare_Green3",
-            "JA_104th_Weapons_Mags_GL_flare_Red3",
-            "JA_104th_Weapons_Mags_GL_flare_Yellow3",
-            "JA_104th_Weapons_Mags_GL_flare_Blue3",
-            "JA_104th_Weapons_Mags_GL_flare_Cyan3",
-            "JA_104th_Weapons_Mags_GL_flare_Purple3",
-            "JA_104th_Weapons_Mags_RPS6H_6rnd",
-            "JA_104_Personal_Shield",
-            "JA_104_Personal_Shield_Body"};
+        magazines[] = {};
     };
 };
 
@@ -228,13 +84,15 @@ class Mode_FullAuto;
 
 class CfgWeapons
 {
+    class Rifle;
     class JA_104th_DC15A;
     class BaseSoundModeType;
-    class WeaponSlotsInfo;
-    class GunParticles;
-    class Single;
 
-    class arifle_SPAR_03_blk_F;
+    class arifle_SPAR_03_blk_F : Rifle
+    {
+        class WeaponSlotsInfo;
+        class GunParticles;
+    };
 
     class JA_104th_MTR_4 : arifle_SPAR_03_blk_F
     {
@@ -245,7 +103,7 @@ class CfgWeapons
         displayName = "[104th] MTR-4";
         baseWeapon = "JA_104th_MTR_4";
         descriptionShort = "Mirafi Tibanna Rifle MKIV";
-        mass = 100;
+        mass = 75;
         model = "Jangos_Armory_New_Blasters\data\models\mtr_4.p3d";
         picture = "Jangos_Armory_New_Blasters\data\pictures\MTR_transparent.paa";
 
@@ -261,9 +119,10 @@ class CfgWeapons
             {
                 "JA_104th_Weapons_Mags_30mw36",
                 "JA_104th_Weapons_Mags_50mw24"};
+        magazineWell[] = {};
         modes[] = {"Single", "Burst"};
 
-        class Single : Single
+        class Single : Mode_SemiAuto
         {
             reloadTime = 0.2667;
             dispersion = 0;
@@ -288,7 +147,7 @@ class CfgWeapons
                 weaponSoundEffect = "";
             };
         };
-        class Burst : Single
+        class Burst : Mode_Burst
         {
             displayname = "Burst";
             burst = 3;

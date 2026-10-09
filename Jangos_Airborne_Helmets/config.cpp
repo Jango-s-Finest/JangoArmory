@@ -59,8 +59,10 @@ class CfgPatches
             "JA_104th_Phoenix_Helmet",
             "JA_104th_Skid_Helmet",
             "JA_104th_Artorias_Helmet",
+            "JA_104th_Juicer_Helmet",
             "JA_104th_Fenrir_Helmet",
-            "JA_104th_Jojo_Helmet"};
+            "JA_104th_Jojo_Helmet"
+        };
         units[] = {};
     };
 };

@@ -15,7 +15,9 @@ class CfgPatches
             "JA_104th_Artorias",
             "JA_104th_Hound",
             "JA_104th_Kage",
-            "JA_104th_Hacksaw"};
+            "JA_104th_Hacksaw",
+            "JA_104th_Juicer"
+        };
         weapons[] = {
             "JA_104th_SenateComando_Uniform",
             "JA_104th_Granite_Uniform",
@@ -24,7 +26,9 @@ class CfgPatches
             "JA_104th_Artorias_Uniform",
             "JA_104th_Hound_Uniform",
             "JA_104th_Kage_Uniform",
-            "JA_104th_Hacksaw_Uniform"};
+            "JA_104th_Hacksaw_Uniform",
+            "JA_104th_Juicer_Uniform"
+        };
     };
 };
 
