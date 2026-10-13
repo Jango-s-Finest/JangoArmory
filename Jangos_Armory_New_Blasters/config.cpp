@@ -13,8 +13,7 @@ class CfgPatches
         weapons[] = {
             "arifle_SPAR_03_blk_F",
             "JA_104th_MTR_4",
-            "JA_104th_T32C"
-        };
+            "JA_104th_T32C"};
         ammo[] = {};
 
         magazines[] = {};
@@ -79,9 +78,9 @@ class CfgRecoils
     {
         muzzleOuter[] = {0, 0, 0, 0};
         muzzleInner[] = {0, 0, 0, 0};
-        kickBack[]    = {0, 0};
-        permanent     = 0;
-        temporary     = 0;
+        kickBack[] = {0, 0};
+        permanent = 0;
+        temporary = 0;
     };
 };
 
@@ -135,7 +134,6 @@ class CfgWeapons
         recoil = "JA_NoRecoil";
         recoilProne = "JA_NoRecoil";
         modes[] = {"Single", "Burst"};
-        
 
         class Single : Mode_SemiAuto
         {
