@@ -12,6 +12,7 @@ class CfgPatches
         // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
         weapons[] = {
             "arifle_MX_Base_F",
+            "arifle_SPAR_03_blk_F",
             "hgun_P07_F",
             "3AS_pistol_DC15SA_Base_F",
             "Launcher_Base_F",
@@ -54,6 +55,7 @@ class CfgPatches
             "JA_104th_DC15A",
             "JA_104th_DC15A_UGL",
             "JA_104th_DC15LE",
+            "JA_104th_T32C",
             "JA_104th_DC15C",
             "JA_104th_DC15C_UGL",
             "JA_104th_DC15L",
@@ -63,6 +65,7 @@ class CfgPatches
             "JA_104th_FP773",
             "JA_104th_DC17M",
             "JA_104th_DP23",
+            "JA_104th_MTR_4",
             "JA_104th_WestarM4",
             "JA_104th_WestarM5",
             "JA_104th_Westar35S",
@@ -128,7 +131,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_30mw70",
             "JA_104th_Weapons_Mags_17M_AT",
             "JA_104th_Weapons_Mags_50mw7",
-            "JA_104th_Weapons_Mags_50mw24",
+            "JA_104th_Weapons_Mags_50mw12",
             "JA_104th_Weapons_Mags_100Mw1",
             "JA_104th_Weapons_Mags_EMPMw2",
             "JA_104th_Weapons_Mags_10mw20SC",
@@ -215,7 +218,7 @@ class cfgEditorSubcategories
     };
 };
 
-class CfgRecoil
+class CfgRecoils
 {
     class recoil_default;
 
@@ -4214,42 +4217,42 @@ class CfgMagazines
         typicalSpeed = 1500;
     };
     // MTR-4 Heavy Blaster Mag
-    class JA_104th_Weapons_Mags_50mw24 : 30Rnd_65x39_caseless_mag
+    class JA_104th_Weapons_Mags_50mw12 : 30Rnd_65x39_caseless_mag
     {
         ls_weapons_isBlasterMag = 1;
-        displayName = "[104th] Pressurized Cobalt Magazine";
-        displayNameShort = "24Rnd 50MW";
+        displayName = "[104th] High Pressure Cobalt Magazine";
+        displayNameShort = "12Rnd 50MW";
         author = "Jango's Armory Aux Team";
         picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
-        count = 24;
+        count = 12;
         ammo = "JA_104th_Weapons_Ammo_50mw";
+        initSpeed = 2000;
+        descriptionShort = "Pressurized Tibanna Magazine";
+        mass = 6;
+        modelSpecial = "";
+        modelSpecialIsProxy = 0;
+        model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
+        tracersEvery = 1;
+        typicalSpeed = 2000;
+    };
+    // MTR-4 Medium Blaster Mag
+    class JA_104th_Weapons_Mags_30mw36 : 30Rnd_65x39_caseless_mag
+    {
+        ls_weapons_isBlasterMag = 1;
+        displayName = "[104th] Low Pressure Cobalt Magazine";
+        displayNameShort = "36Rnd 30MW";
+        author = "Jango's Armory Aux Team";
+        picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
+        count = 36;
+        ammo = "JA_104th_Weapons_Ammo_30mw";
         initSpeed = 1500;
-        descriptionShort = "MTR-4 Pressure Magazine";
+        descriptionShort = "Pressurized Tibanna Magazine";
         mass = 6;
         modelSpecial = "";
         modelSpecialIsProxy = 0;
         model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
         tracersEvery = 1;
         typicalSpeed = 1500;
-    };
-    // MTR-4 Medium Blaster Mag
-    class JA_104th_Weapons_Mags_30mw36 : 30Rnd_65x39_caseless_mag
-    {
-        ls_weapons_isBlasterMag = 1;
-        displayName = "[104th] Pressurized Aqua Magazine";
-        displayNameShort = "36Rnd 30MW";
-        author = "Jango's Armory Aux Team";
-        picture = "\MRC\JLTS\weapons\E5S\data\ui\E5S_mag_ui_ca.paa";
-        count = 36;
-        ammo = "JA_104th_Weapons_Ammo_30mw";
-        initSpeed = 1000;
-        descriptionShort = "MTR-4 Pressure Magazine";
-        mass = 6;
-        modelSpecial = "";
-        modelSpecialIsProxy = 0;
-        model = "\MRC\JLTS\weapons\E5S\E5S_mag.p3d";
-        tracersEvery = 1;
-        typicalSpeed = 1000;
     };
 
     // FP773 HP + 17M sniper

@@ -13,7 +13,8 @@ class CfgPatches
         weapons[] = {
             "arifle_SPAR_03_blk_F",
             "JA_104th_MTR_4",
-            "JA_104th_T32C"};
+            "JA_104th_T32C"
+        };
         ammo[] = {};
 
         magazines[] = {};
@@ -78,9 +79,45 @@ class CfgRecoils
     {
         muzzleOuter[] = {0, 0, 0, 0};
         muzzleInner[] = {0, 0, 0, 0};
-        kickBack[] = {0, 0};
-        permanent = 0;
-        temporary = 0;
+        kickBack[]    = {0, 0};
+        permanent     = 0;
+        temporary     = 0;
+    };
+
+    class JA_LightRecoil
+    {
+        muzzleOuter[] = {0.05, 0.15, 0.05, 0.1};
+        muzzleInner[] = {0, 0, 0.02, 0.02};
+        kickBack[]    = {0.01, 0.02};
+        permanent     = 0.03;
+        temporary     = 0.005;
+    };
+    
+    class JA_MediumRecoil
+    {
+        muzzleOuter[] = {0.1, 0.3, 0.1, 0.2};
+        muzzleInner[] = {0, 0, 0.05, 0.05};
+        kickBack[]    = {0.03, 0.05};
+        permanent     = 0.08;
+        temporary     = 0.01;
+    };
+
+    class JA_DMRRecoil
+    {
+        muzzleOuter[] = {0.15, 0.5, 0.15, 0.3};
+        muzzleInner[] = {0, 0, 0.08, 0.08};
+        kickBack[]    = {0.05, 0.08};
+        permanent     = 0.15;
+        temporary     = 0.02;
+    };
+
+    class JA_HeavyRecoil
+    {
+        muzzleOuter[] = {0.2, 0.4, 0.2, 0.3};
+        muzzleInner[] = {0, 0, 0.1, 0.1};
+        kickBack[]    = {0.06, 0.1};
+        permanent     = 0.12;
+        temporary     = 0.03;
     };
 };
 
@@ -107,9 +144,6 @@ class CfgWeapons
 
     class JA_104th_MTR_4 : arifle_SPAR_03_blk_F
     {
-        ACE_barrelTwist = 330;
-        ACE_barrelLength = 737;
-        ACE_twistDirection = 1;
         scope = 2;
         displayName = "[104th] MTR-4";
         baseWeapon = "JA_104th_MTR_4";
@@ -129,18 +163,18 @@ class CfgWeapons
         magazines[] =
             {
                 "JA_104th_Weapons_Mags_30mw36",
-                "JA_104th_Weapons_Mags_50mw24"};
+                "JA_104th_Weapons_Mags_50mw12"};
         magazineWell[] = {};
-        recoil = "JA_NoRecoil";
-        recoilProne = "JA_NoRecoil";
+        recoil = "JA_MediumRecoil";
+        recoilProne = "JA_LightRecoil";
         modes[] = {"Single", "Burst"};
 
         class Single : Mode_SemiAuto
         {
             reloadTime = 0.2667;
             dispersion = 0;
-            recoil = "JA_NoRecoil";
-            recoilProne = "JA_NoRecoil";
+            recoil = "JA_MediumRecoil";
+            recoilProne = "JA_LightRecoil";
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
             {
@@ -168,8 +202,8 @@ class CfgWeapons
             burst = 3;
             reloadTime = 0.1818;
             dispersion = 0;
-            recoil = "JA_NoRecoil";
-            recoilProne = "JA_NoRecoil";
+            recoil = "JA_MediumRecoil";
+            recoilProne = "JA_LightRecoil";
             textureType = "burst";
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
