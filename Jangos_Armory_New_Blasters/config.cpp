@@ -13,8 +13,7 @@ class CfgPatches
         weapons[] = {
             "arifle_SPAR_03_blk_F",
             "JA_104th_MTR_4",
-            "JA_104th_T32C"
-        };
+            "JA_104th_T32C"};
         ammo[] = {};
 
         magazines[] = {};
@@ -73,6 +72,18 @@ class cfgEditorSubcategories
     };
 };
 
+class CfgRecoils
+{
+    class JA_NoRecoil
+    {
+        muzzleOuter[] = {0, 0, 0, 0};
+        muzzleInner[] = {0, 0, 0, 0};
+        kickBack[] = {0, 0};
+        permanent = 0;
+        temporary = 0;
+    };
+};
+
 class CowsSlot;
 class MuzzleSlot;
 class PointerSlot;
@@ -120,12 +131,16 @@ class CfgWeapons
                 "JA_104th_Weapons_Mags_30mw36",
                 "JA_104th_Weapons_Mags_50mw24"};
         magazineWell[] = {};
+        recoil = "JA_NoRecoil";
+        recoilProne = "JA_NoRecoil";
         modes[] = {"Single", "Burst"};
 
         class Single : Mode_SemiAuto
         {
             reloadTime = 0.2667;
             dispersion = 0;
+            recoil = "JA_NoRecoil";
+            recoilProne = "JA_NoRecoil";
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
             {
@@ -153,6 +168,8 @@ class CfgWeapons
             burst = 3;
             reloadTime = 0.1818;
             dispersion = 0;
+            recoil = "JA_NoRecoil";
+            recoilProne = "JA_NoRecoil";
             textureType = "burst";
             sounds[] = {"StandardSound", "SilencedSound"};
             class StandardSound : BaseSoundModeType
