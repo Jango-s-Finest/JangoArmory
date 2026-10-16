@@ -3,19 +3,12 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper armor (104th Juicer)
-- Clone Trooper P1 Helmet (104th Juicer)
+- Clone Trooper JT12 LR (104th Kage)
 
 Changed Gear
 ------------------
-- Clone Trooper RTO mini backpack (104th Marx)
-- Clone Trooper armor (104th Marx)
-- Clone Trooper Engineer Helmet (104th Marx)
-- Clone NVG Rangefinder Visor (104th Kaleck)
-- Clone ARC Trooper Vest (104th Kaleck)
-- Clone Trooper ARC Trooper Helmet (104th Kaleck)
-- Clone Trooper armor (104th Kaleck)
-- Clone Trooper Pilot Helmet (104th Boris)
+- Clone Tactical NCO Vest (104th Kage)
+- Clone Trooper armor (104th Spectre)
 
 Removed Gear
 ------------------
@@ -41,7 +34,7 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
--
+- Ground place able helmets for all custom helmets
 
 Changed Vehicles & Supplies
 ------------------

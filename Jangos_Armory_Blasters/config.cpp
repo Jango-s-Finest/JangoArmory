@@ -12,7 +12,6 @@ class CfgPatches
         // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
         weapons[] = {
             "arifle_MX_Base_F",
-            "arifle_SPAR_03_blk_F",
             "hgun_P07_F",
             "3AS_pistol_DC15SA_Base_F",
             "Launcher_Base_F",
@@ -55,7 +54,6 @@ class CfgPatches
             "JA_104th_DC15A",
             "JA_104th_DC15A_UGL",
             "JA_104th_DC15LE",
-            "JA_104th_T32C",
             "JA_104th_DC15C",
             "JA_104th_DC15C_UGL",
             "JA_104th_DC15L",
@@ -65,7 +63,6 @@ class CfgPatches
             "JA_104th_FP773",
             "JA_104th_DC17M",
             "JA_104th_DP23",
-            "JA_104th_MTR_4",
             "JA_104th_WestarM4",
             "JA_104th_WestarM5",
             "JA_104th_Westar35S",

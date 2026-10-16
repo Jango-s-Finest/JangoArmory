@@ -12,13 +12,13 @@ class CfgPatches
         weapons[] = {
             "ls_gar_airborne_vest",
             "ls_gar_airborneNCO_vest",
-            "ls_gar_airborneOfficer_vest",
             "ls_gar_forceReconNCO_vest",
             "ls_gar_forceReconLieutenant_vest",
             "ls_gar_airborneOfficer_vest",
             "ls_gar_officer_vest",
             "ls_gar_commander_vest",
             "ls_gar_arc_vest",
+            "ls_gar_tacticalNCO_vest",
             "JA_104th_AB_Officer_Vest_Axel",
             "JA_104th_AB_Officer_Vest_Dak",
             "JA_104th_Carmine_Vest",
@@ -117,10 +117,6 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class ls_gar_airborneOfficer_vest : ls_gar_airborne_vest
-    {
-        class ItemInfo;
-    };
     class ls_gar_forceReconNCO_vest : ls_gar_airborne_vest
     {
         class ItemInfo;
@@ -147,12 +143,16 @@ class CfgWeapons
     {
         class ItemInfo;
     };
+    class ls_gar_tacticalNCO_vest : ls_gar_airborne_vest
+    {
+        class ItemInfo;
+    };
 
     class JA_104th_AB_Officer_Vest_Axel : ls_gar_airborneOfficer_vest
     {
         author = "Fish";
         displayName = "Clone Airborne Officer Vest (104th Axel)";
-        hiddenSelections[] = {"ammo","camo1","camo2","camo3"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "camo3"};
         hiddenSelectionsTextures[] =
             {
                 // Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa doesn't exist
@@ -251,14 +251,14 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Airborne NCO Vest (104th Carmine)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Carmine_Kama.paa",
-                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -298,14 +298,14 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Airborne NCO Vest (104th Osiris)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Osiris_Kama.paa",
-                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -340,23 +340,24 @@ class CfgWeapons
             };
         };
     };
-    class JA_104th_Kage_Vest : ls_gar_airborneNCO_vest
+    class JA_104th_Kage_Vest : ls_gar_tacticalNCO_vest
     {
         author = "Emmet";
         scope = 2;
-        displayName = "Clone Airborne NCO Vest (104th Kage)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        displayName = "Clone Tactical NCO Vest (104th Kage)";
+        hiddenSelections[] = {"camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
-                "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa", // Heavy
-                "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Kama.paa",
-                "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa"  // Heavy
-            };
+                "104thPhantomCompany\data\textures\104th_Accessories_Light_P2_Base.paa",
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Kage_Chest.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
             vestType = "Rebreather";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\tactical\ls_gar_tacticalNCO_vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2", "pauldron"};
 
             class HitpointsProtectionInfo
             {
@@ -399,7 +400,7 @@ class CfgWeapons
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Magnum_Kama.paa",
                 "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_AB_Magnum_Accesories_Heavy.paa"               // Heavy
-            };
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -494,14 +495,14 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Airborne NCO Vest (104th Soul)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Soul_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Soul_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Soul_Accessories_Officer.paa",
-                "Jangos_Airborne_Vests\data\Textures\104th_AB_Soul_Accessories_Heavy.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Soul_Accessories_Heavy.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -537,73 +538,73 @@ class CfgWeapons
         };
     };
     class JA_104th_Granite_Vest : ls_gar_airborneNCO_vest
-	{
-		author = "Dak";
-		displayName = "Clone Airborne Trooper Vest (104th Granite)";
-		hiddenSelections[] = {
-			"ammo", 
-			"camo1", 
-			"camo2", 
-			"pauldron",
-		};
-		hiddenSelectionsTextures[] =
-			{
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Officer.paa",
-				"Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
-			};
-		class ItemInfo : ItemInfo
-		{
-			containerClass = "Supply80";
-			vestType = "Rebreather";
+    {
+        author = "Dak";
+        displayName = "Clone Airborne Trooper Vest (104th Granite)";
+        hiddenSelections[] = {
+            "ammo",
+            "camo1",
+            "camo2",
+            "pauldron",
+        };
+        hiddenSelectionsTextures[] =
+            {
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Officer.paa",
+                "Jangos_Airborne_Vests\data\Textures\104th_AB_Granite_Accessories_Heavy.paa", // Heavy
+        };
+        class ItemInfo : ItemInfo
+        {
+            containerClass = "Supply80";
+            vestType = "Rebreather";
 
-			class HitpointsProtectionInfo
-			{
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					armor = 8;
-					passThrough = 0.3;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-    
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    armor = 8;
+                    passThrough = 0.3;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+
     class JA_104th_AB_2_2_Base_Trooper_Armor : ls_gar_airborne_vest
     {
         author = "Dak";
         displayName = "Clone Airborne Trooper Vest (104th 2-2)";
         hiddenSelections[] = {
-			"ammo", 
-			"camo1", 
-			"camo2", 
-			"pauldron",
-		};
+            "ammo",
+            "camo1",
+            "camo2",
+            "pauldron",
+        };
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Base.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Base.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Trooper.paa",
-            };
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -643,17 +644,17 @@ class CfgWeapons
         author = "Dak";
         displayName = "Clone Airborne Medic Vest (104th 2-2)";
         hiddenSelections[] = {
-			"ammo", 
-			"camo1", 
-			"camo2", 
-			"pauldron",
-		};
+            "ammo",
+            "camo1",
+            "camo2",
+            "pauldron",
+        };
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Base.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Base.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Medic.paa",
-            };
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -692,14 +693,14 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Vest (104th 2-2)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Base.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Base.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Trooper.paa",
-                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Base.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Base.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -738,14 +739,14 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Medic Vest (104th 2-2)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Base.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Base.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Medic.paa",
-                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Base.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Base.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -780,23 +781,23 @@ class CfgWeapons
             };
         };
     };
-    
+
     class JA_104th_AB_2_2_MLV_Trooper_Armor : ls_gar_airborne_vest
     {
         author = "Dak";
         displayName = "Clone Airborne Trooper Vest (104th 2-2 MLV)";
         hiddenSelections[] = {
-			"ammo", 
-			"camo1", 
-			"camo2", 
-			"pauldron",
-		};
+            "ammo",
+            "camo1",
+            "camo2",
+            "pauldron",
+        };
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Red.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Red.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Trooper.paa",
-            };
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -836,17 +837,17 @@ class CfgWeapons
         author = "Dak";
         displayName = "Clone Airborne Medic Vest (104th 2-2 MLV)";
         hiddenSelections[] = {
-			"ammo", 
-			"camo1", 
-			"camo2", 
-			"pauldron",
-		};
+            "ammo",
+            "camo1",
+            "camo2",
+            "pauldron",
+        };
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Medic.paa",
-            };
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -885,14 +886,14 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Vest (104th 2-2 MLV)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Red.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Red.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Trooper.paa",
-                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Red.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Red.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -931,14 +932,14 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Medic Vest (104th 2-2 MLV)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Medic.paa",
-                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Red.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -973,23 +974,23 @@ class CfgWeapons
             };
         };
     };
-    
+
     class JA_104th_AB_2_2_Blue_Trooper_Armor : ls_gar_airborne_vest
     {
         author = "Dak";
         displayName = "Clone Airborne Trooper Vest (104th 2-2 Blue)";
         hiddenSelections[] = {
-			"ammo", 
-			"camo1", 
-			"camo2", 
-			"pauldron",
-		};
+            "ammo",
+            "camo1",
+            "camo2",
+            "pauldron",
+        };
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Blue.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Blue.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Trooper.paa",
-            };
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1029,17 +1030,17 @@ class CfgWeapons
         author = "Dak";
         displayName = "Clone Airborne Medic Vest (104th 2-2 Blue)";
         hiddenSelections[] = {
-			"ammo", 
-			"camo1", 
-			"camo2", 
-			"pauldron",
-		};
+            "ammo",
+            "camo1",
+            "camo2",
+            "pauldron",
+        };
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Medic.paa",
-            };
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1078,14 +1079,14 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Vest (104th 2-2 Blue)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Blue.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Blue.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Trooper.paa",
-                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Blue.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Vest_Vet_Blue.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1124,14 +1125,14 @@ class CfgWeapons
     {
         author = "Dak";
         displayName = "Clone Airborne NCO Medic Vest (104th 2-2 Blue)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa", // Heavy
                 "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa", // Heavy
                 "104thPhantomCompany\data\Textures\104th_Officer_Accessories_P2_AB_Medic.paa",
-                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\textures\104th_2-2_AB_Medic_Vest_Vet_Blue.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1171,14 +1172,14 @@ class CfgWeapons
         author = "Emmet";
         scope = 2;
         displayName = "Clone Airborne NCO Vest (104th Bear)";
-        hiddenSelections[] = {"ammo","camo1","camo2","pauldron"};
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
             {
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa", // Heavy
                 "Jangos_Airborne_Vests\data\Textures\104th_AB_Bear_Accessories_Officer.paa",
-                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa"  // Heavy
-            };
+                "Jangos_Airborne_Vests\data\Textures\104th_Accessories_Heavy.paa" // Heavy
+        };
         class ItemInfo : ItemInfo
         {
             containerClass = "Supply80";
@@ -1213,5 +1214,4 @@ class CfgWeapons
             };
         };
     };
-    
 };

@@ -2,7 +2,7 @@
 [h2]Custom Gear[/h2]
 [h3]Added[/h3]
 [list]
-    [*] 
+    [*] Clone Trooper JT12 LR (104th Kage)
 [/list]
 [h3]Removed[/h3]
 [list]
@@ -10,7 +10,8 @@
 [/list]
 [h3]Changes[/h3]
 [list]
-    [*] 
+    [*] Clone Tactical NCO Vest (104th Kage)
+    [*] Clone Trooper armor (104th Spectre)
 [/list]
 
 [h2]Custom Weapons & Attachments[/h2]
