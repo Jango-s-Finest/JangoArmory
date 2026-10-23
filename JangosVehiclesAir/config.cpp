@@ -123,6 +123,17 @@ class cfgVehicles
 			repulseSoundOff = "";
 		};
 		class UserActions : UserActions{
+            class ECM_ON
+            {
+                displayName = "ECM JAMMER ON";
+                position = "pos cano";
+                radius = 15;
+                shortcut = "User2";
+                condition = "player in this and isengineon this";
+                statement = "[this] execVM '\JangosVehicles\Script\ECM\ECM_ON.sqf';";
+                onlyforplayer = "False";
+                hideOnUse = 1;
+            };
 			class UnLoadCargo{
 				condition = "(count(this getVariable [""TAS_Loaded"",[]]) > 0) AND (player == driver this)";
 				displayName = "Unload Rho-Crate";
@@ -136,6 +147,40 @@ class cfgVehicles
 				textToolTip = "Unload Rho-Crate";
 				userActionID = 7;
 			};
+            class rampOpen
+            {
+                displayName = "Cargo Ramp Close";
+                position = "cargoaction";
+                radius = 10;
+                priority = 10;
+                condition = "(this animationSourcePhase 'ramp' < 0.5 AND (alive this))";
+                statement = "this animateSource ['ramp',1]";
+                onlyforplayer = 0;
+                role = 0;
+            };
+            class rampClose: rampOpen
+            {
+                displayName = "Cargo Ramp Open";
+                position = "cargoaction";
+                radius = 10;
+                condition = "(this animationSourcePhase 'ramp' >= 0.5 AND (alive this))";
+                statement = "this animateSource ['ramp',0]";
+                onlyforplayer = 0;
+            };
+            class LoadCargo
+            {
+                userActionID = 6;
+                displayName = "Load Rho-Crate";
+                displayNameDefault = "Load Rho-Crate";
+                textToolTip = "Load Rho-Crate";
+                position = "pilotview";
+                showWindow = 0;
+                radius = 5;
+                priority = 8;
+                onlyForPlayer = 0;
+                condition = "((speed this < TAS_lcLoadSpeed) AND (player == currentPilot vehicle player) AND (this animationSourcePhase 'Clamp_hinges' < 0.5))";
+                statement = "[this] spawn TAS_fnc_MagRhoLift;";
+            };
 		};
 	};
 	class JA_104th_LAS_1A : 3AS_Rep_LAS_Z6_F{

@@ -54,7 +54,9 @@ class CfgPatches
             "JA_104th_Krieg_Helmet_Ground",
             "JA_104th_Romeo_Helmet_Ground",
             "JA_104th_Jesse_Helmet_Ground",
-            "JA_104th_Tanx_Helmet_Ground"};
+            "JA_104th_Tanx_Helmet_Ground",
+            "JA_104th_Fearless_Helmet_Ground"
+        };
         weapons[] = {
             "JA_104th_Dart_Helmet",
             "JA_104th_Archibold_Helmet",
@@ -81,6 +83,7 @@ class CfgPatches
             "JA_104th_Squid_Helmet",
             "JA_104th_Tiger_Helmet",
             "JA_104th_Aiomi_Helmet",
+            "JA_104th_Fearless_Helmet",
             "JA_104th_Spectre_Helmet",
             "JA_104th_Spectre_Helmet_red",
             "JA_104th_Spectre_Helmet_green",
@@ -113,7 +116,8 @@ class CfgPatches
             "JA_104th_Krieg_Helmet",
             "JA_104th_Romeo_Helmet",
             "JA_104th_Jesse_Helmet",
-            "JA_104th_Tanx_Helmet"};
+            "JA_104th_Tanx_Helmet"
+        };
     };
 };
 
@@ -499,6 +503,15 @@ class CfgWeapons
         grad_slingHelmet_allow = true;
         displayname = "Clone Trooper P1 Helmet (104th Aiomi)";                                                                                                                                                                                                      // the name it will be in game
         hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P1_Aiomi_Helmet.paa", "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa", "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
+    };
+    class JA_104th_Fearless_Helmet : ls_gar_phase1_helmet
+    {
+        author = "Dak";
+        scopeArsenal = 2;
+        side = 1;
+        grad_slingHelmet_allow = true;
+        displayname = "Clone Trooper P1 Helmet (104th Fearless)";                                                                                                                                                                                                      // the name it will be in game
+        hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P1_Fearless_Helmet.paa", "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa", "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"}; // the file path to the texture
     };
     class JA_104th_Spectre_Helmet : ls_gar_rex_helmet
     {
@@ -1511,6 +1524,21 @@ class CfgVehicles
             class _xx_JA_104th_Tanx_Helmet
             {
                 name = "JA_104th_Tanx_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Fearless_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P2 Helmet (104th Fearless)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Fearless_Helmet
+            {
+                name = "JA_104th_Fearless_Helmet";
                 count = 1;
             };
         };
