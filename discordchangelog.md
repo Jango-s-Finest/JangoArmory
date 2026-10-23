@@ -3,19 +3,16 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper armor (104th Juicer)
-- Clone Trooper P1 Helmet (104th Juicer)
+- Clone Trooper P1 Helmet (104th Fearless)
+- Clone Trooper armor (104th Fearless)
 
 Changed Gear
 ------------------
-- Clone Trooper RTO mini backpack (104th Marx)
-- Clone Trooper armor (104th Marx)
-- Clone Trooper Engineer Helmet (104th Marx)
-- Clone NVG Rangefinder Visor (104th Kaleck)
-- Clone ARC Trooper Vest (104th Kaleck)
-- Clone Trooper ARC Trooper Helmet (104th Kaleck)
-- Clone Trooper armor (104th Kaleck)
-- Clone Trooper Pilot Helmet (104th Boris)
+- Clone SPC NVG Visor (104th Skav)
+- Clone Trooper armor (104th Skav)
+- Clone Trooper P2 Helmet (104th Skav)
+- Clone Trooper armor (104th Juicer)
+- Clone Trooper P1 Helmet (104th Juicer)
 
 Removed Gear
 ------------------
@@ -26,11 +23,11 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
--
+- CiP Quad Cannon (104th)
 
 Changed Weapons & Attachments
 ------------------
--
+- [104th] RPS-6 Rocket Launcher - fix
 
 ------------------
 Removed Weapons & Attachments
@@ -41,11 +38,16 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
--
+- [104th] Gizka Heavy Ordinance System
 
 Changed Vehicles & Supplies
 ------------------
--
+- [104th] Z-95 Reaper - new Skins - ECM
+- [104th] ARC-170 - new Skins - ECM
+- [104th] V-Wing Fighter - ECM
+- [104th] V-19 Torrent Heavy Interceptor - ECM
+- [104th] BTL-B Y-Wing Blue Leader - new Skins - ECM - 212th dependancy removed
+- [104th] Rho Class - ECM - Ramp Fix
 
 Removed Vehicles & Supplies
 ------------------

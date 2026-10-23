@@ -12,7 +12,6 @@ class CfgPatches
 			"JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue",
 			"JA_104th_3AS_Reaper_ARC_170_Blue",
 			"JA_104th_VWing",
-			"3as_V19_base",
 			"JA_104th_V19_Torrent",
 			"JA_104th_Base_Falcon_Armed",
 			"JA_104th_Base_Pelican_Unarmed",
@@ -169,7 +168,7 @@ class cfgVehicles
 	class OPTRE_UNSC_falcon;
 	class OPTRE_Pelican_unarmed;
 	class OPTRE_Pelican_armed;
-	class Aux212_3AS_Reaper_Y_Wing;
+	class 3AS_BTLB_Bomber;
 	class ls_carrybox_base;
 	class 3AS_Supply_Large_Ammo_Prop;
 	class 3AS_Supply_Large_Orange_Prop;
@@ -272,7 +271,6 @@ class cfgVehicles
 		class HitPoints;
 	};
 
-	class ACE_SelfActions;
 	class Box_212_Supply_F;
 	class Box_212_Medical_F;
 
@@ -285,7 +283,7 @@ class cfgVehicles
 	class 3AS_Z95_Republic;
 	class JA_104th_212th_3AS_Reaper_Z95_Headhunter_Blue : 3AS_Z95_Republic{
 		Author = "212th + 3AS + Echo";
-		displayName = "Z-95 Reaper (Blue)";
+		displayName = "[104th] Z-95 Reaper";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -305,6 +303,32 @@ class cfgVehicles
 		BNA_KC_shields_health = 5;
 		BNA_KC_shields_regenAmount = 1;
 		BNA_KC_shields_regenDelay = 20;
+        class TextureSources
+        {
+            class blue
+            {
+                displayName = "Blue";
+                textures[] = {"3AS\3as_Z95\Data\blue_co.paa", "3AS\3as_Z95\Data\cockpit_co.paa", "3AS\3as_saber\data\glass\glass_ca"};
+                factions[] = {"104th_Guys"};
+            };
+            class red : blue
+            {
+                displayName = "Red";
+                textures[] = {"3AS\3AS_Z95\Data\body_co.paa","3AS\3AS_Z95\Data\cockpit_co.paa","3AS\3AS_Z95\data\glass\glass_ca"};
+            };
+            class orange : blue
+            {
+                displayName = "Orange";
+                textures[] = {"3AS\3AS_Z95\Data\orange_co.paa","3AS\3AS_Z95\Data\cockpit_co.paa","3AS\3AS_Z95\data\glass\glass_ca"};
+            };
+            class green : blue
+            {
+                displayName = "Green";
+                textures[] = {"3AS\3AS_Z95\Data\green_co.paa","3AS\3AS_Z95\Data\cockpit_co.paa","3AS\3AS_Z95\data\glass\glass_ca"};
+            };
+        };
+        textureList[] = {"blue", 1, "red", 1, "orange", 1, "green", 1};
+
 		class ACE_SelfActions : ACE_SelfActions{
 			class shields_toggle {
 				condition = "true";
@@ -322,7 +346,44 @@ class cfgVehicles
 					statement = "call BNA_KC_shields_fnc_deactivate";
 				};
 			};
-		};
+            class Style_Changer
+            {
+                displayName = "Change Camo";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled = 0;
+                priority = 2;
+                class DefaultSkin
+                {
+                    displayName = "Blue";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    condition = "!(isNull objectParent player)";
+                    statement = "_target setObjectTextureGlobal [0,'3AS\3as_Z95\Data\blue_co.paa']; _target setObjectTextureGlobal [1,'3AS\3as_Z95\Data\cockpit_co.paa']; _target setObjectTextureGlobal [2,'3AS\3as_saber\data\glass\glass_ca'];";
+                    showDisabled = 0;
+                    runOnHover = 0;
+                    priority = 2.5;
+                };
+                class 104th_Skins
+                {
+                    displayname = "104th Skins";
+                    class Red : DefaultSkin
+                    {
+                        displayName = "Red";
+                        statement = "_target setObjectTextureGlobal [0,'3AS\3as_Z95\Data\body_co.paa']; _target setObjectTextureGlobal [1,'3AS\3as_Z95\Data\cockpit_co.paa']; _target setObjectTextureGlobal [2,'3AS\3as_saber\data\glass\glass_ca'];";
+                    };
+                    class Orange : DefaultSkin
+                    {
+                        displayName = "Orange";
+                        statement = "_target setObjectTextureGlobal [0,'3AS\3as_Z95\Data\orange_co.paa']; _target setObjectTextureGlobal [1,'3AS\3as_Z95\Data\cockpit_co.paa']; _target setObjectTextureGlobal [2,'3AS\3as_saber\data\glass\glass_ca'];";
+                    };
+                    class Green : DefaultSkin
+                    {
+                        displayName = "Green";
+                        statement = "_target setObjectTextureGlobal [0,'3AS\3as_Z95\Data\green_co.paa']; _target setObjectTextureGlobal [1,'3AS\3as_Z95\Data\cockpit_co.paa']; _target setObjectTextureGlobal [2,'3AS\3as_saber\data\glass\glass_ca'];";
+                    };
+                };
+            };
+        };
 		class transportweapons
 		{
 		};
@@ -2524,6 +2585,17 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 1;
 			};
+            class ECM_ON
+            {
+                displayName = "ECM JAMMER ON";
+                position = "pos cano";
+                radius = 15;
+                shortcut = "User2";
+                condition = "player in this and isengineon this";
+                statement = "[this] execVM '\JangosVehicles\Script\ECM\ECM_ON.sqf';";
+                onlyforplayer = "False";
+                hideOnUse = 1;
+            };
 		};
 		class Components
 		{
@@ -2902,14 +2974,13 @@ class cfgVehicles
 		};
 	};
 	class 3AS_ARC_170_Republic;
-	class ACE_SelfActions;
 	class UserActions;
 	class Reargun;
 	class LaserPilot;
 	class BubbleGun;
 	class JA_104th_3AS_Reaper_ARC_170_Blue : 3AS_ARC_170_Republic{
 		Author = "212th + 3AS + Echo";
-		displayName = "[104th] ARC-170 Blue";
+		displayName = "[104th] ARC-170";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -2920,7 +2991,38 @@ class cfgVehicles
 		weapons[] = {"JA_104th_AA_Lazer","3AS_ARC_Light_Canon","CMFlareLauncher","Laserdesignator_pilotCamera"};
 		magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500","3AS_ARC_500Rnd_Light_Shells","3AS_ARC_500Rnd_Light_Shells","120Rnd_CMFlare_Chaff_Magazine","Laserbatteries","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine","120Rnd_CMFlare_Chaff_Magazine"};
 		hiddenselections[] = {"camo1","camo2","guns"};
-		hiddenselectionstextures[] = {"3as\3AS_ARC170\Data\units\501st_Main_Frame_CO.paa","3as\3AS_ARC170\Data\units\501st_Wings_Engines_CO.paa","3as\3AS_ARC170\Data\units\501st_Guns_CO.paa"};
+		hiddenselectionstextures[] = {"3as\3AS_ARC170\Data\Main_Frame_CO.paa","3as\3AS_ARC170\Data\Wings_Engines_CO.paa","3as\3AS_ARC170\Data\Guns_CO.paa"};
+        class TextureSources
+        {
+            class red
+            {
+                displayName = "Red";
+                textures[] = {"3as\3AS_ARC170\Data\Main_Frame_CO.paa","3as\3AS_ARC170\Data\Wings_Engines_CO.paa","3as\3AS_ARC170\Data\Guns_CO.paa"};
+                factions[] = {"104th_Guys"};
+            };
+            class blue : red
+            {
+                displayName = "Blue";
+                textures[] = {"3as\3AS_ARC170\Data\units\501st_Main_Frame_CO.paa","3as\3AS_ARC170\Data\units\501st_Wings_Engines_CO.paa","3as\3AS_ARC170\Data\units\501st_Guns_CO.paa"};
+            };
+            class orange : red
+            {
+                displayName = "Orange";
+                textures[] = {"3as\3AS_ARC170\Data\units\212th_Main_Frame_CO.paa","3as\3AS_ARC170\Data\units\212th_Wings_Engines_CO.paa","3as\3AS_ARC170\Data\units\212th_Guns_CO.paa"};
+            };
+            class green : red
+            {
+                displayName = "Green";
+                textures[] = {"3as\3AS_ARC170\Data\units\101st_Main_Frame_CO.paa","3as\3AS_ARC170\Data\units\101st_Wings_Engines_CO.paa","3as\3AS_ARC170\Data\units\101st_Guns_CO.paa"};
+            };
+            class yellow : red
+            {
+                displayName = "Yellow";
+                textures[] = {"3as\3AS_ARC170\Data\units\327th_Main_Frame_CO.paa","3as\3AS_ARC170\Data\units\327th_Wings_Engines_CO.paa","3as\3AS_ARC170\Data\units\327th_Guns_CO.paa"};
+            };
+        };
+        textureList[] = {"blue", 1, "red", 1, "orange", 1, "green", 1, "yellow", 1};
+
 		class UserActions : UserActions
 		{
 			class Aircraft_MFD_Open_N
@@ -2934,7 +3036,18 @@ class cfgVehicles
 				onlyforplayer = "false";
 				hideOnUse = 1;
 			};
-		};
+            class ECM_ON
+            {
+                displayName = "ECM JAMMER ON";
+                position = "pos cano";
+                radius = 15;
+                shortcut = "User2";
+                condition = "player in this and isengineon this";
+                statement = "[this] execVM '\JangosVehicles\Script\ECM\ECM_ON.sqf';";
+                onlyforplayer = "False";
+                hideOnUse = 1;
+            };
+        };
 		class Components
 		{
 			class SensorsManagerComponent
@@ -3341,7 +3454,49 @@ class cfgVehicles
 				displayName = "Delete Vehicle Crew";
 				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
 			};
-		};
+		    class Style_Changer
+            {
+                displayName = "Change Camo";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled = 0;
+                priority = 2;
+                class DefaultSkin
+                {
+                    displayName = "Red";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    condition = "!(isNull objectParent player)";
+                    statement = "_target setObjectTextureGlobal [0,'3as\3AS_ARC170\Data\Main_Frame_CO.paa']; _target setObjectTextureGlobal [1,'3as\3AS_ARC170\Data\Wings_Engines_CO.paa']; _target setObjectTextureGlobal [2,'3as\3AS_ARC170\Data\Guns_CO.paa'];";
+                    showDisabled = 0;
+                    runOnHover = 0;
+                    priority = 2.5;
+                };
+                class 104th_Skins
+                {
+                    displayname = "104th Skins";
+                    class Blue : DefaultSkin
+                    {
+                        displayName = "Blue";
+                        statement = "_target setObjectTextureGlobal [0,'3as\3AS_ARC170\Data\units\501st_Main_Frame_CO.paa']; _target setObjectTextureGlobal [1,'3as\3AS_ARC170\Data\units\501st_Wings_Engines_CO.paa']; _target setObjectTextureGlobal [2,'3as\3AS_ARC170\Data\units\501st_Guns_CO.paa'];";
+                    };
+                    class Orange : DefaultSkin
+                    {
+                        displayName = "Orange";
+                        statement = "_target setObjectTextureGlobal [0,'3as\3AS_ARC170\Data\units\212th_Main_Frame_CO.paa']; _target setObjectTextureGlobal [1,'3as\3AS_ARC170\Data\units\212th_Wings_Engines_CO.paa']; _target setObjectTextureGlobal [2,'3as\3AS_ARC170\Data\units\212th_Guns_CO.paa'];";
+                    };
+                    class Green : DefaultSkin
+                    {
+                        displayName = "Green";
+                        statement = "_target setObjectTextureGlobal [0,'3as\3AS_ARC170\Data\units\101st_Main_Frame_CO.paa']; _target setObjectTextureGlobal [1,'3as\3AS_ARC170\Data\units\101st_Wings_Engines_CO.paa']; _target setObjectTextureGlobal [2,'3as\3AS_ARC170\Data\units\101st_Guns_CO.paa'];";
+                    };
+                    class Yellow : DefaultSkin
+                    {
+                        displayName = "Yellow";
+                        statement = "_target setObjectTextureGlobal [0,'3as\3AS_ARC170\Data\units\327th_Main_Frame_CO.paa']; _target setObjectTextureGlobal [1,'3as\3AS_ARC170\Data\units\327th_Wings_Engines_CO.paa']; _target setObjectTextureGlobal [2,'3as\3AS_ARC170\Data\units\327th_Guns_CO.paa'];";
+                    };
+                };
+            };
+        };
 		class Turrets:Turrets
 		{
 			class Reargun: Reargun
@@ -3807,13 +3962,36 @@ class cfgVehicles
 				volume = "(1-camPos)*(speed factor[1, 150])";
 			};
 		};
-	};
-	class 3as_V19_base{
-		class ACE_SelfActions;
-	};
+        class UserActions : UserActions
+		{
+			class Aircraft_MFD_Open_N
+			{
+				// displayName = "Open I-TGT System";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User4";
+				condition = "('FIR_TGTPOD' in weapons this or 'Laserdesignator_pilotCamera' in weapons this) and player in this and isengineon this";                
+				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf"";";
+				onlyforplayer = "false";
+				hideOnUse = 1;
+			};
+            class ECM_ON
+            {
+                displayName = "ECM JAMMER ON";
+                position = "pos cano";
+                radius = 15;
+                shortcut = "User2";
+                condition = "player in this and isengineon this";
+                statement = "[this] execVM '\JangosVehicles\Script\ECM\ECM_ON.sqf';";
+                onlyforplayer = "False";
+                hideOnUse = 1;
+            };
+        };
+    };
+	class 3as_V19_base;
 	class JA_104th_V19_Torrent : 3as_V19_base{
 		Author = "212th + 3AS + Echo";
-		displayName = "V-19 Torrent Heavy Interceptor";
+		displayName = "[104th] V-19 Torrent Heavy Interceptor";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
@@ -3866,10 +4044,10 @@ class cfgVehicles
 			class Style_Changer
 			{
 				displayName = "Change Camo";
-				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-				showDisabled = 0;
-				priority = 2;
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled = 0;
+                priority = 2;
 				class DefaultSkin
 				{
 					displayName = "104th";
@@ -4251,7 +4429,32 @@ class cfgVehicles
 			};
 			class TransportCounterMeasuresComponent;
 		};
-	};
+        class UserActions : UserActions
+		{
+			class Aircraft_MFD_Open_N
+			{
+				// displayName = "Open I-TGT System";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User4";
+				condition = "('FIR_TGTPOD' in weapons this or 'Laserdesignator_pilotCamera' in weapons this) and player in this and isengineon this";                
+				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf"";";
+				onlyforplayer = "false";
+				hideOnUse = 1;
+			};
+            class ECM_ON
+            {
+                displayName = "ECM JAMMER ON";
+                position = "pos cano";
+                radius = 15;
+                shortcut = "User2";
+                condition = "player in this and isengineon this";
+                statement = "[this] execVM '\JangosVehicles\Script\ECM\ECM_ON.sqf';";
+                onlyforplayer = "False";
+                hideOnUse = 1;
+            };
+        };
+    };
 
 	class JA_104th_Base_Falcon_Armed : OPTRE_UNSC_falcon
 	{
@@ -5194,104 +5397,126 @@ class cfgVehicles
 		};
 	};
 
-	class JA_104th_3AS_Reaper_Y_Wing : Aux212_3AS_Reaper_Y_Wing
-	{
-		Author = "212th + 3AS + Echo";
-		displayName = "104th Reaper BTL-B Y-Wing";
-		crew = "JA_104th_P2_1C_Engineer";
-		side = 1;
-		faction = "104th_Guys";
-		editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
-		scope = 1;
-		scopeArsenal = 1;
-		scopeCurator = 1;
-		radarTargetSize = 1; // No idea who in 3AS thought it's a good idea to make the Y-Wing more stealthy than the stealth fighters, so I'm changing it.
-		irTargetSize = 1;
-		VTOLPitchInfluence = 12;
-		LockDetectionSystem = "2+4+8+16";
-		incomingMissileDetectionSystem = "2+4+8+16";
-		stallSpeed = 0;
+	class JA_104th_3AS_Reaper_Y_Wing : 3AS_BTLB_Bomber
+    {
+        Author = "212th + 3AS + Echo";
+        displayName = "104th Reaper BTL-B Y-Wing";
+        crew = "JA_104th_P2_1C_Engineer";
+        side = 1;
+        faction = "104th_Guys";
+        editorSubcategory = "104th_Categ_Clones_Vehicles_Air";
+        scope = 1;
+        scopeArsenal = 1;
+        scopeCurator = 1;
+        radarTargetSize = 1; // No idea who in 3AS thought it's a good idea to make the Y-Wing more stealthy than the stealth fighters, so I'm changing it.
+        irTargetSize = 1;
+        VTOLPitchInfluence = 12;
+        LockDetectionSystem = "2+4+8+16";
+        incomingMissileDetectionSystem = "2+4+8+16";
+        stallSpeed = 0;
 
-		armor = 550;
-		weapons[] = {"Laserdesignator_pilotCamera", "CMFlareLauncher", "212th_YWing_Voltic_Cannon", "JA_104th_AA_Lazer", "JA_104th_Drexl", "212th_WGM_MissileSystem", "212th_Gizka_Bomb_ReleaseSystem"};
-		magazines[] = {"Laserbatteries", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "212th_Voltic_Cannon_Magazine", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "JA_LAAT_Drexl", "JA_LAAT_Drexl", "JA_LAAT_Drexl", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Basilisk_4Rnd_WGM_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag", "212th_Gizka_Bomb_mag"};
-		class pilotCamera
-		{
-			class OpticsIn
-			{
-				class Wide
-				{
-					opticsDisplayName = "WFOV";
-					initAngleX = 0;
-					minAngleX = -10;
-					maxAngleX = 90;
-					initAngleY = 0;
-					minAngleY = -90;
-					maxAngleY = 90;
-					initFov = 0.425;
-					minFov = 0.425;
-					maxFov = 0.425;
-					thermalMode[] = {0, 1};
-					visionMode[] = {"Normal", "NVG", "Ti"};
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
-					opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
-				};
-				class zoomx4 : Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.425/4)";
-					minFov = "(0.425/4)";
-					maxFov = "(0.425/4)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX8 : Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/8)";
-					minFov = "(0.42/8)";
-					maxFov = "(0.42/8)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX20 : Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/20)";
-					minFov = "(0.42/20)";
-					maxFov = "(0.42/20)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX50 : Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/50)";
-					minFov = "(0.42/50)";
-					maxFov = "(0.42/50)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				class zoomX70 : Wide
-				{
-					opticsDisplayName = "NFOV";
-					initFov = "(0.42/70)";
-					minFov = "(0.42/70)";
-					maxFov = "(0.42/70)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
-				};
-				showMiniMapInOptics = 1;
-				showUAVViewInOptics = 0;
-				showSlingLoadManagerInOptics = 1;
-			};
-			minTurn = -180;
-			maxTurn = 180;
-			initTurn = 0;
-			minElev = -10;
-			maxElev = 90;
-			initElev = -10;
-			maxXRotSpeed = 0.3;
-			maxYRotSpeed = 0.3;
-			pilotOpticsShowCursor = 1;
-			controllable = 1;
-			ace_missileguidance_usePilotCameraForTargeting = 1;
-		};
+        armor = 550;
+        weapons[] = {"Laserdesignator_pilotCamera", "CMFlareLauncher", "JA_104th_APHE_Lazer", "JA_104th_AA_Lazer", "JA_104th_Drexl", "JA_104th_Brimstone", "JA_104th_Gizka_Bomb_ReleaseSystem"};
+        magazines[] = {
+            "Laserbatteries",
+            "300Rnd_CMFlare_Chaff_Magazine",
+            "300Rnd_CMFlare_Chaff_Magazine",
+            "300Rnd_CMFlare_Chaff_Magazine",
+            "300Rnd_CMFlare_Chaff_Magazine",
+            "JA_104th_APHE_Lazer_MAG_100", "JA_104th_APHE_Lazer_MAG_100",
+            "JA_104th_APHE_Lazer_MAG_100", "JA_104th_APHE_Lazer_MAG_100",
+            "JA_104th_APHE_Lazer_MAG_100", "JA_104th_APHE_Lazer_MAG_100",
+            "JA_104th_APHE_Lazer_MAG_100", "JA_104th_APHE_Lazer_MAG_100",
+            "JA_104th_AA_Lazer_MAG_500",
+            "JA_104th_AA_Lazer_MAG_500",
+            "JA_104th_AA_Lazer_MAG_500",
+            "JA_LAAT_Drexl",
+            "JA_LAAT_Drexl",
+            "JA_LAAT_Drexl",
+            "JA_LAAT_Brimstone",
+            "JA_LAAT_Brimstone",
+            "JA_LAAT_Brimstone",
+            "JA_LAAT_Brimstone",
+            "JA_104th_16Rnd_Mk82",
+            "JA_104th_16Rnd_Mk82",
+            "JA_104th_16Rnd_Mk82"};
+        class pilotCamera
+        {
+            class OpticsIn
+            {
+                class Wide
+                {
+                    opticsDisplayName = "WFOV";
+                    initAngleX = 0;
+                    minAngleX = -10;
+                    maxAngleX = 90;
+                    initAngleY = 0;
+                    minAngleY = -90;
+                    maxAngleY = 90;
+                    initFov = 0.425;
+                    minFov = 0.425;
+                    maxFov = 0.425;
+                    thermalMode[] = {0, 1};
+                    visionMode[] = {"Normal", "NVG", "Ti"};
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                    opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur2"};
+                };
+                class zoomx4 : Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(0.425/4)";
+                    minFov = "(0.425/4)";
+                    maxFov = "(0.425/4)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+                class zoomX8 : Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(0.42/8)";
+                    minFov = "(0.42/8)";
+                    maxFov = "(0.42/8)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+                class zoomX20 : Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(0.42/20)";
+                    minFov = "(0.42/20)";
+                    maxFov = "(0.42/20)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+                class zoomX50 : Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(0.42/50)";
+                    minFov = "(0.42/50)";
+                    maxFov = "(0.42/50)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+                class zoomX70 : Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(0.42/70)";
+                    minFov = "(0.42/70)";
+                    maxFov = "(0.42/70)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+                showMiniMapInOptics = 1;
+                showUAVViewInOptics = 0;
+                showSlingLoadManagerInOptics = 1;
+            };
+            minTurn = -180;
+            maxTurn = 180;
+            initTurn = 0;
+            minElev = -10;
+            maxElev = 90;
+            initElev = -10;
+            maxXRotSpeed = 0.3;
+            maxYRotSpeed = 0.3;
+            pilotOpticsShowCursor = 1;
+            controllable = 1;
+            ace_missileguidance_usePilotCameraForTargeting = 1;
+        };
 
 		class ACE_SelfActions
 		{
@@ -5389,16 +5614,16 @@ class cfgVehicles
 			};
 
 			class ECM_ON
-			{
-				displayName = "ECM JAMMER ON";
-				position = "pos cano";
-				radius = 15;
-				shortcut = "User2";
-				condition = "player in this and isengineon this";
-				statement = "[this] execVM ""\JangosVehicles\Script\ECM\ECM_ON.sqf"";";
-				onlyforplayer = "False";
-				hideOnUse = 1;
-			};
+            {
+                displayName = "ECM JAMMER ON";
+                position = "pos cano";
+                radius = 15;
+                shortcut = "User2";
+                condition = "player in this and isengineon this";
+                statement = "[this] execVM '\JangosVehicles\Script\ECM\ECM_ON.sqf';";
+                onlyforplayer = "False";
+                hideOnUse = 1;
+            };
 		};
 
 		class Components
@@ -5794,169 +6019,162 @@ class cfgVehicles
 			};
 			class TransportCounterMeasuresComponent;
 		};
-	};
+        class Turrets;
+    };
 
-	class JA_104th_3AS_Reaper_Y_Wing_BlueLeader : JA_104th_3AS_Reaper_Y_Wing
-	{
-		displayName = "[104th] BTL-B Y-Wing Blue Leader";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa"};
-		class TextureSources
-		{
-			class BlueLeader
-			{
-				displayName = "Blue Leader";
-				author = "Dak";
-				textures[] = {
-					"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", 
-					"3as\3as_btlb\data\detail_co.paa", 
-					"3as\3as_btlb\data\interior_co.paa"
-				};
-				factions[] = {"104th_Guys"};
-			};
-			class Blue: BlueLeader
-			{
-				displayName = "Blue";
-				textures[] = {
-					"JangosVehicles\data\textures\YWing_Body_Blue.paa", 
-					"3as\3as_btlb\data\detail_co.paa", 
-					"3as\3as_btlb\data\interior_co.paa"
-				};
-			};
-			class Yellow: BlueLeader
-			{
-				displayName = "Yellow";
-				textures[] = {
-					"\3as\3AS_btlb\textures\chasis_shadow_co.paa",
-					"\3as\3AS_btlb\data\detail_co.paa",
-					"\3as\3AS_btlb\data\interior_co.paa"
-				};
-			};
-			class YellowLeader: BlueLeader
-			{
-				displayName = "Yellow Leader";
-				textures[] = {
-					"\3as\3AS_btlb\textures\chasis_shadowleader_co.paa",
-					"\3as\3AS_btlb\data\detail_co.paa",
-					"\3as\3AS_btlb\data\interior_co.paa"
-				};
-			};
-			class Red: BlueLeader
-			{
-				displayName = "Red";
-				textures[] = {
-					"\3as\3AS_btlb\textures\chasis_co.paa",
-					"\3as\3AS_btlb\data\detail_co.paa",
-					"\3as\3AS_btlb\data\interior_co.paa"
-				};
-			};
-			class RedLeader: BlueLeader
-			{
-				displayName = "Red Leader";
-				textures[] = {
-					"\3as\3AS_btlb\textures\chasis_redleader_co.paa",
-					"\3as\3AS_btlb\data\detail_co.paa",
-					"\3as\3AS_btlb\data\interior_co.paa"
-				};
-			};
-		};
-		textureList[] = {"BlueLeader", 1, "Blue", 1, "Yellow", 1, "Red", 1, "YellowLeader", 1, "RedLeader", 1};
-		BNA_KC_shields_hasShield = 1;
-		BNA_KC_shields_health = 5;
-		BNA_KC_shields_regenAmount = 1;
-		BNA_KC_shields_regenDelay = 20;
-		class ACE_SelfActions : ACE_SelfActions{
-			class shields_toggle {
-				condition = "true";
-				displayName = "Shield Health: %1";
-				modifierFunction = "call BNA_KC_shields_fnc_modifyInteraction";
-				statement = "";
-				class Activate{
-					condition = "ace_player call BNA_KC_shields_fnc_canActivate";
-					displayName = "Activate Shield";
-					statement = "call BNA_KC_shields_fnc_activate";
-				};
-				class Deactivate{
-					condition = "ace_player call BNA_KC_shields_fnc_canDeactivate";
-					displayName = "Deactivate Shield";
-					statement = "call BNA_KC_shields_fnc_deactivate";
-				};
-			};
-			class Style_Changer
-			{
-				displayName = "Change Camo";
-				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-				showDisabled = 0;
-				priority = 2;
-				class DefaultSkin
-				{
-					displayName = "104th";
-					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-					condition = "!(isNull objectParent player)";
-					statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\YWing_Body_BlueLeader.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
-					showDisabled = 0;
-					runOnHover = 0;
-					priority = 2.5;
-				};
-				class JA_104th_Skins
-				{
-					displayname = "104th Skins";
-					class 104th_Blue : DefaultSkin
-					{
-						displayName = "104th Blue";
-						statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\YWing_Body_Blue.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
-					};
-					class 104th_Yellow : DefaultSkin
-					{
-						displayName = "104th Yellow";
-						statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_shadow_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
-					};
-					class 104th_Yellow_Leader : DefaultSkin
-					{
-						displayName = "104th Yellow Leader";
-						statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_shadowleader_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
-					};
-					class 104th_Red : DefaultSkin
-					{
-						displayName = "104th Red";
-						statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
-					};
-					class 104th_Red_Leader : DefaultSkin
-					{
-						displayName = "104th Red Leader";
-						statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_redleader_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
-					};
-				};
-				class Custom_Skins
-				{
-					displayname = "Custom Skins";
-				};
-			};
-			class JA_vehicles_spawnCrew {
-				condition = "_this#0 call BNA_KC_vehicles_fnc_canSpawnCrew";
-				displayName = "Create Vehicle Crew";
-				statement = "(group ace_player) createVehicleCrew _this#0";
-			};
-			class JA_vehicles_deleteCrew {
-				condition = "_this#0 call BNA_KC_vehicles_fnc_canDeleteCrew";
-				displayName = "Delete Vehicle Crew";
-				statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
-			};
-		};
-		class Turrets
-		{
-			class BubbleGun: BubbleGun
-			{
-				gunnerName = "Bubble Gunner";
-				weapons[] = {"JA_104th_AA_Lazer","CMFlareLauncher"};
-				magazines[] = {"JA_104th_AA_Lazer_MAG_500","JA_104th_AA_Lazer_MAG_500","240Rnd_CMFlare_Chaff_Magazine"};
-			};
-		};	
-	};
-
+    class JA_104th_3AS_Reaper_Y_Wing_BlueLeader : JA_104th_3AS_Reaper_Y_Wing
+    {
+        displayName = "[104th] BTL-B Y-Wing Blue Leader";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        hiddenselectionstextures[] = {"JangosVehicles\data\textures\YWing_Body_BlueLeader.paa", "3as\3as_btlb\data\detail_co.paa", "3as\3as_btlb\data\interior_co.paa","#(argb,8,8,3)color(0.75,0.75,0.75,1,ca)"};
+        class TextureSources
+        {
+            class blueleader
+            {
+                displayName = "Blue Leader";
+                author = "Dak";
+                textures[] = {
+                    "JangosVehicles\data\textures\YWing_Body_BlueLeader.paa",
+                    "3as\3as_btlb\data\detail_co.paa",
+                    "3as\3as_btlb\data\interior_co.paa","#(argb,8,8,3)color(0.75,0.75,0.75,1,ca)"};
+                factions[] = {"104th_Guys"};
+            };
+            class blue : blueleader
+            {
+                displayName = "Blue";
+                textures[] = {
+                    "JangosVehicles\data\textures\YWing_Body_Blue.paa",
+                    "3as\3as_btlb\data\detail_co.paa",
+                    "3as\3as_btlb\data\interior_co.paa","#(argb,8,8,3)color(0.75,0.75,0.75,1,ca)"};
+            };
+            class yellow : blueleader
+            {
+                displayName = "Yellow";
+                textures[] = {
+                    "\3as\3AS_btlb\textures\chasis_shadow_co.paa",
+                    "\3as\3AS_btlb\data\detail_co.paa",
+                    "\3as\3AS_btlb\data\interior_co.paa","#(argb,8,8,3)color(0.75,0.75,0.75,1,ca)"};
+            };
+            class yellowLeader : blueleader
+            {
+                displayName = "Yellow Leader";
+                textures[] = {
+                    "\3as\3AS_btlb\textures\chasis_shadowleader_co.paa",
+                    "\3as\3AS_btlb\data\detail_co.paa",
+                    "\3as\3AS_btlb\data\interior_co.paa","#(argb,8,8,3)color(0.75,0.75,0.75,1,ca)"};
+            };
+            class red : blueleader
+            {
+                displayName = "Red";
+                textures[] = {"\3as\3AS_btlb\data\chasis_co.paa","\3as\3AS_btlb\data\detail_co.paa","\3as\3AS_btlb\data\interior_co.paa","#(argb,8,8,3)color(0.75,0.75,0.75,1,ca)"};
+            };
+            class redleader : blueleader
+            {
+                displayName = "Red Leader";
+                textures[] = {
+                    "\3as\3AS_btlb\textures\chasis_redleader_co.paa",
+                    "\3as\3AS_btlb\data\detail_co.paa",
+                    "\3as\3AS_btlb\data\interior_co.paa","#(argb,8,8,3)color(0.75,0.75,0.75,1,ca)"};
+            };
+        };
+        textureList[] = {"blueleader", 1, "blue", 1, "yellow", 1, "yellowleader", 1, "red", 1, "redLeader", 1};
+        BNA_KC_shields_hasShield = 1;
+        BNA_KC_shields_health = 5;
+        BNA_KC_shields_regenAmount = 1;
+        BNA_KC_shields_regenDelay = 20;
+        class ACE_SelfActions : ACE_SelfActions
+        {
+            class shields_toggle
+            {
+                condition = "true";
+                displayName = "Shield Health: %1";
+                modifierFunction = "call BNA_KC_shields_fnc_modifyInteraction";
+                statement = "";
+                class Activate
+                {
+                    condition = "ace_player call BNA_KC_shields_fnc_canActivate";
+                    displayName = "Activate Shield";
+                    statement = "call BNA_KC_shields_fnc_activate";
+                };
+                class Deactivate
+                {
+                    condition = "ace_player call BNA_KC_shields_fnc_canDeactivate";
+                    displayName = "Deactivate Shield";
+                    statement = "call BNA_KC_shields_fnc_deactivate";
+                };
+            };
+            class Style_Changer
+            {
+                displayName = "Change Camo";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled = 0;
+                priority = 2;
+                class DefaultSkin
+                {
+                    displayName = "104th";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    condition = "!(isNull objectParent player)";
+                    statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\YWing_Body_BlueLeader.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+                    showDisabled = 0;
+                    runOnHover = 0;
+                    priority = 2.5;
+                };
+                class 104th_Skins
+                {
+                    displayname = "104th Skins";
+                    class Blue : DefaultSkin
+                    {
+                        displayName = "104th Blue";
+                        statement = "_target setObjectTextureGlobal [0,'JangosVehicles\data\textures\YWing_Body_Blue.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+                    };
+                    class Yellow : DefaultSkin
+                    {
+                        displayName = "104th Yellow";
+                        statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_shadow_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+                    };
+                    class Yellow_Leader : DefaultSkin
+                    {
+                        displayName = "104th Yellow Leader";
+                        statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_shadowleader_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+                    };
+                    class Red : DefaultSkin
+                    {
+                        displayName = "104th Red";
+                        statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\data\chasis_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+                    };
+                    class Red_Leader : DefaultSkin
+                    {
+                        displayName = "104th Red Leader";
+                        statement = "_target setObjectTextureGlobal [0,'\3as\3AS_btlb\textures\chasis_redleader_co.paa']; _target setObjectTextureGlobal [1,'3as\3as_btlb\data\detail_co.paa']; _target setObjectTextureGlobal [2,'3as\3as_btlb\data\interior_co.paa'];";
+                    };
+                };
+            };
+            class JA_vehicles_spawnCrew
+            {
+                condition = "_this#0 call BNA_KC_vehicles_fnc_canSpawnCrew";
+                displayName = "Create Vehicle Crew";
+                statement = "(group ace_player) createVehicleCrew _this#0";
+            };
+            class JA_vehicles_deleteCrew
+            {
+                condition = "_this#0 call BNA_KC_vehicles_fnc_canDeleteCrew";
+                displayName = "Delete Vehicle Crew";
+                statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
+            };
+        };
+        class Turrets : Turrets
+        {
+            class BubbleGun : BubbleGun
+            {
+                gunnerName = "Bubble Gunner";
+                weapons[] = {"JA_104th_AA_Lazer", "CMFlareLauncher"};
+                magazines[] = {"JA_104th_AA_Lazer_MAG_500", "JA_104th_AA_Lazer_MAG_500", "240Rnd_CMFlare_Chaff_Magazine"};
+            };
+        };
+    };
 	class JA_104th_vulture_dynamicLoadout_base : 3AS_Vulture_Base_F{
 		irTargetSize = 1;
 		radarTargetSize = 1;

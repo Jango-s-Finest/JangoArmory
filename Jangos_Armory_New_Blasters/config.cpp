@@ -11,13 +11,26 @@ class CfgPatches
         units[] = {};
         // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
         weapons[] = {
+            "3AS_DC15L_Base_F",
             "arifle_SPAR_03_blk_F",
             "JA_104th_MTR_4",
-            "JA_104th_T32C"
+            "JA_104th_T32C",
+            "HTL_CiP_Quad_Cannon",
+            "HTL_CiP_Quad_Cannon_Deploying"
         };
-        ammo[] = {};
+        ammo[] = {
+            "HTL_CiP_Bolt_LE",
+            "HTL_CiP_Bolt_ME",
+            "HTL_CiP_Bolt_HE",
+            "HTL_CiP_Bolt_HEX"
+        };
 
-        magazines[] = {};
+        magazines[] = {
+            "HTL_LE_1600",
+            "HTL_ME_800",
+            "HTL_HE_400",
+            "HTL_HE_120"
+        };
     };
     class htl_cip_quad_cannon 
     {

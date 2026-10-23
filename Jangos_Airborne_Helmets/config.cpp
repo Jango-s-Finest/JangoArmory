@@ -61,9 +61,52 @@ class CfgPatches
             "JA_104th_Artorias_Helmet",
             "JA_104th_Juicer_Helmet",
             "JA_104th_Fenrir_Helmet",
-            "JA_104th_Jojo_Helmet"
+            "JA_104th_Jojo_Helmet"};
+        units[] = {
+            "JA_104th_Doc_Helmet_Ground",
+            "JA_104th_AB_Red_Helmet_Ground",
+            "JA_104th_AB_Habit_Helmet_Ground",
+            "JA_104th_AB_Squid_Helmet_Ground",
+            "JA_104th_Ratchet_Helmet_Ground",
+            "JA_104th_Raptor_Helmet_Ground",
+            "JA_104th_Scrub_Helmet_Ground",
+            "JA_104th_Sentinel_Helmet_Ground",
+            "JA_104th_Dak_Helmet_Ground",
+            "JA_104th_Clutch_Helmet_Ground",
+            "JA_104th_Garm_Helmet_Ground",
+            "JA_104th_Axel_Helmet_Ground",
+            "JA_104th_Skav_AB_Helmet_Ground",
+            "JA_104th_Magnum_Helmet_Ground",
+            "JA_104th_Sixes_Helmet_Ground",
+            "JA_104th_Azure_Helmet_Ground",
+            "JA_104th_Kage_Helmet_Ground",
+            "JA_104th_AB_Soul_Helmet_Ground",
+            "JA_104th_Soul_Helmet_Ground",
+            "JA_104th_Trustful_Helmet_Ground",
+            "JA_104th_Stache_Helmet_Ground",
+            "JA_104th_Grimmer_Helmet_Ground",
+            "JA_104th_Freq_Helmet_Ground",
+            "JA_104th_Ink_Helmet_Ground",
+            "JA_104th_Hacksaw_Helmet_Ground",
+            "JA_104th_Klaus_Helmet_Ground",
+            "JA_104th_Reaper_Helmet_Ground",
+            "JA_104th_Six_Helmet_Ground",
+            "JA_104th_Jesse_Helmet_Ground",
+            "JA_104th_Bear_Helmet_Ground",
+            "JA_104th_Granite_Helmet_Ground",
+            "JA_104th_Tinkle_Helmet_Ground",
+            "JA_104th_Boombox_Helmet_Ground",
+            "JA_104th_Kitz_Helmet_Ground",
+            "JA_104th_Number_Helmet_Ground",
+            "JA_104th_Hound_Helmet_Ground",
+            "JA_104th_Angel_Helmet_Ground",
+            "JA_104th_Phoenix_Helmet_Ground",
+            "JA_104th_Skid_Helmet_Ground",
+            "JA_104th_Artorias_Helmet_Ground",
+            "JA_104th_Juicer_Helmet_Ground",
+            "JA_104th_Fenrir_Helmet_Ground",
+            "JA_104th_Jojo_Helmet_Ground"
         };
-        units[] = {};
     };
 };
 
@@ -700,5 +743,655 @@ class CfgWeapons
         subItems[] = {"Integrated_NVG_TI_0_F"};
         hiddenSelectionsMaterials[] = {"", ""};
         hiddenSelectionsTextures[] = {"Jangos_Airborne_Helmets\data\Textures\104th_AB_Jojo_Helmet.paa", "Jangos_Airborne_Helmets\data\Textures\104th_AB_Jojo_Helmet.paa"}; // the file path to the texture
+    };
+};
+
+class CfgVehicles
+{
+    class JA_104th_Holder_Base;
+    class JA_104th_Doc_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Doc)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Doc_Helmet
+            {
+                name = "JA_104th_Doc_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_AB_Red_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Red)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_AB_Red_Helmet
+            {
+                name = "JA_104th_AB_Red_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_AB_Habit_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Habit)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_AB_Habit_Helmet
+            {
+                name = "JA_104th_AB_Habit_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_AB_Squid_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Squid)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_AB_Squid_Helmet
+            {
+                name = "JA_104th_AB_Squid_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Ratchet_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Ratchet)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Ratchet_Helmet
+            {
+                name = "JA_104th_Ratchet_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Raptor_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Raptor)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Raptor_Helmet
+            {
+                name = "JA_104th_Raptor_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Scrub_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Scrub)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Scrub_Helmet
+            {
+                name = "JA_104th_Scrub_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Sentinel_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Sentinel)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Sentinel_Helmet
+            {
+                name = "JA_104th_Sentinel_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Dak_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Dak)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Dak_Helmet
+            {
+                name = "JA_104th_Dak_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Clutch_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Riker)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Clutch_Helmet
+            {
+                name = "JA_104th_Clutch_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Garm_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Garm)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Garm_Helmet
+            {
+                name = "JA_104th_Garm_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Axel_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Axel)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Axel_Helmet
+            {
+                name = "JA_104th_Axel_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Skav_AB_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Skav)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Skav_AB_Helmet
+            {
+                name = "JA_104th_Skav_AB_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Magnum_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Magnum)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Magnum_Helmet
+            {
+                name = "JA_104th_Magnum_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Sixes_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Sixes)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Sixes_Helmet
+            {
+                name = "JA_104th_Sixes_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Azure_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Azure)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Azure_Helmet
+            {
+                name = "JA_104th_Azure_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Kage_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Kage)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Kage_Helmet
+            {
+                name = "JA_104th_Kage_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_AB_Soul_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Soul)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_AB_Soul_Helmet
+            {
+                name = "JA_104th_AB_Soul_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Soul_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Soul)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Soul_Helmet
+            {
+                name = "JA_104th_Soul_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Trustful_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Trustful)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Trustful_Helmet
+            {
+                name = "JA_104th_Trustful_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Stache_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Stache)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Stache_Helmet
+            {
+                name = "JA_104th_Stache_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Grimmer_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Grimmer)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Grimmer_Helmet
+            {
+                name = "JA_104th_Grimmer_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Freq_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Freq)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Freq_Helmet
+            {
+                name = "JA_104th_Freq_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Ink_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Ink)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Ink_Helmet
+            {
+                name = "JA_104th_Ink_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Hacksaw_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Hacksaw)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Hacksaw_Helmet
+            {
+                name = "JA_104th_Hacksaw_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Klaus_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Klaus)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Klaus_Helmet
+            {
+                name = "JA_104th_Klaus_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Reaper_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Reaper)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Reaper_Helmet
+            {
+                name = "JA_104th_Reaper_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Six_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Six)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Six_Helmet
+            {
+                name = "JA_104th_Six_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Jesse_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Jesse)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Jesse_Helmet
+            {
+                name = "JA_104th_Jesse_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Bear_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Bear)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Bear_Helmet
+            {
+                name = "JA_104th_Bear_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Granite_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Granite)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Granite_Helmet
+            {
+                name = "JA_104th_Granite_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Tinkle_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Tinkle)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Tinkle_Helmet
+            {
+                name = "JA_104th_Tinkle_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Boombox_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Boombox)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Boombox_Helmet
+            {
+                name = "JA_104th_Boombox_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Kitz_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Kitz)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Kitz_Helmet
+            {
+                name = "JA_104th_Kitz_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Number_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Number)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Number_Helmet
+            {
+                name = "JA_104th_Number_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Hound_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Hound)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Hound_Helmet
+            {
+                name = "JA_104th_Hound_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Angel_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Angel)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Angel_Helmet
+            {
+                name = "JA_104th_Angel_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Phoenix_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Phoenix)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Phoenix_Helmet
+            {
+                name = "JA_104th_Phoenix_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Skid_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Skid)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Skid_Helmet
+            {
+                name = "JA_104th_Skid_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Artorias_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Artorias)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Artorias_Helmet
+            {
+                name = "JA_104th_Artorias_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Juicer_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P1 Helmet (104th Juicer)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Juicer_Helmet
+            {
+                name = "JA_104th_Juicer_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Fenrir_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Fenrir)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Fenrir_Helmet
+            {
+                name = "JA_104th_Fenrir_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Jojo_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper AB Helmet (104th Jojo)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Jojo_Helmet
+            {
+                name = "JA_104th_Jojo_Helmet";
+                count = 1;
+            };
+        };
     };
 };

@@ -670,7 +670,7 @@ class CfgWeapons
 			};
 		hiddenSelectionsTextures[] =
 			{
-				"Jangos_Armory_Attachments\data\textures\104th_P2_Skav_Medic_NVG.paa",
+				"Jangos_Armory_Attachments\data\textures\104th_P2_Skav_SPC_Visor.paa",
 			};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};
