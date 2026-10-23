@@ -7,7 +7,7 @@ class CfgPatches
     {
         author = "Jango's Finest";
         requiredVersion = 0.1;
-        requiredAddons[] = {};
+        requiredAddons[] = {"Jangos_Armory_New_Blasters"};
         units[] = {};
         // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
         weapons[] = {
@@ -124,11 +124,11 @@ class CfgPatches
             "JA_104th_Weapons_Mags_10mw500",
             "JA_104th_Weapons_Mags_30mw30",
             "JA_104th_Weapons_Mags_40mw20",
-            "JA_104th_Weapons_Mags_30mw36",
             "JA_104th_Weapons_Mags_30mw70",
             "JA_104th_Weapons_Mags_17M_AT",
-            "JA_104th_Weapons_Mags_50mw7",
             "JA_104th_Weapons_Mags_50mw12",
+            "JA_104th_Weapons_Mags_30mw36",
+            "JA_104th_Weapons_Mags_50mw7",
             "JA_104th_Weapons_Mags_100Mw1",
             "JA_104th_Weapons_Mags_EMPMw2",
             "JA_104th_Weapons_Mags_10mw20SC",
@@ -158,6 +158,7 @@ class CfgPatches
             "JA_104th_Weapons_Mags_GL_flare_Blue3",
             "JA_104th_Weapons_Mags_GL_flare_Cyan3",
             "JA_104th_Weapons_Mags_GL_flare_Purple3",
+            "JA_104th_RPS6",
             "JA_104th_Weapons_Mags_RPS6H_6rnd",
             "JA_104_Personal_Shield",
             "JA_104_Personal_Shield_Body"
@@ -1896,7 +1897,8 @@ class CfgWeapons
         picture = "\Jangos_Armory_Blasters\data\textures\dc15l_ui_ca.paa";
         model = "\3AS\3AS_Weapons\Republic\DC15L\3AS_DC15L_F.p3d";
         handAnim[] = {"OFP2_ManSkeleton", "3as\3AS_Weapons\Republic\DC15L\Data\Anims\New_DC15L_Handanim.rtm"};
-        recoil = "recoil_SMG_03";
+        recoil = "JA_HeavyRecoil";
+        recoilProne = "JA_MediumRecoil";
         magazines[] =
             {
                 "JA_104th_Weapons_Mags_20mw240"
@@ -1905,8 +1907,10 @@ class CfgWeapons
 
         class FullAuto : FullAuto
         {
-            reloadTime = 0.1;
-            dispersion = 0.006;
+            reloadTime = 0.3;
+            dispersion = 0.00035;
+            recoil = "JA_HeavyRecoil";
+            recoilProne = "JA_MediumRecoil";
             sounds[] = {"StandardSound"};
             textureType = "burst";
             class BaseSoundModeType
@@ -1927,7 +1931,9 @@ class CfgWeapons
         class FullerAuto : FullAuto
         {
             reloadTime = 0.06;
-            dispersion = 0.007;
+            dispersion = 0.00085;
+            recoil = "JA_HeavyRecoil";
+            recoilProne = "JA_MediumRecoil";
             textureType = "fullAuto";
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
@@ -3544,7 +3550,7 @@ class CfgWeapons
         model = "\ls\core\addons\weapons_rps\ls_weapon_rps6.p3d";
         magazines[] =
             {
-                "ls_mag_rpg_1rnd"};
+                "ls_magazine_rps6_heat"};
     };
     class JA_104th_RPS6_H : 3AS_RPS6_HP
     {
@@ -4019,7 +4025,7 @@ class CfgMagazines
     class 3Rnd_Smoke_Grenade_shell;
     class UGL_FlareWhite_F;
     class ls_magazine_z7;
-    class ls_mag_rpg_1rnd;
+    class ls_magazine_rps6_heat;
     class OPTRE_SpLaser_Battery_Launcher;
 
     // Universal
@@ -4621,7 +4627,14 @@ class CfgMagazines
         ammo = "JA_104th_Weapons_Ammo_flare_Purple";
         picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_Purple_CA.paa";
     };
-    class JA_104th_Weapons_Mags_RPS6H_6rnd : ls_mag_rpg_1rnd
+    class JA_104th_RPS6 : ls_magazine_rps6_heat
+    {
+        author = "Jango's Armory Aux Team";
+        displayName = "[104th] 6rnd RPS-6 Magazine";
+        count = 1;
+        mass = 30;
+    };
+    class JA_104th_Weapons_Mags_RPS6H_6rnd : ls_magazine_rps6_heat
     {
         author = "Jango's Armory Aux Team";
         displayName = "[104th] 6rnd RPS-6H Magazine";

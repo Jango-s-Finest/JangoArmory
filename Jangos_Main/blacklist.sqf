@@ -8,8 +8,7 @@ if (hasInterface) then{
                 serverName != "104th Wolfpack Battalion Training Server"
             ) exitWith {};
 			if (
-                isClass(configFile >> 'CfgPatches' >> 'PA_arsenal') ||
-                isClass(configFile >> 'CfgPatches' >> 'ZeusJukebox')
+                isClass(configFile >> 'CfgPatches' >> 'PA_arsenal')
 			)then{
 				endMission 'blacklistedmod';
 			};

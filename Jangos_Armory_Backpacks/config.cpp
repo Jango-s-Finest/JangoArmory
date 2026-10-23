@@ -3,92 +3,95 @@ class DefaultEventhandlers;
 class UniformSlotInfo;
 class CfgPatches
 {
-    class Jangos_Armory_Backpacks
-    {
-        author = "Jango's Finest";
-        requiredVersion = 0.1;
-        requiredAddons[] = {};
-        units[] = {
-            "JA_104th_Backpack",
-            "JA_104th_Backpack_Invis",
-            "JA_104th_ARC_Backpack",
-            "JA_104th_Spectre_RC_Backpack",
-            "JA_104th_RTO_Mini_Irish_Backpack",
-            "JA_104th_RTO_Mini_Boris_Backpack",
-            "JA_104th_Accessories_Heavy_Backpack",
-            "JA_104th_Accessories_Rocket_Backpack",
-            "JA_104th_Medic_Backpack",
-            "JA_104th_Medic_Backpack_LR",
-            "JA_104th_Carmine_Medic_Backpack",
-            "JA_104th_Lax_Medic_Backpack",
-            "JA_104th_Patch_Medic_Backpack",
-            "JA_104th_RTO_Backpack",
-            "JA_104th_RTO_Mini_Backpack",
-            "JA_104th_RTO_Mini_Spirit_Backpack",
-            "JA_104th_RTO_Mini_Tusk_Backpack",
-            "JA_104th_RTO_Mini_Poet_Backpack",
-            "JA_104th_RTO_Mini_Marx_Backpack",
-            "JA_104th_RTO_Mini_Tiger_Backpack",
-            "JA_104th_RTO_Mini_Rich_Backpack",
-            "JA_104th_RTO_Mini_Castle_Backpack",
-            "JA_104th_RTO_Mini_Lykos_Backpack",
-            "JA_104th_RTO_Mini_Knockout_Backpack",
-            "JA_104th_RTO_Mini_Aiomi_Backpack",
-            "JA_104th_RTO_Mini_Backpack_ME",
-            "JA_104th_Backpack_Cerberus_1",
-            "JA_104th_Accessories_Heavy_Backpack_Cerberus_1",
-            "JA_104th_Medic_Backpack_Cerberus_1",
-            "JA_104th_RTO_Backpack_Cerberus_1",
-            "JA_104th_Backpack_Cerberus_2",
-            "JA_104th_Accessories_Heavy_Backpack_Cerberus_2",
-            "JA_104th_Medic_Backpack_Cerberus_2",
-            "JA_104th_RTO_Backpack_Cerberus_2",
-            "JA_104th_Backpack_Cerberus_3",
-            "JA_104th_Accessories_Heavy_Backpack_Cerberus_3",
-            "JA_104th_Medic_Backpack_Cerberus_3",
-            "JA_104th_RTO_Backpack_Cerberus_3",
-            "JA_104th_Accessories_Heavy_Backpack_Bulky",
-            "JA_104th_Backpack_Cerberus_4",
-            "JA_104th_Accessories_Heavy_Backpack_Cerberus_4",
-            "JA_104th_Medic_Backpack_Cerberus_4",
-            "JA_104th_RTO_Backpack_Cerberus_4",
-            "JA_104th_Backpack_ME",
-            "JA_104th_Accessories_Heavy_Backpack_ME",
-            "JA_104th_Medic_Backpack_ME",
-            "JA_104th_RTO_Backpack_ME",
-            "JA_104th_Jumppack_LR",
-            "JA_104th_Jumppack",
-            "JA_104th_Jumppack_JT12_LR_DC",
-            "JA_104th_Jumppack_JT12_DC",
-            "JA_104th_Jumppack_JT12_LR_Journeyman",
-            "JA_104th_Jumppack_JT12_Journeyman",
-            "JA_104th_Jumppack_JT12_LR",
-            "JA_104th_Jumppack_JT12",
-            "JA_104th_Jumppack_mc_LR",
-            "JA_104th_Jumppack_mc",
-            "JA_104th_Jumppack_CDV",
-            "JA_104th_Jumppack_JT12_Magnum_LR",
-            "JA_104th_Jumppack_JT12_Kage_LR",
-            "JA_104th_Jumppack_JT12_Freq_LR",
-            "JA_104th_Jumppack_JT12_Warhawk_Medic_LR",
-            "JA_104th_Jumppack_JT12_Warhawk_Medic_1_LR",
-            "JA_104th_Jumppack_JT12_Warhawk_2_Medic_LR",
-            "JA_104th_Jumppack_JT12_Warhawk_Medic_3_LR",
-            "JA_104th_Jumppack_JT12_Warhawk_4_Medic_LR",
-            "JA_104th_Jumppack_JT12_Raider_LR",
-            "JA_104th_Jumppack_JT12_Raider",
-            "JA_104th_Jumppack_JT12_Raider_AmmoBearer",
-            "JA_104th_Jumppack_JT12_Raider_1_LR",
-            "JA_104th_Jumppack_JT12_Raider_1",
-            "JA_104th_Jumppack_JT12_Raider_2_LR",
-            "JA_104th_Jumppack_JT12_Raider_2",
-            "JA_104th_Jumppack_JT12_Raider_3_LR",
-            "JA_104th_Jumppack_JT12_Raider_3",
-            "JA_104th_Jumppack_JT12_Raider_4_LR",
-            "JA_104th_Jumppack_JT12_Raider_4"
-        };
-        weapons[] = {};
-    };
+	class Jangos_Armory_Backpacks
+	{
+		author = "Jango's Finest";
+		requiredVersion = 0.1;
+		requiredAddons[] = {};
+		units[] = {
+			"JA_104th_Backpack",
+			"JA_104th_Backpack_Invis",
+			"JA_104th_ARC_Backpack",
+			"HTL_CiP_Quad_Cannon_Pack",
+			"HTL_CiP_Quad_Cannon_Pack_Deployed",
+			"HTL_CiP_Quad_Cannon_Pack_Swing",
+			"JA_104th_Spectre_RC_Backpack",
+			"JA_104th_RTO_Mini_Irish_Backpack",
+			"JA_104th_RTO_Mini_Boris_Backpack",
+			"JA_104th_Accessories_Heavy_Backpack",
+			"JA_104th_Accessories_Rocket_Backpack",
+			"JA_104th_Medic_Backpack",
+			"JA_104th_Medic_Backpack_LR",
+			"JA_104th_Carmine_Medic_Backpack",
+			"JA_104th_Lax_Medic_Backpack",
+			"JA_104th_Patch_Medic_Backpack",
+			"JA_104th_RTO_Backpack",
+			"JA_104th_RTO_Mini_Backpack",
+			"JA_104th_RTO_Mini_Spirit_Backpack",
+			"JA_104th_RTO_Mini_Tusk_Backpack",
+			"JA_104th_RTO_Mini_Poet_Backpack",
+			"JA_104th_RTO_Mini_Marx_Backpack",
+			"JA_104th_RTO_Mini_Tiger_Backpack",
+			"JA_104th_RTO_Mini_Rich_Backpack",
+			"JA_104th_RTO_Mini_Castle_Backpack",
+			"JA_104th_RTO_Mini_Lykos_Backpack",
+			"JA_104th_RTO_Mini_Knockout_Backpack",
+			"JA_104th_RTO_Mini_Aiomi_Backpack",
+			"JA_104th_RTO_Mini_Backpack_ME",
+			"JA_104th_Backpack_Cerberus_1",
+			"JA_104th_Accessories_Heavy_Backpack_Cerberus_1",
+			"JA_104th_Medic_Backpack_Cerberus_1",
+			"JA_104th_RTO_Backpack_Cerberus_1",
+			"JA_104th_Backpack_Cerberus_2",
+			"JA_104th_Accessories_Heavy_Backpack_Cerberus_2",
+			"JA_104th_Medic_Backpack_Cerberus_2",
+			"JA_104th_RTO_Backpack_Cerberus_2",
+			"JA_104th_Backpack_Cerberus_3",
+			"JA_104th_Accessories_Heavy_Backpack_Cerberus_3",
+			"JA_104th_Medic_Backpack_Cerberus_3",
+			"JA_104th_RTO_Backpack_Cerberus_3",
+			"JA_104th_Accessories_Heavy_Backpack_Bulky",
+			"JA_104th_Backpack_Cerberus_4",
+			"JA_104th_Accessories_Heavy_Backpack_Cerberus_4",
+			"JA_104th_Medic_Backpack_Cerberus_4",
+			"JA_104th_RTO_Backpack_Cerberus_4",
+			"JA_104th_Backpack_ME",
+			"JA_104th_Accessories_Heavy_Backpack_ME",
+			"JA_104th_Medic_Backpack_ME",
+			"JA_104th_RTO_Backpack_ME",
+			"JA_104th_Jumppack_LR",
+			"JA_104th_Jumppack",
+			"JA_104th_Jumppack_JT12_LR_DC",
+			"JA_104th_Jumppack_JT12_DC",
+			"JA_104th_Jumppack_JT12_LR_Journeyman",
+			"JA_104th_Jumppack_JT12_Journeyman",
+			"JA_104th_Jumppack_JT12_LR",
+			"JA_104th_Jumppack_JT12",
+			"JA_104th_Jumppack_mc_LR",
+			"JA_104th_Jumppack_mc",
+			"JA_104th_Jumppack_CDV",
+			"JA_104th_Jumppack_JT12_Magnum_LR",
+			"JA_104th_Jumppack_JT12_Kage_LR",
+			"JA_104th_Jumppack_JT12_Freq_LR",
+			"JA_104th_Jumppack_JT12_Warhawk_Medic_LR",
+			"JA_104th_Jumppack_JT12_Warhawk_Medic_1_LR",
+			"JA_104th_Jumppack_JT12_Warhawk_2_Medic_LR",
+			"JA_104th_Jumppack_JT12_Warhawk_Medic_3_LR",
+			"JA_104th_Jumppack_JT12_Warhawk_4_Medic_LR",
+			"JA_104th_Jumppack_JT12_Raider_LR",
+			"JA_104th_Jumppack_JT12_Raider",
+			"JA_104th_Jumppack_JT12_Raider_AmmoBearer",
+			"JA_104th_Jumppack_JT12_Raider_1_LR",
+			"JA_104th_Jumppack_JT12_Raider_1",
+			"JA_104th_Jumppack_JT12_Raider_2_LR",
+			"JA_104th_Jumppack_JT12_Raider_2",
+			"JA_104th_Jumppack_JT12_Raider_3_LR",
+			"JA_104th_Jumppack_JT12_Raider_3",
+			"JA_104th_Jumppack_JT12_Raider_4_LR",
+			"JA_104th_Jumppack_JT12_Raider_4"
+		};
+		weapons[] = {};
+	};
 };
 
 class CfgFactionClasses
@@ -140,163 +143,191 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    class lsd_gar_phase2_base;
-    class ls_gar_marshalCommander_base;
-    class ls_gar_standard_backpack;
-    class ls_gar_heavy_backpack;
-    class ls_gar_medic_backpack;
-    class ls_gar_Radio_backpack;
-    class ls_gar_rto_mini_backpack;
-    class ls_sob_commando_backpack;
-    class JLTS_Clone_jumppack;
-    class JLTS_Clone_jumppack_JT12_104;
-    class ls_cloneBackpack_jt12;
-    class JLTS_Clone_jumppack_mc;
-    class RD501_JLTS_Clone_jumppack_cdv;
-    class ls_gar_arc_backpack;
-    class ls_gar_survival_backpack;
+	class lsd_gar_phase2_base;
+	class ls_gar_marshalCommander_base;
+	class ls_gar_standard_backpack;
+	class ls_gar_heavy_backpack;
+	class ls_gar_medic_backpack;
+	class ls_gar_Radio_backpack;
+	class ls_gar_rto_mini_backpack;
+	class ls_sob_commando_backpack;
+	class JLTS_Clone_jumppack;
+	class JLTS_Clone_jumppack_JT12_104;
+	class ls_cloneBackpack_jt12;
+	class JLTS_Clone_jumppack_mc;
+	class RD501_JLTS_Clone_jumppack_cdv;
+	class ls_gar_arc_backpack;
+	class ls_gar_survival_backpack;
+	class Bag_Base;
 
-    // Common Infantry Backpacks
-    class JA_104th_Backpack : ls_gar_standard_backpack
-    {
-        author = "Tundra";
+	// Common Infantry Backpacks
+	class JA_104th_Backpack : ls_gar_standard_backpack
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper backpack (104th)";
+		maximumLoad = 250;
+		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
+		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change unless RTO
+				"",															// Heavy
+				"",															// Medic
+				""															// RTO
+			};
+	};
+	class JA_104th_Backpack_Invis : ls_gar_survival_backpack
+	{
+		author = "Tundra";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper backpack (Invisible)";
+		hiddenSelectionsTextures[] =
+			{
+				""};
+		maximumLoad = 250; // In LBS (320 = 32 lbs original, 400 = 40 lbs)
+	};
+	class JA_104th_ARC_Backpack : ls_gar_arc_backpack
+	{
+		author = "Cyan";
+		scope = 2;
+		scopeCurator = 2;
+		displayname = "Clone Trooper ARC backpack (104th)";
+		maximumLoad = 400;
+		tf_dialog = "ls_radios_cloneLR";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 35000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
+	class HTL_CiP_Quad_Cannon_Pack: Bag_Base 
+	{
         scope = 2;
-        scopeCurator = 2;
-        displayname = "Clone Trooper backpack (104th)";
-        maximumLoad = 250;
-        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
-        hiddenSelections[] = {"camo1", "cover", "heavy", "medic", "RTO"};
-        hiddenSelectionsTextures[] =
-            {
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change unless RTO
-                "",                                                         // Heavy
-                "",                                                         // Medic
-                ""                                                          // RTO
-        };
+        displayName = "CiP Quad Cannon (104th)";
+        author = "Hataaylir";
+        model = "\htl_cip_quad_cannon\gunpack_backpack.p3d";
+        picture = "\htl_cip_quad_cannon\data\ui\icon_htl_cip_quad_cannon_ca.paa";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        maximumLoad = 600;
+        mass = 120;
+		tf_dialog = "ls_radios_cloneLR";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 35000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
     };
-    class JA_104th_Backpack_Invis : ls_gar_survival_backpack
-    {
-        author = "Tundra";
-        scope = 2;
-        scopeCurator = 2;
-        displayname = "Clone Trooper backpack (Invisible)";
-        hiddenSelectionsTextures[] =
-            {
-                ""};
-        maximumLoad = 250; // In LBS (320 = 32 lbs original, 400 = 40 lbs)
+    class HTL_CiP_Quad_Cannon_Pack_Deployed: HTL_CiP_Quad_Cannon_Pack {
+        scope = 1;
+        model = "\htl_cip_quad_cannon\gunpack_backpack_deployed.p3d";
     };
-    class JA_104th_ARC_Backpack : ls_gar_arc_backpack
-    {
-        author = "Cyan";
-        scope = 2;
-        scopeCurator = 2;
-        displayname = "Clone Trooper ARC backpack (104th)";
-        maximumLoad = 400;
-        tf_dialog = "ls_radios_cloneLR";
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_hasLRradio = 1;
-        tf_range = 35000;
-        tf_additional_channel = 1;
-        tf_subtype = "digital_lr";
+    class HTL_CiP_Quad_Cannon_Pack_Swing: HTL_CiP_Quad_Cannon_Pack {
+        scope = 1;
+        model = "\htl_cip_quad_cannon\gunpack_backpack_swing.p3d";
     };
-    class JA_104th_Spectre_RC_Backpack : ls_sob_commando_backpack
-    {
-        author = "Dak";
-        scopeCurator = 2;
-        displayname = "Clone Trooper Republic Commando backpack (104th Spectre)";
-        maximumLoad = 500;
-        hiddenSelectionsTextures[] =
-            {
-                "Jangos_Armory_Backpacks\data\Textures\104th_Company_Spectre_RC_Backpack.paa", // don't change this
-                "Jangos_Armory_Backpacks\data\Textures\104th_Company_Spectre_RC_Backpack.paa",
-        };
-        tf_dialog = "ls_radios_cloneLR";
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_hasLRradio = 1;
-        tf_range = 35000;
-        tf_additional_channel = 1;
-        tf_subtype = "digital_lr";
-    };
-    class JA_104th_RTO_Mini_Irish_Backpack : ls_gar_rto_mini_backpack
-    {
-        author = "Tundra";
-        scopeCurator = 2;
-        displayname = "Clone Trooper RTO mini backpack (104th Irish)";
-        maximumLoad = 250;
-        hiddenSelectionsTextures[] =
-            {
-                "Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_LR_Main.paa", // Minipack
-                "Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_Lr_Top.paa"   // slotss
-        };
-        tf_range = 35000;
-    };
-    class JA_104th_RTO_Mini_Boris_Backpack : ls_gar_rto_mini_backpack
-    {
-        author = "Tundra";
-        scopeCurator = 2;
-        displayname = "Clone Trooper RTO mini backpack (104th Boris)";
-        maximumLoad = 250;
-        hiddenSelectionsTextures[] =
-            {
-                "Jangos_Armory_Backpacks\data\Textures\104th_P2_Boris_Minipack.paa",      // Minipack
-                "Jangos_Armory_Backpacks\data\Textures\104th_P2_Boris_Minipack_Slots.paa" // slotss
-        };
-        tf_range = 35000;
-    };
-    class JA_104th_Accessories_Heavy_Backpack : ls_gar_heavy_backpack
-    {
-        author = "Tundra";
-        scopeCurator = 2;
-        displayname = "Clone Trooper Heavy backpack (104th)";
-        maximumLoad = 350;
-        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
-        hiddenSelections[] = {"camo1", "cover", "heavy", "medic", "RTO"};
-        hiddenSelectionsTextures[] =
-            {
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change unless RTO
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // Heavy
-                "",                                                         // Medic
-                ""                                                          // RTO
-        };
-    };
-    class JA_104th_Accessories_Rocket_Backpack : ls_gar_heavy_backpack
-    {
-        author = "Tundra";
-        scopeCurator = 2;
-        displayname = "Clone Trooper Rocket backpack (104th)";
-        maximumLoad = 450;
-        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
-        hiddenSelections[] = {"camo1", "cover", "heavy", "medic", "RTO"};
-        hiddenSelectionsTextures[] =
-            {
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change unless RTO
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // Heavy
-                "",                                                         // Medic
-                "Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa"  // RTO
-        };
-    };
-    class JA_104th_Medic_Backpack : ls_gar_medic_backpack
-    {
-        author = "Tundra";
-        scopeCurator = 2;
-        displayname = "Clone Trooper medic backpack (104th)";
-        maximumLoad = 450;
-        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
-        hiddenSelections[] = {"camo1", "cover", "heavy", "medic", "RTO"};
-        hiddenSelectionsTextures[] =
-            {
-                "Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // don't change this
-                "Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // don't change unless RTO
-                "",                                                               // Heavy
-                "Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // Medic
-                ""                                                                // RTO
-        };
-    };
+	class JA_104th_Spectre_RC_Backpack : ls_sob_commando_backpack
+	{
+		author = "Dak";
+		scopeCurator = 2;
+		displayname = "Clone Trooper Republic Commando backpack (104th Spectre)";
+		maximumLoad = 500;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Company_Spectre_RC_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Company_Spectre_RC_Backpack.paa",
+			};
+		tf_dialog = "ls_radios_cloneLR";
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_hasLRradio = 1;
+		tf_range = 35000;
+		tf_additional_channel = 1;
+		tf_subtype = "digital_lr";
+	};
+	class JA_104th_RTO_Mini_Irish_Backpack : ls_gar_rto_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Irish)";
+		maximumLoad = 250;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_LR_Main.paa", // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_Irish_Mini_Lr_Top.paa"	  // slotss
+			};
+		tf_range = 35000;
+	};
+	class JA_104th_RTO_Mini_Boris_Backpack : ls_gar_rto_mini_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper RTO mini backpack (104th Boris)";
+		maximumLoad = 250;
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Boris_Minipack.paa", // Minipack
+				"Jangos_Armory_Backpacks\data\Textures\104th_P2_Boris_Minipack_Slots.paa"	  // slotss
+			};
+		tf_range = 35000;
+	};
+	class JA_104th_Accessories_Heavy_Backpack : ls_gar_heavy_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper Heavy backpack (104th)";
+		maximumLoad = 350;
+		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
+		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // Heavy
+				"",															// Medic
+				""															// RTO
+			};
+	};
+	class JA_104th_Accessories_Rocket_Backpack : ls_gar_heavy_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper Rocket backpack (104th)";
+		maximumLoad = 450;
+		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
+		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // don't change unless RTO
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa", // Heavy
+				"",															// Medic
+				"Jangos_Armory_Backpacks\data\Textures\104th_Backpack.paa"	// RTO
+			};
+	};
+	class JA_104th_Medic_Backpack : ls_gar_medic_backpack
+	{
+		author = "Tundra";
+		scopeCurator = 2;
+		displayname = "Clone Trooper medic backpack (104th)";
+		maximumLoad = 450;
+		model = "\ls\core\addons\characters_clone_legacy\backpacks\standard_old\ls_gar_standard_backpack_old.p3d";
+		hiddenSelections[] = {"camo1","cover","heavy","medic","RTO"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // don't change this
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // don't change unless RTO
+				"",																  // Heavy
+				"Jangos_Armory_Backpacks\data\Textures\104th_Medic_Backpack.paa", // Medic
+				""																  // RTO
+			};
+	};
 
     class JA_104th_Medic_Backpack_LR : JA_104th_Medic_Backpack
     {
