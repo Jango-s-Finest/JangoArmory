@@ -1907,7 +1907,7 @@ class CfgWeapons
 
         class FullAuto : FullAuto
         {
-            reloadTime = 0.3;
+            reloadTime = 0.25;
             dispersion = 0.00035;
             recoil = "JA_HeavyRecoil";
             recoilProne = "JA_MediumRecoil";

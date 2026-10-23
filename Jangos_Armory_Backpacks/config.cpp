@@ -158,7 +158,6 @@ class CfgVehicles
 	class RD501_JLTS_Clone_jumppack_cdv;
 	class ls_gar_arc_backpack;
 	class ls_gar_survival_backpack;
-	class Bag_Base;
 
 	// Common Infantry Backpacks
 	class JA_104th_Backpack : ls_gar_standard_backpack
@@ -205,33 +204,6 @@ class CfgVehicles
 		tf_additional_channel = 1;
 		tf_subtype = "digital_lr";
 	};
-	class HTL_CiP_Quad_Cannon_Pack: Bag_Base 
-	{
-        scope = 2;
-        displayName = "CiP Quad Cannon (104th)";
-        author = "Hataaylir";
-        model = "\htl_cip_quad_cannon\gunpack_backpack.p3d";
-        picture = "\htl_cip_quad_cannon\data\ui\icon_htl_cip_quad_cannon_ca.paa";
-        hiddenSelections[] = {};
-        hiddenSelectionsTextures[] = {};
-        maximumLoad = 600;
-        mass = 120;
-		tf_dialog = "ls_radios_cloneLR";
-		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_hasLRradio = 1;
-		tf_range = 35000;
-		tf_additional_channel = 1;
-		tf_subtype = "digital_lr";
-    };
-    class HTL_CiP_Quad_Cannon_Pack_Deployed: HTL_CiP_Quad_Cannon_Pack {
-        scope = 1;
-        model = "\htl_cip_quad_cannon\gunpack_backpack_deployed.p3d";
-    };
-    class HTL_CiP_Quad_Cannon_Pack_Swing: HTL_CiP_Quad_Cannon_Pack {
-        scope = 1;
-        model = "\htl_cip_quad_cannon\gunpack_backpack_swing.p3d";
-    };
 	class JA_104th_Spectre_RC_Backpack : ls_sob_commando_backpack
 	{
 		author = "Dak";
