@@ -8,7 +8,11 @@ class CfgPatches
         author = "Jango's Finest";
         requiredVersion = 0.1;
         requiredAddons[] = {};
-        units[] = {};
+        units[] = {
+            "HTL_CiP_Quad_Cannon_Pack",
+            "HTL_CiP_Quad_Cannon_Pack_Deployed",
+            "HTL_CiP_Quad_Cannon_Pack_Swing"
+        };
         // Add Shield variants to 1 handed guns (15S, DP23, 17A/H)
         weapons[] = {
             "3AS_DC15L_Base_F",
