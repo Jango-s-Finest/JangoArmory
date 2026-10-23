@@ -486,6 +486,7 @@ class CfgGesturesMale {
             file = "htl_cip_quad_cannon\anim\gesture_hold_crouch.rtm";
         };
     };
+};
 class CfgVehicles
 { 
     class Bag_Base;

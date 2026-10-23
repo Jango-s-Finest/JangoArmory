@@ -311,8 +311,8 @@ class CfgSoundShaders
             {"\Aux501\Weapons\Grenades\data\sounds\rep_thermal_det_explode.wss", 1},
         };
         volume = 2;
-        range = 500;
-        rangeCurve[] = {{0, 1}, {250, 0.75}, {500, 0}};
+        range = 2500;
+        rangeCurve[] = {{0, 1}, {250, 1}, {2500, 0}};
     };
     class JA_104th_SoundShader_thermalimploder_closeExp
     {
@@ -320,8 +320,8 @@ class CfgSoundShaders
             {"jangos_Armory_Grenades\data\sounds\104th_Weapon_Thermal_Imploder_Explosion_1.ogg", 1},
         };
         volume = 2;
-        range = 1000;
-        rangeCurve[] = {{0, 1}, {500, 0.75}, {1000, 0}};
+        range = 2500;
+        rangeCurve[] = {{0, 1}, {750, 1}, {2500, 0}};
     };
 };
 
