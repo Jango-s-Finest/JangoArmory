@@ -1392,6 +1392,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         displayname = "Clone Trooper JT12 LR (104th Kage)";
+        maximumLoad = 450;
         hiddenSelectionsTextures[] = {"Jangos_Armory_Backpacks\data\Textures\104th_AB_Kage_Jumppack.paa"};
     };
     class JA_104th_Jumppack_JT12_Freq_LR : JA_104th_Jumppack_JT12_LR_Journeyman
