@@ -3,20 +3,20 @@
 [h3]Added[/h3]
 [list]
     [*] Clone Airborne NCO Vest (104th 2-1 Blue)
-    [*] Clone Airborne NCO Medic Vest (104th 2-1 Grey)
     [*] Clone Airborne NCO Vest (104th 2-1 Red)
-    [*] Clone Airborne Trooper Vest (104th 2-1 Blue)
     [*] Clone Airborne NCO Vest (104th 2-1 Grey)
+    [*] Clone Airborne NCO Medic Vest (104th 2-1 Grey)
     [*] Clone Airborne NCO Medic Vest (104th 2-1 Red)
-    [*] Clone Airborne Medic Vest (104th 2-1 Blue)
+    [*] Clone Airborne NCO Medic Vest (104th 2-1 Blue)
+    [*] Clone Airborne Trooper Vest (104th 2-1 Blue)
     [*] Clone Airborne Trooper Vest (104th 2-1 Red)
+    [*] Clone Airborne Trooper Vest (104th 2-1 Grey)
+    [*] Clone Airborne Medic Vest (104th 2-1 Red)
+    [*] Clone Airborne Medic Vest (104th 2-1 Blue)
+    [*] Clone Airborne Medic Vest (104th 2-1 Grey)
     [*] Clone Airborne Officer Vest (104th 2-1 Blue)
     [*] Clone Airborne Officer Vest (104th 2-1 Grey)
-    [*] Clone Airborne NCO Medic Vest (104th 2-1 Blue)
-    [*] Clone Airborne Medic Vest (104th 2-1 Red)
-    [*] Clone Airborne Trooper Vest (104th 2-1 Grey)
     [*] Clone Airborne Officer Vest (104th 2-1 Red)
-    [*] Clone Airborne Medic Vest (104th 2-1 Grey)
     [*] Clone Trooper armor (104th Snout)
     [*] Clone Trooper P2 Helmet (104th Iron)
     [*] Clone Trooper armor (104th Strawberry)
@@ -30,6 +30,7 @@
 [list]
     [*] Clone Trooper armor (104th Hawkeye)
     [*] Clone Trooper P2 Special Activities Helmet (104th Hawkeye)
+    [*] Clone Trooper JT12 LR (104th Kage)
 [/list]
 
 [h2]Custom Weapons & Attachments[/h2]

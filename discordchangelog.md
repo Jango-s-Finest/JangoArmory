@@ -27,6 +27,7 @@ Changed Gear
 ------------------
 - Clone Trooper armor (104th Hawkeye)
 - Clone Trooper P2 Special Activities Helmet (104th Hawkeye)
+- Clone Trooper JT12 LR (104th Kage)
 
 Removed Gear
 ------------------
