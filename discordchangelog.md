@@ -3,16 +3,30 @@ _______________
 ```
 New Gear
 --------------
-- Clone Trooper P1 Helmet (104th Fearless)
-- Clone Trooper armor (104th Fearless)
+- Clone Airborne NCO Vest (104th 2-1 Blue)
+- Clone Airborne NCO Medic Vest (104th 2-1 Grey)
+- Clone Airborne NCO Vest (104th 2-1 Red)
+- Clone Airborne Trooper Vest (104th 2-1 Blue)
+- Clone Airborne NCO Vest (104th 2-1 Grey)
+- Clone Airborne NCO Medic Vest (104th 2-1 Red)
+- Clone Airborne Medic Vest (104th 2-1 Blue)
+- Clone Airborne Trooper Vest (104th 2-1 Red)
+- Clone Airborne Officer Vest (104th 2-1 Blue)
+- Clone Airborne Officer Vest (104th 2-1 Grey)
+- Clone Airborne NCO Medic Vest (104th 2-1 Blue)
+- Clone Airborne Medic Vest (104th 2-1 Red)
+- Clone Airborne Trooper Vest (104th 2-1 Grey)
+- Clone Airborne Officer Vest (104th 2-1 Red)
+- Clone Airborne Medic Vest (104th 2-1 Grey)
+- Clone Trooper armor (104th Snout)
+- Clone Trooper P2 Helmet (104th Iron)
+- Clone Trooper armor (104th Strawberry)
+- Clone Medical Scanner NVG (104th Lax)
 
 Changed Gear
 ------------------
-- Clone SPC NVG Visor (104th Skav)
-- Clone Trooper armor (104th Skav)
-- Clone Trooper P2 Helmet (104th Skav)
-- Clone Trooper armor (104th Juicer)
-- Clone Trooper P1 Helmet (104th Juicer)
+- Clone Trooper armor (104th Hawkeye)
+- Clone Trooper P2 Special Activities Helmet (104th Hawkeye)
 
 Removed Gear
 ------------------
@@ -23,11 +37,11 @@ Removed Gear
 ```
 New Weapons & Attachments
 --------------
-- CiP Quad Cannon (104th)
+- Clone Medical Scanner NVG (104th Lax)
 
 Changed Weapons & Attachments
 ------------------
-- [104th] RPS-6 Rocket Launcher - fix
+-
 
 ------------------
 Removed Weapons & Attachments
@@ -38,16 +52,11 @@ Removed Weapons & Attachments
 ```
 New Vehicles & Supplies
 --------------
-- [104th] Gizka Heavy Ordinance System
+-
 
 Changed Vehicles & Supplies
 ------------------
-- [104th] Z-95 Reaper - new Skins - ECM
-- [104th] ARC-170 - new Skins - ECM
-- [104th] V-Wing Fighter - ECM
-- [104th] V-19 Torrent Heavy Interceptor - ECM
-- [104th] BTL-B Y-Wing Blue Leader - new Skins - ECM - 212th dependancy removed
-- [104th] Rho Class - ECM - Ramp Fix
+-
 
 Removed Vehicles & Supplies
 ------------------

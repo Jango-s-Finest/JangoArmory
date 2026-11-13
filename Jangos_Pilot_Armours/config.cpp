@@ -19,7 +19,8 @@ class CfgPatches
 			"JA_104th_Cherryy",
 			"JA_104th_Fish",
 			"JA_104th_Spirit",
-			"JA_104th_Boris"
+			"JA_104th_Boris",
+			"JA_104th_Strawberry"
 		};
 		weapons[] = {
 			"JA_104th_Base_Uniform",
@@ -32,7 +33,8 @@ class CfgPatches
 			"JA_104th_Cherryy_Uniform",
 			"JA_104th_Fish_Uniform",
 			"JA_104th_Spirit_Uniform",
-			"JA_104th_Boris_Uniform"
+			"JA_104th_Boris_Uniform",
+			"JA_104th_Strawberry_Uniform"
 		};
 	};
 };
@@ -383,6 +385,31 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+    class JA_104th_Strawberry_Uniform : ls_gar_marshalCommander_uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Strawberry)";
+		model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Strawberry_Upper.paa",
+				"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Strawberry_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Strawberry";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -574,5 +601,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Boris_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_Boris_Lower.paa"};
 		linkedItems[] = {JA_104th_Boris_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Boris_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+	class JA_104th_Strawberry : lsd_gar_phase2_base
+	{
+		author = "Dak";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Strawberry_Uniform";
+		displayName = "104th Strawberry";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Pilot_Armours\data\Textures\104th_Pilot_Strawberry_Upper.paa", "Jangos_Pilot_Armours\data\Textures\104th_Pilot_Strawberry_Lower.paa"};
+		linkedItems[] = {JA_104th_Strawberry_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		 // all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Strawberry_Pilot_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

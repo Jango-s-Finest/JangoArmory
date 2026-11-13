@@ -40,7 +40,8 @@ class CfgPatches
 			"JA_104th_Aiomi",
 			"JA_104th_Dragon",
 			"JA_104th_Jesse",
-			"JA_104th_Fearless"
+			"JA_104th_Fearless",
+			"JA_104th_Snout"
 		};
 		weapons[] = {
 			"JA_104th_Poet_Uniform_old",
@@ -73,7 +74,8 @@ class CfgPatches
 			"JA_104th_Aiomi_Uniform",
 			"JA_104th_Dragon_Uniform",
 			"JA_104th_Jesse_Uniform",
-			"JA_104th_Fearless_Uniform"
+			"JA_104th_Fearless_Uniform",
+			"JA_104th_Snout_Uniform"
 		};
 	};
 };
@@ -901,6 +903,30 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+    class JA_104th_Snout_Uniform : JA_104th_Base_Clone_Uniform
+	{
+		author = "Dak";
+		scope = 2;
+		allowedSlots[] = {BACKPACK_SLOT};
+		displayName = "Clone Trooper armor (104th Snout)";
+		hiddenSelections[] =
+			{
+				"camo1",
+				"camo2"};
+		hiddenSelectionsTextures[] =
+			{
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Snout_Upper.paa",
+				"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Snout_Lower.paa"};
+		class ItemInfo : UniformItem
+		{
+			uniformModel = "-";
+			scope = 2;
+			uniformClass = "JA_104th_Snout";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 };
 
 class CfgVehicles
@@ -1430,5 +1456,21 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Fearless_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Fearless_Lower.paa"};
 		linkedItems[] = {JA_104th_Fearless_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
 		respawnLinkedItems[] = {JA_104th_Fearless_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
+	};
+    class JA_104th_Snout : lsd_gar_phase2_base
+	{
+		author = "Ice";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
+		uniformClass = "JA_104th_Snout_Uniform";
+		displayName = "104th Snout";
+		faction = "104th_Guys";
+		editorSubcategory = "104th_Categ_Clones";
+		hiddenSelections[] = {"camo1", "camo2"};
+		hiddenSelectionsTextures[] = {"Jangos_Infantry_Armours_2\data\Textures\104th_P2_Snout_Upper.paa", "Jangos_Infantry_Armours_2\data\Textures\104th_P2_Snout_Lower.paa"};
+		linkedItems[] = {JA_104th_Snout_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio};		// all items that will be on unit
+		respawnLinkedItems[] = {JA_104th_Snout_Helmet, ls_gar_clone_vest, ItemMap, ItemCompass, ItemWatch, ItemGPS, ItemRadio}; // all items that will be on unit on respawn
 	};
 };

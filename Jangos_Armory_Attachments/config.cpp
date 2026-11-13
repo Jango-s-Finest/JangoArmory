@@ -15,6 +15,7 @@ class CfgPatches
 			"JA_104th_Spectre_RC_NVG",
 			"JA_104th_Spectre_RC_NVG_Antenna",
 			"JA_104th_P2_NVG_Irish",
+			"JA_104th_P2_NVG_Lax",
 			"JA_104th_P2_NVG_Bulky",
 			"JA_104th_P2_NVG_Doc",
 			"JA_104th_P2_NVG_Tusk",
@@ -152,6 +153,17 @@ class CfgWeapons
 		hiddenSelections[] = {"Camo1", "glow"};
 		hiddenSelectionsTextures[] = {
 			"Jangos_Armory_Attachments\data\Textures\104th_Irish_Medical_Scanner_NVG.paa",
+			"#(argb,8,8,3)color(0.501961,1,1,1.0,co)"};
+		visionMode[] = {"Normal", "NVG", "TI"};
+		thermalMode[] = {0, 1};
+	};
+    class JA_104th_P2_NVG_Lax : lsd_gar_medicalScanner_nvg
+	{
+		author = "Dak";
+		displayName = "Clone Medical Scanner NVG (104th Lax)";
+		hiddenSelections[] = {"Camo1", "glow"};
+		hiddenSelectionsTextures[] = {
+			"Jangos_Armory_Attachments\data\Textures\104th_Lax_Medical_Scanner_NVG.paa",
 			"#(argb,8,8,3)color(0.501961,1,1,1.0,co)"};
 		visionMode[] = {"Normal", "NVG", "TI"};
 		thermalMode[] = {0, 1};

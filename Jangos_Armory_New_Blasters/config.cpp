@@ -6,8 +6,10 @@ class CfgPatches
     class Jangos_Armory_New_Blasters
     {
         author = "Jango's Finest";
-        requiredVersion = 0.1;
-        requiredAddons[] = {};
+        version = 0.012;
+        versionStr = "0.0.12";
+        requiredVersion = 2.0;
+        requiredAddons[] = {"A3_Data_F_Decade_Loadorder", "3AS_Weapons", "3AS_Weapons_Republic_DC15L", "3as_Jug_Weapons"};
         units[] = {
             "HTL_CiP_Quad_Cannon_Pack",
             "HTL_CiP_Quad_Cannon_Pack_Deployed",
@@ -35,20 +37,7 @@ class CfgPatches
             "HTL_HE_400",
             "HTL_HE_120"
         };
-    };
-    class htl_cip_quad_cannon 
-    {
-        name = "CiP Quad Cannon";
-        author = "Hataaylir";
-        units[] = {"HTL_CiP_Quad_Cannon_Pack", "HTL_CiP_Quad_Cannon_Pack_Deployed", "HTL_CiP_Quad_Cannon_Pack_Swing"};
-        weapons[] = {"HTL_CiP_Quad_Cannon", "HTL_CiP_Quad_Cannon_Deploying"};
-        version = 0.012;
-        versionStr = "0.0.12";
         versionAr[] = {0, 0, 12};
-        requiredVersion = 2.0;
-        magazines[] = {"HTL_LE_1600", "HTL_ME_800", "HTL_HE_400", "HTL_HE_120"};
-        ammo[] = {"HTL_CiP_Bolt_LE", "HTL_CiP_Bolt_ME", "HTL_CiP_Bolt_HE", "HTL_CiP_Bolt_HEX"};
-        requiredAddons[] = {"A3_Data_F_Decade_Loadorder", "3AS_Weapons", "3AS_Weapons_Republic_DC15L", "3as_Jug_Weapons"};
     };
 };
 

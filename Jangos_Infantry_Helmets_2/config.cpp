@@ -55,6 +55,7 @@ class CfgPatches
             "JA_104th_Romeo_Helmet_Ground",
             "JA_104th_Jesse_Helmet_Ground",
             "JA_104th_Tanx_Helmet_Ground",
+            "JA_104th_Iron_Helmet_Ground",
             "JA_104th_Fearless_Helmet_Ground"
         };
         weapons[] = {
@@ -116,7 +117,8 @@ class CfgPatches
             "JA_104th_Krieg_Helmet",
             "JA_104th_Romeo_Helmet",
             "JA_104th_Jesse_Helmet",
-            "JA_104th_Tanx_Helmet"
+            "JA_104th_Tanx_Helmet",
+            "JA_104th_Iron_Helmet"
         };
     };
 };
@@ -833,6 +835,15 @@ class CfgWeapons
         displayname = "Clone Trooper P2 Helmet (104th Tanx)";                                                                                                                          // the name it will be in game
         hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Tanx_Helmet.paa", "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
     };
+    class JA_104th_Iron_Helmet : ls_gar_phase2_helmet
+    {
+        author = "Dak";
+        scopeArsenal = 2;
+        side = 1;
+        grad_slingHelmet_allow = "true";
+        displayname = "Clone Trooper P2 Helmet (104th Iron)";                                                                                                                          // the name it will be in game
+        hiddenSelectionsTextures[] = {"Jangos_Infantry_Helmets_2\data\Textures\104th_P2_Iron_Helmet.paa", "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"}; // the file path to the texture
+    };
 };
 
 class CfgVehicles
@@ -1524,6 +1535,21 @@ class CfgVehicles
             class _xx_JA_104th_Tanx_Helmet
             {
                 name = "JA_104th_Tanx_Helmet";
+                count = 1;
+            };
+        };
+    };
+    class JA_104th_Iron_Helmet_Ground : JA_104th_Holder_Base
+    {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayname = "Clone Trooper P2 Helmet (104th Iron)"; // the name it will be in game
+        class TransportItems
+        {
+            class _xx_JA_104th_Iron_Helmet
+            {
+                name = "JA_104th_Iron_Helmet";
                 count = 1;
             };
         };
